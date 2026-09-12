@@ -260,8 +260,8 @@
 <section id="signup" class="signup">
   <div class="wrap">
     <h2>Get alerts for your devices</h2>
-    <p style="color:var(--muted)">Add your email and, if you like, the devices you want watched. You'll get the first digest when tracking goes live.</p>
-    <form id="signup-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+    <p style="color:var(--muted)">Add your email and, if you like, the devices you want watched. You'll confirm on the next page and get the first digest when tracking goes live.</p>
+    <form id="signup-form" novalidate>
       <label class="sr" for="s-email">Email address</label>
       <div class="row">
         <input id="s-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
@@ -410,33 +410,40 @@ dlg.addEventListener("click", e=>{ if(e.target===dlg) dlg.close(); });
 dlg.addEventListener("close", ()=>history.replaceState(null,"", location.pathname));
 if(location.hash.startsWith("#d=")) openDevice(location.hash.slice(3));
 
-/* ---------- forms ---------- */
+/* ---------- forms → Beehiiv ---------- */
+const SUBSCRIBE_URL = "https://firmwarely.beehiiv.com/subscribe";
 const validEmail = v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+
+function subscribe(email, plan, devices){
+  const u = new URL(SUBSCRIBE_URL);
+  u.searchParams.set("email", email);
+  u.searchParams.set("utm_source", "firmwarely.com");
+  u.searchParams.set("utm_medium", "site");
+  u.searchParams.set("utm_campaign", plan || "free");
+  if(devices) u.searchParams.set("utm_content", devices.slice(0,200));
+  window.location.href = u.toString();
+}
+
 document.getElementById("hero-form").addEventListener("submit", e=>{
   e.preventDefault();
   const v = document.getElementById("hero-email").value.trim();
+  if(validEmail(v)){ subscribe(v, "free", ""); return; }
   document.getElementById("s-email").value = v;
   location.hash = "#signup";
-  setTimeout(()=>document.getElementById(validEmail(v)?"s-devices":"s-email").focus(), 300);
+  setTimeout(()=>document.getElementById("s-email").focus(), 300);
 });
+
 document.querySelectorAll('a[href="#signup"]').forEach(a=>{
-  a.addEventListener("click", ()=>{ if(a.textContent.includes("Pro")) document.getElementById("s-plan").value="pro"; });
+  a.addEventListener("click", ()=>{ document.getElementById("s-plan").value = a.textContent.includes("Pro") ? "pro" : "free"; });
 });
-document.getElementById("signup-form").addEventListener("submit", async e=>{
+
+document.getElementById("signup-form").addEventListener("submit", e=>{
   e.preventDefault();
   const form = e.target, msg = document.getElementById("s-msg");
   const email = form.email.value.trim();
   if(!validEmail(email)){ msg.className="err"; msg.textContent="Enter a valid email address to continue."; form.email.focus(); return; }
-  if(form.action.includes("YOUR_FORM_ID")){
-    msg.className="ok"; msg.textContent="Signup form isn't connected yet — add your Formspree ID in index.html to start collecting emails."; return;
-  }
-  msg.className=""; msg.textContent="Saving…";
-  try{
-    const r = await fetch(form.action,{method:"POST",body:new FormData(form),headers:{Accept:"application/json"}});
-    if(!r.ok) throw new Error();
-    msg.className="ok"; msg.textContent="You're on the list. First digest goes out when tracking is live.";
-    form.reset();
-  }catch{ msg.className="err"; msg.textContent="Couldn't save that just now. Try again in a minute."; }
+  msg.className="ok"; msg.textContent="Taking you to confirm…";
+  subscribe(email, form.plan.value, form.devices.value.trim());
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();
