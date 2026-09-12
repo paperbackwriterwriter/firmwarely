@@ -260,7 +260,7 @@
 <section id="signup" class="signup">
   <div class="wrap">
     <h2>Get alerts for your devices</h2>
-    <p style="color:var(--muted)">Add your email and, if you like, the devices you want watched. You'll confirm on the next page and get the first digest when tracking goes live.</p>
+    <p style="color:var(--muted)">Add your email and, if you like, the devices you want watched. You'll get the first digest when tracking goes live.</p>
     <form id="signup-form" novalidate>
       <label class="sr" for="s-email">Email address</label>
       <div class="row">
@@ -410,40 +410,65 @@ dlg.addEventListener("click", e=>{ if(e.target===dlg) dlg.close(); });
 dlg.addEventListener("close", ()=>history.replaceState(null,"", location.pathname));
 if(location.hash.startsWith("#d=")) openDevice(location.hash.slice(3));
 
-/* ---------- forms → Beehiiv ---------- */
-const SUBSCRIBE_URL = "https://firmwarely.beehiiv.com/subscribe";
+/* ---------- forms → /api/subscribe → Beehiiv ---------- */
 const validEmail = v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
 
-function subscribe(email, plan, devices){
-  const u = new URL(SUBSCRIBE_URL);
-  u.searchParams.set("email", email);
-  u.searchParams.set("utm_source", "firmwarely.com");
-  u.searchParams.set("utm_medium", "site");
-  u.searchParams.set("utm_campaign", plan || "free");
-  if(devices) u.searchParams.set("utm_content", devices.slice(0,200));
-  window.location.href = u.toString();
+async function subscribe(email, plan, devices){
+  const r = await fetch("/api/subscribe", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ email, plan, devices })
+  });
+  let data = {};
+  try { data = await r.json(); } catch {}
+  if (!r.ok || !data.ok) throw new Error(data.error || "Couldn't save that just now. Try again in a minute.");
 }
 
-document.getElementById("hero-form").addEventListener("submit", e=>{
+const heroForm = document.getElementById("hero-form");
+const heroBtn = heroForm.querySelector("button");
+heroForm.addEventListener("submit", async e=>{
   e.preventDefault();
   const v = document.getElementById("hero-email").value.trim();
-  if(validEmail(v)){ subscribe(v, "free", ""); return; }
-  document.getElementById("s-email").value = v;
-  location.hash = "#signup";
-  setTimeout(()=>document.getElementById("s-email").focus(), 300);
+  if(!validEmail(v)){
+    document.getElementById("s-email").value = v;
+    location.hash = "#signup";
+    setTimeout(()=>document.getElementById("s-email").focus(), 300);
+    return;
+  }
+  heroBtn.disabled = true; heroBtn.textContent = "Saving…";
+  try{
+    await subscribe(v, "free", "");
+    heroForm.innerHTML = '<p class="ok" style="margin:0">You\'re on the list. Check your inbox for a confirmation.</p>';
+  }catch(err){
+    heroBtn.disabled = false; heroBtn.textContent = "Start watching";
+    document.getElementById("s-email").value = v;
+    location.hash = "#signup";
+    const msg = document.getElementById("s-msg"); msg.className="err"; msg.textContent = err.message;
+  }
 });
 
 document.querySelectorAll('a[href="#signup"]').forEach(a=>{
   a.addEventListener("click", ()=>{ document.getElementById("s-plan").value = a.textContent.includes("Pro") ? "pro" : "free"; });
 });
 
-document.getElementById("signup-form").addEventListener("submit", e=>{
+const signupForm = document.getElementById("signup-form");
+signupForm.addEventListener("submit", async e=>{
   e.preventDefault();
-  const form = e.target, msg = document.getElementById("s-msg");
-  const email = form.email.value.trim();
-  if(!validEmail(email)){ msg.className="err"; msg.textContent="Enter a valid email address to continue."; form.email.focus(); return; }
-  msg.className="ok"; msg.textContent="Taking you to confirm…";
-  subscribe(email, form.plan.value, form.devices.value.trim());
+  const msg = document.getElementById("s-msg");
+  const btn = signupForm.querySelector("button[type=submit]");
+  const email = signupForm.email.value.trim();
+  if(!validEmail(email)){ msg.className="err"; msg.textContent="Enter a valid email address to continue."; signupForm.email.focus(); return; }
+  btn.disabled = true; msg.className=""; msg.textContent="Saving…";
+  try{
+    await subscribe(email, signupForm.plan.value, signupForm.devices.value.trim());
+    msg.className="ok";
+    msg.textContent = signupForm.plan.value==="pro"
+      ? "You're on the Pro waitlist. Check your inbox for a confirmation."
+      : "You're on the list. Check your inbox for a confirmation.";
+    signupForm.reset();
+  }catch(err){
+    msg.className="err"; msg.textContent = err.message;
+  }finally{ btn.disabled = false; }
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();

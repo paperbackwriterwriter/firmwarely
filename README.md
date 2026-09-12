@@ -15,9 +15,15 @@ To update the site later: edit `index.html` in GitHub (pencil icon) → commit. 
 
 ## Signup form
 
-Both forms send the visitor to the Beehiiv subscribe page (`SUBSCRIBE_URL` in `index.html`) with the
-email pre-filled. Each subscriber is tagged in Beehiiv with UTMs: `utm_campaign` = free or pro,
-`utm_content` = the devices they typed. View these under Audience → Subscribers in Beehiiv.
+Both forms POST to `/api/subscribe` (a Vercel serverless function in `api/subscribe.js`), which creates the
+subscriber in Beehiiv via its API. The visitor never leaves firmwarely.com.
+
+Setup (one time), in Vercel → Project → Settings → Environment Variables:
+- `BEEHIIV_API_KEY` — Beehiiv → Settings → Integrations → API → Create new API key
+- `BEEHIIV_PUB_ID` — Beehiiv → Settings → Publication → the ID starting with `pub_`
+
+Then redeploy. Subscribers are tagged `utm_campaign` = free or pro. If you create a custom field named
+`devices` in Beehiiv (Audience → Subscribers → Custom fields), the devices they typed are stored there too.
 
 ## Device data
 
