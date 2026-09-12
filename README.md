@@ -13,10 +13,11 @@ Static marketing site + device catalog for firmwarely.com. One file (`index.html
 
 To update the site later: edit `index.html` in GitHub (pencil icon) → commit. Vercel redeploys in ~30 seconds.
 
-## Connect the signup form
+## Signup form
 
-The form posts to Formspree. Create a free form at formspree.io, then replace `YOUR_FORM_ID`
-in `index.html` (search for it) with your form ID. Until then, submissions show a reminder instead of saving.
+Both forms send the visitor to the Beehiiv subscribe page (`SUBSCRIBE_URL` in `index.html`) with the
+email pre-filled. Each subscriber is tagged in Beehiiv with UTMs: `utm_campaign` = free or pro,
+`utm_content` = the devices they typed. View these under Audience → Subscribers in Beehiiv.
 
 ## Device data
 
