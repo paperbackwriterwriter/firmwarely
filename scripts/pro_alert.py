@@ -87,7 +87,6 @@ def main():
         "status": "confirmed",
         "recipients": {
             "email": {
-                "tier_ids": ["free", "premium"],
                 "include_segment_ids": [seg_id],
             },
             "web": {"tier_ids": []},
