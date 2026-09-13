@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """
-Builds static device pages from devices.json:
+Builds static pages from devices.json:
 
   devices/<id>/index.html   one page per device  → firmwarely.com/devices/<id>
   devices/index.html        all devices, grouped by brand
+  pro/thanks/index.html     post-checkout page
+  legal/index.html          privacy + terms
   sitemap.xml, robots.txt
 
 Reuses the <style> block from index.html so pages match the site. Run after fetch.py.
@@ -130,7 +132,7 @@ FOOT = """
 <footer>
   <div class="wrap">
     <span>© <span id="year"></span> Firmwarely. Device and brand names belong to their manufacturers.</span>
-    <span><a href="/devices/">Devices</a> &nbsp;·&nbsp; <a href="/#pricing">Pricing</a> &nbsp;·&nbsp; <a href="mailto:hello@firmwarely.com">Contact</a></span>
+    <span><a href="/devices/">Devices</a> &nbsp;·&nbsp; <a href="/#pricing">Pricing</a> &nbsp;·&nbsp; <a href="/legal/">Legal</a> &nbsp;·&nbsp; <a href="mailto:hello@firmwarely.com">Contact</a></span>
   </div>
 </footer>
 <script>
@@ -226,9 +228,6 @@ def device_page(d):
 
 
 def index_page(devices):
-    by_brand = {}
-    for d in devices:
-        by_brand.setdefault(d["brand"], []).append(d)
     parts = []
     for cat_key, cat_name in CATS.items():
         items = [d for d in devices if d["category"] == cat_key]
@@ -250,6 +249,49 @@ def index_page(devices):
 """ + signup() + FOOT
 
 
+def simple_page(title, desc, path, body):
+    return head(title, desc, path) + f"""
+<div class="wrap" style="padding:3rem 0 4rem;max-width:760px">
+{body}
+</div>
+""" + FOOT
+
+
+def thanks_page():
+    return simple_page("You're on Firmwarely Pro", "Thanks for upgrading to Firmwarely Pro.", "/pro/thanks/", """
+<h1 class="dev-h">You're on Pro. Thank you.</h1>
+<p style="font-size:1.1rem;margin-top:1rem;color:var(--muted)">Your receipt is on its way from Stripe. Here's what happens next:</p>
+<ul style="color:var(--muted);padding-left:1.2rem">
+  <li><strong style="color:var(--text)">Instant alerts.</strong> When a security fix or new firmware ships for a device you watch, you'll get an email the same day instead of waiting for the weekly digest.</li>
+  <li><strong style="color:var(--text)">Unlimited devices.</strong> Reply to any Firmwarely email with the devices you own and we'll add them to your watch list.</li>
+  <li><strong style="color:var(--text)">End-of-life warnings.</strong> You'll hear when a manufacturer stops updating something you own.</li>
+</ul>
+<p style="color:var(--muted)">Use the same email address you paid with when you sign up for alerts, so we can link them. Manage or cancel any time from the link in your Stripe receipt.</p>
+<p style="margin-top:2rem"><a class="btn" href="/devices/">Browse the devices we watch</a></p>
+""")
+
+
+def legal_page():
+    return simple_page("Privacy & terms — Firmwarely", "Firmwarely privacy policy and terms of service.", "/legal/", """
+<h1 class="dev-h">Privacy &amp; terms</h1>
+<p style="color:var(--muted)">Last updated September 13, 2026. Firmwarely is an independent service operated by an individual in Iowa, USA. Questions: <a href="mailto:hello@firmwarely.com">hello@firmwarely.com</a>.</p>
+<div class="faq">
+<h2 style="margin-top:2rem">Privacy policy</h2>
+<h3>What we collect</h3><p>Your email address when you subscribe, the device names you choose to tell us about, and standard web server logs. If you buy Pro, Stripe collects your payment details; we never see your card number. We store the email you paid with and whether your subscription is active.</p>
+<h3>How we use it</h3><p>To send you the firmware update emails you asked for, to manage your subscription, and to understand which devices people want tracked. We don't sell or rent your data.</p>
+<h3>Who we share it with</h3><p>Beehiiv (email delivery), Stripe (payments), Vercel (hosting), and GitHub (where our data pipeline runs). Each is bound by its own privacy policy. We share only what's needed for them to do their job.</p>
+<h3>Affiliate links</h3><p>Some product links may earn us a commission at no extra cost to you. They don't affect which updates we report.</p>
+<h3>Your choices</h3><p>Every email has an unsubscribe link. To delete your data entirely, email us and we'll remove it within 30 days. We don't use tracking cookies on this site.</p>
+<h2 style="margin-top:2.5rem">Terms of service</h2>
+<h3>What Firmwarely is</h3><p>An information service that watches manufacturers' public release pages and tells you what changed. It is not affiliated with any manufacturer. Device and brand names belong to their owners.</p>
+<h3>What it isn't</h3><p>We don't distribute firmware, and we can't guarantee we catch every release or that release notes are accurate — manufacturers change their pages without notice. Always download firmware from the official source and read the manufacturer's notes before installing. You're responsible for updates you apply to your own devices.</p>
+<h3>Pro subscription</h3><p>Pro is billed monthly through Stripe and renews automatically until cancelled. Cancel any time from the link in your receipt; you keep Pro until the end of the period you've paid for. If you're unhappy in the first 30 days, email us for a full refund.</p>
+<h3>Liability</h3><p>The service is provided as-is. To the extent permitted by law, we're not liable for any loss arising from use of the service, including from firmware updates you choose to install or not install. Our total liability is limited to what you paid us in the previous 12 months.</p>
+<h3>Changes</h3><p>We may update these terms; material changes will be announced by email. Continued use means you accept the updated terms.</p>
+</div>
+""")
+
+
 def main():
     global STYLES
     STYLES = styles()
@@ -262,9 +304,13 @@ def main():
         p.mkdir(exist_ok=True)
         (p / "index.html").write_text(device_page(d))
     (out / "index.html").write_text(index_page(devices))
+    for folder, content in (("pro/thanks", thanks_page()), ("legal", legal_page())):
+        d = ROOT / folder
+        d.mkdir(parents=True, exist_ok=True)
+        (d / "index.html").write_text(content)
 
     today = datetime.now(timezone.utc).date().isoformat()
-    urls = [f"{SITE}/", f"{SITE}/devices/"] + [f"{SITE}/devices/{d['id']}/" for d in devices]
+    urls = [f"{SITE}/", f"{SITE}/devices/", f"{SITE}/legal/"] + [f"{SITE}/devices/{d['id']}/" for d in devices]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     sm += [f"  <url><loc>{u}</loc><lastmod>{today}</lastmod></url>" for u in urls]
     sm.append("</urlset>")
