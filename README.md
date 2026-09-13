@@ -42,4 +42,13 @@ Adding a device: add an entry to `sources.json`.
 A failing source never erases data: the device keeps its last version and gets `source_status: "error: ..."` in `devices.json`.
 Check the Actions log after a run to see which sources succeeded.
 
-Status rules: `critical` = security-flavoured release notes within 60 days · `update` = any release within 45 days · `current` = older · `pending` = no data yet.
+Status rules: `critical` = security-flavoured release notes within 60 days · `update` = any release within 45 days · `current` = older · `eol` = release notes mention end-of-life · `pending` = no data yet.
+
+## Digest / alerts
+
+Each run compares tonight's versions with last night's. If anything changed, `fetch.py` writes `digest.md`
+(grouped: security fixes, new firmware, end-of-life) and the workflow opens a GitHub issue with it, which
+emails you. If the repo has the secrets `BEEHIIV_API_KEY` and `BEEHIIV_PUB_ID` (GitHub → Settings → Secrets and
+variables → Actions), it also creates a **draft** post in Beehiiv with the same content for you to review and send.
+To test without waiting for a real change: Actions → Run workflow → tick *force_digest*.
+
