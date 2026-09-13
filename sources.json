@@ -129,8 +129,9 @@
    "model": "Xbox Series X|S",
    "category": "C",
    "type": "browser",
-   "url": "https://support.xbox.com/en-US/help/hardware-network/console/xbox-console-system-updates",
+   "url": "https://support.xbox.com/en-us/help/hardware-network/settings-updates/whats-new-xbox-one-system-updates",
    "version_regex": "OS [Vv]ersion:?\\s*(\\d+\\.\\d+\\.\\d+\\.\\d+)",
+   "date_regex": "Release date:?\\s*(\\d{1,2}/\\d{1,2}/\\d{4})\\s*OS [Vv]ersion:?\\s*{version}",
    "product_url": "https://www.xbox.com/en-US/consoles",
    "notes": "Xbox system update. See the release notes for details."
   },
