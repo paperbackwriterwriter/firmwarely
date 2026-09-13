@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-13T17:49:06+00:00",
+ "generated": "2026-09-13T17:53:56+00:00",
  "tracked": 35,
  "ok": 34,
  "failed": [
@@ -23,7 +23,7 @@
      "released": "2026-09-09"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -45,7 +45,7 @@
      "released": "2026-08-12"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -67,7 +67,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -89,7 +89,7 @@
      "released": "2026-08-31"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -111,7 +111,7 @@
      "released": "2026-07-26"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "critical"
@@ -133,7 +133,7 @@
      "released": "2026-07-30"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -155,7 +155,7 @@
      "released": "2026-08-25"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -177,7 +177,7 @@
      "released": "2026-07-19"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -203,7 +203,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -225,7 +225,7 @@
      "released": "2025-12-05"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -247,7 +247,7 @@
      "released": "2026-09-01"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -269,7 +269,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -308,7 +308,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -330,7 +330,7 @@
      "released": "2026-04-17"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": true,
    "status": "eol"
@@ -352,7 +352,7 @@
      "released": "2026-05-04"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -408,7 +408,7 @@
      "released": "2026-09-11"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -430,7 +430,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -452,7 +452,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -525,7 +525,7 @@
      "released": "2026-07-02"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -649,7 +649,7 @@
      "released": "2026-07-06"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -671,7 +671,7 @@
      "released": "2026-08-18"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "critical"
@@ -693,7 +693,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -715,7 +715,7 @@
      "released": "2026-08-27"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -732,7 +732,7 @@
    "source_url": "https://mikrotik.com/download/changelogs",
    "product_url": "https://mikrotik.com/products",
    "history": [],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "error: ValueError: version pattern not found on page",
    "eol": false,
    "status": "pending"
@@ -754,7 +754,7 @@
      "released": "2026-08-31"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -776,7 +776,7 @@
      "released": "2026-09-11"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -798,7 +798,7 @@
      "released": "2026-09-03"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -820,7 +820,7 @@
      "released": "2026-09-12"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -842,7 +842,7 @@
      "released": "2026-06-24"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -864,7 +864,7 @@
      "released": "2026-06-23"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -886,7 +886,7 @@
      "released": "2025-10-31"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -908,7 +908,7 @@
      "released": "2025-10-31"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -930,7 +930,7 @@
      "released": "2026-09-08"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -952,7 +952,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -974,7 +974,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T17:49:06+00:00",
+   "checked": "2026-09-13T17:53:56+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
