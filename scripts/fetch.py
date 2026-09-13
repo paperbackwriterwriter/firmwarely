@@ -135,6 +135,24 @@ def check_feed(src):
     raise ValueError("no matching item in feed")
 
 
+def check_github(src):
+    """Latest non-prerelease via the GitHub API. src['repo'] = 'owner/name'."""
+    api = f"https://api.github.com/repos/{src['repo']}/releases/latest"
+    req = urllib.request.Request(api, headers={"User-Agent": UA, "Accept": "application/vnd.github+json"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        rel = json.loads(r.read().decode("utf-8"))
+    title = f"{rel.get('name') or ''} {rel.get('tag_name') or ''}"
+    v = extract_version(title, src.get("version_regex"))
+    if not v:
+        raise ValueError(f"no version in release title/tag: {title.strip()}")
+    return {
+        "version": v,
+        "released": parse_date(rel.get("published_at")) or TODAY.isoformat(),
+        "notes": clean(rel.get("body") or "") or clean(title),
+        "source_url": rel.get("html_url") or f"https://github.com/{src['repo']}/releases",
+    }
+
+
 def check_html(src, prev):
     raw = get(src["url"])
     # search the raw HTML first, then a tag-stripped copy (handles "Version:</b> 1.2.3")
@@ -196,7 +214,12 @@ def main():
 
         if dev["tracked"] and not OFFLINE:
             try:
-                res = check_feed(src) if src["type"] == "feed" else check_html(src, prev)
+                if src["type"] == "feed":
+                    res = check_feed(src)
+                elif src["type"] == "github":
+                    res = check_github(src)
+                else:
+                    res = check_html(src, prev)
                 if res["version"] != dev["version"]:
                     dev["history"] = ([{"version": res["version"], "released": res["released"]}] + dev["history"])[:6]
                 dev.update(res)
@@ -222,4 +245,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
