@@ -59,3 +59,12 @@ jobs:
             --title "$(head -n 1 digest.md | sed 's/^# //')" \
             --body-file digest.md \
             --label digest || gh issue create --title "$(head -n 1 digest.md | sed 's/^# //')" --body-file digest.md
+
+      - name: Send Pro instant alert via Beehiiv
+        if: ${{ hashFiles('digest.md') != '' }}
+        env:
+          BEEHIIV_API_KEY: ${{ secrets.BEEHIIV_API_KEY }}
+          BEEHIIV_PUB_ID: ${{ secrets.BEEHIIV_PUB_ID }}
+          BEEHIIV_PRO_SEG_ID: ${{ secrets.BEEHIIV_PRO_SEG_ID }}
+          PRO_ALERT_TEST: ${{ inputs.force_digest == true && '1' || '0' }}
+        run: python3 scripts/pro_alert.py
