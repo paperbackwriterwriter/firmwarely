@@ -1,10 +1,8 @@
 {
- "generated": "2026-09-13T00:56:55+00:00",
+ "generated": "2026-09-13T01:06:44+00:00",
  "tracked": 19,
- "ok": 18,
- "failed": [
-  "eero-pro-6e"
- ],
+ "ok": 19,
+ "failed": [],
  "devices": [
   {
    "id": "ubiquiti-unifi-dream-machine-se",
@@ -23,7 +21,7 @@
      "released": "2026-09-09"
     }
    ],
-   "checked": "2026-09-13T00:56:55+00:00",
+   "checked": "2026-09-13T01:06:44+00:00",
    "source_status": "ok",
    "status": "update"
   },
@@ -44,7 +42,7 @@
      "released": "2026-08-12"
     }
    ],
-   "checked": "2026-09-13T00:56:55+00:00",
+   "checked": "2026-09-13T01:06:44+00:00",
    "source_status": "ok",
    "status": "update"
   },
@@ -65,7 +63,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T00:56:55+00:00",
+   "checked": "2026-09-13T01:06:44+00:00",
    "source_status": "ok",
    "status": "update"
   },
@@ -86,7 +84,7 @@
      "released": "2026-08-31"
     }
    ],
-   "checked": "2026-09-13T00:56:55+00:00",
+   "checked": "2026-09-13T01:06:44+00:00",
    "source_status": "ok",
    "status": "update"
   },
@@ -107,7 +105,7 @@
      "released": "2026-07-26"
     }
    ],
-   "checked": "2026-09-13T00:56:55+00:00",
+   "checked": "2026-09-13T01:06:44+00:00",
    "source_status": "ok",
    "status": "critical"
   },
@@ -128,7 +126,7 @@
      "released": "2026-07-30"
     }
    ],
-   "checked": "2026-09-13T00:56:55+00:00",
+   "checked": "2026-09-13T01:06:44+00:00",
    "source_status": "ok",
    "status": "update"
   },
@@ -149,7 +147,7 @@
      "released": "2026-08-25"
     }
    ],
-   "checked": "2026-09-13T00:56:55+00:00",
+   "checked": "2026-09-13T01:06:44+00:00",
    "source_status": "ok",
    "status": "update"
   },
@@ -170,7 +168,7 @@
      "released": "2026-07-19"
     }
    ],
-   "checked": "2026-09-13T00:56:55+00:00",
+   "checked": "2026-09-13T01:06:44+00:00",
    "source_status": "ok",
    "status": "current"
   },
@@ -195,7 +193,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T00:56:55+00:00",
+   "checked": "2026-09-13T01:06:44+00:00",
    "source_status": "ok",
    "status": "update"
   },
@@ -216,7 +214,7 @@
      "released": "2025-12-05"
     }
    ],
-   "checked": "2026-09-13T00:56:55+00:00",
+   "checked": "2026-09-13T01:06:44+00:00",
    "source_status": "ok",
    "status": "current"
   },
@@ -237,7 +235,7 @@
      "released": "2026-09-01"
     }
    ],
-   "checked": "2026-09-13T00:56:55+00:00",
+   "checked": "2026-09-13T01:06:44+00:00",
    "source_status": "ok",
    "status": "update"
   },
@@ -258,7 +256,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T00:56:55+00:00",
+   "checked": "2026-09-13T01:06:44+00:00",
    "source_status": "ok",
    "status": "critical"
   },
@@ -295,7 +293,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T00:56:55+00:00",
+   "checked": "2026-09-13T01:06:44+00:00",
    "source_status": "ok",
    "status": "update"
   },
@@ -306,8 +304,8 @@
    "category": "R",
    "tracked": true,
    "version": "3.0.0.4.388_24385",
-   "released": "2026-09-13",
-   "notes": "",
+   "released": "2026-04-17",
+   "notes": "This model was end of its life, and its firmware, utility, website, and manual will no longer be updated. For more details, please refer to https://www.asus.com/event/network/eol-product/ Security Fixes: Enhanced input validation and protection to reduce the risk of command injection and SQL inject…",
    "source_url": "https://www.asus.com/networking-iot-servers/wifi-routers/asus-wifi-routers/rt-ax88u/helpdesk_bios?model2Name=RT-AX88U",
    "product_url": null,
    "history": [
@@ -316,9 +314,9 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T00:56:55+00:00",
+   "checked": "2026-09-13T01:06:44+00:00",
    "source_status": "ok",
-   "status": "update"
+   "status": "current"
   },
   {
    "id": "asus-rt-ax86u-pro",
@@ -327,8 +325,8 @@
    "category": "R",
    "tracked": true,
    "version": "3.0.0.6.102_37436",
-   "released": "2026-09-13",
-   "notes": "",
+   "released": "2026-05-04",
+   "notes": "Security Fixes - Enhanced DNS name handling to address a potential memory issue that could occur in rare cases during name format conversion, improving system security and robustness. - Improved safeguards for execution modules to reduce the risk of substitution during certain processes.",
    "source_url": "https://www.asus.com/networking-iot-servers/wifi-routers/asus-wifi-routers/rt-ax86u-pro/helpdesk_bios?model2Name=RT-AX86U-Pro",
    "product_url": null,
    "history": [
@@ -337,9 +335,9 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T00:56:55+00:00",
+   "checked": "2026-09-13T01:06:44+00:00",
    "source_status": "ok",
-   "status": "update"
+   "status": "current"
   },
   {
    "id": "tp-link-archer-ax73",
@@ -379,15 +377,20 @@
    "model": "Eero Pro 6E",
    "category": "R",
    "tracked": true,
-   "version": null,
-   "released": null,
-   "notes": "",
-   "source_url": "https://support.eero.com/hc/en-us/articles/207908283-eeroOS-release-notes",
+   "version": "7.17.1",
+   "released": "2026-09-11",
+   "notes": "Fixed a stability issue with HomeKit Secure Router Fixed an issue with intermittent disconnects on Wi-Fi 7 eero networks Fixed an issue with noise floor measurement and reporting Performance and stability improvements",
+   "source_url": "https://eero.com/support/articles/eero-software-release-notes",
    "product_url": null,
-   "history": [],
-   "checked": "2026-09-13T00:56:55+00:00",
-   "source_status": "error: HTTPError: HTTP Error 404: Not Found",
-   "status": "pending"
+   "history": [
+    {
+     "version": "7.17.1",
+     "released": "2026-09-11"
+    }
+   ],
+   "checked": "2026-09-13T01:06:44+00:00",
+   "source_status": "ok",
+   "status": "update"
   },
   {
    "id": "synology-ds923-plus",
@@ -398,7 +401,7 @@
    "version": "7.4.1-90080",
    "released": "2026-09-13",
    "notes": "DSM release. See Synology's release notes for details.",
-   "source_url": "https://www.synology.com/api/support/findDownloadInfo?lang=en-us&product=DS923%2B&major=7&minor=2",
+   "source_url": "https://www.synology.com/en-us/releaseNote/DSM",
    "product_url": null,
    "history": [
     {
@@ -406,7 +409,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T00:56:55+00:00",
+   "checked": "2026-09-13T01:06:44+00:00",
    "source_status": "ok",
    "status": "update"
   },
@@ -419,7 +422,7 @@
    "version": "7.4.1-90080",
    "released": "2026-09-13",
    "notes": "DSM release. See Synology's release notes for details.",
-   "source_url": "https://www.synology.com/api/support/findDownloadInfo?lang=en-us&product=DS224%2B&major=7&minor=2",
+   "source_url": "https://www.synology.com/en-us/releaseNote/DSM",
    "product_url": null,
    "history": [
     {
@@ -427,7 +430,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T00:56:55+00:00",
+   "checked": "2026-09-13T01:06:44+00:00",
    "source_status": "ok",
    "status": "update"
   },
@@ -486,8 +489,8 @@
    "category": "S",
    "tracked": true,
    "version": "1978074000",
-   "released": "2020-04-30",
-   "notes": "",
+   "released": "2026-07-02",
+   "notes": "We’ve added support for our new products: Wired Wall Switches and Modules, Play table and floor lamps, and Candle bulbs. We’ve made several small changes behind the scenes to make your Hue Bridge V2 work even better.",
    "source_url": "https://www.philips-hue.com/en-us/support/release-notes/bridge",
    "product_url": null,
    "history": [
@@ -496,7 +499,7 @@
      "released": "2020-04-30"
     }
    ],
-   "checked": "2026-09-13T00:56:55+00:00",
+   "checked": "2026-09-13T01:06:44+00:00",
    "source_status": "ok",
    "status": "current"
   },
