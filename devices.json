@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-13T01:06:44+00:00",
+ "generated": "2026-09-13T01:36:34+00:00",
  "tracked": 19,
  "ok": 19,
  "failed": [],
@@ -21,8 +21,9 @@
      "released": "2026-09-09"
     }
    ],
-   "checked": "2026-09-13T01:06:44+00:00",
+   "checked": "2026-09-13T01:36:34+00:00",
    "source_status": "ok",
+   "eol": false,
    "status": "update"
   },
   {
@@ -42,8 +43,9 @@
      "released": "2026-08-12"
     }
    ],
-   "checked": "2026-09-13T01:06:44+00:00",
+   "checked": "2026-09-13T01:36:34+00:00",
    "source_status": "ok",
+   "eol": false,
    "status": "update"
   },
   {
@@ -63,8 +65,9 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T01:06:44+00:00",
+   "checked": "2026-09-13T01:36:34+00:00",
    "source_status": "ok",
+   "eol": false,
    "status": "update"
   },
   {
@@ -84,8 +87,9 @@
      "released": "2026-08-31"
     }
    ],
-   "checked": "2026-09-13T01:06:44+00:00",
+   "checked": "2026-09-13T01:36:34+00:00",
    "source_status": "ok",
+   "eol": false,
    "status": "update"
   },
   {
@@ -105,8 +109,9 @@
      "released": "2026-07-26"
     }
    ],
-   "checked": "2026-09-13T01:06:44+00:00",
+   "checked": "2026-09-13T01:36:34+00:00",
    "source_status": "ok",
+   "eol": false,
    "status": "critical"
   },
   {
@@ -126,8 +131,9 @@
      "released": "2026-07-30"
     }
    ],
-   "checked": "2026-09-13T01:06:44+00:00",
+   "checked": "2026-09-13T01:36:34+00:00",
    "source_status": "ok",
+   "eol": false,
    "status": "update"
   },
   {
@@ -147,8 +153,9 @@
      "released": "2026-08-25"
     }
    ],
-   "checked": "2026-09-13T01:06:44+00:00",
+   "checked": "2026-09-13T01:36:34+00:00",
    "source_status": "ok",
+   "eol": false,
    "status": "update"
   },
   {
@@ -168,8 +175,9 @@
      "released": "2026-07-19"
     }
    ],
-   "checked": "2026-09-13T01:06:44+00:00",
+   "checked": "2026-09-13T01:36:34+00:00",
    "source_status": "ok",
+   "eol": false,
    "status": "current"
   },
   {
@@ -193,8 +201,9 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T01:06:44+00:00",
+   "checked": "2026-09-13T01:36:34+00:00",
    "source_status": "ok",
+   "eol": false,
    "status": "update"
   },
   {
@@ -214,8 +223,9 @@
      "released": "2025-12-05"
     }
    ],
-   "checked": "2026-09-13T01:06:44+00:00",
+   "checked": "2026-09-13T01:36:34+00:00",
    "source_status": "ok",
+   "eol": false,
    "status": "current"
   },
   {
@@ -235,8 +245,9 @@
      "released": "2026-09-01"
     }
    ],
-   "checked": "2026-09-13T01:06:44+00:00",
+   "checked": "2026-09-13T01:36:34+00:00",
    "source_status": "ok",
+   "eol": false,
    "status": "update"
   },
   {
@@ -256,8 +267,9 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T01:06:44+00:00",
+   "checked": "2026-09-13T01:36:34+00:00",
    "source_status": "ok",
+   "eol": false,
    "status": "critical"
   },
   {
@@ -274,6 +286,7 @@
    "history": [],
    "checked": "2026-09-13T00:44:12+00:00",
    "source_status": "error: ValueError: version pattern not found on page",
+   "eol": false,
    "status": "pending"
   },
   {
@@ -293,8 +306,9 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T01:06:44+00:00",
+   "checked": "2026-09-13T01:36:34+00:00",
    "source_status": "ok",
+   "eol": false,
    "status": "update"
   },
   {
@@ -314,9 +328,10 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T01:06:44+00:00",
+   "checked": "2026-09-13T01:36:34+00:00",
    "source_status": "ok",
-   "status": "current"
+   "eol": true,
+   "status": "eol"
   },
   {
    "id": "asus-rt-ax86u-pro",
@@ -335,8 +350,9 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T01:06:44+00:00",
+   "checked": "2026-09-13T01:36:34+00:00",
    "source_status": "ok",
+   "eol": false,
    "status": "current"
   },
   {
@@ -353,6 +369,7 @@
    "history": [],
    "checked": null,
    "source_status": "pending",
+   "eol": false,
    "status": "pending"
   },
   {
@@ -369,6 +386,7 @@
    "history": [],
    "checked": null,
    "source_status": "pending",
+   "eol": false,
    "status": "pending"
   },
   {
@@ -388,8 +406,9 @@
      "released": "2026-09-11"
     }
    ],
-   "checked": "2026-09-13T01:06:44+00:00",
+   "checked": "2026-09-13T01:36:34+00:00",
    "source_status": "ok",
+   "eol": false,
    "status": "update"
   },
   {
@@ -409,8 +428,9 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T01:06:44+00:00",
+   "checked": "2026-09-13T01:36:34+00:00",
    "source_status": "ok",
+   "eol": false,
    "status": "update"
   },
   {
@@ -430,8 +450,9 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T01:06:44+00:00",
+   "checked": "2026-09-13T01:36:34+00:00",
    "source_status": "ok",
+   "eol": false,
    "status": "update"
   },
   {
@@ -448,6 +469,7 @@
    "history": [],
    "checked": null,
    "source_status": "pending",
+   "eol": false,
    "status": "pending"
   },
   {
@@ -464,6 +486,7 @@
    "history": [],
    "checked": null,
    "source_status": "pending",
+   "eol": false,
    "status": "pending"
   },
   {
@@ -480,6 +503,7 @@
    "history": [],
    "checked": null,
    "source_status": "pending",
+   "eol": false,
    "status": "pending"
   },
   {
@@ -499,8 +523,9 @@
      "released": "2020-04-30"
     }
    ],
-   "checked": "2026-09-13T01:06:44+00:00",
+   "checked": "2026-09-13T01:36:34+00:00",
    "source_status": "ok",
+   "eol": false,
    "status": "current"
   },
   {
@@ -517,6 +542,7 @@
    "history": [],
    "checked": null,
    "source_status": "pending",
+   "eol": false,
    "status": "pending"
   },
   {
@@ -533,6 +559,7 @@
    "history": [],
    "checked": null,
    "source_status": "pending",
+   "eol": false,
    "status": "pending"
   },
   {
@@ -549,6 +576,7 @@
    "history": [],
    "checked": null,
    "source_status": "pending",
+   "eol": false,
    "status": "pending"
   },
   {
@@ -565,6 +593,7 @@
    "history": [],
    "checked": null,
    "source_status": "pending",
+   "eol": false,
    "status": "pending"
   },
   {
@@ -581,6 +610,7 @@
    "history": [],
    "checked": null,
    "source_status": "pending",
+   "eol": false,
    "status": "pending"
   },
   {
@@ -597,6 +627,7 @@
    "history": [],
    "checked": null,
    "source_status": "pending",
+   "eol": false,
    "status": "pending"
   }
  ]
