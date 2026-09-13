@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-“”“Send digest.md to the Beehiiv “Pro” segment as an instant alert.
+‘’’Send digest.md to the Beehiiv Pro segment as an instant alert.
 
 Runs after fetch.py in the nightly workflow. Only does anything if digest.md
 exists (i.e. at least one tracked device changed version).
@@ -7,10 +7,10 @@ exists (i.e. at least one tracked device changed version).
 Env vars (set as GitHub repo secrets):
 BEEHIIV_API_KEY     - Beehiiv API key
 BEEHIIV_PUB_ID      - pub_…
-BEEHIIV_PRO_SEG_ID  - seg_… (the dynamic “Pro” segment)
+BEEHIIV_PRO_SEG_ID  - seg_… (the dynamic Pro segment)
 Optional:
 PRO_ALERT_TEST=1    - prefix the subject with [TEST]
-“””
+‘’’
 import html
 import json
 import os
@@ -21,7 +21,7 @@ import urllib.request
 DIGEST = “digest.md”
 
 def md_to_html(md: str) -> str:
-“”“Tiny markdown -> HTML for the digest (headings, bullets, paragraphs).”””
+# Tiny markdown to HTML for the digest (headings, bullets, paragraphs)
 out, in_list = [], False
 for raw in md.splitlines():
 line = raw.rstrip()
