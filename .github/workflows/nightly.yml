@@ -35,11 +35,14 @@ jobs:
             python3 scripts/fetch.py
           fi
 
-      - name: Commit devices.json if it changed
+      - name: Build device pages
+        run: python3 scripts/build_pages.py
+
+      - name: Commit devices.json and pages if they changed
         run: |
           git config user.name "firmwarely-bot"
           git config user.email "bot@firmwarely.com"
-          git add devices.json
+          git add devices.json devices sitemap.xml robots.txt
           if git diff --cached --quiet; then
             echo "No changes."
           else
