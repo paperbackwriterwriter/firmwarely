@@ -1,8 +1,11 @@
 {
- "generated": "2026-09-13T17:21:13+00:00",
- "tracked": 19,
- "ok": 19,
- "failed": [],
+ "generated": "2026-09-13T17:32:19+00:00",
+ "tracked": 35,
+ "ok": 33,
+ "failed": [
+  "mikrotik-routeros",
+  "jellyfin-server"
+ ],
  "devices": [
   {
    "id": "ubiquiti-unifi-dream-machine-se",
@@ -21,7 +24,7 @@
      "released": "2026-09-09"
     }
    ],
-   "checked": "2026-09-13T17:21:13+00:00",
+   "checked": "2026-09-13T17:32:19+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -43,7 +46,7 @@
      "released": "2026-08-12"
     }
    ],
-   "checked": "2026-09-13T17:21:13+00:00",
+   "checked": "2026-09-13T17:32:19+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -65,7 +68,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T17:21:13+00:00",
+   "checked": "2026-09-13T17:32:19+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -87,7 +90,7 @@
      "released": "2026-08-31"
     }
    ],
-   "checked": "2026-09-13T17:21:13+00:00",
+   "checked": "2026-09-13T17:32:19+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -109,7 +112,7 @@
      "released": "2026-07-26"
     }
    ],
-   "checked": "2026-09-13T17:21:13+00:00",
+   "checked": "2026-09-13T17:32:19+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "critical"
@@ -131,7 +134,7 @@
      "released": "2026-07-30"
     }
    ],
-   "checked": "2026-09-13T17:21:13+00:00",
+   "checked": "2026-09-13T17:32:19+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -153,7 +156,7 @@
      "released": "2026-08-25"
     }
    ],
-   "checked": "2026-09-13T17:21:13+00:00",
+   "checked": "2026-09-13T17:32:19+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -175,7 +178,7 @@
      "released": "2026-07-19"
     }
    ],
-   "checked": "2026-09-13T17:21:13+00:00",
+   "checked": "2026-09-13T17:32:19+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -201,7 +204,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T17:21:13+00:00",
+   "checked": "2026-09-13T17:32:19+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -223,7 +226,7 @@
      "released": "2025-12-05"
     }
    ],
-   "checked": "2026-09-13T17:21:13+00:00",
+   "checked": "2026-09-13T17:32:19+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -245,7 +248,7 @@
      "released": "2026-09-01"
     }
    ],
-   "checked": "2026-09-13T17:21:13+00:00",
+   "checked": "2026-09-13T17:32:19+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -267,7 +270,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T17:21:13+00:00",
+   "checked": "2026-09-13T17:32:19+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -306,7 +309,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T17:21:13+00:00",
+   "checked": "2026-09-13T17:32:19+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -328,7 +331,7 @@
      "released": "2026-04-17"
     }
    ],
-   "checked": "2026-09-13T17:21:13+00:00",
+   "checked": "2026-09-13T17:32:19+00:00",
    "source_status": "ok",
    "eol": true,
    "status": "eol"
@@ -350,7 +353,7 @@
      "released": "2026-05-04"
     }
    ],
-   "checked": "2026-09-13T17:21:13+00:00",
+   "checked": "2026-09-13T17:32:19+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -406,7 +409,7 @@
      "released": "2026-09-11"
     }
    ],
-   "checked": "2026-09-13T17:21:13+00:00",
+   "checked": "2026-09-13T17:32:19+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -428,7 +431,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T17:21:13+00:00",
+   "checked": "2026-09-13T17:32:19+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -450,7 +453,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T17:21:13+00:00",
+   "checked": "2026-09-13T17:32:19+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -523,7 +526,7 @@
      "released": "2026-07-02"
     }
    ],
-   "checked": "2026-09-13T17:21:13+00:00",
+   "checked": "2026-09-13T17:32:19+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -629,6 +632,348 @@
    "source_status": "pending",
    "eol": false,
    "status": "pending"
+  },
+  {
+   "id": "pi-hole",
+   "brand": "Pi-hole",
+   "model": "Pi-hole (network ad blocker)",
+   "category": "R",
+   "tracked": true,
+   "version": "6.4.3",
+   "released": "2026-07-06",
+   "notes": "## Security Fixes - [pi-hole/pi-hole/security/advisories/GHSA-h8w9-qx2v-wrww](https://github.com/pi-hole/pi-hole/security/advisories/GHSA-h8w9-qx2v-wrww) — Local privilege escalation from pihole user to root via /etc/pihole/logrotate (High) reported by [supperhellokitty20](https://github.com/supper…",
+   "source_url": "https://github.com/pi-hole/pi-hole/releases/tag/v6.4.3",
+   "product_url": "https://pi-hole.net/",
+   "history": [
+    {
+     "version": "6.4.3",
+     "released": "2026-07-06"
+    }
+   ],
+   "checked": "2026-09-13T17:32:19+00:00",
+   "source_status": "ok",
+   "eol": false,
+   "status": "current"
+  },
+  {
+   "id": "adguard-home",
+   "brand": "AdGuard",
+   "model": "AdGuard Home",
+   "category": "R",
+   "tracked": true,
+   "version": "0.107.79",
+   "released": "2026-08-18",
+   "notes": "It’s not always the big issues: sometimes what you need is a few fixes and tweaks to pump up the overall stability 🔩 ## Full changelog See also the [v0.107.79 GitHub milestone][ms-v0.107.79]. ### Security - Go version has been updated to prevent the possibility of exploiting the Go vulnerabilities …",
+   "source_url": "https://github.com/AdguardTeam/AdGuardHome/releases/tag/v0.107.79",
+   "product_url": "https://adguard.com/adguard-home/overview.html",
+   "history": [
+    {
+     "version": "0.107.79",
+     "released": "2026-08-18"
+    }
+   ],
+   "checked": "2026-09-13T17:32:19+00:00",
+   "source_status": "ok",
+   "eol": false,
+   "status": "critical"
+  },
+  {
+   "id": "tailscale",
+   "brand": "Tailscale",
+   "model": "Tailscale client",
+   "category": "R",
+   "tracked": true,
+   "version": "1.102.4",
+   "released": "2026-09-10",
+   "notes": "Please refer to the changelog available at https://tailscale.com/changelog",
+   "source_url": "https://github.com/tailscale/tailscale/releases/tag/v1.102.4",
+   "product_url": "https://tailscale.com/",
+   "history": [
+    {
+     "version": "1.102.4",
+     "released": "2026-09-10"
+    }
+   ],
+   "checked": "2026-09-13T17:32:19+00:00",
+   "source_status": "ok",
+   "eol": false,
+   "status": "update"
+  },
+  {
+   "id": "opnsense-firewall",
+   "brand": "OPNsense",
+   "model": "Firewall (community edition)",
+   "category": "R",
+   "tracked": true,
+   "version": "26.7.3",
+   "released": "2026-08-27",
+   "notes": "26.7.3",
+   "source_url": "https://github.com/opnsense/core/releases/tag/26.7.3",
+   "product_url": "https://opnsense.org/",
+   "history": [
+    {
+     "version": "26.7.3",
+     "released": "2026-08-27"
+    }
+   ],
+   "checked": "2026-09-13T17:32:19+00:00",
+   "source_status": "ok",
+   "eol": false,
+   "status": "update"
+  },
+  {
+   "id": "mikrotik-routeros",
+   "brand": "MikroTik",
+   "model": "RouterOS 7 (stable)",
+   "category": "R",
+   "tracked": true,
+   "version": null,
+   "released": null,
+   "notes": "",
+   "source_url": "https://mikrotik.com/download/changelogs",
+   "product_url": "https://mikrotik.com/products",
+   "history": [],
+   "checked": "2026-09-13T17:32:19+00:00",
+   "source_status": "error: ValueError: version pattern not found on page",
+   "eol": false,
+   "status": "pending"
+  },
+  {
+   "id": "esphome",
+   "brand": "ESPHome",
+   "model": "ESP32 / ESP8266 device firmware",
+   "category": "S",
+   "tracked": true,
+   "version": "2026.8.2",
+   "released": "2026-08-31",
+   "notes": "- [espidf] Always reconfigure after component discovery [esphome#18730](https://github.com/esphome/esphome/pull/18730) by [](https://github.com/bdraco) - [gpio] Fix one_wire reset busy-waiting with interrupts off when delay wraps [esphome#18733](https://github.com/esphome/esphome/pull/18733) by [](…",
+   "source_url": "https://github.com/esphome/esphome/releases/tag/2026.8.2",
+   "product_url": "https://esphome.io/",
+   "history": [
+    {
+     "version": "2026.8.2",
+     "released": "2026-08-31"
+    }
+   ],
+   "checked": "2026-09-13T17:32:19+00:00",
+   "source_status": "ok",
+   "eol": false,
+   "status": "update"
+  },
+  {
+   "id": "home-assistant-core",
+   "brand": "Home Assistant",
+   "model": "Core (monthly release)",
+   "category": "S",
+   "tracked": true,
+   "version": "2026.9.2",
+   "released": "2026-09-11",
+   "notes": "- Normalize Hive auth username before login ([] - [#​168827]) ([hive docs]) - Don't mutate the module level Roomba SENSORS list ([] - [#​181107]) ([roomba docs]) - Fix Openhome players becoming unavailable between polls ([] - [#​181238]) ([openhome docs]) (dependency) - Clear webostv source when th…",
+   "source_url": "https://github.com/home-assistant/core/releases/tag/2026.9.2",
+   "product_url": "https://www.home-assistant.io/",
+   "history": [
+    {
+     "version": "2026.9.2",
+     "released": "2026-09-11"
+    }
+   ],
+   "checked": "2026-09-13T17:32:19+00:00",
+   "source_status": "ok",
+   "eol": false,
+   "status": "update"
+  },
+  {
+   "id": "zigbee2mqtt",
+   "brand": "Zigbee2MQTT",
+   "model": "Zigbee bridge software",
+   "category": "S",
+   "tracked": true,
+   "version": "2.14.1",
+   "released": "2026-09-03",
+   "notes": "# Notes - This hotfix release fixes several issues where cover states were inverted (e.g. #​33004, #​33014 and #​33010) # Fixes - [#​33006](https://github.com/Koenkk/zigbee2mqtt/issues/33006) Home Assistant: add state class for formaldehyde () - [#​33003](https://github.com/Koenkk/zigbee2mqtt/issue…",
+   "source_url": "https://github.com/Koenkk/zigbee2mqtt/releases/tag/2.14.1",
+   "product_url": "https://www.zigbee2mqtt.io/",
+   "history": [
+    {
+     "version": "2.14.1",
+     "released": "2026-09-03"
+    }
+   ],
+   "checked": "2026-09-13T17:32:19+00:00",
+   "source_status": "ok",
+   "eol": false,
+   "status": "update"
+  },
+  {
+   "id": "frigate-nvr",
+   "brand": "Frigate",
+   "model": "NVR (camera AI detection)",
+   "category": "S",
+   "tracked": true,
+   "version": "0.18.0",
+   "released": "2026-09-12",
+   "notes": "## Images - [ghcr.io/blakeblackshear/frigate:0.18.0](https://github.com/blakeblackshear/frigate/pkgs/container/frigate/1216280963?tag=0.18.0) - [ghcr.io/blakeblackshear/frigate:0.18.0-standard-arm64](https://github.com/blakeblackshear/frigate/pkgs/container/frigate/1216277591?tag=0.18.0-standard-ar…",
+   "source_url": "https://github.com/blakeblackshear/frigate/releases/tag/v0.18.0",
+   "product_url": "https://frigate.video/",
+   "history": [
+    {
+     "version": "0.18.0",
+     "released": "2026-09-12"
+    }
+   ],
+   "checked": "2026-09-13T17:32:19+00:00",
+   "source_status": "ok",
+   "eol": false,
+   "status": "update"
+  },
+  {
+   "id": "marlin-3d-printer",
+   "brand": "Marlin",
+   "model": "3D printer firmware (Ender, etc.)",
+   "category": "M",
+   "tracked": true,
+   "version": "2.1.2",
+   "released": "2026-06-24",
+   "notes": "This is a minor release patching miscellaneous issues. Example Configurations for many machines are posted at: https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.8 Binaries of this release will be available at: https://github.com/MarlinFirmware/MarlinBuilds/tree/release-2.1.2.8 ###…",
+   "source_url": "https://github.com/MarlinFirmware/Marlin/releases/tag/2.1.2.8",
+   "product_url": "https://marlinfw.org/",
+   "history": [
+    {
+     "version": "2.1.2",
+     "released": "2026-06-24"
+    }
+   ],
+   "checked": "2026-09-13T17:32:19+00:00",
+   "source_status": "ok",
+   "eol": false,
+   "status": "current"
+  },
+  {
+   "id": "octoprint",
+   "brand": "OctoPrint",
+   "model": "3D printer controller",
+   "category": "M",
+   "tracked": true,
+   "version": "1.11.8",
+   "released": "2026-06-23",
+   "notes": "## ✋ Heads-ups **The heads-ups from previous 1.11.x releases still apply**, please read their release notes as well for a full picture of what you should be aware of and what changed! ## ⛈ Issues while updating? On every new OctoPrint release we see some people run into the same issues with outdate…",
+   "source_url": "https://github.com/OctoPrint/OctoPrint/releases/tag/1.11.8",
+   "product_url": "https://octoprint.org/",
+   "history": [
+    {
+     "version": "1.11.8",
+     "released": "2026-06-23"
+    }
+   ],
+   "checked": "2026-09-13T17:32:19+00:00",
+   "source_status": "ok",
+   "eol": false,
+   "status": "current"
+  },
+  {
+   "id": "libreelec",
+   "brand": "LibreELEC",
+   "model": "Media player OS (Raspberry Pi)",
+   "category": "M",
+   "tracked": true,
+   "version": "12.2.1",
+   "released": "2025-10-31",
+   "notes": "## What's Changed * [le12.2] syncthing: update to 2.0.1 and addon (1) * [le12.2] system-tools: fix missing zstd library and addon (1) * mesa: update to 25.1.8 * [le12.2] tools/change_addon_version: backport from master * [le12.2] scripts/get_archive: allow fallback to curl if wget is missing * [le1…",
+   "source_url": "https://github.com/LibreELEC/LibreELEC.tv/releases/tag/12.2.1",
+   "product_url": "https://libreelec.tv/",
+   "history": [
+    {
+     "version": "12.2.1",
+     "released": "2025-10-31"
+    }
+   ],
+   "checked": "2026-09-13T17:32:19+00:00",
+   "source_status": "ok",
+   "eol": false,
+   "status": "current"
+  },
+  {
+   "id": "kodi",
+   "brand": "Kodi",
+   "model": "Media center",
+   "category": "M",
+   "tracked": true,
+   "version": "21.3",
+   "released": "2025-10-31",
+   "notes": "![splash](https://github.com/user-attachments/assets/dfc4823b-72a7-4abc-9858-d3d83c51577a) ## Release Summary Major user-facing changes include: **Video** * Added HDR support on Xbox One * Fixed Blu-ray playback on Linux * Fixed audio/subtitle issues when resuming Blu-rays * Fixed handling of HDR10…",
+   "source_url": "https://github.com/xbmc/xbmc/releases/tag/21.3-Omega",
+   "product_url": "https://kodi.tv/",
+   "history": [
+    {
+     "version": "21.3",
+     "released": "2025-10-31"
+    }
+   ],
+   "checked": "2026-09-13T17:32:19+00:00",
+   "source_status": "ok",
+   "eol": false,
+   "status": "current"
+  },
+  {
+   "id": "jellyfin-server",
+   "brand": "Jellyfin",
+   "model": "Media server",
+   "category": "N",
+   "tracked": true,
+   "version": null,
+   "released": null,
+   "notes": "",
+   "source_url": null,
+   "product_url": "https://jellyfin.org/",
+   "history": [],
+   "checked": "2026-09-13T17:32:19+00:00",
+   "source_status": "error: ValueError: no version in release title/tag: 12.0 v12.0",
+   "eol": false,
+   "status": "pending"
+  },
+  {
+   "id": "immich-server",
+   "brand": "Immich",
+   "model": "Photo backup server",
+   "category": "N",
+   "tracked": true,
+   "version": "3.2.0",
+   "released": "2026-09-10",
+   "notes": "# v3.2.0 Welcome to Immich `v3.2.0`! This release includes many new features as well as the usual collection of bug fixes and cleanups. Keep reading below for a list of highlights. ## Highlights * Docker compose builder * Revamped search UI (web) * Search API v2 (server) * View own people in shared…",
+   "source_url": "https://github.com/immich-app/immich/releases/tag/v3.2.0",
+   "product_url": "https://immich.app/",
+   "history": [
+    {
+     "version": "3.2.0",
+     "released": "2026-09-10"
+    }
+   ],
+   "checked": "2026-09-13T17:32:19+00:00",
+   "source_status": "ok",
+   "eol": false,
+   "status": "update"
+  },
+  {
+   "id": "nextcloud-server",
+   "brand": "Nextcloud",
+   "model": "Nextcloud server",
+   "category": "N",
+   "tracked": true,
+   "version": "32.0.15",
+   "released": "2026-09-10",
+   "notes": "https://github.com/nextcloud-releases/server/releases/tag/v32.0.15",
+   "source_url": "https://github.com/nextcloud/server/releases/tag/v32.0.15",
+   "product_url": "https://nextcloud.com/",
+   "history": [
+    {
+     "version": "32.0.15",
+     "released": "2026-09-10"
+    }
+   ],
+   "checked": "2026-09-13T17:32:19+00:00",
+   "source_status": "ok",
+   "eol": false,
+   "status": "update"
   }
  ]
 }
