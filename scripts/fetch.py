@@ -21,6 +21,7 @@ Rules:
 import json, re, sys, html, time, urllib.request, urllib.error
 from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
+from zoneinfo import ZoneInfo
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
@@ -31,7 +32,7 @@ OFFLINE = "--offline" in sys.argv
 FORCE_DIGEST = "--force-digest" in sys.argv   # write a digest of every tracked device even if nothing changed
 DIGEST = ROOT / "digest.md"
 UA = "Mozilla/5.0 (compatible; FirmwarelyBot/1.0; +https://firmwarely.com)"
-TODAY = datetime.now(timezone.utc).date()
+TODAY = datetime.now(ZoneInfo("America/Chicago")).date()   # dates in the site/digest are US Central
 NOW = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
 
 SECURITY = re.compile(
