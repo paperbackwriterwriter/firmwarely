@@ -24,6 +24,14 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install Playwright (headless Chromium)
+        run: |
+          pip install playwright
+          python3 -m playwright install --with-deps chromium
+
+      - name: Render JS-only pages
+        run: python3 scripts/fetch_browser.py
+
       - name: Fetch latest firmware versions
         env:
           BEEHIIV_API_KEY: ${{ secrets.BEEHIIV_API_KEY }}
@@ -47,6 +55,7 @@ jobs:
             echo "No changes."
           else
             git commit -m "nightly: update devices.json ($(date -u +%Y-%m-%d))"
+            git pull --rebase origin main
             git push
           fi
 
