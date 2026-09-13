@@ -42,7 +42,7 @@ jobs:
         run: |
           git config user.name "firmwarely-bot"
           git config user.email "bot@firmwarely.com"
-          git add devices.json devices sitemap.xml robots.txt
+          git add devices.json devices sitemap.xml robots.txt pro legal
           if git diff --cached --quiet; then
             echo "No changes."
           else
