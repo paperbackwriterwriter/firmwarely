@@ -49,7 +49,7 @@ def styles():
     s = (ROOT / "index.html").read_text()
     m = re.search(r"<style>(.*?)</style>", s, re.S)
     return (m.group(1) if m else "") + """
-  .crumbs{font-family:var(--mono);font-size:.8rem;color:var(--muted);margin-bottom:1.25rem}
+  .crumbs{font-family:var(--mono);font-size:.8rem;color:var(--muted);margin:1.5rem 0 .5rem}
   .crumbs a{color:var(--muted)}
   .dev{display:grid;grid-template-columns:1fr;gap:2rem;padding-top:2rem}
   @media(min-width:900px){.dev{grid-template-columns:2fr 1fr}}
@@ -174,7 +174,9 @@ def device_page(d):
     extra = f'<script type="application/ld+json">{json.dumps(ld)}</script>'
 
     notes = d.get("notes") or ""
-    hist = d.get("history") or []
+    hist = list(d.get("history") or [])
+    if hist and hist[0].get("version") == d.get("version") and d.get("released"):
+        hist[0] = {**hist[0], "released": d["released"]}
     rows = "".join(f"<tr><td>{esc(h['version'])}</td><td>{fmt(h.get('released'))}</td></tr>" for h in hist[:6]) \
            or (f"<tr><td>{esc(d['version'])}</td><td>{fmt(d.get('released'))}</td></tr>" if live else "")
 
@@ -185,7 +187,7 @@ def device_page(d):
   <div class="dev">
     <div>
       <h1 class="dev-h">{esc(name)} firmware</h1>
-      <span class="status {d['status']}">● {LABEL.get(d['status'], d['status'])}</span>
+      <span class="status {d['status']}">{LABEL.get(d['status'], d['status'])}</span>
       <div class="card" style="margin-top:1.25rem">
         <dl class="kv">
           <dt>Latest firmware</dt><dd>{esc(d['version']) if live else "—"}</dd>
