@@ -1,0 +1,289 @@
+{
+ "_readme": "Each entry is one device. type: 'feed' (RSS/Atom), 'html' (regex over a page), or 'manual' (catalog placeholder, not tracked yet). item_match filters feed items by title. version_regex must have one capture group. Categories: R routers, N NAS, S smart home, C consoles/drones/e-bikes, M makers/open firmware. Optional: skip_match (regex of titles to ignore, default skips rc/beta/alpha), date_regex (html only, one capture group). type 'github' uses the GitHub API latest-release endpoint (stable only): set repo: 'owner/name'. Optional html fields: notes_regex (one group, DOTALL), page_url (human link to show instead of the fetched url). In date_regex/notes_regex, the literal token {version} is replaced with the matched version so they anchor to the right entry.",
+ "devices": [
+  {
+   "id": "ubiquiti-unifi-dream-machine-se",
+   "brand": "Ubiquiti",
+   "model": "UniFi Dream Machine (UDM / SE / Pro)",
+   "category": "R",
+   "type": "feed",
+   "url": "https://community.ui.com/rss/releases/UniFi-OS-Dream-Machines/b0f0a740-021e-4027-a778-ceba983be74b",
+   "item_match": "UniFi OS - Dream Machines \\d",
+   "product_url": "https://store.ui.com/us/en/products/udm-se"
+  },
+  {
+   "id": "ubiquiti-unifi-protect-application",
+   "brand": "Ubiquiti",
+   "model": "UniFi Protect (NVR application)",
+   "category": "S",
+   "type": "feed",
+   "url": "https://community.ui.com/rss/releases/UniFi-Protect/aada5f38-35d4-4525-9235-b14bd320e4d0",
+   "item_match": "UniFi Protect Application \\d",
+   "product_url": "https://store.ui.com/us/en/products/uvc-g5-bullet"
+  },
+  {
+   "id": "ubiquiti-unifi-network-application",
+   "brand": "Ubiquiti",
+   "model": "UniFi Network Application",
+   "category": "R",
+   "type": "feed",
+   "url": "https://community.ui.com/rss/releases/UniFi-Network-Controller/e6712595-81bb-4829-8e42-9e2630fabcfe",
+   "item_match": "UniFi Network Application \\d"
+  },
+  {
+   "id": "ubiquiti-unifi-access-points",
+   "brand": "Ubiquiti",
+   "model": "UniFi Access Points & Switches (device firmware)",
+   "category": "R",
+   "type": "feed",
+   "url": "https://community.ui.com/rss/releases/UniFi-Access-Point-Switch-LTE/9fc3b2fa-9e73-449a-924f-470e79884470",
+   "item_match": "\\d+\\.\\d+\\.\\d+"
+  },
+  {
+   "id": "openwrt-router",
+   "brand": "OpenWrt",
+   "model": "Router firmware (stable)",
+   "category": "R",
+   "type": "feed",
+   "url": "https://github.com/openwrt/openwrt/releases.atom",
+   "item_match": "^v?\\d+\\.\\d+\\.\\d+$",
+   "version_regex": "v?(\\d+\\.\\d+\\.\\d+)"
+  },
+  {
+   "id": "home-assistant-os",
+   "brand": "Home Assistant",
+   "model": "Operating System (Green / Yellow)",
+   "category": "S",
+   "type": "github",
+   "version_regex": "(\\d+\\.\\d+(?:\\.\\d+)?)",
+   "product_url": "https://www.home-assistant.io/green/",
+   "repo": "home-assistant/operating-system"
+  },
+  {
+   "id": "tasmota-open-firmware",
+   "brand": "Tasmota",
+   "model": "Smart plug & switch firmware",
+   "category": "S",
+   "type": "feed",
+   "url": "https://github.com/arendst/Tasmota/releases.atom",
+   "item_match": "Tasmota v\\d",
+   "version_regex": "v(\\d+\\.\\d+\\.\\d+)"
+  },
+  {
+   "id": "wled-controller",
+   "brand": "WLED",
+   "model": "LED controller firmware",
+   "category": "S",
+   "type": "feed",
+   "url": "https://github.com/wled/WLED/releases.atom",
+   "item_match": "^WLED \\d|^v?\\d",
+   "version_regex": "(\\d+\\.\\d+\\.\\d+)"
+  },
+  {
+   "id": "prusa-mk4-core-one",
+   "brand": "Prusa",
+   "model": "MK4 / MK4S / Core One (Buddy firmware)",
+   "category": "M",
+   "type": "feed",
+   "url": "https://github.com/prusa3d/Prusa-Firmware-Buddy/releases.atom",
+   "item_match": "^\\d+\\.\\d+\\.\\d+",
+   "version_regex": "(\\d+\\.\\d+\\.\\d+)",
+   "product_url": "https://www.prusa3d.com/product/original-prusa-mk4s-kit/"
+  },
+  {
+   "id": "flipper-zero",
+   "brand": "Flipper",
+   "model": "Flipper Zero",
+   "category": "M",
+   "type": "feed",
+   "url": "https://github.com/flipperdevices/flipperzero-firmware/releases.atom",
+   "item_match": "^\\d+\\.\\d+(\\.\\d+)?$",
+   "version_regex": "(\\d+\\.\\d+(?:\\.\\d+)?)",
+   "product_url": "https://shop.flipperzero.one/"
+  },
+  {
+   "id": "meshtastic-radio",
+   "brand": "Meshtastic",
+   "model": "Radio firmware (Heltec, RAK, T-Beam)",
+   "category": "M",
+   "type": "feed",
+   "url": "https://github.com/meshtastic/firmware/releases.atom",
+   "item_match": "\\d+\\.\\d+\\.\\d+",
+   "version_regex": "v?(\\d+\\.\\d+\\.\\d+(?:\\.[0-9a-f]+)?)",
+   "skip_match": "alpha"
+  },
+  {
+   "id": "sony-playstation-5",
+   "brand": "Sony",
+   "model": "PlayStation 5",
+   "category": "C",
+   "type": "html",
+   "url": "https://www.playstation.com/en-us/support/hardware/ps5/system-software-info/",
+   "version_regex": "Version:\\s*(\\d{2}\\.\\d{2}-\\d{2}\\.\\d{2}\\.\\d{2})",
+   "notes": "PS5 system software. Sony describes most releases as improving system performance and security.",
+   "product_url": "https://direct.playstation.com/en-us/consoles"
+  },
+  {
+   "id": "microsoft-xbox-series-x",
+   "brand": "Microsoft",
+   "model": "Xbox Series X|S",
+   "category": "C",
+   "type": "manual",
+   "product_url": "https://www.xbox.com/en-US/consoles",
+   "_note": "support.xbox.com is a JavaScript app; needs a headless browser to read. Revisit."
+  },
+  {
+   "id": "nintendo-switch",
+   "brand": "Nintendo",
+   "model": "Switch",
+   "category": "C",
+   "type": "html",
+   "url": "https://en-americas-support.nintendo.com/app/answers/detail/a_id/22525",
+   "version_regex": "[Vv]er(?:sion)?\\.? ?(\\d+\\.\\d+\\.\\d+)",
+   "notes": "Nintendo Switch system update. Nintendo usually lists these as stability improvements."
+  },
+  {
+   "id": "asus-rt-ax88u",
+   "brand": "ASUS",
+   "model": "RT-AX88U",
+   "category": "R",
+   "type": "html",
+   "url": "https://www.asus.com/networking-iot-servers/wifi-routers/asus-wifi-routers/rt-ax88u/helpdesk_bios?model2Name=RT-AX88U",
+   "version_regex": "Version (3\\.0\\.0\\.\\d+[._]\\d+(?:_\\d+)?)",
+   "date_regex": "Version {version}.{0,80}?(\\d{4}[/-]\\d{2}[/-]\\d{2})",
+   "notes_regex": "Version {version}.{0,80}?\\d{4}[/-]\\d{2}[/-]\\d{2}\\s*(?:SHA-?256\\s*[:：]\\s*[0-9A-Fa-f]{64}\\s*)?(.{15,900}?)\\s*(?:Downloaded|DOWNLOAD)"
+  },
+  {
+   "id": "asus-rt-ax86u-pro",
+   "brand": "ASUS",
+   "model": "RT-AX86U Pro",
+   "category": "R",
+   "type": "html",
+   "url": "https://www.asus.com/networking-iot-servers/wifi-routers/asus-wifi-routers/rt-ax86u-pro/helpdesk_bios?model2Name=RT-AX86U-Pro",
+   "version_regex": "Version (3\\.0\\.0\\.\\d+[._]\\d+(?:_\\d+)?)",
+   "date_regex": "Version {version}.{0,80}?(\\d{4}[/-]\\d{2}[/-]\\d{2})",
+   "notes_regex": "Version {version}.{0,80}?\\d{4}[/-]\\d{2}[/-]\\d{2}\\s*(?:SHA-?256\\s*[:：]\\s*[0-9A-Fa-f]{64}\\s*)?(.{15,900}?)\\s*(?:Downloaded|DOWNLOAD)"
+  },
+  {
+   "id": "tp-link-archer-ax73",
+   "brand": "TP-Link",
+   "model": "Archer AX73",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "netgear-nighthawk-rax50",
+   "brand": "Netgear",
+   "model": "Nighthawk RAX50",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "eero-pro-6e",
+   "brand": "Eero",
+   "model": "Eero Pro 6E",
+   "category": "R",
+   "type": "html",
+   "url": "https://eero.com/support/articles/eero-software-release-notes",
+   "version_regex": "eeroOS:?\\s*v?(\\d+\\.\\d+\\.\\d+)",
+   "date_regex": "eeroOS:?\\s*v?{version}\\s*-?\\s*\\**\\s*\\*?Released ([A-Z][a-z]+ \\d{1,2}, \\d{4})",
+   "notes_regex": "eeroOS:?\\s*v?{version}.{0,60}?Released [A-Z][a-z]+ \\d{1,2}, \\d{4}\\s*\\**\\s*(.+?)\\s*(?:Update file size|eeroOS:)"
+  },
+  {
+   "id": "synology-ds923-plus",
+   "brand": "Synology",
+   "model": "DiskStation DS923+",
+   "category": "N",
+   "type": "html",
+   "url": "https://www.synology.com/api/support/findDownloadInfo?lang=en-us&product=DS923%2B&major=7&minor=2",
+   "page_url": "https://www.synology.com/en-us/releaseNote/DSM",
+   "version_regex": "\"version\"\\s*:\\s*\"(7\\.\\d[\\d.]*(?:-\\d+)?)\"",
+   "notes": "DSM release. See Synology's release notes for details."
+  },
+  {
+   "id": "synology-ds224-plus",
+   "brand": "Synology",
+   "model": "DiskStation DS224+",
+   "category": "N",
+   "type": "html",
+   "url": "https://www.synology.com/api/support/findDownloadInfo?lang=en-us&product=DS224%2B&major=7&minor=2",
+   "page_url": "https://www.synology.com/en-us/releaseNote/DSM",
+   "version_regex": "\"version\"\\s*:\\s*\"(7\\.\\d[\\d.]*(?:-\\d+)?)\"",
+   "notes": "DSM release. See Synology's release notes for details."
+  },
+  {
+   "id": "qnap-ts-464",
+   "brand": "QNAP",
+   "model": "TS-464",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "wd-my-cloud-ex2-ultra",
+   "brand": "Western Digital",
+   "model": "My Cloud EX2 Ultra",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "reolink-rlc-810a",
+   "brand": "Reolink",
+   "model": "RLC-810A",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "philips-hue-bridge",
+   "brand": "Philips Hue",
+   "model": "Bridge (v2)",
+   "category": "S",
+   "type": "html",
+   "url": "https://www.philips-hue.com/en-us/support/release-notes/bridge",
+   "version_regex": "Software version:?\\s*(\\d{10})",
+   "date_regex": "([A-Z][a-z]{2,8}\\.? \\d{1,2}, \\d{4})\\s*\\**\\s*(?:Bridge v2 )?Software version:?\\s*{version}",
+   "notes_regex": "Software version:?\\s*{version}\\s*\\**\\s*(.+?)\\s*(?:We’ll start|We'll start|[A-Z][a-z]{2,8}\\.? \\d{1,2}, \\d{4}\\s*\\**\\s*(?:Bridge v2 )?Software version)"
+  },
+  {
+   "id": "ring-video-doorbell-pro-2",
+   "brand": "Amazon",
+   "model": "Ring Video Doorbell Pro 2",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "aqara-hub-m3",
+   "brand": "Aqara",
+   "model": "Hub M3",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "dji-mini-4-pro",
+   "brand": "DJI",
+   "model": "Mini 4 Pro",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "dji-air-3s",
+   "brand": "DJI",
+   "model": "Air 3S",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "specialized-turbo-levo-sl",
+   "brand": "Specialized",
+   "model": "Turbo Levo SL (Gen 2)",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "rad-power-radrunner-3-plus",
+   "brand": "Rad Power",
+   "model": "RadRunner 3 Plus",
+   "category": "C",
+   "type": "manual"
+  }
+ ]
+}
