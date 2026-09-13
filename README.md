@@ -25,7 +25,21 @@ Setup (one time), in Vercel → Project → Settings → Environment Variables:
 Then redeploy. Subscribers are tagged `utm_campaign` = free or pro. If you create a custom field named
 `devices` in Beehiiv (Audience → Subscribers → Custom fields), the devices they typed are stored there too.
 
-## Device data
+## Device data (nightly pipeline)
 
-`DEVICES` near the bottom of `index.html` is sample data and the catalog shows a "preview data" notice.
-Phase 2 replaces it with a nightly scraper and generated device pages.
+- `sources.json` — the watch list. One entry per device: where its release notes live and how to read them.
+- `scripts/fetch.py` — checks every tracked source and writes `devices.json`. Standard library only.
+- `.github/workflows/nightly.yml` — runs the fetcher at 3:15 AM Central every night (and on demand from the
+  Actions tab → Nightly firmware check → Run workflow) and commits `devices.json` if anything changed.
+  Each commit triggers a Vercel redeploy, so the site is always current.
+- `index.html` fetches `/devices.json` on load; if that fails it falls back to the `SEED` sample data.
+
+Adding a device: add an entry to `sources.json`.
+- `type: "feed"` for RSS/Atom (GitHub releases, community.ui.com). `item_match` filters items by title; `version_regex` needs one capture group.
+- `type: "html"` for a support page. `version_regex` runs over the raw page. The release date becomes the day the version first changed.
+- `type: "manual"` puts the device in the catalog as "watching soon" with no data.
+
+A failing source never erases data: the device keeps its last version and gets `source_status: "error: ..."` in `devices.json`.
+Check the Actions log after a run to see which sources succeeded.
+
+Status rules: `critical` = security-flavoured release notes within 60 days · `update` = any release within 45 days · `current` = older · `pending` = no data yet.

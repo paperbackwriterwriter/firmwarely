@@ -76,6 +76,7 @@
   .feed .s.critical{color:var(--red)}
   .feed .s.update{color:var(--amber)}
   .feed .s.current{color:var(--green)}
+  .feed .s.pending{color:#5E6C78}
   .feed .cursor{display:inline-block;width:8px;height:14px;background:var(--amber);vertical-align:-2px;animation:blink 1s steps(1) infinite}
   @keyframes blink{50%{opacity:0}}
   @media (prefers-reduced-motion:reduce){.feed li{opacity:1;transition:none}.feed .cursor{animation:none}}
@@ -108,6 +109,7 @@
   .status.critical{color:var(--red)}
   .status.update{color:var(--amber)}
   .status.current{color:var(--green)}
+  .status.pending{color:#5E6C78}
   .empty{padding:2.5rem 0;color:var(--muted)}
   @media (max-width:640px){
     th:nth-child(3),td:nth-child(3),th:nth-child(4),td:nth-child(4){display:none}
@@ -180,7 +182,7 @@
     <p class="fine">Free for up to 3 devices. No account needed to browse the catalog.</p>
   </div>
 
-  <div class="feed" aria-label="Recent firmware releases, sample data">
+  <div class="feed" aria-label="Recent firmware releases">
     <div class="bar"><b>firmwarely</b> release feed <span class="live">watching</span></div>
     <ol id="feed"></ol>
   </div>
@@ -206,7 +208,7 @@
         <h2 style="margin-bottom:.35rem">Device catalog</h2>
         <p style="margin:0;color:var(--muted)">Tap a device to see its latest firmware and get alerts for it.</p>
       </div>
-      <div class="notice">preview data — live tracking starts at launch</div>
+      <div class="notice" id="notice">preview data — live tracking starts at launch</div>
     </div>
     <div class="search">
       <label class="sr" for="q">Search devices</label>
@@ -218,6 +220,7 @@
       <button class="chip" aria-pressed="false" data-cat="NAS &amp; storage">NAS &amp; storage</button>
       <button class="chip" aria-pressed="false" data-cat="Smart home &amp; cameras">Smart home &amp; cameras</button>
       <button class="chip" aria-pressed="false" data-cat="Consoles, drones &amp; e-bikes">Consoles, drones &amp; e-bikes</button>
+      <button class="chip" aria-pressed="false" data-cat="Makers &amp; open firmware">Makers &amp; open firmware</button>
     </div>
     <table>
       <thead><tr><th>Device</th><th>Latest firmware</th><th>Released</th><th>Category</th><th>Status</th></tr></thead>
@@ -287,12 +290,12 @@
 </footer>
 
 <script>
-/* ---------- seed data (sample — replace via the nightly pipeline) ---------- */
+/* ---------- seed data (fallback only; devices.json from the nightly pipeline replaces it) ---------- */
 const CATS = {
-  R:"Routers & networking", N:"NAS & storage", S:"Smart home & cameras", C:"Consoles, drones & e-bikes"
+  R:"Routers & networking", N:"NAS & storage", S:"Smart home & cameras", C:"Consoles, drones & e-bikes", M:"Makers & open firmware"
 };
 // status: critical = security fix released, update = new version, current = no new release in last 90 days
-const DEVICES = [
+const SEED = [
   {b:"ASUS",m:"RT-AX88U",c:"R",v:"3.0.0.4.388_24709",d:"2026-09-03",s:"critical",n:"Fixes an authentication bypass in the web admin panel. Update immediately if remote access is enabled."},
   {b:"ASUS",m:"RT-AX86U Pro",c:"R",v:"3.0.0.6.102_36604",d:"2026-08-22",s:"update",n:"Stability improvements for Wi‑Fi 6 clients; AiProtection signature update."},
   {b:"TP-Link",m:"Archer AX73",c:"R",v:"1.4.3 Build 20260811",d:"2026-08-11",s:"update",n:"Improves OneMesh handoff; fixes IPv6 DNS relay."},
@@ -319,18 +322,20 @@ const DEVICES = [
   {b:"Rad Power",m:"RadRunner 3 Plus",c:"C",v:"2.4.1",d:"2026-06-12",s:"current",n:"Display firmware update: fixes odometer rounding."}
 ];
 
-const STATUS_LABEL = {critical:"critical fix", update:"new version", current:"current"};
-const fmtDate = s => new Date(s+"T00:00:00").toLocaleDateString(undefined,{month:"short",day:"numeric",year:"numeric"});
-const slug = d => (d.b+" "+d.m).toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/(^-|-$)/g,"");
+let DEVICES = SEED;
+const STATUS_LABEL = {critical:"critical fix", update:"new version", current:"current", pending:"watching soon"};
+const fmtDate = s => s ? new Date(s+"T00:00:00").toLocaleDateString(undefined,{month:"short",day:"numeric",year:"numeric"}) : "—";
+const shortDate = s => new Date(s+"T00:00:00").toLocaleDateString("en-US",{month:"short",day:"2-digit"});
+const slug = d => d.id || (d.b+" "+d.m).toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/(^-|-$)/g,"");
 
 /* ---------- release feed ---------- */
-(function feed(){
+function buildFeed(){
   const ol = document.getElementById("feed");
-  const recent = [...DEVICES].sort((a,b)=>b.d.localeCompare(a.d)).slice(0,9);
-  const times = ["02:14","02:14","02:15","02:17","02:19","02:22","02:26","02:31","02:38"];
-  recent.forEach((d,i)=>{
+  ol.innerHTML = "";
+  const recent = DEVICES.filter(d=>d.d && d.s!=="pending").sort((a,b)=>b.d.localeCompare(a.d)).slice(0,9);
+  recent.forEach(d=>{
     const li = document.createElement("li");
-    li.innerHTML = `<span class="t">${times[i]}</span><span class="d">${d.b} ${d.m} <em>${d.v}</em></span><span class="s ${d.s}">${d.s==="critical"?"CRITICAL":d.s==="update"?"update":"ok"}</span>`;
+    li.innerHTML = `<span class="t">${shortDate(d.d)}</span><span class="d">${d.b} ${d.m} <em>${d.v}</em></span><span class="s ${d.s}">${d.s==="critical"?"CRITICAL":d.s==="update"?"update":"ok"}</span>`;
     ol.appendChild(li);
   });
   const end = document.createElement("li");
@@ -340,7 +345,8 @@ const slug = d => (d.b+" "+d.m).toLowerCase().replace(/[^a-z0-9]+/g,"-").replace
   const items = ol.querySelectorAll("li:not(.show)");
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
   items.forEach((li,i)=> reduce ? li.classList.add("show") : setTimeout(()=>li.classList.add("show"), 250 + i*220));
-})();
+}
+buildFeed();
 
 /* ---------- catalog ---------- */
 const rows = document.getElementById("rows");
@@ -351,11 +357,11 @@ function render(){
   const list = DEVICES.filter(d =>
     (cat==="all" || CATS[d.c]===cat) &&
     (q==="" || (d.b+" "+d.m).toLowerCase().includes(q))
-  ).sort((a,b)=> (a.b+a.m).localeCompare(b.b+b.m));
+  ).sort((a,b)=> (a.s==="pending")-(b.s==="pending") || (a.b+a.m).localeCompare(b.b+b.m));
   rows.innerHTML = list.map(d => `
     <tr data-id="${slug(d)}" tabindex="0">
       <td><strong>${d.b}</strong> ${d.m}</td>
-      <td class="ver">${d.v}</td>
+      <td class="ver">${d.v || "—"}</td>
       <td class="date">${fmtDate(d.d)}</td>
       <td class="cat">${CATS[d.c]}</td>
       <td><span class="status ${d.s}">${STATUS_LABEL[d.s]}</span></td>
@@ -380,14 +386,15 @@ function openDevice(id){
     <div class="top"><h3>${d.b} ${d.m}</h3><button class="x" aria-label="Close">×</button></div>
     <span class="status ${d.s}">${STATUS_LABEL[d.s]}</span>
     <dl class="kv">
-      <dt>Latest firmware</dt><dd>${d.v}</dd>
+      <dt>Latest firmware</dt><dd>${d.v || "—"}</dd>
       <dt>Released</dt><dd>${fmtDate(d.d)}</dd>
       <dt>Category</dt><dd>${CATS[d.c]}</dd>
-      <dt>What changed</dt><dd style="font-family:var(--sans);font-size:.95rem">${d.n}</dd>
+      <dt>What changed</dt><dd style="font-family:var(--sans);font-size:.95rem">${d.n || (d.s==="pending" ? "Not tracked yet. Get alerts and we'll prioritise it." : "")}</dd>
+      ${d.url ? `<dt>Source</dt><dd><a href="${d.url}" target="_blank" rel="noopener">Manufacturer release notes ↗</a></dd>` : ""}
     </dl>
     <div class="actions">
       <button class="btn" data-watch="${d.b} ${d.m}">Get alerts for this device</button>
-      <a class="btn ghost" href="#" rel="nofollow sponsored">See current price</a>
+      ${d.p ? `<a class="btn ghost" href="${d.p}" target="_blank" rel="nofollow sponsored noopener">See current price</a>` : ""}
     </div>
     <p class="aff">Price links may earn Firmwarely a commission at no cost to you.</p>`;
   history.replaceState(null,"","#d="+id);
@@ -472,6 +479,25 @@ signupForm.addEventListener("submit", async e=>{
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();
+
+/* ---------- live data from the nightly pipeline ---------- */
+(async function loadLive(){
+  try{
+    const r = await fetch("/devices.json", {cache:"no-store"});
+    if(!r.ok) throw new Error(r.status);
+    const data = await r.json();
+    const live = (data.devices||[]).map(x=>({b:x.brand, m:x.model, c:x.category, v:x.version, d:x.released, s:x.status, n:x.notes, url:x.source_url, p:x.product_url, id:x.id}));
+    if(!live.length) return;
+    DEVICES = live;
+    const withData = live.filter(x=>x.s!=="pending").length;
+    const when = data.generated ? new Date(data.generated).toLocaleString(undefined,{month:"short",day:"numeric",hour:"numeric",minute:"2-digit"}) : "";
+    document.getElementById("notice").textContent = withData
+      ? `${withData} devices tracked · last checked ${when}`
+      : "live tracking starts tonight";
+    buildFeed(); render();
+    if(location.hash.startsWith("#d=")) openDevice(location.hash.slice(3));
+  }catch(e){ /* keep seed data */ }
+})();
 </script>
 </body>
 </html>
