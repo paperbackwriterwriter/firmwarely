@@ -28,6 +28,8 @@ ROOT = Path(__file__).resolve().parent.parent
 SOURCES = ROOT / "sources.json"
 OUT = ROOT / "devices.json"
 OFFLINE = "--offline" in sys.argv
+FORCE_DIGEST = "--force-digest" in sys.argv   # write a digest of every tracked device even if nothing changed
+DIGEST = ROOT / "digest.md"
 UA = "Mozilla/5.0 (compatible; FirmwarelyBot/1.0; +https://firmwarely.com)"
 TODAY = datetime.now(timezone.utc).date()
 NOW = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
@@ -37,6 +39,7 @@ SECURITY = re.compile(
     r"privilege escalation|patch(?:es|ed)? (?:a|an|the) (?:flaw|issue|vulnerab)|hardening",
     re.I,
 )
+EOL = re.compile(r"end[- ]of[- ]life|\bEOL\b|no longer (?:be )?(?:updated|supported|maintained)|discontinued", re.I)
 DEFAULT_VERSION = re.compile(r"(\d+(?:\.\d+)+(?:[-_]\w+)*)")
 # feed items whose title matches this are skipped unless the source sets its own skip_match
 DEFAULT_SKIP = r"\b(rc\d*|beta|alpha|dev|nightly|pre-?release|release candidate|early access)\b"
@@ -185,6 +188,8 @@ def check_html(src, prev):
 def classify(dev):
     if not dev.get("version") or not dev.get("released"):
         return "pending"
+    if dev.get("eol"):
+        return "eol"
     try:
         age = (TODAY - datetime.fromisoformat(dev["released"]).date()).days
     except Exception:
@@ -241,6 +246,7 @@ def main():
                 print(f"  FAIL {src['id']:40s} {dev['source_status']}")
             time.sleep(0.5)
 
+        dev["eol"] = bool(EOL.search(dev.get("notes") or ""))
         dev["status"] = classify(dev)
         out.append(dev)
 
@@ -248,6 +254,72 @@ def main():
               "ok": ok, "failed": failed, "devices": out}
     OUT.write_text(json.dumps(result, indent=1, ensure_ascii=False) + "\n")
     print(f"\nwrote {OUT.name}: {len(out)} devices, {ok} fetched, {len(failed)} failed")
+
+    # ---- what changed since last night → digest.md (+ optional Beehiiv draft) ----
+    changed = [d for d in out if d["tracked"] and d.get("version")
+               and (FORCE_DIGEST or d["version"] != previous.get(d["id"], {}).get("version"))]
+    if DIGEST.exists():
+        DIGEST.unlink()
+    if changed:
+        md, html_body = build_digest(changed)
+        DIGEST.write_text(md)
+        print(f"digest: {len(changed)} change(s) → {DIGEST.name}")
+        beehiiv_draft(md.splitlines()[0].lstrip("# ").strip(), html_body)
+    else:
+        print("digest: no changes since last run")
+
+
+def build_digest(changed):
+    date = TODAY.strftime("%b %-d, %Y")
+    groups = {"critical": [], "update": [], "current": [], "eol": []}
+    for d in changed:
+        groups.setdefault(d["status"], []).append(d)
+    order = [("critical", "Security fixes — update now"), ("update", "New firmware"),
+             ("current", "Also released"), ("eol", "End of life notices")]
+    md = [f"# Firmware digest — {date}", ""]
+    html_parts = []
+    for key, heading in order:
+        items = groups.get(key) or []
+        if not items:
+            continue
+        md += [f"## {heading}", ""]
+        html_parts.append(f"<h2>{heading}</h2><ul>")
+        for d in items:
+            name = f"{d['brand']} {d['model']}"
+            when = d.get("released") or ""
+            note = (d.get("notes") or "").strip()
+            note = note[:220] + "…" if len(note) > 220 else note
+            md.append(f"- **{name}** → `{d['version']}` ({when}) — {note} [notes]({d['source_url']})")
+            html_parts.append(f"<li><strong>{html.escape(name)}</strong> → <code>{html.escape(d['version'])}</code> ({when})"
+                              f" — {html.escape(note)} <a href=\"{html.escape(d['source_url'])}\">release notes</a></li>")
+        md.append("")
+        html_parts.append("</ul>")
+    md += ["---", "Tracked by [Firmwarely](https://firmwarely.com). Reply to this email to request a device.", ""]
+    html_parts.append('<p>Tracked by <a href="https://firmwarely.com">Firmwarely</a>. Reply to this email to request a device.</p>')
+    return "\n".join(md), "".join(html_parts)
+
+
+def beehiiv_draft(title, html_body):
+    """Create a DRAFT post in Beehiiv so it can be reviewed and sent by hand. Needs BEEHIIV_API_KEY and BEEHIIV_PUB_ID."""
+    import os
+    key, pub = os.environ.get("BEEHIIV_API_KEY"), os.environ.get("BEEHIIV_PUB_ID")
+    if not (key and pub):
+        print("beehiiv: no API key/pub id in environment, skipping draft")
+        return
+    payload = {"title": title, "subtitle": "What changed on the devices you own",
+               "status": "draft", "body_content": html_body, "content_tags": ["digest"]}
+    req = urllib.request.Request(f"https://api.beehiiv.com/v2/publications/{pub}/posts",
+                                 data=json.dumps(payload).encode(), method="POST",
+                                 headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json",
+                                          "Accept": "application/json", "User-Agent": UA})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            body = json.loads(r.read().decode())
+            print(f"beehiiv: draft created — {body.get('data', {}).get('web_url') or body.get('data', {}).get('id')}")
+    except urllib.error.HTTPError as e:
+        print(f"beehiiv: draft FAILED {e.code}: {e.read().decode()[:300]}")
+    except Exception as e:
+        print(f"beehiiv: draft FAILED: {e}")
 
 
 if __name__ == "__main__":
