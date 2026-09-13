@@ -1,8 +1,11 @@
 {
- "generated": "2026-09-13T17:11:42+00:00",
+ "generated": "2026-09-13T17:15:14+00:00",
  "tracked": 19,
- "ok": 19,
- "failed": [],
+ "ok": 17,
+ "failed": [
+  "synology-ds923-plus",
+  "synology-ds224-plus"
+ ],
  "devices": [
   {
    "id": "ubiquiti-unifi-dream-machine-se",
@@ -21,7 +24,7 @@
      "released": "2026-09-09"
     }
    ],
-   "checked": "2026-09-13T17:11:42+00:00",
+   "checked": "2026-09-13T17:15:14+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -43,7 +46,7 @@
      "released": "2026-08-12"
     }
    ],
-   "checked": "2026-09-13T17:11:42+00:00",
+   "checked": "2026-09-13T17:15:14+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -65,7 +68,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T17:11:42+00:00",
+   "checked": "2026-09-13T17:15:14+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -87,7 +90,7 @@
      "released": "2026-08-31"
     }
    ],
-   "checked": "2026-09-13T17:11:42+00:00",
+   "checked": "2026-09-13T17:15:14+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -109,7 +112,7 @@
      "released": "2026-07-26"
     }
    ],
-   "checked": "2026-09-13T17:11:42+00:00",
+   "checked": "2026-09-13T17:15:14+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "critical"
@@ -131,7 +134,7 @@
      "released": "2026-07-30"
     }
    ],
-   "checked": "2026-09-13T17:11:42+00:00",
+   "checked": "2026-09-13T17:15:14+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -153,7 +156,7 @@
      "released": "2026-08-25"
     }
    ],
-   "checked": "2026-09-13T17:11:42+00:00",
+   "checked": "2026-09-13T17:15:14+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -175,7 +178,7 @@
      "released": "2026-07-19"
     }
    ],
-   "checked": "2026-09-13T17:11:42+00:00",
+   "checked": "2026-09-13T17:15:14+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -201,7 +204,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T17:11:42+00:00",
+   "checked": "2026-09-13T17:15:14+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -223,7 +226,7 @@
      "released": "2025-12-05"
     }
    ],
-   "checked": "2026-09-13T17:11:42+00:00",
+   "checked": "2026-09-13T17:15:14+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -245,7 +248,7 @@
      "released": "2026-09-01"
     }
    ],
-   "checked": "2026-09-13T17:11:42+00:00",
+   "checked": "2026-09-13T17:15:14+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -267,7 +270,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T17:11:42+00:00",
+   "checked": "2026-09-13T17:15:14+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -306,7 +309,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T17:11:42+00:00",
+   "checked": "2026-09-13T17:15:14+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -328,7 +331,7 @@
      "released": "2026-04-17"
     }
    ],
-   "checked": "2026-09-13T17:11:42+00:00",
+   "checked": "2026-09-13T17:15:14+00:00",
    "source_status": "ok",
    "eol": true,
    "status": "eol"
@@ -350,7 +353,7 @@
      "released": "2026-05-04"
     }
    ],
-   "checked": "2026-09-13T17:11:42+00:00",
+   "checked": "2026-09-13T17:15:14+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -406,7 +409,7 @@
      "released": "2026-09-11"
     }
    ],
-   "checked": "2026-09-13T17:11:42+00:00",
+   "checked": "2026-09-13T17:15:14+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -428,8 +431,8 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T17:11:42+00:00",
-   "source_status": "ok",
+   "checked": "2026-09-13T17:15:14+00:00",
+   "source_status": "error: HTTPError: HTTP Error 403: Forbidden",
    "eol": false,
    "status": "update"
   },
@@ -450,8 +453,8 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T17:11:42+00:00",
-   "source_status": "ok",
+   "checked": "2026-09-13T17:15:14+00:00",
+   "source_status": "error: HTTPError: HTTP Error 403: Forbidden",
    "eol": false,
    "status": "update"
   },
@@ -523,7 +526,7 @@
      "released": "2026-07-02"
     }
    ],
-   "checked": "2026-09-13T17:11:42+00:00",
+   "checked": "2026-09-13T17:15:14+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
