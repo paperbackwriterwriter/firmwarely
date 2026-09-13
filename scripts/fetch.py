@@ -100,7 +100,7 @@ def parse_date(s):
         return datetime.fromisoformat(s.replace("Z", "+00:00")).date().isoformat()
     except Exception:
         pass
-    for fmt in ("%m/%d/%Y", "%B %d, %Y", "%b %d, %Y", "%d %B %Y", "%Y-%m-%d"):
+    for fmt in ("%m/%d/%Y", "%Y/%m/%d", "%B %d, %Y", "%b %d, %Y", "%b. %d, %Y", "%d %B %Y", "%Y-%m-%d"):
         try:
             return datetime.strptime(s, fmt).date().isoformat()
         except Exception:
@@ -155,23 +155,30 @@ def check_github(src):
 
 def check_html(src, prev):
     raw = get(src["url"])
-    # search the raw HTML first, then a tag-stripped copy (handles "Version:</b> 1.2.3")
-    page = raw if re.search(src["version_regex"], raw) else re.sub(r"\s+", " ", html.unescape(TAG.sub(" ", raw)))
+    # work on a tag-stripped copy so "Version:</b> 1.2.3" and multi-line layouts match; fall back to raw
+    text = re.sub(r"\s+", " ", html.unescape(TAG.sub(" ", raw)))
+    page = text if re.search(src["version_regex"], text) else raw
     v = extract_version(page, src["version_regex"])
     if not v:
         raise ValueError("version pattern not found on page")
     changed = not prev or prev.get("version") != v
     released = None
+    anchor = re.escape(v)  # "{version}" in date_regex / notes_regex is replaced with the matched version
     if src.get("date_regex"):
-        m = re.search(src["date_regex"], page)
+        m = re.search(src["date_regex"].replace("{version}", anchor), page, re.S)
         released = parse_date(m.group(1)) if m else None
     if not released:
         released = TODAY.isoformat() if changed else prev.get("released")
+    notes = src.get("notes", "")
+    if src.get("notes_regex"):
+        m = re.search(src["notes_regex"].replace("{version}", anchor), page, re.S)
+        if m:
+            notes = clean(m.group(1))
     return {
         "version": v,
         "released": released,
-        "notes": src.get("notes", ""),
-        "source_url": src["url"],
+        "notes": notes,
+        "source_url": src.get("page_url") or src["url"],
     }
 
 
