@@ -284,6 +284,167 @@
    "model": "RadRunner 3 Plus",
    "category": "C",
    "type": "manual"
+  },
+  {
+   "id": "pi-hole",
+   "brand": "Pi-hole",
+   "model": "Pi-hole (network ad blocker)",
+   "category": "R",
+   "type": "github",
+   "repo": "pi-hole/pi-hole",
+   "version_regex": "v?(\\d+\\.\\d+(?:\\.\\d+)?)",
+   "product_url": "https://pi-hole.net/"
+  },
+  {
+   "id": "adguard-home",
+   "brand": "AdGuard",
+   "model": "AdGuard Home",
+   "category": "R",
+   "type": "github",
+   "repo": "AdguardTeam/AdGuardHome",
+   "version_regex": "v?(\\d+\\.\\d+\\.\\d+)",
+   "product_url": "https://adguard.com/adguard-home/overview.html"
+  },
+  {
+   "id": "tailscale",
+   "brand": "Tailscale",
+   "model": "Tailscale client",
+   "category": "R",
+   "type": "github",
+   "repo": "tailscale/tailscale",
+   "version_regex": "v?(\\d+\\.\\d+\\.\\d+)",
+   "product_url": "https://tailscale.com/"
+  },
+  {
+   "id": "opnsense-firewall",
+   "brand": "OPNsense",
+   "model": "Firewall (community edition)",
+   "category": "R",
+   "type": "feed",
+   "url": "https://github.com/opnsense/core/tags.atom",
+   "item_match": "^\\d+\\.\\d+(\\.\\d+)?$",
+   "version_regex": "(\\d+\\.\\d+(?:\\.\\d+)?)",
+   "product_url": "https://opnsense.org/"
+  },
+  {
+   "id": "mikrotik-routeros",
+   "brand": "MikroTik",
+   "model": "RouterOS 7 (stable)",
+   "category": "R",
+   "type": "html",
+   "url": "https://mikrotik.com/download/changelogs",
+   "version_regex": "What's new in (7\\.\\d+(?:\\.\\d+)?)",
+   "product_url": "https://mikrotik.com/products"
+  },
+  {
+   "id": "esphome",
+   "brand": "ESPHome",
+   "model": "ESP32 / ESP8266 device firmware",
+   "category": "S",
+   "type": "github",
+   "repo": "esphome/esphome",
+   "version_regex": "(\\d{4}\\.\\d+\\.\\d+)",
+   "product_url": "https://esphome.io/"
+  },
+  {
+   "id": "home-assistant-core",
+   "brand": "Home Assistant",
+   "model": "Core (monthly release)",
+   "category": "S",
+   "type": "github",
+   "repo": "home-assistant/core",
+   "version_regex": "(\\d{4}\\.\\d+\\.\\d+)",
+   "product_url": "https://www.home-assistant.io/"
+  },
+  {
+   "id": "zigbee2mqtt",
+   "brand": "Zigbee2MQTT",
+   "model": "Zigbee bridge software",
+   "category": "S",
+   "type": "github",
+   "repo": "Koenkk/zigbee2mqtt",
+   "version_regex": "v?(\\d+\\.\\d+\\.\\d+)",
+   "product_url": "https://www.zigbee2mqtt.io/"
+  },
+  {
+   "id": "frigate-nvr",
+   "brand": "Frigate",
+   "model": "NVR (camera AI detection)",
+   "category": "S",
+   "type": "github",
+   "repo": "blakeblackshear/frigate",
+   "version_regex": "v?(\\d+\\.\\d+\\.\\d+)",
+   "product_url": "https://frigate.video/"
+  },
+  {
+   "id": "marlin-3d-printer",
+   "brand": "Marlin",
+   "model": "3D printer firmware (Ender, etc.)",
+   "category": "M",
+   "type": "github",
+   "repo": "MarlinFirmware/Marlin",
+   "version_regex": "(\\d+\\.\\d+(?:\\.\\d+)?)",
+   "product_url": "https://marlinfw.org/"
+  },
+  {
+   "id": "octoprint",
+   "brand": "OctoPrint",
+   "model": "3D printer controller",
+   "category": "M",
+   "type": "github",
+   "repo": "OctoPrint/OctoPrint",
+   "version_regex": "(\\d+\\.\\d+\\.\\d+)",
+   "product_url": "https://octoprint.org/"
+  },
+  {
+   "id": "libreelec",
+   "brand": "LibreELEC",
+   "model": "Media player OS (Raspberry Pi)",
+   "category": "M",
+   "type": "github",
+   "repo": "LibreELEC/LibreELEC.tv",
+   "version_regex": "(\\d+\\.\\d+\\.\\d+)",
+   "product_url": "https://libreelec.tv/"
+  },
+  {
+   "id": "kodi",
+   "brand": "Kodi",
+   "model": "Media center",
+   "category": "M",
+   "type": "github",
+   "repo": "xbmc/xbmc",
+   "version_regex": "(\\d+\\.\\d+)",
+   "product_url": "https://kodi.tv/"
+  },
+  {
+   "id": "jellyfin-server",
+   "brand": "Jellyfin",
+   "model": "Media server",
+   "category": "N",
+   "type": "github",
+   "repo": "jellyfin/jellyfin",
+   "version_regex": "v?(\\d+\\.\\d+\\.\\d+)",
+   "product_url": "https://jellyfin.org/"
+  },
+  {
+   "id": "immich-server",
+   "brand": "Immich",
+   "model": "Photo backup server",
+   "category": "N",
+   "type": "github",
+   "repo": "immich-app/immich",
+   "version_regex": "v?(\\d+\\.\\d+\\.\\d+)",
+   "product_url": "https://immich.app/"
+  },
+  {
+   "id": "nextcloud-server",
+   "brand": "Nextcloud",
+   "model": "Nextcloud server",
+   "category": "N",
+   "type": "github",
+   "repo": "nextcloud/server",
+   "version_regex": "v?(\\d+\\.\\d+\\.\\d+)",
+   "product_url": "https://nextcloud.com/"
   }
  ]
 }
