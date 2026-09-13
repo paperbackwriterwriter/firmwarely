@@ -1,11 +1,8 @@
 {
- "generated": "2026-09-13T00:44:12+00:00",
- "tracked": 14,
- "ok": 12,
- "failed": [
-  "home-assistant-os",
-  "microsoft-xbox-series-x"
- ],
+ "generated": "2026-09-13T00:53:37+00:00",
+ "tracked": 13,
+ "ok": 13,
+ "failed": [],
  "devices": [
   {
    "id": "ubiquiti-unifi-dream-machine-se",
@@ -24,7 +21,7 @@
      "released": "2026-09-09"
     }
    ],
-   "checked": "2026-09-13T00:44:12+00:00",
+   "checked": "2026-09-13T00:53:37+00:00",
    "source_status": "ok",
    "status": "update"
   },
@@ -45,7 +42,7 @@
      "released": "2026-08-12"
     }
    ],
-   "checked": "2026-09-13T00:44:12+00:00",
+   "checked": "2026-09-13T00:53:37+00:00",
    "source_status": "ok",
    "status": "update"
   },
@@ -66,7 +63,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T00:44:12+00:00",
+   "checked": "2026-09-13T00:53:37+00:00",
    "source_status": "ok",
    "status": "update"
   },
@@ -87,7 +84,7 @@
      "released": "2026-08-31"
     }
    ],
-   "checked": "2026-09-13T00:44:12+00:00",
+   "checked": "2026-09-13T00:53:37+00:00",
    "source_status": "ok",
    "status": "update"
   },
@@ -108,7 +105,7 @@
      "released": "2026-07-26"
     }
    ],
-   "checked": "2026-09-13T00:44:12+00:00",
+   "checked": "2026-09-13T00:53:37+00:00",
    "source_status": "ok",
    "status": "critical"
   },
@@ -118,15 +115,20 @@
    "model": "Operating System (Green / Yellow)",
    "category": "S",
    "tracked": true,
-   "version": null,
-   "released": null,
-   "notes": "",
-   "source_url": "https://github.com/home-assistant/operating-system/releases.atom",
+   "version": "18.2",
+   "released": "2026-07-30",
+   "notes": "Home Assistant OS 18.2 is a minor release fixing various bugs and smaller caveats. It mainly resolves networking (custom MTU) issues on Home Assistant Green and resolves eMMC/booting issues on Hardkernel ODROID-N2+. It also improves the update system integration on Raspberry Pi 5, making sure that …",
+   "source_url": "https://github.com/home-assistant/operating-system/releases/tag/18.2",
    "product_url": "https://www.home-assistant.io/green/",
-   "history": [],
-   "checked": "2026-09-13T00:44:12+00:00",
-   "source_status": "error: ValueError: no matching item in feed",
-   "status": "pending"
+   "history": [
+    {
+     "version": "18.2",
+     "released": "2026-07-30"
+    }
+   ],
+   "checked": "2026-09-13T00:53:37+00:00",
+   "source_status": "ok",
+   "status": "update"
   },
   {
    "id": "tasmota-open-firmware",
@@ -145,7 +147,7 @@
      "released": "2026-08-25"
     }
    ],
-   "checked": "2026-09-13T00:44:12+00:00",
+   "checked": "2026-09-13T00:53:37+00:00",
    "source_status": "ok",
    "status": "update"
   },
@@ -166,7 +168,7 @@
      "released": "2026-07-19"
     }
    ],
-   "checked": "2026-09-13T00:44:12+00:00",
+   "checked": "2026-09-13T00:53:37+00:00",
    "source_status": "ok",
    "status": "current"
   },
@@ -191,7 +193,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T00:44:12+00:00",
+   "checked": "2026-09-13T00:53:37+00:00",
    "source_status": "ok",
    "status": "update"
   },
@@ -212,7 +214,7 @@
      "released": "2025-12-05"
     }
    ],
-   "checked": "2026-09-13T00:44:12+00:00",
+   "checked": "2026-09-13T00:53:37+00:00",
    "source_status": "ok",
    "status": "current"
   },
@@ -233,7 +235,7 @@
      "released": "2026-09-01"
     }
    ],
-   "checked": "2026-09-13T00:44:12+00:00",
+   "checked": "2026-09-13T00:53:37+00:00",
    "source_status": "ok",
    "status": "update"
   },
@@ -254,7 +256,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T00:44:12+00:00",
+   "checked": "2026-09-13T00:53:37+00:00",
    "source_status": "ok",
    "status": "critical"
   },
@@ -263,7 +265,7 @@
    "brand": "Microsoft",
    "model": "Xbox Series X|S",
    "category": "C",
-   "tracked": true,
+   "tracked": false,
    "version": null,
    "released": null,
    "notes": "",
@@ -291,7 +293,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T00:44:12+00:00",
+   "checked": "2026-09-13T00:53:37+00:00",
    "source_status": "ok",
    "status": "update"
   },
