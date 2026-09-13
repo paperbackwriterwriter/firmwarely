@@ -240,6 +240,8 @@ def main():
                     res = check_html(src, prev)
                 if res["version"] != dev["version"]:
                     dev["history"] = ([{"version": res["version"], "released": res["released"]}] + dev["history"])[:6]
+                elif dev["history"] and dev["history"][0].get("version") == res["version"]:
+                    dev["history"][0]["released"] = res["released"]   # keep history in sync if the date got corrected
                 dev.update(res)
                 dev["checked"] = NOW
                 dev["source_status"] = "ok"
