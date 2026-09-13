@@ -1,11 +1,9 @@
 {
- "generated": "2026-09-13T18:07:28+00:00",
+ "generated": "2026-09-13T18:15:21+00:00",
  "tracked": 39,
- "ok": 36,
+ "ok": 38,
  "failed": [
-  "microsoft-xbox-series-x",
-  "tp-link-archer-ax73",
-  "mikrotik-routeros"
+  "microsoft-xbox-series-x"
  ],
  "devices": [
   {
@@ -25,7 +23,7 @@
      "released": "2026-09-09"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -47,7 +45,7 @@
      "released": "2026-08-12"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -69,7 +67,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -91,7 +89,7 @@
      "released": "2026-08-31"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -113,7 +111,7 @@
      "released": "2026-07-26"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "critical"
@@ -135,7 +133,7 @@
      "released": "2026-07-30"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -157,7 +155,7 @@
      "released": "2026-08-25"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -179,7 +177,7 @@
      "released": "2026-07-19"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -205,7 +203,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -227,7 +225,7 @@
      "released": "2025-12-05"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -249,7 +247,7 @@
      "released": "2026-09-01"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -271,7 +269,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -288,7 +286,7 @@
    "source_url": "https://support.xbox.com/en-US/help/hardware-network/console/system-update-info",
    "product_url": "https://www.xbox.com/en-US/consoles",
    "history": [],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "error: ValueError: version pattern not found on page",
    "eol": false,
    "status": "pending"
@@ -310,7 +308,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -332,7 +330,7 @@
      "released": "2026-04-17"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": true,
    "status": "eol"
@@ -354,7 +352,7 @@
      "released": "2026-05-04"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -365,16 +363,21 @@
    "model": "Archer AX73",
    "category": "R",
    "tracked": true,
-   "version": null,
-   "released": null,
-   "notes": "",
+   "version": "220519",
+   "released": "2026-09-13",
+   "notes": "TP-Link firmware release. See the download page for the changelog.",
    "source_url": "https://www.tp-link.com/us/support/download/archer-ax73/#Firmware",
    "product_url": null,
-   "history": [],
-   "checked": "2026-09-13T18:07:28+00:00",
-   "source_status": "error: ValueError: version pattern not found on page",
+   "history": [
+    {
+     "version": "220519",
+     "released": "2026-09-13"
+    }
+   ],
+   "checked": "2026-09-13T18:15:21+00:00",
+   "source_status": "ok",
    "eol": false,
-   "status": "pending"
+   "status": "update"
   },
   {
    "id": "netgear-nighthawk-rax50",
@@ -393,7 +396,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -415,7 +418,7 @@
      "released": "2026-09-11"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -437,7 +440,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -459,7 +462,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -481,7 +484,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -537,7 +540,7 @@
      "released": "2026-07-02"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -661,7 +664,7 @@
      "released": "2026-07-06"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -683,7 +686,7 @@
      "released": "2026-08-18"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "critical"
@@ -705,7 +708,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -727,7 +730,7 @@
      "released": "2026-08-27"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -738,16 +741,21 @@
    "model": "RouterOS 7 (stable)",
    "category": "R",
    "tracked": true,
-   "version": null,
-   "released": null,
+   "version": "7.24.2",
+   "released": "2026-09-03",
    "notes": "",
-   "source_url": "https://mikrotik.com/download/changelogs",
+   "source_url": "https://www.mikrotik.com/download/changelogs/stable",
    "product_url": "https://mikrotik.com/products",
-   "history": [],
-   "checked": "2026-09-13T18:07:28+00:00",
-   "source_status": "error: ValueError: version pattern not found on page",
+   "history": [
+    {
+     "version": "7.24.2",
+     "released": "2026-09-03"
+    }
+   ],
+   "checked": "2026-09-13T18:15:21+00:00",
+   "source_status": "ok",
    "eol": false,
-   "status": "pending"
+   "status": "update"
   },
   {
    "id": "esphome",
@@ -766,7 +774,7 @@
      "released": "2026-08-31"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -788,7 +796,7 @@
      "released": "2026-09-11"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -810,7 +818,7 @@
      "released": "2026-09-03"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -832,7 +840,7 @@
      "released": "2026-09-12"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -854,7 +862,7 @@
      "released": "2026-06-24"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -876,7 +884,7 @@
      "released": "2026-06-23"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -898,7 +906,7 @@
      "released": "2025-10-31"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -920,7 +928,7 @@
      "released": "2025-10-31"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -942,7 +950,7 @@
      "released": "2026-09-08"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -964,7 +972,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -986,7 +994,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T18:07:28+00:00",
+   "checked": "2026-09-13T18:15:21+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
