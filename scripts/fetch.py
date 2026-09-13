@@ -13,6 +13,8 @@ Rules:
   gets source_status = "error" with the reason.
 - For HTML sources with no date on the page, the release date is the day we first
   saw the new version.
+- type "browser" reads a page pre-rendered by scripts/fetch_browser.py from
+  rendered/<id>.html and is otherwise identical to "html".
 - status: critical = security-flavoured release in the last 60 days,
           update   = any release in the last 45 days,
           current  = older than that,
@@ -28,6 +30,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SOURCES = ROOT / "sources.json"
 OUT = ROOT / "devices.json"
+RENDERED = ROOT / "rendered"
 OFFLINE = "--offline" in sys.argv
 FORCE_DIGEST = "--force-digest" in sys.argv   # write a digest of every tracked device even if nothing changed
 DIGEST = ROOT / "digest.md"
@@ -163,7 +166,13 @@ def check_github(src):
 
 
 def check_html(src, prev):
-    raw = get(src["url"])
+    if src["type"] == "browser":
+        f = RENDERED / (src["id"] + ".html")
+        if not f.exists():
+            raise ValueError("rendered page missing (browser fetch failed)")
+        raw = f.read_text(encoding="utf-8", errors="replace")
+    else:
+        raw = get(src["url"])
     # work on a tag-stripped copy so "Version:</b> 1.2.3" and multi-line layouts match; fall back to raw
     text = re.sub(r"\s+", " ", html.unescape(TAG.sub(" ", raw)))
     page = text if re.search(src["version_regex"], text) else raw
