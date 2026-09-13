@@ -1,8 +1,16 @@
 {
- "generated": "2026-09-12T23:44:22+00:00",
+ "generated": "2026-09-13T00:26:45+00:00",
  "tracked": 13,
- "ok": 0,
- "failed": [],
+ "ok": 6,
+ "failed": [
+  "ubiquiti-unifi-dream-machine-se",
+  "ubiquiti-unifi-protect-g5-bullet",
+  "ubiquiti-unifi-network-application",
+  "home-assistant-os",
+  "meshtastic-radio",
+  "sony-playstation-5",
+  "microsoft-xbox-series-x"
+ ],
  "devices": [
   {
    "id": "ubiquiti-unifi-dream-machine-se",
@@ -16,8 +24,8 @@
    "source_url": "https://community.ui.com/rss/releases",
    "product_url": "https://store.ui.com/us/en/products/udm-se",
    "history": [],
-   "checked": null,
-   "source_status": "pending",
+   "checked": "2026-09-13T00:26:45+00:00",
+   "source_status": "error: HTTPError: HTTP Error 400: Bad Request",
    "status": "pending"
   },
   {
@@ -32,8 +40,8 @@
    "source_url": "https://community.ui.com/rss/releases",
    "product_url": "https://store.ui.com/us/en/products/uvc-g5-bullet",
    "history": [],
-   "checked": null,
-   "source_status": "pending",
+   "checked": "2026-09-13T00:26:45+00:00",
+   "source_status": "error: HTTPError: HTTP Error 400: Bad Request",
    "status": "pending"
   },
   {
@@ -48,8 +56,8 @@
    "source_url": "https://community.ui.com/rss/releases",
    "product_url": null,
    "history": [],
-   "checked": null,
-   "source_status": "pending",
+   "checked": "2026-09-13T00:26:45+00:00",
+   "source_status": "error: HTTPError: HTTP Error 400: Bad Request",
    "status": "pending"
   },
   {
@@ -58,15 +66,20 @@
    "model": "Router firmware (stable)",
    "category": "R",
    "tracked": true,
-   "version": null,
-   "released": null,
-   "notes": "",
-   "source_url": "https://github.com/openwrt/openwrt/releases.atom",
+   "version": "24.10.8",
+   "released": "2026-07-26",
+   "notes": "Hi, The OpenWrt community is proud to announce the newest stable release of the OpenWrt 24.10 stable series. This release fixes many security issues, several of them remotely triggerable in network services that are enabled by default. We strongly recommend everyone to upgrade. The OpenWrt 24.10 se…",
+   "source_url": "https://github.com/openwrt/openwrt/releases/tag/v24.10.8",
    "product_url": null,
-   "history": [],
-   "checked": null,
-   "source_status": "pending",
-   "status": "pending"
+   "history": [
+    {
+     "version": "24.10.8",
+     "released": "2026-07-26"
+    }
+   ],
+   "checked": "2026-09-13T00:26:45+00:00",
+   "source_status": "ok",
+   "status": "critical"
   },
   {
    "id": "home-assistant-os",
@@ -80,8 +93,8 @@
    "source_url": "https://github.com/home-assistant/operating-system/releases.atom",
    "product_url": "https://www.home-assistant.io/green/",
    "history": [],
-   "checked": null,
-   "source_status": "pending",
+   "checked": "2026-09-13T00:26:45+00:00",
+   "source_status": "error: ValueError: no matching item in feed",
    "status": "pending"
   },
   {
@@ -90,15 +103,20 @@
    "model": "Smart plug & switch firmware",
    "category": "S",
    "tracked": true,
-   "version": null,
-   "released": null,
-   "notes": "",
-   "source_url": "https://github.com/arendst/Tasmota/releases.atom",
+   "version": "15.6.0",
+   "released": "2026-08-25",
+   "notes": "RELEASE NOTES Migration Information This version removes support for direct migration from versions before v8.1.0 (Doris) See migration path for instructions how to migrate to a major version. Do not upgrade from minimal to minimal version. It will most likely fail at some point and will require fl…",
+   "source_url": "https://github.com/arendst/Tasmota/releases/tag/v15.6.0",
    "product_url": null,
-   "history": [],
-   "checked": null,
-   "source_status": "pending",
-   "status": "pending"
+   "history": [
+    {
+     "version": "15.6.0",
+     "released": "2026-08-25"
+    }
+   ],
+   "checked": "2026-09-13T00:26:45+00:00",
+   "source_status": "ok",
+   "status": "update"
   },
   {
    "id": "wled-controller",
@@ -106,15 +124,20 @@
    "model": "LED controller firmware",
    "category": "S",
    "tracked": true,
-   "version": null,
-   "released": null,
-   "notes": "",
-   "source_url": "https://github.com/wled/WLED/releases.atom",
+   "version": "16.0.1",
+   "released": "2026-07-19",
+   "notes": "WLED Version 16.0.1 Announcement Read the full copy at https://github.com/wled/WLED/releases/tag/v16.0.1 I'm pleased to announce that since the release of 16.0.0, approximately 50% of WLED installs have downloaded the new release, with only a tiny number of issues reported relative to the install b…",
+   "source_url": "https://github.com/wled/WLED/releases/tag/v16.0.1",
    "product_url": null,
-   "history": [],
-   "checked": null,
-   "source_status": "pending",
-   "status": "pending"
+   "history": [
+    {
+     "version": "16.0.1",
+     "released": "2026-07-19"
+    }
+   ],
+   "checked": "2026-09-13T00:26:45+00:00",
+   "source_status": "ok",
+   "status": "current"
   },
   {
    "id": "prusa-mk4-core-one",
@@ -122,15 +145,20 @@
    "model": "MK4 / MK4S / Core One (Buddy firmware)",
    "category": "M",
    "tracked": true,
-   "version": null,
-   "released": null,
-   "notes": "",
-   "source_url": "https://github.com/prusa3d/Prusa-Firmware-Buddy/releases.atom",
+   "version": "6.9.1",
+   "released": "2026-09-10",
+   "notes": "Improvements Improved Tool Offset Calibration - Z probing and XY scanning now run at 150 °C instead of 170 °C . Improved Calibration Reliability - Increased the number of Z probe attempts during Tool Offset Calibration from 3 to 10 , improving reliability in less favorable conditions. Improved Acce…",
+   "source_url": "https://github.com/prusa3d/Prusa-Firmware-Buddy/releases/tag/v6.9.1-beta",
    "product_url": "https://www.prusa3d.com/product/original-prusa-mk4s-kit/",
-   "history": [],
-   "checked": null,
-   "source_status": "pending",
-   "status": "pending"
+   "history": [
+    {
+     "version": "6.9.1",
+     "released": "2026-09-10"
+    }
+   ],
+   "checked": "2026-09-13T00:26:45+00:00",
+   "source_status": "ok",
+   "status": "update"
   },
   {
    "id": "flipper-zero",
@@ -138,15 +166,20 @@
    "model": "Flipper Zero",
    "category": "M",
    "tracked": true,
-   "version": null,
-   "released": null,
-   "notes": "",
-   "source_url": "https://github.com/flipperdevices/flipperzero-firmware/releases.atom",
+   "version": "1.4.3",
+   "released": "2025-12-05",
+   "notes": "This is a bugfix release for Flipper Zero Firmware 1.4.2 What's Changed Infrared: Fix infrared CLI plugin MissingImports by @WillyJL in #4312 Full Changelog : 1.4.2...1.4.3",
+   "source_url": "https://github.com/flipperdevices/flipperzero-firmware/releases/tag/1.4.3",
    "product_url": "https://shop.flipperzero.one/",
-   "history": [],
-   "checked": null,
-   "source_status": "pending",
-   "status": "pending"
+   "history": [
+    {
+     "version": "1.4.3",
+     "released": "2025-12-05"
+    }
+   ],
+   "checked": "2026-09-13T00:26:45+00:00",
+   "source_status": "ok",
+   "status": "current"
   },
   {
    "id": "meshtastic-radio",
@@ -160,8 +193,8 @@
    "source_url": "https://github.com/meshtastic/firmware/releases.atom",
    "product_url": null,
    "history": [],
-   "checked": null,
-   "source_status": "pending",
+   "checked": "2026-09-13T00:26:45+00:00",
+   "source_status": "error: ValueError: no matching item in feed",
    "status": "pending"
   },
   {
@@ -176,8 +209,8 @@
    "source_url": "https://www.playstation.com/en-us/support/hardware/ps5/system-software/",
    "product_url": "https://direct.playstation.com/en-us/consoles",
    "history": [],
-   "checked": null,
-   "source_status": "pending",
+   "checked": "2026-09-13T00:26:45+00:00",
+   "source_status": "error: ValueError: version pattern not found on page",
    "status": "pending"
   },
   {
@@ -192,8 +225,8 @@
    "source_url": "https://support.xbox.com/en-US/help/hardware-network/console/system-update-info",
    "product_url": "https://www.xbox.com/en-US/consoles",
    "history": [],
-   "checked": null,
-   "source_status": "pending",
+   "checked": "2026-09-13T00:26:45+00:00",
+   "source_status": "error: ValueError: version pattern not found on page",
    "status": "pending"
   },
   {
@@ -202,15 +235,20 @@
    "model": "Switch",
    "category": "C",
    "tracked": true,
-   "version": null,
-   "released": null,
-   "notes": "",
+   "version": "23.0.0",
+   "released": "2026-09-13",
+   "notes": "Nintendo Switch system update. Nintendo usually lists these as stability improvements.",
    "source_url": "https://en-americas-support.nintendo.com/app/answers/detail/a_id/22525",
    "product_url": null,
-   "history": [],
-   "checked": null,
-   "source_status": "pending",
-   "status": "pending"
+   "history": [
+    {
+     "version": "23.0.0",
+     "released": "2026-09-13"
+    }
+   ],
+   "checked": "2026-09-13T00:26:45+00:00",
+   "source_status": "ok",
+   "status": "update"
   },
   {
    "id": "asus-rt-ax88u",
