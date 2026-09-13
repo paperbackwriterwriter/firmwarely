@@ -333,7 +333,7 @@
    "category": "R",
    "type": "html",
    "url": "https://mikrotik.com/download/changelogs",
-   "version_regex": "What's new in (7\\.\\d+(?:\\.\\d+)?)",
+   "version_regex": "What.s new in (7\\.\\d+(?:\\.\\d+)?)",
    "product_url": "https://mikrotik.com/products"
   },
   {
@@ -423,7 +423,7 @@
    "category": "N",
    "type": "github",
    "repo": "jellyfin/jellyfin",
-   "version_regex": "v?(\\d+\\.\\d+\\.\\d+)",
+   "version_regex": "v?(\\d+\\.\\d+(?:\\.\\d+)?)",
    "product_url": "https://jellyfin.org/"
   },
   {
