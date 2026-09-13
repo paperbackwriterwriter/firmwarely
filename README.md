@@ -32,6 +32,7 @@ Then redeploy. Subscribers are tagged `utm_campaign` = free or pro. If you creat
 - `.github/workflows/nightly.yml` — runs the fetcher at 3:15 AM Central every night (and on demand from the
   Actions tab → Nightly firmware check → Run workflow) and commits `devices.json` if anything changed.
   Each commit triggers a Vercel redeploy, so the site is always current.
+- `scripts/build_pages.py` — renders `devices/<id>/index.html` for every device, `devices/index.html`, `sitemap.xml` and `robots.txt`. Runs in the workflow right after the fetch; the pages are committed, so never edit them by hand.
 - `index.html` fetches `/devices.json` on load; if that fails it falls back to the `SEED` sample data.
 
 Adding a device: add an entry to `sources.json`.
@@ -51,4 +52,3 @@ Each run compares tonight's versions with last night's. If anything changed, `fe
 emails you. If the repo has the secrets `BEEHIIV_API_KEY` and `BEEHIIV_PUB_ID` (GitHub → Settings → Secrets and
 variables → Actions), it also creates a **draft** post in Beehiiv with the same content for you to review and send.
 To test without waiting for a real change: Actions → Run workflow → tick *force_digest*.
-
