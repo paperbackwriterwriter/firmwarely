@@ -130,7 +130,7 @@
    "category": "C",
    "type": "browser",
    "url": "https://support.xbox.com/en-US/help/hardware-network/console/xbox-console-system-updates",
-   "version_regex": "OS version:?\\s*(10\\.0\\.\\d+\\.\\d+)",
+   "version_regex": "OS [Vv]ersion:?\\s*(\\d+\\.\\d+\\.\\d+\\.\\d+)",
    "product_url": "https://www.xbox.com/en-US/consoles",
    "notes": "Xbox system update. See the release notes for details."
   },
@@ -173,7 +173,7 @@
    "category": "R",
    "type": "browser",
    "url": "https://www.tp-link.com/us/support/download/archer-ax73/#Firmware",
-   "version_regex": "Archer AX73\\(US\\)_V\\d+_(\\d+\\.\\d+\\.\\d+)",
+   "version_regex": "Archer AX73\\(US\\)_V[\\d.]+_(\\d[\\w.]*)",
    "notes": "TP-Link firmware release. See the download page for the changelog."
   },
   {
@@ -343,8 +343,9 @@
    "model": "RouterOS 7 (stable)",
    "category": "R",
    "type": "browser",
-   "url": "https://mikrotik.com/download/changelogs",
-   "version_regex": "What.s new in (7\\.\\d+(?:\\.\\d+)?)",
+   "url": "https://www.mikrotik.com/download/changelogs/stable",
+   "version_regex": "(7\\.\\d+(?:\\.\\d+)?)\\s+Stable\\s+\\d{4}-\\d{2}-\\d{2}",
+   "date_regex": "{version}\\s+Stable\\s+(\\d{4}-\\d{2}-\\d{2})",
    "product_url": "https://mikrotik.com/products"
   },
   {
