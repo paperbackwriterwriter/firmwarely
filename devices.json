@@ -1,8 +1,10 @@
 {
- "generated": "2026-09-13T13:26:33+00:00",
+ "generated": "2026-09-13T13:35:06+00:00",
  "tracked": 19,
- "ok": 19,
- "failed": [],
+ "ok": 18,
+ "failed": [
+  "sony-playstation-5"
+ ],
  "devices": [
   {
    "id": "ubiquiti-unifi-dream-machine-se",
@@ -21,7 +23,7 @@
      "released": "2026-09-09"
     }
    ],
-   "checked": "2026-09-13T13:26:33+00:00",
+   "checked": "2026-09-13T13:35:06+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -43,7 +45,7 @@
      "released": "2026-08-12"
     }
    ],
-   "checked": "2026-09-13T13:26:33+00:00",
+   "checked": "2026-09-13T13:35:06+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -65,7 +67,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T13:26:33+00:00",
+   "checked": "2026-09-13T13:35:06+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -87,7 +89,7 @@
      "released": "2026-08-31"
     }
    ],
-   "checked": "2026-09-13T13:26:33+00:00",
+   "checked": "2026-09-13T13:35:06+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -109,7 +111,7 @@
      "released": "2026-07-26"
     }
    ],
-   "checked": "2026-09-13T13:26:33+00:00",
+   "checked": "2026-09-13T13:35:06+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "critical"
@@ -131,7 +133,7 @@
      "released": "2026-07-30"
     }
    ],
-   "checked": "2026-09-13T13:26:33+00:00",
+   "checked": "2026-09-13T13:35:06+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -153,7 +155,7 @@
      "released": "2026-08-25"
     }
    ],
-   "checked": "2026-09-13T13:26:33+00:00",
+   "checked": "2026-09-13T13:35:06+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -175,7 +177,7 @@
      "released": "2026-07-19"
     }
    ],
-   "checked": "2026-09-13T13:26:33+00:00",
+   "checked": "2026-09-13T13:35:06+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -201,7 +203,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T13:26:33+00:00",
+   "checked": "2026-09-13T13:35:06+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -223,7 +225,7 @@
      "released": "2025-12-05"
     }
    ],
-   "checked": "2026-09-13T13:26:33+00:00",
+   "checked": "2026-09-13T13:35:06+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -245,7 +247,7 @@
      "released": "2026-09-01"
     }
    ],
-   "checked": "2026-09-13T13:26:33+00:00",
+   "checked": "2026-09-13T13:35:06+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -267,8 +269,8 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T13:26:33+00:00",
-   "source_status": "ok",
+   "checked": "2026-09-13T13:35:06+00:00",
+   "source_status": "error: HTTPError: HTTP Error 403: Forbidden",
    "eol": false,
    "status": "update"
   },
@@ -306,7 +308,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T13:26:33+00:00",
+   "checked": "2026-09-13T13:35:06+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -325,10 +327,10 @@
    "history": [
     {
      "version": "3.0.0.4.388_24385",
-     "released": "2026-09-13"
+     "released": "2026-04-17"
     }
    ],
-   "checked": "2026-09-13T13:26:33+00:00",
+   "checked": "2026-09-13T13:35:06+00:00",
    "source_status": "ok",
    "eol": true,
    "status": "eol"
@@ -347,10 +349,10 @@
    "history": [
     {
      "version": "3.0.0.6.102_37436",
-     "released": "2026-09-13"
+     "released": "2026-05-04"
     }
    ],
-   "checked": "2026-09-13T13:26:33+00:00",
+   "checked": "2026-09-13T13:35:06+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -406,7 +408,7 @@
      "released": "2026-09-11"
     }
    ],
-   "checked": "2026-09-13T13:26:33+00:00",
+   "checked": "2026-09-13T13:35:06+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -428,7 +430,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T13:26:33+00:00",
+   "checked": "2026-09-13T13:35:06+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -450,7 +452,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T13:26:33+00:00",
+   "checked": "2026-09-13T13:35:06+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -520,10 +522,10 @@
    "history": [
     {
      "version": "1978074000",
-     "released": "2020-04-30"
+     "released": "2026-07-02"
     }
    ],
-   "checked": "2026-09-13T13:26:33+00:00",
+   "checked": "2026-09-13T13:35:06+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
