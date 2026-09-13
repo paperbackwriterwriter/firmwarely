@@ -1,8 +1,10 @@
 {
- "generated": "2026-09-13T00:53:37+00:00",
- "tracked": 13,
- "ok": 13,
- "failed": [],
+ "generated": "2026-09-13T00:56:55+00:00",
+ "tracked": 19,
+ "ok": 18,
+ "failed": [
+  "eero-pro-6e"
+ ],
  "devices": [
   {
    "id": "ubiquiti-unifi-dream-machine-se",
@@ -21,7 +23,7 @@
      "released": "2026-09-09"
     }
    ],
-   "checked": "2026-09-13T00:53:37+00:00",
+   "checked": "2026-09-13T00:56:55+00:00",
    "source_status": "ok",
    "status": "update"
   },
@@ -42,7 +44,7 @@
      "released": "2026-08-12"
     }
    ],
-   "checked": "2026-09-13T00:53:37+00:00",
+   "checked": "2026-09-13T00:56:55+00:00",
    "source_status": "ok",
    "status": "update"
   },
@@ -63,7 +65,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T00:53:37+00:00",
+   "checked": "2026-09-13T00:56:55+00:00",
    "source_status": "ok",
    "status": "update"
   },
@@ -84,7 +86,7 @@
      "released": "2026-08-31"
     }
    ],
-   "checked": "2026-09-13T00:53:37+00:00",
+   "checked": "2026-09-13T00:56:55+00:00",
    "source_status": "ok",
    "status": "update"
   },
@@ -105,7 +107,7 @@
      "released": "2026-07-26"
     }
    ],
-   "checked": "2026-09-13T00:53:37+00:00",
+   "checked": "2026-09-13T00:56:55+00:00",
    "source_status": "ok",
    "status": "critical"
   },
@@ -126,7 +128,7 @@
      "released": "2026-07-30"
     }
    ],
-   "checked": "2026-09-13T00:53:37+00:00",
+   "checked": "2026-09-13T00:56:55+00:00",
    "source_status": "ok",
    "status": "update"
   },
@@ -147,7 +149,7 @@
      "released": "2026-08-25"
     }
    ],
-   "checked": "2026-09-13T00:53:37+00:00",
+   "checked": "2026-09-13T00:56:55+00:00",
    "source_status": "ok",
    "status": "update"
   },
@@ -168,7 +170,7 @@
      "released": "2026-07-19"
     }
    ],
-   "checked": "2026-09-13T00:53:37+00:00",
+   "checked": "2026-09-13T00:56:55+00:00",
    "source_status": "ok",
    "status": "current"
   },
@@ -193,7 +195,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T00:53:37+00:00",
+   "checked": "2026-09-13T00:56:55+00:00",
    "source_status": "ok",
    "status": "update"
   },
@@ -214,7 +216,7 @@
      "released": "2025-12-05"
     }
    ],
-   "checked": "2026-09-13T00:53:37+00:00",
+   "checked": "2026-09-13T00:56:55+00:00",
    "source_status": "ok",
    "status": "current"
   },
@@ -235,7 +237,7 @@
      "released": "2026-09-01"
     }
    ],
-   "checked": "2026-09-13T00:53:37+00:00",
+   "checked": "2026-09-13T00:56:55+00:00",
    "source_status": "ok",
    "status": "update"
   },
@@ -256,7 +258,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T00:53:37+00:00",
+   "checked": "2026-09-13T00:56:55+00:00",
    "source_status": "ok",
    "status": "critical"
   },
@@ -293,7 +295,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T00:53:37+00:00",
+   "checked": "2026-09-13T00:56:55+00:00",
    "source_status": "ok",
    "status": "update"
   },
@@ -302,32 +304,42 @@
    "brand": "ASUS",
    "model": "RT-AX88U",
    "category": "R",
-   "tracked": false,
-   "version": null,
-   "released": null,
+   "tracked": true,
+   "version": "3.0.0.4.388_24385",
+   "released": "2026-09-13",
    "notes": "",
-   "source_url": null,
+   "source_url": "https://www.asus.com/networking-iot-servers/wifi-routers/asus-wifi-routers/rt-ax88u/helpdesk_bios?model2Name=RT-AX88U",
    "product_url": null,
-   "history": [],
-   "checked": null,
-   "source_status": "pending",
-   "status": "pending"
+   "history": [
+    {
+     "version": "3.0.0.4.388_24385",
+     "released": "2026-09-13"
+    }
+   ],
+   "checked": "2026-09-13T00:56:55+00:00",
+   "source_status": "ok",
+   "status": "update"
   },
   {
    "id": "asus-rt-ax86u-pro",
    "brand": "ASUS",
    "model": "RT-AX86U Pro",
    "category": "R",
-   "tracked": false,
-   "version": null,
-   "released": null,
+   "tracked": true,
+   "version": "3.0.0.6.102_37436",
+   "released": "2026-09-13",
    "notes": "",
-   "source_url": null,
+   "source_url": "https://www.asus.com/networking-iot-servers/wifi-routers/asus-wifi-routers/rt-ax86u-pro/helpdesk_bios?model2Name=RT-AX86U-Pro",
    "product_url": null,
-   "history": [],
-   "checked": null,
-   "source_status": "pending",
-   "status": "pending"
+   "history": [
+    {
+     "version": "3.0.0.6.102_37436",
+     "released": "2026-09-13"
+    }
+   ],
+   "checked": "2026-09-13T00:56:55+00:00",
+   "source_status": "ok",
+   "status": "update"
   },
   {
    "id": "tp-link-archer-ax73",
@@ -366,15 +378,15 @@
    "brand": "Eero",
    "model": "Eero Pro 6E",
    "category": "R",
-   "tracked": false,
+   "tracked": true,
    "version": null,
    "released": null,
    "notes": "",
-   "source_url": null,
+   "source_url": "https://support.eero.com/hc/en-us/articles/207908283-eeroOS-release-notes",
    "product_url": null,
    "history": [],
-   "checked": null,
-   "source_status": "pending",
+   "checked": "2026-09-13T00:56:55+00:00",
+   "source_status": "error: HTTPError: HTTP Error 404: Not Found",
    "status": "pending"
   },
   {
@@ -382,32 +394,42 @@
    "brand": "Synology",
    "model": "DiskStation DS923+",
    "category": "N",
-   "tracked": false,
-   "version": null,
-   "released": null,
-   "notes": "",
-   "source_url": null,
+   "tracked": true,
+   "version": "7.4.1-90080",
+   "released": "2026-09-13",
+   "notes": "DSM release. See Synology's release notes for details.",
+   "source_url": "https://www.synology.com/api/support/findDownloadInfo?lang=en-us&product=DS923%2B&major=7&minor=2",
    "product_url": null,
-   "history": [],
-   "checked": null,
-   "source_status": "pending",
-   "status": "pending"
+   "history": [
+    {
+     "version": "7.4.1-90080",
+     "released": "2026-09-13"
+    }
+   ],
+   "checked": "2026-09-13T00:56:55+00:00",
+   "source_status": "ok",
+   "status": "update"
   },
   {
    "id": "synology-ds224-plus",
    "brand": "Synology",
    "model": "DiskStation DS224+",
    "category": "N",
-   "tracked": false,
-   "version": null,
-   "released": null,
-   "notes": "",
-   "source_url": null,
+   "tracked": true,
+   "version": "7.4.1-90080",
+   "released": "2026-09-13",
+   "notes": "DSM release. See Synology's release notes for details.",
+   "source_url": "https://www.synology.com/api/support/findDownloadInfo?lang=en-us&product=DS224%2B&major=7&minor=2",
    "product_url": null,
-   "history": [],
-   "checked": null,
-   "source_status": "pending",
-   "status": "pending"
+   "history": [
+    {
+     "version": "7.4.1-90080",
+     "released": "2026-09-13"
+    }
+   ],
+   "checked": "2026-09-13T00:56:55+00:00",
+   "source_status": "ok",
+   "status": "update"
   },
   {
    "id": "qnap-ts-464",
@@ -462,16 +484,21 @@
    "brand": "Philips Hue",
    "model": "Bridge (v2)",
    "category": "S",
-   "tracked": false,
-   "version": null,
-   "released": null,
+   "tracked": true,
+   "version": "1978074000",
+   "released": "2020-04-30",
    "notes": "",
-   "source_url": null,
+   "source_url": "https://www.philips-hue.com/en-us/support/release-notes/bridge",
    "product_url": null,
-   "history": [],
-   "checked": null,
-   "source_status": "pending",
-   "status": "pending"
+   "history": [
+    {
+     "version": "1978074000",
+     "released": "2020-04-30"
+    }
+   ],
+   "checked": "2026-09-13T00:56:55+00:00",
+   "source_status": "ok",
+   "status": "current"
   },
   {
    "id": "ring-video-doorbell-pro-2",
