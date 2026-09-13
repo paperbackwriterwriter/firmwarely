@@ -13,18 +13,24 @@ import urllib.request
 DIGEST = "digest.md"
 API = "https://api.beehiiv.com/v2/publications/"
 BOLD = r"\*\*(.+?)\*\*"
+CODE = r"`([^`]+)`"
+SKIP = "Beehiiv draft"
 
 
 def fmt(text):
-    return re.sub(BOLD, r"<strong>\1</strong>", html.escape(text))
+    text = html.escape(text)
+    text = re.sub(BOLD, r"<strong>\1</strong>", text)
+    text = re.sub(CODE, r"<code>\1</code>", text)
+    return text
 
 
 def md_to_html(md):
     out = []
     in_list = False
-    for raw in md.splitlines():
+    lines = md.splitlines()[1:]
+    for raw in lines:
         line = raw.rstrip()
-        if not line:
+        if not line or SKIP in line:
             if in_list:
                 out.append("</ul>")
                 in_list = False
@@ -34,9 +40,7 @@ def md_to_html(md):
             if in_list:
                 out.append("</ul>")
                 in_list = False
-            lvl = min(len(m.group(1)) + 1, 3)
-            h = html.escape(m.group(2))
-            out.append("<h%d>%s</h%d>" % (lvl, h, lvl))
+            out.append("<h3>%s</h3>" % fmt(m.group(2)))
             continue
         m = re.match(r"^[-*]\s+(.*)$", line)
         if m:
@@ -73,12 +77,18 @@ def main():
     if os.environ.get("PRO_ALERT_TEST") == "1":
         subject = "[TEST] " + subject
 
-    footer = (
-        "<p>Pro instant alert from "
-        '<a href="https://firmwarely.com">firmwarely.com</a>. '
-        "Full details on each device page.</p>"
+    intro = (
+        "<p>New firmware or security releases were spotted "
+        "for the devices below. Version details and links "
+        "are on each device page at "
+        '<a href="https://firmwarely.com">firmwarely.com</a>.'
+        "</p>"
     )
-    body = "<div>" + md_to_html(md) + footer + "</div>"
+    footer = (
+        "<p>You are receiving this because you are a "
+        "Firmwarely Pro subscriber.</p>"
+    )
+    body = "<div>" + intro + md_to_html(md) + footer + "</div>"
 
     payload = {
         "title": title,
