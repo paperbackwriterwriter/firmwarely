@@ -162,7 +162,7 @@
   <div class="wrap nav">
     <a class="brand" href="#top"><i></i>Firmwarely</a>
     <ul>
-      <li class="hide-m"><a href="#devices">Devices</a></li>
+      <li class="hide-m"><a href="/devices/">Devices</a></li>
       <li class="hide-m"><a href="#how">How it works</a></li>
       <li class="hide-m"><a href="#pricing">Pricing</a></li>
       <li><a class="btn" href="#signup">Get alerts</a></li>
@@ -287,7 +287,7 @@
 <footer>
   <div class="wrap">
     <span>© <span id="year"></span> Firmwarely. Device and brand names belong to their manufacturers.</span>
-    <span><a href="#devices">Devices</a> &nbsp;·&nbsp; <a href="#pricing">Pricing</a> &nbsp;·&nbsp; <a href="mailto:hello@firmwarely.com">Contact</a></span>
+    <span><a href="/devices/">All devices</a> &nbsp;·&nbsp; <a href="#pricing">Pricing</a> &nbsp;·&nbsp; <a href="mailto:hello@firmwarely.com">Contact</a></span>
   </div>
 </footer>
 
@@ -393,6 +393,7 @@ function openDevice(id){
       <dt>Category</dt><dd>${CATS[d.c]}</dd>
       <dt>What changed</dt><dd style="font-family:var(--sans);font-size:.95rem">${d.n || (d.s==="pending" ? "Not tracked yet. Get alerts and we'll prioritise it." : "")}</dd>
       ${d.url ? `<dt>Source</dt><dd><a href="${d.url}" target="_blank" rel="noopener">Manufacturer release notes ↗</a></dd>` : ""}
+      ${d.id ? `<dt>Page</dt><dd><a href="/devices/${d.id}/">Full details &amp; version history →</a></dd>` : ""}
     </dl>
     <div class="actions">
       <button class="btn" data-watch="${d.b} ${d.m}">Get alerts for this device</button>
