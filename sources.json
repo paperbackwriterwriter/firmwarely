@@ -1,5 +1,5 @@
 {
- "_readme": "Each entry is one device. type: 'feed' (RSS/Atom), 'html' (regex over a page), or 'manual' (catalog placeholder, not tracked yet). item_match filters feed items by title. version_regex must have one capture group. Categories: R routers, N NAS, S smart home, C consoles/drones/e-bikes, M makers/open firmware. Optional: skip_match (regex of titles to ignore, default skips rc/beta/alpha), date_regex (html only, one capture group). type 'github' uses the GitHub API latest-release endpoint (stable only): set repo: 'owner/name'.",
+ "_readme": "Each entry is one device. type: 'feed' (RSS/Atom), 'html' (regex over a page), or 'manual' (catalog placeholder, not tracked yet). item_match filters feed items by title. version_regex must have one capture group. Categories: R routers, N NAS, S smart home, C consoles/drones/e-bikes, M makers/open firmware. Optional: skip_match (regex of titles to ignore, default skips rc/beta/alpha), date_regex (html only, one capture group). type 'github' uses the GitHub API latest-release endpoint (stable only): set repo: 'owner/name'. Optional html fields: notes_regex (one group, DOTALL), page_url (human link to show instead of the fetched url).",
  "devices": [
   {
    "id": "ubiquiti-unifi-dream-machine-se",
@@ -147,14 +147,22 @@
    "brand": "ASUS",
    "model": "RT-AX88U",
    "category": "R",
-   "type": "manual"
+   "type": "html",
+   "url": "https://www.asus.com/networking-iot-servers/wifi-routers/asus-wifi-routers/rt-ax88u/helpdesk_bios?model2Name=RT-AX88U",
+   "version_regex": "Version (3\\.0\\.0\\.\\d+[._]\\d+(?:_\\d+)?)",
+   "date_regex": "(\\d{4}/\\d{2}/\\d{2})",
+   "notes_regex": "Version 3\\.0\\.0\\.\\S+ [\\d.]+ MB \\d{4}/\\d{2}/\\d{2} (?:SHA-?256\\s*[:：]\\s*[0-9A-Fa-f]{64} )?(.+?) Downloaded"
   },
   {
    "id": "asus-rt-ax86u-pro",
    "brand": "ASUS",
    "model": "RT-AX86U Pro",
    "category": "R",
-   "type": "manual"
+   "type": "html",
+   "url": "https://www.asus.com/networking-iot-servers/wifi-routers/asus-wifi-routers/rt-ax86u-pro/helpdesk_bios?model2Name=RT-AX86U-Pro",
+   "version_regex": "Version (3\\.0\\.0\\.\\d+[._]\\d+(?:_\\d+)?)",
+   "date_regex": "(\\d{4}/\\d{2}/\\d{2})",
+   "notes_regex": "Version 3\\.0\\.0\\.\\S+ [\\d.]+ MB \\d{4}/\\d{2}/\\d{2} (?:SHA-?256\\s*[:：]\\s*[0-9A-Fa-f]{64} )?(.+?) Downloaded"
   },
   {
    "id": "tp-link-archer-ax73",
@@ -175,21 +183,32 @@
    "brand": "Eero",
    "model": "Eero Pro 6E",
    "category": "R",
-   "type": "manual"
+   "type": "html",
+   "url": "https://support.eero.com/hc/en-us/articles/207908283-eeroOS-release-notes",
+   "version_regex": "eeroOS\\s*v?(\\d+\\.\\d+\\.\\d+(?:-\\d+)?)",
+   "notes": "eeroOS release. Eero pushes updates automatically over a few days."
   },
   {
    "id": "synology-ds923-plus",
    "brand": "Synology",
    "model": "DiskStation DS923+",
    "category": "N",
-   "type": "manual"
+   "type": "html",
+   "url": "https://www.synology.com/api/support/findDownloadInfo?lang=en-us&product=DS923%2B&major=7&minor=2",
+   "page_url": "https://www.synology.com/en-us/releaseNote/DSM",
+   "version_regex": "\"version\"\\s*:\\s*\"(7\\.\\d[\\d.]*(?:-\\d+)?)\"",
+   "notes": "DSM release. See Synology's release notes for details."
   },
   {
    "id": "synology-ds224-plus",
    "brand": "Synology",
    "model": "DiskStation DS224+",
    "category": "N",
-   "type": "manual"
+   "type": "html",
+   "url": "https://www.synology.com/api/support/findDownloadInfo?lang=en-us&product=DS224%2B&major=7&minor=2",
+   "page_url": "https://www.synology.com/en-us/releaseNote/DSM",
+   "version_regex": "\"version\"\\s*:\\s*\"(7\\.\\d[\\d.]*(?:-\\d+)?)\"",
+   "notes": "DSM release. See Synology's release notes for details."
   },
   {
    "id": "qnap-ts-464",
@@ -217,7 +236,11 @@
    "brand": "Philips Hue",
    "model": "Bridge (v2)",
    "category": "S",
-   "type": "manual"
+   "type": "html",
+   "url": "https://www.philips-hue.com/en-us/support/release-notes/bridge",
+   "version_regex": "Software version:?\\s*(\\d{10})",
+   "date_regex": "([A-Z][a-z]{2,8}\\.? \\d{1,2}, \\d{4})",
+   "notes_regex": "Software version:?\\s*\\d{10}\\s*\\**\\s*(.+?)\\s*(?:We’ll start|We'll start|\\*\\*[A-Z][a-z]{2,8}\\.? \\d{1,2}, \\d{4})"
   },
   {
    "id": "ring-video-doorbell-pro-2",
