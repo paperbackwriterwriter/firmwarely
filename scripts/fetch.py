@@ -59,8 +59,13 @@ def get(url):
     return data
 
 
+MENTION_FRAG = re.compile(r"\s*(?:by|from|-)?\s*@[\w-]+(?:\s+in\s+(?:https?://\S+|#\d+))?", re.I)
+
+
 def clean(text, limit=300):
     text = html.unescape(TAG.sub(" ", text or ""))
+    text = MENTION_FRAG.sub("", text)            # "by @user in #123" → gone (would tag real people if re-posted)
+    text = re.sub(r"(?<![\w/])#(\d+)", "#\u200b" + r"\1", text)  # "#123" → non-referencing
     text = re.sub(r"\s+", " ", text).strip()
     return text[: limit - 1] + "…" if len(text) > limit else text
 
@@ -263,11 +268,24 @@ def main():
         DIGEST.unlink()
     if changed:
         md, html_body = build_digest(changed)
-        DIGEST.write_text(md)
+        DIGEST.write_text(build_issue_summary(changed))   # what the GitHub issue shows: names/versions/dates only
         print(f"digest: {len(changed)} change(s) → {DIGEST.name}")
         beehiiv_draft(md.splitlines()[0].lstrip("# ").strip(), html_body)
     else:
         print("digest: no changes since last run")
+
+
+def build_issue_summary(changed):
+    """Plain summary for the GitHub issue. Deliberately contains no release-note text and no external
+    links, so it can never @mention or cross-reference anyone on GitHub."""
+    date = TODAY.strftime("%b %-d, %Y")
+    lines = [f"# Firmware digest — {date}", "",
+             f"{len(changed)} change(s). Full digest with release notes is in the Beehiiv draft.", ""]
+    for d in sorted(changed, key=lambda x: (x["status"] != "critical", x["brand"], x["model"])):
+        flag = {"critical": "🔴 security", "update": "🟡 update", "eol": "⚫ end of life"}.get(d["status"], "⚪")
+        lines.append(f"- {flag} — {d['brand']} {d['model']}: `{d['version']}` ({d.get('released','')})")
+    lines += ["", "Site: firmwarely dot com (link omitted on purpose)", ""]
+    return "\n".join(lines)
 
 
 def build_digest(changed):
