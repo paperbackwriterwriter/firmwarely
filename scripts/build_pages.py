@@ -1,74 +1,77 @@
 #!/usr/bin/env python3
-“””
+"""
 Builds static device pages from devices.json:
 
-devices/<id>/index.html   one page per device  → firmwarely.com/devices/<id>
-devices/index.html        all devices, grouped by brand
-sitemap.xml, robots.txt
+  devices/<id>/index.html   one page per device  → firmwarely.com/devices/<id>
+  devices/index.html        all devices, grouped by brand
+  sitemap.xml, robots.txt
 
 Reuses the <style> block from index.html so pages match the site. Run after fetch.py.
-“””
+"""
 import json, re, html
 from datetime import datetime, timezone
 from pathlib import Path
 
-ROOT = Path(**file**).resolve().parent.parent
-SITE = “https://firmwarely.com”
-CATS = {“R”: “Routers & networking”, “N”: “NAS & storage”, “S”: “Smart home & cameras”,
-“C”: “Consoles, drones & e-bikes”, “M”: “Makers & open firmware”}
-LABEL = {“critical”: “critical fix”, “update”: “new version”, “current”: “current”,
-“pending”: “watching soon”, “eol”: “end of life”}
+ROOT = Path(__file__).resolve().parent.parent
+SITE = "https://firmwarely.com"
+CATS = {"R": "Routers & networking", "N": "NAS & storage", "S": "Smart home & cameras",
+        "C": "Consoles, drones & e-bikes", "M": "Makers & open firmware"}
+LABEL = {"critical": "critical fix", "update": "new version", "current": "current",
+         "pending": "watching soon", "eol": "end of life"}
 HOWTO = {
-“R”: “Log in to the router’s admin page (usually at 192.168.1.1 or via the manufacturer’s app), open the firmware or system update section, and apply the update. Most routers reboot for a minute or two.”,
-“N”: “Open the NAS control panel, go to the update or system section, and install the new version. Back up important data first; NAS updates can take several minutes.”,
-“S”: “Updates usually arrive through the manufacturer’s phone app or roll out automatically. Open the device’s settings in the app and look for a firmware or software section.”,
-“C”: “Consoles update through their system settings or on next connection. Drones and e-bikes update through the manufacturer’s app while the device is connected.”,
-“M”: “Follow the project’s release page for the flashing or OTA procedure. Many maker devices update from a web installer or the project’s desktop app.”,
+    "R": "Log in to the router's admin page (usually at 192.168.1.1 or via the manufacturer's app), open the firmware or system update section, and apply the update. Most routers reboot for a minute or two.",
+    "N": "Open the NAS control panel, go to the update or system section, and install the new version. Back up important data first; NAS updates can take several minutes.",
+    "S": "Updates usually arrive through the manufacturer's phone app or roll out automatically. Open the device's settings in the app and look for a firmware or software section.",
+    "C": "Consoles update through their system settings or on next connection. Drones and e-bikes update through the manufacturer's app while the device is connected.",
+    "M": "Follow the project's release page for the flashing or OTA procedure. Many maker devices update from a web installer or the project's desktop app.",
 }
 
 esc = html.escape
 
+
 def fmt(d):
-if not d:
-return “—”
-try:
-return datetime.fromisoformat(d).strftime(”%b %-d, %Y”)
-except Exception:
-return d
+    if not d:
+        return "—"
+    try:
+        return datetime.fromisoformat(d).strftime("%b %-d, %Y")
+    except Exception:
+        return d
+
 
 def month(d):
-try:
-return datetime.fromisoformat(d).strftime(”%b %Y”)
-except Exception:
-return “”
+    try:
+        return datetime.fromisoformat(d).strftime("%b %Y")
+    except Exception:
+        return ""
+
 
 def styles():
-s = (ROOT / “index.html”).read_text()
-m = re.search(r”<style>(.*?)</style>”, s, re.S)
-return (m.group(1) if m else “”) + “””
-.crumbs{font-family:var(–mono);font-size:.8rem;color:var(–muted);margin-bottom:1.25rem}
-.crumbs a{color:var(–muted)}
-.dev{display:grid;grid-template-columns:1fr;gap:2rem;padding-top:2rem}
-@media(min-width:900px){.dev{grid-template-columns:2fr 1fr}}
-.card{border:1px solid var(–line);border-radius:12px;padding:1.25rem;background:var(–panel)}
-.kv{display:grid;grid-template-columns:150px 1fr;gap:.55rem 1rem;font-size:.95rem;margin:1rem 0 0}
-.kv dt{color:var(–muted);font-family:var(–mono);font-size:.8rem}
-.kv dd{margin:0;font-family:var(–mono)}
-.hist{width:100%;border-collapse:collapse;margin-top:.5rem;font-family:var(–mono);font-size:.85rem}
-.hist td{padding:.5rem 0;border-top:1px solid var(–line)}
-.hist td:last-child{text-align:right;color:var(–muted)}
-h1.dev-h{font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.15;margin:.25rem 0 .5rem}
-.faq h3{font-size:1rem;margin:1.25rem 0 .35rem}
-.faq p{color:var(–muted);margin:0}
-.brandlist h2{font-family:var(–mono);font-size:1rem;color:var(–amber);margin:1.75rem 0 .5rem}
-.brandlist ul{list-style:none;padding:0;margin:0;display:grid;gap:.4rem}
-.brandlist li{display:flex;justify-content:space-between;gap:1rem;border-top:1px solid var(–line);padding:.6rem 0}
-.brandlist li span{font-family:var(–mono);font-size:.85rem;color:var(–muted)}
-“””
+    s = (ROOT / "index.html").read_text()
+    m = re.search(r"<style>(.*?)</style>", s, re.S)
+    return (m.group(1) if m else "") + """
+  .crumbs{font-family:var(--mono);font-size:.8rem;color:var(--muted);margin-bottom:1.25rem}
+  .crumbs a{color:var(--muted)}
+  .dev{display:grid;grid-template-columns:1fr;gap:2rem;padding-top:2rem}
+  @media(min-width:900px){.dev{grid-template-columns:2fr 1fr}}
+  .card{border:1px solid var(--line);border-radius:12px;padding:1.25rem;background:var(--panel)}
+  .kv{display:grid;grid-template-columns:150px 1fr;gap:.55rem 1rem;font-size:.95rem;margin:1rem 0 0}
+  .kv dt{color:var(--muted);font-family:var(--mono);font-size:.8rem}
+  .kv dd{margin:0;font-family:var(--mono)}
+  .hist{width:100%;border-collapse:collapse;margin-top:.5rem;font-family:var(--mono);font-size:.85rem}
+  .hist td{padding:.5rem 0;border-top:1px solid var(--line)}
+  .hist td:last-child{text-align:right;color:var(--muted)}
+  h1.dev-h{font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.15;margin:.25rem 0 .5rem}
+  .faq h3{font-size:1rem;margin:1.25rem 0 .35rem}
+  .faq p{color:var(--muted);margin:0}
+  .brandlist h2{font-family:var(--mono);font-size:1rem;color:var(--amber);margin:1.75rem 0 .5rem}
+  .brandlist ul{list-style:none;padding:0;margin:0;display:grid;gap:.4rem}
+  .brandlist li{display:flex;justify-content:space-between;gap:1rem;border-top:1px solid var(--line);padding:.6rem 0}
+  .brandlist li span{font-family:var(--mono);font-size:.85rem;color:var(--muted)}
+"""
 
-def head(title, desc, path, extra=””):
-return f”””<!doctype html>
 
+def head(title, desc, path, extra=""):
+    return f"""<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -101,9 +104,9 @@ return f”””<!doctype html>
 <main>
 """
 
-def signup(device_name=””):
-return f”””
 
+def signup(device_name=""):
+    return f"""
 <section id="signup" class="signup">
   <div class="wrap">
     <h2>Get alerts for {esc(device_name) if device_name else "your devices"}</h2>
@@ -121,8 +124,8 @@ return f”””
 </section>
 """
 
-FOOT = “””
 
+FOOT = """
 </main>
 <footer>
   <div class="wrap">
@@ -152,33 +155,31 @@ if (f) f.addEventListener("submit", async e => {
 </html>
 """
 
+
 def device_page(d):
-name = f”{d[‘brand’]} {d[‘model’]}”
-path = f”/devices/{d[‘id’]}/”
-cat = CATS.get(d[“category”], “”)
-live = d.get(“version”) and d[“status”] != “pending”
-if live:
-title = f”{name} firmware — latest version {d[‘version’]} ({month(d[‘released’])}) | Firmwarely”
-desc = f”Latest {name} firmware is {d[‘version’]}, released {fmt(d[‘released’])}. Release notes, version history, and email alerts when a new or critical update ships.”
-else:
-title = f”{name} firmware updates — alerts & release tracking | Firmwarely”
-desc = f”Track {name} firmware updates. Firmwarely watches manufacturer release pages and emails you when a new or security update ships.”
+    name = f"{d['brand']} {d['model']}"
+    path = f"/devices/{d['id']}/"
+    cat = CATS.get(d["category"], "")
+    live = d.get("version") and d["status"] != "pending"
+    if live:
+        title = f"{name} firmware — latest version {d['version']} ({month(d['released'])}) | Firmwarely"
+        desc = f"Latest {name} firmware is {d['version']}, released {fmt(d['released'])}. Release notes, version history, and email alerts when a new or critical update ships."
+    else:
+        title = f"{name} firmware updates — alerts & release tracking | Firmwarely"
+        desc = f"Track {name} firmware updates. Firmwarely watches manufacturer release pages and emails you when a new or security update ships."
 
-```
-ld = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Devices", "item": f"{SITE}/devices/"},
-    {"@type": "ListItem", "position": 2, "name": name, "item": f"{SITE}{path}"}]}
-extra = f'<script type="application/ld+json">{json.dumps(ld)}</script>'
+    ld = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Devices", "item": f"{SITE}/devices/"},
+        {"@type": "ListItem", "position": 2, "name": name, "item": f"{SITE}{path}"}]}
+    extra = f'<script type="application/ld+json">{json.dumps(ld)}</script>'
 
-notes = d.get("notes") or ""
-hist = d.get("history") or []
-rows = "".join(f"<tr><td>{esc(h['version'])}</td><td>{fmt(h.get('released'))}</td></tr>" for h in hist[:6]) \
-       or (f"<tr><td>{esc(d['version'])}</td><td>{fmt(d.get('released'))}</td></tr>" if live else "")
+    notes = d.get("notes") or ""
+    hist = d.get("history") or []
+    rows = "".join(f"<tr><td>{esc(h['version'])}</td><td>{fmt(h.get('released'))}</td></tr>" for h in hist[:6]) \
+           or (f"<tr><td>{esc(d['version'])}</td><td>{fmt(d.get('released'))}</td></tr>" if live else "")
 
-body = head(title, desc, path, extra)
-body += f"""
-```
-
+    body = head(title, desc, path, extra)
+    body += f"""
 <div class="wrap">
   <div class="crumbs"><a href="/devices/">Devices</a> / <a href="/devices/#{d['category']}">{esc(cat)}</a> / {esc(name)}</div>
   <div class="dev">
@@ -221,24 +222,24 @@ body += f"""
     body += signup(name) + FOOT
     return body
 
-def index_page(devices):
-by_brand = {}
-for d in devices:
-by_brand.setdefault(d[“brand”], []).append(d)
-parts = []
-for cat_key, cat_name in CATS.items():
-items = [d for d in devices if d[“category”] == cat_key]
-if not items:
-continue
-parts.append(f’<h2 id="{cat_key}">{esc(cat_name)}</h2><ul>’)
-for d in sorted(items, key=lambda x: (x[“status”] == “pending”, x[“brand”], x[“model”])):
-v = esc(d[“version”]) if d.get(“version”) and d[“status”] != “pending” else “watching soon”
-parts.append(f’<li><a href=”/devices/{d[“id”]}/”>{esc(d[“brand”])} {esc(d[“model”])}</a><span>{v}</span></li>’)
-parts.append(”</ul>”)
-title = “Firmware update tracker — every device we watch | Firmwarely”
-desc = f”Latest firmware versions for {len(devices)} routers, NAS, smart home devices, consoles and maker gear, checked nightly against manufacturer release pages.”
-return head(title, desc, “/devices/”) + f”””
 
+def index_page(devices):
+    by_brand = {}
+    for d in devices:
+        by_brand.setdefault(d["brand"], []).append(d)
+    parts = []
+    for cat_key, cat_name in CATS.items():
+        items = [d for d in devices if d["category"] == cat_key]
+        if not items:
+            continue
+        parts.append(f'<h2 id="{cat_key}">{esc(cat_name)}</h2><ul>')
+        for d in sorted(items, key=lambda x: (x["status"] == "pending", x["brand"], x["model"])):
+            v = esc(d["version"]) if d.get("version") and d["status"] != "pending" else "watching soon"
+            parts.append(f'<li><a href="/devices/{d["id"]}/">{esc(d["brand"])} {esc(d["model"])}</a><span>{v}</span></li>')
+        parts.append("</ul>")
+    title = "Firmware update tracker — every device we watch | Firmwarely"
+    desc = f"Latest firmware versions for {len(devices)} routers, NAS, smart home devices, consoles and maker gear, checked nightly against manufacturer release pages."
+    return head(title, desc, "/devices/") + f"""
 <div class="wrap brandlist" style="padding-top:2rem">
   <h1 class="dev-h">Every device we watch</h1>
   <p style="color:var(--muted)">Checked every night. Tap a device for its latest firmware, release notes and history.</p>
@@ -246,29 +247,29 @@ return head(title, desc, “/devices/”) + f”””
 </div>
 """ + signup() + FOOT
 
+
 def main():
-global STYLES
-STYLES = styles()
-data = json.loads((ROOT / “devices.json”).read_text())
-devices = data[“devices”]
-out = ROOT / “devices”
-out.mkdir(exist_ok=True)
-for d in devices:
-p = out / d[“id”]
-p.mkdir(exist_ok=True)
-(p / “index.html”).write_text(device_page(d))
-(out / “index.html”).write_text(index_page(devices))
+    global STYLES
+    STYLES = styles()
+    data = json.loads((ROOT / "devices.json").read_text())
+    devices = data["devices"]
+    out = ROOT / "devices"
+    out.mkdir(exist_ok=True)
+    for d in devices:
+        p = out / d["id"]
+        p.mkdir(exist_ok=True)
+        (p / "index.html").write_text(device_page(d))
+    (out / "index.html").write_text(index_page(devices))
 
-```
-today = datetime.now(timezone.utc).date().isoformat()
-urls = [f"{SITE}/", f"{SITE}/devices/"] + [f"{SITE}/devices/{d['id']}/" for d in devices]
-sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-sm += [f"  <url><loc>{u}</loc><lastmod>{today}</lastmod></url>" for u in urls]
-sm.append("</urlset>")
-(ROOT / "sitemap.xml").write_text("\n".join(sm) + "\n")
-(ROOT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n")
-print(f"built {len(devices)} device pages + index, sitemap ({len(urls)} urls)")
-```
+    today = datetime.now(timezone.utc).date().isoformat()
+    urls = [f"{SITE}/", f"{SITE}/devices/"] + [f"{SITE}/devices/{d['id']}/" for d in devices]
+    sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    sm += [f"  <url><loc>{u}</loc><lastmod>{today}</lastmod></url>" for u in urls]
+    sm.append("</urlset>")
+    (ROOT / "sitemap.xml").write_text("\n".join(sm) + "\n")
+    (ROOT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n")
+    print(f"built {len(devices)} device pages + index, sitemap ({len(urls)} urls)")
 
-if **name** == “**main**”:
-main()
+
+if __name__ == "__main__":
+    main()
