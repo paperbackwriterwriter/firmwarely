@@ -1,5 +1,5 @@
 {
- "_readme": "Each entry is one device. type: 'feed' (RSS/Atom), 'html' (regex over a page), or 'manual' (catalog placeholder, not tracked yet). item_match filters feed items by title. version_regex must have one capture group. Categories: R routers, N NAS, S smart home, C consoles/drones/e-bikes, M makers/open firmware. Optional: skip_match (regex of titles to ignore, default skips rc/beta/alpha), date_regex (html only, one capture group). type 'github' uses the GitHub API latest-release endpoint (stable only): set repo: 'owner/name'. Optional html fields: notes_regex (one group, DOTALL), page_url (human link to show instead of the fetched url). In date_regex/notes_regex, the literal token {version} is replaced with the matched version so they anchor to the right entry.",
+ "_readme": "Each entry is one device. type: 'feed' (RSS/Atom), 'html' (regex over a page), 'browser' (same as html but the page is rendered by headless Chromium first — for JS-only sites), or 'manual' (catalog placeholder, not tracked yet). item_match filters feed items by title. version_regex must have one capture group. Categories: R routers, N NAS, S smart home, C consoles/drones/e-bikes, M makers/open firmware. Optional: skip_match (regex of titles to ignore, default skips rc/beta/alpha), date_regex (html only, one capture group). type 'github' uses the GitHub API latest-release endpoint (stable only): set repo: 'owner/name'. Optional html fields: notes_regex (one group, DOTALL), page_url (human link to show instead of the fetched url). Optional browser fields: wait_for (CSS selector), click (CSS selector), wait_ms. In date_regex/notes_regex, the literal token {version} is replaced with the matched version so they anchor to the right entry.",
  "devices": [
   {
    "id": "ubiquiti-unifi-dream-machine-se",
@@ -128,9 +128,11 @@
    "brand": "Microsoft",
    "model": "Xbox Series X|S",
    "category": "C",
-   "type": "manual",
+   "type": "browser",
+   "url": "https://support.xbox.com/en-US/help/hardware-network/console/xbox-console-system-updates",
+   "version_regex": "OS version:?\\s*(10\\.0\\.\\d+\\.\\d+)",
    "product_url": "https://www.xbox.com/en-US/consoles",
-   "_note": "support.xbox.com is a JavaScript app; needs a headless browser to read. Revisit."
+   "notes": "Xbox system update. See the release notes for details."
   },
   {
    "id": "nintendo-switch",
@@ -169,14 +171,20 @@
    "brand": "TP-Link",
    "model": "Archer AX73",
    "category": "R",
-   "type": "manual"
+   "type": "browser",
+   "url": "https://www.tp-link.com/us/support/download/archer-ax73/#Firmware",
+   "version_regex": "Archer AX73\\(US\\)_V\\d+_(\\d+\\.\\d+\\.\\d+)",
+   "notes": "TP-Link firmware release. See the download page for the changelog."
   },
   {
    "id": "netgear-nighthawk-rax50",
    "brand": "Netgear",
    "model": "Nighthawk RAX50",
    "category": "R",
-   "type": "manual"
+   "type": "browser",
+   "url": "https://www.netgear.com/support/product/rax50/",
+   "version_regex": "Firmware Version (\\d+\\.\\d+\\.\\d+\\.\\d+)",
+   "notes": "Netgear firmware release. See the support page for release notes."
   },
   {
    "id": "eero-pro-6e",
@@ -216,7 +224,10 @@
    "brand": "QNAP",
    "model": "TS-464",
    "category": "N",
-   "type": "manual"
+   "type": "browser",
+   "url": "https://www.qnap.com/en-us/download?model=ts-464&category=firmware",
+   "version_regex": "(5\\.\\d+\\.\\d+\\.\\d{4})",
+   "notes": "QTS firmware release. See QNAP's release notes for details."
   },
   {
    "id": "wd-my-cloud-ex2-ultra",
@@ -331,7 +342,7 @@
    "brand": "MikroTik",
    "model": "RouterOS 7 (stable)",
    "category": "R",
-   "type": "html",
+   "type": "browser",
    "url": "https://mikrotik.com/download/changelogs",
    "version_regex": "What.s new in (7\\.\\d+(?:\\.\\d+)?)",
    "product_url": "https://mikrotik.com/products"
