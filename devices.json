@@ -1,48 +1,53 @@
 {
- "generated": "2026-09-13T00:26:45+00:00",
- "tracked": 13,
- "ok": 6,
+ "generated": "2026-09-13T00:44:12+00:00",
+ "tracked": 14,
+ "ok": 12,
  "failed": [
-  "ubiquiti-unifi-dream-machine-se",
-  "ubiquiti-unifi-protect-g5-bullet",
-  "ubiquiti-unifi-network-application",
   "home-assistant-os",
-  "meshtastic-radio",
-  "sony-playstation-5",
   "microsoft-xbox-series-x"
  ],
  "devices": [
   {
    "id": "ubiquiti-unifi-dream-machine-se",
    "brand": "Ubiquiti",
-   "model": "UniFi Dream Machine SE",
+   "model": "UniFi Dream Machine (UDM / SE / Pro)",
    "category": "R",
    "tracked": true,
-   "version": null,
-   "released": null,
-   "notes": "",
-   "source_url": "https://community.ui.com/rss/releases",
+   "version": "5.1.33",
+   "released": "2026-09-09",
+   "notes": "Overview UniFi OS 5.1.33 includes the improvements and bugfixes below. Bundled UniFi Network 10.5.67 Identity Sync Service 1.8.4 Bugfixes Fixed an issue where applications could fail to install or update.",
+   "source_url": "https://community.ui.com/releases/UniFi-OS-Dream-Machines-5-1-33/bdb30bcf-c8b9-4713-8fc7-2405d9de1f8d",
    "product_url": "https://store.ui.com/us/en/products/udm-se",
-   "history": [],
-   "checked": "2026-09-13T00:26:45+00:00",
-   "source_status": "error: HTTPError: HTTP Error 400: Bad Request",
-   "status": "pending"
+   "history": [
+    {
+     "version": "5.1.33",
+     "released": "2026-09-09"
+    }
+   ],
+   "checked": "2026-09-13T00:44:12+00:00",
+   "source_status": "ok",
+   "status": "update"
   },
   {
-   "id": "ubiquiti-unifi-protect-g5-bullet",
+   "id": "ubiquiti-unifi-protect-application",
    "brand": "Ubiquiti",
-   "model": "UniFi Protect G5 Bullet",
+   "model": "UniFi Protect (NVR application)",
    "category": "S",
    "tracked": true,
-   "version": null,
-   "released": null,
-   "notes": "",
-   "source_url": "https://community.ui.com/rss/releases",
+   "version": "7.2.105",
+   "released": "2026-08-12",
+   "notes": "Overview UniFi Protect 7.2.105 introduces Evidence Trust to verify the authenticity of exported cases, Redesigned Case Management, Extended Third Party Camera support, and Personal Protective Equipment (PPE) Detection. This release also improves the Integration API with the new PoS API. Improvement…",
+   "source_url": "https://community.ui.com/releases/UniFi-Protect-Application-7-2-105/4fa06975-6aa3-4e3f-b7d5-8814e331d14c",
    "product_url": "https://store.ui.com/us/en/products/uvc-g5-bullet",
-   "history": [],
-   "checked": "2026-09-13T00:26:45+00:00",
-   "source_status": "error: HTTPError: HTTP Error 400: Bad Request",
-   "status": "pending"
+   "history": [
+    {
+     "version": "7.2.105",
+     "released": "2026-08-12"
+    }
+   ],
+   "checked": "2026-09-13T00:44:12+00:00",
+   "source_status": "ok",
+   "status": "update"
   },
   {
    "id": "ubiquiti-unifi-network-application",
@@ -50,15 +55,41 @@
    "model": "UniFi Network Application",
    "category": "R",
    "tracked": true,
-   "version": null,
-   "released": null,
-   "notes": "",
-   "source_url": "https://community.ui.com/rss/releases",
+   "version": "10.6.106",
+   "released": "2026-09-10",
+   "notes": "Improvements Added MLO STR Mesh support for WiFi 7 Access Points. Requires UAP 8.8 or newer. Improved Application stability. Improved Observability resiliency. Bugfixes Fixed a rare issue where WiFi clients using MLO could display an incorrect IP address. Fixed an issue where WiFi Broadcast could f…",
+   "source_url": "https://community.ui.com/releases/UniFi-Network-Application-10-6-106/f206c01d-3f73-471b-b4a5-2da48f157ea6",
    "product_url": null,
-   "history": [],
-   "checked": "2026-09-13T00:26:45+00:00",
-   "source_status": "error: HTTPError: HTTP Error 400: Bad Request",
-   "status": "pending"
+   "history": [
+    {
+     "version": "10.6.106",
+     "released": "2026-09-10"
+    }
+   ],
+   "checked": "2026-09-13T00:44:12+00:00",
+   "source_status": "ok",
+   "status": "update"
+  },
+  {
+   "id": "ubiquiti-unifi-access-points",
+   "brand": "Ubiquiti",
+   "model": "UniFi Access Points & Switches (device firmware)",
+   "category": "R",
+   "tracked": true,
+   "version": "8.0.76",
+   "released": "2026-08-31",
+   "notes": "Improvements Improved stability. Bugfixes Fixed Client Device Isolation not being enforced on some wireless networks. Additional information If you encounter any issues with this release, please provide us with some details on your setup and include the below information: AP model(s) Previous AP re…",
+   "source_url": "https://community.ui.com/releases/UniFi-Access-Point-for-U7-LR-8-0-76/c60a703f-fbe1-43bc-a127-702004c37ad1",
+   "product_url": null,
+   "history": [
+    {
+     "version": "8.0.76",
+     "released": "2026-08-31"
+    }
+   ],
+   "checked": "2026-09-13T00:44:12+00:00",
+   "source_status": "ok",
+   "status": "update"
   },
   {
    "id": "openwrt-router",
@@ -77,7 +108,7 @@
      "released": "2026-07-26"
     }
    ],
-   "checked": "2026-09-13T00:26:45+00:00",
+   "checked": "2026-09-13T00:44:12+00:00",
    "source_status": "ok",
    "status": "critical"
   },
@@ -93,7 +124,7 @@
    "source_url": "https://github.com/home-assistant/operating-system/releases.atom",
    "product_url": "https://www.home-assistant.io/green/",
    "history": [],
-   "checked": "2026-09-13T00:26:45+00:00",
+   "checked": "2026-09-13T00:44:12+00:00",
    "source_status": "error: ValueError: no matching item in feed",
    "status": "pending"
   },
@@ -114,7 +145,7 @@
      "released": "2026-08-25"
     }
    ],
-   "checked": "2026-09-13T00:26:45+00:00",
+   "checked": "2026-09-13T00:44:12+00:00",
    "source_status": "ok",
    "status": "update"
   },
@@ -135,7 +166,7 @@
      "released": "2026-07-19"
     }
    ],
-   "checked": "2026-09-13T00:26:45+00:00",
+   "checked": "2026-09-13T00:44:12+00:00",
    "source_status": "ok",
    "status": "current"
   },
@@ -145,18 +176,22 @@
    "model": "MK4 / MK4S / Core One (Buddy firmware)",
    "category": "M",
    "tracked": true,
-   "version": "6.9.1",
-   "released": "2026-09-10",
-   "notes": "Improvements Improved Tool Offset Calibration - Z probing and XY scanning now run at 150 °C instead of 170 °C . Improved Calibration Reliability - Increased the number of Z probe attempts during Tool Offset Calibration from 3 to 10 , improving reliability in less favorable conditions. Improved Acce…",
-   "source_url": "https://github.com/prusa3d/Prusa-Firmware-Buddy/releases/tag/v6.9.1-beta",
+   "version": "6.10.1",
+   "released": "2026-08-28",
+   "notes": "Summary New features Support for the new Prusa XL+ Contactless tool offset calibration [XL+] Nozzle thermal expansion compensation [XL/+] Immediate stop on filament runout [6.8.1] Guided calibration order [6.8.1] Filament compatibility checks in more places [6.8.1] Reworked tool mapping screen [6.6…",
+   "source_url": "https://github.com/prusa3d/Prusa-Firmware-Buddy/releases/tag/v6.10.1",
    "product_url": "https://www.prusa3d.com/product/original-prusa-mk4s-kit/",
    "history": [
+    {
+     "version": "6.10.1",
+     "released": "2026-08-28"
+    },
     {
      "version": "6.9.1",
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T00:26:45+00:00",
+   "checked": "2026-09-13T00:44:12+00:00",
    "source_status": "ok",
    "status": "update"
   },
@@ -177,7 +212,7 @@
      "released": "2025-12-05"
     }
    ],
-   "checked": "2026-09-13T00:26:45+00:00",
+   "checked": "2026-09-13T00:44:12+00:00",
    "source_status": "ok",
    "status": "current"
   },
@@ -187,15 +222,20 @@
    "model": "Radio firmware (Heltec, RAK, T-Beam)",
    "category": "M",
    "tracked": true,
-   "version": null,
-   "released": null,
-   "notes": "",
-   "source_url": "https://github.com/meshtastic/firmware/releases.atom",
+   "version": "2.8.0.7239fe8",
+   "released": "2026-09-01",
+   "notes": "Warning This initial cut of 2.8.0 was revoked due to issues encountered with LR1110 initialization. This became apparent on T1000-E devices after a fresh flash. Please download https://github.com/meshtastic/firmware/releases/tag/v2.8.0.47db0e3 instead.",
+   "source_url": "https://github.com/meshtastic/firmware/releases/tag/v2.8.0.7239fe8",
    "product_url": null,
-   "history": [],
-   "checked": "2026-09-13T00:26:45+00:00",
-   "source_status": "error: ValueError: no matching item in feed",
-   "status": "pending"
+   "history": [
+    {
+     "version": "2.8.0.7239fe8",
+     "released": "2026-09-01"
+    }
+   ],
+   "checked": "2026-09-13T00:44:12+00:00",
+   "source_status": "ok",
+   "status": "update"
   },
   {
    "id": "sony-playstation-5",
@@ -203,15 +243,20 @@
    "model": "PlayStation 5",
    "category": "C",
    "tracked": true,
-   "version": null,
-   "released": null,
-   "notes": "",
-   "source_url": "https://www.playstation.com/en-us/support/hardware/ps5/system-software/",
+   "version": "26.05-13.60.00",
+   "released": "2026-09-13",
+   "notes": "PS5 system software. Sony describes most releases as improving system performance and security.",
+   "source_url": "https://www.playstation.com/en-us/support/hardware/ps5/system-software-info/",
    "product_url": "https://direct.playstation.com/en-us/consoles",
-   "history": [],
-   "checked": "2026-09-13T00:26:45+00:00",
-   "source_status": "error: ValueError: version pattern not found on page",
-   "status": "pending"
+   "history": [
+    {
+     "version": "26.05-13.60.00",
+     "released": "2026-09-13"
+    }
+   ],
+   "checked": "2026-09-13T00:44:12+00:00",
+   "source_status": "ok",
+   "status": "critical"
   },
   {
    "id": "microsoft-xbox-series-x",
@@ -225,7 +270,7 @@
    "source_url": "https://support.xbox.com/en-US/help/hardware-network/console/system-update-info",
    "product_url": "https://www.xbox.com/en-US/consoles",
    "history": [],
-   "checked": "2026-09-13T00:26:45+00:00",
+   "checked": "2026-09-13T00:44:12+00:00",
    "source_status": "error: ValueError: version pattern not found on page",
    "status": "pending"
   },
@@ -246,7 +291,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T00:26:45+00:00",
+   "checked": "2026-09-13T00:44:12+00:00",
    "source_status": "ok",
    "status": "update"
   },
