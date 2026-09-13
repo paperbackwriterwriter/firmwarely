@@ -1,8 +1,10 @@
 {
- "generated": "2026-09-13T17:53:56+00:00",
- "tracked": 35,
- "ok": 34,
+ "generated": "2026-09-13T18:07:28+00:00",
+ "tracked": 39,
+ "ok": 36,
  "failed": [
+  "microsoft-xbox-series-x",
+  "tp-link-archer-ax73",
   "mikrotik-routeros"
  ],
  "devices": [
@@ -23,7 +25,7 @@
      "released": "2026-09-09"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -45,7 +47,7 @@
      "released": "2026-08-12"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -67,7 +69,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -89,7 +91,7 @@
      "released": "2026-08-31"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -111,7 +113,7 @@
      "released": "2026-07-26"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "critical"
@@ -133,7 +135,7 @@
      "released": "2026-07-30"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -155,7 +157,7 @@
      "released": "2026-08-25"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -177,7 +179,7 @@
      "released": "2026-07-19"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -203,7 +205,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -225,7 +227,7 @@
      "released": "2025-12-05"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -247,7 +249,7 @@
      "released": "2026-09-01"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -269,7 +271,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -279,14 +281,14 @@
    "brand": "Microsoft",
    "model": "Xbox Series X|S",
    "category": "C",
-   "tracked": false,
+   "tracked": true,
    "version": null,
    "released": null,
    "notes": "",
    "source_url": "https://support.xbox.com/en-US/help/hardware-network/console/system-update-info",
    "product_url": "https://www.xbox.com/en-US/consoles",
    "history": [],
-   "checked": "2026-09-13T00:44:12+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "error: ValueError: version pattern not found on page",
    "eol": false,
    "status": "pending"
@@ -308,7 +310,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -330,7 +332,7 @@
      "released": "2026-04-17"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": true,
    "status": "eol"
@@ -352,7 +354,7 @@
      "released": "2026-05-04"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -362,15 +364,15 @@
    "brand": "TP-Link",
    "model": "Archer AX73",
    "category": "R",
-   "tracked": false,
+   "tracked": true,
    "version": null,
    "released": null,
    "notes": "",
-   "source_url": null,
+   "source_url": "https://www.tp-link.com/us/support/download/archer-ax73/#Firmware",
    "product_url": null,
    "history": [],
-   "checked": null,
-   "source_status": "pending",
+   "checked": "2026-09-13T18:07:28+00:00",
+   "source_status": "error: ValueError: version pattern not found on page",
    "eol": false,
    "status": "pending"
   },
@@ -379,17 +381,22 @@
    "brand": "Netgear",
    "model": "Nighthawk RAX50",
    "category": "R",
-   "tracked": false,
-   "version": null,
-   "released": null,
-   "notes": "",
-   "source_url": null,
+   "tracked": true,
+   "version": "1.0.18.146",
+   "released": "2026-09-13",
+   "notes": "Netgear firmware release. See the support page for release notes.",
+   "source_url": "https://www.netgear.com/support/product/rax50/",
    "product_url": null,
-   "history": [],
-   "checked": null,
-   "source_status": "pending",
+   "history": [
+    {
+     "version": "1.0.18.146",
+     "released": "2026-09-13"
+    }
+   ],
+   "checked": "2026-09-13T18:07:28+00:00",
+   "source_status": "ok",
    "eol": false,
-   "status": "pending"
+   "status": "update"
   },
   {
    "id": "eero-pro-6e",
@@ -408,7 +415,7 @@
      "released": "2026-09-11"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -430,7 +437,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -452,7 +459,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -462,17 +469,22 @@
    "brand": "QNAP",
    "model": "TS-464",
    "category": "N",
-   "tracked": false,
-   "version": null,
-   "released": null,
-   "notes": "",
-   "source_url": null,
+   "tracked": true,
+   "version": "5.2.10.3577",
+   "released": "2026-09-13",
+   "notes": "QTS firmware release. See QNAP's release notes for details.",
+   "source_url": "https://www.qnap.com/en-us/download?model=ts-464&category=firmware",
    "product_url": null,
-   "history": [],
-   "checked": null,
-   "source_status": "pending",
+   "history": [
+    {
+     "version": "5.2.10.3577",
+     "released": "2026-09-13"
+    }
+   ],
+   "checked": "2026-09-13T18:07:28+00:00",
+   "source_status": "ok",
    "eol": false,
-   "status": "pending"
+   "status": "update"
   },
   {
    "id": "wd-my-cloud-ex2-ultra",
@@ -525,7 +537,7 @@
      "released": "2026-07-02"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -649,7 +661,7 @@
      "released": "2026-07-06"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -671,7 +683,7 @@
      "released": "2026-08-18"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "critical"
@@ -693,7 +705,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -715,7 +727,7 @@
      "released": "2026-08-27"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -732,7 +744,7 @@
    "source_url": "https://mikrotik.com/download/changelogs",
    "product_url": "https://mikrotik.com/products",
    "history": [],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "error: ValueError: version pattern not found on page",
    "eol": false,
    "status": "pending"
@@ -754,7 +766,7 @@
      "released": "2026-08-31"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -776,7 +788,7 @@
      "released": "2026-09-11"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -798,7 +810,7 @@
      "released": "2026-09-03"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -820,7 +832,7 @@
      "released": "2026-09-12"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -842,7 +854,7 @@
      "released": "2026-06-24"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -864,7 +876,7 @@
      "released": "2026-06-23"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -886,7 +898,7 @@
      "released": "2025-10-31"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -908,7 +920,7 @@
      "released": "2025-10-31"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -930,7 +942,7 @@
      "released": "2026-09-08"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -952,7 +964,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -974,7 +986,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T17:53:56+00:00",
+   "checked": "2026-09-13T18:07:28+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
