@@ -38,6 +38,8 @@ SECURITY = re.compile(
     re.I,
 )
 DEFAULT_VERSION = re.compile(r"(\d+(?:\.\d+)+(?:[-_]\w+)*)")
+# feed items whose title matches this are skipped unless the source sets its own skip_match
+DEFAULT_SKIP = r"\b(rc\d*|beta|alpha|dev|nightly|pre-?release|release candidate|early access)\b"
 TAG = re.compile(r"<[^>]+>")
 
 _cache = {}
@@ -97,7 +99,13 @@ def parse_date(s):
     try:
         return datetime.fromisoformat(s.replace("Z", "+00:00")).date().isoformat()
     except Exception:
-        return None
+        pass
+    for fmt in ("%m/%d/%Y", "%B %d, %Y", "%b %d, %Y", "%d %B %Y", "%Y-%m-%d"):
+        try:
+            return datetime.strptime(s, fmt).date().isoformat()
+        except Exception:
+            pass
+    return None
 
 
 def extract_version(text, pattern):
@@ -108,8 +116,12 @@ def extract_version(text, pattern):
 def check_feed(src):
     items = parse_feed(get(src["url"]))
     match = re.compile(src["item_match"], re.I) if src.get("item_match") else None
+    skip_pat = src.get("skip_match", DEFAULT_SKIP)
+    skip = re.compile(skip_pat, re.I) if skip_pat else None
     for it in items:
         if match and not match.search(it["title"]):
+            continue
+        if skip and skip.search(it["title"]):
             continue
         v = extract_version(it["title"], src.get("version_regex"))
         if not v:
@@ -124,14 +136,22 @@ def check_feed(src):
 
 
 def check_html(src, prev):
-    page = get(src["url"])
+    raw = get(src["url"])
+    # search the raw HTML first, then a tag-stripped copy (handles "Version:</b> 1.2.3")
+    page = raw if re.search(src["version_regex"], raw) else re.sub(r"\s+", " ", html.unescape(TAG.sub(" ", raw)))
     v = extract_version(page, src["version_regex"])
     if not v:
         raise ValueError("version pattern not found on page")
     changed = not prev or prev.get("version") != v
+    released = None
+    if src.get("date_regex"):
+        m = re.search(src["date_regex"], page)
+        released = parse_date(m.group(1)) if m else None
+    if not released:
+        released = TODAY.isoformat() if changed else prev.get("released")
     return {
         "version": v,
-        "released": TODAY.isoformat() if changed else prev.get("released"),
+        "released": released,
         "notes": src.get("notes", ""),
         "source_url": src["url"],
     }
@@ -202,3 +222,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
