@@ -120,7 +120,7 @@
    "type": "html",
    "url": "https://www.playstation.com/en-us/support/hardware/ps5/system-software-info/",
    "version_regex": "Version:\\s*(\\d{2}\\.\\d{2}-\\d{2}\\.\\d{2}\\.\\d{2})",
-   "notes": "PS5 system software. Sony describes most releases as improving system performance and security.",
+   "notes": "PS5 system software. Sony usually describes these as performance and stability improvements; see the release notes for details.",
    "product_url": "https://direct.playstation.com/en-us/consoles"
   },
   {
