@@ -464,9 +464,9 @@
    "brand": "Asuswrt-Merlin",
    "model": "Router firmware",
    "category": "R",
-   "type": "github",
-   "repo": "RMerl/asuswrt-merlin.ng",
-   "product_url": "https://github.com/RMerl/asuswrt-merlin.ng"
+   "type": "feed",
+   "product_url": "https://github.com/RMerl/asuswrt-merlin.ng",
+   "url": "https://github.com/RMerl/asuswrt-merlin.ng/tags.atom"
   },
   {
    "id": "pihole-ftl",
@@ -734,9 +734,9 @@
    "brand": "ISC",
    "model": "Kea DHCP",
    "category": "R",
-   "type": "github",
-   "repo": "isc-projects/kea",
-   "product_url": "https://github.com/isc-projects/kea"
+   "type": "feed",
+   "product_url": "https://github.com/isc-projects/kea",
+   "url": "https://github.com/isc-projects/kea/tags.atom"
   },
   {
    "id": "smokeping",
@@ -770,18 +770,18 @@
    "brand": "OpenMediaVault",
    "model": "NAS operating system",
    "category": "N",
-   "type": "github",
-   "repo": "openmediavault/openmediavault",
-   "product_url": "https://github.com/openmediavault/openmediavault"
+   "type": "feed",
+   "product_url": "https://github.com/openmediavault/openmediavault",
+   "url": "https://github.com/openmediavault/openmediavault/tags.atom"
   },
   {
    "id": "truenas-scale",
    "brand": "TrueNAS",
    "model": "SCALE middleware",
    "category": "N",
-   "type": "github",
-   "repo": "truenas/middleware",
-   "product_url": "https://github.com/truenas/middleware"
+   "type": "feed",
+   "product_url": "https://github.com/truenas/middleware",
+   "url": "https://github.com/truenas/middleware/tags.atom"
   },
   {
    "id": "minio",
@@ -790,7 +790,8 @@
    "category": "N",
    "type": "github",
    "repo": "minio/minio",
-   "product_url": "https://github.com/minio/minio"
+   "product_url": "https://github.com/minio/minio",
+   "version_regex": "(RELEASE\\.\\d{4}-\\d{2}-\\d{2}T[\\d-]+Z)"
   },
   {
    "id": "seafile",
@@ -880,7 +881,8 @@
    "category": "N",
    "type": "github",
    "repo": "photoprism/photoprism",
-   "product_url": "https://github.com/photoprism/photoprism"
+   "product_url": "https://github.com/photoprism/photoprism",
+   "version_regex": "(\\d{6}-[0-9a-f]{7,})"
   },
   {
    "id": "owncloud-server",
@@ -905,9 +907,9 @@
    "brand": "Ceph",
    "model": "Distributed storage",
    "category": "N",
-   "type": "github",
-   "repo": "ceph/ceph",
-   "product_url": "https://github.com/ceph/ceph"
+   "type": "feed",
+   "product_url": "https://github.com/ceph/ceph",
+   "url": "https://github.com/ceph/ceph/tags.atom"
   },
   {
    "id": "openzfs",
@@ -979,7 +981,8 @@
    "category": "N",
    "type": "github",
    "repo": "cockpit-project/cockpit",
-   "product_url": "https://github.com/cockpit-project/cockpit"
+   "product_url": "https://github.com/cockpit-project/cockpit",
+   "version_regex": "(\\d+)"
   },
   {
    "id": "webmin",
@@ -1130,9 +1133,9 @@
    "brand": "Readarr",
    "model": "Book manager",
    "category": "N",
-   "type": "github",
-   "repo": "Readarr/Readarr",
-   "product_url": "https://github.com/Readarr/Readarr"
+   "type": "feed",
+   "product_url": "https://github.com/Readarr/Readarr",
+   "url": "https://github.com/Readarr/Readarr/tags.atom"
   },
   {
    "id": "overseerr",
@@ -1175,9 +1178,9 @@
    "brand": "Deluge",
    "model": "BitTorrent client",
    "category": "N",
-   "type": "github",
-   "repo": "deluge-torrent/deluge",
-   "product_url": "https://github.com/deluge-torrent/deluge"
+   "type": "feed",
+   "product_url": "https://github.com/deluge-torrent/deluge",
+   "url": "https://github.com/deluge-torrent/deluge/tags.atom"
   },
   {
    "id": "sabnzbd",
@@ -1193,9 +1196,9 @@
    "brand": "Tdarr",
    "model": "Media transcoding server",
    "category": "N",
-   "type": "github",
-   "repo": "HaveAGitGat/Tdarr",
-   "product_url": "https://github.com/HaveAGitGat/Tdarr"
+   "type": "feed",
+   "product_url": "https://github.com/HaveAGitGat/Tdarr",
+   "url": "https://github.com/HaveAGitGat/Tdarr/tags.atom"
   },
   {
    "id": "tautulli",
@@ -1445,9 +1448,9 @@
    "brand": "Eclipse",
    "model": "Mosquitto MQTT broker",
    "category": "S",
-   "type": "github",
-   "repo": "eclipse-mosquitto/mosquitto",
-   "product_url": "https://github.com/eclipse-mosquitto/mosquitto"
+   "type": "feed",
+   "product_url": "https://github.com/eclipse-mosquitto/mosquitto",
+   "url": "https://github.com/eclipse-mosquitto/mosquitto/tags.atom"
   },
   {
    "id": "node-red",
@@ -1528,7 +1531,8 @@
    "category": "S",
    "type": "github",
    "repo": "letscontrolit/ESPEasy",
-   "product_url": "https://github.com/letscontrolit/ESPEasy"
+   "product_url": "https://github.com/letscontrolit/ESPEasy",
+   "version_regex": "(mega-\\d{8})"
   },
   {
    "id": "openmqttgateway",
@@ -1607,9 +1611,9 @@
    "brand": "tuya-cloudcutter",
    "model": "Firmware flasher",
    "category": "S",
-   "type": "github",
-   "repo": "tuya-cloudcutter/tuya-cloudcutter",
-   "product_url": "https://github.com/tuya-cloudcutter/tuya-cloudcutter"
+   "type": "feed",
+   "product_url": "https://github.com/tuya-cloudcutter/tuya-cloudcutter",
+   "url": "https://github.com/tuya-cloudcutter/tuya-cloudcutter/tags.atom"
   },
   {
    "id": "ratgdo",
@@ -1618,7 +1622,8 @@
    "category": "S",
    "type": "github",
    "repo": "ratgdo/esphome-ratgdo",
-   "product_url": "https://github.com/ratgdo/esphome-ratgdo"
+   "product_url": "https://github.com/ratgdo/esphome-ratgdo",
+   "version_regex": "v(\\d+)"
   },
   {
    "id": "konnected-esphome",
@@ -1715,9 +1720,9 @@
    "brand": "Govee",
    "model": "MQTT bridge (unofficial)",
    "category": "S",
-   "type": "github",
-   "repo": "wez/govee2mqtt",
-   "product_url": "https://github.com/wez/govee2mqtt"
+   "type": "feed",
+   "product_url": "https://github.com/wez/govee2mqtt",
+   "url": "https://github.com/wez/govee2mqtt/tags.atom"
   },
   {
    "id": "hyperion-ng",
@@ -1751,9 +1756,9 @@
    "brand": "Klipper",
    "model": "3D printer firmware",
    "category": "M",
-   "type": "github",
-   "repo": "Klipper3d/klipper",
-   "product_url": "https://github.com/Klipper3d/klipper"
+   "type": "feed",
+   "product_url": "https://github.com/Klipper3d/klipper",
+   "url": "https://github.com/Klipper3d/klipper/tags.atom"
   },
   {
    "id": "mainsail",
@@ -1841,9 +1846,9 @@
    "brand": "Obico",
    "model": "Print monitoring server",
    "category": "M",
-   "type": "github",
-   "repo": "TheSpaghettiDetective/obico-server",
-   "product_url": "https://github.com/TheSpaghettiDetective/obico-server"
+   "type": "feed",
+   "product_url": "https://github.com/TheSpaghettiDetective/obico-server",
+   "url": "https://github.com/TheSpaghettiDetective/obico-server/tags.atom"
   },
   {
    "id": "grbl",
@@ -1886,9 +1891,9 @@
    "brand": "QMK",
    "model": "Keyboard firmware",
    "category": "M",
-   "type": "github",
-   "repo": "qmk/qmk_firmware",
-   "product_url": "https://github.com/qmk/qmk_firmware"
+   "type": "feed",
+   "product_url": "https://github.com/qmk/qmk_firmware",
+   "url": "https://github.com/qmk/qmk_firmware/tags.atom"
   },
   {
    "id": "zmk-firmware",
@@ -2066,8 +2071,7 @@
    "brand": "Batocera",
    "model": "Retro gaming OS",
    "category": "M",
-   "type": "github",
-   "repo": "batocera-linux/batocera.linux",
+   "type": "manual",
    "product_url": "https://github.com/batocera-linux/batocera.linux"
   },
   {
@@ -2138,8 +2142,7 @@
    "brand": "OpenIPC",
    "model": "IP camera firmware",
    "category": "M",
-   "type": "github",
-   "repo": "OpenIPC/firmware",
+   "type": "manual",
    "product_url": "https://github.com/OpenIPC/firmware"
   },
   {
@@ -2149,7 +2152,8 @@
    "category": "M",
    "type": "github",
    "repo": "themactep/thingino-firmware",
-   "product_url": "https://github.com/themactep/thingino-firmware"
+   "product_url": "https://github.com/themactep/thingino-firmware",
+   "version_regex": "firmware-(\\d{4}-\\d{2}-\\d{2})"
   },
   {
    "id": "pwnagotchi",
