@@ -15,7 +15,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SITE = "https://firmwarely.com"
+SITE = "https://www.firmwarely.com"  # the apex redirects here, so canonicals must too
 CATS = {"R": "Routers & networking", "N": "NAS & storage", "S": "Smart home & cameras",
         "C": "Consoles, drones & e-bikes", "M": "Makers & open firmware"}
 LABEL = {"critical": "critical fix", "update": "new version", "current": "current",
@@ -101,6 +101,8 @@ def head(title, desc, path, extra=""):
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">
 <link rel="canonical" href="{SITE}{path}">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
 <meta property="og:title" content="{esc(title)}">
 <meta property="og:description" content="{esc(desc)}">
 <meta property="og:url" content="{SITE}{path}">
@@ -182,6 +184,18 @@ if (f) f.addEventListener("submit", async e => {
 """
 
 
+TITLE_MAX = 70  # search results truncate around here
+
+
+def fit_title(candidates):
+    """First candidate that fits a search-result title; the shortest one, trimmed, if none do."""
+    for t in candidates:
+        if len(t) <= TITLE_MAX:
+            return t
+    t = candidates[-1]
+    return t if len(t) <= TITLE_MAX else t[: TITLE_MAX - 1].rstrip() + "…"
+
+
 def device_page(d):
     name = f"{d['brand']} {d['model']}"
     path = f"/devices/{d['id']}/"
@@ -191,10 +205,17 @@ def device_page(d):
     # add the word when it isn't there — otherwise the title stutters
     fw = "" if "firmware" in name.lower() else " firmware"
     if live:
-        title = f"{name}{fw} — latest version {d['version']} ({month(d['released'])}) | Firmwarely"
+        v = d["version"]
+        title = fit_title([f"{name}{fw} — latest version {v} ({month(d['released'])}) | Firmwarely",
+                           f"{name}{fw} — latest version {v} | Firmwarely",
+                           f"{name}{fw} {v} | Firmwarely",
+                           f"{name}{fw} {v}"])
         desc = f"Latest {name} version is {d['version']}, released {fmt(d['released'])}. Release notes, version history, and email alerts when a new or critical update ships."
     else:
-        title = f"{name}{fw} updates — alerts & release tracking | Firmwarely"
+        title = fit_title([f"{name}{fw} updates — alerts & release tracking | Firmwarely",
+                           f"{name}{fw} updates — release tracking | Firmwarely",
+                           f"{name}{fw} updates | Firmwarely",
+                           f"{name}{fw} updates"])
         desc = f"Track {name}{fw} updates. Firmwarely watches manufacturer release pages and emails you when a new or security update ships."
 
     ld = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [

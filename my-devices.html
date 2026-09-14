@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>My devices — Firmwarely</title>
 <meta name="description" content="Add the routers, NAS, cameras and smart-home gear you own, enter the firmware they're on, and see which ones need an update.">
+<link rel="canonical" href="https://www.firmwarely.com/my-devices.html">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -490,7 +493,7 @@ footer a:hover{color:var(--text)}
   if (q.get("signin") === "ok") { toast("Signed in"); history.replaceState(null, "", location.pathname); }
   if (q.get("signin") === "expired") { toast("That sign-in link expired. Request a new one."); history.replaceState(null, "", location.pathname); }
 
-  fetch("/devices.json", { cache: "no-store" })
+  fetch("/devices.json", { cache: "no-cache" })
     .then(function (r) { return r.json(); })
     .then(function (data) {
       (data.devices || []).forEach(function (d) { catalog[d.id] = d; });

@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Firmwarely — know when your devices need a firmware update</title>
 <meta name="description" content="Firmwarely watches manufacturer release pages for routers, NAS, smart home gear, consoles, drones and e-bikes, and emails you when a device you own has a new or critical update.">
+<link rel="canonical" href="https://www.firmwarely.com/">
+<meta property="og:title" content="Firmwarely — know when your devices need a firmware update">
+<meta property="og:description" content="Nightly checks of manufacturer release pages for 380+ routers, NAS, smart home devices, consoles and maker gear.">
+<meta property="og:url" content="https://www.firmwarely.com/">
+<meta property="og:type" content="website">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -520,7 +527,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
 /* ---------- live data from the nightly pipeline ---------- */
 (async function loadLive(){
   try{
-    const r = await fetch("/devices.json", {cache:"no-store"});
+    const r = await fetch("/devices.json", {cache:"no-cache"});
     if(!r.ok) throw new Error(r.status);
     const data = await r.json();
     const live = (data.devices||[]).map(x=>({b:x.brand, m:x.model, c:x.category, v:x.version, d:x.released, s:x.status, n:x.notes, url:x.source_url, p:x.product_url, u:x.update_url, id:x.id}));

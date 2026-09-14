@@ -6,6 +6,8 @@
 <title>Dashboard — Firmwarely</title>
 <meta name="description" content="Firmwarely Pro dashboard: your devices at a glance, which need a firmware update, which have a security fix waiting, and one click to apply each.">
 <meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -365,7 +367,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:space-betwee
 
 
   // Nothing renders until the plan is known: no flash of dashboard before a wall.
-  fetch("/devices.json", { cache: "no-store" })
+  fetch("/devices.json", { cache: "no-cache" })
     .then(function (r) { return r.json(); })
     .then(function (data) { (data.devices || []).forEach(function (d) { catalog[d.id] = d; }); })
     .catch(function () {})
