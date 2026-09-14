@@ -1,0 +1,41 @@
+name: Check sources
+
+# Every tracked source is fetched here, so a wrong repo or a dead release page is caught
+# on the pull request instead of going quiet in the nightly run. Nothing is written or
+# committed — the job only reports.
+
+on:
+  pull_request:
+    paths:
+      - "sources.json"
+      - "scripts/fetch.py"
+      - "scripts/check_sources.py"
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Comma-separated device ids to check (blank = all)"
+        type: string
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check every source resolves
+        env:
+          GITHUB_TOKEN: ${{ github.token }}   # 60 API calls/hour without this, 1,000 with it
+        run: |
+          if [ -n "${{ inputs.only }}" ]; then
+            python3 scripts/check_sources.py --only "${{ inputs.only }}"
+          else
+            python3 scripts/check_sources.py
+          fi

@@ -14,7 +14,13 @@ module.exports = async function (req, res) {
   }
   if (!sub) return fw.json(res, 502, { error: "Couldn't set up your account just now. Try again in a minute." });
 
-  const token = fw.makeToken(email, "login", 15 * 60);
+  let token;
+  try {
+    token = fw.makeToken(email, "login", 15 * 60);
+  } catch (e) {
+    console.error("auth-request:", e.message);
+    return fw.json(res, 500, { error: "Sign-in isn't configured yet." });
+  }
   const link = (process.env.SITE_URL || "") + "/api/auth-verify?t=" + encodeURIComponent(token);
   const html =
     '<div style="font-family:-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;color:#111">' +
