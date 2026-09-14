@@ -44,11 +44,21 @@ header{position:sticky;top:0;z-index:5;background:rgba(12,17,23,.92);backdrop-fi
 .nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.5rem;align-items:center}
 .nav ul a{text-decoration:none;color:var(--muted);font-size:.95rem}
 .nav ul a:hover{color:var(--text)}
+[hidden]{display:none!important}
 .btn{font-family:var(--sans);font-weight:600;font-size:.95rem;border:1px solid var(--amber);background:var(--amber);color:#1A1204;padding:.6rem 1rem;border-radius:6px;cursor:pointer;text-decoration:none;display:inline-block}
 .btn:hover{background:#FFC55A}
 .btn.ghost{background:transparent;color:var(--text);border-color:var(--line)}
 .btn.ghost:hover{border-color:var(--muted)}
-@media (max-width:640px){.nav ul li.hide-m{display:none}}
+.nav{position:relative}
+.menu{display:none;font:inherit;background:none;border:1px solid var(--line);color:var(--text);border-radius:6px;padding:.3rem .6rem;cursor:pointer;font-size:1.15rem;line-height:1}
+@media (max-width:640px){
+  .menu{display:inline-block;margin-left:auto}
+  .nav ul li.hide-m{display:none}
+  .nav.open ul{position:absolute;left:0;right:0;top:100%;background:var(--panel);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0;padding:.5rem 1.25rem 1rem;z-index:6}
+  .nav.open ul li.hide-m{display:block}
+  .nav.open ul li{padding:.5rem 0}
+  .nav.open ul a{font-size:1.05rem}
+}
 
 /* hero */
 .hero{padding:4rem 0 4.5rem;border-top:0;display:grid;grid-template-columns:1.05fr 1fr;gap:3rem;align-items:start}
@@ -81,6 +91,7 @@ input::placeholder{color:#5E6C78}
 .feed .cursor{display:inline-block;width:8px;height:14px;background:var(--amber);vertical-align:-2px;animation:blink 1s steps(1) infinite}
 @keyframes blink{50%{opacity:0}}
 @media (prefers-reduced-motion:reduce){.feed li{opacity:1;transition:none}.feed .cursor{animation:none}}
+@media (max-width:640px){.feed li{white-space:normal;grid-template-columns:44px 1fr auto;font-size:.9rem}.feed li .d{overflow-wrap:anywhere}}
 
 /* how it works — a real sequence, so numbered */
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
@@ -102,7 +113,9 @@ th{text-align:left;font-weight:500;color:var(--muted);font-size:.82rem;padding:.
 td{padding:.7rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
 tbody tr{cursor:pointer}
 tbody tr:hover td{background:rgba(255,255,255,.02)}
-td.ver{font-family:var(--mono);font-size:.85rem}
+td.ver{font-family:var(--mono);font-size:.85rem;overflow-wrap:anywhere}
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.more-wrap{text-align:center;margin:1rem 0 0}
 td.cat{color:var(--muted)}
 td.date{white-space:nowrap}
 .status{display:inline-flex;align-items:center;gap:.4rem;font-family:var(--mono);font-size:.8rem;white-space:nowrap}
@@ -160,7 +173,8 @@ footer a:hover{color:var(--text)}
 <header>
   <div class="wrap nav">
     <a class="brand" href="#top"><i></i>Firmwarely</a>
-    <ul>
+    <button class="menu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navlinks">☰</button>
+    <ul id="navlinks">
       <li class="hide-m"><a href="/devices/">Devices</a></li>
       <li class="hide-m"><a href="/dashboard.html">Dashboard</a></li>
       <li class="hide-m"><a href="/my-devices.html">My devices</a></li>
@@ -255,10 +269,12 @@ footer a:hover{color:var(--text)}
         <button class="chip" aria-pressed="false" data-cat="Consoles, drones &amp; e-bikes">Consoles, drones &amp; e-bikes</button>
         <button class="chip" aria-pressed="false" data-cat="Makers &amp; open firmware">Makers &amp; open firmware</button>
       </div>
+      <div class="tablewrap">
       <table>
         <thead><tr><th>Device</th><th>Latest firmware</th><th>Released</th><th>Category</th><th>Status</th></tr></thead>
         <tbody id="rows"></tbody>
-      </table>
+      </table></div>
+      <p class="more-wrap"><button class="btn ghost" id="more" type="button" hidden></button></p>
       <div class="empty" id="empty" hidden>No devices match that search yet. Request one below and we'll add it to the tracker.</div>
     </div>
   </section>
@@ -358,13 +374,18 @@ buildFeed();
 /* ---------- catalog ---------- */
 const rows = document.getElementById("rows");
 const empty = document.getElementById("empty");
-let cat = "all", q = "";
+let cat = "all", q = "", showAll = false;
+const PAGE = 60, more = document.getElementById("more");
 function render(){
   const list = DEVICES.filter(d =>
     (cat==="all" || CATS[d.c]===cat) &&
     (q==="" || (d.b+" "+d.m).toLowerCase().includes(q))
   ).sort((a,b)=> (a.s==="pending")-(b.s==="pending") || (a.b+a.m).localeCompare(b.b+b.m));
-  rows.innerHTML = list.map(d => `
+  // the unfiltered list is the whole catalogue; show a page of it and offer the rest
+  const shown = (showAll || q || cat!=="all") ? list : list.slice(0, PAGE);
+  more.hidden = shown.length >= list.length;
+  more.textContent = `Show all ${list.length} devices`;
+  rows.innerHTML = shown.map(d => `
     <tr data-id="${esc(slug(d))}" tabindex="0">
       <td><strong>${esc(d.b)}</strong> ${esc(d.m)}</td>
       <td class="ver">${esc(d.v) || "—"}</td>
@@ -383,6 +404,17 @@ document.getElementById("filters").addEventListener("click", e=>{
   cat = b.dataset.cat; render();
 });
 document.getElementById("q").addEventListener("input", e=>{ q = e.target.value.trim().toLowerCase(); render(); });
+more.addEventListener("click", ()=>{ showAll = true; render(); });
+
+/* ---------- mobile menu ---------- */
+(function(){
+  const nav = document.querySelector(".nav"), btn = nav && nav.querySelector(".menu");
+  if(!btn) return;
+  btn.addEventListener("click", ()=>{
+    const open = nav.classList.toggle("open");
+    btn.setAttribute("aria-expanded", String(open)); btn.textContent = open ? "✕" : "☰";
+  });
+})();
 
 /* ---------- device detail ---------- */
 const dlg = document.getElementById("dlg"), body = document.getElementById("dlg-body");

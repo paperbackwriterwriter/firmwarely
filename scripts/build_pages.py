@@ -115,7 +115,8 @@ def head(title, desc, path, extra=""):
 <header>
   <div class="wrap nav">
     <a class="brand" href="/"><i></i>Firmwarely</a>
-    <ul>
+    <button class="menu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navlinks">☰</button>
+    <ul id="navlinks">
       <li class="hide-m"><a href="/devices/">Devices</a></li>
       <li class="hide-m"><a href="/dashboard.html">Dashboard</a></li>
       <li class="hide-m"><a href="/my-devices.html">My devices</a></li>
@@ -125,6 +126,7 @@ def head(title, desc, path, extra=""):
     </ul>
   </div>
 </header>
+<script>(function(){{var n=document.querySelector(".nav"),b=n&&n.querySelector(".menu");if(!b)return;b.addEventListener("click",function(){{var o=n.classList.toggle("open");b.setAttribute("aria-expanded",String(o));b.textContent=o?"✕":"☰";}});}})();</script>
 <main>
 """
 
