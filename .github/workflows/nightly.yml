@@ -65,6 +65,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          gh label create digest --color 0E8A16 --description "Nightly firmware digest" --force || true
           gh issue create \
             --title "$(head -n 1 digest.md | sed 's/^# //')" \
             --body-file digest.md \
