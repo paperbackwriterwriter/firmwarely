@@ -329,6 +329,11 @@ const STATUS_LABEL = {critical:"critical fix", update:"new version", current:"cu
 const fmtDate = s => s ? new Date(s+"T00:00:00").toLocaleDateString(undefined,{month:"short",day:"numeric",year:"numeric"}) : "—";
 const shortDate = s => new Date(s+"T00:00:00").toLocaleDateString("en-US",{month:"short",day:"2-digit"});
 const slug = d => d.id || (d.b+" "+d.m).toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/(^-|-$)/g,"");
+// Release notes, names and versions come from upstream projects, not from us. Escape every
+// one on the way into innerHTML, and only ever link to http(s) URLs.
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const safeUrl = u => /^https?:\/\//i.test(u || "") ? esc(u) : "";
+const STATUS_CLASS = s => ["critical","update","current","pending","eol","stale"].includes(s) ? s : "pending";
 
 /* ---------- release feed ---------- */
 function buildFeed(){
@@ -337,7 +342,7 @@ function buildFeed(){
   const recent = DEVICES.filter(d=>d.d && d.s!=="pending").sort((a,b)=>b.d.localeCompare(a.d)).slice(0,9);
   recent.forEach(d=>{
     const li = document.createElement("li");
-    li.innerHTML = `<span class="t">${shortDate(d.d)}</span><span class="d">${d.b} ${d.m} <em>${d.v}</em></span><span class="s ${d.s}">${d.s==="critical"?"CRITICAL":d.s==="update"?"update":d.s==="eol"?"EOL":"ok"}</span>`;
+    li.innerHTML = `<span class="t">${shortDate(d.d)}</span><span class="d">${esc(d.b)} ${esc(d.m)} <em>${esc(d.v)}</em></span><span class="s ${STATUS_CLASS(d.s)}">${d.s==="critical"?"CRITICAL":d.s==="update"?"update":d.s==="eol"?"EOL":"ok"}</span>`;
     ol.appendChild(li);
   });
   const end = document.createElement("li");
@@ -360,12 +365,12 @@ function render(){
     (q==="" || (d.b+" "+d.m).toLowerCase().includes(q))
   ).sort((a,b)=> (a.s==="pending")-(b.s==="pending") || (a.b+a.m).localeCompare(b.b+b.m));
   rows.innerHTML = list.map(d => `
-    <tr data-id="${slug(d)}" tabindex="0">
-      <td><strong>${d.b}</strong> ${d.m}</td>
-      <td class="ver">${d.v || "—"}</td>
+    <tr data-id="${esc(slug(d))}" tabindex="0">
+      <td><strong>${esc(d.b)}</strong> ${esc(d.m)}</td>
+      <td class="ver">${esc(d.v) || "—"}</td>
       <td class="date">${fmtDate(d.d)}</td>
-      <td class="cat">${CATS[d.c]}</td>
-      <td><span class="status ${d.s}">${STATUS_LABEL[d.s]}</span></td>
+      <td class="cat">${CATS[d.c] || ""}</td>
+      <td><span class="status ${STATUS_CLASS(d.s)}">${STATUS_LABEL[d.s] || esc(d.s)}</span></td>
     </tr>`).join("");
   empty.hidden = list.length>0;
 }
@@ -381,26 +386,33 @@ document.getElementById("q").addEventListener("input", e=>{ q = e.target.value.t
 
 /* ---------- device detail ---------- */
 const dlg = document.getElementById("dlg"), body = document.getElementById("dlg-body");
+const isStore = u => !!safeUrl(u) && !/^https?:\/\/(www\.)?github\.com\//i.test(u);
+function productLink(u){
+  if(!safeUrl(u)) return "";
+  return isStore(u)
+    ? `<a class="btn ghost" href="${safeUrl(u)}" target="_blank" rel="nofollow sponsored noopener">See current price</a>`
+    : `<a class="btn ghost" href="${safeUrl(u)}" target="_blank" rel="noopener">Project page ↗</a>`;
+}
 function openDevice(id){
   const d = DEVICES.find(x=>slug(x)===id); if(!d) return;
   body.innerHTML = `
-    <div class="top"><h3>${d.b} ${d.m}</h3><button class="x" aria-label="Close">×</button></div>
-    <span class="status ${d.s}">${STATUS_LABEL[d.s]}</span>
+    <div class="top"><h3>${esc(d.b)} ${esc(d.m)}</h3><button class="x" aria-label="Close">×</button></div>
+    <span class="status ${STATUS_CLASS(d.s)}">${STATUS_LABEL[d.s] || esc(d.s)}</span>
     <dl class="kv">
-      <dt>Latest firmware</dt><dd>${d.v || "—"}</dd>
+      <dt>Latest firmware</dt><dd>${esc(d.v) || "—"}</dd>
       <dt>Released</dt><dd>${fmtDate(d.d)}</dd>
-      <dt>Category</dt><dd>${CATS[d.c]}</dd>
-      <dt>What changed</dt><dd style="font-family:var(--sans);font-size:.95rem">${d.n || (d.s==="pending" ? "Not tracked yet. Get alerts and we'll prioritise it." : "")}</dd>
-      ${d.url ? `<dt>Source</dt><dd><a href="${d.url}" target="_blank" rel="noopener">Manufacturer release notes ↗</a></dd>` : ""}
-      ${d.id ? `<dt>Page</dt><dd><a href="/devices/${d.id}/">Full details &amp; version history →</a></dd>` : ""}
+      <dt>Category</dt><dd>${CATS[d.c] || ""}</dd>
+      <dt>What changed</dt><dd style="font-family:var(--sans);font-size:.95rem">${esc(d.n) || (d.s==="pending" ? "Not tracked yet. Get alerts and we'll prioritise it." : "")}</dd>
+      ${safeUrl(d.url) ? `<dt>Source</dt><dd><a href="${safeUrl(d.url)}" target="_blank" rel="noopener">Manufacturer release notes ↗</a></dd>` : ""}
+      ${d.id ? `<dt>Page</dt><dd><a href="/devices/${esc(d.id)}/">Full details &amp; version history →</a></dd>` : ""}
     </dl>
     <div class="actions">
-      <button class="btn" data-watch="${d.b} ${d.m}">Get alerts for this device</button>
-      ${d.u ? `<a class="btn ghost" href="${d.u}" target="_blank" rel="noopener">Update this device ↗</a>`
-            : (d.id ? `<a class="btn ghost" href="/devices/${d.id}/#update">How to update</a>` : "")}
-      ${d.p ? `<a class="btn ghost" href="${d.p}" target="_blank" rel="nofollow sponsored noopener">See current price</a>` : ""}
+      <button class="btn" data-watch="${esc(d.b)} ${esc(d.m)}">Get alerts for this device</button>
+      ${safeUrl(d.u) ? `<a class="btn ghost" href="${safeUrl(d.u)}" target="_blank" rel="noopener">Update this device ↗</a>`
+            : (d.id ? `<a class="btn ghost" href="/devices/${esc(d.id)}/#update">How to update</a>` : "")}
+      ${productLink(d.p)}
     </div>
-    <p class="aff">Price links may earn Firmwarely a commission at no cost to you.</p>`;
+    ${isStore(d.p) ? `<p class="aff">Price links may earn Firmwarely a commission at no cost to you.</p>` : ""}`;
   history.replaceState(null,"","#d="+id);
   dlg.showModal();
 }

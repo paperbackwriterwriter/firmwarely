@@ -73,11 +73,30 @@ def get(url):
 MENTION_FRAG = re.compile(r"\s*(?:by|from|-)?\s*@[\w-]+(?:\s+in\s+(?:https?://\S+|#\d+))?", re.I)
 
 
+MD_LINK = re.compile(r"\[([^\]]*)\]\([^)]*\)")                      # [label](url) → label
+MD_NOISE = re.compile(r"(^|\n)[ \t]{0,3}(?:#{1,6}[ \t]+|[-*+][ \t]+|>[ \t]?|\d+\.[ \t]+)|`{1,3}|\*{1,3}|_{2,3}|~~")
+
+
 def clean(text, limit=300):
-    text = html.unescape(TAG.sub(" ", text or ""))
+    """Release notes as plain text. They come from third parties and end up in innerHTML,
+    emails and generated pages, so nothing that looks like markup may leave here.
+
+    Unescape first, then strip tags, and repeat: a tag hidden behind entities
+    (&lt;img onerror=…&gt;) only appears as a tag after unescaping, so strip-then-unescape
+    let it straight through. Markdown is flattened too — headings, bullets, emphasis, code
+    ticks and [links](url) all read as noise once the text is prose."""
+    text = html.unescape(text or "")
+    for _ in range(3):
+        stripped = TAG.sub(" ", text)
+        if stripped == text:
+            break
+        text = html.unescape(stripped)
+    text = MD_LINK.sub(r"\1", text)
+    text = MD_NOISE.sub(r"\1", text)
     text = MENTION_FRAG.sub("", text)            # "by @user in #123" → gone (would tag real people if re-posted)
     text = re.sub(r"(?<![\w/])#(\d+)", "#\u200b" + r"\1", text)  # "#123" → non-referencing
     text = re.sub(r"\s+", " ", text).strip()
+    text = text.replace("<", "‹").replace(">", "›")   # whatever the regexes missed can't be a tag either
     return text[: limit - 1] + "…" if len(text) > limit else text
 
 

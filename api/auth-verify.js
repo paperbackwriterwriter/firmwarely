@@ -10,6 +10,9 @@ module.exports = async function (req, res) {
     res.setHeader("Location", "/my-devices.html?signin=expired");
     return res.end();
   }
+  // First sign-in creates the account: they clicked a link we sent to this address,
+  // which is the consent auth-request deliberately doesn't assume.
+  if (!(await fw.getSubscriber(email))) await fw.createSubscriber(email);
   fw.setSession(res, email);
   res.statusCode = 302;
   res.setHeader("Location", fw.safeNext(data.n) + "?signin=ok");
