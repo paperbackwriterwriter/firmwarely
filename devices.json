@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-14T22:45:31+00:00",
+ "generated": "2026-09-14T23:19:45+00:00",
  "tracked": 222,
  "ok": 222,
  "failed": [],
@@ -1791,7 +1791,7 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "stale"
   },
   {
    "id": "speedtest-tracker",
@@ -1924,7 +1924,7 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "stale"
   },
   {
    "id": "syncthing",
@@ -2476,7 +2476,7 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "stale"
   },
   {
    "id": "authelia",
@@ -3445,7 +3445,7 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "stale"
   },
   {
    "id": "umbrel",
@@ -3813,7 +3813,7 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "stale"
   },
   {
    "id": "openthread",
@@ -4107,7 +4107,7 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "stale"
   },
   {
    "id": "emonesp",
@@ -4130,7 +4130,7 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "stale"
   },
   {
    "id": "music-assistant",
@@ -4176,7 +4176,7 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "stale"
   },
   {
    "id": "rhasspy",
@@ -4199,7 +4199,7 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "stale"
   },
   {
    "id": "piper-tts",
@@ -4222,7 +4222,7 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "stale"
   },
   {
    "id": "openwakeword",
@@ -4245,7 +4245,7 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "stale"
   },
   {
    "id": "govee2mqtt",
@@ -4429,7 +4429,7 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "stale"
   },
   {
    "id": "prusaslicer",
@@ -4608,7 +4608,7 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "stale"
   },
   {
    "id": "fluidnc",
@@ -4677,7 +4677,7 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "stale"
   },
   {
    "id": "qmk-firmware",
@@ -5141,7 +5141,7 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "stale"
   },
   {
    "id": "batocera",
@@ -5251,7 +5251,7 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "stale"
   },
   {
    "id": "riot-os",
@@ -5388,7 +5388,7 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "stale"
   },
   {
    "id": "netgear-nighthawk-rax80",

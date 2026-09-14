@@ -19,7 +19,7 @@ SITE = "https://firmwarely.com"
 CATS = {"R": "Routers & networking", "N": "NAS & storage", "S": "Smart home & cameras",
         "C": "Consoles, drones & e-bikes", "M": "Makers & open firmware"}
 LABEL = {"critical": "critical fix", "update": "new version", "current": "current",
-         "pending": "watching soon", "eol": "end of life"}
+         "pending": "watching soon", "eol": "end of life", "stale": "no recent release"}
 GUIDES = json.loads((ROOT / "update_guides.json").read_text()) if (ROOT / "update_guides.json").exists() else {}
 
 
@@ -261,7 +261,7 @@ def device_page(d):
         <a class="btn" href="#signup">Get alerts</a>
         <p style="margin:.75rem 0 0"><a href="/my-devices.html#d={esc(d['id'])}">Track this in My devices →</a></p>
         {f'<p style="margin:.5rem 0 0"><a href="#update">How to update this device</a></p>' if steps else ""}
-        {f'<p style="margin:1rem 0 0"><a href="{esc(d["product_url"])}" target="_blank" rel="nofollow sponsored noopener">See current price ↗</a></p>' if d.get("product_url") else ""}
+        {product_link(d)}
       </div>
     </aside>
   </div>
@@ -315,6 +315,16 @@ def thanks_page():
 """)
 
 
+def product_link(d):
+    """A GitHub project has no price; call it what it is and don't tag it as sponsored."""
+    u = d.get("product_url")
+    if not u or not re.match(r"^https?://", u, re.I):
+        return ""
+    if re.match(r"^https?://(www\.)?github\.com/", u, re.I):
+        return f'<p style="margin:1rem 0 0"><a href="{esc(u)}" target="_blank" rel="noopener">Project page ↗</a></p>'
+    return f'<p style="margin:1rem 0 0"><a href="{esc(u)}" target="_blank" rel="nofollow sponsored noopener">See current price ↗</a></p>'
+
+
 def legal_page():
     return simple_page("Privacy & terms — Firmwarely", "Firmwarely privacy policy and terms of service.", "/legal/", """
 <h1 class="dev-h">Privacy &amp; terms</h1>
@@ -323,9 +333,9 @@ def legal_page():
 <h2 style="margin-top:2rem">Privacy policy</h2>
 <h3>What we collect</h3><p>Your email address when you subscribe, the device names you choose to tell us about, and standard web server logs. If you buy Pro, Stripe collects your payment details; we never see your card number. We store the email you paid with and whether your subscription is active.</p>
 <h3>How we use it</h3><p>To send you the firmware update emails you asked for, to manage your subscription, and to understand which devices people want tracked. We don't sell or rent your data.</p>
-<h3>Who we share it with</h3><p>Beehiiv (email delivery), Stripe (payments), Vercel (hosting), and GitHub (where our data pipeline runs). Each is bound by its own privacy policy. We share only what's needed for them to do their job.</p>
+<h3>Who we share it with</h3><p>Beehiiv (subscriber list and newsletter delivery), Resend (sign-in links and device alerts), Stripe (payments), Vercel (hosting and sign-in API), and GitHub (where our data pipeline runs). Each is bound by its own privacy policy. We share only what's needed for them to do their job.</p>
 <h3>Affiliate links</h3><p>Some product links may earn us a commission at no extra cost to you. They don't affect which updates we report.</p>
-<h3>Your choices</h3><p>Every email has an unsubscribe link. To delete your data entirely, email us and we'll remove it within 30 days. We don't use tracking cookies on this site.</p>
+<h3>Your choices</h3><p>Every email has an unsubscribe link. To delete your data entirely, email us and we'll remove it within 30 days. We set one cookie, only when you sign in, so you stay signed in for 30 days. Your device list is kept in your browser's local storage and, once you sign in, in your account. There are no advertising or analytics trackers.</p>
 <h2 style="margin-top:2.5rem">Terms of service</h2>
 <h3>What Firmwarely is</h3><p>An information service that watches manufacturers' public release pages and tells you what changed. It is not affiliated with any manufacturer. Device and brand names belong to their owners.</p>
 <h3>What it isn't</h3><p>We don't distribute firmware, and we can't guarantee we catch every release or that release notes are accurate — manufacturers change their pages without notice. Always download firmware from the official source and read the manufacturer's notes before installing. You're responsible for updates you apply to your own devices.</p>
