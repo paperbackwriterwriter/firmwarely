@@ -36,9 +36,34 @@ Then redeploy. Subscribers are tagged `utm_campaign` = free or pro. If you creat
 - `index.html` fetches `/devices.json` on load; if that fails it falls back to the `SEED` sample data.
 
 Adding a device: add an entry to `sources.json`.
+- `type: "github"` for a project with tagged releases: set `repo: "owner/name"`. Uses the API's
+  latest-stable-release endpoint, so pre-releases are ignored. This is the most reliable type.
 - `type: "feed"` for RSS/Atom (GitHub releases, community.ui.com). `item_match` filters items by title; `version_regex` needs one capture group.
 - `type: "html"` for a support page. `version_regex` runs over the raw page. The release date becomes the day the version first changed.
 - `type: "manual"` puts the device in the catalog as "watching soon" with no data.
+
+Keep `model` describing *what the thing is* rather than repeating the brand — "Jellyfin / Media
+server", not "Jellyfin / Jellyfin". Brand and model are joined for the page title and `<h1>`.
+
+### GitHub API limit
+
+The catalog leans on `type: "github"`, and GitHub allows only **60 API calls an hour**
+unauthenticated. The workflow passes `GITHUB_TOKEN` (automatic, no setup) to raise that to 1,000.
+Running `scripts/fetch.py` by hand without a token will fail most GitHub sources with
+`GitHub API rate limit reached` — export a token first:
+`GITHUB_TOKEN=$(gh auth token) python3 scripts/fetch.py`.
+
+### Pruning sources that don't resolve
+
+A source that 404s never erases anything: the device stays in the catalog as "watching soon" and
+gets `source_status: "error: ..."`. After a run, `devices.json` lists them under `failed`:
+
+```
+python3 -c "import json;print(json.load(open('devices.json'))['failed'])"
+```
+
+For each one, fix the `repo`/`url` in `sources.json`, or change its `type` to `manual` to keep the
+catalog entry without the failing fetch.
 
 A failing source never erases data: the device keeps its last version and gets `source_status: "error: ..."` in `devices.json`.
 Check the Actions log after a run to see which sources succeeded.

@@ -458,6 +458,2736 @@
    "repo": "nextcloud/server",
    "version_regex": "v?(\\d+\\.\\d+\\.\\d+)",
    "product_url": "https://nextcloud.com/"
+  },
+  {
+   "id": "asuswrt-merlin",
+   "brand": "Asuswrt-Merlin",
+   "model": "Router firmware",
+   "category": "R",
+   "type": "github",
+   "repo": "RMerl/asuswrt-merlin.ng",
+   "product_url": "https://github.com/RMerl/asuswrt-merlin.ng"
+  },
+  {
+   "id": "pihole-ftl",
+   "brand": "Pi-hole",
+   "model": "FTL DNS engine",
+   "category": "R",
+   "type": "github",
+   "repo": "pi-hole/FTL",
+   "product_url": "https://github.com/pi-hole/FTL"
+  },
+  {
+   "id": "netbird",
+   "brand": "NetBird",
+   "model": "Mesh VPN",
+   "category": "R",
+   "type": "github",
+   "repo": "netbirdio/netbird",
+   "product_url": "https://github.com/netbirdio/netbird"
+  },
+  {
+   "id": "headscale",
+   "brand": "Headscale",
+   "model": "Tailscale control server",
+   "category": "R",
+   "type": "github",
+   "repo": "juanfont/headscale",
+   "product_url": "https://github.com/juanfont/headscale"
+  },
+  {
+   "id": "zerotier",
+   "brand": "ZeroTier",
+   "model": "Virtual network endpoint",
+   "category": "R",
+   "type": "github",
+   "repo": "zerotier/ZeroTierOne",
+   "product_url": "https://github.com/zerotier/ZeroTierOne"
+  },
+  {
+   "id": "nebula-mesh",
+   "brand": "Slack",
+   "model": "Nebula overlay network",
+   "category": "R",
+   "type": "github",
+   "repo": "slackhq/nebula",
+   "product_url": "https://github.com/slackhq/nebula"
+  },
+  {
+   "id": "wg-easy",
+   "brand": "wg-easy",
+   "model": "WireGuard server and UI",
+   "category": "R",
+   "type": "github",
+   "repo": "wg-easy/wg-easy",
+   "product_url": "https://github.com/wg-easy/wg-easy"
+  },
+  {
+   "id": "unbound-dns",
+   "brand": "NLnet Labs",
+   "model": "Unbound resolver",
+   "category": "R",
+   "type": "github",
+   "repo": "NLnetLabs/unbound",
+   "product_url": "https://github.com/NLnetLabs/unbound"
+  },
+  {
+   "id": "coredns",
+   "brand": "CoreDNS",
+   "model": "DNS server",
+   "category": "R",
+   "type": "github",
+   "repo": "coredns/coredns",
+   "product_url": "https://github.com/coredns/coredns"
+  },
+  {
+   "id": "blocky-dns",
+   "brand": "Blocky",
+   "model": "DNS proxy and ad blocker",
+   "category": "R",
+   "type": "github",
+   "repo": "0xERR0R/blocky",
+   "product_url": "https://github.com/0xERR0R/blocky"
+  },
+  {
+   "id": "technitium-dns",
+   "brand": "Technitium",
+   "model": "DNS Server",
+   "category": "R",
+   "type": "github",
+   "repo": "TechnitiumSoftware/DnsServer",
+   "product_url": "https://github.com/TechnitiumSoftware/DnsServer"
+  },
+  {
+   "id": "dnscrypt-proxy",
+   "brand": "DNSCrypt",
+   "model": "Encrypted DNS proxy",
+   "category": "R",
+   "type": "github",
+   "repo": "DNSCrypt/dnscrypt-proxy",
+   "product_url": "https://github.com/DNSCrypt/dnscrypt-proxy"
+  },
+  {
+   "id": "nginx-proxy-manager",
+   "brand": "Nginx Proxy Manager",
+   "model": "Reverse proxy manager",
+   "category": "R",
+   "type": "github",
+   "repo": "NginxProxyManager/nginx-proxy-manager",
+   "product_url": "https://github.com/NginxProxyManager/nginx-proxy-manager"
+  },
+  {
+   "id": "traefik",
+   "brand": "Traefik Labs",
+   "model": "Traefik Proxy",
+   "category": "R",
+   "type": "github",
+   "repo": "traefik/traefik",
+   "product_url": "https://github.com/traefik/traefik"
+  },
+  {
+   "id": "caddy-server",
+   "brand": "Caddy",
+   "model": "Web server and reverse proxy",
+   "category": "R",
+   "type": "github",
+   "repo": "caddyserver/caddy",
+   "product_url": "https://github.com/caddyserver/caddy"
+  },
+  {
+   "id": "zoraxy",
+   "brand": "Zoraxy",
+   "model": "Reverse proxy",
+   "category": "R",
+   "type": "github",
+   "repo": "tobychui/zoraxy",
+   "product_url": "https://github.com/tobychui/zoraxy"
+  },
+  {
+   "id": "cloudflared",
+   "brand": "Cloudflare",
+   "model": "Tunnel daemon",
+   "category": "R",
+   "type": "github",
+   "repo": "cloudflare/cloudflared",
+   "product_url": "https://github.com/cloudflare/cloudflared"
+  },
+  {
+   "id": "frp-tunnel",
+   "brand": "frp",
+   "model": "Fast reverse proxy",
+   "category": "R",
+   "type": "github",
+   "repo": "fatedier/frp",
+   "product_url": "https://github.com/fatedier/frp"
+  },
+  {
+   "id": "librenms",
+   "brand": "LibreNMS",
+   "model": "Network monitoring",
+   "category": "R",
+   "type": "github",
+   "repo": "librenms/librenms",
+   "product_url": "https://github.com/librenms/librenms"
+  },
+  {
+   "id": "netbox",
+   "brand": "NetBox Labs",
+   "model": "NetBox",
+   "category": "R",
+   "type": "github",
+   "repo": "netbox-community/netbox",
+   "product_url": "https://github.com/netbox-community/netbox"
+  },
+  {
+   "id": "uptime-kuma",
+   "brand": "Uptime Kuma",
+   "model": "Uptime monitor",
+   "category": "R",
+   "type": "github",
+   "repo": "louislam/uptime-kuma",
+   "product_url": "https://github.com/louislam/uptime-kuma"
+  },
+  {
+   "id": "ntopng",
+   "brand": "ntop",
+   "model": "Traffic monitor",
+   "category": "R",
+   "type": "github",
+   "repo": "ntop/ntopng",
+   "product_url": "https://github.com/ntop/ntopng"
+  },
+  {
+   "id": "suricata-ids",
+   "brand": "OISF",
+   "model": "Suricata IDS",
+   "category": "R",
+   "type": "github",
+   "repo": "OISF/suricata",
+   "product_url": "https://github.com/OISF/suricata"
+  },
+  {
+   "id": "crowdsec",
+   "brand": "CrowdSec",
+   "model": "Intrusion prevention",
+   "category": "R",
+   "type": "github",
+   "repo": "crowdsecurity/crowdsec",
+   "product_url": "https://github.com/crowdsecurity/crowdsec"
+  },
+  {
+   "id": "fail2ban",
+   "brand": "Fail2Ban",
+   "model": "Intrusion prevention",
+   "category": "R",
+   "type": "github",
+   "repo": "fail2ban/fail2ban",
+   "product_url": "https://github.com/fail2ban/fail2ban"
+  },
+  {
+   "id": "openvpn",
+   "brand": "OpenVPN",
+   "model": "VPN server and client",
+   "category": "R",
+   "type": "github",
+   "repo": "OpenVPN/openvpn",
+   "product_url": "https://github.com/OpenVPN/openvpn"
+  },
+  {
+   "id": "softether-vpn",
+   "brand": "SoftEther",
+   "model": "Multi-protocol VPN server",
+   "category": "R",
+   "type": "github",
+   "repo": "SoftEtherVPN/SoftEtherVPN",
+   "product_url": "https://github.com/SoftEtherVPN/SoftEtherVPN"
+  },
+  {
+   "id": "gluetun",
+   "brand": "Gluetun",
+   "model": "VPN client container",
+   "category": "R",
+   "type": "github",
+   "repo": "qdm12/gluetun",
+   "product_url": "https://github.com/qdm12/gluetun"
+  },
+  {
+   "id": "raspap",
+   "brand": "RaspAP",
+   "model": "Wi-Fi router for Raspberry Pi",
+   "category": "R",
+   "type": "github",
+   "repo": "RaspAP/raspap-webgui",
+   "product_url": "https://github.com/RaspAP/raspap-webgui"
+  },
+  {
+   "id": "frrouting",
+   "brand": "FRRouting",
+   "model": "FRR routing suite",
+   "category": "R",
+   "type": "github",
+   "repo": "FRRouting/frr",
+   "product_url": "https://github.com/FRRouting/frr"
+  },
+  {
+   "id": "kea-dhcp",
+   "brand": "ISC",
+   "model": "Kea DHCP",
+   "category": "R",
+   "type": "github",
+   "repo": "isc-projects/kea",
+   "product_url": "https://github.com/isc-projects/kea"
+  },
+  {
+   "id": "smokeping",
+   "brand": "SmokePing",
+   "model": "Latency monitor",
+   "category": "R",
+   "type": "github",
+   "repo": "oetiker/SmokePing",
+   "product_url": "https://github.com/oetiker/SmokePing"
+  },
+  {
+   "id": "speedtest-tracker",
+   "brand": "Speedtest Tracker",
+   "model": "Broadband speed logger",
+   "category": "R",
+   "type": "github",
+   "repo": "alexjustesen/speedtest-tracker",
+   "product_url": "https://github.com/alexjustesen/speedtest-tracker"
+  },
+  {
+   "id": "adguardhome-sync",
+   "brand": "AdGuard",
+   "model": "Home Sync",
+   "category": "R",
+   "type": "github",
+   "repo": "bakito/adguardhome-sync",
+   "product_url": "https://github.com/bakito/adguardhome-sync"
+  },
+  {
+   "id": "openmediavault",
+   "brand": "OpenMediaVault",
+   "model": "NAS operating system",
+   "category": "N",
+   "type": "github",
+   "repo": "openmediavault/openmediavault",
+   "product_url": "https://github.com/openmediavault/openmediavault"
+  },
+  {
+   "id": "truenas-scale",
+   "brand": "TrueNAS",
+   "model": "SCALE middleware",
+   "category": "N",
+   "type": "github",
+   "repo": "truenas/middleware",
+   "product_url": "https://github.com/truenas/middleware"
+  },
+  {
+   "id": "minio",
+   "brand": "MinIO",
+   "model": "Object storage",
+   "category": "N",
+   "type": "github",
+   "repo": "minio/minio",
+   "product_url": "https://github.com/minio/minio"
+  },
+  {
+   "id": "seafile",
+   "brand": "Seafile",
+   "model": "File sync server",
+   "category": "N",
+   "type": "github",
+   "repo": "haiwen/seafile",
+   "product_url": "https://github.com/haiwen/seafile"
+  },
+  {
+   "id": "syncthing",
+   "brand": "Syncthing",
+   "model": "Continuous file sync",
+   "category": "N",
+   "type": "github",
+   "repo": "syncthing/syncthing",
+   "product_url": "https://github.com/syncthing/syncthing"
+  },
+  {
+   "id": "duplicati",
+   "brand": "Duplicati",
+   "model": "Encrypted backup client",
+   "category": "N",
+   "type": "github",
+   "repo": "duplicati/duplicati",
+   "product_url": "https://github.com/duplicati/duplicati"
+  },
+  {
+   "id": "restic",
+   "brand": "restic",
+   "model": "Backup program",
+   "category": "N",
+   "type": "github",
+   "repo": "restic/restic",
+   "product_url": "https://github.com/restic/restic"
+  },
+  {
+   "id": "borgbackup",
+   "brand": "BorgBackup",
+   "model": "Borg",
+   "category": "N",
+   "type": "github",
+   "repo": "borgbackup/borg",
+   "product_url": "https://github.com/borgbackup/borg"
+  },
+  {
+   "id": "rclone",
+   "brand": "rclone",
+   "model": "Cloud storage sync",
+   "category": "N",
+   "type": "github",
+   "repo": "rclone/rclone",
+   "product_url": "https://github.com/rclone/rclone"
+  },
+  {
+   "id": "kopia",
+   "brand": "Kopia",
+   "model": "Backup and restore",
+   "category": "N",
+   "type": "github",
+   "repo": "kopia/kopia",
+   "product_url": "https://github.com/kopia/kopia"
+  },
+  {
+   "id": "filebrowser",
+   "brand": "File Browser",
+   "model": "Web file manager",
+   "category": "N",
+   "type": "github",
+   "repo": "filebrowser/filebrowser",
+   "product_url": "https://github.com/filebrowser/filebrowser"
+  },
+  {
+   "id": "paperless-ngx",
+   "brand": "Paperless-ngx",
+   "model": "Document scanner and archive",
+   "category": "N",
+   "type": "github",
+   "repo": "paperless-ngx/paperless-ngx",
+   "product_url": "https://github.com/paperless-ngx/paperless-ngx"
+  },
+  {
+   "id": "photoprism",
+   "brand": "PhotoPrism",
+   "model": "Photo library server",
+   "category": "N",
+   "type": "github",
+   "repo": "photoprism/photoprism",
+   "product_url": "https://github.com/photoprism/photoprism"
+  },
+  {
+   "id": "owncloud-server",
+   "brand": "ownCloud",
+   "model": "File sync server",
+   "category": "N",
+   "type": "github",
+   "repo": "owncloud/core",
+   "product_url": "https://github.com/owncloud/core"
+  },
+  {
+   "id": "gitea",
+   "brand": "Gitea",
+   "model": "Self-hosted Git service",
+   "category": "N",
+   "type": "github",
+   "repo": "go-gitea/gitea",
+   "product_url": "https://github.com/go-gitea/gitea"
+  },
+  {
+   "id": "ceph-storage",
+   "brand": "Ceph",
+   "model": "Distributed storage",
+   "category": "N",
+   "type": "github",
+   "repo": "ceph/ceph",
+   "product_url": "https://github.com/ceph/ceph"
+  },
+  {
+   "id": "openzfs",
+   "brand": "OpenZFS",
+   "model": "ZFS filesystem",
+   "category": "N",
+   "type": "github",
+   "repo": "openzfs/zfs",
+   "product_url": "https://github.com/openzfs/zfs"
+  },
+  {
+   "id": "navidrome",
+   "brand": "Navidrome",
+   "model": "Music streaming server",
+   "category": "N",
+   "type": "github",
+   "repo": "navidrome/navidrome",
+   "product_url": "https://github.com/navidrome/navidrome"
+  },
+  {
+   "id": "komga",
+   "brand": "Komga",
+   "model": "Comic and manga server",
+   "category": "N",
+   "type": "github",
+   "repo": "gotson/komga",
+   "product_url": "https://github.com/gotson/komga"
+  },
+  {
+   "id": "kavita",
+   "brand": "Kavita",
+   "model": "Reading server",
+   "category": "N",
+   "type": "github",
+   "repo": "Kareadita/Kavita",
+   "product_url": "https://github.com/Kareadita/Kavita"
+  },
+  {
+   "id": "calibre-web",
+   "brand": "Calibre-Web",
+   "model": "Ebook library server",
+   "category": "N",
+   "type": "github",
+   "repo": "janeczku/calibre-web",
+   "product_url": "https://github.com/janeczku/calibre-web"
+  },
+  {
+   "id": "audiobookshelf",
+   "brand": "Audiobookshelf",
+   "model": "Audiobook and podcast server",
+   "category": "N",
+   "type": "github",
+   "repo": "advplyr/audiobookshelf",
+   "product_url": "https://github.com/advplyr/audiobookshelf"
+  },
+  {
+   "id": "lychee-photos",
+   "brand": "Lychee",
+   "model": "Photo gallery",
+   "category": "N",
+   "type": "github",
+   "repo": "LycheeOrg/Lychee",
+   "product_url": "https://github.com/LycheeOrg/Lychee"
+  },
+  {
+   "id": "cockpit",
+   "brand": "Cockpit",
+   "model": "Server web console",
+   "category": "N",
+   "type": "github",
+   "repo": "cockpit-project/cockpit",
+   "product_url": "https://github.com/cockpit-project/cockpit"
+  },
+  {
+   "id": "webmin",
+   "brand": "Webmin",
+   "model": "Server control panel",
+   "category": "N",
+   "type": "github",
+   "repo": "webmin/webmin",
+   "product_url": "https://github.com/webmin/webmin"
+  },
+  {
+   "id": "portainer",
+   "brand": "Portainer",
+   "model": "Container management",
+   "category": "N",
+   "type": "github",
+   "repo": "portainer/portainer",
+   "product_url": "https://github.com/portainer/portainer"
+  },
+  {
+   "id": "dockge",
+   "brand": "Dockge",
+   "model": "Docker compose manager",
+   "category": "N",
+   "type": "github",
+   "repo": "louislam/dockge",
+   "product_url": "https://github.com/louislam/dockge"
+  },
+  {
+   "id": "watchtower",
+   "brand": "Watchtower",
+   "model": "Container auto-updater",
+   "category": "N",
+   "type": "github",
+   "repo": "containrrr/watchtower",
+   "product_url": "https://github.com/containrrr/watchtower"
+  },
+  {
+   "id": "authelia",
+   "brand": "Authelia",
+   "model": "Authentication gateway",
+   "category": "N",
+   "type": "github",
+   "repo": "authelia/authelia",
+   "product_url": "https://github.com/authelia/authelia"
+  },
+  {
+   "id": "authentik",
+   "brand": "authentik",
+   "model": "Identity provider",
+   "category": "N",
+   "type": "github",
+   "repo": "goauthentik/authentik",
+   "product_url": "https://github.com/goauthentik/authentik"
+  },
+  {
+   "id": "vaultwarden",
+   "brand": "Vaultwarden",
+   "model": "Password manager server",
+   "category": "N",
+   "type": "github",
+   "repo": "dani-garcia/vaultwarden",
+   "product_url": "https://github.com/dani-garcia/vaultwarden"
+  },
+  {
+   "id": "bitwarden-server",
+   "brand": "Bitwarden",
+   "model": "Self-hosted server",
+   "category": "N",
+   "type": "github",
+   "repo": "bitwarden/server",
+   "product_url": "https://github.com/bitwarden/server"
+  },
+  {
+   "id": "homepage-dashboard",
+   "brand": "Homepage",
+   "model": "Service dashboard",
+   "category": "N",
+   "type": "github",
+   "repo": "gethomepage/homepage",
+   "product_url": "https://github.com/gethomepage/homepage"
+  },
+  {
+   "id": "heimdall-dashboard",
+   "brand": "Heimdall",
+   "model": "Application dashboard",
+   "category": "N",
+   "type": "github",
+   "repo": "linuxserver/Heimdall",
+   "product_url": "https://github.com/linuxserver/Heimdall"
+  },
+  {
+   "id": "homer-dashboard",
+   "brand": "Homer",
+   "model": "Service dashboard",
+   "category": "N",
+   "type": "github",
+   "repo": "bastienwirtz/homer",
+   "product_url": "https://github.com/bastienwirtz/homer"
+  },
+  {
+   "id": "sonarr",
+   "brand": "Sonarr",
+   "model": "TV series manager",
+   "category": "N",
+   "type": "github",
+   "repo": "Sonarr/Sonarr",
+   "product_url": "https://github.com/Sonarr/Sonarr"
+  },
+  {
+   "id": "radarr",
+   "brand": "Radarr",
+   "model": "Movie manager",
+   "category": "N",
+   "type": "github",
+   "repo": "Radarr/Radarr",
+   "product_url": "https://github.com/Radarr/Radarr"
+  },
+  {
+   "id": "lidarr",
+   "brand": "Lidarr",
+   "model": "Music manager",
+   "category": "N",
+   "type": "github",
+   "repo": "Lidarr/Lidarr",
+   "product_url": "https://github.com/Lidarr/Lidarr"
+  },
+  {
+   "id": "prowlarr",
+   "brand": "Prowlarr",
+   "model": "Indexer manager",
+   "category": "N",
+   "type": "github",
+   "repo": "Prowlarr/Prowlarr",
+   "product_url": "https://github.com/Prowlarr/Prowlarr"
+  },
+  {
+   "id": "bazarr",
+   "brand": "Bazarr",
+   "model": "Subtitle manager",
+   "category": "N",
+   "type": "github",
+   "repo": "morpheus65535/bazarr",
+   "product_url": "https://github.com/morpheus65535/bazarr"
+  },
+  {
+   "id": "readarr",
+   "brand": "Readarr",
+   "model": "Book manager",
+   "category": "N",
+   "type": "github",
+   "repo": "Readarr/Readarr",
+   "product_url": "https://github.com/Readarr/Readarr"
+  },
+  {
+   "id": "overseerr",
+   "brand": "Overseerr",
+   "model": "Media request manager",
+   "category": "N",
+   "type": "github",
+   "repo": "sct/overseerr",
+   "product_url": "https://github.com/sct/overseerr"
+  },
+  {
+   "id": "jellyseerr",
+   "brand": "Jellyseerr",
+   "model": "Media request manager",
+   "category": "N",
+   "type": "github",
+   "repo": "fallenbagel/jellyseerr",
+   "product_url": "https://github.com/fallenbagel/jellyseerr"
+  },
+  {
+   "id": "qbittorrent",
+   "brand": "qBittorrent",
+   "model": "BitTorrent client",
+   "category": "N",
+   "type": "github",
+   "repo": "qbittorrent/qBittorrent",
+   "product_url": "https://github.com/qbittorrent/qBittorrent"
+  },
+  {
+   "id": "transmission",
+   "brand": "Transmission",
+   "model": "BitTorrent client",
+   "category": "N",
+   "type": "github",
+   "repo": "transmission/transmission",
+   "product_url": "https://github.com/transmission/transmission"
+  },
+  {
+   "id": "deluge",
+   "brand": "Deluge",
+   "model": "BitTorrent client",
+   "category": "N",
+   "type": "github",
+   "repo": "deluge-torrent/deluge",
+   "product_url": "https://github.com/deluge-torrent/deluge"
+  },
+  {
+   "id": "sabnzbd",
+   "brand": "SABnzbd",
+   "model": "Usenet downloader",
+   "category": "N",
+   "type": "github",
+   "repo": "sabnzbd/sabnzbd",
+   "product_url": "https://github.com/sabnzbd/sabnzbd"
+  },
+  {
+   "id": "tdarr",
+   "brand": "Tdarr",
+   "model": "Media transcoding server",
+   "category": "N",
+   "type": "github",
+   "repo": "HaveAGitGat/Tdarr",
+   "product_url": "https://github.com/HaveAGitGat/Tdarr"
+  },
+  {
+   "id": "tautulli",
+   "brand": "Tautulli",
+   "model": "Plex monitoring",
+   "category": "N",
+   "type": "github",
+   "repo": "Tautulli/Tautulli",
+   "product_url": "https://github.com/Tautulli/Tautulli"
+  },
+  {
+   "id": "mealie",
+   "brand": "Mealie",
+   "model": "Recipe manager",
+   "category": "N",
+   "type": "github",
+   "repo": "mealie-recipes/mealie",
+   "product_url": "https://github.com/mealie-recipes/mealie"
+  },
+  {
+   "id": "tandoor-recipes",
+   "brand": "Tandoor",
+   "model": "Recipes",
+   "category": "N",
+   "type": "github",
+   "repo": "TandoorRecipes/recipes",
+   "product_url": "https://github.com/TandoorRecipes/recipes"
+  },
+  {
+   "id": "firefly-iii",
+   "brand": "Firefly III",
+   "model": "Personal finance manager",
+   "category": "N",
+   "type": "github",
+   "repo": "firefly-iii/firefly-iii",
+   "product_url": "https://github.com/firefly-iii/firefly-iii"
+  },
+  {
+   "id": "actual-budget",
+   "brand": "Actual",
+   "model": "Budgeting server",
+   "category": "N",
+   "type": "github",
+   "repo": "actualbudget/actual",
+   "product_url": "https://github.com/actualbudget/actual"
+  },
+  {
+   "id": "freshrss",
+   "brand": "FreshRSS",
+   "model": "RSS reader",
+   "category": "N",
+   "type": "github",
+   "repo": "FreshRSS/FreshRSS",
+   "product_url": "https://github.com/FreshRSS/FreshRSS"
+  },
+  {
+   "id": "miniflux",
+   "brand": "Miniflux",
+   "model": "RSS reader",
+   "category": "N",
+   "type": "github",
+   "repo": "miniflux/v2",
+   "product_url": "https://github.com/miniflux/v2"
+  },
+  {
+   "id": "linkding",
+   "brand": "linkding",
+   "model": "Bookmark manager",
+   "category": "N",
+   "type": "github",
+   "repo": "sissbruecker/linkding",
+   "product_url": "https://github.com/sissbruecker/linkding"
+  },
+  {
+   "id": "bookstack",
+   "brand": "BookStack",
+   "model": "Wiki and documentation",
+   "category": "N",
+   "type": "github",
+   "repo": "BookStackApp/BookStack",
+   "product_url": "https://github.com/BookStackApp/BookStack"
+  },
+  {
+   "id": "grocy",
+   "brand": "grocy",
+   "model": "Household and grocery manager",
+   "category": "N",
+   "type": "github",
+   "repo": "grocy/grocy",
+   "product_url": "https://github.com/grocy/grocy"
+  },
+  {
+   "id": "changedetection",
+   "brand": "changedetection.io",
+   "model": "Website change monitor",
+   "category": "N",
+   "type": "github",
+   "repo": "dgtlmoon/changedetection.io",
+   "product_url": "https://github.com/dgtlmoon/changedetection.io"
+  },
+  {
+   "id": "healthchecks",
+   "brand": "Healthchecks",
+   "model": "Cron job monitor",
+   "category": "N",
+   "type": "github",
+   "repo": "healthchecks/healthchecks",
+   "product_url": "https://github.com/healthchecks/healthchecks"
+  },
+  {
+   "id": "gotify",
+   "brand": "Gotify",
+   "model": "Push notification server",
+   "category": "N",
+   "type": "github",
+   "repo": "gotify/server",
+   "product_url": "https://github.com/gotify/server"
+  },
+  {
+   "id": "ntfy",
+   "brand": "ntfy",
+   "model": "Push notification server",
+   "category": "N",
+   "type": "github",
+   "repo": "binwiederhier/ntfy",
+   "product_url": "https://github.com/binwiederhier/ntfy"
+  },
+  {
+   "id": "apprise",
+   "brand": "Apprise",
+   "model": "Notification gateway",
+   "category": "N",
+   "type": "github",
+   "repo": "caronc/apprise",
+   "product_url": "https://github.com/caronc/apprise"
+  },
+  {
+   "id": "scrutiny-disk",
+   "brand": "Scrutiny",
+   "model": "Disk health monitor",
+   "category": "N",
+   "type": "github",
+   "repo": "AnalogJ/scrutiny",
+   "product_url": "https://github.com/AnalogJ/scrutiny"
+  },
+  {
+   "id": "glances",
+   "brand": "Glances",
+   "model": "System monitor",
+   "category": "N",
+   "type": "github",
+   "repo": "nicolargo/glances",
+   "product_url": "https://github.com/nicolargo/glances"
+  },
+  {
+   "id": "netdata",
+   "brand": "Netdata",
+   "model": "System monitoring agent",
+   "category": "N",
+   "type": "github",
+   "repo": "netdata/netdata",
+   "product_url": "https://github.com/netdata/netdata"
+  },
+  {
+   "id": "beszel",
+   "brand": "Beszel",
+   "model": "Server monitoring hub",
+   "category": "N",
+   "type": "github",
+   "repo": "henrygd/beszel",
+   "product_url": "https://github.com/henrygd/beszel"
+  },
+  {
+   "id": "mergerfs",
+   "brand": "mergerfs",
+   "model": "Union filesystem",
+   "category": "N",
+   "type": "github",
+   "repo": "trapexit/mergerfs",
+   "product_url": "https://github.com/trapexit/mergerfs"
+  },
+  {
+   "id": "snapraid",
+   "brand": "SnapRAID",
+   "model": "Disk array parity",
+   "category": "N",
+   "type": "github",
+   "repo": "amadvance/snapraid",
+   "product_url": "https://github.com/amadvance/snapraid"
+  },
+  {
+   "id": "casaos",
+   "brand": "CasaOS",
+   "model": "Home cloud OS",
+   "category": "N",
+   "type": "github",
+   "repo": "IceWhaleTech/CasaOS",
+   "product_url": "https://github.com/IceWhaleTech/CasaOS"
+  },
+  {
+   "id": "umbrel",
+   "brand": "Umbrel",
+   "model": "Personal server OS",
+   "category": "N",
+   "type": "github",
+   "repo": "getumbrel/umbrel",
+   "product_url": "https://github.com/getumbrel/umbrel"
+  },
+  {
+   "id": "yunohost",
+   "brand": "YunoHost",
+   "model": "Self-hosting server OS",
+   "category": "N",
+   "type": "github",
+   "repo": "YunoHost/yunohost",
+   "product_url": "https://github.com/YunoHost/yunohost"
+  },
+  {
+   "id": "home-assistant-supervisor",
+   "brand": "Home Assistant",
+   "model": "Supervisor",
+   "category": "S",
+   "type": "github",
+   "repo": "home-assistant/supervisor",
+   "product_url": "https://github.com/home-assistant/supervisor"
+  },
+  {
+   "id": "zwave-js-ui",
+   "brand": "Z-Wave JS",
+   "model": "Z-Wave control panel",
+   "category": "S",
+   "type": "github",
+   "repo": "zwave-js/zwave-js-ui",
+   "product_url": "https://github.com/zwave-js/zwave-js-ui"
+  },
+  {
+   "id": "node-zwave-js",
+   "brand": "Z-Wave JS",
+   "model": "Z-Wave driver",
+   "category": "S",
+   "type": "github",
+   "repo": "zwave-js/node-zwave-js",
+   "product_url": "https://github.com/zwave-js/node-zwave-js"
+  },
+  {
+   "id": "mosquitto-broker",
+   "brand": "Eclipse",
+   "model": "Mosquitto MQTT broker",
+   "category": "S",
+   "type": "github",
+   "repo": "eclipse-mosquitto/mosquitto",
+   "product_url": "https://github.com/eclipse-mosquitto/mosquitto"
+  },
+  {
+   "id": "node-red",
+   "brand": "Node-RED",
+   "model": "Automation flow editor",
+   "category": "S",
+   "type": "github",
+   "repo": "node-red/node-red",
+   "product_url": "https://github.com/node-red/node-red"
+  },
+  {
+   "id": "openhab",
+   "brand": "openHAB",
+   "model": "Home automation hub",
+   "category": "S",
+   "type": "github",
+   "repo": "openhab/openhab-distro",
+   "product_url": "https://github.com/openhab/openhab-distro"
+  },
+  {
+   "id": "domoticz",
+   "brand": "Domoticz",
+   "model": "Home automation server",
+   "category": "S",
+   "type": "github",
+   "repo": "domoticz/domoticz",
+   "product_url": "https://github.com/domoticz/domoticz"
+  },
+  {
+   "id": "iobroker",
+   "brand": "ioBroker",
+   "model": "js-controller",
+   "category": "S",
+   "type": "github",
+   "repo": "ioBroker/ioBroker.js-controller",
+   "product_url": "https://github.com/ioBroker/ioBroker.js-controller"
+  },
+  {
+   "id": "zoneminder",
+   "brand": "ZoneMinder",
+   "model": "Camera NVR",
+   "category": "S",
+   "type": "github",
+   "repo": "ZoneMinder/zoneminder",
+   "product_url": "https://github.com/ZoneMinder/zoneminder"
+  },
+  {
+   "id": "motioneye",
+   "brand": "motionEye",
+   "model": "Camera NVR",
+   "category": "S",
+   "type": "github",
+   "repo": "motioneye-project/motioneye",
+   "product_url": "https://github.com/motioneye-project/motioneye"
+  },
+  {
+   "id": "scrypted",
+   "brand": "Scrypted",
+   "model": "Camera and home hub",
+   "category": "S",
+   "type": "github",
+   "repo": "koush/scrypted",
+   "product_url": "https://github.com/koush/scrypted"
+  },
+  {
+   "id": "go2rtc",
+   "brand": "go2rtc",
+   "model": "Camera streaming server",
+   "category": "S",
+   "type": "github",
+   "repo": "AlexxIT/go2rtc",
+   "product_url": "https://github.com/AlexxIT/go2rtc"
+  },
+  {
+   "id": "espeasy",
+   "brand": "ESPEasy",
+   "model": "ESP8266 / ESP32 device firmware",
+   "category": "S",
+   "type": "github",
+   "repo": "letscontrolit/ESPEasy",
+   "product_url": "https://github.com/letscontrolit/ESPEasy"
+  },
+  {
+   "id": "openmqttgateway",
+   "brand": "OpenMQTTGateway",
+   "model": "MQTT sensor gateway firmware",
+   "category": "S",
+   "type": "github",
+   "repo": "1technophile/OpenMQTTGateway",
+   "product_url": "https://github.com/1technophile/OpenMQTTGateway"
+  },
+  {
+   "id": "openthread",
+   "brand": "OpenThread",
+   "model": "Thread networking stack",
+   "category": "S",
+   "type": "github",
+   "repo": "openthread/openthread",
+   "product_url": "https://github.com/openthread/openthread"
+  },
+  {
+   "id": "matter-sdk",
+   "brand": "Matter",
+   "model": "connectedhomeip SDK",
+   "category": "S",
+   "type": "github",
+   "repo": "project-chip/connectedhomeip",
+   "product_url": "https://github.com/project-chip/connectedhomeip"
+  },
+  {
+   "id": "valetudo",
+   "brand": "Valetudo",
+   "model": "Cloud-free vacuum firmware",
+   "category": "S",
+   "type": "github",
+   "repo": "Hypfer/Valetudo",
+   "product_url": "https://github.com/Hypfer/Valetudo"
+  },
+  {
+   "id": "homebridge",
+   "brand": "Homebridge",
+   "model": "HomeKit bridge",
+   "category": "S",
+   "type": "github",
+   "repo": "homebridge/homebridge",
+   "product_url": "https://github.com/homebridge/homebridge"
+  },
+  {
+   "id": "openbk7231t",
+   "brand": "OpenBeken",
+   "model": "OpenBK7231T firmware",
+   "category": "S",
+   "type": "github",
+   "repo": "openshwprojects/OpenBK7231T_App",
+   "product_url": "https://github.com/openshwprojects/OpenBK7231T_App"
+  },
+  {
+   "id": "shelly-homekit",
+   "brand": "Shelly",
+   "model": "HomeKit firmware",
+   "category": "S",
+   "type": "github",
+   "repo": "mongoose-os-apps/shelly-homekit",
+   "product_url": "https://github.com/mongoose-os-apps/shelly-homekit"
+  },
+  {
+   "id": "libretiny",
+   "brand": "LibreTiny",
+   "model": "Replacement IoT chip firmware",
+   "category": "S",
+   "type": "github",
+   "repo": "libretiny-eu/libretiny",
+   "product_url": "https://github.com/libretiny-eu/libretiny"
+  },
+  {
+   "id": "tuya-cloudcutter",
+   "brand": "tuya-cloudcutter",
+   "model": "Firmware flasher",
+   "category": "S",
+   "type": "github",
+   "repo": "tuya-cloudcutter/tuya-cloudcutter",
+   "product_url": "https://github.com/tuya-cloudcutter/tuya-cloudcutter"
+  },
+  {
+   "id": "ratgdo",
+   "brand": "ratgdo",
+   "model": "Garage door firmware",
+   "category": "S",
+   "type": "github",
+   "repo": "ratgdo/esphome-ratgdo",
+   "product_url": "https://github.com/ratgdo/esphome-ratgdo"
+  },
+  {
+   "id": "konnected-esphome",
+   "brand": "Konnected",
+   "model": "ESPHome firmware",
+   "category": "S",
+   "type": "github",
+   "repo": "konnected-io/konnected-esphome",
+   "product_url": "https://github.com/konnected-io/konnected-esphome"
+  },
+  {
+   "id": "openevse",
+   "brand": "OpenEVSE",
+   "model": "WiFi gateway firmware",
+   "category": "S",
+   "type": "github",
+   "repo": "OpenEVSE/ESP32_WiFi_V4.x",
+   "product_url": "https://github.com/OpenEVSE/ESP32_WiFi_V4.x"
+  },
+  {
+   "id": "evcc",
+   "brand": "evcc",
+   "model": "EV charge controller",
+   "category": "S",
+   "type": "github",
+   "repo": "evcc-io/evcc",
+   "product_url": "https://github.com/evcc-io/evcc"
+  },
+  {
+   "id": "openwb",
+   "brand": "openWB",
+   "model": "EV charging controller",
+   "category": "S",
+   "type": "github",
+   "repo": "snaptec/openWB",
+   "product_url": "https://github.com/snaptec/openWB"
+  },
+  {
+   "id": "emonesp",
+   "brand": "OpenEnergyMonitor",
+   "model": "EmonESP",
+   "category": "S",
+   "type": "github",
+   "repo": "openenergymonitor/EmonESP",
+   "product_url": "https://github.com/openenergymonitor/EmonESP"
+  },
+  {
+   "id": "music-assistant",
+   "brand": "Music Assistant",
+   "model": "Media library server",
+   "category": "S",
+   "type": "github",
+   "repo": "music-assistant/server",
+   "product_url": "https://github.com/music-assistant/server"
+  },
+  {
+   "id": "wyoming-satellite",
+   "brand": "Home Assistant",
+   "model": "Wyoming satellite",
+   "category": "S",
+   "type": "github",
+   "repo": "rhasspy/wyoming-satellite",
+   "product_url": "https://github.com/rhasspy/wyoming-satellite"
+  },
+  {
+   "id": "rhasspy",
+   "brand": "Rhasspy",
+   "model": "Offline voice assistant",
+   "category": "S",
+   "type": "github",
+   "repo": "rhasspy/rhasspy",
+   "product_url": "https://github.com/rhasspy/rhasspy"
+  },
+  {
+   "id": "piper-tts",
+   "brand": "Piper",
+   "model": "Text-to-speech engine",
+   "category": "S",
+   "type": "github",
+   "repo": "rhasspy/piper",
+   "product_url": "https://github.com/rhasspy/piper"
+  },
+  {
+   "id": "openwakeword",
+   "brand": "openWakeWord",
+   "model": "Wake word engine",
+   "category": "S",
+   "type": "github",
+   "repo": "dscripka/openWakeWord",
+   "product_url": "https://github.com/dscripka/openWakeWord"
+  },
+  {
+   "id": "govee2mqtt",
+   "brand": "Govee",
+   "model": "MQTT bridge (unofficial)",
+   "category": "S",
+   "type": "github",
+   "repo": "wez/govee2mqtt",
+   "product_url": "https://github.com/wez/govee2mqtt"
+  },
+  {
+   "id": "hyperion-ng",
+   "brand": "Hyperion",
+   "model": "Ambient lighting",
+   "category": "S",
+   "type": "github",
+   "repo": "hyperion-project/hyperion.ng",
+   "product_url": "https://github.com/hyperion-project/hyperion.ng"
+  },
+  {
+   "id": "esp32-marauder",
+   "brand": "Marauder",
+   "model": "ESP32 Marauder",
+   "category": "S",
+   "type": "github",
+   "repo": "justcallmekoko/ESP32Marauder",
+   "product_url": "https://github.com/justcallmekoko/ESP32Marauder"
+  },
+  {
+   "id": "bruce-firmware",
+   "brand": "Bruce",
+   "model": "ESP32 pentest firmware",
+   "category": "S",
+   "type": "github",
+   "repo": "pr3y/Bruce",
+   "product_url": "https://github.com/pr3y/Bruce"
+  },
+  {
+   "id": "klipper",
+   "brand": "Klipper",
+   "model": "3D printer firmware",
+   "category": "M",
+   "type": "github",
+   "repo": "Klipper3d/klipper",
+   "product_url": "https://github.com/Klipper3d/klipper"
+  },
+  {
+   "id": "mainsail",
+   "brand": "Mainsail",
+   "model": "Klipper web interface",
+   "category": "M",
+   "type": "github",
+   "repo": "mainsail-crew/mainsail",
+   "product_url": "https://github.com/mainsail-crew/mainsail"
+  },
+  {
+   "id": "fluidd",
+   "brand": "Fluidd",
+   "model": "Klipper web interface",
+   "category": "M",
+   "type": "github",
+   "repo": "fluidd-core/fluidd",
+   "product_url": "https://github.com/fluidd-core/fluidd"
+  },
+  {
+   "id": "moonraker",
+   "brand": "Moonraker",
+   "model": "Klipper API server",
+   "category": "M",
+   "type": "github",
+   "repo": "Arksine/moonraker",
+   "product_url": "https://github.com/Arksine/moonraker"
+  },
+  {
+   "id": "prusaslicer",
+   "brand": "Prusa",
+   "model": "Slicer software",
+   "category": "M",
+   "type": "github",
+   "repo": "prusa3d/PrusaSlicer",
+   "product_url": "https://github.com/prusa3d/PrusaSlicer"
+  },
+  {
+   "id": "orcaslicer",
+   "brand": "OrcaSlicer",
+   "model": "Slicer software",
+   "category": "M",
+   "type": "github",
+   "repo": "SoftFever/OrcaSlicer",
+   "product_url": "https://github.com/SoftFever/OrcaSlicer"
+  },
+  {
+   "id": "ultimaker-cura",
+   "brand": "UltiMaker",
+   "model": "Cura",
+   "category": "M",
+   "type": "github",
+   "repo": "Ultimaker/Cura",
+   "product_url": "https://github.com/Ultimaker/Cura"
+  },
+  {
+   "id": "bambu-studio",
+   "brand": "Bambu Lab",
+   "model": "Bambu Studio",
+   "category": "M",
+   "type": "github",
+   "repo": "bambulab/BambuStudio",
+   "product_url": "https://github.com/bambulab/BambuStudio"
+  },
+  {
+   "id": "reprapfirmware",
+   "brand": "Duet3D",
+   "model": "RepRapFirmware",
+   "category": "M",
+   "type": "github",
+   "repo": "Duet3D/RepRapFirmware",
+   "product_url": "https://github.com/Duet3D/RepRapFirmware"
+  },
+  {
+   "id": "duet-web-control",
+   "brand": "Duet3D",
+   "model": "Duet Web Control",
+   "category": "M",
+   "type": "github",
+   "repo": "Duet3D/DuetWebControl",
+   "product_url": "https://github.com/Duet3D/DuetWebControl"
+  },
+  {
+   "id": "obico-server",
+   "brand": "Obico",
+   "model": "Print monitoring server",
+   "category": "M",
+   "type": "github",
+   "repo": "TheSpaghettiDetective/obico-server",
+   "product_url": "https://github.com/TheSpaghettiDetective/obico-server"
+  },
+  {
+   "id": "grbl",
+   "brand": "grbl",
+   "model": "CNC motion controller firmware",
+   "category": "M",
+   "type": "github",
+   "repo": "gnea/grbl",
+   "product_url": "https://github.com/gnea/grbl"
+  },
+  {
+   "id": "fluidnc",
+   "brand": "FluidNC",
+   "model": "CNC controller firmware",
+   "category": "M",
+   "type": "github",
+   "repo": "bdring/FluidNC",
+   "product_url": "https://github.com/bdring/FluidNC"
+  },
+  {
+   "id": "linuxcnc",
+   "brand": "LinuxCNC",
+   "model": "CNC machine controller",
+   "category": "M",
+   "type": "github",
+   "repo": "LinuxCNC/linuxcnc",
+   "product_url": "https://github.com/LinuxCNC/linuxcnc"
+  },
+  {
+   "id": "lasergrbl",
+   "brand": "LaserGRBL",
+   "model": "Laser engraver controller",
+   "category": "M",
+   "type": "github",
+   "repo": "arkypita/LaserGRBL",
+   "product_url": "https://github.com/arkypita/LaserGRBL"
+  },
+  {
+   "id": "qmk-firmware",
+   "brand": "QMK",
+   "model": "Keyboard firmware",
+   "category": "M",
+   "type": "github",
+   "repo": "qmk/qmk_firmware",
+   "product_url": "https://github.com/qmk/qmk_firmware"
+  },
+  {
+   "id": "zmk-firmware",
+   "brand": "ZMK",
+   "model": "Wireless keyboard firmware",
+   "category": "M",
+   "type": "github",
+   "repo": "zmkfirmware/zmk",
+   "product_url": "https://github.com/zmkfirmware/zmk"
+  },
+  {
+   "id": "arduino-ide",
+   "brand": "Arduino",
+   "model": "Development environment",
+   "category": "M",
+   "type": "github",
+   "repo": "arduino/arduino-ide",
+   "product_url": "https://github.com/arduino/arduino-ide"
+  },
+  {
+   "id": "arduino-esp32",
+   "brand": "Espressif",
+   "model": "Arduino core for ESP32",
+   "category": "M",
+   "type": "github",
+   "repo": "espressif/arduino-esp32",
+   "product_url": "https://github.com/espressif/arduino-esp32"
+  },
+  {
+   "id": "stm32duino",
+   "brand": "STMicroelectronics",
+   "model": "STM32 Arduino core",
+   "category": "M",
+   "type": "github",
+   "repo": "stm32duino/Arduino_Core_STM32",
+   "product_url": "https://github.com/stm32duino/Arduino_Core_STM32"
+  },
+  {
+   "id": "ardupilot",
+   "brand": "ArduPilot",
+   "model": "Autopilot firmware",
+   "category": "M",
+   "type": "github",
+   "repo": "ArduPilot/ardupilot",
+   "product_url": "https://github.com/ArduPilot/ardupilot"
+  },
+  {
+   "id": "px4-autopilot",
+   "brand": "PX4",
+   "model": "Autopilot firmware",
+   "category": "M",
+   "type": "github",
+   "repo": "PX4/PX4-Autopilot",
+   "product_url": "https://github.com/PX4/PX4-Autopilot"
+  },
+  {
+   "id": "betaflight",
+   "brand": "Betaflight",
+   "model": "FPV flight controller firmware",
+   "category": "M",
+   "type": "github",
+   "repo": "betaflight/betaflight",
+   "product_url": "https://github.com/betaflight/betaflight"
+  },
+  {
+   "id": "inav",
+   "brand": "INAV",
+   "model": "Fixed-wing flight controller firmware",
+   "category": "M",
+   "type": "github",
+   "repo": "iNavFlight/inav",
+   "product_url": "https://github.com/iNavFlight/inav"
+  },
+  {
+   "id": "expresslrs",
+   "brand": "ExpressLRS",
+   "model": "Radio link firmware",
+   "category": "M",
+   "type": "github",
+   "repo": "ExpressLRS/ExpressLRS",
+   "product_url": "https://github.com/ExpressLRS/ExpressLRS"
+  },
+  {
+   "id": "edgetx",
+   "brand": "EdgeTX",
+   "model": "Radio transmitter firmware",
+   "category": "M",
+   "type": "github",
+   "repo": "EdgeTX/edgetx",
+   "product_url": "https://github.com/EdgeTX/edgetx"
+  },
+  {
+   "id": "openpilot",
+   "brand": "comma.ai",
+   "model": "openpilot",
+   "category": "M",
+   "type": "github",
+   "repo": "commaai/openpilot",
+   "product_url": "https://github.com/commaai/openpilot"
+  },
+  {
+   "id": "circuitpython",
+   "brand": "Adafruit",
+   "model": "CircuitPython",
+   "category": "M",
+   "type": "github",
+   "repo": "adafruit/circuitpython",
+   "product_url": "https://github.com/adafruit/circuitpython"
+  },
+  {
+   "id": "micropython",
+   "brand": "MicroPython",
+   "model": "Microcontroller Python runtime",
+   "category": "M",
+   "type": "github",
+   "repo": "micropython/micropython",
+   "product_url": "https://github.com/micropython/micropython"
+  },
+  {
+   "id": "raspberrypi-firmware",
+   "brand": "Raspberry Pi",
+   "model": "VideoCore firmware",
+   "category": "M",
+   "type": "github",
+   "repo": "raspberrypi/firmware",
+   "product_url": "https://github.com/raspberrypi/firmware"
+  },
+  {
+   "id": "rpi-eeprom",
+   "brand": "Raspberry Pi",
+   "model": "Bootloader EEPROM",
+   "category": "M",
+   "type": "github",
+   "repo": "raspberrypi/rpi-eeprom",
+   "product_url": "https://github.com/raspberrypi/rpi-eeprom"
+  },
+  {
+   "id": "rpi-imager",
+   "brand": "Raspberry Pi",
+   "model": "Imager",
+   "category": "M",
+   "type": "github",
+   "repo": "raspberrypi/rpi-imager",
+   "product_url": "https://github.com/raspberrypi/rpi-imager"
+  },
+  {
+   "id": "pico-sdk",
+   "brand": "Raspberry Pi",
+   "model": "Pico SDK",
+   "category": "M",
+   "type": "github",
+   "repo": "raspberrypi/pico-sdk",
+   "product_url": "https://github.com/raspberrypi/pico-sdk"
+  },
+  {
+   "id": "rpicam-apps",
+   "brand": "Raspberry Pi",
+   "model": "rpicam-apps",
+   "category": "M",
+   "type": "github",
+   "repo": "raspberrypi/rpicam-apps",
+   "product_url": "https://github.com/raspberrypi/rpicam-apps"
+  },
+  {
+   "id": "retropie",
+   "brand": "RetroPie",
+   "model": "Retro gaming OS",
+   "category": "M",
+   "type": "github",
+   "repo": "RetroPie/RetroPie-Setup",
+   "product_url": "https://github.com/RetroPie/RetroPie-Setup"
+  },
+  {
+   "id": "batocera",
+   "brand": "Batocera",
+   "model": "Retro gaming OS",
+   "category": "M",
+   "type": "github",
+   "repo": "batocera-linux/batocera.linux",
+   "product_url": "https://github.com/batocera-linux/batocera.linux"
+  },
+  {
+   "id": "retroarch",
+   "brand": "RetroArch",
+   "model": "Emulator front end",
+   "category": "M",
+   "type": "github",
+   "repo": "libretro/RetroArch",
+   "product_url": "https://github.com/libretro/RetroArch"
+  },
+  {
+   "id": "esp-idf",
+   "brand": "Espressif",
+   "model": "ESP-IDF",
+   "category": "M",
+   "type": "github",
+   "repo": "espressif/esp-idf",
+   "product_url": "https://github.com/espressif/esp-idf"
+  },
+  {
+   "id": "zephyr-rtos",
+   "brand": "Zephyr",
+   "model": "Embedded RTOS",
+   "category": "M",
+   "type": "github",
+   "repo": "zephyrproject-rtos/zephyr",
+   "product_url": "https://github.com/zephyrproject-rtos/zephyr"
+  },
+  {
+   "id": "freertos",
+   "brand": "FreeRTOS",
+   "model": "Embedded RTOS",
+   "category": "M",
+   "type": "github",
+   "repo": "FreeRTOS/FreeRTOS",
+   "product_url": "https://github.com/FreeRTOS/FreeRTOS"
+  },
+  {
+   "id": "riot-os",
+   "brand": "RIOT",
+   "model": "IoT operating system",
+   "category": "M",
+   "type": "github",
+   "repo": "RIOT-OS/RIOT",
+   "product_url": "https://github.com/RIOT-OS/RIOT"
+  },
+  {
+   "id": "nrf-connect-sdk",
+   "brand": "Nordic",
+   "model": "nRF Connect SDK",
+   "category": "M",
+   "type": "github",
+   "repo": "nrfconnect/sdk-nrf",
+   "product_url": "https://github.com/nrfconnect/sdk-nrf"
+  },
+  {
+   "id": "platformio",
+   "brand": "PlatformIO",
+   "model": "Embedded build system",
+   "category": "M",
+   "type": "github",
+   "repo": "platformio/platformio-core",
+   "product_url": "https://github.com/platformio/platformio-core"
+  },
+  {
+   "id": "openipc",
+   "brand": "OpenIPC",
+   "model": "IP camera firmware",
+   "category": "M",
+   "type": "github",
+   "repo": "OpenIPC/firmware",
+   "product_url": "https://github.com/OpenIPC/firmware"
+  },
+  {
+   "id": "thingino",
+   "brand": "thingino",
+   "model": "Camera firmware",
+   "category": "M",
+   "type": "github",
+   "repo": "themactep/thingino-firmware",
+   "product_url": "https://github.com/themactep/thingino-firmware"
+  },
+  {
+   "id": "pwnagotchi",
+   "brand": "Pwnagotchi",
+   "model": "Pi Zero Wi-Fi firmware",
+   "category": "M",
+   "type": "github",
+   "repo": "evilsocket/pwnagotchi",
+   "product_url": "https://github.com/evilsocket/pwnagotchi"
+  },
+  {
+   "id": "netgear-nighthawk-rax80",
+   "brand": "Netgear",
+   "model": "Nighthawk RAX80",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "netgear-nighthawk-rs700s",
+   "brand": "Netgear",
+   "model": "Nighthawk RS700S",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "netgear-orbi-rbk852",
+   "brand": "Netgear",
+   "model": "Orbi RBK852",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "netgear-orbi-rbe973",
+   "brand": "Netgear",
+   "model": "Orbi 970 Series",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "tp-link-archer-axe75",
+   "brand": "TP-Link",
+   "model": "Archer AXE75",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "tp-link-archer-be800",
+   "brand": "TP-Link",
+   "model": "Archer BE800",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "tp-link-deco-xe75",
+   "brand": "TP-Link",
+   "model": "Deco XE75",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "tp-link-deco-be85",
+   "brand": "TP-Link",
+   "model": "Deco BE85",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "tp-link-omada-er605",
+   "brand": "TP-Link",
+   "model": "Omada ER605 Gateway",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "asus-rog-rapture-gt-ax6000",
+   "brand": "ASUS",
+   "model": "ROG Rapture GT-AX6000",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "asus-zenwifi-xt9",
+   "brand": "ASUS",
+   "model": "ZenWiFi XT9",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "asus-zenwifi-bt10",
+   "brand": "ASUS",
+   "model": "ZenWiFi BT10",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "linksys-velop-mx4200",
+   "brand": "Linksys",
+   "model": "Velop MX4200",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "google-nest-wifi-pro",
+   "brand": "Google",
+   "model": "Nest Wifi Pro",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "eero-max-7",
+   "brand": "Amazon",
+   "model": "eero Max 7",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "eero-6-plus",
+   "brand": "Amazon",
+   "model": "eero 6+",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "ubiquiti-unifi-express",
+   "brand": "Ubiquiti",
+   "model": "UniFi Express",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "ubiquiti-unifi-u6-plus",
+   "brand": "Ubiquiti",
+   "model": "UniFi U6+ Access Point",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "synology-rt6600ax",
+   "brand": "Synology",
+   "model": "RT6600ax",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "gl-inet-flint-2",
+   "brand": "GL.iNet",
+   "model": "Flint 2 (GL-MT6000)",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "gl-inet-beryl-ax",
+   "brand": "GL.iNet",
+   "model": "Beryl AX (GL-MT3000)",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "firewalla-gold",
+   "brand": "Firewalla",
+   "model": "Gold",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "firewalla-purple",
+   "brand": "Firewalla",
+   "model": "Purple",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "starlink-gen3-router",
+   "brand": "SpaceX",
+   "model": "Starlink Gen 3 Router",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "aruba-instant-on-ap22",
+   "brand": "HPE",
+   "model": "Aruba Instant On AP22",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "zyxel-nwa110ax",
+   "brand": "Zyxel",
+   "model": "NWA110AX",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "mikrotik-hap-ax3",
+   "brand": "MikroTik",
+   "model": "hAP ax³",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "netgear-nighthawk-m6",
+   "brand": "Netgear",
+   "model": "Nighthawk M6 Hotspot",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "synology-ds425-plus",
+   "brand": "Synology",
+   "model": "DS425+",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "synology-ds1522-plus",
+   "brand": "Synology",
+   "model": "DS1522+",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "synology-ds220j",
+   "brand": "Synology",
+   "model": "DS220j",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "synology-rs422-plus",
+   "brand": "Synology",
+   "model": "RS422+",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "qnap-ts-262",
+   "brand": "QNAP",
+   "model": "TS-262",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "qnap-ts-673a",
+   "brand": "QNAP",
+   "model": "TS-673A",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "qnap-tvs-h874",
+   "brand": "QNAP",
+   "model": "TVS-h874",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "asustor-as5404t",
+   "brand": "Asustor",
+   "model": "Lockerstor 4 (AS5404T)",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "terramaster-f4-424",
+   "brand": "TerraMaster",
+   "model": "F4-424",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "ugreen-nasync-dxp4800",
+   "brand": "UGREEN",
+   "model": "NASync DXP4800",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "wd-my-cloud-pr4100",
+   "brand": "Western Digital",
+   "model": "My Cloud PR4100",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "netgear-readynas-424",
+   "brand": "Netgear",
+   "model": "ReadyNAS 424",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "buffalo-linkstation-720",
+   "brand": "Buffalo",
+   "model": "LinkStation 720",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "ubiquiti-unas-pro",
+   "brand": "Ubiquiti",
+   "model": "UNAS Pro",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "proxmox-ve",
+   "brand": "Proxmox",
+   "model": "Virtual Environment",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "unraid-os",
+   "brand": "Lime Technology",
+   "model": "Unraid OS",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "ring-battery-doorbell-plus",
+   "brand": "Amazon",
+   "model": "Ring Battery Doorbell Plus",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "ring-stick-up-cam",
+   "brand": "Amazon",
+   "model": "Ring Stick Up Cam",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "ring-alarm-base-station",
+   "brand": "Amazon",
+   "model": "Ring Alarm Base Station",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "google-nest-doorbell",
+   "brand": "Google",
+   "model": "Nest Doorbell (battery)",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "google-nest-cam-indoor",
+   "brand": "Google",
+   "model": "Nest Cam (indoor, wired)",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "google-nest-thermostat",
+   "brand": "Google",
+   "model": "Nest Learning Thermostat",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "google-nest-protect",
+   "brand": "Google",
+   "model": "Nest Protect",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "google-nest-hub-2",
+   "brand": "Google",
+   "model": "Nest Hub (2nd gen)",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "arlo-pro-5s",
+   "brand": "Arlo",
+   "model": "Pro 5S 2K",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "arlo-essential-2",
+   "brand": "Arlo",
+   "model": "Essential 2",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "wyze-cam-v4",
+   "brand": "Wyze",
+   "model": "Cam v4",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "eufy-eufycam-3",
+   "brand": "Anker",
+   "model": "eufyCam 3",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "eufy-s330-doorbell",
+   "brand": "Anker",
+   "model": "eufy Video Doorbell S330",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "reolink-argus-4-pro",
+   "brand": "Reolink",
+   "model": "Argus 4 Pro",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "reolink-duo-3",
+   "brand": "Reolink",
+   "model": "Duo 3 PoE",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "reolink-rlc-820a",
+   "brand": "Reolink",
+   "model": "RLC-820A",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "tp-link-tapo-c210",
+   "brand": "TP-Link",
+   "model": "Tapo C210",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "blink-outdoor-4",
+   "brand": "Amazon",
+   "model": "Blink Outdoor 4",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "aqara-camera-hub-g5",
+   "brand": "Aqara",
+   "model": "Camera Hub G5 Pro",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "samsung-smartthings-hub-v3",
+   "brand": "Samsung",
+   "model": "SmartThings Hub v3",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "hue-sync-box",
+   "brand": "Philips",
+   "model": "Hue Play HDMI Sync Box",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "nanoleaf-shapes",
+   "brand": "Nanoleaf",
+   "model": "Shapes",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "lifx-a19",
+   "brand": "LIFX",
+   "model": "Color A19",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "sonos-arc",
+   "brand": "Sonos",
+   "model": "Arc",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "sonos-era-300",
+   "brand": "Sonos",
+   "model": "Era 300",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "sonos-one-sl",
+   "brand": "Sonos",
+   "model": "One SL",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "ecobee-smart-premium",
+   "brand": "ecobee",
+   "model": "Smart Thermostat Premium",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "honeywell-t9",
+   "brand": "Resideo",
+   "model": "Honeywell Home T9",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "emporia-vue-3",
+   "brand": "Emporia",
+   "model": "Vue 3 Energy Monitor",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "lutron-caseta-bridge",
+   "brand": "Lutron",
+   "model": "Caséta Smart Bridge",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "schlage-encode-plus",
+   "brand": "Schlage",
+   "model": "Encode Plus",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "august-wifi-smart-lock",
+   "brand": "August",
+   "model": "Wi-Fi Smart Lock",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "yale-assure-lock-2",
+   "brand": "Yale",
+   "model": "Assure Lock 2",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "level-lock-plus",
+   "brand": "Level",
+   "model": "Lock+",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "chamberlain-myq",
+   "brand": "Chamberlain",
+   "model": "myQ Smart Garage Control",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "switchbot-hub-2",
+   "brand": "SwitchBot",
+   "model": "Hub 2",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "shelly-plus-1pm",
+   "brand": "Shelly",
+   "model": "Plus 1PM",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "shelly-pro-4pm",
+   "brand": "Shelly",
+   "model": "Pro 4PM",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "roborock-s8-maxv-ultra",
+   "brand": "Roborock",
+   "model": "S8 MaxV Ultra",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "dreame-x40-ultra",
+   "brand": "Dreame",
+   "model": "X40 Ultra",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "ecovacs-deebot-x2-omni",
+   "brand": "Ecovacs",
+   "model": "Deebot X2 Omni",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "irobot-roomba-combo-10",
+   "brand": "iRobot",
+   "model": "Roomba Combo 10 Max",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "rachio-3",
+   "brand": "Rachio",
+   "model": "Smart Sprinkler Controller 3",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "moen-flo",
+   "brand": "Moen",
+   "model": "Flo Smart Water Monitor",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "simplisafe-base-station",
+   "brand": "SimpliSafe",
+   "model": "Base Station",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "ubiquiti-unifi-g5-bullet",
+   "brand": "Ubiquiti",
+   "model": "UniFi Protect G5 Bullet",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "ubiquiti-unifi-g4-doorbell",
+   "brand": "Ubiquiti",
+   "model": "UniFi Protect G4 Doorbell Pro",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "amazon-echo-dot-5",
+   "brand": "Amazon",
+   "model": "Echo Dot (5th gen)",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "apple-homepod-2",
+   "brand": "Apple",
+   "model": "HomePod (2nd gen)",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "apple-tv-4k",
+   "brand": "Apple",
+   "model": "TV 4K",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "sony-playstation-5-pro",
+   "brand": "Sony",
+   "model": "PlayStation 5 Pro",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "sony-dualsense-controller",
+   "brand": "Sony",
+   "model": "DualSense Controller",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "nintendo-switch-2",
+   "brand": "Nintendo",
+   "model": "Switch 2",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "valve-steam-deck-oled",
+   "brand": "Valve",
+   "model": "Steam Deck OLED",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "asus-rog-ally-x",
+   "brand": "ASUS",
+   "model": "ROG Ally X",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "lenovo-legion-go",
+   "brand": "Lenovo",
+   "model": "Legion Go",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "analogue-pocket",
+   "brand": "Analogue",
+   "model": "Pocket",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "meta-quest-3",
+   "brand": "Meta",
+   "model": "Quest 3",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "sony-psvr2",
+   "brand": "Sony",
+   "model": "PlayStation VR2",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "apple-vision-pro",
+   "brand": "Apple",
+   "model": "Vision Pro",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "dji-mavic-4-pro",
+   "brand": "DJI",
+   "model": "Mavic 4 Pro",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "dji-neo",
+   "brand": "DJI",
+   "model": "Neo",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "dji-avata-2",
+   "brand": "DJI",
+   "model": "Avata 2",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "dji-osmo-pocket-3",
+   "brand": "DJI",
+   "model": "Osmo Pocket 3",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "dji-rs-4",
+   "brand": "DJI",
+   "model": "RS 4",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "autel-evo-lite-plus",
+   "brand": "Autel Robotics",
+   "model": "EVO Lite+",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "hoverair-x1",
+   "brand": "Zero Zero Robotics",
+   "model": "HoverAir X1",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "insta360-x4",
+   "brand": "Insta360",
+   "model": "X4",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "insta360-ace-pro-2",
+   "brand": "Insta360",
+   "model": "Ace Pro 2",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "gopro-hero-13-black",
+   "brand": "GoPro",
+   "model": "HERO13 Black",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "garmin-edge-1050",
+   "brand": "Garmin",
+   "model": "Edge 1050",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "garmin-fenix-8",
+   "brand": "Garmin",
+   "model": "fenix 8",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "wahoo-elemnt-roam",
+   "brand": "Wahoo",
+   "model": "ELEMNT ROAM",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "bosch-ebike-performance-cx",
+   "brand": "Bosch",
+   "model": "eBike Performance Line CX",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "bosch-kiox-300",
+   "brand": "Bosch",
+   "model": "eBike Kiox 300",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "shimano-steps-ep8",
+   "brand": "Shimano",
+   "model": "STEPS EP8",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "trek-rail-9",
+   "brand": "Trek",
+   "model": "Rail 9",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "aventon-level-3",
+   "brand": "Aventon",
+   "model": "Level 3",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "lectric-xp-4",
+   "brand": "Lectric",
+   "model": "XP 4",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "super73-s2",
+   "brand": "Super73",
+   "model": "S2",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "cowboy-4",
+   "brand": "Cowboy",
+   "model": "4 (e-bike)",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "segway-ninebot-max-g2",
+   "brand": "Segway",
+   "model": "Ninebot Max G2",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "onewheel-gt-s",
+   "brand": "Future Motion",
+   "model": "Onewheel GT S-Series",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "bambu-lab-x1-carbon",
+   "brand": "Bambu Lab",
+   "model": "X1 Carbon",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "bambu-lab-p1s",
+   "brand": "Bambu Lab",
+   "model": "P1S",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "bambu-lab-a1",
+   "brand": "Bambu Lab",
+   "model": "A1",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "bambu-lab-h2d",
+   "brand": "Bambu Lab",
+   "model": "H2D",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "prusa-mk4s",
+   "brand": "Prusa",
+   "model": "MK4S",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "prusa-xl",
+   "brand": "Prusa",
+   "model": "XL",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "creality-k2-plus",
+   "brand": "Creality",
+   "model": "K2 Plus",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "creality-ender-3-v3",
+   "brand": "Creality",
+   "model": "Ender-3 V3",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "anycubic-kobra-3",
+   "brand": "Anycubic",
+   "model": "Kobra 3",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "elegoo-neptune-4",
+   "brand": "Elegoo",
+   "model": "Neptune 4 Pro",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "elegoo-saturn-4-ultra",
+   "brand": "Elegoo",
+   "model": "Saturn 4 Ultra",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "snapmaker-artisan",
+   "brand": "Snapmaker",
+   "model": "Artisan",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "xtool-p2",
+   "brand": "xTool",
+   "model": "P2 Laser",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "glowforge-pro",
+   "brand": "Glowforge",
+   "model": "Pro",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "raspberry-pi-5",
+   "brand": "Raspberry Pi",
+   "model": "Pi 5",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "arduino-uno-r4",
+   "brand": "Arduino",
+   "model": "UNO R4 WiFi",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "framework-laptop-13",
+   "brand": "Framework",
+   "model": "Laptop 13 (BIOS)",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "framework-laptop-16",
+   "brand": "Framework",
+   "model": "Laptop 16 (BIOS)",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "system76-firmware",
+   "brand": "System76",
+   "model": "Open Firmware",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "steamdeck-bios",
+   "brand": "Valve",
+   "model": "Steam Deck BIOS",
+   "category": "M",
+   "type": "manual"
   }
  ]
 }

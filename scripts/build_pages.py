@@ -163,12 +163,15 @@ def device_page(d):
     path = f"/devices/{d['id']}/"
     cat = CATS.get(d["category"], "")
     live = d.get("version") and d["status"] != "pending"
+    # plenty of names already end in "firmware" ("Klipper 3D printer firmware"), so only
+    # add the word when it isn't there — otherwise the title stutters
+    fw = "" if "firmware" in name.lower() else " firmware"
     if live:
-        title = f"{name} firmware — latest version {d['version']} ({month(d['released'])}) | Firmwarely"
-        desc = f"Latest {name} firmware is {d['version']}, released {fmt(d['released'])}. Release notes, version history, and email alerts when a new or critical update ships."
+        title = f"{name}{fw} — latest version {d['version']} ({month(d['released'])}) | Firmwarely"
+        desc = f"Latest {name} version is {d['version']}, released {fmt(d['released'])}. Release notes, version history, and email alerts when a new or critical update ships."
     else:
-        title = f"{name} firmware updates — alerts & release tracking | Firmwarely"
-        desc = f"Track {name} firmware updates. Firmwarely watches manufacturer release pages and emails you when a new or security update ships."
+        title = f"{name}{fw} updates — alerts & release tracking | Firmwarely"
+        desc = f"Track {name}{fw} updates. Firmwarely watches manufacturer release pages and emails you when a new or security update ships."
 
     ld = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Devices", "item": f"{SITE}/devices/"},
