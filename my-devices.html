@@ -342,9 +342,17 @@ footer a:hover{color:var(--text)}
       return;
     }
     var need = 0, sec = 0, unknown = 0, html = "";
-    mine.forEach(function (e, i) {
+    // what needs doing floats to the top; the original index rides along because the
+    // row handlers address mine[] by position
+    var RANK = { critical: 0, update: 1, pending: 2, current: 3 };
+    var rank = function (c) { return RANK[c] === undefined ? 9 : RANK[c]; };
+    var rows = mine.map(function (e, i) { return { e: e, i: i, v: verdict(e, catalog[e.id]) }; });
+    rows.sort(function (a, b) {
+      return rank(a.v.cls) - rank(b.v.cls) || a.i - b.i;
+    });
+    rows.forEach(function (r) {
+      var e = r.e, i = r.i, v = r.v;
       var d = catalog[e.id];
-      var v = verdict(e, d);
       if (v.cls === "update") need++;
       if (v.cls === "critical") { need++; sec++; }
       if (v.cls === "pending") unknown++;

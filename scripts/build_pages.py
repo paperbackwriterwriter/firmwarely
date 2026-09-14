@@ -117,6 +117,7 @@ def head(title, desc, path, extra=""):
     <a class="brand" href="/"><i></i>Firmwarely</a>
     <ul>
       <li class="hide-m"><a href="/devices/">Devices</a></li>
+      <li class="hide-m"><a href="/my-devices.html">My devices</a></li>
       <li class="hide-m"><a href="/#how">How it works</a></li>
       <li class="hide-m"><a href="/#pricing">Pricing</a></li>
       <li><a class="btn" href="#signup">Get alerts</a></li>
@@ -255,7 +256,8 @@ def device_page(d):
         <h2 style="margin:0 0 .5rem;font-size:1.05rem">Watch this device</h2>
         <p style="color:var(--muted);font-size:.95rem;margin:0 0 .75rem">Get one email when {esc(d['brand'])} ships a new or security firmware for the {esc(d['model'])}.</p>
         <a class="btn" href="#signup">Get alerts</a>
-        {f'<p style="margin:.75rem 0 0"><a href="#update">How to update this device</a></p>' if steps else ""}
+        <p style="margin:.75rem 0 0"><a href="/my-devices.html#d={esc(d['id'])}">Track this in My devices →</a></p>
+        {f'<p style="margin:.5rem 0 0"><a href="#update">How to update this device</a></p>' if steps else ""}
         {f'<p style="margin:1rem 0 0"><a href="{esc(d["product_url"])}" target="_blank" rel="nofollow sponsored noopener">See current price ↗</a></p>' if d.get("product_url") else ""}
       </div>
     </aside>
@@ -349,7 +351,8 @@ def main():
         (d / "index.html").write_text(content)
 
     today = datetime.now(timezone.utc).date().isoformat()
-    urls = [f"{SITE}/", f"{SITE}/devices/", f"{SITE}/legal/"] + [f"{SITE}/devices/{d['id']}/" for d in devices]
+    urls = ([f"{SITE}/", f"{SITE}/devices/", f"{SITE}/my-devices.html", f"{SITE}/legal/"]
+            + [f"{SITE}/devices/{d['id']}/" for d in devices])
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     sm += [f"  <url><loc>{u}</loc><lastmod>{today}</lastmod></url>" for u in urls]
     sm.append("</urlset>")
