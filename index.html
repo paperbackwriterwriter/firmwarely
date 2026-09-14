@@ -422,10 +422,14 @@ dlg.addEventListener("close", ()=>history.replaceState(null,"", location.pathnam
 if(location.hash.startsWith("#d=")) openDevice(location.hash.slice(3));
 
 /* ---------- Pro checkout (Stripe Payment Link) ---------- */
-const PRO_LINK = "https://buy.stripe.com/test_fZubJ1aOP6ve9TF8FU9sk00"; // Stripe Payment Link (swap for the live link when you go live)
-if (PRO_LINK.startsWith("http")) {
+// Stripe Payment Link. Empty until the live link exists (Stripe won't issue one while the
+// account is under review), and the button falls back to the Pro waitlist via the signup
+// form rather than a test-mode checkout that declines every real card.
+const PRO_LINK = "";
+{
   const pb = document.getElementById("pro-btn");
-  pb.href = PRO_LINK; pb.removeAttribute("data-plan"); pb.target = "_self";
+  if (PRO_LINK.startsWith("http")) { pb.href = PRO_LINK; pb.removeAttribute("data-plan"); pb.target = "_self"; }
+  else { pb.textContent = "Join the Pro waitlist"; }
 }
 
 /* ---------- forms → /api/subscribe → Beehiiv ---------- */
