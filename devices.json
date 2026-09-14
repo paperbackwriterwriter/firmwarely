@@ -1,8 +1,11 @@
 {
- "generated": "2026-09-13T18:22:01+00:00",
+ "generated": "2026-09-14T08:29:13+00:00",
  "tracked": 39,
- "ok": 39,
- "failed": [],
+ "ok": 37,
+ "failed": [
+  "asus-rt-ax88u",
+  "asus-rt-ax86u-pro"
+ ],
  "devices": [
   {
    "id": "ubiquiti-unifi-dream-machine-se",
@@ -21,7 +24,7 @@
      "released": "2026-09-09"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -43,7 +46,7 @@
      "released": "2026-08-12"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -65,7 +68,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -87,7 +90,7 @@
      "released": "2026-08-31"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -109,7 +112,7 @@
      "released": "2026-07-26"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "critical"
@@ -131,10 +134,10 @@
      "released": "2026-07-30"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "current"
   },
   {
    "id": "tasmota-open-firmware",
@@ -153,7 +156,7 @@
      "released": "2026-08-25"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -175,7 +178,7 @@
      "released": "2026-07-19"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -201,7 +204,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -223,7 +226,7 @@
      "released": "2025-12-05"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -245,7 +248,7 @@
      "released": "2026-09-01"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -267,7 +270,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -289,7 +292,7 @@
      "released": "2026-08-12"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -311,7 +314,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -333,8 +336,8 @@
      "released": "2026-04-17"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
-   "source_status": "ok",
+   "checked": "2026-09-14T08:29:13+00:00",
+   "source_status": "error: TimeoutError: The read operation timed out",
    "eol": true,
    "status": "eol"
   },
@@ -355,8 +358,8 @@
      "released": "2026-05-04"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
-   "source_status": "ok",
+   "checked": "2026-09-14T08:29:13+00:00",
+   "source_status": "error: ValueError: version pattern not found on page",
    "eol": false,
    "status": "current"
   },
@@ -377,7 +380,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -399,7 +402,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -421,7 +424,7 @@
      "released": "2026-09-11"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -443,7 +446,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -465,7 +468,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -487,7 +490,7 @@
      "released": "2026-09-13"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -543,7 +546,7 @@
      "released": "2026-07-02"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -667,7 +670,7 @@
      "released": "2026-07-06"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -689,7 +692,7 @@
      "released": "2026-08-18"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "critical"
@@ -711,7 +714,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -733,7 +736,7 @@
      "released": "2026-08-27"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -755,7 +758,7 @@
      "released": "2026-09-03"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -777,7 +780,7 @@
      "released": "2026-08-31"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -799,7 +802,7 @@
      "released": "2026-09-11"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -821,7 +824,7 @@
      "released": "2026-09-03"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -843,7 +846,7 @@
      "released": "2026-09-12"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -865,7 +868,7 @@
      "released": "2026-06-24"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -887,7 +890,7 @@
      "released": "2026-06-23"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -909,7 +912,7 @@
      "released": "2025-10-31"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -931,7 +934,7 @@
      "released": "2025-10-31"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "current"
@@ -953,7 +956,7 @@
      "released": "2026-09-08"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -975,7 +978,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
@@ -997,7 +1000,7 @@
      "released": "2026-09-10"
     }
    ],
-   "checked": "2026-09-13T18:22:01+00:00",
+   "checked": "2026-09-14T08:29:13+00:00",
    "source_status": "ok",
    "eol": false,
    "status": "update"
