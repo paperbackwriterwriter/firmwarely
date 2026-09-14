@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard — Firmwarely</title>
+<meta name="description" content="Your devices at a glance: which need a firmware update, which have a security fix waiting, and one click to apply each.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0C1117; --panel:#121A23; --line:#22303C; --text:#E3E9EE; --muted:#8A98A5;
+  --amber:#F5B342; --amber-dim:#7A5A22; --red:#F0614A; --green:#58C89A; --dim:#5E6C78;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --w:1080px;
+}
+*{box-sizing:border-box}
+html{color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.5}
+a{color:var(--amber);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 1.25rem}
+header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(12,17,23,.92);backdrop-filter:blur(8px);z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-family:var(--mono);font-weight:600;color:var(--text);display:flex;align-items:center;gap:.5rem}
+.brand i{width:10px;height:10px;background:var(--amber);border-radius:2px;display:inline-block}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.5rem;align-items:center}
+.nav ul a{color:var(--muted);font-size:.95rem}.nav ul a:hover,.nav ul a[aria-current]{color:var(--text);text-decoration:none}
+.btn{font-family:var(--sans);font-weight:600;font-size:.95rem;border:1px solid var(--amber);background:var(--amber);color:#1A1204;padding:.6rem 1rem;border-radius:6px;cursor:pointer;text-decoration:none;display:inline-block}
+.btn:hover{background:#FFC55A;text-decoration:none}.btn:disabled{opacity:.6;cursor:default}
+.btn.ghost{background:transparent;color:var(--text);border-color:var(--line)}.btn.ghost:hover{border-color:var(--muted)}
+.btn.sm{font-size:.85rem;padding:.4rem .75rem}
+main{padding:2.5rem 0 4rem}
+h1{font-size:clamp(1.6rem,4vw,2.2rem);line-height:1.15;margin:0 0 .25rem}
+.sub{color:var(--muted);margin:0 0 1.5rem}
+h2{font-size:1.05rem;font-weight:500;margin:2.25rem 0 .75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+input{font:inherit;color:var(--text);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:.55rem .75rem}
+input:focus{outline:2px solid var(--amber-dim);border-color:var(--amber)}
+/* account bar */
+.account{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;justify-content:space-between;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:.85rem 1rem;margin:0 0 1.5rem}
+.account form{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;flex:1;min-width:260px}
+.account form input{flex:1;min-width:200px}
+.who{font-family:var(--mono);font-size:.85rem;color:var(--muted)}.who b{color:var(--text);font-weight:500}
+.tag{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.05rem .55rem;margin-left:.4rem;font-size:.75rem}
+.tag.pro{border-color:var(--amber);color:var(--amber)}
+.msg{font-size:.9rem;color:var(--muted);flex-basis:100%}.msg.err{color:var(--red)}.msg.ok{color:var(--green)}
+/* hero + tiles */
+.hero{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:1.5rem;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;justify-content:space-between}
+.hero .big{font-family:var(--mono);font-size:clamp(2.6rem,7vw,4rem);line-height:1;font-weight:600}
+.hero .big.crit{color:var(--red)}.hero .big.warn{color:var(--amber)}.hero .big.good{color:var(--green)}
+.hero .lede{font-size:1.1rem;margin:.35rem 0 0}.hero .lede small{display:block;color:var(--muted);font-size:.9rem;margin-top:.15rem}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem;margin-top:.75rem}
+.tile{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:1rem 1.1rem}
+.tile .n{font-family:var(--mono);font-size:1.9rem;font-weight:600;line-height:1}
+.tile .l{color:var(--muted);font-size:.85rem;margin-top:.4rem;display:flex;gap:.4rem;align-items:center}
+.tile .l i{font-style:normal;font-family:var(--mono);font-size:.8rem}
+.tile.critical .n,.tile.critical .l i{color:var(--red)}
+.tile.update .n,.tile.update .l i{color:var(--amber)}
+.tile.current .n,.tile.current .l i{color:var(--green)}
+.tile.pending .n,.tile.pending .l i{color:var(--dim)}
+/* action list */
+.list{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:10px;background:var(--panel);overflow:hidden}
+.list li{display:grid;grid-template-columns:1fr auto;gap:1rem;padding:1rem 1.1rem;border-top:1px solid var(--line);align-items:start}
+.list li:first-child{border-top:0}
+.list .name{font-weight:500}.list .name a{color:var(--text)}.list .name a:hover{color:var(--amber)}
+.list .vers{font-family:var(--mono);font-size:.85rem;color:var(--muted);margin-top:.25rem}
+.list .vers em{font-style:normal;color:var(--text)}.list .vers .arrow{margin:0 .5rem;color:var(--dim)}
+.list .note{color:var(--muted);font-size:.9rem;margin-top:.35rem;max-width:62ch}
+.list .acts{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.7rem}
+.list .status{font-family:var(--mono);font-size:.78rem;white-space:nowrap;padding-top:.2rem}
+.status.critical{color:var(--red)}.status.update{color:var(--amber)}.status.current{color:var(--green)}.status.pending{color:var(--dim)}
+.status::before{margin-right:.4rem}
+.status.critical::before{content:"●"}.status.update::before{content:"▲"}.status.current::before{content:"✓"}.status.pending::before{content:"?"}
+.recent li{grid-template-columns:auto 1fr auto}
+.recent .when{font-family:var(--mono);font-size:.82rem;color:var(--muted);white-space:nowrap;padding-top:.15rem;min-width:5.5ch}
+.empty{background:var(--panel);border:1px dashed var(--line);border-radius:10px;padding:2rem;text-align:center;color:var(--muted)}
+.empty .btn{margin-top:1rem}
+.fine{font-size:.85rem;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:1.5rem 0;color:var(--muted);font-size:.85rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:space-between}
+.toast{position:fixed;left:50%;bottom:1.5rem;transform:translateX(-50%) translateY(20px);background:var(--text);color:var(--bg);padding:.6rem 1rem;border-radius:6px;font-size:.9rem;opacity:0;transition:.2s;pointer-events:none}
+.toast.show{opacity:1;transform:translateX(-50%)}
+@media (max-width:760px){.tiles{grid-template-columns:repeat(2,1fr)}.hide-m{display:none}.list li{grid-template-columns:1fr}.list .status{order:-1}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/"><i></i>Firmwarely</a>
+    <ul>
+      <li class="hide-m"><a href="/devices/">Devices</a></li>
+      <li class="hide-m"><a href="/dashboard.html" aria-current="page">Dashboard</a></li>
+      <li class="hide-m"><a href="/my-devices.html">My devices</a></li>
+      <li><a class="btn" href="/my-devices.html">Add a device</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h1>Dashboard</h1>
+    <p class="sub">Your devices at a glance. <a href="/my-devices.html">Add, remove or edit them</a> on My devices.</p>
+
+    <div class="account" id="account">
+      <form id="loginForm" novalidate>
+        <label for="loginEmail" class="who">Sign in to see the devices saved to your account</label>
+        <input id="loginEmail" type="email" placeholder="you@example.com" autocomplete="email" required>
+        <button class="btn" type="submit" id="loginBtn">Email me a sign-in link</button>
+        <div class="msg" id="loginMsg" aria-live="polite"></div>
+      </form>
+    </div>
+
+    <div id="content"><div class="empty" id="loading">Loading your devices…</div></div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year"></span> Firmwarely. Device and brand names belong to their manufacturers.</span>
+    <span><a href="/devices/">All devices</a> &nbsp;·&nbsp; <a href="/#pricing">Pricing</a> &nbsp;·&nbsp; <a href="/legal/">Legal</a></span>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function () {
+  var KEY = "firmwarely:mydevices";      // shared with my-devices.html
+  var FREE_LIMIT = 3;
+  var catalog = {};
+  var user = null;
+  var mine = load();
+
+  function load() { try { return JSON.parse(localStorage.getItem(KEY) || "[]"); } catch (e) { return []; } }
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(mine)); } catch (e) {} }
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+  function fmtDate(s) { return s ? new Date(s + "T00:00:00").toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" }) : ""; }
+  function shortDate(s) { return s ? new Date(s + "T00:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric" }) : ""; }
+  function validEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+  var toastT; function toast(m) { var t = document.getElementById("toast"); t.textContent = m; t.classList.add("show"); clearTimeout(toastT); toastT = setTimeout(function () { t.classList.remove("show"); }, 2200); }
+
+  /* ---------- version comparison (identical to my-devices.html) ---------- */
+  function norm(v) { return String(v || "").trim().toLowerCase().replace(/^v(?=\d)/, ""); }
+  function parts(v) { return norm(v).split(/[^0-9a-z]+/).filter(Boolean); }
+  function compare(a, b) {
+    if (!norm(a) || !norm(b)) return null;
+    if (norm(a) === norm(b)) return 0;
+    var pa = parts(a), pb = parts(b), n = Math.max(pa.length, pb.length);
+    for (var i = 0; i < n; i++) {
+      var x = pa[i] == null ? "0" : pa[i], y = pb[i] == null ? "0" : pb[i];
+      var nx = /^\d+$/.test(x), ny = /^\d+$/.test(y);
+      if (nx && ny) { var d = parseInt(x, 10) - parseInt(y, 10); if (d) return d < 0 ? -1 : 1; }
+      else if (x !== y) { return x < y ? -1 : 1; }
+    }
+    return 0;
+  }
+  function verdict(entry, dev) {
+    if (!dev || !dev.version) return { cls: "pending", text: "watching soon" };
+    if (!norm(entry.version)) return { cls: "pending", text: "version not set" };
+    var c = compare(entry.version, dev.version);
+    if (c === 0) return { cls: "current", text: "up to date" };
+    if (c < 0) return dev.status === "critical" ? { cls: "critical", text: "security fix" } : { cls: "update", text: "update available" };
+    return { cls: "current", text: "newer than latest" };
+  }
+
+  /* ---------- account ---------- */
+  function renderAccount() {
+    var box = document.getElementById("account");
+    if (!user) return;
+    var tag = user.plan === "pro" ? '<span class="tag pro">Pro</span>' : '<span class="tag">Free · up to ' + FREE_LIMIT + ' devices</span>';
+    box.innerHTML = '<span class="who">Signed in as <b>' + esc(user.email) + '</b>' + tag + '</span>' +
+      '<button class="btn ghost sm" type="button" id="logoutBtn">Sign out</button>';
+    document.getElementById("logoutBtn").addEventListener("click", function () {
+      fetch("/api/logout", { method: "POST" }).then(function () { location.reload(); });
+    });
+  }
+
+  function syncUp() {
+    if (!user) return;
+    fetch("/api/me", { method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ devices: mine }) })
+      .then(function (r) { if (r.status === 401) { user = null; toast("Signed out. Sign in again to keep syncing."); } else if (!r.ok) toast("Saved locally; couldn't reach your account."); })
+      .catch(function () { toast("Saved locally; couldn't reach the server."); });
+  }
+
+  function loadAccount() {
+    return fetch("/api/me", { cache: "no-store" })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) {
+        if (!d || !d.ok) return;
+        user = { email: d.email, plan: d.plan };
+        var server = d.devices || [];
+        if (server.length) {
+          var ids = {}; server.forEach(function (e) { ids[e.id] = true; });
+          mine.forEach(function (e) { if (!ids[e.id]) server.push(e); });   // server wins; local-only merge in
+          mine = server;
+          if (user.plan !== "pro" && mine.length > FREE_LIMIT) mine = mine.slice(0, FREE_LIMIT);
+          save();
+          if (mine.length !== d.devices.length) syncUp();
+        } else if (mine.length) {
+          if (user.plan !== "pro" && mine.length > FREE_LIMIT) { mine = mine.slice(0, FREE_LIMIT); save(); }
+          syncUp();
+        }
+        renderAccount();
+      }).catch(function () {});
+  }
+
+  document.getElementById("loginForm").addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var email = document.getElementById("loginEmail").value.trim();
+    var msg = document.getElementById("loginMsg"), btn = document.getElementById("loginBtn");
+    if (!validEmail(email)) { msg.className = "msg err"; msg.textContent = "Enter a valid email address."; return; }
+    btn.disabled = true; msg.className = "msg"; msg.textContent = "Sending…";
+    fetch("/api/auth-request", { method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email: email, next: "/dashboard.html" }) })
+      .then(function (r) { return r.json().then(function (d) { return { ok: r.ok && d.ok, d: d }; }); })
+      .then(function (x) {
+        if (x.ok) { msg.className = "msg ok"; msg.textContent = "Check your inbox — the link works for 15 minutes."; }
+        else { msg.className = "msg err"; msg.textContent = (x.d && x.d.error) || "Couldn't send the link just now."; btn.disabled = false; }
+      }).catch(function () { msg.className = "msg err"; msg.textContent = "Couldn't reach the server."; btn.disabled = false; });
+  });
+
+  /* ---------- the dashboard ---------- */
+  function updateLink(dev, id) {
+    if (dev && dev.update_url) return '<a class="btn sm" href="' + esc(dev.update_url) + '" target="_blank" rel="noopener">Update ↗</a>';
+    return '<a class="btn sm" href="/devices/' + esc(id) + '/#update">How to update</a>';
+  }
+
+  function render() {
+    var root = document.getElementById("content");
+    if (!mine.length) {
+      root.innerHTML = '<div class="empty">' +
+        '<p style="margin:0;font-size:1.05rem;color:var(--text)">No devices yet.</p>' +
+        '<p style="margin:.35rem 0 0">Add the routers, NAS, cameras and gear you own to see what needs an update.</p>' +
+        '<a class="btn" href="/my-devices.html">Add your first device</a></div>';
+      return;
+    }
+
+    var rows = mine.map(function (e) { var d = catalog[e.id]; return { e: e, d: d, v: verdict(e, d) }; });
+    var count = { critical: 0, update: 0, current: 0, pending: 0 };
+    rows.forEach(function (r) { count[r.v.cls]++; });
+    var need = count.critical + count.update;
+
+    // hero: the one number that matters
+    var big, lede, cls;
+    if (count.critical) { big = count.critical; cls = "crit"; lede = "security fix" + (count.critical === 1 ? "" : "es") + " waiting"; }
+    else if (count.update) { big = count.update; cls = "warn"; lede = "update" + (count.update === 1 ? "" : "s") + " available"; }
+    else if (count.pending === mine.length) { big = "?"; cls = ""; lede = "no versions recorded yet"; }
+    else { big = "✓"; cls = "good"; lede = "everything is up to date"; }
+    var small = need ? (count.critical && count.update ? "plus " + count.update + " routine update" + (count.update === 1 ? "" : "s") : "across " + mine.length + " device" + (mine.length === 1 ? "" : "s"))
+                     : (count.pending ? count.pending + " device" + (count.pending === 1 ? "" : "s") + " with no version set" : mine.length + " device" + (mine.length === 1 ? "" : "s") + " tracked");
+
+    var html = '<div class="hero"><div><div class="big ' + cls + '">' + big + '</div>' +
+      '<p class="lede">' + esc(lede) + '<small>' + esc(small) + '</small></p></div>' +
+      (need ? '<a class="btn" href="#attention">See what to do</a>' : '<a class="btn ghost" href="/my-devices.html">Manage devices</a>') + '</div>';
+
+    // tiles: status colour is never alone — each carries an icon and a label
+    html += '<div class="tiles">' +
+      tile("critical", count.critical, "●", "security fix" + (count.critical === 1 ? "" : "es")) +
+      tile("update", count.update, "▲", "update" + (count.update === 1 ? "" : "s") + " available") +
+      tile("current", count.current, "✓", "up to date") +
+      tile("pending", count.pending, "?", "version unknown") + '</div>';
+
+    // what to do, worst first
+    var todo = rows.filter(function (r) { return r.v.cls === "critical" || r.v.cls === "update"; })
+      .sort(function (a, b) { return (a.v.cls === "update") - (b.v.cls === "update"); });
+    if (todo.length) {
+      html += '<h2 id="attention">Needs attention</h2><ul class="list">' + todo.map(function (r) {
+        var d = r.d, e = r.e, name = esc(d.brand) + " " + esc(d.model);
+        var note = (d.notes || "").trim(); if (note.length > 160) note = note.slice(0, 159) + "…";
+        return '<li data-id="' + esc(e.id) + '"><div>' +
+          '<div class="name"><a href="/devices/' + esc(e.id) + '/">' + name + '</a></div>' +
+          '<div class="vers">you: <em>' + (norm(e.version) ? esc(e.version) : "not set") + '</em><span class="arrow">→</span>latest: <em>' + esc(d.version) + '</em>' + (d.released ? " · " + esc(fmtDate(d.released)) : "") + '</div>' +
+          (note ? '<div class="note">' + esc(note) + '</div>' : "") +
+          '<div class="acts">' + updateLink(d, e.id) +
+            (d.source_url ? '<a class="btn ghost sm" href="' + esc(d.source_url) + '" target="_blank" rel="noopener">Release notes</a>' : "") +
+            '<button type="button" class="btn ghost sm" data-act="done">I updated to ' + esc(d.version) + '</button>' +
+          '</div></div>' +
+          '<span class="status ' + r.v.cls + '">' + esc(r.v.text) + '</span></li>';
+      }).join("") + '</ul>';
+    }
+
+    // recent releases across their devices, whether or not they are behind
+    var recent = rows.filter(function (r) { return r.d && r.d.released; })
+      .sort(function (a, b) { return b.d.released.localeCompare(a.d.released); }).slice(0, 6);
+    if (recent.length) {
+      html += '<h2>Recent releases for your devices</h2><ul class="list recent">' + recent.map(function (r) {
+        var d = r.d;
+        return '<li><span class="when">' + esc(shortDate(d.released)) + '</span><div>' +
+          '<div class="name"><a href="/devices/' + esc(r.e.id) + '/">' + esc(d.brand) + " " + esc(d.model) + '</a> <span class="vers" style="display:inline;margin-left:.4rem"><em>' + esc(d.version) + '</em></span></div>' +
+          '</div><span class="status ' + r.v.cls + '">' + esc(r.v.text) + '</span></li>';
+      }).join("") + '</ul>';
+    }
+
+    // the blind spot: devices we can't judge because they never said what they run
+    var unknown = rows.filter(function (r) { return r.v.cls === "pending" && r.d && r.d.version; });
+    if (unknown.length) {
+      html += '<h2>Version not set</h2><p class="fine" style="margin:-.25rem 0 .75rem">Firmwarely can\'t tell whether these need updating until you enter the version they\'re on.</p><ul class="list">' + unknown.map(function (r) {
+        return '<li><div><div class="name"><a href="/devices/' + esc(r.e.id) + '/">' + esc(r.d.brand) + " " + esc(r.d.model) + '</a></div>' +
+          '<div class="vers">latest: <em>' + esc(r.d.version) + '</em></div>' +
+          '<div class="acts"><a class="btn ghost sm" href="/my-devices.html">Enter your version</a>' +
+          '<button type="button" class="btn ghost sm" data-act="done">I\'m on ' + esc(r.d.version) + '</button></div></div>' +
+          '<span class="status pending">version not set</span></li>';
+      }).join("") + '</ul>';
+    }
+
+    root.innerHTML = html;
+  }
+
+  function tile(cls, n, icon, label) {
+    return '<div class="tile ' + cls + '"><div class="n">' + n + '</div><div class="l"><i>' + icon + '</i>' + esc(label) + '</div></div>';
+  }
+
+  // "I updated" marks that device current, here and in the account
+  document.getElementById("content").addEventListener("click", function (ev) {
+    var b = ev.target.closest("button[data-act=done]"); if (!b) return;
+    var li = b.closest("li"), id = li && li.dataset.id;
+    if (!id) { li = b.closest("li"); var a = li && li.querySelector(".name a"); id = a && a.getAttribute("href").split("/")[2]; }
+    var e = mine.filter(function (x) { return x.id === id; })[0], d = catalog[id];
+    if (!e || !d || !d.version) return;
+    e.version = d.version; save(); syncUp(); render();
+    toast("Marked " + d.brand + " " + d.model + " up to date");
+  });
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  fetch("/devices.json", { cache: "no-store" })
+    .then(function (r) { return r.json(); })
+    .then(function (data) { (data.devices || []).forEach(function (d) { catalog[d.id] = d; }); })
+    .catch(function () {})
+    .then(loadAccount)
+    .then(render);
+})();
+</script>
+</body>
+</html>

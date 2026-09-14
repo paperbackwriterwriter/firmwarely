@@ -3,7 +3,8 @@ const fw = require("../lib/fw");
 
 module.exports = async function (req, res) {
   const url = new URL(req.url, "http://x");
-  const email = fw.readToken(url.searchParams.get("t"), "login");
+  const data = fw.readTokenData(url.searchParams.get("t"), "login");
+  const email = data && data.e;
   if (!email) {
     res.statusCode = 302;
     res.setHeader("Location", "/my-devices.html?signin=expired");
@@ -11,6 +12,6 @@ module.exports = async function (req, res) {
   }
   fw.setSession(res, email);
   res.statusCode = 302;
-  res.setHeader("Location", "/my-devices.html?signin=ok");
+  res.setHeader("Location", fw.safeNext(data.n) + "?signin=ok");
   res.end();
 };

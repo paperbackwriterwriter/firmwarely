@@ -117,6 +117,7 @@ def head(title, desc, path, extra=""):
     <a class="brand" href="/"><i></i>Firmwarely</a>
     <ul>
       <li class="hide-m"><a href="/devices/">Devices</a></li>
+      <li class="hide-m"><a href="/dashboard.html">Dashboard</a></li>
       <li class="hide-m"><a href="/my-devices.html">My devices</a></li>
       <li class="hide-m"><a href="/#how">How it works</a></li>
       <li class="hide-m"><a href="/#pricing">Pricing</a></li>

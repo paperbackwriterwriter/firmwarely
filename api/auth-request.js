@@ -14,9 +14,10 @@ module.exports = async function (req, res) {
   }
   if (!sub) return fw.json(res, 502, { error: "Couldn't set up your account just now. Try again in a minute." });
 
+  const next = fw.safeNext(String(body.next || ""));   // where to land after the click
   let token;
   try {
-    token = fw.makeToken(email, "login", 15 * 60);
+    token = fw.makeToken(email, "login", 15 * 60, { n: next });
   } catch (e) {
     console.error("auth-request:", e.message);
     return fw.json(res, 500, { error: "Sign-in isn't configured yet." });
