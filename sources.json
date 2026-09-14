@@ -770,9 +770,8 @@
    "brand": "OpenMediaVault",
    "model": "NAS operating system",
    "category": "N",
-   "type": "feed",
-   "product_url": "https://github.com/openmediavault/openmediavault",
-   "url": "https://github.com/openmediavault/openmediavault/tags.atom"
+   "type": "manual",
+   "product_url": "https://github.com/openmediavault/openmediavault"
   },
   {
    "id": "truenas-scale",
@@ -1196,9 +1195,8 @@
    "brand": "Tdarr",
    "model": "Media transcoding server",
    "category": "N",
-   "type": "feed",
-   "product_url": "https://github.com/HaveAGitGat/Tdarr",
-   "url": "https://github.com/HaveAGitGat/Tdarr/tags.atom"
+   "type": "manual",
+   "product_url": "https://github.com/HaveAGitGat/Tdarr"
   },
   {
    "id": "tautulli",
@@ -1611,9 +1609,8 @@
    "brand": "tuya-cloudcutter",
    "model": "Firmware flasher",
    "category": "S",
-   "type": "feed",
-   "product_url": "https://github.com/tuya-cloudcutter/tuya-cloudcutter",
-   "url": "https://github.com/tuya-cloudcutter/tuya-cloudcutter/tags.atom"
+   "type": "manual",
+   "product_url": "https://github.com/tuya-cloudcutter/tuya-cloudcutter"
   },
   {
    "id": "ratgdo",
@@ -1846,9 +1843,8 @@
    "brand": "Obico",
    "model": "Print monitoring server",
    "category": "M",
-   "type": "feed",
-   "product_url": "https://github.com/TheSpaghettiDetective/obico-server",
-   "url": "https://github.com/TheSpaghettiDetective/obico-server/tags.atom"
+   "type": "manual",
+   "product_url": "https://github.com/TheSpaghettiDetective/obico-server"
   },
   {
    "id": "grbl",
