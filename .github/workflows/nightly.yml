@@ -36,6 +36,7 @@ jobs:
         env:
           BEEHIIV_API_KEY: ${{ secrets.BEEHIIV_API_KEY }}
           BEEHIIV_PUB_ID: ${{ secrets.BEEHIIV_PUB_ID }}
+          GITHUB_TOKEN: ${{ github.token }}   # 60 API calls/hour unauthenticated, 1,000 with this
         run: |
           if [ "${{ inputs.force_digest }}" = "true" ]; then
             python3 scripts/fetch.py --force-digest

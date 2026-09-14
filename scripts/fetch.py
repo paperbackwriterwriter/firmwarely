@@ -27,7 +27,7 @@ workflow to consume (neither is committed):
                  the devices each subscriber saved on /my-devices.html.
 Both are deleted at the start of every run, so their presence means "something changed".
 """
-import json, re, sys, html, time, urllib.request, urllib.error
+import json, os, re, sys, html, time, urllib.request, urllib.error
 from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
 from zoneinfo import ZoneInfo
@@ -155,12 +155,31 @@ def check_feed(src):
     raise ValueError("no matching item in feed")
 
 
+def gh_headers():
+    """Authenticated when a token is around. Unauthenticated the GitHub API allows 60 calls
+    an hour, which the catalog blows through; GITHUB_TOKEN in Actions raises it to 1,000."""
+    h = {"User-Agent": UA, "Accept": "application/vnd.github+json"}
+    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+    if token:
+        h["Authorization"] = "Bearer " + token
+    return h
+
+
 def check_github(src):
     """Latest non-prerelease via the GitHub API. src['repo'] = 'owner/name'."""
     api = f"https://api.github.com/repos/{src['repo']}/releases/latest"
-    req = urllib.request.Request(api, headers={"User-Agent": UA, "Accept": "application/vnd.github+json"})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        rel = json.loads(r.read().decode("utf-8"))
+    req = urllib.request.Request(api, headers=gh_headers())
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            rel = json.loads(r.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        # with a catalog this size an exhausted quota looks like dozens of unrelated
+        # failures, so say what it really is
+        if e.code in (403, 429) and e.headers.get("X-RateLimit-Remaining") == "0":
+            raise ValueError("GitHub API rate limit reached — set GITHUB_TOKEN") from None
+        if e.code == 404:
+            raise ValueError(f"no repo or no stable release: {src['repo']}") from None
+        raise
     title = f"{rel.get('name') or ''} {rel.get('tag_name') or ''}"
     v = extract_version(title, src.get("version_regex"))
     if not v:
@@ -368,7 +387,6 @@ def build_digest(changed):
 
 def beehiiv_draft(title, html_body):
     """Create a DRAFT post in Beehiiv so it can be reviewed and sent by hand. Needs BEEHIIV_API_KEY and BEEHIIV_PUB_ID."""
-    import os
     key, pub = os.environ.get("BEEHIIV_API_KEY"), os.environ.get("BEEHIIV_PUB_ID")
     if not (key and pub):
         print("beehiiv: no API key/pub id in environment, skipping draft")
