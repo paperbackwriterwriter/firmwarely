@@ -168,8 +168,75 @@ def test_update_guides():
                   (bool(steps), url), (True, None))
 
 
+# ---- upstream release notes end up in innerHTML on every page ----
+def test_clean():
+    cases = [
+        ("script tag is neutralised", "<script>alert(1)</script>ok", "alert(1) ok"),
+        ("entity-hidden tag is stripped", "&lt;img src=x onerror=alert(1)&gt;", ""),
+        ("double-encoded tag is stripped", "&amp;lt;b&amp;gt;x", "x"),
+        ("markdown link keeps its text", "see [the notes](https://x.y/z) here", "see the notes here"),
+        ("markdown headings and bullets drop their markers", "## Fixes\n- one\n* two\n1. three", "Fixes one two three"),
+        ("inline code and emphasis lose their fences", "use `foo` and **bar** and _baz_", "use foo and bar and _baz_"),
+        ("issue refs can't ping anyone", "fixes #123 and #4", "fixes #\u200b123 and #\u200b4"),
+        ("long text is cut with an ellipsis", "x" * 400, "x" * 299 + "…"),
+    ]
+    for label, raw, want in cases:
+        check(f"clean: {label}", fetch.clean(raw), want)
+
+
+# ---- status badges must not call a 2020 release "current" ----
+def test_classify():
+    from datetime import timedelta
+    day = lambda n: (fetch.TODAY - timedelta(days=n)).isoformat()
+    cases = [("no version yet", {"version": None, "released": None}, "pending"),
+             ("security fix this month", {"version": "1.1", "released": day(10), "notes": "Fixes a security vulnerability (CVE-2026-1)"}, "critical"),
+             ("plain release this month", {"version": "1.1", "released": day(10), "notes": "bug fixes"}, "update"),
+             ("release last spring", {"version": "1.1", "released": day(200), "notes": ""}, "current"),
+             ("nothing for two years", {"version": "1.1", "released": day(730), "notes": ""}, "stale"),
+             ("explicitly end of life", {"version": "1.1", "released": day(10), "eol": True}, "eol")]
+    for label, dev, want in cases:
+        check(f"classify: {label}", fetch.classify(dev), want)
+    check("every status has a label on the site", all(f'{k}:"' in Path("index.html").read_text() for k in
+          ("critical", "update", "current", "pending", "eol", "stale")), True)
+    check("every status has a label on device pages",
+          set(build_pages.LABEL) >= {"critical", "update", "current", "pending", "eol", "stale"}, True)
+
+
+# ---- the homepage shows live data or says it can't, never invented rows ----
+def test_homepage_honesty():
+    html = Path("index.html").read_text()
+    check("no seed/placeholder device list", "SEED" in html, False)
+    check("failure state is spelled out", "Couldn't load the live device list" in html, True)
+    check("upstream strings are escaped on the way into innerHTML", "const esc =" in html, True)
+    for field in ("d.b", "d.m", "d.v", "d.n"):
+        check(f"no raw ${{{field}}} interpolation", "${" + field + "}" in html, False)
+    check("[hidden] beats .btn display", "[hidden]{display:none!important}" in html, True)
+    check("no 'weekly' promise left in the copy", "weekly" in html.lower(), False)
+    for f in ("index.html", "my-devices.html", "dashboard.html"):
+        check(f"{f} has a favicon", 'rel="icon"' in Path(f).read_text(), True)
+
+
+# ---- generated pages: titles that fit, links that describe their target ----
+def test_generated_pages():
+    long_name = {"id": "x", "brand": "Ubiquiti", "model": "UniFi Access Points & Switches (device firmware, all models)",
+                 "category": "R", "version": "8.0.76", "released": "2026-08-01", "status": "update", "notes": "", "source_url": "https://example.com"}
+    build_pages.STYLES = build_pages.styles()
+    import re
+    for dev in (long_name, dict(long_name, version=None, status="pending")):
+        page = build_pages.device_page(dev)
+        title = re.search(r"<title>(.*?)</title>", page, re.S).group(1).replace("&amp;", "&")
+        check(f"title fits ({dev['status']}): {title!r}", len(title) <= build_pages.TITLE_MAX, True)
+    check("GitHub product link is a project page, not sponsored",
+          build_pages.product_link({"product_url": "https://github.com/a/b"}),
+          '<p style="margin:1rem 0 0"><a href="https://github.com/a/b" target="_blank" rel="noopener">Project page ↗</a></p>')
+    check("store link is marked sponsored", 'rel="nofollow sponsored noopener">See current price' in
+          build_pages.product_link({"product_url": "https://store.example.com/x"}), True)
+    check("non-http product link is dropped", build_pages.product_link({"product_url": "javascript:alert(1)"}), "")
+    check("canonicals use the www host the apex redirects to", build_pages.SITE, "https://www.firmwarely.com")
+
+
 for t in (test_compare, test_new_release, test_saved_devices, test_routing, test_forced_guard,
-          test_update_guides):
+          test_update_guides, test_clean, test_classify, test_homepage_honesty, test_generated_pages):
     print(f"\n{t.__name__}")
     t()
 
