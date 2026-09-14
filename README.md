@@ -52,3 +52,31 @@ Each run compares tonight's versions with last night's. If anything changed, `fe
 emails you. If the repo has the secrets `BEEHIIV_API_KEY` and `BEEHIIV_PUB_ID` (GitHub → Settings → Secrets and
 variables → Actions), it also creates a **draft** post in Beehiiv with the same content for you to review and send.
 To test without waiting for a real change: Actions → Run workflow → tick *force_digest*.
+
+### Per-user alerts
+
+The same run also writes `changed.json` — the night's changes as data rather than prose — and
+`scripts/user_alerts.py` emails each subscriber about **only the devices they saved** on
+`/my-devices.html`. Someone already on tonight's version is left alone; someone with no version
+recorded still gets told. Mail goes out through Resend, the same sender as the sign-in links.
+
+Repo secrets it needs (GitHub → Settings → Secrets and variables → Actions):
+`RESEND_API_KEY`, plus `BEEHIIV_API_KEY` and `BEEHIIV_PUB_ID` (already set for the digest).
+Without them the step prints a line and does nothing, so the nightly run stays green.
+
+Optional repo *variables*: `RESEND_FROM` (a verified sender — the default `onboarding@resend.dev`
+only delivers to your own address), `SITE_URL`, and `USER_ALERT_PLANS` — which plans get personal
+mail, default `pro` (`pro,free` or `all` widens it). Optional secret `USER_ALERT_TEST_EMAIL`
+redirects every alert to one address with `[TEST]` in the subject.
+
+A *force_digest* run marks every tracked device as changed, so `user_alerts.py` refuses to mail
+real subscribers on one unless `USER_ALERT_TEST_EMAIL` is set. To rehearse locally:
+`python3 scripts/fetch.py --offline --force-digest && python3 scripts/user_alerts.py --dry-run`
+(dry run prints who would get what and sends nothing).
+
+Note that Pro subscribers with saved devices currently get both this personal email and the
+Beehiiv Pro segment blast from `scripts/pro_alert.py`. Drop the *Send Pro instant alert* step from
+the workflow once the personal mail is doing the job.
+
+Neither `digest.md` nor `changed.json` is committed — both are rebuilt from scratch each night,
+and their presence is what tells the workflow that something changed.

@@ -85,3 +85,19 @@ jobs:
           open(p, "w", encoding="utf-8").write(s)
           EOF
           python3 scripts/pro_alert.py
+
+      # Personal email per subscriber: only the devices they saved on /my-devices.html.
+      # Skipped automatically when RESEND_API_KEY / the Beehiiv secrets aren't set yet.
+      # On a force_digest run it refuses to mail real people unless USER_ALERT_TEST_EMAIL
+      # is set, in which case every alert goes there instead.
+      - name: Send per-user device alerts
+        if: ${{ hashFiles('changed.json') != '' }}
+        env:
+          BEEHIIV_API_KEY: ${{ secrets.BEEHIIV_API_KEY }}
+          BEEHIIV_PUB_ID: ${{ secrets.BEEHIIV_PUB_ID }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_FROM: ${{ vars.RESEND_FROM }}
+          SITE_URL: ${{ vars.SITE_URL }}
+          USER_ALERT_PLANS: ${{ vars.USER_ALERT_PLANS }}
+          USER_ALERT_TEST_EMAIL: ${{ secrets.USER_ALERT_TEST_EMAIL }}
+        run: python3 scripts/user_alerts.py
