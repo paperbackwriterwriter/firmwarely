@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# NOT WIRED UP. scripts/user_alerts.py now sends Pro subscribers one email each -- their
+# own devices when something of theirs moved, this same digest otherwise -- so running
+# both sent two copies to the same people. Kept as a fallback: nothing calls it.
+#
 # Send digest.md to the Beehiiv Pro segment as an instant alert.
 # Only runs if digest.md exists (something changed).
 # Env: BEEHIIV_API_KEY, BEEHIIV_PUB_ID, BEEHIIV_PRO_SEG_ID

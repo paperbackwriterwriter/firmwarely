@@ -9,12 +9,15 @@ nothing else. Standard library only, same as the rest of the pipeline.
   python3 scripts/user_alerts.py             # send
   python3 scripts/user_alerts.py --dry-run   # print who would get what, send nothing
 
-A subscriber is mailed when all of these hold:
-- their plan is in USER_ALERT_PLANS (default "pro" — free accounts get the weekly digest),
-- their Beehiiv subscription is active,
-- they saved a device that moved tonight,
-- and the version they recorded is older than the one we just found. Someone already on
-  tonight's version, or ahead of it, is left alone. A blank version still gets the alert.
+Everyone on a plan in USER_ALERT_PLANS (default "pro" — free accounts get the weekly
+digest) with an active subscription gets exactly one email:
+
+- the personal one, when they saved a device that moved tonight AND the version they
+  recorded is older than the one we just found. Someone already on tonight's version, or
+  ahead of it, does not count; a blank version does.
+- the general digest of everything that changed, when nothing of theirs matched — the
+  same mail the Beehiiv Pro segment blast used to send, so nobody loses coverage for
+  not having filled in their device list yet.
 
 Env:
   BEEHIIV_API_KEY, BEEHIIV_PUB_ID   read the subscriber list and their saved devices
@@ -152,6 +155,59 @@ def saved_devices(value):
 
 # ---------- the email ----------
 
+GROUPS = [("critical", "Security fixes — update now"), ("update", "New firmware"),
+          ("current", "Also released"), ("eol", "End of life notices")]
+
+
+def digest_subject(data):
+    return f"Firmware digest — {pretty_date(data.get('date'))}"
+
+
+def pretty_date(iso):
+    try:
+        y, m, d = (int(x) for x in str(iso).split("-"))
+        month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][m - 1]
+        return f"{month} {d}, {y}"
+    except Exception:
+        return str(iso or "")
+
+
+def render_digest(data):
+    """Everything that changed tonight, for subscribers whose own devices didn't move."""
+    groups = {}
+    for c in data.get("devices", []):
+        groups.setdefault(c.get("status"), []).append(c)
+    parts = []
+    for key, heading in GROUPS:
+        items = groups.get(key) or []
+        if not items:
+            continue
+        parts.append(f"<h3 style=\"font-size:16px;margin:20px 0 6px\">{heading}</h3><ul>")
+        for c in items:
+            name = html.escape(f"{c['brand']} {c['model']}")
+            line = f"<strong>{name}</strong> — <code>{html.escape(c['version'])}</code>"
+            if c.get("released"):
+                line += f" ({html.escape(c['released'])})"
+            note = (c.get("notes") or "").strip()
+            if note:
+                note = note[:180] + "…" if len(note) > 180 else note
+                line += f'<br><span style="color:#555">{html.escape(note)}</span>'
+            line += (f'<br><span style="font-size:14px">'
+                     f'<a href="{html.escape(c["page_url"])}">device page</a></span>')
+            parts.append(f'<li style="margin:0 0 14px">{line}</li>')
+        parts.append("</ul>")
+    n = len(data.get("devices", []))
+    return (
+        '<div style="font-family:-apple-system,Helvetica,Arial,sans-serif;font-size:16px;'
+        'line-height:1.5;color:#111;max-width:600px">'
+        f"<p>{n} device{'' if n == 1 else 's'} shipped new firmware.</p>"
+        + "".join(parts) +
+        '<p style="color:#666;font-size:14px">Want only the ones you own? Save your devices on '
+        f'<a href="{html.escape(SITE)}/my-devices.html">My devices</a> and this becomes a short '
+        "list about your hardware instead.</p></div>"
+    )
+
+
 def subject_for(hits):
     one = len(hits) == 1
     what = (f"your {hits[0]['change']['brand']} {hits[0]['change']['model']}" if one
@@ -245,7 +301,7 @@ def main():
           + (f"; TEST → {TEST_TO}" if TEST_TO else "")
           + ("; DRY RUN" if DRY_RUN else ""))
 
-    seen = sent = skipped = failed = 0
+    seen = sent = skipped = failed = digests = 0
     try:
         people = list(subscribers(key, pub))
     except Exception as e:
@@ -271,12 +327,9 @@ def main():
             if compare(d["version"], c["version"]) in (0, 1):
                 continue
             hits.append({"change": c, "yours": d["version"]})
-        if not hits:
-            continue
-
         hits.sort(key=lambda h: (h["change"]["status"] != "critical",
                                  h["change"]["brand"], h["change"]["model"]))
-        subject = subject_for(hits)
+        subject = subject_for(hits) if hits else digest_subject(data)
         to = TEST_TO or email
         if TEST_TO:
             subject = "[TEST] " + subject
@@ -284,22 +337,30 @@ def main():
         if sent >= MAX_EMAILS:
             skipped += 1
             continue
-        names = ", ".join(f"{h['change']['brand']} {h['change']['model']}" for h in hits)
+        if hits:
+            what = f"{len(hits)} device(s): " + ", ".join(
+                f"{h['change']['brand']} {h['change']['model']}" for h in hits)
+            body = render(hits)
+        else:
+            what = "general digest"
+            body = render_digest(data)
+            digests += 1
         if DRY_RUN:
-            print(f"  would mail {to:40s} {len(hits)} device(s): {names}")
+            print(f"  would mail {to:40s} {what}")
             sent += 1
             continue
-        ok, err = send(to, subject, render(hits))
+        ok, err = send(to, subject, body)
         if ok:
             sent += 1
-            print(f"  sent  {to:40s} {len(hits)} device(s): {names}")
+            print(f"  sent  {to:40s} {what}")
         else:
             failed += 1
             print(f"  FAIL  {to:40s} {err}", file=sys.stderr)
         time.sleep(SEND_GAP)
 
     verb = "would send" if DRY_RUN else "sent"
-    print(f"\n{seen} subscriber(s) checked, {verb} {sent} email(s), {failed} failed"
+    print(f"\n{seen} subscriber(s) checked, {verb} {sent} email(s) "
+          f"({sent - digests} personal, {digests} general digest), {failed} failed"
           + (f", {skipped} over the {MAX_EMAILS} cap" if skipped else ""))
     return 1 if failed else 0
 

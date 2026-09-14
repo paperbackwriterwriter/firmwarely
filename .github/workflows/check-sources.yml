@@ -1,15 +1,16 @@
-name: Check sources
+name: Checks
 
-# Every tracked source is fetched here, so a wrong repo or a dead release page is caught
-# on the pull request instead of going quiet in the nightly run. Nothing is written or
-# committed — the job only reports.
+# Two jobs, both read-only. selftest covers the logic that decides who gets emailed;
+# sources fetches every tracked source so a wrong repo or a dead release page is caught
+# on the pull request instead of going quiet in the nightly run.
 
 on:
   pull_request:
     paths:
       - "sources.json"
-      - "scripts/fetch.py"
-      - "scripts/check_sources.py"
+      - "scripts/**"
+      - "lib/**"
+      - "api/**"
   workflow_dispatch:
     inputs:
       only:
@@ -21,7 +22,17 @@ permissions:
   contents: read
 
 jobs:
-  check:
+  selftest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Alert pipeline self-test
+        run: python3 scripts/selftest.py
+
+  sources:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
