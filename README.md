@@ -80,6 +80,15 @@ Check the Actions log after a run to see which sources succeeded.
 
 Status rules: `critical` = security-flavoured release notes within 60 days · `update` = any release within 45 days · `current` = older · `eol` = release notes mention end-of-life · `pending` = no data yet.
 
+## Dashboard (Pro)
+
+`/dashboard.html` is the signed-in overview — how many devices need action, security fixes first,
+each with a direct update link. It is part of Pro: the page asks `/api/me` before rendering anything
+and shows a sign-in prompt to visitors, an upgrade wall to free accounts, and the dashboard only to
+`plan: pro`. That gate is client-side. The page contains nothing secret — it only arranges the
+user's own device list, which they already hold — so it is a product boundary, not a security one.
+A free user who really wanted the view could rebuild it from `/my-devices.html` and `devices.json`.
+
 ## Update guides
 
 `update_guides.json` answers "how do I actually update this?" for every device. It is looked up

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dashboard — Firmwarely</title>
-<meta name="description" content="Your devices at a glance: which need a firmware update, which have a security fix waiting, and one click to apply each.">
+<meta name="description" content="Firmwarely Pro dashboard: your devices at a glance, which need a firmware update, which have a security fix waiting, and one click to apply each.">
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -101,11 +101,11 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:space-betwee
 <main>
   <div class="wrap">
     <h1>Dashboard</h1>
-    <p class="sub">Your devices at a glance. <a href="/my-devices.html">Add, remove or edit them</a> on My devices.</p>
+    <p class="sub">Your devices at a glance — a Firmwarely Pro feature. <a href="/my-devices.html">Add, remove or edit them</a> on My devices.</p>
 
     <div class="account" id="account">
       <form id="loginForm" novalidate>
-        <label for="loginEmail" class="who">Sign in to see the devices saved to your account</label>
+        <label for="loginEmail" class="who">Already on Pro? Sign in to open your dashboard</label>
         <input id="loginEmail" type="email" placeholder="you@example.com" autocomplete="email" required>
         <button class="btn" type="submit" id="loginBtn">Email me a sign-in link</button>
         <div class="msg" id="loginMsg" aria-live="polite"></div>
@@ -186,23 +186,41 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:space-betwee
   function loadAccount() {
     return fetch("/api/me", { cache: "no-store" })
       .then(function (r) { return r.ok ? r.json() : null; })
-      .then(function (d) {
-        if (!d || !d.ok) return;
-        user = { email: d.email, plan: d.plan };
-        var server = d.devices || [];
-        if (server.length) {
-          var ids = {}; server.forEach(function (e) { ids[e.id] = true; });
-          mine.forEach(function (e) { if (!ids[e.id]) server.push(e); });   // server wins; local-only merge in
-          mine = server;
-          if (user.plan !== "pro" && mine.length > FREE_LIMIT) mine = mine.slice(0, FREE_LIMIT);
-          save();
-          if (mine.length !== d.devices.length) syncUp();
-        } else if (mine.length) {
-          if (user.plan !== "pro" && mine.length > FREE_LIMIT) { mine = mine.slice(0, FREE_LIMIT); save(); }
-          syncUp();
-        }
-        renderAccount();
-      }).catch(function () {});
+      .then(function (d) { return d && d.ok ? d : null; })
+      .catch(function () { return null; });
+  }
+
+  // same merge my-devices.html does: the account's list wins, local-only devices join it
+  function adoptServerList(d) {
+    var server = d.devices || [];
+    if (server.length) {
+      var ids = {}; server.forEach(function (e) { ids[e.id] = true; });
+      mine.forEach(function (e) { if (!ids[e.id]) server.push(e); });
+      mine = server; save();
+      if (mine.length !== d.devices.length) syncUp();
+    } else if (mine.length) {
+      syncUp();
+    }
+  }
+
+  /* ---------- the gate: this page is part of Pro ---------- */
+  var PITCH = '<p style="margin:.5rem 0 0;max-width:52ch;margin-left:auto;margin-right:auto">Every device you own on one screen: security fixes first, ' +
+    'your version against the latest, and one click to the update for each. Plus unlimited devices and same-day alerts.</p>';
+
+  function renderSignedOut() {
+    document.getElementById("content").innerHTML = '<div class="empty">' +
+      '<p style="margin:0;font-size:1.1rem;color:var(--text)">The dashboard is part of Firmwarely Pro.</p>' + PITCH +
+      '<p class="fine" style="margin:1rem 0 0">Already a member? Use the sign-in box above.</p>' +
+      '<a class="btn" href="/#pricing">See what Pro includes</a> ' +
+      '<a class="btn ghost" href="/my-devices.html" style="margin-top:1rem">Use the free device list</a></div>';
+  }
+
+  function renderUpgradeWall() {
+    document.getElementById("content").innerHTML = '<div class="empty">' +
+      '<p style="margin:0;font-size:1.1rem;color:var(--text)">The dashboard is a Pro feature.</p>' +
+      '<p style="margin:.35rem 0 0">You\'re signed in on the free plan, so your devices still live on My devices.</p>' + PITCH +
+      '<a class="btn" href="/#pricing">Upgrade to Pro</a> ' +
+      '<a class="btn ghost" href="/my-devices.html" style="margin-top:1rem">Back to My devices</a></div>';
   }
 
   document.getElementById("loginForm").addEventListener("submit", function (ev) {
@@ -324,12 +342,20 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:space-betwee
 
   document.getElementById("year").textContent = new Date().getFullYear();
 
+  // Nothing renders until the plan is known: no flash of dashboard before a wall.
   fetch("/devices.json", { cache: "no-store" })
     .then(function (r) { return r.json(); })
     .then(function (data) { (data.devices || []).forEach(function (d) { catalog[d.id] = d; }); })
     .catch(function () {})
     .then(loadAccount)
-    .then(render);
+    .then(function (d) {
+      if (!d) { renderSignedOut(); return; }
+      user = { email: d.email, plan: d.plan };
+      renderAccount();
+      if (user.plan !== "pro") { renderUpgradeWall(); return; }
+      adoptServerList(d);
+      render();
+    });
 })();
 </script>
 </body>
