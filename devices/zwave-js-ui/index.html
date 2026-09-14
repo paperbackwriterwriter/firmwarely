@@ -171,9 +171,9 @@ footer a:hover{color:var(--text)}
   .hist{width:100%;border-collapse:collapse;margin-top:.5rem;font-family:var(--mono);font-size:.85rem}
   .hist td{padding:.5rem 0;border-top:1px solid var(--line)}
   .hist td:last-child{text-align:right;color:var(--muted)}
-  ol.steps{margin:1rem 0 0;padding-left:1.25rem;color:var(--text)}
-  ol.steps li{margin:0 0 .6rem;line-height:1.55}
-  ol.steps li::marker{color:var(--amber);font-weight:600}
+  ol.upd-steps{display:block;margin:1rem 0 0;padding-left:1.5rem;color:var(--text);list-style:decimal}
+  ol.upd-steps li{list-style:decimal;margin:0 0 .6rem;line-height:1.55}
+  ol.upd-steps li::marker{color:var(--amber);font-weight:600}
   h1.dev-h{font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.15;margin:.25rem 0 .5rem}
   .faq h3{font-size:1rem;margin:1.25rem 0 .35rem}
   .faq p{color:var(--muted);margin:0}
@@ -216,7 +216,7 @@ footer a:hover{color:var(--text)}
       <h2 id="update" style="margin-top:2rem">How to update the Z-Wave JS Z-Wave control panel</h2>
       <div class="card">
         <a class="btn" href="https://github.com/zwave-js/zwave-js-ui/releases" target="_blank" rel="noopener">Open update page ↗</a>
-        <ol class="steps"><li>Read the release notes first — self-hosted projects break config and schemas between versions more often than appliances do.</li><li>Docker: pull the new image tag and recreate the container (`docker compose pull &amp;&amp; docker compose up -d`).</li><li>Package or bare metal: update through your distribution&#x27;s package manager, or replace the binary from the releases page.</li><li>Back up the config and database directory first. For most projects a downgrade is not supported once the schema has migrated.</li></ol>
+        <ol class="upd-steps"><li>Read the release notes first — self-hosted projects break config and schemas between versions more often than appliances do.</li><li>Docker: pull the new image tag and recreate the container (`docker compose pull &amp;&amp; docker compose up -d`).</li><li>Package or bare metal: update through your distribution&#x27;s package manager, or replace the binary from the releases page.</li><li>Back up the config and database directory first. For most projects a downgrade is not supported once the schema has migrated.</li></ol>
         <p class="fine" style="margin:.75rem 0 0">Always download firmware from the manufacturer or project itself.
         Firmwarely links out; it never hosts firmware.</p>
       </div>
