@@ -176,7 +176,7 @@ def render_digest(data):
     """Everything that changed tonight, for subscribers whose own devices didn't move."""
     groups = {}
     for c in data.get("devices", []):
-        groups.setdefault(c.get("status"), []).append(c)
+        groups.setdefault("current" if c.get("status") == "stale" else c.get("status"), []).append(c)
     parts = []
     for key, heading in GROUPS:
         items = groups.get(key) or []

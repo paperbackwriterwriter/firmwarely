@@ -52,6 +52,7 @@ SECURITY = re.compile(
     re.I,
 )
 EOL = re.compile(r"end[- ]of[- ]life|\bEOL\b|no longer (?:be )?(?:updated|supported|maintained)|discontinued", re.I)
+STALE_DAYS = 540  # ~18 months with no release: still tracked, but "current" would mislead
 DEFAULT_VERSION = re.compile(r"(\d+(?:\.\d+)+(?:[-_]\w+)*)")
 # feed items whose title matches this are skipped unless the source sets its own skip_match
 DEFAULT_SKIP = r"\b(rc\d*|beta|alpha|dev|nightly|pre-?release|release candidate|early access)\b"
@@ -283,6 +284,8 @@ def classify(dev):
         return "critical"
     if age <= 45:
         return "update"
+    if age > STALE_DAYS:
+        return "stale"
     return "current"
 
 
@@ -421,7 +424,7 @@ def build_digest(changed):
     date = TODAY.strftime("%b %-d, %Y")
     groups = {"critical": [], "update": [], "current": [], "eol": []}
     for d in changed:
-        groups.setdefault(d["status"], []).append(d)
+        groups.setdefault("current" if d["status"] == "stale" else d["status"], []).append(d)
     order = [("critical", "Security fixes — update now"), ("update", "New firmware"),
              ("current", "Also released"), ("eol", "End of life notices")]
     md = [f"# Firmware digest — {date}", ""]

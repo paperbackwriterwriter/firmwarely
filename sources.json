@@ -347,7 +347,8 @@
    "url": "https://www.mikrotik.com/download/changelogs/stable",
    "version_regex": "(7\\.\\d+(?:\\.\\d+)?)\\s+Stable\\s+\\d{4}-\\d{2}-\\d{2}",
    "date_regex": "{version}\\s+Stable\\s+(\\d{4}-\\d{2}-\\d{2})",
-   "product_url": "https://mikrotik.com/products"
+   "product_url": "https://mikrotik.com/products",
+   "notes": "Stable-channel RouterOS release. The changelog lists fixes by subsystem; check it before upgrading production routers."
   },
   {
    "id": "esphome",
@@ -1654,9 +1655,9 @@
    "brand": "openWB",
    "model": "EV charging controller",
    "category": "S",
-   "type": "github",
-   "repo": "snaptec/openWB",
-   "product_url": "https://github.com/snaptec/openWB"
+   "type": "feed",
+   "product_url": "https://github.com/snaptec/openWB",
+   "url": "https://github.com/snaptec/openWB/tags.atom"
   },
   {
    "id": "emonesp",
@@ -1780,9 +1781,9 @@
    "brand": "Moonraker",
    "model": "Klipper API server",
    "category": "M",
-   "type": "github",
-   "repo": "Arksine/moonraker",
-   "product_url": "https://github.com/Arksine/moonraker"
+   "type": "feed",
+   "product_url": "https://github.com/Arksine/moonraker",
+   "url": "https://github.com/Arksine/moonraker/tags.atom"
   },
   {
    "id": "prusaslicer",

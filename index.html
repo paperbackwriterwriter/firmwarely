@@ -125,6 +125,7 @@ td.date{white-space:nowrap}
 .status.current{color:var(--green)}
 .status.pending{color:#5E6C78}
 .status.eol{color:#8A93A0}
+.status.stale{color:#8A93A0}
 .empty{padding:2.5rem 0;color:var(--muted)}
 @media (max-width:640px){
   th:nth-child(3),td:nth-child(3),th:nth-child(4),td:nth-child(4){display:none}
@@ -210,7 +211,7 @@ footer a:hover{color:var(--text)}
         <ol>
           <li><div class="n">1</div><h3>Pick the devices you own</h3><p>Search the catalog for your router, NAS, cameras, console, drone or e-bike and add them to your list.</p></li>
           <li><div class="n">2</div><h3>We check every night</h3><p>Firmwarely reads each manufacturer's release page and changelog and records the version, date and what changed.</p></li>
-          <li><div class="n">3</div><h3>You get one email</h3><p>A weekly digest on the free plan, or an instant alert on Pro the moment a security fix ships for something you own.</p></li>
+          <li><div class="n">3</div><h3>Pro members get one email</h3><p>After each nightly check, Pro members get a single email covering every device of theirs that changed, security fixes first. Free members see the same information here on the site.</p></li>
         </ol>
       </div>
     </div>
@@ -225,7 +226,7 @@ footer a:hover{color:var(--text)}
           <div class="price">$0</div>
           <ul>
             <li>Up to 3 devices</li>
-            <li>Weekly digest email</li>
+            <li>Update guides and one-click update links</li>
             <li>Full catalog access</li>
           </ul>
           <a class="btn ghost" href="#signup">Start free</a>
@@ -236,11 +237,10 @@ footer a:hover{color:var(--text)}
           <ul>
             <li>Unlimited devices</li>
             <li>Dashboard: every device on one screen, security fixes first, one click to update</li>
-            <li>Instant alerts, not weekly</li>
+            <li>Email alerts after every nightly check</li>
             <li>Founding-member price, locked in</li>
-            <li>Critical-security flags with plain-English summaries</li>
-            <li>Household and homelab groups</li>
-            <li>End-of-life warnings when a device stops getting updates</li>
+            <li>Security fixes flagged and sorted to the top</li>
+            <li>End-of-life notices when a vendor says updates are stopping</li>
           </ul>
           <a class="btn" id="pro-btn" href="#signup">Upgrade to Pro</a>
         </div>
@@ -255,7 +255,7 @@ footer a:hover{color:var(--text)}
           <h2 style="margin-bottom:.35rem">Device catalog</h2>
           <p style="margin:0;color:var(--muted)">Tap a device to see its latest firmware and get alerts for it.</p>
         </div>
-        <div class="notice" id="notice">preview data — live tracking starts at launch</div>
+        <div class="notice" id="notice">loading live data…</div>
       </div>
       <div class="search">
         <label class="sr" for="q">Search devices</label>
@@ -282,7 +282,7 @@ footer a:hover{color:var(--text)}
   <section id="signup" class="signup">
     <div class="wrap">
       <h2>Get alerts for your devices</h2>
-      <p style="color:var(--muted)">Add your email and, if you like, the devices you want watched. You'll get the first digest when tracking goes live.</p>
+      <p style="color:var(--muted)">Add your email and, if you like, the devices you want watched. Free members can save up to 3 devices; Pro members are emailed when one of theirs changes.</p>
       <form id="signup-form" novalidate>
         <label class="sr" for="s-email">Email address</label>
         <div class="row">
@@ -308,40 +308,15 @@ footer a:hover{color:var(--text)}
 </footer>
 
 <script>
-/* ---------- seed data (fallback only; devices.json from the nightly pipeline replaces it) ---------- */
+/* ---------- data: devices.json from the nightly pipeline. Nothing is invented client-side;
+   until it loads (or if it fails) the page says so instead of showing placeholder rows. ---------- */
 const CATS = {
   R:"Routers & networking", N:"NAS & storage", S:"Smart home & cameras", C:"Consoles, drones & e-bikes", M:"Makers & open firmware"
 };
-// status: critical = security fix released, update = new version, current = no new release in last 90 days
-const SEED = [
-  {b:"ASUS",m:"RT-AX88U",c:"R",v:"3.0.0.4.388_24709",d:"2026-09-03",s:"critical",n:"Fixes an authentication bypass in the web admin panel. Update immediately if remote access is enabled."},
-  {b:"ASUS",m:"RT-AX86U Pro",c:"R",v:"3.0.0.6.102_36604",d:"2026-08-22",s:"update",n:"Stability improvements for Wi‑Fi 6 clients; AiProtection signature update."},
-  {b:"TP-Link",m:"Archer AX73",c:"R",v:"1.4.3 Build 20260811",d:"2026-08-11",s:"update",n:"Improves OneMesh handoff; fixes IPv6 DNS relay."},
-  {b:"Netgear",m:"Nighthawk RAX50",c:"R",v:"1.0.15.106",d:"2026-07-30",s:"current",n:"Security enhancements and bug fixes."},
-  {b:"Ubiquiti",m:"UniFi Dream Machine SE",c:"R",v:"4.3.6",d:"2026-09-01",s:"update",n:"UniFi OS release with improved threat management and new dashboard."},
-  {b:"Eero",m:"Eero Pro 6E",c:"R",v:"7.10.1",d:"2026-08-19",s:"current",n:"Performance and reliability improvements."},
-  {b:"Synology",m:"DiskStation DS923+",c:"N",v:"DSM 7.2.2-72806 Update 4",d:"2026-08-27",s:"critical",n:"Addresses a remote code execution issue in SMB service. Synology rates this Important."},
-  {b:"Synology",m:"DiskStation DS224+",c:"N",v:"DSM 7.2.2-72806 Update 4",d:"2026-08-27",s:"critical",n:"Same DSM release as DS923+; applies to all DSM 7.2 models."},
-  {b:"QNAP",m:"TS-464",c:"N",v:"QTS 5.2.4.3079",d:"2026-08-14",s:"update",n:"Fixes multiple vulnerabilities in QTS; recommended for all users."},
-  {b:"Western Digital",m:"My Cloud EX2 Ultra",c:"N",v:"5.31.108",d:"2026-06-05",s:"current",n:"Security fixes and app updates."},
-  {b:"TrueNAS",m:"SCALE (Mini R)",c:"N",v:"25.04.2",d:"2026-08-06",s:"update",n:"Maintenance release with ZFS and Kubernetes fixes."},
-  {b:"Ubiquiti",m:"UniFi Protect G5 Bullet",c:"S",v:"5.1.44",d:"2026-08-30",s:"update",n:"Improved low-light detection; fixes an audio sync issue."},
-  {b:"Reolink",m:"RLC-810A",c:"S",v:"v3.1.0.4054_2405292008",d:"2026-05-29",s:"current",n:"Adds person/vehicle detection tuning."},
-  {b:"Philips Hue",m:"Bridge (v2)",c:"S",v:"1.68.1968133200",d:"2026-08-12",s:"update",n:"Matter stability improvements and security hardening."},
-  {b:"Amazon",m:"Ring Video Doorbell Pro 2",c:"S",v:"1.9.2",d:"2026-07-21",s:"current",n:"Bug fixes and performance improvements."},
-  {b:"Google",m:"Nest Cam (battery)",c:"S",v:"1.65",d:"2026-08-25",s:"update",n:"Reliability improvements for battery reporting."},
-  {b:"Aqara",m:"Hub M3",c:"S",v:"4.3.5",d:"2026-09-04",s:"critical",n:"Patches a Zigbee pairing flaw that allowed unauthorized device joins."},
-  {b:"Sony",m:"PlayStation 5",c:"C",v:"26.02-11.60.00",d:"2026-09-02",s:"update",n:"System software update: security improvements and UI fixes."},
-  {b:"Microsoft",m:"Xbox Series X",c:"C",v:"10.0.26100.5350",d:"2026-08-26",s:"update",n:"Monthly OS update with stability and security fixes."},
-  {b:"Nintendo",m:"Switch 2",c:"C",v:"21.0.1",d:"2026-08-18",s:"current",n:"General system stability improvements."},
-  {b:"DJI",m:"Mini 4 Pro",c:"C",v:"v01.04.0500",d:"2026-08-09",s:"update",n:"Improves RTH accuracy; updates flight safety database."},
-  {b:"DJI",m:"Air 3S",c:"C",v:"v01.02.0300",d:"2026-07-17",s:"current",n:"Fixes an issue with ActiveTrack in low light."},
-  {b:"Specialized",m:"Turbo Levo SL (Gen 2)",c:"C",v:"MasterMind 2.6.0",d:"2026-08-29",s:"update",n:"New assist tuning options; battery management improvements."},
-  {b:"Rad Power",m:"RadRunner 3 Plus",c:"C",v:"2.4.1",d:"2026-06-12",s:"current",n:"Display firmware update: fixes odometer rounding."}
-];
-let DEVICES = SEED;
+let DEVICES = [];
+let loadState = "loading"; // loading | ok | failed
 
-const STATUS_LABEL = {critical:"critical fix", update:"new version", current:"current", pending:"watching soon", eol:"end of life"};
+const STATUS_LABEL = {critical:"critical fix", update:"new version", current:"current", pending:"watching soon", eol:"end of life", stale:"no recent release"};
 const fmtDate = s => s ? new Date(s+"T00:00:00").toLocaleDateString(undefined,{month:"short",day:"numeric",year:"numeric"}) : "—";
 const shortDate = s => new Date(s+"T00:00:00").toLocaleDateString("en-US",{month:"short",day:"2-digit"});
 const slug = d => d.id || (d.b+" "+d.m).toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/(^-|-$)/g,"");
@@ -393,6 +368,9 @@ function render(){
       <td class="cat">${CATS[d.c] || ""}</td>
       <td><span class="status ${STATUS_CLASS(d.s)}">${STATUS_LABEL[d.s] || esc(d.s)}</span></td>
     </tr>`).join("");
+  empty.textContent = loadState==="loading" ? "Loading the live device list…"
+    : loadState==="failed" ? "Couldn't load the live device list. Refresh to try again."
+    : "No devices match that search yet. Request one below and we'll add it to the tracker.";
   empty.hidden = list.length>0;
 }
 render();
@@ -546,8 +524,8 @@ document.getElementById("year").textContent = new Date().getFullYear();
     if(!r.ok) throw new Error(r.status);
     const data = await r.json();
     const live = (data.devices||[]).map(x=>({b:x.brand, m:x.model, c:x.category, v:x.version, d:x.released, s:x.status, n:x.notes, url:x.source_url, p:x.product_url, u:x.update_url, id:x.id}));
-    if(!live.length) return;
-    DEVICES = live;
+    if(!live.length) throw new Error("empty");
+    DEVICES = live; loadState = "ok";
     const withData = live.filter(x=>x.s!=="pending").length;
     const when = data.generated ? new Date(data.generated).toLocaleString(undefined,{month:"short",day:"numeric",hour:"numeric",minute:"2-digit"}) : "";
     document.getElementById("notice").textContent = withData
@@ -555,7 +533,11 @@ document.getElementById("year").textContent = new Date().getFullYear();
       : "live tracking starts tonight";
     buildFeed(); render();
     if(location.hash.startsWith("#d=")) openDevice(location.hash.slice(3));
-  }catch(e){ /* keep seed data */ }
+  }catch(e){
+    loadState = "failed";
+    document.getElementById("notice").textContent = "live data unavailable right now";
+    render();
+  }
 })();
 </script>
 </body>
