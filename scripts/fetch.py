@@ -19,6 +19,13 @@ Rules:
           update   = any release in the last 45 days,
           current  = older than that,
           pending  = not tracked yet / never fetched successfully.
+
+When anything changed, two extra files are written next to devices.json and left for the
+workflow to consume (neither is committed):
+- digest.md    — the human summary that becomes the GitHub issue.
+- changed.json — the same changes as data, for scripts/user_alerts.py to match against
+                 the devices each subscriber saved on /my-devices.html.
+Both are deleted at the start of every run, so their presence means "something changed".
 """
 import json, re, sys, html, time, urllib.request, urllib.error
 from datetime import datetime, timezone, timedelta
@@ -34,6 +41,7 @@ RENDERED = ROOT / "rendered"
 OFFLINE = "--offline" in sys.argv
 FORCE_DIGEST = "--force-digest" in sys.argv   # write a digest of every tracked device even if nothing changed
 DIGEST = ROOT / "digest.md"
+CHANGED = ROOT / "changed.json"   # machine-readable digest for scripts/user_alerts.py
 UA = "Mozilla/5.0 (compatible; FirmwarelyBot/1.0; +https://firmwarely.com)"
 TODAY = datetime.now(ZoneInfo("America/Chicago")).date()   # dates in the site/digest are US Central
 NOW = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
@@ -275,15 +283,44 @@ def main():
     # ---- what changed since last night → digest.md (+ optional Beehiiv draft) ----
     changed = [d for d in out if d["tracked"] and d.get("version")
                and (FORCE_DIGEST or d["version"] != previous.get(d["id"], {}).get("version"))]
-    if DIGEST.exists():
-        DIGEST.unlink()
+    for f in (DIGEST, CHANGED):
+        if f.exists():
+            f.unlink()
     if changed:
         md, html_body = build_digest(changed)
         DIGEST.write_text(build_issue_summary(changed))   # what the GitHub issue shows: names/versions/dates only
-        print(f"digest: {len(changed)} change(s) → {DIGEST.name}")
+        write_changed(changed, previous)
+        print(f"digest: {len(changed)} change(s) → {DIGEST.name}, {CHANGED.name}")
         beehiiv_draft(md.splitlines()[0].lstrip("# ").strip(), html_body)
     else:
         print("digest: no changes since last run")
+
+
+def write_changed(changed, previous):
+    """Tonight's changes as data, for scripts/user_alerts.py.
+
+    One entry per device that moved, newest-and-scariest first, carrying the version the
+    device came from so a subscriber can be told "you were on X". Not committed — the
+    workflow reads it in the same run and it is rebuilt from scratch every night."""
+    items = []
+    for d in sorted(changed, key=lambda x: (x["status"] != "critical", x["brand"], x["model"])):
+        items.append({
+            "id": d["id"],
+            "brand": d["brand"],
+            "model": d["model"],
+            "category": d.get("category"),
+            "status": d["status"],
+            "version": d["version"],
+            "previous": previous.get(d["id"], {}).get("version"),
+            "released": d.get("released"),
+            "eol": bool(d.get("eol")),
+            "notes": d.get("notes", ""),
+            "source_url": d.get("source_url"),
+            "page_url": f"https://firmwarely.com/devices/{d['id']}/",
+        })
+    payload = {"generated": NOW, "date": TODAY.isoformat(), "forced": FORCE_DIGEST,
+               "count": len(items), "devices": items}
+    CHANGED.write_text(json.dumps(payload, indent=1, ensure_ascii=False) + "\n")
 
 
 def build_issue_summary(changed):
