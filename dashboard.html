@@ -143,6 +143,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:space-betwee
   var FREE_LIMIT = 3;
   var catalog = {};
   var user = null;
+  var rev = null;   // revision of the account list we last saw (see /api/me)
   var mine = load();
 
   function load() { try { return JSON.parse(localStorage.getItem(KEY) || "[]"); } catch (e) { return []; } }
@@ -189,10 +190,37 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:space-betwee
     });
   }
 
-  function syncUp() {
+
+  // Union of two lists by device id. Where both know a device, the newer-looking version wins
+  // (an empty version never beats a filled-in one).
+  function mergeLists(a, b) {
+    var out = [], seen = {};
+    a.concat(b).forEach(function (e) {
+      if (!e || !e.id) return;
+      if (!seen.hasOwnProperty(e.id)) { seen[e.id] = out.length; out.push({ id: e.id, version: e.version || "" }); return; }
+      var cur = out[seen[e.id]], c = compare(e.version, cur.version);
+      if (!norm(cur.version) || (c !== null && c > 0)) cur.version = e.version || "";
+    });
+    return out;
+  }
+  function sameList(a, b) { return JSON.stringify(a.map(function (e) { return [e.id, e.version || ""]; })) === JSON.stringify(b.map(function (e) { return [e.id, e.version || ""]; })); }
+  // What the account stores: everything on Pro, the first FREE_LIMIT devices otherwise.
+  // The rest stay in this browser; the page says so rather than deleting them.
+  function toSync() { return user && user.plan === "pro" ? mine : mine.slice(0, FREE_LIMIT); }
+
+  function syncUp(retried) {
     if (!user) return;
-    fetch("/api/me", { method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ devices: mine }) })
-      .then(function (r) { if (r.status === 401) { user = null; toast("Signed out. Sign in again to keep syncing."); } else if (!r.ok) toast("Saved locally; couldn't reach your account."); })
+    fetch("/api/me", { method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ devices: toSync(), base: rev }) })
+      .then(function (r) { return r.json().then(function (d) { return { s: r.status, d: d }; }); })
+      .then(function (x) {
+        if (x.s === 200) { rev = x.d.rev || null; return; }
+        if (x.s === 401) { user = null; toast("Signed out. Sign in again to keep syncing."); return; }
+        if (x.s === 409 && !retried) {
+          mine = mergeLists(x.d.devices || [], mine); rev = x.d.rev || null; save(); render();
+          syncUp(true); return;
+        }
+        toast(x.d.error || "Saved locally; couldn't reach your account.");
+      })
       .catch(function () { toast("Saved locally; couldn't reach the server."); });
   }
 
@@ -206,14 +234,9 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:space-betwee
   // same merge my-devices.html does: the account's list wins, local-only devices join it
   function adoptServerList(d) {
     var server = d.devices || [];
-    if (server.length) {
-      var ids = {}; server.forEach(function (e) { ids[e.id] = true; });
-      mine.forEach(function (e) { if (!ids[e.id]) server.push(e); });
-      mine = server; save();
-      if (mine.length !== d.devices.length) syncUp();
-    } else if (mine.length) {
-      syncUp();
-    }
+    rev = d.rev || null;
+    mine = mergeLists(server, mine); save();
+    if (!sameList(toSync(), server)) syncUp();
   }
 
   /* ---------- the gate: this page is part of Pro ---------- */

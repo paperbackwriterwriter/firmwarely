@@ -1,5 +1,7 @@
-// GET  -> {email, plan, devices}
-// PUT  {devices:[{id,version}]} -> saves (free plan capped at 3)
+// GET  -> {email, plan, devices, rev}
+// PUT  {devices:[{id,version}], base?} -> saves (free plan capped at 3)
+//   `base` is the rev the client last saw. If the stored list has moved on since,
+//   the PUT is refused with 409 and the current list, and the client merges + retries.
 const fw = require("../lib/fw");
 
 const FREE_LIMIT = 3;
@@ -13,7 +15,8 @@ module.exports = async function (req, res) {
   if (!sub) return fw.json(res, 404, { error: "Account not found." });
 
   if (req.method === "GET") {
-    return fw.json(res, 200, { ok: true, email: sub.email, plan: sub.plan, devices: sub.devices });
+    return fw.json(res, 200, { ok: true, email: sub.email, plan: sub.plan, devices: sub.devices,
+      rev: fw.devicesRev(sub.devices) });
   }
   if (req.method === "PUT") {
     const body = await fw.readBody(req);
@@ -26,9 +29,14 @@ module.exports = async function (req, res) {
       return fw.json(res, 403, { error: "Free accounts can save up to " + FREE_LIMIT +
         " devices. Upgrade to Pro for unlimited.", limit: FREE_LIMIT });
     }
+    const current = fw.devicesRev(sub.devices);
+    if (typeof body.base === "string" && body.base && body.base !== current) {
+      return fw.json(res, 409, { error: "Your device list changed somewhere else.",
+        devices: sub.devices, rev: current });
+    }
     const ok = await fw.saveDevices(sub.id, devices);
     if (!ok) return fw.json(res, 502, { error: "Couldn't save just now. Try again." });
-    return fw.json(res, 200, { ok: true, plan: sub.plan, devices: devices });
+    return fw.json(res, 200, { ok: true, plan: sub.plan, devices: devices, rev: fw.devicesRev(devices) });
   }
   return fw.json(res, 405, { error: "GET or PUT only" });
 };

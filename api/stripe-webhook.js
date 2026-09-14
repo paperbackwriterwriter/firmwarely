@@ -9,6 +9,12 @@
 //
 // Beehiiv needs a custom field named exactly  plan  (Audience → Subscribers → Custom fields → Add).
 // No npm packages: the Stripe signature is verified with Node's crypto module.
+//
+// Idempotency: there is no event store, so a redelivered event is simply re-applied. That is
+// safe because every handler is a plain "set plan to X" write with the same result each time.
+// The one ordering hazard — a late "deleted"/"canceled" for an old subscription arriving after
+// the customer already started a new one — is covered by asking Stripe whether the customer
+// still has an active subscription before downgrading anyone.
 
 import crypto from "node:crypto";
 
@@ -84,6 +90,14 @@ export default async function handler(req, res) {
   else if (event.type === "customer.subscription.updated") {
     if (["canceled", "unpaid", "incomplete_expired"].includes(obj.status)) plan = "free";
     else if (obj.status === "active") plan = "pro";
+  }
+
+  // Never downgrade someone who still has a live subscription (events can arrive out of order,
+  // and a customer can cancel one subscription and start another).
+  if (plan === "free" && obj.customer && process.env.STRIPE_SECRET_KEY) {
+    const live = await stripeGet(`/subscriptions?customer=${encodeURIComponent(obj.customer)}&status=active&limit=1`,
+      process.env.STRIPE_SECRET_KEY);
+    if (live && Array.isArray(live.data) && live.data.length) plan = "pro";
   }
 
   let result = "ignored";
