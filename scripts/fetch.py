@@ -301,7 +301,7 @@ def main():
 
     # ---- what changed since last night → digest.md (+ optional Beehiiv draft) ----
     changed = [d for d in out if d["tracked"] and d.get("version")
-               and (FORCE_DIGEST or d["version"] != previous.get(d["id"], {}).get("version"))]
+               and (FORCE_DIGEST or is_new_release(d, previous))]
     for f in (DIGEST, CHANGED):
         if f.exists():
             f.unlink()
@@ -313,6 +313,21 @@ def main():
         beehiiv_draft(md.splitlines()[0].lstrip("# ").strip(), html_body)
     else:
         print("digest: no changes since last run")
+
+
+def is_new_release(dev, previous):
+    """True only when a device we already had a version for moved to a different one.
+
+    The first time a source resolves there is nothing to compare against. That is a device
+    joining the catalog, not a release anyone missed — announcing it would mail every
+    subscriber about firmware they may have been running for a year, and adding a batch of
+    devices at once would do it hundreds of times over."""
+    if not dev["tracked"] or not dev.get("version"):
+        return False
+    prev = previous.get(dev["id"]) or {}
+    if not prev.get("version"):
+        return False
+    return dev["version"] != prev["version"]
 
 
 def write_changed(changed, previous):

@@ -72,7 +72,10 @@ Status rules: `critical` = security-flavoured release notes within 60 days · `u
 
 ## Digest / alerts
 
-Each run compares tonight's versions with last night's. If anything changed, `fetch.py` writes `digest.md`
+Each run compares tonight's versions with last night's. A device we had no version for yet — one
+just added to `sources.json`, or whose source resolved for the first time — is *not* a change: it
+joined the catalog, it didn't ship an update, so adding a batch of devices never mails anybody.
+If anything did change, `fetch.py` writes `digest.md`
 (grouped: security fixes, new firmware, end-of-life) and the workflow opens a GitHub issue with it, which
 emails you. If the repo has the secrets `BEEHIIV_API_KEY` and `BEEHIIV_PUB_ID` (GitHub → Settings → Secrets and
 variables → Actions), it also creates a **draft** post in Beehiiv with the same content for you to review and send.
