@@ -202,35 +202,6 @@ footer a:hover{color:var(--text)}
     </div>
   </section>
 
-  <section id="devices">
-    <div class="wrap">
-      <div class="catalog-head">
-        <div>
-          <h2 style="margin-bottom:.35rem">Device catalog</h2>
-          <p style="margin:0;color:var(--muted)">Tap a device to see its latest firmware and get alerts for it.</p>
-        </div>
-        <div class="notice" id="notice">preview data — live tracking starts at launch</div>
-      </div>
-      <div class="search">
-        <label class="sr" for="q">Search devices</label>
-        <input id="q" type="search" placeholder="Search brand or model">
-      </div>
-      <div class="filters" id="filters" role="group" aria-label="Filter by category">
-        <button class="chip" aria-pressed="true" data-cat="all">All</button>
-        <button class="chip" aria-pressed="false" data-cat="Routers &amp; networking">Routers &amp; networking</button>
-        <button class="chip" aria-pressed="false" data-cat="NAS &amp; storage">NAS &amp; storage</button>
-        <button class="chip" aria-pressed="false" data-cat="Smart home &amp; cameras">Smart home &amp; cameras</button>
-        <button class="chip" aria-pressed="false" data-cat="Consoles, drones &amp; e-bikes">Consoles, drones &amp; e-bikes</button>
-        <button class="chip" aria-pressed="false" data-cat="Makers &amp; open firmware">Makers &amp; open firmware</button>
-      </div>
-      <table>
-        <thead><tr><th>Device</th><th>Latest firmware</th><th>Released</th><th>Category</th><th>Status</th></tr></thead>
-        <tbody id="rows"></tbody>
-      </table>
-      <div class="empty" id="empty" hidden>No devices match that search yet. Request one below and we'll add it to the tracker.</div>
-    </div>
-  </section>
-
   <section id="pricing">
     <div class="wrap">
       <h2>Pricing</h2>
@@ -260,6 +231,35 @@ footer a:hover{color:var(--text)}
           <a class="btn" id="pro-btn" href="#signup">Upgrade to Pro</a>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section id="devices">
+    <div class="wrap">
+      <div class="catalog-head">
+        <div>
+          <h2 style="margin-bottom:.35rem">Device catalog</h2>
+          <p style="margin:0;color:var(--muted)">Tap a device to see its latest firmware and get alerts for it.</p>
+        </div>
+        <div class="notice" id="notice">preview data — live tracking starts at launch</div>
+      </div>
+      <div class="search">
+        <label class="sr" for="q">Search devices</label>
+        <input id="q" type="search" placeholder="Search brand or model">
+      </div>
+      <div class="filters" id="filters" role="group" aria-label="Filter by category">
+        <button class="chip" aria-pressed="true" data-cat="all">All</button>
+        <button class="chip" aria-pressed="false" data-cat="Routers &amp; networking">Routers &amp; networking</button>
+        <button class="chip" aria-pressed="false" data-cat="NAS &amp; storage">NAS &amp; storage</button>
+        <button class="chip" aria-pressed="false" data-cat="Smart home &amp; cameras">Smart home &amp; cameras</button>
+        <button class="chip" aria-pressed="false" data-cat="Consoles, drones &amp; e-bikes">Consoles, drones &amp; e-bikes</button>
+        <button class="chip" aria-pressed="false" data-cat="Makers &amp; open firmware">Makers &amp; open firmware</button>
+      </div>
+      <table>
+        <thead><tr><th>Device</th><th>Latest firmware</th><th>Released</th><th>Category</th><th>Status</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+      <div class="empty" id="empty" hidden>No devices match that search yet. Request one below and we'll add it to the tracker.</div>
     </div>
   </section>
 
