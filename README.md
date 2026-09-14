@@ -53,6 +53,16 @@ Running `scripts/fetch.py` by hand without a token will fail most GitHub sources
 `GitHub API rate limit reached` — export a token first:
 `GITHUB_TOKEN=$(gh auth token) python3 scripts/fetch.py`.
 
+### Checks
+
+Two read-only jobs run on any pull request touching `sources.json`, `scripts/`, `lib/` or `api/`:
+
+- `python3 scripts/selftest.py` — the logic that decides who gets emailed (version comparison,
+  what counts as a new release, personal-vs-digest routing, the forced-run guard). No network.
+- `python3 scripts/check_sources.py` — fetches every tracked source and reports what came back.
+  `--only id1,id2` checks a subset. A GitHub repo that doesn't exist fails the job; timeouts and
+  rate limits are reported but don't, since they come and go on their own.
+
 ### Pruning sources that don't resolve
 
 A source that 404s never erases anything: the device stays in the catalog as "watching soon" and
@@ -102,9 +112,10 @@ real subscribers on one unless `USER_ALERT_TEST_EMAIL` is set. To rehearse local
 `python3 scripts/fetch.py --offline --force-digest && python3 scripts/user_alerts.py --dry-run`
 (dry run prints who would get what and sends nothing).
 
-Note that Pro subscribers with saved devices currently get both this personal email and the
-Beehiiv Pro segment blast from `scripts/pro_alert.py`. Drop the *Send Pro instant alert* step from
-the workflow once the personal mail is doing the job.
+Everyone on a plan in `USER_ALERT_PLANS` gets exactly one email: the personal one when a device
+they saved moved, otherwise the general digest of everything that changed. That second case is
+what the Beehiiv Pro segment blast used to cover, so `scripts/pro_alert.py` is no longer run by
+the workflow — it stayed in the repo as a fallback, marked unwired at the top of the file.
 
 Neither `digest.md` nor `changed.json` is committed — both are rebuilt from scratch each night,
 and their presence is what tells the workflow that something changed.
