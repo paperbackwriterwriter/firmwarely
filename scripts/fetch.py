@@ -89,8 +89,8 @@ def clean(text, limit=300):
     text = html.unescape(text or "")
     for _ in range(3):
         stripped = TAG.sub(" ", text)
-        if stripped == text:
-            break
+        if stripped == text and html.unescape(text) == text:
+            break  # nothing left to strip and nothing left to decode
         text = html.unescape(stripped)
     text = MD_LINK.sub(r"\1", text)
     text = MD_NOISE.sub(r"\1", text)
