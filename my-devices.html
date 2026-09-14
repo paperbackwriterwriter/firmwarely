@@ -47,7 +47,16 @@ header{position:sticky;top:0;z-index:5;background:rgba(12,17,23,.92);backdrop-fi
 .btn.ghost{background:transparent;color:var(--text);border-color:var(--line)}
 .btn.ghost:hover{border-color:var(--muted)}
 .btn.sm{font-size:.85rem;padding:.4rem .75rem}
-@media (max-width:640px){.nav ul li.hide-m{display:none}}
+.nav{position:relative}
+.menu{display:none;font:inherit;background:none;border:1px solid var(--line);color:var(--text);border-radius:6px;padding:.3rem .6rem;cursor:pointer;font-size:1.15rem;line-height:1}
+@media (max-width:640px){
+  .menu{display:inline-block;margin-left:auto}
+  .nav ul li.hide-m{display:none}
+  .nav.open ul{position:absolute;left:0;right:0;top:100%;background:var(--panel);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0;padding:.5rem 1.25rem 1rem;z-index:6}
+  .nav.open ul li.hide-m{display:block}
+  .nav.open ul li{padding:.5rem 0}
+  .nav.open ul a{font-size:1.05rem}
+}
 
 .top{padding:3rem 0 1.5rem}
 .top p.lede{font-size:1.1rem;color:var(--muted);margin:1rem 0 0}
@@ -125,7 +134,8 @@ footer a:hover{color:var(--text)}
 <header>
   <div class="wrap nav">
     <a class="brand" href="/"><i></i>Firmwarely</a>
-    <ul>
+    <button class="menu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navlinks">☰</button>
+    <ul id="navlinks">
       <li class="hide-m"><a href="/devices/">Devices</a></li>
       <li class="hide-m"><a href="/dashboard.html">Dashboard</a></li>
       <li class="hide-m"><a href="/my-devices.html" aria-current="page">My devices</a></li>
@@ -464,6 +474,17 @@ footer a:hover{color:var(--text)}
   });
 
   document.getElementById("year").textContent = new Date().getFullYear();
+
+  /* ---------- mobile menu ---------- */
+  (function () {
+    var nav = document.querySelector(".nav"), btn = nav && nav.querySelector(".menu");
+    if (!btn) return;
+    btn.addEventListener("click", function () {
+      var open = nav.classList.toggle("open");
+      btn.setAttribute("aria-expanded", String(open)); btn.textContent = open ? "✕" : "☰";
+    });
+  })();
+
 
   var q = new URLSearchParams(location.search);
   if (q.get("signin") === "ok") { toast("Signed in"); history.replaceState(null, "", location.pathname); }

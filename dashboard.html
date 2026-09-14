@@ -82,14 +82,25 @@ footer{border-top:1px solid var(--line);padding:1.5rem 0;color:var(--muted);font
 footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:space-between}
 .toast{position:fixed;left:50%;bottom:1.5rem;transform:translateX(-50%) translateY(20px);background:var(--text);color:var(--bg);padding:.6rem 1rem;border-radius:6px;font-size:.9rem;opacity:0;transition:.2s;pointer-events:none}
 .toast.show{opacity:1;transform:translateX(-50%)}
-@media (max-width:760px){.tiles{grid-template-columns:repeat(2,1fr)}.hide-m{display:none}.list li{grid-template-columns:1fr}.list .status{order:-1}}
+@media (max-width:760px){.tiles{grid-template-columns:repeat(2,1fr)}.list li{grid-template-columns:1fr}.list .status{order:-1}}
+.nav{position:relative}
+.menu{display:none;font:inherit;background:none;border:1px solid var(--line);color:var(--text);border-radius:6px;padding:.3rem .6rem;cursor:pointer;font-size:1.15rem;line-height:1}
+@media (max-width:760px){
+  .menu{display:inline-block;margin-left:auto}
+  .nav ul li.hide-m{display:none}
+  .nav.open ul{position:absolute;left:0;right:0;top:100%;background:var(--panel);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0;padding:.5rem 1.25rem 1rem;z-index:6}
+  .nav.open ul li.hide-m{display:block}
+  .nav.open ul li{padding:.5rem 0}
+  .nav.open ul a{font-size:1.05rem}
+}
 </style>
 </head>
 <body>
 <header>
   <div class="wrap nav">
     <a class="brand" href="/"><i></i>Firmwarely</a>
-    <ul>
+    <button class="menu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navlinks">☰</button>
+    <ul id="navlinks">
       <li class="hide-m"><a href="/devices/">Devices</a></li>
       <li class="hide-m"><a href="/dashboard.html" aria-current="page">Dashboard</a></li>
       <li class="hide-m"><a href="/my-devices.html">My devices</a></li>
@@ -341,6 +352,17 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:space-betwee
   });
 
   document.getElementById("year").textContent = new Date().getFullYear();
+
+  /* ---------- mobile menu ---------- */
+  (function () {
+    var nav = document.querySelector(".nav"), btn = nav && nav.querySelector(".menu");
+    if (!btn) return;
+    btn.addEventListener("click", function () {
+      var open = nav.classList.toggle("open");
+      btn.setAttribute("aria-expanded", String(open)); btn.textContent = open ? "✕" : "☰";
+    });
+  })();
+
 
   // Nothing renders until the plan is known: no flash of dashboard before a wall.
   fetch("/devices.json", { cache: "no-store" })
