@@ -4,14 +4,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>BorgBackup Borg firmware — latest version 1.4.5 | Firmwarely</title>
-<meta name="description" content="Latest BorgBackup Borg version is 1.4.5, released Jul 18, 2026. Release notes, version history, and email alerts when a new or critical update ships.">
+<meta name="description" content="Latest BorgBackup Borg firmware is 1.4.5, released Jul 18, 2026. Release notes, version history, how to update, and email alerts for new or security fixes.">
 <link rel="canonical" href="https://www.firmwarely.com/devices/borgbackup/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<meta property="og:site_name" content="Firmwarely">
 <meta property="og:title" content="BorgBackup Borg firmware — latest version 1.4.5 | Firmwarely">
-<meta property="og:description" content="Latest BorgBackup Borg version is 1.4.5, released Jul 18, 2026. Release notes, version history, and email alerts when a new or critical update ships.">
+<meta property="og:description" content="Latest BorgBackup Borg firmware is 1.4.5, released Jul 18, 2026. Release notes, version history, how to update, and email alerts for new or security fixes.">
 <meta property="og:url" content="https://www.firmwarely.com/devices/borgbackup/">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://www.firmwarely.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.firmwarely.com/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -112,6 +118,10 @@ input::placeholder{color:#5E6C78}
 .catalog-head{display:flex;flex-wrap:wrap;gap:1rem;align-items:flex-end;justify-content:space-between;margin-bottom:1.25rem}
 .notice{font-size:.85rem;color:var(--amber);border:1px solid var(--amber-dim);background:rgba(245,179,66,.06);border-radius:6px;padding:.4rem .7rem;font-family:var(--mono)}
 .filters{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0 1.25rem}
+.browse{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:1rem 0}
+.browse>span{font-family:var(--mono);font-size:.8rem;color:var(--muted);margin-right:.25rem}
+.browse a.chip{text-decoration:none;display:inline-block}
+.browse a.chip:hover{border-color:var(--amber);color:var(--text)}
 .chip{font:inherit;font-size:.9rem;color:var(--muted);background:transparent;border:1px solid var(--line);border-radius:999px;padding:.35rem .85rem;cursor:pointer}
 .chip[aria-pressed=true]{color:var(--text);border-color:var(--amber);background:rgba(245,179,66,.08)}
 .search{max-width:360px}
@@ -197,8 +207,10 @@ footer a:hover{color:var(--text)}
   .brandlist ul{list-style:none;padding:0;margin:0;display:grid;gap:.4rem}
   .brandlist li{display:flex;justify-content:space-between;gap:1rem;border-top:1px solid var(--line);padding:.6rem 0}
   .brandlist li span{font-family:var(--mono);font-size:.85rem;color:var(--muted)}
+  .brandlist .fine{margin:.5rem 0 0;font-size:.85rem}
+  .related{margin-top:2.5rem}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "BorgBackup Borg", "item": "https://www.firmwarely.com/devices/borgbackup/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "NAS & storage", "item": "https://www.firmwarely.com/category/nas/"}, {"@type": "ListItem", "position": 3, "name": "BorgBackup Borg", "item": "https://www.firmwarely.com/devices/borgbackup/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/borgbackup/", "url": "https://www.firmwarely.com/devices/borgbackup/", "name": "BorgBackup Borg firmware — latest version 1.4.5 | Firmwarely", "description": "Latest BorgBackup Borg firmware is 1.4.5, released Jul 18, 2026. Release notes, version history, how to update, and email alerts for new or security fixes.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-14"}, {"@type": "SoftwareApplication", "name": "BorgBackup Borg firmware", "applicationCategory": "Firmware", "operatingSystem": "BorgBackup Borg", "softwareVersion": "1.4.5", "author": {"@type": "Organization", "name": "BorgBackup"}, "datePublished": "2026-07-18", "releaseNotes": "## borgbackup 1.4.5 Some fixes (including a low-severity security fix), some new features and other updates. Long changelog: https://borgbackup.readthedocs.io/en/1.4.5/changes.html#version-1-4-5-2026-07-19 Short borg 1.4 overview (from a borg 1.2 perspective): https://www.borgbackup.org/releases/bo…", "url": "https://github.com/borgbackup/borg/releases/tag/1.4.5"}]}</script>
 </head>
 <body>
 <header>
@@ -219,17 +231,18 @@ footer a:hover{color:var(--text)}
 <main>
 
 <div class="wrap">
-  <div class="crumbs"><a href="/devices/">Devices</a> / <a href="/devices/#N">NAS &amp; storage</a> / BorgBackup Borg</div>
+  <div class="crumbs"><a href="/devices/">Devices</a> / <a href="/category/nas/">NAS &amp; storage</a> / BorgBackup Borg</div>
   <div class="dev">
     <div>
       <h1 class="dev-h">BorgBackup Borg firmware</h1>
       <span class="status critical">critical fix</span>
+      <p style="color:var(--muted);margin:1rem 0 0">The BorgBackup Borg is tracked under NAS &amp; storage. Its latest firmware, 1.4.5, shipped on Jul 18, 2026.</p>
       <div class="card" style="margin-top:1.25rem">
         <dl class="kv">
           <dt>Latest firmware</dt><dd>1.4.5</dd>
-          <dt>Released</dt><dd>Jul 18, 2026</dd>
-          <dt>Category</dt><dd>NAS &amp; storage</dd>
-          <dt>Last checked</dt><dd>Sep 14, 2026</dd>
+          <dt>Released</dt><dd><time datetime="2026-07-18">Jul 18, 2026</time></dd>
+          <dt>Category</dt><dd><a href="/category/nas/">NAS &amp; storage</a></dd>
+          <dt>Last checked</dt><dd><time datetime="2026-09-14">Sep 14, 2026</time></dd>
         </dl>
       </div>
       
@@ -243,9 +256,11 @@ footer a:hover{color:var(--text)}
       <h2 style="margin-top:2rem">What changed</h2>
       <p style="color:var(--muted)">## borgbackup 1.4.5 Some fixes (including a low-severity security fix), some new features and other updates. Long changelog: https://borgbackup.readthedocs.io/en/1.4.5/changes.html#version-1-4-5-2026-07-19 Short borg 1.4 overview (from a borg 1.2 perspective): https://www.borgbackup.org/releases/bo…</p>
       <p><a href="https://github.com/borgbackup/borg/releases/tag/1.4.5" target="_blank" rel="noopener">Manufacturer release notes ↗</a></p>
-      <h2 style="margin-top:2rem">Version history</h2><table class="hist"><tr><td>1.4.5</td><td>Jul 18, 2026</td></tr></table>
+      <h2 style="margin-top:2rem">Version history</h2><table class="hist"><tr><td>1.4.5</td><td><time datetime="2026-07-18">Jul 18, 2026</time></td></tr></table>
       <div class="faq">
         <h2 style="margin-top:2rem">FAQ</h2>
+        <h3>What is the latest firmware for the BorgBackup Borg?</h3>
+        <p>Version 1.4.5, released Jul 18, 2026. This page is refreshed every night from the manufacturer's release page.</p>
         <h3>How do I update the BorgBackup Borg?</h3>
         <p><a href="#update">See the step-by-step above.</a> Open the NAS control panel, go to the update or system section, and install the new version. Back up important data first; NAS updates can take several minutes.</p>
         <h3>How does Firmwarely know when there's a new version?</h3>
@@ -253,6 +268,7 @@ footer a:hover{color:var(--text)}
         <h3>Is this an official BorgBackup page?</h3>
         <p>No. Firmwarely is independent. Device and brand names belong to their manufacturers; always download firmware from the official source.</p>
       </div>
+      <div class="related brandlist"><h2>Recently updated in NAS &amp; storage</h2><ul><li><a href="/devices/immich-server/">Immich Photo backup server</a><span>3.2.1 · Sep 14, 2026</span></li><li><a href="/devices/mealie/">Mealie Recipe manager</a><span>3.26.0 · Sep 14, 2026</span></li><li><a href="/devices/firefly-iii/">Firefly III Personal finance manager</a><span>6.7.0 · Sep 14, 2026</span></li><li><a href="/devices/bookstack/">BookStack Wiki and documentation</a><span>26.05.5 · Sep 14, 2026</span></li><li><a href="/devices/changedetection/">changedetection.io Website change monitor</a><span>0.60.6 · Sep 14, 2026</span></li><li><a href="/devices/synology-ds923-plus/">Synology DiskStation DS923+</a><span>7.4.1-90080 · Sep 13, 2026</span></li></ul><p class="fine"><a href="/category/nas/">All NAS &amp; storage devices →</a></p></div>
     </div>
     <aside>
       <div class="card">

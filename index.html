@@ -10,6 +10,13 @@
 <meta property="og:description" content="Nightly checks of manufacturer release pages for 380+ routers, NAS, smart home devices, consoles and maker gear.">
 <meta property="og:url" content="https://www.firmwarely.com/">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Firmwarely">
+<meta property="og:image" content="https://www.firmwarely.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.firmwarely.com/og.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://www.firmwarely.com/#org", "name": "Firmwarely", "url": "https://www.firmwarely.com/", "logo": "https://www.firmwarely.com/favicon.svg", "email": "hello@firmwarely.com", "description": "Nightly firmware update tracking and alerts for routers, NAS, smart home devices, consoles, drones and maker hardware."}, {"@type": "WebSite", "@id": "https://www.firmwarely.com/#site", "name": "Firmwarely", "url": "https://www.firmwarely.com/", "publisher": {"@id": "https://www.firmwarely.com/#org"}, "potentialAction": {"@type": "SearchAction", "target": {"@type": "EntryPoint", "urlTemplate": "https://www.firmwarely.com/?q={search_term_string}"}, "query-input": "required name=search_term_string"}}]}</script>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -112,6 +119,10 @@ input::placeholder{color:#5E6C78}
 .catalog-head{display:flex;flex-wrap:wrap;gap:1rem;align-items:flex-end;justify-content:space-between;margin-bottom:1.25rem}
 .notice{font-size:.85rem;color:var(--amber);border:1px solid var(--amber-dim);background:rgba(245,179,66,.06);border-radius:6px;padding:.4rem .7rem;font-family:var(--mono)}
 .filters{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0 1.25rem}
+.browse{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:1rem 0}
+.browse>span{font-family:var(--mono);font-size:.8rem;color:var(--muted);margin-right:.25rem}
+.browse a.chip{text-decoration:none;display:inline-block}
+.browse a.chip:hover{border-color:var(--amber);color:var(--text)}
 .chip{font:inherit;font-size:.9rem;color:var(--muted);background:transparent;border:1px solid var(--line);border-radius:999px;padding:.35rem .85rem;cursor:pointer}
 .chip[aria-pressed=true]{color:var(--text);border-color:var(--amber);background:rgba(245,179,66,.08)}
 .search{max-width:360px}
@@ -264,6 +275,14 @@ footer a:hover{color:var(--text)}
         </div>
         <div class="notice" id="notice">loading live data…</div>
       </div>
+      <nav class="browse" aria-label="Browse by category"><span>Browse</span>
+        <a class="chip" href="/category/routers/">Routers &amp; networking</a>
+        <a class="chip" href="/category/nas/">NAS &amp; storage</a>
+        <a class="chip" href="/category/smart-home/">Smart home &amp; cameras</a>
+        <a class="chip" href="/category/consoles-drones-ebikes/">Consoles, drones &amp; e-bikes</a>
+        <a class="chip" href="/category/makers/">Makers &amp; open firmware</a>
+        <a class="chip" href="/devices/">All devices</a>
+      </nav>
       <div class="search">
         <label class="sr" for="q">Search devices</label>
         <input id="q" type="search" placeholder="Search brand or model">
@@ -357,6 +376,8 @@ buildFeed();
 const rows = document.getElementById("rows");
 const empty = document.getElementById("empty");
 let cat = "all", q = "", showAll = false;
+q = (new URLSearchParams(location.search).get("q") || "").trim().toLowerCase();
+if (q) { document.getElementById("q").value = q; document.getElementById("devices").scrollIntoView(); }
 const PAGE = 60, more = document.getElementById("more");
 function render(){
   const list = DEVICES.filter(d =>

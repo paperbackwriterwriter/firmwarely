@@ -4,14 +4,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Espressif Arduino core for ESP32 firmware 3.3.11 | Firmwarely</title>
-<meta name="description" content="Latest Espressif Arduino core for ESP32 version is 3.3.11, released Jul 22, 2026. Release notes, version history, and email alerts when a new or critical update ships.">
+<meta name="description" content="Latest Espressif Arduino core for ESP32 firmware is 3.3.11, released Jul 22, 2026. Release notes, version history and update alerts.">
 <link rel="canonical" href="https://www.firmwarely.com/devices/arduino-esp32/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<meta property="og:site_name" content="Firmwarely">
 <meta property="og:title" content="Espressif Arduino core for ESP32 firmware 3.3.11 | Firmwarely">
-<meta property="og:description" content="Latest Espressif Arduino core for ESP32 version is 3.3.11, released Jul 22, 2026. Release notes, version history, and email alerts when a new or critical update ships.">
+<meta property="og:description" content="Latest Espressif Arduino core for ESP32 firmware is 3.3.11, released Jul 22, 2026. Release notes, version history and update alerts.">
 <meta property="og:url" content="https://www.firmwarely.com/devices/arduino-esp32/">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://www.firmwarely.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.firmwarely.com/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -112,6 +118,10 @@ input::placeholder{color:#5E6C78}
 .catalog-head{display:flex;flex-wrap:wrap;gap:1rem;align-items:flex-end;justify-content:space-between;margin-bottom:1.25rem}
 .notice{font-size:.85rem;color:var(--amber);border:1px solid var(--amber-dim);background:rgba(245,179,66,.06);border-radius:6px;padding:.4rem .7rem;font-family:var(--mono)}
 .filters{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0 1.25rem}
+.browse{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:1rem 0}
+.browse>span{font-family:var(--mono);font-size:.8rem;color:var(--muted);margin-right:.25rem}
+.browse a.chip{text-decoration:none;display:inline-block}
+.browse a.chip:hover{border-color:var(--amber);color:var(--text)}
 .chip{font:inherit;font-size:.9rem;color:var(--muted);background:transparent;border:1px solid var(--line);border-radius:999px;padding:.35rem .85rem;cursor:pointer}
 .chip[aria-pressed=true]{color:var(--text);border-color:var(--amber);background:rgba(245,179,66,.08)}
 .search{max-width:360px}
@@ -197,8 +207,10 @@ footer a:hover{color:var(--text)}
   .brandlist ul{list-style:none;padding:0;margin:0;display:grid;gap:.4rem}
   .brandlist li{display:flex;justify-content:space-between;gap:1rem;border-top:1px solid var(--line);padding:.6rem 0}
   .brandlist li span{font-family:var(--mono);font-size:.85rem;color:var(--muted)}
+  .brandlist .fine{margin:.5rem 0 0;font-size:.85rem}
+  .related{margin-top:2.5rem}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Espressif Arduino core for ESP32", "item": "https://www.firmwarely.com/devices/arduino-esp32/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Makers & open firmware", "item": "https://www.firmwarely.com/category/makers/"}, {"@type": "ListItem", "position": 3, "name": "Espressif Arduino core for ESP32", "item": "https://www.firmwarely.com/devices/arduino-esp32/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/arduino-esp32/", "url": "https://www.firmwarely.com/devices/arduino-esp32/", "name": "Espressif Arduino core for ESP32 firmware 3.3.11 | Firmwarely", "description": "Latest Espressif Arduino core for ESP32 firmware is 3.3.11, released Jul 22, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-14"}, {"@type": "SoftwareApplication", "name": "Espressif Arduino core for ESP32 firmware", "applicationCategory": "Firmware", "operatingSystem": "Espressif Arduino core for ESP32", "softwareVersion": "3.3.11", "author": {"@type": "Organization", "name": "Espressif"}, "datePublished": "2026-07-22", "releaseNotes": "## New Release Notes Platform can be Found [HERE](https://release-notes.espressif.com/?project=Arduino) ## What's Changed ### System PR * IDF v5.5.4 – #​12735 * IDF v5.5.4 with ESP-Video – #​12738 * IDF v5.5.4 – #​12762 * IDF v5.5.5 – #​12772 ## Peripherals ### I2S * fix(i2s): Fix examples and add …", "url": "https://github.com/espressif/arduino-esp32/releases/tag/3.3.11"}]}</script>
 </head>
 <body>
 <header>
@@ -219,17 +231,18 @@ footer a:hover{color:var(--text)}
 <main>
 
 <div class="wrap">
-  <div class="crumbs"><a href="/devices/">Devices</a> / <a href="/devices/#M">Makers &amp; open firmware</a> / Espressif Arduino core for ESP32</div>
+  <div class="crumbs"><a href="/devices/">Devices</a> / <a href="/category/makers/">Makers &amp; open firmware</a> / Espressif Arduino core for ESP32</div>
   <div class="dev">
     <div>
       <h1 class="dev-h">Espressif Arduino core for ESP32 firmware</h1>
       <span class="status current">current</span>
+      <p style="color:var(--muted);margin:1rem 0 0">The Espressif Arduino core for ESP32 is tracked under makers &amp; open firmware. Its latest firmware, 3.3.11, shipped on Jul 22, 2026.</p>
       <div class="card" style="margin-top:1.25rem">
         <dl class="kv">
           <dt>Latest firmware</dt><dd>3.3.11</dd>
-          <dt>Released</dt><dd>Jul 22, 2026</dd>
-          <dt>Category</dt><dd>Makers &amp; open firmware</dd>
-          <dt>Last checked</dt><dd>Sep 14, 2026</dd>
+          <dt>Released</dt><dd><time datetime="2026-07-22">Jul 22, 2026</time></dd>
+          <dt>Category</dt><dd><a href="/category/makers/">Makers &amp; open firmware</a></dd>
+          <dt>Last checked</dt><dd><time datetime="2026-09-14">Sep 14, 2026</time></dd>
         </dl>
       </div>
       
@@ -243,9 +256,11 @@ footer a:hover{color:var(--text)}
       <h2 style="margin-top:2rem">What changed</h2>
       <p style="color:var(--muted)">## New Release Notes Platform can be Found [HERE](https://release-notes.espressif.com/?project=Arduino) ## What&#x27;s Changed ### System PR * IDF v5.5.4 – #​12735 * IDF v5.5.4 with ESP-Video – #​12738 * IDF v5.5.4 – #​12762 * IDF v5.5.5 – #​12772 ## Peripherals ### I2S * fix(i2s): Fix examples and add …</p>
       <p><a href="https://github.com/espressif/arduino-esp32/releases/tag/3.3.11" target="_blank" rel="noopener">Manufacturer release notes ↗</a></p>
-      <h2 style="margin-top:2rem">Version history</h2><table class="hist"><tr><td>3.3.11</td><td>Jul 22, 2026</td></tr></table>
+      <h2 style="margin-top:2rem">Version history</h2><table class="hist"><tr><td>3.3.11</td><td><time datetime="2026-07-22">Jul 22, 2026</time></td></tr></table>
       <div class="faq">
         <h2 style="margin-top:2rem">FAQ</h2>
+        <h3>What is the latest firmware for the Espressif Arduino core for ESP32?</h3>
+        <p>Version 3.3.11, released Jul 22, 2026. This page is refreshed every night from the manufacturer's release page.</p>
         <h3>How do I update the Espressif Arduino core for ESP32?</h3>
         <p><a href="#update">See the step-by-step above.</a> Follow the project&#x27;s release page for the flashing or OTA procedure. Many maker devices update from a web installer or the project&#x27;s desktop app.</p>
         <h3>How does Firmwarely know when there's a new version?</h3>
@@ -253,6 +268,7 @@ footer a:hover{color:var(--text)}
         <h3>Is this an official Espressif page?</h3>
         <p>No. Firmwarely is independent. Device and brand names belong to their manufacturers; always download firmware from the official source.</p>
       </div>
+      <div class="related brandlist"><h2>More from Espressif</h2><ul><li><a href="/devices/esp-idf/">ESP-IDF</a><span>6.1 · Aug 27, 2026</span></li></ul><p class="fine"> <a href="/brands/espressif/">All Espressif devices →</a></p><h2>Recently updated in Makers &amp; open firmware</h2><ul><li><a href="/devices/circuitpython/">Adafruit CircuitPython</a><span>10.3.1 · Sep 14, 2026</span></li><li><a href="/devices/thingino/">thingino Camera firmware</a><span>2026-09-14 · Sep 14, 2026</span></li><li><a href="/devices/fluidnc/">FluidNC CNC controller firmware</a><span>4.1.0 · Sep 12, 2026</span></li><li><a href="/devices/fluidd/">Fluidd Klipper web interface</a><span>1.37.5 · Sep 9, 2026</span></li><li><a href="/devices/raspberrypi-firmware/">Raspberry Pi VideoCore firmware</a><span>1.20260907 · Sep 7, 2026</span></li><li><a href="/devices/qmk-firmware/">QMK Keyboard firmware</a><span>0.34.4 · Sep 5, 2026</span></li></ul><p class="fine"><a href="/category/makers/">All makers &amp; open firmware devices →</a></p></div>
     </div>
     <aside>
       <div class="card">

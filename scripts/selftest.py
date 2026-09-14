@@ -235,8 +235,64 @@ def test_generated_pages():
     check("canonicals use the www host the apex redirects to", build_pages.SITE, "https://www.firmwarely.com")
 
 
+# ---- landing pages and the SEO plumbing around them ----
+def test_landing_pages():
+    import re
+    data = json.loads(Path("devices.json").read_text())
+    devs = data["devices"]
+    build_pages.STYLES = build_pages.styles()
+    by_brand = {}
+    for d in devs:
+        by_brand.setdefault(d["brand"], []).append(d)
+    counts = {b: len(v) for b, v in by_brand.items()}
+    ctx = {"by_brand": by_brand, "by_cat": {}}
+
+    def meta(page):
+        t = re.search(r"<title>(.*?)</title>", page, re.S).group(1)
+        d = re.search(r'<meta name="description" content="(.*?)">', page).group(1)
+        return html_unescape(t), html_unescape(d)
+    html_unescape = __import__("html").unescape
+
+    for key in build_pages.CATS:
+        page = build_pages.category_page(key, devs, counts)
+        t, d = meta(page)
+        check(f"category {key}: title fits", len(t) <= build_pages.TITLE_MAX, True)
+        check(f"category {key}: description fits", len(d) <= build_pages.DESC_MAX, True)
+        check(f"category {key}: has prose and a device list", ("<h1" in page and "<ul>" in page and "ItemList" in page), True)
+    big = max(by_brand, key=lambda b: counts[b])
+    page = build_pages.brand_page(big, by_brand[big])
+    t, d = meta(page)
+    check(f"brand page {big}: title fits", len(t) <= build_pages.TITLE_MAX, True)
+    check(f"brand page {big}: description fits", len(d) <= build_pages.DESC_MAX, True)
+    check("brand page: canonical uses the slug", f'href="{build_pages.SITE}/brands/{build_pages.slugify(big)}/"' in page, True)
+    check("slugify handles punctuation", build_pages.slugify("Bambu Lab / X1-Carbon (2nd gen)"), "bambu-lab-x1-carbon-2nd-gen")
+    check("NAS keeps its case in prose", build_pages.CAT_PHRASE["N"], "NAS & storage")
+
+    # every device page: description fits, dates are machine-readable, schema parses
+    over, no_time, bad_ld = [], [], []
+    for d in devs:
+        page = build_pages.device_page(d, ctx)
+        _, desc = meta(page)
+        if len(desc) > build_pages.DESC_MAX:
+            over.append(d["id"])
+        if build_pages.is_live(d) and "<time datetime=" not in page:
+            no_time.append(d["id"])
+        for m in re.findall(r'<script type="application/ld\+json">(.*?)</script>', page, re.S):
+            try:
+                json.loads(m)
+            except Exception:
+                bad_ld.append(d["id"])
+    check("no device description over the limit", over[:3], [])
+    check("live device pages carry <time datetime>", no_time[:3], [])
+    check("structured data on every device page parses", bad_ld[:3], [])
+    check("404 page is noindex", 'content="noindex"' in build_pages.not_found_page(devs), True)
+    check("thanks page is noindex", 'content="noindex"' in build_pages.thanks_page(), True)
+    check("social image exists", Path("og.png").exists(), True)
+
+
 for t in (test_compare, test_new_release, test_saved_devices, test_routing, test_forced_guard,
-          test_update_guides, test_clean, test_classify, test_homepage_honesty, test_generated_pages):
+          test_update_guides, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
+          test_landing_pages):
     print(f"\n{t.__name__}")
     t()
 

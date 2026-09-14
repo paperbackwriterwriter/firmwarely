@@ -6,12 +6,19 @@
 <title>You&#x27;re on Firmwarely Pro</title>
 <meta name="description" content="Thanks for upgrading to Firmwarely Pro.">
 <link rel="canonical" href="https://www.firmwarely.com/pro/thanks/">
+<meta name="robots" content="noindex">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<meta property="og:site_name" content="Firmwarely">
 <meta property="og:title" content="You&#x27;re on Firmwarely Pro">
 <meta property="og:description" content="Thanks for upgrading to Firmwarely Pro.">
 <meta property="og:url" content="https://www.firmwarely.com/pro/thanks/">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://www.firmwarely.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.firmwarely.com/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -112,6 +119,10 @@ input::placeholder{color:#5E6C78}
 .catalog-head{display:flex;flex-wrap:wrap;gap:1rem;align-items:flex-end;justify-content:space-between;margin-bottom:1.25rem}
 .notice{font-size:.85rem;color:var(--amber);border:1px solid var(--amber-dim);background:rgba(245,179,66,.06);border-radius:6px;padding:.4rem .7rem;font-family:var(--mono)}
 .filters{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0 1.25rem}
+.browse{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:1rem 0}
+.browse>span{font-family:var(--mono);font-size:.8rem;color:var(--muted);margin-right:.25rem}
+.browse a.chip{text-decoration:none;display:inline-block}
+.browse a.chip:hover{border-color:var(--amber);color:var(--text)}
 .chip{font:inherit;font-size:.9rem;color:var(--muted);background:transparent;border:1px solid var(--line);border-radius:999px;padding:.35rem .85rem;cursor:pointer}
 .chip[aria-pressed=true]{color:var(--text);border-color:var(--amber);background:rgba(245,179,66,.08)}
 .search{max-width:360px}
@@ -197,6 +208,8 @@ footer a:hover{color:var(--text)}
   .brandlist ul{list-style:none;padding:0;margin:0;display:grid;gap:.4rem}
   .brandlist li{display:flex;justify-content:space-between;gap:1rem;border-top:1px solid var(--line);padding:.6rem 0}
   .brandlist li span{font-family:var(--mono);font-size:.85rem;color:var(--muted)}
+  .brandlist .fine{margin:.5rem 0 0;font-size:.85rem}
+  .related{margin-top:2.5rem}
 </style>
 
 </head>
@@ -223,9 +236,9 @@ footer a:hover{color:var(--text)}
 <h1 class="dev-h">You're on Pro. Thank you.</h1>
 <p style="font-size:1.1rem;margin-top:1rem;color:var(--muted)">Your receipt is on its way from Stripe. Here's what happens next:</p>
 <ul style="color:var(--muted);padding-left:1.2rem">
-  <li><strong style="color:var(--text)">Instant alerts.</strong> When a security fix or new firmware ships for a device you watch, you'll get an email the same day instead of waiting for the weekly digest.</li>
-  <li><strong style="color:var(--text)">Unlimited devices.</strong> Reply to any Firmwarely email with the devices you own and we'll add them to your watch list.</li>
-  <li><strong style="color:var(--text)">End-of-life warnings.</strong> You'll hear when a manufacturer stops updating something you own.</li>
+  <li><strong style="color:var(--text)">Nightly alerts.</strong> After each night's check, you get one email covering every device of yours that changed, security fixes first.</li>
+  <li><strong style="color:var(--text)">Unlimited devices and the dashboard.</strong> Sign in to <a href="/my-devices.html">My devices</a> with the email you paid with, add everything you own, and the <a href="/dashboard.html">dashboard</a> shows what needs attention.</li>
+  <li><strong style="color:var(--text)">End-of-life notices.</strong> You'll hear when a manufacturer says updates are stopping for something you own.</li>
 </ul>
 <p style="color:var(--muted)">Use the same email address you paid with when you sign up for alerts, so we can link them. Manage or cancel any time from the link in your Stripe receipt.</p>
 <p style="margin-top:2rem"><a class="btn" href="/devices/">Browse the devices we watch</a></p>
