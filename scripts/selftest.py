@@ -149,6 +149,17 @@ def test_update_guides():
         got = "flash" if "board" in steps or "flasher" in steps else ("app" if "docker" in steps else "?")
         check(f"guide kind for {dev_id}", got, want)
 
+    # the update list must render as its own numbered list. ".steps" belongs to the
+    # homepage "how it works" grid, which forces three columns and list-style:none onto
+    # anything using it — reusing that class silently unnumbers these steps.
+    css = build_pages.styles()
+    build_pages.STYLES = css          # main() sets this; we render a page without it
+    sample = build_pages.device_page(devs[0])
+    check("update steps use their own class", 'class="upd-steps"' in sample, True)
+    check("update steps don't reuse the homepage .steps grid", 'class="steps"' in sample, False)
+    check("the class is actually styled as a numbered list",
+          "ol.upd-steps" in css and "list-style:decimal" in css, True)
+
     # a device with no download page still has to be actionable
     for dev_id in ("ring-battery-doorbell-plus", "dji-mavic-4-pro"):
         if dev_id in by_id:
