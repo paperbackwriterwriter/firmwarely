@@ -3,10 +3,13 @@
 Builds static pages from devices.json:
 
   devices/<id>/index.html   one page per device  → firmwarely.com/devices/<id>
-  devices/index.html        all devices, grouped by brand
+  devices/index.html        all devices, grouped by category
+  category/<slug>/          one landing page per category
+  brands/<slug>/            one landing page per brand with BRAND_MIN+ devices
   pro/thanks/index.html     post-checkout page
   legal/index.html          privacy + terms
-  sitemap.xml, robots.txt
+  404.html                  Vercel serves it for unknown paths
+  sitemap.xml, robots.txt   per-URL lastmod from the newest release each page shows
 
 Reuses the <style> block from index.html so pages match the site. Run after fetch.py.
 """
@@ -21,6 +24,68 @@ CATS = {"R": "Routers & networking", "N": "NAS & storage", "S": "Smart home & ca
 LABEL = {"critical": "critical fix", "update": "new version", "current": "current",
          "pending": "watching soon", "eol": "end of life", "stale": "no recent release"}
 GUIDES = json.loads((ROOT / "update_guides.json").read_text()) if (ROOT / "update_guides.json").exists() else {}
+
+# Category and brand landing pages: crawlable entry points with real text, so a search for
+# "synology firmware" or "router firmware updates" has a page to land on that isn't a JS table.
+CAT_SLUG = {"R": "routers", "N": "nas", "S": "smart-home", "C": "consoles-drones-ebikes", "M": "makers"}
+CAT_SHORT = {"R": "Router & networking", "N": "NAS & storage", "S": "Smart home & camera",
+             "C": "Console, drone & e-bike", "M": "Maker & open-source"}
+CAT_INTRO = {
+    "R": "Routers, mesh systems, switches and access points sit between everything you own and the internet, which makes them the devices most worth keeping patched. Vendors ship fixes for authentication bypasses and remote code execution several times a year, often quietly. Firmwarely reads each manufacturer's release page every night and records the version, date and what changed.",
+    "N": "A NAS holds your backups, photos and documents and is usually reachable from the whole house, so a missed security update matters more here than almost anywhere else. DSM, QTS, TrueNAS and Unraid all publish structured release notes; Firmwarely checks them nightly and flags the releases that fix vulnerabilities.",
+    "S": "Cameras, doorbells, hubs and smart speakers update through their apps and rarely tell you what changed. Firmwarely tracks the manufacturers' official release notes so you can see the current version, when it shipped and whether it closed a security hole, even for devices that update silently.",
+    "C": "Consoles, drones and e-bikes carry firmware that changes how they behave, from flight-safety databases to battery management. Manufacturers publish release notes, but nobody reads them at the right moment. Firmwarely records each release and emails you when one lands for something you own.",
+    "M": "Open-source firmware and self-hosted software move fast, and a stale version can mean missing features or an unpatched dependency. Firmwarely watches the projects' own release feeds on GitHub and elsewhere, so you see new tags and their notes the morning after they ship.",
+}
+# how a category reads mid-sentence ("NAS" must stay upper-case)
+CAT_PHRASE = {"R": "routers & networking", "N": "NAS & storage", "S": "smart home & cameras",
+              "C": "consoles, drones & e-bikes", "M": "makers & open firmware"}
+BRAND_MIN = 2          # brands with fewer devices don't get their own page (too thin)
+DESC_MAX = 155         # meta descriptions are cut around here in search results
+
+
+def slugify(text):
+    return re.sub(r"(^-|-$)", "", re.sub(r"[^a-z0-9]+", "-", text.lower()))
+
+
+def cat_path(key):
+    return f"/category/{CAT_SLUG[key]}/"
+
+
+def brand_path(brand):
+    return f"/brands/{slugify(brand)}/"
+
+
+def time_tag(d):
+    """A machine-readable date for crawlers, the friendly one for people."""
+    return f'<time datetime="{esc(d)}">{fmt(d)}</time>' if d else "—"
+
+
+def fit_desc(candidates):
+    for t in candidates:
+        if len(t) <= DESC_MAX:
+            return t
+    t = candidates[-1]
+    return t if len(t) <= DESC_MAX else t[: DESC_MAX - 1].rstrip() + "…"
+
+
+def is_live(d):
+    return bool(d.get("version")) and d.get("status") != "pending"
+
+
+def device_list(items, show_brand=True):
+    """The same compact list the catalogue uses: name → version, date."""
+    out = ["<ul>"]
+    for d in items:
+        name = f"{d['brand']} {d['model']}" if show_brand else d["model"]
+        v = f"{esc(d['version'])} · {fmt(d.get('released'))}" if is_live(d) else "watching soon"
+        out.append(f'<li><a href="/devices/{d["id"]}/">{esc(name)}</a><span>{v}</span></li>')
+    out.append("</ul>")
+    return "".join(out)
+
+
+def by_recent(items):
+    return sorted([d for d in items if is_live(d)], key=lambda x: x.get("released") or "", reverse=True)
 
 
 def guide(d):
@@ -89,10 +154,13 @@ def styles():
   .brandlist ul{list-style:none;padding:0;margin:0;display:grid;gap:.4rem}
   .brandlist li{display:flex;justify-content:space-between;gap:1rem;border-top:1px solid var(--line);padding:.6rem 0}
   .brandlist li span{font-family:var(--mono);font-size:.85rem;color:var(--muted)}
+  .brandlist .fine{margin:.5rem 0 0;font-size:.85rem}
+  .related{margin-top:2.5rem}
 """
 
 
-def head(title, desc, path, extra=""):
+def head(title, desc, path, extra="", noindex=False):
+    robots = '<meta name="robots" content="noindex">\n' if noindex else ""
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -101,12 +169,18 @@ def head(title, desc, path, extra=""):
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">
 <link rel="canonical" href="{SITE}{path}">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+{robots}<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<meta property="og:site_name" content="Firmwarely">
 <meta property="og:title" content="{esc(title)}">
 <meta property="og:description" content="{esc(desc)}">
 <meta property="og:url" content="{SITE}{path}">
 <meta property="og:type" content="website">
+<meta property="og:image" content="{SITE}/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{SITE}/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -196,11 +270,12 @@ def fit_title(candidates):
     return t if len(t) <= TITLE_MAX else t[: TITLE_MAX - 1].rstrip() + "…"
 
 
-def device_page(d):
+def device_page(d, ctx=None):
+    ctx = ctx or {}
     name = f"{d['brand']} {d['model']}"
     path = f"/devices/{d['id']}/"
     cat = CATS.get(d["category"], "")
-    live = d.get("version") and d["status"] != "pending"
+    live = is_live(d)
     # plenty of names already end in "firmware" ("Klipper 3D printer firmware"), so only
     # add the word when it isn't there — otherwise the title stutters
     fw = "" if "firmware" in name.lower() else " firmware"
@@ -210,25 +285,61 @@ def device_page(d):
                            f"{name}{fw} — latest version {v} | Firmwarely",
                            f"{name}{fw} {v} | Firmwarely",
                            f"{name}{fw} {v}"])
-        desc = f"Latest {name} version is {d['version']}, released {fmt(d['released'])}. Release notes, version history, and email alerts when a new or critical update ships."
+        desc = fit_desc([f"Latest {name} firmware is {v}, released {fmt(d['released'])}. Release notes, version history, how to update, and email alerts for new or security fixes.",
+                         f"Latest {name} firmware is {v}, released {fmt(d['released'])}. Release notes, version history and update alerts.",
+                         f"{name} firmware {v} ({fmt(d['released'])}): release notes, history and alerts.",
+                         f"{name} firmware {v}: release notes, history and alerts."])
     else:
         title = fit_title([f"{name}{fw} updates — alerts & release tracking | Firmwarely",
                            f"{name}{fw} updates — release tracking | Firmwarely",
                            f"{name}{fw} updates | Firmwarely",
                            f"{name}{fw} updates"])
-        desc = f"Track {name}{fw} updates. Firmwarely watches manufacturer release pages and emails you when a new or security update ships."
-
-    ld = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Devices", "item": f"{SITE}/devices/"},
-        {"@type": "ListItem", "position": 2, "name": name, "item": f"{SITE}{path}"}]}
-    extra = f'<script type="application/ld+json">{json.dumps(ld)}</script>'
+        desc = fit_desc([f"Track {name}{fw} updates. Firmwarely watches the manufacturer's release page and emails you when a new or security update ships.",
+                         f"Track {name}{fw} updates and get an email when a new or security update ships.",
+                         f"{name}{fw} update tracking and alerts."])
 
     notes = d.get("notes") or ""
     hist = list(d.get("history") or [])
     if hist and hist[0].get("version") == d.get("version") and d.get("released"):
         hist[0] = {**hist[0], "released": d["released"]}
-    rows = "".join(f"<tr><td>{esc(h['version'])}</td><td>{fmt(h.get('released'))}</td></tr>" for h in hist[:6]) \
-           or (f"<tr><td>{esc(d['version'])}</td><td>{fmt(d.get('released'))}</td></tr>" if live else "")
+    if not hist and live:
+        hist = [{"version": d["version"], "released": d.get("released")}]
+
+    # Structured data: where this page sits, what it describes, and when it was last refreshed.
+    graph = [
+        {"@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Devices", "item": f"{SITE}/devices/"},
+            {"@type": "ListItem", "position": 2, "name": cat, "item": f"{SITE}{cat_path(d['category'])}"},
+            {"@type": "ListItem", "position": 3, "name": name, "item": f"{SITE}{path}"}]},
+        {"@type": "WebPage", "@id": f"{SITE}{path}", "url": f"{SITE}{path}", "name": title,
+         "description": desc, "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": f"{SITE}/"},
+         **({"dateModified": d["checked"][:10]} if d.get("checked") else {})},
+    ]
+    if live:
+        app = {"@type": "SoftwareApplication", "name": f"{name} firmware", "applicationCategory": "Firmware",
+               "operatingSystem": name, "softwareVersion": d["version"],
+               "author": {"@type": "Organization", "name": d["brand"]}}
+        if d.get("released"):
+            app["datePublished"] = d["released"]
+        if notes:
+            app["releaseNotes"] = notes
+        if d.get("source_url"):
+            app["url"] = d["source_url"]
+        graph.append(app)
+    ld = {"@context": "https://schema.org", "@graph": graph}
+    extra = f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>'
+
+    rows = "".join(f"<tr><td>{esc(h['version'])}</td><td>{time_tag(h.get('released'))}</td></tr>" for h in hist[:6])
+
+    # a sentence of real prose that no other page has
+    if live:
+        first = hist[-1].get("released") if hist else None
+        span = (f" Firmwarely has recorded {len(hist)} versions since {fmt(first)}." if len(hist) > 1 and first else "")
+        intro = (f"The {name} is tracked under {CAT_PHRASE[d['category']]}. Its latest firmware, {d['version']}, "
+                 f"shipped on {fmt(d.get('released'))}.{span}")
+    else:
+        intro = (f"The {name} is on our list under {CAT_PHRASE[d['category']]} but isn't being checked yet. "
+                 f"Sign up and we'll prioritise it.")
 
     steps, upd = guide(d)
     step_html = "".join(f"<li>{esc(x)}</li>" for x in steps)
@@ -244,20 +355,35 @@ def device_page(d):
         Firmwarely links out; it never hosts firmware.</p>
       </div>"""
 
+    # internal links: the rest of the brand, and what else moved recently in this category
+    related = ""
+    siblings = [x for x in ctx.get("by_brand", {}).get(d["brand"], []) if x["id"] != d["id"]]
+    others = [x for x in by_recent(ctx.get("by_cat", {}).get(d["category"], [])) if x["id"] != d["id"]][:6]
+    if siblings or others:
+        related = '<div class="related brandlist">'
+        if siblings:
+            more = (f' <a href="{brand_path(d["brand"])}">All {esc(d["brand"])} devices →</a>'
+                    if len(ctx.get("by_brand", {}).get(d["brand"], [])) >= BRAND_MIN else "")
+            related += f'<h2>More from {esc(d["brand"])}</h2>{device_list(sorted(siblings, key=lambda x: x["model"])[:6], show_brand=False)}<p class="fine">{more}</p>'
+        if others:
+            related += f'<h2>Recently updated in {esc(cat)}</h2>{device_list(others)}<p class="fine"><a href="{cat_path(d["category"])}">All {esc(CAT_PHRASE[d["category"]])} devices →</a></p>'
+        related += "</div>"
+
     body = head(title, desc, path, extra)
     body += f"""
 <div class="wrap">
-  <div class="crumbs"><a href="/devices/">Devices</a> / <a href="/devices/#{d['category']}">{esc(cat)}</a> / {esc(name)}</div>
+  <div class="crumbs"><a href="/devices/">Devices</a> / <a href="{cat_path(d['category'])}">{esc(cat)}</a> / {esc(name)}</div>
   <div class="dev">
     <div>
       <h1 class="dev-h">{esc(name)} firmware</h1>
       <span class="status {d['status']}">{LABEL.get(d['status'], d['status'])}</span>
+      <p style="color:var(--muted);margin:1rem 0 0">{esc(intro)}</p>
       <div class="card" style="margin-top:1.25rem">
         <dl class="kv">
           <dt>Latest firmware</dt><dd>{esc(d['version']) if live else "—"}</dd>
-          <dt>Released</dt><dd>{fmt(d.get('released')) if live else "—"}</dd>
-          <dt>Category</dt><dd>{esc(cat)}</dd>
-          <dt>Last checked</dt><dd>{fmt((d.get('checked') or '')[:10]) if d.get('checked') else "—"}</dd>
+          <dt>Released</dt><dd>{time_tag(d.get('released')) if live else "—"}</dd>
+          <dt>Category</dt><dd><a href="{cat_path(d['category'])}">{esc(cat)}</a></dd>
+          <dt>Last checked</dt><dd>{time_tag((d.get('checked') or '')[:10]) if d.get('checked') else "—"}</dd>
         </dl>
       </div>
       {how}
@@ -267,6 +393,8 @@ def device_page(d):
       {f'<h2 style="margin-top:2rem">Version history</h2><table class="hist">{rows}</table>' if rows else ""}
       <div class="faq">
         <h2 style="margin-top:2rem">FAQ</h2>
+        <h3>What is the latest firmware for the {esc(name)}?</h3>
+        <p>{(f"Version {esc(d['version'])}, released {fmt(d.get('released'))}. " if live else "We haven't recorded a version yet. ")}This page is refreshed every night from the manufacturer's release page.</p>
         <h3>How do I update the {esc(name)}?</h3>
         <p><a href="#update">See the step-by-step above.</a> {esc(HOWTO.get(d['category'], ''))}</p>
         <h3>How does Firmwarely know when there's a new version?</h3>
@@ -274,6 +402,7 @@ def device_page(d):
         <h3>Is this an official {esc(d['brand'])} page?</h3>
         <p>No. Firmwarely is independent. Device and brand names belong to their manufacturers; always download firmware from the official source.</p>
       </div>
+      {related}
     </div>
     <aside>
       <div class="card">
@@ -292,13 +421,103 @@ def device_page(d):
     return body
 
 
-def index_page(devices):
+def category_page(key, devices, brands):
+    items = [d for d in devices if d["category"] == key]
+    cat, short = CATS[key], CAT_SHORT[key]
+    live = [d for d in items if is_live(d)]
+    top_brands = [b for b, _ in sorted(((b, n) for b, n in brands.items() if n >= BRAND_MIN and any(d["brand"] == b for d in items)),
+                                       key=lambda x: -x[1])][:8]
+    names = ", ".join(top_brands[:5])
+    title = fit_title([f"{short} firmware updates — {names} | Firmwarely",
+                       f"{short} firmware updates | Firmwarely",
+                       f"{short} firmware updates"])
+    desc = fit_desc([f"Latest firmware for {len(items)} {CAT_PHRASE[key]} devices from {names} and more, checked nightly. Version, release date, what changed and how to update.",
+                     f"Latest firmware for {len(items)} {CAT_PHRASE[key]} devices, checked nightly, with release notes and update guides.",
+                     f"{cat} firmware versions, release notes and update alerts."])
+    recent = by_recent(items)[:8]
+    ld = {"@context": "https://schema.org", "@graph": [
+        {"@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Devices", "item": f"{SITE}/devices/"},
+            {"@type": "ListItem", "position": 2, "name": cat, "item": f"{SITE}{cat_path(key)}"}]},
+        {"@type": "ItemList", "name": f"{cat} firmware", "numberOfItems": len(items),
+         "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": f"{d['brand']} {d['model']}",
+                              "url": f"{SITE}/devices/{d['id']}/"} for i, d in enumerate(items)]}]}
+    extra = f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>'
+    brand_links = "".join(f'<a class="chip" href="{brand_path(b)}">{esc(b)}</a>' for b in top_brands)
+    other_cats = "".join(f'<a class="chip" href="{cat_path(k)}">{esc(CATS[k])}</a>' for k in CATS if k != key)
+    return head(title, desc, cat_path(key), extra) + f"""
+<div class="wrap brandlist" style="padding-top:2rem">
+  <div class="crumbs"><a href="/devices/">Devices</a> / {esc(cat)}</div>
+  <h1 class="dev-h">{esc(cat)} firmware updates</h1>
+  <p style="color:var(--muted);max-width:70ch">{esc(CAT_INTRO[key])}</p>
+  <p style="color:var(--muted)">{len(items)} devices in this category, {len(live)} with a recorded version.</p>
+  {f'<div class="browse"><span>Brands</span>{brand_links}</div>' if brand_links else ""}
+  {f'<h2>Latest releases</h2>{device_list(recent)}' if recent else ""}
+  <h2>All {esc(CAT_PHRASE[key])} devices</h2>
+  {device_list(sorted(items, key=lambda x: (not is_live(x), x["brand"], x["model"])))}
+  <div class="browse" style="margin-top:2rem"><span>Other categories</span>{other_cats}</div>
+</div>
+""" + signup() + FOOT
+
+
+def brand_page(brand, items):
+    live = by_recent(items)
+    cats = sorted({CATS[d["category"]] for d in items})
+    title = fit_title([f"{brand} firmware updates — {len(items)} devices tracked | Firmwarely",
+                       f"{brand} firmware updates | Firmwarely",
+                       f"{brand} firmware updates"])
+    newest = live[0] if live else None
+    desc = fit_desc([(f"Latest {brand} firmware for {len(items)} devices, checked nightly. Newest release: {newest['model']} {newest['version']} on {fmt(newest.get('released'))}." if newest
+                      else f"{brand} firmware for {len(items)} devices, tracked nightly with release notes and update guides."),
+                     f"{brand} firmware versions, release notes and update alerts for {len(items)} devices.",
+                     f"{brand} firmware updates and alerts."])
+    ld = {"@context": "https://schema.org", "@graph": [
+        {"@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Devices", "item": f"{SITE}/devices/"},
+            {"@type": "ListItem", "position": 2, "name": brand, "item": f"{SITE}{brand_path(brand)}"}]},
+        {"@type": "ItemList", "name": f"{brand} firmware", "numberOfItems": len(items),
+         "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": f"{d['brand']} {d['model']}",
+                              "url": f"{SITE}/devices/{d['id']}/"} for i, d in enumerate(items)]}]}
+    extra = f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>'
+    intro = (f"Firmwarely tracks {len(items)} {brand} devices across {', '.join(CAT_PHRASE[k] for k in CATS if any(d['category'] == k for d in items))}. "
+             + (f"The most recent {brand} release we recorded is {newest['model']} {newest['version']} on {fmt(newest.get('released'))}. " if newest else "")
+             + "Each device page has the current version, release notes, version history and how to update.")
+    cat_links = "".join(f'<a class="chip" href="{cat_path(k)}">{esc(CATS[k])}</a>' for k in CATS if any(d["category"] == k for d in items))
+    return head(title, desc, brand_path(brand), extra) + f"""
+<div class="wrap brandlist" style="padding-top:2rem">
+  <div class="crumbs"><a href="/devices/">Devices</a> / {esc(brand)}</div>
+  <h1 class="dev-h">{esc(brand)} firmware updates</h1>
+  <p style="color:var(--muted);max-width:70ch">{esc(intro)}</p>
+  <div class="browse"><span>Categories</span>{cat_links}</div>
+  <h2>{esc(brand)} devices</h2>
+  {device_list(sorted(items, key=lambda x: (not is_live(x), x["model"])), show_brand=False)}
+</div>
+""" + signup(brand) + FOOT
+
+
+def not_found_page(devices):
+    cats = "".join(f'<a class="chip" href="{cat_path(k)}">{esc(CATS[k])}</a>' for k in CATS)
+    recent = by_recent(devices)[:6]
+    return head("Page not found | Firmwarely", "That page doesn't exist. Browse the devices Firmwarely tracks.", "/404.html", noindex=True) + f"""
+<div class="wrap brandlist" style="padding:3rem 0 4rem;max-width:760px">
+  <h1 class="dev-h">That page isn't here</h1>
+  <p style="color:var(--muted)">The link may be old, or the device may be listed under a different name. Try a search, or browse by category.</p>
+  <form action="/" method="get" class="search" style="margin:1.25rem 0"><label class="sr" for="q">Search devices</label><input id="q" name="q" type="search" placeholder="Search brand or model"></form>
+  <div class="browse"><span>Categories</span>{cats}</div>
+  <h2>Recently updated</h2>
+  {device_list(recent)}
+  <p style="margin-top:1.5rem"><a class="btn ghost" href="/devices/">Every device we watch</a></p>
+</div>
+""" + FOOT
+
+
+def index_page(devices, brand_pages=()):
     parts = []
     for cat_key, cat_name in CATS.items():
         items = [d for d in devices if d["category"] == cat_key]
         if not items:
             continue
-        parts.append(f'<h2 id="{cat_key}">{esc(cat_name)}</h2><ul>')
+        parts.append(f'<h2 id="{cat_key}"><a href="{cat_path(cat_key)}">{esc(cat_name)}</a></h2><ul>')
         for d in sorted(items, key=lambda x: (x["status"] == "pending", x["brand"], x["model"])):
             v = esc(d["version"]) if d.get("version") and d["status"] != "pending" else "watching soon"
             parts.append(f'<li><a href="/devices/{d["id"]}/">{esc(d["brand"])} {esc(d["model"])}</a><span>{v}</span></li>')
@@ -309,13 +528,15 @@ def index_page(devices):
 <div class="wrap brandlist" style="padding-top:2rem">
   <h1 class="dev-h">Every device we watch</h1>
   <p style="color:var(--muted)">Checked every night. Tap a device for its latest firmware, release notes and history.</p>
+  <div class="browse"><span>Categories</span>{''.join(f'<a class="chip" href="{cat_path(k)}">{esc(v)}</a>' for k, v in CATS.items())}</div>
+  <div class="browse"><span>Brands</span>{''.join(f'<a class="chip" href="{brand_path(b)}">{esc(b)}</a>' for b in brand_pages)}</div>
   {''.join(parts)}
 </div>
 """ + signup() + FOOT
 
 
-def simple_page(title, desc, path, body):
-    return head(title, desc, path) + f"""
+def simple_page(title, desc, path, body, noindex=False):
+    return head(title, desc, path, noindex=noindex) + f"""
 <div class="wrap" style="padding:3rem 0 4rem;max-width:760px">
 {body}
 </div>
@@ -327,13 +548,13 @@ def thanks_page():
 <h1 class="dev-h">You're on Pro. Thank you.</h1>
 <p style="font-size:1.1rem;margin-top:1rem;color:var(--muted)">Your receipt is on its way from Stripe. Here's what happens next:</p>
 <ul style="color:var(--muted);padding-left:1.2rem">
-  <li><strong style="color:var(--text)">Instant alerts.</strong> When a security fix or new firmware ships for a device you watch, you'll get an email the same day instead of waiting for the weekly digest.</li>
-  <li><strong style="color:var(--text)">Unlimited devices.</strong> Reply to any Firmwarely email with the devices you own and we'll add them to your watch list.</li>
-  <li><strong style="color:var(--text)">End-of-life warnings.</strong> You'll hear when a manufacturer stops updating something you own.</li>
+  <li><strong style="color:var(--text)">Nightly alerts.</strong> After each night's check, you get one email covering every device of yours that changed, security fixes first.</li>
+  <li><strong style="color:var(--text)">Unlimited devices and the dashboard.</strong> Sign in to <a href="/my-devices.html">My devices</a> with the email you paid with, add everything you own, and the <a href="/dashboard.html">dashboard</a> shows what needs attention.</li>
+  <li><strong style="color:var(--text)">End-of-life notices.</strong> You'll hear when a manufacturer says updates are stopping for something you own.</li>
 </ul>
 <p style="color:var(--muted)">Use the same email address you paid with when you sign up for alerts, so we can link them. Manage or cancel any time from the link in your Stripe receipt.</p>
 <p style="margin-top:2rem"><a class="btn" href="/devices/">Browse the devices we watch</a></p>
-""")
+""", noindex=True)
 
 
 def product_link(d):
@@ -372,27 +593,55 @@ def main():
     STYLES = styles()
     data = json.loads((ROOT / "devices.json").read_text())
     devices = data["devices"]
+    by_brand, by_cat = {}, {}
+    for d in devices:
+        by_brand.setdefault(d["brand"], []).append(d)
+        by_cat.setdefault(d["category"], []).append(d)
+    ctx = {"by_brand": by_brand, "by_cat": by_cat}
+    brand_counts = {b: len(v) for b, v in by_brand.items()}
+    brand_pages = sorted((b for b, n in brand_counts.items() if n >= BRAND_MIN), key=lambda b: (-brand_counts[b], b))
+
     out = ROOT / "devices"
     out.mkdir(exist_ok=True)
     for d in devices:
         p = out / d["id"]
         p.mkdir(exist_ok=True)
-        (p / "index.html").write_text(device_page(d))
-    (out / "index.html").write_text(index_page(devices))
+        (p / "index.html").write_text(device_page(d, ctx))
+    (out / "index.html").write_text(index_page(devices, brand_pages))
+    for key in CATS:
+        p = ROOT / "category" / CAT_SLUG[key]
+        p.mkdir(parents=True, exist_ok=True)
+        (p / "index.html").write_text(category_page(key, devices, brand_counts))
+    for b in brand_pages:
+        p = ROOT / "brands" / slugify(b)
+        p.mkdir(parents=True, exist_ok=True)
+        (p / "index.html").write_text(brand_page(b, by_brand[b]))
     for folder, content in (("pro/thanks", thanks_page()), ("legal", legal_page())):
         d = ROOT / folder
         d.mkdir(parents=True, exist_ok=True)
         (d / "index.html").write_text(content)
+    (ROOT / "404.html").write_text(not_found_page(devices))
 
+    # sitemap: one entry per indexable page, with the date its content last actually moved
     today = datetime.now(timezone.utc).date().isoformat()
-    urls = ([f"{SITE}/", f"{SITE}/devices/", f"{SITE}/my-devices.html", f"{SITE}/legal/"]
-            + [f"{SITE}/devices/{d['id']}/" for d in devices])
+    gen = (data.get("generated") or today)[:10]
+
+    def dev_mod(d):
+        dates = [x.get("released") for x in (d.get("history") or []) if x.get("released")] + [d.get("released")]
+        dates = [x for x in dates if x]
+        return max(dates) if dates else gen
+
+    entries = [(f"{SITE}/", gen), (f"{SITE}/devices/", gen), (f"{SITE}/my-devices.html", today), (f"{SITE}/legal/", "2026-09-13")]
+    entries += [(f"{SITE}{cat_path(k)}", max([dev_mod(d) for d in by_cat.get(k, [])] or [gen])) for k in CATS]
+    entries += [(f"{SITE}{brand_path(b)}", max(dev_mod(d) for d in by_brand[b])) for b in brand_pages]
+    entries += [(f"{SITE}/devices/{d['id']}/", dev_mod(d)) for d in devices]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    sm += [f"  <url><loc>{u}</loc><lastmod>{today}</lastmod></url>" for u in urls]
+    sm += [f"  <url><loc>{u}</loc><lastmod>{m}</lastmod></url>" for u, m in entries]
     sm.append("</urlset>")
     (ROOT / "sitemap.xml").write_text("\n".join(sm) + "\n")
-    (ROOT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n")
-    print(f"built {len(devices)} device pages + index, sitemap ({len(urls)} urls)")
+    (ROOT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nDisallow: /api/\nSitemap: {SITE}/sitemap.xml\n")
+    print(f"built {len(devices)} device pages, {len(CATS)} category pages, {len(brand_pages)} brand pages, "
+          f"index, 404, sitemap ({len(entries)} urls)")
 
 
 if __name__ == "__main__":
