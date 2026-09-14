@@ -1,5 +1,6 @@
 // POST {email} -> emails a sign-in link.
 const fw = require("../lib/fw");
+const rl = require("../lib/ratelimit");
 
 module.exports = async function (req, res) {
   if (req.method !== "POST") return fw.json(res, 405, { error: "POST only" });
@@ -7,12 +8,13 @@ module.exports = async function (req, res) {
   const email = fw.normEmail(body.email);
   if (!fw.validEmail(email)) return fw.json(res, 400, { error: "Enter a valid email address." });
 
-  let sub = await fw.getSubscriber(email);
-  if (!sub) {
-    await fw.createSubscriber(email);
-    sub = await fw.getSubscriber(email);
+  // Anyone can type any address here, so this endpoint must not be a way to make us
+  // email strangers on demand. Throttle per address and per source before sending.
+  if (!rl.allow("email:" + email, 3, 15 * 60 * 1000) || !rl.allow("ip:" + rl.clientIp(req), 12, 15 * 60 * 1000)) {
+    return fw.json(res, 429, { error: "Too many sign-in links requested. Check your inbox, or try again in a few minutes." });
   }
-  if (!sub) return fw.json(res, 502, { error: "Couldn't set up your account just now. Try again in a minute." });
+  // The account itself is created when the link is clicked (auth-verify) — proof the
+  // address is theirs — not here, where a stranger could subscribe anyone to the list.
 
   const next = fw.safeNext(String(body.next || ""));   // where to land after the click
   let token;
