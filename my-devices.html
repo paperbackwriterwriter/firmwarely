@@ -34,7 +34,6 @@ p{margin:0 0 1rem;max-width:62ch}
 .wrap{max-width:var(--w);margin:0 auto;padding:0 1.25rem}
 :focus-visible{outline:2px solid var(--amber);outline-offset:3px}
 
-/* header (same as index) */
 header{position:sticky;top:0;z-index:5;background:rgba(12,17,23,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:60px;gap:1rem}
 .brand{font-family:var(--mono);font-weight:600;text-decoration:none;font-size:1.05rem;display:flex;align-items:center;gap:.55rem}
@@ -44,31 +43,41 @@ header{position:sticky;top:0;z-index:5;background:rgba(12,17,23,.92);backdrop-fi
 .nav ul a:hover,.nav ul a[aria-current]{color:var(--text)}
 .btn{font-family:var(--sans);font-weight:600;font-size:.95rem;border:1px solid var(--amber);background:var(--amber);color:#1A1204;padding:.6rem 1rem;border-radius:6px;cursor:pointer;text-decoration:none;display:inline-block}
 .btn:hover{background:#FFC55A}
+.btn:disabled{opacity:.6;cursor:default}
 .btn.ghost{background:transparent;color:var(--text);border-color:var(--line)}
 .btn.ghost:hover{border-color:var(--muted)}
 .btn.sm{font-size:.85rem;padding:.4rem .75rem}
 @media (max-width:640px){.nav ul li.hide-m{display:none}}
 
-/* page */
-.top{padding:3rem 0 2rem}
+.top{padding:3rem 0 1.5rem}
 .top p.lede{font-size:1.1rem;color:var(--muted);margin:1rem 0 0}
 
-/* summary line — mono, like the notice on index */
+/* account box */
+.account{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;justify-content:space-between;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:.85rem 1rem;margin:0 0 1.25rem}
+.account form{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;flex:1;min-width:260px}
+.account form input{flex:1;min-width:200px}
+.account .who{font-family:var(--mono);font-size:.85rem;color:var(--muted)}
+.account .who b{color:var(--text);font-weight:500}
+.account .who .tag{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:.05rem .55rem;margin-left:.4rem;font-size:.75rem}
+.account .who .tag.pro{border-color:var(--amber);color:var(--amber)}
+.account .msg{font-size:.88rem;width:100%}
+.account .msg.ok{color:var(--green);font-family:var(--mono)}
+.account .msg.err{color:var(--red)}
+.account .hint{font-size:.85rem;color:var(--muted);width:100%;margin:0}
+
 .summary{font-family:var(--mono);font-size:.92rem;border:1px solid var(--line);border-left:3px solid var(--muted);border-radius:6px;padding:.7rem 1rem;margin:0 0 1.5rem;color:var(--text)}
 .summary.update{border-left-color:var(--amber)}
 .summary.critical{border-left-color:var(--red)}
 .summary.current{border-left-color:var(--green)}
 
-/* add form */
 form.add{display:grid;grid-template-columns:1fr;gap:.75rem;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:1rem;margin:0 0 1.75rem}
 @media (min-width:680px){form.add{grid-template-columns:1.4fr 1fr auto;align-items:end}}
 label{display:block;font-size:.82rem;color:var(--muted);margin-bottom:.35rem}
-select,input[type=text]{font:inherit;font-size:1rem;color:var(--text);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:.6rem .8rem;width:100%}
+select,input[type=text],input[type=email]{font:inherit;font-size:1rem;color:var(--text);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:.6rem .8rem;width:100%}
 input::placeholder{color:#5E6C78}
 select{-webkit-appearance:none;appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);background-position:calc(100% - 18px) 55%,calc(100% - 13px) 55%;background-size:5px 5px;background-repeat:no-repeat;padding-right:2.2rem}
 optgroup,option{background:var(--panel);color:var(--text)}
 
-/* the list — same treatment as the release feed on index */
 .feed{background:#080C10;border:1px solid var(--line);border-radius:8px;font-family:var(--mono);font-size:.85rem;line-height:1.6;overflow:hidden;box-shadow:0 30px 60px -30px rgba(0,0,0,.9)}
 .feed .bar{display:flex;align-items:center;gap:.5rem;padding:.55rem .9rem;border-bottom:1px solid var(--line);color:var(--muted);font-size:.78rem}
 .feed .bar b{color:var(--text);font-weight:500}
@@ -97,12 +106,11 @@ optgroup,option{background:var(--panel);color:var(--text)}
 .tools{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.25rem 0 .5rem}
 .fine{font-size:.85rem;color:var(--muted)}
 
-/* pro nudge — same as the pro plan card */
 .plan{border:1px solid var(--amber);border-radius:10px;padding:1.5rem;margin:3rem 0 0;max-width:560px}
 .plan h3{font-size:1.05rem;font-weight:500}
 .plan p{color:var(--muted);margin:.5rem 0 1rem}
 
-.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--panel);border:1px solid var(--line);color:var(--text);padding:.6rem 1rem;border-radius:6px;font-family:var(--mono);font-size:.85rem;opacity:0;pointer-events:none;transition:opacity .15s}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--panel);border:1px solid var(--line);color:var(--text);padding:.6rem 1rem;border-radius:6px;font-family:var(--mono);font-size:.85rem;opacity:0;pointer-events:none;transition:opacity .15s;max-width:calc(100% - 2rem);text-align:center}
 .toast.show{opacity:1}
 @media (prefers-reduced-motion:reduce){.toast{transition:none}}
 
@@ -129,10 +137,20 @@ footer a:hover{color:var(--text)}
 <main>
   <div class="wrap top">
     <h1>My devices</h1>
-    <p class="lede">Add the gear you own and the firmware it's running. Firmwarely compares it with the newest release we've seen, so you know exactly what needs updating. Your list stays in this browser; copy the link to open it anywhere else.</p>
+    <p class="lede">Add the gear you own and the firmware it's running. Firmwarely compares it with the newest release we've seen, so you know exactly what needs updating. Sign in to save your list and get emails about only your devices.</p>
   </div>
 
   <div class="wrap">
+    <div class="account" id="account">
+      <form id="loginForm" novalidate>
+        <label class="sr" for="loginEmail">Email address</label>
+        <input id="loginEmail" type="email" placeholder="you@example.com" autocomplete="email" required>
+        <button class="btn" type="submit" id="loginBtn">Email me a sign-in link</button>
+        <p class="hint">No password. We email you a link; click it and you're in.</p>
+        <div class="msg" id="loginMsg" aria-live="polite"></div>
+      </form>
+    </div>
+
     <div class="summary" id="summary">loading catalog…</div>
 
     <form class="add" id="addForm">
@@ -158,9 +176,9 @@ footer a:hover{color:var(--text)}
     </div>
     <p class="fine">Don't see your device? <a href="/#signup">Tell us the model</a> and we'll add it to the tracker.</p>
 
-    <div class="plan">
+    <div class="plan" id="proBox">
       <h3>Know the day any of these gets a new release</h3>
-      <p>Pro emails you the same day a new firmware or security fix is spotted for a device you track — instead of waiting for the weekly digest.</p>
+      <p>Pro emails you the same day a new firmware or security fix is spotted for a device on your list, and removes the 3-device limit.</p>
       <a class="btn" href="/#pricing">See Pro</a>
     </div>
   </div>
@@ -177,22 +195,33 @@ footer a:hover{color:var(--text)}
 <script>
 (function () {
   var KEY = "firmwarely:mydevices";
+  var FREE_LIMIT = 3;
   var CATS = { R: "Routers & networking", N: "NAS & storage", S: "Smart home & cameras", C: "Consoles, drones & e-bikes", M: "Makers & open firmware" };
   var catalog = {};
   var mine = load();
+  var user = null;          // {email, plan} when signed in
+  var saveTimer = null;
 
   function load() {
     try { return JSON.parse(localStorage.getItem(KEY) || "[]"); } catch (e) { return []; }
   }
-  function save() { localStorage.setItem(KEY, JSON.stringify(mine)); }
+  function save() {
+    localStorage.setItem(KEY, JSON.stringify(mine));
+    if (user) {
+      clearTimeout(saveTimer);
+      saveTimer = setTimeout(syncUp, 400);
+    }
+  }
   function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
   function toast(msg) {
     var t = document.getElementById("toast");
     t.textContent = msg; t.classList.add("show");
-    clearTimeout(t._h); t._h = setTimeout(function () { t.classList.remove("show"); }, 1800);
+    clearTimeout(t._h); t._h = setTimeout(function () { t.classList.remove("show"); }, 2200);
   }
   function fmtDate(s) { return s ? new Date(s + "T00:00:00").toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" }) : ""; }
+  function validEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
 
+  /* ---------- version comparison ---------- */
   function norm(v) { return String(v || "").trim().toLowerCase().replace(/^v(?=\d)/, ""); }
   function parts(v) { return norm(v).split(/[^0-9a-z]+/).filter(Boolean); }
   function compare(a, b) {
@@ -207,7 +236,6 @@ footer a:hover{color:var(--text)}
     }
     return 0;
   }
-
   function verdict(entry, dev) {
     if (!dev || !dev.version) return { cls: "pending", text: "watching soon" };
     if (!norm(entry.version)) return { cls: "pending", text: "enter your version" };
@@ -217,6 +245,81 @@ footer a:hover{color:var(--text)}
     return { cls: "pending", text: "newer than our latest" };
   }
 
+  /* ---------- account ---------- */
+  function renderAccount() {
+    var box = document.getElementById("account");
+    if (!user) return;
+    var tag = user.plan === "pro" ? '<span class="tag pro">Pro</span>' : '<span class="tag">Free · up to ' + FREE_LIMIT + ' devices</span>';
+    box.innerHTML =
+      '<div class="who">Signed in as <b>' + esc(user.email) + '</b>' + tag + '</div>' +
+      '<button class="btn ghost sm" type="button" id="logoutBtn">Sign out</button>';
+    document.getElementById("logoutBtn").addEventListener("click", function () {
+      fetch("/api/logout", { method: "POST" }).then(function () {
+        user = null; location.reload();
+      });
+    });
+    if (user.plan === "pro") document.getElementById("proBox").hidden = true;
+  }
+
+  function atLimit() { return user && user.plan !== "pro" && mine.length >= FREE_LIMIT; }
+
+  function syncUp() {
+    if (!user) return;
+    fetch("/api/me", {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ devices: mine })
+    }).then(function (r) { return r.json().then(function (d) { return { s: r.status, d: d }; }); })
+      .then(function (x) {
+        if (x.s === 401) { user = null; toast("Signed out. Sign in again to keep syncing."); location.reload(); return; }
+        if (x.s === 403) { toast(x.d.error || "Free plan limit reached."); return; }
+        if (x.s !== 200) toast(x.d.error || "Couldn't save to your account.");
+      }).catch(function () { toast("Couldn't reach the server; saved locally."); });
+  }
+
+  function loadAccount() {
+    return fetch("/api/me", { cache: "no-store" })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) {
+        if (!d || !d.ok) return;
+        user = { email: d.email, plan: d.plan };
+        var server = d.devices || [];
+        if (server.length) {
+          // server wins; merge in any local-only devices (room permitting)
+          var ids = {};
+          server.forEach(function (e) { ids[e.id] = true; });
+          mine.forEach(function (e) { if (!ids[e.id]) server.push(e); });
+          mine = server;
+          if (user.plan !== "pro" && mine.length > FREE_LIMIT) mine = mine.slice(0, FREE_LIMIT);
+          localStorage.setItem(KEY, JSON.stringify(mine));
+          if (mine.length !== d.devices.length) syncUp();
+        } else if (mine.length) {
+          if (user.plan !== "pro" && mine.length > FREE_LIMIT) { mine = mine.slice(0, FREE_LIMIT); localStorage.setItem(KEY, JSON.stringify(mine)); }
+          syncUp();
+        }
+        renderAccount();
+      }).catch(function () {});
+  }
+
+  document.getElementById("loginForm").addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var email = document.getElementById("loginEmail").value.trim();
+    var msg = document.getElementById("loginMsg");
+    var btn = document.getElementById("loginBtn");
+    if (!validEmail(email)) { msg.className = "msg err"; msg.textContent = "Enter a valid email address."; return; }
+    btn.disabled = true; msg.className = "msg"; msg.textContent = "Sending…";
+    fetch("/api/auth-request", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email: email })
+    }).then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
+      .then(function (x) {
+        if (x.ok) { msg.className = "msg ok"; msg.textContent = "Check " + email + " for your sign-in link. It works for 15 minutes."; }
+        else { msg.className = "msg err"; msg.textContent = x.d.error || "Couldn't send the link just now."; btn.disabled = false; }
+      }).catch(function () { msg.className = "msg err"; msg.textContent = "Couldn't reach the server."; btn.disabled = false; });
+  });
+
+  /* ---------- list ---------- */
   function render() {
     var list = document.getElementById("list");
     var sum = document.getElementById("summary");
@@ -306,7 +409,10 @@ footer a:hover{color:var(--text)}
     if (!id) return;
     var ex = mine.filter(function (e) { return e.id === id; })[0];
     if (ex) { ex.version = ver || ex.version; toast("Updated"); }
-    else { mine.push({ id: id, version: ver }); toast("Added"); }
+    else {
+      if (atLimit()) { toast("Free accounts can save " + FREE_LIMIT + " devices. Upgrade to Pro for unlimited."); return; }
+      mine.push({ id: id, version: ver }); toast("Added");
+    }
     save(); render();
     document.getElementById("verIn").value = "";
   });
@@ -337,16 +443,22 @@ footer a:hover{color:var(--text)}
 
   document.getElementById("year").textContent = new Date().getFullYear();
 
+  var q = new URLSearchParams(location.search);
+  if (q.get("signin") === "ok") { toast("Signed in"); history.replaceState(null, "", location.pathname); }
+  if (q.get("signin") === "expired") { toast("That sign-in link expired. Request a new one."); history.replaceState(null, "", location.pathname); }
+
   fetch("/devices.json", { cache: "no-store" })
     .then(function (r) { return r.json(); })
     .then(function (data) {
       (data.devices || []).forEach(function (d) { catalog[d.id] = d; });
       fillSelect();
       importFromHash();
-      render();
+      return loadAccount();
     })
+    .then(render)
     .catch(function () {
       document.getElementById("summary").textContent = "couldn't load the device catalog — refresh to try again";
+      render();
     });
 })();
 </script>
