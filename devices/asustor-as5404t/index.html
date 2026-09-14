@@ -209,6 +209,27 @@ footer a:hover{color:var(--text)}
   .brandlist li span{font-family:var(--mono);font-size:.85rem;color:var(--muted)}
   .brandlist .fine{margin:.5rem 0 0;font-size:.85rem}
   .related{margin-top:2.5rem}
+  .pro-hero{display:grid;grid-template-columns:1fr;gap:2.5rem;align-items:center;padding:3.5rem 0 2.5rem}
+  @media(min-width:900px){.pro-hero{grid-template-columns:1.1fr 1fr}}
+  .pro-hero .kicker{font-family:var(--mono);color:var(--amber);font-size:.85rem;letter-spacing:.04em;text-transform:uppercase;margin:0 0 .75rem}
+  .pro-hero h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.08;margin:0 0 1rem;letter-spacing:-.02em}
+  .pro-hero .lede{font-size:1.15rem;color:var(--muted);margin:0 0 1.5rem;max-width:56ch}
+  .pro-hero form{display:grid;gap:.6rem;max-width:460px}
+  .pro-hero form .row{display:flex;gap:.6rem;flex-wrap:wrap}
+  .pro-hero form input[type=email]{flex:1;min-width:220px}
+  .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem}
+  @media(min-width:700px){.gallery{grid-template-columns:repeat(4,1fr)}}
+  .gallery a{display:flex;flex-direction:column;align-items:center;gap:.6rem;padding:1.1rem .75rem;border:1px solid var(--line);border-radius:12px;background:var(--panel);color:var(--muted);text-decoration:none;font-family:var(--mono);font-size:.78rem;text-align:center;transition:border-color .15s,transform .15s}
+  .gallery a:hover{border-color:var(--amber);color:var(--text);transform:translateY(-2px)}
+  .gallery svg{width:56px;height:56px;color:var(--amber);fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .gallery svg .g{stroke:var(--green)}
+  .gallery svg .f{fill:var(--green);stroke:none}
+  .pro-perks{display:grid;grid-template-columns:1fr;gap:1rem;margin:1.5rem 0 0}
+  @media(min-width:700px){.pro-perks{grid-template-columns:repeat(3,1fr)}}
+  .pro-perks .card h3{margin:0 0 .35rem;font-size:1rem}
+  .pro-perks .card p{margin:0;color:var(--muted);font-size:.95rem}
+  .pro-price{font-family:var(--mono);font-size:1.6rem;font-weight:600;margin:0 0 .25rem}
+  .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "NAS & storage", "item": "https://www.firmwarely.com/category/nas/"}, {"@type": "ListItem", "position": 3, "name": "Asustor Lockerstor 4 (AS5404T)", "item": "https://www.firmwarely.com/devices/asustor-as5404t/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/asustor-as5404t/", "url": "https://www.firmwarely.com/devices/asustor-as5404t/", "name": "Asustor Lockerstor 4 (AS5404T) firmware updates | Firmwarely", "description": "Track Asustor Lockerstor 4 (AS5404T) firmware updates and get an email when a new or security update ships.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}}]}</script>
 </head>

@@ -289,6 +289,12 @@ def test_landing_pages():
     check("thanks page is noindex", 'content="noindex"' in build_pages.thanks_page(), True)
     check("social image exists", Path("og.png").exists(), True)
 
+    pro = build_pages.pro_page()
+    check("pro waitlist page signs people up as pro", 'name="plan" value="pro"' in pro, True)
+    check("pro waitlist page has the email form the footer script drives", 'id="signup-form"' in pro and 'name="email"' in pro, True)
+    check("pro waitlist page shows every device illustration", pro.count("<svg viewBox=\"0 0 64 64\""), len(build_pages.DEVICE_ART))
+    check("homepage Pro button falls back to /pro/, not the footer form", 'pb.href = "/pro/"' in Path("index.html").read_text(), True)
+
 
 for t in (test_compare, test_new_release, test_saved_devices, test_routing, test_forced_guard,
           test_update_guides, test_clean, test_classify, test_homepage_honesty, test_generated_pages,

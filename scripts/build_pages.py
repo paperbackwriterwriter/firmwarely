@@ -156,6 +156,27 @@ def styles():
   .brandlist li span{font-family:var(--mono);font-size:.85rem;color:var(--muted)}
   .brandlist .fine{margin:.5rem 0 0;font-size:.85rem}
   .related{margin-top:2.5rem}
+  .pro-hero{display:grid;grid-template-columns:1fr;gap:2.5rem;align-items:center;padding:3.5rem 0 2.5rem}
+  @media(min-width:900px){.pro-hero{grid-template-columns:1.1fr 1fr}}
+  .pro-hero .kicker{font-family:var(--mono);color:var(--amber);font-size:.85rem;letter-spacing:.04em;text-transform:uppercase;margin:0 0 .75rem}
+  .pro-hero h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.08;margin:0 0 1rem;letter-spacing:-.02em}
+  .pro-hero .lede{font-size:1.15rem;color:var(--muted);margin:0 0 1.5rem;max-width:56ch}
+  .pro-hero form{display:grid;gap:.6rem;max-width:460px}
+  .pro-hero form .row{display:flex;gap:.6rem;flex-wrap:wrap}
+  .pro-hero form input[type=email]{flex:1;min-width:220px}
+  .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem}
+  @media(min-width:700px){.gallery{grid-template-columns:repeat(4,1fr)}}
+  .gallery a{display:flex;flex-direction:column;align-items:center;gap:.6rem;padding:1.1rem .75rem;border:1px solid var(--line);border-radius:12px;background:var(--panel);color:var(--muted);text-decoration:none;font-family:var(--mono);font-size:.78rem;text-align:center;transition:border-color .15s,transform .15s}
+  .gallery a:hover{border-color:var(--amber);color:var(--text);transform:translateY(-2px)}
+  .gallery svg{width:56px;height:56px;color:var(--amber);fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .gallery svg .g{stroke:var(--green)}
+  .gallery svg .f{fill:var(--green);stroke:none}
+  .pro-perks{display:grid;grid-template-columns:1fr;gap:1rem;margin:1.5rem 0 0}
+  @media(min-width:700px){.pro-perks{grid-template-columns:repeat(3,1fr)}}
+  .pro-perks .card h3{margin:0 0 .35rem;font-size:1rem}
+  .pro-perks .card p{margin:0;color:var(--muted);font-size:.95rem}
+  .pro-price{font-family:var(--mono);font-size:1.6rem;font-weight:600;margin:0 0 .25rem}
+  .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 """
 
 
@@ -495,6 +516,62 @@ def brand_page(brand, items):
 """ + signup(brand) + FOOT
 
 
+# Stylised line-art of the device families we track: drawn here so the page needs no
+# third-party images and nothing we don't have the rights to.
+DEVICE_ART = [
+    ("Routers & mesh", "R", '<rect x="6" y="34" width="52" height="16" rx="4"/><path d="M16 34V16M48 34V16"/><circle cx="16" cy="13" r="2.5"/><circle cx="48" cy="13" r="2.5"/><circle class="f" cx="18" cy="42" r="1.8"/><circle class="f" cx="26" cy="42" r="1.8"/><circle cx="34" cy="42" r="1.8"/><path d="M30 26a8 8 0 0 1 4 0M27 21a14 14 0 0 1 10 0"/>'),
+    ("NAS & storage", "N", '<rect x="14" y="8" width="36" height="48" rx="4"/><rect x="20" y="14" width="24" height="8" rx="1.5"/><rect x="20" y="26" width="24" height="8" rx="1.5"/><rect x="20" y="38" width="24" height="8" rx="1.5"/><circle class="f" cx="42" cy="51" r="1.8"/><path d="M24 18h4M24 30h4M24 42h4"/>'),
+    ("Security cameras", "S", '<rect x="8" y="22" width="34" height="20" rx="4"/><path d="M42 28l12-6v20l-12-6"/><circle cx="24" cy="32" r="5"/><circle class="f" cx="24" cy="32" r="1.6"/><path d="M24 42v10M16 52h16"/>'),
+    ("Doorbells & hubs", "S", '<rect x="22" y="6" width="20" height="52" rx="6"/><circle cx="32" cy="20" r="6"/><circle class="f" cx="32" cy="20" r="2"/><circle class="g" cx="32" cy="44" r="4.5"/><path d="M26 32h12"/>'),
+    ("Consoles", "C", '<path d="M18 22h28a10 10 0 0 1 10 10l2 12a6 6 0 0 1-11 3l-4-7H21l-4 7a6 6 0 0 1-11-3l2-12a10 10 0 0 1 10-10z"/><path d="M22 30v8M18 34h8"/><circle class="f" cx="44" cy="31" r="1.8"/><circle cx="48" cy="36" r="1.8"/><circle cx="40" cy="36" r="1.8"/>'),
+    ("Drones", "C", '<rect x="26" y="28" width="12" height="10" rx="3"/><path d="M26 31L17 24M38 31l9-7M26 35l-9 7M38 35l9 7"/><path d="M8 22h18M38 22h18M8 44h18M38 44h18"/><circle class="f" cx="32" cy="33" r="1.5"/>'),
+    ("E-bikes", "C", '<circle cx="16" cy="44" r="10"/><circle cx="48" cy="44" r="10"/><path d="M16 44l10-20h12l10 20M26 24l-4-8h6M38 24l4 20M26 24l8 12h8"/><rect class="f" x="27" y="32" width="9" height="6" rx="1.5"/>'),
+    ("3D printers & makers", "M", '<path d="M8 10h48v46H8z"/><path d="M8 20h48"/><path d="M28 20v10h8V20"/><path class="g" d="M32 30v8"/><path d="M14 50h36"/><path d="M20 46h24"/>'),
+]
+
+
+def pro_page():
+    title = "Firmwarely Pro waitlist — founding-member price | Firmwarely"
+    desc = "Join the Firmwarely Pro waitlist: unlimited devices, the dashboard and nightly alerts at the founding-member price of $4.99 a month, locked in."
+    art = "".join(
+        f'<a href="{cat_path(key)}" aria-label="{esc(label)}"><svg viewBox="0 0 64 64" aria-hidden="true">{svg}</svg><span>{esc(label)}</span></a>'
+        for label, key, svg in DEVICE_ART)
+    return head(title, desc, "/pro/") + f"""
+<div class="wrap">
+  <div class="pro-hero">
+    <div id="signup">
+      <p class="kicker">Good call</p>
+      <h1>You're about to stop finding out about firmware the hard way.</h1>
+      <p class="lede">Pro opens the moment our payment provider finishes its checks. Leave your email and you're first in line, at the founding-member price, locked in for as long as you stay.</p>
+      <p class="pro-price">$4.99<small> /month · founding-member price</small></p>
+      <form id="signup-form" novalidate>
+        <label class="sr" for="s-email">Email address</label>
+        <div class="row">
+          <input id="s-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+          <button class="btn" type="submit">Save my place</button>
+        </div>
+        <input type="hidden" name="plan" value="pro">
+        <input type="hidden" name="devices" value="">
+        <div id="s-msg" aria-live="polite"></div>
+        <p class="fine" style="margin:.25rem 0 0">One email when Pro opens. No card needed today. Unsubscribe any time.</p>
+      </form>
+    </div>
+    <div class="gallery" aria-label="Device families Firmwarely tracks">{art}</div>
+  </div>
+
+  <h2 style="margin-top:1.5rem">What you're signing up for</h2>
+  <div class="pro-perks">
+    <div class="card"><h3>Every device you own</h3><p>No three-device cap. Add the router, both NAS boxes, every camera and the kids' console.</p></div>
+    <div class="card"><h3>The dashboard</h3><p>One screen showing what's current, what has an update and what has a security fix waiting, with a button to go apply it.</p></div>
+    <div class="card"><h3>One email a night, when it matters</h3><p>After each nightly check, a single email covering everything of yours that changed, security fixes first. Silence otherwise.</p></div>
+  </div>
+
+  <h2 style="margin-top:2.5rem">Meanwhile</h2>
+  <p style="color:var(--muted);max-width:64ch">The free plan is live today. <a href="/my-devices.html">Save up to three devices</a> and see which need an update, or <a href="/devices/">browse the {'{n}'} devices we watch</a>. When Pro opens, your list carries over.</p>
+</div>
+""" + FOOT
+
+
 def not_found_page(devices):
     cats = "".join(f'<a class="chip" href="{cat_path(k)}">{esc(CATS[k])}</a>' for k in CATS)
     recent = by_recent(devices)[:6]
@@ -621,6 +698,7 @@ def main():
         d.mkdir(parents=True, exist_ok=True)
         (d / "index.html").write_text(content)
     (ROOT / "404.html").write_text(not_found_page(devices))
+    (ROOT / "pro" / "index.html").write_text(pro_page().replace("{n}", str(len(devices))))
 
     # sitemap: one entry per indexable page, with the date its content last actually moved
     today = datetime.now(timezone.utc).date().isoformat()
@@ -631,7 +709,8 @@ def main():
         dates = [x for x in dates if x]
         return max(dates) if dates else gen
 
-    entries = [(f"{SITE}/", gen), (f"{SITE}/devices/", gen), (f"{SITE}/my-devices.html", today), (f"{SITE}/legal/", "2026-09-13")]
+    entries = [(f"{SITE}/", gen), (f"{SITE}/devices/", gen), (f"{SITE}/my-devices.html", today),
+               (f"{SITE}/pro/", "2026-09-14"), (f"{SITE}/legal/", "2026-09-13")]
     entries += [(f"{SITE}{cat_path(k)}", max([dev_mod(d) for d in by_cat.get(k, [])] or [gen])) for k in CATS]
     entries += [(f"{SITE}{brand_path(b)}", max(dev_mod(d) for d in by_brand[b])) for b in brand_pages]
     entries += [(f"{SITE}/devices/{d['id']}/", dev_mod(d)) for d in devices]
