@@ -1,181 +1,183 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>My devices - Firmwarely</title>
-<meta name="description" content="Track the firmware on your own routers, NAS, cameras and smart-home gear, and see at a glance which ones need an update.">
+<title>My devices — Firmwarely</title>
+<meta name="description" content="Add the routers, NAS, cameras and smart-home gear you own, enter the firmware they're on, and see which ones need an update.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --ink: #1b1f24;
-    --muted: #5d6673;
-    --line: #d9dee5;
-    --paper: #ffffff;
-    --field: #f3f5f8;
-    --ok: #1f7a4d;
-    --ok-bg: #e4f4ea;
-    --warn: #9a5b00;
-    --warn-bg: #fff1d6;
-    --bad: #b3261e;
-    --bad-bg: #fde5e3;
-    --info: #3a4c66;
-    --info-bg: #e9eef6;
-  }
-  * { box-sizing: border-box; }
-  html { font-size: 17px; }
-  body {
-    margin: 0;
-    font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
-    color: var(--ink);
-    background: var(--paper);
-    line-height: 1.5;
-  }
-  a { color: var(--info); }
-  main { max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; }
-  nav a { text-decoration: none; font-weight: 600; }
-  h1 { font-size: 2rem; line-height: 1.15; margin: 18px 0 8px; letter-spacing: -0.01em; }
-  .lede { color: var(--muted); margin: 0 0 28px; max-width: 60ch; }
+:root{
+  --bg:#0C1117;
+  --panel:#121A23;
+  --line:#22303C;
+  --text:#E3E9EE;
+  --muted:#8A98A5;
+  --amber:#F5B342;
+  --amber-dim:#7A5A22;
+  --red:#F0614A;
+  --green:#58C89A;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --w:1080px;
+}
+*{box-sizing:border-box}
+html{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:17px;line-height:1.55;-webkit-text-size-adjust:100%}
+body{margin:0}
+a{color:inherit}
+h1,h2,h3{font-family:var(--mono);font-weight:600;line-height:1.15;margin:0}
+h1{font-size:clamp(1.8rem,4vw,2.6rem);letter-spacing:-.02em}
+h2{font-size:clamp(1.2rem,2.2vw,1.5rem);letter-spacing:-.01em;margin-bottom:1rem}
+p{margin:0 0 1rem;max-width:62ch}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 1.25rem}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
 
-  .summary {
-    font-size: 1.15rem;
-    font-weight: 600;
-    margin: 0 0 20px;
-    padding: 14px 16px;
-    border-left: 4px solid var(--line);
-    background: var(--field);
-  }
-  .summary.needs { border-color: var(--warn); }
-  .summary.security { border-color: var(--bad); }
-  .summary.good { border-color: var(--ok); }
+/* header (same as index) */
+header{position:sticky;top:0;z-index:5;background:rgba(12,17,23,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:60px;gap:1rem}
+.brand{font-family:var(--mono);font-weight:600;text-decoration:none;font-size:1.05rem;display:flex;align-items:center;gap:.55rem}
+.brand i{width:10px;height:10px;background:var(--amber);border-radius:2px;display:inline-block;box-shadow:0 0 12px rgba(245,179,66,.6)}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.5rem;align-items:center}
+.nav ul a{text-decoration:none;color:var(--muted);font-size:.95rem}
+.nav ul a:hover,.nav ul a[aria-current]{color:var(--text)}
+.btn{font-family:var(--sans);font-weight:600;font-size:.95rem;border:1px solid var(--amber);background:var(--amber);color:#1A1204;padding:.6rem 1rem;border-radius:6px;cursor:pointer;text-decoration:none;display:inline-block}
+.btn:hover{background:#FFC55A}
+.btn.ghost{background:transparent;color:var(--text);border-color:var(--line)}
+.btn.ghost:hover{border-color:var(--muted)}
+.btn.sm{font-size:.85rem;padding:.4rem .75rem}
+@media (max-width:640px){.nav ul li.hide-m{display:none}}
 
-  form.add {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    padding: 16px;
-    border: 1px solid var(--line);
-    border-radius: 6px;
-    margin: 0 0 28px;
-  }
-  @media (min-width: 620px) {
-    form.add { grid-template-columns: 1fr 180px auto; align-items: end; }
-  }
-  label { display: block; font-size: 0.9rem; color: var(--muted); margin-bottom: 4px; }
-  select, input[type=text] {
-    width: 100%;
-    font: inherit;
-    padding: 9px 10px;
-    border: 1px solid var(--line);
-    border-radius: 4px;
-    background: var(--paper);
-    color: var(--ink);
-  }
-  button {
-    font: inherit;
-    font-weight: 600;
-    padding: 9px 16px;
-    border-radius: 4px;
-    border: 1px solid var(--ink);
-    background: var(--ink);
-    color: #fff;
-    cursor: pointer;
-  }
-  button.quiet {
-    background: transparent;
-    color: var(--ink);
-    border-color: var(--line);
-    font-weight: 500;
-  }
-  button:focus-visible, select:focus-visible, input:focus-visible, a:focus-visible {
-    outline: 3px solid #8fb3ff; outline-offset: 2px;
-  }
+/* page */
+.top{padding:3rem 0 2rem}
+.top p.lede{font-size:1.1rem;color:var(--muted);margin:1rem 0 0}
 
-  ul.list { list-style: none; margin: 0; padding: 0; }
-  li.dev {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 6px 16px;
-    padding: 16px 0;
-    border-top: 1px solid var(--line);
-  }
-  li.dev:last-child { border-bottom: 1px solid var(--line); }
-  @media (min-width: 620px) {
-    li.dev { grid-template-columns: 1fr auto; align-items: start; }
-  }
-  .name { font-weight: 600; }
-  .name small { font-weight: 400; color: var(--muted); }
-  .versions { font-size: 0.95rem; color: var(--muted); }
-  .versions code { font-family: ui-monospace, Menlo, Consolas, monospace; color: var(--ink); background: var(--field); padding: 1px 5px; border-radius: 3px; }
-  .badge {
-    display: inline-block;
-    font-size: 0.85rem;
-    font-weight: 600;
-    padding: 3px 10px;
-    border-radius: 999px;
-    white-space: nowrap;
-  }
-  .badge.ok { color: var(--ok); background: var(--ok-bg); }
-  .badge.warn { color: var(--warn); background: var(--warn-bg); }
-  .badge.bad { color: var(--bad); background: var(--bad-bg); }
-  .badge.info { color: var(--info); background: var(--info-bg); }
-  .actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
-  .actions button { padding: 6px 12px; font-size: 0.9rem; }
-  .actions input[type=text] { width: 150px; padding: 6px 8px; font-size: 0.9rem; }
-  .empty { color: var(--muted); padding: 24px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+/* summary line — mono, like the notice on index */
+.summary{font-family:var(--mono);font-size:.92rem;border:1px solid var(--line);border-left:3px solid var(--muted);border-radius:6px;padding:.7rem 1rem;margin:0 0 1.5rem;color:var(--text)}
+.summary.update{border-left-color:var(--amber)}
+.summary.critical{border-left-color:var(--red)}
+.summary.current{border-left-color:var(--green)}
 
-  .tools { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 0; }
-  .note { color: var(--muted); font-size: 0.9rem; }
-  .pro {
-    margin: 36px 0 0;
-    padding: 18px;
-    border: 1px solid var(--line);
-    border-radius: 6px;
-    background: var(--field);
-  }
-  .pro strong { display: block; margin-bottom: 4px; }
-  .toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); background: var(--ink); color: #fff; padding: 10px 16px; border-radius: 6px; font-size: 0.95rem; opacity: 0; pointer-events: none; }
-  .toast.show { opacity: 1; }
+/* add form */
+form.add{display:grid;grid-template-columns:1fr;gap:.75rem;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:1rem;margin:0 0 1.75rem}
+@media (min-width:680px){form.add{grid-template-columns:1.4fr 1fr auto;align-items:end}}
+label{display:block;font-size:.82rem;color:var(--muted);margin-bottom:.35rem}
+select,input[type=text]{font:inherit;font-size:1rem;color:var(--text);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:.6rem .8rem;width:100%}
+input::placeholder{color:#5E6C78}
+select{-webkit-appearance:none;appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);background-position:calc(100% - 18px) 55%,calc(100% - 13px) 55%;background-size:5px 5px;background-repeat:no-repeat;padding-right:2.2rem}
+optgroup,option{background:var(--panel);color:var(--text)}
+
+/* the list — same treatment as the release feed on index */
+.feed{background:#080C10;border:1px solid var(--line);border-radius:8px;font-family:var(--mono);font-size:.85rem;line-height:1.6;overflow:hidden;box-shadow:0 30px 60px -30px rgba(0,0,0,.9)}
+.feed .bar{display:flex;align-items:center;gap:.5rem;padding:.55rem .9rem;border-bottom:1px solid var(--line);color:var(--muted);font-size:.78rem}
+.feed .bar b{color:var(--text);font-weight:500}
+.feed .bar .live{margin-left:auto;display:flex;align-items:center;gap:.4rem}
+.feed .bar .live::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green)}
+.feed ol{list-style:none;margin:0;padding:.4rem .9rem .6rem}
+.feed li{display:grid;grid-template-columns:1fr auto;gap:.35rem 1rem;padding:.75rem 0;border-bottom:1px solid #141C25}
+.feed li:last-child{border-bottom:0}
+.feed .name{color:var(--text);font-weight:500}
+.feed .name a{color:var(--muted);text-decoration:none;font-weight:400;font-size:.8rem;margin-left:.5rem}
+.feed .name a:hover{color:var(--text)}
+.feed .vers{color:var(--muted)}
+.feed .vers em{font-style:normal;color:var(--text)}
+.feed .vers .arrow{color:#5E6C78;margin:0 .35rem}
+.feed .acts{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin-top:.35rem;font-family:var(--sans)}
+.feed .acts input[type=text]{width:170px;font-family:var(--mono);font-size:.82rem;padding:.35rem .55rem}
+.feed .empty{padding:2rem .25rem;color:var(--muted);font-family:var(--sans)}
+.status{display:inline-flex;align-items:center;gap:.4rem;font-family:var(--mono);font-size:.8rem;white-space:nowrap;align-self:start;margin-top:.15rem}
+.status::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
+.status.critical{color:var(--red)}
+.status.update{color:var(--amber)}
+.status.current{color:var(--green)}
+.status.pending{color:#5E6C78}
+@media (max-width:520px){.feed li{grid-template-columns:1fr}.status{margin-top:0}}
+
+.tools{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.25rem 0 .5rem}
+.fine{font-size:.85rem;color:var(--muted)}
+
+/* pro nudge — same as the pro plan card */
+.plan{border:1px solid var(--amber);border-radius:10px;padding:1.5rem;margin:3rem 0 0;max-width:560px}
+.plan h3{font-size:1.05rem;font-weight:500}
+.plan p{color:var(--muted);margin:.5rem 0 1rem}
+
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--panel);border:1px solid var(--line);color:var(--text);padding:.6rem 1rem;border-radius:6px;font-family:var(--mono);font-size:.85rem;opacity:0;pointer-events:none;transition:opacity .15s}
+.toast.show{opacity:1}
+@media (prefers-reduced-motion:reduce){.toast{transition:none}}
+
+footer{padding:2.5rem 0;color:var(--muted);font-size:.88rem;border-top:1px solid var(--line);margin-top:4rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:1rem 2rem;justify-content:space-between}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--text)}
+.sr{position:absolute;left:-9999px}
 </style>
 </head>
 <body>
-<main>
-  <nav><a href="/">Firmwarely</a></nav>
-  <h1>My devices</h1>
-  <p class="lede">Add the gear you own and the firmware it's on. We compare it with the newest release we've seen, so you know exactly what needs updating. Saved in this browser; use the copy-link button to move it to another one.</p>
-
-  <p class="summary" id="summary">Loading the device catalog...</p>
-
-  <form class="add" id="addForm">
-    <div>
-      <label for="devSel">Device</label>
-      <select id="devSel" required><option value="">Choose a device</option></select>
-    </div>
-    <div>
-      <label for="verIn">Version you're on <span class="note">(optional)</span></label>
-      <input type="text" id="verIn" autocomplete="off" spellcheck="false" placeholder="e.g. 5.1.33">
-    </div>
-    <div><button type="submit">Add device</button></div>
-  </form>
-
-  <ul class="list" id="list"></ul>
-
-  <div class="tools">
-    <button class="quiet" id="copyLink" type="button">Copy link to this list</button>
-    <button class="quiet" id="clearAll" type="button">Remove all</button>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/"><i></i>Firmwarely</a>
+    <ul>
+      <li class="hide-m"><a href="/devices/">Devices</a></li>
+      <li class="hide-m"><a href="/my-devices.html" aria-current="page">My devices</a></li>
+      <li class="hide-m"><a href="/#pricing">Pricing</a></li>
+      <li><a class="btn" href="/#signup">Get alerts</a></li>
+    </ul>
   </div>
-  <p class="note">Don't see your device? Reply to any Firmwarely email with the model and we'll add it.</p>
+</header>
 
-  <section class="pro">
-    <strong>Get told the day any of these gets a new release</strong>
-    Firmwarely Pro emails you the same day a new firmware or security update is spotted for a tracked device. <a href="/pro/">See Pro</a>
-  </section>
+<main>
+  <div class="wrap top">
+    <h1>My devices</h1>
+    <p class="lede">Add the gear you own and the firmware it's running. Firmwarely compares it with the newest release we've seen, so you know exactly what needs updating. Your list stays in this browser; copy the link to open it anywhere else.</p>
+  </div>
+
+  <div class="wrap">
+    <div class="summary" id="summary">loading catalog…</div>
+
+    <form class="add" id="addForm">
+      <div>
+        <label for="devSel">Device</label>
+        <select id="devSel" required><option value="">Choose a device</option></select>
+      </div>
+      <div>
+        <label for="verIn">Version you're on (optional)</label>
+        <input type="text" id="verIn" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="e.g. 5.1.33">
+      </div>
+      <div><button class="btn" type="submit">Add device</button></div>
+    </form>
+
+    <div class="feed" aria-label="Your devices">
+      <div class="bar"><b>firmwarely</b> my devices <span class="live" id="count">0 tracked</span></div>
+      <ol id="list"></ol>
+    </div>
+
+    <div class="tools">
+      <button class="btn ghost sm" id="copyLink" type="button">Copy link to this list</button>
+      <button class="btn ghost sm" id="clearAll" type="button">Remove all</button>
+    </div>
+    <p class="fine">Don't see your device? <a href="/#signup">Tell us the model</a> and we'll add it to the tracker.</p>
+
+    <div class="plan">
+      <h3>Know the day any of these gets a new release</h3>
+      <p>Pro emails you the same day a new firmware or security fix is spotted for a device you track — instead of waiting for the weekly digest.</p>
+      <a class="btn" href="/#pricing">See Pro</a>
+    </div>
+  </div>
 </main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year"></span> Firmwarely. Device and brand names belong to their manufacturers.</span>
+    <span><a href="/devices/">All devices</a> &nbsp;·&nbsp; <a href="/#pricing">Pricing</a> &nbsp;·&nbsp; <a href="/legal/">Legal</a> &nbsp;·&nbsp; <a href="mailto:hello@firmwarely.com">Contact</a></span>
+  </div>
+</footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script>
 (function () {
   var KEY = "firmwarely:mydevices";
-  var CATS = { R: "Routers and network", N: "NAS and servers", S: "Smart home and cameras", C: "Consoles, drones, e-bikes", M: "Makers and open firmware" };
+  var CATS = { R: "Routers & networking", N: "NAS & storage", S: "Smart home & cameras", C: "Consoles, drones & e-bikes", M: "Makers & open firmware" };
   var catalog = {};
   var mine = load();
 
@@ -187,8 +189,9 @@
   function toast(msg) {
     var t = document.getElementById("toast");
     t.textContent = msg; t.classList.add("show");
-    setTimeout(function () { t.classList.remove("show"); }, 1800);
+    clearTimeout(t._h); t._h = setTimeout(function () { t.classList.remove("show"); }, 1800);
   }
+  function fmtDate(s) { return s ? new Date(s + "T00:00:00").toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" }) : ""; }
 
   function norm(v) { return String(v || "").trim().toLowerCase().replace(/^v(?=\d)/, ""); }
   function parts(v) { return norm(v).split(/[^0-9a-z]+/).filter(Boolean); }
@@ -206,52 +209,52 @@
   }
 
   function verdict(entry, dev) {
-    if (!dev || !dev.version) return { cls: "info", text: "Not tracked yet" };
-    if (!norm(entry.version)) return { cls: "info", text: "Enter your version" };
+    if (!dev || !dev.version) return { cls: "pending", text: "watching soon" };
+    if (!norm(entry.version)) return { cls: "pending", text: "enter your version" };
     var c = compare(entry.version, dev.version);
-    if (c === 0) return { cls: "ok", text: "Up to date" };
-    if (c < 0) return dev.status === "critical" ? { cls: "bad", text: "Security update available" } : { cls: "warn", text: "Update available" };
-    return { cls: "info", text: "Newer than our latest (beta?)" };
+    if (c === 0) return { cls: "current", text: "up to date" };
+    if (c < 0) return dev.status === "critical" ? { cls: "critical", text: "CRITICAL fix available" } : { cls: "update", text: "update available" };
+    return { cls: "pending", text: "newer than our latest" };
   }
 
   function render() {
     var list = document.getElementById("list");
     var sum = document.getElementById("summary");
+    document.getElementById("count").textContent = mine.length + " tracked";
     if (!mine.length) {
-      list.innerHTML = "";
+      list.innerHTML = '<li class="empty">No devices yet. Add your first one above.</li>';
       sum.className = "summary";
-      sum.textContent = "No devices yet. Add your first one below.";
+      sum.textContent = "0 devices — add the gear you own to see what needs updating";
       return;
     }
     var need = 0, sec = 0, unknown = 0, html = "";
     mine.forEach(function (e, i) {
       var d = catalog[e.id];
       var v = verdict(e, d);
-      if (v.cls === "warn") need++;
-      if (v.cls === "bad") { need++; sec++; }
-      if (v.cls === "info") unknown++;
+      if (v.cls === "update") need++;
+      if (v.cls === "critical") { need++; sec++; }
+      if (v.cls === "pending") unknown++;
       var name = d ? esc(d.brand) + " " + esc(d.model) : esc(e.id);
-      var latest = d && d.version ? "<code>" + esc(d.version) + "</code>" + (d.released ? " (" + esc(d.released) + ")" : "") : "no version yet";
-      var yours = norm(e.version) ? "<code>" + esc(e.version) + "</code>" : "not set";
-      var link = d ? '<a href="/devices/' + esc(e.id) + '.html">details</a>' : "";
-      html += '<li class="dev" data-i="' + i + '">' +
+      var yours = norm(e.version) ? "<em>" + esc(e.version) + "</em>" : "not set";
+      var latest = d && d.version ? "<em>" + esc(d.version) + "</em>" + (d.released ? " " + esc(fmtDate(d.released)) : "") : "no data yet";
+      html += '<li data-i="' + i + '">' +
         '<div>' +
-          '<div class="name">' + name + (link ? ' <small>' + link + '</small>' : '') + '</div>' +
-          '<div class="versions">You\'re on ' + yours + ' &middot; latest ' + latest + '</div>' +
-          '<div class="actions">' +
-            '<input type="text" aria-label="Your version" data-act="edit" value="' + esc(e.version || "") + '" placeholder="your version">' +
-            (d && d.version && v.cls !== "ok" ? '<button type="button" class="quiet" data-act="updated">I updated to ' + esc(d.version) + '</button>' : '') +
-            '<button type="button" class="quiet" data-act="remove">Remove</button>' +
+          '<div class="name">' + name + (d ? '<a href="/devices/' + esc(e.id) + '/">details →</a>' : '') + '</div>' +
+          '<div class="vers">you: ' + yours + '<span class="arrow">→</span>latest: ' + latest + '</div>' +
+          '<div class="acts">' +
+            '<input type="text" aria-label="Your version" data-act="edit" autocapitalize="off" spellcheck="false" value="' + esc(e.version || "") + '" placeholder="your version">' +
+            (d && d.version && v.cls !== "current" ? '<button type="button" class="btn ghost sm" data-act="updated">I updated to ' + esc(d.version) + '</button>' : '') +
+            '<button type="button" class="btn ghost sm" data-act="remove">Remove</button>' +
           '</div>' +
         '</div>' +
-        '<span class="badge ' + v.cls + '">' + esc(v.text) + '</span>' +
+        '<span class="status ' + v.cls + '">' + esc(v.text) + '</span>' +
       '</li>';
     });
     list.innerHTML = html;
-    if (sec) { sum.className = "summary security"; sum.textContent = sec + (sec === 1 ? " device has" : " devices have") + " a security update waiting."; }
-    else if (need) { sum.className = "summary needs"; sum.textContent = need + " of " + mine.length + (need === 1 ? " device needs" : " devices need") + " an update."; }
-    else if (unknown === mine.length) { sum.className = "summary"; sum.textContent = "Enter the version each device is on to see what needs updating."; }
-    else { sum.className = "summary good"; sum.textContent = "Everything you've entered is up to date."; }
+    if (sec) { sum.className = "summary critical"; sum.textContent = sec + (sec === 1 ? " device has" : " devices have") + " a security fix waiting"; }
+    else if (need) { sum.className = "summary update"; sum.textContent = need + " of " + mine.length + (need === 1 ? " device needs" : " devices need") + " an update"; }
+    else if (unknown === mine.length) { sum.className = "summary"; sum.textContent = "enter the version each device is on to see what needs updating"; }
+    else { sum.className = "summary current"; sum.textContent = "everything you've entered is up to date"; }
   }
 
   function fillSelect() {
@@ -332,6 +335,8 @@
     if (confirm("Remove all " + mine.length + " devices from this list?")) { mine = []; save(); render(); }
   });
 
+  document.getElementById("year").textContent = new Date().getFullYear();
+
   fetch("/devices.json", { cache: "no-store" })
     .then(function (r) { return r.json(); })
     .then(function (data) {
@@ -341,7 +346,7 @@
       render();
     })
     .catch(function () {
-      document.getElementById("summary").textContent = "Couldn't load the device catalog. Refresh to try again.";
+      document.getElementById("summary").textContent = "couldn't load the device catalog — refresh to try again";
     });
 })();
 </script>
