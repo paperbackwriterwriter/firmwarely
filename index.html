@@ -479,7 +479,7 @@ const PRO_LINK = "";
 {
   const pb = document.getElementById("pro-btn");
   if (PRO_LINK.startsWith("http")) { pb.href = PRO_LINK; pb.removeAttribute("data-plan"); pb.target = "_self"; }
-  else { pb.textContent = "Join the Pro waitlist"; }
+  else { pb.textContent = "Join the Pro waitlist"; pb.href = "/pro/"; }
 }
 
 /* ---------- forms → /api/subscribe → Beehiiv ---------- */
