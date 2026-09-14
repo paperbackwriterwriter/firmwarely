@@ -80,6 +80,21 @@ Check the Actions log after a run to see which sources succeeded.
 
 Status rules: `critical` = security-flavoured release notes within 60 days · `update` = any release within 45 days · `current` = older · `eol` = release notes mention end-of-life · `pending` = no data yet.
 
+## Update guides
+
+`update_guides.json` answers "how do I actually update this?" for every device. It is looked up
+most-specific-first: `by_id`, then `by_brand`, then `by_kind` (a GitHub project you run on a server
+vs one you flash — `flash_ids` marks the second kind), then `by_category`. Each guide has `steps`
+(short imperative lines) and an optional `url`.
+
+The one-click link comes from `update_url` in `devices.json`, which `fetch.py` derives: a GitHub
+project's `/releases` page, or the vendor support page the version was read from. Set `update_url`
+on a `sources.json` entry to override it. A guide's own `url` wins over the derived one.
+
+Devices that update through a phone app — Ring, Nest, DJI, most smart-home gear — have no download
+page at all, so they get steps and no button, and `my-devices.html` links to the steps instead.
+Editing the guides only affects generated pages: run `python3 scripts/build_pages.py`.
+
 ## Digest / alerts
 
 Each run compares tonight's versions with last night's. A device we had no version for yet — one

@@ -236,6 +236,17 @@ footer a:hover{color:var(--text)}
     }
     return 0;
   }
+  function needsAction(v) { return v.cls === "update" || v.cls === "critical"; }
+
+  // Prefer the manufacturer's own update page. Devices that update through a phone app
+  // have no such page, so send those to the device page where the steps live.
+  function updateLink(dev, id) {
+    if (dev && dev.update_url) {
+      return '<a class="btn sm" href="' + esc(dev.update_url) + '" target="_blank" rel="noopener">Update ↗</a>';
+    }
+    return '<a class="btn sm" href="/devices/' + esc(id) + '/#update">How to update</a>';
+  }
+
   function verdict(entry, dev) {
     if (!dev || !dev.version) return { cls: "pending", text: "watching soon" };
     if (!norm(entry.version)) return { cls: "pending", text: "enter your version" };
@@ -345,6 +356,7 @@ footer a:hover{color:var(--text)}
           '<div class="name">' + name + (d ? '<a href="/devices/' + esc(e.id) + '/">details →</a>' : '') + '</div>' +
           '<div class="vers">you: ' + yours + '<span class="arrow">→</span>latest: ' + latest + '</div>' +
           '<div class="acts">' +
+            (needsAction(v) ? updateLink(d, e.id) : '') +
             '<input type="text" aria-label="Your version" data-act="edit" autocapitalize="off" spellcheck="false" value="' + esc(e.version || "") + '" placeholder="your version">' +
             (d && d.version && v.cls !== "current" ? '<button type="button" class="btn ghost sm" data-act="updated">I updated to ' + esc(d.version) + '</button>' : '') +
             '<button type="button" class="btn ghost sm" data-act="remove">Remove</button>' +

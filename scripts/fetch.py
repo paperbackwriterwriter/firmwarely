@@ -227,6 +227,29 @@ def check_html(src, prev):
     }
 
 
+GH_URL = re.compile(r"github\.com/([\w.-]+/[\w.-]+?)/(?:releases|tags)", re.I)
+
+
+def update_url(src):
+    """Where someone actually goes to get this firmware — not the changelog.
+
+    Explicit wins; otherwise a GitHub project's releases page, or the vendor support page
+    we already read the version from. Non-GitHub feeds (the UniFi RSS, say) are a changelog
+    with no download behind them, so they get nothing here and update_guides.json supplies
+    the route instead."""
+    if src.get("update_url"):
+        return src["update_url"]
+    if src.get("repo"):
+        return f"https://github.com/{src['repo']}/releases"
+    url = src.get("url") or ""
+    m = GH_URL.search(url)
+    if m:
+        return f"https://github.com/{m.group(1)}/releases"
+    if src["type"] in ("html", "browser"):
+        return src.get("page_url") or url or None
+    return None
+
+
 def classify(dev):
     if not dev.get("version") or not dev.get("released"):
         return "pending"
@@ -246,12 +269,13 @@ def classify(dev):
 
 def main():
     cfg = json.loads(SOURCES.read_text())
-    previous = {}
+    previous, prev_meta = {}, {}
     if OUT.exists():
         try:
-            previous = {d["id"]: d for d in json.loads(OUT.read_text()).get("devices", [])}
+            prev_meta = json.loads(OUT.read_text())
+            previous = {d["id"]: d for d in prev_meta.get("devices", [])}
         except Exception:
-            previous = {}
+            previous, prev_meta = {}, {}
 
     out, ok, failed = [], 0, []
     for src in cfg["devices"]:
@@ -262,6 +286,7 @@ def main():
             "version": prev.get("version"), "released": prev.get("released"),
             "notes": prev.get("notes", ""), "source_url": prev.get("source_url") or src.get("url"),
             "product_url": src.get("product_url"),
+            "update_url": update_url(src),
             "history": prev.get("history", []),
             "checked": prev.get("checked"), "source_status": prev.get("source_status", "pending"),
         }
@@ -294,6 +319,9 @@ def main():
         dev["status"] = classify(dev)
         out.append(dev)
 
+    if OFFLINE:
+        # nothing was checked, so don't claim every source just failed
+        ok, failed = prev_meta.get("ok", 0), prev_meta.get("failed", [])
     result = {"generated": NOW, "tracked": sum(1 for d in out if d["tracked"]),
               "ok": ok, "failed": failed, "devices": out}
     OUT.write_text(json.dumps(result, indent=1, ensure_ascii=False) + "\n")

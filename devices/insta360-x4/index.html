@@ -171,6 +171,9 @@ footer a:hover{color:var(--text)}
   .hist{width:100%;border-collapse:collapse;margin-top:.5rem;font-family:var(--mono);font-size:.85rem}
   .hist td{padding:.5rem 0;border-top:1px solid var(--line)}
   .hist td:last-child{text-align:right;color:var(--muted)}
+  ol.steps{margin:1rem 0 0;padding-left:1.25rem;color:var(--text)}
+  ol.steps li{margin:0 0 .6rem;line-height:1.55}
+  ol.steps li::marker{color:var(--amber);font-weight:600}
   h1.dev-h{font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.15;margin:.25rem 0 .5rem}
   .faq h3{font-size:1rem;margin:1.25rem 0 .35rem}
   .faq p{color:var(--muted);margin:0}
@@ -209,6 +212,14 @@ footer a:hover{color:var(--text)}
           <dt>Last checked</dt><dd>—</dd>
         </dl>
       </div>
+      
+      <h2 id="update" style="margin-top:2rem">How to update the Insta360 X4</h2>
+      <div class="card">
+        
+        <ol class="steps"><li>Open the Insta360 app with the camera connected.</li><li>Settings, then Firmware Update.</li><li>Or download the .bin from insta360.com/download for your model and copy it to the root of the microSD card, then power on the camera.</li></ol>
+        <p class="fine" style="margin:.75rem 0 0">Always download firmware from the manufacturer or project itself.
+        Firmwarely links out; it never hosts firmware.</p>
+      </div>
       <h2 style="margin-top:2rem">What changed</h2>
       <p style="color:var(--muted)">Not tracked yet. Sign up below and we'll prioritise this device.</p>
       
@@ -216,7 +227,7 @@ footer a:hover{color:var(--text)}
       <div class="faq">
         <h2 style="margin-top:2rem">FAQ</h2>
         <h3>How do I update the Insta360 X4?</h3>
-        <p>Consoles update through their system settings or on next connection. Drones and e-bikes update through the manufacturer's app while the device is connected.</p>
+        <p><a href="#update">See the step-by-step above.</a> Consoles update through their system settings or on next connection. Drones and e-bikes update through the manufacturer&#x27;s app while the device is connected.</p>
         <h3>How does Firmwarely know when there's a new version?</h3>
         <p>Every night we read the manufacturer's official release page and record the version, date and changelog. If anything changed, subscribers watching this device get an email.</p>
         <h3>Is this an official Insta360 page?</h3>
@@ -228,6 +239,7 @@ footer a:hover{color:var(--text)}
         <h2 style="margin:0 0 .5rem;font-size:1.05rem">Watch this device</h2>
         <p style="color:var(--muted);font-size:.95rem;margin:0 0 .75rem">Get one email when Insta360 ships a new or security firmware for the X4.</p>
         <a class="btn" href="#signup">Get alerts</a>
+        <p style="margin:.75rem 0 0"><a href="#update">How to update this device</a></p>
         
       </div>
     </aside>

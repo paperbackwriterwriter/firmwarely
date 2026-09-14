@@ -20,6 +20,23 @@ CATS = {"R": "Routers & networking", "N": "NAS & storage", "S": "Smart home & ca
         "C": "Consoles, drones & e-bikes", "M": "Makers & open firmware"}
 LABEL = {"critical": "critical fix", "update": "new version", "current": "current",
          "pending": "watching soon", "eol": "end of life"}
+GUIDES = json.loads((ROOT / "update_guides.json").read_text()) if (ROOT / "update_guides.json").exists() else {}
+
+
+def guide(d):
+    """Most specific update guide for a device: by id, then brand, then how it's tracked,
+    then its category. Returns (steps, url) — url prefers the guide's own over the derived."""
+    g = (GUIDES.get("by_id", {}).get(d["id"])
+         or GUIDES.get("by_brand", {}).get(d["brand"]))
+    if not g and "github.com" in (d.get("update_url") or ""):
+        # a GitHub project is either something you run on a server or something you flash
+        kind = "github_flash" if d["id"] in GUIDES.get("flash_ids", []) else "github"
+        g = GUIDES.get("by_kind", {}).get(kind)
+    if not g:
+        g = GUIDES.get("by_category", {}).get(d["category"]) or {}
+    return g.get("steps") or [], g.get("url") or d.get("update_url")
+
+
 HOWTO = {
     "R": "Log in to the router's admin page (usually at 192.168.1.1 or via the manufacturer's app), open the firmware or system update section, and apply the update. Most routers reboot for a minute or two.",
     "N": "Open the NAS control panel, go to the update or system section, and install the new version. Back up important data first; NAS updates can take several minutes.",
@@ -62,6 +79,9 @@ def styles():
   .hist{width:100%;border-collapse:collapse;margin-top:.5rem;font-family:var(--mono);font-size:.85rem}
   .hist td{padding:.5rem 0;border-top:1px solid var(--line)}
   .hist td:last-child{text-align:right;color:var(--muted)}
+  ol.steps{margin:1rem 0 0;padding-left:1.25rem;color:var(--text)}
+  ol.steps li{margin:0 0 .6rem;line-height:1.55}
+  ol.steps li::marker{color:var(--amber);font-weight:600}
   h1.dev-h{font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.15;margin:.25rem 0 .5rem}
   .faq h3{font-size:1rem;margin:1.25rem 0 .35rem}
   .faq p{color:var(--muted);margin:0}
@@ -185,6 +205,20 @@ def device_page(d):
     rows = "".join(f"<tr><td>{esc(h['version'])}</td><td>{fmt(h.get('released'))}</td></tr>" for h in hist[:6]) \
            or (f"<tr><td>{esc(d['version'])}</td><td>{fmt(d.get('released'))}</td></tr>" if live else "")
 
+    steps, upd = guide(d)
+    step_html = "".join(f"<li>{esc(x)}</li>" for x in steps)
+    # the page's whole point: one click to the place that actually updates the thing
+    cta = (f'<a class="btn" href="{esc(upd)}" target="_blank" rel="noopener">Open update page ↗</a>'
+           if upd else "")
+    how = f"""
+      <h2 id="update" style="margin-top:2rem">How to update the {esc(name)}</h2>
+      <div class="card">
+        {cta}
+        <ol class="steps">{step_html}</ol>
+        <p class="fine" style="margin:.75rem 0 0">Always download firmware from the manufacturer or project itself.
+        Firmwarely links out; it never hosts firmware.</p>
+      </div>"""
+
     body = head(title, desc, path, extra)
     body += f"""
 <div class="wrap">
@@ -201,6 +235,7 @@ def device_page(d):
           <dt>Last checked</dt><dd>{fmt((d.get('checked') or '')[:10]) if d.get('checked') else "—"}</dd>
         </dl>
       </div>
+      {how}
       <h2 style="margin-top:2rem">What changed</h2>
       <p style="color:var(--muted)">{esc(notes) if notes else ("Not tracked yet. Sign up below and we'll prioritise this device." if not live else "See the manufacturer's release notes for details.")}</p>
       {f'<p><a href="{esc(d["source_url"])}" target="_blank" rel="noopener">Manufacturer release notes ↗</a></p>' if d.get("source_url") and live else ""}
@@ -208,7 +243,7 @@ def device_page(d):
       <div class="faq">
         <h2 style="margin-top:2rem">FAQ</h2>
         <h3>How do I update the {esc(name)}?</h3>
-        <p>{HOWTO.get(d['category'], '')}</p>
+        <p><a href="#update">See the step-by-step above.</a> {esc(HOWTO.get(d['category'], ''))}</p>
         <h3>How does Firmwarely know when there's a new version?</h3>
         <p>Every night we read the manufacturer's official release page{(" for the " + esc(name)) if live else ""} and record the version, date and changelog. If anything changed, subscribers watching this device get an email.</p>
         <h3>Is this an official {esc(d['brand'])} page?</h3>
@@ -220,6 +255,7 @@ def device_page(d):
         <h2 style="margin:0 0 .5rem;font-size:1.05rem">Watch this device</h2>
         <p style="color:var(--muted);font-size:.95rem;margin:0 0 .75rem">Get one email when {esc(d['brand'])} ships a new or security firmware for the {esc(d['model'])}.</p>
         <a class="btn" href="#signup">Get alerts</a>
+        {f'<p style="margin:.75rem 0 0"><a href="#update">How to update this device</a></p>' if steps else ""}
         {f'<p style="margin:1rem 0 0"><a href="{esc(d["product_url"])}" target="_blank" rel="nofollow sponsored noopener">See current price ↗</a></p>' if d.get("product_url") else ""}
       </div>
     </aside>

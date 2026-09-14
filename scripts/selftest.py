@@ -16,6 +16,7 @@ os.environ.setdefault("BEEHIIV_PUB_ID", "test")
 os.environ.setdefault("RESEND_API_KEY", "test")
 
 import fetch
+import build_pages
 import user_alerts as ua
 
 FAILED = []
@@ -118,7 +119,46 @@ def test_forced_guard():
     check("forced run without a test address sends nothing", (rc, reached), (0, []))
 
 
-for t in (test_compare, test_new_release, test_saved_devices, test_routing, test_forced_guard):
+# ---- every device must end up with usable update instructions ----
+def test_update_guides():
+    guides = build_pages.GUIDES
+    devs = json.loads((Path(__file__).resolve().parent.parent / "devices.json").read_text())["devices"]
+    brands = {d["brand"] for d in devs}
+    ids = {d["id"] for d in devs}
+
+    missing = [d["id"] for d in devs if not build_pages.guide(d)[0]]
+    check("every device resolves to update steps", missing, [])
+    blank = [d["id"] for d in devs if any(not x.strip() for x in build_pages.guide(d)[0])]
+    check("no blank step text", blank, [])
+
+    # a guide keyed to a brand or id that no longer exists is silently dead
+    check("no brand guide points at a missing brand",
+          sorted(b for b in guides.get("by_brand", {}) if b not in brands), [])
+    check("no id guide points at a missing device",
+          sorted(i for i in guides.get("by_id", {}) if i not in ids), [])
+    check("every flash_id is a real device",
+          sorted(i for i in guides.get("flash_ids", []) if i not in ids), [])
+
+    # flashed firmware must not be told to "docker compose pull"
+    by_id = {d["id"]: d for d in devs}
+    for dev_id, want in [("klipper", "flash"), ("qmk-firmware", "flash"),
+                         ("betaflight", "flash"), ("sonarr", "app"), ("vaultwarden", "app")]:
+        if dev_id not in by_id:
+            continue
+        steps = " ".join(build_pages.guide(by_id[dev_id])[0]).lower()
+        got = "flash" if "board" in steps or "flasher" in steps else ("app" if "docker" in steps else "?")
+        check(f"guide kind for {dev_id}", got, want)
+
+    # a device with no download page still has to be actionable
+    for dev_id in ("ring-battery-doorbell-plus", "dji-mavic-4-pro"):
+        if dev_id in by_id:
+            steps, url = build_pages.guide(by_id[dev_id])
+            check(f"{dev_id}: app-updated, instructions instead of a dead link",
+                  (bool(steps), url), (True, None))
+
+
+for t in (test_compare, test_new_release, test_saved_devices, test_routing, test_forced_guard,
+          test_update_guides):
     print(f"\n{t.__name__}")
     t()
 

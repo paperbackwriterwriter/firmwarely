@@ -1,0 +1,955 @@
+{
+ "_readme": "How to actually update each device. Looked up most-specific first: by_id, then by_brand, then by_category. Each guide has optional 'url' (an actionable page — where you get or apply the firmware, not the changelog) and 'steps' (short imperative lines shown as a numbered list). A device's derived update_url from sources.json is used when a guide has no url of its own. Editing this file only affects the generated pages; run scripts/build_pages.py.",
+ "by_id": {
+  "home-assistant-core": {
+   "url": "https://www.home-assistant.io/docs/installation/updating/",
+   "steps": [
+    "In Home Assistant, go to Settings, then Updates — Core, Supervisor and OS each update separately.",
+    "Read the release notes for breaking changes before updating; monthly releases often change integrations.",
+    "Take a full backup first (Settings, then System, then Backups) — restoring is the only reliable rollback."
+   ]
+  },
+  "home-assistant-os": {
+   "url": "https://www.home-assistant.io/docs/installation/updating/",
+   "steps": [
+    "Settings, then System, then Updates, then Home Assistant Operating System.",
+    "Take a backup first and keep the device powered — an interrupted OS update can require re-flashing the SD card or eMMC."
+   ]
+  },
+  "home-assistant-supervisor": {
+   "steps": [
+    "Supervisor updates itself automatically within a day or two of release.",
+    "To force it: Settings, then System, then Updates, then check for updates.",
+    "It cannot be rolled back independently of the OS."
+   ]
+  },
+  "openwrt-router": {
+   "url": "https://firmware-selector.openwrt.org/",
+   "steps": [
+    "Use the OpenWrt Firmware Selector to get the image for your exact model and revision.",
+    "Flash from LuCI: System, then Backup / Flash Firmware, then Flash new firmware image.",
+    "Only keep settings within the same major release — across majors, flash without keeping settings and reconfigure.",
+    "Check the device's wiki page first; some models need a specific sysupgrade image or a factory image."
+   ]
+  },
+  "opnsense-firewall": {
+   "steps": [
+    "System, then Firmware, then Updates, then Check for updates.",
+    "Take a config backup (System, then Configuration, then Backups) before a major upgrade.",
+    "Reboot when prompted; the firewall is offline for a minute or two."
+   ]
+  },
+  "mikrotik-routeros": {
+   "url": "https://mikrotik.com/download",
+   "steps": [
+    "In WinBox or WebFig: System, then Packages, then Check For Updates.",
+    "Update RouterOS first, then System, then RouterBOARD, then Upgrade for the bootloader, then reboot again.",
+    "Stay on the same channel (stable vs long-term). MikroTik devices have been widely exploited when left unpatched — do not expose Winbox to the internet."
+   ]
+  },
+  "pi-hole": {
+   "steps": [
+    "Run `pihole -up` on the host.",
+    "For the Docker image, pull the new tag and recreate the container.",
+    "Check `pihole -v` afterwards to confirm all components updated together."
+   ]
+  },
+  "adguard-home": {
+   "steps": [
+    "AdGuard Home updates itself from the web UI: the banner at the top offers an update when one is available.",
+    "Or run the binary with `--update`.",
+    "For Docker, pull the new image and recreate the container."
+   ]
+  },
+  "tailscale": {
+   "steps": [
+    "Linux: `sudo tailscale update`, or update the package through your distribution.",
+    "macOS, Windows, iOS, Android: update through the app store or the app's own updater.",
+    "Enable auto-updates with `tailscale set --auto-update`."
+   ]
+  },
+  "proxmox-ve": {
+   "steps": [
+    "Web UI: select the node, then Updates, then Refresh, then Upgrade.",
+    "Or run `apt update && apt dist-upgrade` over SSH.",
+    "Reboot after a kernel update; migrate guests off first in a cluster."
+   ]
+  },
+  "jellyfin-server": {
+   "steps": [
+    "Docker: pull the new image tag and recreate the container.",
+    "Linux packages: update through apt or dnf from Jellyfin's repository.",
+    "Back up the config directory first — major versions migrate the database."
+   ]
+  },
+  "immich-server": {
+   "steps": [
+    "Immich moves fast and has breaking changes: read the release notes before every update.",
+    "Pull the new images and run `docker compose up -d`.",
+    "Back up the database first; schema migrations are one-way."
+   ]
+  },
+  "nextcloud-server": {
+   "steps": [
+    "Use the built-in updater: Administration settings, then Overview, then Open updater.",
+    "Or run `occ upgrade` from the command line.",
+    "Update one major version at a time — skipping versions is not supported. Back up the database and config first."
+   ]
+  },
+  "frigate-nvr": {
+   "steps": [
+    "Pull the new Docker image and recreate the container.",
+    "Check the release notes for config schema changes — Frigate refuses to start on an invalid config.",
+    "Keep the previous image tag so you can roll back."
+   ]
+  },
+  "octoprint": {
+   "steps": [
+    "OctoPrint prompts in its own web UI when an update is available.",
+    "Settings, then Software Update, then Update now.",
+    "Never update mid-print; wait for the queue to finish."
+   ]
+  },
+  "zigbee2mqtt": {
+   "steps": [
+    "Read the changelog for breaking changes — the config format shifts between minor versions.",
+    "Docker: pull the new image and recreate. Bare metal: `git pull` then `npm ci`.",
+    "Back up the data directory; it holds your device pairings and re-pairing everything is painful."
+   ]
+  },
+  "esphome": {
+   "steps": [
+    "Update the ESPHome dashboard or CLI first (`pip install -U esphome`, or pull the new Docker image).",
+    "Then re-flash each device over the air from the dashboard.",
+    "Devices on much older firmware may need a USB flash if OTA fails."
+   ]
+  },
+  "tasmota-open-firmware": {
+   "url": "https://tasmota.github.io/install/",
+   "steps": [
+    "Use the web installer at tasmota.github.io/install for a first flash over USB.",
+    "For a device already running Tasmota: Firmware Upgrade, then OTA from a URL, or upload the .bin.",
+    "Upgrade through the intermediate `tasmota-minimal.bin` when jumping several versions on a 1MB device."
+   ]
+  },
+  "wled-controller": {
+   "url": "https://install.wled.me/",
+   "steps": [
+    "First flash: use the web installer at install.wled.me over USB from a Chromium browser.",
+    "Already running WLED: Config, then Security & Updates, then Manual OTA Update, then upload the .bin for your board.",
+    "Match the binary to your board (ESP8266 vs ESP32) — the wrong one bricks it until you re-flash over USB."
+   ]
+  },
+  "flipper-zero": {
+   "url": "https://lab.flipper.net/",
+   "steps": [
+    "Open lab.flipper.net in a Chromium browser with the Flipper connected by USB, or use the mobile app over Bluetooth.",
+    "Or copy the .tgz to the SD card and update from the device menu.",
+    "Keep it charged above 50%."
+   ]
+  },
+  "meshtastic-radio": {
+   "url": "https://flasher.meshtastic.org/",
+   "steps": [
+    "Use the web flasher at flasher.meshtastic.org with the radio connected by USB.",
+    "Or update over Bluetooth from the mobile app on supported boards.",
+    "Match the firmware to your exact board variant; the flasher detects most automatically."
+   ]
+  },
+  "prusa-mk4-core-one": {
+   "url": "https://help.prusa3d.com/downloads",
+   "steps": [
+    "Download the .bbf for your exact printer from Prusa's downloads page.",
+    "Copy it to a USB drive, insert it into the printer, and confirm on screen.",
+    "Update the MMU firmware separately if you have one."
+   ]
+  },
+  "marlin-3d-printer": {
+   "steps": [
+    "Marlin is compiled per printer — you cannot flash a generic build.",
+    "Start from the configuration files for your exact printer and board in the Configurations repository.",
+    "Build with PlatformIO in VS Code, then flash over USB or by SD card depending on the board.",
+    "Keep your current firmware image; a bad Marlin build can leave the printer unable to home safely."
+   ]
+  },
+  "sony-playstation-5": {
+   "steps": [
+    "Settings, then System, then System Software, then System Software Update and Settings.",
+    "Or download the PS5 update file to a USB drive from PlayStation support and apply it in Safe Mode if the console will not boot."
+   ]
+  },
+  "microsoft-xbox-series-x": {
+   "steps": [
+    "Profile & system, then Settings, then System, then Updates.",
+    "Updates also install automatically in Instant-on standby.",
+    "Offline System Update from a USB drive is available through Xbox support if the console will not connect."
+   ]
+  },
+  "nintendo-switch": {
+   "steps": [
+    "System Settings, then System, then System Update.",
+    "The console also updates automatically when it connects to the internet in sleep mode.",
+    "Joy-Con firmware updates arrive through System Settings, then Controllers."
+   ]
+  },
+  "philips-hue-bridge": {
+   "steps": [
+    "Open the Philips Hue app.",
+    "Settings, then Software Update — the Bridge updates first, then bulbs and accessories.",
+    "Leave lights powered at the wall switch so they can receive the update."
+   ]
+  },
+  "eero-pro-6e": {
+   "steps": [
+    "eero updates automatically overnight, usually between 2am and 3am.",
+    "To check: open the eero app, then Settings, then Software Update.",
+    "The network drops for a minute or two while nodes reboot in sequence."
+   ]
+  },
+  "asus-rog-ally-x": {
+   "steps": [
+    "Open Armoury Crate SE, then Update Center — this covers the BIOS, drivers and MyASUS components together.",
+    "Or download the BIOS for your exact model from ASUS support and run it from Windows.",
+    "Keep the handheld on mains power for a BIOS update; interrupting it needs a service centre."
+   ]
+  },
+  "lenovo-legion-go": {
+   "steps": [
+    "Open Legion Space, then Settings, then System Update — this covers BIOS and drivers.",
+    "Or download the BIOS for your model from support.lenovo.com.",
+    "Keep it on mains power during a BIOS update."
+   ]
+  }
+ },
+ "by_brand": {
+  "Amazon": {
+   "steps": [
+    "Ring and Blink devices update automatically over Wi-Fi.",
+    "To check: open the Ring or Blink app, pick the device, then Device Health.",
+    "Keep the device powered and in Wi-Fi range; you cannot force an update by hand.",
+    "Echo devices update overnight — say \"check for software updates\" or leave it idle and plugged in."
+   ]
+  },
+  "Google": {
+   "steps": [
+    "Nest devices update automatically.",
+    "To check: open the Google Home app, tap the device, then the gear icon, then Technical information or Device information.",
+    "Leave the device powered and connected; updates roll out in waves so yours may arrive days after release."
+   ]
+  },
+  "Netgear": {
+   "url": "https://www.netgear.com/support/",
+   "steps": [
+    "Open the Nighthawk or Orbi app, or sign in at http://routerlogin.net.",
+    "Go to Settings, then Router Update or Firmware Update.",
+    "Check and install. Do not power off during the reboot.",
+    "For a manual file: find your model on Netgear support, download the firmware, then upload it in the same screen."
+   ]
+  },
+  "TP-Link": {
+   "url": "https://www.tp-link.com/support/download/",
+   "steps": [
+    "Open the Tether or Deco app, or sign in at http://tplinkwifi.net.",
+    "Go to Advanced, then System, then Firmware Update.",
+    "Check online and install.",
+    "For a manual file: find your exact hardware version on TP-Link's download page — firmware is version-specific and the wrong file can brick the unit."
+   ]
+  },
+  "ASUS": {
+   "url": "https://www.asus.com/support/download-center/",
+   "steps": [
+    "Sign in at http://router.asus.com or open the ASUS Router app.",
+    "Go to Administration, then Firmware Upgrade.",
+    "Click Check to pull the latest, or upload a file from ASUS support.",
+    "Consider Asuswrt-Merlin if you want faster security fixes on a supported model."
+   ]
+  },
+  "Ubiquiti": {
+   "steps": [
+    "Open UniFi (web at unifi.ui.com or the local console, or the mobile app).",
+    "Go to Settings, then System, then Updates.",
+    "Update the console first, then the adopted devices.",
+    "Devices reboot one at a time; the network drops briefly for each."
+   ]
+  },
+  "Synology": {
+   "steps": [
+    "Sign in to DSM in a browser.",
+    "Control Panel, then Update & Restore.",
+    "Install the DSM update, then check Package Center for app updates separately.",
+    "Security updates for DSM can be set to install automatically in the same screen."
+   ]
+  },
+  "QNAP": {
+   "steps": [
+    "Sign in to QTS or QuTS hero.",
+    "Control Panel, then System, then Firmware Update.",
+    "Use Live Update, or download the .img for your exact model from QNAP and apply it here.",
+    "QNAP NAS devices have been actively targeted by ransomware — apply security updates promptly and do not expose the admin page to the internet."
+   ]
+  },
+  "Western Digital": {
+   "steps": [
+    "Sign in to the My Cloud dashboard in a browser.",
+    "Settings, then Firmware, then Update.",
+    "Some older My Cloud models are end-of-life and no longer receive fixes — check WD's support page for your model before relying on it."
+   ]
+  },
+  "Reolink": {
+   "steps": [
+    "Open the Reolink app or desktop client.",
+    "Select the camera, then Settings, then System, then Firmware.",
+    "Or download the firmware for your exact model and hardware revision from reolink.com/download-center and upload it.",
+    "Hardware revision matters — the wrong file will fail or brick the camera."
+   ]
+  },
+  "Arlo": {
+   "steps": [
+    "Arlo cameras update automatically through the base station or hub.",
+    "To check: open the Arlo app, tap the device, then Device Info, then Firmware.",
+    "Keep the base station online; cameras pull updates through it."
+   ]
+  },
+  "Anker": {
+   "steps": [
+    "Open the eufy Security app.",
+    "Select the device, then the gear icon, then General, then Firmware.",
+    "HomeBase updates first, then the cameras attached to it."
+   ]
+  },
+  "Wyze": {
+   "steps": [
+    "Open the Wyze app.",
+    "Account, then Firmware Update — it lists every device with one pending.",
+    "Update the base station or bridge before the cameras."
+   ]
+  },
+  "Aqara": {
+   "steps": [
+    "Open the Aqara Home app.",
+    "Select the hub, then the gear icon, then Firmware Upgrade.",
+    "Update the hub first; child devices update through it and can take several minutes each."
+   ]
+  },
+  "Sonos": {
+   "steps": [
+    "Open the Sonos app.",
+    "Settings, then System, then System Updates, then Check for Updates.",
+    "All speakers on the system update together — you cannot update one alone."
+   ]
+  },
+  "Apple": {
+   "steps": [
+    "Apple TV: Settings, then System, then Software Updates.",
+    "HomePod: open the Home app, long-press the speaker, then the gear icon, then Software Update.",
+    "Both update automatically by default and this is usually the setting you want."
+   ]
+  },
+  "Sony": {
+   "steps": [
+    "PlayStation 5: Settings, then System, then System Software, then System Software Update and Settings.",
+    "DualSense controller: connect it by USB, then Settings, then Accessories, then Controller, then Wireless Controller Device Software.",
+    "Safe Mode (hold the power button until the second beep) can reinstall system software if an update fails."
+   ]
+  },
+  "Valve": {
+   "steps": [
+    "Steam Deck: Settings, then System, then Check for Updates — this covers SteamOS and the BIOS together.",
+    "Apply and reboot; BIOS updates run during the restart.",
+    "Stay on the Stable channel unless you have a reason not to."
+   ]
+  },
+  "DJI": {
+   "steps": [
+    "Open DJI Fly, DJI Go or the app for your model with the aircraft and controller powered on.",
+    "The app prompts when firmware is available; keep both connected and batteries above 50%.",
+    "Alternatively connect to a computer and use DJI Assistant 2.",
+    "Update every battery too — DJI batteries carry their own firmware and a mismatch blocks takeoff."
+   ]
+  },
+  "Insta360": {
+   "steps": [
+    "Open the Insta360 app with the camera connected.",
+    "Settings, then Firmware Update.",
+    "Or download the .bin from insta360.com/download for your model and copy it to the root of the microSD card, then power on the camera."
+   ]
+  },
+  "GoPro": {
+   "steps": [
+    "Open the GoPro Quik app with the camera paired.",
+    "The app prompts for updates automatically.",
+    "Or download the update from gopro.com/update and copy the UPDATE folder to the root of the microSD card."
+   ]
+  },
+  "Garmin": {
+   "steps": [
+    "Open Garmin Connect on your phone with the device paired — updates transfer in the background.",
+    "Or connect by USB and use Garmin Express on a computer.",
+    "Keep the watch or bike computer above 50% battery; updates can take 15 minutes."
+   ]
+  },
+  "Bosch": {
+   "steps": [
+    "Open the eBike Flow app with the bike powered on and stay near it.",
+    "Updates install over Bluetooth and can take 20 minutes — do not power off the bike.",
+    "Older Bosch systems (Nyon, Kiox with the previous generation) update only at a dealer or through the eBike Connect app."
+   ]
+  },
+  "Bambu Lab": {
+   "steps": [
+    "Open Bambu Handy or Bambu Studio with the printer online.",
+    "The printer prompts when firmware is available; accept and wait — do not power off.",
+    "Update the AMS at the same time, and re-run bed levelling afterwards if prints start failing."
+   ]
+  },
+  "Prusa": {
+   "steps": [
+    "Download the firmware for your exact printer from help.prusa3d.com/downloads.",
+    "Copy the .bbf (MK4, XL, Core One) to a USB drive, insert it, and confirm on the printer.",
+    "Or use PrusaSlicer's firmware updater over USB for older MINI and MK3 boards."
+   ]
+  },
+  "Creality": {
+   "steps": [
+    "Newer models (K-series) update over Wi-Fi from the touchscreen: Settings, then System, then Firmware.",
+    "Older Ender models need a .bin copied to the microSD card root — the file must have a different name than the last one you flashed or the board ignores it.",
+    "Download from creality.com/pages/download and match your exact mainboard version."
+   ]
+  },
+  "Elegoo": {
+   "steps": [
+    "Download the firmware for your exact model from elegoo.com/pages/downloads.",
+    "Copy it to a USB stick or microSD card and insert it into the printer.",
+    "Confirm the update on the touchscreen and wait for the reboot."
+   ]
+  },
+  "Framework": {
+   "url": "https://knowledgebase.frame.work/bios-and-driver-releases-S1dMQt6F",
+   "steps": [
+    "Find your exact model and generation on Framework's BIOS and driver releases page — the wrong build will not install.",
+    "On Windows, run the LVFS or EFI updater Framework provides.",
+    "On Linux, use fwupd: run `fwupdmgr refresh` then `fwupdmgr update`.",
+    "Keep the laptop on mains power throughout."
+   ]
+  },
+  "GL.iNet": {
+   "steps": [
+    "Sign in to the router at http://192.168.8.1.",
+    "System, then Upgrade, then Online Upgrade.",
+    "Uncheck \"keep settings\" when moving between major versions.",
+    "These run OpenWrt underneath, so GL.iNet's own builds lag upstream OpenWrt security fixes — check both."
+   ]
+  },
+  "Firewalla": {
+   "steps": [
+    "Open the Firewalla app.",
+    "Settings, then Advanced, then Software Update.",
+    "Updates are usually automatic and applied overnight."
+   ]
+  },
+  "Shelly": {
+   "steps": [
+    "Open the Shelly app or the device's own web page on your LAN.",
+    "Settings, then Firmware Update.",
+    "Or flash Tasmota or ESPHome instead if you want the device to work without Shelly's cloud."
+   ]
+  },
+  "Roborock": {
+   "steps": [
+    "Open the Roborock app.",
+    "Select the robot, then the three-dot menu, then Firmware Update.",
+    "Keep it on the dock and charged above 50%."
+   ]
+  },
+  "iRobot": {
+   "steps": [
+    "Open the iRobot Home app.",
+    "Select the robot, then Product Settings, then Firmware.",
+    "Updates install on the dock overnight."
+   ]
+  },
+  "Ecovacs": {
+   "steps": [
+    "Open the Ecovacs Home app.",
+    "Select the robot, then Settings, then Firmware or About.",
+    "Keep the robot docked while it installs."
+   ]
+  },
+  "Dreame": {
+   "steps": [
+    "Open the Dreamehome app.",
+    "Select the robot, then the gear icon, then Firmware Update.",
+    "Keep it docked and charged."
+   ]
+  },
+  "Nintendo": {
+   "steps": [
+    "System Settings, then System, then System Update.",
+    "Updates also install automatically when the console connects to the internet in sleep mode.",
+    "Joy-Con and Pro Controller firmware updates arrive through System Settings, then Controllers."
+   ]
+  },
+  "Microsoft": {
+   "steps": [
+    "Profile & system, then Settings, then System, then Updates.",
+    "Updates also install automatically when the console is in Instant-on standby.",
+    "Controller firmware: connect it and open the Xbox Accessories app."
+   ]
+  },
+  "Meta": {
+   "steps": [
+    "Quest headsets update automatically when charging and connected to Wi-Fi.",
+    "To check: Settings, then System, then Software Update.",
+    "Leave the headset charging overnight if an update is pending."
+   ]
+  },
+  "Segway": {
+   "steps": [
+    "Open the Segway-Ninebot app with the scooter powered on and nearby.",
+    "Select the vehicle, then Settings, then Firmware.",
+    "Stay within Bluetooth range for the whole update and keep the battery above 50%."
+   ]
+  },
+  "Aventon": {
+   "steps": [
+    "Open the Aventon app with the bike powered on and nearby.",
+    "Select the bike, then Settings, then Firmware Update.",
+    "Keep the bike on and in range until it finishes."
+   ]
+  },
+  "Lectric": {
+   "steps": [
+    "Lectric bikes update at a dealer or through a controller replacement — there is no consumer over-the-air path for most models.",
+    "Check lectricebikes.com/pages/support or contact support with your serial number for model-specific guidance."
+   ]
+  },
+  "Super73": {
+   "steps": [
+    "Open the Super73 app with the bike powered on and nearby.",
+    "Select the bike, then Settings, then check for a firmware update.",
+    "Applies to Bluetooth-equipped models; earlier bikes update only at a dealer."
+   ]
+  },
+  "Cowboy": {
+   "steps": [
+    "Open the Cowboy app with the bike nearby and powered on.",
+    "Updates transfer over Bluetooth automatically when you connect.",
+    "Keep the phone close and the bike on until it completes."
+   ]
+  },
+  "Future Motion": {
+   "steps": [
+    "Open the Onewheel app with the board powered on and nearby.",
+    "Select the board, then check for a firmware update.",
+    "Keep the board on its side or stationary — never ride during or immediately after an update until you have re-tested at low speed."
+   ]
+  },
+  "Lenovo": {
+   "steps": [
+    "Legion Go: open Legion Space, then Settings, then System Update, which covers BIOS and drivers.",
+    "Or download the BIOS for your exact model from support.lenovo.com.",
+    "Keep it on mains power during a BIOS update."
+   ]
+  },
+  "Analogue": {
+   "steps": [
+    "Download the firmware for your model from analogue.co/support.",
+    "Copy the .bin to the root of a FAT32 microSD card.",
+    "Insert the card and power on — the Pocket detects and applies it."
+   ]
+  },
+  "SpaceX": {
+   "steps": [
+    "Starlink updates automatically overnight, usually between 2am and 4am local.",
+    "To check: open the Starlink app, then Settings, then the software version.",
+    "There is no manual update path; the dish reboots itself when one lands."
+   ]
+  },
+  "Zyxel": {
+   "url": "https://www.zyxel.com/global/en/support/download",
+   "steps": [
+    "Sign in to the device's web console or Nebula Control Center.",
+    "Maintenance, then Firmware Upgrade.",
+    "Zyxel has shipped several critical auth-bypass fixes — apply these promptly and never expose the admin page to the internet."
+   ]
+  },
+  "HPE": {
+   "steps": [
+    "Open the Aruba Instant On app or the web portal.",
+    "Select the site, then Settings, then Firmware.",
+    "Devices update together and reboot; schedule it outside working hours."
+   ]
+  },
+  "Linksys": {
+   "steps": [
+    "Open the Linksys app, or sign in at http://192.168.1.1.",
+    "Router Settings, then Connectivity, then Firmware Update.",
+    "Automatic updates are on by default on most Velop nodes."
+   ]
+  },
+  "Asustor": {
+   "steps": [
+    "Sign in to ADM in a browser.",
+    "Settings, then ADM Update, then Live Update.",
+    "Check App Central separately for app updates."
+   ]
+  },
+  "TerraMaster": {
+   "steps": [
+    "Sign in to TOS in a browser.",
+    "Control Panel, then System, then Firmware Update.",
+    "Back up first — TerraMaster major-version updates have historically reset some settings."
+   ]
+  },
+  "UGREEN": {
+   "steps": [
+    "Sign in to UGOS in a browser.",
+    "Control Panel, then System Update.",
+    "Keep the NAS powered through the reboot."
+   ]
+  },
+  "Buffalo": {
+   "steps": [
+    "Sign in to the LinkStation web admin.",
+    "Management, then Firmware Update.",
+    "Or use Buffalo's NAS Navigator utility on a computer on the same network."
+   ]
+  },
+  "Proxmox": {
+   "steps": [
+    "Run `apt update && apt dist-upgrade` on the node, or use the web UI: Node, then Updates.",
+    "Reboot when the kernel changes.",
+    "Update one node at a time in a cluster, migrating guests off first."
+   ]
+  },
+  "Lime Technology": {
+   "steps": [
+    "Open the Unraid web UI.",
+    "Tools, then Update OS.",
+    "Stop the array before applying a major version update, and back up your flash drive first."
+   ]
+  },
+  "SimpliSafe": {
+   "steps": [
+    "The Base Station updates itself over Wi-Fi or cellular automatically.",
+    "To check: open the SimpliSafe app, then Settings, then Base Station.",
+    "Keep it powered; there is no manual trigger."
+   ]
+  },
+  "Chamberlain": {
+   "steps": [
+    "myQ devices update automatically over Wi-Fi.",
+    "To check: open the myQ app, then the device, then Device Information.",
+    "Keep the opener powered and in Wi-Fi range."
+   ]
+  },
+  "Schlage": {
+   "steps": [
+    "Open the Schlage Home app with the lock in Bluetooth range.",
+    "Select the lock, then Settings, then Firmware Update.",
+    "Fit fresh batteries before updating — a lock that dies mid-update may need a factory reset."
+   ]
+  },
+  "Yale": {
+   "steps": [
+    "Open the Yale Access app with the lock in Bluetooth range.",
+    "Select the lock, then Settings, then Firmware.",
+    "Stay near the lock and keep the batteries fresh."
+   ]
+  },
+  "August": {
+   "steps": [
+    "Open the August app with the lock in Bluetooth range.",
+    "Select the lock, then Settings, then Firmware.",
+    "Stay within range for the whole update."
+   ]
+  },
+  "Level": {
+   "steps": [
+    "Open the Level app with the lock in Bluetooth range.",
+    "Select the lock, then Settings, then Firmware.",
+    "Keep the phone close; the update runs over Bluetooth."
+   ]
+  },
+  "Lutron": {
+   "steps": [
+    "Open the Lutron app.",
+    "Settings, then Advanced, then Software Update.",
+    "The Smart Bridge updates first, then paired devices."
+   ]
+  },
+  "SwitchBot": {
+   "steps": [
+    "Open the SwitchBot app.",
+    "Select the device, then the gear icon, then Firmware & Battery.",
+    "Update the Hub before the devices that depend on it."
+   ]
+  },
+  "ecobee": {
+   "steps": [
+    "ecobee thermostats update automatically overnight.",
+    "To check: on the thermostat, Main Menu, then About.",
+    "Keep it connected to Wi-Fi; there is no manual trigger."
+   ]
+  },
+  "Resideo": {
+   "steps": [
+    "Honeywell Home thermostats update automatically over Wi-Fi.",
+    "To check: on the thermostat, Menu, then Equipment Status or About.",
+    "Keep it on Wi-Fi and powered."
+   ]
+  },
+  "Emporia": {
+   "steps": [
+    "Open the Emporia app.",
+    "Select the device, then Settings, then Firmware.",
+    "Updates usually install on their own within a day of release."
+   ]
+  },
+  "Moen": {
+   "steps": [
+    "Open the Flo by Moen app.",
+    "Select the device, then Settings, then Device Info.",
+    "Updates install automatically overnight; keep the valve powered and on Wi-Fi."
+   ]
+  },
+  "Rachio": {
+   "steps": [
+    "Open the Rachio app.",
+    "Select the controller, then Settings, then About.",
+    "Updates install automatically when the controller is online."
+   ]
+  },
+  "Nanoleaf": {
+   "steps": [
+    "Open the Nanoleaf app.",
+    "Select the device, then the gear icon, then Firmware Update.",
+    "Keep the panels powered through the update."
+   ]
+  },
+  "LIFX": {
+   "steps": [
+    "Open the LIFX app.",
+    "Settings, then the bulb, then Firmware Update.",
+    "Keep the bulb powered on — do not cut power at the switch."
+   ]
+  },
+  "Philips": {
+   "steps": [
+    "Open the Philips Hue app.",
+    "Settings, then Software Update.",
+    "The Bridge updates first, then bulbs and accessories. Keep lights powered at the wall switch so they can receive it."
+   ]
+  },
+  "Samsung": {
+   "steps": [
+    "Open the SmartThings app.",
+    "Menu, then Devices, then the hub, then Firmware.",
+    "Hub updates install automatically overnight by default."
+   ]
+  },
+  "Autel Robotics": {
+   "steps": [
+    "Open the Autel Sky or Autel Explorer app with the aircraft and controller on.",
+    "The app prompts for firmware; keep both powered and batteries above 50%.",
+    "Update the controller and every battery, not just the aircraft."
+   ]
+  },
+  "Zero Zero Robotics": {
+   "steps": [
+    "Open the HoverAir app with the drone powered on and paired.",
+    "Select the drone, then Settings, then Firmware.",
+    "Keep it charged and in Bluetooth range."
+   ]
+  },
+  "Wahoo": {
+   "steps": [
+    "Open the Wahoo ELEMNT app with the device paired.",
+    "Updates transfer automatically over Bluetooth when the app is open.",
+    "Keep the head unit charged and nearby."
+   ]
+  },
+  "Shimano": {
+   "steps": [
+    "Open E-TUBE PROJECT Cyclist on your phone, or the desktop app with the SM-PCE02 interface.",
+    "Connect to the bike and apply the update.",
+    "Di2 and STEPS components each carry their own firmware — update all of them together."
+   ]
+  },
+  "Trek": {
+   "steps": [
+    "Trek e-bikes use Bosch drive systems — update through the eBike Flow app.",
+    "Bontrager lights and sensors update through the Trek Central app.",
+    "Frame-specific service items go through a Trek dealer."
+   ]
+  },
+  "Specialized": {
+   "steps": [
+    "Open the Specialized app with the bike powered on and nearby.",
+    "Select the bike, then check for a firmware update.",
+    "Keep the bike on and in Bluetooth range for the whole update."
+   ]
+  },
+  "Snapmaker": {
+   "steps": [
+    "Download the firmware for your exact model from snapmaker.com/support.",
+    "Copy it to a USB drive or use Luban over USB.",
+    "Follow the model-specific procedure — the modules and the controller update separately."
+   ]
+  },
+  "xTool": {
+   "steps": [
+    "Open xTool Creative Space with the machine connected.",
+    "The app prompts when firmware is available.",
+    "Keep the machine powered and connected until it finishes."
+   ]
+  },
+  "Glowforge": {
+   "steps": [
+    "Glowforge updates automatically over Wi-Fi when the unit is on and idle.",
+    "There is no manual update path — leave it powered and connected.",
+    "If it seems stuck, power-cycle and leave it online for an hour."
+   ]
+  },
+  "Raspberry Pi": {
+   "steps": [
+    "Run `sudo apt update && sudo apt full-upgrade` for the OS and firmware packages.",
+    "Bootloader and EEPROM: `sudo rpi-eeprom-update -a` then reboot.",
+    "Check `vcgencmd bootloader_version` afterwards to confirm."
+   ]
+  },
+  "Arduino": {
+   "steps": [
+    "Open the Arduino IDE, then Tools, then Board, then Boards Manager and update the core for your board.",
+    "For the UNO R4's connectivity firmware, use the Firmware Updater under Tools.",
+    "Keep the board connected by USB throughout."
+   ]
+  },
+  "System76": {
+   "steps": [
+    "On Pop!_OS, open Settings, then Firmware — updates appear there.",
+    "Or run `sudo apt update && sudo apt full-upgrade` then use the firmware manager.",
+    "Keep the machine on mains power; it reboots into the updater."
+   ]
+  },
+  "Anycubic": {
+   "steps": [
+    "Download the firmware for your exact model from anycubic.com/pages/firmware-software.",
+    "Copy it to a USB stick or microSD card and insert it into the printer.",
+    "Confirm on the touchscreen and wait for the reboot."
+   ]
+  },
+  "MikroTik": {
+   "url": "https://mikrotik.com/download",
+   "steps": [
+    "In WinBox or WebFig: System, then Packages, then Check For Updates.",
+    "Update RouterOS first, then System, then RouterBOARD, then Upgrade for the bootloader, then reboot again.",
+    "Never expose Winbox or the web console to the internet — unpatched MikroTik devices have been widely exploited."
+   ]
+  }
+ },
+ "by_kind": {
+  "github": {
+   "steps": [
+    "Read the release notes first — self-hosted projects break config and schemas between versions more often than appliances do.",
+    "Docker: pull the new image tag and recreate the container (`docker compose pull && docker compose up -d`).",
+    "Package or bare metal: update through your distribution's package manager, or replace the binary from the releases page.",
+    "Back up the config and database directory first. For most projects a downgrade is not supported once the schema has migrated."
+   ]
+  },
+  "github_flash": {
+   "steps": [
+    "Read the release notes first — firmware changes can require re-doing your config or calibration.",
+    "Use the project's own installer where it has one: a web flasher over USB, or an over-the-air update in its web UI.",
+    "Otherwise build or download the binary for your exact board from the releases page — the wrong board file will not boot.",
+    "Keep the previous firmware image and your config backed up so you can roll back."
+   ]
+  }
+ },
+ "flash_ids": [
+  "arduino-esp32",
+  "ardupilot",
+  "batocera",
+  "betaflight",
+  "bruce-firmware",
+  "circuitpython",
+  "edgetx",
+  "emonesp",
+  "esp-idf",
+  "esp32-marauder",
+  "espeasy",
+  "expresslrs",
+  "fluidnc",
+  "freertos",
+  "grbl",
+  "inav",
+  "klipper",
+  "konnected-esphome",
+  "libretiny",
+  "linuxcnc",
+  "marlin-3d-printer",
+  "matter-sdk",
+  "micropython",
+  "nrf-connect-sdk",
+  "openbk7231t",
+  "openevse",
+  "openmqttgateway",
+  "openpilot",
+  "openthread",
+  "pico-sdk",
+  "pwnagotchi",
+  "px4-autopilot",
+  "qmk-firmware",
+  "raspberrypi-firmware",
+  "ratgdo",
+  "reprapfirmware",
+  "retropie",
+  "riot-os",
+  "rpi-eeprom",
+  "shelly-homekit",
+  "stm32duino",
+  "thingino",
+  "valetudo",
+  "zephyr-rtos",
+  "zmk-firmware"
+ ],
+ "by_category": {
+  "R": {
+   "steps": [
+    "Sign in to the router's admin page — usually http://192.168.1.1 or http://192.168.0.1 — or open the manufacturer's app.",
+    "Find Firmware, System Update or Administration.",
+    "Check for updates and apply. Keep the router powered through the reboot; it takes one to three minutes."
+   ]
+  },
+  "N": {
+   "steps": [
+    "Back up anything you can't lose first.",
+    "Open the NAS control panel in a browser.",
+    "Go to the update or package section and install the new version.",
+    "Expect several minutes and at least one reboot."
+   ]
+  },
+  "S": {
+   "steps": [
+    "Open the manufacturer's phone app.",
+    "Select the device, then look for Device Health, Firmware or About.",
+    "Apply the update and keep the device powered and on Wi-Fi.",
+    "Many smart-home devices update themselves overnight — if there's no button, it will arrive on its own."
+   ]
+  },
+  "C": {
+   "steps": [
+    "Connect the device to Wi-Fi or to the manufacturer's app.",
+    "Open system settings and check for a system or firmware update.",
+    "Keep it charged and connected until the update finishes."
+   ]
+  },
+  "M": {
+   "steps": [
+    "Open the project's releases page and read the notes for this version — breaking changes are common.",
+    "Follow the project's flashing or OTA procedure; many offer a web installer or a one-click update in their own UI.",
+    "Keep the previous firmware image so you can roll back."
+   ]
+  }
+ }
+}
