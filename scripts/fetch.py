@@ -28,7 +28,7 @@ workflow to consume (neither is committed):
 Both are deleted at the start of every run, so their presence means "something changed".
 """
 import json, os, re, sys, html, time, urllib.request, urllib.error
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from zoneinfo import ZoneInfo
 import xml.etree.ElementTree as ET
