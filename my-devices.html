@@ -215,6 +215,7 @@ footer a:hover{color:var(--text)}
   var catalog = {};
   var mine = load();
   var user = null;          // {email, plan} when signed in
+  var rev = null;           // revision of the account list we last saw (see /api/me)
   var saveTimer = null;
 
   function load() {
@@ -278,7 +279,11 @@ footer a:hover{color:var(--text)}
     var tag = user.plan === "pro" ? '<span class="tag pro">Pro</span>' : '<span class="tag">Free · up to ' + FREE_LIMIT + ' devices</span>';
     box.innerHTML =
       '<div class="who">Signed in as <b>' + esc(user.email) + '</b>' + tag + '</div>' +
-      '<button class="btn ghost sm" type="button" id="logoutBtn">Sign out</button>';
+      '<button class="btn ghost sm" type="button" id="logoutBtn">Sign out</button>' +
+      (user.plan !== "pro" && mine.length > FREE_LIMIT
+        ? '<div class="msg">Free accounts sync the first ' + FREE_LIMIT + ' devices. The other ' + (mine.length - FREE_LIMIT) +
+          ' stay in this browser only — <a href="/#pricing">upgrade to Pro</a> to keep all of them in your account.</div>'
+        : "");
     document.getElementById("logoutBtn").addEventListener("click", function () {
       fetch("/api/logout", { method: "POST" }).then(function () {
         user = null; location.reload();
@@ -289,17 +294,41 @@ footer a:hover{color:var(--text)}
 
   function atLimit() { return user && user.plan !== "pro" && mine.length >= FREE_LIMIT; }
 
-  function syncUp() {
+  // Union of two lists by device id. Where both know a device, the newer-looking version wins
+  // (an empty version never beats a filled-in one).
+  function mergeLists(a, b) {
+    var out = [], seen = {};
+    a.concat(b).forEach(function (e) {
+      if (!e || !e.id) return;
+      if (!seen.hasOwnProperty(e.id)) { seen[e.id] = out.length; out.push({ id: e.id, version: e.version || "" }); return; }
+      var cur = out[seen[e.id]], c = compare(e.version, cur.version);
+      if (!norm(cur.version) || (c !== null && c > 0)) cur.version = e.version || "";
+    });
+    return out;
+  }
+  function sameList(a, b) { return JSON.stringify(a.map(function (e) { return [e.id, e.version || ""]; })) === JSON.stringify(b.map(function (e) { return [e.id, e.version || ""]; })); }
+  // What the account stores: everything on Pro, the first FREE_LIMIT devices otherwise.
+  // The rest stay in this browser; the page says so rather than deleting them.
+  function toSync() { return user && user.plan === "pro" ? mine : mine.slice(0, FREE_LIMIT); }
+
+  function syncUp(retried) {
     if (!user) return;
     fetch("/api/me", {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ devices: mine })
+      body: JSON.stringify({ devices: toSync(), base: rev })
     }).then(function (r) { return r.json().then(function (d) { return { s: r.status, d: d }; }); })
       .then(function (x) {
+        if (x.s === 200) { rev = x.d.rev || null; return; }
         if (x.s === 401) { user = null; toast("Signed out. Sign in again to keep syncing."); location.reload(); return; }
+        if (x.s === 409 && !retried) {
+          // another tab or device saved first: fold its list into ours and try once more
+          mine = mergeLists(x.d.devices || [], mine); rev = x.d.rev || null;
+          localStorage.setItem(KEY, JSON.stringify(mine)); render(); renderAccount();
+          syncUp(true); return;
+        }
         if (x.s === 403) { toast(x.d.error || "Free plan limit reached."); return; }
-        if (x.s !== 200) toast(x.d.error || "Couldn't save to your account.");
+        toast(x.d.error || "Couldn't save to your account.");
       }).catch(function () { toast("Couldn't reach the server; saved locally."); });
   }
 
@@ -309,20 +338,13 @@ footer a:hover{color:var(--text)}
       .then(function (d) {
         if (!d || !d.ok) return;
         user = { email: d.email, plan: d.plan };
+        rev = d.rev || null;
         var server = d.devices || [];
-        if (server.length) {
-          // server wins; merge in any local-only devices (room permitting)
-          var ids = {};
-          server.forEach(function (e) { ids[e.id] = true; });
-          mine.forEach(function (e) { if (!ids[e.id]) server.push(e); });
-          mine = server;
-          if (user.plan !== "pro" && mine.length > FREE_LIMIT) mine = mine.slice(0, FREE_LIMIT);
-          localStorage.setItem(KEY, JSON.stringify(mine));
-          if (mine.length !== d.devices.length) syncUp();
-        } else if (mine.length) {
-          if (user.plan !== "pro" && mine.length > FREE_LIMIT) { mine = mine.slice(0, FREE_LIMIT); localStorage.setItem(KEY, JSON.stringify(mine)); }
-          syncUp();
-        }
+        // the account's list comes first, then anything only this browser knows about;
+        // nothing is dropped — on the free plan the extras just don't sync (see toSync)
+        mine = mergeLists(server, mine);
+        localStorage.setItem(KEY, JSON.stringify(mine));
+        if (!sameList(toSync(), server)) syncUp();
         renderAccount();
       }).catch(function () {});
   }
