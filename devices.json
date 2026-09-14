@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-14T16:31:53+00:00",
+ "generated": "2026-09-14T16:52:36+00:00",
  "tracked": 222,
  "ok": 222,
  "failed": [],
@@ -15,6 +15,7 @@
    "notes": "Overview UniFi OS 5.1.33 includes the improvements and bugfixes below. Bundled UniFi Network 10.5.67 Identity Sync Service 1.8.4 Bugfixes Fixed an issue where applications could fail to install or update.",
    "source_url": "https://community.ui.com/releases/UniFi-OS-Dream-Machines-5-1-33/bdb30bcf-c8b9-4713-8fc7-2405d9de1f8d",
    "product_url": "https://store.ui.com/us/en/products/udm-se",
+   "update_url": null,
    "history": [
     {
      "version": "5.1.33",
@@ -37,6 +38,7 @@
    "notes": "Overview UniFi Protect 7.2.105 introduces Evidence Trust to verify the authenticity of exported cases, Redesigned Case Management, Extended Third Party Camera support, and Personal Protective Equipment (PPE) Detection. This release also improves the Integration API with the new PoS API. Improvement…",
    "source_url": "https://community.ui.com/releases/UniFi-Protect-Application-7-2-105/4fa06975-6aa3-4e3f-b7d5-8814e331d14c",
    "product_url": "https://store.ui.com/us/en/products/uvc-g5-bullet",
+   "update_url": null,
    "history": [
     {
      "version": "7.2.105",
@@ -59,6 +61,7 @@
    "notes": "Improvements Added MLO STR Mesh support for WiFi 7 Access Points. Requires UAP 8.8 or newer. Improved Application stability. Improved Observability resiliency. Bugfixes Fixed a rare issue where WiFi clients using MLO could display an incorrect IP address. Fixed an issue where WiFi Broadcast could f…",
    "source_url": "https://community.ui.com/releases/UniFi-Network-Application-10-6-106/f206c01d-3f73-471b-b4a5-2da48f157ea6",
    "product_url": null,
+   "update_url": null,
    "history": [
     {
      "version": "10.6.106",
@@ -81,6 +84,7 @@
    "notes": "Improvements Improved stability. Bugfixes Fixed Client Device Isolation not being enforced on some wireless networks. Additional information If you encounter any issues with this release, please provide us with some details on your setup and include the below information: AP model(s) Previous AP re…",
    "source_url": "https://community.ui.com/releases/UniFi-Access-Point-for-U7-LR-8-0-76/c60a703f-fbe1-43bc-a127-702004c37ad1",
    "product_url": null,
+   "update_url": null,
    "history": [
     {
      "version": "8.0.76",
@@ -103,6 +107,7 @@
    "notes": "Hi, The OpenWrt community is proud to announce the newest stable release of the OpenWrt 24.10 stable series. This release fixes many security issues, several of them remotely triggerable in network services that are enabled by default. We strongly recommend everyone to upgrade. The OpenWrt 24.10 se…",
    "source_url": "https://github.com/openwrt/openwrt/releases/tag/v24.10.8",
    "product_url": null,
+   "update_url": "https://github.com/openwrt/openwrt/releases",
    "history": [
     {
      "version": "24.10.8",
@@ -125,6 +130,7 @@
    "notes": "Home Assistant OS 18.2 is a minor release fixing various bugs and smaller caveats. It mainly resolves networking (custom MTU) issues on Home Assistant Green and resolves eMMC/booting issues on Hardkernel ODROID-N2+. It also improves the update system integration on Raspberry Pi 5, making sure that …",
    "source_url": "https://github.com/home-assistant/operating-system/releases/tag/18.2",
    "product_url": "https://www.home-assistant.io/green/",
+   "update_url": "https://github.com/home-assistant/operating-system/releases",
    "history": [
     {
      "version": "18.2",
@@ -147,6 +153,7 @@
    "notes": "RELEASE NOTES Migration Information This version removes support for direct migration from versions before v8.1.0 (Doris) See migration path for instructions how to migrate to a major version. Do not upgrade from minimal to minimal version. It will most likely fail at some point and will require fl…",
    "source_url": "https://github.com/arendst/Tasmota/releases/tag/v15.6.0",
    "product_url": null,
+   "update_url": "https://github.com/arendst/Tasmota/releases",
    "history": [
     {
      "version": "15.6.0",
@@ -169,6 +176,7 @@
    "notes": "WLED Version 16.0.1 Announcement Read the full copy at https://github.com/wled/WLED/releases/tag/v16.0.1 I'm pleased to announce that since the release of 16.0.0, approximately 50% of WLED installs have downloaded the new release, with only a tiny number of issues reported relative to the install b…",
    "source_url": "https://github.com/wled/WLED/releases/tag/v16.0.1",
    "product_url": null,
+   "update_url": "https://github.com/wled/WLED/releases",
    "history": [
     {
      "version": "16.0.1",
@@ -191,6 +199,7 @@
    "notes": "Summary New features Support for the new Prusa XL+ Contactless tool offset calibration [XL+] Nozzle thermal expansion compensation [XL/+] Immediate stop on filament runout [6.8.1] Guided calibration order [6.8.1] Filament compatibility checks in more places [6.8.1] Reworked tool mapping screen [6.6…",
    "source_url": "https://github.com/prusa3d/Prusa-Firmware-Buddy/releases/tag/v6.10.1",
    "product_url": "https://www.prusa3d.com/product/original-prusa-mk4s-kit/",
+   "update_url": "https://github.com/prusa3d/Prusa-Firmware-Buddy/releases",
    "history": [
     {
      "version": "6.10.1",
@@ -217,6 +226,7 @@
    "notes": "This is a bugfix release for Flipper Zero Firmware 1.4.2 What's Changed Infrared: Fix infrared CLI plugin MissingImports Full Changelog : 1.4.2...1.4.3",
    "source_url": "https://github.com/flipperdevices/flipperzero-firmware/releases/tag/1.4.3",
    "product_url": "https://shop.flipperzero.one/",
+   "update_url": "https://github.com/flipperdevices/flipperzero-firmware/releases",
    "history": [
     {
      "version": "1.4.3",
@@ -239,6 +249,7 @@
    "notes": "Warning This initial cut of 2.8.0 was revoked due to issues encountered with LR1110 initialization. This became apparent on T1000-E devices after a fresh flash. Please download https://github.com/meshtastic/firmware/releases/tag/v2.8.0.47db0e3 instead.",
    "source_url": "https://github.com/meshtastic/firmware/releases/tag/v2.8.0.7239fe8",
    "product_url": null,
+   "update_url": "https://github.com/meshtastic/firmware/releases",
    "history": [
     {
      "version": "2.8.0.7239fe8",
@@ -261,6 +272,7 @@
    "notes": "PS5 system software. Sony usually describes these as performance and stability improvements; see the release notes for details.",
    "source_url": "https://www.playstation.com/en-us/support/hardware/ps5/system-software-info/",
    "product_url": "https://direct.playstation.com/en-us/consoles",
+   "update_url": "https://www.playstation.com/en-us/support/hardware/ps5/system-software-info/",
    "history": [
     {
      "version": "26.05-13.60.00",
@@ -283,6 +295,7 @@
    "notes": "Xbox system update. See the release notes for details.",
    "source_url": "https://support.xbox.com/en-us/help/hardware-network/settings-updates/whats-new-xbox-one-system-updates",
    "product_url": "https://www.xbox.com/en-US/consoles",
+   "update_url": "https://support.xbox.com/en-us/help/hardware-network/settings-updates/whats-new-xbox-one-system-updates",
    "history": [
     {
      "version": "10.0.26100.9426",
@@ -305,6 +318,7 @@
    "notes": "Nintendo Switch system update. Nintendo usually lists these as stability improvements.",
    "source_url": "https://en-americas-support.nintendo.com/app/answers/detail/a_id/22525",
    "product_url": null,
+   "update_url": "https://en-americas-support.nintendo.com/app/answers/detail/a_id/22525",
    "history": [
     {
      "version": "23.0.0",
@@ -327,6 +341,7 @@
    "notes": "This model was end of its life, and its firmware, utility, website, and manual will no longer be updated. For more details, please refer to https://www.asus.com/event/network/eol-product/ Security Fixes: Enhanced input validation and protection to reduce the risk of command injection and SQL inject…",
    "source_url": "https://www.asus.com/networking-iot-servers/wifi-routers/asus-wifi-routers/rt-ax88u/helpdesk_bios?model2Name=RT-AX88U",
    "product_url": null,
+   "update_url": "https://www.asus.com/networking-iot-servers/wifi-routers/asus-wifi-routers/rt-ax88u/helpdesk_bios?model2Name=RT-AX88U",
    "history": [
     {
      "version": "3.0.0.4.388_24385",
@@ -349,6 +364,7 @@
    "notes": "Security Fixes - Enhanced DNS name handling to address a potential memory issue that could occur in rare cases during name format conversion, improving system security and robustness. - Improved safeguards for execution modules to reduce the risk of substitution during certain processes.",
    "source_url": "https://www.asus.com/networking-iot-servers/wifi-routers/asus-wifi-routers/rt-ax86u-pro/helpdesk_bios?model2Name=RT-AX86U-Pro",
    "product_url": null,
+   "update_url": "https://www.asus.com/networking-iot-servers/wifi-routers/asus-wifi-routers/rt-ax86u-pro/helpdesk_bios?model2Name=RT-AX86U-Pro",
    "history": [
     {
      "version": "3.0.0.6.102_37436",
@@ -371,6 +387,7 @@
    "notes": "TP-Link firmware release. See the download page for the changelog.",
    "source_url": "https://www.tp-link.com/us/support/download/archer-ax73/#Firmware",
    "product_url": null,
+   "update_url": "https://www.tp-link.com/us/support/download/archer-ax73/#Firmware",
    "history": [
     {
      "version": "220519",
@@ -393,6 +410,7 @@
    "notes": "Netgear firmware release. See the support page for release notes.",
    "source_url": "https://www.netgear.com/support/product/rax50/",
    "product_url": null,
+   "update_url": "https://www.netgear.com/support/product/rax50/",
    "history": [
     {
      "version": "1.0.18.146",
@@ -415,6 +433,7 @@
    "notes": "Fixed a stability issue with HomeKit Secure Router Fixed an issue with intermittent disconnects on Wi-Fi 7 eero networks Fixed an issue with noise floor measurement and reporting Performance and stability improvements",
    "source_url": "https://eero.com/support/articles/eero-software-release-notes",
    "product_url": null,
+   "update_url": "https://eero.com/support/articles/eero-software-release-notes",
    "history": [
     {
      "version": "7.17.1",
@@ -437,6 +456,7 @@
    "notes": "DSM release. See Synology's release notes for details.",
    "source_url": "https://www.synology.com/en-us/releaseNote/DSM",
    "product_url": null,
+   "update_url": "https://www.synology.com/en-us/releaseNote/DSM",
    "history": [
     {
      "version": "7.4.1-90080",
@@ -459,6 +479,7 @@
    "notes": "DSM release. See Synology's release notes for details.",
    "source_url": "https://www.synology.com/en-us/releaseNote/DSM",
    "product_url": null,
+   "update_url": "https://www.synology.com/en-us/releaseNote/DSM",
    "history": [
     {
      "version": "7.4.1-90080",
@@ -481,6 +502,7 @@
    "notes": "QTS firmware release. See QNAP's release notes for details.",
    "source_url": "https://www.qnap.com/en-us/download?model=ts-464&category=firmware",
    "product_url": null,
+   "update_url": "https://www.qnap.com/en-us/download?model=ts-464&category=firmware",
    "history": [
     {
      "version": "5.2.10.3577",
@@ -503,6 +525,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -520,6 +543,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -537,6 +561,7 @@
    "notes": "We’ve added support for our new products: Wired Wall Switches and Modules, Play table and floor lamps, and Candle bulbs. We’ve made several small changes behind the scenes to make your Hue Bridge V2 work even better.",
    "source_url": "https://www.philips-hue.com/en-us/support/release-notes/bridge",
    "product_url": null,
+   "update_url": "https://www.philips-hue.com/en-us/support/release-notes/bridge",
    "history": [
     {
      "version": "1978074000",
@@ -559,6 +584,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -576,6 +602,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -593,6 +620,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -610,6 +638,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -627,6 +656,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -644,6 +674,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -661,6 +692,7 @@
    "notes": "## Security Fixes - [pi-hole/pi-hole/security/advisories/GHSA-h8w9-qx2v-wrww](https://github.com/pi-hole/pi-hole/security/advisories/GHSA-h8w9-qx2v-wrww) — Local privilege escalation from pihole user to root via /etc/pihole/logrotate (High) reported by [supperhellokitty20](https://github.com/supper…",
    "source_url": "https://github.com/pi-hole/pi-hole/releases/tag/v6.4.3",
    "product_url": "https://pi-hole.net/",
+   "update_url": "https://github.com/pi-hole/pi-hole/releases",
    "history": [
     {
      "version": "6.4.3",
@@ -683,6 +715,7 @@
    "notes": "It’s not always the big issues: sometimes what you need is a few fixes and tweaks to pump up the overall stability 🔩 ## Full changelog See also the [v0.107.79 GitHub milestone][ms-v0.107.79]. ### Security - Go version has been updated to prevent the possibility of exploiting the Go vulnerabilities …",
    "source_url": "https://github.com/AdguardTeam/AdGuardHome/releases/tag/v0.107.79",
    "product_url": "https://adguard.com/adguard-home/overview.html",
+   "update_url": "https://github.com/AdguardTeam/AdGuardHome/releases",
    "history": [
     {
      "version": "0.107.79",
@@ -705,6 +738,7 @@
    "notes": "Please refer to the changelog available at https://tailscale.com/changelog",
    "source_url": "https://github.com/tailscale/tailscale/releases/tag/v1.102.4",
    "product_url": "https://tailscale.com/",
+   "update_url": "https://github.com/tailscale/tailscale/releases",
    "history": [
     {
      "version": "1.102.4",
@@ -727,6 +761,7 @@
    "notes": "26.7.3",
    "source_url": "https://github.com/opnsense/core/releases/tag/26.7.3",
    "product_url": "https://opnsense.org/",
+   "update_url": "https://github.com/opnsense/core/releases",
    "history": [
     {
      "version": "26.7.3",
@@ -749,6 +784,7 @@
    "notes": "",
    "source_url": "https://www.mikrotik.com/download/changelogs/stable",
    "product_url": "https://mikrotik.com/products",
+   "update_url": "https://www.mikrotik.com/download/changelogs/stable",
    "history": [
     {
      "version": "7.24.2",
@@ -771,6 +807,7 @@
    "notes": "- [espidf] Always reconfigure after component discovery [esphome#18730](https://github.com/esphome/esphome/pull/18730) by [](https://github.com/bdraco) - [gpio] Fix one_wire reset busy-waiting with interrupts off when delay wraps [esphome#18733](https://github.com/esphome/esphome/pull/18733) by [](…",
    "source_url": "https://github.com/esphome/esphome/releases/tag/2026.8.2",
    "product_url": "https://esphome.io/",
+   "update_url": "https://github.com/esphome/esphome/releases",
    "history": [
     {
      "version": "2026.8.2",
@@ -793,6 +830,7 @@
    "notes": "- Normalize Hive auth username before login ([] - [#​168827]) ([hive docs]) - Don't mutate the module level Roomba SENSORS list ([] - [#​181107]) ([roomba docs]) - Fix Openhome players becoming unavailable between polls ([] - [#​181238]) ([openhome docs]) (dependency) - Clear webostv source when th…",
    "source_url": "https://github.com/home-assistant/core/releases/tag/2026.9.2",
    "product_url": "https://www.home-assistant.io/",
+   "update_url": "https://github.com/home-assistant/core/releases",
    "history": [
     {
      "version": "2026.9.2",
@@ -815,6 +853,7 @@
    "notes": "# Notes - This hotfix release fixes several issues where cover states were inverted (e.g. #​33004, #​33014 and #​33010) # Fixes - [#​33006](https://github.com/Koenkk/zigbee2mqtt/issues/33006) Home Assistant: add state class for formaldehyde () - [#​33003](https://github.com/Koenkk/zigbee2mqtt/issue…",
    "source_url": "https://github.com/Koenkk/zigbee2mqtt/releases/tag/2.14.1",
    "product_url": "https://www.zigbee2mqtt.io/",
+   "update_url": "https://github.com/Koenkk/zigbee2mqtt/releases",
    "history": [
     {
      "version": "2.14.1",
@@ -837,6 +876,7 @@
    "notes": "## Images - [ghcr.io/blakeblackshear/frigate:0.18.0](https://github.com/blakeblackshear/frigate/pkgs/container/frigate/1216280963?tag=0.18.0) - [ghcr.io/blakeblackshear/frigate:0.18.0-standard-arm64](https://github.com/blakeblackshear/frigate/pkgs/container/frigate/1216277591?tag=0.18.0-standard-ar…",
    "source_url": "https://github.com/blakeblackshear/frigate/releases/tag/v0.18.0",
    "product_url": "https://frigate.video/",
+   "update_url": "https://github.com/blakeblackshear/frigate/releases",
    "history": [
     {
      "version": "0.18.0",
@@ -859,6 +899,7 @@
    "notes": "This is a minor release patching miscellaneous issues. Example Configurations for many machines are posted at: https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.8 Binaries of this release will be available at: https://github.com/MarlinFirmware/MarlinBuilds/tree/release-2.1.2.8 ###…",
    "source_url": "https://github.com/MarlinFirmware/Marlin/releases/tag/2.1.2.8",
    "product_url": "https://marlinfw.org/",
+   "update_url": "https://github.com/MarlinFirmware/Marlin/releases",
    "history": [
     {
      "version": "2.1.2",
@@ -881,6 +922,7 @@
    "notes": "## ✋ Heads-ups **The heads-ups from previous 1.11.x releases still apply**, please read their release notes as well for a full picture of what you should be aware of and what changed! ## ⛈ Issues while updating? On every new OctoPrint release we see some people run into the same issues with outdate…",
    "source_url": "https://github.com/OctoPrint/OctoPrint/releases/tag/1.11.8",
    "product_url": "https://octoprint.org/",
+   "update_url": "https://github.com/OctoPrint/OctoPrint/releases",
    "history": [
     {
      "version": "1.11.8",
@@ -903,6 +945,7 @@
    "notes": "## What's Changed * [le12.2] syncthing: update to 2.0.1 and addon (1) * [le12.2] system-tools: fix missing zstd library and addon (1) * mesa: update to 25.1.8 * [le12.2] tools/change_addon_version: backport from master * [le12.2] scripts/get_archive: allow fallback to curl if wget is missing * [le1…",
    "source_url": "https://github.com/LibreELEC/LibreELEC.tv/releases/tag/12.2.1",
    "product_url": "https://libreelec.tv/",
+   "update_url": "https://github.com/LibreELEC/LibreELEC.tv/releases",
    "history": [
     {
      "version": "12.2.1",
@@ -925,6 +968,7 @@
    "notes": "![splash](https://github.com/user-attachments/assets/dfc4823b-72a7-4abc-9858-d3d83c51577a) ## Release Summary Major user-facing changes include: **Video** * Added HDR support on Xbox One * Fixed Blu-ray playback on Linux * Fixed audio/subtitle issues when resuming Blu-rays * Fixed handling of HDR10…",
    "source_url": "https://github.com/xbmc/xbmc/releases/tag/21.3-Omega",
    "product_url": "https://kodi.tv/",
+   "update_url": "https://github.com/xbmc/xbmc/releases",
    "history": [
     {
      "version": "21.3",
@@ -947,6 +991,7 @@
    "notes": "# :rocket: Release notes for 12.0 ## Notes on Updating Before upgrading from an earlier version, a full backup of the data directory is strongly recommended, as this release includes database changes that prevent rolling back without a full restore. Direct upgrades from 10.10.7 and 10.11.x to 12.0 …",
    "source_url": "https://github.com/jellyfin/jellyfin/releases/tag/v12.0",
    "product_url": "https://jellyfin.org/",
+   "update_url": "https://github.com/jellyfin/jellyfin/releases",
    "history": [
     {
      "version": "12.0",
@@ -969,6 +1014,7 @@
    "notes": "# v3.2.0 Welcome to Immich `v3.2.0`! This release includes many new features as well as the usual collection of bug fixes and cleanups. Keep reading below for a list of highlights. ## Highlights * Docker compose builder * Revamped search UI (web) * Search API v2 (server) * View own people in shared…",
    "source_url": "https://github.com/immich-app/immich/releases/tag/v3.2.0",
    "product_url": "https://immich.app/",
+   "update_url": "https://github.com/immich-app/immich/releases",
    "history": [
     {
      "version": "3.2.0",
@@ -991,6 +1037,7 @@
    "notes": "https://github.com/nextcloud-releases/server/releases/tag/v32.0.15",
    "source_url": "https://github.com/nextcloud/server/releases/tag/v32.0.15",
    "product_url": "https://nextcloud.com/",
+   "update_url": "https://github.com/nextcloud/server/releases",
    "history": [
     {
      "version": "32.0.15",
@@ -1013,6 +1060,7 @@
    "notes": "3006.102.9-beta1",
    "source_url": "https://github.com/RMerl/asuswrt-merlin.ng/releases/tag/3006.102.9-beta1",
    "product_url": "https://github.com/RMerl/asuswrt-merlin.ng",
+   "update_url": "https://github.com/RMerl/asuswrt-merlin.ng/releases",
    "history": [
     {
      "version": "3006.102.9-beta1",
@@ -1035,6 +1083,7 @@
    "notes": "## Security Fixes - [pi-hole/FTL/security/advisories/GHSA-q6fm-xwxf-37r5](https://github.com/pi-hole/FTL/security/advisories/GHSA-q6fm-xwxf-37r5) — WebUI (& API) DoS via lack of rate limiting (High) reported by [rrobgill](https://github.com/rrobgill) - [pi-hole/FTL/security/advisories/GHSA-w8cr-2cw…",
    "source_url": "https://github.com/pi-hole/FTL/releases/tag/v6.7",
    "product_url": "https://github.com/pi-hole/FTL",
+   "update_url": "https://github.com/pi-hole/FTL/releases",
    "history": [
     {
      "version": "6.7",
@@ -1057,6 +1106,7 @@
    "notes": "## What's Changed * [management] Serve networks with peer-based routers from the SQLite network map **Full Changelog**: https://github.com/netbirdio/netbird/compare/v0.78.0...v0.78.1",
    "source_url": "https://github.com/netbirdio/netbird/releases/tag/v0.78.1",
    "product_url": "https://github.com/netbirdio/netbird",
+   "update_url": "https://github.com/netbirdio/netbird/releases",
    "history": [
     {
      "version": "0.78.1",
@@ -1079,6 +1129,7 @@
    "notes": "**Minimum supported Tailscale client version: v1.80.0** ### Changes - Fix tagged node stuck expired after `tailscale logout`, unable to re-authenticate [#​3394](https://github.com/juanfont/headscale/pull/3394) - Re-registering a tagged node with a different pre-auth key now applies the new key's ta…",
    "source_url": "https://github.com/juanfont/headscale/releases/tag/v0.29.3",
    "product_url": "https://github.com/juanfont/headscale",
+   "update_url": "https://github.com/juanfont/headscale/releases",
    "history": [
     {
      "version": "0.29.3",
@@ -1101,6 +1152,7 @@
    "notes": "* Fixed line endings for the zttap300.inf for the Windows ARM x64 install. * Internal updates to the central controller (CV1) including schema changes and a multi-architecture Docker build pipeline. * Increased `ZT_MAX_NETWORK_SPECIALISTS` from 256 to 512 to accommodate users with large networks th…",
    "source_url": "https://github.com/zerotier/ZeroTierOne/releases/tag/1.16.2",
    "product_url": "https://github.com/zerotier/ZeroTierOne",
+   "update_url": "https://github.com/zerotier/ZeroTierOne/releases",
    "history": [
     {
      "version": "1.16.2",
@@ -1123,6 +1175,7 @@
    "notes": "See the [v1.11.1](https://github.com/slackhq/nebula/milestone/30?closed=1) milestone for a complete list of changes. ### Changed - IPv6 packets whose next header is a protocol Nebula does not parse (SCTP, GRE, IP-in-IP, etc.) are now classified as that protocol with no ports, closing a firewall byp…",
    "source_url": "https://github.com/slackhq/nebula/releases/tag/v1.11.1",
    "product_url": "https://github.com/slackhq/nebula",
+   "update_url": "https://github.com/slackhq/nebula/releases",
    "history": [
     {
      "version": "1.11.1",
@@ -1145,6 +1198,7 @@
    "notes": "Add OAuth support, various security and performance improvements ## What's Changed * Adding new translated lines * patch wg-quick. fix sysctl * Add Japanese translation * Add Hindi translation * chore: rework useSubmit * Support disabling version check * Small code quality improvements * feat: oaut…",
    "source_url": "https://github.com/wg-easy/wg-easy/releases/tag/v15.4.0",
    "product_url": "https://github.com/wg-easy/wg-easy",
+   "update_url": "https://github.com/wg-easy/wg-easy/releases",
    "history": [
     {
      "version": "15.4.0",
@@ -1167,6 +1221,7 @@
    "notes": "Unbound 1.26.0 This release has some features and a number of bug fixes. The release is signed with the OpenPGP software signing key that is in use since Jan 1st 2026: ``` User ID: NLnet Labs releases signing key G2 Key ID: A144 323D EAAC DF45 Fingerprint: 2310 1869 0C4D 903E F419 146A A144 323D EA…",
    "source_url": "https://github.com/NLnetLabs/unbound/releases/tag/release-1.26.0",
    "product_url": "https://github.com/NLnetLabs/unbound",
+   "update_url": "https://github.com/NLnetLabs/unbound/releases",
    "history": [
     {
      "version": "1.26.0",
@@ -1189,6 +1244,7 @@
    "notes": "This release strengthens DNS caching, forwarding, and transport reliability, with improved stale-cache behavior, safer upstream handling, and tighter connection and overload controls. It also adds new capabilities for ACME-managed TLS, topology-aware Kubernetes services, HTTP/2 forwarding, DNS-over…",
    "source_url": "https://github.com/coredns/coredns/releases/tag/v1.14.7",
    "product_url": "https://github.com/coredns/coredns",
+   "update_url": "https://github.com/coredns/coredns/releases",
    "history": [
     {
      "version": "1.14.7",
@@ -1211,6 +1267,7 @@
    "notes": "## Changelog ### Features * 7dd039c90d2fad74e5b01cf363d765bd4f4e38ec: feat(resolver): add blocky_client_response_total metric (#​2222) () * 769d9089dbeeacc1e575622f930f0a5f71e4b33e: feat(resolver): add refused block type (#​2239) () * 45a242ffce62c3e203f9a2c8a87fbb8ba106c7ab: feat: add MIPS64 archi…",
    "source_url": "https://github.com/0xERR0R/blocky/releases/tag/v0.35.0",
    "product_url": "https://github.com/0xERR0R/blocky",
+   "update_url": "https://github.com/0xERR0R/blocky/releases",
    "history": [
     {
      "version": "0.35.0",
@@ -1233,6 +1290,7 @@
    "notes": "Technitium DNS Server v15.4 is now available for download. This update fixes few issues reported in the previous release, adds a couple of new options in Settings, and fixes a few minor issues. See what's new in this release: https://github.com/TechnitiumSoftware/DnsServer/blob/master/CHANGELOG.md",
    "source_url": "https://github.com/TechnitiumSoftware/DnsServer/releases/tag/v15.4.0",
    "product_url": "https://github.com/TechnitiumSoftware/DnsServer",
+   "update_url": "https://github.com/TechnitiumSoftware/DnsServer/releases",
    "history": [
     {
      "version": "15.4",
@@ -1255,6 +1313,7 @@
    "notes": "- Forwarding rules now support the `$PROXY:` prefix to send selected plain DNS upstreams over DNS-over-TCP through the proxy configured by the main `proxy` setting. - PQDNSCrypt certificate retrieval is more reliable on paths where fragmented UDP packets are blocked, including when certificates are…",
    "source_url": "https://github.com/DNSCrypt/dnscrypt-proxy/releases/tag/2.1.18",
    "product_url": "https://github.com/DNSCrypt/dnscrypt-proxy",
+   "update_url": "https://github.com/DNSCrypt/dnscrypt-proxy/releases",
    "history": [
     {
      "version": "2.1.18",
@@ -1277,6 +1336,7 @@
    "notes": "## Changes - Base image reverts to Lua v5.1.5 - Fix #​5611 when internal nginx conf files are over mounted ## Docker images - [jc21/nginx-proxy-manager:latest](https://hub.docker.com/layers/jc21/nginx-proxy-manager/latest/images/sha256-99a885f56ca2203a2eb352a5f9e2cd5c1e25786508debd725ad48ebe955d114…",
    "source_url": "https://github.com/NginxProxyManager/nginx-proxy-manager/releases/tag/v2.15.1",
    "product_url": "https://github.com/NginxProxyManager/nginx-proxy-manager",
+   "update_url": "https://github.com/NginxProxyManager/nginx-proxy-manager/releases",
    "history": [
     {
      "version": "2.15.1",
@@ -1299,6 +1359,7 @@
    "notes": "**Important:** Please read the [migration guide](https://doc.traefik.io/traefik/v3.7/migrate/v3/#v3713). **CVE fixed:** - Advisory [GHSA-qqjf-53cj-pwvv](https://github.com/traefik/traefik/security/advisories/GHSA-qqjf-53cj-pwvv) - Advisory [GHSA-f52w-8j3h-j724](https://github.com/traefik/traefik/se…",
    "source_url": "https://github.com/traefik/traefik/releases/tag/v3.7.13",
    "product_url": "https://github.com/traefik/traefik",
+   "update_url": "https://github.com/traefik/traefik/releases",
    "history": [
     {
      "version": "3.7.13",
@@ -1321,6 +1382,7 @@
    "notes": "This release patches more security, security-adjacent, and normal bugs. The FrankenPHP project has collaborated on PHP-adjacent patches, which we are grateful for. The recent surge of patches is mostly attributed to token predictors. We have had to reject more than 75% of \"security\" reports because…",
    "source_url": "https://github.com/caddyserver/caddy/releases/tag/v2.11.4",
    "product_url": "https://github.com/caddyserver/caddy",
+   "update_url": "https://github.com/caddyserver/caddy/releases",
    "history": [
     {
      "version": "2.11.4",
@@ -1343,6 +1405,7 @@
    "notes": "## v3.3.4 This release is mostly focused on renewing user experience and UI designs, with improvements to Forward Auth, SSO, TLS handling, ACME certificate management, HTTP routing, rate limit settings, Plugin Manager UI, and some Docker hardening as well. We also got a new App Store that should lo…",
    "source_url": "https://github.com/tobychui/zoraxy/releases/tag/v3.3.4",
    "product_url": "https://github.com/tobychui/zoraxy",
+   "update_url": "https://github.com/tobychui/zoraxy/releases",
    "history": [
     {
      "version": "3.3.4",
@@ -1365,6 +1428,7 @@
    "notes": "### SHA256 Checksums: ``` cloudflared-amd64.pkg: c4084991b83b2f538853c97a502f424805467e4375d18138ab80bc2414340997 cloudflared-arm64.pkg: b877c291db70cc83891785c4bf3da88ac3a82944d34ebeb953f932a4d5f02cf1 cloudflared-darwin-amd64.tgz: 1ea07ae775b03236bd6be18ca1848d6bdc4af2f4f3bce398823b5a36e5761b75 cl…",
    "source_url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.9.1",
    "product_url": "https://github.com/cloudflare/cloudflared",
+   "update_url": "https://github.com/cloudflare/cloudflared/releases",
    "history": [
     {
      "version": "2026.9.1",
@@ -1387,6 +1451,7 @@
    "notes": "## Features * UDP packet payloads for ordinary UDP proxies and SUDP now use a dedicated binary codec when frpc and frps successfully negotiate the capability under wire protocol v2, using a more compact wire representation. Wire protocol v1 remains JSON; wire protocol v2 falls back to JSON `UDPPack…",
    "source_url": "https://github.com/fatedier/frp/releases/tag/v0.71.0",
    "product_url": "https://github.com/fatedier/frp",
+   "update_url": "https://github.com/fatedier/frp/releases",
    "history": [
     {
      "version": "0.71.0",
@@ -1409,6 +1474,7 @@
    "notes": "**Full Changelog**: https://github.com/librenms/librenms/compare/26.8.1...26.8.2",
    "source_url": "https://github.com/librenms/librenms/releases/tag/26.8.2",
    "product_url": "https://github.com/librenms/librenms",
+   "update_url": "https://github.com/librenms/librenms/releases",
    "history": [
     {
      "version": "26.8.2",
@@ -1431,6 +1497,7 @@
    "notes": "> [!WARNING] > This release of NetBox drops support for PostgreSQL 14. > [!WARNING] > The PostgreSQL database must support the [ltree extension](https://www.postgresql.org/docs/current/ltree.html). This is a trusted module which ships with PostgreSQL and does not require superuser permission to act…",
    "source_url": "https://github.com/netbox-community/netbox/releases/tag/v4.7.0",
    "product_url": "https://github.com/netbox-community/netbox",
+   "update_url": "https://github.com/netbox-community/netbox/releases",
    "history": [
     {
      "version": "4.7.0",
@@ -1453,6 +1520,7 @@
    "notes": "### 🆕 New Features - #​7801 feat(notification): add Signalgrid as notification provider (Thanks) - #​7740 feat: add Notify! notification provider (Thanks) - #​7719 feat: add Amoot SMS notification provider (Thanks) - #​7637 fix: omit content headers from cached 304 responses (Thanks) - #​7034 feat:…",
    "source_url": "https://github.com/louislam/uptime-kuma/releases/tag/2.5.4",
    "product_url": "https://github.com/louislam/uptime-kuma",
+   "update_url": "https://github.com/louislam/uptime-kuma/releases",
    "history": [
     {
      "version": "2.5.4",
@@ -1475,6 +1543,7 @@
    "notes": "ntopng 6.6 (November 2025) ========================== Breakthroughs ------------- - New Autonomous Systems Dashboards, Sankeys, and comprehensive AS statistics - Enhanced flow exporters and probes statistics with dedicated pages - Improved SNMP devices polling - Major flow collection code rework an…",
    "source_url": "https://github.com/ntop/ntopng/releases/tag/6.6",
    "product_url": "https://github.com/ntop/ntopng",
+   "update_url": "https://github.com/ntop/ntopng/releases",
    "history": [
     {
      "version": "6.6",
@@ -1497,6 +1566,7 @@
    "notes": "## Release Notes https://forum.suricata.io/t/suricata-8-0-6-and-7-0-17-released/ ## Redmine Tracker https://redmine.openinfosecfoundation.org/versions/234 ## Download https://www.openinfosecfoundation.org/download/suricata-8.0.6.tar.gz https://www.openinfosecfoundation.org/download/suricata-8.0.6.t…",
    "source_url": "https://github.com/OISF/suricata/releases/tag/suricata-8.0.6",
    "product_url": "https://github.com/OISF/suricata",
+   "update_url": "https://github.com/OISF/suricata/releases",
    "history": [
     {
      "version": "8.0.6",
@@ -1519,6 +1589,7 @@
    "notes": "This release fixes a false positive in the bot detection feature for Brave Browser with shields enabled. ## Changes ## Improvements * add HasValidChallengeCookie() helper (#​4648) ## Bug Fixes * lapi: return an empty slice instead of null when querying alerts (#​4653) * challenge: tolerate strings …",
    "source_url": "https://github.com/crowdsecurity/crowdsec/releases/tag/v1.8.1",
    "product_url": "https://github.com/crowdsecurity/crowdsec",
+   "update_url": "https://github.com/crowdsecurity/crowdsec/releases",
    "history": [
     {
      "version": "1.8.1",
@@ -1541,6 +1612,7 @@
    "notes": "## ver. 1.1.1 (2026/08/15) - triple one win Update of fail2ban. See the [ChangeLog](https://github.com/fail2ban/fail2ban/blob/1.1.1/ChangeLog) for more information. **All changes**: https://github.com/fail2ban/fail2ban/compare/1.1.0...1.1.1 It also includes debian package, built without a test suit…",
    "source_url": "https://github.com/fail2ban/fail2ban/releases/tag/1.1.1",
    "product_url": "https://github.com/fail2ban/fail2ban",
+   "update_url": "https://github.com/fail2ban/fail2ban/releases",
    "history": [
     {
      "version": "1.1.1",
@@ -1563,6 +1635,7 @@
    "notes": "### Security fixes: - reliability layer: avoid unbounded reliable TLS timeout, and ignore acks for packets that cannot be outstanding ([CVE-2026-84732](https://www.cve.org/CVERecord?id=CVE-2026-84732)) Both reliability layer bugs found by Mark Bregman (Fox-IT) - windows: fix `CreateProcess()` comma…",
    "source_url": "https://github.com/OpenVPN/openvpn/releases/tag/v2.7.7",
    "product_url": "https://github.com/OpenVPN/openvpn",
+   "update_url": "https://github.com/OpenVPN/openvpn/releases",
    "history": [
     {
      "version": "2.7.7",
@@ -1585,6 +1658,7 @@
    "notes": "## What's Changed * Fix \"Not on NT\" error message and add uihelp to vpncmd * Correct and simplify systemd service files * CI: modernize macos versions * stbchecker: modernize .net version * Adding artifact publishing for Linux * Drop unnecessary exec permission * Update liboqs and oqs-provider subm…",
    "source_url": "https://github.com/SoftEtherVPN/SoftEtherVPN/releases/tag/5.2.5188",
    "product_url": "https://github.com/SoftEtherVPN/SoftEtherVPN",
+   "update_url": "https://github.com/SoftEtherVPN/SoftEtherVPN/releases",
    "history": [
     {
      "version": "5.2.5188",
@@ -1607,6 +1681,7 @@
    "notes": "This fixes a VPN server port forwarding deadlock bug introduced whilst back-porting a fix from the `master` branch (`:latest` image) to `v3.41.2`. Credits to for reporting the bug and even nailing down what it was! (#​3416) Refer to [v3.41.2 fixes](https://github.com/passteque/gluetun/releases/tag/…",
    "source_url": "https://github.com/passteque/gluetun/releases/tag/v3.41.3",
    "product_url": "https://github.com/qdm12/gluetun",
+   "update_url": "https://github.com/qdm12/gluetun/releases",
    "history": [
     {
      "version": "3.41.3",
@@ -1629,6 +1704,7 @@
    "notes": "## What's Changed * Update README.md with ZDNET link * Fix: declare insidersHTML with const in system.js * Fix: handle non-ASCII SSIDs to prevent TypeError * Update awesome link + screenshot * Fix: suppress stub connection line for unrecognized interface types * Feature: dynamic IP bridged mode tog…",
    "source_url": "https://github.com/RaspAP/raspap-webgui/releases/tag/3.5.5",
    "product_url": "https://github.com/RaspAP/raspap-webgui",
+   "update_url": "https://github.com/RaspAP/raspap-webgui/releases",
    "history": [
     {
      "version": "3.5.5",
@@ -1651,6 +1727,7 @@
    "notes": "Debian Packages - https://deb.frrouting.org/ RPM Packages - https://rpm.frrouting.org/ Docker - [quay.io/frrouting/frr](https://quay.io/repository/frrouting/frr/manifest/sha256:e995beaa50fdc9edb35eadcfefa29b7f062cc06f2b812613789b68fa541554d2) ## What's Changed * bgpd: Discard malformed BGP-LS attri…",
    "source_url": "https://github.com/FRRouting/frr/releases/tag/frr-10.7.1",
    "product_url": "https://github.com/FRRouting/frr",
+   "update_url": "https://github.com/FRRouting/frr/releases",
    "history": [
     {
      "version": "10.7.1",
@@ -1673,6 +1750,7 @@
    "notes": "Kea-3.3.1",
    "source_url": "https://github.com/isc-projects/kea/releases/tag/Kea-3.3.1",
    "product_url": "https://github.com/isc-projects/kea",
+   "update_url": "https://github.com/isc-projects/kea/releases",
    "history": [
     {
      "version": "3.3.1",
@@ -1695,6 +1773,7 @@
    "notes": "2025-02-19 14:07:15 +0100 Tobias Oetiker - Enhancements to SSH.pm probe for #​431, allowing configurable start-up test host and doc improvements - fix error when toggling autorefresh - Support parsing IPv6 output in OpenSSHJunOSPing Plugin - Enhancement to SSHProbe allows specification of IPv4 vs I…",
    "source_url": "https://github.com/oetiker/SmokePing/releases/tag/v2.9.0",
    "product_url": "https://github.com/oetiker/SmokePing",
+   "update_url": "https://github.com/oetiker/SmokePing/releases",
    "history": [
     {
      "version": "2.9.0",
@@ -1717,6 +1796,7 @@
    "notes": "## What's Changed * Fix outbound URL protocol validation * feat: enhance latest result endpoint with filtering options * release: v1.15.0 **Full Changelog**: https://github.com/alexjustesen/speedtest-tracker/compare/v1.14.8...v1.15.0",
    "source_url": "https://github.com/alexjustesen/speedtest-tracker/releases/tag/v1.15.0",
    "product_url": "https://github.com/alexjustesen/speedtest-tracker",
+   "update_url": "https://github.com/alexjustesen/speedtest-tracker/releases",
    "history": [
     {
      "version": "1.15.0",
@@ -1739,6 +1819,7 @@
    "notes": "## Changelog * 30734b046d8e1a8d0a65b5adcce5ed976f0bb3c0: Add comprehensive API documentation to README.md (#​888) () * b532d80ce679b15dd1511a20fb6ead90218331ce: feat: implement liveness/readyness checks and cli (#​929) () * 0d11d267962d1bf1862449def29fe2fc4b3a1c33: feat: replica specific feature (#…",
    "source_url": "https://github.com/bakito/adguardhome-sync/releases/tag/v0.9.3",
    "product_url": "https://github.com/bakito/adguardhome-sync",
+   "update_url": "https://github.com/bakito/adguardhome-sync/releases",
    "history": [
     {
      "version": "0.9.3",
@@ -1761,6 +1842,7 @@
    "notes": "",
    "source_url": null,
    "product_url": "https://github.com/openmediavault/openmediavault",
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -1778,6 +1860,7 @@
    "notes": "NAS-142672 / 25.10.7 / Remove ancient iSCSI tests (by bmeagherix) ( #​1… …9551 ) The same functionality has been replicated using libiscsi. Original PR: #​19550 Co-authored-by: bmeagherix <118192357+bmeagherix.noreply.github.com>",
    "source_url": "https://github.com/truenas/middleware/releases/tag/TS-25.10.7",
    "product_url": "https://github.com/truenas/middleware",
+   "update_url": "https://github.com/truenas/middleware/releases",
    "history": [
     {
      "version": "25.10.7",
@@ -1800,6 +1883,7 @@
    "notes": "## Security A CVE was reported [Privilege Escalation via Session Policy Bypass in Service Accounts and STS](https://github.com/minio/minio/security/advisories/GHSA-jjjj-jwhf-8rgr) and fixed in this release, All users are advised to download and upgrade their MinIO setup immediately. To install the …",
    "source_url": "https://github.com/minio/minio/releases/tag/RELEASE.2025-10-15T17-29-55Z",
    "product_url": "https://github.com/minio/minio",
+   "update_url": "https://github.com/minio/minio/releases",
    "history": [
     {
      "version": "RELEASE.2025-10-15T17-29-55Z",
@@ -1822,6 +1906,7 @@
    "notes": "## What's Changed * Check server_url is NULL when subscribe repo * check daemon is running * Record index error when faile to traverse dir * Fix command handling bug in wt-monitor **Full Changelog**: https://github.com/haiwen/seafile/compare/v9.0.4...v9.0.5",
    "source_url": "https://github.com/haiwen/seafile/releases/tag/v9.0.5",
    "product_url": "https://github.com/haiwen/seafile",
+   "update_url": "https://github.com/haiwen/seafile/releases",
    "history": [
     {
      "version": "9.0.5",
@@ -1844,6 +1929,7 @@
    "notes": "## Major changes in 2.1 - Devices and folders can now be grouped in the GUI by setting the new `group` attribute. - HTTP and HTTPS proxies with support for CONNECT can now be used, in addition to the existing support for SOCKS proxies (the environment variable `all_proxy=https://...`). - Block inde…",
    "source_url": "https://github.com/syncthing/syncthing/releases/tag/v2.1.5",
    "product_url": "https://github.com/syncthing/syncthing",
+   "update_url": "https://github.com/syncthing/syncthing/releases",
    "history": [
     {
      "version": "2.1.5",
@@ -1866,6 +1952,7 @@
    "notes": "This release is a stable release that supersedes the 2.3.0.4 stable release. It contains all changes from the 2.3.1.0 and 2.3.1.1 beta releases. # Breaking change: Locked-down data folder permissions This release hardens security around the data folder and is a **breaking change** for some setups. …",
    "source_url": "https://github.com/duplicati/duplicati/releases/tag/v2.4.0.0_stable_2026-09-03",
    "product_url": "https://github.com/duplicati/duplicati",
+   "update_url": "https://github.com/duplicati/duplicati/releases",
    "history": [
     {
      "version": "2.4.0.0_stable_2026-09-03",
@@ -1888,6 +1975,7 @@
    "notes": "Changelog for restic 0.19.1 (2026-07-05) ======================================= The following sections list the changes in restic 0.19.1 relevant to restic users. The changes are ordered by importance. Summary ------- * Fix [#​5234](https://github.com/restic/restic/issues/5234): Prevent mounting o…",
    "source_url": "https://github.com/restic/restic/releases/tag/v0.19.1",
    "product_url": "https://github.com/restic/restic",
+   "update_url": "https://github.com/restic/restic/releases",
    "history": [
     {
      "version": "0.19.1",
@@ -1910,6 +1998,7 @@
    "notes": "## borgbackup 1.4.5 Some fixes (including a low-severity security fix), some new features and other updates. Long changelog: https://borgbackup.readthedocs.io/en/1.4.5/changes.html#version-1-4-5-2026-07-19 Short borg 1.4 overview (from a borg 1.2 perspective): https://www.borgbackup.org/releases/bo…",
    "source_url": "https://github.com/borgbackup/borg/releases/tag/1.4.5",
    "product_url": "https://github.com/borgbackup/borg",
+   "update_url": "https://github.com/borgbackup/borg/releases",
    "history": [
     {
      "version": "1.4.5",
@@ -1932,6 +2021,7 @@
    "notes": "This is the v1.75.1 release of rclone. Full details of the changes can be found in [the changelog](https://rclone.org/changelog/#v1-75-1-2026-09-04).",
    "source_url": "https://github.com/rclone/rclone/releases/tag/v1.75.1",
    "product_url": "https://github.com/rclone/rclone",
+   "update_url": "https://github.com/rclone/rclone/releases",
    "history": [
     {
      "version": "1.75.1",
@@ -1954,6 +2044,7 @@
    "notes": "### Summary Kopia v0.23.1. is a bugfix release which fixes a rare race condition which might lead to a data loss - an upgrade is recommended - See https://github.com/kopia/kopia/issues/5371 ### Repository * Basic tests for getting epoch manager blob set ([#​5418](https://github.com/kopia/kopia/issu…",
    "source_url": "https://github.com/kopia/kopia/releases/tag/v0.23.1",
    "product_url": "https://github.com/kopia/kopia",
+   "update_url": "https://github.com/kopia/kopia/releases",
    "history": [
     {
      "version": "0.23.1",
@@ -1976,6 +2067,7 @@
    "notes": "File Browser is winding down and this is the last planned release. The repository is archived on **2026-09-01**. After that date there will be no further releases, bug fixes, or security fixes. Existing releases and Docker images stay online and will not be withdrawn. This release changes the links…",
    "source_url": "https://github.com/filebrowser/filebrowser/releases/tag/v2.63.23",
    "product_url": "https://github.com/filebrowser/filebrowser",
+   "update_url": "https://github.com/filebrowser/filebrowser/releases",
    "history": [
     {
      "version": "2.63.23",
@@ -1998,6 +2090,7 @@
    "notes": "## paperless-ngx 3.1.3 ### Bug Fixes - Fix: use the header loading indicator on tasks page ([#​13949](https://github.com/paperless-ngx/paperless-ngx/pull/13949)) - Fix: fix load sidebar size animating ([#​13947](https://github.com/paperless-ngx/paperless-ngx/pull/13947)) - Fix: wrap long words with…",
    "source_url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.1.3",
    "product_url": "https://github.com/paperless-ngx/paperless-ngx",
+   "update_url": "https://github.com/paperless-ngx/paperless-ngx/releases",
    "history": [
     {
      "version": "3.1.3",
@@ -2020,6 +2113,7 @@
    "notes": "With this [major new release](https://docs.photoprism.app/release-notes/#july-28-2026), [equirectangular 360° photos and videos](https://github.com/photoprism/photoprism/issues/5623) can now be explored interactively. To preserve detail when zooming in, the maximum [thumbnail and video resolution h…",
    "source_url": "https://github.com/photoprism/photoprism/releases/tag/260728-bbde8f452",
    "product_url": "https://github.com/photoprism/photoprism",
+   "update_url": "https://github.com/photoprism/photoprism/releases",
    "history": [
     {
      "version": "260728-bbde8f452",
@@ -2042,6 +2136,7 @@
    "notes": "Classic ownCloud Server 11.0.0 — the first major release of the 11.x line. **This release contains 11 security fixes. Upgrading is strongly recommended for all installations.** Full changelog: https://github.com/owncloud/core/blob/v11.0.0/CHANGELOG.md (47 entries: 11 security, 19 bugfixes, 17 chang…",
    "source_url": "https://github.com/owncloud/core/releases/tag/v11.0.0",
    "product_url": "https://github.com/owncloud/core",
+   "update_url": "https://github.com/owncloud/core/releases",
    "history": [
     {
      "version": "11.0.0",
@@ -2064,6 +2159,7 @@
    "notes": "* SECURITY * fix(packages): restrict/limited/token-scope access (#​39041, #​39043, #​39044, #​39047, #​39046) (#​39058) * fix(attachments): enforce owning repository path (#​39048) (#​39077) * fix(markup): enforce same-repository issue access (#​39045) (#​39054) * fix(actions): verify raw artifact …",
    "source_url": "https://github.com/go-gitea/gitea/releases/tag/v1.27.3",
    "product_url": "https://github.com/go-gitea/gitea",
+   "update_url": "https://github.com/go-gitea/gitea/releases",
    "history": [
     {
      "version": "1.27.3",
@@ -2086,6 +2182,7 @@
    "notes": "v21.1.1",
    "source_url": "https://github.com/ceph/ceph/releases/tag/v21.1.1",
    "product_url": "https://github.com/ceph/ceph",
+   "update_url": "https://github.com/ceph/ceph/releases",
    "history": [
     {
      "version": "21.1.1",
@@ -2108,6 +2205,7 @@
    "notes": "#### Supported Platforms - **Linux**: compatible with 4.18 - 7.2 kernels - **FreeBSD**: compatible with releases starting from 13.3+, 14.0+ #### Changes - [zfs-2.4.4] Add 'capsh' to commands.cfg - ZTS: device access tests #​18960 - vdev_disk: use calling cred to check for device access #​18960 - vd…",
    "source_url": "https://github.com/openzfs/zfs/releases/tag/zfs-2.4.4",
    "product_url": "https://github.com/openzfs/zfs",
+   "update_url": "https://github.com/openzfs/zfs/releases",
    "history": [
     {
      "version": "2.4.4",
@@ -2130,6 +2228,7 @@
    "notes": "This release brings an **experimental Jellyfin Music API**, so Jellyfin-compatible music clients like Finamp and Jellify can now connect to Navidrome. Artwork got a **new background pipeline** with blurred low-quality placeholders and a diagnostic CLI. Under the hood, all IDs move to a **uniform ca…",
    "source_url": "https://github.com/navidrome/navidrome/releases/tag/v0.64.0",
    "product_url": "https://github.com/navidrome/navidrome",
+   "update_url": "https://github.com/navidrome/navidrome/releases",
    "history": [
     {
      "version": "0.64.0",
@@ -2152,6 +2251,7 @@
    "notes": "## Changelog ## 🛠 Build **release** - use PAT token for JReleaser release creation ([d438041](https://github.com/gotson/komga/commits/d438041)) ## 🌐 Translation **nextui** - translated using Weblate (Korean) ([ad7caf6](https://github.com/gotson/komga/commits/ad7caf6)) - use BCP tags for translation…",
    "source_url": "https://github.com/gotson/komga/releases/tag/1.26.3",
    "product_url": "https://github.com/gotson/komga",
+   "update_url": "https://github.com/gotson/komga/releases",
    "history": [
     {
      "version": "1.26.3",
@@ -2174,6 +2274,7 @@
    "notes": "We had a few bugs and key regressions that I felt it was necessary to release a hotfix for. In addition, since Hardcover officially launched OAuth and Recommendations (Vibes) just as we released v0.9.1, we decided to wrap that in with this. Recommendations from Hardcover REQUIRES this version or la…",
    "source_url": "https://github.com/Kareadita/Kavita/releases/tag/v0.9.1.4",
    "product_url": "https://github.com/Kareadita/Kavita",
+   "update_url": "https://github.com/Kareadita/Kavita/releases",
    "history": [
     {
      "version": "0.9.1.4",
@@ -2196,6 +2297,7 @@
    "notes": "!Attention! For this update nh3 has to be installed !Attention! **New features:** - MOBI files now support metadata extraction on upload - Reverse proxy login with shared secret header implemented **Bug Fixes:** - Cover path is now selected based on the correct setting instead of the presence of `s…",
    "source_url": "https://github.com/janeczku/calibre-web/releases/tag/0.6.27",
    "product_url": "https://github.com/janeczku/calibre-web",
+   "update_url": "https://github.com/janeczku/calibre-web/releases",
    "history": [
     {
      "version": "0.6.27",
@@ -2218,6 +2320,7 @@
    "notes": "#### Important: New authentication system was added in [v2.26.0](https://github.com/advplyr/audiobookshelf/releases/tag/v2.26.0). See https://github.com/advplyr/audiobookshelf/discussions/4460 for details. ### Added - Logout all devices button on account page (in #​5395) - Auth sessions table on ac…",
    "source_url": "https://github.com/advplyr/audiobookshelf/releases/tag/v2.36.0",
    "product_url": "https://github.com/advplyr/audiobookshelf",
+   "update_url": "https://github.com/advplyr/audiobookshelf/releases",
    "history": [
     {
      "version": "2.36.0",
@@ -2240,6 +2343,7 @@
    "notes": "## What's Changed ### 🏕 Features * Avoid naughty pdf uploaders * Trivy ignore CVE-2026-56854 * Fix replay upload in the same chunk * Avoid email oracle on registration * Prevent editing pictures if they are not validated yet * Version 7.8.3 ### 👒 Dependencies * chore(deps): bump dunglas/frankenphp …",
    "source_url": "https://github.com/LycheeOrg/Lychee/releases/tag/v7.8.3",
    "product_url": "https://github.com/LycheeOrg/Lychee",
+   "update_url": "https://github.com/LycheeOrg/Lychee/releases",
    "history": [
     {
      "version": "7.8.3",
@@ -2262,6 +2366,7 @@
    "notes": "- Translation updates",
    "source_url": "https://github.com/cockpit-project/cockpit/releases/tag/367",
    "product_url": "https://github.com/cockpit-project/cockpit",
+   "update_url": "https://github.com/cockpit-project/cockpit/releases",
    "history": [
     {
      "version": "367",
@@ -2284,6 +2389,7 @@
    "notes": "* Add support for creating `vfsv1` Linux quota files for limits above 4 TiB, while preserving existing quota file formats * Add Btrfs subvolume quota management to the Disk Quotas module, with full and simple accounting modes * Add support for openSUSE 16 vendor and local Logrotate configuration ov…",
    "source_url": "https://github.com/webmin/webmin/releases/tag/2.660",
    "product_url": "https://github.com/webmin/webmin",
+   "update_url": "https://github.com/webmin/webmin/releases",
    "history": [
     {
      "version": "2.660",
@@ -2306,6 +2412,7 @@
    "notes": "## Known issues - On Async Edge environments, an invalid update schedule date can be displayed when browsing a snapshot ### Known issues with Podman support - Podman environments aren't supported by auto-onboarding script - It's not possible to add Podman environments via socket, when running a Por…",
    "source_url": "https://github.com/portainer/portainer/releases/tag/2.45.0",
    "product_url": "https://github.com/portainer/portainer",
+   "update_url": "https://github.com/portainer/portainer/releases",
    "history": [
     {
      "version": "2.45.0",
@@ -2328,6 +2435,7 @@
    "notes": "> [!WARNING] > Breaking change: Due to the security reason, the \"Console\" feature is now disabled by default. If you need this feature and understand the risk, you can enable it via the environment variable `DOCKGE_ENABLE_CONSOLE=true`. ### 🆕 New Features - Docker client updated to 28.0.4 - Docker …",
    "source_url": "https://github.com/louislam/dockge/releases/tag/1.5.0",
    "product_url": "https://github.com/louislam/dockge",
+   "update_url": "https://github.com/louislam/dockge/releases",
    "history": [
     {
      "version": "1.5.0",
@@ -2350,6 +2458,7 @@
    "notes": "## Changelog a047c7f fix: instance cleanup without scope (#​1836) ## Docker images - `docker pull containrrr/watchtower:i386-1.7.1` - `docker pull containrrr/watchtower:i386-latest` - `docker pull ghcr.io/containrrr/watchtower:i386-1.7.1` - `docker pull ghcr.io/containrrr/watchtower:i386-latest` - …",
    "source_url": "https://github.com/containrrr/watchtower/releases/tag/v1.7.1",
    "product_url": "https://github.com/containrrr/watchtower",
+   "update_url": "https://github.com/containrrr/watchtower/releases",
    "history": [
     {
      "version": "1.7.1",
@@ -2372,6 +2481,7 @@
    "notes": "### Bug Fixes * **oidc:** allow conformant alg none jarm ([#​13110](https://github.com/authelia/authelia/issues/13110)) ([2ce5b5b](https://github.com/authelia/authelia/commit/2ce5b5b89855db119fba28203589d030d8fef926)) ### Docker Container * `docker pull authelia/authelia:4.39.26` * `docker pull ghc…",
    "source_url": "https://github.com/authelia/authelia/releases/tag/v4.39.26",
    "product_url": "https://github.com/authelia/authelia",
+   "update_url": "https://github.com/authelia/authelia/releases",
    "history": [
     {
      "version": "4.39.26",
@@ -2394,6 +2504,7 @@
    "notes": "See https://docs.goauthentik.io/docs/releases/2026.8#fixed-in-202682",
    "source_url": "https://github.com/goauthentik/authentik/releases/tag/version/2026.8.2",
    "product_url": "https://github.com/goauthentik/authentik",
+   "update_url": "https://github.com/goauthentik/authentik/releases",
    "history": [
     {
      "version": "2026.8.2",
@@ -2416,6 +2527,7 @@
    "notes": "## What's Changed * Fix password change with newer web-vault * chore: remove duplicate \"the\" in ciphers.rs comment * Ignore reset-password auto-enroll when mail is disabled * Fix migration for MariaDB 12.2.2 * Add SSO_SIGNUPS_ALLOWED * log_event take enum parameter not i32 * Misc Updates * Update r…",
    "source_url": "https://github.com/dani-garcia/vaultwarden/releases/tag/1.37.3",
    "product_url": "https://github.com/dani-garcia/vaultwarden",
+   "update_url": "https://github.com/dani-garcia/vaultwarden/releases",
    "history": [
     {
      "version": "1.37.3",
@@ -2438,6 +2550,7 @@
    "notes": "## What's Changed ### ⚙️ Maintenance * Bumped version to 2026.8.2 (#​8310) ### 🐛 Bug fixes - [PM-42891] - Add route param enforcement (#​8299) **Full Changelog**: https://github.com/bitwarden/server/compare/v2026.8.1...v2026.8.2",
    "source_url": "https://github.com/bitwarden/server/releases/tag/v2026.8.2",
    "product_url": "https://github.com/bitwarden/server",
+   "update_url": "https://github.com/bitwarden/server/releases",
    "history": [
     {
      "version": "2026.8.2",
@@ -2460,6 +2573,7 @@
    "notes": "## What's Changed ## 🚀 Features - Fixhancement: use ghostfolio baseCurrency as default for net worth (#​7116) - Tweakhancement: handle QL selection without hover (#​7105) - Enhancement: render more docker states (#​7099) - Performance: use bulk request for docker stats (#​7098) - Enhancement: allow…",
    "source_url": "https://github.com/gethomepage/homepage/releases/tag/v2.3.0",
    "product_url": "https://github.com/gethomepage/homepage",
+   "update_url": "https://github.com/gethomepage/homepage/releases",
    "history": [
     {
      "version": "2.3.0",
@@ -2482,6 +2596,7 @@
    "notes": "## What's Changed * Fix reordering when tags are treated as categories * Offer the Home dashboard as a default tag option * Add pinned & order to import/export * Re-check the SSRF guard on every redirect hop and cover icon URLs * Update to latest Docker spec * Add Azerbaijani translation * Bump ver…",
    "source_url": "https://github.com/linuxserver/Heimdall/releases/tag/v2.8.3",
    "product_url": "https://github.com/linuxserver/Heimdall",
+   "update_url": "https://github.com/linuxserver/Heimdall/releases",
    "history": [
     {
      "version": "2.8.3",
@@ -2504,6 +2619,7 @@
    "notes": "## What's Changed ### Main changes * feat(emby): opt in to modern Jellyfin authorization * fix: merge custom headers with the ones set by services * feat: upgrade Font Awesome to 7.3.1 * Add Seerr custom service **Full Changelog**: https://github.com/bastienwirtz/homer/compare/v26.08.2...v26.08.3",
    "source_url": "https://github.com/bastienwirtz/homer/releases/tag/v26.08.3",
    "product_url": "https://github.com/bastienwirtz/homer",
+   "update_url": "https://github.com/bastienwirtz/homer/releases",
    "history": [
     {
      "version": "26.08.3",
@@ -2526,6 +2642,7 @@
    "notes": "## What's Changed ### Changes * Fixed: Basic auth for qBittorrent **Full Changelog**: https://github.com/Sonarr/Sonarr/compare/v4.0.18.2971...v4.0.19.2979",
    "source_url": "https://github.com/Sonarr/Sonarr/releases/tag/v4.0.19.2979",
    "product_url": "https://github.com/Sonarr/Sonarr",
+   "update_url": "https://github.com/Sonarr/Sonarr/releases",
    "history": [
     {
      "version": "4.0.19.2979",
@@ -2548,6 +2665,7 @@
    "notes": "*To receive further Pre-Release or final updates for a non-docker installation, please change the branch to **master**. (Settings -> General (Show Advanced Settings) -> Updates -> Branch)* **If you are using docker you will need to update the container image. *Do not attempt to update Radarr within…",
    "source_url": "https://github.com/Radarr/Radarr/releases/tag/v6.3.0.10514",
    "product_url": "https://github.com/Radarr/Radarr",
+   "update_url": "https://github.com/Radarr/Radarr/releases",
    "history": [
     {
      "version": "6.3.0.10514",
@@ -2570,6 +2688,7 @@
    "notes": "*To receive further updates for a non-docker installation, please change the branch to **master**. (Settings -> General (Show Advanced Settings) -> Updates -> Branch)* **If you are using docker you will need to update the container image. *Do not attempt to update Lidarr within an existing docker c…",
    "source_url": "https://github.com/Lidarr/Lidarr/releases/tag/v3.1.0.4875",
    "product_url": "https://github.com/Lidarr/Lidarr",
+   "update_url": "https://github.com/Lidarr/Lidarr/releases",
    "history": [
     {
      "version": "3.1.0.4875",
@@ -2592,6 +2711,7 @@
    "notes": "*To receive further updates for a non-docker installation, please change the branch to **master**. (Settings -> General (Show Advanced Settings) -> Updates -> Branch)* **If you are using docker you will need to update the container image. *Do not attempt to update Prowlarr within an existing docker…",
    "source_url": "https://github.com/Prowlarr/Prowlarr/releases/tag/v2.5.2.5491",
    "product_url": "https://github.com/Prowlarr/Prowlarr",
+   "update_url": "https://github.com/Prowlarr/Prowlarr/releases",
    "history": [
     {
      "version": "2.5.2.5491",
@@ -2614,6 +2734,7 @@
    "notes": "From newest to oldest: - Refactored `postprocessing` function to handle subprocess invocation differently on Windows and Unix, ensuring path safety and avoiding OS command injection. Added comprehensive unit tests for both platforms to ensure behavior correctness. #​3413 [5dd736c](https://github.co…",
    "source_url": "https://github.com/morpheus65535/bazarr/releases/tag/v1.6.0",
    "product_url": "https://github.com/morpheus65535/bazarr",
+   "update_url": "https://github.com/morpheus65535/bazarr/releases",
    "history": [
     {
      "version": "1.6.0",
@@ -2636,6 +2757,7 @@
    "notes": "0.4.18.2805",
    "source_url": "https://github.com/Readarr/Readarr/releases/tag/v0.4.18.2805",
    "product_url": "https://github.com/Readarr/Readarr",
+   "update_url": "https://github.com/Readarr/Readarr/releases",
    "history": [
     {
      "version": "0.4.18.2805",
@@ -2658,6 +2780,7 @@
    "notes": "# [1.35.0](https://github.com/sct/overseerr/compare/v1.34.0...v1.35.0) (2026-02-15) ### Bug Fixes * add flag in local storage for notifications ([#​4180](https://github.com/sct/overseerr/issues/4180)) ([325eecb](https://github.com/sct/overseerr/commit/325eecbad173074ce7c175dedeee12e69fc3c93e)) * ad…",
    "source_url": "https://github.com/sct/overseerr/releases/tag/v1.35.0",
    "product_url": "https://github.com/sct/overseerr",
+   "update_url": "https://github.com/sct/overseerr/releases",
    "history": [
     {
      "version": "1.35.0",
@@ -2680,6 +2803,7 @@
    "notes": "## [3.4.1](https://github.com/seerr-team/seerr/compare/v3.4.0..v3.4.1) - 2026-07-30 ### 🐛 Bug Fixes - *(ui)* Keep user list action buttons sized with a single user (#​3311) - ([f926248](https://github.com/seerr-team/seerr/commit/f926248e2daf660a452bbc16f36748adb240ab33)) - Don't delete requests whe…",
    "source_url": "https://github.com/seerr-team/seerr/releases/tag/v3.4.1",
    "product_url": "https://github.com/fallenbagel/jellyseerr",
+   "update_url": "https://github.com/fallenbagel/jellyseerr/releases",
    "history": [
     {
      "version": "3.4.1",
@@ -2702,6 +2826,7 @@
    "notes": "- BUGFIX: Fix MIME header encoding in email to require ASCII (quinot) #​24382 - BUGFIX: Fix potential invalid migration procedure (Chocobo1) #​24502 - BUGFIX: Resolve relative UI theme paths (TurboTheTurtle) #​24514 - BUGFIX: Clear transfer filters when sections collapse (TurboTheTurtle) #​24517 - …",
    "source_url": "https://github.com/qbittorrent/qBittorrent/releases/tag/release-5.2.3",
    "product_url": "https://github.com/qbittorrent/qBittorrent",
+   "update_url": "https://github.com/qbittorrent/qBittorrent/releases",
    "history": [
     {
      "version": "5.2.3",
@@ -2724,6 +2849,7 @@
    "notes": "# Transmission 4.1.3 This is Transmission 4.1.3, a bugfix release. It fixes a potential CRSF security issue for users who enable remote access to Transmission. Users are encouraged to upgrade to this version. ## What's New in 4.1.3 ### All Platforms * Fixed a CORS bug that leaked the anti-CSRF nonc…",
    "source_url": "https://github.com/transmission/transmission/releases/tag/4.1.3",
    "product_url": "https://github.com/transmission/transmission",
+   "update_url": "https://github.com/transmission/transmission/releases",
    "history": [
     {
      "version": "4.1.3",
@@ -2746,6 +2872,7 @@
    "notes": "deluge-2.2.1.dev0",
    "source_url": "https://github.com/deluge-torrent/deluge/releases/tag/deluge-2.2.1.dev0",
    "product_url": "https://github.com/deluge-torrent/deluge",
+   "update_url": "https://github.com/deluge-torrent/deluge/releases",
    "history": [
     {
      "version": "2.2.1",
@@ -2768,6 +2895,7 @@
    "notes": "Release Notes - SABnzbd 5.1.3 ========================================================= ## Security fixes SABnzbd 5.1.1, 5.1.2 and 5.1.3 resolve a number of security vulnerabilities. Over the past releases, several security researchers have put a lot of time and effort examining SABnzbd, responsibl…",
    "source_url": "https://github.com/sabnzbd/sabnzbd/releases/tag/5.1.3",
    "product_url": "https://github.com/sabnzbd/sabnzbd",
+   "update_url": "https://github.com/sabnzbd/sabnzbd/releases",
    "history": [
     {
      "version": "5.1.3",
@@ -2790,6 +2918,7 @@
    "notes": "",
    "source_url": null,
    "product_url": "https://github.com/HaveAGitGat/Tdarr",
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -2807,6 +2936,7 @@
    "notes": "## Changelog #### v2.18.1 (2026-08-26) * Activity: * Fix: Empty sessions row being added into the database. * History: * Fix: Unable to expand detailed history when \"Current Activity in History Tables\" setting is enabled. (#​2805) * Notifications: * Fix: Email password being overwritten with a blan…",
    "source_url": "https://github.com/Tautulli/Tautulli/releases/tag/v2.18.1",
    "product_url": "https://github.com/Tautulli/Tautulli",
+   "update_url": "https://github.com/Tautulli/Tautulli/releases",
    "history": [
     {
      "version": "2.18.1",
@@ -2829,6 +2959,7 @@
    "notes": "# 🍴🍴🍴🍴🍴🍴 Welcome to the latest release of Mealie! We have tons of new features packed into this one, as well as a large collection of bug fixes. Check them out below 👇 ### 🚨 BREAKING CHANGE Mealie now checks where its own outgoing requests are going. Anything the server fetches on your behalf, such…",
    "source_url": "https://github.com/mealie-recipes/mealie/releases/tag/v3.26.0",
    "product_url": "https://github.com/mealie-recipes/mealie",
+   "update_url": "https://github.com/mealie-recipes/mealie/releases",
    "history": [
     {
      "version": "3.26.0",
@@ -2851,6 +2982,7 @@
    "notes": "- **added** pestle import support (thanks to [LLf13](https://github.com/LLf13) #​4637) - **added** AI based step sorter to recipe import (thanks to [sadSanta-07](https://github.com/sadSanta-07) #​4799) - **improved** adding multiple recipes to a book at the same time (thanks to [ujjwalv01](https://…",
    "source_url": "https://github.com/TandoorRecipes/recipes/releases/tag/2.6.15",
    "product_url": "https://github.com/TandoorRecipes/recipes",
+   "update_url": "https://github.com/TandoorRecipes/recipes/releases",
    "history": [
     {
      "version": "2.6.15",
@@ -2873,6 +3005,7 @@
    "notes": "Welcome to release v6.6.6 of Firefly III. It contains the latest fixes, translations and features. Docker users can find this release under the `latest` tag. ## Changelog ### Fixed - [Issue 12426](https://github.com/firefly-iii/firefly-iii/issues/12426) (Important: The latest version removed all re…",
    "source_url": "https://github.com/firefly-iii/firefly-iii/releases/tag/v6.6.6",
    "product_url": "https://github.com/firefly-iii/firefly-iii",
+   "update_url": "https://github.com/firefly-iii/firefly-iii/releases",
    "history": [
     {
      "version": "6.6.6",
@@ -2895,6 +3028,7 @@
    "notes": ":link: [View release notes](https://actualbudget.org/blog/release-26.9.0) ## Desktop releases Please note: Microsoft store updates can sometimes lag behind the main release by a couple of days while they verify the new version.",
    "source_url": "https://github.com/actualbudget/actual/releases/tag/v26.9.0",
    "product_url": "https://github.com/actualbudget/actual",
+   "update_url": "https://github.com/actualbudget/actual/releases",
    "history": [
     {
      "version": "26.9.0",
@@ -2917,6 +3051,7 @@
    "notes": "* [Milestone](https://github.com/FreshRSS/FreshRSS/milestones/1.30.0) This is a security-oriented major release with several important security patches, so users are encouraged to update without delay. From this release, we are also making it clear that our rolling-release channel (*edge*) is recom…",
    "source_url": "https://github.com/FreshRSS/FreshRSS/releases/tag/1.30.0",
    "product_url": "https://github.com/FreshRSS/FreshRSS",
+   "update_url": "https://github.com/FreshRSS/FreshRSS/releases",
    "history": [
     {
      "version": "1.30.0",
@@ -2939,6 +3074,7 @@
    "notes": "### New features - **Feed and entry language detection** - Miniflux now reads the language declared by feeds and entries and stores it on both feeds and entries. Supported sources are the RSS ` ` and ` ` elements, `xml:lang` on Atom 1.0 and 0.3 documents, `dc:language` in RDF/RSS 1.0 feeds, and the…",
    "source_url": "https://github.com/miniflux/v2/releases/tag/2.3.3",
    "product_url": "https://github.com/miniflux/v2",
+   "update_url": "https://github.com/miniflux/v2/releases",
    "history": [
     {
      "version": "2.3.3",
@@ -2961,6 +3097,7 @@
    "notes": "## What's Changed * Only schedule snapshot tasks when there are pending snapshots * Add CORS support for the REST API * Add SSRF protection for server-side requests * Avoid reading assets into memory in full when viewing them in the UI * Fix custom CSS not working in sandboxed reader view * Bundle …",
    "source_url": "https://github.com/sissbruecker/linkding/releases/tag/v1.47.0",
    "product_url": "https://github.com/sissbruecker/linkding",
+   "update_url": "https://github.com/sissbruecker/linkding/releases",
    "history": [
     {
      "version": "1.47.0",
@@ -2983,6 +3120,7 @@
    "notes": "### Security Release * [Update Instructions](https://www.bookstackapp.com/docs/admin/updates) * [Update details on blog](https://www.bookstackapp.com/blog/bookstack-release-v26-05-5/) This is a security release which addresses a vulnerability related to social login accounts, to prevent accounts fr…",
    "source_url": "https://github.com/BookStackApp/BookStack/releases/tag/v26.05.5",
    "product_url": "https://github.com/BookStackApp/BookStack",
+   "update_url": "https://github.com/BookStackApp/BookStack/releases",
    "history": [
     {
      "version": "26.05.5",
@@ -3005,6 +3143,7 @@
    "notes": "### Stock - Fixed that certain fields were not copied when copying a product ### Calendar - Fixed that the iCal export was broken (any shared `https:// /api/calendar/ical?secret=xxx`-link always returned `401 Unauthorized`) ### General - Optimized that table dropdown filters now search accent insen…",
    "source_url": "https://github.com/grocy/grocy/releases/tag/v4.7.1",
    "product_url": "https://github.com/grocy/grocy",
+   "update_url": "https://github.com/grocy/grocy/releases",
    "history": [
     {
      "version": "4.7.1",
@@ -3027,6 +3166,7 @@
    "notes": "## What's Changed * Browser fetchers - Report the real status code when Chrome aborts a bodiless error response * feat(ui): show count badges in minimal sidebar * Worker id/available fetcher * Browser fetchers - Follow re-navigation, and one content-ready deadline (re-targets #​4421 + #​4422 at mas…",
    "source_url": "https://github.com/dgtlmoon/changedetection.io/releases/tag/0.60.5",
    "product_url": "https://github.com/dgtlmoon/changedetection.io",
+   "update_url": "https://github.com/dgtlmoon/changedetection.io/releases",
    "history": [
     {
      "version": "0.60.5",
@@ -3049,6 +3189,7 @@
    "notes": "Important: this Healthchecks release is using Django 6.1, which has dropped support for PostgreSQL < 15, MySQL < 8.4, MariaDB < 10.11. ### Improvements - Send flapping notices to all team members (not just the owner) - Upgrade to Django 6.1 ### Bug Fixes - Fix the email integration to sanitize long…",
    "source_url": "https://github.com/healthchecks/healthchecks/releases/tag/v4.4",
    "product_url": "https://github.com/healthchecks/healthchecks",
+   "update_url": "https://github.com/healthchecks/healthchecks/releases",
    "history": [
     {
      "version": "4.4",
@@ -3071,6 +3212,7 @@
    "notes": "Notable features: - Add setting [`GOTIFY_LOCALAUTH_ENABLED`](https://gotify.net/docs/config#gotify-localauth-enabled) for disabling local user authentication [Docs](https://gotify.net/docs/oidc#disabling-local-authentication) (#​1007 via #​1020) - Allow mapping user admin status from OIDC claims [O…",
    "source_url": "https://github.com/gotify/server/releases/tag/v3.1.0",
    "product_url": "https://github.com/gotify/server",
+   "update_url": "https://github.com/gotify/server/releases",
    "history": [
     {
      "version": "3.1.0",
@@ -3093,6 +3235,7 @@
    "notes": "This is a hardening release. A single topic on ntfy.sh was polled continuously with `poll=1` and no `since` cursor, which replays a topic's entire cache on every request. The changes below bound what one replay can cost, close two fields that had no size limit at all, and fix an ordering bug found …",
    "source_url": "https://github.com/binwiederhier/ntfy/releases/tag/v2.28.0",
    "product_url": "https://github.com/binwiederhier/ntfy",
+   "update_url": "https://github.com/binwiederhier/ntfy/releases",
    "history": [
     {
      "version": "2.28.0",
@@ -3115,6 +3258,7 @@
    "notes": "## What's Changed Just a small update to fix a small stability issue with Attachments under some circumstances and the few PR's made by others in one more small bundle. **Note:** ⚠️ **This will be the last version of Apprise v1.x** (this time i mean it :wink: ) . Future releases will be under Appri…",
    "source_url": "https://github.com/caronc/apprise/releases/tag/v1.13.1",
    "product_url": "https://github.com/caronc/apprise",
+   "update_url": "https://github.com/caronc/apprise/releases",
    "history": [
     {
      "version": "1.13.1",
@@ -3137,6 +3281,7 @@
    "notes": "Timestamp | SHA | Message | Author ------------- | ------------- | ------------- | ------------- 2026-09-13T20:57Z | 3ee4e597 | (v0.9.4) Automated packaging of release by Packagr | packagrio-bot 2026-09-09T23:29Z | 1b9c653b | Bump js-yaml from 3.15.1 to 3.15.2 in /webapp/frontend (#​1086) Bumps [js…",
    "source_url": "https://github.com/AnalogJ/scrutiny/releases/tag/v0.9.4",
    "product_url": "https://github.com/AnalogJ/scrutiny",
+   "update_url": "https://github.com/AnalogJ/scrutiny/releases",
    "history": [
     {
      "version": "0.9.4",
@@ -3159,6 +3304,7 @@
    "notes": "Bugs corrected: * Alert level decided by dict ordering: a failing+slow URL is downgraded to WARNING, an unscanned URL reports CRITICAL #​3632 * GPU plugin duplicates card name and omits N/A for unavailable metrics in multi-GPU #​3631 * GPU plugin duplicates the utilisation value and paints it with …",
    "source_url": "https://github.com/nicolargo/glances/releases/tag/v4.5.6",
    "product_url": "https://github.com/nicolargo/glances",
+   "update_url": "https://github.com/nicolargo/glances/releases",
    "history": [
     {
      "version": "4.5.6",
@@ -3181,6 +3327,7 @@
    "notes": "## Table of Contents - [Summary](#v2110-release-summary) - [Highlights](#v2110-release-highlights) - [Network Monitor Dashboard (Technical Preview)](#v2110-highlight-network-monitor) - [Network Flows: NetFlow, IPFIX and sFlow (Technical Preview)](#v2110-highlight-network-flows) - [Network Topology …",
    "source_url": "https://github.com/netdata/netdata/releases/tag/v2.11.0",
    "product_url": "https://github.com/netdata/netdata",
+   "update_url": "https://github.com/netdata/netdata/releases",
    "history": [
     {
      "version": "2.11.0",
@@ -3203,6 +3350,7 @@
    "notes": ":warning: **Potential breaking change:** Agents now verify HTTPS certificates. If an agent connects to a hub using a self-signed or otherwise untrusted certificate, configure `CA_CERT_FILE` with the appropriate CA certificate or the connection will be rejected. ## What's Changed - Add ZFS pool and …",
    "source_url": "https://github.com/henrygd/beszel/releases/tag/v0.19.0",
    "product_url": "https://github.com/henrygd/beszel",
+   "update_url": "https://github.com/henrygd/beszel/releases",
    "history": [
     {
      "version": "0.19.0",
@@ -3225,6 +3373,7 @@
    "notes": "# mergerfs v2.42.0 ## Donations / Sponsorship If you find mergerfs useful please consider supporting its ongoing development. https://github.com/trapexit/support ## New features * `lup` (least used percentage) policy: selects the branch with the lowest used space percentage. * `mount.mergerfs` now …",
    "source_url": "https://github.com/trapexit/mergerfs/releases/tag/2.42.0",
    "product_url": "https://github.com/trapexit/mergerfs",
+   "update_url": "https://github.com/trapexit/mergerfs/releases",
    "history": [
     {
      "version": "2.42.0",
@@ -3247,6 +3396,7 @@
    "notes": "* Fix a regression when both the '--gui-touch-before' and '--gui-threshold' options are selected at the same time, which may prevent the thresholds from working correctly. Now, the content file is unconditionally saved before scanning for differences if any touch is performed.",
    "source_url": "https://github.com/amadvance/snapraid/releases/tag/v14.9",
    "product_url": "https://github.com/amadvance/snapraid",
+   "update_url": "https://github.com/amadvance/snapraid/releases",
    "history": [
     {
      "version": "14.9",
@@ -3269,6 +3419,7 @@
    "notes": "## Changelog * c26cf4dbecd7c33b5ace6952d42b9622d6237345 fix: cloud storage (#​2096) * 6bbb0802aa8b55e8c133cfe04fb0a32ac5e9130b fix: problem while getting storage type (#​2097) * ba285cb8bddb85fbd93060b3a8b944f35dd7a7ad fix: update user info retrieval and clean up unused code (#​2101) * 63f01489a8e4…",
    "source_url": "https://github.com/IceWhaleTech/CasaOS/releases/tag/v0.4.15",
    "product_url": "https://github.com/IceWhaleTech/CasaOS",
+   "update_url": "https://github.com/IceWhaleTech/CasaOS/releases",
    "history": [
     {
      "version": "0.4.15",
@@ -3291,6 +3442,7 @@
    "notes": "umbrelOS 1.7.4 fixes an issue where remote access over Tor and apps that use Tor could fail to connect. --- Join the [Umbrel Community Discord](https://discord.gg/efNtFzqtdx) to share your feedback on this update and engage with other users. ### Downloads - https://download.umbrel.com/release/1.7.4…",
    "source_url": "https://github.com/getumbrel/umbrel/releases/tag/1.7.4",
    "product_url": "https://github.com/getumbrel/umbrel",
+   "update_url": "https://github.com/getumbrel/umbrel/releases",
    "history": [
     {
      "version": "1.7.4",
@@ -3313,6 +3465,7 @@
    "notes": "Refer to [the debian changelog](https://github.com/YunoHost/yunohost/blob/refs/tags/debian/12.1.41.2/debian/changelog) for details.",
    "source_url": "https://github.com/YunoHost/yunohost/releases/tag/debian/12.1.41.2",
    "product_url": "https://github.com/YunoHost/yunohost",
+   "update_url": "https://github.com/YunoHost/yunohost/releases",
    "history": [
     {
      "version": "12.1.41.2",
@@ -3335,6 +3488,7 @@
    "notes": "## :sparkles: New Features - #​7181 Add `/time` API for setting NTP servers on HAOS - #​7211 Add detach option to the Job decorator ## :bug: Bug Fixes - #​7188 Report mount storage usage from the probe, not cached state - #​7207 Hide new ntp host feature from v1 /host/info features field - #​7186 T…",
    "source_url": "https://github.com/home-assistant/supervisor/releases/tag/2026.09.1",
    "product_url": "https://github.com/home-assistant/supervisor",
+   "update_url": "https://github.com/home-assistant/supervisor/releases",
    "history": [
     {
      "version": "2026.09.1",
@@ -3357,6 +3511,7 @@
    "notes": "## [11.24.0](https://github.com/zwave-js/zwave-js-ui/compare/v11.23.0...v11.24.0) (2026-09-10) ### ✨ Features * bump zwave-js.29.0 ([#​4823](https://github.com/zwave-js/zwave-js-ui/issues/4823)) ([167552d](https://github.com/zwave-js/zwave-js-ui/commit/167552d3bf8f25f1e532e68ea1b1fccfb6dccde1)) ###…",
    "source_url": "https://github.com/zwave-js/zwave-js-ui/releases/tag/v11.24.0",
    "product_url": "https://github.com/zwave-js/zwave-js-ui",
+   "update_url": "https://github.com/zwave-js/zwave-js-ui/releases",
    "history": [
     {
      "version": "11.24.0",
@@ -3379,6 +3534,7 @@
    "notes": "### Features * Redundant and superseded commands are now automatically deduplicated. The corresponding API calls can now be aborted or will share a single transaction, depending on the specific situation (#​9136, #​9137) * The new `lastAwake` property now indicates when a node was last awake. This …",
    "source_url": "https://github.com/zwave-js/zwave-js/releases/tag/v15.29.0",
    "product_url": "https://github.com/zwave-js/node-zwave-js",
+   "update_url": "https://github.com/zwave-js/node-zwave-js/releases",
    "history": [
     {
      "version": "15.29.0",
@@ -3401,6 +3557,7 @@
    "notes": "v2.1.2",
    "source_url": "https://github.com/eclipse-mosquitto/mosquitto/releases/tag/v2.1.2",
    "product_url": "https://github.com/eclipse-mosquitto/mosquitto",
+   "update_url": "https://github.com/eclipse-mosquitto/mosquitto/releases",
    "history": [
     {
      "version": "2.1.2",
@@ -3423,6 +3580,7 @@
    "notes": "## What's Changed * docs: clarify settings.js nodesDir accepts an array of paths * Migrate to patched JSONata * fix(editor): make disabled wires visible in dark theme * Fix file in completion after filename evaluation error * Fix incorrect rendering of `typedInput` with a single type * Update body-…",
    "source_url": "https://github.com/node-red/node-red/releases/tag/5.0.7",
    "product_url": "https://github.com/node-red/node-red",
+   "update_url": "https://github.com/node-red/node-red/releases",
    "history": [
     {
      "version": "5.0.7",
@@ -3445,6 +3603,7 @@
    "notes": "This is a monthly milestone build for the upcoming openHAB 5.3 release, which brings many fixes and improvements. ### New Add-ons The following add-ons are newly introduced: | Add-on | Type | Issue | |-|-|-| | [**io.opentelemetry**](https://next.openhab.org/addons/ios/io.opentelemetry/) | Io | [#​2…",
    "source_url": "https://github.com/openhab/openhab-distro/releases/tag/5.3.0.M1",
    "product_url": "https://github.com/openhab/openhab-distro",
+   "update_url": "https://github.com/openhab/openhab-distro/releases",
    "history": [
     {
      "version": "5.3.0",
@@ -3467,6 +3626,7 @@
    "notes": "Stable Release 2026.3 2026.3",
    "source_url": "https://github.com/domoticz/domoticz/releases/tag/2026.3",
    "product_url": "https://github.com/domoticz/domoticz",
+   "update_url": "https://github.com/domoticz/domoticz/releases",
    "history": [
     {
      "version": "2026.3",
@@ -3489,6 +3649,7 @@
    "notes": "official release",
    "source_url": "https://github.com/ioBroker/ioBroker.js-controller/releases/tag/v7.2.2",
    "product_url": "https://github.com/ioBroker/ioBroker.js-controller",
+   "update_url": "https://github.com/ioBroker/ioBroker.js-controller/releases",
    "history": [
     {
      "version": "7.2.2",
@@ -3511,6 +3672,7 @@
    "notes": "# ZoneMinder 1.38.4 Release Notes This is a maintenance release for the 1.38 series: API/web authorization fixes, memory-safety and injection hardening, recording correctness fixes, and UI fixes. ## Key Highlights ### 🔒 Security & Hardening **Access control** - Per-monitor ACL enforced on the Event…",
    "source_url": "https://github.com/ZoneMinder/zoneminder/releases/tag/1.38.4",
    "product_url": "https://github.com/ZoneMinder/zoneminder",
+   "update_url": "https://github.com/ZoneMinder/zoneminder/releases",
    "history": [
     {
      "version": "1.38.4",
@@ -3533,6 +3695,7 @@
    "notes": "### 🚨 This release closes a number of security vulnerabilities, please update ASAP! 🚀 The following vulnerabilities have been closed: - [CVE-2026-46488](https://github.com/motioneye-project/motioneye/security/advisories/GHSA-r3cw-c95m-wfh9) - [CVE-2026-55863](https://github.com/motioneye-project/mo…",
    "source_url": "https://github.com/motioneye-project/motioneye/releases/tag/0.44.0",
    "product_url": "https://github.com/motioneye-project/motioneye",
+   "update_url": "https://github.com/motioneye-project/motioneye/releases",
    "history": [
     {
      "version": "0.44.0",
@@ -3555,6 +3718,7 @@
    "notes": "## Commits - cf1faef: postrelease (Koushik Dutta) - package lock ([Koushik Dutta](https://github.com/koush/scrypted/commit/9d3ca39ced1c9b105c132ff380e5cbe88e3e4a46)) - 9541ae3: postbeta (Koushik Dutta) - package lock ([Koushik Dutta](https://github.com/koush/scrypted/commit/1d1c9c6155e4f3af45e6d1ac…",
    "source_url": "https://github.com/koush/scrypted/releases/tag/v0.147.0",
    "product_url": "https://github.com/koush/scrypted",
+   "update_url": "https://github.com/koush/scrypted/releases",
    "history": [
     {
      "version": "0.147.0",
@@ -3577,6 +3741,7 @@
    "notes": "## Xiaomi source improvement Support for modern cameras has been significantly improved, and limited support for older Xiaomi cameras has been added. - Add support cateye devices to xiaomi source (753d6617) - Add TUTK protocol to xiaomi source #​2003 (5b1da84a) - Add cache to xiaomi cloud logins (9…",
    "source_url": "https://github.com/AlexxIT/go2rtc/releases/tag/v1.9.14",
    "product_url": "https://github.com/AlexxIT/go2rtc",
+   "update_url": "https://github.com/AlexxIT/go2rtc/releases",
    "history": [
     {
      "version": "1.9.14",
@@ -3599,6 +3764,7 @@
    "notes": "### Release mega-20260720 This is a massive release, where quite a lot of ESPEasy has been changed. The main changes are in the way how networking is handled and support for lots of new Espressif MCU's is added like the ESP32-P4, -C5, C61. In the start post of [this long 'test build' issue](https:/…",
    "source_url": "https://github.com/letscontrolit/ESPEasy/releases/tag/mega-20260720",
    "product_url": "https://github.com/letscontrolit/ESPEasy",
+   "update_url": "https://github.com/letscontrolit/ESPEasy/releases",
    "history": [
     {
      "version": "mega-20260720",
@@ -3621,6 +3787,7 @@
    "notes": "- Bug Fix: Resolved an issue where using adaptive scanning in the presence of a BLE device requiring continuous scanning could cause the gateway to restart unexpectedly. - Updated CI python version to 3.11 **Full Changelog**: https://github.com/1technophile/OpenMQTTGateway/compare/v1.8.0...v1.8.1",
    "source_url": "https://github.com/1technophile/OpenMQTTGateway/releases/tag/v1.8.1",
    "product_url": "https://github.com/1technophile/OpenMQTTGateway",
+   "update_url": "https://github.com/1technophile/OpenMQTTGateway/releases",
    "history": [
     {
      "version": "1.8.1",
@@ -3643,6 +3810,7 @@
    "notes": "## What's Changed ### 🚀 Features * [sub-mac] fix `mCslLastSync` type and timestamp tracking * [radio] add `Radio::ConvertUncertaintyToUsec()` helper * [sub-mac] generalize timed transmission handling and states * [mac-frame] consolidate frame parsing and payload building * [ip6-prefix] rename `Cont…",
    "source_url": "https://github.com/openthread/openthread/releases/tag/v2026.09.0",
    "product_url": "https://github.com/openthread/openthread",
+   "update_url": "https://github.com/openthread/openthread/releases",
    "history": [
     {
      "version": "2026.09.0",
@@ -3665,6 +3833,7 @@
    "notes": "**Full Changelog**: https://github.com/project-chip/connectedhomeip/compare/v1.5.1.0...v1.6.0.0 # Matter SDK Release Notes: v1.6.0 (compared to v1.5.0) ## Executive Summary The `v1.6.0` release includes **1,910 commits** since branching from `v1.5.0`. Key focal areas: - **Architecture**: Broad migr…",
    "source_url": "https://github.com/project-chip/connectedhomeip/releases/tag/v1.6.0.0",
    "product_url": "https://github.com/project-chip/connectedhomeip",
+   "update_url": "https://github.com/project-chip/connectedhomeip/releases",
    "history": [
     {
      "version": "1.6.0.0",
@@ -3687,6 +3856,7 @@
    "notes": "2026.08.0 Camera Streaming — Yes, really # Valetudo 2026.08.0 I've put an em dash there as a jumpscare. If you didn't notice, I have bad news for you. You might've previously been exposed to AI writing without you even noticing. (These release notes are quite inline-video-heavy, so for the best exp…",
    "source_url": "https://github.com/Hypfer/Valetudo/releases/tag/2026.08.0",
    "product_url": "https://github.com/Hypfer/Valetudo",
+   "update_url": "https://github.com/Hypfer/Valetudo/releases",
    "history": [
     {
      "version": "2026.08.0",
@@ -3709,6 +3879,7 @@
    "notes": "### Changes - chore(deps): dependency updates - fix(matter): echo the control correlationId so the ui stops retrying successful commands - refactor(matter): collapse the three identical rvc operational command handlers into one - fix(matter): keep a restored colour light's colour features, so it st…",
    "source_url": "https://github.com/homebridge/homebridge/releases/tag/v2.4.0",
    "product_url": "https://github.com/homebridge/homebridge",
+   "update_url": "https://github.com/homebridge/homebridge/releases",
    "history": [
     {
      "version": "2.4.0",
@@ -3731,6 +3902,7 @@
    "notes": "## OpenBK7231T/OpenBeken release 1.18.311 ### WARNING! If installing versions tagged -alpha, please be aware these are development builds and may not be stable! Please do not flash all your devices at once! Make sure you can recover them via UART in case of unexpected issue. OpenBK7231T/OpenBeken i…",
    "source_url": "https://github.com/openshwprojects/OpenBK7231T_App/releases/tag/1.18.311",
    "product_url": "https://github.com/openshwprojects/OpenBK7231T_App",
+   "update_url": "https://github.com/openshwprojects/OpenBK7231T_App/releases",
    "history": [
     {
      "version": "1.18.311",
@@ -3753,6 +3925,7 @@
    "notes": "## What's Changed * Remove the hierarchy in the uploaded zip to be compatible with stock 2.0.0 * Match changed partition layout of Stock 2.0.0 for 1PMGen3 and 1Gen3 **Careful** This breaks the direct update path for those devices with HomeKit firmware. To update your device please hit revert first …",
    "source_url": "https://github.com/mongoose-os-apps/shelly-homekit/releases/tag/2.16.1",
    "product_url": "https://github.com/mongoose-os-apps/shelly-homekit",
+   "update_url": "https://github.com/mongoose-os-apps/shelly-homekit/releases",
    "history": [
     {
      "version": "2.16.1",
@@ -3775,6 +3948,7 @@
    "notes": "## What's Changed * [realtek-amb] Reduce main task stack from 16KB to 8KB * [beken-72xx] Move common chip properties to base JSON * [lightning-ln882h] Change default log output port to UART1 * [lightning-ln882h] Fix -Wregister warnings from CmBacktrace cmb_def.h * [boards] Add Tuya WL2H-U and LN-CB…",
    "source_url": "https://github.com/libretiny-eu/libretiny/releases/tag/v1.13.0",
    "product_url": "https://github.com/libretiny-eu/libretiny",
+   "update_url": "https://github.com/libretiny-eu/libretiny/releases",
    "history": [
     {
      "version": "1.13.0",
@@ -3797,6 +3971,7 @@
    "notes": "",
    "source_url": null,
    "product_url": "https://github.com/tuya-cloudcutter/tuya-cloudcutter",
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -3814,6 +3989,7 @@
    "notes": "Automated firmware release from commit 7501d8070826c433aee114bb4c9c2e38195a5342",
    "source_url": "https://github.com/ratgdo/esphome-ratgdo/releases/tag/v1535",
    "product_url": "https://github.com/ratgdo/esphome-ratgdo",
+   "update_url": "https://github.com/ratgdo/esphome-ratgdo/releases",
    "history": [
     {
      "version": "1535",
@@ -3836,6 +4012,7 @@
    "notes": "This release updates gdolib to [v1.1.2](https://github.com/konnected-io/gdolib/releases/tag/v1.1.2), fixing two Security+ 2.0 issues on the GDO blaQ. It also moves the build to the ESPHome 2026.8 line. ## GDO blaQ * **Obstruction now reports the instant the beam breaks, and reliably reports clear.*…",
    "source_url": "https://github.com/konnected-io/konnected-esphome/releases/tag/2026.8.0",
    "product_url": "https://github.com/konnected-io/konnected-esphome",
+   "update_url": "https://github.com/konnected-io/konnected-esphome/releases",
    "history": [
     {
      "version": "2026.8.0",
@@ -3858,6 +4035,7 @@
    "notes": "## What's Changed * readme.md: Fix recommends typo * Updates to the TFT and PNG libraries * Bump espressif32 from 6.11.0 to 6.12.0 * Create comprehensive GitHub Copilot instructions for OpenEVSE ESP32 firmware development * Enable RAPI commands in order to turn off the display * Fix for LCD timeout…",
    "source_url": "https://github.com/OpenEVSE/openevse_esp32_firmware/releases/tag/v5.1.5",
    "product_url": "https://github.com/OpenEVSE/ESP32_WiFi_V4.x",
+   "update_url": "https://github.com/OpenEVSE/ESP32_WiFi_V4.x/releases",
    "history": [
     {
      "version": "5.1.5",
@@ -3880,6 +4058,7 @@
    "notes": "0.315.1",
    "source_url": "https://github.com/evcc-io/evcc/releases/tag/0.315.1",
    "product_url": "https://github.com/evcc-io/evcc",
+   "update_url": "https://github.com/evcc-io/evcc/releases",
    "history": [
     {
      "version": "0.315.1",
@@ -3902,6 +4081,7 @@
    "notes": "Release 1.7 1.7",
    "source_url": "https://github.com/snaptec/openWB/releases/tag/1.7",
    "product_url": "https://github.com/snaptec/openWB",
+   "update_url": "https://github.com/snaptec/openWB/releases",
    "history": [
     {
      "version": "1.7",
@@ -3924,6 +4104,7 @@
    "notes": "- Fix V3.1.3 - Fix Emoncms path https://github.com/openenergymonitor/EmonESP/pull/85 *** Upload pre-compiled FW using [emonUpload](https://github.com/openenergymonitor/emonupload) or [esptool](https://github.com/espressif/esptool) `esptool.py write_flash 0x0 firmware.bin` `firmware.bin` = FW for Hu…",
    "source_url": "https://github.com/openenergymonitor/EmonESP/releases/tag/3.1.4",
    "product_url": "https://github.com/openenergymonitor/EmonESP",
+   "update_url": "https://github.com/openenergymonitor/EmonESP/releases",
    "history": [
     {
      "version": "3.1.4",
@@ -3946,6 +4127,7 @@
    "notes": "## 📦 Stable Release _Changes since [2.10.2](https://github.com/music-assistant/server/releases/tag/2.10.2)_ ### 🚀 Features and enhancements - Align party and music quiz plugin icons with the frontend menu () - Default the global autoplay setting to off () ### 🐛 Bugfixes - Play the newest episode wh…",
    "source_url": "https://github.com/music-assistant/server/releases/tag/2.10.3",
    "product_url": "https://github.com/music-assistant/server",
+   "update_url": "https://github.com/music-assistant/server/releases",
    "history": [
     {
      "version": "2.10.3",
@@ -3968,6 +4150,7 @@
    "notes": "* Send `played` event to server",
    "source_url": "https://github.com/rhasspy/wyoming-satellite/releases/tag/v1.4.1",
    "product_url": "https://github.com/rhasspy/wyoming-satellite",
+   "update_url": "https://github.com/rhasspy/wyoming-satellite/releases",
    "history": [
     {
      "version": "1.4.1",
@@ -3990,6 +4173,7 @@
    "notes": "### Added - Option to allow \"unknown\" words to be recognized with Kaldi with Text FST grammar enabled - Changeable \"cancel\" word that can be spoken at any time to trigger a recognition failure - Preliminary support for Arabic (ar) - Initial support for Vosk ASR (English, German, French, Spanish, It…",
    "source_url": "https://github.com/rhasspy/rhasspy/releases/tag/v2.5.11",
    "product_url": "https://github.com/rhasspy/rhasspy",
+   "update_url": "https://github.com/rhasspy/rhasspy/releases",
    "history": [
     {
      "version": "2.5.11",
@@ -4012,6 +4196,7 @@
    "notes": "2023.11.14-2 2023.11.14-2",
    "source_url": "https://github.com/rhasspy/piper/releases/tag/2023.11.14-2",
    "product_url": "https://github.com/rhasspy/piper",
+   "update_url": "https://github.com/rhasspy/piper/releases",
    "history": [
     {
      "version": "2023.11.14-2",
@@ -4034,6 +4219,7 @@
    "notes": "## What's Changed * Remove model files * Auto training * Properly create cv11_test_clips-Folder * Fix typo in README.md * Example updates * Pyproject and train.py update * Fix chunksize in utils.py when batch is less than ncpu value * Debounce ## New Contributors * made their first contribution in …",
    "source_url": "https://github.com/dscripka/openWakeWord/releases/tag/v0.6.0",
    "product_url": "https://github.com/dscripka/openWakeWord",
+   "update_url": "https://github.com/dscripka/openWakeWord/releases",
    "history": [
     {
      "version": "0.6.0",
@@ -4056,6 +4242,7 @@
    "notes": "Bump home-assistant/builder from 2025.11.0 to 2026.02.1 Bumps [home-assistant/builder]( https://github.com/home-assistant/builder ) from 2025.11.0 to 2026.02.1. - [Release notes]( https://github.com/home-assistant/builder/releases ) - [Commits]( home-assistant/builder@ 2025.11.0...2026.02.1 ) --- u…",
    "source_url": "https://github.com/wez/govee2mqtt/releases/tag/2026.03.25-ab9deb66",
    "product_url": "https://github.com/wez/govee2mqtt",
+   "update_url": "https://github.com/wez/govee2mqtt/releases",
    "history": [
     {
      "version": "2026.03.25-ab9deb66",
@@ -4078,6 +4265,7 @@
    "notes": "## Hyperion 2.2.1 – Fix & Stability Update This is a small maintenance release focused on improving stability and fixing a few issues introduced in previous versions. No major changes—just a smoother, more reliable experience. ### ✅ What’s improved - **Art-Net reliability fixes** - Corrected a limi…",
    "source_url": "https://github.com/hyperion-project/hyperion.ng/releases/tag/2.2.1",
    "product_url": "https://github.com/hyperion-project/hyperion.ng",
+   "update_url": "https://github.com/hyperion-project/hyperion.ng/releases",
    "history": [
     {
      "version": "2.2.1",
@@ -4100,6 +4288,7 @@
    "notes": "### For the Marauder v8 and Marauder Mini v3, the partition scheme for the firmware has changed As a result, the entire flash of the ESP32 device must be over-written for this update in order to enforce the new partition scheme. This will cause your Marauder settings file to be wiped. We have added…",
    "source_url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v1.16.0",
    "product_url": "https://github.com/justcallmekoko/ESP32Marauder",
+   "update_url": "https://github.com/justcallmekoko/ESP32Marauder/releases",
    "history": [
     {
      "version": "1.16.0",
@@ -4122,6 +4311,7 @@
    "notes": "# WiFi - Added detection for WPA3-PSK and WPA2/WPA3 #​2750 - Wait for connection before accepting commands #​2740 - Brucegotchi now captures handshakes correctly #​2724 - SSH/Telnet fixes for non keyboard devices and fixed crash when accessing SSH while not connected 706d5c7 - Station Deauth fixes …",
    "source_url": "https://github.com/BruceDevices/firmware/releases/tag/1.16.1",
    "product_url": "https://github.com/pr3y/Bruce",
+   "update_url": "https://github.com/pr3y/Bruce/releases",
    "history": [
     {
      "version": "1.16.1",
@@ -4144,6 +4334,7 @@
    "notes": "docs: Note the release of v0.13.0 Signed-off-by: Kevin O'Connor <kevin.net>",
    "source_url": "https://github.com/Klipper3d/klipper/releases/tag/v0.13.0",
    "product_url": "https://github.com/Klipper3d/klipper",
+   "update_url": "https://github.com/Klipper3d/klipper/releases",
    "history": [
     {
      "version": "0.13.0",
@@ -4166,6 +4357,7 @@
    "notes": "# What's Changed ### Features - **logfiles**: Add mms.log file to the log files panel ([#​2591](https://github.com/mainsail-crew/mainsail/pull/2591)) - **logfiles**: Add AFC.log file to the log files panel ([#​2590](https://github.com/mainsail-crew/mainsail/pull/2590)) ### Bug Fixes and Improvement…",
    "source_url": "https://github.com/mainsail-crew/mainsail/releases/tag/v2.19.0",
    "product_url": "https://github.com/mainsail-crew/mainsail",
+   "update_url": "https://github.com/mainsail-crew/mainsail/releases",
    "history": [
     {
      "version": "2.19.0",
@@ -4188,6 +4380,7 @@
    "notes": "### Features * adds Docker health check ([#​1937](https://github.com/fluidd-core/fluidd/issues/1937)) ([94ea4ea](https://github.com/fluidd-core/fluidd/commit/94ea4ea045be9169e3b26f254fb7148948c1ac84)) * **i18n-es:** Update Spanish translations ([e2017f2](https://github.com/fluidd-core/fluidd/commit…",
    "source_url": "https://github.com/fluidd-core/fluidd/releases/tag/v1.37.5",
    "product_url": "https://github.com/fluidd-core/fluidd",
+   "update_url": "https://github.com/fluidd-core/fluidd/releases",
    "history": [
     {
      "version": "1.37.5",
@@ -4210,6 +4403,7 @@
    "notes": "This marks the first release that is compatible with with the official Klipper repo. This is a beta release, it is expected that Moonraker is stable, however the possibility exists for underlying issues yet to be discovered due to the lack of widespread testing.",
    "source_url": "https://github.com/Arksine/moonraker/releases/tag/v0.1.0",
    "product_url": "https://github.com/Arksine/moonraker",
+   "update_url": "https://github.com/Arksine/moonraker/releases",
    "history": [
     {
      "version": "0.1.0",
@@ -4232,6 +4426,7 @@
    "notes": "# ![PrusaSlicer](https://github.com/prusa3d/PrusaSlicer/raw/master/resources/icons/PrusaSlicer_128px.png) This is final release of PrusaSlicer 2.9.6, introducing ColorMix feature. Please, read change logs of [2.9.6-beta1](https://github.com/prusa3d/PrusaSlicer/releases/tag/version_2.9.6-beta1) and …",
    "source_url": "https://github.com/prusa3d/PrusaSlicer/releases/tag/version_2.9.6",
    "product_url": "https://github.com/prusa3d/PrusaSlicer",
+   "update_url": "https://github.com/prusa3d/PrusaSlicer/releases",
    "history": [
     {
      "version": "2.9.6",
@@ -4254,6 +4449,7 @@
    "notes": "# What's Changed This is the OrcaSlicer V2.4.2 release — a maintenance update on top of 2.4.1, focused on making profiles, cloud sync, and printer connectivity more dependable. Upgrading from an older version is smoother: presets that were built on a printer or filament that has since been renamed …",
    "source_url": "https://github.com/OrcaSlicer/OrcaSlicer/releases/tag/v2.4.2",
    "product_url": "https://github.com/SoftFever/OrcaSlicer",
+   "update_url": "https://github.com/SoftFever/OrcaSlicer/releases",
    "history": [
     {
      "version": "2.4.2",
@@ -4276,6 +4472,7 @@
    "notes": "New features and improvements: - Added the new UltiMaker Factor 4+ printer, including profiles - Added option to specify file association during the installation of Cura for windows, contributed New Settings: - Introduced Infill Start/End Preference settings that give control over the starting loca…",
    "source_url": "https://github.com/Ultimaker/Cura/releases/tag/5.13.0",
    "product_url": "https://github.com/Ultimaker/Cura",
+   "update_url": "https://github.com/Ultimaker/Cura/releases",
    "history": [
     {
      "version": "5.13.0",
@@ -4298,6 +4495,7 @@
    "notes": "Bambu Studio 2.8.2.61 is a minor optimization update based on the previous version. It fixes several known issues and improves the experience of certain features. You can download the Flathub version for Linux from [Bambu Studio on Flathub](https://flathub.org/en/apps/com.bambulab.BambuStudio) The …",
    "source_url": "https://github.com/bambulab/BambuStudio/releases/tag/v02.08.02.61",
    "product_url": "https://github.com/bambulab/BambuStudio",
+   "update_url": "https://github.com/bambulab/BambuStudio/releases",
    "history": [
     {
      "version": "2.8.2.61",
@@ -4320,6 +4518,7 @@
    "notes": "This release fixes bugs in the previous 3.6.x firmwares. See the change list at https://github.com/Duet3D/RepRapFirmware/wiki/Changelog-RRF-3.x#reprapfirmware-363. Also included in this release are: * New firmware files for WiFi modules. See https://github.com/Duet3D/WiFiSocketServerRTOS/releases/t…",
    "source_url": "https://github.com/Duet3D/RepRapFirmware/releases/tag/3.6.3",
    "product_url": "https://github.com/Duet3D/RepRapFirmware",
+   "update_url": "https://github.com/Duet3D/RepRapFirmware/releases",
    "history": [
     {
      "version": "3.6.3",
@@ -4342,6 +4541,7 @@
    "notes": "Compatible versions: - DuetSoftwareFramework 3.6.3 - RepRapFirmware 3.6.3 New features: - Added \"Run Macro\" context menu option to System Files list Bug fixes: - Fixed minor bugs in the IS and Height Map plugins - Right-click behaviour was partially incorrect in file lists - Added missing translati…",
    "source_url": "https://github.com/Duet3D/DuetWebControl/releases/tag/v3.6.3",
    "product_url": "https://github.com/Duet3D/DuetWebControl",
+   "update_url": "https://github.com/Duet3D/DuetWebControl/releases",
    "history": [
     {
      "version": "3.6.3",
@@ -4364,6 +4564,7 @@
    "notes": "",
    "source_url": null,
    "product_url": "https://github.com/TheSpaghettiDetective/obico-server",
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -4381,6 +4582,7 @@
    "notes": "**This release fixes minor bugs and includes a new optional dual motor support for self-squaring gantry homing.** **[OPTIONAL]** *Dual motor support for self-squaring gantry homing.* - **NOTE: Default build remains the same! Dual motor support can only be enabled in config.h.** - New dual motor sup…",
    "source_url": "https://github.com/gnea/grbl/releases/tag/v1.1h.20190825",
    "product_url": "https://github.com/gnea/grbl",
+   "update_url": "https://github.com/gnea/grbl/releases",
    "history": [
     {
      "version": "1.1",
@@ -4403,6 +4605,7 @@
    "notes": "## TLDR This release has a ton of bug fixes for crashes and other problems that were present in v4.0.4, improves stability by reducing baseline memory usage, and has several new features, notably * GCode Single Stepping - see http://wiki.fluidnc.com/en/features/single_block_mode * Unipolar motor su…",
    "source_url": "https://github.com/bdring/FluidNC/releases/tag/v4.1.0",
    "product_url": "https://github.com/bdring/FluidNC",
+   "update_url": "https://github.com/bdring/FluidNC/releases",
    "history": [
     {
      "version": "4.1.0",
@@ -4425,6 +4628,7 @@
    "notes": "v2.9.10 v2.9.10",
    "source_url": "https://github.com/LinuxCNC/linuxcnc/releases/tag/v2.9.10",
    "product_url": "https://github.com/LinuxCNC/linuxcnc",
+   "update_url": "https://github.com/LinuxCNC/linuxcnc/releases",
    "history": [
     {
      "version": "2.9.10",
@@ -4447,6 +4651,7 @@
    "notes": "- Fix some bug and better bug diagnostic support - Support for Longer Nano / Longer NanoDuo custom menu",
    "source_url": "https://github.com/arkypita/LaserGRBL/releases/tag/v7.14.1",
    "product_url": "https://github.com/arkypita/LaserGRBL",
+   "update_url": "https://github.com/arkypita/LaserGRBL/releases",
    "history": [
     {
      "version": "7.14.1",
@@ -4469,6 +4674,7 @@
    "notes": "0.34.4",
    "source_url": "https://github.com/qmk/qmk_firmware/releases/tag/0.34.4",
    "product_url": "https://github.com/qmk/qmk_firmware",
+   "update_url": "https://github.com/qmk/qmk_firmware/releases",
    "history": [
     {
      "version": "0.34.4",
@@ -4491,6 +4697,7 @@
    "notes": "## [0.3.0](https://github.com/zmkfirmware/zmk/compare/v0.2.1...v0.3.0) (2025-08-01) ### Features * **ble:** Add function to get profile address by index ([#​2992](https://github.com/zmkfirmware/zmk/issues/2992)) ([9e905d6](https://github.com/zmkfirmware/zmk/commit/9e905d65936348824588dc3f424755353a…",
    "source_url": "https://github.com/zmkfirmware/zmk/releases/tag/v0.3.0",
    "product_url": "https://github.com/zmkfirmware/zmk",
+   "update_url": "https://github.com/zmkfirmware/zmk/releases",
    "history": [
     {
      "version": "0.3.0",
@@ -4513,6 +4720,7 @@
    "notes": "### Changed - Bump Arduino CLI to 1.5.1 (#​2920) - Add clean compile/verify (with shift+click on the verify button) (#​2923) ### Fixed - In some cases, sketch code is not recompiled (cached) after being modified. - Startup error due to missing CLI directory defaults (#​2922)",
    "source_url": "https://github.com/arduino/arduino-ide/releases/tag/2.3.10",
    "product_url": "https://github.com/arduino/arduino-ide",
+   "update_url": "https://github.com/arduino/arduino-ide/releases",
    "history": [
     {
      "version": "2.3.10",
@@ -4535,6 +4743,7 @@
    "notes": "## New Release Notes Platform can be Found [HERE](https://release-notes.espressif.com/?project=Arduino) ## What's Changed ### System PR * IDF v5.5.4 – #​12735 * IDF v5.5.4 with ESP-Video – #​12738 * IDF v5.5.4 – #​12762 * IDF v5.5.5 – #​12772 ## Peripherals ### I2S * fix(i2s): Fix examples and add …",
    "source_url": "https://github.com/espressif/arduino-esp32/releases/tag/3.3.11",
    "product_url": "https://github.com/espressif/arduino-esp32",
+   "update_url": "https://github.com/espressif/arduino-esp32/releases",
    "history": [
     {
      "version": "3.3.11",
@@ -4557,6 +4766,7 @@
    "notes": "![Github Releases (by Release)](https://img.shields.io/github/downloads/stm32duino/Arduino_Core_STM32/3.0.0/total.svg) > [!IMPORTANT] > This release contains 2 majors changes: > * ArduinoCore-API has been deployed > * HALv2 deployment for the new STM32C5xx series ## Breaking change `HardwareSerial`…",
    "source_url": "https://github.com/stm32duino/Arduino_Core_STM32/releases/tag/3.0.0",
    "product_url": "https://github.com/stm32duino/Arduino_Core_STM32",
+   "update_url": "https://github.com/stm32duino/Arduino_Core_STM32/releases",
    "history": [
     {
      "version": "3.0.0",
@@ -4579,6 +4789,7 @@
    "notes": "Plane-4.7.1 was released as the stable version for planes and VTOLs on 04-Sep-2026 Release announcement: https://discuss.ardupilot.org/t/plane-4-7-1-released/145389",
    "source_url": "https://github.com/ArduPilot/ardupilot/releases/tag/Plane-4.7.1",
    "product_url": "https://github.com/ArduPilot/ardupilot",
+   "update_url": "https://github.com/ArduPilot/ardupilot/releases",
    "history": [
     {
      "version": "4.7.1",
@@ -4601,6 +4812,7 @@
    "notes": "## What's Changed PX4 v1.17 builds on [PX4 v1.16](https://docs.px4.io/main/en/releases/1.16), with the changes below landing since v1.16.2. This release adds [Altitude Cruise](https://docs.px4.io/main/en/flight_modes_mc/altitude_cruise) mode, improves Fixed Wing Takeoff behaviour on navigation loss…",
    "source_url": "https://github.com/PX4/PX4-Autopilot/releases/tag/v1.17.0",
    "product_url": "https://github.com/PX4/PX4-Autopilot",
+   "update_url": "https://github.com/PX4/PX4-Autopilot/releases",
    "history": [
     {
      "version": "1.17.0",
@@ -4623,6 +4835,7 @@
    "notes": "## What's Changed ### Features * OSD: Custom text received from serial to be displayed * Add switchable battery profiles * Include AssistNow Autonomous into GPS features * Add individual servo channel forwarding support and run servo mixer for default frame types * Upixel UP-T1-001-Plus support and…",
    "source_url": "https://github.com/betaflight/betaflight/releases/tag/2026.6.1",
    "product_url": "https://github.com/betaflight/betaflight",
+   "update_url": "https://github.com/betaflight/betaflight/releases",
    "history": [
     {
      "version": "2026.6.1",
@@ -4645,6 +4858,7 @@
    "notes": "![INAV 9.1.0](https://quadmeup.com/assets/winged-inav.png) # Welcome to INAV 9.1.0 Please carefully read all of this document for the best possible experience and safety. Contact other pilots, share experiences, suggestions and ask for help on: INAV Discord Server INAV Official on Facebook INAV 9.1…",
    "source_url": "https://github.com/iNavFlight/inav/releases/tag/9.1.0",
    "product_url": "https://github.com/iNavFlight/inav",
+   "update_url": "https://github.com/iNavFlight/inav/releases",
    "history": [
     {
      "version": "9.1.0",
@@ -4667,6 +4881,7 @@
    "notes": "## Compatibility Compatible with all hardware running any ExpressLRS 4.x version ## Highlights ### Dynamic Power Goes Down #​3577 The statistical dynamic power algorithm introduced in 4.0 had a tendency to keep the power level high once it raised it, this change allows it to be a little less cautio…",
    "source_url": "https://github.com/ExpressLRS/ExpressLRS/releases/tag/4.1.0",
    "product_url": "https://github.com/ExpressLRS/ExpressLRS",
+   "update_url": "https://github.com/ExpressLRS/ExpressLRS/releases",
    "history": [
     {
      "version": "4.1.0",
@@ -4689,6 +4904,7 @@
    "notes": "We are pleased to offer EdgeTX \"Queen Anne's Revenge\" v2.12.4, the fourth maintenance release for 2.12, recommended for anyone already on 2.12.x. This release was moved up in order to re-release support for the GX15, after a production change affecting the right slider was missed in the v2.12.3 rel…",
    "source_url": "https://github.com/EdgeTX/edgetx/releases/tag/v2.12.4",
    "product_url": "https://github.com/EdgeTX/edgetx",
+   "update_url": "https://github.com/EdgeTX/edgetx/releases",
    "history": [
     {
      "version": "2.12.4",
@@ -4711,6 +4927,7 @@
    "notes": "Check out our [release blog post](https://blog.comma.ai/0111release/) for more details! * New driver monitoring model * Improved image processing pipeline for driver camera * Improved thermal policy for comma four * Acura MDX 2022-24 support thanks to mvl-boston! * Rivian R1S and R1T 2025 support t…",
    "source_url": "https://github.com/commaai/openpilot/releases/tag/v0.11.1",
    "product_url": "https://github.com/commaai/openpilot",
+   "update_url": "https://github.com/commaai/openpilot/releases",
    "history": [
     {
      "version": "0.11.1",
@@ -4733,6 +4950,7 @@
    "notes": "This is **CircuitPython 10.3.0**, a minor revision of CircuitPython, and is a new stable release. ## Notable additions, changes, and fixes in 10.3.0 from 10.2.1 ### Gaming and Display - `picogame` game engine module, a performant game-oriented alternative to `displayio`. - E-ink display quality imp…",
    "source_url": "https://github.com/adafruit/circuitpython/releases/tag/10.3.0",
    "product_url": "https://github.com/adafruit/circuitpython",
+   "update_url": "https://github.com/adafruit/circuitpython/releases",
    "history": [
     {
      "version": "10.3.0",
@@ -4755,6 +4973,7 @@
    "notes": "Overview ======== This release of MicroPython adds a new \"psoc-edge\" port for Infineon PSOC Edge microcontrollers. This is a bare-metal port using CMSIS 6 and a set of low-level HAL submodules from Infineon's Modus Toolbox. It uses the standard ARM toolchains and builds with make. It currently supp…",
    "source_url": "https://github.com/micropython/micropython/releases/tag/v1.29.0",
    "product_url": "https://github.com/micropython/micropython",
+   "update_url": "https://github.com/micropython/micropython/releases",
    "history": [
     {
      "version": "1.29.0",
@@ -4777,6 +4996,7 @@
    "notes": "1.20260907 1.20260907",
    "source_url": "https://github.com/raspberrypi/firmware/releases/tag/1.20260907",
    "product_url": "https://github.com/raspberrypi/firmware",
+   "update_url": "https://github.com/raspberrypi/firmware/releases",
    "history": [
     {
      "version": "1.20260907",
@@ -4799,6 +5019,7 @@
    "notes": "Interesting changes since the last release: ## 2026-05-11: 2712: Set bootloader mfg verison id to 1 (latest) * 2712: Set bootloader mfg verison id to 1 Advance the minimum version id to 1 to indicate support for new SDRAM variants. * Add MFG_VER string for rpi-eeprom-update minver check On new boar…",
    "source_url": "https://github.com/raspberrypi/rpi-eeprom/releases/tag/v2026.05.11-2712",
    "product_url": "https://github.com/raspberrypi/rpi-eeprom",
+   "update_url": "https://github.com/raspberrypi/rpi-eeprom/releases",
    "history": [
     {
      "version": "2026.05.11-2712",
@@ -4821,6 +5042,7 @@
    "notes": "## What's changed * Pi Connect: - Fix the Next button never enabling on the Raspberry Pi Connect customisation step once the browser sign-in fills in the token. The sanitised `value` an ImTextField exposes was a binding on `text`, and QML re-evaluates a binding only after every handler for the same…",
    "source_url": "https://github.com/raspberrypi/rpi-imager/releases/tag/v2.0.11.1",
    "product_url": "https://github.com/raspberrypi/rpi-imager",
+   "update_url": "https://github.com/raspberrypi/rpi-imager/releases",
    "history": [
     {
      "version": "2.0.11.1",
@@ -4843,6 +5065,7 @@
    "notes": "This is a minor release of the SDK with bug fixes and documentation improvements, along with a few new features. Highlights are listed below, or you can see the full list of individual commits [here](https://github.com/raspberrypi/pico-sdk/pulls?q=is%3Apr+milestone%3A2.3.1+is%3Amerged), and the ful…",
    "source_url": "https://github.com/raspberrypi/pico-sdk/releases/tag/2.3.1",
    "product_url": "https://github.com/raspberrypi/pico-sdk",
+   "update_url": "https://github.com/raspberrypi/pico-sdk/releases",
    "history": [
     {
      "version": "2.3.1",
@@ -4865,6 +5088,7 @@
    "notes": "v1.13.0 v1.13.0",
    "source_url": "https://github.com/raspberrypi/rpicam-apps/releases/tag/v1.13.0",
    "product_url": "https://github.com/raspberrypi/rpicam-apps",
+   "update_url": "https://github.com/raspberrypi/rpicam-apps/releases",
    "history": [
     {
      "version": "1.13.0",
@@ -4887,6 +5111,7 @@
    "notes": "Changes since 4.7.1 * On screen keyboard for entering WiFi password in RetroPie-Setup * Improved joystick support in RetroPie-Setup dialogs. * Improvement to RetroPie package management and updating. * retroarch - updated to v1.10.0 * Updates to many libretro cores - in depth details about libretro…",
    "source_url": "https://github.com/RetroPie/RetroPie-Setup/releases/tag/4.8",
    "product_url": "https://github.com/RetroPie/RetroPie-Setup",
+   "update_url": "https://github.com/RetroPie/RetroPie-Setup/releases",
    "history": [
     {
      "version": "4.8",
@@ -4909,6 +5134,7 @@
    "notes": "",
    "source_url": null,
    "product_url": "https://github.com/batocera-linux/batocera.linux",
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -4926,6 +5152,7 @@
    "notes": "v1.22.2 v1.22.2",
    "source_url": "https://github.com/libretro/RetroArch/releases/tag/v1.22.2",
    "product_url": "https://github.com/libretro/RetroArch",
+   "update_url": "https://github.com/libretro/RetroArch/releases",
    "history": [
     {
      "version": "1.22.2",
@@ -4948,6 +5175,7 @@
    "notes": "Documentation for IDF v6.1 is available at https://docs.espressif.com/projects/esp-idf/en/v6.1/ ESP-IDF v6.1 is a minor update for ESP-IDF v6.0. Release v6.1 is mostly compatible with apps written for ESP-IDF v6.0. We highly recommend referring to our [migration guide](https://docs.espressif.com/pr…",
    "source_url": "https://github.com/espressif/esp-idf/releases/tag/v6.1",
    "product_url": "https://github.com/espressif/esp-idf",
+   "update_url": "https://github.com/espressif/esp-idf/releases",
    "history": [
     {
      "version": "6.1",
@@ -4970,6 +5198,7 @@
    "notes": "This is a bugfix release for Zephyr 4.4.1. ## Security Vulnerability Related * [CVE-2026-7007](https://www.cve.org/CVERecord?id=CVE-2026-7007) Division by zero in Zephyr ext2 superblock parsing allows DoS via crafted filesystem image * [CVE-2026-8023](https://www.cve.org/CVERecord?id=CVE-2026-8023)…",
    "source_url": "https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.4.2",
    "product_url": "https://github.com/zephyrproject-rtos/zephyr",
+   "update_url": "https://github.com/zephyrproject-rtos/zephyr/releases",
    "history": [
     {
      "version": "4.4.2",
@@ -4992,6 +5221,7 @@
    "notes": "Changes between FreeRTOS 202212.01 and FreeRTOS 202411.00 released November 2024 + Include 202406-LTS versions of FreeRTOS Kernel, FreeRTOS+TCP, coreMQTT, corePKCS11, coreHTTP, coreJSON, AWS IoT Device Shadow, AWS IoT Jobs, AWS IoT Device Defender, Backoff Algorithm, AWS IoT Fleet Provisioning, cor…",
    "source_url": "https://github.com/FreeRTOS/FreeRTOS/releases/tag/202411.00",
    "product_url": "https://github.com/FreeRTOS/FreeRTOS",
+   "update_url": "https://github.com/FreeRTOS/FreeRTOS/releases",
    "history": [
     {
      "version": "202411.00",
@@ -5014,6 +5244,7 @@
    "notes": "RIOT-2026.07 \"Quando omni flunkus, moritati\" - Release Notes ============================ RIOT is a multi-threading operating system which enables soft real-time capabilities and comes with support for a range of devices that are typically found in the Internet of Things: 8-bit and 16-bit microcont…",
    "source_url": "https://github.com/RIOT-OS/RIOT/releases/tag/2026.07",
    "product_url": "https://github.com/RIOT-OS/RIOT",
+   "update_url": "https://github.com/RIOT-OS/RIOT/releases",
    "history": [
     {
      "version": "2026.07",
@@ -5036,6 +5267,7 @@
    "notes": "sdk-nrf v3.3.4",
    "source_url": "https://github.com/nrfconnect/sdk-nrf/releases/tag/v3.3.4",
    "product_url": "https://github.com/nrfconnect/sdk-nrf",
+   "update_url": "https://github.com/nrfconnect/sdk-nrf/releases",
    "history": [
     {
      "version": "3.3.4",
@@ -5058,6 +5290,7 @@
    "notes": "* Dropped support for Python 3.6, 3.7 and 3.8, requiring Python 3.9 or newer to run PlatformIO Core ([issue #​5414](https://github.com/platformio/platformio-core/issues/5414)) * Removed support for static code analysis via PVS-Studio following its deprecation by the vendor ([pull #​5360](https://gi…",
    "source_url": "https://github.com/platformio/platformio-core/releases/tag/v6.2.0",
    "product_url": "https://github.com/platformio/platformio-core",
+   "update_url": "https://github.com/platformio/platformio-core/releases",
    "history": [
     {
      "version": "6.2.0",
@@ -5080,6 +5313,7 @@
    "notes": "",
    "source_url": null,
    "product_url": "https://github.com/OpenIPC/firmware",
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5097,6 +5331,7 @@
    "notes": "### Changes in this release: - 3984909 configs: revert 2026.07 secureboop configs that break ciao's 2013.07 U-Boot The T31LC and Xiaomi T31 boards on ciao boot via the 2013.07 vendor-signed SPL splice (CONFIG_T31LC / CONFIG_XIAOMI_SPL), so they do not need the secureboop signature-collision patch. …",
    "source_url": "https://github.com/themactep/thingino-firmware/releases/tag/firmware-2026-09-10",
    "product_url": "https://github.com/themactep/thingino-firmware",
+   "update_url": "https://github.com/themactep/thingino-firmware/releases",
    "history": [
     {
      "version": "2026-09-10",
@@ -5119,6 +5354,7 @@
    "notes": "Changelog === **New Features** * f164b8bb new: added new faces for uploading status * ba13b125 added afrikaans lang * 34c2c8a0 Add support for SSD1608 variant 250x122 pixel Inky pHATs * 2db8f143 Display UPS-Lite charging status * 840054f5 Display coordinates for dfrobotv2 * 929eac7b Updated gps.py …",
    "source_url": "https://github.com/evilsocket/pwnagotchi/releases/tag/v1.5.5",
    "product_url": "https://github.com/evilsocket/pwnagotchi",
+   "update_url": "https://github.com/evilsocket/pwnagotchi/releases",
    "history": [
     {
      "version": "1.5.5",
@@ -5141,6 +5377,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5158,6 +5395,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5175,6 +5413,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5192,6 +5431,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5209,6 +5449,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5226,6 +5467,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5243,6 +5485,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5260,6 +5503,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5277,6 +5521,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5294,6 +5539,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5311,6 +5557,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5328,6 +5575,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5345,6 +5593,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5362,6 +5611,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5379,6 +5629,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5396,6 +5647,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5413,6 +5665,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5430,6 +5683,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5447,6 +5701,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5464,6 +5719,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5481,6 +5737,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5498,6 +5755,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5515,6 +5773,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5532,6 +5791,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5549,6 +5809,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5566,6 +5827,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5583,6 +5845,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5600,6 +5863,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5617,6 +5881,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5634,6 +5899,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5651,6 +5917,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5668,6 +5935,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5685,6 +5953,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5702,6 +5971,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5719,6 +5989,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5736,6 +6007,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5753,6 +6025,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5770,6 +6043,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5787,6 +6061,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5804,6 +6079,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5821,6 +6097,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5838,6 +6115,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5855,6 +6133,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5872,6 +6151,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5889,6 +6169,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5906,6 +6187,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5923,6 +6205,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5940,6 +6223,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5957,6 +6241,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5974,6 +6259,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -5991,6 +6277,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6008,6 +6295,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6025,6 +6313,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6042,6 +6331,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6059,6 +6349,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6076,6 +6367,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6093,6 +6385,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6110,6 +6403,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6127,6 +6421,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6144,6 +6439,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6161,6 +6457,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6178,6 +6475,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6195,6 +6493,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6212,6 +6511,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6229,6 +6529,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6246,6 +6547,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6263,6 +6565,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6280,6 +6583,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6297,6 +6601,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6314,6 +6619,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6331,6 +6637,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6348,6 +6655,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6365,6 +6673,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6382,6 +6691,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6399,6 +6709,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6416,6 +6727,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6433,6 +6745,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6450,6 +6763,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6467,6 +6781,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6484,6 +6799,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6501,6 +6817,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6518,6 +6835,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6535,6 +6853,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6552,6 +6871,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6569,6 +6889,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6586,6 +6907,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6603,6 +6925,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6620,6 +6943,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6637,6 +6961,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6654,6 +6979,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6671,6 +6997,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6688,6 +7015,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6705,6 +7033,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6722,6 +7051,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6739,6 +7069,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6756,6 +7087,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6773,6 +7105,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6790,6 +7123,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6807,6 +7141,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6824,6 +7159,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6841,6 +7177,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6858,6 +7195,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6875,6 +7213,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6892,6 +7231,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6909,6 +7249,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6926,6 +7267,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6943,6 +7285,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6960,6 +7303,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6977,6 +7321,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -6994,6 +7339,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7011,6 +7357,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7028,6 +7375,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7045,6 +7393,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7062,6 +7411,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7079,6 +7429,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7096,6 +7447,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7113,6 +7465,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7130,6 +7483,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7147,6 +7501,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7164,6 +7519,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7181,6 +7537,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7198,6 +7555,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7215,6 +7573,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7232,6 +7591,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7249,6 +7609,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7266,6 +7627,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7283,6 +7645,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7300,6 +7663,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7317,6 +7681,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7334,6 +7699,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7351,6 +7717,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7368,6 +7735,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7385,6 +7753,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7402,6 +7771,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7419,6 +7789,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7436,6 +7807,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7453,6 +7825,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7470,6 +7843,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7487,6 +7861,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7504,6 +7879,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7521,6 +7897,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7538,6 +7915,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7555,6 +7933,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7572,6 +7951,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7589,6 +7969,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7606,6 +7987,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",
@@ -7623,6 +8005,7 @@
    "notes": "",
    "source_url": null,
    "product_url": null,
+   "update_url": null,
    "history": [],
    "checked": null,
    "source_status": "pending",

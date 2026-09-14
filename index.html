@@ -394,6 +394,8 @@ function openDevice(id){
     </dl>
     <div class="actions">
       <button class="btn" data-watch="${d.b} ${d.m}">Get alerts for this device</button>
+      ${d.u ? `<a class="btn ghost" href="${d.u}" target="_blank" rel="noopener">Update this device ↗</a>`
+            : (d.id ? `<a class="btn ghost" href="/devices/${d.id}/#update">How to update</a>` : "")}
       ${d.p ? `<a class="btn ghost" href="${d.p}" target="_blank" rel="nofollow sponsored noopener">See current price</a>` : ""}
     </div>
     <p class="aff">Price links may earn Firmwarely a commission at no cost to you.</p>`;
@@ -493,7 +495,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
     const r = await fetch("/devices.json", {cache:"no-store"});
     if(!r.ok) throw new Error(r.status);
     const data = await r.json();
-    const live = (data.devices||[]).map(x=>({b:x.brand, m:x.model, c:x.category, v:x.version, d:x.released, s:x.status, n:x.notes, url:x.source_url, p:x.product_url, id:x.id}));
+    const live = (data.devices||[]).map(x=>({b:x.brand, m:x.model, c:x.category, v:x.version, d:x.released, s:x.status, n:x.notes, url:x.source_url, p:x.product_url, u:x.update_url, id:x.id}));
     if(!live.length) return;
     DEVICES = live;
     const withData = live.filter(x=>x.s!=="pending").length;
