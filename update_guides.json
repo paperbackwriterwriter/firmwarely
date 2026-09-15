@@ -219,6 +219,38 @@
     "Or download the BIOS for your model from support.lenovo.com.",
     "Keep it on mains power during a BIOS update."
    ]
+  },
+  "simplisafe-smart-lock": {
+   "url": "https://support.simplisafe.com/articles/smart-locks/updating-your-smart-lock",
+   "steps": [
+    "The Smart Lock does not update itself — you have to apply it from the app.",
+    "Open the SimpliSafe app, go to My System, then Device Settings, then the lock.",
+    "Stay within Bluetooth range of the lock until the update finishes."
+   ]
+  },
+  "simplisafe-outdoor-camera": {
+   "url": "https://support.simplisafe.com/articles/product-support/device-and-system-firmware-updates/",
+   "steps": [
+    "Cameras update themselves, but only once the Base Station is on the latest firmware — update that first.",
+    "An update pauses if motion or an alarm is detected, so the camera is never off duty mid-update.",
+    "Keep the camera on Wi-Fi and, for battery models, charged while it updates."
+   ]
+  },
+  "simplisafe-indoor-camera": {
+   "url": "https://support.simplisafe.com/articles/product-support/device-and-system-firmware-updates/",
+   "steps": [
+    "Cameras update themselves, but only once the Base Station is on the latest firmware — update that first.",
+    "An update pauses if motion or an alarm is detected, so the camera is never off duty mid-update.",
+    "Keep the camera on Wi-Fi and, for battery models, charged while it updates."
+   ]
+  },
+  "simplisafe-base-station": {
+   "url": "https://support.simplisafe.com/articles/product-support/device-and-system-firmware-updates/",
+   "steps": [
+    "On firmware 2.24 and later the Base Station updates right after you disarm; on 2.15 to 2.23 it waits until you have been disarmed for about 10 minutes.",
+    "Check the version in the SimpliSafe app under My System, then Base Station Settings, then Firmware.",
+    "Keep it powered and on Wi-Fi; below 2.15 the update has to be started by hand from the app or keypad."
+   ]
   }
  },
  "by_brand": {

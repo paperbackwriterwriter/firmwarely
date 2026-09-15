@@ -2830,9 +2830,13 @@
   {
    "id": "simplisafe-base-station",
    "brand": "SimpliSafe",
-   "model": "Base Station",
+   "model": "Base Station (Gen 3)",
    "category": "S",
-   "type": "manual"
+   "type": "html",
+   "url": "https://support.simplisafe.com/articles/product-support/device-and-system-firmware-updates/",
+   "page_url": "https://support.simplisafe.com/articles/product-support/device-and-system-firmware-updates/",
+   "version_regex": "Base Station[^0-9]{0,80}(\\d+\\.\\d+)",
+   "notes": "SimpliSafe firmware release. See the firmware update article for details."
   },
   {
    "id": "ubiquiti-unifi-g5-bullet",
@@ -7420,9 +7424,13 @@
   {
    "id": "simplisafe-outdoor-camera",
    "brand": "SimpliSafe",
-   "model": "Outdoor Camera",
+   "model": "Wireless Outdoor Camera",
    "category": "S",
-   "type": "manual"
+   "type": "html",
+   "url": "https://support.simplisafe.com/articles/product-support/device-and-system-firmware-updates/",
+   "page_url": "https://support.simplisafe.com/articles/product-support/device-and-system-firmware-updates/",
+   "version_regex": "Outdoor Camera[^0-9]{0,80}(\\d+\\.\\d+)",
+   "notes": "SimpliSafe firmware release. See the firmware update article for details."
   },
   {
    "id": "abode-iota",
@@ -8781,6 +8789,38 @@
    "type": "github",
    "repo": "fosrl/pangolin",
    "product_url": "https://github.com/fosrl/pangolin"
+  },
+  {
+   "id": "simplisafe-keypad",
+   "brand": "SimpliSafe",
+   "model": "Keypad",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "simplisafe-smart-lock",
+   "brand": "SimpliSafe",
+   "model": "Smart Lock",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "simplisafe-video-doorbell-pro",
+   "brand": "SimpliSafe",
+   "model": "Video Doorbell Pro",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "simplisafe-indoor-camera",
+   "brand": "SimpliSafe",
+   "model": "Wireless Indoor Camera",
+   "category": "S",
+   "type": "html",
+   "url": "https://support.simplisafe.com/articles/product-support/device-and-system-firmware-updates/",
+   "page_url": "https://support.simplisafe.com/articles/product-support/device-and-system-firmware-updates/",
+   "version_regex": "Indoor Camera[^0-9]{0,80}(\\d+\\.\\d+)",
+   "notes": "SimpliSafe firmware release. See the firmware update article for details."
   }
  ]
 }
