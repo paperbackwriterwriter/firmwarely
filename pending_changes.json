@@ -365,6 +365,62 @@
    "notes": "MariaDB Community Server 13.0.2",
    "source_url": "https://github.com/MariaDB/server/releases/tag/mariadb-13.0.2",
    "page_url": "https://www.firmwarely.com/devices/mariadb/"
+  },
+  "bazzite": {
+   "id": "bazzite",
+   "brand": "Universal Blue",
+   "model": "Bazzite gaming OS",
+   "category": "C",
+   "status": "update",
+   "version": "44.20260915",
+   "previous": "44.20260914",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": "This is an automatically generated changelog for release 44.20260915. From previous stable version 44.20260914 there have been the following changes. One package per new version shown. Major packages | Name | Version | | --- | --- | | Kernel | 7.2.4-ogc3.1 | | Kernel (Nvidia LTS) | 6.18.49-ogc1.1 |…",
+   "source_url": "https://github.com/ublue-os/bazzite/releases/tag/44.20260915",
+   "page_url": "https://www.firmwarely.com/devices/bazzite/"
+  },
+  "talos-linux": {
+   "id": "talos-linux",
+   "brand": "Sidero Labs",
+   "model": "Talos Linux",
+   "category": "A",
+   "status": "update",
+   "version": "1.14.1",
+   "previous": "1.14.0",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": "Talos 1.14.1 (2026-09-15) Welcome to the v1.14.1 release of Talos! Please try out the release binaries and report any issues at https://github.com/siderolabs/talos/issues. Component Updates Linux: 6.18.51 containerd: 2.3.5 Talos is built with Go 1.26.8. Contributors Andrey Smirnov Noel Georgi Maja …",
+   "source_url": "https://github.com/siderolabs/talos/releases/tag/v1.14.1",
+   "page_url": "https://www.firmwarely.com/devices/talos-linux/"
+  },
+  "docker-engine": {
+   "id": "docker-engine",
+   "brand": "Docker",
+   "model": "Engine (moby)",
+   "category": "A",
+   "status": "update",
+   "version": "29.8.1",
+   "previous": "29.8.0",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": "29.8.1 For a full list of pull requests and changes in this release, refer to the relevant GitHub milestones: docker/cli, 29.8.1 milestone moby/moby, 29.8.1 milestone Bug fixes and enhancements containerd image store: Fix docker load leaving dangling images after loading an image that already exist…",
+   "source_url": "https://github.com/moby/moby/releases/tag/docker-v29.8.1",
+   "page_url": "https://www.firmwarely.com/devices/docker-engine/"
+  },
+  "synapse": {
+   "id": "synapse",
+   "brand": "Element",
+   "model": "Synapse Matrix server",
+   "category": "A",
+   "status": "update",
+   "version": "1.161.0",
+   "previous": "1.160.0",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": "Changelog: https://github.com/element-hq/synapse/blob/release-v1.161/CHANGES.md",
+   "source_url": "https://github.com/element-hq/synapse/releases/tag/v1.161.0",
+   "page_url": "https://www.firmwarely.com/devices/synapse/"
   }
  }
 }
