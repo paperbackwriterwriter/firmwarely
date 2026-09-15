@@ -54,7 +54,7 @@ jobs:
 
       - name: Check every tracked source
         env:
-          GITHUB_TOKEN: ${{ github.token }}   # 5,000 API calls/hour; a run uses ~400
+          GITHUB_TOKEN: ${{ github.token }}   # 1,000 API calls/hour/repo; unchanged repos answer 304, which is free
         run: |
           if [ "${{ inputs.force_digest }}" = "true" ]; then
             python3 scripts/fetch.py --force-digest

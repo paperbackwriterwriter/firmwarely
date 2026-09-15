@@ -231,18 +231,35 @@ def gh_headers():
     return h
 
 
-def check_github(src):
-    """Latest non-prerelease via the GitHub API. src['repo'] = 'owner/name'."""
+class RateLimited(ValueError):
+    """The GitHub API budget for this hour is spent. Not a broken source: keep what we had."""
+
+
+def check_github(src, prev=None):
+    """Latest non-prerelease via the GitHub API. src['repo'] = 'owner/name'.
+
+    Sends the ETag from the last successful check as If-None-Match. GitHub answers 304
+    when nothing changed and does not count that against the hourly budget (1,000 calls
+    for the Actions token), which is what lets ~400 repos be checked every 30 minutes."""
     api = f"https://api.github.com/repos/{src['repo']}/releases/latest"
-    req = urllib.request.Request(api, headers=gh_headers())
+    headers = gh_headers()
+    prev = prev or {}
+    if prev.get("etag") and prev.get("version"):
+        headers["If-None-Match"] = prev["etag"]
+    req = urllib.request.Request(api, headers=headers)
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
             rel = json.loads(r.read().decode("utf-8"))
+            etag = r.headers.get("ETag")
     except urllib.error.HTTPError as e:
+        if e.code == 304:
+            return {"version": prev["version"], "released": prev.get("released"),
+                    "notes": prev.get("notes", ""), "source_url": prev.get("source_url"),
+                    "etag": prev["etag"]}
         # with a catalog this size an exhausted quota looks like dozens of unrelated
         # failures, so say what it really is
         if e.code in (403, 429) and e.headers.get("X-RateLimit-Remaining") == "0":
-            raise ValueError("GitHub API rate limit reached — set GITHUB_TOKEN") from None
+            raise RateLimited("GitHub API rate limit reached") from None
         if e.code == 404:
             raise ValueError(f"no repo or no stable release: {src['repo']}") from None
         raise
@@ -255,6 +272,7 @@ def check_github(src):
         "released": parse_date(rel.get("published_at")) or TODAY.isoformat(),
         "notes": clean(rel.get("body") or "") or clean(title),
         "source_url": rel.get("html_url") or f"https://github.com/{src['repo']}/releases",
+        "etag": etag,
     }
 
 
@@ -346,18 +364,22 @@ def device_record(src, prev):
         "product_url": src.get("product_url"),
         "update_url": update_url(src),
         "history": prev.get("history", []),
+        "etag": prev.get("etag"),
         "checked": prev.get("checked"), "source_status": prev.get("source_status", "pending"),
     }
 
 
 def check_source(src, prev):
-    """Run the right checker for one source. Returns (result, None) or (None, error)."""
+    """Run the right checker for one source. Returns (result, None), or (None, error) where
+    an error starting with "skipped:" means nothing is known to be wrong with the source."""
     try:
         if src["type"] == "feed":
             return check_feed(src), None
         if src["type"] == "github":
-            return check_github(src), None
+            return check_github(src, prev), None
         return check_html(src, prev), None
+    except RateLimited as e:
+        return None, f"skipped: {e}"
     except Exception as e:
         return None, f"error: {type(e).__name__}: {str(e)[:120]}"
 
@@ -401,7 +423,7 @@ def main():
             previous, prev_meta = {}, {}
 
     records = [(src, device_record(src, previous.get(src["id"], {}))) for src in cfg["devices"]]
-    ok, failed = 0, []
+    ok, failed, skipped = 0, [], 0
     if not OFFLINE:
         # every source is independent, so check them side by side; order is preserved
         to_check = [(src, dev) for src, dev in records if dev["tracked"]]
@@ -412,11 +434,16 @@ def main():
                 apply_result(dev, res)
                 ok += 1
                 print(f"  ok   {src['id']:40s} {res['version']}  ({res['released']})")
+            elif err.startswith("skipped:"):
+                # keep last run's data and status; the budget resets within the hour
+                skipped += 1
             else:
                 dev["checked"] = NOW
                 dev["source_status"] = err
                 failed.append(src["id"])
                 print(f"  FAIL {src['id']:40s} {err}")
+        if skipped:
+            print(f"  skipped {skipped} GitHub source(s): API budget for this hour is spent; their last data stands")
 
     out = [finish_record(dev) for _, dev in records]
 
@@ -426,7 +453,7 @@ def main():
     result = {"generated": NOW, "tracked": sum(1 for d in out if d["tracked"]),
               "ok": ok, "failed": failed, "devices": out}
     OUT.write_text(json.dumps(result, indent=1, ensure_ascii=False) + "\n")
-    print(f"\nwrote {OUT.name}: {len(out)} devices, {ok} fetched, {len(failed)} failed")
+    print(f"\nwrote {OUT.name}: {len(out)} devices, {ok} fetched, {len(failed)} failed, {skipped} skipped")
 
     # ---- what moved this run joins the pending set; scripts/digest.py drains it once a day ----
     changed = [d for d in out if d["tracked"] and d.get("version")

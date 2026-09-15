@@ -357,6 +357,29 @@ def test_schedule_and_digest():
     check("home automation lands in S", discover.category_for(["home-assistant", "python"], ""), "S")
     check("plain software lands in A", discover.category_for(["docker", "nodejs"], ""), "A")
     check("a day's topics are a fixed handful", len(discover.todays_topics(100)), discover.TOPICS_PER_DAY)
+    # conditional GitHub requests: 304 keeps last data and costs nothing; a spent budget is a skip
+    import urllib.request, urllib.error, io, email
+    prev = {"version": "1.0", "released": "2026-09-01", "notes": "n", "source_url": "https://g/r", "etag": "W/\"abc\""}
+    calls = []
+    def fake_304(req, timeout=30):
+        calls.append(req.get_header("If-none-match"))
+        raise urllib.error.HTTPError(req.full_url, 304, "Not Modified", email.message.Message(), io.BytesIO())
+    def fake_limit(req, timeout=30):
+        h = email.message.Message(); h["X-RateLimit-Remaining"] = "0"
+        raise urllib.error.HTTPError(req.full_url, 403, "rate limited", h, io.BytesIO())
+    real = urllib.request.urlopen
+    try:
+        urllib.request.urlopen = fake_304
+        res, err = fetch.check_source({"id": "x", "type": "github", "repo": "a/b"}, prev)
+        check("304 sends the stored ETag", calls, ['W/"abc"'])
+        check("304 keeps last run's data", (err, res["version"], res["etag"]), (None, "1.0", 'W/"abc"'))
+        urllib.request.urlopen = fake_limit
+        res, err = fetch.check_source({"id": "x", "type": "github", "repo": "a/b"}, prev)
+        check("a spent API budget is a skip, not a failure", (res, err), (None, "skipped: GitHub API rate limit reached"))
+    finally:
+        urllib.request.urlopen = real
+    check("device records carry the etag forward", fetch.device_record({"id": "x", "brand": "b", "model": "m", "category": "A", "type": "github"}, prev)["etag"], 'W/"abc"')
+
     check("fetch shares its record builders with discovery",
           all(hasattr(fetch, f) for f in ("device_record", "check_source", "apply_result", "finish_record", "load_pending")), True)
 
