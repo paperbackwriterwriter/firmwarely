@@ -624,7 +624,11 @@ def index_page(devices, brand_pages=()):
             parts.append(f'<li><a href="/devices/{d["id"]}/">{icon_svg(d.get("icon"))}{esc(d["brand"])} {esc(d["model"])}</a><span>{v}</span></li>')
         parts.append("</ul>")
     title = "Firmware update tracker — every device we watch | Firmwarely"
-    desc = f"Latest firmware versions for {len(devices)} routers, NAS, smart home devices, consoles, PCs, TVs, maker gear and self-hosted apps, checked every 30 minutes against manufacturer release pages and project feeds."
+    desc = fit_desc([
+        f"Latest firmware versions for {len(devices)} routers, NAS, smart home devices, consoles, PCs, TVs, maker gear and self-hosted apps, checked every 30 minutes.",
+        f"Latest firmware for {len(devices)} devices across routers, NAS, smart home, consoles, PCs, TVs and self-hosted apps, checked every 30 minutes.",
+        f"Latest firmware for {len(devices)} devices, checked every 30 minutes against release pages and project feeds.",
+    ])
     return head(title, desc, "/devices/") + f"""
 <div class="wrap brandlist" style="padding-top:2rem">
   <h1 class="dev-h">Every device we watch</h1>
