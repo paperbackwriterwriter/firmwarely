@@ -164,6 +164,11 @@ def styles():
   ol.upd-steps li::marker{color:var(--amber);font-weight:600}
   h1.dev-h{font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.15;margin:.25rem 0 .5rem}
   .faq h3{font-size:1rem;margin:1.25rem 0 .35rem}
+  .contact{display:grid;gap:1.1rem;max-width:560px;margin:1.25rem 0 0}
+  .contact label{display:block;font-family:var(--mono);font-size:.8rem;color:var(--muted);margin:0 0 .35rem}
+  .contact textarea,.contact select{font:inherit;font-size:1rem;color:var(--text);background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:.6rem .8rem;width:100%}
+  .contact textarea{resize:vertical;min-height:9rem}
+  .contact .hp{position:absolute;left:-9999px}
   .faq p{color:var(--muted);margin:0}
   .brandlist h2{font-family:var(--mono);font-size:1rem;color:var(--amber);margin:1.75rem 0 .5rem}
   .brandlist ul{list-style:none;padding:0;margin:0;display:grid;gap:.4rem}
@@ -269,7 +274,7 @@ FOOT = """
 <footer>
   <div class="wrap">
     <span>© <span id="year"></span> Firmwarely. Device and brand names belong to their manufacturers.</span>
-    <span><a href="/devices/">Devices</a> &nbsp;·&nbsp; <a href="/#pricing">Pricing</a> &nbsp;·&nbsp; <a href="/legal/">Legal</a> &nbsp;·&nbsp; <a href="mailto:hello@firmwarely.com">Contact</a></span>
+    <span><a href="/devices/">Devices</a> &nbsp;·&nbsp; <a href="/#pricing">Pricing</a> &nbsp;·&nbsp; <a href="/legal/">Legal</a> &nbsp;·&nbsp; <a href="/support/">Support</a></span>
   </div>
 </footer>
 <script>
@@ -719,6 +724,94 @@ def legal_page():
 """)
 
 
+SUPPORT_EMAIL = "hello@firmwarely.com"
+
+SUPPORT_TOPICS = ["A device I own isn't listed", "The firmware data looks wrong",
+                  "Billing or my Pro subscription", "Emails and alerts",
+                  "Delete my data", "Something else"]
+
+
+def support_page():
+    """Reachable from the footer of every page. The email address is the headline; the
+    form is for people who would rather not open a mail client."""
+    opts = "".join(f'<option>{esc(t)}</option>' for t in SUPPORT_TOPICS)
+    return simple_page(
+        "Support — Firmwarely", "Get help with Firmwarely: email hello@firmwarely.com or send "
+        "us a message. Device requests, wrong data, billing and alert questions.", "/support/", r"""
+<h1 class="dev-h">Support</h1>
+<p style="font-size:1.1rem;color:var(--muted);margin-top:.75rem">Something wrong, something missing, or a
+device you'd like us to watch? Write to
+<a href="mailto:""" + SUPPORT_EMAIL + '">' + SUPPORT_EMAIL + """</a> — or use the form below and it lands in
+the same inbox. One person reads it, usually within a business day.</p>
+
+<div class="faq" style="margin-top:2.5rem">
+<h2 style="margin:0">Before you write</h2>
+<h3>A device I own isn't listed</h3><p>Send the brand and exact model. We add devices whose maker publishes
+releases somewhere we can read, and most requests go in within a few days.</p>
+<h3>The version shown looks wrong</h3><p>Tell us the device and what you're seeing on the manufacturer's page.
+Makers move and rewrite those pages without notice, so this does happen, and it's a quick fix once we know.</p>
+<h3>Cancel or change Pro</h3><p>The receipt Stripe emailed you has a link to manage or cancel the
+subscription. Lost it? Write from the address you paid with and we'll sort it out. Unhappy in the first
+30 days: we refund in full, no questions.</p>
+<h3>Too many emails</h3><p>Every alert has an unsubscribe link at the bottom, and it takes effect
+immediately. You can also trim which devices you watch under <a href="/my-devices.html">My devices</a>.</p>
+<h3>Delete my data</h3><p>Ask here and we remove your address, your device list and your subscription record
+within 30 days. See <a href="/legal/">privacy &amp; terms</a> for what we hold and why.</p>
+</div>
+
+<h2 style="margin:2.5rem 0 0">Send us a message</h2>
+<form id="contact-form" class="contact" novalidate>
+  <div>
+    <label for="c-name">Your name <span style="text-transform:none">(optional)</span></label>
+    <input id="c-name" name="name" type="text" autocomplete="name" placeholder="Jane Doe">
+  </div>
+  <div>
+    <label for="c-email">Your email address</label>
+    <input id="c-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+  </div>
+  <div>
+    <label for="c-subject">What's this about?</label>
+    <select id="c-subject" name="subject">""" + opts + r"""</select>
+  </div>
+  <div>
+    <label for="c-message">How can we help?</label>
+    <textarea id="c-message" name="message" rows="7" required placeholder="The more detail the better — device model, what you expected, what you saw."></textarea>
+  </div>
+  <p class="hp" aria-hidden="true"><label for="c-website">Leave this field empty</label><input id="c-website" name="website" type="text" tabindex="-1" autocomplete="off"></p>
+  <div><button class="btn" type="submit">Send message</button></div>
+  <div id="c-msg" aria-live="polite"></div>
+  <p class="fine" style="margin:0">We use your address to answer you and nothing else. It never goes on a
+    mailing list from here. <a href="/legal/">Privacy &amp; terms</a>.</p>
+</form>
+<script>
+(function(){
+  var f = document.getElementById("contact-form");
+  if (!f) return;
+  // Fields by id, not f.<name>: a form element's own name/method/action properties shadow
+  // the inputs called that, so f.name would hand back the form's name attribute.
+  var el = function(id){ return document.getElementById(id); };
+  f.addEventListener("submit", async function(e){
+    e.preventDefault();
+    var msg = el("c-msg"), btn = f.querySelector("button[type=submit]");
+    var email = el("c-email").value.trim(), message = el("c-message").value.trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address so we can reply."; el("c-email").focus(); return; }
+    if (message.length < 10) { msg.className = "err"; msg.textContent = "Tell us a bit more about what you need — a sentence is plenty."; el("c-message").focus(); return; }
+    btn.disabled = true; msg.className = ""; msg.textContent = "Sending…";
+    try {
+      var r = await fetch("/api/contact", { method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: el("c-name").value.trim(), email: email, subject: el("c-subject").value,
+          message: message, website: el("c-website").value }) });
+      var d = {}; try { d = await r.json(); } catch (err) {}
+      if (!r.ok || !d.ok) throw new Error(d.error || "Couldn't send that just now. Please email """ + SUPPORT_EMAIL + r""" directly.");
+      f.innerHTML = '<p class="ok" style="margin:0">Message sent. We\'ll reply to <b></b> — usually within a business day.</p>';
+      f.querySelector("b").textContent = email;   // textContent, so an address is never markup
+    } catch (err) { btn.disabled = false; msg.className = "err"; msg.textContent = err.message; }
+  });
+})();
+</script>
+""")
+
+
 def main():
     global STYLES
     STYLES = styles()
@@ -747,7 +840,7 @@ def main():
         p = ROOT / "brands" / slugify(b)
         p.mkdir(parents=True, exist_ok=True)
         (p / "index.html").write_text(brand_page(b, by_brand[b]))
-    for folder, content in (("pro/thanks", thanks_page()), ("legal", legal_page())):
+    for folder, content in (("pro/thanks", thanks_page()), ("legal", legal_page()), ("support", support_page())):
         d = ROOT / folder
         d.mkdir(parents=True, exist_ok=True)
         (d / "index.html").write_text(content)
@@ -776,7 +869,8 @@ def main():
         return max(dates) if dates else gen
 
     entries = [(f"{SITE}/", gen), (f"{SITE}/devices/", gen), (f"{SITE}/my-devices.html", today),
-               (f"{SITE}/pro/", "2026-09-14"), (f"{SITE}/legal/", "2026-09-13")]
+               (f"{SITE}/pro/", "2026-09-14"), (f"{SITE}/legal/", "2026-09-13"),
+               (f"{SITE}/support/", "2026-09-15")]
     entries += [(f"{SITE}{cat_path(k)}", max([dev_mod(d) for d in by_cat.get(k, [])] or [gen])) for k in CATS]
     entries += [(f"{SITE}{brand_path(b)}", max(dev_mod(d) for d in by_brand[b])) for b in brand_pages]
     entries += [(f"{SITE}/devices/{d['id']}/", dev_mod(d)) for d in devices]

@@ -248,6 +248,60 @@ def test_site_shows_only_real_data():
 
 
 # ---- upstream release notes end up in innerHTML on every page ----
+# ---- the support page and the form behind it ----
+def test_support_page():
+    build_pages.STYLES = build_pages.styles()
+    page = build_pages.support_page()
+    api = Path("api/contact.js").read_text()
+
+    check("the support page shows the contact address",
+          'href="mailto:hello@firmwarely.com"' in page, True)
+    check("the form posts to the endpoint that exists",
+          '"/api/contact"' in page and Path("api/contact.js").exists(), True)
+    check("the support page is indexable", 'content="noindex"' in page, False)
+
+    # The footer script drives #signup-form. A second form with that id on the page would
+    # be hijacked by it and post to /api/subscribe instead.
+    check("the contact form has its own id", 'id="signup-form"' in page, False)
+
+    # Every field the page posts has to be a field the endpoint reads, or it is dropped
+    # silently and the message arrives incomplete.
+    payload = re.search(r'"/api/contact".*?JSON\.stringify\((\{.*?\})\)', page, re.S).group(1)
+    sent = sorted(set(re.findall(r"(\w+):", payload)))
+    check("the message the form sends is the one the endpoint reads",
+          [k for k in sent if f'body.{k}' not in api], [])
+    # HTMLFormElement's own name/method/action properties shadow inputs called that, so
+    # f.name is the form's name attribute and f.name.value would throw.
+    check("the script doesn't read a field through a shadowed form property",
+          [w for w in ("f.name", "f.method", "f.action", "f.target", "f.elements") if w + "." in page], [])
+    check("the form carries the honeypot the endpoint checks",
+          'name="website"' in page and "body.website" in api, True)
+    check("the honeypot is hidden from sight", ".contact .hp{position:absolute" in build_pages.STYLES, True)
+    check("the textarea is styled like the other inputs", ".contact textarea" in build_pages.STYLES, True)
+
+    check("contact is POST-only", 'req.method !== "POST"' in api, True)
+    check("contact is throttled per address and per source",
+          'rl.allow("contact:' in api and 'rl.allow("contact-ip:' in api, True)
+    check("replies go to the sender, not into our own From header",
+          "replyTo: email" in api and "reply_to" in Path("lib/fw.js").read_text(), True)
+    check("the message body is escaped on the way into the email html",
+          "esc(message)" in api, True)
+
+    # the link belongs at the bottom of every page, and only there
+    dev = json.loads(Path("devices.json").read_text())["devices"][0]
+    pages = {"device": build_pages.device_page(dev), "legal": build_pages.legal_page(),
+             "404": build_pages.not_found_page([dev]), "support": page,
+             "index.html": Path("index.html").read_text(),
+             "my-devices.html": Path("my-devices.html").read_text(),
+             "dashboard.html": Path("dashboard.html").read_text()}
+    check("every page's footer links to support",
+          [n for n, h in pages.items() if 'href="/support/"' not in h.split("<footer")[-1]], [])
+    check("support is a footer link, not a second nav item",
+          [n for n, h in pages.items() if 'href="/support/"' in h.split("<footer")[0]], [])
+    check("the support page is in the sitemap",
+          f"<loc>{build_pages.SITE}/support/</loc>" in Path("sitemap.xml").read_text(), True)
+
+
 def test_clean():
     cases = [
         ("script tag is neutralised", "<script>alert(1)</script>ok", "alert(1) ok"),
@@ -547,7 +601,7 @@ def test_schedule_and_digest():
 
 
 for t in (test_compare, test_new_release, test_saved_devices, test_routing, test_forced_guard,
-          test_update_guides, test_sources_well_formed, test_site_shows_only_real_data, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
+          test_update_guides, test_sources_well_formed, test_site_shows_only_real_data, test_support_page, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
           test_landing_pages, test_schedule_and_digest):
     print(f"\n{t.__name__}")
     t()
