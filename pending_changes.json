@@ -547,6 +547,34 @@
    "notes": "Read the Announcement Read the full announcement with discussion of new features: Pangolin 1.23: High Availability and Clustering What's Changed Add support for self-service high availability in Enterprise Edition Add master list of all orgs to server admin panel Add support for more than one serve…",
    "source_url": "https://github.com/fosrl/pangolin/releases/tag/1.23.0",
    "page_url": "https://www.firmwarely.com/devices/pangolin/"
+  },
+  "nextcloud-server": {
+   "id": "nextcloud-server",
+   "brand": "Nextcloud",
+   "model": "Nextcloud server",
+   "category": "A",
+   "status": "update",
+   "version": "35.0.0",
+   "previous": "32.0.15",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": "https://github.com/nextcloud-releases/server/releases/tag/v35.0.0",
+   "source_url": "https://github.com/nextcloud/server/releases/tag/v35.0.0",
+   "page_url": "https://www.firmwarely.com/devices/nextcloud-server/"
+  },
+  "openbk7231t": {
+   "id": "openbk7231t",
+   "brand": "OpenBeken",
+   "model": "OpenBK7231T firmware",
+   "category": "S",
+   "status": "update",
+   "version": "1.18.312",
+   "previous": "1.18.311",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": "OpenBK7231T/OpenBeken release 1.18.312 WARNING! If installing versions tagged -alpha, please be aware these are development builds and may not be stable! Please do not flash all your devices at once! Make sure you can recover them via UART in case of unexpected issue. OpenBK7231T/OpenBeken is a Tas…",
+   "source_url": "https://github.com/openshwprojects/OpenBK7231T_App/releases/tag/1.18.312",
+   "page_url": "https://www.firmwarely.com/devices/openbk7231t/"
   }
  }
 }
