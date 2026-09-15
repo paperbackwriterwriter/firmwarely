@@ -100,8 +100,10 @@ jobs:
             exit 0
           fi
           git commit -m "check: update devices.json ($(date -u +%Y-%m-%dT%H:%MZ))"
-          git pull --rebase origin main
-          git push
+          # rebase onto the branch this run is on (main on schedule; a PR branch when dispatched
+          # for validation) — pulling main into a shallow PR checkout conflicts on every file
+          git pull --rebase origin "$GITHUB_REF_NAME"
+          git push origin "HEAD:$GITHUB_REF_NAME"
 
       - name: Open an issue with the digest (emails you)
         if: ${{ hashFiles('digest.md') != '' }}
