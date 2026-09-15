@@ -3195,9 +3195,11 @@
    "brand": "PowerDNS",
    "model": "Authoritative DNS server",
    "category": "R",
-   "type": "github",
-   "repo": "PowerDNS/pdns",
-   "product_url": "https://github.com/PowerDNS/pdns"
+   "type": "feed",
+   "product_url": "https://github.com/PowerDNS/pdns",
+   "url": "https://github.com/PowerDNS/pdns/tags.atom",
+   "item_match": "^auth-",
+   "version_regex": "auth-(\\d+(?:\\.\\d+)+)"
   },
   {
    "id": "certbot",
@@ -3582,9 +3584,9 @@
    "brand": "Deuxfleurs",
    "model": "Garage S3 storage",
    "category": "N",
-   "type": "github",
-   "repo": "deuxfleurs-org/garage",
-   "product_url": "https://github.com/deuxfleurs-org/garage"
+   "type": "feed",
+   "product_url": "https://github.com/deuxfleurs-org/garage",
+   "url": "https://github.com/deuxfleurs-org/garage/tags.atom"
   },
   {
    "id": "deconz-rest",
@@ -3638,7 +3640,8 @@
    "category": "S",
    "type": "github",
    "repo": "OpenSprinkler/OpenSprinkler-Firmware",
-   "product_url": "https://github.com/OpenSprinkler/OpenSprinkler-Firmware"
+   "product_url": "https://github.com/OpenSprinkler/OpenSprinkler-Firmware",
+   "version_regex": "(\\d{3}\\(\\d+\\))"
   },
   {
    "id": "theengs-gateway",
@@ -3677,15 +3680,6 @@
    "product_url": "https://github.com/nodemcu/nodemcu-firmware"
   },
   {
-   "id": "openwrt-luci",
-   "brand": "OpenWrt",
-   "model": "LuCI web interface",
-   "category": "S",
-   "type": "github",
-   "repo": "openwrt/luci",
-   "product_url": "https://github.com/openwrt/luci"
-  },
-  {
    "id": "onion-os",
    "brand": "Onion",
    "model": "Miyoo Mini firmware",
@@ -3701,7 +3695,8 @@
    "category": "C",
    "type": "github",
    "repo": "knulli-cfw/distribution",
-   "product_url": "https://github.com/knulli-cfw/distribution"
+   "product_url": "https://github.com/knulli-cfw/distribution",
+   "version_regex": "\\b(\\d{8})\\b"
   },
   {
    "id": "arkos",
@@ -3746,7 +3741,8 @@
    "category": "C",
    "type": "github",
    "repo": "ChimeraOS/chimeraos",
-   "product_url": "https://github.com/ChimeraOS/chimeraos"
+   "product_url": "https://github.com/ChimeraOS/chimeraos",
+   "version_regex": "\\b(\\d+-\\d+)\\b"
   },
   {
    "id": "bazzite",
@@ -3791,7 +3787,8 @@
    "category": "C",
    "type": "github",
    "repo": "GloriousEggroll/proton-ge-custom",
-   "product_url": "https://github.com/GloriousEggroll/proton-ge-custom"
+   "product_url": "https://github.com/GloriousEggroll/proton-ge-custom",
+   "version_regex": "(GE-Proton\\d+-\\d+)"
   },
   {
    "id": "pcsx2",
@@ -3861,9 +3858,9 @@
    "brand": "bCNC",
    "model": "GRBL CNC sender",
    "category": "M",
-   "type": "github",
-   "repo": "vlachoudis/bCNC",
-   "product_url": "https://github.com/vlachoudis/bCNC"
+   "type": "feed",
+   "product_url": "https://github.com/vlachoudis/bCNC",
+   "url": "https://github.com/vlachoudis/bCNC/tags.atom"
   },
   {
    "id": "snapmaker-luban",
@@ -3924,9 +3921,9 @@
    "brand": "Apache",
    "model": "NuttX RTOS",
    "category": "M",
-   "type": "github",
-   "repo": "apache/nuttx",
-   "product_url": "https://github.com/apache/nuttx"
+   "type": "feed",
+   "product_url": "https://github.com/apache/nuttx",
+   "url": "https://github.com/apache/nuttx/tags.atom"
   },
   {
    "id": "tinygo",
@@ -3945,15 +3942,6 @@
    "type": "github",
    "repo": "probe-rs/probe-rs",
    "product_url": "https://github.com/probe-rs/probe-rs"
-  },
-  {
-   "id": "buspirate5-firmware",
-   "brand": "Bus Pirate",
-   "model": "Bus Pirate 5 firmware",
-   "category": "M",
-   "type": "github",
-   "repo": "DangerousPrototypes/BusPirate5-firmware",
-   "product_url": "https://github.com/DangerousPrototypes/BusPirate5-firmware"
   },
   {
    "id": "meshcore",
@@ -3996,9 +3984,10 @@
    "brand": "Espruino",
    "model": "JavaScript microcontroller firmware",
    "category": "M",
-   "type": "github",
-   "repo": "espruino/Espruino",
-   "product_url": "https://github.com/espruino/Espruino"
+   "type": "feed",
+   "product_url": "https://github.com/espruino/Espruino",
+   "url": "https://github.com/espruino/Espruino/tags.atom",
+   "version_regex": "\\b(\\d+v\\d+)\\b"
   },
   {
    "id": "jetkvm",
@@ -4163,15 +4152,6 @@
    "product_url": "https://github.com/armbian/build"
   },
   {
-   "id": "pikvm-os",
-   "brand": "PiKVM",
-   "model": "KVM over IP OS",
-   "category": "P",
-   "type": "github",
-   "repo": "pikvm/pikvm",
-   "product_url": "https://github.com/pikvm/pikvm"
-  },
-  {
    "id": "grafana",
    "brand": "Grafana",
    "model": "Dashboards",
@@ -4302,9 +4282,9 @@
    "brand": "Graylog",
    "model": "Log management",
    "category": "A",
-   "type": "github",
-   "repo": "Graylog2/graylog2-server",
-   "product_url": "https://github.com/Graylog2/graylog2-server"
+   "type": "feed",
+   "product_url": "https://github.com/Graylog2/graylog2-server",
+   "url": "https://github.com/Graylog2/graylog2-server/tags.atom"
   },
   {
    "id": "opensearch",
@@ -4413,15 +4393,6 @@
    "type": "github",
    "repo": "arp242/goatcounter",
    "product_url": "https://github.com/arp242/goatcounter"
-  },
-  {
-   "id": "yacht",
-   "brand": "Yacht",
-   "model": "Container UI",
-   "category": "A",
-   "type": "github",
-   "repo": "SelfhostedPro/Yacht",
-   "product_url": "https://github.com/SelfhostedPro/Yacht"
   },
   {
    "id": "komodo",
@@ -4896,9 +4867,9 @@
    "brand": "DBeaver",
    "model": "CloudBeaver",
    "category": "A",
-   "type": "github",
-   "repo": "dbeaver/cloudbeaver",
-   "product_url": "https://github.com/dbeaver/cloudbeaver"
+   "type": "feed",
+   "product_url": "https://github.com/dbeaver/cloudbeaver",
+   "url": "https://github.com/dbeaver/cloudbeaver/tags.atom"
   },
   {
    "id": "dbeaver",
@@ -4986,9 +4957,9 @@
    "brand": "Jupyter",
    "model": "JupyterHub",
    "category": "A",
-   "type": "github",
-   "repo": "jupyterhub/jupyterhub",
-   "product_url": "https://github.com/jupyterhub/jupyterhub"
+   "type": "feed",
+   "product_url": "https://github.com/jupyterhub/jupyterhub",
+   "url": "https://github.com/jupyterhub/jupyterhub/tags.atom"
   },
   {
    "id": "jupyterlab",
@@ -5193,9 +5164,9 @@
    "brand": "LibreChat",
    "model": "Chat interface",
    "category": "A",
-   "type": "github",
-   "repo": "danny-avila/LibreChat",
-   "product_url": "https://github.com/danny-avila/LibreChat"
+   "type": "feed",
+   "product_url": "https://github.com/danny-avila/LibreChat",
+   "url": "https://github.com/danny-avila/LibreChat/tags.atom"
   },
   {
    "id": "lobe-chat",
@@ -5580,9 +5551,9 @@
    "brand": "GoToSocial",
    "model": "ActivityPub server",
    "category": "A",
-   "type": "github",
-   "repo": "superseriousbusiness/gotosocial",
-   "product_url": "https://github.com/superseriousbusiness/gotosocial"
+   "type": "feed",
+   "product_url": "https://github.com/superseriousbusiness/gotosocial",
+   "url": "https://github.com/superseriousbusiness/gotosocial/tags.atom"
   },
   {
    "id": "misskey",
@@ -5715,9 +5686,9 @@
    "brand": "Zammad",
    "model": "Help desk",
    "category": "A",
-   "type": "github",
-   "repo": "zammad/zammad",
-   "product_url": "https://github.com/zammad/zammad"
+   "type": "feed",
+   "product_url": "https://github.com/zammad/zammad",
+   "url": "https://github.com/zammad/zammad/tags.atom"
   },
   {
    "id": "osticket",
@@ -6102,9 +6073,9 @@
    "brand": "LimeSurvey",
    "model": "Survey platform",
    "category": "A",
-   "type": "github",
-   "repo": "LimeSurvey/LimeSurvey",
-   "product_url": "https://github.com/LimeSurvey/LimeSurvey"
+   "type": "feed",
+   "product_url": "https://github.com/LimeSurvey/LimeSurvey",
+   "url": "https://github.com/LimeSurvey/LimeSurvey/tags.atom"
   },
   {
    "id": "penpot",
@@ -6428,7 +6399,8 @@
    "category": "C",
    "type": "feed",
    "url": "https://github.com/dolphin-emu/dolphin/tags.atom",
-   "product_url": "https://github.com/dolphin-emu/dolphin"
+   "product_url": "https://github.com/dolphin-emu/dolphin",
+   "version_regex": "\\b(\\d{4}[a-z]?)\\b"
   },
   {
    "id": "netgear-nighthawk-rs300",
