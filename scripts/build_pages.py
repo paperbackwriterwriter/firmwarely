@@ -554,19 +554,37 @@ DEVICE_ART = [  # (label, category page, icon family)
 ]
 
 
+def pro_link():
+    """The Stripe Payment Link, read out of index.html so the button there and the /pro/
+    page can never disagree about whether checkout is open. Empty means it is not, and
+    /pro/ goes back to collecting emails."""
+    m = re.search(r'const PRO_LINK = "([^"]*)"', (ROOT / "index.html").read_text())
+    return (m.group(1) if m else "").strip()
+
+
 def pro_page():
-    title = "Firmwarely Pro waitlist — founding-member price | Firmwarely"
-    desc = "Join the Firmwarely Pro waitlist: unlimited devices, the dashboard and daily alerts at the founding-member price of $4.99 a month, locked in."
+    link = pro_link()
+    is_open = link.startswith("http")
+    title = ("Firmwarely Pro — founding-member price | Firmwarely" if is_open
+             else "Firmwarely Pro waitlist — founding-member price | Firmwarely")
+    desc = (("Firmwarely Pro: unlimited devices, the dashboard and daily alerts for $4.99 a month, "
+             "at the founding-member price, locked in.") if is_open else
+            ("Join the Firmwarely Pro waitlist: unlimited devices, the dashboard and daily alerts at "
+             "the founding-member price of $4.99 a month, locked in."))
     art = "".join(
         f'<a href="{cat_path(key)}" aria-label="{esc(label)}">{icon_svg(icon, "")}<span>{esc(label)}</span></a>'
         for label, key, icon in DEVICE_ART)
-    return head(title, desc, "/pro/") + f"""
-<div class="wrap">
-  <div class="pro-hero">
-    <div id="signup">
-      <p class="kicker">Good call</p>
-      <h1>You're about to stop finding out about firmware the hard way.</h1>
-      <p class="lede">Pro opens the moment our payment provider finishes its checks. Leave your email and you're first in line, at the founding-member price, locked in for as long as you stay.</p>
+    if is_open:
+        hero = f"""<p class="lede">Pro is open. Unlimited devices, the dashboard, and one email a day when
+        something you own changes — at the founding-member price, locked in for as long as you stay.</p>
+      <p class="pro-price">$4.99<small> /month · founding-member price</small></p>
+      <a class="btn" href="{esc(link)}">Subscribe to Pro</a>
+      <p class="fine" style="margin:.6rem 0 0">Secure checkout through Stripe. Cancel any time from the link
+        in your receipt. Use the same email address when you sign up for alerts so we can link them.</p>"""
+        meanwhile_head, carry = "Not ready yet?", "Your list carries over when you upgrade."
+    else:
+        hero = """<p class="lede">Pro opens the moment our payment provider finishes its checks. Leave your
+        email and you're first in line, at the founding-member price, locked in for as long as you stay.</p>
       <p class="pro-price">$4.99<small> /month · founding-member price</small></p>
       <form id="signup-form" novalidate>
         <label class="sr" for="s-email">Email address</label>
@@ -578,7 +596,15 @@ def pro_page():
         <input type="hidden" name="devices" value="">
         <div id="s-msg" aria-live="polite"></div>
         <p class="fine" style="margin:.25rem 0 0">One email when Pro opens. No card needed today. Unsubscribe any time.</p>
-      </form>
+      </form>"""
+        meanwhile_head, carry = "Meanwhile", "When Pro opens, your list carries over."
+    return head(title, desc, "/pro/") + f"""
+<div class="wrap">
+  <div class="pro-hero">
+    <div id="signup">
+      <p class="kicker">Good call</p>
+      <h1>You're about to stop finding out about firmware the hard way.</h1>
+      {hero}
     </div>
     <div class="gallery" aria-label="Device families Firmwarely tracks">{art}</div>
   </div>
@@ -590,8 +616,8 @@ def pro_page():
     <div class="card"><h3>One email a day, when it matters</h3><p>Each morning, a single email covering everything of yours that changed in the last 24 hours, security fixes first. Silence otherwise.</p></div>
   </div>
 
-  <h2 style="margin-top:2.5rem">Meanwhile</h2>
-  <p style="color:var(--muted);max-width:64ch">The free plan is live today. <a href="/my-devices.html">Save up to three devices</a> and see which need an update, or <a href="/devices/">browse the {'{n}'} devices we watch</a>. When Pro opens, your list carries over.</p>
+  <h2 style="margin-top:2.5rem">{meanwhile_head}</h2>
+  <p style="color:var(--muted);max-width:64ch">The free plan is live today. <a href="/my-devices.html">Save up to three devices</a> and see which need an update, or <a href="/devices/">browse the {'{n}'} devices we watch</a>. {carry}</p>
 </div>
 """ + FOOT
 

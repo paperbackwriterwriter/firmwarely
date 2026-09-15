@@ -385,10 +385,40 @@ def test_landing_pages():
     check("thanks page is noindex", 'content="noindex"' in build_pages.thanks_page(), True)
     check("social image exists", Path("og.png").exists(), True)
 
+    # /pro/ follows the checkout link in index.html. Both states have to be right: the page
+    # must not still say "leave your email, Pro opens soon" once cards are being charged, and
+    # it must not show a dead Subscribe button if checkout is ever pulled.
+    link = build_pages.pro_link()
+    real = Path("index.html").read_text()
+    check("the page builder reads the same link the homepage button uses",
+          link and f'const PRO_LINK = "{link}"' in real, True)
+    check("the checkout link is never a test-mode link",
+          "buy.stripe.com/test_" in link, False)
+
+    def pro_with(url):
+        was = build_pages.pro_link
+        build_pages.pro_link = lambda: url
+        try:
+            return build_pages.pro_page()
+        finally:
+            build_pages.pro_link = was
+
+    live = pro_with("https://buy.stripe.com/EXAMPLE")
+    check("open: the page sends people to checkout", "https://buy.stripe.com/EXAMPLE" in live, True)
+    check("open: nothing still calls Pro unreleased",
+          [w for w in ("waitlist", "Pro opens", "No card needed", "first in line") if w in live], [])
+    check("open: no dead signup form left behind", 'id="signup-form"' in live, False)
+
+    soon = pro_with("")
+    check("closed: back to collecting emails as pro", 'name="plan" value="pro"' in soon, True)
+    check("closed: the email form the footer script drives",
+          'id="signup-form"' in soon and 'name="email"' in soon, True)
+    check("closed: no checkout button with nowhere to go", "buy.stripe.com" in soon, False)
+
     pro = build_pages.pro_page()
-    check("pro waitlist page signs people up as pro", 'name="plan" value="pro"' in pro, True)
-    check("pro waitlist page has the email form the footer script drives", 'id="signup-form"' in pro and 'name="email"' in pro, True)
-    check("pro waitlist page shows every device illustration", pro.count('viewBox="0 0 64 64"'), len(build_pages.DEVICE_ART))
+    check("pro page shows every device illustration", pro.count('viewBox="0 0 64 64"'), len(build_pages.DEVICE_ART))
+    check("pro page never leaves a duplicate element id",
+          [i for i in set(re.findall(r'id="([^"]+)"', pro)) if pro.count(f'id="{i}"') > 1], [])
 
     # icons: one file, parsed by both the browser and the page builder; every device maps to it
     check("icons.js has every family the pro gallery and the rules use",

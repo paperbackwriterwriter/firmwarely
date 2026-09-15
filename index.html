@@ -478,10 +478,11 @@ dlg.addEventListener("close", ()=>history.replaceState(null,"", location.pathnam
 if(location.hash.startsWith("#d=")) openDevice(location.hash.slice(3));
 
 /* ---------- Pro checkout (Stripe Payment Link) ---------- */
-// Stripe Payment Link. Empty until the live link exists (Stripe won't issue one while the
-// account is under review), and the button falls back to the Pro waitlist via the signup
-// form rather than a test-mode checkout that declines every real card.
-const PRO_LINK = "";
+// Stripe Payment Link, live. scripts/build_pages.py reads this same line so /pro/ cannot
+// disagree with the button here. Emptying it puts both back to the waitlist, which is what
+// should happen if checkout ever has to be pulled — never point it at a test-mode link,
+// which looks fine and declines every real card.
+const PRO_LINK = "https://buy.stripe.com/fZubJ1aOP6ve9TF8FU9sk00";
 {
   const pb = document.getElementById("pro-btn");
   if (PRO_LINK.startsWith("http")) { pb.href = PRO_LINK; pb.removeAttribute("data-plan"); pb.target = "_self"; }
@@ -540,7 +541,7 @@ signupForm.addEventListener("submit", async e=>{
   try{
     await subscribe(email, signupForm.plan.value, signupForm.devices.value.trim());
     msg.className="ok";
-    msg.textContent = signupForm.plan.value==="pro"
+    msg.textContent = signupForm.plan.value==="pro" && !PRO_LINK.startsWith("http")
       ? "You're on the Pro waitlist. Check your inbox for a confirmation."
       : "You're on the list. Check your inbox for a confirmation.";
     signupForm.reset();
