@@ -1,5 +1,20 @@
 {
- "since": null,
+ "since": "2026-09-15T01:06:36+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "bazarr": {
+   "id": "bazarr",
+   "brand": "Bazarr",
+   "model": "Subtitle manager",
+   "category": "A",
+   "status": "update",
+   "version": "1.6.1",
+   "previous": "1.6.0",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": "From newest to oldest: Improved Gestdown provider matching by adding year match when TVDb ID matches between video and subtitle source. 9013092 Fixed track ID collision with changed attributes in embedded subtitles indexing. #​3588 ed0d47e Fixed syncing issue with Sonarr and Radarr on edge racing c…",
+   "source_url": "https://github.com/morpheus65535/bazarr/releases/tag/v1.6.1",
+   "page_url": "https://www.firmwarely.com/devices/bazarr/"
+  }
+ }
 }
