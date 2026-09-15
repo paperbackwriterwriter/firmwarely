@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Once a day: turn the changes collected by the half-hourly checks into the digest.
+Once a day: turn the changes collected by the hourly checks into the digest.
 
 Reads pending_changes.json (fetch.py appends to it on every run), writes
   digest.md     the GitHub issue body (names, versions, dates; no links, so it can't ping anyone)

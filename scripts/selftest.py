@@ -125,16 +125,24 @@ def test_forced_guard():
 # ---- every device must end up with usable update instructions ----
 def test_update_guides():
     guides = build_pages.GUIDES
-    devs = json.loads((Path(__file__).resolve().parent.parent / "devices.json").read_text())["devices"]
-    brands = {d["brand"] for d in devs}
-    ids = {d["id"] for d in devs}
+    root = Path(__file__).resolve().parent.parent
+    devs = json.loads((root / "devices.json").read_text())["devices"]
+    # guides are keyed against the catalogue, not against what is published today: a device
+    # waiting on its first version is absent from devices.json but still needs steps ready
+    # for the run it appears, so existence is checked against sources.json
+    # built through device_record so each entry carries the update_url guide() reads, exactly
+    # as the pipeline would produce it
+    catalogue = [fetch.device_record(x, {}) for x in
+                 json.loads((root / "sources.json").read_text())["devices"]]
+    brands = {d["brand"] for d in catalogue}
+    ids = {d["id"] for d in catalogue}
 
-    missing = [d["id"] for d in devs if not build_pages.guide(d)[0]]
+    missing = [d["id"] for d in catalogue if not build_pages.guide(d)[0]]
     check("every device resolves to update steps", missing, [])
-    blank = [d["id"] for d in devs if any(not x.strip() for x in build_pages.guide(d)[0])]
+    blank = [d["id"] for d in catalogue if any(not x.strip() for x in build_pages.guide(d)[0])]
     check("no blank step text", blank, [])
 
-    # a guide keyed to a brand or id that no longer exists is silently dead
+    # a guide keyed to a brand or id that is in no catalogue at all is silently dead
     check("no brand guide points at a missing brand",
           sorted(b for b in guides.get("by_brand", {}) if b not in brands), [])
     check("no id guide points at a missing device",
@@ -143,7 +151,7 @@ def test_update_guides():
           sorted(i for i in guides.get("flash_ids", []) if i not in ids), [])
 
     # flashed firmware must not be told to "docker compose pull"
-    by_id = {d["id"]: d for d in devs}
+    by_id = {d["id"]: d for d in catalogue}
     for dev_id, want in [("klipper", "flash"), ("qmk-firmware", "flash"),
                          ("betaflight", "flash"), ("sonarr", "app"), ("vaultwarden", "app")]:
         if dev_id not in by_id:
@@ -207,6 +215,36 @@ def test_sources_well_formed():
     stray = [s["id"] for s in srcs for f in ("date_regex", "notes_regex")
              if s.get(f) and "{version}" not in s[f]]
     check("date and notes patterns anchor to the matched version", sorted(set(stray)), [])
+
+
+
+# ---- the site shows devices we have data for, and claims the cadence the cron actually runs ----
+def test_site_shows_only_real_data():
+    root = Path(__file__).resolve().parent.parent
+    devs = json.loads((root / "devices.json").read_text())["devices"]
+    blank = [d["id"] for d in devs if not d.get("version") or d["status"] == "pending"]
+    check("devices.json carries no device without a version", blank[:5], [])
+
+    # a device with no version is not dropped, it is waiting: it stays a source and joins
+    # the site the run its first version lands
+    srcs = json.loads((root / "sources.json").read_text())["devices"]
+    check("every published device still has its source",
+          sorted({d["id"] for d in devs} - {s["id"] for s in srcs})[:5], [])
+    meta = json.loads((root / "devices.json").read_text())
+    check("the devices held back are counted, not silently dropped",
+          meta.get("waiting"), len(srcs) - len(devs))
+
+    # nothing generated may still offer a "coming soon" row
+    catalogue = (root / "devices" / "index.html").read_text()
+    check("the catalogue has no watching-soon rows", "watching soon" in catalogue, False)
+
+    # the cron and the copy are edited in different files and drifted apart before
+    cron = re.search(r'- cron: "([^"]+)"', (root / ".github/workflows/nightly.yml").read_text()).group(1)
+    check("the check runs hourly", cron, "0 * * * *")
+    stale = [f for f in ("index.html", "scripts/build_pages.py", "README.md")
+             if "every 30 minutes" in (root / f).read_text() or "half-hourly" in (root / f).read_text()]
+    check("no copy still claims the old cadence", stale, [])
+    check("the homepage says what the cron does", "every hour" in (root / "index.html").read_text(), True)
 
 
 # ---- upstream release notes end up in innerHTML on every page ----
@@ -368,7 +406,7 @@ def test_landing_pages():
     check("homepage Pro button falls back to /pro/, not the footer form", 'pb.href = "/pro/"' in Path("index.html").read_text(), True)
 
 
-# ---- the half-hourly pipeline: one daily run, changes pooled until then, discovery vetting ----
+# ---- the hourly pipeline: one daily run, changes pooled until then, discovery vetting ----
 def test_schedule_and_digest():
     from datetime import datetime, timezone
     import schedule, digest, discover
@@ -458,7 +496,7 @@ def test_schedule_and_digest():
         urllib.request.urlopen = real
     check("device records carry the etag forward", fetch.device_record({"id": "x", "brand": "b", "model": "m", "category": "A", "type": "github"}, prev)["etag"], 'W/"abc"')
 
-    # browser sources render once a day; on the other 47 runs there is nothing to read, and
+    # browser sources render once a day; on the other 23 runs there is nothing to read, and
     # that is a skip. But if the render DID run and this one page is missing, that is a failure.
     import tempfile as _tf
     real_rendered = fetch.RENDERED
@@ -479,7 +517,7 @@ def test_schedule_and_digest():
 
 
 for t in (test_compare, test_new_release, test_saved_devices, test_routing, test_forced_guard,
-          test_update_guides, test_sources_well_formed, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
+          test_update_guides, test_sources_well_formed, test_site_shows_only_real_data, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
           test_landing_pages, test_schedule_and_digest):
     print(f"\n{t.__name__}")
     t()
