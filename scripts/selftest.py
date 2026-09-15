@@ -171,6 +171,44 @@ def test_update_guides():
                   (bool(steps), url), (True, None))
 
 
+# ---- a source entry that is subtly malformed fails silently in the nightly run ----
+def test_sources_well_formed():
+    srcs = json.loads((Path(__file__).resolve().parent.parent / "sources.json").read_text())["devices"]
+    ids = [s["id"] for s in srcs]
+    check("no duplicate source ids", sorted({i for i in ids if ids.count(i) > 1}), [])
+    check("every source declares a known type",
+          sorted({s["type"] for s in srcs} - {"manual", "github", "feed", "html", "browser"}), [])
+
+    # what each checker actually reads off the entry
+    need = {"github": ("repo",), "feed": ("url",), "html": ("url", "version_regex"),
+            "browser": ("url", "version_regex")}
+    missing = [f"{s['id']}:{f}" for s in srcs for f in need.get(s["type"], ())
+               if not s.get(f)]
+    check("every source carries the fields its type needs", missing[:5], [])
+
+    # extract_version reads group(1), so a pattern without one raises instead of returning None
+    bad = []
+    for s in srcs:
+        for field in ("version_regex", "item_match", "skip_match"):
+            pat = s.get(field)
+            if not pat:
+                continue
+            try:
+                rx = re.compile(pat)
+            except re.error:
+                bad.append(f"{s['id']}:{field}:uncompilable")
+                continue
+            if field == "version_regex" and rx.groups < 1:
+                bad.append(f"{s['id']}:{field}:no capture group")
+    check("every pattern compiles, every version_regex captures", bad[:5], [])
+
+    # {version} is substituted with the matched version; a date/notes pattern that forgets
+    # it matches the first release on the page instead of the one we just read
+    stray = [s["id"] for s in srcs for f in ("date_regex", "notes_regex")
+             if s.get(f) and "{version}" not in s[f]]
+    check("date and notes patterns anchor to the matched version", sorted(set(stray)), [])
+
+
 # ---- upstream release notes end up in innerHTML on every page ----
 def test_clean():
     cases = [
@@ -441,7 +479,7 @@ def test_schedule_and_digest():
 
 
 for t in (test_compare, test_new_release, test_saved_devices, test_routing, test_forced_guard,
-          test_update_guides, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
+          test_update_guides, test_sources_well_formed, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
           test_landing_pages, test_schedule_and_digest):
     print(f"\n{t.__name__}")
     t()
