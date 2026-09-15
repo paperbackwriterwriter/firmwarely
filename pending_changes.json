@@ -491,6 +491,34 @@
    "notes": "See the assets to download this version and install.",
    "source_url": "https://github.com/onyx-dot-app/onyx/releases/tag/v4.7.4",
    "page_url": "https://www.firmwarely.com/devices/onyx/"
+  },
+  "immich-server": {
+   "id": "immich-server",
+   "brand": "Immich",
+   "model": "Photo backup server",
+   "category": "A",
+   "status": "update",
+   "version": "3.2.2",
+   "previous": "3.2.1",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": "Just another small patch with a fix for the reassign faces feature. What's Changed 🐛 Bug fixes fix: skip faces of other users when reassigning faces[bot] in https://github.com/immich-app/immich/pull/31586 Full Changelog: https://github.com/immich-app/immich/compare/v3.2.1...v3.2.2",
+   "source_url": "https://github.com/immich-app/immich/releases/tag/v3.2.2",
+   "page_url": "https://www.firmwarely.com/devices/immich-server/"
+  },
+  "ollama": {
+   "id": "ollama",
+   "brand": "Ollama",
+   "model": "Local LLM runner",
+   "category": "A",
+   "status": "update",
+   "version": "0.34.1",
+   "previous": "0.34.0",
+   "released": "2026-09-14",
+   "eol": false,
+   "notes": "What's Changed MLX safetensors ollama create no longer experimental. GGUF model creation now requires using llama.cpp tooling for safetensor conversion and quantization. Improved MLX memory handling on Apple Silicon Runaway repeat token detection now requires 100 repeat tokens for reduced false pos…",
+   "source_url": "https://github.com/ollama/ollama/releases/tag/v0.34.1",
+   "page_url": "https://www.firmwarely.com/devices/ollama/"
   }
  }
 }
