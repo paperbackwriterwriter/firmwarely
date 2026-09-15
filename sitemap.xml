@@ -21,10 +21,13 @@
   <url><loc>https://www.firmwarely.com/brands/prusa/</loc><lastmod>2026-09-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/asus/</loc><lastmod>2026-08-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/amazon/</loc><lastmod>2026-09-11</lastmod></url>
-  <url><loc>https://www.firmwarely.com/brands/hashicorp/</loc><lastmod>2026-09-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/arduino/</loc><lastmod>2026-06-09</lastmod></url>
+  <url><loc>https://www.firmwarely.com/brands/bambu-lab/</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://www.firmwarely.com/brands/hashicorp/</loc><lastmod>2026-09-10</lastmod></url>
+  <url><loc>https://www.firmwarely.com/brands/apple/</loc><lastmod>2026-09-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/simplisafe/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/adguard/</loc><lastmod>2026-09-13</lastmod></url>
+  <url><loc>https://www.firmwarely.com/brands/analogue/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/coder/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/dbeaver/</loc><lastmod>2026-08-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/docker/</loc><lastmod>2026-09-03</lastmod></url>
@@ -32,7 +35,7 @@
   <url><loc>https://www.firmwarely.com/brands/esphome/</loc><lastmod>2026-08-31</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/element/</loc><lastmod>2026-09-02</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/espressif/</loc><lastmod>2026-08-27</lastmod></url>
-  <url><loc>https://www.firmwarely.com/brands/grafana/</loc><lastmod>2026-09-02</lastmod></url>
+  <url><loc>https://www.firmwarely.com/brands/grafana/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/icewhale/</loc><lastmod>2026-08-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/influxdata/</loc><lastmod>2026-09-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/jellyfin/</loc><lastmod>2026-09-15</lastmod></url>
@@ -272,6 +275,7 @@
   <url><loc>https://www.firmwarely.com/devices/tp-link-archer-be800/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/tp-link-deco-xe75/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/tp-link-deco-be85/</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/tp-link-omada-er605/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/eero-max-7/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/eero-6-plus/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ubiquiti-unifi-express/</loc><lastmod>2026-09-09</lastmod></url>
@@ -284,7 +288,12 @@
   <url><loc>https://www.firmwarely.com/devices/ubiquiti-unas-pro/</loc><lastmod>2026-09-09</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/tp-link-tapo-c210/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/simplisafe-base-station/</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/apple-tv-4k/</loc><lastmod>2026-09-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/sony-playstation-5-pro/</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/analogue-pocket/</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/apple-vision-pro/</loc><lastmod>2026-09-14</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/bambu-lab-a1/</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/bambu-lab-h2d/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/prusa-mk4s/</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/prusa-xl/</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/raspberry-pi-5/</loc><lastmod>2026-09-10</lastmod></url>
@@ -395,7 +404,7 @@
   <url><loc>https://www.firmwarely.com/devices/handbrake/</loc><lastmod>2026-06-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/dietpi/</loc><lastmod>2026-09-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/armbian/</loc><lastmod>2026-09-14</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/grafana/</loc><lastmod>2026-09-02</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/grafana/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/prometheus/</loc><lastmod>2026-08-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/loki/</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/victoriametrics/</loc><lastmod>2026-09-14</lastmod></url>
@@ -658,6 +667,8 @@
   <url><loc>https://www.firmwarely.com/devices/eero-7/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/eero-pro-7/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/synology-wrx560/</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/teltonika-rutx50/</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/netgate-2100/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/synology-ds1825-plus/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/synology-ds925-plus/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/synology-ds725-plus/</loc><lastmod>2026-09-15</lastmod></url>
@@ -670,9 +681,13 @@
   <url><loc>https://www.firmwarely.com/devices/ubiquiti-unifi-ai-key/</loc><lastmod>2026-09-09</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/simplisafe-outdoor-camera/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/home-assistant-voice-pe/</loc><lastmod>2026-06-26</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/analogue-3d/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/raspberry-pi-pico-2-w/</loc><lastmod>2026-09-08</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/arduino-nano-esp32/</loc><lastmod>2024-11-21</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/bambu-lab-a1-mini/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/prusa-mmu3/</loc><lastmod>2026-03-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/raspberry-pi-500/</loc><lastmod>2026-09-10</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/apple-watch-ultra-2/</loc><lastmod>2026-09-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/trilium/</loc><lastmod>2026-08-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/glance/</loc><lastmod>2026-09-03</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/qwenpaw/</loc><lastmod>2026-09-11</lastmod></url>
