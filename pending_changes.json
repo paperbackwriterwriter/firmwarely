@@ -57,6 +57,48 @@
    "notes": "What's Changed Fixes / Improvements fix(users): stop the column order and visibility keys colliding Chores chore(ai-gateway): Cache rust builds chore: fix test: measure deleted-mask cleanup by physical rows, not patch parts perf(filter-options): accelerate metadata equality with a text-index prefil…",
    "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.36.1",
    "page_url": "https://www.firmwarely.com/devices/langfuse/"
+  },
+  "windmill": {
+   "id": "windmill",
+   "brand": "Windmill",
+   "model": "Scripts and workflows",
+   "category": "A",
+   "status": "update",
+   "version": "1.812.0",
+   "previous": "1.811.1",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": "1.812.0 (2026-09-15) Features add per-route CORS origin allowlist for HTTP triggers (#​10833) (d8d7332) ai-sessions: share session artifacts with the workspace by link (#​11115) (57a134e) cli: list, get and restore trashed items with wmill trash (#​11125) (a95e950) dynamic AI agent toolsets (#​1105…",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.812.0",
+   "page_url": "https://www.firmwarely.com/devices/windmill/"
+  },
+  "zabbix": {
+   "id": "zabbix",
+   "brand": "Zabbix",
+   "model": "Monitoring platform",
+   "category": "A",
+   "status": "update",
+   "version": "7.0.31",
+   "previous": "7.4.14",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": "7.0.31rc1",
+   "source_url": "https://github.com/zabbix/zabbix/releases/tag/7.0.31rc1",
+   "page_url": "https://www.firmwarely.com/devices/zabbix/"
+  },
+  "blender": {
+   "id": "blender",
+   "brand": "Blender",
+   "model": "3D creation suite",
+   "category": "M",
+   "status": "update",
+   "version": "4.5.14",
+   "previous": "5.2.1",
+   "released": "2026-09-14",
+   "eol": false,
+   "notes": "v4.5.14",
+   "source_url": "https://github.com/blender/blender/releases/tag/v4.5.14",
+   "page_url": "https://www.firmwarely.com/devices/blender/"
   }
  }
 }
