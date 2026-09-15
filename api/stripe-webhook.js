@@ -20,21 +20,29 @@ import crypto from "node:crypto";
 
 export const config = { api: { bodyParser: false } };
 
-const readRaw = (req) =>
+// Buffers, not a string. Appending a chunk to a string decodes that chunk on its own, so a
+// multi-byte character split across a chunk boundary comes back as replacement characters
+// and the HMAC no longer matches the bytes Stripe signed — a valid event rejected.
+export const readRaw = (req) =>
   new Promise((resolve, reject) => {
-    let data = "";
-    req.on("data", (c) => (data += c));
-    req.on("end", () => resolve(data));
+    const chunks = [];
+    req.on("data", (c) => chunks.push(Buffer.isBuffer(c) ? c : Buffer.from(c)));
+    req.on("end", () => resolve(Buffer.concat(chunks)));
     req.on("error", reject);
   });
 
-function verify(raw, header, secret) {
-  const parts = Object.fromEntries(header.split(",").map((p) => p.split("=")));
-  const t = parts.t, v1 = parts.v1;
-  if (!t || !v1) return false;
+export function verify(raw, header, secret) {
+  const pairs = (header || "").split(",").map((p) => p.split("="));
+  const t = pairs.find(([k]) => k === "t")?.[1];
+  // Stripe signs with every active secret, so while a signing secret is being rotated the
+  // header carries several v1 values and only one of them is ours. Taking just the last
+  // would reject real events for the length of the rotation.
+  const sigs = pairs.filter(([k]) => k === "v1").map(([, v]) => v).filter(Boolean);
+  if (!t || !sigs.length) return false;
   if (Math.abs(Date.now() / 1000 - Number(t)) > 300) return false; // 5-minute tolerance
-  const expected = crypto.createHmac("sha256", secret).update(`${t}.${raw}`).digest("hex");
-  return expected.length === v1.length && crypto.timingSafeEqual(Buffer.from(expected), Buffer.from(v1));
+  const expected = crypto.createHmac("sha256", secret).update(`${t}.`).update(raw).digest("hex");
+  const mine = Buffer.from(expected);
+  return sigs.some((v) => v.length === expected.length && crypto.timingSafeEqual(mine, Buffer.from(v)));
 }
 
 async function stripeGet(path, key) {
@@ -69,6 +77,18 @@ async function setPlan(email, plan) {
   return "update failed";
 }
 
+// Which plan an event implies, or null for the events we do not act on.
+export function planFor(type, obj) {
+  if (type === "checkout.session.completed" && obj.mode === "subscription") return "pro";
+  if (type === "customer.subscription.deleted") return "free";
+  if (type === "customer.subscription.updated") {
+    if (["canceled", "unpaid", "incomplete_expired"].includes(obj.status)) return "free";
+    if (obj.status === "active") return "pro";
+  }
+  return null;
+}
+
+
 export default async function handler(req, res) {
   if (req.method !== "POST") { res.setHeader("Allow", "POST"); return res.status(405).end(); }
   const raw = await readRaw(req);
@@ -84,13 +104,7 @@ export default async function handler(req, res) {
     email = c?.email || null;
   }
 
-  let plan = null;
-  if (event.type === "checkout.session.completed" && obj.mode === "subscription") plan = "pro";
-  else if (event.type === "customer.subscription.deleted") plan = "free";
-  else if (event.type === "customer.subscription.updated") {
-    if (["canceled", "unpaid", "incomplete_expired"].includes(obj.status)) plan = "free";
-    else if (obj.status === "active") plan = "pro";
-  }
+  let plan = planFor(event.type, obj);
 
   // Never downgrade someone who still has a live subscription (events can arrive out of order,
   // and a customer can cancel one subscription and start another).
