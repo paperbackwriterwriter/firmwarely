@@ -8,7 +8,10 @@ Covers the logic that decides who gets mailed, because the cost of getting it wr
 a wrong email to every subscriber rather than a stack trace.
 """
 import json, os, sys, tempfile
+import html as _html
 from pathlib import Path
+
+html_unescape = _html.unescape
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 os.environ.setdefault("BEEHIIV_API_KEY", "test")
@@ -214,6 +217,10 @@ def test_homepage_honesty():
     check("no 'weekly' promise left in the copy", "weekly" in html.lower(), False)
     for f in ("index.html", "my-devices.html", "dashboard.html"):
         check(f"{f} has a favicon", 'rel="icon"' in Path(f).read_text(), True)
+    import re as _re
+    dm = _re.search(r'<meta name="description" content="(.*?)">', html)
+    desc = html_unescape(dm.group(1)) if dm else ""
+    check("index.html meta description fits a search snippet", len(desc) <= 155, True)
 
 
 # ---- generated pages: titles that fit, links that describe their target ----
@@ -233,6 +240,12 @@ def test_generated_pages():
           build_pages.product_link({"product_url": "https://store.example.com/x"}), True)
     check("non-http product link is dropped", build_pages.product_link({"product_url": "javascript:alert(1)"}), "")
     check("canonicals use the www host the apex redirects to", build_pages.SITE, "https://www.firmwarely.com")
+    # the catalogue index (/devices/) is hand-tuned static copy, not built through fit_desc's
+    # candidate list like device/category/brand pages — check it directly so it can't drift
+    devs_page = build_pages.index_page([long_name])
+    idx_dm = re.search(r'<meta name="description" content="(.*?)">', devs_page, re.S)
+    idx_desc = idx_dm.group(1).replace("&amp;", "&") if idx_dm else ""
+    check("/devices/ meta description fits a search snippet", len(idx_desc) <= 155, True)
 
 
 # ---- landing pages and the SEO plumbing around them ----
