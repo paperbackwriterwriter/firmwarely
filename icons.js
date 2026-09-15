@@ -15,6 +15,13 @@ window.FW_ICONS = /*json*/{
  "drone": "<rect x=\"26\" y=\"28\" width=\"12\" height=\"10\" rx=\"3\"/><path d=\"M26 31L17 24M38 31l9-7M26 35l-9 7M38 35l9 7\"/><path d=\"M8 22h18M38 22h18M8 44h18M38 44h18\"/><circle class=\"f\" cx=\"32\" cy=\"33\" r=\"1.5\"/>",
  "ebike": "<circle cx=\"16\" cy=\"44\" r=\"10\"/><circle cx=\"48\" cy=\"44\" r=\"10\"/><path d=\"M16 44l10-20h12l10 20M26 24l-4-8h6M38 24l4 20M26 24l8 12h8\"/><rect class=\"f\" x=\"27\" y=\"32\" width=\"9\" height=\"6\" rx=\"1.5\"/>",
  "printer": "<path d=\"M8 10h48v46H8z\"/><path d=\"M8 20h48\"/><path d=\"M28 20v10h8V20\"/><path class=\"g\" d=\"M32 30v8\"/><path d=\"M14 50h36\"/><path d=\"M20 46h24\"/>",
+ "tv": "<rect x=\"6\" y=\"12\" width=\"52\" height=\"32\" rx=\"4\"/><path d=\"M22 52h20M32 44v8\"/><path class=\"g\" d=\"M24 34l6-8 5 5 7-10\"/>",
+ "laptop": "<rect x=\"12\" y=\"12\" width=\"40\" height=\"26\" rx=\"3\"/><path d=\"M6 46h52l-4 6H10z\"/><circle class=\"f\" cx=\"32\" cy=\"16\" r=\"1.5\"/>",
+ "headphones": "<path d=\"M12 40V32a20 20 0 0 1 40 0v8\"/><rect x=\"8\" y=\"36\" width=\"12\" height=\"16\" rx=\"4\"/><rect x=\"44\" y=\"36\" width=\"12\" height=\"16\" rx=\"4\"/><circle class=\"f\" cx=\"14\" cy=\"44\" r=\"1.6\"/>",
+ "print": "<rect x=\"10\" y=\"26\" width=\"44\" height=\"22\" rx=\"4\"/><path d=\"M20 26V12h24v14M20 48v8h24v-8\"/><path d=\"M26 40h12\"/><circle class=\"f\" cx=\"46\" cy=\"33\" r=\"1.8\"/>",
+ "watch": "<rect x=\"18\" y=\"18\" width=\"28\" height=\"28\" rx=\"8\"/><path d=\"M24 18l2-10h12l2 10M24 46l2 10h12l2-10\"/><path class=\"g\" d=\"M32 26v7l5 3\"/>",
+ "keyboard": "<rect x=\"6\" y=\"20\" width=\"52\" height=\"26\" rx=\"4\"/><path d=\"M14 28h4M22 28h4M30 28h4M38 28h4M46 28h4M14 36h4M22 36h4M30 36h4M38 36h4M46 36h4\"/><path class=\"g\" d=\"M22 42h20\"/>",
+ "tablet": "<rect x=\"16\" y=\"8\" width=\"32\" height=\"48\" rx=\"4\"/><path d=\"M24 18h16M24 26h16M24 34h10\"/><circle class=\"f\" cx=\"32\" cy=\"50\" r=\"1.6\"/>",
  "board": "<rect x=\"14\" y=\"18\" width=\"36\" height=\"28\" rx=\"3\"/><path d=\"M20 18v-6M28 18v-6M36 18v-6M44 18v-6M20 46v6M28 46v6M36 46v6M44 46v6\"/><rect x=\"24\" y=\"26\" width=\"16\" height=\"12\" rx=\"1.5\"/><circle class=\"f\" cx=\"44\" cy=\"41\" r=\"1.5\"/>"
 }/*end*/;
 /* Inline SVG for one family; falls back to the generic device box. */

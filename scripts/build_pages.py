@@ -20,26 +20,32 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://www.firmwarely.com"  # the apex redirects here, so canonicals must too
 CATS = {"R": "Routers & networking", "N": "NAS & storage", "S": "Smart home & cameras",
-        "C": "Consoles, drones & e-bikes", "M": "Makers & open firmware"}
+        "C": "Consoles, drones & e-bikes", "M": "Makers & open firmware",
+        "P": "PCs, TVs & gadgets", "A": "Self-hosted apps & servers"}
 LABEL = {"critical": "critical fix", "update": "new version", "current": "current",
          "pending": "watching soon", "eol": "end of life", "stale": "no recent release"}
 GUIDES = json.loads((ROOT / "update_guides.json").read_text()) if (ROOT / "update_guides.json").exists() else {}
 
 # Category and brand landing pages: crawlable entry points with real text, so a search for
 # "synology firmware" or "router firmware updates" has a page to land on that isn't a JS table.
-CAT_SLUG = {"R": "routers", "N": "nas", "S": "smart-home", "C": "consoles-drones-ebikes", "M": "makers"}
+CAT_SLUG = {"R": "routers", "N": "nas", "S": "smart-home", "C": "consoles-drones-ebikes", "M": "makers",
+            "P": "pcs-tvs-gadgets", "A": "self-hosted"}
 CAT_SHORT = {"R": "Router & networking", "N": "NAS & storage", "S": "Smart home & camera",
-             "C": "Console, drone & e-bike", "M": "Maker & open-source"}
+             "C": "Console, drone & e-bike", "M": "Maker & open-source",
+             "P": "PC, TV & gadget", "A": "Self-hosted app"}
 CAT_INTRO = {
     "R": "Routers, mesh systems, switches and access points sit between everything you own and the internet, which makes them the devices most worth keeping patched. Vendors ship fixes for authentication bypasses and remote code execution several times a year, often quietly. Firmwarely reads each manufacturer's release page every night and records the version, date and what changed.",
     "N": "A NAS holds your backups, photos and documents and is usually reachable from the whole house, so a missed security update matters more here than almost anywhere else. DSM, QTS, TrueNAS and Unraid all publish structured release notes; Firmwarely checks them nightly and flags the releases that fix vulnerabilities.",
     "S": "Cameras, doorbells, hubs and smart speakers update through their apps and rarely tell you what changed. Firmwarely tracks the manufacturers' official release notes so you can see the current version, when it shipped and whether it closed a security hole, even for devices that update silently.",
     "C": "Consoles, drones and e-bikes carry firmware that changes how they behave, from flight-safety databases to battery management. Manufacturers publish release notes, but nobody reads them at the right moment. Firmwarely records each release and emails you when one lands for something you own.",
     "M": "Open-source firmware and self-hosted software move fast, and a stale version can mean missing features or an unpatched dependency. Firmwarely watches the projects' own release feeds on GitHub and elsewhere, so you see new tags and their notes the morning after they ship.",
+    "P": "Laptops, motherboards, TVs, printers, headphones, cameras and e-readers all run firmware, and most of it updates from a settings menu nobody opens. BIOS releases close security holes, TV updates change what apps work, and camera firmware adds autofocus modes years after purchase. Firmwarely lists the current version and the manufacturer's notes so you know when it is worth the trip into the menu.",
+    "A": "Self-hosted apps and servers are the software people run on their own NAS, mini PC or VPS: media servers, dashboards, password managers, home automation, monitoring and databases. They ship far more often than appliances, and a missed release can mean a known vulnerability on a box reachable from the internet. Firmwarely reads each project's release feed every night and keeps the version, date and notes in one place.",
 }
 # how a category reads mid-sentence ("NAS" must stay upper-case)
 CAT_PHRASE = {"R": "routers & networking", "N": "NAS & storage", "S": "smart home & cameras",
-              "C": "consoles, drones & e-bikes", "M": "makers & open firmware"}
+              "C": "consoles, drones & e-bikes", "M": "makers & open firmware",
+              "P": "PCs, TVs & gadgets", "A": "self-hosted apps & servers"}
 ICONS = json.loads(re.search(r"/\*json\*/(\{.*?\})/\*end\*/", (ROOT / "icons.js").read_text(), re.S).group(1))
 
 
@@ -115,6 +121,8 @@ HOWTO = {
     "S": "Updates usually arrive through the manufacturer's phone app or roll out automatically. Open the device's settings in the app and look for a firmware or software section.",
     "C": "Consoles update through their system settings or on next connection. Drones and e-bikes update through the manufacturer's app while the device is connected.",
     "M": "Follow the project's release page for the flashing or OTA procedure. Many maker devices update from a web installer or the project's desktop app.",
+    "P": "Use the manufacturer's companion app or the device's own settings menu; PCs and motherboards use a BIOS utility, TVs a Software Update menu, cameras a file copied to a memory card.",
+    "A": "Pull the new image or package and restart the service. Read the release notes and back up the data directory first; most projects can't downgrade once the database has migrated.",
 }
 
 esc = html.escape
@@ -306,18 +314,21 @@ def device_page(d, ctx=None):
     cat = CATS.get(d["category"], "")
     live = is_live(d)
     # plenty of names already end in "firmware" ("Klipper 3D printer firmware"), so only
-    # add the word when it isn't there — otherwise the title stutters
-    fw = "" if "firmware" in name.lower() else " firmware"
+    # add the word when it isn't there — otherwise the title stutters. Self-hosted software
+    # doesn't have firmware at all, so it gets "releases" wording throughout.
+    software = d["category"] == "A"
+    fw = "" if (software or "firmware" in name.lower()) else " firmware"
+    noun = "version" if software else "firmware"
     if live:
         v = d["version"]
         title = fit_title([f"{name}{fw} — latest version {v} ({month(d['released'])}) | Firmwarely",
                            f"{name}{fw} — latest version {v} | Firmwarely",
                            f"{name}{fw} {v} | Firmwarely",
                            f"{name}{fw} {v}"])
-        desc = fit_desc([f"Latest {name} firmware is {v}, released {fmt(d['released'])}. Release notes, version history, how to update, and email alerts for new or security fixes.",
-                         f"Latest {name} firmware is {v}, released {fmt(d['released'])}. Release notes, version history and update alerts.",
-                         f"{name} firmware {v} ({fmt(d['released'])}): release notes, history and alerts.",
-                         f"{name} firmware {v}: release notes, history and alerts."])
+        desc = fit_desc([f"Latest {name} {noun} is {v}, released {fmt(d['released'])}. Release notes, version history, how to update, and email alerts for new or security fixes.",
+                         f"Latest {name} {noun} is {v}, released {fmt(d['released'])}. Release notes, version history and update alerts.",
+                         f"{name} {noun} {v} ({fmt(d['released'])}): release notes, history and alerts.",
+                         f"{name} {noun} {v}: release notes, history and alerts."])
     else:
         title = fit_title([f"{name}{fw} updates — alerts & release tracking | Firmwarely",
                            f"{name}{fw} updates — release tracking | Firmwarely",
@@ -364,10 +375,10 @@ def device_page(d, ctx=None):
     if live:
         first = hist[-1].get("released") if hist else None
         span = (f" Firmwarely has recorded {len(hist)} versions since {fmt(first)}." if len(hist) > 1 and first else "")
-        intro = (f"The {name} is tracked under {CAT_PHRASE[d['category']]}. Its latest firmware, {d['version']}, "
+        intro = (f"{'' if software else 'The '}{name} is tracked under {CAT_PHRASE[d['category']]}. Its latest {noun}, {d['version']}, "
                  f"shipped on {fmt(d.get('released'))}.{span}")
     else:
-        intro = (f"The {name} is on our list under {CAT_PHRASE[d['category']]} but isn't being checked yet. "
+        intro = (f"{'' if software else 'The '}{name} is on our list under {CAT_PHRASE[d['category']]} but isn't being checked yet. "
                  f"Sign up and we'll prioritise it.")
 
     steps, upd = guide(d)
@@ -376,7 +387,7 @@ def device_page(d, ctx=None):
     cta = (f'<a class="btn" href="{esc(upd)}" target="_blank" rel="noopener">Open update page ↗</a>'
            if upd else "")
     how = f"""
-      <h2 id="update" style="margin-top:2rem">How to update the {esc(name)}</h2>
+      <h2 id="update" style="margin-top:2rem">How to update {"" if software else "the "}{esc(name)}</h2>
       <div class="card">
         {cta}
         <ol class="upd-steps">{step_html}</ol>
@@ -404,12 +415,12 @@ def device_page(d, ctx=None):
   <div class="crumbs"><a href="/devices/">Devices</a> / <a href="{cat_path(d['category'])}">{esc(cat)}</a> / {esc(name)}</div>
   <div class="dev">
     <div>
-      <h1 class="dev-h">{esc(name)} firmware</h1>
+      <h1 class="dev-h">{esc(name)} {"releases" if software else "firmware"}</h1>
       <span class="status {d['status']}">{LABEL.get(d['status'], d['status'])}</span>
       <p style="color:var(--muted);margin:1rem 0 0">{esc(intro)}</p>
       <div class="card" style="margin-top:1.25rem">
         <dl class="kv">
-          <dt>Latest firmware</dt><dd>{esc(d['version']) if live else "—"}</dd>
+          <dt>Latest {noun}</dt><dd>{esc(d['version']) if live else "—"}</dd>
           <dt>Released</dt><dd>{time_tag(d.get('released')) if live else "—"}</dd>
           <dt>Category</dt><dd><a href="{cat_path(d['category'])}">{esc(cat)}</a></dd>
           <dt>Last checked</dt><dd>{time_tag((d.get('checked') or '')[:10]) if d.get('checked') else "—"}</dd>
@@ -422,21 +433,21 @@ def device_page(d, ctx=None):
       {f'<h2 style="margin-top:2rem">Version history</h2><table class="hist">{rows}</table>' if rows else ""}
       <div class="faq">
         <h2 style="margin-top:2rem">FAQ</h2>
-        <h3>What is the latest firmware for the {esc(name)}?</h3>
+        <h3>What is the latest {noun} {"of" if software else "for the"} {esc(name)}?</h3>
         <p>{(f"Version {esc(d['version'])}, released {fmt(d.get('released'))}. " if live else "We haven't recorded a version yet. ")}This page is refreshed every night from the manufacturer's release page.</p>
-        <h3>How do I update the {esc(name)}?</h3>
+        <h3>How do I update {"" if software else "the "}{esc(name)}?</h3>
         <p><a href="#update">See the step-by-step above.</a> {esc(HOWTO.get(d['category'], ''))}</p>
         <h3>How does Firmwarely know when there's a new version?</h3>
         <p>Every night we read the manufacturer's official release page{(" for the " + esc(name)) if live else ""} and record the version, date and changelog. If anything changed, subscribers watching this device get an email.</p>
         <h3>Is this an official {esc(d['brand'])} page?</h3>
-        <p>No. Firmwarely is independent. Device and brand names belong to their manufacturers; always download firmware from the official source.</p>
+        <p>No. Firmwarely is independent. {"Project and product names belong to their owners; always install releases from the project's own source." if software else "Device and brand names belong to their manufacturers; always download firmware from the official source."}</p>
       </div>
       {related}
     </div>
     <aside>
       <div class="card">
         <h2 style="margin:0 0 .5rem;font-size:1.05rem">Watch this device</h2>
-        <p style="color:var(--muted);font-size:.95rem;margin:0 0 .75rem">Get one email when {esc(d['brand'])} ships a new or security firmware for the {esc(d['model'])}.</p>
+        <p style="color:var(--muted);font-size:.95rem;margin:0 0 .75rem">Get one email when {esc(d['brand'])} ships a new or security {"release of" if software else "firmware for the"} {esc(d['model'])}.</p>
         <a class="btn" href="#signup">Get alerts</a>
         <p style="margin:.75rem 0 0"><a href="/my-devices.html#d={esc(d['id'])}">Track this in My devices →</a></p>
         {f'<p style="margin:.5rem 0 0"><a href="#update">How to update this device</a></p>' if steps else ""}
@@ -457,12 +468,14 @@ def category_page(key, devices, brands):
     top_brands = [b for b, _ in sorted(((b, n) for b, n in brands.items() if n >= BRAND_MIN and any(d["brand"] == b for d in items)),
                                        key=lambda x: -x[1])][:8]
     names = ", ".join(top_brands[:5])
-    title = fit_title([f"{short} firmware updates — {names} | Firmwarely",
-                       f"{short} firmware updates | Firmwarely",
-                       f"{short} firmware updates"])
-    desc = fit_desc([f"Latest firmware for {len(items)} {CAT_PHRASE[key]} devices from {names} and more, checked nightly. Version, release date, what changed and how to update.",
-                     f"Latest firmware for {len(items)} {CAT_PHRASE[key]} devices, checked nightly, with release notes and update guides.",
-                     f"{cat} firmware versions, release notes and update alerts."])
+    what = "releases" if key == "A" else "firmware updates"
+    title = fit_title([f"{short} {what} — {names} | Firmwarely",
+                       f"{short} {what} | Firmwarely",
+                       f"{short} {what}"])
+    kind = "versions" if key == "A" else "firmware"
+    desc = fit_desc([f"Latest {kind} for {len(items)} {CAT_PHRASE[key]} from {names} and more, checked nightly. Version, release date, what changed and how to update.",
+                     f"Latest {kind} for {len(items)} {CAT_PHRASE[key]}, checked nightly, with release notes and update guides.",
+                     f"{cat}: {kind}, release notes and update alerts."])
     recent = by_recent(items)[:8]
     ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "BreadcrumbList", "itemListElement": [
@@ -477,7 +490,7 @@ def category_page(key, devices, brands):
     return head(title, desc, cat_path(key), extra) + f"""
 <div class="wrap brandlist" style="padding-top:2rem">
   <div class="crumbs"><a href="/devices/">Devices</a> / {esc(cat)}</div>
-  <h1 class="dev-h">{esc(cat)} firmware updates</h1>
+  <h1 class="dev-h">{esc(cat)}: latest {what}</h1>
   <p style="color:var(--muted);max-width:70ch">{esc(CAT_INTRO[key])}</p>
   <p style="color:var(--muted)">{len(items)} devices in this category, {len(live)} with a recorded version.</p>
   {f'<div class="browse"><span>Brands</span>{brand_links}</div>' if brand_links else ""}
@@ -492,14 +505,17 @@ def category_page(key, devices, brands):
 def brand_page(brand, items):
     live = by_recent(items)
     cats = sorted({CATS[d["category"]] for d in items})
-    title = fit_title([f"{brand} firmware updates — {len(items)} devices tracked | Firmwarely",
-                       f"{brand} firmware updates | Firmwarely",
-                       f"{brand} firmware updates"])
+    software = all(d["category"] == "A" for d in items)
+    what = "releases" if software else "firmware updates"
+    unit = "projects" if software else "devices"
+    title = fit_title([f"{brand} {what} — {len(items)} {unit} tracked | Firmwarely",
+                       f"{brand} {what} | Firmwarely",
+                       f"{brand} {what}"])
     newest = live[0] if live else None
-    desc = fit_desc([(f"Latest {brand} firmware for {len(items)} devices, checked nightly. Newest release: {newest['model']} {newest['version']} on {fmt(newest.get('released'))}." if newest
-                      else f"{brand} firmware for {len(items)} devices, tracked nightly with release notes and update guides."),
-                     f"{brand} firmware versions, release notes and update alerts for {len(items)} devices.",
-                     f"{brand} firmware updates and alerts."])
+    desc = fit_desc([(f"Latest {brand} {'versions' if software else 'firmware'} for {len(items)} {unit}, checked nightly. Newest release: {newest['model']} {newest['version']} on {fmt(newest.get('released'))}." if newest
+                      else f"{brand} {'versions' if software else 'firmware'} for {len(items)} {unit}, tracked nightly with release notes and update guides."),
+                     f"{brand} versions, release notes and update alerts for {len(items)} {unit}.",
+                     f"{brand} {what} and alerts."])
     ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Devices", "item": f"{SITE}/devices/"},
@@ -508,17 +524,17 @@ def brand_page(brand, items):
          "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": f"{d['brand']} {d['model']}",
                               "url": f"{SITE}/devices/{d['id']}/"} for i, d in enumerate(items)]}]}
     extra = f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>'
-    intro = (f"Firmwarely tracks {len(items)} {brand} devices across {', '.join(CAT_PHRASE[k] for k in CATS if any(d['category'] == k for d in items))}. "
+    intro = (f"Firmwarely tracks {len(items)} {brand} {unit} across {', '.join(CAT_PHRASE[k] for k in CATS if any(d['category'] == k for d in items))}. "
              + (f"The most recent {brand} release we recorded is {newest['model']} {newest['version']} on {fmt(newest.get('released'))}. " if newest else "")
              + "Each device page has the current version, release notes, version history and how to update.")
     cat_links = "".join(f'<a class="chip" href="{cat_path(k)}">{esc(CATS[k])}</a>' for k in CATS if any(d["category"] == k for d in items))
     return head(title, desc, brand_path(brand), extra) + f"""
 <div class="wrap brandlist" style="padding-top:2rem">
   <div class="crumbs"><a href="/devices/">Devices</a> / {esc(brand)}</div>
-  <h1 class="dev-h">{esc(brand)} firmware updates</h1>
+  <h1 class="dev-h">{esc(brand)} {what}</h1>
   <p style="color:var(--muted);max-width:70ch">{esc(intro)}</p>
   <div class="browse"><span>Categories</span>{cat_links}</div>
-  <h2>{esc(brand)} devices</h2>
+  <h2>{esc(brand)} {unit}</h2>
   {device_list(sorted(items, key=lambda x: (not is_live(x), x["model"])), show_brand=False)}
 </div>
 """ + signup(brand) + FOOT

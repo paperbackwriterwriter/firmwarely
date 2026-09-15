@@ -56,27 +56,36 @@ SECURITY = re.compile(
 # drones vs consoles, 3D printers vs dev boards, hardware NAS vs self-hosted apps).
 ICON_RULES = [
     ("doorbell", r"doorbell|door ?lock|\block\b|chime|deadbolt"),
-    ("camera", r"\bcam(era)?s?\b|bullet|dome|floodlight|nvr|frigate|unifi protect|reolink|arlo|wyze|eufycam|blink|rtsp|ipcam|openipc|thingino|insta360|gopro|action cam"),
+    ("camera", r"\bcam(era)?s?\b|bullet|dome|floodlight|nvr|frigate|unifi protect|reolink|arlo|wyze|eufycam|blink|rtsp|ipcam|openipc|thingino|insta360|gopro|action cam|alpha a7|eos r|x-t\d|x100|lumix|om-1|nikon z"),
+    ("headphones", r"headphone|earbud|airpods|wh-1000|wf-1000|quietcomfort|momentum|elite \d|beats|arctis|\bear \(|sonos ace"),
     ("speaker", r"echo|homepod|nest audio|nest mini|nest hub|sonos|speaker|\bshow\b|soundbar"),
     ("drone", r"drone|mavic|\bmini \d|\bair \d|avata|\bneo\b|\bflip\b|skydio|autel|\bdji\b|gimbal|osmo|hoverair"),
-    ("ebike", r"e-?bike|\bbike\b|scooter|levo|\brad\b|vanmoof|cowboy|bosch|shimano|specialized|trek|onewheel|segway|aventon|lectric|super73"),
-    ("printer", r"3d printer|printer|bambu|prusa|creality|klipper|marlin|ender|voron|anycubic|elegoo|kobra|slicer|cura|octoprint|mainsail|fluidd|moonraker"),
-    ("board", r"esp32|esp8266|arduino|raspberry|\bpico\b|microcontroller|tasmota|esphome|wled|meshtastic|flipper|qmk|zmk|keyboard|betaflight|ardupilot|inav|pinecil|\biron\b|heltec|adafruit|micropython|circuitpython|\bcnc\b|grbl|laser|reprap|duet"),
-    ("nas", r"\bnas\b|diskstation|rackstation|\bts-\d|\btvs-|truenas|unraid|my cloud|readynas|drobo|terramaster|asustor|openmediavault|\bdsm\b|\bqts\b"),
-    ("hub", r"\bhub\b|bridge|thermostat|\bplug\b|switch firmware|zigbee|z-wave|matter|homekit|home assistant|smartthings|homey|hubitat|sensor|ev charg|charge controller|sprinkler|irrigation|vacuum|openhab|mqtt|thread"),
-    ("console", r"playstation|xbox|nintendo|steam deck|rog ally|legion go|analogue|dualsense|handheld|\bquest\b|vision pro|\bvr\b|\bgame"),
-    ("router", r"router|mesh|access point|\bap\b|switch|gateway|firewall|openwrt|routeros|opnsense|pfsense|eero|orbi|deco|nighthawk|archer|unifi|dream machine|pi-hole|adguard|tailscale|wireguard|\bdns\b|modem|\bvpn\b|zerotier|netbird"),
+    ("ebike", r"e-?bike|\bbike\b|scooter|levo|\brad\b|vanmoof|cowboy|bosch|shimano|specialized|trek|onewheel|segway|aventon|lectric|super73|fazua|mahle|\bniu\b|apollo|zwift|kickr"),
+    ("printer", r"3d printer|printer firmware|bambu|prusa|creality|klipper|marlin|ender|voron|anycubic|elegoo|kobra|slicer|cura|octoprint|mainsail|fluidd|moonraker|qidi|sovol|flsun|formlabs|centauri|k1c|spoolman|manyfold"),
+    ("board", r"esp32|esp8266|arduino|raspberry pi (?!500)|\bpico\b|microcontroller|tasmota|esphome|wled|meshtastic|flipper|\bqmk\b|\bzmk\b|betaflight|ardupilot|inav|pinecil|\biron\b|heltec|adafruit|micropython|circuitpython|\bcnc\b|grbl|laser|reprap|duet|cardputer|t-deck|xiao|orange pi|radxa|rock 5|beagle|jetson|nanokvm|jetkvm|\bkvm\b|bus pirate|nodemcu|espruino|emuflight|rotorflight"),
+    ("nas", r"\bnas\b|diskstation|rackstation|\bts-\d|\btvs-|\btbs-|truenas|unraid|my cloud|readynas|drobo|terramaster|asustor|openmediavault|\bdsm\b|\bqts\b|\bssd\b|nvme|zimacube|beestation|flashstor|lockerstor|nasync|hexos|rockstor|\bwtr\b|lacie|2big|terastation"),
+    ("tv", r"\btv\b|bravia|roku|chromecast|shield tv|streamer|projector|ultragear|ultrasharp|odyssey"),
+    ("print", r"laserjet|officejet|deskjet|pixma|ecotank|\bmfc-|\bhl-l|inkjet|laser printer"),
+    ("watch", r"\bwatch\b|fenix|forerunner|venu|whoop|oura|fitbit|infinitime|pinetime|bangle|garmin|elemnt"),
+    ("tablet", r"kindle|kobo|remarkable|boox|e-?reader|tablet|\bipad\b|palma"),
+    ("keyboard", r"keyboard|mx keys|mx master|superlight|stream deck|webcam|brio|facecam|microphone|\bmic\b|\bdock\b|blackwidow|k70|wireless controller|pro controller|dualsense|8bitdo"),
+    ("laptop", r"laptop|thinkpad|\bxps\b|elitebook|spectre|zephyrus|surface|macbook|mini pc|motherboard|\bbios\b|swift 14|raspberry pi 500|framework"),
+    ("hub", r"\bhub\b|bridge|thermostat|\bplug\b|switch firmware|zigbee|z-wave|matter|homekit|home assistant|smartthings|homey|hubitat|sensor|ev charg|charge controller|sprinkler|irrigation|vacuum|openhab|mqtt|thread|powerwall|wall connector|gateway|pulsar|home flex|water monitor|decora|smart home control|iota|voice preview"),
+    ("console", r"playstation|xbox|nintendo|steam deck|rog ally|legion go|analogue|handheld|\bquest\b|vision pro|\bvr\b|\bgame|claw|retroid|anbernic|miyoo|playdate|rg35xx|emulator|retro"),
+    ("router", r"router|mesh|access point|\bap\b|switch|gateway|firewall|openwrt|routeros|opnsense|pfsense|eero|orbi|deco|nighthawk|archer|unifi|dream machine|pi-hole|adguard|tailscale|wireguard|\bdns\b|modem|\bvpn\b|zerotier|netbird|hotspot|mifi|extender|surfboard|velop|meraki|balance 20x|rutx|vault fw|aquila|nwa\d"),
 ]
 ICON_RULES = [(k, re.compile(p, re.I)) for k, p in ICON_RULES]
 # hardware NAS names are all caught by the "nas" rule, so anything else in N is software
-ICON_BY_CATEGORY = {"R": "router", "N": "app", "S": "hub", "C": "console", "M": "board"}
+ICON_BY_CATEGORY = {"R": "router", "N": "app", "S": "hub", "C": "console", "M": "board", "P": "laptop", "A": "app"}
 # self-hosted services live in several categories; when a name says "server/app" and no
 # hardware rule matched, use the app icon rather than the category's hardware
-APP_HINT = re.compile(r"server|application|software|client|manager|dashboard|monitor|backup|sync|wiki|media|photo|password|vault|finance|documentation|proxy|\bos\b|operating system|middleware|control panel|web interface|program|player|center", re.I)
+APP_HINT = re.compile(r"server|application|software|client|manager|dashboard|monitor|backup|sync|wiki|media|photo|password|vault|finance|documentation|proxy|\bos\b|operating system|middleware|control panel|web interface|program|player|center|\btool\b|daemon|driver|transcoder|linux|\bhost\b|creator|studio|library|installer|launcher|loader|compatibility|frontend|manager|\bcli\b|toolkit|compiler|debugger|\bcad\b|suite|engine|stack|firmware update", re.I)
 
 
 def icon_for(dev):
     name = f"{dev.get('brand', '')} {dev.get('model', '')}"
+    if dev.get("category") == "A":
+        return "app"  # self-hosted software, whatever it is named after
     for key, rx in ICON_RULES:
         if rx.search(name):
             return key

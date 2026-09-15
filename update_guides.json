@@ -846,6 +846,626 @@
     "Update RouterOS first, then System, then RouterBOARD, then Upgrade for the bootloader, then reboot again.",
     "Never expose Winbox or the web console to the internet — unpatched MikroTik devices have been widely exploited."
    ]
+  },
+  "Dell": {
+   "steps": [
+    "Open SupportAssist (preinstalled on Dell PCs) and run a scan; BIOS and firmware updates appear under Drivers & Downloads.",
+    "Or download the BIOS installer from dell.com/support for your service tag and run it with the laptop plugged in.",
+    "Do not power off during a BIOS flash; the machine reboots itself."
+   ]
+  },
+  "HP": {
+   "steps": [
+    "PCs: open HP Support Assistant, or download the BIOS/firmware from support.hp.com for your model and run it plugged in.",
+    "Printers: open the printer's Settings, Printer Maintenance, Update the Printer, or use the HP Smart app.",
+    "Let the device finish and reboot on its own."
+   ]
+  },
+  "Acer": {
+   "steps": [
+    "Open Acer Care Center and check for updates, or download the BIOS from acer.com/support using your serial number.",
+    "Run the BIOS installer on AC power and let the machine reboot."
+   ]
+  },
+  "MSI": {
+   "steps": [
+    "Motherboards: download the BIOS from msi.com, copy it to a FAT32 USB stick, reboot into the BIOS and use M-Flash.",
+    "Handhelds and laptops: use MSI Center, Live Update section.",
+    "Do not interrupt power during a flash."
+   ]
+  },
+  "Gigabyte": {
+   "steps": [
+    "Download the BIOS file from gigabyte.com for the exact board revision, put it on a FAT32 USB stick.",
+    "Reboot, press End or F8 to open Q-Flash, and select the file.",
+    "Reload optimised defaults after the flash, then re-apply your settings."
+   ]
+  },
+  "ASRock": {
+   "steps": [
+    "Download the BIOS from asrock.com for your exact model and copy it to a FAT32 USB stick.",
+    "Reboot into the UEFI, open Tool, then Instant Flash, and choose the file.",
+    "Re-apply your settings afterwards; a flash resets them."
+   ]
+  },
+  "Minisforum": {
+   "steps": [
+    "Download the BIOS package from minisforum.com support for your model.",
+    "Follow the included readme: usually boot from a FAT32 USB stick and run the flash script.",
+    "Keep the unit on power throughout."
+   ]
+  },
+  "Beelink": {
+   "steps": [
+    "Download the BIOS from bee-link.com support for your model and unzip to a FAT32 USB stick.",
+    "Boot from the stick (or run the Windows flasher included) and let it complete.",
+    "Restore your BIOS settings afterwards."
+   ]
+  },
+  "LG": {
+   "steps": [
+    "TVs: Settings, All Settings, Support, Software Update, Check for Updates. Turn on Auto Update to get them overnight.",
+    "Monitors: download the firmware from lg.com support and run the updater over USB-C or DisplayPort as described.",
+    "Keep the TV on and connected until it restarts."
+   ]
+  },
+  "TCL": {
+   "steps": [
+    "Settings, System, About, System update (Google TV) or Settings, More Settings, System update (Roku models).",
+    "Leave the TV on Wi-Fi and powered; it restarts when done."
+   ]
+  },
+  "Hisense": {
+   "steps": [
+    "Settings, Support, System Update, Check Firmware Upgrade (VIDAA) or Settings, System, About, System update (Google TV).",
+    "Keep the TV connected until it restarts."
+   ]
+  },
+  "Roku": {
+   "steps": [
+    "Roku devices update automatically overnight.",
+    "To force it: Settings, System, System update, Check now.",
+    "Keep the device powered; it restarts on its own."
+   ]
+  },
+  "NVIDIA": {
+   "steps": [
+    "SHIELD: Settings, Device Preferences, About, System upgrade.",
+    "Jetson: use the JetPack SDK Manager or apt on the device to move between JetPack releases; flash a fresh image for major versions.",
+    "Back up your work before a major Jetson upgrade."
+   ]
+  },
+  "XGIMI": {
+   "steps": [
+    "Settings, Device Preferences, About, System update on the projector.",
+    "Keep it on Wi-Fi and powered; it restarts when finished."
+   ]
+  },
+  "Brother": {
+   "steps": [
+    "Open the printer's web page (type its IP into a browser), Administrator, Firmware Update.",
+    "Or run the Brother Firmware Update Tool from support.brother.com on a connected PC.",
+    "Do not switch the printer off during the update."
+   ]
+  },
+  "Canon": {
+   "steps": [
+    "Printers: open the Canon PRINT app or the printer's Setup menu, Device settings, Firmware update.",
+    "Cameras: download the firmware file from canon.com support, copy it to a freshly formatted card, and run Firmware Ver. in the camera menu with a full battery.",
+    "Never power off a camera mid-update."
+   ]
+  },
+  "Epson": {
+   "steps": [
+    "Run Epson Software Updater (installed with the driver) on a connected computer, or use the printer's Settings, Firmware Update menu.",
+    "Keep the printer on and connected until it restarts."
+   ]
+  },
+  "Logitech": {
+   "steps": [
+    "Open Logi Options+ (mice and keyboards), G HUB (gaming gear) or Logi Tune (webcams and headsets); firmware prompts appear on the device page.",
+    "Keep the device connected or within receiver range during the flash.",
+    "For Unifying and Bolt receivers, update the receiver too."
+   ]
+  },
+  "Razer": {
+   "steps": [
+    "Open Razer Synapse; a firmware badge appears on the device tile when an update exists.",
+    "Or download the standalone updater from razer.com/support for the device.",
+    "Keep the device plugged in during the flash."
+   ]
+  },
+  "Elgato": {
+   "steps": [
+    "Stream Deck: open the Stream Deck app, Preferences, a firmware update prompt appears when available.",
+    "Cameras and mics: open Elgato Camera Hub or Wave Link, which offer the update in device settings.",
+    "Keep the device connected over USB throughout."
+   ]
+  },
+  "Shure": {
+   "steps": [
+    "Open the MOTIV Mix desktop app or the MOTIV mobile app; firmware updates are offered under device settings.",
+    "Keep the microphone connected until it finishes."
+   ]
+  },
+  "Keychron": {
+   "steps": [
+    "Keychron QMK boards update through the Keychron Launcher web app in Chrome (launcher.keychron.com): connect, then Firmware Update.",
+    "Wireless models: put the board in bootloader mode as described on the product page before flashing.",
+    "Do not unplug during the flash."
+   ]
+  },
+  "Wooting": {
+   "steps": [
+    "Open Wootility (web or desktop); it prompts when a firmware update is available.",
+    "Keep the keyboard plugged in until the update completes."
+   ]
+  },
+  "Corsair": {
+   "steps": [
+    "Open iCUE, click the device, then Settings; firmware updates are listed there.",
+    "Keep the device connected during the flash."
+   ]
+  },
+  "SteelSeries": {
+   "steps": [
+    "Open SteelSeries GG, Engine, select the device, and check for firmware in its settings.",
+    "Wireless headsets: update the base station and the headset separately; keep both connected."
+   ]
+  },
+  "Bose": {
+   "steps": [
+    "Open the Bose app (Bose Music or Bose QC) with the product connected; updates appear under Settings, Product update.",
+    "Or visit btu.bose.com in a browser with the product plugged in over USB.",
+    "Keep it charged and near the phone until finished."
+   ]
+  },
+  "Sennheiser": {
+   "steps": [
+    "Open the Sennheiser Smart Control app with the headphones connected; it offers firmware updates automatically.",
+    "Keep the headphones charged and close to the phone until done."
+   ]
+  },
+  "Jabra": {
+   "steps": [
+    "Open Jabra Sound+ (earbuds) or Jabra Direct on a computer; firmware updates appear on the device page.",
+    "Keep the earbuds in the case and connected until the update completes."
+   ]
+  },
+  "Beats": {
+   "steps": [
+    "Beats update automatically when paired to an iPhone or when the Beats app on Android is open and connected.",
+    "Keep them connected and charging for an hour; check the version in Bluetooth settings."
+   ]
+  },
+  "Nothing": {
+   "steps": [
+    "Open the Nothing X app with the earbuds connected; Settings, Firmware update.",
+    "Keep the case open and nearby until it completes."
+   ]
+  },
+  "WHOOP": {
+   "steps": [
+    "Open the WHOOP app; firmware updates install automatically when the strap is nearby and charged.",
+    "Keep the app open and the strap on your wrist until the progress bar finishes."
+   ]
+  },
+  "Oura": {
+   "steps": [
+    "Open the Oura app; ring firmware updates are offered on the home screen.",
+    "Put the ring on the charger and keep the phone nearby until it finishes."
+   ]
+  },
+  "Kobo": {
+   "steps": [
+    "Kobo e-readers update automatically over Wi-Fi when syncing.",
+    "To force it: Settings, Device information, Check for updates.",
+    "Or download the update from Kobo's firmware page and copy it to the .kobo folder over USB."
+   ]
+  },
+  "reMarkable": {
+   "steps": [
+    "Settings, General, Software, Check for updates on the tablet.",
+    "Keep it on Wi-Fi and charged; it restarts when done."
+   ]
+  },
+  "Onyx Boox": {
+   "steps": [
+    "Settings, Firmware Update, Check Update on the device.",
+    "Keep it on Wi-Fi and above 50% battery."
+   ]
+  },
+  "Fujifilm": {
+   "steps": [
+    "Download the firmware from fujifilm-x.com support for the exact body, copy it to a freshly formatted card.",
+    "With a full battery, hold DISP/BACK while powering on and follow the prompts.",
+    "Never power off during the update."
+   ]
+  },
+  "Nikon": {
+   "steps": [
+    "Download the firmware from downloadcenter.nikonimglib.com, copy the .bin file to a formatted card.",
+    "Setup menu, Firmware version, Update, with a fully charged battery.",
+    "Or use Nikon SnapBridge to update over Bluetooth on supported bodies."
+   ]
+  },
+  "Panasonic": {
+   "steps": [
+    "Download the firmware from panasonic.jp/support/global/cs/dsc, copy it to the root of a formatted card.",
+    "Insert, power on, and start the update from the playback screen with a full battery.",
+    "Do not power off until the camera restarts."
+   ]
+  },
+  "OM System": {
+   "steps": [
+    "Use OM Workspace on a computer with the camera connected over USB; it checks for and installs firmware.",
+    "Or use the OM Image Share app over Wi-Fi.",
+    "Keep the battery full and the cable connected."
+   ]
+  },
+  "CalDigit": {
+   "steps": [
+    "Download the firmware updater for your dock from caldigit.com/support.",
+    "Connect the dock directly to the computer, disconnect other devices, and run the updater.",
+    "Do not unplug the dock until it reports success."
+   ]
+  },
+  "Plex": {
+   "steps": [
+    "Plex Media Server: open the web app, Settings, General, the update banner appears at the top.",
+    "Docker: pull the new image and recreate the container; NAS packages update through the NAS app store.",
+    "Check the release thread on forums.plex.tv for known issues before updating."
+   ]
+  },
+  "Channels": {
+   "steps": [
+    "Channels DVR Server updates itself; open the web UI, Settings, and check the version or click Check for Update.",
+    "Docker installs update by pulling the new image."
+   ]
+  },
+  "Arris": {
+   "steps": [
+    "Cable modem firmware is pushed by your ISP; you cannot install it yourself.",
+    "Check the current version at 192.168.100.1, and contact the ISP if it is out of date."
+   ]
+  },
+  "Motorola": {
+   "steps": [
+    "Cable modem firmware is pushed by your ISP; you cannot install it yourself.",
+    "Check the current version at 192.168.100.1, and contact the ISP if it is out of date."
+   ]
+  },
+  "Inseego": {
+   "steps": [
+    "Open the hotspot's admin page (usually 192.168.1.1) or its touchscreen, Settings, Software Update.",
+    "Keep it charged and on the cellular network during the update."
+   ]
+  },
+  "D-Link": {
+   "steps": [
+    "Log in to the router at 192.168.0.1 (or the Aquila Pro AI app), Management, Upgrade, Check for New Firmware.",
+    "Keep it powered until it reboots."
+   ]
+  },
+  "Peplink": {
+   "steps": [
+    "Log in to the web admin, System, Firmware, Check for Firmware, or upload the file from peplink.com/support/downloads.",
+    "The router reboots; a second firmware slot lets you roll back from the boot menu."
+   ]
+  },
+  "Teltonika": {
+   "steps": [
+    "Log in to the WebUI, System, Firmware, Update firmware, and choose Server or upload the file from wiki.teltonika-networks.com.",
+    "Keep settings unless the release notes say otherwise; the router reboots."
+   ]
+  },
+  "Netgate": {
+   "steps": [
+    "System, Update in the pfSense Plus web UI; read the release notes first.",
+    "Take a config backup (Diagnostics, Backup & Restore) before upgrading.",
+    "The appliance reboots; allow several minutes."
+   ]
+  },
+  "Protectli": {
+   "steps": [
+    "Protectli boxes run the OS you installed (pfSense, OPNsense, etc.); update through that OS.",
+    "coreboot BIOS updates are on protectli.com/kb, applied with flashrom from a live USB."
+   ]
+  },
+  "Cisco": {
+   "steps": [
+    "Meraki Go devices update automatically from the cloud; schedule the window in the Meraki Go app, Settings, Firmware upgrades."
+   ]
+  },
+  "AOOSTAR": {
+   "steps": [
+    "Download the BIOS package from aoostar.com support for your model and follow the included readme (FAT32 USB flash).",
+    "Keep the unit powered throughout."
+   ]
+  },
+  "IceWhale": {
+   "steps": [
+    "ZimaOS: Settings, Update in the web dashboard, or it updates automatically when enabled.",
+    "Hardware BIOS updates are documented on docs.zimaspace.com."
+   ]
+  },
+  "LaCie": {
+   "steps": [
+    "Run LaCie Toolkit on a connected computer; it offers firmware updates for the enclosure.",
+    "Do not disconnect during the update."
+   ]
+  },
+  "Eshtek": {
+   "steps": [
+    "HexOS updates through the web dashboard, Settings, Updates; it is built on TrueNAS, so the underlying system updates the same way."
+   ]
+  },
+  "Crucial": {
+   "steps": [
+    "Install Crucial Storage Executive, select the SSD, and click Firmware Update.",
+    "Or download the bootable ISO from crucial.com/support and flash from USB.",
+    "Back up first; keep the PC on AC power."
+   ]
+  },
+  "tado°": {
+   "steps": [
+    "tado° devices update automatically over the bridge; check the version in the app under Settings, Rooms & Devices.",
+    "Keep the bridge powered and online."
+   ]
+  },
+  "Netatmo": {
+   "steps": [
+    "Netatmo devices update automatically via the relay; check the version in the Home + Control app under device settings.",
+    "Keep the relay plugged in and online."
+   ]
+  },
+  "Kwikset": {
+   "steps": [
+    "Open the Kwikset app with Bluetooth on; lock firmware updates are offered on the lock's page.",
+    "Stand next to the lock with fresh batteries until it completes."
+   ]
+  },
+  "Eve": {
+   "steps": [
+    "Open the Eve app; a firmware badge appears on the accessory when an update exists.",
+    "Stay within Bluetooth or Thread range until it finishes."
+   ]
+  },
+  "Meross": {
+   "steps": [
+    "Open the Meross app, tap the device, Settings, Firmware Update.",
+    "Keep it powered and on Wi-Fi."
+   ]
+  },
+  "Tesla": {
+   "steps": [
+    "Powerwall and Wall Connector update automatically over Wi-Fi from Tesla; check versions in the Tesla app under the product.",
+    "Keep them connected to Wi-Fi; there is no manual install."
+   ]
+  },
+  "Enphase": {
+   "steps": [
+    "IQ Gateway updates are pushed by Enphase; check the software version in the Enphase App or the installer toolkit.",
+    "Keep the gateway connected to the internet."
+   ]
+  },
+  "Wallbox": {
+   "steps": [
+    "Open the Wallbox app, connect to the charger, and accept the update when prompted on the charger's page.",
+    "Stay within Bluetooth range until it finishes."
+   ]
+  },
+  "ChargePoint": {
+   "steps": [
+    "Home Flex updates automatically over Wi-Fi; check the version in the ChargePoint app under the charger."
+   ]
+  },
+  "Flume": {
+   "steps": [
+    "Flume devices update automatically; check the version in the Flume app under Settings, Devices."
+   ]
+  },
+  "Leviton": {
+   "steps": [
+    "Open the My Leviton app, tap the device, Settings, and install firmware if offered.",
+    "Keep the device powered and on Wi-Fi."
+   ]
+  },
+  "Brilliant": {
+   "steps": [
+    "Brilliant controls update automatically overnight; check Settings, About on the panel to see the version or trigger a check."
+   ]
+  },
+  "Abode": {
+   "steps": [
+    "The Abode gateway updates automatically; check Settings, Gateway in the app for the version and any pending update."
+   ]
+  },
+  "Retroid": {
+   "steps": [
+    "Settings, System, System update (Android) checks for the latest OTA.",
+    "Keep the device charged and on Wi-Fi; back up saves first."
+   ]
+  },
+  "Anbernic": {
+   "steps": [
+    "Download the stock firmware image from anbernic.com and flash it to the microSD with Rufus or balenaEtcher.",
+    "Community firmware (muOS, Knulli, ArkOS) is flashed the same way; back up saves first."
+   ]
+  },
+  "Miyoo": {
+   "steps": [
+    "Download the firmware from the Miyoo support page, copy it to the SD card root, and install from the device's Settings.",
+    "Onion OS updates via its own installer on the SD card."
+   ]
+  },
+  "Panic": {
+   "steps": [
+    "Settings, System, Update Playdate OS on the device, or update through the Playdate desktop app over USB.",
+    "Keep it charged and on Wi-Fi."
+   ]
+  },
+  "8BitDo": {
+   "steps": [
+    "Download the 8BitDo Firmware Updater from support.8bitdo.com, connect the controller over USB, and follow the prompts.",
+    "Do not unplug during the update."
+   ]
+  },
+  "Skydio": {
+   "steps": [
+    "Open the Skydio app with the drone connected; firmware updates install from the Info screen.",
+    "Keep the drone and controller charged until finished."
+   ]
+  },
+  "Potensic": {
+   "steps": [
+    "Open the PotensicPro app with the drone connected; the update banner appears on the main screen.",
+    "Keep the drone and remote powered until done."
+   ]
+  },
+  "Holy Stone": {
+   "steps": [
+    "Open the Holy Stone app with the drone connected; firmware updates are offered in the settings menu.",
+    "Keep the drone powered until it completes."
+   ]
+  },
+  "Fazua": {
+   "steps": [
+    "Fazua drives update through the Fazua app over Bluetooth, or via the Fazua Toolbox on a computer using the USB service port.",
+    "Keep the battery charged during the update."
+   ]
+  },
+  "Mahle": {
+   "steps": [
+    "Mahle X20 updates through the My SmartBike app; connect to the bike and accept the update when offered.",
+    "Keep the bike charged and nearby."
+   ]
+  },
+  "VanMoof": {
+   "steps": [
+    "Open the VanMoof app; bike firmware updates are prompted on the home screen when connected.",
+    "Stay next to the bike until it completes."
+   ]
+  },
+  "NIU": {
+   "steps": [
+    "Open the NIU app with the scooter connected over Bluetooth; Settings, Firmware Update.",
+    "Keep the scooter powered on and nearby."
+   ]
+  },
+  "Apollo": {
+   "steps": [
+    "Open the Apollo app, connect to the scooter, and accept the firmware update when offered.",
+    "Keep the scooter charged and close to the phone."
+   ]
+  },
+  "Zwift": {
+   "steps": [
+    "Zwift Ride firmware updates through the Zwift Companion app or the Zwift game when connected.",
+    "Keep the controllers charged and paired until finished."
+   ]
+  },
+  "M5Stack": {
+   "steps": [
+    "Flash new firmware with M5Burner (desktop) or the web installer on the product page.",
+    "Hold the reset or G0 button to enter download mode if the board is not detected."
+   ]
+  },
+  "LILYGO": {
+   "steps": [
+    "Flash firmware over USB with esptool or the project's web installer (Meshtastic and others provide one).",
+    "Hold BOOT while connecting if the board does not enter download mode."
+   ]
+  },
+  "Seeed Studio": {
+   "steps": [
+    "Flash with esptool, Arduino IDE or the firmware project's web installer.",
+    "Hold BOOT while plugging in USB to force download mode."
+   ]
+  },
+  "Orange Pi": {
+   "steps": [
+    "Download a new OS image from orangepi.org and write it to the SD card or eMMC with balenaEtcher.",
+    "Bootloader (U-Boot) updates ship with the image."
+   ]
+  },
+  "Radxa": {
+   "steps": [
+    "Download the OS image from docs.radxa.com and flash to microSD or eMMC; use rsetup on the device to update the bootloader.",
+    "Back up before re-flashing."
+   ]
+  },
+  "BeagleBoard": {
+   "steps": [
+    "Download the latest image from beagleboard.org/latest-images and flash it to a microSD card.",
+    "Or run apt update && apt upgrade on the existing image."
+   ]
+  },
+  "Espressif": {
+   "steps": [
+    "Flash with esptool or the ESP Launchpad web installer from the product page.",
+    "Hold BOOT while connecting USB to enter download mode."
+   ]
+  },
+  "QIDI": {
+   "steps": [
+    "Download the firmware from qidi3d.com support and copy it to a USB stick, then install from the printer's screen.",
+    "Klipper-based models also update through Fluidd's Update Manager."
+   ]
+  },
+  "Sovol": {
+   "steps": [
+    "Download the firmware from sovol3d.com support for the exact printer and follow the included steps (USB stick or Klipper Update Manager on the SV08).",
+    "Keep the printer powered throughout."
+   ]
+  },
+  "FLSUN": {
+   "steps": [
+    "Download the firmware from flsun3d.com support and install from a USB stick via the printer's screen.",
+    "Keep the printer on until it restarts."
+   ]
+  },
+  "Formlabs": {
+   "steps": [
+    "Open PreForm on a computer; it prompts to update the printer's firmware when a new version exists.",
+    "Keep the printer on and connected until it restarts."
+   ]
+  },
+  "Cricut": {
+   "steps": [
+    "Cricut Design Space prompts for a firmware update when the machine is connected over USB.",
+    "Keep the machine plugged in until the update completes."
+   ]
+  },
+  "Carbide 3D": {
+   "steps": [
+    "Open Carbide Motion; it offers to update the controller firmware when a new version is available.",
+    "Keep the machine powered and connected over USB during the flash."
+   ]
+  },
+  "Ortur": {
+   "steps": [
+    "Download the firmware from ortur.net support and flash with LaserGRBL's or LightBurn's firmware tool over USB.",
+    "Do not power off during the flash."
+   ]
+  },
+  "PINE64": {
+   "steps": [
+    "PineTime updates over Bluetooth from Gadgetbridge, InfiniLink or the nRF Connect app using the InfiniTime DFU file.",
+    "Keep the watch charged and the phone nearby."
+   ]
+  },
+  "Sipeed": {
+   "steps": [
+    "NanoKVM updates from its web UI, Settings, Update, or by copying the release to the microSD card.",
+    "Keep it powered during the update."
+   ]
+  },
+  "JetKVM": {
+   "steps": [
+    "Open the JetKVM web UI, Settings, General, and click Check for updates.",
+    "Keep it powered and connected during the update."
+   ]
   }
  },
  "by_kind": {
@@ -911,7 +1531,19 @@
   "thingino",
   "valetudo",
   "zephyr-rtos",
-  "zmk-firmware"
+  "zmk-firmware",
+  "emuflight",
+  "rotorflight",
+  "meshcore",
+  "buspirate5-firmware",
+  "infinitime",
+  "espruino",
+  "openhasp",
+  "espresense",
+  "opensprinkler-firmware",
+  "nodemcu-firmware",
+  "jetkvm",
+  "nanokvm"
  ],
  "by_category": {
   "R": {
@@ -949,6 +1581,20 @@
     "Open the project's releases page and read the notes for this version — breaking changes are common.",
     "Follow the project's flashing or OTA procedure; many offer a web installer or a one-click update in their own UI.",
     "Keep the previous firmware image so you can roll back."
+   ]
+  },
+  "A": {
+   "steps": [
+    "Read the release notes first: self-hosted apps change config, schemas and Docker tags between versions.",
+    "Back up the data and config volumes. Most projects cannot downgrade once the database has migrated.",
+    "Docker: pull the new image tag and recreate the container (`docker compose pull && docker compose up -d`). Packages: use your distribution's package manager or replace the binary."
+   ]
+  },
+  "P": {
+   "steps": [
+    "Use the manufacturer's companion app or support page for your model; most PCs, TVs and peripherals update from their own settings menu or desktop utility.",
+    "Keep the device on mains power (or fully charged) and connected until it restarts.",
+    "For BIOS and camera firmware, never interrupt the flash and keep the previous version handy for a rollback."
    ]
   }
  }
