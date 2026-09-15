@@ -127,6 +127,20 @@
    "notes": "2.39.5 (2026-09-14) Bug Fixes editor: Fixes issue that prevented some users from revoking their end-user credentials (#​38455) (3d8f578) Features core: Add log streaming events for instance reports (#​38483) (6174e8e)",
    "source_url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.39.5",
    "page_url": "https://www.firmwarely.com/devices/n8n/"
+  },
+  "zwave-js-ui": {
+   "id": "zwave-js-ui",
+   "brand": "Z-Wave JS",
+   "model": "Z-Wave control panel",
+   "category": "S",
+   "status": "update",
+   "version": "11.24.1",
+   "previous": "11.24.0",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": "11.24.1 (2026-09-15) ✨ Features bump/server.10.2 (#​4825) (ace6c0c)",
+   "source_url": "https://github.com/zwave-js/zwave-js-ui/releases/tag/v11.24.1",
+   "page_url": "https://www.firmwarely.com/devices/zwave-js-ui/"
   }
  }
 }
