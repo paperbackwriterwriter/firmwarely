@@ -15,6 +15,20 @@
    "notes": "From newest to oldest: Improved Gestdown provider matching by adding year match when TVDb ID matches between video and subtitle source. 9013092 Fixed track ID collision with changed attributes in embedded subtitles indexing. #​3588 ed0d47e Fixed syncing issue with Sonarr and Radarr on edge racing c…",
    "source_url": "https://github.com/morpheus65535/bazarr/releases/tag/v1.6.1",
    "page_url": "https://www.firmwarely.com/devices/bazarr/"
+  },
+  "jellyfin-server": {
+   "id": "jellyfin-server",
+   "brand": "Jellyfin",
+   "model": "Media server",
+   "category": "A",
+   "status": "update",
+   "version": "12.1",
+   "previous": "12.0",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": ":rocket: Jellyfin Server 12.1 We are pleased to announce the latest stable release of Jellyfin, version 12.1! This minor release brings several bugfixes to improve your Jellyfin experience. As always, please ensure you take a full backup before upgrading! Discuss this release further on our forums.…",
+   "source_url": "https://github.com/jellyfin/jellyfin/releases/tag/v12.1",
+   "page_url": "https://www.firmwarely.com/devices/jellyfin-server/"
   }
  }
 }
