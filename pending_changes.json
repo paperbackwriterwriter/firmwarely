@@ -1,5 +1,34 @@
 {
- "since": null,
+ "since": "2026-09-15T08:40:38+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "weaviate": {
+   "id": "weaviate",
+   "brand": "Weaviate",
+   "model": "Vector database",
+   "category": "A",
+   "status": "update",
+   "version": "1.39.5",
+   "previous": "1.39.4",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": "Breaking Changes none New Features none Fixes Fix shifted weaviate_module_error_total labels and qna-openai nil-response panic fix(hnsw): tolerate a tombstoned entrypoint whose node slot is nil Fix auto schema with refs on namespaced cluster Return 403 from verbose /v1/nodes to callers denied minim…",
+   "source_url": "https://github.com/weaviate/weaviate/releases/tag/v1.39.5",
+   "page_url": "https://www.firmwarely.com/devices/weaviate/"
+  },
+  "appwrite": {
+   "id": "appwrite",
+   "brand": "Appwrite",
+   "model": "Backend platform",
+   "category": "A",
+   "status": "update",
+   "version": "2.2.0",
+   "previous": "2.1.0",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": "Appwrite 2.2 brings email policies to self-hosted installs, finishes the move of function and site executions to ClickHouse, surfaces the real reason a build failed, and folds in three weeks of fixes across auth, databases, functions, messaging and the installer. It ships with the 1.1.96 self-hoste…",
+   "source_url": "https://github.com/appwrite/appwrite/releases/tag/2.2.0",
+   "page_url": "https://www.firmwarely.com/devices/appwrite/"
+  }
+ }
 }
