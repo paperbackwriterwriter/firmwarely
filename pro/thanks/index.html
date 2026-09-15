@@ -124,7 +124,9 @@ input::placeholder{color:#5E6C78}
 .browse a.chip{text-decoration:none;display:inline-block}
 .browse a.chip:hover{border-color:var(--amber);color:var(--text)}
 .chip{font:inherit;font-size:.9rem;color:var(--muted);background:transparent;border:1px solid var(--line);border-radius:999px;padding:.35rem .85rem;cursor:pointer}
-.chip[aria-pressed=true]{color:var(--text);border-color:var(--amber);background:rgba(245,179,66,.08)}
+a.chip{text-decoration:none;display:inline-block}
+a.chip:hover{border-color:var(--amber);color:var(--text)}
+.chip[aria-pressed=true],.chip[aria-current=true]{color:var(--text);border-color:var(--amber);background:rgba(245,179,66,.08)}
 .search{max-width:360px}
 table{width:100%;border-collapse:collapse;font-size:.95rem}
 th{text-align:left;font-weight:500;color:var(--muted);font-size:.82rem;padding:.5rem .6rem;border-bottom:1px solid var(--line)}

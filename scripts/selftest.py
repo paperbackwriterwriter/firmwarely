@@ -221,6 +221,13 @@ def test_homepage_honesty():
     dm = _re.search(r'<meta name="description" content="(.*?)">', html)
     desc = html_unescape(dm.group(1)) if dm else ""
     check("index.html meta description fits a search snippet", len(desc) <= 155, True)
+    # the catalog had two near-identical chip rows around the search box (a "Browse" nav and
+    # the filter buttons). One row now does both jobs, so guard against the duplicate coming back.
+    check("catalog has exactly one row of category chips", html.count('class="browse"') + html.count('class="filters"'), 1)
+    for slug in ("routers", "nas", "smart-home", "consoles-drones-ebikes", "makers",
+                 "pcs-tvs-gadgets", "self-hosted"):
+        check(f"category chip still links to /category/{slug}/", f'href="/category/{slug}/"' in html, True)
+    check("filter chips are links, not buttons", "<button class=\"chip\"" in html, False)
 
 
 # ---- generated pages: titles that fit, links that describe their target ----
