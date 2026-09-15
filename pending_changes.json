@@ -29,6 +29,34 @@
    "notes": "Appwrite 2.2 brings email policies to self-hosted installs, finishes the move of function and site executions to ClickHouse, surfaces the real reason a build failed, and folds in three weeks of fixes across auth, databases, functions, messaging and the installer. It ships with the 1.1.96 self-hoste…",
    "source_url": "https://github.com/appwrite/appwrite/releases/tag/2.2.0",
    "page_url": "https://www.firmwarely.com/devices/appwrite/"
+  },
+  "peertube": {
+   "id": "peertube",
+   "brand": "PeerTube",
+   "model": "Video platform",
+   "category": "A",
+   "status": "update",
+   "version": "8.3.0",
+   "previous": "8.2.4",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": "IMPORTANT NOTES If your instance has many videos (local or federated) in the database, automatic migrations at next startup can take several minutes to finish. Plan for a short period of downtime during this upgrade You need to manually execute a migration script after upgrading, while PeerTube is …",
+   "source_url": "https://github.com/Chocobozzz/PeerTube/releases/tag/v8.3.0",
+   "page_url": "https://www.firmwarely.com/devices/peertube/"
+  },
+  "langfuse": {
+   "id": "langfuse",
+   "brand": "Langfuse",
+   "model": "Agent evals & observability",
+   "category": "A",
+   "status": "update",
+   "version": "4.36.1",
+   "previous": "4.36.0",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": "What's Changed Fixes / Improvements fix(users): stop the column order and visibility keys colliding Chores chore(ai-gateway): Cache rust builds chore: fix test: measure deleted-mask cleanup by physical rows, not patch parts perf(filter-options): accelerate metadata equality with a text-index prefil…",
+   "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.36.1",
+   "page_url": "https://www.firmwarely.com/devices/langfuse/"
   }
  }
 }
