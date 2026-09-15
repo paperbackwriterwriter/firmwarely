@@ -32,6 +32,11 @@ jobs:
       - name: Alert pipeline self-test
         run: python3 scripts/selftest.py
 
+      # the webhook decides whether a payment actually grants Pro, and nothing else
+      # exercises it short of a real card
+      - name: Stripe webhook self-test
+        run: node scripts/selftest_webhook.mjs
+
   sources:
     runs-on: ubuntu-latest
     steps:
