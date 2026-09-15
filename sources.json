@@ -434,7 +434,7 @@
    "id": "jellyfin-server",
    "brand": "Jellyfin",
    "model": "Media server",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "jellyfin/jellyfin",
    "version_regex": "v?(\\d+\\.\\d+(?:\\.\\d+)?)",
@@ -444,7 +444,7 @@
    "id": "immich-server",
    "brand": "Immich",
    "model": "Photo backup server",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "immich-app/immich",
    "version_regex": "v?(\\d+\\.\\d+\\.\\d+)",
@@ -454,7 +454,7 @@
    "id": "nextcloud-server",
    "brand": "Nextcloud",
    "model": "Nextcloud server",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "nextcloud/server",
    "version_regex": "v?(\\d+\\.\\d+\\.\\d+)",
@@ -787,7 +787,7 @@
    "id": "minio",
    "brand": "MinIO",
    "model": "Object storage",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "minio/minio",
    "product_url": "https://github.com/minio/minio",
@@ -797,7 +797,7 @@
    "id": "seafile",
    "brand": "Seafile",
    "model": "File sync server",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "haiwen/seafile",
    "product_url": "https://github.com/haiwen/seafile"
@@ -806,7 +806,7 @@
    "id": "syncthing",
    "brand": "Syncthing",
    "model": "Continuous file sync",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "syncthing/syncthing",
    "product_url": "https://github.com/syncthing/syncthing"
@@ -815,7 +815,7 @@
    "id": "duplicati",
    "brand": "Duplicati",
    "model": "Encrypted backup client",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "duplicati/duplicati",
    "product_url": "https://github.com/duplicati/duplicati"
@@ -824,7 +824,7 @@
    "id": "restic",
    "brand": "restic",
    "model": "Backup program",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "restic/restic",
    "product_url": "https://github.com/restic/restic"
@@ -833,7 +833,7 @@
    "id": "borgbackup",
    "brand": "BorgBackup",
    "model": "Borg",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "borgbackup/borg",
    "product_url": "https://github.com/borgbackup/borg"
@@ -842,7 +842,7 @@
    "id": "rclone",
    "brand": "rclone",
    "model": "Cloud storage sync",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "rclone/rclone",
    "product_url": "https://github.com/rclone/rclone"
@@ -851,7 +851,7 @@
    "id": "kopia",
    "brand": "Kopia",
    "model": "Backup and restore",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "kopia/kopia",
    "product_url": "https://github.com/kopia/kopia"
@@ -860,7 +860,7 @@
    "id": "filebrowser",
    "brand": "File Browser",
    "model": "Web file manager",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "filebrowser/filebrowser",
    "product_url": "https://github.com/filebrowser/filebrowser"
@@ -869,7 +869,7 @@
    "id": "paperless-ngx",
    "brand": "Paperless-ngx",
    "model": "Document scanner and archive",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "paperless-ngx/paperless-ngx",
    "product_url": "https://github.com/paperless-ngx/paperless-ngx"
@@ -878,7 +878,7 @@
    "id": "photoprism",
    "brand": "PhotoPrism",
    "model": "Photo library server",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "photoprism/photoprism",
    "product_url": "https://github.com/photoprism/photoprism",
@@ -888,7 +888,7 @@
    "id": "owncloud-server",
    "brand": "ownCloud",
    "model": "File sync server",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "owncloud/core",
    "product_url": "https://github.com/owncloud/core"
@@ -897,7 +897,7 @@
    "id": "gitea",
    "brand": "Gitea",
    "model": "Self-hosted Git service",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "go-gitea/gitea",
    "product_url": "https://github.com/go-gitea/gitea"
@@ -906,7 +906,7 @@
    "id": "ceph-storage",
    "brand": "Ceph",
    "model": "Distributed storage",
-   "category": "N",
+   "category": "A",
    "type": "feed",
    "product_url": "https://github.com/ceph/ceph",
    "url": "https://github.com/ceph/ceph/tags.atom"
@@ -915,7 +915,7 @@
    "id": "openzfs",
    "brand": "OpenZFS",
    "model": "ZFS filesystem",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "openzfs/zfs",
    "product_url": "https://github.com/openzfs/zfs"
@@ -924,7 +924,7 @@
    "id": "navidrome",
    "brand": "Navidrome",
    "model": "Music streaming server",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "navidrome/navidrome",
    "product_url": "https://github.com/navidrome/navidrome"
@@ -933,7 +933,7 @@
    "id": "komga",
    "brand": "Komga",
    "model": "Comic and manga server",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "gotson/komga",
    "product_url": "https://github.com/gotson/komga"
@@ -942,7 +942,7 @@
    "id": "kavita",
    "brand": "Kavita",
    "model": "Reading server",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "Kareadita/Kavita",
    "product_url": "https://github.com/Kareadita/Kavita"
@@ -951,7 +951,7 @@
    "id": "calibre-web",
    "brand": "Calibre-Web",
    "model": "Ebook library server",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "janeczku/calibre-web",
    "product_url": "https://github.com/janeczku/calibre-web"
@@ -960,7 +960,7 @@
    "id": "audiobookshelf",
    "brand": "Audiobookshelf",
    "model": "Audiobook and podcast server",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "advplyr/audiobookshelf",
    "product_url": "https://github.com/advplyr/audiobookshelf"
@@ -969,7 +969,7 @@
    "id": "lychee-photos",
    "brand": "Lychee",
    "model": "Photo gallery",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "LycheeOrg/Lychee",
    "product_url": "https://github.com/LycheeOrg/Lychee"
@@ -978,7 +978,7 @@
    "id": "cockpit",
    "brand": "Cockpit",
    "model": "Server web console",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "cockpit-project/cockpit",
    "product_url": "https://github.com/cockpit-project/cockpit",
@@ -988,7 +988,7 @@
    "id": "webmin",
    "brand": "Webmin",
    "model": "Server control panel",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "webmin/webmin",
    "product_url": "https://github.com/webmin/webmin"
@@ -997,7 +997,7 @@
    "id": "portainer",
    "brand": "Portainer",
    "model": "Container management",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "portainer/portainer",
    "product_url": "https://github.com/portainer/portainer"
@@ -1006,7 +1006,7 @@
    "id": "dockge",
    "brand": "Dockge",
    "model": "Docker compose manager",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "louislam/dockge",
    "product_url": "https://github.com/louislam/dockge"
@@ -1015,7 +1015,7 @@
    "id": "watchtower",
    "brand": "Watchtower",
    "model": "Container auto-updater",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "containrrr/watchtower",
    "product_url": "https://github.com/containrrr/watchtower"
@@ -1033,7 +1033,7 @@
    "id": "authentik",
    "brand": "authentik",
    "model": "Identity provider",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "goauthentik/authentik",
    "product_url": "https://github.com/goauthentik/authentik"
@@ -1042,7 +1042,7 @@
    "id": "vaultwarden",
    "brand": "Vaultwarden",
    "model": "Password manager server",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "dani-garcia/vaultwarden",
    "product_url": "https://github.com/dani-garcia/vaultwarden"
@@ -1051,7 +1051,7 @@
    "id": "bitwarden-server",
    "brand": "Bitwarden",
    "model": "Self-hosted server",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "bitwarden/server",
    "product_url": "https://github.com/bitwarden/server"
@@ -1060,7 +1060,7 @@
    "id": "homepage-dashboard",
    "brand": "Homepage",
    "model": "Service dashboard",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "gethomepage/homepage",
    "product_url": "https://github.com/gethomepage/homepage"
@@ -1069,7 +1069,7 @@
    "id": "heimdall-dashboard",
    "brand": "Heimdall",
    "model": "Application dashboard",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "linuxserver/Heimdall",
    "product_url": "https://github.com/linuxserver/Heimdall"
@@ -1078,7 +1078,7 @@
    "id": "homer-dashboard",
    "brand": "Homer",
    "model": "Service dashboard",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "bastienwirtz/homer",
    "product_url": "https://github.com/bastienwirtz/homer"
@@ -1087,7 +1087,7 @@
    "id": "sonarr",
    "brand": "Sonarr",
    "model": "TV series manager",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "Sonarr/Sonarr",
    "product_url": "https://github.com/Sonarr/Sonarr"
@@ -1096,7 +1096,7 @@
    "id": "radarr",
    "brand": "Radarr",
    "model": "Movie manager",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "Radarr/Radarr",
    "product_url": "https://github.com/Radarr/Radarr"
@@ -1105,7 +1105,7 @@
    "id": "lidarr",
    "brand": "Lidarr",
    "model": "Music manager",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "Lidarr/Lidarr",
    "product_url": "https://github.com/Lidarr/Lidarr"
@@ -1114,7 +1114,7 @@
    "id": "prowlarr",
    "brand": "Prowlarr",
    "model": "Indexer manager",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "Prowlarr/Prowlarr",
    "product_url": "https://github.com/Prowlarr/Prowlarr"
@@ -1123,7 +1123,7 @@
    "id": "bazarr",
    "brand": "Bazarr",
    "model": "Subtitle manager",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "morpheus65535/bazarr",
    "product_url": "https://github.com/morpheus65535/bazarr"
@@ -1132,7 +1132,7 @@
    "id": "readarr",
    "brand": "Readarr",
    "model": "Book manager",
-   "category": "N",
+   "category": "A",
    "type": "feed",
    "product_url": "https://github.com/Readarr/Readarr",
    "url": "https://github.com/Readarr/Readarr/tags.atom"
@@ -1141,7 +1141,7 @@
    "id": "overseerr",
    "brand": "Overseerr",
    "model": "Media request manager",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "sct/overseerr",
    "product_url": "https://github.com/sct/overseerr"
@@ -1150,7 +1150,7 @@
    "id": "jellyseerr",
    "brand": "Jellyseerr",
    "model": "Media request manager",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "fallenbagel/jellyseerr",
    "product_url": "https://github.com/fallenbagel/jellyseerr"
@@ -1159,7 +1159,7 @@
    "id": "qbittorrent",
    "brand": "qBittorrent",
    "model": "BitTorrent client",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "qbittorrent/qBittorrent",
    "product_url": "https://github.com/qbittorrent/qBittorrent"
@@ -1168,7 +1168,7 @@
    "id": "transmission",
    "brand": "Transmission",
    "model": "BitTorrent client",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "transmission/transmission",
    "product_url": "https://github.com/transmission/transmission"
@@ -1177,7 +1177,7 @@
    "id": "deluge",
    "brand": "Deluge",
    "model": "BitTorrent client",
-   "category": "N",
+   "category": "A",
    "type": "feed",
    "product_url": "https://github.com/deluge-torrent/deluge",
    "url": "https://github.com/deluge-torrent/deluge/tags.atom"
@@ -1186,7 +1186,7 @@
    "id": "sabnzbd",
    "brand": "SABnzbd",
    "model": "Usenet downloader",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "sabnzbd/sabnzbd",
    "product_url": "https://github.com/sabnzbd/sabnzbd"
@@ -1195,7 +1195,7 @@
    "id": "tdarr",
    "brand": "Tdarr",
    "model": "Media transcoding server",
-   "category": "N",
+   "category": "A",
    "type": "manual",
    "product_url": "https://github.com/HaveAGitGat/Tdarr"
   },
@@ -1203,7 +1203,7 @@
    "id": "tautulli",
    "brand": "Tautulli",
    "model": "Plex monitoring",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "Tautulli/Tautulli",
    "product_url": "https://github.com/Tautulli/Tautulli"
@@ -1212,7 +1212,7 @@
    "id": "mealie",
    "brand": "Mealie",
    "model": "Recipe manager",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "mealie-recipes/mealie",
    "product_url": "https://github.com/mealie-recipes/mealie"
@@ -1221,7 +1221,7 @@
    "id": "tandoor-recipes",
    "brand": "Tandoor",
    "model": "Recipes",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "TandoorRecipes/recipes",
    "product_url": "https://github.com/TandoorRecipes/recipes"
@@ -1230,7 +1230,7 @@
    "id": "firefly-iii",
    "brand": "Firefly III",
    "model": "Personal finance manager",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "firefly-iii/firefly-iii",
    "product_url": "https://github.com/firefly-iii/firefly-iii"
@@ -1239,7 +1239,7 @@
    "id": "actual-budget",
    "brand": "Actual",
    "model": "Budgeting server",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "actualbudget/actual",
    "product_url": "https://github.com/actualbudget/actual"
@@ -1248,7 +1248,7 @@
    "id": "freshrss",
    "brand": "FreshRSS",
    "model": "RSS reader",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "FreshRSS/FreshRSS",
    "product_url": "https://github.com/FreshRSS/FreshRSS"
@@ -1257,7 +1257,7 @@
    "id": "miniflux",
    "brand": "Miniflux",
    "model": "RSS reader",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "miniflux/v2",
    "product_url": "https://github.com/miniflux/v2"
@@ -1266,7 +1266,7 @@
    "id": "linkding",
    "brand": "linkding",
    "model": "Bookmark manager",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "sissbruecker/linkding",
    "product_url": "https://github.com/sissbruecker/linkding"
@@ -1275,7 +1275,7 @@
    "id": "bookstack",
    "brand": "BookStack",
    "model": "Wiki and documentation",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "BookStackApp/BookStack",
    "product_url": "https://github.com/BookStackApp/BookStack"
@@ -1284,7 +1284,7 @@
    "id": "grocy",
    "brand": "grocy",
    "model": "Household and grocery manager",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "grocy/grocy",
    "product_url": "https://github.com/grocy/grocy"
@@ -1293,7 +1293,7 @@
    "id": "changedetection",
    "brand": "changedetection.io",
    "model": "Website change monitor",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "dgtlmoon/changedetection.io",
    "product_url": "https://github.com/dgtlmoon/changedetection.io"
@@ -1302,7 +1302,7 @@
    "id": "healthchecks",
    "brand": "Healthchecks",
    "model": "Cron job monitor",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "healthchecks/healthchecks",
    "product_url": "https://github.com/healthchecks/healthchecks"
@@ -1311,7 +1311,7 @@
    "id": "gotify",
    "brand": "Gotify",
    "model": "Push notification server",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "gotify/server",
    "product_url": "https://github.com/gotify/server"
@@ -1320,7 +1320,7 @@
    "id": "ntfy",
    "brand": "ntfy",
    "model": "Push notification server",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "binwiederhier/ntfy",
    "product_url": "https://github.com/binwiederhier/ntfy"
@@ -1338,7 +1338,7 @@
    "id": "scrutiny-disk",
    "brand": "Scrutiny",
    "model": "Disk health monitor",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "AnalogJ/scrutiny",
    "product_url": "https://github.com/AnalogJ/scrutiny"
@@ -1347,7 +1347,7 @@
    "id": "glances",
    "brand": "Glances",
    "model": "System monitor",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "nicolargo/glances",
    "product_url": "https://github.com/nicolargo/glances"
@@ -1356,7 +1356,7 @@
    "id": "netdata",
    "brand": "Netdata",
    "model": "System monitoring agent",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "netdata/netdata",
    "product_url": "https://github.com/netdata/netdata"
@@ -1374,7 +1374,7 @@
    "id": "mergerfs",
    "brand": "mergerfs",
    "model": "Union filesystem",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "trapexit/mergerfs",
    "product_url": "https://github.com/trapexit/mergerfs"
@@ -1383,7 +1383,7 @@
    "id": "snapraid",
    "brand": "SnapRAID",
    "model": "Disk array parity",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "amadvance/snapraid",
    "product_url": "https://github.com/amadvance/snapraid"
@@ -1392,7 +1392,7 @@
    "id": "casaos",
    "brand": "CasaOS",
    "model": "Home cloud OS",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "IceWhaleTech/CasaOS",
    "product_url": "https://github.com/IceWhaleTech/CasaOS"
@@ -1401,7 +1401,7 @@
    "id": "umbrel",
    "brand": "Umbrel",
    "model": "Personal server OS",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "getumbrel/umbrel",
    "product_url": "https://github.com/getumbrel/umbrel"
@@ -1410,7 +1410,7 @@
    "id": "yunohost",
    "brand": "YunoHost",
    "model": "Self-hosting server OS",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "YunoHost/yunohost",
    "product_url": "https://github.com/YunoHost/yunohost"
@@ -2361,28 +2361,28 @@
    "id": "synology-ds425-plus",
    "brand": "Synology",
    "model": "DS425+",
-   "category": "N",
+   "category": "A",
    "type": "manual"
   },
   {
    "id": "synology-ds1522-plus",
    "brand": "Synology",
    "model": "DS1522+",
-   "category": "N",
+   "category": "A",
    "type": "manual"
   },
   {
    "id": "synology-ds220j",
    "brand": "Synology",
    "model": "DS220j",
-   "category": "N",
+   "category": "A",
    "type": "manual"
   },
   {
    "id": "synology-rs422-plus",
    "brand": "Synology",
    "model": "RS422+",
-   "category": "N",
+   "category": "A",
    "type": "manual"
   },
   {
@@ -2424,7 +2424,7 @@
    "id": "ugreen-nasync-dxp4800",
    "brand": "UGREEN",
    "model": "NASync DXP4800",
-   "category": "N",
+   "category": "A",
    "type": "manual"
   },
   {
@@ -2445,21 +2445,21 @@
    "id": "buffalo-linkstation-720",
    "brand": "Buffalo",
    "model": "LinkStation 720",
-   "category": "N",
+   "category": "A",
    "type": "manual"
   },
   {
    "id": "ubiquiti-unas-pro",
    "brand": "Ubiquiti",
    "model": "UNAS Pro",
-   "category": "N",
+   "category": "A",
    "type": "manual"
   },
   {
    "id": "proxmox-ve",
    "brand": "Proxmox",
    "model": "Virtual Environment",
-   "category": "N",
+   "category": "A",
    "type": "manual"
   },
   {
@@ -3188,6 +3188,5395 @@
    "brand": "Valve",
    "model": "Steam Deck BIOS",
    "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "powerdns",
+   "brand": "PowerDNS",
+   "model": "Authoritative DNS server",
+   "category": "R",
+   "type": "github",
+   "repo": "PowerDNS/pdns",
+   "product_url": "https://github.com/PowerDNS/pdns"
+  },
+  {
+   "id": "certbot",
+   "brand": "Certbot",
+   "model": "ACME certificate client",
+   "category": "R",
+   "type": "github",
+   "repo": "certbot/certbot",
+   "product_url": "https://github.com/certbot/certbot"
+  },
+  {
+   "id": "acme-sh",
+   "brand": "acme.sh",
+   "model": "ACME shell client",
+   "category": "R",
+   "type": "github",
+   "repo": "acmesh-official/acme.sh",
+   "product_url": "https://github.com/acmesh-official/acme.sh"
+  },
+  {
+   "id": "step-ca",
+   "brand": "Smallstep",
+   "model": "step-ca certificate authority",
+   "category": "R",
+   "type": "github",
+   "repo": "smallstep/certificates",
+   "product_url": "https://github.com/smallstep/certificates"
+  },
+  {
+   "id": "openziti",
+   "brand": "OpenZiti",
+   "model": "Zero-trust overlay network",
+   "category": "R",
+   "type": "github",
+   "repo": "openziti/ziti",
+   "product_url": "https://github.com/openziti/ziti"
+  },
+  {
+   "id": "firezone",
+   "brand": "Firezone",
+   "model": "Zero-trust access gateway",
+   "category": "R",
+   "type": "github",
+   "repo": "firezone/firezone",
+   "product_url": "https://github.com/firezone/firezone"
+  },
+  {
+   "id": "netmaker",
+   "brand": "Netmaker",
+   "model": "WireGuard mesh manager",
+   "category": "R",
+   "type": "github",
+   "repo": "gravitl/netmaker",
+   "product_url": "https://github.com/gravitl/netmaker"
+  },
+  {
+   "id": "pritunl",
+   "brand": "Pritunl",
+   "model": "VPN server",
+   "category": "R",
+   "type": "github",
+   "repo": "pritunl/pritunl",
+   "product_url": "https://github.com/pritunl/pritunl"
+  },
+  {
+   "id": "sing-box",
+   "brand": "SagerNet",
+   "model": "sing-box proxy platform",
+   "category": "R",
+   "type": "github",
+   "repo": "SagerNet/sing-box",
+   "product_url": "https://github.com/SagerNet/sing-box"
+  },
+  {
+   "id": "xray-core",
+   "brand": "Project X",
+   "model": "Xray-core proxy",
+   "category": "R",
+   "type": "github",
+   "repo": "XTLS/Xray-core",
+   "product_url": "https://github.com/XTLS/Xray-core"
+  },
+  {
+   "id": "v2ray-core",
+   "brand": "V2Fly",
+   "model": "v2ray-core proxy",
+   "category": "R",
+   "type": "github",
+   "repo": "v2fly/v2ray-core",
+   "product_url": "https://github.com/v2fly/v2ray-core"
+  },
+  {
+   "id": "shadowsocks-rust",
+   "brand": "Shadowsocks",
+   "model": "shadowsocks-rust",
+   "category": "R",
+   "type": "github",
+   "repo": "shadowsocks/shadowsocks-rust",
+   "product_url": "https://github.com/shadowsocks/shadowsocks-rust"
+  },
+  {
+   "id": "mitmproxy",
+   "brand": "mitmproxy",
+   "model": "Interactive HTTPS proxy",
+   "category": "R",
+   "type": "github",
+   "repo": "mitmproxy/mitmproxy",
+   "product_url": "https://github.com/mitmproxy/mitmproxy"
+  },
+  {
+   "id": "librespeed",
+   "brand": "LibreSpeed",
+   "model": "Self-hosted speed test",
+   "category": "R",
+   "type": "github",
+   "repo": "librespeed/speedtest",
+   "product_url": "https://github.com/librespeed/speedtest"
+  },
+  {
+   "id": "netalertx",
+   "brand": "NetAlertX",
+   "model": "Network intruder detector",
+   "category": "R",
+   "type": "github",
+   "repo": "jokob-sk/NetAlertX",
+   "product_url": "https://github.com/jokob-sk/NetAlertX"
+  },
+  {
+   "id": "watchyourlan",
+   "brand": "WatchYourLAN",
+   "model": "LAN host scanner",
+   "category": "R",
+   "type": "github",
+   "repo": "aceberg/WatchYourLAN",
+   "product_url": "https://github.com/aceberg/WatchYourLAN"
+  },
+  {
+   "id": "unpoller",
+   "brand": "UnPoller",
+   "model": "UniFi metrics exporter",
+   "category": "R",
+   "type": "github",
+   "repo": "unpoller/unpoller",
+   "product_url": "https://github.com/unpoller/unpoller"
+  },
+  {
+   "id": "nextdns-cli",
+   "brand": "NextDNS",
+   "model": "NextDNS CLI client",
+   "category": "R",
+   "type": "github",
+   "repo": "nextdns/nextdns",
+   "product_url": "https://github.com/nextdns/nextdns"
+  },
+  {
+   "id": "cloudflare-ddns",
+   "brand": "Cloudflare DDNS",
+   "model": "Dynamic DNS updater",
+   "category": "R",
+   "type": "github",
+   "repo": "favonia/cloudflare-ddns",
+   "product_url": "https://github.com/favonia/cloudflare-ddns"
+  },
+  {
+   "id": "ddclient",
+   "brand": "ddclient",
+   "model": "Dynamic DNS client",
+   "category": "R",
+   "type": "github",
+   "repo": "ddclient/ddclient",
+   "product_url": "https://github.com/ddclient/ddclient"
+  },
+  {
+   "id": "inadyn",
+   "brand": "In-a-Dyn",
+   "model": "Dynamic DNS client",
+   "category": "R",
+   "type": "github",
+   "repo": "troglobit/inadyn",
+   "product_url": "https://github.com/troglobit/inadyn"
+  },
+  {
+   "id": "snort3",
+   "brand": "Snort",
+   "model": "Snort 3 intrusion detection",
+   "category": "R",
+   "type": "github",
+   "repo": "snort3/snort3",
+   "product_url": "https://github.com/snort3/snort3"
+  },
+  {
+   "id": "zeek",
+   "brand": "Zeek",
+   "model": "Network security monitor",
+   "category": "R",
+   "type": "github",
+   "repo": "zeek/zeek",
+   "product_url": "https://github.com/zeek/zeek"
+  },
+  {
+   "id": "wazuh",
+   "brand": "Wazuh",
+   "model": "Security platform",
+   "category": "R",
+   "type": "github",
+   "repo": "wazuh/wazuh",
+   "product_url": "https://github.com/wazuh/wazuh"
+  },
+  {
+   "id": "3proxy",
+   "brand": "3proxy",
+   "model": "Tiny proxy server",
+   "category": "R",
+   "type": "github",
+   "repo": "3proxy/3proxy",
+   "product_url": "https://github.com/3proxy/3proxy"
+  },
+  {
+   "id": "envoy-proxy",
+   "brand": "Envoy",
+   "model": "Edge and service proxy",
+   "category": "R",
+   "type": "github",
+   "repo": "envoyproxy/envoy",
+   "product_url": "https://github.com/envoyproxy/envoy"
+  },
+  {
+   "id": "pomerium",
+   "brand": "Pomerium",
+   "model": "Identity-aware access proxy",
+   "category": "R",
+   "type": "github",
+   "repo": "pomerium/pomerium",
+   "product_url": "https://github.com/pomerium/pomerium"
+  },
+  {
+   "id": "oauth2-proxy",
+   "brand": "OAuth2 Proxy",
+   "model": "Reverse proxy with OAuth",
+   "category": "R",
+   "type": "github",
+   "repo": "oauth2-proxy/oauth2-proxy",
+   "product_url": "https://github.com/oauth2-proxy/oauth2-proxy"
+  },
+  {
+   "id": "teleport",
+   "brand": "Teleport",
+   "model": "Infrastructure access platform",
+   "category": "R",
+   "type": "github",
+   "repo": "gravitational/teleport",
+   "product_url": "https://github.com/gravitational/teleport"
+  },
+  {
+   "id": "meshcentral",
+   "brand": "MeshCentral",
+   "model": "Remote management server",
+   "category": "R",
+   "type": "github",
+   "repo": "Ylianst/MeshCentral",
+   "product_url": "https://github.com/Ylianst/MeshCentral"
+  },
+  {
+   "id": "rustdesk",
+   "brand": "RustDesk",
+   "model": "Remote desktop",
+   "category": "R",
+   "type": "github",
+   "repo": "rustdesk/rustdesk",
+   "product_url": "https://github.com/rustdesk/rustdesk"
+  },
+  {
+   "id": "duplicacy",
+   "brand": "Duplicacy",
+   "model": "Cloud backup tool",
+   "category": "N",
+   "type": "github",
+   "repo": "gilbertchen/duplicacy",
+   "product_url": "https://github.com/gilbertchen/duplicacy"
+  },
+  {
+   "id": "vorta",
+   "brand": "Vorta",
+   "model": "Borg backup desktop client",
+   "category": "N",
+   "type": "github",
+   "repo": "borgbase/vorta",
+   "product_url": "https://github.com/borgbase/vorta"
+  },
+  {
+   "id": "velero",
+   "brand": "Velero",
+   "model": "Kubernetes backup",
+   "category": "N",
+   "type": "github",
+   "repo": "vmware-tanzu/velero",
+   "product_url": "https://github.com/vmware-tanzu/velero"
+  },
+  {
+   "id": "longhorn",
+   "brand": "Longhorn",
+   "model": "Distributed block storage",
+   "category": "N",
+   "type": "github",
+   "repo": "longhorn/longhorn",
+   "product_url": "https://github.com/longhorn/longhorn"
+  },
+  {
+   "id": "seaweedfs",
+   "brand": "SeaweedFS",
+   "model": "Distributed file store",
+   "category": "N",
+   "type": "github",
+   "repo": "seaweedfs/seaweedfs",
+   "product_url": "https://github.com/seaweedfs/seaweedfs"
+  },
+  {
+   "id": "copyparty",
+   "brand": "copyparty",
+   "model": "Portable file server",
+   "category": "N",
+   "type": "github",
+   "repo": "9001/copyparty",
+   "product_url": "https://github.com/9001/copyparty"
+  },
+  {
+   "id": "dufs",
+   "brand": "dufs",
+   "model": "Static file server",
+   "category": "N",
+   "type": "github",
+   "repo": "sigoden/dufs",
+   "product_url": "https://github.com/sigoden/dufs"
+  },
+  {
+   "id": "zimaos",
+   "brand": "IceWhale",
+   "model": "ZimaOS",
+   "category": "N",
+   "type": "github",
+   "repo": "IceWhaleTech/ZimaOS",
+   "product_url": "https://github.com/IceWhaleTech/ZimaOS"
+  },
+  {
+   "id": "juicefs",
+   "brand": "JuiceFS",
+   "model": "Distributed POSIX file system",
+   "category": "N",
+   "type": "github",
+   "repo": "juicedata/juicefs",
+   "product_url": "https://github.com/juicedata/juicefs"
+  },
+  {
+   "id": "rook",
+   "brand": "Rook",
+   "model": "Ceph storage orchestrator",
+   "category": "N",
+   "type": "github",
+   "repo": "rook/rook",
+   "product_url": "https://github.com/rook/rook"
+  },
+  {
+   "id": "pgbackrest",
+   "brand": "pgBackRest",
+   "model": "PostgreSQL backup",
+   "category": "N",
+   "type": "github",
+   "repo": "pgbackrest/pgbackrest",
+   "product_url": "https://github.com/pgbackrest/pgbackrest"
+  },
+  {
+   "id": "owncloud-ocis",
+   "brand": "ownCloud",
+   "model": "Infinite Scale",
+   "category": "N",
+   "type": "github",
+   "repo": "owncloud/ocis",
+   "product_url": "https://github.com/owncloud/ocis"
+  },
+  {
+   "id": "garage-s3",
+   "brand": "Deuxfleurs",
+   "model": "Garage S3 storage",
+   "category": "N",
+   "type": "github",
+   "repo": "deuxfleurs-org/garage",
+   "product_url": "https://github.com/deuxfleurs-org/garage"
+  },
+  {
+   "id": "deconz-rest",
+   "brand": "dresden elektronik",
+   "model": "deCONZ REST plugin",
+   "category": "S",
+   "type": "github",
+   "repo": "dresden-elektronik/deconz-rest-plugin",
+   "product_url": "https://github.com/dresden-elektronik/deconz-rest-plugin"
+  },
+  {
+   "id": "thingsboard",
+   "brand": "ThingsBoard",
+   "model": "IoT platform",
+   "category": "S",
+   "type": "github",
+   "repo": "thingsboard/thingsboard",
+   "product_url": "https://github.com/thingsboard/thingsboard"
+  },
+  {
+   "id": "emqx",
+   "brand": "EMQX",
+   "model": "MQTT broker",
+   "category": "S",
+   "type": "github",
+   "repo": "emqx/emqx",
+   "product_url": "https://github.com/emqx/emqx"
+  },
+  {
+   "id": "openhasp",
+   "brand": "openHASP",
+   "model": "Touch panel firmware",
+   "category": "S",
+   "type": "github",
+   "repo": "HASwitchPlate/openHASP",
+   "product_url": "https://github.com/HASwitchPlate/openHASP"
+  },
+  {
+   "id": "zigpy",
+   "brand": "zigpy",
+   "model": "Zigbee stack",
+   "category": "S",
+   "type": "github",
+   "repo": "zigpy/zigpy",
+   "product_url": "https://github.com/zigpy/zigpy"
+  },
+  {
+   "id": "opensprinkler-firmware",
+   "brand": "OpenSprinkler",
+   "model": "Irrigation controller firmware",
+   "category": "S",
+   "type": "github",
+   "repo": "OpenSprinkler/OpenSprinkler-Firmware",
+   "product_url": "https://github.com/OpenSprinkler/OpenSprinkler-Firmware"
+  },
+  {
+   "id": "theengs-gateway",
+   "brand": "Theengs",
+   "model": "BLE to MQTT gateway",
+   "category": "S",
+   "type": "github",
+   "repo": "theengs/gateway",
+   "product_url": "https://github.com/theengs/gateway"
+  },
+  {
+   "id": "espresense",
+   "brand": "ESPresense",
+   "model": "BLE room presence firmware",
+   "category": "S",
+   "type": "github",
+   "repo": "ESPresense/ESPresense",
+   "product_url": "https://github.com/ESPresense/ESPresense"
+  },
+  {
+   "id": "teslamate",
+   "brand": "TeslaMate",
+   "model": "Tesla data logger",
+   "category": "S",
+   "type": "github",
+   "repo": "teslamate-org/teslamate",
+   "product_url": "https://github.com/teslamate-org/teslamate"
+  },
+  {
+   "id": "nodemcu-firmware",
+   "brand": "NodeMCU",
+   "model": "ESP8266 Lua firmware",
+   "category": "S",
+   "type": "github",
+   "repo": "nodemcu/nodemcu-firmware",
+   "product_url": "https://github.com/nodemcu/nodemcu-firmware"
+  },
+  {
+   "id": "openwrt-luci",
+   "brand": "OpenWrt",
+   "model": "LuCI web interface",
+   "category": "S",
+   "type": "github",
+   "repo": "openwrt/luci",
+   "product_url": "https://github.com/openwrt/luci"
+  },
+  {
+   "id": "onion-os",
+   "brand": "Onion",
+   "model": "Miyoo Mini firmware",
+   "category": "C",
+   "type": "github",
+   "repo": "OnionUI/Onion",
+   "product_url": "https://github.com/OnionUI/Onion"
+  },
+  {
+   "id": "knulli",
+   "brand": "KNULLI",
+   "model": "Retro handheld firmware",
+   "category": "C",
+   "type": "github",
+   "repo": "knulli-cfw/distribution",
+   "product_url": "https://github.com/knulli-cfw/distribution"
+  },
+  {
+   "id": "arkos",
+   "brand": "ArkOS",
+   "model": "Retro handheld firmware",
+   "category": "C",
+   "type": "github",
+   "repo": "christianhaitian/arkos",
+   "product_url": "https://github.com/christianhaitian/arkos"
+  },
+  {
+   "id": "lakka",
+   "brand": "Lakka",
+   "model": "RetroArch operating system",
+   "category": "C",
+   "type": "github",
+   "repo": "libretro/Lakka-LibreELEC",
+   "product_url": "https://github.com/libretro/Lakka-LibreELEC"
+  },
+  {
+   "id": "retrodeck",
+   "brand": "RetroDECK",
+   "model": "Emulation for Steam Deck",
+   "category": "C",
+   "type": "github",
+   "repo": "RetroDECK/RetroDECK",
+   "product_url": "https://github.com/RetroDECK/RetroDECK"
+  },
+  {
+   "id": "decky-loader",
+   "brand": "Decky",
+   "model": "Steam Deck plugin loader",
+   "category": "C",
+   "type": "github",
+   "repo": "SteamDeckHomebrew/decky-loader",
+   "product_url": "https://github.com/SteamDeckHomebrew/decky-loader"
+  },
+  {
+   "id": "chimeraos",
+   "brand": "ChimeraOS",
+   "model": "Couch gaming OS",
+   "category": "C",
+   "type": "github",
+   "repo": "ChimeraOS/chimeraos",
+   "product_url": "https://github.com/ChimeraOS/chimeraos"
+  },
+  {
+   "id": "bazzite",
+   "brand": "Universal Blue",
+   "model": "Bazzite gaming OS",
+   "category": "C",
+   "type": "github",
+   "repo": "ublue-os/bazzite",
+   "product_url": "https://github.com/ublue-os/bazzite"
+  },
+  {
+   "id": "emudeck",
+   "brand": "EmuDeck",
+   "model": "Emulator installer",
+   "category": "C",
+   "type": "github",
+   "repo": "dragoonDorise/EmuDeck",
+   "product_url": "https://github.com/dragoonDorise/EmuDeck"
+  },
+  {
+   "id": "heroic-launcher",
+   "brand": "Heroic",
+   "model": "Games launcher",
+   "category": "C",
+   "type": "github",
+   "repo": "Heroic-Games-Launcher/HeroicGamesLauncher",
+   "product_url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher"
+  },
+  {
+   "id": "lutris",
+   "brand": "Lutris",
+   "model": "Game manager",
+   "category": "C",
+   "type": "github",
+   "repo": "lutris/lutris",
+   "product_url": "https://github.com/lutris/lutris"
+  },
+  {
+   "id": "proton-ge",
+   "brand": "GloriousEggroll",
+   "model": "Proton-GE compatibility layer",
+   "category": "C",
+   "type": "github",
+   "repo": "GloriousEggroll/proton-ge-custom",
+   "product_url": "https://github.com/GloriousEggroll/proton-ge-custom"
+  },
+  {
+   "id": "pcsx2",
+   "brand": "PCSX2",
+   "model": "PlayStation 2 emulator",
+   "category": "C",
+   "type": "github",
+   "repo": "PCSX2/pcsx2",
+   "product_url": "https://github.com/PCSX2/pcsx2"
+  },
+  {
+   "id": "ppsspp",
+   "brand": "PPSSPP",
+   "model": "PSP emulator",
+   "category": "C",
+   "type": "github",
+   "repo": "hrydgard/ppsspp",
+   "product_url": "https://github.com/hrydgard/ppsspp"
+  },
+  {
+   "id": "winlator",
+   "brand": "Winlator",
+   "model": "Windows on Android",
+   "category": "C",
+   "type": "github",
+   "repo": "brunodev85/winlator",
+   "product_url": "https://github.com/brunodev85/winlator"
+  },
+  {
+   "id": "emuflight",
+   "brand": "EmuFlight",
+   "model": "Flight controller firmware",
+   "category": "C",
+   "type": "github",
+   "repo": "emuflight/EmuFlight",
+   "product_url": "https://github.com/emuflight/EmuFlight"
+  },
+  {
+   "id": "rotorflight",
+   "brand": "Rotorflight",
+   "model": "Helicopter flight firmware",
+   "category": "C",
+   "type": "github",
+   "repo": "rotorflight/rotorflight-firmware",
+   "product_url": "https://github.com/rotorflight/rotorflight-firmware"
+  },
+  {
+   "id": "openrgb",
+   "brand": "OpenRGB",
+   "model": "RGB lighting control",
+   "category": "C",
+   "type": "github",
+   "repo": "CalcProgrammer1/OpenRGB",
+   "product_url": "https://github.com/CalcProgrammer1/OpenRGB"
+  },
+  {
+   "id": "openpnp",
+   "brand": "OpenPnP",
+   "model": "Pick and place software",
+   "category": "M",
+   "type": "github",
+   "repo": "openpnp/openpnp",
+   "product_url": "https://github.com/openpnp/openpnp"
+  },
+  {
+   "id": "bcnc",
+   "brand": "bCNC",
+   "model": "GRBL CNC sender",
+   "category": "M",
+   "type": "github",
+   "repo": "vlachoudis/bCNC",
+   "product_url": "https://github.com/vlachoudis/bCNC"
+  },
+  {
+   "id": "snapmaker-luban",
+   "brand": "Snapmaker",
+   "model": "Luban slicer",
+   "category": "M",
+   "type": "github",
+   "repo": "Snapmaker/Luban",
+   "product_url": "https://github.com/Snapmaker/Luban"
+  },
+  {
+   "id": "spoolman",
+   "brand": "Spoolman",
+   "model": "Filament inventory",
+   "category": "M",
+   "type": "github",
+   "repo": "Donkie/Spoolman",
+   "product_url": "https://github.com/Donkie/Spoolman"
+  },
+  {
+   "id": "manyfold",
+   "brand": "Manyfold",
+   "model": "3D model library",
+   "category": "M",
+   "type": "github",
+   "repo": "manyfold3d/manyfold",
+   "product_url": "https://github.com/manyfold3d/manyfold"
+  },
+  {
+   "id": "freecad",
+   "brand": "FreeCAD",
+   "model": "Parametric CAD",
+   "category": "M",
+   "type": "github",
+   "repo": "FreeCAD/FreeCAD",
+   "product_url": "https://github.com/FreeCAD/FreeCAD"
+  },
+  {
+   "id": "openscad",
+   "brand": "OpenSCAD",
+   "model": "Script-based CAD",
+   "category": "M",
+   "type": "github",
+   "repo": "openscad/openscad",
+   "product_url": "https://github.com/openscad/openscad"
+  },
+  {
+   "id": "arduino-cli",
+   "brand": "Arduino",
+   "model": "Arduino CLI",
+   "category": "M",
+   "type": "github",
+   "repo": "arduino/arduino-cli",
+   "product_url": "https://github.com/arduino/arduino-cli"
+  },
+  {
+   "id": "nuttx",
+   "brand": "Apache",
+   "model": "NuttX RTOS",
+   "category": "M",
+   "type": "github",
+   "repo": "apache/nuttx",
+   "product_url": "https://github.com/apache/nuttx"
+  },
+  {
+   "id": "tinygo",
+   "brand": "TinyGo",
+   "model": "Go compiler for microcontrollers",
+   "category": "M",
+   "type": "github",
+   "repo": "tinygo-org/tinygo",
+   "product_url": "https://github.com/tinygo-org/tinygo"
+  },
+  {
+   "id": "probe-rs",
+   "brand": "probe-rs",
+   "model": "Embedded debugging toolkit",
+   "category": "M",
+   "type": "github",
+   "repo": "probe-rs/probe-rs",
+   "product_url": "https://github.com/probe-rs/probe-rs"
+  },
+  {
+   "id": "buspirate5-firmware",
+   "brand": "Bus Pirate",
+   "model": "Bus Pirate 5 firmware",
+   "category": "M",
+   "type": "github",
+   "repo": "DangerousPrototypes/BusPirate5-firmware",
+   "product_url": "https://github.com/DangerousPrototypes/BusPirate5-firmware"
+  },
+  {
+   "id": "meshcore",
+   "brand": "MeshCore",
+   "model": "LoRa mesh firmware",
+   "category": "M",
+   "type": "github",
+   "repo": "ripplebiz/MeshCore",
+   "product_url": "https://github.com/ripplebiz/MeshCore"
+  },
+  {
+   "id": "reticulum",
+   "brand": "Reticulum",
+   "model": "Cryptographic network stack",
+   "category": "M",
+   "type": "github",
+   "repo": "markqvist/Reticulum",
+   "product_url": "https://github.com/markqvist/Reticulum"
+  },
+  {
+   "id": "m5unified",
+   "brand": "M5Stack",
+   "model": "M5Unified library",
+   "category": "M",
+   "type": "github",
+   "repo": "m5stack/M5Unified",
+   "product_url": "https://github.com/m5stack/M5Unified"
+  },
+  {
+   "id": "infinitime",
+   "brand": "InfiniTime",
+   "model": "PineTime watch firmware",
+   "category": "M",
+   "type": "github",
+   "repo": "InfiniTimeOrg/InfiniTime",
+   "product_url": "https://github.com/InfiniTimeOrg/InfiniTime"
+  },
+  {
+   "id": "espruino",
+   "brand": "Espruino",
+   "model": "JavaScript microcontroller firmware",
+   "category": "M",
+   "type": "github",
+   "repo": "espruino/Espruino",
+   "product_url": "https://github.com/espruino/Espruino"
+  },
+  {
+   "id": "jetkvm",
+   "brand": "JetKVM",
+   "model": "KVM over IP firmware",
+   "category": "M",
+   "type": "github",
+   "repo": "jetkvm/kvm",
+   "product_url": "https://github.com/jetkvm/kvm"
+  },
+  {
+   "id": "nanokvm",
+   "brand": "Sipeed",
+   "model": "NanoKVM firmware",
+   "category": "M",
+   "type": "github",
+   "repo": "sipeed/NanoKVM",
+   "product_url": "https://github.com/sipeed/NanoKVM"
+  },
+  {
+   "id": "openocd",
+   "brand": "OpenOCD",
+   "model": "On-chip debugger",
+   "category": "M",
+   "type": "github",
+   "repo": "openocd-org/openocd",
+   "product_url": "https://github.com/openocd-org/openocd"
+  },
+  {
+   "id": "esp-web-tools",
+   "brand": "ESPHome",
+   "model": "ESP Web Tools installer",
+   "category": "M",
+   "type": "github",
+   "repo": "esphome/esp-web-tools",
+   "product_url": "https://github.com/esphome/esp-web-tools"
+  },
+  {
+   "id": "meshtastic-web",
+   "brand": "Meshtastic",
+   "model": "Web client",
+   "category": "M",
+   "type": "github",
+   "repo": "meshtastic/web",
+   "product_url": "https://github.com/meshtastic/web"
+  },
+  {
+   "id": "fwupd",
+   "brand": "fwupd",
+   "model": "Linux firmware update daemon",
+   "category": "P",
+   "type": "github",
+   "repo": "fwupd/fwupd",
+   "product_url": "https://github.com/fwupd/fwupd"
+  },
+  {
+   "id": "ventoy",
+   "brand": "Ventoy",
+   "model": "Bootable USB tool",
+   "category": "P",
+   "type": "github",
+   "repo": "ventoy/Ventoy",
+   "product_url": "https://github.com/ventoy/Ventoy"
+  },
+  {
+   "id": "rufus",
+   "brand": "Rufus",
+   "model": "USB boot media creator",
+   "category": "P",
+   "type": "github",
+   "repo": "pbatard/rufus",
+   "product_url": "https://github.com/pbatard/rufus"
+  },
+  {
+   "id": "openrazer",
+   "brand": "OpenRazer",
+   "model": "Razer driver for Linux",
+   "category": "P",
+   "type": "github",
+   "repo": "openrazer/openrazer",
+   "product_url": "https://github.com/openrazer/openrazer"
+  },
+  {
+   "id": "solaar",
+   "brand": "Solaar",
+   "model": "Logitech device manager",
+   "category": "P",
+   "type": "github",
+   "repo": "pwr-Solaar/Solaar",
+   "product_url": "https://github.com/pwr-Solaar/Solaar"
+  },
+  {
+   "id": "libre-hardware-monitor",
+   "brand": "LibreHardwareMonitor",
+   "model": "Hardware sensor monitor",
+   "category": "P",
+   "type": "github",
+   "repo": "LibreHardwareMonitor/LibreHardwareMonitor",
+   "product_url": "https://github.com/LibreHardwareMonitor/LibreHardwareMonitor"
+  },
+  {
+   "id": "moonlight-qt",
+   "brand": "Moonlight",
+   "model": "Game streaming client",
+   "category": "P",
+   "type": "github",
+   "repo": "moonlight-stream/moonlight-qt",
+   "product_url": "https://github.com/moonlight-stream/moonlight-qt"
+  },
+  {
+   "id": "sunshine",
+   "brand": "LizardByte",
+   "model": "Sunshine game stream host",
+   "category": "P",
+   "type": "github",
+   "repo": "LizardByte/Sunshine",
+   "product_url": "https://github.com/LizardByte/Sunshine"
+  },
+  {
+   "id": "jellyfin-media-player",
+   "brand": "Jellyfin",
+   "model": "Media Player desktop client",
+   "category": "P",
+   "type": "github",
+   "repo": "jellyfin/jellyfin-media-player",
+   "product_url": "https://github.com/jellyfin/jellyfin-media-player"
+  },
+  {
+   "id": "obs-studio",
+   "brand": "OBS",
+   "model": "OBS Studio",
+   "category": "P",
+   "type": "github",
+   "repo": "obsproject/obs-studio",
+   "product_url": "https://github.com/obsproject/obs-studio"
+  },
+  {
+   "id": "handbrake",
+   "brand": "HandBrake",
+   "model": "Video transcoder",
+   "category": "P",
+   "type": "github",
+   "repo": "HandBrake/HandBrake",
+   "product_url": "https://github.com/HandBrake/HandBrake"
+  },
+  {
+   "id": "dietpi",
+   "brand": "DietPi",
+   "model": "Lightweight SBC OS",
+   "category": "P",
+   "type": "github",
+   "repo": "MichaIng/DietPi",
+   "product_url": "https://github.com/MichaIng/DietPi"
+  },
+  {
+   "id": "armbian",
+   "brand": "Armbian",
+   "model": "ARM board Linux",
+   "category": "P",
+   "type": "github",
+   "repo": "armbian/build",
+   "product_url": "https://github.com/armbian/build"
+  },
+  {
+   "id": "pikvm-os",
+   "brand": "PiKVM",
+   "model": "KVM over IP OS",
+   "category": "P",
+   "type": "github",
+   "repo": "pikvm/pikvm",
+   "product_url": "https://github.com/pikvm/pikvm"
+  },
+  {
+   "id": "grafana",
+   "brand": "Grafana",
+   "model": "Dashboards",
+   "category": "A",
+   "type": "github",
+   "repo": "grafana/grafana",
+   "product_url": "https://github.com/grafana/grafana"
+  },
+  {
+   "id": "prometheus",
+   "brand": "Prometheus",
+   "model": "Metrics database",
+   "category": "A",
+   "type": "github",
+   "repo": "prometheus/prometheus",
+   "product_url": "https://github.com/prometheus/prometheus"
+  },
+  {
+   "id": "loki",
+   "brand": "Grafana",
+   "model": "Loki log store",
+   "category": "A",
+   "type": "github",
+   "repo": "grafana/loki",
+   "product_url": "https://github.com/grafana/loki"
+  },
+  {
+   "id": "victoriametrics",
+   "brand": "VictoriaMetrics",
+   "model": "Time series database",
+   "category": "A",
+   "type": "github",
+   "repo": "VictoriaMetrics/VictoriaMetrics",
+   "product_url": "https://github.com/VictoriaMetrics/VictoriaMetrics"
+  },
+  {
+   "id": "influxdb",
+   "brand": "InfluxData",
+   "model": "InfluxDB",
+   "category": "A",
+   "type": "github",
+   "repo": "influxdata/influxdb",
+   "product_url": "https://github.com/influxdata/influxdb"
+  },
+  {
+   "id": "telegraf",
+   "brand": "InfluxData",
+   "model": "Telegraf agent",
+   "category": "A",
+   "type": "github",
+   "repo": "influxdata/telegraf",
+   "product_url": "https://github.com/influxdata/telegraf"
+  },
+  {
+   "id": "gatus",
+   "brand": "Gatus",
+   "model": "Health dashboard",
+   "category": "A",
+   "type": "github",
+   "repo": "TwiN/gatus",
+   "product_url": "https://github.com/TwiN/gatus"
+  },
+  {
+   "id": "dozzle",
+   "brand": "Dozzle",
+   "model": "Container log viewer",
+   "category": "A",
+   "type": "github",
+   "repo": "amir20/dozzle",
+   "product_url": "https://github.com/amir20/dozzle"
+  },
+  {
+   "id": "btop",
+   "brand": "btop++",
+   "model": "Resource monitor",
+   "category": "A",
+   "type": "github",
+   "repo": "aristocratos/btop",
+   "product_url": "https://github.com/aristocratos/btop"
+  },
+  {
+   "id": "nagios-core",
+   "brand": "Nagios",
+   "model": "Nagios Core",
+   "category": "A",
+   "type": "github",
+   "repo": "NagiosEnterprises/nagioscore",
+   "product_url": "https://github.com/NagiosEnterprises/nagioscore"
+  },
+  {
+   "id": "icinga2",
+   "brand": "Icinga",
+   "model": "Icinga 2 monitoring",
+   "category": "A",
+   "type": "github",
+   "repo": "Icinga/icinga2",
+   "product_url": "https://github.com/Icinga/icinga2"
+  },
+  {
+   "id": "kener",
+   "brand": "Kener",
+   "model": "Status page",
+   "category": "A",
+   "type": "github",
+   "repo": "rajnandan1/kener",
+   "product_url": "https://github.com/rajnandan1/kener"
+  },
+  {
+   "id": "statping-ng",
+   "brand": "Statping-ng",
+   "model": "Status page",
+   "category": "A",
+   "type": "github",
+   "repo": "statping-ng/statping-ng",
+   "product_url": "https://github.com/statping-ng/statping-ng"
+  },
+  {
+   "id": "cronicle",
+   "brand": "Cronicle",
+   "model": "Task scheduler",
+   "category": "A",
+   "type": "github",
+   "repo": "jhuckaby/Cronicle",
+   "product_url": "https://github.com/jhuckaby/Cronicle"
+  },
+  {
+   "id": "graylog",
+   "brand": "Graylog",
+   "model": "Log management",
+   "category": "A",
+   "type": "github",
+   "repo": "Graylog2/graylog2-server",
+   "product_url": "https://github.com/Graylog2/graylog2-server"
+  },
+  {
+   "id": "opensearch",
+   "brand": "OpenSearch",
+   "model": "Search and analytics",
+   "category": "A",
+   "type": "github",
+   "repo": "opensearch-project/OpenSearch",
+   "product_url": "https://github.com/opensearch-project/OpenSearch"
+  },
+  {
+   "id": "elasticsearch",
+   "brand": "Elastic",
+   "model": "Elasticsearch",
+   "category": "A",
+   "type": "github",
+   "repo": "elastic/elasticsearch",
+   "product_url": "https://github.com/elastic/elasticsearch"
+  },
+  {
+   "id": "vector",
+   "brand": "Vector",
+   "model": "Observability pipeline",
+   "category": "A",
+   "type": "github",
+   "repo": "vectordotdev/vector",
+   "product_url": "https://github.com/vectordotdev/vector"
+  },
+  {
+   "id": "fluent-bit",
+   "brand": "Fluent Bit",
+   "model": "Log processor",
+   "category": "A",
+   "type": "github",
+   "repo": "fluent/fluent-bit",
+   "product_url": "https://github.com/fluent/fluent-bit"
+  },
+  {
+   "id": "signoz",
+   "brand": "SigNoz",
+   "model": "Observability platform",
+   "category": "A",
+   "type": "github",
+   "repo": "SigNoz/signoz",
+   "product_url": "https://github.com/SigNoz/signoz"
+  },
+  {
+   "id": "jaeger",
+   "brand": "Jaeger",
+   "model": "Distributed tracing",
+   "category": "A",
+   "type": "github",
+   "repo": "jaegertracing/jaeger",
+   "product_url": "https://github.com/jaegertracing/jaeger"
+  },
+  {
+   "id": "otel-collector",
+   "brand": "OpenTelemetry",
+   "model": "Collector",
+   "category": "A",
+   "type": "github",
+   "repo": "open-telemetry/opentelemetry-collector",
+   "product_url": "https://github.com/open-telemetry/opentelemetry-collector"
+  },
+  {
+   "id": "sentry-self-hosted",
+   "brand": "Sentry",
+   "model": "Self-hosted error tracking",
+   "category": "A",
+   "type": "github",
+   "repo": "getsentry/self-hosted",
+   "product_url": "https://github.com/getsentry/self-hosted"
+  },
+  {
+   "id": "umami",
+   "brand": "Umami",
+   "model": "Web analytics",
+   "category": "A",
+   "type": "github",
+   "repo": "umami-software/umami",
+   "product_url": "https://github.com/umami-software/umami"
+  },
+  {
+   "id": "plausible",
+   "brand": "Plausible",
+   "model": "Web analytics",
+   "category": "A",
+   "type": "github",
+   "repo": "plausible/analytics",
+   "product_url": "https://github.com/plausible/analytics"
+  },
+  {
+   "id": "matomo",
+   "brand": "Matomo",
+   "model": "Web analytics",
+   "category": "A",
+   "type": "github",
+   "repo": "matomo-org/matomo",
+   "product_url": "https://github.com/matomo-org/matomo"
+  },
+  {
+   "id": "goatcounter",
+   "brand": "GoatCounter",
+   "model": "Web analytics",
+   "category": "A",
+   "type": "github",
+   "repo": "arp242/goatcounter",
+   "product_url": "https://github.com/arp242/goatcounter"
+  },
+  {
+   "id": "yacht",
+   "brand": "Yacht",
+   "model": "Container UI",
+   "category": "A",
+   "type": "github",
+   "repo": "SelfhostedPro/Yacht",
+   "product_url": "https://github.com/SelfhostedPro/Yacht"
+  },
+  {
+   "id": "komodo",
+   "brand": "Komodo",
+   "model": "Server and container manager",
+   "category": "A",
+   "type": "github",
+   "repo": "moghtech/komodo",
+   "product_url": "https://github.com/moghtech/komodo"
+  },
+  {
+   "id": "coolify",
+   "brand": "Coolify",
+   "model": "Self-hosting platform",
+   "category": "A",
+   "type": "github",
+   "repo": "coollabsio/coolify",
+   "product_url": "https://github.com/coollabsio/coolify"
+  },
+  {
+   "id": "dokploy",
+   "brand": "Dokploy",
+   "model": "Deployment platform",
+   "category": "A",
+   "type": "github",
+   "repo": "Dokploy/dokploy",
+   "product_url": "https://github.com/Dokploy/dokploy"
+  },
+  {
+   "id": "caprover",
+   "brand": "CapRover",
+   "model": "PaaS",
+   "category": "A",
+   "type": "github",
+   "repo": "caprover/caprover",
+   "product_url": "https://github.com/caprover/caprover"
+  },
+  {
+   "id": "harbor",
+   "brand": "Harbor",
+   "model": "Container registry",
+   "category": "A",
+   "type": "github",
+   "repo": "goharbor/harbor",
+   "product_url": "https://github.com/goharbor/harbor"
+  },
+  {
+   "id": "cosmos-server",
+   "brand": "Cosmos",
+   "model": "Home server platform",
+   "category": "A",
+   "type": "github",
+   "repo": "azukaar/Cosmos-Server",
+   "product_url": "https://github.com/azukaar/Cosmos-Server"
+  },
+  {
+   "id": "runtipi",
+   "brand": "Runtipi",
+   "model": "Home server manager",
+   "category": "A",
+   "type": "github",
+   "repo": "runtipi/runtipi",
+   "product_url": "https://github.com/runtipi/runtipi"
+  },
+  {
+   "id": "incus",
+   "brand": "Incus",
+   "model": "System container manager",
+   "category": "A",
+   "type": "github",
+   "repo": "lxc/incus",
+   "product_url": "https://github.com/lxc/incus"
+  },
+  {
+   "id": "lxd",
+   "brand": "Canonical",
+   "model": "LXD",
+   "category": "A",
+   "type": "github",
+   "repo": "canonical/lxd",
+   "product_url": "https://github.com/canonical/lxd"
+  },
+  {
+   "id": "harvester",
+   "brand": "Harvester",
+   "model": "Hyperconverged infrastructure",
+   "category": "A",
+   "type": "github",
+   "repo": "harvester/harvester",
+   "product_url": "https://github.com/harvester/harvester"
+  },
+  {
+   "id": "kubernetes",
+   "brand": "Kubernetes",
+   "model": "Kubernetes",
+   "category": "A",
+   "type": "github",
+   "repo": "kubernetes/kubernetes",
+   "product_url": "https://github.com/kubernetes/kubernetes"
+  },
+  {
+   "id": "k3s",
+   "brand": "K3s",
+   "model": "Lightweight Kubernetes",
+   "category": "A",
+   "type": "github",
+   "repo": "k3s-io/k3s",
+   "product_url": "https://github.com/k3s-io/k3s"
+  },
+  {
+   "id": "talos-linux",
+   "brand": "Sidero Labs",
+   "model": "Talos Linux",
+   "category": "A",
+   "type": "github",
+   "repo": "siderolabs/talos",
+   "product_url": "https://github.com/siderolabs/talos"
+  },
+  {
+   "id": "rancher",
+   "brand": "Rancher",
+   "model": "Kubernetes management",
+   "category": "A",
+   "type": "github",
+   "repo": "rancher/rancher",
+   "product_url": "https://github.com/rancher/rancher"
+  },
+  {
+   "id": "podman",
+   "brand": "Podman",
+   "model": "Container engine",
+   "category": "A",
+   "type": "github",
+   "repo": "containers/podman",
+   "product_url": "https://github.com/containers/podman"
+  },
+  {
+   "id": "docker-engine",
+   "brand": "Docker",
+   "model": "Engine (moby)",
+   "category": "A",
+   "type": "github",
+   "repo": "moby/moby",
+   "product_url": "https://github.com/moby/moby"
+  },
+  {
+   "id": "docker-compose",
+   "brand": "Docker",
+   "model": "Compose",
+   "category": "A",
+   "type": "github",
+   "repo": "docker/compose",
+   "product_url": "https://github.com/docker/compose"
+  },
+  {
+   "id": "nomad",
+   "brand": "HashiCorp",
+   "model": "Nomad",
+   "category": "A",
+   "type": "github",
+   "repo": "hashicorp/nomad",
+   "product_url": "https://github.com/hashicorp/nomad"
+  },
+  {
+   "id": "vault",
+   "brand": "HashiCorp",
+   "model": "Vault",
+   "category": "A",
+   "type": "github",
+   "repo": "hashicorp/vault",
+   "product_url": "https://github.com/hashicorp/vault"
+  },
+  {
+   "id": "consul",
+   "brand": "HashiCorp",
+   "model": "Consul",
+   "category": "A",
+   "type": "github",
+   "repo": "hashicorp/consul",
+   "product_url": "https://github.com/hashicorp/consul"
+  },
+  {
+   "id": "terraform",
+   "brand": "HashiCorp",
+   "model": "Terraform",
+   "category": "A",
+   "type": "github",
+   "repo": "hashicorp/terraform",
+   "product_url": "https://github.com/hashicorp/terraform"
+  },
+  {
+   "id": "opentofu",
+   "brand": "OpenTofu",
+   "model": "Infrastructure as code",
+   "category": "A",
+   "type": "github",
+   "repo": "opentofu/opentofu",
+   "product_url": "https://github.com/opentofu/opentofu"
+  },
+  {
+   "id": "semaphore-ui",
+   "brand": "Semaphore",
+   "model": "Ansible and Terraform UI",
+   "category": "A",
+   "type": "github",
+   "repo": "semaphoreui/semaphore",
+   "product_url": "https://github.com/semaphoreui/semaphore"
+  },
+  {
+   "id": "openvas-scanner",
+   "brand": "Greenbone",
+   "model": "OpenVAS scanner",
+   "category": "A",
+   "type": "github",
+   "repo": "greenbone/openvas-scanner",
+   "product_url": "https://github.com/greenbone/openvas-scanner"
+  },
+  {
+   "id": "trivy",
+   "brand": "Aqua",
+   "model": "Trivy vulnerability scanner",
+   "category": "A",
+   "type": "github",
+   "repo": "aquasecurity/trivy",
+   "product_url": "https://github.com/aquasecurity/trivy"
+  },
+  {
+   "id": "nuclei",
+   "brand": "ProjectDiscovery",
+   "model": "Nuclei scanner",
+   "category": "A",
+   "type": "github",
+   "repo": "projectdiscovery/nuclei",
+   "product_url": "https://github.com/projectdiscovery/nuclei"
+  },
+  {
+   "id": "passbolt",
+   "brand": "Passbolt",
+   "model": "Team password manager",
+   "category": "A",
+   "type": "github",
+   "repo": "passbolt/passbolt_api",
+   "product_url": "https://github.com/passbolt/passbolt_api"
+  },
+  {
+   "id": "infisical",
+   "brand": "Infisical",
+   "model": "Secrets manager",
+   "category": "A",
+   "type": "github",
+   "repo": "Infisical/infisical",
+   "product_url": "https://github.com/Infisical/infisical"
+  },
+  {
+   "id": "openbao",
+   "brand": "OpenBao",
+   "model": "Secrets manager",
+   "category": "A",
+   "type": "github",
+   "repo": "openbao/openbao",
+   "product_url": "https://github.com/openbao/openbao"
+  },
+  {
+   "id": "keycloak",
+   "brand": "Keycloak",
+   "model": "Identity provider",
+   "category": "A",
+   "type": "github",
+   "repo": "keycloak/keycloak",
+   "product_url": "https://github.com/keycloak/keycloak"
+  },
+  {
+   "id": "zitadel",
+   "brand": "ZITADEL",
+   "model": "Identity platform",
+   "category": "A",
+   "type": "github",
+   "repo": "zitadel/zitadel",
+   "product_url": "https://github.com/zitadel/zitadel"
+  },
+  {
+   "id": "lldap",
+   "brand": "LLDAP",
+   "model": "Light LDAP server",
+   "category": "A",
+   "type": "github",
+   "repo": "lldap/lldap",
+   "product_url": "https://github.com/lldap/lldap"
+  },
+  {
+   "id": "ory-kratos",
+   "brand": "Ory",
+   "model": "Kratos identity server",
+   "category": "A",
+   "type": "github",
+   "repo": "ory/kratos",
+   "product_url": "https://github.com/ory/kratos"
+  },
+  {
+   "id": "casdoor",
+   "brand": "Casdoor",
+   "model": "Identity and access",
+   "category": "A",
+   "type": "github",
+   "repo": "casdoor/casdoor",
+   "product_url": "https://github.com/casdoor/casdoor"
+  },
+  {
+   "id": "logto",
+   "brand": "Logto",
+   "model": "Auth platform",
+   "category": "A",
+   "type": "github",
+   "repo": "logto-io/logto",
+   "product_url": "https://github.com/logto-io/logto"
+  },
+  {
+   "id": "keepassxc",
+   "brand": "KeePassXC",
+   "model": "Password manager",
+   "category": "A",
+   "type": "github",
+   "repo": "keepassxreboot/keepassxc",
+   "product_url": "https://github.com/keepassxreboot/keepassxc"
+  },
+  {
+   "id": "cryptomator",
+   "brand": "Cryptomator",
+   "model": "Cloud encryption",
+   "category": "A",
+   "type": "github",
+   "repo": "cryptomator/cryptomator",
+   "product_url": "https://github.com/cryptomator/cryptomator"
+  },
+  {
+   "id": "redis",
+   "brand": "Redis",
+   "model": "Redis",
+   "category": "A",
+   "type": "github",
+   "repo": "redis/redis",
+   "product_url": "https://github.com/redis/redis"
+  },
+  {
+   "id": "valkey",
+   "brand": "Valkey",
+   "model": "Key-value store",
+   "category": "A",
+   "type": "github",
+   "repo": "valkey-io/valkey",
+   "product_url": "https://github.com/valkey-io/valkey"
+  },
+  {
+   "id": "clickhouse",
+   "brand": "ClickHouse",
+   "model": "Analytics database",
+   "category": "A",
+   "type": "github",
+   "repo": "ClickHouse/ClickHouse",
+   "product_url": "https://github.com/ClickHouse/ClickHouse"
+  },
+  {
+   "id": "timescaledb",
+   "brand": "Timescale",
+   "model": "TimescaleDB",
+   "category": "A",
+   "type": "github",
+   "repo": "timescale/timescaledb",
+   "product_url": "https://github.com/timescale/timescaledb"
+  },
+  {
+   "id": "questdb",
+   "brand": "QuestDB",
+   "model": "Time series database",
+   "category": "A",
+   "type": "github",
+   "repo": "questdb/questdb",
+   "product_url": "https://github.com/questdb/questdb"
+  },
+  {
+   "id": "duckdb",
+   "brand": "DuckDB",
+   "model": "Analytical database",
+   "category": "A",
+   "type": "github",
+   "repo": "duckdb/duckdb",
+   "product_url": "https://github.com/duckdb/duckdb"
+  },
+  {
+   "id": "meilisearch",
+   "brand": "Meilisearch",
+   "model": "Search engine",
+   "category": "A",
+   "type": "github",
+   "repo": "meilisearch/meilisearch",
+   "product_url": "https://github.com/meilisearch/meilisearch"
+  },
+  {
+   "id": "typesense",
+   "brand": "Typesense",
+   "model": "Search engine",
+   "category": "A",
+   "type": "github",
+   "repo": "typesense/typesense",
+   "product_url": "https://github.com/typesense/typesense"
+  },
+  {
+   "id": "qdrant",
+   "brand": "Qdrant",
+   "model": "Vector database",
+   "category": "A",
+   "type": "github",
+   "repo": "qdrant/qdrant",
+   "product_url": "https://github.com/qdrant/qdrant"
+  },
+  {
+   "id": "weaviate",
+   "brand": "Weaviate",
+   "model": "Vector database",
+   "category": "A",
+   "type": "github",
+   "repo": "weaviate/weaviate",
+   "product_url": "https://github.com/weaviate/weaviate"
+  },
+  {
+   "id": "milvus",
+   "brand": "Milvus",
+   "model": "Vector database",
+   "category": "A",
+   "type": "github",
+   "repo": "milvus-io/milvus",
+   "product_url": "https://github.com/milvus-io/milvus"
+  },
+  {
+   "id": "dragonfly",
+   "brand": "Dragonfly",
+   "model": "In-memory datastore",
+   "category": "A",
+   "type": "github",
+   "repo": "dragonflydb/dragonfly",
+   "product_url": "https://github.com/dragonflydb/dragonfly"
+  },
+  {
+   "id": "nats-server",
+   "brand": "NATS",
+   "model": "Messaging server",
+   "category": "A",
+   "type": "github",
+   "repo": "nats-io/nats-server",
+   "product_url": "https://github.com/nats-io/nats-server"
+  },
+  {
+   "id": "rabbitmq",
+   "brand": "RabbitMQ",
+   "model": "Message broker",
+   "category": "A",
+   "type": "github",
+   "repo": "rabbitmq/rabbitmq-server",
+   "product_url": "https://github.com/rabbitmq/rabbitmq-server"
+  },
+  {
+   "id": "redpanda",
+   "brand": "Redpanda",
+   "model": "Streaming platform",
+   "category": "A",
+   "type": "github",
+   "repo": "redpanda-data/redpanda",
+   "product_url": "https://github.com/redpanda-data/redpanda"
+  },
+  {
+   "id": "cloudbeaver",
+   "brand": "DBeaver",
+   "model": "CloudBeaver",
+   "category": "A",
+   "type": "github",
+   "repo": "dbeaver/cloudbeaver",
+   "product_url": "https://github.com/dbeaver/cloudbeaver"
+  },
+  {
+   "id": "dbeaver",
+   "brand": "DBeaver",
+   "model": "Database tool",
+   "category": "A",
+   "type": "github",
+   "repo": "dbeaver/dbeaver",
+   "product_url": "https://github.com/dbeaver/dbeaver"
+  },
+  {
+   "id": "adminer",
+   "brand": "Adminer",
+   "model": "Database manager",
+   "category": "A",
+   "type": "github",
+   "repo": "vrana/adminer",
+   "product_url": "https://github.com/vrana/adminer"
+  },
+  {
+   "id": "phpmyadmin",
+   "brand": "phpMyAdmin",
+   "model": "MySQL web admin",
+   "category": "A",
+   "type": "github",
+   "repo": "phpmyadmin/phpmyadmin",
+   "product_url": "https://github.com/phpmyadmin/phpmyadmin"
+  },
+  {
+   "id": "gogs",
+   "brand": "Gogs",
+   "model": "Git service",
+   "category": "A",
+   "type": "github",
+   "repo": "gogs/gogs",
+   "product_url": "https://github.com/gogs/gogs"
+  },
+  {
+   "id": "onedev",
+   "brand": "OneDev",
+   "model": "Git server with CI",
+   "category": "A",
+   "type": "github",
+   "repo": "theonedev/onedev",
+   "product_url": "https://github.com/theonedev/onedev"
+  },
+  {
+   "id": "woodpecker-ci",
+   "brand": "Woodpecker",
+   "model": "CI engine",
+   "category": "A",
+   "type": "github",
+   "repo": "woodpecker-ci/woodpecker",
+   "product_url": "https://github.com/woodpecker-ci/woodpecker"
+  },
+  {
+   "id": "verdaccio",
+   "brand": "Verdaccio",
+   "model": "npm registry",
+   "category": "A",
+   "type": "github",
+   "repo": "verdaccio/verdaccio",
+   "product_url": "https://github.com/verdaccio/verdaccio"
+  },
+  {
+   "id": "code-server",
+   "brand": "Coder",
+   "model": "code-server",
+   "category": "A",
+   "type": "github",
+   "repo": "coder/code-server",
+   "product_url": "https://github.com/coder/code-server"
+  },
+  {
+   "id": "coder",
+   "brand": "Coder",
+   "model": "Remote dev environments",
+   "category": "A",
+   "type": "github",
+   "repo": "coder/coder",
+   "product_url": "https://github.com/coder/coder"
+  },
+  {
+   "id": "jupyterhub",
+   "brand": "Jupyter",
+   "model": "JupyterHub",
+   "category": "A",
+   "type": "github",
+   "repo": "jupyterhub/jupyterhub",
+   "product_url": "https://github.com/jupyterhub/jupyterhub"
+  },
+  {
+   "id": "jupyterlab",
+   "brand": "Jupyter",
+   "model": "JupyterLab",
+   "category": "A",
+   "type": "github",
+   "repo": "jupyterlab/jupyterlab",
+   "product_url": "https://github.com/jupyterlab/jupyterlab"
+  },
+  {
+   "id": "n8n",
+   "brand": "n8n",
+   "model": "Workflow automation",
+   "category": "A",
+   "type": "github",
+   "repo": "n8n-io/n8n",
+   "product_url": "https://github.com/n8n-io/n8n"
+  },
+  {
+   "id": "activepieces",
+   "brand": "Activepieces",
+   "model": "Workflow automation",
+   "category": "A",
+   "type": "github",
+   "repo": "activepieces/activepieces",
+   "product_url": "https://github.com/activepieces/activepieces"
+  },
+  {
+   "id": "windmill",
+   "brand": "Windmill",
+   "model": "Scripts and workflows",
+   "category": "A",
+   "type": "github",
+   "repo": "windmill-labs/windmill",
+   "product_url": "https://github.com/windmill-labs/windmill"
+  },
+  {
+   "id": "temporal",
+   "brand": "Temporal",
+   "model": "Workflow engine",
+   "category": "A",
+   "type": "github",
+   "repo": "temporalio/temporal",
+   "product_url": "https://github.com/temporalio/temporal"
+  },
+  {
+   "id": "airflow",
+   "brand": "Apache",
+   "model": "Airflow",
+   "category": "A",
+   "type": "github",
+   "repo": "apache/airflow",
+   "product_url": "https://github.com/apache/airflow"
+  },
+  {
+   "id": "prefect",
+   "brand": "Prefect",
+   "model": "Workflow orchestration",
+   "category": "A",
+   "type": "github",
+   "repo": "PrefectHQ/prefect",
+   "product_url": "https://github.com/PrefectHQ/prefect"
+  },
+  {
+   "id": "dagster",
+   "brand": "Dagster",
+   "model": "Data orchestrator",
+   "category": "A",
+   "type": "github",
+   "repo": "dagster-io/dagster",
+   "product_url": "https://github.com/dagster-io/dagster"
+  },
+  {
+   "id": "kestra",
+   "brand": "Kestra",
+   "model": "Orchestration platform",
+   "category": "A",
+   "type": "github",
+   "repo": "kestra-io/kestra",
+   "product_url": "https://github.com/kestra-io/kestra"
+  },
+  {
+   "id": "ollama",
+   "brand": "Ollama",
+   "model": "Local LLM runner",
+   "category": "A",
+   "type": "github",
+   "repo": "ollama/ollama",
+   "product_url": "https://github.com/ollama/ollama"
+  },
+  {
+   "id": "open-webui",
+   "brand": "Open WebUI",
+   "model": "LLM web interface",
+   "category": "A",
+   "type": "github",
+   "repo": "open-webui/open-webui",
+   "product_url": "https://github.com/open-webui/open-webui"
+  },
+  {
+   "id": "localai",
+   "brand": "LocalAI",
+   "model": "OpenAI-compatible local API",
+   "category": "A",
+   "type": "github",
+   "repo": "mudler/LocalAI",
+   "product_url": "https://github.com/mudler/LocalAI"
+  },
+  {
+   "id": "llama-cpp",
+   "brand": "ggml",
+   "model": "llama.cpp",
+   "category": "A",
+   "type": "github",
+   "repo": "ggml-org/llama.cpp",
+   "product_url": "https://github.com/ggml-org/llama.cpp"
+  },
+  {
+   "id": "vllm",
+   "brand": "vLLM",
+   "model": "LLM inference server",
+   "category": "A",
+   "type": "github",
+   "repo": "vllm-project/vllm",
+   "product_url": "https://github.com/vllm-project/vllm"
+  },
+  {
+   "id": "text-generation-webui",
+   "brand": "oobabooga",
+   "model": "Text generation web UI",
+   "category": "A",
+   "type": "github",
+   "repo": "oobabooga/text-generation-webui",
+   "product_url": "https://github.com/oobabooga/text-generation-webui"
+  },
+  {
+   "id": "comfyui",
+   "brand": "ComfyUI",
+   "model": "Diffusion workflow UI",
+   "category": "A",
+   "type": "github",
+   "repo": "comfyanonymous/ComfyUI",
+   "product_url": "https://github.com/comfyanonymous/ComfyUI"
+  },
+  {
+   "id": "sd-webui",
+   "brand": "AUTOMATIC1111",
+   "model": "Stable Diffusion web UI",
+   "category": "A",
+   "type": "github",
+   "repo": "AUTOMATIC1111/stable-diffusion-webui",
+   "product_url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui"
+  },
+  {
+   "id": "fooocus",
+   "brand": "Fooocus",
+   "model": "Image generation",
+   "category": "A",
+   "type": "github",
+   "repo": "lllyasviel/Fooocus",
+   "product_url": "https://github.com/lllyasviel/Fooocus"
+  },
+  {
+   "id": "invokeai",
+   "brand": "InvokeAI",
+   "model": "Image generation studio",
+   "category": "A",
+   "type": "github",
+   "repo": "invoke-ai/InvokeAI",
+   "product_url": "https://github.com/invoke-ai/InvokeAI"
+  },
+  {
+   "id": "jan-ai",
+   "brand": "Jan",
+   "model": "Local AI assistant",
+   "category": "A",
+   "type": "github",
+   "repo": "janhq/jan",
+   "product_url": "https://github.com/janhq/jan"
+  },
+  {
+   "id": "gpt4all",
+   "brand": "Nomic",
+   "model": "GPT4All",
+   "category": "A",
+   "type": "github",
+   "repo": "nomic-ai/gpt4all",
+   "product_url": "https://github.com/nomic-ai/gpt4all"
+  },
+  {
+   "id": "anythingllm",
+   "brand": "AnythingLLM",
+   "model": "Document chat",
+   "category": "A",
+   "type": "github",
+   "repo": "Mintplex-Labs/anything-llm",
+   "product_url": "https://github.com/Mintplex-Labs/anything-llm"
+  },
+  {
+   "id": "librechat",
+   "brand": "LibreChat",
+   "model": "Chat interface",
+   "category": "A",
+   "type": "github",
+   "repo": "danny-avila/LibreChat",
+   "product_url": "https://github.com/danny-avila/LibreChat"
+  },
+  {
+   "id": "lobe-chat",
+   "brand": "LobeHub",
+   "model": "Lobe Chat",
+   "category": "A",
+   "type": "github",
+   "repo": "lobehub/lobe-chat",
+   "product_url": "https://github.com/lobehub/lobe-chat"
+  },
+  {
+   "id": "dify",
+   "brand": "Dify",
+   "model": "LLM app platform",
+   "category": "A",
+   "type": "github",
+   "repo": "langgenius/dify",
+   "product_url": "https://github.com/langgenius/dify"
+  },
+  {
+   "id": "flowise",
+   "brand": "Flowise",
+   "model": "LLM flow builder",
+   "category": "A",
+   "type": "github",
+   "repo": "FlowiseAI/Flowise",
+   "product_url": "https://github.com/FlowiseAI/Flowise"
+  },
+  {
+   "id": "langflow",
+   "brand": "Langflow",
+   "model": "Agent builder",
+   "category": "A",
+   "type": "github",
+   "repo": "langflow-ai/langflow",
+   "product_url": "https://github.com/langflow-ai/langflow"
+  },
+  {
+   "id": "whisper-cpp",
+   "brand": "ggml",
+   "model": "whisper.cpp",
+   "category": "A",
+   "type": "github",
+   "repo": "ggml-org/whisper.cpp",
+   "product_url": "https://github.com/ggml-org/whisper.cpp"
+  },
+  {
+   "id": "libretranslate",
+   "brand": "LibreTranslate",
+   "model": "Translation API",
+   "category": "A",
+   "type": "github",
+   "repo": "LibreTranslate/LibreTranslate",
+   "product_url": "https://github.com/LibreTranslate/LibreTranslate"
+  },
+  {
+   "id": "whoogle",
+   "brand": "Whoogle",
+   "model": "Private search proxy",
+   "category": "A",
+   "type": "github",
+   "repo": "benbusby/whoogle-search",
+   "product_url": "https://github.com/benbusby/whoogle-search"
+  },
+  {
+   "id": "emby-server",
+   "brand": "Emby",
+   "model": "Media server",
+   "category": "A",
+   "type": "github",
+   "repo": "MediaBrowser/Emby.Releases",
+   "product_url": "https://github.com/MediaBrowser/Emby.Releases"
+  },
+  {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "type": "github",
+   "repo": "Jackett/Jackett",
+   "product_url": "https://github.com/Jackett/Jackett"
+  },
+  {
+   "id": "nzbhydra2",
+   "brand": "NZBHydra2",
+   "model": "Usenet meta search",
+   "category": "A",
+   "type": "github",
+   "repo": "theotherp/nzbhydra2",
+   "product_url": "https://github.com/theotherp/nzbhydra2"
+  },
+  {
+   "id": "flaresolverr",
+   "brand": "FlareSolverr",
+   "model": "Cloudflare bypass proxy",
+   "category": "A",
+   "type": "github",
+   "repo": "FlareSolverr/FlareSolverr",
+   "product_url": "https://github.com/FlareSolverr/FlareSolverr"
+  },
+  {
+   "id": "autobrr",
+   "brand": "autobrr",
+   "model": "Download automation",
+   "category": "A",
+   "type": "github",
+   "repo": "autobrr/autobrr",
+   "product_url": "https://github.com/autobrr/autobrr"
+  },
+  {
+   "id": "recyclarr",
+   "brand": "Recyclarr",
+   "model": "Arr config sync",
+   "category": "A",
+   "type": "github",
+   "repo": "recyclarr/recyclarr",
+   "product_url": "https://github.com/recyclarr/recyclarr"
+  },
+  {
+   "id": "unpackerr",
+   "brand": "Unpackerr",
+   "model": "Archive extractor",
+   "category": "A",
+   "type": "github",
+   "repo": "Unpackerr/unpackerr",
+   "product_url": "https://github.com/Unpackerr/unpackerr"
+  },
+  {
+   "id": "ombi",
+   "brand": "Ombi",
+   "model": "Media requests",
+   "category": "A",
+   "type": "github",
+   "repo": "Ombi-app/Ombi",
+   "product_url": "https://github.com/Ombi-app/Ombi"
+  },
+  {
+   "id": "wizarr",
+   "brand": "Wizarr",
+   "model": "Media server invites",
+   "category": "A",
+   "type": "github",
+   "repo": "wizarrrr/wizarr",
+   "product_url": "https://github.com/wizarrrr/wizarr"
+  },
+  {
+   "id": "kometa",
+   "brand": "Kometa",
+   "model": "Plex metadata manager",
+   "category": "A",
+   "type": "github",
+   "repo": "Kometa-Team/Kometa",
+   "product_url": "https://github.com/Kometa-Team/Kometa"
+  },
+  {
+   "id": "tube-archivist",
+   "brand": "Tube Archivist",
+   "model": "YouTube archive",
+   "category": "A",
+   "type": "github",
+   "repo": "tubearchivist/tubearchivist",
+   "product_url": "https://github.com/tubearchivist/tubearchivist"
+  },
+  {
+   "id": "metube",
+   "brand": "MeTube",
+   "model": "yt-dlp web UI",
+   "category": "A",
+   "type": "github",
+   "repo": "alexta69/metube",
+   "product_url": "https://github.com/alexta69/metube"
+  },
+  {
+   "id": "yt-dlp",
+   "brand": "yt-dlp",
+   "model": "Media downloader",
+   "category": "A",
+   "type": "github",
+   "repo": "yt-dlp/yt-dlp",
+   "product_url": "https://github.com/yt-dlp/yt-dlp"
+  },
+  {
+   "id": "pinchflat",
+   "brand": "Pinchflat",
+   "model": "YouTube downloader",
+   "category": "A",
+   "type": "github",
+   "repo": "kieraneglin/pinchflat",
+   "product_url": "https://github.com/kieraneglin/pinchflat"
+  },
+  {
+   "id": "restreamer",
+   "brand": "datarhei",
+   "model": "Restreamer",
+   "category": "A",
+   "type": "github",
+   "repo": "datarhei/restreamer",
+   "product_url": "https://github.com/datarhei/restreamer"
+  },
+  {
+   "id": "mediamtx",
+   "brand": "MediaMTX",
+   "model": "Media server",
+   "category": "A",
+   "type": "github",
+   "repo": "bluenviron/mediamtx",
+   "product_url": "https://github.com/bluenviron/mediamtx"
+  },
+  {
+   "id": "srs",
+   "brand": "SRS",
+   "model": "Live streaming server",
+   "category": "A",
+   "type": "github",
+   "repo": "ossrs/srs",
+   "product_url": "https://github.com/ossrs/srs"
+  },
+  {
+   "id": "beets",
+   "brand": "beets",
+   "model": "Music library manager",
+   "category": "A",
+   "type": "github",
+   "repo": "beetbox/beets",
+   "product_url": "https://github.com/beetbox/beets"
+  },
+  {
+   "id": "picard",
+   "brand": "MusicBrainz",
+   "model": "Picard tagger",
+   "category": "A",
+   "type": "github",
+   "repo": "metabrainz/picard",
+   "product_url": "https://github.com/metabrainz/picard"
+  },
+  {
+   "id": "koel",
+   "brand": "Koel",
+   "model": "Music streaming",
+   "category": "A",
+   "type": "github",
+   "repo": "koel/koel",
+   "product_url": "https://github.com/koel/koel"
+  },
+  {
+   "id": "gonic",
+   "brand": "gonic",
+   "model": "Subsonic server",
+   "category": "A",
+   "type": "github",
+   "repo": "sentriz/gonic",
+   "product_url": "https://github.com/sentriz/gonic"
+  },
+  {
+   "id": "calibre",
+   "brand": "Calibre",
+   "model": "Ebook manager",
+   "category": "A",
+   "type": "github",
+   "repo": "kovidgoyal/calibre",
+   "product_url": "https://github.com/kovidgoyal/calibre"
+  },
+  {
+   "id": "stirling-pdf",
+   "brand": "Stirling PDF",
+   "model": "PDF toolkit",
+   "category": "A",
+   "type": "github",
+   "repo": "Stirling-Tools/Stirling-PDF",
+   "product_url": "https://github.com/Stirling-Tools/Stirling-PDF"
+  },
+  {
+   "id": "piwigo",
+   "brand": "Piwigo",
+   "model": "Photo gallery",
+   "category": "A",
+   "type": "github",
+   "repo": "Piwigo/Piwigo",
+   "product_url": "https://github.com/Piwigo/Piwigo"
+  },
+  {
+   "id": "librephotos",
+   "brand": "LibrePhotos",
+   "model": "Photo management",
+   "category": "A",
+   "type": "github",
+   "repo": "LibrePhotos/librephotos",
+   "product_url": "https://github.com/LibrePhotos/librephotos"
+  },
+  {
+   "id": "mattermost",
+   "brand": "Mattermost",
+   "model": "Team messaging",
+   "category": "A",
+   "type": "github",
+   "repo": "mattermost/mattermost",
+   "product_url": "https://github.com/mattermost/mattermost"
+  },
+  {
+   "id": "rocket-chat",
+   "brand": "Rocket.Chat",
+   "model": "Team chat",
+   "category": "A",
+   "type": "github",
+   "repo": "RocketChat/Rocket.Chat",
+   "product_url": "https://github.com/RocketChat/Rocket.Chat"
+  },
+  {
+   "id": "synapse",
+   "brand": "Element",
+   "model": "Synapse Matrix server",
+   "category": "A",
+   "type": "github",
+   "repo": "element-hq/synapse",
+   "product_url": "https://github.com/element-hq/synapse"
+  },
+  {
+   "id": "element-web",
+   "brand": "Element",
+   "model": "Element Web client",
+   "category": "A",
+   "type": "github",
+   "repo": "element-hq/element-web",
+   "product_url": "https://github.com/element-hq/element-web"
+  },
+  {
+   "id": "dendrite",
+   "brand": "Matrix",
+   "model": "Dendrite homeserver",
+   "category": "A",
+   "type": "github",
+   "repo": "matrix-org/dendrite",
+   "product_url": "https://github.com/matrix-org/dendrite"
+  },
+  {
+   "id": "jitsi-meet",
+   "brand": "Jitsi",
+   "model": "Video conferencing",
+   "category": "A",
+   "type": "github",
+   "repo": "jitsi/jitsi-meet",
+   "product_url": "https://github.com/jitsi/jitsi-meet"
+  },
+  {
+   "id": "zulip",
+   "brand": "Zulip",
+   "model": "Team chat",
+   "category": "A",
+   "type": "github",
+   "repo": "zulip/zulip",
+   "product_url": "https://github.com/zulip/zulip"
+  },
+  {
+   "id": "mumble",
+   "brand": "Mumble",
+   "model": "Voice chat",
+   "category": "A",
+   "type": "github",
+   "repo": "mumble-voip/mumble",
+   "product_url": "https://github.com/mumble-voip/mumble"
+  },
+  {
+   "id": "ejabberd",
+   "brand": "ProcessOne",
+   "model": "ejabberd XMPP server",
+   "category": "A",
+   "type": "github",
+   "repo": "processone/ejabberd",
+   "product_url": "https://github.com/processone/ejabberd"
+  },
+  {
+   "id": "mastodon",
+   "brand": "Mastodon",
+   "model": "Social network server",
+   "category": "A",
+   "type": "github",
+   "repo": "mastodon/mastodon",
+   "product_url": "https://github.com/mastodon/mastodon"
+  },
+  {
+   "id": "gotosocial",
+   "brand": "GoToSocial",
+   "model": "ActivityPub server",
+   "category": "A",
+   "type": "github",
+   "repo": "superseriousbusiness/gotosocial",
+   "product_url": "https://github.com/superseriousbusiness/gotosocial"
+  },
+  {
+   "id": "misskey",
+   "brand": "Misskey",
+   "model": "Social platform",
+   "category": "A",
+   "type": "github",
+   "repo": "misskey-dev/misskey",
+   "product_url": "https://github.com/misskey-dev/misskey"
+  },
+  {
+   "id": "lemmy",
+   "brand": "Lemmy",
+   "model": "Link aggregator",
+   "category": "A",
+   "type": "github",
+   "repo": "LemmyNet/lemmy",
+   "product_url": "https://github.com/LemmyNet/lemmy"
+  },
+  {
+   "id": "pixelfed",
+   "brand": "Pixelfed",
+   "model": "Photo sharing",
+   "category": "A",
+   "type": "github",
+   "repo": "pixelfed/pixelfed",
+   "product_url": "https://github.com/pixelfed/pixelfed"
+  },
+  {
+   "id": "peertube",
+   "brand": "PeerTube",
+   "model": "Video platform",
+   "category": "A",
+   "type": "github",
+   "repo": "Chocobozzz/PeerTube",
+   "product_url": "https://github.com/Chocobozzz/PeerTube"
+  },
+  {
+   "id": "ghost",
+   "brand": "Ghost",
+   "model": "Publishing platform",
+   "category": "A",
+   "type": "github",
+   "repo": "TryGhost/Ghost",
+   "product_url": "https://github.com/TryGhost/Ghost"
+  },
+  {
+   "id": "hugo",
+   "brand": "Hugo",
+   "model": "Static site generator",
+   "category": "A",
+   "type": "github",
+   "repo": "gohugoio/hugo",
+   "product_url": "https://github.com/gohugoio/hugo"
+  },
+  {
+   "id": "flarum",
+   "brand": "Flarum",
+   "model": "Forum software",
+   "category": "A",
+   "type": "github",
+   "repo": "flarum/flarum",
+   "product_url": "https://github.com/flarum/flarum"
+  },
+  {
+   "id": "listmonk",
+   "brand": "listmonk",
+   "model": "Newsletter manager",
+   "category": "A",
+   "type": "github",
+   "repo": "knadh/listmonk",
+   "product_url": "https://github.com/knadh/listmonk"
+  },
+  {
+   "id": "mailcow",
+   "brand": "mailcow",
+   "model": "Mail server suite",
+   "category": "A",
+   "type": "github",
+   "repo": "mailcow/mailcow-dockerized",
+   "product_url": "https://github.com/mailcow/mailcow-dockerized"
+  },
+  {
+   "id": "mailu",
+   "brand": "Mailu",
+   "model": "Mail server",
+   "category": "A",
+   "type": "github",
+   "repo": "Mailu/Mailu",
+   "product_url": "https://github.com/Mailu/Mailu"
+  },
+  {
+   "id": "roundcube",
+   "brand": "Roundcube",
+   "model": "Webmail",
+   "category": "A",
+   "type": "github",
+   "repo": "roundcube/roundcubemail",
+   "product_url": "https://github.com/roundcube/roundcubemail"
+  },
+  {
+   "id": "postal",
+   "brand": "Postal",
+   "model": "Mail delivery platform",
+   "category": "A",
+   "type": "github",
+   "repo": "postalserver/postal",
+   "product_url": "https://github.com/postalserver/postal"
+  },
+  {
+   "id": "chatwoot",
+   "brand": "Chatwoot",
+   "model": "Customer messaging",
+   "category": "A",
+   "type": "github",
+   "repo": "chatwoot/chatwoot",
+   "product_url": "https://github.com/chatwoot/chatwoot"
+  },
+  {
+   "id": "freescout",
+   "brand": "FreeScout",
+   "model": "Help desk",
+   "category": "A",
+   "type": "github",
+   "repo": "freescout-help-desk/freescout",
+   "product_url": "https://github.com/freescout-help-desk/freescout"
+  },
+  {
+   "id": "zammad",
+   "brand": "Zammad",
+   "model": "Help desk",
+   "category": "A",
+   "type": "github",
+   "repo": "zammad/zammad",
+   "product_url": "https://github.com/zammad/zammad"
+  },
+  {
+   "id": "osticket",
+   "brand": "osTicket",
+   "model": "Support tickets",
+   "category": "A",
+   "type": "github",
+   "repo": "osTicket/osTicket",
+   "product_url": "https://github.com/osTicket/osTicket"
+  },
+  {
+   "id": "glpi",
+   "brand": "GLPI",
+   "model": "IT asset management",
+   "category": "A",
+   "type": "github",
+   "repo": "glpi-project/glpi",
+   "product_url": "https://github.com/glpi-project/glpi"
+  },
+  {
+   "id": "snipe-it",
+   "brand": "Snipe-IT",
+   "model": "Asset management",
+   "category": "A",
+   "type": "github",
+   "repo": "snipe/snipe-it",
+   "product_url": "https://github.com/snipe/snipe-it"
+  },
+  {
+   "id": "phpipam",
+   "brand": "phpIPAM",
+   "model": "IP address management",
+   "category": "A",
+   "type": "github",
+   "repo": "phpipam/phpipam",
+   "product_url": "https://github.com/phpipam/phpipam"
+  },
+  {
+   "id": "erpnext",
+   "brand": "Frappe",
+   "model": "ERPNext",
+   "category": "A",
+   "type": "github",
+   "repo": "frappe/erpnext",
+   "product_url": "https://github.com/frappe/erpnext"
+  },
+  {
+   "id": "invoice-ninja",
+   "brand": "Invoice Ninja",
+   "model": "Invoicing",
+   "category": "A",
+   "type": "github",
+   "repo": "invoiceninja/invoiceninja",
+   "product_url": "https://github.com/invoiceninja/invoiceninja"
+  },
+  {
+   "id": "akaunting",
+   "brand": "Akaunting",
+   "model": "Accounting",
+   "category": "A",
+   "type": "github",
+   "repo": "akaunting/akaunting",
+   "product_url": "https://github.com/akaunting/akaunting"
+  },
+  {
+   "id": "kimai",
+   "brand": "Kimai",
+   "model": "Time tracking",
+   "category": "A",
+   "type": "github",
+   "repo": "kimai/kimai",
+   "product_url": "https://github.com/kimai/kimai"
+  },
+  {
+   "id": "ghostfolio",
+   "brand": "Ghostfolio",
+   "model": "Wealth tracker",
+   "category": "A",
+   "type": "github",
+   "repo": "ghostfolio/ghostfolio",
+   "product_url": "https://github.com/ghostfolio/ghostfolio"
+  },
+  {
+   "id": "monica",
+   "brand": "Monica",
+   "model": "Personal CRM",
+   "category": "A",
+   "type": "github",
+   "repo": "monicahq/monica",
+   "product_url": "https://github.com/monicahq/monica"
+  },
+  {
+   "id": "homebox",
+   "brand": "Homebox",
+   "model": "Home inventory",
+   "category": "A",
+   "type": "github",
+   "repo": "sysadminsmedia/homebox",
+   "product_url": "https://github.com/sysadminsmedia/homebox"
+  },
+  {
+   "id": "wger",
+   "brand": "wger",
+   "model": "Workout manager",
+   "category": "A",
+   "type": "github",
+   "repo": "wger-project/wger",
+   "product_url": "https://github.com/wger-project/wger"
+  },
+  {
+   "id": "wallabag",
+   "brand": "wallabag",
+   "model": "Read-it-later",
+   "category": "A",
+   "type": "github",
+   "repo": "wallabag/wallabag",
+   "product_url": "https://github.com/wallabag/wallabag"
+  },
+  {
+   "id": "shiori",
+   "brand": "Shiori",
+   "model": "Bookmark manager",
+   "category": "A",
+   "type": "github",
+   "repo": "go-shiori/shiori",
+   "product_url": "https://github.com/go-shiori/shiori"
+  },
+  {
+   "id": "karakeep",
+   "brand": "Karakeep",
+   "model": "Bookmark everything",
+   "category": "A",
+   "type": "github",
+   "repo": "karakeep-app/karakeep",
+   "product_url": "https://github.com/karakeep-app/karakeep"
+  },
+  {
+   "id": "shlink",
+   "brand": "Shlink",
+   "model": "URL shortener",
+   "category": "A",
+   "type": "github",
+   "repo": "shlinkio/shlink",
+   "product_url": "https://github.com/shlinkio/shlink"
+  },
+  {
+   "id": "yourls",
+   "brand": "YOURLS",
+   "model": "URL shortener",
+   "category": "A",
+   "type": "github",
+   "repo": "YOURLS/YOURLS",
+   "product_url": "https://github.com/YOURLS/YOURLS"
+  },
+  {
+   "id": "kutt",
+   "brand": "Kutt",
+   "model": "URL shortener",
+   "category": "A",
+   "type": "github",
+   "repo": "thedevs-network/kutt",
+   "product_url": "https://github.com/thedevs-network/kutt"
+  },
+  {
+   "id": "docmost",
+   "brand": "Docmost",
+   "model": "Wiki and docs",
+   "category": "A",
+   "type": "github",
+   "repo": "docmost/docmost",
+   "product_url": "https://github.com/docmost/docmost"
+  },
+  {
+   "id": "outline",
+   "brand": "Outline",
+   "model": "Team knowledge base",
+   "category": "A",
+   "type": "github",
+   "repo": "outline/outline",
+   "product_url": "https://github.com/outline/outline"
+  },
+  {
+   "id": "wiki-js",
+   "brand": "Wiki.js",
+   "model": "Wiki",
+   "category": "A",
+   "type": "github",
+   "repo": "requarks/wiki",
+   "product_url": "https://github.com/requarks/wiki"
+  },
+  {
+   "id": "joplin",
+   "brand": "Joplin",
+   "model": "Note taking",
+   "category": "A",
+   "type": "github",
+   "repo": "laurent22/joplin",
+   "product_url": "https://github.com/laurent22/joplin"
+  },
+  {
+   "id": "memos",
+   "brand": "Memos",
+   "model": "Note taking",
+   "category": "A",
+   "type": "github",
+   "repo": "usememos/memos",
+   "product_url": "https://github.com/usememos/memos"
+  },
+  {
+   "id": "siyuan",
+   "brand": "SiYuan",
+   "model": "Knowledge base",
+   "category": "A",
+   "type": "github",
+   "repo": "siyuan-note/siyuan",
+   "product_url": "https://github.com/siyuan-note/siyuan"
+  },
+  {
+   "id": "logseq",
+   "brand": "Logseq",
+   "model": "Knowledge graph",
+   "category": "A",
+   "type": "github",
+   "repo": "logseq/logseq",
+   "product_url": "https://github.com/logseq/logseq"
+  },
+  {
+   "id": "affine",
+   "brand": "AFFiNE",
+   "model": "Knowledge base",
+   "category": "A",
+   "type": "github",
+   "repo": "toeverything/AFFiNE",
+   "product_url": "https://github.com/toeverything/AFFiNE"
+  },
+  {
+   "id": "appflowy",
+   "brand": "AppFlowy",
+   "model": "Workspace",
+   "category": "A",
+   "type": "github",
+   "repo": "AppFlowy-IO/AppFlowy",
+   "product_url": "https://github.com/AppFlowy-IO/AppFlowy"
+  },
+  {
+   "id": "vikunja",
+   "brand": "Vikunja",
+   "model": "Task manager",
+   "category": "A",
+   "type": "github",
+   "repo": "go-vikunja/vikunja",
+   "product_url": "https://github.com/go-vikunja/vikunja"
+  },
+  {
+   "id": "planka",
+   "brand": "Planka",
+   "model": "Kanban board",
+   "category": "A",
+   "type": "github",
+   "repo": "plankanban/planka",
+   "product_url": "https://github.com/plankanban/planka"
+  },
+  {
+   "id": "focalboard",
+   "brand": "Mattermost",
+   "model": "Focalboard",
+   "category": "A",
+   "type": "github",
+   "repo": "mattermost-community/focalboard",
+   "product_url": "https://github.com/mattermost-community/focalboard"
+  },
+  {
+   "id": "homarr",
+   "brand": "Homarr",
+   "model": "Dashboard",
+   "category": "A",
+   "type": "github",
+   "repo": "homarr-labs/homarr",
+   "product_url": "https://github.com/homarr-labs/homarr"
+  },
+  {
+   "id": "dashy",
+   "brand": "Dashy",
+   "model": "Dashboard",
+   "category": "A",
+   "type": "github",
+   "repo": "Lissy93/dashy",
+   "product_url": "https://github.com/Lissy93/dashy"
+  },
+  {
+   "id": "nocodb",
+   "brand": "NocoDB",
+   "model": "Spreadsheet database",
+   "category": "A",
+   "type": "github",
+   "repo": "nocodb/nocodb",
+   "product_url": "https://github.com/nocodb/nocodb"
+  },
+  {
+   "id": "directus",
+   "brand": "Directus",
+   "model": "Headless CMS",
+   "category": "A",
+   "type": "github",
+   "repo": "directus/directus",
+   "product_url": "https://github.com/directus/directus"
+  },
+  {
+   "id": "strapi",
+   "brand": "Strapi",
+   "model": "Headless CMS",
+   "category": "A",
+   "type": "github",
+   "repo": "strapi/strapi",
+   "product_url": "https://github.com/strapi/strapi"
+  },
+  {
+   "id": "budibase",
+   "brand": "Budibase",
+   "model": "Low-code platform",
+   "category": "A",
+   "type": "github",
+   "repo": "Budibase/budibase",
+   "product_url": "https://github.com/Budibase/budibase"
+  },
+  {
+   "id": "appsmith",
+   "brand": "Appsmith",
+   "model": "Internal tools builder",
+   "category": "A",
+   "type": "github",
+   "repo": "appsmithorg/appsmith",
+   "product_url": "https://github.com/appsmithorg/appsmith"
+  },
+  {
+   "id": "tooljet",
+   "brand": "ToolJet",
+   "model": "Low-code platform",
+   "category": "A",
+   "type": "github",
+   "repo": "ToolJet/ToolJet",
+   "product_url": "https://github.com/ToolJet/ToolJet"
+  },
+  {
+   "id": "typebot",
+   "brand": "Typebot",
+   "model": "Chatbot builder",
+   "category": "A",
+   "type": "github",
+   "repo": "baptisteArno/typebot.io",
+   "product_url": "https://github.com/baptisteArno/typebot.io"
+  },
+  {
+   "id": "formbricks",
+   "brand": "Formbricks",
+   "model": "Surveys",
+   "category": "A",
+   "type": "github",
+   "repo": "formbricks/formbricks",
+   "product_url": "https://github.com/formbricks/formbricks"
+  },
+  {
+   "id": "cal-com",
+   "brand": "Cal.com",
+   "model": "Scheduling",
+   "category": "A",
+   "type": "github",
+   "repo": "calcom/cal.com",
+   "product_url": "https://github.com/calcom/cal.com"
+  },
+  {
+   "id": "rallly",
+   "brand": "Rallly",
+   "model": "Meeting polls",
+   "category": "A",
+   "type": "github",
+   "repo": "lukevella/rallly",
+   "product_url": "https://github.com/lukevella/rallly"
+  },
+  {
+   "id": "limesurvey",
+   "brand": "LimeSurvey",
+   "model": "Survey platform",
+   "category": "A",
+   "type": "github",
+   "repo": "LimeSurvey/LimeSurvey",
+   "product_url": "https://github.com/LimeSurvey/LimeSurvey"
+  },
+  {
+   "id": "penpot",
+   "brand": "Penpot",
+   "model": "Design tool",
+   "category": "A",
+   "type": "github",
+   "repo": "penpot/penpot",
+   "product_url": "https://github.com/penpot/penpot"
+  },
+  {
+   "id": "excalidraw",
+   "brand": "Excalidraw",
+   "model": "Whiteboard",
+   "category": "A",
+   "type": "github",
+   "repo": "excalidraw/excalidraw",
+   "product_url": "https://github.com/excalidraw/excalidraw"
+  },
+  {
+   "id": "drawio",
+   "brand": "draw.io",
+   "model": "Diagrams",
+   "category": "A",
+   "type": "github",
+   "repo": "jgraph/drawio",
+   "product_url": "https://github.com/jgraph/drawio"
+  },
+  {
+   "id": "onlyoffice-docs",
+   "brand": "ONLYOFFICE",
+   "model": "Document Server",
+   "category": "A",
+   "type": "github",
+   "repo": "ONLYOFFICE/DocumentServer",
+   "product_url": "https://github.com/ONLYOFFICE/DocumentServer"
+  },
+  {
+   "id": "cryptpad",
+   "brand": "CryptPad",
+   "model": "Encrypted collaboration",
+   "category": "A",
+   "type": "github",
+   "repo": "cryptpad/cryptpad",
+   "product_url": "https://github.com/cryptpad/cryptpad"
+  },
+  {
+   "id": "etherpad",
+   "brand": "Etherpad",
+   "model": "Collaborative editor",
+   "category": "A",
+   "type": "github",
+   "repo": "ether/etherpad-lite",
+   "product_url": "https://github.com/ether/etherpad-lite"
+  },
+  {
+   "id": "hedgedoc",
+   "brand": "HedgeDoc",
+   "model": "Markdown collaboration",
+   "category": "A",
+   "type": "github",
+   "repo": "hedgedoc/hedgedoc",
+   "product_url": "https://github.com/hedgedoc/hedgedoc"
+  },
+  {
+   "id": "pairdrop",
+   "brand": "PairDrop",
+   "model": "Local file sharing",
+   "category": "A",
+   "type": "github",
+   "repo": "schlagmichdoch/PairDrop",
+   "product_url": "https://github.com/schlagmichdoch/PairDrop"
+  },
+  {
+   "id": "pingvin-share",
+   "brand": "Pingvin Share",
+   "model": "File sharing",
+   "category": "A",
+   "type": "github",
+   "repo": "stonith404/pingvin-share",
+   "product_url": "https://github.com/stonith404/pingvin-share"
+  },
+  {
+   "id": "metabase",
+   "brand": "Metabase",
+   "model": "Business intelligence",
+   "category": "A",
+   "type": "github",
+   "repo": "metabase/metabase",
+   "product_url": "https://github.com/metabase/metabase"
+  },
+  {
+   "id": "redash",
+   "brand": "Redash",
+   "model": "Data visualization",
+   "category": "A",
+   "type": "github",
+   "repo": "getredash/redash",
+   "product_url": "https://github.com/getredash/redash"
+  },
+  {
+   "id": "pocketbase",
+   "brand": "PocketBase",
+   "model": "Backend in one file",
+   "category": "A",
+   "type": "github",
+   "repo": "pocketbase/pocketbase",
+   "product_url": "https://github.com/pocketbase/pocketbase"
+  },
+  {
+   "id": "appwrite",
+   "brand": "Appwrite",
+   "model": "Backend platform",
+   "category": "A",
+   "type": "github",
+   "repo": "appwrite/appwrite",
+   "product_url": "https://github.com/appwrite/appwrite"
+  },
+  {
+   "id": "cachet",
+   "brand": "Cachet",
+   "model": "Status page",
+   "category": "A",
+   "type": "github",
+   "repo": "cachethq/cachet",
+   "product_url": "https://github.com/cachethq/cachet"
+  },
+  {
+   "id": "dawarich",
+   "brand": "Dawarich",
+   "model": "Location history",
+   "category": "A",
+   "type": "github",
+   "repo": "Freika/dawarich",
+   "product_url": "https://github.com/Freika/dawarich"
+  },
+  {
+   "id": "owntracks-recorder",
+   "brand": "OwnTracks",
+   "model": "Location recorder",
+   "category": "A",
+   "type": "github",
+   "repo": "owntracks/recorder",
+   "product_url": "https://github.com/owntracks/recorder"
+  },
+  {
+   "id": "traccar",
+   "brand": "Traccar",
+   "model": "GPS tracking server",
+   "category": "A",
+   "type": "github",
+   "repo": "traccar/traccar",
+   "product_url": "https://github.com/traccar/traccar"
+  },
+  {
+   "id": "pydio-cells",
+   "brand": "Pydio",
+   "model": "Cells file platform",
+   "category": "A",
+   "type": "github",
+   "repo": "pydio/cells",
+   "product_url": "https://github.com/pydio/cells"
+  },
+  {
+   "id": "playnite",
+   "brand": "Playnite",
+   "model": "Game library manager",
+   "category": "A",
+   "type": "github",
+   "repo": "JosefNemec/Playnite",
+   "product_url": "https://github.com/JosefNemec/Playnite"
+  },
+  {
+   "id": "zabbix",
+   "brand": "Zabbix",
+   "model": "Monitoring platform",
+   "category": "A",
+   "type": "feed",
+   "url": "https://github.com/zabbix/zabbix/tags.atom",
+   "product_url": "https://github.com/zabbix/zabbix"
+  },
+  {
+   "id": "checkmk",
+   "brand": "Checkmk",
+   "model": "IT monitoring",
+   "category": "A",
+   "type": "feed",
+   "url": "https://github.com/Checkmk/checkmk/tags.atom",
+   "product_url": "https://github.com/Checkmk/checkmk"
+  },
+  {
+   "id": "mariadb",
+   "brand": "MariaDB",
+   "model": "Database server",
+   "category": "A",
+   "type": "feed",
+   "url": "https://github.com/MariaDB/server/tags.atom",
+   "product_url": "https://github.com/MariaDB/server"
+  },
+  {
+   "id": "mysql-server",
+   "brand": "MySQL",
+   "model": "Database server",
+   "category": "A",
+   "type": "feed",
+   "url": "https://github.com/mysql/mysql-server/tags.atom",
+   "product_url": "https://github.com/mysql/mysql-server"
+  },
+  {
+   "id": "mongodb",
+   "brand": "MongoDB",
+   "model": "Document database",
+   "category": "A",
+   "type": "feed",
+   "url": "https://github.com/mongodb/mongo/tags.atom",
+   "product_url": "https://github.com/mongodb/mongo"
+  },
+  {
+   "id": "wordpress",
+   "brand": "WordPress",
+   "model": "CMS",
+   "category": "A",
+   "type": "feed",
+   "url": "https://github.com/WordPress/WordPress/tags.atom",
+   "product_url": "https://github.com/WordPress/WordPress"
+  },
+  {
+   "id": "discourse",
+   "brand": "Discourse",
+   "model": "Forum platform",
+   "category": "A",
+   "type": "feed",
+   "url": "https://github.com/discourse/discourse/tags.atom",
+   "product_url": "https://github.com/discourse/discourse"
+  },
+  {
+   "id": "jenkins",
+   "brand": "Jenkins",
+   "model": "Automation server",
+   "category": "A",
+   "type": "feed",
+   "url": "https://github.com/jenkinsci/jenkins/tags.atom",
+   "product_url": "https://github.com/jenkinsci/jenkins"
+  },
+  {
+   "id": "apache-kafka",
+   "brand": "Apache",
+   "model": "Kafka",
+   "category": "A",
+   "type": "feed",
+   "url": "https://github.com/apache/kafka/tags.atom",
+   "product_url": "https://github.com/apache/kafka"
+  },
+  {
+   "id": "apache-superset",
+   "brand": "Apache",
+   "model": "Superset",
+   "category": "A",
+   "type": "feed",
+   "url": "https://github.com/apache/superset/tags.atom",
+   "product_url": "https://github.com/apache/superset"
+  },
+  {
+   "id": "guacamole",
+   "brand": "Apache",
+   "model": "Guacamole server",
+   "category": "A",
+   "type": "feed",
+   "url": "https://github.com/apache/guacamole-server/tags.atom",
+   "product_url": "https://github.com/apache/guacamole-server"
+  },
+  {
+   "id": "couchdb",
+   "brand": "Apache",
+   "model": "CouchDB",
+   "category": "A",
+   "type": "feed",
+   "url": "https://github.com/apache/couchdb/tags.atom",
+   "product_url": "https://github.com/apache/couchdb"
+  },
+  {
+   "id": "neo4j",
+   "brand": "Neo4j",
+   "model": "Graph database",
+   "category": "A",
+   "type": "feed",
+   "url": "https://github.com/neo4j/neo4j/tags.atom",
+   "product_url": "https://github.com/neo4j/neo4j"
+  },
+  {
+   "id": "rockstor",
+   "brand": "Rockstor",
+   "model": "NAS operating system",
+   "category": "N",
+   "type": "feed",
+   "url": "https://github.com/rockstor/rockstor-core/tags.atom",
+   "product_url": "https://github.com/rockstor/rockstor-core"
+  },
+  {
+   "id": "kicad",
+   "brand": "KiCad",
+   "model": "EDA suite",
+   "category": "M",
+   "type": "feed",
+   "url": "https://github.com/KiCad/kicad-source-mirror/tags.atom",
+   "product_url": "https://github.com/KiCad/kicad-source-mirror"
+  },
+  {
+   "id": "blender",
+   "brand": "Blender",
+   "model": "3D creation suite",
+   "category": "M",
+   "type": "feed",
+   "url": "https://github.com/blender/blender/tags.atom",
+   "product_url": "https://github.com/blender/blender"
+  },
+  {
+   "id": "dolphin-emu",
+   "brand": "Dolphin",
+   "model": "GameCube and Wii emulator",
+   "category": "C",
+   "type": "feed",
+   "url": "https://github.com/dolphin-emu/dolphin/tags.atom",
+   "product_url": "https://github.com/dolphin-emu/dolphin"
+  },
+  {
+   "id": "netgear-nighthawk-rs300",
+   "brand": "Netgear",
+   "model": "Nighthawk RS300",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "netgear-nighthawk-raxe500",
+   "brand": "Netgear",
+   "model": "Nighthawk RAXE500",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "netgear-orbi-rbk763",
+   "brand": "Netgear",
+   "model": "Orbi RBK763",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "netgear-cm2000",
+   "brand": "Netgear",
+   "model": "Nighthawk CM2000 cable modem",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "netgear-cm3000",
+   "brand": "Netgear",
+   "model": "Nighthawk CM3000 cable modem",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "netgear-nighthawk-m7-pro",
+   "brand": "Netgear",
+   "model": "Nighthawk M7 Pro mobile hotspot",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "arris-surfboard-s34",
+   "brand": "Arris",
+   "model": "Surfboard S34 cable modem",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "arris-surfboard-g54",
+   "brand": "Arris",
+   "model": "Surfboard G54 modem router",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "motorola-mb8611",
+   "brand": "Motorola",
+   "model": "MB8611 cable modem",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "tp-link-archer-be550",
+   "brand": "TP-Link",
+   "model": "Archer BE550",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "tp-link-archer-ax55",
+   "brand": "TP-Link",
+   "model": "Archer AX55",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "tp-link-deco-x55",
+   "brand": "TP-Link",
+   "model": "Deco X55",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "tp-link-deco-be63",
+   "brand": "TP-Link",
+   "model": "Deco BE63",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "tp-link-omada-eap670",
+   "brand": "TP-Link",
+   "model": "Omada EAP670 access point",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "tp-link-re715x",
+   "brand": "TP-Link",
+   "model": "RE715X range extender",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "asus-rt-be96u",
+   "brand": "ASUS",
+   "model": "RT-BE96U",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "asus-rt-ax58u",
+   "brand": "ASUS",
+   "model": "RT-AX58U",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "asus-zenwifi-bq16-pro",
+   "brand": "ASUS",
+   "model": "ZenWiFi BQ16 Pro",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "asus-rog-rapture-gt-be98-pro",
+   "brand": "ASUS",
+   "model": "ROG Rapture GT-BE98 Pro",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "linksys-velop-pro-7",
+   "brand": "Linksys",
+   "model": "Velop Pro 7 (MBE7000)",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "linksys-velop-pro-6e",
+   "brand": "Linksys",
+   "model": "Velop Pro 6E",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "ubiquiti-unifi-u7-pro",
+   "brand": "Ubiquiti",
+   "model": "UniFi U7 Pro access point",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "ubiquiti-cloud-gateway-ultra",
+   "brand": "Ubiquiti",
+   "model": "UniFi Cloud Gateway Ultra",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "ubiquiti-dream-router-7",
+   "brand": "Ubiquiti",
+   "model": "UniFi Dream Router 7",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "ubiquiti-switch-flex-2-5g",
+   "brand": "Ubiquiti",
+   "model": "UniFi Switch Flex 2.5G",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "eero-7",
+   "brand": "Amazon",
+   "model": "eero 7",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "eero-pro-7",
+   "brand": "Amazon",
+   "model": "eero Pro 7",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "google-nest-wifi-2",
+   "brand": "Google",
+   "model": "Nest Wifi (2nd gen)",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "synology-wrx560",
+   "brand": "Synology",
+   "model": "WRX560",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "gl-inet-slate-7",
+   "brand": "GL.iNet",
+   "model": "Slate 7 (GL-BE3600)",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "gl-inet-brume-2",
+   "brand": "GL.iNet",
+   "model": "Brume 2 (GL-MT2500)",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "firewalla-gold-pro",
+   "brand": "Firewalla",
+   "model": "Gold Pro",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "zyxel-nwa50ax-pro",
+   "brand": "Zyxel",
+   "model": "NWA50AX Pro",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "d-link-aquila-pro-m30",
+   "brand": "D-Link",
+   "model": "Aquila Pro AI M30",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "peplink-balance-20x",
+   "brand": "Peplink",
+   "model": "Balance 20X",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "teltonika-rutx50",
+   "brand": "Teltonika",
+   "model": "RUTX50 cellular router",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "netgate-2100",
+   "brand": "Netgate",
+   "model": "2100 (pfSense Plus)",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "protectli-vault-fw4b",
+   "brand": "Protectli",
+   "model": "Vault FW4B",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "cisco-meraki-go-gr12",
+   "brand": "Cisco",
+   "model": "Meraki Go GR12",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "inseego-mifi-x-pro",
+   "brand": "Inseego",
+   "model": "MiFi X PRO 5G",
+   "category": "R",
+   "type": "manual"
+  },
+  {
+   "id": "synology-ds1825-plus",
+   "brand": "Synology",
+   "model": "DiskStation DS1825+",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "synology-ds925-plus",
+   "brand": "Synology",
+   "model": "DiskStation DS925+",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "synology-ds725-plus",
+   "brand": "Synology",
+   "model": "DiskStation DS725+",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "synology-ds423-plus",
+   "brand": "Synology",
+   "model": "DiskStation DS423+",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "synology-beestation-plus",
+   "brand": "Synology",
+   "model": "BeeStation Plus",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "qnap-ts-233",
+   "brand": "QNAP",
+   "model": "TS-233",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "qnap-ts-433",
+   "brand": "QNAP",
+   "model": "TS-433",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "qnap-tbs-h574tx",
+   "brand": "QNAP",
+   "model": "TBS-h574TX",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "qnap-ts-1655",
+   "brand": "QNAP",
+   "model": "TS-1655",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "asustor-flashstor-12-pro-gen2",
+   "brand": "Asustor",
+   "model": "Flashstor 12 Pro Gen2 (FS6812X)",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "asustor-lockerstor-2-gen2",
+   "brand": "Asustor",
+   "model": "Lockerstor 2 Gen2 (AS6702T)",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "terramaster-f8-ssd-plus",
+   "brand": "TerraMaster",
+   "model": "F8 SSD Plus",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "terramaster-f4-212",
+   "brand": "TerraMaster",
+   "model": "F4-212",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "ugreen-nasync-dxp6800-pro",
+   "brand": "UGREEN",
+   "model": "NASync DXP6800 Pro",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "ugreen-nasync-dxp2800",
+   "brand": "UGREEN",
+   "model": "NASync DXP2800",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "wd-my-cloud-home-duo",
+   "brand": "Western Digital",
+   "model": "My Cloud Home Duo",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "minisforum-n5-pro",
+   "brand": "Minisforum",
+   "model": "N5 Pro NAS",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "zimacube-pro",
+   "brand": "IceWhale",
+   "model": "ZimaCube Pro",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "aoostar-wtr-pro",
+   "brand": "AOOSTAR",
+   "model": "WTR Pro",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "buffalo-terastation-ts3420dn",
+   "brand": "Buffalo",
+   "model": "TeraStation TS3420DN",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "lacie-2big-dock",
+   "brand": "LaCie",
+   "model": "2big Dock",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "netgear-readynas-428",
+   "brand": "Netgear",
+   "model": "ReadyNAS 428",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "hexos",
+   "brand": "Eshtek",
+   "model": "HexOS",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "samsung-990-pro",
+   "brand": "Samsung",
+   "model": "990 PRO SSD",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "wd-black-sn850x",
+   "brand": "Western Digital",
+   "model": "WD_BLACK SN850X SSD",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "crucial-t705",
+   "brand": "Crucial",
+   "model": "T705 SSD",
+   "category": "N",
+   "type": "manual"
+  },
+  {
+   "id": "amazon-echo-show-8-3",
+   "brand": "Amazon",
+   "model": "Echo Show 8 (3rd gen)",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "amazon-echo-hub",
+   "brand": "Amazon",
+   "model": "Echo Hub",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "amazon-echo-pop",
+   "brand": "Amazon",
+   "model": "Echo Pop",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "amazon-echo-spot-2024",
+   "brand": "Amazon",
+   "model": "Echo Spot (2024)",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "google-nest-audio",
+   "brand": "Google",
+   "model": "Nest Audio",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "google-nest-hub-max",
+   "brand": "Google",
+   "model": "Nest Hub Max",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "google-nest-mini",
+   "brand": "Google",
+   "model": "Nest Mini",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "google-nest-thermostat-4",
+   "brand": "Google",
+   "model": "Nest Learning Thermostat (4th gen)",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "google-nest-cam-battery",
+   "brand": "Google",
+   "model": "Nest Cam (battery)",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "google-nest-doorbell-wired-2",
+   "brand": "Google",
+   "model": "Nest Doorbell (wired, 2nd gen)",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "apple-homepod-mini",
+   "brand": "Apple",
+   "model": "HomePod mini",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "ring-floodlight-cam-wired-pro",
+   "brand": "Amazon",
+   "model": "Ring Floodlight Cam Wired Pro",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "ring-indoor-cam-2",
+   "brand": "Amazon",
+   "model": "Ring Indoor Cam (2nd gen)",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "ring-battery-doorbell-2024",
+   "brand": "Amazon",
+   "model": "Ring Battery Doorbell (2024)",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "ring-alarm-pro",
+   "brand": "Amazon",
+   "model": "Ring Alarm Pro",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "eufy-s350-indoor-cam",
+   "brand": "Anker",
+   "model": "eufy Indoor Cam S350",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "eufy-e340-doorbell",
+   "brand": "Anker",
+   "model": "eufy Video Doorbell E340",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "eufy-omni-s1-pro",
+   "brand": "Anker",
+   "model": "eufy Omni S1 Pro robot vacuum",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "wyze-cam-pan-v3",
+   "brand": "Wyze",
+   "model": "Cam Pan v3",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "wyze-video-doorbell-v2",
+   "brand": "Wyze",
+   "model": "Video Doorbell v2",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "wyze-cam-og",
+   "brand": "Wyze",
+   "model": "Cam OG",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "reolink-argus-pt-ultra",
+   "brand": "Reolink",
+   "model": "Argus PT Ultra",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "reolink-home-hub",
+   "brand": "Reolink",
+   "model": "Home Hub",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "reolink-altas-pt-ultra",
+   "brand": "Reolink",
+   "model": "Altas PT Ultra",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "aqara-camera-hub-g3",
+   "brand": "Aqara",
+   "model": "Camera Hub G3",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "aqara-smart-lock-u300",
+   "brand": "Aqara",
+   "model": "Smart Lock U300",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "aqara-hub-m2",
+   "brand": "Aqara",
+   "model": "Hub M2",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "aqara-doorbell-g4",
+   "brand": "Aqara",
+   "model": "Video Doorbell G4",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "aqara-fp2",
+   "brand": "Aqara",
+   "model": "Presence Sensor FP2",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "philips-hue-bridge-pro",
+   "brand": "Philips Hue",
+   "model": "Bridge Pro",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "philips-hue-secure-camera",
+   "brand": "Philips Hue",
+   "model": "Secure Camera",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "philips-hue-sync-box-8k",
+   "brand": "Philips Hue",
+   "model": "Play HDMI Sync Box 8K",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "nanoleaf-lines",
+   "brand": "Nanoleaf",
+   "model": "Lines",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "govee-envisual-t2",
+   "brand": "Govee",
+   "model": "Envisual TV Backlight T2",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "ecobee-smart-thermostat-enhanced",
+   "brand": "ecobee",
+   "model": "Smart Thermostat Enhanced",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "tado-smart-thermostat-x",
+   "brand": "tado°",
+   "model": "Smart Thermostat X",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "netatmo-smart-thermostat",
+   "brand": "Netatmo",
+   "model": "Smart Thermostat",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "sonos-beam-2",
+   "brand": "Sonos",
+   "model": "Beam (Gen 2)",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "sonos-roam-2",
+   "brand": "Sonos",
+   "model": "Roam 2",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "sonos-ace",
+   "brand": "Sonos",
+   "model": "Ace headphones",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "sonos-move-2",
+   "brand": "Sonos",
+   "model": "Move 2",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "sonos-era-100",
+   "brand": "Sonos",
+   "model": "Era 100",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "bose-smart-soundbar",
+   "brand": "Bose",
+   "model": "Smart Soundbar",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "yale-approach-lock",
+   "brand": "Yale",
+   "model": "Approach Lock",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "schlage-sense-pro",
+   "brand": "Schlage",
+   "model": "Sense Pro",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "level-bolt",
+   "brand": "Level",
+   "model": "Bolt",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "kwikset-halo-select",
+   "brand": "Kwikset",
+   "model": "Halo Select",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "eve-energy",
+   "brand": "Eve",
+   "model": "Energy smart plug",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "meross-smart-plug-mss315",
+   "brand": "Meross",
+   "model": "Smart Plug MSS315",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "tp-link-kasa-kp125m",
+   "brand": "TP-Link",
+   "model": "Kasa Smart Plug KP125M",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "tp-link-tapo-c120",
+   "brand": "TP-Link",
+   "model": "Tapo C120",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "tp-link-tapo-c520ws",
+   "brand": "TP-Link",
+   "model": "Tapo C520WS",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "ecovacs-deebot-t30s-omni",
+   "brand": "Ecovacs",
+   "model": "Deebot T30S Omni",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "roborock-qrevo-curv",
+   "brand": "Roborock",
+   "model": "Qrevo Curv",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "dreame-l40-ultra",
+   "brand": "Dreame",
+   "model": "L40 Ultra",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "irobot-roomba-j9-plus",
+   "brand": "iRobot",
+   "model": "Roomba j9+",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "switchbot-lock-pro",
+   "brand": "SwitchBot",
+   "model": "Lock Pro",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "switchbot-curtain-3",
+   "brand": "SwitchBot",
+   "model": "Curtain 3",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "ubiquiti-unifi-g5-turret-ultra",
+   "brand": "Ubiquiti",
+   "model": "UniFi Protect G5 Turret Ultra",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "ubiquiti-unifi-ai-key",
+   "brand": "Ubiquiti",
+   "model": "UniFi AI Key",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "simplisafe-outdoor-camera",
+   "brand": "SimpliSafe",
+   "model": "Outdoor Camera",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "abode-iota",
+   "brand": "Abode",
+   "model": "Iota gateway",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "arlo-video-doorbell-2k",
+   "brand": "Arlo",
+   "model": "Video Doorbell 2K",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "blink-mini-2",
+   "brand": "Amazon",
+   "model": "Blink Mini 2",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "tesla-powerwall-3",
+   "brand": "Tesla",
+   "model": "Powerwall 3",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "tesla-wall-connector",
+   "brand": "Tesla",
+   "model": "Wall Connector",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "enphase-iq-gateway",
+   "brand": "Enphase",
+   "model": "IQ Gateway",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "wallbox-pulsar-plus",
+   "brand": "Wallbox",
+   "model": "Pulsar Plus",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "chargepoint-home-flex",
+   "brand": "ChargePoint",
+   "model": "Home Flex",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "emporia-ev-charger",
+   "brand": "Emporia",
+   "model": "EV Charger",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "flume-2",
+   "brand": "Flume",
+   "model": "Flume 2 water monitor",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "leviton-decora-smart-wifi",
+   "brand": "Leviton",
+   "model": "Decora Smart Wi-Fi switch",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "brilliant-control",
+   "brand": "Brilliant",
+   "model": "Smart Home Control",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "home-assistant-voice-pe",
+   "brand": "Home Assistant",
+   "model": "Voice Preview Edition",
+   "category": "S",
+   "type": "manual"
+  },
+  {
+   "id": "sony-playstation-portal",
+   "brand": "Sony",
+   "model": "PlayStation Portal",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "sony-dualsense-edge",
+   "brand": "Sony",
+   "model": "DualSense Edge",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "microsoft-xbox-wireless-controller",
+   "brand": "Microsoft",
+   "model": "Xbox Wireless Controller",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "microsoft-xbox-elite-series-2",
+   "brand": "Microsoft",
+   "model": "Xbox Elite Series 2",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "meta-quest-3s",
+   "brand": "Meta",
+   "model": "Quest 3S",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "meta-quest-pro",
+   "brand": "Meta",
+   "model": "Quest Pro",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "asus-rog-xbox-ally",
+   "brand": "ASUS",
+   "model": "ROG Xbox Ally",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "msi-claw-8-ai-plus",
+   "brand": "MSI",
+   "model": "Claw 8 AI+",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "lenovo-legion-go-s",
+   "brand": "Lenovo",
+   "model": "Legion Go S",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "analogue-3d",
+   "brand": "Analogue",
+   "model": "3D",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "retroid-pocket-5",
+   "brand": "Retroid",
+   "model": "Pocket 5",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "anbernic-rg35xx-h",
+   "brand": "Anbernic",
+   "model": "RG35XX H",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "miyoo-mini-plus",
+   "brand": "Miyoo",
+   "model": "Mini Plus",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "panic-playdate",
+   "brand": "Panic",
+   "model": "Playdate",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "8bitdo-ultimate-2",
+   "brand": "8BitDo",
+   "model": "Ultimate 2 controller",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "nintendo-switch-2-pro-controller",
+   "brand": "Nintendo",
+   "model": "Switch 2 Pro Controller",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "dji-flip",
+   "brand": "DJI",
+   "model": "Flip",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "dji-mini-5-pro",
+   "brand": "DJI",
+   "model": "Mini 5 Pro",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "dji-air-3",
+   "brand": "DJI",
+   "model": "Air 3",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "dji-mavic-3-pro",
+   "brand": "DJI",
+   "model": "Mavic 3 Pro",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "dji-osmo-action-5-pro",
+   "brand": "DJI",
+   "model": "Osmo Action 5 Pro",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "dji-osmo-360",
+   "brand": "DJI",
+   "model": "Osmo 360",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "dji-mic-2",
+   "brand": "DJI",
+   "model": "Mic 2",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "dji-goggles-3",
+   "brand": "DJI",
+   "model": "Goggles 3",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "dji-rc-2",
+   "brand": "DJI",
+   "model": "RC 2",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "autel-evo-ii",
+   "brand": "Autel Robotics",
+   "model": "EVO II",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "skydio-x10",
+   "brand": "Skydio",
+   "model": "X10",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "potensic-atom-2",
+   "brand": "Potensic",
+   "model": "Atom 2",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "holy-stone-hs720",
+   "brand": "Holy Stone",
+   "model": "HS720",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "insta360-x5",
+   "brand": "Insta360",
+   "model": "X5",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "insta360-go-3s",
+   "brand": "Insta360",
+   "model": "GO 3S",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "gopro-max-2",
+   "brand": "GoPro",
+   "model": "MAX 2",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "specialized-turbo-vado-sl-2",
+   "brand": "Specialized",
+   "model": "Turbo Vado SL 2",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "trek-fuel-exe",
+   "brand": "Trek",
+   "model": "Fuel EXe",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "bosch-kiox-500",
+   "brand": "Bosch",
+   "model": "eBike Kiox 500",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "bosch-purion-200",
+   "brand": "Bosch",
+   "model": "eBike Purion 200",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "fazua-ride-60",
+   "brand": "Fazua",
+   "model": "Ride 60",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "mahle-x20",
+   "brand": "Mahle",
+   "model": "X20 drive system",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "rad-power-radcity-5-plus",
+   "brand": "Rad Power",
+   "model": "RadCity 5 Plus",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "aventon-aventure-3",
+   "brand": "Aventon",
+   "model": "Aventure 3",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "lectric-xpedition-2",
+   "brand": "Lectric",
+   "model": "XPedition 2.0",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "vanmoof-s5",
+   "brand": "VanMoof",
+   "model": "S5",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "cowboy-cross",
+   "brand": "Cowboy",
+   "model": "Cross",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "onewheel-pint-s",
+   "brand": "Future Motion",
+   "model": "Onewheel Pint S",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "segway-ninebot-f3",
+   "brand": "Segway",
+   "model": "Ninebot F3",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "niu-kqi-300x",
+   "brand": "NIU",
+   "model": "KQi 300X",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "apollo-city-2025",
+   "brand": "Apollo",
+   "model": "City (2025)",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "garmin-forerunner-970",
+   "brand": "Garmin",
+   "model": "Forerunner 970",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "garmin-venu-3",
+   "brand": "Garmin",
+   "model": "Venu 3",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "wahoo-kickr-core",
+   "brand": "Wahoo",
+   "model": "KICKR CORE",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "wahoo-elemnt-bolt-3",
+   "brand": "Wahoo",
+   "model": "ELEMNT BOLT 3",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "zwift-ride",
+   "brand": "Zwift",
+   "model": "Ride",
+   "category": "C",
+   "type": "manual"
+  },
+  {
+   "id": "m5stack-cardputer",
+   "brand": "M5Stack",
+   "model": "Cardputer",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "lilygo-t-deck",
+   "brand": "LILYGO",
+   "model": "T-Deck",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "raspberry-pi-pico-2-w",
+   "brand": "Raspberry Pi",
+   "model": "Pico 2 W",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "arduino-nano-esp32",
+   "brand": "Arduino",
+   "model": "Nano ESP32",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "espressif-esp32-s3-box-3",
+   "brand": "Espressif",
+   "model": "ESP32-S3-BOX-3",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "seeed-xiao-esp32c6",
+   "brand": "Seeed Studio",
+   "model": "XIAO ESP32C6",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "orange-pi-5-plus",
+   "brand": "Orange Pi",
+   "model": "5 Plus",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "radxa-rock-5b",
+   "brand": "Radxa",
+   "model": "ROCK 5B",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "beagley-ai",
+   "brand": "BeagleBoard",
+   "model": "BeagleY-AI",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "nvidia-jetson-orin-nano",
+   "brand": "NVIDIA",
+   "model": "Jetson Orin Nano Super (JetPack)",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "bambu-lab-a1-mini",
+   "brand": "Bambu Lab",
+   "model": "A1 mini",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "creality-k1c",
+   "brand": "Creality",
+   "model": "K1C",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "elegoo-centauri-carbon",
+   "brand": "Elegoo",
+   "model": "Centauri Carbon",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "anycubic-kobra-s1",
+   "brand": "Anycubic",
+   "model": "Kobra S1",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "qidi-plus-4",
+   "brand": "QIDI",
+   "model": "Plus 4",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "sovol-sv08",
+   "brand": "Sovol",
+   "model": "SV08",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "flsun-t1",
+   "brand": "FLSUN",
+   "model": "T1",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "formlabs-form-4",
+   "brand": "Formlabs",
+   "model": "Form 4",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "xtool-f1-ultra",
+   "brand": "xTool",
+   "model": "F1 Ultra",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "glowforge-aura",
+   "brand": "Glowforge",
+   "model": "Aura",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "cricut-maker-4",
+   "brand": "Cricut",
+   "model": "Maker 4",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "shapeoko-5-pro",
+   "brand": "Carbide 3D",
+   "model": "Shapeoko 5 Pro",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "carbide-nomad-3",
+   "brand": "Carbide 3D",
+   "model": "Nomad 3",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "ortur-laser-master-3",
+   "brand": "Ortur",
+   "model": "Laser Master 3",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "prusa-mmu3",
+   "brand": "Prusa",
+   "model": "MMU3",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "pinetime",
+   "brand": "PINE64",
+   "model": "PineTime",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "gl-inet-comet-kvm",
+   "brand": "GL.iNet",
+   "model": "Comet (GL-RM1) KVM",
+   "category": "M",
+   "type": "manual"
+  },
+  {
+   "id": "framework-laptop-12",
+   "brand": "Framework",
+   "model": "Laptop 12",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "framework-desktop",
+   "brand": "Framework",
+   "model": "Desktop",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "dell-xps-13-9350",
+   "brand": "Dell",
+   "model": "XPS 13 (9350)",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "dell-latitude-7450",
+   "brand": "Dell",
+   "model": "Latitude 7450",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "lenovo-thinkpad-x1-carbon-gen-13",
+   "brand": "Lenovo",
+   "model": "ThinkPad X1 Carbon Gen 13",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "lenovo-thinkpad-t14s-gen-6",
+   "brand": "Lenovo",
+   "model": "ThinkPad T14s Gen 6",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "hp-elitebook-840-g11",
+   "brand": "HP",
+   "model": "EliteBook 840 G11",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "hp-spectre-x360-14",
+   "brand": "HP",
+   "model": "Spectre x360 14",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "asus-rog-zephyrus-g14-2025",
+   "brand": "ASUS",
+   "model": "ROG Zephyrus G14 (2025)",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "acer-swift-14-ai",
+   "brand": "Acer",
+   "model": "Swift 14 AI",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "microsoft-surface-pro-11",
+   "brand": "Microsoft",
+   "model": "Surface Pro 11",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "microsoft-surface-laptop-7",
+   "brand": "Microsoft",
+   "model": "Surface Laptop 7",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "minisforum-um890-pro",
+   "brand": "Minisforum",
+   "model": "UM890 Pro mini PC",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "beelink-ser9",
+   "brand": "Beelink",
+   "model": "SER9 mini PC",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "raspberry-pi-500",
+   "brand": "Raspberry Pi",
+   "model": "Raspberry Pi 500",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "asus-rog-strix-x870e-e",
+   "brand": "ASUS",
+   "model": "ROG Strix X870E-E motherboard BIOS",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "msi-mag-b850-tomahawk",
+   "brand": "MSI",
+   "model": "MAG B850 Tomahawk motherboard BIOS",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "gigabyte-x870e-aorus-master",
+   "brand": "Gigabyte",
+   "model": "X870E AORUS Master motherboard BIOS",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "asrock-b850m-steel-legend",
+   "brand": "ASRock",
+   "model": "B850M Steel Legend motherboard BIOS",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "lg-c5-oled",
+   "brand": "LG",
+   "model": "C5 OLED TV (webOS)",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "lg-g5-oled",
+   "brand": "LG",
+   "model": "G5 OLED TV (webOS)",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "samsung-s95f",
+   "brand": "Samsung",
+   "model": "S95F OLED TV (Tizen)",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "samsung-qn90f",
+   "brand": "Samsung",
+   "model": "QN90F Neo QLED TV",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "sony-bravia-8-ii",
+   "brand": "Sony",
+   "model": "BRAVIA 8 II",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "tcl-qm8k",
+   "brand": "TCL",
+   "model": "QM8K TV",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "hisense-u8qg",
+   "brand": "Hisense",
+   "model": "U8QG TV",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "roku-ultra-2024",
+   "brand": "Roku",
+   "model": "Ultra (2024)",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "roku-streaming-stick-4k",
+   "brand": "Roku",
+   "model": "Streaming Stick 4K",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "amazon-fire-tv-stick-4k-max",
+   "brand": "Amazon",
+   "model": "Fire TV Stick 4K Max",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "amazon-fire-tv-cube",
+   "brand": "Amazon",
+   "model": "Fire TV Cube",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "google-tv-streamer",
+   "brand": "Google",
+   "model": "TV Streamer 4K",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "nvidia-shield-tv-pro",
+   "brand": "NVIDIA",
+   "model": "SHIELD TV Pro",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "xgimi-horizon-s-max",
+   "brand": "XGIMI",
+   "model": "Horizon S Max projector",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "dell-u2725qe",
+   "brand": "Dell",
+   "model": "UltraSharp U2725QE monitor",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "lg-ultragear-32gs95ue",
+   "brand": "LG",
+   "model": "UltraGear 32GS95UE monitor",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "samsung-odyssey-g9-g95sd",
+   "brand": "Samsung",
+   "model": "Odyssey OLED G9 (G95SD)",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "brother-hl-l2460dw",
+   "brand": "Brother",
+   "model": "HL-L2460DW",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "brother-mfc-j4335dw",
+   "brand": "Brother",
+   "model": "MFC-J4335DW",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "hp-officejet-pro-9125e",
+   "brand": "HP",
+   "model": "OfficeJet Pro 9125e",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "hp-laserjet-pro-mfp-3101fdw",
+   "brand": "HP",
+   "model": "LaserJet Pro MFP 3101fdw",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "canon-pixma-tr8620a",
+   "brand": "Canon",
+   "model": "PIXMA TR8620a",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "epson-ecotank-et-2850",
+   "brand": "Epson",
+   "model": "EcoTank ET-2850",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "logitech-mx-master-3s",
+   "brand": "Logitech",
+   "model": "MX Master 3S",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "logitech-mx-keys-s",
+   "brand": "Logitech",
+   "model": "MX Keys S",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "logitech-g-pro-x-superlight-2",
+   "brand": "Logitech",
+   "model": "G PRO X Superlight 2",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "logitech-brio-4k",
+   "brand": "Logitech",
+   "model": "Brio 4K webcam",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "razer-blackwidow-v4-pro",
+   "brand": "Razer",
+   "model": "BlackWidow V4 Pro",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "elgato-stream-deck-plus",
+   "brand": "Elgato",
+   "model": "Stream Deck +",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "elgato-facecam-pro",
+   "brand": "Elgato",
+   "model": "Facecam Pro",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "elgato-wave-3",
+   "brand": "Elgato",
+   "model": "Wave:3 microphone",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "shure-mv7-plus",
+   "brand": "Shure",
+   "model": "MV7+ microphone",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "keychron-q1-pro",
+   "brand": "Keychron",
+   "model": "Q1 Pro keyboard",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "wooting-80he",
+   "brand": "Wooting",
+   "model": "80HE keyboard",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "corsair-k70-pro",
+   "brand": "Corsair",
+   "model": "K70 PRO keyboard",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "steelseries-arctis-nova-pro-wireless",
+   "brand": "SteelSeries",
+   "model": "Arctis Nova Pro Wireless",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "sony-wh-1000xm6",
+   "brand": "Sony",
+   "model": "WH-1000XM6",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "sony-wf-1000xm5",
+   "brand": "Sony",
+   "model": "WF-1000XM5",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "bose-quietcomfort-ultra-headphones",
+   "brand": "Bose",
+   "model": "QuietComfort Ultra Headphones",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "apple-airpods-pro-2",
+   "brand": "Apple",
+   "model": "AirPods Pro 2",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "apple-airpods-max",
+   "brand": "Apple",
+   "model": "AirPods Max",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "sennheiser-momentum-4",
+   "brand": "Sennheiser",
+   "model": "MOMENTUM 4 Wireless",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "jabra-elite-10",
+   "brand": "Jabra",
+   "model": "Elite 10",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "beats-studio-pro",
+   "brand": "Beats",
+   "model": "Studio Pro",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "nothing-ear-3",
+   "brand": "Nothing",
+   "model": "Ear (3)",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "apple-watch-ultra-2",
+   "brand": "Apple",
+   "model": "Watch Ultra 2 (watchOS)",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "google-pixel-watch-3",
+   "brand": "Google",
+   "model": "Pixel Watch 3",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "samsung-galaxy-watch-8",
+   "brand": "Samsung",
+   "model": "Galaxy Watch8",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "whoop-5",
+   "brand": "WHOOP",
+   "model": "5.0",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "oura-ring-4",
+   "brand": "Oura",
+   "model": "Ring 4",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "fitbit-charge-6",
+   "brand": "Google",
+   "model": "Fitbit Charge 6",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "amazon-kindle-paperwhite-12",
+   "brand": "Amazon",
+   "model": "Kindle Paperwhite (12th gen)",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "amazon-kindle-scribe",
+   "brand": "Amazon",
+   "model": "Kindle Scribe",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "kobo-libra-colour",
+   "brand": "Kobo",
+   "model": "Libra Colour",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "remarkable-paper-pro",
+   "brand": "reMarkable",
+   "model": "Paper Pro",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "boox-palma-2",
+   "brand": "Onyx Boox",
+   "model": "Palma 2",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "sony-alpha-a7-iv",
+   "brand": "Sony",
+   "model": "Alpha a7 IV camera",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "sony-alpha-a7c-ii",
+   "brand": "Sony",
+   "model": "Alpha a7C II camera",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "canon-eos-r6-mark-ii",
+   "brand": "Canon",
+   "model": "EOS R6 Mark II",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "canon-eos-r5-mark-ii",
+   "brand": "Canon",
+   "model": "EOS R5 Mark II",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "fujifilm-x-t5",
+   "brand": "Fujifilm",
+   "model": "X-T5",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "fujifilm-x100vi",
+   "brand": "Fujifilm",
+   "model": "X100VI",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "nikon-z6iii",
+   "brand": "Nikon",
+   "model": "Z6III",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "nikon-zf",
+   "brand": "Nikon",
+   "model": "Zf",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "panasonic-lumix-s5ii",
+   "brand": "Panasonic",
+   "model": "LUMIX S5II",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "om-system-om-1-mark-ii",
+   "brand": "OM System",
+   "model": "OM-1 Mark II",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "caldigit-ts4",
+   "brand": "CalDigit",
+   "model": "TS4 Thunderbolt dock",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "plex-media-server",
+   "brand": "Plex",
+   "model": "Media Server",
+   "category": "P",
+   "type": "manual"
+  },
+  {
+   "id": "channels-dvr",
+   "brand": "Channels",
+   "model": "DVR Server",
+   "category": "P",
    "type": "manual"
   }
  ]

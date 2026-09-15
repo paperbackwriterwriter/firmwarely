@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Firmwarely — know when your devices need a firmware update</title>
-<meta name="description" content="Firmwarely watches manufacturer release pages for routers, NAS, smart home gear, consoles, drones and e-bikes, and emails you when a device you own has a new or critical update.">
+<meta name="description" content="Firmwarely watches manufacturer release pages and project feeds for routers, NAS, smart home gear, consoles, PCs, TVs, maker hardware and self-hosted apps, and emails you when something you own has a new or critical update.">
 <link rel="canonical" href="https://www.firmwarely.com/">
 <meta property="og:title" content="Firmwarely — know when your devices need a firmware update">
-<meta property="og:description" content="Nightly checks of manufacturer release pages for 380+ routers, NAS, smart home devices, consoles and maker gear.">
+<meta property="og:description" content="Nightly checks of manufacturer release pages and project feeds for 1,000+ routers, NAS, smart home devices, consoles, PCs, TVs, maker gear and self-hosted apps.">
 <meta property="og:url" content="https://www.firmwarely.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Firmwarely">
@@ -212,7 +212,7 @@ footer a:hover{color:var(--text)}
   <div class="wrap hero">
     <div>
       <h1>Your devices have updates you haven't installed.</h1>
-      <p class="lede">Firmwarely watches the release pages of router, NAS, camera, console and e-bike manufacturers every night and sends you one email when something you own has a new or critical firmware update.</p>
+      <p class="lede">Firmwarely watches the release pages of router, NAS, camera, console, PC and TV manufacturers, and the release feeds of the self-hosted apps you run, every night. One email when something you own has a new or critical update.</p>
       <form id="hero-form" novalidate>
         <label class="sr" for="hero-email">Email address</label>
         <input id="hero-email" type="email" placeholder="you@example.com" autocomplete="email" required>
@@ -285,6 +285,8 @@ footer a:hover{color:var(--text)}
         <a class="chip" href="/category/smart-home/">Smart home &amp; cameras</a>
         <a class="chip" href="/category/consoles-drones-ebikes/">Consoles, drones &amp; e-bikes</a>
         <a class="chip" href="/category/makers/">Makers &amp; open firmware</a>
+        <a class="chip" href="/category/pcs-tvs-gadgets/">PCs, TVs &amp; gadgets</a>
+        <a class="chip" href="/category/self-hosted/">Self-hosted apps &amp; servers</a>
         <a class="chip" href="/devices/">All devices</a>
       </nav>
       <div class="search">
@@ -298,6 +300,8 @@ footer a:hover{color:var(--text)}
         <button class="chip" aria-pressed="false" data-cat="Smart home &amp; cameras">Smart home &amp; cameras</button>
         <button class="chip" aria-pressed="false" data-cat="Consoles, drones &amp; e-bikes">Consoles, drones &amp; e-bikes</button>
         <button class="chip" aria-pressed="false" data-cat="Makers &amp; open firmware">Makers &amp; open firmware</button>
+        <button class="chip" aria-pressed="false" data-cat="PCs, TVs &amp; gadgets">PCs, TVs &amp; gadgets</button>
+        <button class="chip" aria-pressed="false" data-cat="Self-hosted apps &amp; servers">Self-hosted apps &amp; servers</button>
       </div>
       <div class="tablewrap">
       <table>
@@ -341,7 +345,8 @@ footer a:hover{color:var(--text)}
 /* ---------- data: devices.json from the nightly pipeline. Nothing is invented client-side;
    until it loads (or if it fails) the page says so instead of showing placeholder rows. ---------- */
 const CATS = {
-  R:"Routers & networking", N:"NAS & storage", S:"Smart home & cameras", C:"Consoles, drones & e-bikes", M:"Makers & open firmware"
+  R:"Routers & networking", N:"NAS & storage", S:"Smart home & cameras", C:"Consoles, drones & e-bikes", M:"Makers & open firmware",
+  P:"PCs, TVs & gadgets", A:"Self-hosted apps & servers"
 };
 let DEVICES = [];
 let loadState = "loading"; // loading | ok | failed
