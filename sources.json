@@ -3987,7 +3987,7 @@
    "type": "feed",
    "product_url": "https://github.com/espruino/Espruino",
    "url": "https://github.com/espruino/Espruino/tags.atom",
-   "version_regex": "\\b(\\d+v\\d+)\\b"
+   "version_regex": "(?i)\\b(\\d+v\\d+)\\b"
   },
   {
    "id": "jetkvm",
@@ -5545,15 +5545,6 @@
    "type": "github",
    "repo": "mastodon/mastodon",
    "product_url": "https://github.com/mastodon/mastodon"
-  },
-  {
-   "id": "gotosocial",
-   "brand": "GoToSocial",
-   "model": "ActivityPub server",
-   "category": "A",
-   "type": "feed",
-   "product_url": "https://github.com/superseriousbusiness/gotosocial",
-   "url": "https://github.com/superseriousbusiness/gotosocial/tags.atom"
   },
   {
    "id": "misskey",
