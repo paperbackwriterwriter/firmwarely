@@ -235,6 +235,10 @@ class RateLimited(ValueError):
     """The GitHub API budget for this hour is spent. Not a broken source: keep what we had."""
 
 
+class NotRenderedThisRun(ValueError):
+    """A browser source, on a run that didn't render. Not a broken source: keep what we had."""
+
+
 def check_github(src, prev=None):
     """Latest non-prerelease via the GitHub API. src['repo'] = 'owner/name'.
 
@@ -280,6 +284,11 @@ def check_html(src, prev):
     if src["type"] == "browser":
         f = RENDERED / (src["id"] + ".html")
         if not f.exists():
+            # scripts/fetch_browser.py only runs on the daily run, so on the other 47 runs a
+            # day there is nothing rendered to read. That is not a broken source. When the
+            # directory exists the render did run and this page genuinely failed to render.
+            if not RENDERED.exists():
+                raise NotRenderedThisRun("not rendered this run (browser sources render once a day)")
             raise ValueError("rendered page missing (browser fetch failed)")
         raw = f.read_text(encoding="utf-8", errors="replace")
     else:
@@ -378,7 +387,7 @@ def check_source(src, prev):
         if src["type"] == "github":
             return check_github(src, prev), None
         return check_html(src, prev), None
-    except RateLimited as e:
+    except (RateLimited, NotRenderedThisRun) as e:
         return None, f"skipped: {e}"
     except Exception as e:
         return None, f"error: {type(e).__name__}: {str(e)[:120]}"

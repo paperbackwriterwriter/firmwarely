@@ -393,6 +393,22 @@ def test_schedule_and_digest():
         urllib.request.urlopen = real
     check("device records carry the etag forward", fetch.device_record({"id": "x", "brand": "b", "model": "m", "category": "A", "type": "github"}, prev)["etag"], 'W/"abc"')
 
+    # browser sources render once a day; on the other 47 runs there is nothing to read, and
+    # that is a skip. But if the render DID run and this one page is missing, that is a failure.
+    import tempfile as _tf
+    real_rendered = fetch.RENDERED
+    src_browser = {"id": "zz", "type": "browser", "url": "https://e.com", "version_regex": r"(\d+\.\d+)"}
+    try:
+        fetch.RENDERED = Path(_tf.mkdtemp()) / "does-not-exist"
+        res, err = fetch.check_source(src_browser, {})
+        check("browser source on a non-render run is a skip", (res, err.startswith("skipped:")), (None, True))
+        d = Path(_tf.mkdtemp())
+        fetch.RENDERED = d          # directory exists, but zz.html was not rendered
+        res, err = fetch.check_source(src_browser, {})
+        check("browser source that failed to render is a failure", (res, err.startswith("error:")), (None, True))
+    finally:
+        fetch.RENDERED = real_rendered
+
     check("fetch shares its record builders with discovery",
           all(hasattr(fetch, f) for f in ("device_record", "check_source", "apply_result", "finish_record", "load_pending")), True)
 
