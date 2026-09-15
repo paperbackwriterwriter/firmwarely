@@ -99,6 +99,20 @@
    "notes": "chart-2.0.12",
    "source_url": "https://github.com/danny-avila/LibreChat/releases/tag/chart-2.0.12",
    "page_url": "https://www.firmwarely.com/devices/librechat/"
+  },
+  "mattermost": {
+   "id": "mattermost",
+   "brand": "Mattermost",
+   "model": "Team messaging",
+   "category": "A",
+   "status": "update",
+   "version": "11.7.11",
+   "previous": "11.10.1",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": "Mattermost Platform Release 11.7.11",
+   "source_url": "https://github.com/mattermost/mattermost/releases/tag/v11.7.11",
+   "page_url": "https://www.firmwarely.com/devices/mattermost/"
   }
  }
 }
