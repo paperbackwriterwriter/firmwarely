@@ -106,12 +106,12 @@
    "model": "Team messaging",
    "category": "A",
    "status": "update",
-   "version": "11.7.11",
+   "version": "11.9.2",
    "previous": "11.10.1",
    "released": "2026-09-15",
    "eol": false,
-   "notes": "Mattermost Platform Release 11.7.11",
-   "source_url": "https://github.com/mattermost/mattermost/releases/tag/v11.7.11",
+   "notes": "Mattermost Platform Release 11.9.2",
+   "source_url": "https://github.com/mattermost/mattermost/releases/tag/v11.9.2",
    "page_url": "https://www.firmwarely.com/devices/mattermost/"
   },
   "jackett": {
@@ -141,6 +141,20 @@
    "notes": "jenkins-2.582",
    "source_url": "https://github.com/jenkinsci/jenkins/releases/tag/jenkins-2.582",
    "page_url": "https://www.firmwarely.com/devices/jenkins/"
+  },
+  "nuttx": {
+   "id": "nuttx",
+   "brand": "Apache",
+   "model": "NuttX RTOS",
+   "category": "M",
+   "status": "update",
+   "version": "13.0.1",
+   "previous": "13.0.0",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": "nuttx-13.0.1",
+   "source_url": "https://github.com/apache/nuttx/releases/tag/nuttx-13.0.1",
+   "page_url": "https://www.firmwarely.com/devices/nuttx/"
   }
  }
 }
