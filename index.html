@@ -125,7 +125,9 @@ input::placeholder{color:#5E6C78}
 .browse a.chip{text-decoration:none;display:inline-block}
 .browse a.chip:hover{border-color:var(--amber);color:var(--text)}
 .chip{font:inherit;font-size:.9rem;color:var(--muted);background:transparent;border:1px solid var(--line);border-radius:999px;padding:.35rem .85rem;cursor:pointer}
-.chip[aria-pressed=true]{color:var(--text);border-color:var(--amber);background:rgba(245,179,66,.08)}
+a.chip{text-decoration:none;display:inline-block}
+a.chip:hover{border-color:var(--amber);color:var(--text)}
+.chip[aria-pressed=true],.chip[aria-current=true]{color:var(--text);border-color:var(--amber);background:rgba(245,179,66,.08)}
 .search{max-width:360px}
 table{width:100%;border-collapse:collapse;font-size:.95rem}
 th{text-align:left;font-weight:500;color:var(--muted);font-size:.82rem;padding:.5rem .6rem;border-bottom:1px solid var(--line)}
@@ -279,30 +281,20 @@ footer a:hover{color:var(--text)}
         </div>
         <div class="notice" id="notice">loading live data…</div>
       </div>
-      <nav class="browse" aria-label="Browse by category"><span>Browse</span>
-        <a class="chip" href="/category/routers/">Routers &amp; networking</a>
-        <a class="chip" href="/category/nas/">NAS &amp; storage</a>
-        <a class="chip" href="/category/smart-home/">Smart home &amp; cameras</a>
-        <a class="chip" href="/category/consoles-drones-ebikes/">Consoles, drones &amp; e-bikes</a>
-        <a class="chip" href="/category/makers/">Makers &amp; open firmware</a>
-        <a class="chip" href="/category/pcs-tvs-gadgets/">PCs, TVs &amp; gadgets</a>
-        <a class="chip" href="/category/self-hosted/">Self-hosted apps &amp; servers</a>
-        <a class="chip" href="/devices/">All devices</a>
-      </nav>
       <div class="search">
         <label class="sr" for="q">Search devices</label>
         <input id="q" type="search" placeholder="Search brand or model">
       </div>
-      <div class="filters" id="filters" role="group" aria-label="Filter by category">
-        <button class="chip" aria-pressed="true" data-cat="all">All</button>
-        <button class="chip" aria-pressed="false" data-cat="Routers &amp; networking">Routers &amp; networking</button>
-        <button class="chip" aria-pressed="false" data-cat="NAS &amp; storage">NAS &amp; storage</button>
-        <button class="chip" aria-pressed="false" data-cat="Smart home &amp; cameras">Smart home &amp; cameras</button>
-        <button class="chip" aria-pressed="false" data-cat="Consoles, drones &amp; e-bikes">Consoles, drones &amp; e-bikes</button>
-        <button class="chip" aria-pressed="false" data-cat="Makers &amp; open firmware">Makers &amp; open firmware</button>
-        <button class="chip" aria-pressed="false" data-cat="PCs, TVs &amp; gadgets">PCs, TVs &amp; gadgets</button>
-        <button class="chip" aria-pressed="false" data-cat="Self-hosted apps &amp; servers">Self-hosted apps &amp; servers</button>
-      </div>
+      <nav class="filters" id="filters" aria-label="Filter the catalog by category">
+        <a class="chip" aria-current="true" data-cat="all" href="/devices/">All</a>
+        <a class="chip" data-cat="Routers &amp; networking" href="/category/routers/">Routers &amp; networking</a>
+        <a class="chip" data-cat="NAS &amp; storage" href="/category/nas/">NAS &amp; storage</a>
+        <a class="chip" data-cat="Smart home &amp; cameras" href="/category/smart-home/">Smart home &amp; cameras</a>
+        <a class="chip" data-cat="Consoles, drones &amp; e-bikes" href="/category/consoles-drones-ebikes/">Consoles, drones &amp; e-bikes</a>
+        <a class="chip" data-cat="Makers &amp; open firmware" href="/category/makers/">Makers &amp; open firmware</a>
+        <a class="chip" data-cat="PCs, TVs &amp; gadgets" href="/category/pcs-tvs-gadgets/">PCs, TVs &amp; gadgets</a>
+        <a class="chip" data-cat="Self-hosted apps &amp; servers" href="/category/self-hosted/">Self-hosted apps &amp; servers</a>
+      </nav>
       <div class="tablewrap">
       <table>
         <thead><tr><th>Device</th><th>Latest firmware</th><th>Released</th><th>Category</th><th>Status</th></tr></thead>
@@ -416,8 +408,11 @@ render();
 
 document.getElementById("filters").addEventListener("click", e=>{
   const b = e.target.closest(".chip"); if(!b) return;
-  document.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed","false"));
-  b.setAttribute("aria-pressed","true");
+  // cmd/ctrl/shift/middle-click keeps the link's real behaviour: open the category page
+  if(e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+  e.preventDefault();
+  document.querySelectorAll("#filters .chip").forEach(c=>c.removeAttribute("aria-current"));
+  b.setAttribute("aria-current","true");
   cat = b.dataset.cat; render();
 });
 document.getElementById("q").addEventListener("input", e=>{ q = e.target.value.trim().toLowerCase(); render(); });
