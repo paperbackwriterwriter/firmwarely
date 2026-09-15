@@ -25,11 +25,11 @@ Setup (one time), in Vercel → Project → Settings → Environment Variables:
 Then redeploy. Subscribers are tagged `utm_campaign` = free or pro. If you create a custom field named
 `devices` in Beehiiv (Audience → Subscribers → Custom fields), the devices they typed are stored there too.
 
-## Device data (the half-hourly pipeline)
+## Device data (the hourly pipeline)
 
 - `sources.json` — the watch list. One entry per device: where its release notes live and how to read them.
 - `scripts/fetch.py` — checks every tracked source and writes `devices.json`. Standard library only.
-- `.github/workflows/nightly.yml` — "Firmware check": runs every 30 minutes, checks every tracked source in
+- `.github/workflows/nightly.yml` — "Firmware check": runs every hour, checks every tracked source in
   parallel and commits `devices.json` when data changed (timestamp-only runs are committed at most every six
   hours). The first run after 08:00 UTC is the daily run: it also renders browser-only vendor pages, runs
   `scripts/discover.py`, then `scripts/digest.py` drains `pending_changes.json` into the digest issue and the

@@ -1,11 +1,11 @@
 name: Firmware check
 
-# Every 30 minutes: check every tracked source and publish any change. Once a day (the first
+# Every hour: check every tracked source and publish any change. Once a day (the first
 # run after 08:00 UTC): render the browser-only vendor pages, discover and vet new projects,
 # then send the digest and the per-user emails for everything that moved since yesterday.
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "0 * * * *"
   workflow_dispatch:
     inputs:
       daily:

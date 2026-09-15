@@ -244,7 +244,7 @@ def check_github(src, prev=None):
 
     Sends the ETag from the last successful check as If-None-Match. GitHub answers 304
     when nothing changed and does not count that against the hourly budget (1,000 calls
-    for the Actions token), which is what lets ~400 repos be checked every 30 minutes."""
+    for the Actions token), which is what lets ~600 repos be checked every hour."""
     api = f"https://api.github.com/repos/{src['repo']}/releases/latest"
     headers = gh_headers()
     prev = prev or {}
@@ -284,7 +284,7 @@ def check_html(src, prev):
     if src["type"] == "browser":
         f = RENDERED / (src["id"] + ".html")
         if not f.exists():
-            # scripts/fetch_browser.py only runs on the daily run, so on the other 47 runs a
+            # scripts/fetch_browser.py only runs on the daily run, so on the other 23 runs a
             # day there is nothing rendered to read. That is not a broken source. When the
             # directory exists the render did run and this page genuinely failed to render.
             if not RENDERED.exists():
@@ -460,10 +460,17 @@ def main():
     if OFFLINE:
         # nothing was checked, so don't claim every source just failed
         ok, failed = prev_meta.get("ok", 0), prev_meta.get("failed", [])
+    # A device we have never resolved a version for is not information — a "coming soon" row
+    # tells a visitor nothing and inflates every count on the site. It stays in sources.json
+    # and joins devices.json the run its first version lands. Nothing is lost by leaving it
+    # out: a device with no version has no history, no etag and no notes to carry forward.
+    live = [d for d in out if d["status"] != "pending"]
     result = {"generated": NOW, "tracked": sum(1 for d in out if d["tracked"]),
-              "ok": ok, "failed": failed, "devices": out}
+              "waiting": len(out) - len(live),
+              "ok": ok, "failed": failed, "devices": live}
     OUT.write_text(json.dumps(result, indent=1, ensure_ascii=False) + "\n")
-    print(f"\nwrote {OUT.name}: {len(out)} devices, {ok} fetched, {len(failed)} failed, {sum(skipped.values())} skipped")
+    print(f"\nwrote {OUT.name}: {len(live)} devices with data, {len(out) - len(live)} still waiting "
+          f"for a first version, {ok} fetched, {len(failed)} failed, {sum(skipped.values())} skipped")
 
     # ---- what moved this run joins the pending set; scripts/digest.py drains it once a day ----
     changed = [d for d in out if d["tracked"] and d.get("version")

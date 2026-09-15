@@ -2,7 +2,7 @@
 """
 Decides whether this run is the once-a-day run.
 
-The workflow polls every 30 minutes, but some work belongs to one run per day: rendering
+The workflow polls every hour, but some work belongs to one run per day: rendering
 browser-only vendor pages, discovering new projects, and sending the digest and the
 per-user emails (Pro members are promised one email a day, not one per release).
 

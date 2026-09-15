@@ -252,7 +252,9 @@ def main():
 
     if added and not DRY_RUN:
         fetch.SOURCES.write_text(json.dumps(src, indent=1, ensure_ascii=False) + "\n")
-        devices_doc["tracked"] = sum(1 for d in devices_doc["devices"] if d.get("tracked"))
+        # devices.json carries only devices with data, so the tracked total cannot be
+        # recounted from it; every device discovery adds already resolved a version
+        devices_doc["tracked"] = devices_doc.get("tracked", 0) + len(added)
         fetch.OUT.write_text(json.dumps(devices_doc, indent=1, ensure_ascii=False) + "\n")
     report = {"date": fetch.TODAY.isoformat(), "topics": todays_topics(), "considered": len(seen),
               "added": added, "rejected": rejected}
