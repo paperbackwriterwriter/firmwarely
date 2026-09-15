@@ -432,7 +432,7 @@ def main():
             previous, prev_meta = {}, {}
 
     records = [(src, device_record(src, previous.get(src["id"], {}))) for src in cfg["devices"]]
-    ok, failed, skipped = 0, [], 0
+    ok, failed, skipped = 0, [], {}   # skipped: reason -> count, so the log says which reason
     if not OFFLINE:
         # every source is independent, so check them side by side; order is preserved
         to_check = [(src, dev) for src, dev in records if dev["tracked"]]
@@ -444,15 +444,16 @@ def main():
                 ok += 1
                 print(f"  ok   {src['id']:40s} {res['version']}  ({res['released']})")
             elif err.startswith("skipped:"):
-                # keep last run's data and status; the budget resets within the hour
-                skipped += 1
+                # keep last run's data and status; nothing is known to be wrong with the source
+                reason = err.split("skipped:", 1)[1].strip()
+                skipped[reason] = skipped.get(reason, 0) + 1
             else:
                 dev["checked"] = NOW
                 dev["source_status"] = err
                 failed.append(src["id"])
                 print(f"  FAIL {src['id']:40s} {err}")
-        if skipped:
-            print(f"  skipped {skipped} GitHub source(s): API budget for this hour is spent; their last data stands")
+        for reason, n in sorted(skipped.items()):
+            print(f"  skipped {n} source(s): {reason}; their last data stands")
 
     out = [finish_record(dev) for _, dev in records]
 
@@ -462,7 +463,7 @@ def main():
     result = {"generated": NOW, "tracked": sum(1 for d in out if d["tracked"]),
               "ok": ok, "failed": failed, "devices": out}
     OUT.write_text(json.dumps(result, indent=1, ensure_ascii=False) + "\n")
-    print(f"\nwrote {OUT.name}: {len(out)} devices, {ok} fetched, {len(failed)} failed, {skipped} skipped")
+    print(f"\nwrote {OUT.name}: {len(out)} devices, {ok} fetched, {len(failed)} failed, {sum(skipped.values())} skipped")
 
     # ---- what moved this run joins the pending set; scripts/digest.py drains it once a day ----
     changed = [d for d in out if d["tracked"] and d.get("version")
