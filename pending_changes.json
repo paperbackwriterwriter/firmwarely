@@ -113,6 +113,34 @@
    "notes": "Mattermost Platform Release 11.7.11",
    "source_url": "https://github.com/mattermost/mattermost/releases/tag/v11.7.11",
    "page_url": "https://www.firmwarely.com/devices/mattermost/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.2595",
+   "previous": "0.24.2586",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": "Changes: 14df07068875193927e6bfddde1c53a664302bac magnetcat: new alt domains d8b2d1a9e2c0d08d2dc65550fb9b75e310e17f16 52bt: new domains 095fda44461df68d0432fdd6de032f938bd24ce1 zrpt: new domain resolves #​16592 82e1762fc6804b52ed92d46fc806b8f25bab42b4 hdforever: refinements from admin #​16606 8f35d…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2595",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "jenkins": {
+   "id": "jenkins",
+   "brand": "Jenkins",
+   "model": "Automation server",
+   "category": "A",
+   "status": "update",
+   "version": "2.582",
+   "previous": "2.581",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": "jenkins-2.582",
+   "source_url": "https://github.com/jenkinsci/jenkins/releases/tag/jenkins-2.582",
+   "page_url": "https://www.firmwarely.com/devices/jenkins/"
   }
  }
 }
