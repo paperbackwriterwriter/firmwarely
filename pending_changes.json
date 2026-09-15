@@ -78,12 +78,12 @@
    "model": "Monitoring platform",
    "category": "A",
    "status": "update",
-   "version": "7.0.31",
+   "version": "7.4.15",
    "previous": "7.4.14",
    "released": "2026-09-15",
    "eol": false,
-   "notes": "7.0.31rc1",
-   "source_url": "https://github.com/zabbix/zabbix/releases/tag/7.0.31rc1",
+   "notes": "7.4.15rc1",
+   "source_url": "https://github.com/zabbix/zabbix/releases/tag/7.4.15rc1",
    "page_url": "https://www.firmwarely.com/devices/zabbix/"
   },
   "blender": {
@@ -169,6 +169,62 @@
    "notes": "Download page What's new highlights Security Security: Fix CVE-2026-15815 Security: Fix CVE-2026-76154 Security: Fix CVE-2026-79656 Bug fixes Dashboards: Preserve query variable refresh setting on v2 dashboard import #​132089, [[bot]](https://github.com/grafana-writer[bot]) Provisioning: Fix folder…",
    "source_url": "https://github.com/grafana/grafana/releases/tag/v13.2.2",
    "page_url": "https://www.firmwarely.com/devices/grafana/"
+  },
+  "home-assistant-supervisor": {
+   "id": "home-assistant-supervisor",
+   "brand": "Home Assistant",
+   "model": "Supervisor",
+   "category": "S",
+   "status": "update",
+   "version": "2026.09.2",
+   "previous": "2026.09.1",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": ":bug: Bug Fixes #​7225 Forward Core API proxy paths byte-for-byte and match deny rules on decoded path :arrow_up: Dependency Updates 3 changes #​7222 Bump home-assistant/builder/actions/build-image from 2026.06.0 to 2026.09.0 @[dependabot[bot]](https://github.com/apps/dependabot) #​7223 Bump home-a…",
+   "source_url": "https://github.com/home-assistant/supervisor/releases/tag/2026.09.2",
+   "page_url": "https://www.firmwarely.com/devices/home-assistant-supervisor/"
+  },
+  "clickhouse": {
+   "id": "clickhouse",
+   "brand": "ClickHouse",
+   "model": "Analytics database",
+   "category": "A",
+   "status": "update",
+   "version": "26.6.7.18-stable",
+   "previous": "26.8.4.11-lts",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": "Release v26.6.7.18-stable v26.6.7.18-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.6.7.18-stable",
+   "page_url": "https://www.firmwarely.com/devices/clickhouse/"
+  },
+  "appflowy": {
+   "id": "appflowy",
+   "brand": "AppFlowy",
+   "model": "Workspace",
+   "category": "A",
+   "status": "update",
+   "version": "0.14.3",
+   "previous": "0.14.2",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": "Version 0.14.3 – 09/15/2026 Desktop Bug Fixes Fixed Linux package installation issue Optimized calendar UI interactions and added drag-and-drop support for selecting multiple date ranges Mobile Bug Fixes Optimized calendar UI interactions and added drag-and-drop support for selecting multiple date …",
+   "source_url": "https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.14.3",
+   "page_url": "https://www.firmwarely.com/devices/appflowy/"
+  },
+  "teltonika-rutx50": {
+   "id": "teltonika-rutx50",
+   "brand": "Teltonika",
+   "model": "RUTX50 cellular router",
+   "category": "R",
+   "status": "update",
+   "version": "7.24.5",
+   "previous": "7.24.3",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": "Teltonika RutOS release. See the wiki for the changelog.",
+   "source_url": "https://wiki.teltonika-networks.com/view/RUTX50_Firmware_Downloads",
+   "page_url": "https://www.firmwarely.com/devices/teltonika-rutx50/"
   }
  }
 }
