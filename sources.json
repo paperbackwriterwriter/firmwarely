@@ -2162,28 +2162,40 @@
    "brand": "Netgear",
    "model": "Nighthawk RAX80",
    "category": "R",
-   "type": "manual"
+   "type": "browser",
+   "url": "https://www.netgear.com/support/product/rax80/",
+   "version_regex": "Firmware Version (\\d+\\.\\d+\\.\\d+\\.\\d+)",
+   "notes": "Netgear firmware release. See the support page for release notes."
   },
   {
    "id": "netgear-nighthawk-rs700s",
    "brand": "Netgear",
    "model": "Nighthawk RS700S",
    "category": "R",
-   "type": "manual"
+   "type": "browser",
+   "url": "https://www.netgear.com/support/product/rs700s/",
+   "version_regex": "Firmware Version (\\d+\\.\\d+\\.\\d+\\.\\d+)",
+   "notes": "Netgear firmware release. See the support page for release notes."
   },
   {
    "id": "netgear-orbi-rbk852",
    "brand": "Netgear",
    "model": "Orbi RBK852",
    "category": "R",
-   "type": "manual"
+   "type": "browser",
+   "url": "https://www.netgear.com/support/product/rbk852/",
+   "version_regex": "Firmware Version (\\d+\\.\\d+\\.\\d+\\.\\d+)",
+   "notes": "Netgear firmware release. See the support page for release notes."
   },
   {
    "id": "netgear-orbi-rbe973",
    "brand": "Netgear",
    "model": "Orbi 970 Series",
    "category": "R",
-   "type": "manual"
+   "type": "browser",
+   "url": "https://www.netgear.com/support/product/rbe973/",
+   "version_regex": "Firmware Version (\\d+\\.\\d+\\.\\d+\\.\\d+)",
+   "notes": "Netgear firmware release. See the support page for release notes."
   },
   {
    "id": "tp-link-archer-axe75",
@@ -2230,7 +2242,10 @@
    "brand": "TP-Link",
    "model": "Omada ER605 Gateway",
    "category": "R",
-   "type": "manual"
+   "type": "html",
+   "url": "https://www.tp-link.com/us/support/download/er605/",
+   "version_regex": "ER605\\([A-Z]{2}\\)_V[\\d.]+_(\\d[\\w.]*)",
+   "notes": "TP-Link firmware release. See the download page for the changelog."
   },
   {
    "id": "asus-rog-rapture-gt-ax6000",
@@ -2384,7 +2399,10 @@
    "brand": "Netgear",
    "model": "Nighthawk M6 Hotspot",
    "category": "R",
-   "type": "manual"
+   "type": "browser",
+   "url": "https://www.netgear.com/support/product/m6/",
+   "version_regex": "Firmware Version (\\d+\\.\\d+\\.\\d+\\.\\d+)",
+   "notes": "Netgear firmware release. See the support page for release notes."
   },
   {
    "id": "synology-ds425-plus",
@@ -2435,21 +2453,30 @@
    "brand": "QNAP",
    "model": "TS-262",
    "category": "N",
-   "type": "manual"
+   "type": "browser",
+   "url": "https://www.qnap.com/en-us/download?model=ts-262&category=firmware",
+   "version_regex": "(5\\.\\d+\\.\\d+\\.\\d{4})",
+   "notes": "QTS firmware release. See QNAP's release notes for details."
   },
   {
    "id": "qnap-ts-673a",
    "brand": "QNAP",
    "model": "TS-673A",
    "category": "N",
-   "type": "manual"
+   "type": "browser",
+   "url": "https://www.qnap.com/en-us/download?model=ts-673a&category=firmware",
+   "version_regex": "(5\\.\\d+\\.\\d+\\.\\d{4})",
+   "notes": "QTS firmware release. See QNAP's release notes for details."
   },
   {
    "id": "qnap-tvs-h874",
    "brand": "QNAP",
    "model": "TVS-h874",
    "category": "N",
-   "type": "manual"
+   "type": "browser",
+   "url": "https://www.qnap.com/en-us/download?model=tvs-h874&category=firmware",
+   "version_regex": "(5\\.\\d+\\.\\d+\\.\\d{4})",
+   "notes": "QTS firmware release. See QNAP's release notes for details."
   },
   {
    "id": "asustor-as5404t",
@@ -2484,7 +2511,10 @@
    "brand": "Netgear",
    "model": "ReadyNAS 424",
    "category": "N",
-   "type": "manual"
+   "type": "browser",
+   "url": "https://www.netgear.com/support/product/rn424/",
+   "version_regex": "Firmware Version (\\d+\\.\\d+\\.\\d+\\.\\d+)",
+   "notes": "Netgear firmware release. See the support page for release notes."
   },
   {
    "id": "buffalo-linkstation-720",
@@ -2871,7 +2901,11 @@
    "brand": "Apple",
    "model": "TV 4K",
    "category": "S",
-   "type": "manual"
+   "type": "feed",
+   "url": "https://developer.apple.com/news/releases/rss/releases.rss",
+   "item_match": "^tvOS \\d",
+   "version_regex": "tvOS (\\d+(?:\\.\\d+)+)",
+   "product_url": "https://support.apple.com/downloads"
   },
   {
    "id": "sony-playstation-5-pro",
@@ -2924,7 +2958,10 @@
    "brand": "Analogue",
    "model": "Pocket",
    "category": "C",
-   "type": "manual"
+   "type": "html",
+   "url": "https://www.analogue.co/support/pocket/firmware",
+   "version_regex": "v?(\\d+\\.\\d+\\.\\d+)",
+   "notes": "Analogue firmware release. See the support page for details."
   },
   {
    "id": "meta-quest-3",
@@ -2945,7 +2982,11 @@
    "brand": "Apple",
    "model": "Vision Pro",
    "category": "C",
-   "type": "manual"
+   "type": "feed",
+   "url": "https://developer.apple.com/news/releases/rss/releases.rss",
+   "item_match": "^visionOS \\d",
+   "version_regex": "visionOS (\\d+(?:\\.\\d+)+)",
+   "product_url": "https://support.apple.com/downloads"
   },
   {
    "id": "dji-mavic-4-pro",
@@ -3127,14 +3168,20 @@
    "brand": "Bambu Lab",
    "model": "A1",
    "category": "M",
-   "type": "manual"
+   "type": "html",
+   "url": "https://wiki.bambulab.com/en/a1/manual/a1-firmware-release-history",
+   "version_regex": "(\\d+\\.\\d+\\.\\d+\\.\\d+)",
+   "notes": "Bambu Lab firmware release. See the release history for details."
   },
   {
    "id": "bambu-lab-h2d",
    "brand": "Bambu Lab",
    "model": "H2D",
    "category": "M",
-   "type": "manual"
+   "type": "html",
+   "url": "https://wiki.bambulab.com/en/h2d/manual/h2d-firmware-release-history",
+   "version_regex": "(\\d+\\.\\d+\\.\\d+\\.\\d+)",
+   "notes": "Bambu Lab firmware release. See the release history for details."
   },
   {
    "id": "prusa-mk4s",
@@ -6468,42 +6515,60 @@
    "brand": "Netgear",
    "model": "Nighthawk RS300",
    "category": "R",
-   "type": "manual"
+   "type": "browser",
+   "url": "https://www.netgear.com/support/product/rs300/",
+   "version_regex": "Firmware Version (\\d+\\.\\d+\\.\\d+\\.\\d+)",
+   "notes": "Netgear firmware release. See the support page for release notes."
   },
   {
    "id": "netgear-nighthawk-raxe500",
    "brand": "Netgear",
    "model": "Nighthawk RAXE500",
    "category": "R",
-   "type": "manual"
+   "type": "browser",
+   "url": "https://www.netgear.com/support/product/raxe500/",
+   "version_regex": "Firmware Version (\\d+\\.\\d+\\.\\d+\\.\\d+)",
+   "notes": "Netgear firmware release. See the support page for release notes."
   },
   {
    "id": "netgear-orbi-rbk763",
    "brand": "Netgear",
    "model": "Orbi RBK763",
    "category": "R",
-   "type": "manual"
+   "type": "browser",
+   "url": "https://www.netgear.com/support/product/rbk763/",
+   "version_regex": "Firmware Version (\\d+\\.\\d+\\.\\d+\\.\\d+)",
+   "notes": "Netgear firmware release. See the support page for release notes."
   },
   {
    "id": "netgear-cm2000",
    "brand": "Netgear",
    "model": "Nighthawk CM2000 cable modem",
    "category": "R",
-   "type": "manual"
+   "type": "browser",
+   "url": "https://www.netgear.com/support/product/cm2000/",
+   "version_regex": "Firmware Version (\\d+\\.\\d+\\.\\d+\\.\\d+)",
+   "notes": "Netgear firmware release. See the support page for release notes."
   },
   {
    "id": "netgear-cm3000",
    "brand": "Netgear",
    "model": "Nighthawk CM3000 cable modem",
    "category": "R",
-   "type": "manual"
+   "type": "browser",
+   "url": "https://www.netgear.com/support/product/cm3000/",
+   "version_regex": "Firmware Version (\\d+\\.\\d+\\.\\d+\\.\\d+)",
+   "notes": "Netgear firmware release. See the support page for release notes."
   },
   {
    "id": "netgear-nighthawk-m7-pro",
    "brand": "Netgear",
    "model": "Nighthawk M7 Pro mobile hotspot",
    "category": "R",
-   "type": "manual"
+   "type": "browser",
+   "url": "https://www.netgear.com/support/product/m7pro/",
+   "version_regex": "Firmware Version (\\d+\\.\\d+\\.\\d+\\.\\d+)",
+   "notes": "Netgear firmware release. See the support page for release notes."
   },
   {
    "id": "arris-surfboard-s34",
@@ -6571,7 +6636,10 @@
    "brand": "TP-Link",
    "model": "Omada EAP670 access point",
    "category": "R",
-   "type": "manual"
+   "type": "browser",
+   "url": "https://www.tp-link.com/us/support/download/eap670/",
+   "version_regex": "EAP670\\([A-Z]{2}\\)_V[\\d.]+_(\\d[\\w.]*)",
+   "notes": "TP-Link firmware release. See the download page for the changelog."
   },
   {
    "id": "tp-link-re715x",
@@ -6756,14 +6824,20 @@
    "brand": "Teltonika",
    "model": "RUTX50 cellular router",
    "category": "R",
-   "type": "manual"
+   "type": "html",
+   "url": "https://wiki.teltonika-networks.com/view/RUTX50_Firmware_Downloads",
+   "version_regex": "RUTX50[^0-9]{0,30}(\\d+\\.\\d+\\.\\d+)",
+   "notes": "Teltonika RutOS release. See the wiki for the changelog."
   },
   {
    "id": "netgate-2100",
    "brand": "Netgate",
    "model": "2100 (pfSense Plus)",
    "category": "R",
-   "type": "manual"
+   "type": "html",
+   "url": "https://docs.netgate.com/pfsense/en/latest/releases/index.html",
+   "version_regex": "(\\d{2}\\.\\d{2}(?:\\.\\d+)?)",
+   "notes": "pfSense Plus release. See the release notes for details."
   },
   {
    "id": "protectli-vault-fw4b",
@@ -6842,28 +6916,40 @@
    "brand": "QNAP",
    "model": "TS-233",
    "category": "N",
-   "type": "manual"
+   "type": "browser",
+   "url": "https://www.qnap.com/en-us/download?model=ts-233&category=firmware",
+   "version_regex": "(5\\.\\d+\\.\\d+\\.\\d{4})",
+   "notes": "QTS firmware release. See QNAP's release notes for details."
   },
   {
    "id": "qnap-ts-433",
    "brand": "QNAP",
    "model": "TS-433",
    "category": "N",
-   "type": "manual"
+   "type": "browser",
+   "url": "https://www.qnap.com/en-us/download?model=ts-433&category=firmware",
+   "version_regex": "(5\\.\\d+\\.\\d+\\.\\d{4})",
+   "notes": "QTS firmware release. See QNAP's release notes for details."
   },
   {
    "id": "qnap-tbs-h574tx",
    "brand": "QNAP",
    "model": "TBS-h574TX",
    "category": "N",
-   "type": "manual"
+   "type": "browser",
+   "url": "https://www.qnap.com/en-us/download?model=tbs-h574tx&category=firmware",
+   "version_regex": "(5\\.\\d+\\.\\d+\\.\\d{4})",
+   "notes": "QTS firmware release. See QNAP's release notes for details."
   },
   {
    "id": "qnap-ts-1655",
    "brand": "QNAP",
    "model": "TS-1655",
    "category": "N",
-   "type": "manual"
+   "type": "browser",
+   "url": "https://www.qnap.com/en-us/download?model=ts-1655&category=firmware",
+   "version_regex": "(5\\.\\d+\\.\\d+\\.\\d{4})",
+   "notes": "QTS firmware release. See QNAP's release notes for details."
   },
   {
    "id": "asustor-flashstor-12-pro-gen2",
@@ -6956,7 +7042,10 @@
    "brand": "Netgear",
    "model": "ReadyNAS 428",
    "category": "N",
-   "type": "manual"
+   "type": "browser",
+   "url": "https://www.netgear.com/support/product/rn428/",
+   "version_regex": "Firmware Version (\\d+\\.\\d+\\.\\d+\\.\\d+)",
+   "notes": "Netgear firmware release. See the support page for release notes."
   },
   {
    "id": "hexos",
@@ -7593,7 +7682,10 @@
    "brand": "Analogue",
    "model": "3D",
    "category": "C",
-   "type": "manual"
+   "type": "html",
+   "url": "https://www.analogue.co/support/3d/firmware",
+   "version_regex": "v?(\\d+\\.\\d+\\.\\d+)",
+   "notes": "Analogue firmware release. See the support page for details."
   },
   {
    "id": "retroid-pocket-5",
@@ -7917,7 +8009,9 @@
    "brand": "Arduino",
    "model": "Nano ESP32",
    "category": "M",
-   "type": "manual"
+   "type": "feed",
+   "url": "https://github.com/arduino/arduino-esp32/releases.atom",
+   "product_url": "https://github.com/arduino/arduino-esp32"
   },
   {
    "id": "espressif-esp32-s3-box-3",
@@ -7966,7 +8060,10 @@
    "brand": "Bambu Lab",
    "model": "A1 mini",
    "category": "M",
-   "type": "manual"
+   "type": "html",
+   "url": "https://wiki.bambulab.com/en/a1-mini/manual/a1-mini-firmware-release-history",
+   "version_regex": "(\\d+\\.\\d+\\.\\d+\\.\\d+)",
+   "notes": "Bambu Lab firmware release. See the release history for details."
   },
   {
    "id": "creality-k1c",
@@ -8537,7 +8634,11 @@
    "brand": "Apple",
    "model": "Watch Ultra 2 (watchOS)",
    "category": "P",
-   "type": "manual"
+   "type": "feed",
+   "url": "https://developer.apple.com/news/releases/rss/releases.rss",
+   "item_match": "^watchOS \\d",
+   "version_regex": "watchOS (\\d+(?:\\.\\d+)+)",
+   "product_url": "https://support.apple.com/downloads"
   },
   {
    "id": "google-pixel-watch-3",
