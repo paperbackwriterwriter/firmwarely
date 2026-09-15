@@ -7,7 +7,7 @@ Self-test for the alert pipeline. No network, no files written, no framework.
 Covers the logic that decides who gets mailed, because the cost of getting it wrong is
 a wrong email to every subscriber rather than a stack trace.
 """
-import json, os, sys, tempfile
+import json, os, re, sys, tempfile
 import html as _html
 from pathlib import Path
 
@@ -373,6 +373,26 @@ def test_schedule_and_digest():
           discover.short_model("Immich - High performance self-hosted photo and video management solution", "Immich"),
           "High performance self-hosted photo and video management solution"[:60].rsplit(" ", 1)[0].rstrip(",;:- ") if len("High performance self-hosted photo and video management solution") > 60 else "High performance self-hosted photo and video management solution")
     check("model is capped at 60 characters", len(discover.short_model("x" * 30 + " " + "y" * 40 + " tail", "Z")) <= 60, True)
+    # a model line becomes the device page <title> and meta description, so a cut that leaves
+    # a dangling fragment ("…build and manage the") is visible on the live site
+    for desc, brand, want in [
+        ("Docker-powered PaaS that helps you build and manage the lifecycle of applications", "Dokku", "Docker-powered PaaS"),
+        ("Fully autonomous AI Agents system capable of performing complex penetration tests", "Pentagi", "Fully autonomous AI Agents system"),
+        ("Networking and security platform providing secure access to internal resources", "Pangolin", "Networking and security platform"),
+        ("Privacy first, AI meeting assistant with 4x faster processing", "Meetily", "Privacy first, AI meeting assistant"),
+        ("Build your personal knowledge base with Trilium Notes", "Trilium", "Personal knowledge base"),
+        ("Your Personal AI Assistant", "QwenPaw", "Personal AI Assistant"),
+    ]:
+        check(f"model reads as a whole phrase: {brand}", discover.short_model(desc, brand), want)
+    # "X and Y" is a compound, not an incomplete tail — cutting there would lose half the meaning
+    check("compound descriptions keep both halves",
+          discover.short_model("Immich - High performance self-hosted photo and video management solution", "Immich"),
+          "High performance self-hosted photo and video management")
+    # nothing already in the catalogue ends on a dangling word
+    devs_all = json.loads(Path("devices.json").read_text())["devices"]
+    dangling = [d["id"] for d in devs_all
+                if d["model"].split() and re.sub(r"[^\w]", "", d["model"].split()[-1]).lower() in discover.DANGLING]
+    check("no catalogue model line ends on a dangling word", dangling[:5], [])
     check("router topics land in R", discover.category_for(["openwrt", "linux"], ""), "R")
     check("home automation lands in S", discover.category_for(["home-assistant", "python"], ""), "S")
     check("plain software lands in A", discover.category_for(["docker", "nodejs"], ""), "A")

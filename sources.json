@@ -8543,7 +8543,7 @@
   {
    "id": "trilium",
    "brand": "Trilium",
-   "model": "Build your personal knowledge base with Trilium Notes",
+   "model": "Personal knowledge base",
    "category": "A",
    "type": "github",
    "repo": "TriliumNext/Trilium",
@@ -8561,7 +8561,7 @@
   {
    "id": "qwenpaw",
    "brand": "QwenPaw",
-   "model": "Your Personal AI Assistant",
+   "model": "Personal AI Assistant",
    "category": "A",
    "type": "github",
    "repo": "agentscope-ai/QwenPaw",
@@ -8579,7 +8579,7 @@
   {
    "id": "dokku",
    "brand": "Dokku",
-   "model": "Docker-powered PaaS that helps you build and manage the",
+   "model": "Docker-powered PaaS",
    "category": "A",
    "type": "github",
    "repo": "dokku/dokku",
@@ -8597,7 +8597,7 @@
   {
    "id": "meetily",
    "brand": "Meetily",
-   "model": "Privacy first, AI meeting assistant with 4x faster",
+   "model": "Privacy first, AI meeting assistant",
    "category": "A",
    "type": "github",
    "repo": "Zackriya-Solutions/meetily",
@@ -8615,7 +8615,7 @@
   {
    "id": "pentagi",
    "brand": "Pentagi",
-   "model": "Fully autonomous AI Agents system capable of performing",
+   "model": "Fully autonomous AI Agents system",
    "category": "A",
    "type": "github",
    "repo": "vxcontrol/pentagi",
@@ -8624,7 +8624,7 @@
   {
    "id": "pangolin",
    "brand": "Pangolin",
-   "model": "Networking and security platform providing secure access",
+   "model": "Networking and security platform",
    "category": "R",
    "type": "github",
    "repo": "fosrl/pangolin",

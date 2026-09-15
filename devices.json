@@ -23915,7 +23915,7 @@
   {
    "id": "trilium",
    "brand": "Trilium",
-   "model": "Build your personal knowledge base with Trilium Notes",
+   "model": "Personal knowledge base",
    "category": "A",
    "tracked": true,
    "version": "0.105.0",
@@ -23965,7 +23965,7 @@
   {
    "id": "qwenpaw",
    "brand": "QwenPaw",
-   "model": "Your Personal AI Assistant",
+   "model": "Personal AI Assistant",
    "category": "A",
    "tracked": true,
    "version": "2.2.1",
@@ -24019,7 +24019,7 @@
   {
    "id": "dokku",
    "brand": "Dokku",
-   "model": "Docker-powered PaaS that helps you build and manage the",
+   "model": "Docker-powered PaaS",
    "category": "A",
    "tracked": true,
    "version": "0.38.27",
@@ -24069,7 +24069,7 @@
   {
    "id": "meetily",
    "brand": "Meetily",
-   "model": "Privacy first, AI meeting assistant with 4x faster",
+   "model": "Privacy first, AI meeting assistant",
    "category": "A",
    "tracked": true,
    "version": "0.4.1",
@@ -24119,7 +24119,7 @@
   {
    "id": "pentagi",
    "brand": "Pentagi",
-   "model": "Fully autonomous AI Agents system capable of performing",
+   "model": "Fully autonomous AI Agents system",
    "category": "A",
    "tracked": true,
    "version": "2.1.0",
@@ -24144,7 +24144,7 @@
   {
    "id": "pangolin",
    "brand": "Pangolin",
-   "model": "Networking and security platform providing secure access",
+   "model": "Networking and security platform",
    "category": "R",
    "tracked": true,
    "version": "1.22.2",

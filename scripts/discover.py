@@ -74,8 +74,35 @@ def humanize(name):
     return " ".join(out) or name
 
 
+# a model line must not end on one of these: cutting at 60 chars used to leave dangling
+# fragments like "…build and manage the" or "…capable of performing" in live page titles
+DANGLING = {"a", "an", "the", "and", "or", "of", "to", "in", "on", "at", "by", "for", "with",
+            "from", "into", "via", "that", "which", "who", "your", "our", "its", "their", "this",
+            "is", "are", "be", "as", "so", "you", "can", "will", "helps", "capable", "providing",
+            "performing", "using", "made", "built", "designed", "powered", "based", "more", "than",
+            "all", "any", "every", "without", "while", "when", "where", "how", "what", "it"}
+
+
+# a trailing phrase that the 60-char cut left incomplete: drop the whole phrase, not just
+# the last word, so "…platform providing secure access" becomes "…platform"
+PHRASE_TAIL = (r"\s+(?:with|for|to|of|in|on|by|from|into|via|at|using|that|which|who|so|"
+               r"providing|offering|enabling|allowing|helping|helps|lets|designed|built|powered|"
+               r"based|capable|able|made|supporting|featuring)\s+.*$")
+
+
+def trim_dangling(text):
+    """Drop trailing words that leave the line reading as a cut-off sentence."""
+    words = text.split()
+    while words and re.sub(r"[^\w]", "", words[-1]).lower() in DANGLING:
+        words.pop()
+    return " ".join(words).rstrip(" ,;:-–—")
+
+
 def short_model(description, brand):
-    """Description → the catalogue's 'model' line: one plain clause, no marketing, ≤ 60 chars."""
+    """Description → the catalogue's 'model' line: one plain clause, no marketing, <= 60 chars.
+
+    This text becomes the device page's <title> and meta description, so a fragment ending
+    mid-phrase ("…build and manage the") is visible on the live site, not just in the data."""
     d = re.sub(r"[\U0001F300-\U0001FAFF☀-➿⭐✅️]", "", description or "")  # emoji
     d = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", d)              # markdown links
     d = re.sub(r"https?://\S+", "", d)
@@ -85,13 +112,27 @@ def short_model(description, brand):
     clauses = [c for c in clauses if c.lower() not in (brand.lower(), brand.lower().replace(" ", "-"), brand.lower().replace(" ", ""))]
     d = clauses[0] if clauses else ""
     d = re.sub(rf"^{re.escape(brand)}\s*(is|-|:|,)?\s*(an?|the)?\s*", "", d, flags=re.I).strip()
+    # a tail that only restates the brand adds nothing ("…knowledge base with Trilium Notes")
+    tail = re.search(rf"\s+(?:with|using|for|by|powered by)\s+{re.escape(brand)}\b.*$", d, flags=re.I)
+    if tail and len(d[: tail.start()].split()) >= 3:
+        d = d[: tail.start()]
+    # repo descriptions often open as an instruction to the reader
+    d = re.sub(r"^(build|create|make|manage|run|deploy|host|self[- ]host|turn|organize|organise|track|keep)\s+(your|the|a|an)\s+", "", d, flags=re.I)
+    d = re.sub(r"^(your|our|their|its)\s+", "", d, flags=re.I)
     d = re.sub(r"^(an?|the)\s+", "", d, flags=re.I)
     d = re.sub(r"^(free|open[- ]source|self[- ]hosted|modern|simple|lightweight|powerful|fast|easy|blazing[- ]fast|privacy[- ]friendly|and)\s+(and\s+)?", "", d, flags=re.I)
     d = re.sub(r"^(free|open[- ]source|self[- ]hosted|modern|simple|lightweight|powerful|fast|easy)\s+", "", d, flags=re.I)
-    d = d[:1].upper() + d[1:] if d else d
     if len(d) > 60:
-        cut = d[:60].rsplit(" ", 1)[0]
-        d = cut.rstrip(",;:- ")
+        # a description too long to keep whole gets cut back to a phrase boundary rather
+        # than mid-clause, so the result is a shorter true statement, not a fragment
+        d = d[:60].rsplit(" ", 1)[0]
+        for _ in range(4):
+            shorter = re.sub(PHRASE_TAIL, "", d, flags=re.I)
+            if shorter == d or len(shorter.split()) < 2:
+                break
+            d = shorter
+    d = trim_dangling(d)
+    d = d[:1].upper() + d[1:] if d else d
     return d or "Self-hosted software"
 
 
