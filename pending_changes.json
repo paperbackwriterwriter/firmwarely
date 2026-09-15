@@ -155,6 +155,20 @@
    "notes": "nuttx-13.0.1",
    "source_url": "https://github.com/apache/nuttx/releases/tag/nuttx-13.0.1",
    "page_url": "https://www.firmwarely.com/devices/nuttx/"
+  },
+  "coolify": {
+   "id": "coolify",
+   "brand": "Coolify",
+   "model": "Self-hosting platform",
+   "category": "A",
+   "status": "update",
+   "version": "4.3.20",
+   "previous": "4.3.19",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": "Features Added an All option to the log viewer and accepted lines=all across application, database, and service log APIs. The existing -1 value remained available for compatibility. Fixes Fixed scheduled backup deletion for service databases so it kept the database context and returned to the corre…",
+   "source_url": "https://github.com/coollabsio/coolify/releases/tag/v4.3.20",
+   "page_url": "https://www.firmwarely.com/devices/coolify/"
   }
  }
 }
