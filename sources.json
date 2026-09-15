@@ -3984,10 +3984,8 @@
    "brand": "Espruino",
    "model": "JavaScript microcontroller firmware",
    "category": "M",
-   "type": "feed",
-   "product_url": "https://github.com/espruino/Espruino",
-   "url": "https://github.com/espruino/Espruino/tags.atom",
-   "version_regex": "(?i)\\b(\\d+v\\d+)\\b"
+   "type": "manual",
+   "product_url": "https://www.espruino.com/Download"
   },
   {
    "id": "jetkvm",
