@@ -22,6 +22,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="/icons.js" defer></script>
 <style>
 :root{
   --bg:#0C1117;
@@ -129,6 +130,9 @@ input::placeholder{color:#5E6C78}
 table{width:100%;border-collapse:collapse;font-size:.95rem}
 th{text-align:left;font-weight:500;color:var(--muted);font-size:.82rem;padding:.5rem .6rem;border-bottom:1px solid var(--line)}
 td{padding:.7rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+svg.ico{width:22px;height:22px;flex:none;vertical-align:-5px;margin-right:.55rem;color:var(--amber);fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+svg.ico .g{stroke:var(--green)}svg.ico .f{fill:var(--green);stroke:none}
+.feed svg.ico{width:16px;height:16px;vertical-align:-3px;margin-right:.35rem}
 tbody tr{cursor:pointer}
 tbody tr:hover td{background:rgba(255,255,255,.02)}
 td.ver{font-family:var(--mono);font-size:.85rem;overflow-wrap:anywhere}
@@ -351,6 +355,8 @@ const slug = d => d.id || (d.b+" "+d.m).toLowerCase().replace(/[^a-z0-9]+/g,"-")
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const safeUrl = u => /^https?:\/\//i.test(u || "") ? esc(u) : "";
 const STATUS_CLASS = s => ["critical","update","current","pending","eol","stale"].includes(s) ? s : "pending";
+// icons.js is deferred and may be blocked; lists must render either way
+const icon = k => (window.fwIcon ? window.fwIcon(k) : "");
 
 /* ---------- release feed ---------- */
 function buildFeed(){
@@ -359,7 +365,7 @@ function buildFeed(){
   const recent = DEVICES.filter(d=>d.d && d.s!=="pending").sort((a,b)=>b.d.localeCompare(a.d)).slice(0,9);
   recent.forEach(d=>{
     const li = document.createElement("li");
-    li.innerHTML = `<span class="t">${shortDate(d.d)}</span><span class="d">${esc(d.b)} ${esc(d.m)} <em>${esc(d.v)}</em></span><span class="s ${STATUS_CLASS(d.s)}">${d.s==="critical"?"CRITICAL":d.s==="update"?"update":d.s==="eol"?"EOL":"ok"}</span>`;
+    li.innerHTML = `<span class="t">${shortDate(d.d)}</span><span class="d">${icon(d.i)}${esc(d.b)} ${esc(d.m)} <em>${esc(d.v)}</em></span><span class="s ${STATUS_CLASS(d.s)}">${d.s==="critical"?"CRITICAL":d.s==="update"?"update":d.s==="eol"?"EOL":"ok"}</span>`;
     ol.appendChild(li);
   });
   const end = document.createElement("li");
@@ -390,7 +396,7 @@ function render(){
   more.textContent = `Show all ${list.length} devices`;
   rows.innerHTML = shown.map(d => `
     <tr data-id="${esc(slug(d))}" tabindex="0">
-      <td><strong>${esc(d.b)}</strong> ${esc(d.m)}</td>
+      <td>${icon(d.i)}<strong>${esc(d.b)}</strong> ${esc(d.m)}</td>
       <td class="ver">${esc(d.v) || "—"}</td>
       <td class="date">${fmtDate(d.d)}</td>
       <td class="cat">${CATS[d.c] || ""}</td>
@@ -551,7 +557,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
     const r = await fetch("/devices.json", {cache:"no-cache"});
     if(!r.ok) throw new Error(r.status);
     const data = await r.json();
-    const live = (data.devices||[]).map(x=>({b:x.brand, m:x.model, c:x.category, v:x.version, d:x.released, s:x.status, n:x.notes, url:x.source_url, p:x.product_url, u:x.update_url, id:x.id}));
+    const live = (data.devices||[]).map(x=>({b:x.brand, m:x.model, c:x.category, v:x.version, d:x.released, s:x.status, n:x.notes, url:x.source_url, p:x.product_url, u:x.update_url, id:x.id, i:x.icon}));
     if(!live.length) throw new Error("empty");
     DEVICES = live; loadState = "ok";
     const withData = live.filter(x=>x.s!=="pending").length;

@@ -128,6 +128,9 @@ input::placeholder{color:#5E6C78}
 table{width:100%;border-collapse:collapse;font-size:.95rem}
 th{text-align:left;font-weight:500;color:var(--muted);font-size:.82rem;padding:.5rem .6rem;border-bottom:1px solid var(--line)}
 td{padding:.7rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+svg.ico{width:22px;height:22px;flex:none;vertical-align:-5px;margin-right:.55rem;color:var(--amber);fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+svg.ico .g{stroke:var(--green)}svg.ico .f{fill:var(--green);stroke:none}
+.feed svg.ico{width:16px;height:16px;vertical-align:-3px;margin-right:.35rem}
 tbody tr{cursor:pointer}
 tbody tr:hover td{background:rgba(255,255,255,.02)}
 td.ver{font-family:var(--mono);font-size:.85rem;overflow-wrap:anywhere}
@@ -206,6 +209,7 @@ footer a:hover{color:var(--text)}
   .brandlist h2{font-family:var(--mono);font-size:1rem;color:var(--amber);margin:1.75rem 0 .5rem}
   .brandlist ul{list-style:none;padding:0;margin:0;display:grid;gap:.4rem}
   .brandlist li{display:flex;justify-content:space-between;gap:1rem;border-top:1px solid var(--line);padding:.6rem 0}
+  .brandlist li a{display:inline-flex;align-items:center;gap:.6rem}
   .brandlist li span{font-family:var(--mono);font-size:.85rem;color:var(--muted)}
   .brandlist .fine{margin:.5rem 0 0;font-size:.85rem}
   .related{margin-top:2.5rem}
@@ -257,7 +261,7 @@ footer a:hover{color:var(--text)}
   <p style="color:var(--muted);max-width:70ch">Firmwarely tracks 3 Apple devices across smart home &amp; cameras, consoles, drones &amp; e-bikes. Each device page has the current version, release notes, version history and how to update.</p>
   <div class="browse"><span>Categories</span><a class="chip" href="/category/smart-home/">Smart home &amp; cameras</a><a class="chip" href="/category/consoles-drones-ebikes/">Consoles, drones &amp; e-bikes</a></div>
   <h2>Apple devices</h2>
-  <ul><li><a href="/devices/apple-homepod-2/">HomePod (2nd gen)</a><span>watching soon</span></li><li><a href="/devices/apple-tv-4k/">TV 4K</a><span>watching soon</span></li><li><a href="/devices/apple-vision-pro/">Vision Pro</a><span>watching soon</span></li></ul>
+  <ul><li><a href="/devices/apple-homepod-2/"><svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><rect x="18" y="8" width="28" height="48" rx="9"/><path d="M25 20h14M25 27h14M25 34h14"/><circle class="f" cx="32" cy="47" r="2.2"/></svg>HomePod (2nd gen)</a><span>watching soon</span></li><li><a href="/devices/apple-tv-4k/"><svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="17"/><circle class="f" cx="32" cy="32" r="3"/><path d="M32 7v8M32 49v8M7 32h8M49 32h8"/><path class="g" d="M32 22a10 10 0 0 1 10 10"/></svg>TV 4K</a><span>watching soon</span></li><li><a href="/devices/apple-vision-pro/"><svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><path d="M18 22h28a10 10 0 0 1 10 10l2 12a6 6 0 0 1-11 3l-4-7H21l-4 7a6 6 0 0 1-11-3l2-12a10 10 0 0 1 10-10z"/><path d="M22 30v8M18 34h8"/><circle class="f" cx="44" cy="31" r="1.8"/><circle cx="48" cy="36" r="1.8"/><circle cx="40" cy="36" r="1.8"/></svg>Vision Pro</a><span>watching soon</span></li></ul>
 </div>
 
 <section id="signup" class="signup">

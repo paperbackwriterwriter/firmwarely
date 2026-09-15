@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-14T23:19:45+00:00",
+ "generated": "2026-09-15T00:05:39+00:00",
  "tracked": 222,
  "ok": 222,
  "failed": [],
@@ -25,7 +25,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "router"
   },
   {
    "id": "ubiquiti-unifi-protect-application",
@@ -48,7 +49,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "camera"
   },
   {
    "id": "ubiquiti-unifi-network-application",
@@ -71,7 +73,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "router"
   },
   {
    "id": "ubiquiti-unifi-access-points",
@@ -94,7 +97,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "router"
   },
   {
    "id": "openwrt-router",
@@ -117,7 +121,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "critical"
+   "status": "critical",
+   "icon": "router"
   },
   {
    "id": "home-assistant-os",
@@ -140,7 +145,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "hub"
   },
   {
    "id": "tasmota-open-firmware",
@@ -163,7 +169,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "board"
   },
   {
    "id": "wled-controller",
@@ -186,7 +193,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "board"
   },
   {
    "id": "prusa-mk4-core-one",
@@ -213,7 +221,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "printer"
   },
   {
    "id": "flipper-zero",
@@ -236,7 +245,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "board"
   },
   {
    "id": "meshtastic-radio",
@@ -259,7 +269,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "board"
   },
   {
    "id": "sony-playstation-5",
@@ -282,7 +293,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "console"
   },
   {
    "id": "microsoft-xbox-series-x",
@@ -305,7 +317,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "console"
   },
   {
    "id": "nintendo-switch",
@@ -328,7 +341,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "console"
   },
   {
    "id": "asus-rt-ax88u",
@@ -351,7 +365,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": true,
-   "status": "eol"
+   "status": "eol",
+   "icon": "router"
   },
   {
    "id": "asus-rt-ax86u-pro",
@@ -374,7 +389,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "router"
   },
   {
    "id": "tp-link-archer-ax73",
@@ -397,7 +413,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "router"
   },
   {
    "id": "netgear-nighthawk-rax50",
@@ -420,7 +437,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "router"
   },
   {
    "id": "eero-pro-6e",
@@ -443,7 +461,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "router"
   },
   {
    "id": "synology-ds923-plus",
@@ -466,7 +485,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "nas"
   },
   {
    "id": "synology-ds224-plus",
@@ -489,7 +509,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "nas"
   },
   {
    "id": "qnap-ts-464",
@@ -512,7 +533,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "nas"
   },
   {
    "id": "wd-my-cloud-ex2-ultra",
@@ -530,7 +552,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "nas"
   },
   {
    "id": "reolink-rlc-810a",
@@ -548,7 +571,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "camera"
   },
   {
    "id": "philips-hue-bridge",
@@ -571,7 +595,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "hub"
   },
   {
    "id": "ring-video-doorbell-pro-2",
@@ -589,7 +614,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "doorbell"
   },
   {
    "id": "aqara-hub-m3",
@@ -607,7 +633,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "hub"
   },
   {
    "id": "dji-mini-4-pro",
@@ -625,7 +652,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "drone"
   },
   {
    "id": "dji-air-3s",
@@ -643,7 +671,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "drone"
   },
   {
    "id": "specialized-turbo-levo-sl",
@@ -661,7 +690,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "ebike"
   },
   {
    "id": "rad-power-radrunner-3-plus",
@@ -679,7 +709,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "ebike"
   },
   {
    "id": "pi-hole",
@@ -702,7 +733,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "router"
   },
   {
    "id": "adguard-home",
@@ -725,7 +757,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "critical"
+   "status": "critical",
+   "icon": "router"
   },
   {
    "id": "tailscale",
@@ -748,7 +781,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "router"
   },
   {
    "id": "opnsense-firewall",
@@ -771,7 +805,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "router"
   },
   {
    "id": "mikrotik-routeros",
@@ -794,7 +829,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "router"
   },
   {
    "id": "esphome",
@@ -817,7 +853,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "board"
   },
   {
    "id": "home-assistant-core",
@@ -840,7 +877,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "hub"
   },
   {
    "id": "zigbee2mqtt",
@@ -863,7 +901,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "hub"
   },
   {
    "id": "frigate-nvr",
@@ -886,7 +925,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "camera"
   },
   {
    "id": "marlin-3d-printer",
@@ -909,7 +949,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "printer"
   },
   {
    "id": "octoprint",
@@ -932,7 +973,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "printer"
   },
   {
    "id": "libreelec",
@@ -955,7 +997,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "board"
   },
   {
    "id": "kodi",
@@ -978,7 +1021,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "app"
   },
   {
    "id": "jellyfin-server",
@@ -1001,7 +1045,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "immich-server",
@@ -1028,7 +1073,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "nextcloud-server",
@@ -1051,7 +1097,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "asuswrt-merlin",
@@ -1074,7 +1121,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "router"
   },
   {
    "id": "pihole-ftl",
@@ -1097,7 +1145,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "router"
   },
   {
    "id": "netbird",
@@ -1124,7 +1173,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "router"
   },
   {
    "id": "headscale",
@@ -1147,7 +1197,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "router"
   },
   {
    "id": "zerotier",
@@ -1170,7 +1221,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "router"
   },
   {
    "id": "nebula-mesh",
@@ -1193,7 +1245,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "router"
   },
   {
    "id": "wg-easy",
@@ -1216,7 +1269,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "critical"
+   "status": "critical",
+   "icon": "router"
   },
   {
    "id": "unbound-dns",
@@ -1239,7 +1293,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "router"
   },
   {
    "id": "coredns",
@@ -1262,7 +1317,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "router"
   },
   {
    "id": "blocky-dns",
@@ -1285,7 +1341,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "router"
   },
   {
    "id": "technitium-dns",
@@ -1308,7 +1365,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "router"
   },
   {
    "id": "dnscrypt-proxy",
@@ -1331,7 +1389,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "router"
   },
   {
    "id": "nginx-proxy-manager",
@@ -1354,7 +1413,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "app"
   },
   {
    "id": "traefik",
@@ -1377,7 +1437,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "critical"
+   "status": "critical",
+   "icon": "app"
   },
   {
    "id": "caddy-server",
@@ -1400,7 +1461,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "app"
   },
   {
    "id": "zoraxy",
@@ -1423,7 +1485,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "critical"
+   "status": "critical",
+   "icon": "app"
   },
   {
    "id": "cloudflared",
@@ -1446,7 +1509,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "router"
   },
   {
    "id": "frp-tunnel",
@@ -1469,7 +1533,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "librenms",
@@ -1492,7 +1557,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "netbox",
@@ -1515,7 +1581,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "router"
   },
   {
    "id": "uptime-kuma",
@@ -1538,7 +1605,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "ntopng",
@@ -1561,7 +1629,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "app"
   },
   {
    "id": "suricata-ids",
@@ -1584,7 +1653,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "router"
   },
   {
    "id": "crowdsec",
@@ -1607,7 +1677,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "router"
   },
   {
    "id": "fail2ban",
@@ -1630,7 +1701,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "router"
   },
   {
    "id": "openvpn",
@@ -1653,7 +1725,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "critical"
+   "status": "critical",
+   "icon": "router"
   },
   {
    "id": "softether-vpn",
@@ -1676,7 +1749,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "router"
   },
   {
    "id": "gluetun",
@@ -1699,7 +1773,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "router"
   },
   {
    "id": "raspap",
@@ -1722,7 +1797,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "board"
   },
   {
    "id": "frrouting",
@@ -1745,7 +1821,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "router"
   },
   {
    "id": "kea-dhcp",
@@ -1768,7 +1845,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "router"
   },
   {
    "id": "smokeping",
@@ -1791,7 +1869,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "stale"
+   "status": "stale",
+   "icon": "app"
   },
   {
    "id": "speedtest-tracker",
@@ -1814,7 +1893,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "router"
   },
   {
    "id": "adguardhome-sync",
@@ -1837,7 +1917,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "router"
   },
   {
    "id": "openmediavault",
@@ -1855,7 +1936,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "nas"
   },
   {
    "id": "truenas-scale",
@@ -1878,7 +1960,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "nas"
   },
   {
    "id": "minio",
@@ -1901,7 +1984,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "app"
   },
   {
    "id": "seafile",
@@ -1924,7 +2008,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "stale"
+   "status": "stale",
+   "icon": "app"
   },
   {
    "id": "syncthing",
@@ -1947,7 +2032,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "duplicati",
@@ -1970,7 +2056,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "critical"
+   "status": "critical",
+   "icon": "app"
   },
   {
    "id": "restic",
@@ -1993,7 +2080,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "app"
   },
   {
    "id": "borgbackup",
@@ -2016,7 +2104,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "critical"
+   "status": "critical",
+   "icon": "app"
   },
   {
    "id": "rclone",
@@ -2039,7 +2128,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "kopia",
@@ -2062,7 +2152,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "app"
   },
   {
    "id": "filebrowser",
@@ -2085,7 +2176,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "critical"
+   "status": "critical",
+   "icon": "app"
   },
   {
    "id": "paperless-ngx",
@@ -2108,7 +2200,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "photoprism",
@@ -2131,7 +2224,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "app"
   },
   {
    "id": "owncloud-server",
@@ -2154,7 +2248,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "critical"
+   "status": "critical",
+   "icon": "app"
   },
   {
    "id": "gitea",
@@ -2177,7 +2272,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "critical"
+   "status": "critical",
+   "icon": "app"
   },
   {
    "id": "ceph-storage",
@@ -2200,7 +2296,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "openzfs",
@@ -2223,7 +2320,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "navidrome",
@@ -2246,7 +2344,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "komga",
@@ -2269,7 +2368,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "kavita",
@@ -2292,7 +2392,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "calibre-web",
@@ -2315,7 +2416,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "audiobookshelf",
@@ -2338,7 +2440,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "app"
   },
   {
    "id": "lychee-photos",
@@ -2361,7 +2464,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "critical"
+   "status": "critical",
+   "icon": "app"
   },
   {
    "id": "cockpit",
@@ -2384,7 +2488,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "webmin",
@@ -2407,7 +2512,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "portainer",
@@ -2430,7 +2536,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "dockge",
@@ -2453,7 +2560,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "app"
   },
   {
    "id": "watchtower",
@@ -2476,7 +2584,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "stale"
+   "status": "stale",
+   "icon": "app"
   },
   {
    "id": "authelia",
@@ -2499,7 +2608,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "router"
   },
   {
    "id": "authentik",
@@ -2522,7 +2632,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "vaultwarden",
@@ -2545,7 +2656,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "bitwarden-server",
@@ -2568,7 +2680,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "homepage-dashboard",
@@ -2591,7 +2704,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "heimdall-dashboard",
@@ -2614,7 +2728,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "homer-dashboard",
@@ -2637,7 +2752,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "sonarr",
@@ -2660,7 +2776,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "app"
   },
   {
    "id": "radarr",
@@ -2683,7 +2800,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "app"
   },
   {
    "id": "lidarr",
@@ -2706,7 +2824,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "app"
   },
   {
    "id": "prowlarr",
@@ -2729,7 +2848,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "app"
   },
   {
    "id": "bazarr",
@@ -2752,7 +2872,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "app"
   },
   {
    "id": "readarr",
@@ -2775,7 +2896,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "app"
   },
   {
    "id": "overseerr",
@@ -2798,7 +2920,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "app"
   },
   {
    "id": "jellyseerr",
@@ -2821,7 +2944,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "app"
   },
   {
    "id": "qbittorrent",
@@ -2844,7 +2968,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "app"
   },
   {
    "id": "transmission",
@@ -2867,7 +2992,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "app"
   },
   {
    "id": "deluge",
@@ -2890,7 +3016,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "app"
   },
   {
    "id": "sabnzbd",
@@ -2913,7 +3040,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "critical"
+   "status": "critical",
+   "icon": "app"
   },
   {
    "id": "tdarr",
@@ -2931,7 +3059,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "app"
   },
   {
    "id": "tautulli",
@@ -2954,7 +3083,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "mealie",
@@ -2977,7 +3107,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "tandoor-recipes",
@@ -3000,7 +3131,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "firefly-iii",
@@ -3027,7 +3159,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "actual-budget",
@@ -3050,7 +3183,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "freshrss",
@@ -3073,7 +3207,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "critical"
+   "status": "critical",
+   "icon": "app"
   },
   {
    "id": "miniflux",
@@ -3096,7 +3231,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "app"
   },
   {
    "id": "linkding",
@@ -3119,7 +3255,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "bookstack",
@@ -3142,7 +3279,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "critical"
+   "status": "critical",
+   "icon": "app"
   },
   {
    "id": "grocy",
@@ -3165,7 +3303,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "critical"
+   "status": "critical",
+   "icon": "app"
   },
   {
    "id": "changedetection",
@@ -3192,7 +3331,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "healthchecks",
@@ -3215,7 +3355,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "gotify",
@@ -3238,7 +3379,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "ntfy",
@@ -3261,7 +3403,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "critical"
+   "status": "critical",
+   "icon": "app"
   },
   {
    "id": "apprise",
@@ -3284,7 +3427,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "router"
   },
   {
    "id": "scrutiny-disk",
@@ -3307,7 +3451,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "glances",
@@ -3330,7 +3475,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "netdata",
@@ -3353,7 +3499,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "beszel",
@@ -3376,7 +3523,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "hub"
   },
   {
    "id": "mergerfs",
@@ -3399,7 +3547,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "app"
   },
   {
    "id": "snapraid",
@@ -3422,7 +3571,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "app"
   },
   {
    "id": "casaos",
@@ -3445,7 +3595,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "stale"
+   "status": "stale",
+   "icon": "app"
   },
   {
    "id": "umbrel",
@@ -3468,7 +3619,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "app"
   },
   {
    "id": "yunohost",
@@ -3491,7 +3643,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "home-assistant-supervisor",
@@ -3514,7 +3667,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "hub"
   },
   {
    "id": "zwave-js-ui",
@@ -3537,7 +3691,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "hub"
   },
   {
    "id": "node-zwave-js",
@@ -3560,7 +3715,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "hub"
   },
   {
    "id": "mosquitto-broker",
@@ -3583,7 +3739,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "hub"
   },
   {
    "id": "node-red",
@@ -3606,7 +3763,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "hub"
   },
   {
    "id": "openhab",
@@ -3629,7 +3787,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "hub"
   },
   {
    "id": "domoticz",
@@ -3652,7 +3811,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "iobroker",
@@ -3675,7 +3835,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "hub"
   },
   {
    "id": "zoneminder",
@@ -3698,7 +3859,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "critical"
+   "status": "critical",
+   "icon": "camera"
   },
   {
    "id": "motioneye",
@@ -3721,7 +3883,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "camera"
   },
   {
    "id": "scrypted",
@@ -3744,7 +3907,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "camera"
   },
   {
    "id": "go2rtc",
@@ -3767,7 +3931,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "camera"
   },
   {
    "id": "espeasy",
@@ -3790,7 +3955,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "board"
   },
   {
    "id": "openmqttgateway",
@@ -3813,7 +3979,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "stale"
+   "status": "stale",
+   "icon": "hub"
   },
   {
    "id": "openthread",
@@ -3836,7 +4003,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "hub"
   },
   {
    "id": "matter-sdk",
@@ -3859,7 +4027,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "hub"
   },
   {
    "id": "valetudo",
@@ -3882,7 +4051,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "hub"
   },
   {
    "id": "homebridge",
@@ -3905,7 +4075,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "hub"
   },
   {
    "id": "openbk7231t",
@@ -3928,7 +4099,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "hub"
   },
   {
    "id": "shelly-homekit",
@@ -3951,7 +4123,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "hub"
   },
   {
    "id": "libretiny",
@@ -3974,7 +4147,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "hub"
   },
   {
    "id": "tuya-cloudcutter",
@@ -3992,7 +4166,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "hub"
   },
   {
    "id": "ratgdo",
@@ -4015,7 +4190,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "hub"
   },
   {
    "id": "konnected-esphome",
@@ -4038,7 +4214,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "critical"
+   "status": "critical",
+   "icon": "board"
   },
   {
    "id": "openevse",
@@ -4061,7 +4238,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "router"
   },
   {
    "id": "evcc",
@@ -4084,7 +4262,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "hub"
   },
   {
    "id": "openwb",
@@ -4107,7 +4286,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "stale"
+   "status": "stale",
+   "icon": "hub"
   },
   {
    "id": "emonesp",
@@ -4130,7 +4310,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "stale"
+   "status": "stale",
+   "icon": "app"
   },
   {
    "id": "music-assistant",
@@ -4153,7 +4334,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "wyoming-satellite",
@@ -4176,7 +4358,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "stale"
+   "status": "stale",
+   "icon": "hub"
   },
   {
    "id": "rhasspy",
@@ -4199,7 +4382,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "stale"
+   "status": "stale",
+   "icon": "hub"
   },
   {
    "id": "piper-tts",
@@ -4222,7 +4406,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "stale"
+   "status": "stale",
+   "icon": "hub"
   },
   {
    "id": "openwakeword",
@@ -4245,7 +4430,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "stale"
+   "status": "stale",
+   "icon": "hub"
   },
   {
    "id": "govee2mqtt",
@@ -4268,7 +4454,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "hub"
   },
   {
    "id": "hyperion-ng",
@@ -4291,7 +4478,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "hub"
   },
   {
    "id": "esp32-marauder",
@@ -4314,7 +4502,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "board"
   },
   {
    "id": "bruce-firmware",
@@ -4337,7 +4526,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "board"
   },
   {
    "id": "klipper",
@@ -4360,7 +4550,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "printer"
   },
   {
    "id": "mainsail",
@@ -4383,7 +4574,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "printer"
   },
   {
    "id": "fluidd",
@@ -4406,7 +4598,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "printer"
   },
   {
    "id": "moonraker",
@@ -4429,7 +4622,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "stale"
+   "status": "stale",
+   "icon": "printer"
   },
   {
    "id": "prusaslicer",
@@ -4452,7 +4646,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "printer"
   },
   {
    "id": "orcaslicer",
@@ -4475,7 +4670,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "printer"
   },
   {
    "id": "ultimaker-cura",
@@ -4498,7 +4694,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "printer"
   },
   {
    "id": "bambu-studio",
@@ -4521,7 +4718,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "printer"
   },
   {
    "id": "reprapfirmware",
@@ -4544,7 +4742,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "board"
   },
   {
    "id": "duet-web-control",
@@ -4567,7 +4766,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "board"
   },
   {
    "id": "obico-server",
@@ -4585,7 +4785,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "app"
   },
   {
    "id": "grbl",
@@ -4608,7 +4809,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "stale"
+   "status": "stale",
+   "icon": "board"
   },
   {
    "id": "fluidnc",
@@ -4631,7 +4833,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "board"
   },
   {
    "id": "linuxcnc",
@@ -4654,7 +4857,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "board"
   },
   {
    "id": "lasergrbl",
@@ -4677,7 +4881,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "stale"
+   "status": "stale",
+   "icon": "board"
   },
   {
    "id": "qmk-firmware",
@@ -4700,7 +4905,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "board"
   },
   {
    "id": "zmk-firmware",
@@ -4723,7 +4929,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "board"
   },
   {
    "id": "arduino-ide",
@@ -4746,7 +4953,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "board"
   },
   {
    "id": "arduino-esp32",
@@ -4769,7 +4977,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "board"
   },
   {
    "id": "stm32duino",
@@ -4792,7 +5001,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "board"
   },
   {
    "id": "ardupilot",
@@ -4815,7 +5025,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "board"
   },
   {
    "id": "px4-autopilot",
@@ -4838,7 +5049,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "board"
   },
   {
    "id": "betaflight",
@@ -4861,7 +5073,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "board"
   },
   {
    "id": "inav",
@@ -4884,7 +5097,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "board"
   },
   {
    "id": "expresslrs",
@@ -4907,7 +5121,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "board"
   },
   {
    "id": "edgetx",
@@ -4930,7 +5145,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "board"
   },
   {
    "id": "openpilot",
@@ -4953,7 +5169,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "board"
   },
   {
    "id": "circuitpython",
@@ -4980,7 +5197,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "board"
   },
   {
    "id": "micropython",
@@ -5003,7 +5221,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "board"
   },
   {
    "id": "raspberrypi-firmware",
@@ -5026,7 +5245,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "board"
   },
   {
    "id": "rpi-eeprom",
@@ -5049,7 +5269,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "board"
   },
   {
    "id": "rpi-imager",
@@ -5072,7 +5293,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "board"
   },
   {
    "id": "pico-sdk",
@@ -5095,7 +5317,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "board"
   },
   {
    "id": "rpicam-apps",
@@ -5118,7 +5341,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "board"
   },
   {
    "id": "retropie",
@@ -5141,7 +5365,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "stale"
+   "status": "stale",
+   "icon": "app"
   },
   {
    "id": "batocera",
@@ -5159,7 +5384,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "app"
   },
   {
    "id": "retroarch",
@@ -5182,7 +5408,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "current"
+   "status": "current",
+   "icon": "board"
   },
   {
    "id": "esp-idf",
@@ -5205,7 +5432,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "board"
   },
   {
    "id": "zephyr-rtos",
@@ -5228,7 +5456,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "critical"
+   "status": "critical",
+   "icon": "board"
   },
   {
    "id": "freertos",
@@ -5251,7 +5480,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "stale"
+   "status": "stale",
+   "icon": "board"
   },
   {
    "id": "riot-os",
@@ -5274,7 +5504,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "app"
   },
   {
    "id": "nrf-connect-sdk",
@@ -5297,7 +5528,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "board"
   },
   {
    "id": "platformio",
@@ -5320,7 +5552,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "board"
   },
   {
    "id": "openipc",
@@ -5338,7 +5571,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "camera"
   },
   {
    "id": "thingino",
@@ -5365,7 +5599,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "update"
+   "status": "update",
+   "icon": "camera"
   },
   {
    "id": "pwnagotchi",
@@ -5388,7 +5623,8 @@
    "checked": "2026-09-14T22:45:31+00:00",
    "source_status": "ok",
    "eol": false,
-   "status": "stale"
+   "status": "stale",
+   "icon": "board"
   },
   {
    "id": "netgear-nighthawk-rax80",
@@ -5406,7 +5642,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "router"
   },
   {
    "id": "netgear-nighthawk-rs700s",
@@ -5424,7 +5661,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "router"
   },
   {
    "id": "netgear-orbi-rbk852",
@@ -5442,7 +5680,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "router"
   },
   {
    "id": "netgear-orbi-rbe973",
@@ -5460,7 +5699,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "router"
   },
   {
    "id": "tp-link-archer-axe75",
@@ -5478,7 +5718,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "router"
   },
   {
    "id": "tp-link-archer-be800",
@@ -5496,7 +5737,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "router"
   },
   {
    "id": "tp-link-deco-xe75",
@@ -5514,7 +5756,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "router"
   },
   {
    "id": "tp-link-deco-be85",
@@ -5532,7 +5775,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "router"
   },
   {
    "id": "tp-link-omada-er605",
@@ -5550,7 +5794,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "router"
   },
   {
    "id": "asus-rog-rapture-gt-ax6000",
@@ -5568,7 +5813,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "router"
   },
   {
    "id": "asus-zenwifi-xt9",
@@ -5586,7 +5832,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "router"
   },
   {
    "id": "asus-zenwifi-bt10",
@@ -5604,7 +5851,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "router"
   },
   {
    "id": "linksys-velop-mx4200",
@@ -5622,7 +5870,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "router"
   },
   {
    "id": "google-nest-wifi-pro",
@@ -5640,7 +5889,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "router"
   },
   {
    "id": "eero-max-7",
@@ -5658,7 +5908,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "router"
   },
   {
    "id": "eero-6-plus",
@@ -5676,7 +5927,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "router"
   },
   {
    "id": "ubiquiti-unifi-express",
@@ -5694,7 +5946,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "router"
   },
   {
    "id": "ubiquiti-unifi-u6-plus",
@@ -5712,7 +5965,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "router"
   },
   {
    "id": "synology-rt6600ax",
@@ -5730,7 +5984,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "router"
   },
   {
    "id": "gl-inet-flint-2",
@@ -5748,7 +6003,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "router"
   },
   {
    "id": "gl-inet-beryl-ax",
@@ -5766,7 +6022,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "router"
   },
   {
    "id": "firewalla-gold",
@@ -5784,7 +6041,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "router"
   },
   {
    "id": "firewalla-purple",
@@ -5802,7 +6060,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "router"
   },
   {
    "id": "starlink-gen3-router",
@@ -5820,7 +6079,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "router"
   },
   {
    "id": "aruba-instant-on-ap22",
@@ -5838,7 +6098,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "router"
   },
   {
    "id": "zyxel-nwa110ax",
@@ -5856,7 +6117,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "router"
   },
   {
    "id": "mikrotik-hap-ax3",
@@ -5874,7 +6136,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "router"
   },
   {
    "id": "netgear-nighthawk-m6",
@@ -5892,7 +6155,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "router"
   },
   {
    "id": "synology-ds425-plus",
@@ -5910,7 +6174,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "app"
   },
   {
    "id": "synology-ds1522-plus",
@@ -5928,7 +6193,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "app"
   },
   {
    "id": "synology-ds220j",
@@ -5946,7 +6212,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "app"
   },
   {
    "id": "synology-rs422-plus",
@@ -5964,7 +6231,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "app"
   },
   {
    "id": "qnap-ts-262",
@@ -5982,7 +6250,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "nas"
   },
   {
    "id": "qnap-ts-673a",
@@ -6000,7 +6269,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "nas"
   },
   {
    "id": "qnap-tvs-h874",
@@ -6018,7 +6288,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "nas"
   },
   {
    "id": "asustor-as5404t",
@@ -6036,7 +6307,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "nas"
   },
   {
    "id": "terramaster-f4-424",
@@ -6054,7 +6326,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "nas"
   },
   {
    "id": "ugreen-nasync-dxp4800",
@@ -6072,7 +6345,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "app"
   },
   {
    "id": "wd-my-cloud-pr4100",
@@ -6090,7 +6364,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "nas"
   },
   {
    "id": "netgear-readynas-424",
@@ -6108,7 +6383,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "nas"
   },
   {
    "id": "buffalo-linkstation-720",
@@ -6126,7 +6402,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "app"
   },
   {
    "id": "ubiquiti-unas-pro",
@@ -6144,7 +6421,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "app"
   },
   {
    "id": "proxmox-ve",
@@ -6162,7 +6440,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "app"
   },
   {
    "id": "unraid-os",
@@ -6180,7 +6459,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "nas"
   },
   {
    "id": "ring-battery-doorbell-plus",
@@ -6198,7 +6478,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "doorbell"
   },
   {
    "id": "ring-stick-up-cam",
@@ -6216,7 +6497,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "camera"
   },
   {
    "id": "ring-alarm-base-station",
@@ -6234,7 +6516,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "hub"
   },
   {
    "id": "google-nest-doorbell",
@@ -6252,7 +6535,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "doorbell"
   },
   {
    "id": "google-nest-cam-indoor",
@@ -6270,7 +6554,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "camera"
   },
   {
    "id": "google-nest-thermostat",
@@ -6288,7 +6573,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "hub"
   },
   {
    "id": "google-nest-protect",
@@ -6306,7 +6592,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "hub"
   },
   {
    "id": "google-nest-hub-2",
@@ -6324,7 +6611,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "speaker"
   },
   {
    "id": "arlo-pro-5s",
@@ -6342,7 +6630,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "camera"
   },
   {
    "id": "arlo-essential-2",
@@ -6360,7 +6649,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "camera"
   },
   {
    "id": "wyze-cam-v4",
@@ -6378,7 +6668,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "camera"
   },
   {
    "id": "eufy-eufycam-3",
@@ -6396,7 +6687,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "camera"
   },
   {
    "id": "eufy-s330-doorbell",
@@ -6414,7 +6706,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "doorbell"
   },
   {
    "id": "reolink-argus-4-pro",
@@ -6432,7 +6725,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "camera"
   },
   {
    "id": "reolink-duo-3",
@@ -6450,7 +6744,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "camera"
   },
   {
    "id": "reolink-rlc-820a",
@@ -6468,7 +6763,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "camera"
   },
   {
    "id": "tp-link-tapo-c210",
@@ -6486,7 +6782,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "hub"
   },
   {
    "id": "blink-outdoor-4",
@@ -6504,7 +6801,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "camera"
   },
   {
    "id": "aqara-camera-hub-g5",
@@ -6522,7 +6820,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "camera"
   },
   {
    "id": "samsung-smartthings-hub-v3",
@@ -6540,7 +6839,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "hub"
   },
   {
    "id": "hue-sync-box",
@@ -6558,7 +6858,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "app"
   },
   {
    "id": "nanoleaf-shapes",
@@ -6576,7 +6877,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "hub"
   },
   {
    "id": "lifx-a19",
@@ -6594,7 +6896,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "hub"
   },
   {
    "id": "sonos-arc",
@@ -6612,7 +6915,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "speaker"
   },
   {
    "id": "sonos-era-300",
@@ -6630,7 +6934,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "speaker"
   },
   {
    "id": "sonos-one-sl",
@@ -6648,7 +6953,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "speaker"
   },
   {
    "id": "ecobee-smart-premium",
@@ -6666,7 +6972,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "hub"
   },
   {
    "id": "honeywell-t9",
@@ -6684,7 +6991,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "hub"
   },
   {
    "id": "emporia-vue-3",
@@ -6702,7 +7010,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "app"
   },
   {
    "id": "lutron-caseta-bridge",
@@ -6720,7 +7029,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "hub"
   },
   {
    "id": "schlage-encode-plus",
@@ -6738,7 +7048,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "hub"
   },
   {
    "id": "august-wifi-smart-lock",
@@ -6756,7 +7067,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "doorbell"
   },
   {
    "id": "yale-assure-lock-2",
@@ -6774,7 +7086,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "doorbell"
   },
   {
    "id": "level-lock-plus",
@@ -6792,7 +7105,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "doorbell"
   },
   {
    "id": "chamberlain-myq",
@@ -6810,7 +7124,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "hub"
   },
   {
    "id": "switchbot-hub-2",
@@ -6828,7 +7143,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "hub"
   },
   {
    "id": "shelly-plus-1pm",
@@ -6846,7 +7162,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "hub"
   },
   {
    "id": "shelly-pro-4pm",
@@ -6864,7 +7181,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "hub"
   },
   {
    "id": "roborock-s8-maxv-ultra",
@@ -6882,7 +7200,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "hub"
   },
   {
    "id": "dreame-x40-ultra",
@@ -6900,7 +7219,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "hub"
   },
   {
    "id": "ecovacs-deebot-x2-omni",
@@ -6918,7 +7238,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "hub"
   },
   {
    "id": "irobot-roomba-combo-10",
@@ -6936,7 +7257,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "hub"
   },
   {
    "id": "rachio-3",
@@ -6954,7 +7276,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "hub"
   },
   {
    "id": "moen-flo",
@@ -6972,7 +7295,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "app"
   },
   {
    "id": "simplisafe-base-station",
@@ -6990,7 +7314,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "hub"
   },
   {
    "id": "ubiquiti-unifi-g5-bullet",
@@ -7008,7 +7333,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "camera"
   },
   {
    "id": "ubiquiti-unifi-g4-doorbell",
@@ -7026,7 +7352,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "doorbell"
   },
   {
    "id": "amazon-echo-dot-5",
@@ -7044,7 +7371,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "speaker"
   },
   {
    "id": "apple-homepod-2",
@@ -7062,7 +7390,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "speaker"
   },
   {
    "id": "apple-tv-4k",
@@ -7080,7 +7409,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "hub"
   },
   {
    "id": "sony-playstation-5-pro",
@@ -7098,7 +7428,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "console"
   },
   {
    "id": "sony-dualsense-controller",
@@ -7116,7 +7447,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "console"
   },
   {
    "id": "nintendo-switch-2",
@@ -7134,7 +7466,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "console"
   },
   {
    "id": "valve-steam-deck-oled",
@@ -7152,7 +7485,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "console"
   },
   {
    "id": "asus-rog-ally-x",
@@ -7170,7 +7504,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "console"
   },
   {
    "id": "lenovo-legion-go",
@@ -7188,7 +7523,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "console"
   },
   {
    "id": "analogue-pocket",
@@ -7206,7 +7542,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "console"
   },
   {
    "id": "meta-quest-3",
@@ -7224,7 +7561,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "console"
   },
   {
    "id": "sony-psvr2",
@@ -7242,7 +7580,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "console"
   },
   {
    "id": "apple-vision-pro",
@@ -7260,7 +7599,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "console"
   },
   {
    "id": "dji-mavic-4-pro",
@@ -7278,7 +7618,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "drone"
   },
   {
    "id": "dji-neo",
@@ -7296,7 +7637,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "drone"
   },
   {
    "id": "dji-avata-2",
@@ -7314,7 +7656,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "drone"
   },
   {
    "id": "dji-osmo-pocket-3",
@@ -7332,7 +7675,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "drone"
   },
   {
    "id": "dji-rs-4",
@@ -7350,7 +7694,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "drone"
   },
   {
    "id": "autel-evo-lite-plus",
@@ -7368,7 +7713,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "drone"
   },
   {
    "id": "hoverair-x1",
@@ -7386,7 +7732,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "drone"
   },
   {
    "id": "insta360-x4",
@@ -7404,7 +7751,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "camera"
   },
   {
    "id": "insta360-ace-pro-2",
@@ -7422,7 +7770,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "camera"
   },
   {
    "id": "gopro-hero-13-black",
@@ -7440,7 +7789,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "camera"
   },
   {
    "id": "garmin-edge-1050",
@@ -7458,7 +7808,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "console"
   },
   {
    "id": "garmin-fenix-8",
@@ -7476,7 +7827,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "console"
   },
   {
    "id": "wahoo-elemnt-roam",
@@ -7494,7 +7846,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "console"
   },
   {
    "id": "bosch-ebike-performance-cx",
@@ -7512,7 +7865,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "ebike"
   },
   {
    "id": "bosch-kiox-300",
@@ -7530,7 +7884,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "ebike"
   },
   {
    "id": "shimano-steps-ep8",
@@ -7548,7 +7903,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "ebike"
   },
   {
    "id": "trek-rail-9",
@@ -7566,7 +7922,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "ebike"
   },
   {
    "id": "aventon-level-3",
@@ -7584,7 +7941,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "ebike"
   },
   {
    "id": "lectric-xp-4",
@@ -7602,7 +7960,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "ebike"
   },
   {
    "id": "super73-s2",
@@ -7620,7 +7979,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "ebike"
   },
   {
    "id": "cowboy-4",
@@ -7638,7 +7998,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "ebike"
   },
   {
    "id": "segway-ninebot-max-g2",
@@ -7656,7 +8017,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "ebike"
   },
   {
    "id": "onewheel-gt-s",
@@ -7674,7 +8036,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "ebike"
   },
   {
    "id": "bambu-lab-x1-carbon",
@@ -7692,7 +8055,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "printer"
   },
   {
    "id": "bambu-lab-p1s",
@@ -7710,7 +8074,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "printer"
   },
   {
    "id": "bambu-lab-a1",
@@ -7728,7 +8093,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "printer"
   },
   {
    "id": "bambu-lab-h2d",
@@ -7746,7 +8112,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "printer"
   },
   {
    "id": "prusa-mk4s",
@@ -7764,7 +8131,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "printer"
   },
   {
    "id": "prusa-xl",
@@ -7782,7 +8150,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "printer"
   },
   {
    "id": "creality-k2-plus",
@@ -7800,7 +8169,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "printer"
   },
   {
    "id": "creality-ender-3-v3",
@@ -7818,7 +8188,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "printer"
   },
   {
    "id": "anycubic-kobra-3",
@@ -7836,7 +8207,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "printer"
   },
   {
    "id": "elegoo-neptune-4",
@@ -7854,7 +8226,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "printer"
   },
   {
    "id": "elegoo-saturn-4-ultra",
@@ -7872,7 +8245,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "printer"
   },
   {
    "id": "snapmaker-artisan",
@@ -7890,7 +8264,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "board"
   },
   {
    "id": "xtool-p2",
@@ -7908,7 +8283,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "board"
   },
   {
    "id": "glowforge-pro",
@@ -7926,7 +8302,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "board"
   },
   {
    "id": "raspberry-pi-5",
@@ -7944,7 +8321,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "board"
   },
   {
    "id": "arduino-uno-r4",
@@ -7962,7 +8340,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "board"
   },
   {
    "id": "framework-laptop-13",
@@ -7980,7 +8359,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "board"
   },
   {
    "id": "framework-laptop-16",
@@ -7998,7 +8378,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "board"
   },
   {
    "id": "system76-firmware",
@@ -8016,7 +8397,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "board"
   },
   {
    "id": "steamdeck-bios",
@@ -8034,7 +8416,8 @@
    "checked": null,
    "source_status": "pending",
    "eol": false,
-   "status": "pending"
+   "status": "pending",
+   "icon": "console"
   }
  ]
 }
