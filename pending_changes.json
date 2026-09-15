@@ -29,6 +29,20 @@
    "notes": ":rocket: Jellyfin Server 12.1 We are pleased to announce the latest stable release of Jellyfin, version 12.1! This minor release brings several bugfixes to improve your Jellyfin experience. As always, please ensure you take a full backup before upgrading! Discuss this release further on our forums.…",
    "source_url": "https://github.com/jellyfin/jellyfin/releases/tag/v12.1",
    "page_url": "https://www.firmwarely.com/devices/jellyfin-server/"
+  },
+  "heroic-launcher": {
+   "id": "heroic-launcher",
+   "brand": "Heroic",
+   "model": "Games launcher",
+   "category": "C",
+   "status": "update",
+   "version": "2.22.2",
+   "previous": "2.22.1",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": "Hi! After the last hotfix we identified some new issues especially with Rockstar and Ubisoft games and this new release focus on fixing them but also fixes other stuff as you can see bellow! Thanks! What's Changed fix: Search for a heroic executable on PATH if our executable is not called \"heroic\" …",
+   "source_url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/tag/v2.22.2",
+   "page_url": "https://www.firmwarely.com/devices/heroic-launcher/"
   }
  }
 }
