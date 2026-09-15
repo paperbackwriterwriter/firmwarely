@@ -519,6 +519,34 @@
    "notes": "What's Changed MLX safetensors ollama create no longer experimental. GGUF model creation now requires using llama.cpp tooling for safetensor conversion and quantization. Improved MLX memory handling on Apple Silicon Runaway repeat token detection now requires 100 repeat tokens for reduced false pos…",
    "source_url": "https://github.com/ollama/ollama/releases/tag/v0.34.1",
    "page_url": "https://www.firmwarely.com/devices/ollama/"
+  },
+  "metube": {
+   "id": "metube",
+   "brand": "MeTube",
+   "model": "yt-dlp web UI",
+   "category": "A",
+   "status": "update",
+   "version": "2026.09.15",
+   "previous": "2026.08.28",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": "Docker Images Docker images have been built and pushed: Docker Hub: alexta69/metube:latest alexta69/metube:2026.09.15 GitHub Container Registry: ghcr.io/alexta69/metube:latest ghcr.io/alexta69/metube:2026.09.15 Changes build: upgrade Python and npm dependencies (6708a88) fix: stop resolving submitt…",
+   "source_url": "https://github.com/alexta69/metube/releases/tag/2026.09.15",
+   "page_url": "https://www.firmwarely.com/devices/metube/"
+  },
+  "pangolin": {
+   "id": "pangolin",
+   "brand": "Pangolin",
+   "model": "Networking and security platform",
+   "category": "R",
+   "status": "update",
+   "version": "1.23.0",
+   "previous": "1.22.2",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": "Read the Announcement Read the full announcement with discussion of new features: Pangolin 1.23: High Availability and Clustering What's Changed Add support for self-service high availability in Enterprise Edition Add master list of all orgs to server admin panel Add support for more than one serve…",
+   "source_url": "https://github.com/fosrl/pangolin/releases/tag/1.23.0",
+   "page_url": "https://www.firmwarely.com/devices/pangolin/"
   }
  }
 }
