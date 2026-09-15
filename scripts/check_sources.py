@@ -8,6 +8,7 @@ run on a pull request.
 
   python3 scripts/check_sources.py            # all sources
   python3 scripts/check_sources.py --only id1,id2
+  python3 scripts/check_sources.py --verbose  # also print what every working source returned
 
 Exit code is 1 only for a source that is definitively wrong — a GitHub repo that does not
 exist or has no stable release. Timeouts, rate limits and vendor pages that reject CI
@@ -44,6 +45,7 @@ def check(src):
 
 def main():
     only = None
+    verbose = "--verbose" in sys.argv
     for i, a in enumerate(sys.argv):
         if a == "--only" and i + 1 < len(sys.argv):
             only = {x.strip() for x in sys.argv[i + 1].split(",") if x.strip()}
@@ -61,6 +63,10 @@ def main():
             results.append((src, status, detail))
             if status in ("hard", "soft"):
                 print(f"  {status.upper():4s} {src['id']:44s} {detail}")
+            elif verbose and status == "ok":
+                # a source can return 200 and still be reading the wrong number off the page,
+                # so adding one is worth eyeballing the value it actually resolved to
+                print(f"  ok   {src['id']:44s} {detail}")
 
     counts = {k: sum(1 for _, s, _ in results if s == k) for k in ("ok", "skipped", "soft", "hard")}
     print(f"\n{len(results)} sources: {counts['ok']} ok, {counts['hard']} broken, "
@@ -79,6 +85,12 @@ def main():
             for s, d in rows:
                 lines.append("| `%s` | %s | %s |" % (s["id"], s["type"], d.replace("|", r"\|")))
             lines.append("")
+        if verbose:
+            rows = [(s, d) for s, st, d in results if st == "ok"]
+            if rows:
+                lines += ["**Resolved**", "", "| device | type | version |", "| --- | --- | --- |"]
+                lines += ["| `%s` | %s | %s |" % (s["id"], s["type"], d.replace("|", r"\|")) for s, d in rows]
+                lines.append("")
         if not counts["hard"] and not counts["soft"]:
             lines.append("Every tracked source resolved. ✅")
         Path(summary).write_text("\n".join(lines) + "\n")

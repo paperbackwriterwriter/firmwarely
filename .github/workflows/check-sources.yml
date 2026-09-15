@@ -46,7 +46,7 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}   # 60 API calls/hour without this, 1,000 with it
         run: |
           if [ -n "${{ inputs.only }}" ]; then
-            python3 scripts/check_sources.py --only "${{ inputs.only }}"
+            python3 scripts/check_sources.py --verbose --only "${{ inputs.only }}"
           else
-            python3 scripts/check_sources.py
+            python3 scripts/check_sources.py --verbose
           fi
