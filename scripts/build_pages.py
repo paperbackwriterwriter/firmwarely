@@ -722,6 +722,18 @@ def main():
         d.mkdir(parents=True, exist_ok=True)
         (d / "index.html").write_text(content)
     (ROOT / "404.html").write_text(not_found_page(devices))
+
+    # a device or brand that left the catalogue must not leave a stale page behind
+    keep = {"devices": {d["id"] for d in devices}, "brands": {slugify(b) for b in brand_pages},
+            "category": set(CAT_SLUG.values())}
+    import shutil
+    pruned = 0
+    for folder, names in keep.items():
+        for child in (ROOT / folder).iterdir():
+            if child.is_dir() and child.name not in names:
+                shutil.rmtree(child); pruned += 1
+    if pruned:
+        print(f"pruned {pruned} stale page folder(s)")
     (ROOT / "pro" / "index.html").write_text(pro_page().replace("{n}", str(len(devices))))
 
     # sitemap: one entry per indexable page, with the date its content last actually moved
