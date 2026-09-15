@@ -2537,7 +2537,10 @@
    "brand": "Proxmox",
    "model": "Virtual Environment",
    "category": "A",
-   "type": "manual"
+   "type": "html",
+   "url": "https://pve.proxmox.com/wiki/Roadmap",
+   "version_regex": "Proxmox VE (\\d+\\.\\d+)",
+   "notes": "Proxmox VE release. See the roadmap for what changed."
   },
   {
    "id": "unraid-os",
@@ -2937,7 +2940,10 @@
    "brand": "Valve",
    "model": "Steam Deck OLED",
    "category": "C",
-   "type": "manual"
+   "type": "html",
+   "url": "https://store.steampowered.com/news/app/1675200",
+   "version_regex": "SteamOS (\\d+\\.\\d+(?:\\.\\d+)?)",
+   "notes": "SteamOS release. See the news feed for details."
   },
   {
    "id": "asus-rog-ally-x",
@@ -7986,7 +7992,9 @@
    "brand": "M5Stack",
    "model": "Cardputer",
    "category": "M",
-   "type": "manual"
+   "type": "feed",
+   "url": "https://github.com/m5stack/M5Cardputer/releases.atom",
+   "product_url": "https://github.com/m5stack/M5Cardputer"
   },
   {
    "id": "lilygo-t-deck",
@@ -8018,7 +8026,9 @@
    "brand": "Espressif",
    "model": "ESP32-S3-BOX-3",
    "category": "M",
-   "type": "manual"
+   "type": "feed",
+   "url": "https://github.com/espressif/esp-box/releases.atom",
+   "product_url": "https://github.com/espressif/esp-box"
   },
   {
    "id": "seeed-xiao-esp32c6",
@@ -8091,7 +8101,9 @@
    "brand": "QIDI",
    "model": "Plus 4",
    "category": "M",
-   "type": "manual"
+   "type": "feed",
+   "url": "https://github.com/QIDITECH/QIDI_PLUS4/releases.atom",
+   "product_url": "https://github.com/QIDITECH/QIDI_PLUS4"
   },
   {
    "id": "sovol-sv08",
@@ -8170,7 +8182,9 @@
    "brand": "PINE64",
    "model": "PineTime",
    "category": "M",
-   "type": "manual"
+   "type": "feed",
+   "url": "https://github.com/InfiniTimeOrg/InfiniTime/releases.atom",
+   "product_url": "https://github.com/InfiniTimeOrg/InfiniTime"
   },
   {
    "id": "gl-inet-comet-kvm",
@@ -8403,7 +8417,10 @@
    "brand": "NVIDIA",
    "model": "SHIELD TV Pro",
    "category": "P",
-   "type": "manual"
+   "type": "html",
+   "url": "https://www.nvidia.com/en-us/shield/software-update/",
+   "version_regex": "SHIELD Experience[^0-9]{0,60}(\\d+\\.\\d+(?:\\.\\d+)?)",
+   "notes": "SHIELD Experience release. See the update page for details."
   },
   {
    "id": "xgimi-horizon-s-max",
