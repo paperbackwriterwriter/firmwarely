@@ -1,10 +1,17 @@
-name: Nightly firmware check
+name: Firmware check
 
+# Every 30 minutes: check every tracked source and publish any change. Once a day (the first
+# run after 08:00 UTC): render the browser-only vendor pages, discover and vet new projects,
+# then send the digest and the per-user emails for everything that moved since yesterday.
 on:
   schedule:
-    - cron: "15 8 * * *"   # 08:15 UTC = 3:15 AM Central (daylight time)
+    - cron: "*/30 * * * *"
   workflow_dispatch:
     inputs:
+      daily:
+        description: "Run the once-a-day steps too (browser render, discovery, digest, emails)"
+        type: boolean
+        default: true
       force_digest:
         description: "Build a digest of every tracked device even if nothing changed (for testing)"
         type: boolean
@@ -14,8 +21,13 @@ permissions:
   contents: write
   issues: write
 
+# never let two checks race each other into the same commit
+concurrency:
+  group: firmware-check
+  cancel-in-progress: false
+
 jobs:
-  fetch:
+  check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -24,19 +36,25 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Is this the once-a-day run?
+        id: when
+        env:
+          FORCE_DAILY: ${{ github.event_name == 'workflow_dispatch' && inputs.daily }}
+        run: python3 scripts/schedule.py >> "$GITHUB_OUTPUT"
+
       - name: Install Playwright (headless Chromium)
+        if: steps.when.outputs.daily == 'true'
         run: |
           pip install playwright
           python3 -m playwright install --with-deps chromium
 
-      - name: Render JS-only pages
+      - name: Render JS-only vendor pages
+        if: steps.when.outputs.daily == 'true'
         run: python3 scripts/fetch_browser.py
 
-      - name: Fetch latest firmware versions
+      - name: Check every tracked source
         env:
-          BEEHIIV_API_KEY: ${{ secrets.BEEHIIV_API_KEY }}
-          BEEHIIV_PUB_ID: ${{ secrets.BEEHIIV_PUB_ID }}
-          GITHUB_TOKEN: ${{ github.token }}   # 60 API calls/hour unauthenticated, 1,000 with this
+          GITHUB_TOKEN: ${{ github.token }}   # 5,000 API calls/hour; a run uses ~400
         run: |
           if [ "${{ inputs.force_digest }}" = "true" ]; then
             python3 scripts/fetch.py --force-digest
@@ -44,39 +62,62 @@ jobs:
             python3 scripts/fetch.py
           fi
 
+      - name: Discover and vet new projects
+        if: steps.when.outputs.daily == 'true'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 scripts/discover.py
+
       - name: Build device pages
         run: python3 scripts/build_pages.py
 
-      - name: Commit devices.json and pages if they changed
+      # Drains pending_changes.json into digest.md + changed.json, creates the Beehiiv draft,
+      # marks today as done. Only on the daily run so Pro members get one email a day.
+      - name: Build the daily digest
+        if: steps.when.outputs.daily == 'true'
+        env:
+          BEEHIIV_API_KEY: ${{ secrets.BEEHIIV_API_KEY }}
+          BEEHIIV_PUB_ID: ${{ secrets.BEEHIIV_PUB_ID }}
+        run: python3 scripts/digest.py
+
+      # Commit when data changed. A run where only the "checked" timestamps moved is not
+      # worth a deploy, unless the last commit is over six hours old (keeps "last checked"
+      # honest on the site without 48 deploys a day).
+      - name: Commit data and pages if they changed
         run: |
           git config user.name "firmwarely-bot"
           git config user.email "bot@firmwarely.com"
-          git add devices.json devices category brands 404.html sitemap.xml robots.txt pro legal
+          git add devices.json sources.json pending_changes.json digest_state.json \
+                  devices category brands 404.html sitemap.xml robots.txt pro legal
           if git diff --cached --quiet; then
             echo "No changes."
-          else
-            git commit -m "nightly: update devices.json ($(date -u +%Y-%m-%d))"
-            git pull --rebase origin main
-            git push
+            exit 0
           fi
+          AGE=$(( $(date +%s) - $(git log -1 --format=%ct) ))
+          if git diff --cached --quiet -I '"generated": ' -I '"checked": ' -I '"last_daily' && [ "$AGE" -lt 21600 ]; then
+            echo "Only timestamps moved and the last commit is ${AGE}s old; not committing."
+            git reset -q
+            exit 0
+          fi
+          git commit -m "check: update devices.json ($(date -u +%Y-%m-%dT%H:%MZ))"
+          git pull --rebase origin main
+          git push
 
       - name: Open an issue with the digest (emails you)
         if: ${{ hashFiles('digest.md') != '' }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh label create digest --color 0E8A16 --description "Nightly firmware digest" --force || true
+          gh label create digest --color 0E8A16 --description "Daily firmware digest" --force || true
           gh issue create \
             --title "$(head -n 1 digest.md | sed 's/^# //')" \
             --body-file digest.md \
             --label digest || gh issue create --title "$(head -n 1 digest.md | sed 's/^# //')" --body-file digest.md
 
       # One email per Pro subscriber: the devices they saved on /my-devices.html, or the
-      # general digest if none of theirs moved. This replaced the Beehiiv Pro segment
-      # blast (scripts/pro_alert.py), which sent a second copy to the same people.
-      # Skipped automatically when RESEND_API_KEY / the Beehiiv secrets aren't set yet.
-      # On a force_digest run it refuses to mail real people unless USER_ALERT_TEST_EMAIL
-      # is set, in which case every alert goes there instead.
+      # general digest if none of theirs moved. Skipped automatically when RESEND_API_KEY /
+      # the Beehiiv secrets aren't set. On a force_digest run it refuses to mail real people
+      # unless USER_ALERT_TEST_EMAIL is set, in which case every alert goes there instead.
       - name: Send per-user device alerts
         if: ${{ hashFiles('changed.json') != '' }}
         env:

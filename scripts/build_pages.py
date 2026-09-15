@@ -34,13 +34,13 @@ CAT_SHORT = {"R": "Router & networking", "N": "NAS & storage", "S": "Smart home 
              "C": "Console, drone & e-bike", "M": "Maker & open-source",
              "P": "PC, TV & gadget", "A": "Self-hosted app"}
 CAT_INTRO = {
-    "R": "Routers, mesh systems, switches and access points sit between everything you own and the internet, which makes them the devices most worth keeping patched. Vendors ship fixes for authentication bypasses and remote code execution several times a year, often quietly. Firmwarely reads each manufacturer's release page every night and records the version, date and what changed.",
-    "N": "A NAS holds your backups, photos and documents and is usually reachable from the whole house, so a missed security update matters more here than almost anywhere else. DSM, QTS, TrueNAS and Unraid all publish structured release notes; Firmwarely checks them nightly and flags the releases that fix vulnerabilities.",
+    "R": "Routers, mesh systems, switches and access points sit between everything you own and the internet, which makes them the devices most worth keeping patched. Vendors ship fixes for authentication bypasses and remote code execution several times a year, often quietly. Firmwarely reads each manufacturer's release page every 30 minutes and records the version, date and what changed.",
+    "N": "A NAS holds your backups, photos and documents and is usually reachable from the whole house, so a missed security update matters more here than almost anywhere else. DSM, QTS, TrueNAS and Unraid all publish structured release notes; Firmwarely checks them every 30 minutes and flags the releases that fix vulnerabilities.",
     "S": "Cameras, doorbells, hubs and smart speakers update through their apps and rarely tell you what changed. Firmwarely tracks the manufacturers' official release notes so you can see the current version, when it shipped and whether it closed a security hole, even for devices that update silently.",
     "C": "Consoles, drones and e-bikes carry firmware that changes how they behave, from flight-safety databases to battery management. Manufacturers publish release notes, but nobody reads them at the right moment. Firmwarely records each release and emails you when one lands for something you own.",
-    "M": "Open-source firmware and self-hosted software move fast, and a stale version can mean missing features or an unpatched dependency. Firmwarely watches the projects' own release feeds on GitHub and elsewhere, so you see new tags and their notes the morning after they ship.",
+    "M": "Open-source firmware and self-hosted software move fast, and a stale version can mean missing features or an unpatched dependency. Firmwarely watches the projects' own release feeds on GitHub and elsewhere, so you see new tags and their notes within the hour.",
     "P": "Laptops, motherboards, TVs, printers, headphones, cameras and e-readers all run firmware, and most of it updates from a settings menu nobody opens. BIOS releases close security holes, TV updates change what apps work, and camera firmware adds autofocus modes years after purchase. Firmwarely lists the current version and the manufacturer's notes so you know when it is worth the trip into the menu.",
-    "A": "Self-hosted apps and servers are the software people run on their own NAS, mini PC or VPS: media servers, dashboards, password managers, home automation, monitoring and databases. They ship far more often than appliances, and a missed release can mean a known vulnerability on a box reachable from the internet. Firmwarely reads each project's release feed every night and keeps the version, date and notes in one place.",
+    "A": "Self-hosted apps and servers are the software people run on their own NAS, mini PC or VPS: media servers, dashboards, password managers, home automation, monitoring and databases. They ship far more often than appliances, and a missed release can mean a known vulnerability on a box reachable from the internet. Firmwarely reads each project's release feed every 30 minutes and keeps the version, date and notes in one place.",
 }
 # how a category reads mid-sentence ("NAS" must stay upper-case)
 CAT_PHRASE = {"R": "routers & networking", "N": "NAS & storage", "S": "smart home & cameras",
@@ -434,11 +434,11 @@ def device_page(d, ctx=None):
       <div class="faq">
         <h2 style="margin-top:2rem">FAQ</h2>
         <h3>What is the latest {noun} {"of" if software else "for the"} {esc(name)}?</h3>
-        <p>{(f"Version {esc(d['version'])}, released {fmt(d.get('released'))}. " if live else "We haven't recorded a version yet. ")}This page is refreshed every night from the manufacturer's release page.</p>
+        <p>{(f"Version {esc(d['version'])}, released {fmt(d.get('released'))}. " if live else "We haven't recorded a version yet. ")}This page is refreshed every 30 minutes from the manufacturer's release page.</p>
         <h3>How do I update {"" if software else "the "}{esc(name)}?</h3>
         <p><a href="#update">See the step-by-step above.</a> {esc(HOWTO.get(d['category'], ''))}</p>
         <h3>How does Firmwarely know when there's a new version?</h3>
-        <p>Every night we read the manufacturer's official release page{(" for the " + esc(name)) if live else ""} and record the version, date and changelog. If anything changed, subscribers watching this device get an email.</p>
+        <p>Every 30 minutes we read the manufacturer's official release page{(" for the " + esc(name)) if live else ""} and record the version, date and changelog. Subscribers watching this device get one email a day when it changed.</p>
         <h3>Is this an official {esc(d['brand'])} page?</h3>
         <p>No. Firmwarely is independent. {"Project and product names belong to their owners; always install releases from the project's own source." if software else "Device and brand names belong to their manufacturers; always download firmware from the official source."}</p>
       </div>
@@ -473,8 +473,8 @@ def category_page(key, devices, brands):
                        f"{short} {what} | Firmwarely",
                        f"{short} {what}"])
     kind = "versions" if key == "A" else "firmware"
-    desc = fit_desc([f"Latest {kind} for {len(items)} {CAT_PHRASE[key]} from {names} and more, checked nightly. Version, release date, what changed and how to update.",
-                     f"Latest {kind} for {len(items)} {CAT_PHRASE[key]}, checked nightly, with release notes and update guides.",
+    desc = fit_desc([f"Latest {kind} for {len(items)} {CAT_PHRASE[key]} from {names} and more, checked every 30 minutes. Version, release date, what changed and how to update.",
+                     f"Latest {kind} for {len(items)} {CAT_PHRASE[key]}, checked every 30 minutes, with release notes and update guides.",
                      f"{cat}: {kind}, release notes and update alerts."])
     recent = by_recent(items)[:8]
     ld = {"@context": "https://schema.org", "@graph": [
@@ -512,8 +512,8 @@ def brand_page(brand, items):
                        f"{brand} {what} | Firmwarely",
                        f"{brand} {what}"])
     newest = live[0] if live else None
-    desc = fit_desc([(f"Latest {brand} {'versions' if software else 'firmware'} for {len(items)} {unit}, checked nightly. Newest release: {newest['model']} {newest['version']} on {fmt(newest.get('released'))}." if newest
-                      else f"{brand} {'versions' if software else 'firmware'} for {len(items)} {unit}, tracked nightly with release notes and update guides."),
+    desc = fit_desc([(f"Latest {brand} {'versions' if software else 'firmware'} for {len(items)} {unit}, checked every 30 minutes. Newest release: {newest['model']} {newest['version']} on {fmt(newest.get('released'))}." if newest
+                      else f"{brand} {'versions' if software else 'firmware'} for {len(items)} {unit}, checked every 30 minutes with release notes and update guides."),
                      f"{brand} versions, release notes and update alerts for {len(items)} {unit}.",
                      f"{brand} {what} and alerts."])
     ld = {"@context": "https://schema.org", "@graph": [
@@ -556,7 +556,7 @@ DEVICE_ART = [  # (label, category page, icon family)
 
 def pro_page():
     title = "Firmwarely Pro waitlist — founding-member price | Firmwarely"
-    desc = "Join the Firmwarely Pro waitlist: unlimited devices, the dashboard and nightly alerts at the founding-member price of $4.99 a month, locked in."
+    desc = "Join the Firmwarely Pro waitlist: unlimited devices, the dashboard and daily alerts at the founding-member price of $4.99 a month, locked in."
     art = "".join(
         f'<a href="{cat_path(key)}" aria-label="{esc(label)}">{icon_svg(icon, "")}<span>{esc(label)}</span></a>'
         for label, key, icon in DEVICE_ART)
@@ -587,7 +587,7 @@ def pro_page():
   <div class="pro-perks">
     <div class="card"><h3>Every device you own</h3><p>No three-device cap. Add the router, both NAS boxes, every camera and the kids' console.</p></div>
     <div class="card"><h3>The dashboard</h3><p>One screen showing what's current, what has an update and what has a security fix waiting, with a button to go apply it.</p></div>
-    <div class="card"><h3>One email a night, when it matters</h3><p>After each nightly check, a single email covering everything of yours that changed, security fixes first. Silence otherwise.</p></div>
+    <div class="card"><h3>One email a day, when it matters</h3><p>Each morning, a single email covering everything of yours that changed in the last 24 hours, security fixes first. Silence otherwise.</p></div>
   </div>
 
   <h2 style="margin-top:2.5rem">Meanwhile</h2>
@@ -624,11 +624,11 @@ def index_page(devices, brand_pages=()):
             parts.append(f'<li><a href="/devices/{d["id"]}/">{icon_svg(d.get("icon"))}{esc(d["brand"])} {esc(d["model"])}</a><span>{v}</span></li>')
         parts.append("</ul>")
     title = "Firmware update tracker — every device we watch | Firmwarely"
-    desc = f"Latest firmware versions for {len(devices)} routers, NAS, smart home devices, consoles and maker gear, checked nightly against manufacturer release pages."
+    desc = f"Latest firmware versions for {len(devices)} routers, NAS, smart home devices, consoles, PCs, TVs, maker gear and self-hosted apps, checked every 30 minutes against manufacturer release pages and project feeds."
     return head(title, desc, "/devices/") + f"""
 <div class="wrap brandlist" style="padding-top:2rem">
   <h1 class="dev-h">Every device we watch</h1>
-  <p style="color:var(--muted)">Checked every night. Tap a device for its latest firmware, release notes and history.</p>
+  <p style="color:var(--muted)">Checked every 30 minutes. Tap a device for its latest firmware, release notes and history.</p>
   <div class="browse"><span>Categories</span>{''.join(f'<a class="chip" href="{cat_path(k)}">{esc(v)}</a>' for k, v in CATS.items())}</div>
   <div class="browse"><span>Brands</span>{''.join(f'<a class="chip" href="{brand_path(b)}">{esc(b)}</a>' for b in brand_pages)}</div>
   {''.join(parts)}
@@ -649,7 +649,7 @@ def thanks_page():
 <h1 class="dev-h">You're on Pro. Thank you.</h1>
 <p style="font-size:1.1rem;margin-top:1rem;color:var(--muted)">Your receipt is on its way from Stripe. Here's what happens next:</p>
 <ul style="color:var(--muted);padding-left:1.2rem">
-  <li><strong style="color:var(--text)">Nightly alerts.</strong> After each night's check, you get one email covering every device of yours that changed, security fixes first.</li>
+  <li><strong style="color:var(--text)">Daily alerts.</strong> Each morning you get one email covering every device of yours that changed in the last 24 hours, security fixes first.</li>
   <li><strong style="color:var(--text)">Unlimited devices and the dashboard.</strong> Sign in to <a href="/my-devices.html">My devices</a> with the email you paid with, add everything you own, and the <a href="/dashboard.html">dashboard</a> shows what needs attention.</li>
   <li><strong style="color:var(--text)">End-of-life notices.</strong> You'll hear when a manufacturer says updates are stopping for something you own.</li>
 </ul>

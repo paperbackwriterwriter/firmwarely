@@ -310,9 +310,60 @@ def test_landing_pages():
     check("homepage Pro button falls back to /pro/, not the footer form", 'pb.href = "/pro/"' in Path("index.html").read_text(), True)
 
 
+# ---- the half-hourly pipeline: one daily run, changes pooled until then, discovery vetting ----
+def test_schedule_and_digest():
+    from datetime import datetime, timezone
+    import schedule, digest, discover
+    d = lambda h, day="2026-09-15": datetime.fromisoformat(f"{day}T{h:02d}:30:00+00:00")
+    check("before 08:00 UTC is never the daily run", schedule.is_daily_due(d(7), {}), False)
+    check("first run after 08:00 UTC is the daily run", schedule.is_daily_due(d(8), {}), True)
+    check("a later run the same day is not", schedule.is_daily_due(d(14), {"last_daily": "2026-09-15"}), False)
+    check("next day it is due again", schedule.is_daily_due(d(9, "2026-09-16"), {"last_daily": "2026-09-15"}), True)
+    check("a manual dispatch forces it", schedule.is_daily_due(d(3), {"last_daily": "2026-09-15"}, force=True), True)
+
+    rec = {"id": "x", "brand": "Acme", "model": "Router", "category": "R", "status": "critical", "version": "2.0",
+           "previous": "1.0", "released": "2026-09-14", "eol": False, "notes": "Fixes CVE-2026-1", "source_url": "https://e.com/r",
+           "page_url": "https://www.firmwarely.com/devices/x/"}
+    other = dict(rec, id="y", brand="Beta", model="NAS", status="update", notes="bug fixes")
+    issue, payload, title, html_body = digest.build({"since": "t", "forced": False, "devices": {"y": other, "x": rec}},
+                                                    {"added": [{"brand": "New", "model": "Thing", "category": "A"}]})
+    check("digest pools every pending change", payload["count"], 2)
+    check("digest puts security fixes first", payload["devices"][0]["id"], "x")
+    check("digest issue never carries links", "http" in issue, False)
+    check("digest issue lists what discovery added", "New Thing — Self-hosted apps & servers" in issue, True)
+    check("digest of an empty pending set is nothing", digest.build({"devices": {}}), (None, None, None, None))
+    check("forced flag survives into changed.json", digest.build({"forced": True, "devices": {"x": rec}})[1]["forced"], True)
+
+    base = {"full_name": "acme/widget-server", "name": "widget-server", "fork": False, "archived": False, "disabled": False,
+            "is_template": False, "stargazers_count": 5000, "description": "Self-hosted widget server for the whole family.",
+            "license": {"key": "mit"}, "pushed_at": "2026-09-01T00:00:00Z", "topics": ["self-hosted", "docker"],
+            "html_url": "https://github.com/acme/widget-server", "owner": {"login": "acme"}}
+    check("a real product passes vetting", discover.vet(base, set(), set()), None)
+    check("already tracked repos are skipped", discover.vet(base, {"acme/widget-server"}, set()), "already tracked")
+    check("awesome lists are not products", discover.vet(dict(base, name="awesome-selfhosted", description="A curated list of self-hosted services"), set(), set()),
+          "not a product (list/library/tutorial)")
+    check("libraries are not products", discover.vet(dict(base, description="A Python library for talking to widgets"), set(), set()),
+          "not a product (list/library/tutorial)")
+    check("unlicensed repos are skipped", discover.vet(dict(base, license=None), set(), set()), "no license")
+    check("small repos are skipped", discover.vet(dict(base, stargazers_count=200), set(), set()), "too few stars")
+    check("stale repos are skipped", discover.vet(dict(base, pushed_at="2024-01-01T00:00:00Z"), set(), set()), "not pushed in a year")
+    check("brand from repo name", discover.humanize("uptime-kuma"), "Uptime Kuma")
+    check("brand keeps deliberate casing", discover.humanize("NocoDB"), "NocoDB")
+    check("model drops marketing and the project's own name",
+          discover.short_model("Immich - High performance self-hosted photo and video management solution", "Immich"),
+          "High performance self-hosted photo and video management solution"[:60].rsplit(" ", 1)[0].rstrip(",;:- ") if len("High performance self-hosted photo and video management solution") > 60 else "High performance self-hosted photo and video management solution")
+    check("model is capped at 60 characters", len(discover.short_model("x" * 30 + " " + "y" * 40 + " tail", "Z")) <= 60, True)
+    check("router topics land in R", discover.category_for(["openwrt", "linux"], ""), "R")
+    check("home automation lands in S", discover.category_for(["home-assistant", "python"], ""), "S")
+    check("plain software lands in A", discover.category_for(["docker", "nodejs"], ""), "A")
+    check("a day's topics are a fixed handful", len(discover.todays_topics(100)), discover.TOPICS_PER_DAY)
+    check("fetch shares its record builders with discovery",
+          all(hasattr(fetch, f) for f in ("device_record", "check_source", "apply_result", "finish_record", "load_pending")), True)
+
+
 for t in (test_compare, test_new_release, test_saved_devices, test_routing, test_forced_guard,
           test_update_guides, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
-          test_landing_pages):
+          test_landing_pages, test_schedule_and_digest):
     print(f"\n{t.__name__}")
     t()
 

@@ -28,6 +28,7 @@ workflow to consume (neither is committed):
 Both are deleted at the start of every run, so their presence means "something changed".
 """
 import json, os, re, sys, html, time, urllib.request, urllib.error
+import concurrent.futures as cf
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from zoneinfo import ZoneInfo
@@ -41,7 +42,9 @@ RENDERED = ROOT / "rendered"
 OFFLINE = "--offline" in sys.argv
 FORCE_DIGEST = "--force-digest" in sys.argv   # write a digest of every tracked device even if nothing changed
 DIGEST = ROOT / "digest.md"
-CHANGED = ROOT / "changed.json"   # machine-readable digest for scripts/user_alerts.py
+CHANGED = ROOT / "changed.json"   # machine-readable digest for scripts/user_alerts.py (written by digest.py)
+PENDING = ROOT / "pending_changes.json"   # changes seen since the last daily digest; committed
+WORKERS = 12   # parallel source checks; ~600 sources finish in about a minute
 UA = "Mozilla/5.0 (compatible; FirmwarelyBot/1.0; +https://firmwarely.com)"
 TODAY = datetime.now(ZoneInfo("America/Chicago")).date()   # dates in the site/digest are US Central
 NOW = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
@@ -332,6 +335,61 @@ def classify(dev):
     return "current"
 
 
+def device_record(src, prev):
+    """The devices.json entry for a source before tonight's check, carrying forward
+    whatever the last run knew. discover.py builds new devices through this too."""
+    return {
+        "id": src["id"], "brand": src["brand"], "model": src["model"], "category": src["category"],
+        "tracked": src["type"] != "manual",
+        "version": prev.get("version"), "released": prev.get("released"),
+        "notes": prev.get("notes", ""), "source_url": prev.get("source_url") or src.get("url"),
+        "product_url": src.get("product_url"),
+        "update_url": update_url(src),
+        "history": prev.get("history", []),
+        "checked": prev.get("checked"), "source_status": prev.get("source_status", "pending"),
+    }
+
+
+def check_source(src, prev):
+    """Run the right checker for one source. Returns (result, None) or (None, error)."""
+    try:
+        if src["type"] == "feed":
+            return check_feed(src), None
+        if src["type"] == "github":
+            return check_github(src), None
+        return check_html(src, prev), None
+    except Exception as e:
+        return None, f"error: {type(e).__name__}: {str(e)[:120]}"
+
+
+def apply_result(dev, res):
+    """Fold a successful check into the device record (version, history, dates)."""
+    if res["version"] != dev["version"]:
+        dev["history"] = ([{"version": res["version"], "released": res["released"]}] + dev["history"])[:6]
+    elif dev["history"] and dev["history"][0].get("version") == res["version"]:
+        dev["history"][0]["released"] = res["released"]   # keep history in sync if the date got corrected
+    dev.update(res)
+    dev["checked"] = NOW
+    dev["source_status"] = "ok"
+
+
+def finish_record(dev):
+    dev["eol"] = bool(EOL.search(dev.get("notes") or ""))
+    dev["status"] = classify(dev)
+    dev["icon"] = icon_for(dev)
+    return dev
+
+
+def load_pending():
+    try:
+        data = json.loads(PENDING.read_text())
+        if isinstance(data, dict) and isinstance(data.get("devices"), dict):
+            return data
+    except Exception:
+        pass
+    return {"since": None, "forced": False, "devices": {}}
+
+
 def main():
     cfg = json.loads(SOURCES.read_text())
     previous, prev_meta = {}, {}
@@ -342,48 +400,25 @@ def main():
         except Exception:
             previous, prev_meta = {}, {}
 
-    out, ok, failed = [], 0, []
-    for src in cfg["devices"]:
-        prev = previous.get(src["id"], {})
-        dev = {
-            "id": src["id"], "brand": src["brand"], "model": src["model"], "category": src["category"],
-            "tracked": src["type"] != "manual",
-            "version": prev.get("version"), "released": prev.get("released"),
-            "notes": prev.get("notes", ""), "source_url": prev.get("source_url") or src.get("url"),
-            "product_url": src.get("product_url"),
-            "update_url": update_url(src),
-            "history": prev.get("history", []),
-            "checked": prev.get("checked"), "source_status": prev.get("source_status", "pending"),
-        }
-
-        if dev["tracked"] and not OFFLINE:
-            try:
-                if src["type"] == "feed":
-                    res = check_feed(src)
-                elif src["type"] == "github":
-                    res = check_github(src)
-                else:
-                    res = check_html(src, prev)
-                if res["version"] != dev["version"]:
-                    dev["history"] = ([{"version": res["version"], "released": res["released"]}] + dev["history"])[:6]
-                elif dev["history"] and dev["history"][0].get("version") == res["version"]:
-                    dev["history"][0]["released"] = res["released"]   # keep history in sync if the date got corrected
-                dev.update(res)
-                dev["checked"] = NOW
-                dev["source_status"] = "ok"
+    records = [(src, device_record(src, previous.get(src["id"], {}))) for src in cfg["devices"]]
+    ok, failed = 0, []
+    if not OFFLINE:
+        # every source is independent, so check them side by side; order is preserved
+        to_check = [(src, dev) for src, dev in records if dev["tracked"]]
+        with cf.ThreadPoolExecutor(max_workers=WORKERS) as ex:
+            results = list(ex.map(lambda pair: check_source(pair[0], previous.get(pair[0]["id"], {})), to_check))
+        for (src, dev), (res, err) in zip(to_check, results):
+            if res:
+                apply_result(dev, res)
                 ok += 1
                 print(f"  ok   {src['id']:40s} {res['version']}  ({res['released']})")
-            except Exception as e:
+            else:
                 dev["checked"] = NOW
-                dev["source_status"] = f"error: {type(e).__name__}: {str(e)[:120]}"
+                dev["source_status"] = err
                 failed.append(src["id"])
-                print(f"  FAIL {src['id']:40s} {dev['source_status']}")
-            time.sleep(0.5)
+                print(f"  FAIL {src['id']:40s} {err}")
 
-        dev["eol"] = bool(EOL.search(dev.get("notes") or ""))
-        dev["status"] = classify(dev)
-        dev["icon"] = icon_for(dev)
-        out.append(dev)
+    out = [finish_record(dev) for _, dev in records]
 
     if OFFLINE:
         # nothing was checked, so don't claim every source just failed
@@ -393,20 +428,23 @@ def main():
     OUT.write_text(json.dumps(result, indent=1, ensure_ascii=False) + "\n")
     print(f"\nwrote {OUT.name}: {len(out)} devices, {ok} fetched, {len(failed)} failed")
 
-    # ---- what changed since last night → digest.md (+ optional Beehiiv draft) ----
+    # ---- what moved this run joins the pending set; scripts/digest.py drains it once a day ----
     changed = [d for d in out if d["tracked"] and d.get("version")
                and (FORCE_DIGEST or is_new_release(d, previous))]
-    for f in (DIGEST, CHANGED):
-        if f.exists():
-            f.unlink()
     if changed:
-        md, html_body = build_digest(changed)
-        DIGEST.write_text(build_issue_summary(changed))   # what the GitHub issue shows: names/versions/dates only
-        write_changed(changed, previous)
-        print(f"digest: {len(changed)} change(s) → {DIGEST.name}, {CHANGED.name}")
-        beehiiv_draft(md.splitlines()[0].lstrip("# ").strip(), html_body)
+        pending = load_pending()
+        for d in changed:
+            rec = change_record(d, previous)
+            earlier = pending["devices"].get(d["id"])
+            if earlier and earlier.get("previous"):
+                rec["previous"] = earlier["previous"]   # "you were on X" means X at the start of the window
+            pending["devices"][d["id"]] = rec
+        pending["since"] = pending.get("since") or NOW
+        pending["forced"] = bool(pending.get("forced")) or FORCE_DIGEST
+        PENDING.write_text(json.dumps(pending, indent=1, ensure_ascii=False) + "\n")
+        print(f"changes: {len(changed)} this run, {len(pending['devices'])} pending for the daily digest")
     else:
-        print("digest: no changes since last run")
+        print("changes: none this run")
 
 
 def is_new_release(dev, previous):
@@ -424,30 +462,34 @@ def is_new_release(dev, previous):
     return dev["version"] != prev["version"]
 
 
-def write_changed(changed, previous):
-    """Tonight's changes as data, for scripts/user_alerts.py.
+def change_record(d, previous):
+    """One device that moved, carrying the version it came from so a subscriber can be told
+    "you were on X"."""
+    return {
+        "id": d["id"],
+        "brand": d["brand"],
+        "model": d["model"],
+        "category": d.get("category"),
+        "status": d["status"],
+        "version": d["version"],
+        "previous": previous.get(d["id"], {}).get("version"),
+        "released": d.get("released"),
+        "eol": bool(d.get("eol")),
+        "notes": d.get("notes", ""),
+        "source_url": d.get("source_url"),
+        "page_url": f"https://www.firmwarely.com/devices/{d['id']}/",
+    }
 
-    One entry per device that moved, newest-and-scariest first, carrying the version the
-    device came from so a subscriber can be told "you were on X". Not committed — the
-    workflow reads it in the same run and it is rebuilt from scratch every night."""
-    items = []
-    for d in sorted(changed, key=lambda x: (x["status"] != "critical", x["brand"], x["model"])):
-        items.append({
-            "id": d["id"],
-            "brand": d["brand"],
-            "model": d["model"],
-            "category": d.get("category"),
-            "status": d["status"],
-            "version": d["version"],
-            "previous": previous.get(d["id"], {}).get("version"),
-            "released": d.get("released"),
-            "eol": bool(d.get("eol")),
-            "notes": d.get("notes", ""),
-            "source_url": d.get("source_url"),
-            "page_url": f"https://firmwarely.com/devices/{d['id']}/",
-        })
-    payload = {"generated": NOW, "date": TODAY.isoformat(), "forced": FORCE_DIGEST,
-               "count": len(items), "devices": items}
+
+def sort_changes(items):
+    return sorted(items, key=lambda x: (x["status"] != "critical", x["brand"], x["model"]))
+
+
+def write_changed_file(items, forced=False):
+    """changed.json for scripts/user_alerts.py: newest-and-scariest first. Not committed —
+    digest.py writes it and the workflow reads it in the same run."""
+    payload = {"generated": NOW, "date": TODAY.isoformat(), "forced": forced,
+               "count": len(items), "devices": sort_changes(items)}
     CHANGED.write_text(json.dumps(payload, indent=1, ensure_ascii=False) + "\n")
 
 

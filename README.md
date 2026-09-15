@@ -25,12 +25,20 @@ Setup (one time), in Vercel → Project → Settings → Environment Variables:
 Then redeploy. Subscribers are tagged `utm_campaign` = free or pro. If you create a custom field named
 `devices` in Beehiiv (Audience → Subscribers → Custom fields), the devices they typed are stored there too.
 
-## Device data (nightly pipeline)
+## Device data (the half-hourly pipeline)
 
 - `sources.json` — the watch list. One entry per device: where its release notes live and how to read them.
 - `scripts/fetch.py` — checks every tracked source and writes `devices.json`. Standard library only.
-- `.github/workflows/nightly.yml` — runs the fetcher at 3:15 AM Central every night (and on demand from the
-  Actions tab → Nightly firmware check → Run workflow) and commits `devices.json` if anything changed.
+- `.github/workflows/nightly.yml` — "Firmware check": runs every 30 minutes, checks every tracked source in
+  parallel and commits `devices.json` when data changed (timestamp-only runs are committed at most every six
+  hours). The first run after 08:00 UTC is the daily run: it also renders browser-only vendor pages, runs
+  `scripts/discover.py`, then `scripts/digest.py` drains `pending_changes.json` into the digest issue and the
+  per-user emails, so Pro members get one email a day. `scripts/schedule.py` decides which run is the daily one
+  (state in `digest_state.json`); run it on demand from Actions → Firmware check → Run workflow.
+- `scripts/discover.py` — once a day, searches GitHub for well-known projects in the topics we cover, rejects
+  lists, libraries, templates and anything without a parsable stable release, and adds up to 10 vetted projects
+  to `sources.json` and `devices.json`. Manufacturer hardware still has to be added by hand — vendors publish no
+  machine-readable feed. What was added shows up at the bottom of that day's digest issue.
   Each commit triggers a Vercel redeploy, so the site is always current.
 - `scripts/build_pages.py` — renders `devices/<id>/index.html` for every device, `devices/index.html`, one landing page per category (`category/<slug>/`) and per brand with two or more devices (`brands/<slug>/`), `404.html`, `sitemap.xml` and `robots.txt`. Runs in the workflow right after the fetch; the pages are committed, so never edit them by hand.
 - `index.html` fetches `/devices.json` on load; if that fails it falls back to the `SEED` sample data.
@@ -124,7 +132,7 @@ recorded still gets told. Mail goes out through Resend, the same sender as the s
 
 Repo secrets it needs (GitHub → Settings → Secrets and variables → Actions):
 `RESEND_API_KEY`, plus `BEEHIIV_API_KEY` and `BEEHIIV_PUB_ID` (already set for the digest).
-Without them the step prints a line and does nothing, so the nightly run stays green.
+Without them the step prints a line and does nothing, so the check run stays green.
 
 Optional repo *variables*: `RESEND_FROM` (a verified sender — the default `onboarding@resend.dev`
 only delivers to your own address), `SITE_URL`, and `USER_ALERT_PLANS` — which plans get personal
