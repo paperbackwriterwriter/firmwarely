@@ -30,6 +30,7 @@ MIN_STARS = 1500       # below this the "product" signal gets noisy
 MAX_RELEASE_AGE_DAYS = 730
 MAX_PUSH_AGE_DAYS = 365
 TOPICS_PER_DAY = 5
+MAX_CHECKS = 60        # live release checks per day; each costs one API call
 
 # topics that map to what the site already covers; rotated a few per day
 TOPICS = ["self-hosted", "selfhosted", "home-automation", "homelab", "firmware", "esp32", "nas", "3d-printing",
@@ -157,8 +158,10 @@ def main():
     known_names = {(d["brand"].lower(), d["model"].lower()) for d in src["devices"]}
     ids = {d["id"] for d in src["devices"]}
 
-    rejected, added, seen = {}, [], set()
+    rejected, added, seen, checks, out_of_budget = {}, [], set(), 0, False
     for topic in todays_topics():
+        if out_of_budget:
+            break
         q = urllib.parse.quote(f"topic:{topic} stars:>={MIN_STARS} archived:false fork:false")
         try:
             page = api(f"https://api.github.com/search/repositories?q={q}&sort=stars&order=desc&per_page=50")
@@ -173,8 +176,16 @@ def main():
             if why:
                 rejected[why] = rejected.get(why, 0) + 1
                 continue
+            if checks >= MAX_CHECKS:
+                rejected["not checked (daily budget)"] = rejected.get("not checked (daily budget)", 0) + 1
+                continue
             entry = candidate_entry(repo, ids)
+            checks += 1
             res, err = fetch.check_source(entry, {})
+            if err and err.startswith("skipped:"):
+                print("  GitHub API budget spent; stopping discovery for today")
+                out_of_budget = True
+                break
             if err:
                 rejected["no parsable stable release"] = rejected.get("no parsable stable release", 0) + 1
                 print(f"  skip {repo['full_name']:45s} {err}")
