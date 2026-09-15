@@ -8539,6 +8539,96 @@
    "model": "DVR Server",
    "category": "P",
    "type": "manual"
+  },
+  {
+   "id": "trilium",
+   "brand": "Trilium",
+   "model": "Build your personal knowledge base with Trilium Notes",
+   "category": "A",
+   "type": "github",
+   "repo": "TriliumNext/Trilium",
+   "product_url": "https://github.com/TriliumNext/Trilium"
+  },
+  {
+   "id": "glance",
+   "brand": "Glance",
+   "model": "Dashboard that puts all your feeds in one place",
+   "category": "A",
+   "type": "github",
+   "repo": "glanceapp/glance",
+   "product_url": "https://github.com/glanceapp/glance"
+  },
+  {
+   "id": "qwenpaw",
+   "brand": "QwenPaw",
+   "model": "Your Personal AI Assistant",
+   "category": "A",
+   "type": "github",
+   "repo": "agentscope-ai/QwenPaw",
+   "product_url": "https://github.com/agentscope-ai/QwenPaw"
+  },
+  {
+   "id": "langfuse",
+   "brand": "Langfuse",
+   "model": "Agent evals & observability",
+   "category": "A",
+   "type": "github",
+   "repo": "langfuse/langfuse",
+   "product_url": "https://github.com/langfuse/langfuse"
+  },
+  {
+   "id": "dokku",
+   "brand": "Dokku",
+   "model": "Docker-powered PaaS that helps you build and manage the",
+   "category": "A",
+   "type": "github",
+   "repo": "dokku/dokku",
+   "product_url": "https://github.com/dokku/dokku"
+  },
+  {
+   "id": "onyx",
+   "brand": "Onyx",
+   "model": "AI Platform",
+   "category": "A",
+   "type": "github",
+   "repo": "onyx-dot-app/onyx",
+   "product_url": "https://github.com/onyx-dot-app/onyx"
+  },
+  {
+   "id": "meetily",
+   "brand": "Meetily",
+   "model": "Privacy first, AI meeting assistant with 4x faster",
+   "category": "A",
+   "type": "github",
+   "repo": "Zackriya-Solutions/meetily",
+   "product_url": "https://github.com/Zackriya-Solutions/meetily"
+  },
+  {
+   "id": "archivebox",
+   "brand": "ArchiveBox",
+   "model": "Web archiving",
+   "category": "N",
+   "type": "github",
+   "repo": "ArchiveBox/ArchiveBox",
+   "product_url": "https://github.com/ArchiveBox/ArchiveBox"
+  },
+  {
+   "id": "pentagi",
+   "brand": "Pentagi",
+   "model": "Fully autonomous AI Agents system capable of performing",
+   "category": "A",
+   "type": "github",
+   "repo": "vxcontrol/pentagi",
+   "product_url": "https://github.com/vxcontrol/pentagi"
+  },
+  {
+   "id": "pangolin",
+   "brand": "Pangolin",
+   "model": "Networking and security platform providing secure access",
+   "category": "R",
+   "type": "github",
+   "repo": "fosrl/pangolin",
+   "product_url": "https://github.com/fosrl/pangolin"
   }
  ]
 }
