@@ -421,6 +421,76 @@
    "notes": "Changelog: https://github.com/element-hq/synapse/blob/release-v1.161/CHANGES.md",
    "source_url": "https://github.com/element-hq/synapse/releases/tag/v1.161.0",
    "page_url": "https://www.firmwarely.com/devices/synapse/"
+  },
+  "netbox": {
+   "id": "netbox",
+   "brand": "NetBox Labs",
+   "model": "NetBox",
+   "category": "R",
+   "status": "update",
+   "version": "4.7.1",
+   "previous": "4.7.0",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": "[!WARNING] The triggers which cascade a hierarchical object's path to its descendants could not be recreated when restoring a pg_dump of a v4.7.0 database, so such a restore reported success while leaving the database without those triggers. Renaming or moving a region, site group, location, device…",
+   "source_url": "https://github.com/netbox-community/netbox/releases/tag/v4.7.1",
+   "page_url": "https://www.firmwarely.com/devices/netbox/"
+  },
+  "gotify": {
+   "id": "gotify",
+   "brand": "Gotify",
+   "model": "Push notification server",
+   "category": "A",
+   "status": "update",
+   "version": "3.1.1",
+   "previous": "3.1.0",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": "Require an elevated session for creating users (GHSA-phfm-q6fr-wv34 via #​1048) Move theme selection and password change to separate settings page (#​1040 via #​1041) Disable password change form when GOTIFY_LOCALAUTH_ENABLED is disabled (#​1040 via #​1041) Fix crash when a Let's Encrypt request fa…",
+   "source_url": "https://github.com/gotify/server/releases/tag/v3.1.1",
+   "page_url": "https://www.firmwarely.com/devices/gotify/"
+  },
+  "elasticsearch": {
+   "id": "elasticsearch",
+   "brand": "Elastic",
+   "model": "Elasticsearch",
+   "category": "A",
+   "status": "update",
+   "version": "9.5.4",
+   "previous": "9.5.3",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": "Downloads: https://elastic.co/downloads/elasticsearch Release notes: https://www.elastic.co/docs/release-notes/elasticsearch#elasticsearch-9.5.4-release-notes",
+   "source_url": "https://github.com/elastic/elasticsearch/releases/tag/v9.5.4",
+   "page_url": "https://www.firmwarely.com/devices/elasticsearch/"
+  },
+  "erpnext": {
+   "id": "erpnext",
+   "brand": "Frappe",
+   "model": "ERPNext",
+   "category": "A",
+   "status": "update",
+   "version": "16.35.0",
+   "previous": "15.121.2",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": "Breaking Changes Removes the \"Print IRS 1099 Forms\" button and its associated printing option from the \"IRS 1099\" report. (https://github.com/frappe/erpnext/pull/58992) Features Adds multi-select _Item_ and _Warehouse_ filters to the \"Warehouse Wise Item Balance Age and Value\" report, allowing user…",
+   "source_url": "https://github.com/frappe/erpnext/releases/tag/v16.35.0",
+   "page_url": "https://www.firmwarely.com/devices/erpnext/"
+  },
+  "onyx": {
+   "id": "onyx",
+   "brand": "Onyx",
+   "model": "AI Platform",
+   "category": "A",
+   "status": "update",
+   "version": "4.7.4",
+   "previous": "4.7.3",
+   "released": "2026-09-15",
+   "eol": false,
+   "notes": "See the assets to download this version and install.",
+   "source_url": "https://github.com/onyx-dot-app/onyx/releases/tag/v4.7.4",
+   "page_url": "https://www.firmwarely.com/devices/onyx/"
   }
  }
 }
