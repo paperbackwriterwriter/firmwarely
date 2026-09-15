@@ -7,7 +7,7 @@
 <meta name="description" content="Firmwarely watches manufacturer release pages and project feeds for routers, NAS, smart home gear, consoles, PCs, TVs, maker hardware and self-hosted apps, and emails you when something you own has a new or critical update.">
 <link rel="canonical" href="https://www.firmwarely.com/">
 <meta property="og:title" content="Firmwarely — know when your devices need a firmware update">
-<meta property="og:description" content="Nightly checks of manufacturer release pages and project feeds for 1,000+ routers, NAS, smart home devices, consoles, PCs, TVs, maker gear and self-hosted apps.">
+<meta property="og:description" content="Round-the-clock checks of manufacturer release pages and project feeds for 1,000+ routers, NAS, smart home devices, consoles, PCs, TVs, maker gear and self-hosted apps.">
 <meta property="og:url" content="https://www.firmwarely.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Firmwarely">
@@ -16,7 +16,7 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://www.firmwarely.com/og.png">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://www.firmwarely.com/#org", "name": "Firmwarely", "url": "https://www.firmwarely.com/", "logo": "https://www.firmwarely.com/favicon.svg", "email": "hello@firmwarely.com", "description": "Nightly firmware update tracking and alerts for routers, NAS, smart home devices, consoles, drones and maker hardware."}, {"@type": "WebSite", "@id": "https://www.firmwarely.com/#site", "name": "Firmwarely", "url": "https://www.firmwarely.com/", "publisher": {"@id": "https://www.firmwarely.com/#org"}, "potentialAction": {"@type": "SearchAction", "target": {"@type": "EntryPoint", "urlTemplate": "https://www.firmwarely.com/?q={search_term_string}"}, "query-input": "required name=search_term_string"}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://www.firmwarely.com/#org", "name": "Firmwarely", "url": "https://www.firmwarely.com/", "logo": "https://www.firmwarely.com/favicon.svg", "email": "hello@firmwarely.com", "description": "Firmware update tracking, checked every 30 minutes, with daily alerts for routers, NAS, smart home devices, consoles, PCs, TVs, maker hardware and self-hosted apps."}, {"@type": "WebSite", "@id": "https://www.firmwarely.com/#site", "name": "Firmwarely", "url": "https://www.firmwarely.com/", "publisher": {"@id": "https://www.firmwarely.com/#org"}, "potentialAction": {"@type": "SearchAction", "target": {"@type": "EntryPoint", "urlTemplate": "https://www.firmwarely.com/?q={search_term_string}"}, "query-input": "required name=search_term_string"}}]}</script>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -212,7 +212,7 @@ footer a:hover{color:var(--text)}
   <div class="wrap hero">
     <div>
       <h1>Your devices have updates you haven't installed.</h1>
-      <p class="lede">Firmwarely watches the release pages of router, NAS, camera, console, PC and TV manufacturers, and the release feeds of the self-hosted apps you run, every night. One email when something you own has a new or critical update.</p>
+      <p class="lede">Firmwarely watches the release pages of router, NAS, camera, console, PC and TV manufacturers, and the release feeds of the self-hosted apps you run, every 30 minutes around the clock. One email a day when something you own has a new or critical update.</p>
       <form id="hero-form" novalidate>
         <label class="sr" for="hero-email">Email address</label>
         <input id="hero-email" type="email" placeholder="you@example.com" autocomplete="email" required>
@@ -232,8 +232,8 @@ footer a:hover{color:var(--text)}
       <div class="steps">
         <ol>
           <li><div class="n">1</div><h3>Pick the devices you own</h3><p>Search the catalog for your router, NAS, cameras, console, drone or e-bike and add them to your list.</p></li>
-          <li><div class="n">2</div><h3>We check every night</h3><p>Firmwarely reads each manufacturer's release page and changelog and records the version, date and what changed.</p></li>
-          <li><div class="n">3</div><h3>Pro members get one email</h3><p>After each nightly check, Pro members get a single email covering every device of theirs that changed, security fixes first. Free members see the same information here on the site.</p></li>
+          <li><div class="n">2</div><h3>We check every 30 minutes</h3><p>Firmwarely reads each manufacturer's release page and project feed around the clock and records the version, date and what changed the moment it appears.</p></li>
+          <li><div class="n">3</div><h3>Pro members get one email a day</h3><p>Each morning, Pro members get a single email covering every device of theirs that changed in the last 24 hours, security fixes first. Free members see the same information here on the site.</p></li>
         </ol>
       </div>
     </div>
@@ -259,7 +259,7 @@ footer a:hover{color:var(--text)}
           <ul>
             <li>Unlimited devices</li>
             <li>Dashboard: every device on one screen, security fixes first, one click to update</li>
-            <li>Email alerts after every nightly check</li>
+            <li>One email a day when your devices change</li>
             <li>Founding-member price, locked in</li>
             <li>Security fixes flagged and sorted to the top</li>
             <li>End-of-life notices when a vendor says updates are stopping</li>
@@ -342,7 +342,7 @@ footer a:hover{color:var(--text)}
 </footer>
 
 <script>
-/* ---------- data: devices.json from the nightly pipeline. Nothing is invented client-side;
+/* ---------- data: devices.json from the half-hourly pipeline. Nothing is invented client-side;
    until it loads (or if it fails) the page says so instead of showing placeholder rows. ---------- */
 const CATS = {
   R:"Routers & networking", N:"NAS & storage", S:"Smart home & cameras", C:"Consoles, drones & e-bikes", M:"Makers & open firmware",
@@ -556,7 +556,7 @@ signupForm.addEventListener("submit", async e=>{
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
-/* ---------- live data from the nightly pipeline ---------- */
+/* ---------- live data from the half-hourly pipeline ---------- */
 (async function loadLive(){
   try{
     const r = await fetch("/devices.json", {cache:"no-cache"});
