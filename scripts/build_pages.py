@@ -40,6 +40,13 @@ CAT_INTRO = {
 # how a category reads mid-sentence ("NAS" must stay upper-case)
 CAT_PHRASE = {"R": "routers & networking", "N": "NAS & storage", "S": "smart home & cameras",
               "C": "consoles, drones & e-bikes", "M": "makers & open firmware"}
+ICONS = json.loads(re.search(r"/\*json\*/(\{.*?\})/\*end\*/", (ROOT / "icons.js").read_text(), re.S).group(1))
+
+
+def icon_svg(key, cls="ico"):
+    return f'<svg class="{cls}" viewBox="0 0 64 64" aria-hidden="true">{ICONS.get(key) or ICONS["app"]}</svg>'
+
+
 BRAND_MIN = 2          # brands with fewer devices don't get their own page (too thin)
 DESC_MAX = 155         # meta descriptions are cut around here in search results
 
@@ -79,7 +86,7 @@ def device_list(items, show_brand=True):
     for d in items:
         name = f"{d['brand']} {d['model']}" if show_brand else d["model"]
         v = f"{esc(d['version'])} · {fmt(d.get('released'))}" if is_live(d) else "watching soon"
-        out.append(f'<li><a href="/devices/{d["id"]}/">{esc(name)}</a><span>{v}</span></li>')
+        out.append(f'<li><a href="/devices/{d["id"]}/">{icon_svg(d.get("icon"))}{esc(name)}</a><span>{v}</span></li>')
     out.append("</ul>")
     return "".join(out)
 
@@ -153,6 +160,7 @@ def styles():
   .brandlist h2{font-family:var(--mono);font-size:1rem;color:var(--amber);margin:1.75rem 0 .5rem}
   .brandlist ul{list-style:none;padding:0;margin:0;display:grid;gap:.4rem}
   .brandlist li{display:flex;justify-content:space-between;gap:1rem;border-top:1px solid var(--line);padding:.6rem 0}
+  .brandlist li a{display:inline-flex;align-items:center;gap:.6rem}
   .brandlist li span{font-family:var(--mono);font-size:.85rem;color:var(--muted)}
   .brandlist .fine{margin:.5rem 0 0;font-size:.85rem}
   .related{margin-top:2.5rem}
@@ -518,15 +526,15 @@ def brand_page(brand, items):
 
 # Stylised line-art of the device families we track: drawn here so the page needs no
 # third-party images and nothing we don't have the rights to.
-DEVICE_ART = [
-    ("Routers & mesh", "R", '<rect x="6" y="34" width="52" height="16" rx="4"/><path d="M16 34V16M48 34V16"/><circle cx="16" cy="13" r="2.5"/><circle cx="48" cy="13" r="2.5"/><circle class="f" cx="18" cy="42" r="1.8"/><circle class="f" cx="26" cy="42" r="1.8"/><circle cx="34" cy="42" r="1.8"/><path d="M30 26a8 8 0 0 1 4 0M27 21a14 14 0 0 1 10 0"/>'),
-    ("NAS & storage", "N", '<rect x="14" y="8" width="36" height="48" rx="4"/><rect x="20" y="14" width="24" height="8" rx="1.5"/><rect x="20" y="26" width="24" height="8" rx="1.5"/><rect x="20" y="38" width="24" height="8" rx="1.5"/><circle class="f" cx="42" cy="51" r="1.8"/><path d="M24 18h4M24 30h4M24 42h4"/>'),
-    ("Security cameras", "S", '<rect x="8" y="22" width="34" height="20" rx="4"/><path d="M42 28l12-6v20l-12-6"/><circle cx="24" cy="32" r="5"/><circle class="f" cx="24" cy="32" r="1.6"/><path d="M24 42v10M16 52h16"/>'),
-    ("Doorbells & hubs", "S", '<rect x="22" y="6" width="20" height="52" rx="6"/><circle cx="32" cy="20" r="6"/><circle class="f" cx="32" cy="20" r="2"/><circle class="g" cx="32" cy="44" r="4.5"/><path d="M26 32h12"/>'),
-    ("Consoles", "C", '<path d="M18 22h28a10 10 0 0 1 10 10l2 12a6 6 0 0 1-11 3l-4-7H21l-4 7a6 6 0 0 1-11-3l2-12a10 10 0 0 1 10-10z"/><path d="M22 30v8M18 34h8"/><circle class="f" cx="44" cy="31" r="1.8"/><circle cx="48" cy="36" r="1.8"/><circle cx="40" cy="36" r="1.8"/>'),
-    ("Drones", "C", '<rect x="26" y="28" width="12" height="10" rx="3"/><path d="M26 31L17 24M38 31l9-7M26 35l-9 7M38 35l9 7"/><path d="M8 22h18M38 22h18M8 44h18M38 44h18"/><circle class="f" cx="32" cy="33" r="1.5"/>'),
-    ("E-bikes", "C", '<circle cx="16" cy="44" r="10"/><circle cx="48" cy="44" r="10"/><path d="M16 44l10-20h12l10 20M26 24l-4-8h6M38 24l4 20M26 24l8 12h8"/><rect class="f" x="27" y="32" width="9" height="6" rx="1.5"/>'),
-    ("3D printers & makers", "M", '<path d="M8 10h48v46H8z"/><path d="M8 20h48"/><path d="M28 20v10h8V20"/><path class="g" d="M32 30v8"/><path d="M14 50h36"/><path d="M20 46h24"/>'),
+DEVICE_ART = [  # (label, category page, icon family)
+    ("Routers & mesh", "R", "router"),
+    ("NAS & storage", "N", "nas"),
+    ("Security cameras", "S", "camera"),
+    ("Doorbells & hubs", "S", "doorbell"),
+    ("Consoles", "C", "console"),
+    ("Drones", "C", "drone"),
+    ("E-bikes", "C", "ebike"),
+    ("3D printers & makers", "M", "printer"),
 ]
 
 
@@ -534,8 +542,8 @@ def pro_page():
     title = "Firmwarely Pro waitlist — founding-member price | Firmwarely"
     desc = "Join the Firmwarely Pro waitlist: unlimited devices, the dashboard and nightly alerts at the founding-member price of $4.99 a month, locked in."
     art = "".join(
-        f'<a href="{cat_path(key)}" aria-label="{esc(label)}"><svg viewBox="0 0 64 64" aria-hidden="true">{svg}</svg><span>{esc(label)}</span></a>'
-        for label, key, svg in DEVICE_ART)
+        f'<a href="{cat_path(key)}" aria-label="{esc(label)}">{icon_svg(icon, "")}<span>{esc(label)}</span></a>'
+        for label, key, icon in DEVICE_ART)
     return head(title, desc, "/pro/") + f"""
 <div class="wrap">
   <div class="pro-hero">
@@ -597,7 +605,7 @@ def index_page(devices, brand_pages=()):
         parts.append(f'<h2 id="{cat_key}"><a href="{cat_path(cat_key)}">{esc(cat_name)}</a></h2><ul>')
         for d in sorted(items, key=lambda x: (x["status"] == "pending", x["brand"], x["model"])):
             v = esc(d["version"]) if d.get("version") and d["status"] != "pending" else "watching soon"
-            parts.append(f'<li><a href="/devices/{d["id"]}/">{esc(d["brand"])} {esc(d["model"])}</a><span>{v}</span></li>')
+            parts.append(f'<li><a href="/devices/{d["id"]}/">{icon_svg(d.get("icon"))}{esc(d["brand"])} {esc(d["model"])}</a><span>{v}</span></li>')
         parts.append("</ul>")
     title = "Firmware update tracker — every device we watch | Firmwarely"
     desc = f"Latest firmware versions for {len(devices)} routers, NAS, smart home devices, consoles and maker gear, checked nightly against manufacturer release pages."

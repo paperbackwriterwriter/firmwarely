@@ -51,6 +51,40 @@ SECURITY = re.compile(
     r"privilege escalation|patch(?:es|ed)? (?:a|an|the) (?:flaw|issue|vulnerab)|hardening",
     re.I,
 )
+# Icon family for the site's lists. Keys must exist in icons.js. Category is the fallback;
+# the keyword rules pick out the sub-families a category mixes together (cameras vs hubs,
+# drones vs consoles, 3D printers vs dev boards, hardware NAS vs self-hosted apps).
+ICON_RULES = [
+    ("doorbell", r"doorbell|door ?lock|\block\b|chime|deadbolt"),
+    ("camera", r"\bcam(era)?s?\b|bullet|dome|floodlight|nvr|frigate|unifi protect|reolink|arlo|wyze|eufycam|blink|rtsp|ipcam|openipc|thingino|insta360|gopro|action cam"),
+    ("speaker", r"echo|homepod|nest audio|nest mini|nest hub|sonos|speaker|\bshow\b|soundbar"),
+    ("drone", r"drone|mavic|\bmini \d|\bair \d|avata|\bneo\b|\bflip\b|skydio|autel|\bdji\b|gimbal|osmo|hoverair"),
+    ("ebike", r"e-?bike|\bbike\b|scooter|levo|\brad\b|vanmoof|cowboy|bosch|shimano|specialized|trek|onewheel|segway|aventon|lectric|super73"),
+    ("printer", r"3d printer|printer|bambu|prusa|creality|klipper|marlin|ender|voron|anycubic|elegoo|kobra|slicer|cura|octoprint|mainsail|fluidd|moonraker"),
+    ("board", r"esp32|esp8266|arduino|raspberry|\bpico\b|microcontroller|tasmota|esphome|wled|meshtastic|flipper|qmk|zmk|keyboard|betaflight|ardupilot|inav|pinecil|\biron\b|heltec|adafruit|micropython|circuitpython|\bcnc\b|grbl|laser|reprap|duet"),
+    ("nas", r"\bnas\b|diskstation|rackstation|\bts-\d|\btvs-|truenas|unraid|my cloud|readynas|drobo|terramaster|asustor|openmediavault|\bdsm\b|\bqts\b"),
+    ("hub", r"\bhub\b|bridge|thermostat|\bplug\b|switch firmware|zigbee|z-wave|matter|homekit|home assistant|smartthings|homey|hubitat|sensor|ev charg|charge controller|sprinkler|irrigation|vacuum|openhab|mqtt|thread"),
+    ("console", r"playstation|xbox|nintendo|steam deck|rog ally|legion go|analogue|dualsense|handheld|\bquest\b|vision pro|\bvr\b|\bgame"),
+    ("router", r"router|mesh|access point|\bap\b|switch|gateway|firewall|openwrt|routeros|opnsense|pfsense|eero|orbi|deco|nighthawk|archer|unifi|dream machine|pi-hole|adguard|tailscale|wireguard|\bdns\b|modem|\bvpn\b|zerotier|netbird"),
+]
+ICON_RULES = [(k, re.compile(p, re.I)) for k, p in ICON_RULES]
+# hardware NAS names are all caught by the "nas" rule, so anything else in N is software
+ICON_BY_CATEGORY = {"R": "router", "N": "app", "S": "hub", "C": "console", "M": "board"}
+# self-hosted services live in several categories; when a name says "server/app" and no
+# hardware rule matched, use the app icon rather than the category's hardware
+APP_HINT = re.compile(r"server|application|software|client|manager|dashboard|monitor|backup|sync|wiki|media|photo|password|vault|finance|documentation|proxy|\bos\b|operating system|middleware|control panel|web interface|program|player|center", re.I)
+
+
+def icon_for(dev):
+    name = f"{dev.get('brand', '')} {dev.get('model', '')}"
+    for key, rx in ICON_RULES:
+        if rx.search(name):
+            return key
+    if APP_HINT.search(name):
+        return "app"
+    return ICON_BY_CATEGORY.get(dev.get("category"), "app")
+
+
 EOL = re.compile(r"end[- ]of[- ]life|\bEOL\b|no longer (?:be )?(?:updated|supported|maintained)|discontinued", re.I)
 STALE_DAYS = 540  # ~18 months with no release: still tracked, but "current" would mislead
 DEFAULT_VERSION = re.compile(r"(\d+(?:\.\d+)+(?:[-_]\w+)*)")
@@ -339,6 +373,7 @@ def main():
 
         dev["eol"] = bool(EOL.search(dev.get("notes") or ""))
         dev["status"] = classify(dev)
+        dev["icon"] = icon_for(dev)
         out.append(dev)
 
     if OFFLINE:

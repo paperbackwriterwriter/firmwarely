@@ -292,7 +292,21 @@ def test_landing_pages():
     pro = build_pages.pro_page()
     check("pro waitlist page signs people up as pro", 'name="plan" value="pro"' in pro, True)
     check("pro waitlist page has the email form the footer script drives", 'id="signup-form"' in pro and 'name="email"' in pro, True)
-    check("pro waitlist page shows every device illustration", pro.count("<svg viewBox=\"0 0 64 64\""), len(build_pages.DEVICE_ART))
+    check("pro waitlist page shows every device illustration", pro.count('viewBox="0 0 64 64"'), len(build_pages.DEVICE_ART))
+
+    # icons: one file, parsed by both the browser and the page builder; every device maps to it
+    check("icons.js has every family the pro gallery and the rules use",
+          sorted(set(k for _, _, k in build_pages.DEVICE_ART) | set(k for k, _ in fetch.ICON_RULES) | set(fetch.ICON_BY_CATEGORY.values()) | {"app"}) <= sorted(build_pages.ICONS), True)
+    unknown = sorted({d.get("icon") for d in devs} - set(build_pages.ICONS))
+    check("every device in devices.json has a known icon", unknown, [])
+    for name, cat, want in [("Nintendo Switch", "C", "console"), ("Ubiquiti UniFi Access Points & Switches (device firmware)", "R", "router"),
+                            ("Reolink RLC-810A", "S", "camera"), ("Paperless-ngx Document scanner and archive", "N", "app"),
+                            ("Synology DiskStation DS923+", "N", "nas"), ("Amazon Ring Video Doorbell Pro 2", "S", "doorbell"),
+                            ("Ubiquiti UniFi Protect G4 Doorbell Pro", "S", "doorbell"), ("DJI Mini 4 Pro", "C", "drone"),
+                            ("Klipper 3D printer firmware", "M", "printer"), ("grbl CNC motion controller firmware", "M", "board")]:
+        b, m = name.split(" ", 1)
+        check(f"icon_for: {name}", fetch.icon_for({"brand": b, "model": m, "category": cat}), want)
+    check("homepage loads the shared icon file", '<script src="/icons.js" defer></script>' in Path("index.html").read_text(), True)
     check("homepage Pro button falls back to /pro/, not the footer form", 'pb.href = "/pro/"' in Path("index.html").read_text(), True)
 
 
