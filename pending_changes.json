@@ -43,6 +43,34 @@
    "notes": "1.813.0 (2026-09-16) Features back AI sessions up to the workspace object storage (#​11116) (796b6e5) delete a browser's copy of an AI session past its workspace retention (#​11156) (a48ae65) rename saved agents from the agent editor and flag broken links (#​11147) (57a99f6) retention for AI sessio…",
    "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.813.0",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
+  },
+  "dragonfly": {
+   "id": "dragonfly",
+   "brand": "Dragonfly",
+   "model": "In-memory datastore",
+   "category": "A",
+   "status": "update",
+   "version": "2.0.0",
+   "previous": "1.40.2",
+   "released": "2026-09-16",
+   "eol": false,
+   "notes": "Dragonfly v2.0.0 We have been waiting three years to bump the major version. While this specific release does not add new major features by itself, it marks a significant milestone in our maturity, performance, and production readiness. Dragonfly v2.0.0 expands Redis and Valkey compatibility with V…",
+   "source_url": "https://github.com/dragonflydb/dragonfly/releases/tag/v2.0.0",
+   "page_url": "https://www.firmwarely.com/devices/dragonfly/"
+  },
+  "strapi": {
+   "id": "strapi",
+   "brand": "Strapi",
+   "model": "Headless CMS",
+   "category": "A",
+   "status": "update",
+   "version": "5.54.0",
+   "previous": "5.53.0",
+   "released": "2026-09-16",
+   "eol": false,
+   "notes": "5.54.0 (2026-09-16) 🚀 New feature i18n: record locale management in audit logs (#​27547) upload: add MCP scaffolding and read tools to the upload plugin (#​27523) upload: add the media_update_asset MCP tool (#​27574) upload: make the new Media Library the default (#​27606) upload: manage media libr…",
+   "source_url": "https://github.com/strapi/strapi/releases/tag/v5.54.0",
+   "page_url": "https://www.firmwarely.com/devices/strapi/"
   }
  }
 }
