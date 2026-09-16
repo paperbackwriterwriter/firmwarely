@@ -401,6 +401,39 @@ def test_dates_are_honest():
     check("the mark has somewhere to get its styling from", ".seen{" in build_pages.STYLES, True)
 
 
+# ---- a device with no page still lands somewhere useful ----
+def test_withdrawn_devices_redirect():
+    cfg = json.loads(Path("vercel.json").read_text())
+    rules = cfg.get("redirects") or []
+    devs = json.loads(Path("devices.json").read_text())["devices"]
+    live = {d["id"] for d in devs}
+    waiting = {s["id"] for s in json.loads(Path("sources.json").read_text())["devices"]} - live
+
+    check("the security headers survived the rewrite", bool(cfg.get("headers")), True)
+    covered = set()
+    for r in rules:
+        covered |= set(re.search(r"\(([^)]*)\)", r["source"]).group(1).split("|"))
+    check("every device we don't publish has somewhere to land", sorted(waiting - covered)[:5], [])
+
+    # Vercel redirects before it serves a file, so a stale rule would shadow a real page.
+    check("no published device is redirected away from its own page",
+          sorted(live & covered)[:5], [])
+
+    dests = {r["destination"] for r in rules}
+    missing = [d for d in dests if not (Path(d.strip("/")) / "index.html").exists()]
+    check("every destination is a page that exists", missing[:5], [])
+    check("the redirects are temporary — these devices can come back",
+          [r["source"][:40] for r in rules if r.get("permanent")][:3], [])
+    srcs = {r["source"] for r in rules}
+    check("both spellings of the path are covered — /devices/x and /devices/x/",
+          [x[:40] for x in sorted(srcs) if not x.endswith("/") and x + "/" not in srcs][:3], [])
+    check("comfortably inside Vercel's 1024-rule ceiling", len(rules) < 900, True)
+
+    # the hourly run has to commit the file it regenerates, or the rules drift from the pages
+    wf = Path(".github/workflows/nightly.yml").read_text()
+    check("the check commits vercel.json with the pages it rebuilt", "vercel.json" in wf, True)
+
+
 def test_clean():
     cases = [
         ("script tag is neutralised", "<script>alert(1)</script>ok", "alert(1) ok"),
@@ -700,7 +733,7 @@ def test_schedule_and_digest():
 
 
 for t in (test_compare, test_new_release, test_saved_devices, test_routing, test_forced_guard,
-          test_update_guides, test_sources_well_formed, test_site_shows_only_real_data, test_support_page, test_dates_are_honest, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
+          test_update_guides, test_sources_well_formed, test_site_shows_only_real_data, test_support_page, test_dates_are_honest, test_withdrawn_devices_redirect, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
           test_landing_pages, test_schedule_and_digest):
     print(f"\n{t.__name__}")
     t()

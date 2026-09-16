@@ -837,6 +837,47 @@ within 30 days. See <a href="/legal/">privacy &amp; terms</a> for what we hold a
 """)
 
 
+REDIRECT_CHUNK = 40      # ids per rule, so no single pattern grows unwieldy
+
+
+def write_redirects(published, brand_pages):
+    """Send a device we don't publish to the nearest page that does exist.
+
+    A device with no data has no page, so a link from a search result, an old email or a
+    bookmark lands on the 404. These rules send it to that device's brand page, or its
+    category when the brand has no page of its own. Temporary, not permanent: the moment
+    a source starts resolving, the page comes back at the same URL.
+
+    Regenerated on every build for exactly that reason — Vercel applies redirects before
+    it looks for a file, so a rule left behind for a device that has returned would shadow
+    its page. The workflow commits vercel.json with the pages for the same reason.
+    """
+    sources = json.loads((ROOT / "sources.json").read_text())["devices"]
+    live = {d["id"] for d in published}
+    groups = {}
+    for src in sources:
+        if src["id"] in live:
+            continue
+        if not re.fullmatch(r"[a-z0-9-]+", src["id"]):
+            continue                      # nothing to escape today, but don't build a regex out of it
+        dest = brand_path(src["brand"]) if src["brand"] in brand_pages else cat_path(src["category"])
+        groups.setdefault(dest, []).append(src["id"])
+
+    rules = []
+    for dest, ids in sorted(groups.items()):
+        ids = sorted(ids)
+        for i in range(0, len(ids), REDIRECT_CHUNK):
+            group = "|".join(ids[i:i + REDIRECT_CHUNK])
+            # both spellings: Vercel matches the source path as written
+            for path in (f"/devices/:id({group})", f"/devices/:id({group})/"):
+                rules.append({"source": path, "destination": dest, "permanent": False})
+
+    cfg = json.loads((ROOT / "vercel.json").read_text())
+    cfg["redirects"] = rules
+    (ROOT / "vercel.json").write_text(json.dumps(cfg, indent=2) + "\n")
+    return len(rules), sum(len(v) for v in groups.values())
+
+
 def main():
     global STYLES
     STYLES = styles()
@@ -904,6 +945,8 @@ def main():
     sm.append("</urlset>")
     (ROOT / "sitemap.xml").write_text("\n".join(sm) + "\n")
     (ROOT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nDisallow: /api/\nSitemap: {SITE}/sitemap.xml\n")
+    n_rules, n_devices = write_redirects(devices, brand_pages)
+    print(f"{n_devices} unpublished device URLs redirect to a brand or category page ({n_rules} rules)")
     print(f"built {len(devices)} device pages, {len(CATS)} category pages, {len(brand_pages)} brand pages, "
           f"index, 404, sitemap ({len(entries)} urls)")
 
