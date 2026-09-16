@@ -120,12 +120,12 @@
    "model": "Workflow automation",
    "category": "A",
    "status": "update",
-   "version": "2.39.5",
+   "version": "2.39.6",
    "previous": "2.38.7",
-   "released": "2026-09-14",
+   "released": "2026-09-16",
    "eol": false,
-   "notes": "2.39.5 (2026-09-14) Bug Fixes editor: Fixes issue that prevented some users from revoking their end-user credentials (#​38455) (3d8f578) Features core: Add log streaming events for instance reports (#​38483) (6174e8e)",
-   "source_url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.39.5",
+   "notes": "2.39.6 (2026-09-16) Bug Fixes core: Check Gateway credits eligibility against the correct sub-node (#​38673) (0cf7e99) Features core: Add v3 breaking change rule for the storage directory rename (#​38636) (c3dcbbe) core: Warn on deprecated N8N_DB_PING_TIMEOUT env var (#​38569) (ab03087)",
+   "source_url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.39.6",
    "page_url": "https://www.firmwarely.com/devices/n8n/"
   },
   "zwave-js-ui": {
@@ -785,6 +785,34 @@
    "notes": "Mattermost Platform Release 11.11.0 contains multiple new quality of life improvements, including Data Spillage: Exposure Radius Report.",
    "source_url": "https://github.com/mattermost/mattermost/releases/tag/v11.11.0",
    "page_url": "https://www.firmwarely.com/devices/mattermost/"
+  },
+  "signoz": {
+   "id": "signoz",
+   "brand": "SigNoz",
+   "model": "Observability platform",
+   "category": "A",
+   "status": "update",
+   "version": "0.142.0",
+   "previous": "0.141.1",
+   "released": "2026-09-16",
+   "eol": false,
+   "notes": "🚀 Features feat(authz): integrate authz in quick filters (#​12791) feat(dashboards): revamp panel chart legend interaction (#​12838) feat: add spec for text panel (#​12711) feat: add remaining v2 notification channel apis (#​12786) feat: add heatmap support in query (#​12764) feat(dashboards): add …",
+   "source_url": "https://github.com/SigNoz/signoz/releases/tag/v0.142.0",
+   "page_url": "https://www.firmwarely.com/devices/signoz/"
+  },
+  "pixelfed": {
+   "id": "pixelfed",
+   "brand": "Pixelfed",
+   "model": "Photo sharing",
+   "category": "A",
+   "status": "update",
+   "version": "0.12.12",
+   "previous": "0.12.11",
+   "released": "2026-09-16",
+   "eol": false,
+   "notes": "This fixes the language regression from 0.12.11. plus refactors Captchas, and fixes a few bugs. BREAKING: HCaptcha ENV have changed - CAPTCHA_SITEKEY/CAPTCHA_SECRET is now CAPTCHA_H_SITEKEY/CAPTCHA_H_SECRET (Please update the captcha keys in the admin settings). APP_LOCALE needs to be updated from …",
+   "source_url": "https://github.com/pixelfed/pixelfed/releases/tag/v0.12.12",
+   "page_url": "https://www.firmwarely.com/devices/pixelfed/"
   }
  }
 }

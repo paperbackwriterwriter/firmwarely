@@ -427,7 +427,7 @@
   <url><loc>https://www.firmwarely.com/devices/elasticsearch/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/vector/</loc><lastmod>2026-09-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/fluent-bit/</loc><lastmod>2026-09-05</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/signoz/</loc><lastmod>2026-09-09</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/signoz/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/jaeger/</loc><lastmod>2026-09-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/otel-collector/</loc><lastmod>2026-09-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/sentry-self-hosted/</loc><lastmod>2026-09-16</lastmod></url>
@@ -499,7 +499,7 @@
   <url><loc>https://www.firmwarely.com/devices/coder/</loc><lastmod>2026-09-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/jupyterhub/</loc><lastmod>2026-09-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/jupyterlab/</loc><lastmod>2026-08-10</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/n8n/</loc><lastmod>2026-09-14</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/n8n/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/activepieces/</loc><lastmod>2026-09-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/windmill/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/temporal/</loc><lastmod>2026-09-11</lastmod></url>
@@ -565,7 +565,7 @@
   <url><loc>https://www.firmwarely.com/devices/mastodon/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/misskey/</loc><lastmod>2026-09-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/lemmy/</loc><lastmod>2026-07-21</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/pixelfed/</loc><lastmod>2026-09-14</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/pixelfed/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/peertube/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ghost/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/hugo/</loc><lastmod>2026-09-09</lastmod></url>
