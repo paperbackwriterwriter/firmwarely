@@ -757,6 +757,34 @@
    "notes": "Upgrading Before you upgrade, back up your Metabase application database! Check out our upgrading instructions. Get the most out of Metabase. Learn more about advanced features, managed cloud, and first-class support. Metabase Open Source Docker image: metabase/metabase:v0.63.18.x JAR download: htt…",
    "source_url": "https://github.com/metabase/metabase/releases/tag/v0.63.18",
    "page_url": "https://www.firmwarely.com/devices/metabase/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.2601",
+   "previous": "0.24.2595",
+   "released": "2026-09-16",
+   "eol": false,
+   "notes": "Changes: f0af03ffeebfcdc3aeec01d31c1ae6243a322898 index.html: hide api key on dashboard. resolves #​17069 5c325427c7128b4e16e9de1aa8ab7e1be9f043af torrenttip: bump domain b5ebec02819b4735a89231e2a22a16551834a900 torrentsome; bump domain 16ef3efba2523d7a2ce47b113d652a81d8822f37 thebrothers: new cat …",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2601",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "mattermost": {
+   "id": "mattermost",
+   "brand": "Mattermost",
+   "model": "Team messaging",
+   "category": "A",
+   "status": "update",
+   "version": "11.11.0",
+   "previous": "11.10.2",
+   "released": "2026-09-07",
+   "eol": false,
+   "notes": "Mattermost Platform Release 11.11.0 contains multiple new quality of life improvements, including Data Spillage: Exposure Radius Report.",
+   "source_url": "https://github.com/mattermost/mattermost/releases/tag/v11.11.0",
+   "page_url": "https://www.firmwarely.com/devices/mattermost/"
   }
  }
 }
