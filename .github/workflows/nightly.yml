@@ -87,8 +87,11 @@ jobs:
         run: |
           git config user.name "firmwarely-bot"
           git config user.email "bot@firmwarely.com"
-          git add devices.json sources.json pending_changes.json digest_state.json \
-                  devices category brands 404.html sitemap.xml robots.txt pro legal
+          # vercel.json carries the redirects for devices we don't publish, and build_pages
+          # rewrites it from the catalogue — leaving it out would let a rule for a device
+          # that has come back shadow its page, because Vercel redirects before it serves files.
+          git add devices.json sources.json pending_changes.json digest_state.json vercel.json \
+                  devices category brands 404.html sitemap.xml robots.txt pro legal support
           if git diff --cached --quiet; then
             echo "No changes."
             exit 0
