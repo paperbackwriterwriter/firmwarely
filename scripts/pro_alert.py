@@ -85,7 +85,7 @@ def main():
         "<p>New firmware or security releases were spotted "
         "for the devices below. Version details and links "
         "are on each device page at "
-        '<a href="https://firmwarely.com">firmwarely.com</a>.'
+        '<a href="https://www.firmwarely.com">firmwarely.com</a>.'
         "</p>"
     )
     footer = (

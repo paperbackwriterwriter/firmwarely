@@ -26,7 +26,7 @@ Env:
   BEEHIIV_API_KEY, BEEHIIV_PUB_ID   read the subscriber list and their saved devices
   RESEND_API_KEY                    send the mail (same provider as the sign-in links)
   RESEND_FROM                       From: header (default matches lib/fw.js)
-  SITE_URL                          default https://firmwarely.com
+  SITE_URL                          default https://www.firmwarely.com
   USER_ALERT_PLANS                  comma list of plans to mail, or "all" (default "all";
                                     set it to "pro" to hold alerts back to paying accounts)
   USER_ALERT_TEST_EMAIL             send every alert to this address instead of the
@@ -49,7 +49,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 CHANGED = ROOT / "changed.json"
-UA = "Mozilla/5.0 (compatible; FirmwarelyBot/1.0; +https://firmwarely.com)"
+UA = "Mozilla/5.0 (compatible; FirmwarelyBot/1.0; +https://www.firmwarely.com)"
 BEEHIIV = "https://api.beehiiv.com/v2/publications/"
 RESEND = "https://api.resend.com/emails"
 PAGE_SIZE = 100
@@ -57,7 +57,7 @@ MAX_PAGES = 100          # 10k subscribers; a runaway loop stops here
 SEND_GAP = 0.6           # seconds between sends, to stay under Resend's rate limit
 
 DRY_RUN = "--dry-run" in sys.argv
-SITE = (os.environ.get("SITE_URL") or "https://firmwarely.com").rstrip("/")
+SITE = (os.environ.get("SITE_URL") or "https://www.firmwarely.com").rstrip("/")
 FROM = os.environ.get("RESEND_FROM") or "Firmwarely <onboarding@resend.dev>"
 TEST_TO = (os.environ.get("USER_ALERT_TEST_EMAIL") or "").strip()
 MAX_EMAILS = int(os.environ.get("USER_ALERT_MAX") or 500)

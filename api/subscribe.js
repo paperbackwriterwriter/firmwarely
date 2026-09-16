@@ -33,7 +33,7 @@ module.exports = async (req, res) => {
     utm_source: "firmwarely.com",
     utm_medium: "site",
     utm_campaign: plan,
-    referring_site: "https://firmwarely.com"
+    referring_site: "https://www.firmwarely.com"
   };
   if (devices) payload.custom_fields = [{ name: "devices", value: devices }];
 

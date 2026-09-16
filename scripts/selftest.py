@@ -71,7 +71,7 @@ def test_routing():
         {"id": "dev1", "brand": "Acme", "model": "Router", "status": "critical",
          "version": "2.0", "previous": "1.0", "released": "2026-09-13", "eol": False,
          "notes": "Fixes a thing.", "source_url": "https://e/x",
-         "page_url": "https://firmwarely.com/devices/dev1/"}]}
+         "page_url": "https://www.firmwarely.com/devices/dev1/"}]}
     people = [
         ("behind@e.com", "pro", [["dev1", "1.0"]], "personal"),
         ("blank@e.com", "pro", [["dev1", ""]], "personal"),
@@ -132,7 +132,7 @@ def test_forced_guard():
     tmp.write_text(json.dumps({"date": "2026-09-14", "forced": True, "count": 1, "devices": [
         {"id": "d", "brand": "B", "model": "M", "status": "update", "version": "2",
          "previous": "1", "released": "2026-09-13", "notes": "", "source_url": "",
-         "page_url": "https://firmwarely.com/devices/d/"}]}))
+         "page_url": "https://www.firmwarely.com/devices/d/"}]}))
     orig_changed, orig_subs, orig_test = ua.CHANGED, ua.subscribers, ua.TEST_TO
     reached = []
     try:
@@ -320,6 +320,19 @@ def test_support_page():
           [n for n, h in pages.items() if 'href="/support/"' not in h.split("<footer")[-1]], [])
     check("support is a footer link, not a second nav item",
           [n for n, h in pages.items() if 'href="/support/"' in h.split("<footer")[0]], [])
+    # Search Console reports every apex URL it finds as "Page with redirect": the apex is a
+    # 308 to www, so anything we hand out on the bare host is a link Google will not index
+    # and a redirect hop for the person who clicked it.
+    apex = "://" + "firmwarely.com"     # spelled this way so this line isn't its own match
+    offenders = []
+    for f in sorted(Path(".").glob("*.html")) + sorted(Path("scripts").glob("*.py")) + \
+             sorted(Path("api").glob("*.js")) + sorted(Path("lib").glob("*.js")):
+        for i, line in enumerate(f.read_text().splitlines(), 1):
+            if apex in line and "www." + "firmwarely.com" not in line and "@" not in line:
+                offenders.append(f"{f}:{i}")
+    check("nothing we publish points at the redirecting apex host", offenders[:5], [])
+    check("the canonical host is the one with www", build_pages.SITE, "https://www.firmwarely.com")
+
     check("the support page is in the sitemap",
           f"<loc>{build_pages.SITE}/support/</loc>" in Path("sitemap.xml").read_text(), True)
 

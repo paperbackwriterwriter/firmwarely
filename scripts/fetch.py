@@ -45,7 +45,7 @@ DIGEST = ROOT / "digest.md"
 CHANGED = ROOT / "changed.json"   # machine-readable digest for scripts/user_alerts.py (written by digest.py)
 PENDING = ROOT / "pending_changes.json"   # changes seen since the last daily digest; committed
 WORKERS = 12   # parallel source checks; ~600 sources finish in about a minute
-UA = "Mozilla/5.0 (compatible; FirmwarelyBot/1.0; +https://firmwarely.com)"
+UA = "Mozilla/5.0 (compatible; FirmwarelyBot/1.0; +https://www.firmwarely.com)"
 TODAY = datetime.now(ZoneInfo("America/Chicago")).date()   # dates in the site/digest are US Central
 NOW = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
 
@@ -605,8 +605,8 @@ def build_digest(changed):
                               f" — {html.escape(note)} <a href=\"{html.escape(d['source_url'])}\">release notes</a></li>")
         md.append("")
         html_parts.append("</ul>")
-    md += ["---", "Tracked by [Firmwarely](https://firmwarely.com). Reply to this email to request a device.", ""]
-    html_parts.append('<p>Tracked by <a href="https://firmwarely.com">Firmwarely</a>. Reply to this email to request a device.</p>')
+    md += ["---", "Tracked by [Firmwarely](https://www.firmwarely.com). Reply to this email to request a device.", ""]
+    html_parts.append('<p>Tracked by <a href="https://www.firmwarely.com">Firmwarely</a>. Reply to this email to request a device.</p>')
     return "\n".join(md), "".join(html_parts)
 
 
