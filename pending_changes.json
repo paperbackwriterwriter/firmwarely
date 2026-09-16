@@ -71,6 +71,48 @@
    "notes": "5.54.0 (2026-09-16) 🚀 New feature i18n: record locale management in audit logs (#​27547) upload: add MCP scaffolding and read tools to the upload plugin (#​27523) upload: add the media_update_asset MCP tool (#​27574) upload: make the new Media Library the default (#​27606) upload: manage media libr…",
    "source_url": "https://github.com/strapi/strapi/releases/tag/v5.54.0",
    "page_url": "https://www.firmwarely.com/devices/strapi/"
+  },
+  "harvester": {
+   "id": "harvester",
+   "brand": "Harvester",
+   "model": "Hyperconverged infrastructure",
+   "category": "A",
+   "status": "update",
+   "version": "1.9.0",
+   "previous": "1.8.2",
+   "released": "2026-09-16",
+   "eol": false,
+   "notes": "Harvester v1.9.0 Release Notes This release introduces several features, enhancements, and bug fixes that improve system quality and the overall user experience. The documentation is available at https://docs.harvesterhci.io/v1.9. The Harvester team appreciates your contributions and looks forward …",
+   "source_url": "https://github.com/harvester/harvester/releases/tag/v1.9.0",
+   "page_url": "https://www.firmwarely.com/devices/harvester/"
+  },
+  "element-web": {
+   "id": "element-web",
+   "brand": "Element",
+   "model": "Element Web client",
+   "category": "A",
+   "status": "update",
+   "version": "1.12.28",
+   "previous": "1.12.27",
+   "released": "2026-09-16",
+   "eol": false,
+   "notes": "⚠️ Important Desktop releases now require glibc 2.34, ie. Debian bookworm or Ubuntu 22.04. Support for Debian bullseye and Ubuntu earlier than 22.04 has been dropped since Debian bullseye's LTS support period has now ended. If you are running a version of these OSes for which support has been dropp…",
+   "source_url": "https://github.com/element-hq/element-web/releases/tag/v1.12.28",
+   "page_url": "https://www.firmwarely.com/devices/element-web/"
+  },
+  "glpi": {
+   "id": "glpi",
+   "brand": "GLPI",
+   "model": "IT asset management",
+   "category": "A",
+   "status": "critical",
+   "version": "11.0.9",
+   "previous": "11.0.8",
+   "released": "2026-09-16",
+   "eol": false,
+   "notes": "This is a security release, upgrading is recommended ![Download it](https://github.com/glpi-project/glpi/releases/download/11.0.9/glpi-11.0.9.tgz) ![Official Docker image](https://hub.docker.com/r/glpi/glpi) You will find below the list of security issues fixed in this bugfixes version: [SECURITY -…",
+   "source_url": "https://github.com/glpi-project/glpi/releases/tag/11.0.9",
+   "page_url": "https://www.firmwarely.com/devices/glpi/"
   }
  }
 }
