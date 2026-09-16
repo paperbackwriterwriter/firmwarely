@@ -462,7 +462,9 @@ def device_page(d, ctx=None):
       <div class="faq">
         <h2 style="margin-top:2rem">FAQ</h2>
         <h3>What is the latest {noun} {"of" if software else "for the"} {esc(name)}?</h3>
-        <p>{(f"Version {esc(d['version'])}, released {fmt(d.get('released'))}. " if live else "We haven't recorded a version yet. ")}This page is refreshed every hour from the manufacturer's release page.</p>
+        <p>{(f"Version {esc(d['version'])}, released {fmt(d.get('released'))}. " if live and dated(d)
+             else f"Version {esc(d['version'])}, which we first saw on {fmt(d.get('released'))}; {esc(d['brand'])} doesn't publish a release date for it. " if live
+             else "We haven't recorded a version yet. ")}This page is refreshed every hour from the manufacturer's release page.</p>
         <h3>How do I update {"" if software else "the "}{esc(name)}?</h3>
         <p><a href="#update">See the step-by-step above.</a> {esc(HOWTO.get(d['category'], ''))}</p>
         <h3>How does Firmwarely know when there's a new version?</h3>
