@@ -101,7 +101,29 @@ def test_routing():
     for email, _, _, want in people:
         subj = sent.get(email)
         got = None if subj is None else ("digest" if subj.startswith("Firmware digest") else "personal")
-        check(f"routing: {email} -> {want or 'no mail'}", got, want)
+        check(f"routing: plans=pro, {email} -> {want or 'no mail'}", got, want)
+
+    # The default mails everyone: the signup box on every device page promises a free
+    # account one email when its devices change, and nothing else sends it.
+    check("the default is every plan, not just the paying one",
+          [p.strip().lower() for p in (os.environ.get("USER_ALERT_PLANS") or "all").split(",") if p.strip()],
+          ["all"])
+    sent.clear()
+    try:
+        ua.CHANGED, ua.SEND_GAP = tmp, 0
+        ua.PLANS = ["all"]
+        ua.subscribers = lambda k, p: iter([
+            {"email": e, "custom_fields": [{"name": "plan", "value": plan}]
+             + ([{"name": "devices", "value": json.dumps(d)}] if d is not None else [])}
+            for e, plan, d, _ in people])
+        ua.send = lambda to, subj, body: (sent.__setitem__(to, subj), (True, ""))[1]
+        ua.main()
+    finally:
+        ua.CHANGED, ua.send, ua.subscribers, ua.SEND_GAP = orig_changed, orig_send, orig_subs, orig_gap
+    check("a free account gets the alert its signup promised",
+          bool(sent.get("free@e.com")) and not sent["free@e.com"].startswith("Firmware digest"), True)
+    check("...and everyone else still gets exactly what they got before",
+          len(sent), len([x for x in people if x[3]]) + 1)
 
 
 # ---- a forced run must not reach real subscribers ----
