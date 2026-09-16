@@ -9,8 +9,11 @@ nothing else. Standard library only, same as the rest of the pipeline.
   python3 scripts/user_alerts.py             # send
   python3 scripts/user_alerts.py --dry-run   # print who would get what, send nothing
 
-Everyone on a plan in USER_ALERT_PLANS (default "pro" — free accounts get the weekly
-digest) with an active subscription gets exactly one email:
+Everyone on a plan in USER_ALERT_PLANS (default "all") with an active subscription gets
+exactly one email. Free accounts are included because the signup box on every device page
+promises them one — "one email when a new or critical firmware ships, free for up to 3
+devices" — and /api/me holds them to those three. Pro's daily mail is unlimited devices,
+sorted security-first, with the dashboard behind it:
 
 - the personal one, when they saved a device that moved tonight AND the version they
   recorded is older than the one we just found. Someone already on tonight's version, or
@@ -24,7 +27,8 @@ Env:
   RESEND_API_KEY                    send the mail (same provider as the sign-in links)
   RESEND_FROM                       From: header (default matches lib/fw.js)
   SITE_URL                          default https://firmwarely.com
-  USER_ALERT_PLANS                  comma list of plans to mail, or "all" (default "pro")
+  USER_ALERT_PLANS                  comma list of plans to mail, or "all" (default "all";
+                                    set it to "pro" to hold alerts back to paying accounts)
   USER_ALERT_TEST_EMAIL             send every alert to this address instead of the
                                     subscriber, and prefix the subject with [TEST]
   USER_ALERT_MAX                    stop after this many emails (default 500)
@@ -57,7 +61,7 @@ SITE = (os.environ.get("SITE_URL") or "https://firmwarely.com").rstrip("/")
 FROM = os.environ.get("RESEND_FROM") or "Firmwarely <onboarding@resend.dev>"
 TEST_TO = (os.environ.get("USER_ALERT_TEST_EMAIL") or "").strip()
 MAX_EMAILS = int(os.environ.get("USER_ALERT_MAX") or 500)
-PLANS = [p.strip().lower() for p in (os.environ.get("USER_ALERT_PLANS") or "pro").split(",") if p.strip()]
+PLANS = [p.strip().lower() for p in (os.environ.get("USER_ALERT_PLANS") or "all").split(",") if p.strip()]
 
 
 # ---------- version comparison (mirrors norm/compare in my-devices.html) ----------
