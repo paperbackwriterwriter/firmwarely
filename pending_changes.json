@@ -383,6 +383,21 @@
    "notes": "What's Changed feat(pam): restore Oracle Database account support fix(cert-management): fix dupe member issue fix: oracle cli version improvement(frontend): migrate server admins modal to v3 components[bot] in https://github.com/Infisical/infisical/pull/8045 improvement(admin): migrate remaining se…",
    "source_url": "https://github.com/Infisical/infisical/releases/tag/v0.165.12",
    "page_url": "https://www.firmwarely.com/devices/infisical/"
+  },
+  "vault": {
+   "id": "vault",
+   "brand": "HashiCorp",
+   "model": "Vault",
+   "category": "A",
+   "status": "update",
+   "version": "2.1.1",
+   "previous": "2.1.0",
+   "released": "2026-09-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "v2.1.1 v2.1.1",
+   "source_url": "https://github.com/hashicorp/vault/releases/tag/v2.1.1",
+   "page_url": "https://www.firmwarely.com/devices/vault/"
   }
  }
 }
