@@ -120,14 +120,44 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.6.8.7-stable",
+   "version": "26.7.10.6-stable",
    "previous": "26.8.5.13-lts",
    "released": "2026-09-16",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.6.8.7-stable v26.6.8.7-stable",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.6.8.7-stable",
+   "notes": "Release v26.7.10.6-stable v26.7.10.6-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.7.10.6-stable",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
+  },
+  "uptime-kuma": {
+   "id": "uptime-kuma",
+   "brand": "Uptime Kuma",
+   "model": "Uptime monitor",
+   "category": "R",
+   "status": "update",
+   "version": "2.5.5",
+   "previous": "2.5.4",
+   "released": "2026-09-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "🐞 Bug Fixes #​7848 fix: Memory leak from tcp monitor",
+   "source_url": "https://github.com/louislam/uptime-kuma/releases/tag/2.5.5",
+   "page_url": "https://www.firmwarely.com/devices/uptime-kuma/"
+  },
+  "tooljet": {
+   "id": "tooljet",
+   "brand": "ToolJet",
+   "model": "Low-code platform",
+   "category": "A",
+   "status": "update",
+   "version": "3.20.228-lts",
+   "previous": "3.20.227-lts",
+   "released": "2026-09-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "🛠️ Fixes Fixed try-tooljet LTS image build failure caused by Debian 13 package name changes Fixed an issue with the page and module mutation buffer counter Full Changelog: https://github.com/ToolJet/ToolJet/compare/v3.20.227-lts...v3.20.228-lts",
+   "source_url": "https://github.com/ToolJet/ToolJet/releases/tag/v3.20.228-lts",
+   "page_url": "https://www.firmwarely.com/devices/tooljet/"
   }
  }
 }
