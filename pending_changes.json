@@ -29,6 +29,20 @@
    "notes": "What's Changed Features feat(ai-gateway): capture Responses facts in debug logs feat(mcp): Add batchUpsertDatasetItems tool feat(worker): add Rust native addon scaffold (/native) feat(query-ast): declare per-table dedup without events LIMIT BY feat(ai-gateway): upload finalized generations to Langf…",
    "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.37.0",
    "page_url": "https://www.firmwarely.com/devices/langfuse/"
+  },
+  "windmill": {
+   "id": "windmill",
+   "brand": "Windmill",
+   "model": "Scripts and workflows",
+   "category": "A",
+   "status": "update",
+   "version": "1.813.0",
+   "previous": "1.812.0",
+   "released": "2026-09-16",
+   "eol": false,
+   "notes": "1.813.0 (2026-09-16) Features back AI sessions up to the workspace object storage (#​11116) (796b6e5) delete a browser's copy of an AI session past its workspace retention (#​11156) (a48ae65) rename saved agents from the agent editor and flag broken links (#​11147) (57a99f6) retention for AI sessio…",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.813.0",
+   "page_url": "https://www.firmwarely.com/devices/windmill/"
   }
  }
 }
