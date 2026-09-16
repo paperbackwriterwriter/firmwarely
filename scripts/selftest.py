@@ -329,6 +329,8 @@ def test_dates_are_honest():
     check("...and the prose doesn't claim a ship date", "shipped on" in page, False)
     desc = re.search(r'<meta name="description" content="(.*?)">', page).group(1)
     check("...and the search snippet doesn't either", "released" in desc.lower(), False)
+    check("...and neither does the FAQ answer Google may quote",
+          "released" in re.search(r"What is the latest.*?</p>", page, re.S).group(0).lower(), False)
     check("...while the date itself is still shown, marked",
           'class="seen">first seen' in page and build_pages.fmt(guessed["released"]) in page, True)
 
