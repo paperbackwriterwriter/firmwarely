@@ -398,6 +398,51 @@
    "notes": "v2.1.1 v2.1.1",
    "source_url": "https://github.com/hashicorp/vault/releases/tag/v2.1.1",
    "page_url": "https://www.firmwarely.com/devices/vault/"
+  },
+  "betaflight": {
+   "id": "betaflight",
+   "brand": "Betaflight",
+   "model": "FPV flight controller firmware",
+   "category": "M",
+   "status": "update",
+   "version": "2026.6.2",
+   "previous": "2026.6.1",
+   "released": "2026-09-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed Fixes [2026.6] backport: Guard I2C busdev accessors against an unset bus Full Changelog: https://github.com/betaflight/betaflight/compare/2026.6.1...2026.6.2",
+   "source_url": "https://github.com/betaflight/betaflight/releases/tag/2026.6.2",
+   "page_url": "https://www.firmwarely.com/devices/betaflight/"
+  },
+  "dagster": {
+   "id": "dagster",
+   "brand": "Dagster",
+   "model": "Data orchestrator",
+   "category": "A",
+   "status": "update",
+   "version": "1.13.23",
+   "previous": "1.13.22",
+   "released": "2026-09-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "New In Dagster+, alert policies can now target deployment capacity metrics — queued runs and in-progress runs — evaluated over a rolling window with aggregations such as max. In Dagster+ Serverless, fast deploys now build a Docker image instead of a Python executable when the target environment can…",
+   "source_url": "https://github.com/dagster-io/dagster/releases/tag/1.13.23",
+   "page_url": "https://www.firmwarely.com/devices/dagster/"
+  },
+  "drawio": {
+   "id": "drawio",
+   "brand": "draw.io",
+   "model": "Diagrams",
+   "category": "A",
+   "status": "update",
+   "version": "31.4.6",
+   "previous": "31.4.5",
+   "released": "2026-09-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "v31.4.6 v31.4.6",
+   "source_url": "https://github.com/jgraph/drawio/releases/tag/v31.4.6",
+   "page_url": "https://www.firmwarely.com/devices/drawio/"
   }
  }
 }
