@@ -160,7 +160,7 @@
   <url><loc>https://www.firmwarely.com/devices/homepage-dashboard/</loc><lastmod>2026-09-09</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/heimdall-dashboard/</loc><lastmod>2026-09-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/homer-dashboard/</loc><lastmod>2026-08-30</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/sonarr/</loc><lastmod>2026-06-26</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/sonarr/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/radarr/</loc><lastmod>2026-07-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/lidarr/</loc><lastmod>2025-11-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/prowlarr/</loc><lastmod>2026-07-22</lastmod></url>
@@ -189,7 +189,7 @@
   <url><loc>https://www.firmwarely.com/devices/apprise/</loc><lastmod>2026-08-31</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/scrutiny-disk/</loc><lastmod>2026-09-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/glances/</loc><lastmod>2026-08-01</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/netdata/</loc><lastmod>2026-08-12</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/netdata/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/beszel/</loc><lastmod>2026-09-03</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/mergerfs/</loc><lastmod>2026-05-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/snapraid/</loc><lastmod>2026-07-19</lastmod></url>
@@ -431,7 +431,7 @@
   <url><loc>https://www.firmwarely.com/devices/icinga2/</loc><lastmod>2026-08-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/kener/</loc><lastmod>2026-09-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/statping-ng/</loc><lastmod>2025-06-04</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/cronicle/</loc><lastmod>2026-09-11</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/cronicle/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/graylog/</loc><lastmod>2026-09-02</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/opensearch/</loc><lastmod>2026-08-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/elasticsearch/</loc><lastmod>2026-09-15</lastmod></url>
@@ -636,7 +636,7 @@
   <url><loc>https://www.firmwarely.com/devices/drawio/</loc><lastmod>2026-09-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/onlyoffice-docs/</loc><lastmod>2026-05-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/cryptpad/</loc><lastmod>2026-05-26</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/etherpad/</loc><lastmod>2026-07-29</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/etherpad/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/hedgedoc/</loc><lastmod>2026-08-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/pairdrop/</loc><lastmod>2025-02-24</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/pingvin-share/</loc><lastmod>2025-05-25</lastmod></url>

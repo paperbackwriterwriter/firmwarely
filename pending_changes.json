@@ -278,6 +278,66 @@
    "notes": "Changelog Features fb38eaea363ba8a17818d751950beecd9b1ee5ff feat: add group add/delete actions to group tree page 39a1bba16e8be5cf8169156dc7a04fdf9af73865 feat: support popup mode for Captcha providers Bug fixes 0f629ebed9727b191e259d82a9ed16871abc67fa fix: URL-encode OAuth state on interactive log…",
    "source_url": "https://github.com/casdoor/casdoor/releases/tag/v4.5.0",
    "page_url": "https://www.firmwarely.com/devices/casdoor/"
+  },
+  "sonarr": {
+   "id": "sonarr",
+   "brand": "Sonarr",
+   "model": "TV series manager",
+   "category": "A",
+   "status": "update",
+   "version": "4.0.20.3014",
+   "previous": "4.0.19.2979",
+   "released": "2026-09-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed Changes Fixed: Unexpected languages stored in DB will be treated as Unknown Jellyfin/Emby Connection Test and New Jellyfin Auth header Fixed: Avoid checking for free space if other specifications fail first Full Changelog: https://github.com/Sonarr/Sonarr/compare/v4.0.19.2979...v4.0.…",
+   "source_url": "https://github.com/Sonarr/Sonarr/releases/tag/v4.0.20.3014",
+   "page_url": "https://www.firmwarely.com/devices/sonarr/"
+  },
+  "netdata": {
+   "id": "netdata",
+   "brand": "Netdata",
+   "model": "System monitoring agent",
+   "category": "A",
+   "status": "update",
+   "version": "2.11.1",
+   "previous": "2.11.0",
+   "released": "2026-09-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release notes Netdata v2.11.1 is a patch release to address issues discovered since v2.11.0. This is a larger-than-usual patch release focused on query correctness, database engine stability, Cloud connectivity robustness, health/alert efficiency, and shutdown and process-lifetime safety, along wit…",
+   "source_url": "https://github.com/netdata/netdata/releases/tag/v2.11.1",
+   "page_url": "https://www.firmwarely.com/devices/netdata/"
+  },
+  "cronicle": {
+   "id": "cronicle",
+   "brand": "Cronicle",
+   "model": "Task scheduler",
+   "category": "A",
+   "status": "update",
+   "version": "0.9.134",
+   "previous": "0.9.133",
+   "released": "2026-09-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "Bug Fix: Chained event runs even though it is disabled. Fixes #​806.",
+   "source_url": "https://github.com/jhuckaby/Cronicle/releases/tag/v0.9.134",
+   "page_url": "https://www.firmwarely.com/devices/cronicle/"
+  },
+  "etherpad": {
+   "id": "etherpad",
+   "brand": "Etherpad",
+   "model": "Collaborative editor",
+   "category": "A",
+   "status": "critical",
+   "version": "3.3.4",
+   "previous": "3.3.3",
+   "released": "2026-09-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "3.3.4 3.3.4 is a security release. It closes a stored XSS in the createDiffHTML API output (GHSA-6vx2-3gwr-958v). Security Neutralize author IDs and colors in HTML diff export (GHSA-6vx2-3gwr-958v). getHTMLFromAtext placed author colors inside a block, and author IDs in both the CSS selector and a …",
+   "source_url": "https://github.com/ether/etherpad/releases/tag/v3.3.4",
+   "page_url": "https://www.firmwarely.com/devices/etherpad/"
   }
  }
 }
