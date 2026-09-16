@@ -8,7 +8,7 @@
   <url><loc>https://www.firmwarely.com/support/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/routers/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/nas/</loc><lastmod>2026-09-16</lastmod></url>
-  <url><loc>https://www.firmwarely.com/category/smart-home/</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://www.firmwarely.com/category/smart-home/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/consoles-drones-ebikes/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/makers/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/pcs-tvs-gadgets/</loc><lastmod>2026-09-15</lastmod></url>
@@ -36,7 +36,7 @@
   <url><loc>https://www.firmwarely.com/brands/dbeaver/</loc><lastmod>2026-08-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/docker/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/duet3d/</loc><lastmod>2026-06-02</lastmod></url>
-  <url><loc>https://www.firmwarely.com/brands/esphome/</loc><lastmod>2026-08-31</lastmod></url>
+  <url><loc>https://www.firmwarely.com/brands/esphome/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/element/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/grafana/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/icewhale/</loc><lastmod>2026-08-21</lastmod></url>
@@ -81,7 +81,7 @@
   <url><loc>https://www.firmwarely.com/devices/tailscale/</loc><lastmod>2026-09-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/opnsense-firewall/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/mikrotik-routeros/</loc><lastmod>2026-09-03</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/esphome/</loc><lastmod>2026-08-31</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/esphome/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/home-assistant-core/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/zigbee2mqtt/</loc><lastmod>2026-09-03</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/frigate-nvr/</loc><lastmod>2026-09-12</lastmod></url>
@@ -717,7 +717,7 @@
   <url><loc>https://www.firmwarely.com/devices/trilium/</loc><lastmod>2026-08-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/glance/</loc><lastmod>2026-09-03</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/qwenpaw/</loc><lastmod>2026-09-11</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/langfuse/</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/langfuse/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/dokku/</loc><lastmod>2026-08-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/onyx/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/meetily/</loc><lastmod>2026-09-12</lastmod></url>

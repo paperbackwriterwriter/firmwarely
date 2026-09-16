@@ -1,5 +1,34 @@
 {
- "since": null,
+ "since": "2026-09-16T09:17:21+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "esphome": {
+   "id": "esphome",
+   "brand": "ESPHome",
+   "model": "ESP32 / ESP8266 device firmware",
+   "category": "S",
+   "status": "update",
+   "version": "2026.9.0",
+   "previous": "2026.8.2",
+   "released": "2026-09-16",
+   "eol": false,
+   "notes": "https://esphome.io/changelog/2026.9.0.html",
+   "source_url": "https://github.com/esphome/esphome/releases/tag/2026.9.0",
+   "page_url": "https://www.firmwarely.com/devices/esphome/"
+  },
+  "langfuse": {
+   "id": "langfuse",
+   "brand": "Langfuse",
+   "model": "Agent evals & observability",
+   "category": "A",
+   "status": "update",
+   "version": "4.37.0",
+   "previous": "4.36.1",
+   "released": "2026-09-16",
+   "eol": false,
+   "notes": "What's Changed Features feat(ai-gateway): capture Responses facts in debug logs feat(mcp): Add batchUpsertDatasetItems tool feat(worker): add Rust native addon scaffold (/native) feat(query-ast): declare per-table dedup without events LIMIT BY feat(ai-gateway): upload finalized generations to Langf…",
+   "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.37.0",
+   "page_url": "https://www.firmwarely.com/devices/langfuse/"
+  }
+ }
 }
