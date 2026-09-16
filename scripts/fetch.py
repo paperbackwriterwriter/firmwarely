@@ -215,6 +215,7 @@ def check_feed(src):
         return {
             "version": v,
             "released": it["date"] or TODAY.isoformat(),
+            "date_known": bool(it["date"]),
             "notes": clean(it["body"]) or clean(it["title"]),
             "source_url": it["link"] or src["url"],
         }
@@ -258,6 +259,7 @@ def check_github(src, prev=None):
     except urllib.error.HTTPError as e:
         if e.code == 304:
             return {"version": prev["version"], "released": prev.get("released"),
+                    "date_known": bool(prev.get("date_known")),
                     "notes": prev.get("notes", ""), "source_url": prev.get("source_url"),
                     "etag": prev["etag"]}
         # with a catalog this size an exhausted quota looks like dozens of unrelated
@@ -271,9 +273,11 @@ def check_github(src, prev=None):
     v = extract_version(title, src.get("version_regex"))
     if not v:
         raise ValueError(f"no version in release title/tag: {title.strip()}")
+    published = parse_date(rel.get("published_at"))
     return {
         "version": v,
-        "released": parse_date(rel.get("published_at")) or TODAY.isoformat(),
+        "released": published or TODAY.isoformat(),
+        "date_known": bool(published),
         "notes": clean(rel.get("body") or "") or clean(title),
         "source_url": rel.get("html_url") or f"https://github.com/{src['repo']}/releases",
         "etag": etag,
@@ -305,8 +309,15 @@ def check_html(src, prev):
     if src.get("date_regex"):
         m = re.search(src["date_regex"].replace("{version}", anchor), page, re.S)
         released = parse_date(m.group(1)) if m else None
+    # Most vendor pages show a version and no date. Falling back to today is the only date we
+    # have, but it is the day we first saw it, not the day it shipped — say so rather than
+    # letting the site claim a release date it does not know.
+    date_known = released is not None
     if not released:
-        released = TODAY.isoformat() if changed else prev.get("released")
+        if changed:
+            released = TODAY.isoformat()
+        else:
+            released, date_known = prev.get("released"), bool(prev.get("date_known"))
     notes = src.get("notes", "")
     if src.get("notes_regex"):
         m = re.search(src["notes_regex"].replace("{version}", anchor), page, re.S)
@@ -315,6 +326,7 @@ def check_html(src, prev):
     return {
         "version": v,
         "released": released,
+        "date_known": date_known,
         "notes": notes,
         "source_url": src.get("page_url") or src["url"],
     }
@@ -352,6 +364,11 @@ def classify(dev):
         age = (TODAY - datetime.fromisoformat(dev["released"]).date()).days
     except Exception:
         return "current"
+    # A date we guessed is only evidence of a release if we watched the version change under
+    # us. On a first sighting it records when we started looking, so "new version" — or worse,
+    # the critical-fix banner — would be a claim about firmware that may be two years old.
+    if not dev.get("date_known", True) and len(dev.get("history") or []) <= 1:
+        return "stale" if age > STALE_DAYS else "current"
     text = f"{dev.get('notes','')} {dev.get('version','')}"
     if age <= 60 and SECURITY.search(text):
         return "critical"
@@ -362,6 +379,14 @@ def classify(dev):
     return "current"
 
 
+def date_known_default(src, prev):
+    """Whether the date on a record predating this flag is a real published date. A feed item
+    or a GitHub release carries one; a vendor page only does when the source has a date_regex."""
+    if "date_known" in prev:
+        return bool(prev["date_known"])
+    return src["type"] in ("feed", "github") or bool(src.get("date_regex"))
+
+
 def device_record(src, prev):
     """The devices.json entry for a source before tonight's check, carrying forward
     whatever the last run knew. discover.py builds new devices through this too."""
@@ -369,6 +394,7 @@ def device_record(src, prev):
         "id": src["id"], "brand": src["brand"], "model": src["model"], "category": src["category"],
         "tracked": src["type"] != "manual",
         "version": prev.get("version"), "released": prev.get("released"),
+        "date_known": date_known_default(src, prev),
         "notes": prev.get("notes", ""), "source_url": prev.get("source_url") or src.get("url"),
         "product_url": src.get("product_url"),
         "update_url": update_url(src),
@@ -395,10 +421,12 @@ def check_source(src, prev):
 
 def apply_result(dev, res):
     """Fold a successful check into the device record (version, history, dates)."""
+    entry = {"version": res["version"], "released": res["released"],
+             "date_known": bool(res.get("date_known"))}
     if res["version"] != dev["version"]:
-        dev["history"] = ([{"version": res["version"], "released": res["released"]}] + dev["history"])[:6]
+        dev["history"] = ([entry] + dev["history"])[:6]
     elif dev["history"] and dev["history"][0].get("version") == res["version"]:
-        dev["history"][0]["released"] = res["released"]   # keep history in sync if the date got corrected
+        dev["history"][0].update(entry)   # keep history in sync if the date got corrected
     dev.update(res)
     dev["checked"] = NOW
     dev["source_status"] = "ok"
@@ -518,6 +546,7 @@ def change_record(d, previous):
         "version": d["version"],
         "previous": previous.get(d["id"], {}).get("version"),
         "released": d.get("released"),
+        "date_known": bool(d.get("date_known")),
         "eol": bool(d.get("eol")),
         "notes": d.get("notes", ""),
         "source_url": d.get("source_url"),
@@ -545,7 +574,8 @@ def build_issue_summary(changed):
              f"{len(changed)} change(s). Full digest with release notes is in the Beehiiv draft.", ""]
     for d in sorted(changed, key=lambda x: (x["status"] != "critical", x["brand"], x["model"])):
         flag = {"critical": "🔴 security", "update": "🟡 update", "eol": "⚫ end of life"}.get(d["status"], "⚪")
-        lines.append(f"- {flag} — {d['brand']} {d['model']}: `{d['version']}` ({d.get('released','')})")
+        seen = "" if d.get("date_known", True) else "first seen "
+        lines.append(f"- {flag} — {d['brand']} {d['model']}: `{d['version']}` ({seen}{d.get('released','')})")
     lines += ["", "Site: firmwarely dot com (link omitted on purpose)", ""]
     return "\n".join(lines)
 
@@ -567,7 +597,7 @@ def build_digest(changed):
         html_parts.append(f"<h2>{heading}</h2><ul>")
         for d in items:
             name = f"{d['brand']} {d['model']}"
-            when = d.get("released") or ""
+            when = ("" if d.get("date_known", True) else "first seen ") + (d.get("released") or "")
             note = (d.get("notes") or "").strip()
             note = note[:220] + "…" if len(note) > 220 else note
             md.append(f"- **{name}** → `{d['version']}` ({when}) — {note} [notes]({d['source_url']})")

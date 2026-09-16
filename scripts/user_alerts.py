@@ -187,7 +187,8 @@ def render_digest(data):
             name = html.escape(f"{c['brand']} {c['model']}")
             line = f"<strong>{name}</strong> — <code>{html.escape(c['version'])}</code>"
             if c.get("released"):
-                line += f" ({html.escape(c['released'])})"
+                seen = "" if c.get("date_known", True) else "first seen "
+                line += f" ({seen}{html.escape(c['released'])})"
             note = (c.get("notes") or "").strip()
             if note:
                 note = note[:180] + "…" if len(note) > 180 else note
@@ -229,7 +230,8 @@ def render(hits):
         line = (f"<strong>{name}</strong> — {flag}<br>"
                 f"Latest: <code>{html.escape(c['version'])}</code>")
         if c.get("released"):
-            line += f" ({html.escape(c['released'])})"
+            seen = "" if c.get("date_known", True) else "first seen "
+            line += f" ({seen}{html.escape(c['released'])})"
         line += "<br>You have: " + (f"<code>{html.escape(yours)}</code>" if yours
                                     else "<em>no version recorded</em>")
         note = (c.get("notes") or "").strip()

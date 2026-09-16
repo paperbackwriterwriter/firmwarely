@@ -86,12 +86,27 @@ def is_live(d):
     return bool(d.get("version")) and d.get("status") != "pending"
 
 
+def dated(d):
+    """True when the date we hold came from the manufacturer, false when it is simply the day
+    we first saw this version. Records written before the flag existed are treated as dated."""
+    return d.get("date_known", True) is not False
+
+
+def date_cell(d):
+    """A date in a table, marked when it is ours rather than the manufacturer's."""
+    if not d.get("released"):
+        return "&mdash;"
+    seen = "" if dated(d) else ' <span class="seen">first seen</span>'
+    return time_tag(d.get("released")) + seen
+
+
 def device_list(items, show_brand=True):
     """The same compact list the catalogue uses: name → version, date."""
     out = ["<ul>"]
     for d in items:
         name = f"{d['brand']} {d['model']}" if show_brand else d["model"]
-        v = f"{esc(d['version'])} · {fmt(d.get('released'))}" if is_live(d) else "watching soon"
+        when = fmt(d.get("released")) if dated(d) else f"seen {fmt(d.get('released'))}"
+        v = f"{esc(d['version'])} · {when}" if is_live(d) else "watching soon"
         out.append(f'<li><a href="/devices/{d["id"]}/">{icon_svg(d.get("icon"))}{esc(name)}</a><span>{v}</span></li>')
     out.append("</ul>")
     return "".join(out)
@@ -326,14 +341,17 @@ def device_page(d, ctx=None):
     noun = "version" if software else "firmware"
     if live:
         v = d["version"]
-        title = fit_title([f"{name}{fw} — latest version {v} ({month(d['released'])}) | Firmwarely",
-                           f"{name}{fw} — latest version {v} | Firmwarely",
+        real_date = dated(d) and d.get("released")
+        title = fit_title(([f"{name}{fw} — latest version {v} ({month(d['released'])}) | Firmwarely"] if real_date else []) +
+                          [f"{name}{fw} — latest version {v} | Firmwarely",
                            f"{name}{fw} {v} | Firmwarely",
                            f"{name}{fw} {v}"])
-        desc = fit_desc([f"Latest {name} {noun} is {v}, released {fmt(d['released'])}. Release notes, version history, how to update, and email alerts for new or security fixes.",
-                         f"Latest {name} {noun} is {v}, released {fmt(d['released'])}. Release notes, version history and update alerts.",
-                         f"{name} {noun} {v} ({fmt(d['released'])}): release notes, history and alerts.",
-                         f"{name} {noun} {v}: release notes, history and alerts."])
+        desc = fit_desc(([f"Latest {name} {noun} is {v}, released {fmt(d['released'])}. Release notes, version history, how to update, and email alerts for new or security fixes.",
+                          f"Latest {name} {noun} is {v}, released {fmt(d['released'])}. Release notes, version history and update alerts.",
+                          f"{name} {noun} {v} ({fmt(d['released'])}): release notes, history and alerts."] if real_date else
+                         [f"Latest {name} {noun} is {v}. Release notes, version history, how to update, and email alerts for new or security fixes.",
+                          f"Latest {name} {noun} is {v}. Release notes, version history and update alerts."]) +
+                        [f"{name} {noun} {v}: release notes, history and alerts."])
     else:
         title = fit_title([f"{name}{fw} updates — alerts & release tracking | Firmwarely",
                            f"{name}{fw} updates — release tracking | Firmwarely",
@@ -346,9 +364,9 @@ def device_page(d, ctx=None):
     notes = d.get("notes") or ""
     hist = list(d.get("history") or [])
     if hist and hist[0].get("version") == d.get("version") and d.get("released"):
-        hist[0] = {**hist[0], "released": d["released"]}
+        hist[0] = {**hist[0], "released": d["released"], "date_known": dated(d)}
     if not hist and live:
-        hist = [{"version": d["version"], "released": d.get("released")}]
+        hist = [{"version": d["version"], "released": d.get("released"), "date_known": dated(d)}]
 
     # Structured data: where this page sits, what it describes, and when it was last refreshed.
     graph = [
@@ -364,7 +382,7 @@ def device_page(d, ctx=None):
         app = {"@type": "SoftwareApplication", "name": f"{name} firmware", "applicationCategory": "Firmware",
                "operatingSystem": name, "softwareVersion": d["version"],
                "author": {"@type": "Organization", "name": d["brand"]}}
-        if d.get("released"):
+        if d.get("released") and dated(d):
             app["datePublished"] = d["released"]
         if notes:
             app["releaseNotes"] = notes
@@ -374,14 +392,19 @@ def device_page(d, ctx=None):
     ld = {"@context": "https://schema.org", "@graph": graph}
     extra = f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>'
 
-    rows = "".join(f"<tr><td>{esc(h['version'])}</td><td>{time_tag(h.get('released'))}</td></tr>" for h in hist[:6])
+    rows = "".join(f"<tr><td>{esc(h['version'])}</td><td>{date_cell(h)}</td></tr>" for h in hist[:6])
 
     # a sentence of real prose that no other page has
     if live:
         first = hist[-1].get("released") if hist else None
-        span = (f" Firmwarely has recorded {len(hist)} versions since {fmt(first)}." if len(hist) > 1 and first else "")
-        intro = (f"{'' if software else 'The '}{name} is tracked under {CAT_PHRASE[d['category']]}. Its latest {noun}, {d['version']}, "
-                 f"shipped on {fmt(d.get('released'))}.{span}")
+        span = (f" Firmwarely has recorded {len(hist)} versions since {fmt(first)}."
+                if len(hist) > 1 and first else "")
+        if dated(d):
+            latest = f"Its latest {noun}, {d['version']}, shipped on {fmt(d.get('released'))}."
+        else:
+            latest = (f"Its latest {noun} is {d['version']}. {d['brand']} doesn't publish a date for it, "
+                      f"so we show when we first saw it: {fmt(d.get('released'))}.")
+        intro = (f"{'' if software else 'The '}{name} is tracked under {CAT_PHRASE[d['category']]}. {latest}{span}")
     else:
         intro = (f"{'' if software else 'The '}{name} is on our list under {CAT_PHRASE[d['category']]} but isn't being checked yet. "
                  f"Sign up and we'll prioritise it.")
@@ -426,7 +449,7 @@ def device_page(d, ctx=None):
       <div class="card" style="margin-top:1.25rem">
         <dl class="kv">
           <dt>Latest {noun}</dt><dd>{esc(d['version']) if live else "—"}</dd>
-          <dt>Released</dt><dd>{time_tag(d.get('released')) if live else "—"}</dd>
+          <dt>{"Released" if dated(d) else "First seen"}</dt><dd>{time_tag(d.get('released')) if live else "—"}</dd>
           <dt>Category</dt><dd><a href="{cat_path(d['category'])}">{esc(cat)}</a></dd>
           <dt>Last checked</dt><dd>{time_tag((d.get('checked') or '')[:10]) if d.get('checked') else "—"}</dd>
         </dl>

@@ -401,7 +401,8 @@ footer a:hover{color:var(--text)}
       if (v.cls === "pending") unknown++;
       var name = d ? esc(d.brand) + " " + esc(d.model) : esc(e.id);
       var yours = norm(e.version) ? "<em>" + esc(e.version) + "</em>" : "not set";
-      var latest = d && d.version ? "<em>" + esc(d.version) + "</em>" + (d.released ? " " + esc(fmtDate(d.released)) : "") : "no data yet";
+      var when = d && d.released ? (d.date_known === false ? " seen " : " ") + esc(fmtDate(d.released)) : "";
+      var latest = d && d.version ? "<em>" + esc(d.version) + "</em>" + when : "no data yet";
       html += '<li data-i="' + i + '">' +
         '<div>' +
           '<div class="name">' + name + (d ? '<a href="/devices/' + esc(e.id) + '/">details →</a>' : '') + '</div>' +

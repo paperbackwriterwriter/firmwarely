@@ -184,6 +184,7 @@ dialog::backdrop{background:rgba(3,6,9,.75)}
 .signup form{display:grid;gap:.75rem;max-width:460px}
 .signup .row{display:flex;gap:.6rem}
 .signup .row input{flex:1}
+.seen{color:var(--muted);font-family:var(--mono);font-size:.72rem;white-space:nowrap}
 .ok{color:var(--green);font-family:var(--mono);font-size:.9rem;margin-top:.5rem}
 .err{color:var(--red);font-size:.9rem;margin-top:.5rem}
 
@@ -395,7 +396,7 @@ function render(){
     <tr data-id="${esc(slug(d))}" tabindex="0">
       <td>${icon(d.i)}<strong>${esc(d.b)}</strong> ${esc(d.m)}</td>
       <td class="ver">${esc(d.v) || "—"}</td>
-      <td class="date">${fmtDate(d.d)}</td>
+      <td class="date">${fmtDate(d.d)}${d.k || !d.d ? "" : ' <span class="seen">first seen</span>'}</td>
       <td class="cat">${CATS[d.c] || ""}</td>
       <td><span class="status ${STATUS_CLASS(d.s)}">${STATUS_LABEL[d.s] || esc(d.s)}</span></td>
     </tr>`).join("");
@@ -444,7 +445,7 @@ function openDevice(id){
     <span class="status ${STATUS_CLASS(d.s)}">${STATUS_LABEL[d.s] || esc(d.s)}</span>
     <dl class="kv">
       <dt>Latest firmware</dt><dd>${esc(d.v) || "—"}</dd>
-      <dt>Released</dt><dd>${fmtDate(d.d)}</dd>
+      <dt>${d.k ? "Released" : "First seen"}</dt><dd>${fmtDate(d.d)}</dd>
       <dt>Category</dt><dd>${CATS[d.c] || ""}</dd>
       <dt>What changed</dt><dd style="font-family:var(--sans);font-size:.95rem">${esc(d.n) || (d.s==="pending" ? "Not tracked yet. Get alerts and we'll prioritise it." : "")}</dd>
       ${safeUrl(d.url) ? `<dt>Source</dt><dd><a href="${safeUrl(d.url)}" target="_blank" rel="noopener">Manufacturer release notes ↗</a></dd>` : ""}
@@ -558,7 +559,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
     const r = await fetch("/devices.json", {cache:"no-cache"});
     if(!r.ok) throw new Error(r.status);
     const data = await r.json();
-    const live = (data.devices||[]).map(x=>({b:x.brand, m:x.model, c:x.category, v:x.version, d:x.released, s:x.status, n:x.notes, url:x.source_url, p:x.product_url, u:x.update_url, id:x.id, i:x.icon}));
+    const live = (data.devices||[]).map(x=>({b:x.brand, m:x.model, c:x.category, v:x.version, d:x.released, k:x.date_known !== false, s:x.status, n:x.notes, url:x.source_url, p:x.product_url, u:x.update_url, id:x.id, i:x.icon}));
     if(!live.length) throw new Error("empty");
     DEVICES = live; loadState = "ok";
     const withData = live.length;   // devices.json only carries devices we have data for
