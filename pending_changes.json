@@ -120,13 +120,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.7.10.6-stable",
+   "version": "26.8.6.5-lts",
    "previous": "26.8.5.13-lts",
    "released": "2026-09-16",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.7.10.6-stable v26.7.10.6-stable",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.7.10.6-stable",
+   "notes": "Release v26.8.6.5-lts v26.8.6.5-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.6.5-lts",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "uptime-kuma": {
@@ -248,6 +248,36 @@
    "notes": "Upgrading Before upgrading refer to the migration guide for a complete list of changes. All resolved issues Security fixes #​52834 [CVE-2026-90997] Default MySQL/MariaDB row counts make stateless replay gates accept reused artifacts #​52835 [CVE-2026-79651] Keycloak Unauthenticated Denial of Servic…",
    "source_url": "https://github.com/keycloak/keycloak/releases/tag/26.7.4",
    "page_url": "https://www.firmwarely.com/devices/keycloak/"
+  },
+  "heroic-launcher": {
+   "id": "heroic-launcher",
+   "brand": "Heroic",
+   "model": "Games launcher",
+   "category": "C",
+   "status": "update",
+   "version": "2.22.3",
+   "previous": "2.22.2",
+   "released": "2026-09-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "Hi! The last release broke UMU for a lot of people and this new Hotfix should fix it. Hopefully our last hotfix before the next Major release. What's Changed fix: Don't nest umu if steamRuntime ends up enabled on a non-native game Full Changelog: https://github.com/Heroic-Games-Launcher/HeroicGames…",
+   "source_url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/tag/v2.22.3",
+   "page_url": "https://www.firmwarely.com/devices/heroic-launcher/"
+  },
+  "casdoor": {
+   "id": "casdoor",
+   "brand": "Casdoor",
+   "model": "Identity and access",
+   "category": "A",
+   "status": "update",
+   "version": "4.5.0",
+   "previous": "4.4.0",
+   "released": "2026-09-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog Features fb38eaea363ba8a17818d751950beecd9b1ee5ff feat: add group add/delete actions to group tree page 39a1bba16e8be5cf8169156dc7a04fdf9af73865 feat: support popup mode for Captcha providers Bug fixes 0f629ebed9727b191e259d82a9ed16871abc67fa fix: URL-encode OAuth state on interactive log…",
+   "source_url": "https://github.com/casdoor/casdoor/releases/tag/v4.5.0",
+   "page_url": "https://www.firmwarely.com/devices/casdoor/"
   }
  }
 }
