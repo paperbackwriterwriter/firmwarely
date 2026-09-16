@@ -338,6 +338,36 @@
    "notes": "3.3.4 3.3.4 is a security release. It closes a stored XSS in the createDiffHTML API output (GHSA-6vx2-3gwr-958v). Security Neutralize author IDs and colors in HTML diff export (GHSA-6vx2-3gwr-958v). getHTMLFromAtext placed author colors inside a block, and author IDs in both the CSS selector and a …",
    "source_url": "https://github.com/ether/etherpad/releases/tag/v3.3.4",
    "page_url": "https://www.firmwarely.com/devices/etherpad/"
+  },
+  "radarr": {
+   "id": "radarr",
+   "brand": "Radarr",
+   "model": "Movie manager",
+   "category": "A",
+   "status": "update",
+   "version": "6.4.4.10685",
+   "previous": "6.3.0.10514",
+   "released": "2026-09-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "To receive further Pre-Release or final updates for a non-docker installation, please change the branch to master. (Settings -› General (Show Advanced Settings) -› Updates -› Branch) If you are using docker you will need to update the container image. Do not attempt to update Radarr within an exist…",
+   "source_url": "https://github.com/Radarr/Radarr/releases/tag/v6.4.4.10685",
+   "page_url": "https://www.firmwarely.com/devices/radarr/"
+  },
+  "prowlarr": {
+   "id": "prowlarr",
+   "brand": "Prowlarr",
+   "model": "Indexer manager",
+   "category": "A",
+   "status": "update",
+   "version": "2.6.5.5623",
+   "previous": "2.5.2.5491",
+   "released": "2026-09-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "To receive further updates for a non-docker installation, please change the branch to master. (Settings -› General (Show Advanced Settings) -› Updates -› Branch) If you are using docker you will need to update the container image. Do not attempt to update Prowlarr within an existing docker containe…",
+   "source_url": "https://github.com/Prowlarr/Prowlarr/releases/tag/v2.6.5.5623",
+   "page_url": "https://www.firmwarely.com/devices/prowlarr/"
   }
  }
 }
