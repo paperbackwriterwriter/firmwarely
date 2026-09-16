@@ -8939,6 +8939,96 @@
    "page_url": "https://support.simplisafe.com/articles/product-support/device-and-system-firmware-updates/",
    "version_regex": "Indoor Camera[^0-9]{0,80}(\\d+\\.\\d+)",
    "notes": "SimpliSafe firmware release. See the firmware update article for details."
+  },
+  {
+   "id": "xiaozhi-esp32",
+   "brand": "Xiaozhi Esp32",
+   "model": "MCP-based chatbot",
+   "category": "M",
+   "type": "github",
+   "repo": "78/xiaozhi-esp32",
+   "product_url": "https://github.com/78/xiaozhi-esp32"
+  },
+  {
+   "id": "xiaozhi-esp32-server",
+   "brand": "Xiaozhi Esp32 Server",
+   "model": "本项目为xiaozhi-esp32提供后端服务，帮助您快速搭建ESP32设备控制服务器。Backend service",
+   "category": "M",
+   "type": "github",
+   "repo": "xinnan-tech/xiaozhi-esp32-server",
+   "product_url": "https://github.com/xinnan-tech/xiaozhi-esp32-server"
+  },
+  {
+   "id": "crosspoint-reader",
+   "brand": "Crosspoint Reader",
+   "model": "E-reader firmware",
+   "category": "M",
+   "type": "github",
+   "repo": "crosspoint-reader/crosspoint-reader",
+   "product_url": "https://github.com/crosspoint-reader/crosspoint-reader"
+  },
+  {
+   "id": "esp32-bit-pirate",
+   "brand": "ESP32 Bit Pirate",
+   "model": "Hardware Hacking Tool",
+   "category": "M",
+   "type": "github",
+   "repo": "geo-tp/ESP32-Bit-Pirate",
+   "product_url": "https://github.com/geo-tp/ESP32-Bit-Pirate"
+  },
+  {
+   "id": "esp32-div",
+   "brand": "ESP32 DIV",
+   "model": "ESP32DIV is a multi-purpose wireless offensive",
+   "category": "M",
+   "type": "github",
+   "repo": "cifertech/ESP32-DIV",
+   "product_url": "https://github.com/cifertech/ESP32-DIV"
+  },
+  {
+   "id": "py-xiaozhi",
+   "brand": "Py Xiaozhi",
+   "model": "AI assistant ecosystem",
+   "category": "S",
+   "type": "github",
+   "repo": "huangjunsen0406/py-xiaozhi",
+   "product_url": "https://github.com/huangjunsen0406/py-xiaozhi"
+  },
+  {
+   "id": "esp-homekit-devices",
+   "brand": "Esp Homekit Devices",
+   "model": "Advanced firmware",
+   "category": "S",
+   "type": "github",
+   "repo": "RavenSystem/esp-homekit-devices",
+   "product_url": "https://github.com/RavenSystem/esp-homekit-devices"
+  },
+  {
+   "id": "velxio",
+   "brand": "Velxio",
+   "model": "Emulate Arduino, ESP32 & Raspberry Pi",
+   "category": "M",
+   "type": "github",
+   "repo": "davidmonterocrespo24/velxio",
+   "product_url": "https://github.com/davidmonterocrespo24/velxio"
+  },
+  {
+   "id": "opendtu",
+   "brand": "OpenDTU",
+   "model": "Software for ESP32 to talk to Hoymiles/TSUN/Solenso",
+   "category": "S",
+   "type": "github",
+   "repo": "tbnobody/OpenDTU",
+   "product_url": "https://github.com/tbnobody/OpenDTU"
+  },
+  {
+   "id": "puter",
+   "brand": "Puter",
+   "model": "Internet Computer",
+   "category": "N",
+   "type": "github",
+   "repo": "HeyPuter/puter",
+   "product_url": "https://github.com/HeyPuter/puter"
   }
  ]
 }
