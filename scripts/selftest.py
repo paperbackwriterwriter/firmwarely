@@ -302,6 +302,68 @@ def test_support_page():
           f"<loc>{build_pages.SITE}/support/</loc>" in Path("sitemap.xml").read_text(), True)
 
 
+# ---- a date on the site is either the manufacturer's or labelled as ours ----
+def test_dates_are_honest():
+    build_pages.STYLES = build_pages.styles()
+    srcs = {x["id"]: x for x in json.loads(Path("sources.json").read_text())["devices"]}
+    devs = json.loads(Path("devices.json").read_text())["devices"]
+
+    missing = [d["id"] for d in devs if not isinstance(d.get("date_known"), bool)]
+    check("every published device says whether its date is real", missing[:5], [])
+    wrong = [d["id"] for d in devs
+             if d["id"] in srcs and d["date_known"] != fetch.date_known_default(srcs[d["id"]], {})]
+    check("the flag matches what the source can actually tell us", wrong[:5], [])
+    hist_missing = [d["id"] for d in devs
+                    for h in (d.get("history") or []) if "date_known" not in h]
+    check("every history row says the same", hist_missing[:5], [])
+
+    # a page in each state: the claim has to change with the flag, not just the label
+    guessed = next((d for d in devs if not d["date_known"] and d.get("released")), None)
+    real = next((d for d in devs if d["date_known"] and d.get("released")), None)
+    check("both date states exist in the catalogue", bool(guessed and real), True)
+
+    page = build_pages.device_page(guessed)
+    check("a date we guessed is labelled as first seen", "<dt>First seen</dt>" in page, True)
+    check("...and is not called Released", "<dt>Released</dt>" in page, False)
+    check("...and is not fed to crawlers as a publish date", "datePublished" in page, False)
+    check("...and the prose doesn't claim a ship date", "shipped on" in page, False)
+    desc = re.search(r'<meta name="description" content="(.*?)">', page).group(1)
+    check("...and the search snippet doesn't either", "released" in desc.lower(), False)
+    check("...while the date itself is still shown, marked",
+          'class="seen">first seen' in page and build_pages.fmt(guessed["released"]) in page, True)
+
+    page = build_pages.device_page(real)
+    check("a real publish date is still called Released", "<dt>Released</dt>" in page, True)
+    check("...and still reaches crawlers", "datePublished" in page, True)
+
+    # the status column is the same claim in another field: a first sighting on a dateless
+    # page is not evidence that anything shipped recently
+    base = {"id": "x", "tracked": True, "version": "1.2.3", "notes": "security fix",
+            "released": fetch.TODAY.isoformat()}
+    check("a first sighting with a guessed date is not a new version",
+          fetch.classify({**base, "date_known": False, "history": [{"version": "1.2.3"}]}), "current")
+    check("...not even with security wording in the vendor's boilerplate",
+          fetch.classify({**base, "date_known": False, "history": []}), "current")
+    check("a version we watched change on that same page is",
+          fetch.classify({**base, "date_known": False,
+                          "history": [{"version": "1.2.3"}, {"version": "1.2.2"}]}), "critical")
+    check("a real publish date is unaffected",
+          fetch.classify({**base, "date_known": True, "history": [{"version": "1.2.3"}]}), "critical")
+    old_seen = (fetch.TODAY - __import__("datetime").timedelta(days=fetch.STALE_DAYS + 30)).isoformat()
+    check("...and one we've watched go nowhere for a year still reads as stale",
+          fetch.classify({**base, "released": old_seen, "date_known": False, "history": []}), "stale")
+    check("no published device is called a new version on a date we guessed",
+          [d["id"] for d in devs if not d["date_known"] and len(d.get("history") or []) <= 1
+           and d["status"] in ("update", "critical")][:5], [])
+
+    # the homepage renders from devices.json in the browser, so it needs the same treatment
+    home = Path("index.html").read_text()
+    check("the homepage carries the flag through", "k:x.date_known !== false" in home, True)
+    check("the homepage table marks a first-seen date", '"first seen"' in home or "first seen</span>" in home, True)
+    check("the homepage dialog switches the label", 'd.k ? "Released" : "First seen"' in home, True)
+    check("the mark has somewhere to get its styling from", ".seen{" in build_pages.STYLES, True)
+
+
 def test_clean():
     cases = [
         ("script tag is neutralised", "<script>alert(1)</script>ok", "alert(1) ok"),
@@ -601,7 +663,7 @@ def test_schedule_and_digest():
 
 
 for t in (test_compare, test_new_release, test_saved_devices, test_routing, test_forced_guard,
-          test_update_guides, test_sources_well_formed, test_site_shows_only_real_data, test_support_page, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
+          test_update_guides, test_sources_well_formed, test_site_shows_only_real_data, test_support_page, test_dates_are_honest, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
           test_landing_pages, test_schedule_and_digest):
     print(f"\n{t.__name__}")
     t()

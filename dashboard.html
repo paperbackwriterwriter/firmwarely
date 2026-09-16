@@ -324,7 +324,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:space-betwee
         var note = (d.notes || "").trim(); if (note.length > 160) note = note.slice(0, 159) + "…";
         return '<li data-id="' + esc(e.id) + '"><div>' +
           '<div class="name"><a href="/devices/' + esc(e.id) + '/">' + name + '</a></div>' +
-          '<div class="vers">you: <em>' + (norm(e.version) ? esc(e.version) : "not set") + '</em><span class="arrow">→</span>latest: <em>' + esc(d.version) + '</em>' + (d.released ? " · " + esc(fmtDate(d.released)) : "") + '</div>' +
+          '<div class="vers">you: <em>' + (norm(e.version) ? esc(e.version) : "not set") + '</em><span class="arrow">→</span>latest: <em>' + esc(d.version) + '</em>' + (d.released ? " · " + (d.date_known === false ? "seen " : "") + esc(fmtDate(d.released)) : "") + '</div>' +
           (note ? '<div class="note">' + esc(note) + '</div>' : "") +
           '<div class="acts">' + updateLink(d, e.id) +
             (d.source_url ? '<a class="btn ghost sm" href="' + esc(d.source_url) + '" target="_blank" rel="noopener">Release notes</a>' : "") +
