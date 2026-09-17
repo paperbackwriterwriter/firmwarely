@@ -391,6 +391,36 @@
    "notes": "Bug fixes Discogs Plugin: Read the release month and day from the API's released field instead of only the year. Fix Discogs match overwriting month and day tags on import. import command Fix interactive importer ignoring candidates from manual search (e) and manual ID (i) entry. :bug: (#​7000) Lyr…",
    "source_url": "https://github.com/beetbox/beets/releases/tag/v2.14.1",
    "page_url": "https://www.firmwarely.com/devices/beets/"
+  },
+  "yunohost": {
+   "id": "yunohost",
+   "brand": "YunoHost",
+   "model": "Self-hosting server OS",
+   "category": "A",
+   "status": "update",
+   "version": "13.0.8",
+   "previous": "12.1.41.2",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "Refer to the debian changelog for details.",
+   "source_url": "https://github.com/YunoHost/yunohost/releases/tag/debian/13.0.8",
+   "page_url": "https://www.firmwarely.com/devices/yunohost/"
+  },
+  "localai": {
+   "id": "localai",
+   "brand": "LocalAI",
+   "model": "OpenAI-compatible local API",
+   "category": "A",
+   "status": "update",
+   "version": "4.10.0",
+   "previous": "4.9.0",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "🎉 LocalAI 4.10.0 Release! 🚀 LocalAI 4.10.0 is out! Twenty-eight days and 280 pull requests. The work landed on three fronts: operating a fleet, feeding it models from private sources, and fixing the backends you depend on. A fleet operations dashboard replaces the flat node list with cluster-wide h…",
+   "source_url": "https://github.com/mudler/LocalAI/releases/tag/v4.10.0",
+   "page_url": "https://www.firmwarely.com/devices/localai/"
   }
  }
 }
