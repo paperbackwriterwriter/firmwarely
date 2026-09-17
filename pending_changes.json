@@ -421,6 +421,36 @@
    "notes": "🎉 LocalAI 4.10.0 Release! 🚀 LocalAI 4.10.0 is out! Twenty-eight days and 280 pull requests. The work landed on three fronts: operating a fleet, feeding it models from private sources, and fixing the backends you depend on. A fleet operations dashboard replaces the flat node list with cluster-wide h…",
    "source_url": "https://github.com/mudler/LocalAI/releases/tag/v4.10.0",
    "page_url": "https://www.firmwarely.com/devices/localai/"
+  },
+  "invoice-ninja": {
+   "id": "invoice-ninja",
+   "brand": "Invoice Ninja",
+   "model": "Invoicing",
+   "category": "A",
+   "status": "update",
+   "version": "5.13.42",
+   "previous": "5.13.41",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed Fixes for Email Settings page on React Application Short circuit consent screen v5.13.42 Full Changelog: https://github.com/invoiceninja/invoiceninja/compare/v5.13.41...v5.13.42",
+   "source_url": "https://github.com/invoiceninja/invoiceninja/releases/tag/v5.13.42",
+   "page_url": "https://www.firmwarely.com/devices/invoice-ninja/"
+  },
+  "wordpress": {
+   "id": "wordpress",
+   "brand": "WordPress",
+   "model": "CMS",
+   "category": "A",
+   "status": "update",
+   "version": "7.1.1",
+   "previous": "7.1",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "Tag 7.1.1 Built from https://develop.svn.wordpress.org/tags/7.1.1 git-svn-id: http://core.svn.wordpress.org/tags/7.1.1 1a063a9b-81f0-0310-95a4-ce76da25c4cd",
+   "source_url": "https://github.com/WordPress/WordPress/releases/tag/7.1.1",
+   "page_url": "https://www.firmwarely.com/devices/wordpress/"
   }
  }
 }
