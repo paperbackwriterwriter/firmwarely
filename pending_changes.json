@@ -346,6 +346,36 @@
    "notes": "What's Changed 🏕 Features Trivy ignore CVE-2026-84304 Ergonomic update with escape and space keys Trivy ignore CVE-2026-84445 Show album cover art while password-protected Improve Ux Fix cves by updating dependencies Fix folder multi processing Send the origin on openstreetmap.org Fix dock on smart…",
    "source_url": "https://github.com/LycheeOrg/Lychee/releases/tag/v7.8.4",
    "page_url": "https://www.firmwarely.com/devices/lychee-photos/"
+  },
+  "windmill": {
+   "id": "windmill",
+   "brand": "Windmill",
+   "model": "Scripts and workflows",
+   "category": "A",
+   "status": "update",
+   "version": "1.814.0",
+   "previous": "1.813.0",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.814.0 (2026-09-17) Features ai-chat: add list_workers and list_data_metrics global tools (#​11143) (e954d33) ai-chat: merge get_job_logs and get_flow_run_details into get_run (#​11172) (5bb37ca) allow git sync auto-pull, promotion and PRs on Pro licenses (#​11173) (02e47de) badge chat-input flows…",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.814.0",
+   "page_url": "https://www.firmwarely.com/devices/windmill/"
+  },
+  "koel": {
+   "id": "koel",
+   "brand": "Koel",
+   "model": "Music streaming",
+   "category": "A",
+   "status": "update",
+   "version": "9.13.0",
+   "previous": "9.12.0",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed feat: encrypt Last.fm and ListenBrainz tokens at rest fix: show album grids at the intended column width feat: link albums, artists and songs to MusicBrainz feat: fetch album covers from the Cover Art Archive fix: match the styles of the two Disconnect buttons fix: use the standard b…",
+   "source_url": "https://github.com/koel/koel/releases/tag/v9.13.0",
+   "page_url": "https://www.firmwarely.com/devices/koel/"
   }
  }
 }
