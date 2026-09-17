@@ -331,6 +331,21 @@
    "notes": "What's Changed Features feat(api)!: reject legacy reads for new organizations feat(ci): deploy AI Gateway automatically to staging feat(api): attribute legacy GET rejections to clients feat(web): persistent trace summary strip with tags feat(filters): metadata key presence operators; coerce legacy …",
    "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.38.0",
    "page_url": "https://www.firmwarely.com/devices/langfuse/"
+  },
+  "lychee-photos": {
+   "id": "lychee-photos",
+   "brand": "Lychee",
+   "model": "Photo gallery",
+   "category": "A",
+   "status": "critical",
+   "version": "7.8.4",
+   "previous": "7.8.3",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed 🏕 Features Trivy ignore CVE-2026-84304 Ergonomic update with escape and space keys Trivy ignore CVE-2026-84445 Show album cover art while password-protected Improve Ux Fix cves by updating dependencies Fix folder multi processing Send the origin on openstreetmap.org Fix dock on smart…",
+   "source_url": "https://github.com/LycheeOrg/Lychee/releases/tag/v7.8.4",
+   "page_url": "https://www.firmwarely.com/devices/lychee-photos/"
   }
  }
 }
