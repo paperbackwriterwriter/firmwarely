@@ -8,7 +8,7 @@
   <url><loc>https://www.firmwarely.com/support/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/routers/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/nas/</loc><lastmod>2026-09-16</lastmod></url>
-  <url><loc>https://www.firmwarely.com/category/smart-home/</loc><lastmod>2026-09-16</lastmod></url>
+  <url><loc>https://www.firmwarely.com/category/smart-home/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/consoles-drones-ebikes/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/makers/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/pcs-tvs-gadgets/</loc><lastmod>2026-09-15</lastmod></url>
@@ -20,7 +20,7 @@
   <url><loc>https://www.firmwarely.com/brands/raspberry-pi/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/netgear/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/apache/</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://www.firmwarely.com/brands/home-assistant/</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://www.firmwarely.com/brands/home-assistant/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/prusa/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/asus/</loc><lastmod>2026-08-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/amazon/</loc><lastmod>2026-09-11</lastmod></url>
@@ -157,7 +157,7 @@
   <url><loc>https://www.firmwarely.com/devices/authentik/</loc><lastmod>2026-09-09</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/vaultwarden/</loc><lastmod>2026-09-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/bitwarden-server/</loc><lastmod>2026-09-16</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/homepage-dashboard/</loc><lastmod>2026-09-09</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/homepage-dashboard/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/heimdall-dashboard/</loc><lastmod>2026-09-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/homer-dashboard/</loc><lastmod>2026-08-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/sonarr/</loc><lastmod>2026-09-16</lastmod></url>
@@ -220,7 +220,7 @@
   <url><loc>https://www.firmwarely.com/devices/ratgdo/</loc><lastmod>2026-07-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/konnected-esphome/</loc><lastmod>2026-08-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/openevse/</loc><lastmod>2025-10-15</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/evcc/</loc><lastmod>2026-09-14</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/evcc/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/openwb/</loc><lastmod>2020-06-09</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/emonesp/</loc><lastmod>2020-12-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/music-assistant/</loc><lastmod>2026-09-11</lastmod></url>
@@ -593,7 +593,7 @@
   <url><loc>https://www.firmwarely.com/devices/snipe-it/</loc><lastmod>2026-08-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/phpipam/</loc><lastmod>2026-09-09</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/erpnext/</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/invoice-ninja/</loc><lastmod>2026-09-12</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/invoice-ninja/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/akaunting/</loc><lastmod>2026-08-31</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/kimai/</loc><lastmod>2026-09-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ghostfolio/</loc><lastmod>2026-09-14</lastmod></url>
@@ -701,7 +701,7 @@
   <url><loc>https://www.firmwarely.com/devices/tp-link-tapo-c520ws/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ubiquiti-unifi-ai-key/</loc><lastmod>2026-09-09</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/simplisafe-outdoor-camera/</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/home-assistant-voice-pe/</loc><lastmod>2026-06-26</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/home-assistant-voice-pe/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/analogue-3d/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/m5stack-cardputer/</loc><lastmod>2026-06-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/raspberry-pi-pico-2-w/</loc><lastmod>2026-09-08</lastmod></url>

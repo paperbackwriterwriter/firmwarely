@@ -548,6 +548,66 @@
    "notes": "Changes: 7c3c64f61b9e3e61189a9c5f064a8d20f5fc9add linuxtracker: new engine resolves #​7407 751865c7f91648b6fd3dd823553d0c8427762e39 p2pbg: update cats c2f919b9ce30923969d86e7dd2025fcb2eeddd7b extratorrent-st: new cat 612efc84b4ecd77fa0c5cd2316ea080c810ab5b0 ds-reloaded: update cats 70c8aac0d8326259…",
    "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2605",
    "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "homepage-dashboard": {
+   "id": "homepage-dashboard",
+   "brand": "Homepage",
+   "model": "Service dashboard",
+   "category": "A",
+   "status": "update",
+   "version": "2.4.0",
+   "previous": "2.3.0",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed 🚀 Features Enhancement: Add bearer authentication to whatsupdocker widget (#​7134) 🐛 Fixes Fix: prevent mcp operations losing var placeholders (#​7144) Fix: better handle PeaNUT missing data (#​7139) 🧰 Maintenance Chore(deps): Bump js-yaml from 5.4.1 to 5.4.2 (#​7147) @[dependabot[bo…",
+   "source_url": "https://github.com/gethomepage/homepage/releases/tag/v2.4.0",
+   "page_url": "https://www.firmwarely.com/devices/homepage-dashboard/"
+  },
+  "evcc": {
+   "id": "evcc",
+   "brand": "evcc",
+   "model": "EV charge controller",
+   "category": "S",
+   "status": "update",
+   "version": "0.315.2",
+   "previous": "0.315.1",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog Other Changes ☀️ f9cf626eef7a9813040ef2a07bc84f24ace7d913 Modbus proxy: keep default device port after serial round-trip (#​33745)",
+   "source_url": "https://github.com/evcc-io/evcc/releases/tag/0.315.2",
+   "page_url": "https://www.firmwarely.com/devices/evcc/"
+  },
+  "invoice-ninja": {
+   "id": "invoice-ninja",
+   "brand": "Invoice Ninja",
+   "model": "Invoicing",
+   "category": "A",
+   "status": "update",
+   "version": "5.13.41",
+   "previous": "5.13.40",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed Updated translations Add delay between token minting for yodlee Revert \"Add support for deep linking in the new mobile apps\" Add quote table sorting regression test Fix client portal quote default sorting Updates for ttl + cached expiry Move to local store Updates for chart queries F…",
+   "source_url": "https://github.com/invoiceninja/invoiceninja/releases/tag/v5.13.41",
+   "page_url": "https://www.firmwarely.com/devices/invoice-ninja/"
+  },
+  "home-assistant-voice-pe": {
+   "id": "home-assistant-voice-pe",
+   "brand": "Home Assistant",
+   "model": "Voice Preview Edition",
+   "category": "S",
+   "status": "update",
+   "version": "26.9.0",
+   "previous": "26.6.0",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed Bump min ESPHome version to 2026.6.0 Fix update-latest workflow skip and add manual dispatch Switch to lock buttons Use explicit LED strip timings instead of WS2812 chipset preset New Contributors made their first contribution in #​428 Full Changelog : 26.6.0...26.9.0",
+   "source_url": "https://github.com/esphome/home-assistant-voice-pe/releases/tag/26.9.0",
+   "page_url": "https://www.firmwarely.com/devices/home-assistant-voice-pe/"
   }
  }
 }
