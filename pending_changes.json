@@ -488,6 +488,21 @@
    "notes": "Known issues On Async Edge environments, an invalid update schedule date can be displayed when browsing a snapshot Known issues with Podman support Podman environments aren't supported by auto-onboarding script It's not possible to add Podman environments via socket, when running a Portainer server…",
    "source_url": "https://github.com/portainer/portainer/releases/tag/2.45.1",
    "page_url": "https://www.firmwarely.com/devices/portainer/"
+  },
+  "komga": {
+   "id": "komga",
+   "brand": "Komga",
+   "model": "Comic and manga server",
+   "category": "A",
+   "status": "update",
+   "version": "1.27.0",
+   "previous": "1.26.3",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release brings the 2nd beta of NextUI. New features include: Metadata edition for series and book (single item only for now) Edit Collection and Read list information (not yet re-arranging elements) Add to collection and Add to read list dialogs In the Import Books screen, the dialog to see th…",
+   "source_url": "https://github.com/gotson/komga/releases/tag/1.27.0",
+   "page_url": "https://www.firmwarely.com/devices/komga/"
   }
  }
 }
