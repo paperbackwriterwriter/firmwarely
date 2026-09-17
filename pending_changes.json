@@ -503,6 +503,36 @@
    "notes": "This release brings the 2nd beta of NextUI. New features include: Metadata edition for series and book (single item only for now) Edit Collection and Read list information (not yet re-arranging elements) Add to collection and Add to read list dialogs In the Import Books screen, the dialog to see th…",
    "source_url": "https://github.com/gotson/komga/releases/tag/1.27.0",
    "page_url": "https://www.firmwarely.com/devices/komga/"
+  },
+  "umami": {
+   "id": "umami",
+   "brand": "Umami",
+   "model": "Web analytics",
+   "category": "A",
+   "status": "critical",
+   "version": "3.4.0",
+   "previous": "3.3.1",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "Umami v3.4.0 is here with new Annotations, MCP support, API key management, a typed API client, session property segments, and security, analytics, and UI improvements. New features Annotations Add dated notes to your website charts to keep launches, campaigns, and other important events alongside …",
+   "source_url": "https://github.com/umami-software/umami/releases/tag/v3.4.0",
+   "page_url": "https://www.firmwarely.com/devices/umami/"
+  },
+  "siyuan": {
+   "id": "siyuan",
+   "brand": "SiYuan",
+   "model": "Knowledge base",
+   "category": "A",
+   "status": "update",
+   "version": "3.8.4",
+   "previous": "3.8.3",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "Overview This release brings a smoother editing and database experience, better mobile and cross-platform support, and more capable AI and plugin features. Synchronization, exporting, and overall reliability are also further improved. Editing and databases Editing, document organization, table and …",
+   "source_url": "https://github.com/siyuan-note/siyuan/releases/tag/v3.8.4",
+   "page_url": "https://www.firmwarely.com/devices/siyuan/"
   }
  }
 }
