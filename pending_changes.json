@@ -181,6 +181,51 @@
    "notes": "Changed Feature in one of previous releases breaks REST filter with \"search\" field for documents, customers and other entities (#​33883) Asset loading error through php artisan serve, version requirements needed and docker setup (#​3319) Fixed Fix bill payment email template (#​336) Fixed search st…",
    "source_url": "https://github.com/akaunting/akaunting/releases/tag/3.2.4",
    "page_url": "https://www.firmwarely.com/devices/akaunting/"
+  },
+  "mealie": {
+   "id": "mealie",
+   "brand": "Mealie",
+   "model": "Recipe manager",
+   "category": "A",
+   "status": "update",
+   "version": "3.27.0",
+   "previous": "3.26.0",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "🍴🍴🍴🍴🍴🍴 This release contains a few critical bug fixes for the previous version, as well as new connectivity testing for AI providers for non-admins. ✨ New features feat: add connectivity test for AI providers (#​8123) 🐛 Bug fixes fix: forward attributes to recipe info card image (#​8399) fix: avoid…",
+   "source_url": "https://github.com/mealie-recipes/mealie/releases/tag/v3.27.0",
+   "page_url": "https://www.firmwarely.com/devices/mealie/"
+  },
+  "home-assistant-supervisor": {
+   "id": "home-assistant-supervisor",
+   "brand": "Home Assistant",
+   "model": "Supervisor",
+   "category": "S",
+   "status": "update",
+   "version": "2026.09.3",
+   "previous": "2026.09.2",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": ":sparkles: New Features #​7230 Add feature flag to drop NET_RAW from app containers #​7233 Add MKNOD, AUDIT_WRITE and SETFCAP capabilities and a feature flag to drop them from apps :bug: Bug Fixes #​7194 Block start/restart/rebuild/update APIs while Supervisor is not fully running #​7229 Don't leav…",
+   "source_url": "https://github.com/home-assistant/supervisor/releases/tag/2026.09.3",
+   "page_url": "https://www.firmwarely.com/devices/home-assistant-supervisor/"
+  },
+  "nats-server": {
+   "id": "nats-server",
+   "brand": "NATS",
+   "model": "Messaging server",
+   "category": "A",
+   "status": "update",
+   "version": "2.15.0",
+   "previous": "2.14.7",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog Refer to the 2.15 Upgrade Guide for backwards compatibility notes with 2.14.x. This release also contains all changes up to and including v2.14.7. Go Version 1.27.1 (#​8551) Added JetStream Desired state metalayer (#​8432, #​8437, #​8439, #​8443, #​8452, #​8460, #​8476, #​8576, #​8598, #​…",
+   "source_url": "https://github.com/nats-io/nats-server/releases/tag/v2.15.0",
+   "page_url": "https://www.firmwarely.com/devices/nats-server/"
   }
  }
 }
