@@ -166,6 +166,21 @@
    "notes": "What's Changed The initial release of the Featured Collection Support, and fixes a few bugs. CHANGES: The initial release of the Featured Collection Support Add localization middleware to admin routes #​7348 Improve ActivityPub Federation / fixed regressions UPGRADE NOTES: 2 DB migrations. Please m…",
    "source_url": "https://github.com/pixelfed/pixelfed/releases/tag/v0.13.0",
    "page_url": "https://www.firmwarely.com/devices/pixelfed/"
+  },
+  "akaunting": {
+   "id": "akaunting",
+   "brand": "Akaunting",
+   "model": "Accounting",
+   "category": "A",
+   "status": "update",
+   "version": "3.2.4",
+   "previous": "3.2.3",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changed Feature in one of previous releases breaks REST filter with \"search\" field for documents, customers and other entities (#​33883) Asset loading error through php artisan serve, version requirements needed and docker setup (#​3319) Fixed Fix bill payment email template (#​336) Fixed search st…",
+   "source_url": "https://github.com/akaunting/akaunting/releases/tag/3.2.4",
+   "page_url": "https://www.firmwarely.com/devices/akaunting/"
   }
  }
 }
