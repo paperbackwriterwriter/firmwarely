@@ -466,6 +466,21 @@
    "notes": "See https://docs.goauthentik.io/docs/releases/2026.8#fixed-in-202683 What's Changed admin/files: make file search case-insensitive (#​25736) api: include JSON field relation models in search autocomplete (#​26153) blueprints: fix employee_department typo (#​26046) change docker compose to compose (…",
    "source_url": "https://github.com/goauthentik/authentik/releases/tag/version/2026.8.3",
    "page_url": "https://www.firmwarely.com/devices/authentik/"
+  },
+  "ollama": {
+   "id": "ollama",
+   "brand": "Ollama",
+   "model": "Local LLM runner",
+   "category": "A",
+   "status": "update",
+   "version": "0.34.2",
+   "previous": "0.34.1",
+   "released": "2026-09-15",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed Added first-run setup when running ollama, with options to sign in or continue locally. Setup completion is shared with the desktop app on macOS and Windows. Added ollama://apps to open the desktop app’s Apps page directly on macOS and Windows. Fixed excessive memory growth during lo…",
+   "source_url": "https://github.com/ollama/ollama/releases/tag/v0.34.2",
+   "page_url": "https://www.firmwarely.com/devices/ollama/"
   }
  }
 }
