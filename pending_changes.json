@@ -1,5 +1,36 @@
 {
- "since": null,
+ "since": "2026-09-17T09:17:18+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "formbricks": {
+   "id": "formbricks",
+   "brand": "Formbricks",
+   "model": "Surveys",
+   "category": "A",
+   "status": "critical",
+   "version": "5.4.3",
+   "previous": "5.4.2",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed fix(ci): pull the MinIO images from quay.io instead of Docker Hub (backport #​9260 to release/5.4) fix(security): bump next to 16.3.3 for two critical RCE advisories (backport #​9225 to release/5.4) fix(responses): bound the \"Other\" response filter instead of permuting every subset (…",
+   "source_url": "https://github.com/formbricks/formbricks/releases/tag/5.4.3",
+   "page_url": "https://www.firmwarely.com/devices/formbricks/"
+  },
+  "etherpad": {
+   "id": "etherpad",
+   "brand": "Etherpad",
+   "model": "Collaborative editor",
+   "category": "A",
+   "status": "update",
+   "version": "3.3.5",
+   "previous": "3.3.4",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "3.3.5 3.3.5 is a bug-fix follow-up to 3.3.4. It fixes a startup crash on fresh installs when pnpm 12 (now pnpm's default release) is installed, and makes the built-in updater work on Windows. Notable fixes Fresh installs no longer crash at startup under pnpm 12 (#​8232). On first boot (no var/insta…",
+   "source_url": "https://github.com/ether/etherpad/releases/tag/v3.3.5",
+   "page_url": "https://www.firmwarely.com/devices/etherpad/"
+  }
+ }
 }
