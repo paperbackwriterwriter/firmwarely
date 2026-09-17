@@ -376,6 +376,21 @@
    "notes": "What's Changed feat: encrypt Last.fm and ListenBrainz tokens at rest fix: show album grids at the intended column width feat: link albums, artists and songs to MusicBrainz feat: fetch album covers from the Cover Art Archive fix: match the styles of the two Disconnect buttons fix: use the standard b…",
    "source_url": "https://github.com/koel/koel/releases/tag/v9.13.0",
    "page_url": "https://www.firmwarely.com/devices/koel/"
+  },
+  "beets": {
+   "id": "beets",
+   "brand": "beets",
+   "model": "Music library manager",
+   "category": "A",
+   "status": "update",
+   "version": "2.14.1",
+   "previous": "2.14.0",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "Bug fixes Discogs Plugin: Read the release month and day from the API's released field instead of only the year. Fix Discogs match overwriting month and day tags on import. import command Fix interactive importer ignoring candidates from manual search (e) and manual ID (i) entry. :bug: (#​7000) Lyr…",
+   "source_url": "https://github.com/beetbox/beets/releases/tag/v2.14.1",
+   "page_url": "https://www.firmwarely.com/devices/beets/"
   }
  }
 }
