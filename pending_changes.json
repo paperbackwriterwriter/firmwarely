@@ -226,6 +226,51 @@
    "notes": "Changelog Refer to the 2.15 Upgrade Guide for backwards compatibility notes with 2.14.x. This release also contains all changes up to and including v2.14.7. Go Version 1.27.1 (#​8551) Added JetStream Desired state metalayer (#​8432, #​8437, #​8439, #​8443, #​8452, #​8460, #​8476, #​8576, #​8598, #​…",
    "source_url": "https://github.com/nats-io/nats-server/releases/tag/v2.15.0",
    "page_url": "https://www.firmwarely.com/devices/nats-server/"
+  },
+  "signoz": {
+   "id": "signoz",
+   "brand": "SigNoz",
+   "model": "Observability platform",
+   "category": "A",
+   "status": "update",
+   "version": "0.142.1",
+   "previous": "0.142.0",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "🚀 Features feat/add support for fetch AI fieldKeys in order by and options (#​12859) feat(traces-qb): read the list-view attributes bag from the JSON column (#​12749) feat: adding dashboard delete unsafe v2 method (#​12876) 🐛 Bug Fixes fix: read Bearer/bearer/BEARER properly in v2 for webhook notif…",
+   "source_url": "https://github.com/SigNoz/signoz/releases/tag/v0.142.1",
+   "page_url": "https://www.firmwarely.com/devices/signoz/"
+  },
+  "casdoor": {
+   "id": "casdoor",
+   "brand": "Casdoor",
+   "model": "Identity and access",
+   "category": "A",
+   "status": "update",
+   "version": "4.6.0",
+   "previous": "4.5.0",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog Features bb76eb653a65152901cfcc769b46d7a7596b93ab feat: add magic link sign-in Bug fixes fbcb496f887690ab42b95bbe62438fb474d01852 fix: keep empty forceLanguage empty so browser language detection works 0db629eead826afd51bc8dce1a71760b13bc38a5 fix: keep resolved RADIUS/push provider id thr…",
+   "source_url": "https://github.com/casdoor/casdoor/releases/tag/v4.6.0",
+   "page_url": "https://www.firmwarely.com/devices/casdoor/"
+  },
+  "redis": {
+   "id": "redis",
+   "brand": "Redis",
+   "model": "Redis",
+   "category": "A",
+   "status": "critical",
+   "version": "8.10.2",
+   "previous": "8.10.1",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "Update urgency: SECURITY: There are security fixes in the release. Security fixes #​15673 Commands queued in a transaction could still access keys whose ACL permissions were revoked before the transaction was executed #​15722 The cluster bus protocol has no authentication of its own unless tls-clus…",
+   "source_url": "https://github.com/redis/redis/releases/tag/8.10.2",
+   "page_url": "https://www.firmwarely.com/devices/redis/"
   }
  }
 }
