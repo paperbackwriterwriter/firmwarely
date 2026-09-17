@@ -271,6 +271,66 @@
    "notes": "Update urgency: SECURITY: There are security fixes in the release. Security fixes #​15673 Commands queued in a transaction could still access keys whose ACL permissions were revoked before the transaction was executed #​15722 The cluster bus protocol has no authentication of its own unless tls-clus…",
    "source_url": "https://github.com/redis/redis/releases/tag/8.10.2",
    "page_url": "https://www.firmwarely.com/devices/redis/"
+  },
+  "home-assistant-os": {
+   "id": "home-assistant-os",
+   "brand": "Home Assistant",
+   "model": "Operating System (Green / Yellow)",
+   "category": "S",
+   "status": "update",
+   "version": "18.3",
+   "previous": "18.2",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes Home Assistant OS 18.3 is a bugfix release with several reliability improvements. Container image layers are now synced to disk right after they are unpacked, which prevents corrupted images when the power is cut shortly after an update. For installations where the container images are alre…",
+   "source_url": "https://github.com/home-assistant/operating-system/releases/tag/18.3",
+   "page_url": "https://www.firmwarely.com/devices/home-assistant-os/"
+  },
+  "loki": {
+   "id": "loki",
+   "brand": "Grafana",
+   "model": "Loki log store",
+   "category": "A",
+   "status": "critical",
+   "version": "3.7.8",
+   "previous": "3.7.7",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "3.7.8 (2026-09-17) Bug Fixes security/HIGH/pkg/push: Update module google.golang.org/grpc to v1.83.2 [SECURITY] (release-3.7.x) (#​24433) (4d5dc2b) security/HIGH/: Update module google.golang.org/grpc to v1.83.1 [SECURITY] (release-3.7.x) (#​24328) (0a01797) security/HIGH/: Update module google.gol…",
+   "source_url": "https://github.com/grafana/loki/releases/tag/v3.7.8",
+   "page_url": "https://www.firmwarely.com/devices/loki/"
+  },
+  "dashy": {
+   "id": "dashy",
+   "brand": "Dashy",
+   "model": "Dashboard",
+   "category": "A",
+   "status": "update",
+   "version": "4.7.0",
+   "previous": "4.6.0",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "Dashy 4.7.0... Just a few small fixes, features, updates and incremental improvements :) What's Changed ✨ New Features Adds support for status txt overrides in uptime widgets Adds optional allowInsecure prop for widgets to skip cert verification Adds calendar widget Adds htmlSrc option to embed wid…",
+   "source_url": "https://github.com/lissy93/dashy/releases/tag/4.7.0",
+   "page_url": "https://www.firmwarely.com/devices/dashy/"
+  },
+  "langfuse": {
+   "id": "langfuse",
+   "brand": "Langfuse",
+   "model": "Agent evals & observability",
+   "category": "A",
+   "status": "update",
+   "version": "4.38.0",
+   "previous": "4.37.0",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed Features feat(api)!: reject legacy reads for new organizations feat(ci): deploy AI Gateway automatically to staging feat(api): attribute legacy GET rejections to clients feat(web): persistent trace summary strip with tags feat(filters): metadata key presence operators; coerce legacy …",
+   "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.38.0",
+   "page_url": "https://www.firmwarely.com/devices/langfuse/"
   }
  }
 }

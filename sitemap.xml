@@ -38,7 +38,7 @@
   <url><loc>https://www.firmwarely.com/brands/duet3d/</loc><lastmod>2026-06-02</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/esphome/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/element/</loc><lastmod>2026-09-16</lastmod></url>
-  <url><loc>https://www.firmwarely.com/brands/grafana/</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://www.firmwarely.com/brands/grafana/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/icewhale/</loc><lastmod>2026-08-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/influxdata/</loc><lastmod>2026-09-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/jellyfin/</loc><lastmod>2026-09-15</lastmod></url>
@@ -58,7 +58,7 @@
   <url><loc>https://www.firmwarely.com/devices/ubiquiti-unifi-network-application/</loc><lastmod>2026-09-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ubiquiti-unifi-access-points/</loc><lastmod>2026-08-31</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/openwrt-router/</loc><lastmod>2026-07-26</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/home-assistant-os/</loc><lastmod>2026-07-30</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/home-assistant-os/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/tasmota-open-firmware/</loc><lastmod>2026-08-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/wled-controller/</loc><lastmod>2026-07-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/prusa-mk4-core-one/</loc><lastmod>2026-09-16</lastmod></url>
@@ -420,7 +420,7 @@
   <url><loc>https://www.firmwarely.com/devices/armbian/</loc><lastmod>2026-09-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/grafana/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/prometheus/</loc><lastmod>2026-08-18</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/loki/</loc><lastmod>2026-08-27</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/loki/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/victoriametrics/</loc><lastmod>2026-09-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/influxdb/</loc><lastmod>2026-09-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/telegraf/</loc><lastmod>2026-09-07</lastmod></url>
@@ -619,7 +619,7 @@
   <url><loc>https://www.firmwarely.com/devices/planka/</loc><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/focalboard/</loc><lastmod>2024-06-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/homarr/</loc><lastmod>2026-09-11</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/dashy/</loc><lastmod>2026-08-21</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/dashy/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/nocodb/</loc><lastmod>2026-09-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/directus/</loc><lastmod>2026-08-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/strapi/</loc><lastmod>2026-09-16</lastmod></url>
@@ -717,7 +717,7 @@
   <url><loc>https://www.firmwarely.com/devices/trilium/</loc><lastmod>2026-08-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/glance/</loc><lastmod>2026-09-03</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/qwenpaw/</loc><lastmod>2026-09-11</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/langfuse/</loc><lastmod>2026-09-16</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/langfuse/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/dokku/</loc><lastmod>2026-08-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/onyx/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/meetily/</loc><lastmod>2026-09-12</lastmod></url>
