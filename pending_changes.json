@@ -76,6 +76,51 @@
    "notes": "This release contains bug fixes since the 2.30.0 release. We recommend that you upgrade at the next available opportunity. Bugfixes #​10580 Fix missing conflicts for INSERT ... ON CONFLICT with multiple unique constraints #​10583 Fix NULL conflict resolution on single-column bloom filtering #​10592…",
    "source_url": "https://github.com/timescale/timescaledb/releases/tag/2.30.1",
    "page_url": "https://www.firmwarely.com/devices/timescaledb/"
+  },
+  "airflow": {
+   "id": "airflow",
+   "brand": "Apache",
+   "model": "Airflow",
+   "category": "A",
+   "status": "update",
+   "version": "3.3.2",
+   "previous": "3.3.1",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "📦 PyPI: https://pypi.org/project/apache-airflow/3.3.2/ 📚 Docs: https://airflow.apache.org/docs/apache-airflow/3.3.2/ 🛠 Release Notes: https://airflow.apache.org/docs/apache-airflow/3.3.2/release_notes.html 🐳 Docker Image: \"docker pull apache/airflow:3.3.2\" 🚏 Constraints: https://github.com/apache/a…",
+   "source_url": "https://github.com/apache/airflow/releases/tag/3.3.2",
+   "page_url": "https://www.firmwarely.com/devices/airflow/"
+  },
+  "tooljet": {
+   "id": "tooljet",
+   "brand": "ToolJet",
+   "model": "Low-code platform",
+   "category": "A",
+   "status": "update",
+   "version": "3.20.229-lts",
+   "previous": "3.20.228-lts",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed 🚀 Features Enabled custom group management through workspace PATs Enabled PAT group management and shared AI upgrade dialogs 🛠️ Fixes Corrected the ToolJet Database table limit error message Allowed workspace tokens to read installed plugin specs Full Changelog: https://github.com/To…",
+   "source_url": "https://github.com/ToolJet/ToolJet/releases/tag/v3.20.229-lts",
+   "page_url": "https://www.firmwarely.com/devices/tooljet/"
+  },
+  "limesurvey": {
+   "id": "limesurvey",
+   "brand": "LimeSurvey",
+   "model": "Survey platform",
+   "category": "A",
+   "status": "update",
+   "version": "7.1.1",
+   "previous": "7.1.0",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "7.1.1+260914",
+   "source_url": "https://github.com/LimeSurvey/LimeSurvey/releases/tag/7.1.1%2B260914",
+   "page_url": "https://www.firmwarely.com/devices/limesurvey/"
   }
  }
 }
