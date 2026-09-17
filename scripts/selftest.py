@@ -434,6 +434,40 @@ def test_withdrawn_devices_redirect():
     check("the check commits vercel.json with the pages it rebuilt", "vercel.json" in wf, True)
 
 
+# ---- counting visits, and saying so ----
+def test_analytics_and_its_disclosure():
+    build_pages.STYLES = build_pages.styles()
+    tag = "/_vercel/insights/script.js"
+    devs = json.loads(Path("devices.json").read_text())["devices"]
+
+    pages = {"device": build_pages.device_page(devs[0]), "legal": build_pages.legal_page(),
+             "support": build_pages.support_page(), "pro": build_pages.pro_page(),
+             "index.html": Path("index.html").read_text(),
+             "my-devices.html": Path("my-devices.html").read_text(),
+             "dashboard.html": Path("dashboard.html").read_text()}
+    check("every page counts its own visits", [n for n, h in pages.items() if tag not in h], [])
+    check("the tag is loaded once per page", [n for n, h in pages.items() if h.count(tag) != 1], [])
+    check("it loads deferred, so it can't block the page",
+          [n for n, h in pages.items() if "<script defer src=\"" + tag not in h], [])
+
+    # first-party path, so the existing CSP already allows it and no third party sees the request
+    csp = json.loads(Path("vercel.json").read_text())["headers"][0]["headers"][0]["value"]
+    check("the script is same-origin under the CSP we already ship",
+          "script-src 'self'" in csp and tag.startswith("/"), True)
+    check("its beacon is same-origin too", "connect-src 'self'" in csp, True)
+
+    # the policy has to describe what the site actually does
+    legal = pages["legal"]
+    check("the policy no longer claims there is no analytics",
+          "no advertising or analytics trackers" in legal, False)
+    check("the policy says who does the counting", "Vercel Web Analytics" in legal, True)
+    check("...and what it does and doesn't see",
+          all(w in legal for w in ("no cookies", "rotates daily", "advertising")), True)
+    check("...and Vercel is listed among the processors for it",
+          "Vercel (hosting, sign-in API and page analytics)" in legal, True)
+    check("the policy is dated the day it changed", "Last updated September 17, 2026" in legal, True)
+
+
 def test_clean():
     cases = [
         ("script tag is neutralised", "<script>alert(1)</script>ok", "alert(1) ok"),
@@ -733,7 +767,7 @@ def test_schedule_and_digest():
 
 
 for t in (test_compare, test_new_release, test_saved_devices, test_routing, test_forced_guard,
-          test_update_guides, test_sources_well_formed, test_site_shows_only_real_data, test_support_page, test_dates_are_honest, test_withdrawn_devices_redirect, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
+          test_update_guides, test_sources_well_formed, test_site_shows_only_real_data, test_support_page, test_dates_are_honest, test_withdrawn_devices_redirect, test_analytics_and_its_disclosure, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
           test_landing_pages, test_schedule_and_digest):
     print(f"\n{t.__name__}")
     t()

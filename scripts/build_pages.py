@@ -216,6 +216,12 @@ def styles():
 """
 
 
+# Vercel Web Analytics. Served from our own origin, so the CSP's script-src 'self' and
+# connect-src 'self' already cover it and no third party sees the request. The file 404s
+# until Analytics is switched on for the project, which costs a failed request and nothing else.
+ANALYTICS = '<script defer src="/_vercel/insights/script.js"></script>'
+
+
 def head(title, desc, path, extra="", noindex=False):
     robots = '<meta name="robots" content="noindex">\n' if noindex else ""
     return f"""<!doctype html>
@@ -242,6 +248,7 @@ def head(title, desc, path, extra="", noindex=False):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>{STYLES}</style>
+{ANALYTICS}
 {extra}
 </head>
 <body>
@@ -731,14 +738,14 @@ def product_link(d):
 def legal_page():
     return simple_page("Privacy & terms — Firmwarely", "Firmwarely privacy policy and terms of service.", "/legal/", """
 <h1 class="dev-h">Privacy &amp; terms</h1>
-<p style="color:var(--muted)">Last updated September 13, 2026. Firmwarely is an independent service operated by an individual in Iowa, USA. Questions: <a href="mailto:hello@firmwarely.com">hello@firmwarely.com</a>.</p>
+<p style="color:var(--muted)">Last updated September 17, 2026. Firmwarely is an independent service operated by an individual in Iowa, USA. Questions: <a href="mailto:hello@firmwarely.com">hello@firmwarely.com</a>.</p>
 <div class="faq">
 <h2 style="margin-top:2rem">Privacy policy</h2>
-<h3>What we collect</h3><p>Your email address when you subscribe, the device names you choose to tell us about, and standard web server logs. If you buy Pro, Stripe collects your payment details; we never see your card number. We store the email you paid with and whether your subscription is active.</p>
+<h3>What we collect</h3><p>Your email address when you subscribe, the device names you choose to tell us about, standard web server logs, and an anonymous count of which pages are read. If you buy Pro, Stripe collects your payment details; we never see your card number. We store the email you paid with and whether your subscription is active.</p>
 <h3>How we use it</h3><p>To send you the firmware update emails you asked for, to manage your subscription, and to understand which devices people want tracked. We don't sell or rent your data.</p>
-<h3>Who we share it with</h3><p>Beehiiv (subscriber list and newsletter delivery), Resend (sign-in links and device alerts), Stripe (payments), Vercel (hosting and sign-in API), and GitHub (where our data pipeline runs). Each is bound by its own privacy policy. We share only what's needed for them to do their job.</p>
+<h3>Who we share it with</h3><p>Beehiiv (subscriber list and newsletter delivery), Resend (sign-in links and device alerts), Stripe (payments), Vercel (hosting, sign-in API and page analytics), and GitHub (where our data pipeline runs). Each is bound by its own privacy policy. We share only what's needed for them to do their job.</p>
 <h3>Affiliate links</h3><p>Some product links may earn us a commission at no extra cost to you. They don't affect which updates we report.</p>
-<h3>Your choices</h3><p>Every email has an unsubscribe link. To delete your data entirely, email us and we'll remove it within 30 days. We set one cookie, only when you sign in, so you stay signed in for 30 days. Your device list is kept in your browser's local storage and, once you sign in, in your account. There are no advertising or analytics trackers.</p>
+<h3>Your choices</h3><p>Every email has an unsubscribe link. To delete your data entirely, email us and we'll remove it within 30 days. We set one cookie, only when you sign in, so you stay signed in for 30 days. Your device list is kept in your browser's local storage and, once you sign in, in your account.</p><h3>How we count visits</h3><p>We use Vercel Web Analytics to see which pages people actually read, because we'd rather write about the devices you're looking for than guess. It sets no cookies and does not follow you to other sites. To avoid counting the same person twice in a day it derives a temporary identifier from your IP address and browser, which rotates daily and which we never see; what reaches us is the page, the referring site, the rough country, and the kind of device — never a name, an address, or a profile. There are no advertising trackers, and we sell nothing to anyone.</p>
 <h2 style="margin-top:2.5rem">Terms of service</h2>
 <h3>What Firmwarely is</h3><p>An information service that watches manufacturers' public release pages and tells you what changed. It is not affiliated with any manufacturer. Device and brand names belong to their owners.</p>
 <h3>What it isn't</h3><p>We don't distribute firmware, and we can't guarantee we catch every release or that release notes are accurate — manufacturers change their pages without notice. Always download firmware from the official source and read the manufacturer's notes before installing. You're responsible for updates you apply to your own devices.</p>
