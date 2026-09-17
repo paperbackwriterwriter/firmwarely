@@ -533,6 +533,21 @@
    "notes": "Overview This release brings a smoother editing and database experience, better mobile and cross-platform support, and more capable AI and plugin features. Synchronization, exporting, and overall reliability are also further improved. Editing and databases Editing, document organization, table and …",
    "source_url": "https://github.com/siyuan-note/siyuan/releases/tag/v3.8.4",
    "page_url": "https://www.firmwarely.com/devices/siyuan/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.2605",
+   "previous": "0.24.2601",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes: 7c3c64f61b9e3e61189a9c5f064a8d20f5fc9add linuxtracker: new engine resolves #​7407 751865c7f91648b6fd3dd823553d0c8427762e39 p2pbg: update cats c2f919b9ce30923969d86e7dd2025fcb2eeddd7b extratorrent-st: new cat 612efc84b4ecd77fa0c5cd2316ea080c810ab5b0 ds-reloaded: update cats 70c8aac0d8326259…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2605",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
