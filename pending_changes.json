@@ -31,6 +31,51 @@
    "notes": "3.3.5 3.3.5 is a bug-fix follow-up to 3.3.4. It fixes a startup crash on fresh installs when pnpm 12 (now pnpm's default release) is installed, and makes the built-in updater work on Windows. Notable fixes Fresh installs no longer crash at startup under pnpm 12 (#​8232). On first boot (no var/insta…",
    "source_url": "https://github.com/ether/etherpad/releases/tag/v3.3.5",
    "page_url": "https://www.firmwarely.com/devices/etherpad/"
+  },
+  "changedetection": {
+   "id": "changedetection",
+   "brand": "changedetection.io",
+   "model": "Website change monitor",
+   "category": "A",
+   "status": "update",
+   "version": "0.60.7",
+   "previous": "0.60.6",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed Fetch favicon candidates in parallel under one deadline, and fix two ways it could hang Keep history diff title and controls visible while scrolling General licence cleanups Add watch UI tweaks fix(http): send a single Date header on werkzeug built-in server UI - Make the 'share watc…",
+   "source_url": "https://github.com/dgtlmoon/changedetection.io/releases/tag/0.60.7",
+   "page_url": "https://www.firmwarely.com/devices/changedetection/"
+  },
+  "passbolt": {
+   "id": "passbolt",
+   "brand": "Passbolt",
+   "model": "Team password manager",
+   "category": "A",
+   "status": "update",
+   "version": "5.16.0",
+   "previous": "5.15.0",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "Song: https://www.youtube.com/watch?v=gI6fQ2IXMjE Passbolt 5.16.0 introduces Offline Mode, allowing users to access their credentials when the Passbolt server is unreachable. Offline mode (Beta) During server maintenance, data center interventions, or network outages, teams lose access to critical …",
+   "source_url": "https://github.com/passbolt/passbolt_api/releases/tag/v5.16.0",
+   "page_url": "https://www.firmwarely.com/devices/passbolt/"
+  },
+  "timescaledb": {
+   "id": "timescaledb",
+   "brand": "Timescale",
+   "model": "TimescaleDB",
+   "category": "A",
+   "status": "update",
+   "version": "2.30.1",
+   "previous": "2.30.0",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release contains bug fixes since the 2.30.0 release. We recommend that you upgrade at the next available opportunity. Bugfixes #​10580 Fix missing conflicts for INSERT ... ON CONFLICT with multiple unique constraints #​10583 Fix NULL conflict resolution on single-column bloom filtering #​10592…",
+   "source_url": "https://github.com/timescale/timescaledb/releases/tag/2.30.1",
+   "page_url": "https://www.firmwarely.com/devices/timescaledb/"
   }
  }
 }
