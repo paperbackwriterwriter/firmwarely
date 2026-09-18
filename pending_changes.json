@@ -16,6 +16,66 @@
    "notes": "Full Changelog: https://github.com/Dokploy/dokploy/compare/v0.30.6...v0.30.7",
    "source_url": "https://github.com/Dokploy/dokploy/releases/tag/v0.30.7",
    "page_url": "https://www.firmwarely.com/devices/dokploy/"
+  },
+  "music-assistant": {
+   "id": "music-assistant",
+   "brand": "Music Assistant",
+   "model": "Media library server",
+   "category": "S",
+   "status": "update",
+   "version": "2.10.4",
+   "previous": "2.10.3",
+   "released": "2026-09-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "📦 Stable Release _Changes since 2.10.3_ 🚀 Features and enhancements Let the sample rates setting apply to Sonos players () 🐛 Bugfixes Keep provider item lookups scoped to their own media type () Keep the duplicate track walk from freezing the library database () Stop a hostname in the Published IP …",
+   "source_url": "https://github.com/music-assistant/server/releases/tag/2.10.4",
+   "page_url": "https://www.firmwarely.com/devices/music-assistant/"
+  },
+  "arduino-esp32": {
+   "id": "arduino-esp32",
+   "brand": "Espressif",
+   "model": "Arduino core for ESP32",
+   "category": "M",
+   "status": "update",
+   "version": "3.3.12",
+   "previous": "3.3.11",
+   "released": "2026-09-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release 3.3.12 3.3.12",
+   "source_url": "https://github.com/espressif/arduino-esp32/releases/tag/3.3.12",
+   "page_url": "https://www.firmwarely.com/devices/arduino-esp32/"
+  },
+  "tooljet": {
+   "id": "tooljet",
+   "brand": "ToolJet",
+   "model": "Low-code platform",
+   "category": "A",
+   "status": "update",
+   "version": "3.20.230-lts",
+   "previous": "3.20.229-lts",
+   "released": "2026-09-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed 🚀 Features Add app title color style option to page menu styles Add support for requesting access to apps Enable workspace PAT access to workflows 🛠️ Fixes Resolve multiline {{ }} expressions nested inside static content, #​17972 Batch component queries when assembling app definition…",
+   "source_url": "https://github.com/ToolJet/ToolJet/releases/tag/v3.20.230-lts",
+   "page_url": "https://www.firmwarely.com/devices/tooljet/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "Dns Blocklists",
+   "model": "For a better internet",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.261.33918",
+   "previous": "37522026.260.38584",
+   "released": "2026-09-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​11503 #​11502 #​11501 #​11500 #​11499 #​11498 #​11497 #​11496 #​11495 #​11494 #​11200",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.261.33918",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   }
  }
 }
