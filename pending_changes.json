@@ -76,6 +76,36 @@
    "notes": "#​11503 #​11502 #​11501 #​11500 #​11499 #​11498 #​11497 #​11496 #​11495 #​11494 #​11200",
    "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.261.33918",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "zoraxy": {
+   "id": "zoraxy",
+   "brand": "Zoraxy",
+   "model": "Reverse proxy",
+   "category": "R",
+   "status": "critical",
+   "version": "3.3.5-rc1",
+   "previous": "3.3.4",
+   "released": "2026-09-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "As usual, this rc-1 release patched up quite a few issues related to security as well as small UI bugs. We also introduced a new customizable (and also experimental) Zoraxy Auth login page for more \"professional\" looks. A lot of new patches and features are experimental, so use with caution. What's…",
+   "source_url": "https://github.com/tobychui/zoraxy/releases/tag/v3.3.5-rc1",
+   "page_url": "https://www.firmwarely.com/devices/zoraxy/"
+  },
+  "esp-homekit-devices": {
+   "id": "esp-homekit-devices",
+   "brand": "Esp Homekit Devices",
+   "model": "Advanced firmware",
+   "category": "S",
+   "status": "update",
+   "version": "12.19.0",
+   "previous": "12.18.1",
+   "released": "2026-09-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog 12.19.0: HomeKit: Added a keep-alive mechanism when device doesn't receive a poll from HomeHUB for 1 minute. Network actions: Improved memory management when same content is used in different actions. ESP32, ESP32-C and ESP32-S: Improved Wi-Fi reconnection when it happens quickly. Read Wi…",
+   "source_url": "https://github.com/RavenSystem/esp-homekit-devices/releases/tag/HAA_12.19.0",
+   "page_url": "https://www.firmwarely.com/devices/esp-homekit-devices/"
   }
  }
 }
