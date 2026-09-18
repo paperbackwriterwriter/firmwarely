@@ -1,5 +1,21 @@
 {
- "since": null,
+ "since": "2026-09-18T09:16:15+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "dokploy": {
+   "id": "dokploy",
+   "brand": "Dokploy",
+   "model": "Deployment platform",
+   "category": "A",
+   "status": "update",
+   "version": "0.30.7",
+   "previous": "0.30.6",
+   "released": "2026-09-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Full Changelog: https://github.com/Dokploy/dokploy/compare/v0.30.6...v0.30.7",
+   "source_url": "https://github.com/Dokploy/dokploy/releases/tag/v0.30.7",
+   "page_url": "https://www.firmwarely.com/devices/dokploy/"
+  }
+ }
 }
