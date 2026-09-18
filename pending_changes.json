@@ -428,13 +428,13 @@
    "model": "Invoicing",
    "category": "A",
    "status": "update",
-   "version": "5.13.42",
+   "version": "5.13.43",
    "previous": "5.13.41",
-   "released": "2026-09-17",
+   "released": "2026-09-18",
    "date_known": true,
    "eol": false,
-   "notes": "What's Changed Fixes for Email Settings page on React Application Short circuit consent screen v5.13.42 Full Changelog: https://github.com/invoiceninja/invoiceninja/compare/v5.13.41...v5.13.42",
-   "source_url": "https://github.com/invoiceninja/invoiceninja/releases/tag/v5.13.42",
+   "notes": "What's Changed Fixes for build pipeline. v5.13.43 Full Changelog: https://github.com/invoiceninja/invoiceninja/compare/v5.13.42...v5.13.43",
+   "source_url": "https://github.com/invoiceninja/invoiceninja/releases/tag/v5.13.43",
    "page_url": "https://www.firmwarely.com/devices/invoice-ninja/"
   },
   "wordpress": {
@@ -481,6 +481,36 @@
    "notes": "What's Changed Added first-run setup when running ollama, with options to sign in or continue locally. Setup completion is shared with the desktop app on macOS and Windows. Added ollama://apps to open the desktop app’s Apps page directly on macOS and Windows. Fixed excessive memory growth during lo…",
    "source_url": "https://github.com/ollama/ollama/releases/tag/v0.34.2",
    "page_url": "https://www.firmwarely.com/devices/ollama/"
+  },
+  "chatwoot": {
+   "id": "chatwoot",
+   "brand": "Chatwoot",
+   "model": "Customer messaging",
+   "category": "A",
+   "status": "update",
+   "version": "4.18.0",
+   "previous": "4.17.1",
+   "released": "2026-09-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog Captain assignment, scenario and tool controls, and improved playground testing. [Enterprise] Guided WhatsApp setup and clearer account health. WhatsApp campaigns and calls for BSUID-only contacts. Per-inbox call recording and transcription settings. [Enterprise] Additional conditions for…",
+   "source_url": "https://github.com/chatwoot/chatwoot/releases/tag/v4.18.0",
+   "page_url": "https://www.firmwarely.com/devices/chatwoot/"
+  },
+  "dokku": {
+   "id": "dokku",
+   "brand": "Dokku",
+   "model": "Docker-powered PaaS",
+   "category": "A",
+   "status": "update",
+   "version": "0.38.28",
+   "previous": "0.38.27",
+   "released": "2026-09-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "Install/update via the bootstrap script: shell wget -NP . https://dokku.com/install/v0.38.28/bootstrap.sh sudo DOKKU_TAG=v0.38.28 bash bootstrap.sh Bug Fixes #​9033: Discard the build record git:sync starts when nothing is built #​9035: Fix builds:output exiting 0 for unknown build ids #​9010: Reje…",
+   "source_url": "https://github.com/dokku/dokku/releases/tag/v0.38.28",
+   "page_url": "https://www.firmwarely.com/devices/dokku/"
   }
  }
 }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.firmwarely.com/</loc><lastmod>2026-09-17</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/</loc><lastmod>2026-09-17</lastmod></url>
-  <url><loc>https://www.firmwarely.com/my-devices.html</loc><lastmod>2026-09-17</lastmod></url>
+  <url><loc>https://www.firmwarely.com/</loc><lastmod>2026-09-18</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/</loc><lastmod>2026-09-18</lastmod></url>
+  <url><loc>https://www.firmwarely.com/my-devices.html</loc><lastmod>2026-09-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/pro/</loc><lastmod>2026-09-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/legal/</loc><lastmod>2026-09-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/support/</loc><lastmod>2026-09-15</lastmod></url>
@@ -12,7 +12,7 @@
   <url><loc>https://www.firmwarely.com/category/consoles-drones-ebikes/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/makers/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/pcs-tvs-gadgets/</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://www.firmwarely.com/category/self-hosted/</loc><lastmod>2026-09-17</lastmod></url>
+  <url><loc>https://www.firmwarely.com/category/self-hosted/</loc><lastmod>2026-09-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/tp-link/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/synology/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/ubiquiti/</loc><lastmod>2026-09-10</lastmod></url>
@@ -585,7 +585,7 @@
   <url><loc>https://www.firmwarely.com/devices/mailu/</loc><lastmod>2026-08-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/roundcube/</loc><lastmod>2026-09-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/postal/</loc><lastmod>2026-06-03</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/chatwoot/</loc><lastmod>2026-08-27</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/chatwoot/</loc><lastmod>2026-09-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/freescout/</loc><lastmod>2026-09-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/zammad/</loc><lastmod>2026-08-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/osticket/</loc><lastmod>2026-06-17</lastmod></url>
@@ -593,7 +593,7 @@
   <url><loc>https://www.firmwarely.com/devices/snipe-it/</loc><lastmod>2026-08-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/phpipam/</loc><lastmod>2026-09-09</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/erpnext/</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/invoice-ninja/</loc><lastmod>2026-09-17</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/invoice-ninja/</loc><lastmod>2026-09-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/akaunting/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/kimai/</loc><lastmod>2026-09-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ghostfolio/</loc><lastmod>2026-09-14</lastmod></url>
@@ -718,7 +718,7 @@
   <url><loc>https://www.firmwarely.com/devices/glance/</loc><lastmod>2026-09-03</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/qwenpaw/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/langfuse/</loc><lastmod>2026-09-17</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/dokku/</loc><lastmod>2026-08-12</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/dokku/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/onyx/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/meetily/</loc><lastmod>2026-09-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/archivebox/</loc><lastmod>2026-05-18</lastmod></url>
