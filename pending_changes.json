@@ -196,6 +196,21 @@
    "notes": "1.815.0 (2026-09-18) Features add a workspace toggle that adds its admins and developers to new forks (#​11215) (9d335de) add an instance setting to refuse a token in MCP URLs (#​11162) (37e493a) ai-chat: render get_run through the run tools' card (#​11204) (6f9c4dc) ai-chat: tell the chat which ki…",
    "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.815.0",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
+  },
+  "coder": {
+   "id": "coder",
+   "brand": "Coder",
+   "model": "Remote dev environments",
+   "category": "A",
+   "status": "update",
+   "version": "2.36.6",
+   "previous": "2.36.5",
+   "released": "2026-09-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "## Stable (since September 17, 2026) Changelog Bug fixes Server: Reject missing RPC messages (#​29150, a682c9dadd) Performance improvements Server: Build the workspace build fan-out maps once per batch (#​28074, 165de21fdd) Compare: v2.36.5...v2.36.6 Container image docker pull ghcr.io/coder/coder:…",
+   "source_url": "https://github.com/coder/coder/releases/tag/v2.36.6",
+   "page_url": "https://www.firmwarely.com/devices/coder/"
   }
  }
 }
