@@ -241,6 +241,21 @@
    "notes": "v9.0.1 (2026-09-18) Feature New display option \"Group same titles\" in the search results. Results with the same title were always put into one group; you can now switch that off and see every result in its own row. Duplicates of the same release are still grouped, they have their own option. Fix \"G…",
    "source_url": "https://github.com/theotherp/nzbhydra2/releases/tag/v9.0.1",
    "page_url": "https://www.firmwarely.com/devices/nzbhydra2/"
+  },
+  "netbird": {
+   "id": "netbird",
+   "brand": "NetBird",
+   "model": "Mesh VPN",
+   "category": "R",
+   "status": "update",
+   "version": "0.79.0",
+   "previous": "0.78.2",
+   "released": "2026-09-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release Notes for v0.79.0 New Feature: Desktop Light Mode The desktop app now gives you three appearance options: System, Light, and Dark. Follow your operating system's theme or choose the look you prefer. The new light theme covers the connection view, settings, profiles, and dialogs, with matchi…",
+   "source_url": "https://github.com/netbirdio/netbird/releases/tag/v0.79.0",
+   "page_url": "https://www.firmwarely.com/devices/netbird/"
   }
  }
 }
