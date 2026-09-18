@@ -106,6 +106,66 @@
    "notes": "Changelog 12.19.0: HomeKit: Added a keep-alive mechanism when device doesn't receive a poll from HomeHUB for 1 minute. Network actions: Improved memory management when same content is used in different actions. ESP32, ESP32-C and ESP32-S: Improved Wi-Fi reconnection when it happens quickly. Read Wi…",
    "source_url": "https://github.com/RavenSystem/esp-homekit-devices/releases/tag/HAA_12.19.0",
    "page_url": "https://www.firmwarely.com/devices/esp-homekit-devices/"
+  },
+  "home-assistant-core": {
+   "id": "home-assistant-core",
+   "brand": "Home Assistant",
+   "model": "Core (monthly release)",
+   "category": "S",
+   "status": "update",
+   "version": "2026.9.3",
+   "previous": "2026.9.2",
+   "released": "2026-09-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Fix EnergyZero market price regression ([] - [#​181230]) ([energyzero docs]) Require the IRK in the Private BLE Device config flow ([] - [#​181969]) ([private_ble_device docs]) Keep the known Bond host when zeroconf still announces it ([] - [#​181975]) ([bond docs]) Fix function name in external st…",
+   "source_url": "https://github.com/home-assistant/core/releases/tag/2026.9.3",
+   "page_url": "https://www.firmwarely.com/devices/home-assistant-core/"
+  },
+  "firefly-iii": {
+   "id": "firefly-iii",
+   "brand": "Firefly III",
+   "model": "Personal finance manager",
+   "category": "A",
+   "status": "update",
+   "version": "6.7.3",
+   "previous": "6.7.2",
+   "released": "2026-09-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Welcome to release v6.7.3 of Firefly III. It contains the latest fixes, translations and features. Docker users can find this release under the latest tag. Changelog Fixed Discussion 12760 (419 Page expired when selecting a different date range) started Issue 12779 (\"Create new ...\" button on homep…",
+   "source_url": "https://github.com/firefly-iii/firefly-iii/releases/tag/v6.7.3",
+   "page_url": "https://www.firmwarely.com/devices/firefly-iii/"
+  },
+  "unpoller": {
+   "id": "unpoller",
+   "brand": "UnPoller",
+   "model": "UniFi metrics exporter",
+   "category": "R",
+   "status": "update",
+   "version": "5.2.7",
+   "previous": "5.2.6",
+   "released": "2026-09-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog 4123a13973597f88ad35c25278d88f9c01a3fbd4 Merge pull request #​1092 from jonathanrdelgado/fix/otel-callback-leak 160b46d6166ddcfa88aef24712f71dfaf9dbea78 fix(otelunifi): callback memory leak",
+   "source_url": "https://github.com/unpoller/unpoller/releases/tag/v5.2.7",
+   "page_url": "https://www.firmwarely.com/devices/unpoller/"
+  },
+  "coolify": {
+   "id": "coolify",
+   "brand": "Coolify",
+   "model": "Self-hosting platform",
+   "category": "A",
+   "status": "update",
+   "version": "4.3.22",
+   "previous": "4.3.21",
+   "released": "2026-09-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Breaking Changes Removed host-path configuration for persistent volumes from the UI and API. API requests that include host_path are now rejected. Features Added a pull request settings modal with refresh and deployment controls for preview deployments. Added real-time Sentinel synchronization stat…",
+   "source_url": "https://github.com/coollabsio/coolify/releases/tag/v4.3.22",
+   "page_url": "https://www.firmwarely.com/devices/coolify/"
   }
  }
 }
