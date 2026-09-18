@@ -166,6 +166,21 @@
    "notes": "Breaking Changes Removed host-path configuration for persistent volumes from the UI and API. API requests that include host_path are now rejected. Features Added a pull request settings modal with refresh and deployment controls for preview deployments. Added real-time Sentinel synchronization stat…",
    "source_url": "https://github.com/coollabsio/coolify/releases/tag/v4.3.22",
    "page_url": "https://www.firmwarely.com/devices/coolify/"
+  },
+  "clickhouse": {
+   "id": "clickhouse",
+   "brand": "ClickHouse",
+   "model": "Analytics database",
+   "category": "A",
+   "status": "update",
+   "version": "26.7.11.16-stable",
+   "previous": "26.8.6.5-lts",
+   "released": "2026-09-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release v26.7.11.16-stable v26.7.11.16-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.7.11.16-stable",
+   "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   }
  }
 }
