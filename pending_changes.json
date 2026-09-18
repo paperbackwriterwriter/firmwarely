@@ -511,6 +511,21 @@
    "notes": "Install/update via the bootstrap script: shell wget -NP . https://dokku.com/install/v0.38.28/bootstrap.sh sudo DOKKU_TAG=v0.38.28 bash bootstrap.sh Bug Fixes #​9033: Discard the build record git:sync starts when nothing is built #​9035: Fix builds:output exiting 0 for unknown build ids #​9010: Reje…",
    "source_url": "https://github.com/dokku/dokku/releases/tag/v0.38.28",
    "page_url": "https://www.firmwarely.com/devices/dokku/"
+  },
+  "calibre": {
+   "id": "calibre",
+   "brand": "Calibre",
+   "model": "Ebook manager",
+   "category": "A",
+   "status": "update",
+   "version": "9.15.0",
+   "previous": "9.14.0",
+   "released": "2026-09-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release version 9.15.0",
+   "source_url": "https://github.com/kovidgoyal/calibre/releases/tag/v9.15.0",
+   "page_url": "https://www.firmwarely.com/devices/calibre/"
   }
  }
 }
