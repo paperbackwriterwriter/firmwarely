@@ -9119,6 +9119,96 @@
    "type": "github",
    "repo": "BruceDevices/firmware",
    "product_url": "https://github.com/BruceDevices/firmware"
+  },
+  {
+   "id": "dns-blocklists",
+   "brand": "Dns Blocklists",
+   "model": "For a better internet",
+   "category": "R",
+   "type": "github",
+   "repo": "hagezi/dns-blocklists",
+   "product_url": "https://github.com/hagezi/dns-blocklists"
+  },
+  {
+   "id": "gost",
+   "brand": "Gost",
+   "model": "GO Simple Tunnel",
+   "category": "R",
+   "type": "github",
+   "repo": "ginuerzh/gost",
+   "product_url": "https://github.com/ginuerzh/gost"
+  },
+  {
+   "id": "amass",
+   "brand": "Amass",
+   "model": "In-depth attack surface mapping and asset discovery",
+   "category": "R",
+   "type": "github",
+   "repo": "owasp-amass/amass",
+   "product_url": "https://github.com/owasp-amass/amass"
+  },
+  {
+   "id": "gobuster",
+   "brand": "Gobuster",
+   "model": "Directory/File, DNS and VHost busting tool written in Go",
+   "category": "R",
+   "type": "github",
+   "repo": "OJ/gobuster",
+   "product_url": "https://github.com/OJ/gobuster"
+  },
+  {
+   "id": "portmaster",
+   "brand": "Portmaster",
+   "model": "Love Freedom",
+   "category": "R",
+   "type": "github",
+   "repo": "safing/portmaster",
+   "product_url": "https://github.com/safing/portmaster"
+  },
+  {
+   "id": "docker-pi-hole",
+   "brand": "Docker Pi Hole",
+   "model": "Official Pi-hole Docker image from pi-hole.net",
+   "category": "R",
+   "type": "github",
+   "repo": "pi-hole/docker-pi-hole",
+   "product_url": "https://github.com/pi-hole/docker-pi-hole"
+  },
+  {
+   "id": "smartdns",
+   "brand": "Smartdns",
+   "model": "Local DNS server",
+   "category": "R",
+   "type": "github",
+   "repo": "pymumu/smartdns",
+   "product_url": "https://github.com/pymumu/smartdns"
+  },
+  {
+   "id": "networkmanager",
+   "brand": "NETworkManager",
+   "model": "Tool for managing networks and troubleshooting network",
+   "category": "R",
+   "type": "github",
+   "repo": "BornToBeRoot/NETworkManager",
+   "product_url": "https://github.com/BornToBeRoot/NETworkManager"
+  },
+  {
+   "id": "reconftw",
+   "brand": "Reconftw",
+   "model": "Tool designed to perform automated recon on a target domain",
+   "category": "R",
+   "type": "github",
+   "repo": "six2dez/reconftw",
+   "product_url": "https://github.com/six2dez/reconftw"
+  },
+  {
+   "id": "trippy",
+   "brand": "Trippy",
+   "model": "Network diagnostic tool",
+   "category": "R",
+   "type": "github",
+   "repo": "fujiapple852/trippy",
+   "product_url": "https://github.com/fujiapple852/trippy"
   }
  ]
 }
