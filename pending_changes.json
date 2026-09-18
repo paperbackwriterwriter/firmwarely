@@ -211,6 +211,36 @@
    "notes": "## Stable (since September 17, 2026) Changelog Bug fixes Server: Reject missing RPC messages (#​29150, a682c9dadd) Performance improvements Server: Build the workspace build fan-out maps once per batch (#​28074, 165de21fdd) Compare: v2.36.5...v2.36.6 Container image docker pull ghcr.io/coder/coder:…",
    "source_url": "https://github.com/coder/coder/releases/tag/v2.36.6",
    "page_url": "https://www.firmwarely.com/devices/coder/"
+  },
+  "nomad": {
+   "id": "nomad",
+   "brand": "HashiCorp",
+   "model": "Nomad",
+   "category": "A",
+   "status": "update",
+   "version": "2.0.7",
+   "previous": "2.0.6",
+   "released": "2026-09-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "IMPROVEMENTS: dependency: Upgrade to the latest buf (1.72.0), protoc-gen-go (1.36.6), and protoc-gen-go-grpc (1.5.1) [GH-28525] services: the default workload identity policy now allows using wildcard namespace queries for Nomad native services [GH-28534] ui: fixed accessibility color contrast issu…",
+   "source_url": "https://github.com/hashicorp/nomad/releases/tag/v2.0.7",
+   "page_url": "https://www.firmwarely.com/devices/nomad/"
+  },
+  "nzbhydra2": {
+   "id": "nzbhydra2",
+   "brand": "NZBHydra2",
+   "model": "Usenet meta search",
+   "category": "A",
+   "status": "update",
+   "version": "9.0.1",
+   "previous": "8.9.0",
+   "released": "2026-09-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "v9.0.1 (2026-09-18) Feature New display option \"Group same titles\" in the search results. Results with the same title were always put into one group; you can now switch that off and see every result in its own row. Duplicates of the same release are still grouped, they have their own option. Fix \"G…",
+   "source_url": "https://github.com/theotherp/nzbhydra2/releases/tag/v9.0.1",
+   "page_url": "https://www.firmwarely.com/devices/nzbhydra2/"
   }
  }
 }
