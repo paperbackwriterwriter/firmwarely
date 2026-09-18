@@ -158,13 +158,13 @@
    "model": "Self-hosting platform",
    "category": "A",
    "status": "update",
-   "version": "4.3.22",
+   "version": "4.3.23",
    "previous": "4.3.21",
    "released": "2026-09-18",
    "date_known": true,
    "eol": false,
-   "notes": "Breaking Changes Removed host-path configuration for persistent volumes from the UI and API. API requests that include host_path are now rejected. Features Added a pull request settings modal with refresh and deployment controls for preview deployments. Added real-time Sentinel synchronization stat…",
-   "source_url": "https://github.com/coollabsio/coolify/releases/tag/v4.3.22",
+   "notes": "Features Added a read-only API endpoint to retrieve preview deployment runtime logs by application UUID and pull request ID, with line limits and optional timestamps. (#​11884) Fixes Fixed deployment status and metadata processing when remote command output contained leading or trailing whitespace.…",
+   "source_url": "https://github.com/coollabsio/coolify/releases/tag/v4.3.23",
    "page_url": "https://www.firmwarely.com/devices/coolify/"
   },
   "clickhouse": {
@@ -173,14 +173,29 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.7.11.16-stable",
+   "version": "26.8.7.19-lts",
    "previous": "26.8.6.5-lts",
    "released": "2026-09-18",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.7.11.16-stable v26.7.11.16-stable",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.7.11.16-stable",
+   "notes": "Release v26.8.7.19-lts v26.8.7.19-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.7.19-lts",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
+  },
+  "windmill": {
+   "id": "windmill",
+   "brand": "Windmill",
+   "model": "Scripts and workflows",
+   "category": "A",
+   "status": "update",
+   "version": "1.815.0",
+   "previous": "1.814.0",
+   "released": "2026-09-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.815.0 (2026-09-18) Features add a workspace toggle that adds its admins and developers to new forks (#​11215) (9d335de) add an instance setting to refuse a token in MCP URLs (#​11162) (37e493a) ai-chat: render get_run through the run tools' card (#​11204) (6f9c4dc) ai-chat: tell the chat which ki…",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.815.0",
+   "page_url": "https://www.firmwarely.com/devices/windmill/"
   }
  }
 }
