@@ -526,6 +526,36 @@
    "notes": "Release version 9.15.0",
    "source_url": "https://github.com/kovidgoyal/calibre/releases/tag/v9.15.0",
    "page_url": "https://www.firmwarely.com/devices/calibre/"
+  },
+  "emqx": {
+   "id": "emqx",
+   "brand": "EMQX",
+   "model": "MQTT broker",
+   "category": "S",
+   "status": "update",
+   "version": "6.3.1",
+   "previous": "6.3.0",
+   "released": "2026-09-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Download Ubuntu / Debian | OS | Arch | Package | Tarball | | --- | --- | --- | --- | | ubuntu24.04 | amd64 | .deb (sha256) | .tar.gz (sha256) | | ubuntu24.04 | arm64 | .deb (sha256) | .tar.gz (sha256) | | ubuntu22.04 | amd64 | .deb (sha256) | .tar.gz (sha256) | | ubuntu22.04 | arm64 | .deb (sha256)…",
+   "source_url": "https://github.com/emqx/emqx/releases/tag/6.3.1",
+   "page_url": "https://www.firmwarely.com/devices/emqx/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.2619",
+   "previous": "0.24.2605",
+   "released": "2026-09-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes: 61905686b044fda96f839a11cbc0f05f93124dba Update magnetcat.yml b15bf266fec8860337636a3a170ffb1a7d48e814 Delete torrentz2nz.yml 442a8b94f53e8c9aed2ea4a9dcdb83ebae5d1783 Update magnetcat.yml e48cf7b2089c6c9c332c1d8c9840f29335396069 magnetcat: new alt domains c86d62dde5ef043fbc9e3da340f7e88c23…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2619",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
