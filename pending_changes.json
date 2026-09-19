@@ -1,5 +1,36 @@
 {
- "since": null,
+ "since": "2026-09-19T09:16:08+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "pixelfed": {
+   "id": "pixelfed",
+   "brand": "Pixelfed",
+   "model": "Photo sharing",
+   "category": "A",
+   "status": "update",
+   "version": "0.14.0",
+   "previous": "0.13.0",
+   "released": "2026-09-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed This release includes FEP-044f: Consent-respecting quote posts, FEP-8fcf followers collection synchronization, a bunch of ActivityPub federation improvements, and fixes a few bugs. CHANGES: Add FEP-044f: Consent-respecting quote posts (823efcaad) Add FEP-8fcf followers collection syn…",
+   "source_url": "https://github.com/pixelfed/pixelfed/releases/tag/v0.14.0",
+   "page_url": "https://www.firmwarely.com/devices/pixelfed/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "Dns Blocklists",
+   "model": "For a better internet",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.262.32619",
+   "previous": "37522026.261.33918",
+   "released": "2026-09-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​11512 #​11511 #​11510 #​11509 #​11508 #​11507 #​11506 #​11504",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.262.32619",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  }
+ }
 }
