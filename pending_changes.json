@@ -8,13 +8,13 @@
    "model": "Photo sharing",
    "category": "A",
    "status": "update",
-   "version": "0.14.0",
+   "version": "0.14.1",
    "previous": "0.13.0",
    "released": "2026-09-19",
    "date_known": true,
    "eol": false,
-   "notes": "What's Changed This release includes FEP-044f: Consent-respecting quote posts, FEP-8fcf followers collection synchronization, a bunch of ActivityPub federation improvements, and fixes a few bugs. CHANGES: Add FEP-044f: Consent-respecting quote posts (823efcaad) Add FEP-8fcf followers collection syn…",
-   "source_url": "https://github.com/pixelfed/pixelfed/releases/tag/v0.14.0",
+   "notes": "What's Changed: This release fixes federation issues with local url dns resolution, we now skip validation on local urls by default. CHANGES: Update Helpers::validateUrl(), skip validation for app domain/url optionally (81e71a04f)",
+   "source_url": "https://github.com/pixelfed/pixelfed/releases/tag/v0.14.1",
    "page_url": "https://www.firmwarely.com/devices/pixelfed/"
   },
   "dns-blocklists": {
@@ -31,6 +31,36 @@
    "notes": "#​11512 #​11511 #​11510 #​11509 #​11508 #​11507 #​11506 #​11504",
    "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.262.32619",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "iobroker": {
+   "id": "iobroker",
+   "brand": "ioBroker",
+   "model": "js-controller",
+   "category": "S",
+   "status": "update",
+   "version": "7.2.3",
+   "previous": "7.2.2",
+   "released": "2026-09-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "official release",
+   "source_url": "https://github.com/ioBroker/ioBroker.js-controller/releases/tag/v7.2.3",
+   "page_url": "https://www.firmwarely.com/devices/iobroker/"
+  },
+  "ghostfolio": {
+   "id": "ghostfolio",
+   "brand": "Ghostfolio",
+   "model": "Wealth tracker",
+   "category": "A",
+   "status": "update",
+   "version": "3.71.0",
+   "previous": "3.70.1",
+   "released": "2026-09-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Added Added a hint for the performance calculation type to the analysis page Added support for country codes to the entity logo component and used it for cash holdings and currency selectors Changed Localized the default account name created during user registration Improved the performance of the …",
+   "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.71.0",
+   "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
   }
  }
 }
