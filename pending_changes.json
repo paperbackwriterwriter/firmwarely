@@ -121,6 +121,36 @@
    "notes": "What's Changed Add network monitoring from agents (#​2266, #​1911) Add container image update available flag (#​2211) Add btrfs filesystem reporting as storage pools (#​2315) Add persistence of view preferences and language to user settings (#​1831) Add TRUSTED_PROXY_IPS allowlist for TRUSTED_AUTH_…",
    "source_url": "https://github.com/henrygd/beszel/releases/tag/v0.20.0",
    "page_url": "https://www.firmwarely.com/devices/beszel/"
+  },
+  "photoprism": {
+   "id": "photoprism",
+   "brand": "PhotoPrism",
+   "model": "Photo library server",
+   "category": "A",
+   "status": "update",
+   "version": "260919-28c46a116",
+   "previous": "260728-bbde8f452",
+   "released": "2026-09-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release introduces new detection and embedding models for face recognition: more faces are found, including small ones in group pictures, and clustering now keeps different people apart instead of grouping them as one. Existing libraries keep their current model until you run photoprism faces …",
+   "source_url": "https://github.com/photoprism/photoprism/releases/tag/260919-28c46a116",
+   "page_url": "https://www.firmwarely.com/devices/photoprism/"
+  },
+  "memos": {
+   "id": "memos",
+   "brand": "Memos",
+   "model": "Note taking",
+   "category": "A",
+   "status": "update",
+   "version": "0.31.0",
+   "previous": "0.30.0",
+   "released": "2026-09-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Memos 0.31 adds Spaces for collaboration, Calendar and Map views for browsing your notes, and tools to move your memos between instances. Writing, search, attachments, and navigation also receive improvements throughout the app. Highlights Spaces: Organize memos in shared Spaces, invite people thro…",
+   "source_url": "https://github.com/usememos/memos/releases/tag/v0.31.0",
+   "page_url": "https://www.firmwarely.com/devices/memos/"
   }
  }
 }
