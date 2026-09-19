@@ -6,14 +6,14 @@
   <url><loc>https://www.firmwarely.com/pro/</loc><lastmod>2026-09-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/legal/</loc><lastmod>2026-09-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/support/</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://www.firmwarely.com/category/routers/</loc><lastmod>2026-09-18</lastmod></url>
+  <url><loc>https://www.firmwarely.com/category/routers/</loc><lastmod>2026-09-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/nas/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/smart-home/</loc><lastmod>2026-09-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/consoles-drones-ebikes/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/makers/</loc><lastmod>2026-09-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/pcs-tvs-gadgets/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/self-hosted/</loc><lastmod>2026-09-19</lastmod></url>
-  <url><loc>https://www.firmwarely.com/brands/tp-link/</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://www.firmwarely.com/brands/tp-link/</loc><lastmod>2026-09-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/synology/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/ubiquiti/</loc><lastmod>2026-09-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/qnap/</loc><lastmod>2026-09-16</lastmod></url>
@@ -49,6 +49,7 @@
   <url><loc>https://www.firmwarely.com/brands/mikrotik/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/philips-hue/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/pi-hole/</loc><lastmod>2026-07-06</lastmod></url>
+  <url><loc>https://www.firmwarely.com/brands/podman/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/sony/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/z-wave-js/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/ggml/</loc><lastmod>2026-09-14</lastmod></url>
@@ -614,7 +615,7 @@
   <url><loc>https://www.firmwarely.com/devices/siyuan/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/logseq/</loc><lastmod>2026-07-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/affine/</loc><lastmod>2026-08-18</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/appflowy/</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/appflowy/</loc><lastmod>2026-09-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/vikunja/</loc><lastmod>2026-08-31</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/planka/</loc><lastmod>2026-08-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/focalboard/</loc><lastmod>2024-06-13</lastmod></url>
@@ -674,6 +675,7 @@
   <url><loc>https://www.firmwarely.com/devices/tp-link-archer-ax55/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/tp-link-deco-x55/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/tp-link-deco-be63/</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/tp-link-omada-eap670/</loc><lastmod>2026-09-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/tp-link-re715x/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/asus-rt-be96u/</loc><lastmod>2026-08-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/asus-rt-ax58u/</loc><lastmod>2025-10-30</lastmod></url>
@@ -755,4 +757,14 @@
   <url><loc>https://www.firmwarely.com/devices/networkmanager/</loc><lastmod>2026-07-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/reconftw/</loc><lastmod>2026-03-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/trippy/</loc><lastmod>2025-05-05</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/dive/</loc><lastmod>2025-03-29</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/windows/</loc><lastmod>2026-08-21</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/harness/</loc><lastmod>2026-04-20</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/1panel/</loc><lastmod>2026-09-18</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/podman-container-tools-podman/</loc><lastmod>2026-09-16</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/colima/</loc><lastmod>2026-06-04</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/faas/</loc><lastmod>2025-08-29</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/floci/</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/kong/</loc><lastmod>2026-06-17</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/nginx/</loc><lastmod>2026-09-15</lastmod></url>
 </urlset>

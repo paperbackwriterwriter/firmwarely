@@ -122,16 +122,6 @@
       "permanent": false
     },
     {
-      "source": "/devices/:id(tp-link-omada-eap670)",
-      "destination": "/brands/tp-link/",
-      "permanent": false
-    },
-    {
-      "source": "/devices/:id(tp-link-omada-eap670)/",
-      "destination": "/brands/tp-link/",
-      "permanent": false
-    },
-    {
       "source": "/devices/:id(ubiquiti-unifi-g4-doorbell|ubiquiti-unifi-g5-bullet|ubiquiti-unifi-g5-turret-ultra)",
       "destination": "/brands/ubiquiti/",
       "permanent": false

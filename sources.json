@@ -9209,6 +9209,96 @@
    "type": "github",
    "repo": "fujiapple852/trippy",
    "product_url": "https://github.com/fujiapple852/trippy"
+  },
+  {
+   "id": "dive",
+   "brand": "Dive",
+   "model": "Tool for exploring each layer in a docker image",
+   "category": "A",
+   "type": "github",
+   "repo": "wagoodman/dive",
+   "product_url": "https://github.com/wagoodman/dive"
+  },
+  {
+   "id": "windows",
+   "brand": "Windows",
+   "model": "Inside a Docker container",
+   "category": "A",
+   "type": "github",
+   "repo": "dockur/windows",
+   "product_url": "https://github.com/dockur/windows"
+  },
+  {
+   "id": "harness",
+   "brand": "Harness",
+   "model": "Is an end-to-end developer platform",
+   "category": "A",
+   "type": "github",
+   "repo": "harness/harness",
+   "product_url": "https://github.com/harness/harness"
+  },
+  {
+   "id": "1panel",
+   "brand": "1Panel",
+   "model": "Modern, open-source Linux server management panel",
+   "category": "A",
+   "type": "github",
+   "repo": "1Panel-dev/1Panel",
+   "product_url": "https://github.com/1Panel-dev/1Panel"
+  },
+  {
+   "id": "podman-container-tools-podman",
+   "brand": "Podman",
+   "model": "Tool for managing OCI containers and pods",
+   "category": "A",
+   "type": "github",
+   "repo": "podman-container-tools/podman",
+   "product_url": "https://github.com/podman-container-tools/podman"
+  },
+  {
+   "id": "colima",
+   "brand": "Colima",
+   "model": "Container runtimes on macOS (and Linux) with minimal setup",
+   "category": "A",
+   "type": "github",
+   "repo": "abiosoft/colima",
+   "product_url": "https://github.com/abiosoft/colima"
+  },
+  {
+   "id": "faas",
+   "brand": "Faas",
+   "model": "OpenFaaS",
+   "category": "A",
+   "type": "github",
+   "repo": "openfaas/faas",
+   "product_url": "https://github.com/openfaas/faas"
+  },
+  {
+   "id": "floci",
+   "brand": "Floci",
+   "model": "Light, fluffy, and always free",
+   "category": "N",
+   "type": "github",
+   "repo": "floci-io/floci",
+   "product_url": "https://github.com/floci-io/floci"
+  },
+  {
+   "id": "kong",
+   "brand": "Kong",
+   "model": "API and AI Gateway",
+   "category": "R",
+   "type": "github",
+   "repo": "Kong/kong",
+   "product_url": "https://github.com/Kong/kong"
+  },
+  {
+   "id": "nginx",
+   "brand": "Nginx",
+   "model": "Official NGINX Open Source repository",
+   "category": "R",
+   "type": "github",
+   "repo": "nginx/nginx",
+   "product_url": "https://github.com/nginx/nginx"
   }
  ]
 }
