@@ -61,6 +61,21 @@
    "notes": "Added Added a hint for the performance calculation type to the analysis page Added support for country codes to the entity logo component and used it for cash holdings and currency selectors Changed Localized the default account name created during user registration Improved the performance of the …",
    "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.71.0",
    "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
+  },
+  "clickhouse": {
+   "id": "clickhouse",
+   "brand": "ClickHouse",
+   "model": "Analytics database",
+   "category": "A",
+   "status": "update",
+   "version": "26.7.12.6-stable",
+   "previous": "26.8.7.19-lts",
+   "released": "2026-09-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release v26.7.12.6-stable v26.7.12.6-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.7.12.6-stable",
+   "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   }
  }
 }
