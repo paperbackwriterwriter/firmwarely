@@ -181,6 +181,36 @@
    "notes": "Changelog Features ab56581f40471789539593c3f773b921e0b99da6 feat: add RADIUS Message-Authenticator support with a per-provider switch 72a1d5a90fe1c9128901e1b946514dd865863250 feat: add organization-level exclusive signin across applications 0352f4beaa5049b0037af145a2205ef51d433c67 feat: render the …",
    "source_url": "https://github.com/casdoor/casdoor/releases/tag/v4.7.0",
    "page_url": "https://www.firmwarely.com/devices/casdoor/"
+  },
+  "pihole-ftl": {
+   "id": "pihole-ftl",
+   "brand": "Pi-hole",
+   "model": "FTL DNS engine",
+   "category": "R",
+   "status": "critical",
+   "version": "6.7.1",
+   "previous": "6.7",
+   "released": "2026-09-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Security Fixes pi-hole/FTL/security/advisories/GHSA-2794-hrj8-5jg9 - Remote code execution and arbitrary file read via webserver.advancedOpts (High) reported by keithlinneman pi-hole/FTL/security/advisories/GHSA-ww5x-xx4x-qvjr - Remote code execution via exec-capable options in misc.dnsmasq_lines (…",
+   "source_url": "https://github.com/pi-hole/FTL/releases/tag/v6.7.1",
+   "page_url": "https://www.firmwarely.com/devices/pihole-ftl/"
+  },
+  "code-server": {
+   "id": "code-server",
+   "brand": "Coder",
+   "model": "code-server",
+   "category": "A",
+   "status": "update",
+   "version": "4.138.0",
+   "previous": "4.137.0",
+   "released": "2026-09-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Code v1.138.0 Changed Update to Code 1.138.0 Fixed Preserve the original path, query parameters, and fragment when rewriting localhost URLs through the port proxy. If VSCODE_PROXY_URI has any query parameters or fragments, those will be lost.",
+   "source_url": "https://github.com/coder/code-server/releases/tag/v4.138.0",
+   "page_url": "https://www.firmwarely.com/devices/code-server/"
   }
  }
 }
