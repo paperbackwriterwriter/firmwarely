@@ -151,6 +151,36 @@
    "notes": "Memos 0.31 adds Spaces for collaboration, Calendar and Map views for browsing your notes, and tools to move your memos between instances. Writing, search, attachments, and navigation also receive improvements throughout the app. Highlights Spaces: Organize memos in shared Spaces, invite people thro…",
    "source_url": "https://github.com/usememos/memos/releases/tag/v0.31.0",
    "page_url": "https://www.firmwarely.com/devices/memos/"
+  },
+  "acme-sh": {
+   "id": "acme-sh",
+   "brand": "acme.sh",
+   "model": "ACME shell client",
+   "category": "R",
+   "status": "update",
+   "version": "3.1.5",
+   "previous": "3.1.4",
+   "released": "2026-09-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release tags are signed from 3.1.5 on. The public key is allowed_signers in this repository; see \"Verify a Release\" in the README. New ACME_PACKAGED mode for distro-packaged installs: --install no longer copies the script into LE_WORKING_DIR, and --upgrade, --install-online and the auto-upgrade cro…",
+   "source_url": "https://github.com/acmesh-official/acme.sh/releases/tag/3.1.5",
+   "page_url": "https://www.firmwarely.com/devices/acme-sh/"
+  },
+  "casdoor": {
+   "id": "casdoor",
+   "brand": "Casdoor",
+   "model": "Identity and access",
+   "category": "A",
+   "status": "update",
+   "version": "4.7.0",
+   "previous": "4.6.0",
+   "released": "2026-09-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog Features ab56581f40471789539593c3f773b921e0b99da6 feat: add RADIUS Message-Authenticator support with a per-provider switch 72a1d5a90fe1c9128901e1b946514dd865863250 feat: add organization-level exclusive signin across applications 0352f4beaa5049b0037af145a2205ef51d433c67 feat: render the …",
+   "source_url": "https://github.com/casdoor/casdoor/releases/tag/v4.7.0",
+   "page_url": "https://www.firmwarely.com/devices/casdoor/"
   }
  }
 }
