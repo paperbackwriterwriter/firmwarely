@@ -91,6 +91,21 @@
    "notes": "Refer to the debian changelog for details.",
    "source_url": "https://github.com/YunoHost/yunohost/releases/tag/debian/12.1.41.2",
    "page_url": "https://www.firmwarely.com/devices/yunohost/"
+  },
+  "technitium-dns": {
+   "id": "technitium-dns",
+   "brand": "Technitium",
+   "model": "DNS Server",
+   "category": "R",
+   "status": "critical",
+   "version": "15.5",
+   "previous": "15.4",
+   "released": "2026-09-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Technitium DNS Server v15.5 is now available for download. This update adds LDAP authentication support, a Zone File Editor option in GUI, and many other minor features. It also fixes multiple bugs and security issues that were reported. See what's new in this release: https://github.com/Technitium…",
+   "source_url": "https://github.com/TechnitiumSoftware/DnsServer/releases/tag/v15.5.0",
+   "page_url": "https://www.firmwarely.com/devices/technitium-dns/"
   }
  }
 }
