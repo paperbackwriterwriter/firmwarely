@@ -68,14 +68,29 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.7.12.6-stable",
+   "version": "26.8.8.8-lts",
    "previous": "26.8.7.19-lts",
    "released": "2026-09-19",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.7.12.6-stable v26.7.12.6-stable",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.7.12.6-stable",
+   "notes": "Release v26.8.8.8-lts v26.8.8.8-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.8.8-lts",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
+  },
+  "yunohost": {
+   "id": "yunohost",
+   "brand": "YunoHost",
+   "model": "Self-hosting server OS",
+   "category": "A",
+   "status": "update",
+   "version": "12.1.41.2",
+   "previous": "13.0.8",
+   "released": "2026-09-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "Refer to the debian changelog for details.",
+   "source_url": "https://github.com/YunoHost/yunohost/releases/tag/debian/12.1.41.2",
+   "page_url": "https://www.firmwarely.com/devices/yunohost/"
   }
  }
 }
