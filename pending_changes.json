@@ -106,6 +106,21 @@
    "notes": "Technitium DNS Server v15.5 is now available for download. This update adds LDAP authentication support, a Zone File Editor option in GUI, and many other minor features. It also fixes multiple bugs and security issues that were reported. See what's new in this release: https://github.com/Technitium…",
    "source_url": "https://github.com/TechnitiumSoftware/DnsServer/releases/tag/v15.5.0",
    "page_url": "https://www.firmwarely.com/devices/technitium-dns/"
+  },
+  "beszel": {
+   "id": "beszel",
+   "brand": "Beszel",
+   "model": "Server monitoring hub",
+   "category": "N",
+   "status": "update",
+   "version": "0.20.0",
+   "previous": "0.19.0",
+   "released": "2026-09-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed Add network monitoring from agents (#​2266, #​1911) Add container image update available flag (#​2211) Add btrfs filesystem reporting as storage pools (#​2315) Add persistence of view preferences and language to user settings (#​1831) Add TRUSTED_PROXY_IPS allowlist for TRUSTED_AUTH_…",
+   "source_url": "https://github.com/henrygd/beszel/releases/tag/v0.20.0",
+   "page_url": "https://www.firmwarely.com/devices/beszel/"
   }
  }
 }
