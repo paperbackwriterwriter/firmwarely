@@ -301,6 +301,21 @@
    "notes": "paperless-ngx 3.2.0 Features / Enhancements Enhancement (QoL): support deselecting single items from \"select all\" (#​14117) Enhancement: Match fuzzy terms in place inside the parsed query (#​14157) Enhancement: Match CJK terms through their bigram fields in place (#​14156) Enhancement: centralized …",
    "source_url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.2.0",
    "page_url": "https://www.firmwarely.com/devices/paperless-ngx/"
+  },
+  "freescout": {
+   "id": "freescout",
+   "brand": "FreeScout",
+   "model": "Help desk",
+   "category": "A",
+   "status": "update",
+   "version": "1.8.241",
+   "previous": "1.8.240",
+   "released": "2026-09-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Added Added \"Paste as Plain Text\" button to the editor (#​5627) Auto link last entered link in the editor (#​5280) Updated German translation. Fixed Fixed \"Show Original\" on IMAP servers which reject searching by Message-ID (#​5633) Do not show .env file content on the final step of Installation Wi…",
+   "source_url": "https://github.com/freescout-help-desk/freescout/releases/tag/1.8.241",
+   "page_url": "https://www.firmwarely.com/devices/freescout/"
   }
  }
 }
