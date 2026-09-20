@@ -468,7 +468,7 @@ def test_analytics_and_its_disclosure():
     check("the policy is dated the day it changed", "Last updated September 17, 2026" in legal, True)
 
 
-# ---- no form can be fired three times in half a minute ----
+# ---- no form can be fired twice in half a minute ----
 def test_form_rate_limit():
     build_pages.STYLES = build_pages.styles()
     devs = json.loads(Path("devices.json").read_text())["devices"]
@@ -509,7 +509,7 @@ def test_form_rate_limit():
     for f in ("api/subscribe.js", "api/contact.js", "api/auth-request.js"):
         src = Path(f).read_text()
         check(f"{f} enforces the burst limit itself",
-              'rl.allow("burst:" + rl.clientIp(req), 3, 30000)' in src, True)
+              'rl.allow("burst:" + rl.clientIp(req), 1, 30000)' in src, True)
     check("subscribe still caps a source over a longer window too",
           "subscribe-ip:" in Path("api/subscribe.js").read_text(), True)
 

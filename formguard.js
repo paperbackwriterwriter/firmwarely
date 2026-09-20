@@ -1,14 +1,14 @@
-// One rolling limit shared by every form on the site: three submissions in thirty seconds.
+// One rolling limit shared by every form on the site: one submission every thirty seconds.
 //
 // This is the polite half — it stops an impatient person double-posting and tells them how
 // long to wait. It is not the enforcement: anything can skip the browser, so /api/subscribe,
-// /api/contact and /api/auth-request apply the same 3-in-30s limit per IP. The two halves
+// /api/contact and /api/auth-request apply the same one-in-30s limit per IP. The two halves
 // must agree, so MAX and WINDOW_MS are checked against the endpoints in the self-test.
 //
 // Fails open. If storage is blocked or this file never loads, forms submit as before and the
 // server does the limiting — a broken counter must never be the reason someone can't reach us.
 (function (w) {
-  var MAX = 3;
+  var MAX = 1;
   var WINDOW_MS = 30000;
   var KEY = "fw_form_submits";
   var memory = [];                       // fallback when localStorage throws (private windows)
@@ -54,8 +54,8 @@
     },
 
     message: function (secs) {
-      return "That's three in half a minute. Give it " + secs +
-             (secs === 1 ? " second" : " seconds") + " and try again.";
+      return "One submission every 30 seconds, please. Try again in " + secs +
+             (secs === 1 ? " second." : " seconds.");
     },
 
     // True when the form is being held back. Writes the wait into the form's own message
