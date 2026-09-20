@@ -244,6 +244,7 @@ footer a:hover{color:var(--text)}
   .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Routers & networking", "item": "https://www.firmwarely.com/category/routers/"}, {"@type": "ListItem", "position": 3, "name": "NextDNS NextDNS CLI client", "item": "https://www.firmwarely.com/devices/nextdns-cli/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/nextdns-cli/", "url": "https://www.firmwarely.com/devices/nextdns-cli/", "name": "NextDNS NextDNS CLI client firmware 1.47.3 | Firmwarely", "description": "Latest NextDNS NextDNS CLI client firmware is 1.47.3, released Jun 3, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-20"}, {"@type": "SoftwareApplication", "name": "NextDNS NextDNS CLI client firmware", "applicationCategory": "Firmware", "operatingSystem": "NextDNS NextDNS CLI client", "softwareVersion": "1.47.3", "author": {"@type": "Organization", "name": "NextDNS"}, "datePublished": "2026-06-03", "releaseNotes": "Changelog 🛠️ Maintenance Changes 67d25684a260090fe1ac3fcaaa09b70fcc8aa0cb chore: upgrade go verson to 1.26.4 7d8e8bf3832d7cdee41125485e79d34066c3ad1a chore(deps): bump golang.org/x/net from 0.52.0 to 0.53.0 (#​1084) Others 7c8aa187a1dbd9bac32c04eb7df683688c0129e6 bug: strip CIDR from OpenWrt DHCP o…", "url": "https://github.com/nextdns/nextdns/releases/tag/v1.47.3"}]}</script>
 </head>
 <body>
@@ -348,8 +349,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}

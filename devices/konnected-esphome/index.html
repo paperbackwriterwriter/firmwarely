@@ -244,6 +244,7 @@ footer a:hover{color:var(--text)}
   .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Smart home & cameras", "item": "https://www.firmwarely.com/category/smart-home/"}, {"@type": "ListItem", "position": 3, "name": "Konnected ESPHome firmware", "item": "https://www.firmwarely.com/devices/konnected-esphome/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/konnected-esphome/", "url": "https://www.firmwarely.com/devices/konnected-esphome/", "name": "Konnected ESPHome firmware — latest version 2026.8.0 | Firmwarely", "description": "Latest Konnected ESPHome firmware firmware is 2026.8.0, released Aug 25, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-20"}, {"@type": "SoftwareApplication", "name": "Konnected ESPHome firmware firmware", "applicationCategory": "Firmware", "operatingSystem": "Konnected ESPHome firmware", "softwareVersion": "2026.8.0", "author": {"@type": "Organization", "name": "Konnected"}, "datePublished": "2026-08-25", "releaseNotes": "This release updates gdolib to v1.1.2, fixing two Security+ 2.0 issues on the GDO blaQ. It also moves the build to the ESPHome 2026.8 line. GDO blaQ Obstruction now reports the instant the beam breaks, and reliably reports clear. A sustained obstruction previously never published a Clear when it en…", "url": "https://github.com/konnected-io/konnected-esphome/releases/tag/2026.8.0"}]}</script>
 </head>
 <body>
@@ -348,8 +349,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}

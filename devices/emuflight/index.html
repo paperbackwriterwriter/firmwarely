@@ -244,6 +244,7 @@ footer a:hover{color:var(--text)}
   .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Consoles, drones & e-bikes", "item": "https://www.firmwarely.com/category/consoles-drones-ebikes/"}, {"@type": "ListItem", "position": 3, "name": "EmuFlight Flight controller firmware", "item": "https://www.firmwarely.com/devices/emuflight/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/emuflight/", "url": "https://www.firmwarely.com/devices/emuflight/", "name": "EmuFlight Flight controller firmware 0.4.3 | Firmwarely", "description": "Latest EmuFlight Flight controller firmware firmware is 0.4.3, released Jul 12, 2024. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-20"}, {"@type": "SoftwareApplication", "name": "EmuFlight Flight controller firmware firmware", "applicationCategory": "Firmware", "operatingSystem": "EmuFlight Flight controller firmware", "softwareVersion": "0.4.3", "author": {"@type": "Organization", "name": "EmuFlight"}, "datePublished": "2024-07-12", "releaseNotes": "EmuFlight 0.4.3 [!NOTE] Supports STMF4 and STMF7 only. Does not support SX1280. Does not support DPS310. Does not support AT32. [!CAUTION] DJI components bypass Configurator/USB safety-checks. Do not attempt arming while connected to Configurator with battery plugged. Always remove propellers and u…", "url": "https://github.com/emuflight/EmuFlight/releases/tag/0.4.3"}]}</script>
 </head>
 <body>
@@ -348,8 +349,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}

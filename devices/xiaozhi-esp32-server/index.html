@@ -244,6 +244,7 @@ footer a:hover{color:var(--text)}
   .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Makers & open firmware", "item": "https://www.firmwarely.com/category/makers/"}, {"@type": "ListItem", "position": 3, "name": "Xiaozhi Esp32 Server 本项目为xiaozhi-esp32提供后端服务，帮助您快速搭建ESP32设备控制服务器。Backend service", "item": "https://www.firmwarely.com/devices/xiaozhi-esp32-server/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/xiaozhi-esp32-server/", "url": "https://www.firmwarely.com/devices/xiaozhi-esp32-server/", "name": "Xiaozhi Esp32 Server 本项目为xiaozhi-esp32提供后端服务，帮助您快速搭建ESP32设备控制服务器。Back…", "description": "Xiaozhi Esp32 Server 本项目为xiaozhi-esp32提供后端服务，帮助您快速搭建ESP32设备控制服务器。Backend service firmware 0.9.6 (Jul 24, 2026): release notes, history and alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-20"}, {"@type": "SoftwareApplication", "name": "Xiaozhi Esp32 Server 本项目为xiaozhi-esp32提供后端服务，帮助您快速搭建ESP32设备控制服务器。Backend service firmware", "applicationCategory": "Firmware", "operatingSystem": "Xiaozhi Esp32 Server 本项目为xiaozhi-esp32提供后端服务，帮助您快速搭建ESP32设备控制服务器。Backend service", "softwareVersion": "0.9.6", "author": {"@type": "Organization", "name": "Xiaozhi Esp32 Server"}, "datePublished": "2026-07-24", "releaseNotes": "在服务端增加了AEC（声学回声消除）功能，从此以后，单麦设备在编译环节开启了服务端AEC，也能实时打断了。消除了以往只有双麦设备才能实时打断的局限 增加智能体快照的历史记录功能，害怕提示词丢失的问题，得到缓解 解决了设备在跨时区使用时的时间显示和在线状态不一致的问题 优化了声纹称呼的提示词和注入逻辑，减少了模型每次回答都带说话人信息的情况", "url": "https://github.com/xinnan-tech/xiaozhi-esp32-server/releases/tag/v0.9.6"}]}</script>
 </head>
 <body>
@@ -348,8 +349,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}

@@ -2,6 +2,8 @@
 // Creates a Beehiiv subscriber without sending the visitor off-site.
 // Needs two environment variables in Vercel: BEEHIIV_API_KEY and BEEHIIV_PUB_ID.
 
+const rl = require("../lib/ratelimit");
+
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 module.exports = async (req, res) => {
@@ -14,6 +16,16 @@ module.exports = async (req, res) => {
   const pub = process.env.BEEHIIV_PUB_ID;
   if (!key || !pub) {
     return res.status(500).json({ ok: false, error: "Signup isn't configured yet." });
+  }
+
+  // The browser applies this too (formguard.js), but anything can skip the browser.
+  // Same numbers, enforced per source: three submissions in thirty seconds.
+  if (!rl.allow("burst:" + rl.clientIp(req), 3, 30000)) {
+    return res.status(429).json({ ok: false, error: "That's three in half a minute. Give it a moment and try again." });
+  }
+  // A signup writes to the mailing list, so also cap a single source over a longer window.
+  if (!rl.allow("subscribe-ip:" + rl.clientIp(req), 10, 15 * 60 * 1000)) {
+    return res.status(429).json({ ok: false, error: "Too many signups from here. Try again in a few minutes." });
   }
 
   let body = req.body;

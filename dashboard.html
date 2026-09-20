@@ -97,6 +97,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:space-betwee
 }
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 </head>
 <body>
 <header>
@@ -265,7 +266,9 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:space-betwee
     var email = document.getElementById("loginEmail").value.trim();
     var msg = document.getElementById("loginMsg"), btn = document.getElementById("loginBtn");
     if (!validEmail(email)) { msg.className = "msg err"; msg.textContent = "Enter a valid email address."; return; }
+    if (window.formGuard && window.formGuard.hold(msg, "msg err")) return;
     btn.disabled = true; msg.className = "msg"; msg.textContent = "Sending…";
+    if (window.formGuard) window.formGuard.record();
     fetch("/api/auth-request", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email: email, next: "/dashboard.html" }) })
       .then(function (r) { return r.json().then(function (d) { return { ok: r.ok && d.ok, d: d }; }); })

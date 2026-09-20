@@ -244,6 +244,7 @@ footer a:hover{color:var(--text)}
   .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Smart home & cameras", "item": "https://www.firmwarely.com/category/smart-home/"}, {"@type": "ListItem", "position": 3, "name": "TP-Link Tapo C120", "item": "https://www.firmwarely.com/devices/tp-link-tapo-c120/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/tp-link-tapo-c120/", "url": "https://www.firmwarely.com/devices/tp-link-tapo-c120/", "name": "TP-Link Tapo C120 firmware — latest version 1.9.3 | Firmwarely", "description": "Latest TP-Link Tapo C120 firmware is 1.9.3. Release notes, version history, how to update, and email alerts for new or security fixes.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-20"}, {"@type": "SoftwareApplication", "name": "TP-Link Tapo C120 firmware", "applicationCategory": "Firmware", "operatingSystem": "TP-Link Tapo C120", "softwareVersion": "1.9.3", "author": {"@type": "Organization", "name": "TP-Link"}, "releaseNotes": "TP-Link firmware release. See the download page for the changelog.", "url": "https://www.tp-link.com/us/support/download/tapo-c120/"}]}</script>
 </head>
 <body>
@@ -348,8 +349,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}

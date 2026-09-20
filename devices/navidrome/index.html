@@ -244,6 +244,7 @@ footer a:hover{color:var(--text)}
   .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Self-hosted apps & servers", "item": "https://www.firmwarely.com/category/self-hosted/"}, {"@type": "ListItem", "position": 3, "name": "Navidrome Music streaming server", "item": "https://www.firmwarely.com/devices/navidrome/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/navidrome/", "url": "https://www.firmwarely.com/devices/navidrome/", "name": "Navidrome Music streaming server — latest version 0.64.0 | Firmwarely", "description": "Latest Navidrome Music streaming server version is 0.64.0, released Sep 12, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-20"}, {"@type": "SoftwareApplication", "name": "Navidrome Music streaming server firmware", "applicationCategory": "Firmware", "operatingSystem": "Navidrome Music streaming server", "softwareVersion": "0.64.0", "author": {"@type": "Organization", "name": "Navidrome"}, "datePublished": "2026-09-12", "releaseNotes": "This release brings an experimental Jellyfin Music API, so Jellyfin-compatible music clients like Finamp and Jellify can now connect to Navidrome. Artwork got a new background pipeline with blurred low-quality placeholders and a diagnostic CLI. Under the hood, all IDs move to a uniform canonical 12…", "url": "https://github.com/navidrome/navidrome/releases/tag/v0.64.0"}]}</script>
 </head>
 <body>
@@ -348,8 +349,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}

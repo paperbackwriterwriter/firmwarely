@@ -244,6 +244,7 @@ footer a:hover{color:var(--text)}
   .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Self-hosted apps & servers", "item": "https://www.firmwarely.com/category/self-hosted/"}, {"@type": "ListItem", "position": 3, "name": "ComfyUI Diffusion workflow UI", "item": "https://www.firmwarely.com/devices/comfyui/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/comfyui/", "url": "https://www.firmwarely.com/devices/comfyui/", "name": "ComfyUI Diffusion workflow UI — latest version 0.36.0 | Firmwarely", "description": "Latest ComfyUI Diffusion workflow UI version is 0.36.0, released Sep 15, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-20"}, {"@type": "SoftwareApplication", "name": "ComfyUI Diffusion workflow UI firmware", "applicationCategory": "Firmware", "operatingSystem": "ComfyUI Diffusion workflow UI", "softwareVersion": "0.36.0", "author": {"@type": "Organization", "name": "ComfyUI"}, "datePublished": "2026-09-15", "releaseNotes": "What's Changed Add new model blueprints and reorganize subgraph categories main: bump the AMD Windows VA quota to 4TB (CORE-409) [Partner Noes] feat(OpenRouter): add Microsoft mai-image-2.6 models quant_ops: drop the dead ROCm triton arch gate [Partner Nodes] feat(Gemini-LLM): Add Gemini 3.8 Flash …", "url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.36.0"}]}</script>
 </head>
 <body>
@@ -348,8 +349,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}

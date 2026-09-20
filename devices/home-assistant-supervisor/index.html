@@ -244,6 +244,7 @@ footer a:hover{color:var(--text)}
   .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Smart home & cameras", "item": "https://www.firmwarely.com/category/smart-home/"}, {"@type": "ListItem", "position": 3, "name": "Home Assistant Supervisor", "item": "https://www.firmwarely.com/devices/home-assistant-supervisor/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/home-assistant-supervisor/", "url": "https://www.firmwarely.com/devices/home-assistant-supervisor/", "name": "Home Assistant Supervisor firmware 2026.09.3 | Firmwarely", "description": "Latest Home Assistant Supervisor firmware is 2026.09.3, released Sep 17, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-20"}, {"@type": "SoftwareApplication", "name": "Home Assistant Supervisor firmware", "applicationCategory": "Firmware", "operatingSystem": "Home Assistant Supervisor", "softwareVersion": "2026.09.3", "author": {"@type": "Organization", "name": "Home Assistant"}, "datePublished": "2026-09-17", "releaseNotes": ":sparkles: New Features #​7230 Add feature flag to drop NET_RAW from app containers #​7233 Add MKNOD, AUDIT_WRITE and SETFCAP capabilities and a feature flag to drop them from apps :bug: Bug Fixes #​7194 Block start/restart/rebuild/update APIs while Supervisor is not fully running #​7229 Don't leav…", "url": "https://github.com/home-assistant/supervisor/releases/tag/2026.09.3"}]}</script>
 </head>
 <body>
@@ -348,8 +349,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}

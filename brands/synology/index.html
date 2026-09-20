@@ -244,6 +244,7 @@ footer a:hover{color:var(--text)}
   .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Synology", "item": "https://www.firmwarely.com/brands/synology/"}]}, {"@type": "ItemList", "name": "Synology firmware", "numberOfItems": 12, "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Synology DiskStation DS923+", "url": "https://www.firmwarely.com/devices/synology-ds923-plus/"}, {"@type": "ListItem", "position": 2, "name": "Synology DiskStation DS224+", "url": "https://www.firmwarely.com/devices/synology-ds224-plus/"}, {"@type": "ListItem", "position": 3, "name": "Synology RT6600ax", "url": "https://www.firmwarely.com/devices/synology-rt6600ax/"}, {"@type": "ListItem", "position": 4, "name": "Synology DS425+", "url": "https://www.firmwarely.com/devices/synology-ds425-plus/"}, {"@type": "ListItem", "position": 5, "name": "Synology DS1522+", "url": "https://www.firmwarely.com/devices/synology-ds1522-plus/"}, {"@type": "ListItem", "position": 6, "name": "Synology DS220j", "url": "https://www.firmwarely.com/devices/synology-ds220j/"}, {"@type": "ListItem", "position": 7, "name": "Synology RS422+", "url": "https://www.firmwarely.com/devices/synology-rs422-plus/"}, {"@type": "ListItem", "position": 8, "name": "Synology WRX560", "url": "https://www.firmwarely.com/devices/synology-wrx560/"}, {"@type": "ListItem", "position": 9, "name": "Synology DiskStation DS1825+", "url": "https://www.firmwarely.com/devices/synology-ds1825-plus/"}, {"@type": "ListItem", "position": 10, "name": "Synology DiskStation DS925+", "url": "https://www.firmwarely.com/devices/synology-ds925-plus/"}, {"@type": "ListItem", "position": 11, "name": "Synology DiskStation DS725+", "url": "https://www.firmwarely.com/devices/synology-ds725-plus/"}, {"@type": "ListItem", "position": 12, "name": "Synology DiskStation DS423+", "url": "https://www.firmwarely.com/devices/synology-ds423-plus/"}]}]}</script>
 </head>
 <body>
@@ -304,8 +305,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}

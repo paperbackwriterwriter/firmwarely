@@ -244,6 +244,7 @@ footer a:hover{color:var(--text)}
   .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Self-hosted apps & servers", "item": "https://www.firmwarely.com/category/self-hosted/"}, {"@type": "ListItem", "position": 3, "name": "FreeScout Help desk", "item": "https://www.firmwarely.com/devices/freescout/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/freescout/", "url": "https://www.firmwarely.com/devices/freescout/", "name": "FreeScout Help desk — latest version 1.8.241 (Sep 2026) | Firmwarely", "description": "Latest FreeScout Help desk version is 1.8.241, released Sep 19, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-20"}, {"@type": "SoftwareApplication", "name": "FreeScout Help desk firmware", "applicationCategory": "Firmware", "operatingSystem": "FreeScout Help desk", "softwareVersion": "1.8.241", "author": {"@type": "Organization", "name": "FreeScout"}, "datePublished": "2026-09-19", "releaseNotes": "Added Added \"Paste as Plain Text\" button to the editor (#​5627) Auto link last entered link in the editor (#​5280) Updated German translation. Fixed Fixed \"Show Original\" on IMAP servers which reject searching by Message-ID (#​5633) Do not show .env file content on the final step of Installation Wi…", "url": "https://github.com/freescout-help-desk/freescout/releases/tag/1.8.241"}]}</script>
 </head>
 <body>
@@ -348,8 +349,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}

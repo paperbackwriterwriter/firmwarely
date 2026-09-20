@@ -221,6 +221,9 @@ def styles():
 # until Analytics is switched on for the project, which costs a failed request and nothing else.
 ANALYTICS = '<script defer src="/_vercel/insights/script.js"></script>'
 
+# Shared by every form on the site: three submissions in thirty seconds, then a countdown.
+FORMGUARD = '<script defer src="/formguard.js"></script>'
+
 
 def head(title, desc, path, extra="", noindex=False):
     robots = '<meta name="robots" content="noindex">\n' if noindex else ""
@@ -249,6 +252,7 @@ def head(title, desc, path, extra="", noindex=False):
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>{STYLES}</style>
 {ANALYTICS}
+{FORMGUARD}
 {extra}
 </head>
 <body>
@@ -307,8 +311,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}
@@ -828,8 +834,10 @@ within 30 days. See <a href="/legal/">privacy &amp; terms</a> for what we hold a
     var email = el("c-email").value.trim(), message = el("c-message").value.trim();
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address so we can reply."; el("c-email").focus(); return; }
     if (message.length < 10) { msg.className = "err"; msg.textContent = "Tell us a bit more about what you need — a sentence is plenty."; el("c-message").focus(); return; }
+    if (window.formGuard && window.formGuard.hold(msg, "err")) return;
     btn.disabled = true; msg.className = ""; msg.textContent = "Sending…";
     try {
+      if (window.formGuard) window.formGuard.record();
       var r = await fetch("/api/contact", { method: "POST", headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name: el("c-name").value.trim(), email: email, subject: el("c-subject").value,
           message: message, website: el("c-website").value }) });

@@ -244,6 +244,7 @@ footer a:hover{color:var(--text)}
   .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Self-hosted apps & servers", "item": "https://www.firmwarely.com/category/self-hosted/"}, {"@type": "ListItem", "position": 3, "name": "LobeHub Lobe Chat", "item": "https://www.firmwarely.com/devices/lobe-chat/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/lobe-chat/", "url": "https://www.firmwarely.com/devices/lobe-chat/", "name": "LobeHub Lobe Chat — latest version 2.2.17 (Sep 2026) | Firmwarely", "description": "Latest LobeHub Lobe Chat version is 2.2.17, released Sep 11, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-20"}, {"@type": "SoftwareApplication", "name": "LobeHub Lobe Chat firmware", "applicationCategory": "Firmware", "operatingSystem": "LobeHub Lobe Chat", "softwareVersion": "2.2.17", "author": {"@type": "Organization", "name": "LobeHub"}, "datePublished": "2026-09-11", "releaseNotes": "📦 Release v2.2.17 This release was automatically published from PR #​19434. Changes See PR description: https://github.com/lobehub/lobehub/pull/19434 Commit Message 🚀 LobeHub Release (20260911) Planned Release Date: September 11, 2026 Since v2.2.16: 210 non-merge commits · 13 contributors (six addi…", "url": "https://github.com/lobehub/lobehub/releases/tag/v2.2.17"}]}</script>
 </head>
 <body>
@@ -348,8 +349,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}

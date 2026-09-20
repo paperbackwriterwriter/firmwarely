@@ -244,6 +244,7 @@ footer a:hover{color:var(--text)}
   .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Self-hosted apps & servers", "item": "https://www.firmwarely.com/category/self-hosted/"}, {"@type": "ListItem", "position": 3, "name": "Portainer Container management", "item": "https://www.firmwarely.com/devices/portainer/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/portainer/", "url": "https://www.firmwarely.com/devices/portainer/", "name": "Portainer Container management — latest version 2.45.1 | Firmwarely", "description": "Latest Portainer Container management version is 2.45.1, released Sep 17, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-20"}, {"@type": "SoftwareApplication", "name": "Portainer Container management firmware", "applicationCategory": "Firmware", "operatingSystem": "Portainer Container management", "softwareVersion": "2.45.1", "author": {"@type": "Organization", "name": "Portainer"}, "datePublished": "2026-09-17", "releaseNotes": "Known issues On Async Edge environments, an invalid update schedule date can be displayed when browsing a snapshot Known issues with Podman support Podman environments aren't supported by auto-onboarding script It's not possible to add Podman environments via socket, when running a Portainer server…", "url": "https://github.com/portainer/portainer/releases/tag/2.45.1"}]}</script>
 </head>
 <body>
@@ -348,8 +349,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}

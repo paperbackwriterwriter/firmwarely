@@ -21,6 +21,12 @@ module.exports = async function (req, res) {
   // everything. Answer 200 so the bot has nothing to learn from the difference.
   if (String(body.website || "").trim()) return fw.json(res, 200, { ok: true });
 
+  // The browser applies this too (formguard.js), but anything can skip the browser.
+  // Same numbers, enforced per source: three submissions in thirty seconds.
+  if (!rl.allow("burst:" + rl.clientIp(req), 3, 30000)) {
+    return fw.json(res, 429, { error: "That's three in half a minute. Give it a moment and try again." });
+  }
+
   const email = fw.normEmail(body.email);
   const name = String(body.name || "").trim().slice(0, MAX.name);
   const subject = String(body.subject || "").trim().slice(0, MAX.subject) || "Support request";

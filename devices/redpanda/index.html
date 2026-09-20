@@ -244,6 +244,7 @@ footer a:hover{color:var(--text)}
   .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Self-hosted apps & servers", "item": "https://www.firmwarely.com/category/self-hosted/"}, {"@type": "ListItem", "position": 3, "name": "Redpanda Streaming platform", "item": "https://www.firmwarely.com/devices/redpanda/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/redpanda/", "url": "https://www.firmwarely.com/devices/redpanda/", "name": "Redpanda Streaming platform — latest version 26.2.2 | Firmwarely", "description": "Latest Redpanda Streaming platform version is 26.2.2, released Aug 22, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-20"}, {"@type": "SoftwareApplication", "name": "Redpanda Streaming platform firmware", "applicationCategory": "Firmware", "operatingSystem": "Redpanda Streaming platform", "softwareVersion": "26.2.2", "author": {"@type": "Organization", "name": "Redpanda"}, "datePublished": "2026-08-22", "releaseNotes": "Features rpk sql debug bundle collects a diagnostic bundle from an Oxla (SQL) cluster. rpk generate grafana-dashboard gains a new operations-stretch dashboard: a Grafana dashboard for stretch clusters managed by the Redpanda Operator, covering cross-cluster raft health, StretchCluster member status…", "url": "https://github.com/redpanda-data/redpanda/releases/tag/v26.2.2"}]}</script>
 </head>
 <body>
@@ -348,8 +349,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}
