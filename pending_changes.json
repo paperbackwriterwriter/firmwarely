@@ -151,6 +151,36 @@
    "notes": "Added Trips can be imported from TREK (Settings → Integrations). A TREK trip shows its plan above the recorded days, a trip with nothing recorded yet draws the planned stops on its map and card preview, a recorded trip can lay its plan over the track, and TREK day notes fill in the trip's day notes…",
    "source_url": "https://github.com/Freika/dawarich/releases/tag/1.15.0",
    "page_url": "https://www.firmwarely.com/devices/dawarich/"
+  },
+  "paperless-ngx": {
+   "id": "paperless-ngx",
+   "brand": "Paperless-ngx",
+   "model": "Document scanner and archive",
+   "category": "A",
+   "status": "update",
+   "version": "3.2.1",
+   "previous": "3.2.0",
+   "released": "2026-09-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "paperless-ngx 3.2.1 Bug Fixes Fix: only pass --conf to flower when flowerconfig.py exists (#​14182) Fix: replace stale mail-fetch overlap check with a self-expiring lock (#​14189) Fix: bump ocrmypdf to 17.12 to pick up the ligature text-layer fix (#​14190) Fix: rebuild the search index automaticall…",
+   "source_url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.2.1",
+   "page_url": "https://www.firmwarely.com/devices/paperless-ngx/"
+  },
+  "dozzle": {
+   "id": "dozzle",
+   "brand": "Dozzle",
+   "model": "Container log viewer",
+   "category": "A",
+   "status": "update",
+   "version": "11.1.1",
+   "previous": "11.1.0",
+   "released": "2026-09-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "🚀 Features Add 'fail' level to level_guesser.go -, and Claude Opus 5 in https://github.com/amir20/dozzle/issues/5166 (6a109) auth: Add DOZZLE_AUTH_OIDC_SCOPES to request extra OIDC scopes - and Claude Opus 5 in https://github.com/amir20/dozzle/issues/5195 (bcf03) charts: Read out the hovered bar on…",
+   "source_url": "https://github.com/amir20/dozzle/releases/tag/v11.1.1",
+   "page_url": "https://www.firmwarely.com/devices/dozzle/"
   }
  }
 }
