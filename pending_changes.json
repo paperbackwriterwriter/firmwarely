@@ -301,6 +301,21 @@
    "notes": "Changes: 8dc1ffb6ed2d28899f1dabfd8331198be3be9978 uztracker: new cats 084ab97f7eb8b279e631ce8829e5af59d29460c0 world-torrent: update domains 298e287fe79209bc849e817b9a6d2ca09e26efb3 ebooks-shares: removed. resolves #​5515 This list of changes was auto generated.",
    "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2627",
    "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "nzbhydra2": {
+   "id": "nzbhydra2",
+   "brand": "NZBHydra2",
+   "model": "Usenet meta search",
+   "category": "A",
+   "status": "update",
+   "version": "9.0.2",
+   "previous": "9.0.1",
+   "released": "2026-09-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "v9.0.2 (2026-09-20) Fix Restore downloader category selection popup when sending results to the downloader by clicking the row action button. See #​1085 Fix With form based login the welcome screen was shown on every login page. The UI asks the server whether the welcome was already shown, and that…",
+   "source_url": "https://github.com/theotherp/nzbhydra2/releases/tag/v9.0.2",
+   "page_url": "https://www.firmwarely.com/devices/nzbhydra2/"
   }
  }
 }
