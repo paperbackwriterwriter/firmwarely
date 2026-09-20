@@ -19,8 +19,8 @@ module.exports = async (req, res) => {
   }
 
   // The browser applies this too (formguard.js), but anything can skip the browser.
-  // Same numbers, enforced per source: one submission every thirty seconds.
-  if (!rl.allow("burst:" + rl.clientIp(req), 1, 30000)) {
+  // Same numbers, enforced per source and per form: one submission every thirty seconds.
+  if (!rl.allow("burst:subscribe:" + rl.clientIp(req), 1, 30000)) {
     return res.status(429).json({ ok: false, error: "One submission every 30 seconds. Give it a moment and try again." });
   }
   // A signup writes to the mailing list, so also cap a single source over a longer window.

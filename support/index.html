@@ -325,10 +325,10 @@ within 30 days. See <a href="/legal/">privacy &amp; terms</a> for what we hold a
     var email = el("c-email").value.trim(), message = el("c-message").value.trim();
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address so we can reply."; el("c-email").focus(); return; }
     if (message.length < 10) { msg.className = "err"; msg.textContent = "Tell us a bit more about what you need — a sentence is plenty."; el("c-message").focus(); return; }
-    if (window.formGuard && window.formGuard.hold(msg, "err")) return;
+    if (window.formGuard && window.formGuard.hold("contact", msg, "err")) return;
     btn.disabled = true; msg.className = ""; msg.textContent = "Sending…";
     try {
-      if (window.formGuard) window.formGuard.record();
+      if (window.formGuard) window.formGuard.record("contact");
       var r = await fetch("/api/contact", { method: "POST", headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name: el("c-name").value.trim(), email: email, subject: el("c-subject").value,
           message: message, website: el("c-website").value }) });
@@ -358,10 +358,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
-  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
+  if (window.formGuard && window.formGuard.hold("subscribe", msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
-    if (window.formGuard) window.formGuard.record();
+    if (window.formGuard) window.formGuard.record("subscribe");
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}
