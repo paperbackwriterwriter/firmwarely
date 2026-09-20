@@ -31,6 +31,21 @@
    "notes": "Release note is coming soon.",
    "source_url": "https://github.com/milvus-io/milvus/releases/tag/v3.0.2",
    "page_url": "https://www.firmwarely.com/devices/milvus/"
+  },
+  "acme-sh": {
+   "id": "acme-sh",
+   "brand": "acme.sh",
+   "model": "ACME shell client",
+   "category": "R",
+   "status": "update",
+   "version": "3.1.6",
+   "previous": "3.1.5",
+   "released": "2026-09-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release tags are signed from 3.1.6 on. The public key is allowed_signers in this repository; see \"Verify a Release\" in the README. 3.1.5 and earlier are unsigned. The 3.1.5 tag was created by the GitHub release form, which can only produce a lightweight tag and therefore carries no signature (#​727…",
+   "source_url": "https://github.com/acmesh-official/acme.sh/releases/tag/3.1.6",
+   "page_url": "https://www.firmwarely.com/devices/acme-sh/"
   }
  }
 }
