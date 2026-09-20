@@ -106,6 +106,36 @@
    "notes": "Added Added a tool to get the watchlist to the server of the Model Context Protocol (MCP) (experimental) Changed Extended the cache key of the portfolio snapshot by the performance calculation type Hardened the validation of the device id in the biometric authentication Upgraded stripe from version…",
    "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.72.0",
    "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
+  },
+  "verdaccio": {
+   "id": "verdaccio",
+   "brand": "Verdaccio",
+   "model": "npm registry",
+   "category": "A",
+   "status": "update",
+   "version": "6.10.4",
+   "previous": "6.10.3",
+   "released": "2026-09-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Patch Changes 7730e60: Update express to 4.22.3 — directly and through/middleware 8.1.4, verdaccio-audit 13.1.4 and/test-helper 4.1.4 — so the registry's entire HTTP stack resolves qs 6.16.0, which fixes several denial-of-service advisories in query-string handling: a remotely triggerable crash in …",
+   "source_url": "https://github.com/verdaccio/verdaccio/releases/tag/v6.10.4",
+   "page_url": "https://www.firmwarely.com/devices/verdaccio/"
+  },
+  "mediamtx": {
+   "id": "mediamtx",
+   "brand": "MediaMTX",
+   "model": "Media server",
+   "category": "A",
+   "status": "update",
+   "version": "1.21.1",
+   "previous": "1.21.0",
+   "released": "2026-09-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Fixes and improvements General require browser POST requests to have an allowed origin (https://github.com/bluenviron/mediamtx/issues/6238) Browsers can send POST requests without performing any preflight request and without checking whether the request origin is present in Access-Control-Allow-Ori…",
+   "source_url": "https://github.com/bluenviron/mediamtx/releases/tag/v1.21.1",
+   "page_url": "https://www.firmwarely.com/devices/mediamtx/"
   }
  }
 }
