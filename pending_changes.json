@@ -91,6 +91,21 @@
    "notes": "Installation Guide https://docs.onedev.io/category/installation-guide Change Log https://code.onedev.io/onedev/server/~builds/8482/fixed-issues?query=%22State%22+is+%22Released%22+order+by+%22Type%22+asc+%2C+%22Priority%22+desc Incompatibilities https://code.onedev.io/onedev/server/~builds/8482/mar…",
    "source_url": "https://github.com/theonedev/onedev/releases/tag/v16.7.0",
    "page_url": "https://www.firmwarely.com/devices/onedev/"
+  },
+  "ghostfolio": {
+   "id": "ghostfolio",
+   "brand": "Ghostfolio",
+   "model": "Wealth tracker",
+   "category": "A",
+   "status": "update",
+   "version": "3.72.0",
+   "previous": "3.71.0",
+   "released": "2026-09-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Added Added a tool to get the watchlist to the server of the Model Context Protocol (MCP) (experimental) Changed Extended the cache key of the portfolio snapshot by the performance calculation type Hardened the validation of the device id in the biometric authentication Upgraded stripe from version…",
+   "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.72.0",
+   "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
   }
  }
 }
