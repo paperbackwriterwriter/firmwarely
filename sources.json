@@ -9299,6 +9299,96 @@
    "type": "github",
    "repo": "nginx/nginx",
    "product_url": "https://github.com/nginx/nginx"
+  },
+  {
+   "id": "smsforwarder",
+   "brand": "SmsForwarder",
+   "model": "短信转发器——监控Android手机短信、来电、APP通知，并根据指定规则转发到其他手机：钉钉群自定义机器人、钉钉企业内",
+   "category": "S",
+   "type": "github",
+   "repo": "pppscn/SmsForwarder",
+   "product_url": "https://github.com/pppscn/SmsForwarder"
+  },
+  {
+   "id": "jetlinks-community",
+   "brand": "Jetlinks Community",
+   "model": "JetLinks 基于Java,Spring Boot",
+   "category": "S",
+   "type": "github",
+   "repo": "jetlinks/jetlinks-community",
+   "product_url": "https://github.com/jetlinks/jetlinks-community"
+  },
+  {
+   "id": "plotjuggler",
+   "brand": "PlotJuggler",
+   "model": "Time Series Visualization Tool that you deserve",
+   "category": "S",
+   "type": "github",
+   "repo": "PlotJuggler/PlotJuggler",
+   "product_url": "https://github.com/PlotJuggler/PlotJuggler"
+  },
+  {
+   "id": "mqttx",
+   "brand": "MQTTX",
+   "model": "All-in-One MQTT 5.0 client toolbox",
+   "category": "S",
+   "type": "github",
+   "repo": "emqx/MQTTX",
+   "product_url": "https://github.com/emqx/MQTTX"
+  },
+  {
+   "id": "fuxa",
+   "brand": "FUXA",
+   "model": "Web-based Process Visualization (SCADA/HMI/Dashboard)",
+   "category": "S",
+   "type": "github",
+   "repo": "frangoteam/FUXA",
+   "product_url": "https://github.com/frangoteam/FUXA"
+  },
+  {
+   "id": "dgiot",
+   "brand": "Dgiot",
+   "model": "Industrial IoT Platform",
+   "category": "S",
+   "type": "github",
+   "repo": "dgiot/dgiot",
+   "product_url": "https://github.com/dgiot/dgiot"
+  },
+  {
+   "id": "tiez-clipboard",
+   "brand": "Tiez Clipboard",
+   "model": "TieZ 是一款基于 Tauri 的跨平台剪贴板管理器 / A cross-platform clipboard",
+   "category": "S",
+   "type": "github",
+   "repo": "jimuzhe/tiez-clipboard",
+   "product_url": "https://github.com/jimuzhe/tiez-clipboard"
+  },
+  {
+   "id": "trystero",
+   "brand": "Trystero",
+   "model": "Build instant multiplayer webapps, no server required",
+   "category": "S",
+   "type": "github",
+   "repo": "dmotz/trystero",
+   "product_url": "https://github.com/dmotz/trystero"
+  },
+  {
+   "id": "openmower",
+   "brand": "OpenMower",
+   "model": "Let's upgrade cheap off-the-shelf robotic mowers",
+   "category": "M",
+   "type": "github",
+   "repo": "ClemensElflein/OpenMower",
+   "product_url": "https://github.com/ClemensElflein/OpenMower"
+  },
+  {
+   "id": "aily-blockly",
+   "brand": "Aily Blockly",
+   "model": "AI IDE",
+   "category": "S",
+   "type": "github",
+   "repo": "ailyProject/aily-blockly",
+   "product_url": "https://github.com/ailyProject/aily-blockly"
   }
  ]
 }
