@@ -53,13 +53,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.7.13.12-stable",
+   "version": "26.8.9.10-lts",
    "previous": "26.8.8.8-lts",
    "released": "2026-09-20",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.7.13.12-stable v26.7.13.12-stable",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.7.13.12-stable",
+   "notes": "Release v26.8.9.10-lts v26.8.9.10-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.9.10-lts",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "lobe-chat": {
@@ -76,6 +76,21 @@
    "notes": "Published from https://github.com/lobehub/lobehub/pull/19706 on merge commit 14dfc07b. Full Changelog: https://github.com/lobehub/lobehub/compare/v2.2.17...v2.2.18 --- 🚀 LobeHub Release (20260920) Planned Release Date: September 20, 2026 Since v2.2.17: 177 non-merge commits · 12 contributors (exclu…",
    "source_url": "https://github.com/lobehub/lobehub/releases/tag/v2.2.18",
    "page_url": "https://www.firmwarely.com/devices/lobe-chat/"
+  },
+  "onedev": {
+   "id": "onedev",
+   "brand": "OneDev",
+   "model": "Git server with CI",
+   "category": "A",
+   "status": "update",
+   "version": "16.7.0",
+   "previous": "16.6.4",
+   "released": "2026-09-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Installation Guide https://docs.onedev.io/category/installation-guide Change Log https://code.onedev.io/onedev/server/~builds/8482/fixed-issues?query=%22State%22+is+%22Released%22+order+by+%22Type%22+asc+%2C+%22Priority%22+desc Incompatibilities https://code.onedev.io/onedev/server/~builds/8482/mar…",
+   "source_url": "https://github.com/theonedev/onedev/releases/tag/v16.7.0",
+   "page_url": "https://www.firmwarely.com/devices/onedev/"
   }
  }
 }
