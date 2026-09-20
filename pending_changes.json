@@ -241,6 +241,21 @@
    "notes": "This is an automatically generated changelog for release 44.20260919. From previous stable version 44.20260916 there have been the following changes. One package per new version shown. Major packages | Name | Version | | --- | --- | | Kernel | 7.2.4-ogc3.1 | | Kernel (Nvidia LTS) | 6.18.49-ogc1.1 |…",
    "source_url": "https://github.com/ublue-os/bazzite/releases/tag/44.20260919",
    "page_url": "https://www.firmwarely.com/devices/bazzite/"
+  },
+  "docker-pi-hole": {
+   "id": "docker-pi-hole",
+   "brand": "Docker Pi Hole",
+   "model": "Official Pi-hole Docker image from pi-hole.net",
+   "category": "R",
+   "status": "update",
+   "version": "2026.09.0",
+   "previous": "2026.07.2",
+   "released": "2026-09-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Full Changelog: https://github.com/pi-hole/docker-pi-hole/compare/2026.07.1...2026.09.0",
+   "source_url": "https://github.com/pi-hole/docker-pi-hole/releases/tag/2026.09.0",
+   "page_url": "https://www.firmwarely.com/devices/docker-pi-hole/"
   }
  }
 }
