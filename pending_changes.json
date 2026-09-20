@@ -256,6 +256,21 @@
    "notes": "Full Changelog: https://github.com/pi-hole/docker-pi-hole/compare/2026.07.1...2026.09.0",
    "source_url": "https://github.com/pi-hole/docker-pi-hole/releases/tag/2026.09.0",
    "page_url": "https://www.firmwarely.com/devices/docker-pi-hole/"
+  },
+  "puter": {
+   "id": "puter",
+   "brand": "Puter",
+   "model": "Internet Computer",
+   "category": "N",
+   "status": "critical",
+   "version": "26.09.1",
+   "previous": "26.09",
+   "released": "2026-09-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed test: kv tests fix: card verification missing email fix: email driver rename fix: quote and pin Infron service tiers add email composer api (puter.email.send) fix: sharing, events and worker-credential authorization hardening chore(deps): bump nodemailer from 9.0.6 to 9.1.1[bot] in h…",
+   "source_url": "https://github.com/HeyPuter/puter/releases/tag/26.09.1",
+   "page_url": "https://www.firmwarely.com/devices/puter/"
   }
  }
 }
