@@ -46,6 +46,36 @@
    "notes": "Release tags are signed from 3.1.6 on. The public key is allowed_signers in this repository; see \"Verify a Release\" in the README. 3.1.5 and earlier are unsigned. The 3.1.5 tag was created by the GitHub release form, which can only produce a lightweight tag and therefore carries no signature (#​727…",
    "source_url": "https://github.com/acmesh-official/acme.sh/releases/tag/3.1.6",
    "page_url": "https://www.firmwarely.com/devices/acme-sh/"
+  },
+  "clickhouse": {
+   "id": "clickhouse",
+   "brand": "ClickHouse",
+   "model": "Analytics database",
+   "category": "A",
+   "status": "update",
+   "version": "26.7.13.12-stable",
+   "previous": "26.8.8.8-lts",
+   "released": "2026-09-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release v26.7.13.12-stable v26.7.13.12-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.7.13.12-stable",
+   "page_url": "https://www.firmwarely.com/devices/clickhouse/"
+  },
+  "lobe-chat": {
+   "id": "lobe-chat",
+   "brand": "LobeHub",
+   "model": "Lobe Chat",
+   "category": "A",
+   "status": "update",
+   "version": "2.2.18",
+   "previous": "2.2.17",
+   "released": "2026-09-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Published from https://github.com/lobehub/lobehub/pull/19706 on merge commit 14dfc07b. Full Changelog: https://github.com/lobehub/lobehub/compare/v2.2.17...v2.2.18 --- 🚀 LobeHub Release (20260920) Planned Release Date: September 20, 2026 Since v2.2.17: 177 non-merge commits · 12 contributors (exclu…",
+   "source_url": "https://github.com/lobehub/lobehub/releases/tag/v2.2.18",
+   "page_url": "https://www.firmwarely.com/devices/lobe-chat/"
   }
  }
 }
