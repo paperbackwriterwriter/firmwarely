@@ -244,6 +244,7 @@ footer a:hover{color:var(--text)}
   .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Self-hosted apps & servers", "item": "https://www.firmwarely.com/category/self-hosted/"}, {"@type": "ListItem", "position": 3, "name": "OpenSearch Search and analytics", "item": "https://www.firmwarely.com/devices/opensearch/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/opensearch/", "url": "https://www.firmwarely.com/devices/opensearch/", "name": "OpenSearch Search and analytics — latest version 3.8.0 | Firmwarely", "description": "Latest OpenSearch Search and analytics version is 3.8.0, released Aug 5, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-20"}, {"@type": "SoftwareApplication", "name": "OpenSearch Search and analytics firmware", "applicationCategory": "Firmware", "operatingSystem": "OpenSearch Search and analytics", "softwareVersion": "3.8.0", "author": {"@type": "Organization", "name": "OpenSearch"}, "datePublished": "2026-08-05", "releaseNotes": "Version 3.8.0 Release Notes Compatible with OpenSearch and OpenSearch Dashboards version 3.8.0 Features Add API to modify a data stream's backing indices (POST /_data_stream/_modify) (#​22487) Add multivalue_doc_count aggregation that returns the number of documents with two or more values (#​20472…", "url": "https://github.com/opensearch-project/OpenSearch/releases/tag/3.8.0"}]}</script>
 </head>
 <body>
@@ -348,8 +349,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}

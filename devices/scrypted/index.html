@@ -244,6 +244,7 @@ footer a:hover{color:var(--text)}
   .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Smart home & cameras", "item": "https://www.firmwarely.com/category/smart-home/"}, {"@type": "ListItem", "position": 3, "name": "Scrypted Camera and home hub", "item": "https://www.firmwarely.com/devices/scrypted/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/scrypted/", "url": "https://www.firmwarely.com/devices/scrypted/", "name": "Scrypted Camera and home hub firmware 0.147.0 | Firmwarely", "description": "Latest Scrypted Camera and home hub firmware is 0.147.0, released Sep 13, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-20"}, {"@type": "SoftwareApplication", "name": "Scrypted Camera and home hub firmware", "applicationCategory": "Firmware", "operatingSystem": "Scrypted Camera and home hub", "softwareVersion": "0.147.0", "author": {"@type": "Organization", "name": "Scrypted"}, "datePublished": "2026-09-13", "releaseNotes": "Commits cf1faef: postrelease (Koushik Dutta) package lock (Koushik Dutta) 9541ae3: postbeta (Koushik Dutta) package lock (Koushik Dutta) verup (Koushik Dutta) fix rtsp parser compliance https://github.com/koush/scrypted/pull/2137 (Koushik Dutta) fix rtsp parser compliance https://github.com/koush/s…", "url": "https://github.com/koush/scrypted/releases/tag/v0.147.0"}]}</script>
 </head>
 <body>
@@ -348,8 +349,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}

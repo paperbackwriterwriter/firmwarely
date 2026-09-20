@@ -244,6 +244,7 @@ footer a:hover{color:var(--text)}
   .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Routers & networking", "item": "https://www.firmwarely.com/category/routers/"}, {"@type": "ListItem", "position": 3, "name": "Cloudflare Tunnel daemon", "item": "https://www.firmwarely.com/devices/cloudflared/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/cloudflared/", "url": "https://www.firmwarely.com/devices/cloudflared/", "name": "Cloudflare Tunnel daemon firmware 2026.9.1 | Firmwarely", "description": "Latest Cloudflare Tunnel daemon firmware is 2026.9.1, released Sep 11, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-20"}, {"@type": "SoftwareApplication", "name": "Cloudflare Tunnel daemon firmware", "applicationCategory": "Firmware", "operatingSystem": "Cloudflare Tunnel daemon", "softwareVersion": "2026.9.1", "author": {"@type": "Organization", "name": "Cloudflare"}, "datePublished": "2026-09-11", "releaseNotes": "SHA256 Checksums: cloudflared-amd64.pkg: c4084991b83b2f538853c97a502f424805467e4375d18138ab80bc2414340997 cloudflared-arm64.pkg: b877c291db70cc83891785c4bf3da88ac3a82944d34ebeb953f932a4d5f02cf1 cloudflared-darwin-amd64.tgz: 1ea07ae775b03236bd6be18ca1848d6bdc4af2f4f3bce398823b5a36e5761b75 cloudflare…", "url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.9.1"}]}</script>
 </head>
 <body>
@@ -348,8 +349,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}

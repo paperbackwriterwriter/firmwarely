@@ -244,6 +244,7 @@ footer a:hover{color:var(--text)}
   .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Routers & networking", "item": "https://www.firmwarely.com/category/routers/"}, {"@type": "ListItem", "position": 3, "name": "acme.sh ACME shell client", "item": "https://www.firmwarely.com/devices/acme-sh/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/acme-sh/", "url": "https://www.firmwarely.com/devices/acme-sh/", "name": "acme.sh ACME shell client firmware — latest version 3.1.5 | Firmwarely", "description": "Latest acme.sh ACME shell client firmware is 3.1.5, released Sep 19, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-20"}, {"@type": "SoftwareApplication", "name": "acme.sh ACME shell client firmware", "applicationCategory": "Firmware", "operatingSystem": "acme.sh ACME shell client", "softwareVersion": "3.1.5", "author": {"@type": "Organization", "name": "acme.sh"}, "datePublished": "2026-09-19", "releaseNotes": "Release tags are signed from 3.1.5 on. The public key is allowed_signers in this repository; see \"Verify a Release\" in the README. New ACME_PACKAGED mode for distro-packaged installs: --install no longer copies the script into LE_WORKING_DIR, and --upgrade, --install-online and the auto-upgrade cro…", "url": "https://github.com/acmesh-official/acme.sh/releases/tag/3.1.5"}]}</script>
 </head>
 <body>
@@ -348,8 +349,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}

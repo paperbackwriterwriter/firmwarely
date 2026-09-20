@@ -37,6 +37,9 @@ jobs:
       - name: Stripe webhook self-test
         run: node scripts/selftest_webhook.mjs
 
+      - name: Form rate-limit self-test
+        run: node scripts/selftest_forms.mjs
+
   sources:
     runs-on: ubuntu-latest
     steps:

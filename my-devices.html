@@ -139,6 +139,7 @@ footer a:hover{color:var(--text)}
 .sr{position:absolute;left:-9999px}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 </head>
 <body>
 <header>
@@ -362,7 +363,9 @@ footer a:hover{color:var(--text)}
     var msg = document.getElementById("loginMsg");
     var btn = document.getElementById("loginBtn");
     if (!validEmail(email)) { msg.className = "msg err"; msg.textContent = "Enter a valid email address."; return; }
+    if (window.formGuard && window.formGuard.hold(msg, "msg err")) return;
     btn.disabled = true; msg.className = "msg"; msg.textContent = "Sending…";
+    if (window.formGuard) window.formGuard.record();
     fetch("/api/auth-request", {
       method: "POST",
       headers: { "Content-Type": "application/json" },

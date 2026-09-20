@@ -244,6 +244,7 @@ footer a:hover{color:var(--text)}
   .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Self-hosted apps & servers", "item": "https://www.firmwarely.com/category/self-hosted/"}, {"@type": "ListItem", "position": 3, "name": "Wizarr Media server invites", "item": "https://www.firmwarely.com/devices/wizarr/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/wizarr/", "url": "https://www.firmwarely.com/devices/wizarr/", "name": "Wizarr Media server invites — latest version 2026.9.1 | Firmwarely", "description": "Latest Wizarr Media server invites version is 2026.9.1, released Sep 14, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-20"}, {"@type": "SoftwareApplication", "name": "Wizarr Media server invites firmware", "applicationCategory": "Firmware", "operatingSystem": "Wizarr Media server invites", "softwareVersion": "2026.9.1", "author": {"@type": "Organization", "name": "Wizarr"}, "datePublished": "2026-09-14", "releaseNotes": "🚀 Stable Release v2026.9.1 What's Changed 🐛 Bug Fixes restrict wizard template rendering stabilize workers, expiry processing, and translations pin setup-uv action version 🧹 Chores Full Changelog: https://github.com/wizarrrr/wizarr/compare/v2026.9.1...v2026.9.1 📋 All Commits Included (5 commits) Cl…", "url": "https://github.com/wizarrrr/wizarr/releases/tag/v2026.9.1"}]}</script>
 </head>
 <body>
@@ -348,8 +349,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}

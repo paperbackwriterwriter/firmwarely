@@ -244,6 +244,7 @@ footer a:hover{color:var(--text)}
   .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Routers & networking", "item": "https://www.firmwarely.com/category/routers/"}, {"@type": "ListItem", "position": 3, "name": "Pomerium Identity-aware access proxy", "item": "https://www.firmwarely.com/devices/pomerium/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/pomerium/", "url": "https://www.firmwarely.com/devices/pomerium/", "name": "Pomerium Identity-aware access proxy firmware 0.33.3 | Firmwarely", "description": "Latest Pomerium Identity-aware access proxy firmware is 0.33.3, released Sep 9, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-20"}, {"@type": "SoftwareApplication", "name": "Pomerium Identity-aware access proxy firmware", "applicationCategory": "Firmware", "operatingSystem": "Pomerium Identity-aware access proxy", "softwareVersion": "0.33.3", "author": {"@type": "Organization", "name": "Pomerium"}, "datePublished": "2026-09-09", "releaseNotes": "What's Changed Fixes grpc: identify owner and changed options when the outbound connection reloads (#​6738) mcp: keep ext_proc databroker access working across outbound connection reloads (#​6740) mcp: negotiate supported token auth endpoint methods based on Oauth2 server metadata[bot] in https://g…", "url": "https://github.com/pomerium/pomerium/releases/tag/v0.33.3"}]}</script>
 </head>
 <body>
@@ -348,8 +349,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}

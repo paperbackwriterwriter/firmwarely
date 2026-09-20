@@ -244,6 +244,7 @@ footer a:hover{color:var(--text)}
   .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Self-hosted apps & servers", "item": "https://www.firmwarely.com/category/self-hosted/"}, {"@type": "ListItem", "position": 3, "name": "Podman Container engine", "item": "https://www.firmwarely.com/devices/podman/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/podman/", "url": "https://www.firmwarely.com/devices/podman/", "name": "Podman Container engine — latest version 6.1.2 (Sep 2026) | Firmwarely", "description": "Latest Podman Container engine version is 6.1.2, released Sep 16, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-20"}, {"@type": "SoftwareApplication", "name": "Podman Container engine firmware", "applicationCategory": "Firmware", "operatingSystem": "Podman Container engine", "softwareVersion": "6.1.2", "author": {"@type": "Organization", "name": "Podman"}, "datePublished": "2026-09-16", "releaseNotes": "Security This release addresses (CVE-2025-11395), where importing images containing crafted layer tarballs with the podman load command, or importing volumes containing crafted symlinks with podman volume import, allows overwriting files on the host. This release also addresses CVE-2026-79699 and C…", "url": "https://github.com/podman-container-tools/podman/releases/tag/v6.1.2"}]}</script>
 </head>
 <body>
@@ -348,8 +349,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}

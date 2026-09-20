@@ -244,6 +244,7 @@ footer a:hover{color:var(--text)}
   .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Smart home & cameras", "item": "https://www.firmwarely.com/category/smart-home/"}, {"@type": "ListItem", "position": 3, "name": "Serial Studio Telemetry dashboard", "item": "https://www.firmwarely.com/devices/serial-studio/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/serial-studio/", "url": "https://www.firmwarely.com/devices/serial-studio/", "name": "Serial Studio Telemetry dashboard firmware 4.1.0 | Firmwarely", "description": "Latest Serial Studio Telemetry dashboard firmware is 4.1.0, released Aug 31, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-20"}, {"@type": "SoftwareApplication", "name": "Serial Studio Telemetry dashboard firmware", "applicationCategory": "Firmware", "operatingSystem": "Serial Studio Telemetry dashboard", "softwareVersion": "4.1.0", "author": {"@type": "Organization", "name": "Serial Studio"}, "datePublished": "2026-08-31", "releaseNotes": "⚠️ Important Notices Windows Smart App Control: On newer Windows machines, Smart App Control may prevent Serial Studio from running because the binaries are not code-signed yet. Either install from the Microsoft Store, or turn off Smart App Control (Windows Security → App & browser control → Smart …", "url": "https://github.com/Serial-Studio/Serial-Studio/releases/tag/v4.1.0"}]}</script>
 </head>
 <body>
@@ -348,8 +349,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}

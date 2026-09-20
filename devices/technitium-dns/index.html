@@ -244,6 +244,7 @@ footer a:hover{color:var(--text)}
   .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Routers & networking", "item": "https://www.firmwarely.com/category/routers/"}, {"@type": "ListItem", "position": 3, "name": "Technitium DNS Server", "item": "https://www.firmwarely.com/devices/technitium-dns/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/technitium-dns/", "url": "https://www.firmwarely.com/devices/technitium-dns/", "name": "Technitium DNS Server firmware — latest version 15.5 | Firmwarely", "description": "Latest Technitium DNS Server firmware is 15.5, released Sep 19, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-20"}, {"@type": "SoftwareApplication", "name": "Technitium DNS Server firmware", "applicationCategory": "Firmware", "operatingSystem": "Technitium DNS Server", "softwareVersion": "15.5", "author": {"@type": "Organization", "name": "Technitium"}, "datePublished": "2026-09-19", "releaseNotes": "Technitium DNS Server v15.5 is now available for download. This update adds LDAP authentication support, a Zone File Editor option in GUI, and many other minor features. It also fixes multiple bugs and security issues that were reported. See what's new in this release: https://github.com/Technitium…", "url": "https://github.com/TechnitiumSoftware/DnsServer/releases/tag/v15.5.0"}]}</script>
 </head>
 <body>
@@ -348,8 +349,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}

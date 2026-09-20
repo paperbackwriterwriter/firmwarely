@@ -244,6 +244,7 @@ footer a:hover{color:var(--text)}
   .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Makers & open firmware", "item": "https://www.firmwarely.com/category/makers/"}, {"@type": "ListItem", "position": 3, "name": "Fluidd Klipper web interface", "item": "https://www.firmwarely.com/devices/fluidd/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/fluidd/", "url": "https://www.firmwarely.com/devices/fluidd/", "name": "Fluidd Klipper web interface firmware 1.37.5 | Firmwarely", "description": "Latest Fluidd Klipper web interface firmware is 1.37.5, released Sep 9, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-20"}, {"@type": "SoftwareApplication", "name": "Fluidd Klipper web interface firmware", "applicationCategory": "Firmware", "operatingSystem": "Fluidd Klipper web interface", "softwareVersion": "1.37.5", "author": {"@type": "Organization", "name": "Fluidd"}, "datePublished": "2026-09-09", "releaseNotes": "Features adds Docker health check (#​1937) (94ea4ea) i18n-es: Update Spanish translations (e2017f2) i18n-pl: Update Polish translations (39680b3) improves print history loading (#​1943) (e1f6078) optional trailing-average smoothing for power/speed chart series (#​1904) (6c04f86) use slim Docker ima…", "url": "https://github.com/fluidd-core/fluidd/releases/tag/v1.37.5"}]}</script>
 </head>
 <body>
@@ -348,8 +349,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}

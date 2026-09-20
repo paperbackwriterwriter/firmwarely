@@ -244,6 +244,7 @@ footer a:hover{color:var(--text)}
   .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "PCs, TVs & gadgets", "item": "https://www.firmwarely.com/category/pcs-tvs-gadgets/"}, {"@type": "ListItem", "position": 3, "name": "LibreHardwareMonitor Hardware sensor monitor", "item": "https://www.firmwarely.com/devices/libre-hardware-monitor/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/libre-hardware-monitor/", "url": "https://www.firmwarely.com/devices/libre-hardware-monitor/", "name": "LibreHardwareMonitor Hardware sensor monitor firmware 0.9.6", "description": "Latest LibreHardwareMonitor Hardware sensor monitor firmware is 0.9.6, released Feb 14, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-20"}, {"@type": "SoftwareApplication", "name": "LibreHardwareMonitor Hardware sensor monitor firmware", "applicationCategory": "Firmware", "operatingSystem": "LibreHardwareMonitor Hardware sensor monitor", "softwareVersion": "0.9.6", "author": {"@type": "Organization", "name": "LibreHardwareMonitor"}, "datePublished": "2026-02-14", "releaseNotes": "What's Changed Update DiskInfoToolkit. GA-A320M Add missing controls Feature/arctic fan controller Bump System.IO.Ports from 10.0.1 to 10.0.2[bot] in https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/pull/2158 Bump System.Management from 10.0.1 to 10.0.2[bot] in https://github.com/LibreH…", "url": "https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases/tag/v0.9.6"}]}</script>
 </head>
 <body>
@@ -348,8 +349,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}

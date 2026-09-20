@@ -244,6 +244,7 @@ footer a:hover{color:var(--text)}
   .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Routers & networking", "item": "https://www.firmwarely.com/category/routers/"}, {"@type": "ListItem", "position": 3, "name": "Headscale Tailscale control server", "item": "https://www.firmwarely.com/devices/headscale/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/headscale/", "url": "https://www.firmwarely.com/devices/headscale/", "name": "Headscale Tailscale control server firmware 0.29.3 | Firmwarely", "description": "Latest Headscale Tailscale control server firmware is 0.29.3, released Jul 29, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-20"}, {"@type": "SoftwareApplication", "name": "Headscale Tailscale control server firmware", "applicationCategory": "Firmware", "operatingSystem": "Headscale Tailscale control server", "softwareVersion": "0.29.3", "author": {"@type": "Organization", "name": "Headscale"}, "datePublished": "2026-07-29", "releaseNotes": "Minimum supported Tailscale client version: v1.80.0 Changes Fix tagged node stuck expired after tailscale logout, unable to re-authenticate #​3394 Re-registering a tagged node with a different pre-auth key now applies the new key's tags instead of silently keeping the old ones #​3394 Fix re-authent…", "url": "https://github.com/juanfont/headscale/releases/tag/v0.29.3"}]}</script>
 </head>
 <body>
@@ -348,8 +349,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}

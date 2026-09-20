@@ -244,6 +244,7 @@ footer a:hover{color:var(--text)}
   .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Self-hosted apps & servers", "item": "https://www.firmwarely.com/category/self-hosted/"}, {"@type": "ListItem", "position": 3, "name": "QuestDB Time series database", "item": "https://www.firmwarely.com/devices/questdb/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/questdb/", "url": "https://www.firmwarely.com/devices/questdb/", "name": "QuestDB Time series database — latest version 10.0.1 | Firmwarely", "description": "Latest QuestDB Time series database version is 10.0.1, released Aug 24, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-20"}, {"@type": "SoftwareApplication", "name": "QuestDB Time series database firmware", "applicationCategory": "Firmware", "operatingSystem": "QuestDB Time series database", "softwareVersion": "10.0.1", "author": {"@type": "Organization", "name": "QuestDB"}, "datePublished": "2026-08-24", "releaseNotes": "QuestDB 10.0.1 QuestDB 10.0.1 is a maintenance release that builds on 10.0.0 with improvements across SQL, QWP, Live Views, DECIMAL, storage, and the Web Console. Expanded fuzz, fault-injection, and concurrency coverage strengthens a number of less-common execution and failure paths. The release al…", "url": "https://github.com/questdb/questdb/releases/tag/10.0.1"}]}</script>
 </head>
 <body>
@@ -348,8 +349,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}

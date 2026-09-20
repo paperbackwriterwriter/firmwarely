@@ -244,6 +244,7 @@ footer a:hover{color:var(--text)}
   .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Self-hosted apps & servers", "item": "https://www.firmwarely.com/category/self-hosted/"}, {"@type": "ListItem", "position": 3, "name": "Jan Local AI assistant", "item": "https://www.firmwarely.com/devices/jan-ai/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/jan-ai/", "url": "https://www.firmwarely.com/devices/jan-ai/", "name": "Jan Local AI assistant — latest version 0.8.4 (Jul 2026) | Firmwarely", "description": "Latest Jan Local AI assistant version is 0.8.4, released Jul 23, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-20"}, {"@type": "SoftwareApplication", "name": "Jan Local AI assistant firmware", "applicationCategory": "Firmware", "operatingSystem": "Jan Local AI assistant", "softwareVersion": "0.8.4", "author": {"@type": "Organization", "name": "Jan"}, "datePublished": "2026-07-23", "releaseNotes": "Migration Settings and credentials now live in a backend-managed store. Provider settings and credentials previously persisted in the webview's localStorage. In 0.8.4, Jan reads and writes them from a backend-managed store instead (secrets go to the OS keyring). Your existing settings and API keys …", "url": "https://github.com/janhq/jan/releases/tag/v0.8.4"}]}</script>
 </head>
 <body>
@@ -348,8 +349,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}

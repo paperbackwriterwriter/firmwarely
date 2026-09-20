@@ -244,6 +244,7 @@ footer a:hover{color:var(--text)}
   .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Makers & open firmware", "item": "https://www.firmwarely.com/category/makers/"}, {"@type": "ListItem", "position": 3, "name": "Prusa MK4S", "item": "https://www.firmwarely.com/devices/prusa-mk4s/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/prusa-mk4s/", "url": "https://www.firmwarely.com/devices/prusa-mk4s/", "name": "Prusa MK4S firmware — latest version 6.10.2 (Sep 2026) | Firmwarely", "description": "Latest Prusa MK4S firmware is 6.10.2, released Sep 16, 2026. Release notes, version history, how to update, and email alerts for new or security fixes.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-20"}, {"@type": "SoftwareApplication", "name": "Prusa MK4S firmware", "applicationCategory": "Firmware", "operatingSystem": "Prusa MK4S", "softwareVersion": "6.10.2", "author": {"@type": "Organization", "name": "Prusa"}, "datePublished": "2026-09-16", "releaseNotes": "Summary Changes and improvements Increased Heatbed parking speed (5 mm/s → 15 mm/s) Fixes Fixed display randomly freezing Fixed print resume stuck at \"Heating\" Fixed extruder motor not spinning after manual tool change Improved Tool Offset Sensor stability [XL+] Fixed parking position in tool offse…", "url": "https://github.com/prusa3d/Prusa-Firmware-Buddy/releases/tag/v6.10.2"}]}</script>
 </head>
 <body>
@@ -348,8 +349,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}

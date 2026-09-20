@@ -244,6 +244,7 @@ footer a:hover{color:var(--text)}
   .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Self-hosted apps & servers", "item": "https://www.firmwarely.com/category/self-hosted/"}, {"@type": "ListItem", "position": 3, "name": "ZITADEL Identity platform", "item": "https://www.firmwarely.com/devices/zitadel/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/zitadel/", "url": "https://www.firmwarely.com/devices/zitadel/", "name": "ZITADEL Identity platform — latest version 4.17.3 | Firmwarely", "description": "Latest ZITADEL Identity platform version is 4.17.3, released Sep 4, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-20"}, {"@type": "SoftwareApplication", "name": "ZITADEL Identity platform firmware", "applicationCategory": "Firmware", "operatingSystem": "ZITADEL Identity platform", "softwareVersion": "4.17.3", "author": {"@type": "Organization", "name": "ZITADEL"}, "datePublished": "2026-09-04", "releaseNotes": "4.17.3 (2026-09-04) Bug Fixes crypto: use authenticated encryption for IDP intent tokens (41b1114) login: authorize IDP linking via enrollment guard, not isSessionValid (a53fbc4) login: translate authentication and OTP strings (#​12668) (739e91e), closes #​12481 #​12226 security: check auth method …", "url": "https://github.com/zitadel/zitadel/releases/tag/v4.17.3"}]}</script>
 </head>
 <body>
@@ -348,8 +349,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}

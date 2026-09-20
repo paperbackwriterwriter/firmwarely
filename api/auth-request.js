@@ -8,6 +8,12 @@ module.exports = async function (req, res) {
   const email = fw.normEmail(body.email);
   if (!fw.validEmail(email)) return fw.json(res, 400, { error: "Enter a valid email address." });
 
+  // The browser applies this too (formguard.js), but anything can skip the browser.
+  // Same numbers, enforced per source: three submissions in thirty seconds.
+  if (!rl.allow("burst:" + rl.clientIp(req), 3, 30000)) {
+    return fw.json(res, 429, { error: "That's three in half a minute. Give it a moment and try again." });
+  }
+
   // Anyone can type any address here, so this endpoint must not be a way to make us
   // email strangers on demand. Throttle per address and per source before sending.
   if (!rl.allow("email:" + email, 3, 15 * 60 * 1000) || !rl.allow("ip:" + rl.clientIp(req), 12, 15 * 60 * 1000)) {

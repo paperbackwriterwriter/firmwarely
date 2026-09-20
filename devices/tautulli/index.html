@@ -244,6 +244,7 @@ footer a:hover{color:var(--text)}
   .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Self-hosted apps & servers", "item": "https://www.firmwarely.com/category/self-hosted/"}, {"@type": "ListItem", "position": 3, "name": "Tautulli Plex monitoring", "item": "https://www.firmwarely.com/devices/tautulli/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/tautulli/", "url": "https://www.firmwarely.com/devices/tautulli/", "name": "Tautulli Plex monitoring — latest version 2.18.1 | Firmwarely", "description": "Latest Tautulli Plex monitoring version is 2.18.1, released Aug 27, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-20"}, {"@type": "SoftwareApplication", "name": "Tautulli Plex monitoring firmware", "applicationCategory": "Firmware", "operatingSystem": "Tautulli Plex monitoring", "softwareVersion": "2.18.1", "author": {"@type": "Organization", "name": "Tautulli"}, "datePublished": "2026-08-27", "releaseNotes": "Changelog v2.18.1 (2026-08-26) Activity: Fix: Empty sessions row being added into the database. History: Fix: Unable to expand detailed history when \"Current Activity in History Tables\" setting is enabled. (#​2805) Notifications: Fix: Email password being overwritten with a blank value when saving …", "url": "https://github.com/Tautulli/Tautulli/releases/tag/v2.18.1"}]}</script>
 </head>
 <body>
@@ -348,8 +349,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}

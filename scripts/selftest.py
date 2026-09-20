@@ -468,6 +468,59 @@ def test_analytics_and_its_disclosure():
     check("the policy is dated the day it changed", "Last updated September 17, 2026" in legal, True)
 
 
+# ---- no form can be fired three times in half a minute ----
+def test_form_rate_limit():
+    build_pages.STYLES = build_pages.styles()
+    devs = json.loads(Path("devices.json").read_text())["devices"]
+    tag = "/formguard.js"
+
+    # every page that carries a form has to load the guard
+    pages = {"index.html": Path("index.html").read_text(),
+             "my-devices.html": Path("my-devices.html").read_text(),
+             "dashboard.html": Path("dashboard.html").read_text(),
+             "support": build_pages.support_page(),
+             "device": build_pages.device_page(devs[0])}
+    check("every page with a form loads the guard", [n for n, h in pages.items() if tag not in h], [])
+    check("it is deferred like the rest",
+          [n for n, h in pages.items() if '<script defer src="' + tag + '">' not in h], [])
+    check("the file it points at exists", Path("formguard.js").exists(), True)
+
+    # every handler that posts has to ask first and count after
+    posting = {"index hero": ("index.html", "heroBtn.disabled = true"),
+               "index signup": ("index.html", "await subscribe(email,"),
+               "my-devices sign-in": ("my-devices.html", 'fetch("/api/auth-request"'),
+               "dashboard sign-in": ("dashboard.html", 'fetch("/api/auth-request"')}
+    missing = []
+    for label, (f, _) in posting.items():
+        src = Path(f).read_text()
+        if src.count("formGuard.hold(") < 1 or src.count("formGuard.record()") < 1:
+            missing.append(label)
+    check("the hand-written forms check the limit and count the send", missing, [])
+    for label, page in (("footer signup", pages["device"]), ("contact", pages["support"])):
+        check(f"the generated {label} form checks the limit",
+              "formGuard.hold(" in page and "formGuard.record()" in page, True)
+
+    # a guard that throws must not be able to block a legitimate submission
+    check("every call is guarded, so a failed load can't break the forms",
+          [n for n, h in pages.items()
+           if re.search(r"(?<!window\.formGuard && window\.)formGuard\.hold\(", h)], [])
+
+    # the server enforces the same thing, because the browser can be skipped
+    for f in ("api/subscribe.js", "api/contact.js", "api/auth-request.js"):
+        src = Path(f).read_text()
+        check(f"{f} enforces the burst limit itself",
+              'rl.allow("burst:" + rl.clientIp(req), 3, 30000)' in src, True)
+    check("subscribe still caps a source over a longer window too",
+          "subscribe-ip:" in Path("api/subscribe.js").read_text(), True)
+
+    # adding a device to your own list is not a submission to throttle
+    check("the my-devices add form is left alone",
+          "formGuard" in Path("my-devices.html").read_text().split('id="addForm"')[1][:400], False)
+
+    wf = Path(".github/workflows/check-sources.yml").read_text()
+    check("CI runs the limiter's own test", "selftest_forms.mjs" in wf, True)
+
+
 def test_clean():
     cases = [
         ("script tag is neutralised", "<script>alert(1)</script>ok", "alert(1) ok"),
@@ -767,7 +820,7 @@ def test_schedule_and_digest():
 
 
 for t in (test_compare, test_new_release, test_saved_devices, test_routing, test_forced_guard,
-          test_update_guides, test_sources_well_formed, test_site_shows_only_real_data, test_support_page, test_dates_are_honest, test_withdrawn_devices_redirect, test_analytics_and_its_disclosure, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
+          test_update_guides, test_sources_well_formed, test_site_shows_only_real_data, test_support_page, test_dates_are_honest, test_withdrawn_devices_redirect, test_analytics_and_its_disclosure, test_form_rate_limit, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
           test_landing_pages, test_schedule_and_digest):
     print(f"\n{t.__name__}")
     t()

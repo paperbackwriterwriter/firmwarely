@@ -244,6 +244,7 @@ footer a:hover{color:var(--text)}
   .pro-price small{font-size:.9rem;color:var(--muted);font-weight:400}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/formguard.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Smart home & cameras", "item": "https://www.firmwarely.com/category/smart-home/"}, {"@type": "ListItem", "position": 3, "name": "Hyperion Ambient lighting", "item": "https://www.firmwarely.com/devices/hyperion-ng/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/hyperion-ng/", "url": "https://www.firmwarely.com/devices/hyperion-ng/", "name": "Hyperion Ambient lighting firmware — latest version 2.2.1 | Firmwarely", "description": "Latest Hyperion Ambient lighting firmware is 2.2.1, released Apr 6, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-20"}, {"@type": "SoftwareApplication", "name": "Hyperion Ambient lighting firmware", "applicationCategory": "Firmware", "operatingSystem": "Hyperion Ambient lighting", "softwareVersion": "2.2.1", "author": {"@type": "Organization", "name": "Hyperion"}, "datePublished": "2026-04-06", "releaseNotes": "Hyperion 2.2.1 – Fix & Stability Update This is a small maintenance release focused on improving stability and fixing a few issues introduced in previous versions. No major changes—just a smoother, more reliable experience. ✅ What’s improved Art-Net reliability fixes Corrected a limitation that res…", "url": "https://github.com/hyperion-project/hyperion.ng/releases/tag/2.2.1"}]}</script>
 </head>
 <body>
@@ -348,8 +349,10 @@ if (f) f.addEventListener("submit", async e => {
   const msg = document.getElementById("s-msg"), btn = f.querySelector("button[type=submit]");
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
+  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
+    if (window.formGuard) window.formGuard.record();
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
     let d = {}; try { d = await r.json(); } catch {}
