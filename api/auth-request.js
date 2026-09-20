@@ -9,9 +9,9 @@ module.exports = async function (req, res) {
   if (!fw.validEmail(email)) return fw.json(res, 400, { error: "Enter a valid email address." });
 
   // The browser applies this too (formguard.js), but anything can skip the browser.
-  // Same numbers, enforced per source: three submissions in thirty seconds.
-  if (!rl.allow("burst:" + rl.clientIp(req), 3, 30000)) {
-    return fw.json(res, 429, { error: "That's three in half a minute. Give it a moment and try again." });
+  // Same numbers, enforced per source: one submission every thirty seconds.
+  if (!rl.allow("burst:" + rl.clientIp(req), 1, 30000)) {
+    return fw.json(res, 429, { error: "One submission every 30 seconds. Give it a moment and try again." });
   }
 
   // Anyone can type any address here, so this endpoint must not be a way to make us
