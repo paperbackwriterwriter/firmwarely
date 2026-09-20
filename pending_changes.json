@@ -271,6 +271,36 @@
    "notes": "What's Changed test: kv tests fix: card verification missing email fix: email driver rename fix: quote and pin Infron service tiers add email composer api (puter.email.send) fix: sharing, events and worker-credential authorization hardening chore(deps): bump nodemailer from 9.0.6 to 9.1.1[bot] in h…",
    "source_url": "https://github.com/HeyPuter/puter/releases/tag/26.09.1",
    "page_url": "https://www.firmwarely.com/devices/puter/"
+  },
+  "cloudflare-ddns": {
+   "id": "cloudflare-ddns",
+   "brand": "Cloudflare DDNS",
+   "model": "Dynamic DNS updater",
+   "category": "R",
+   "status": "update",
+   "version": "1.17.1",
+   "previous": "1.17.0",
+   "released": "2026-09-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release improves Cloudflare trace IP detection, adds a GitHub Container Registry mirror, and makes configuration errors easier to diagnose. Improvements More resilient IP detection. The built-in cloudflare.trace provider now tries multiple Cloudflare endpoints and uses the first validated resp…",
+   "source_url": "https://github.com/favonia/cloudflare-ddns/releases/tag/v1.17.1",
+   "page_url": "https://www.firmwarely.com/devices/cloudflare-ddns/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.2627",
+   "previous": "0.24.2624",
+   "released": "2026-09-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes: 8dc1ffb6ed2d28899f1dabfd8331198be3be9978 uztracker: new cats 084ab97f7eb8b279e631ce8829e5af59d29460c0 world-torrent: update domains 298e287fe79209bc849e817b9a6d2ca09e26efb3 ebooks-shares: removed. resolves #​5515 This list of changes was auto generated.",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2627",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
