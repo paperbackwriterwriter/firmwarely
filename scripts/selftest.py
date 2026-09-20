@@ -468,7 +468,7 @@ def test_analytics_and_its_disclosure():
     check("the policy is dated the day it changed", "Last updated September 17, 2026" in legal, True)
 
 
-# ---- no form can be fired twice in half a minute ----
+# ---- no single form can be fired twice in half a minute ----
 def test_form_rate_limit():
     build_pages.STYLES = build_pages.styles()
     devs = json.loads(Path("devices.json").read_text())["devices"]
@@ -493,12 +493,25 @@ def test_form_rate_limit():
     missing = []
     for label, (f, _) in posting.items():
         src = Path(f).read_text()
-        if src.count("formGuard.hold(") < 1 or src.count("formGuard.record()") < 1:
+        if src.count("formGuard.hold(") < 1 or src.count("formGuard.record(") < 1:
             missing.append(label)
     check("the hand-written forms check the limit and count the send", missing, [])
     for label, page in (("footer signup", pages["device"]), ("contact", pages["support"])):
         check(f"the generated {label} form checks the limit",
-              "formGuard.hold(" in page and "formGuard.record()" in page, True)
+              "formGuard.hold(" in page and "formGuard.record(" in page, True)
+
+    # each form carries its own budget, and the name it uses has to be one the server knows
+    names = {"subscribe", "contact", "signin"}
+    used = set()
+    for h in list(pages.values()):
+        used |= set(re.findall(r'formGuard\.(?:hold|record)\("([a-z-]+)"', h))
+    check("every call names a form", bool(used), True)
+    check("and only names ones the endpoints enforce", sorted(used - names), [])
+    check("the sign-in and contact forms don't share a budget",
+          'formGuard.hold("signin"' in pages["my-devices.html"]
+          and 'formGuard.hold("contact"' in pages["support"], True)
+    check("both signup forms share one, since the server can't tell them apart",
+          Path("index.html").read_text().count('formGuard.hold("subscribe"'), 2)
 
     # a guard that throws must not be able to block a legitimate submission
     check("every call is guarded, so a failed load can't break the forms",
@@ -506,10 +519,11 @@ def test_form_rate_limit():
            if re.search(r"(?<!window\.formGuard && window\.)formGuard\.hold\(", h)], [])
 
     # the server enforces the same thing, because the browser can be skipped
-    for f in ("api/subscribe.js", "api/contact.js", "api/auth-request.js"):
+    for f, name in (("api/subscribe.js", "subscribe"), ("api/contact.js", "contact"),
+                    ("api/auth-request.js", "signin")):
         src = Path(f).read_text()
-        check(f"{f} enforces the burst limit itself",
-              'rl.allow("burst:" + rl.clientIp(req), 1, 30000)' in src, True)
+        check(f"{f} enforces its own form's limit",
+              f'rl.allow("burst:{name}:" + rl.clientIp(req), 1, 30000)' in src, True)
     check("subscribe still caps a source over a longer window too",
           "subscribe-ip:" in Path("api/subscribe.js").read_text(), True)
 

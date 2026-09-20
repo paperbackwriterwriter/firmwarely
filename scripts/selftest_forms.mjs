@@ -1,4 +1,4 @@
-// Self-test for formguard.js — the shared one-in-30s limit on the site's forms.
+// Self-test for formguard.js — the per-form one-in-30s limit on the site's forms.
 //
 //     node scripts/selftest_forms.mjs
 //
@@ -33,30 +33,53 @@ const T = 1_000_000_000_000;   // a fixed "now" so nothing depends on the wall c
 console.log("\nthe limit itself");
 {
   const g = guard();
-  check("the first submission goes through", g.wait(T), 0);
-  g.record(T);
-  check("the next one is held", g.wait(T + 1) > 0, true);
-  check("...and is told to wait the rest of the window", g.wait(T + 1), 30);
-  check("...counting down as the window slides", g.wait(T + 20_000), 10);
-  check("...still held one second before the window is up", g.wait(T + 29_000), 1);
-  check("the window releases exactly 30s after the send", g.wait(T + 30_000), 0);
-  g.record(T + 30_001);
-  check("and the next send starts its own window", g.wait(T + 30_002), 30);
+  check("the first submission goes through", g.wait("contact", T), 0);
+  g.record("contact", T);
+  check("the next one is held", g.wait("contact", T + 1) > 0, true);
+  check("...and is told to wait the rest of the window", g.wait("contact", T + 1), 30);
+  check("...counting down as the window slides", g.wait("contact", T + 20_000), 10);
+  check("...still held one second before the window is up", g.wait("contact", T + 29_000), 1);
+  check("the window releases exactly 30s after the send", g.wait("contact", T + 30_000), 0);
+  g.record("contact", T + 30_001);
+  check("and the next send starts its own window", g.wait("contact", T + 30_002), 30);
+}
+
+console.log("\neach form has its own window");
+{
+  const g = guard();
+  g.record("contact", T);
+  check("writing to support doesn't hold up signing in", g.wait("signin", T + 1), 0);
+  check("...nor signing up for alerts", g.wait("subscribe", T + 1), 0);
+  check("...while support itself is still held", g.wait("contact", T + 1), 30);
+  g.record("signin", T + 5_000);
+  check("each window runs on its own clock",
+        [g.wait("contact", T + 25_000), g.wait("signin", T + 25_000)], [5, 10]);
+  check("one form releasing doesn't release another",
+        [g.wait("contact", T + 30_000), g.wait("signin", T + 30_000)], [0, 5]);
 }
 
 console.log("\nit must never lock someone out");
 {
   const g = guard({ breakStorage: true });
-  g.record(T);
-  check("storage that throws (private window) still limits in memory", g.wait(T + 1), 30);
+  g.record("contact", T);
+  check("storage that throws (private window) still limits in memory", g.wait("contact", T + 1), 30);
 }
 {
   const g = guard({ storage: { fw_form_submits: "}{ not json" } });
-  check("corrupt storage is ignored rather than fatal", g.wait(T), 0);
+  check("corrupt storage is ignored rather than fatal", g.wait("contact", T), 0);
 }
 {
-  const g = guard({ storage: { fw_form_submits: JSON.stringify([T + 90_000_000, "x", null]) } });
-  check("a clock wound forward can't wedge the form shut", g.wait(T), 0);
+  const g = guard({ storage: { fw_form_submits: JSON.stringify({ contact: [T + 90_000_000, "x", null] }) } });
+  check("a clock wound forward can't wedge the form shut", g.wait("contact", T), 0);
+}
+{
+  // what a browser still holds from the previous, site-wide version of this file
+  const g = guard({ storage: { fw_form_submits: JSON.stringify([T, T + 1]) } });
+  check("the old shared list is ignored, not mistaken for a form", g.wait("contact", T + 2), 0);
+}
+{
+  const g = guard();
+  check("a form nobody has submitted is free", g.wait("never-used", T), 0);
 }
 
 console.log("\nwhat the person reads");
@@ -70,10 +93,13 @@ console.log("\nwhat the person reads");
 console.log("\nthe browser and the server agree");
 {
   const g = guard();
-  for (const f of ["api/subscribe.js", "api/contact.js", "api/auth-request.js"]) {
+  // name in the browser -> the endpoint that must enforce the same window under that name
+  for (const [name, f] of [["subscribe", "api/subscribe.js"], ["contact", "api/contact.js"],
+                           ["signin", "api/auth-request.js"]]) {
     const src = readFileSync(new URL("../" + f, import.meta.url), "utf8");
-    const m = src.match(/allow\("burst:" \+ rl\.clientIp\(req\), (\d+), (\d+)\)/);
-    check(`${f} enforces the same numbers`, m && [Number(m[1]), Number(m[2])], [g.max, g.windowMs]);
+    const m = src.match(/allow\("burst:([a-z-]+):" \+ rl\.clientIp\(req\), (\d+), (\d+)\)/);
+    check(`${f} enforces the same form and numbers`,
+          m && [m[1], Number(m[2]), Number(m[3])], [name, g.max, g.windowMs]);
   }
 }
 

@@ -518,10 +518,10 @@ heroForm.addEventListener("submit", async e=>{
     return;
   }
   const heroMsg = document.getElementById("s-msg");
-  if (window.formGuard && window.formGuard.hold(heroMsg, "err")) { location.hash = "#signup"; return; }
+  if (window.formGuard && window.formGuard.hold("subscribe", heroMsg, "err")) { location.hash = "#signup"; return; }
   heroBtn.disabled = true; heroBtn.textContent = "Saving…";
   try{
-    if (window.formGuard) window.formGuard.record();
+    if (window.formGuard) window.formGuard.record("subscribe");
     await subscribe(v, "free", "");
     heroForm.innerHTML = '<p class="ok" style="margin:0">You\'re on the list. Check your inbox for a confirmation.</p>';
   }catch(err){
@@ -543,10 +543,10 @@ signupForm.addEventListener("submit", async e=>{
   const btn = signupForm.querySelector("button[type=submit]");
   const email = signupForm.email.value.trim();
   if(!validEmail(email)){ msg.className="err"; msg.textContent="Enter a valid email address to continue."; signupForm.email.focus(); return; }
-  if (window.formGuard && window.formGuard.hold(msg, "err")) return;
+  if (window.formGuard && window.formGuard.hold("subscribe", msg, "err")) return;
   btn.disabled = true; msg.className=""; msg.textContent="Saving…";
   try{
-    if (window.formGuard) window.formGuard.record();
+    if (window.formGuard) window.formGuard.record("subscribe");
     await subscribe(email, signupForm.plan.value, signupForm.devices.value.trim());
     msg.className="ok";
     msg.textContent = signupForm.plan.value==="pro" && !PRO_LINK.startsWith("http")

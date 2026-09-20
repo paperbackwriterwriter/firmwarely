@@ -22,8 +22,8 @@ module.exports = async function (req, res) {
   if (String(body.website || "").trim()) return fw.json(res, 200, { ok: true });
 
   // The browser applies this too (formguard.js), but anything can skip the browser.
-  // Same numbers, enforced per source: one submission every thirty seconds.
-  if (!rl.allow("burst:" + rl.clientIp(req), 1, 30000)) {
+  // Same numbers, enforced per source and per form: one submission every thirty seconds.
+  if (!rl.allow("burst:contact:" + rl.clientIp(req), 1, 30000)) {
     return fw.json(res, 429, { error: "One submission every 30 seconds. Give it a moment and try again." });
   }
 

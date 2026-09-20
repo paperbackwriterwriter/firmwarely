@@ -266,9 +266,9 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:space-betwee
     var email = document.getElementById("loginEmail").value.trim();
     var msg = document.getElementById("loginMsg"), btn = document.getElementById("loginBtn");
     if (!validEmail(email)) { msg.className = "msg err"; msg.textContent = "Enter a valid email address."; return; }
-    if (window.formGuard && window.formGuard.hold(msg, "msg err")) return;
+    if (window.formGuard && window.formGuard.hold("signin", msg, "msg err")) return;
     btn.disabled = true; msg.className = "msg"; msg.textContent = "Sending…";
-    if (window.formGuard) window.formGuard.record();
+    if (window.formGuard) window.formGuard.record("signin");
     fetch("/api/auth-request", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email: email, next: "/dashboard.html" }) })
       .then(function (r) { return r.json().then(function (d) { return { ok: r.ok && d.ok, d: d }; }); })
