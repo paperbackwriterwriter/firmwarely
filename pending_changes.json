@@ -211,6 +211,21 @@
    "notes": "- Product configuration: - Fixed an issue where toolbars for disabled tools remained visible - AI Assistant: - Added profile and model selectors to AI Chat - Fixed a white flash when opening AI Chat in the dark theme - Improved AI Chat prompt caching, reducing repeated input-token processing in mul…",
    "source_url": "https://github.com/dbeaver/dbeaver/releases/tag/26.2.1",
    "page_url": "https://www.firmwarely.com/devices/dbeaver/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.2631",
+   "previous": "0.24.2627",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes: ea50964ad1d54ddcd2e79eec93c3a648af915404 magnetcat: new alt domains 9e6f9e23d7e5ad9ab05f8c98a3522ed513d667f7 52bt: new domains 27bcb1ff07cbf71c6d686cbac5a176e139488417 myspleen: add new cats and movie mode b9b4f26d83850e2fb897cd4705b6c5a1fb5dc778 LDU: update cats 146d483d05d585bd446ac68574…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2631",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
