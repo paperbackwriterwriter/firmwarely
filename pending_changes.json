@@ -106,6 +106,66 @@
    "notes": "Full Changelog: https://github.com/PlotJuggler/PlotJuggler/compare/3.999.9...4.0.0",
    "source_url": "https://github.com/PlotJuggler/PlotJuggler/releases/tag/4.0.0",
    "page_url": "https://www.firmwarely.com/devices/plotjuggler/"
+  },
+  "zitadel": {
+   "id": "zitadel",
+   "brand": "ZITADEL",
+   "model": "Identity platform",
+   "category": "A",
+   "status": "update",
+   "version": "4.18.0",
+   "previous": "4.17.3",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "4.18.0 (2026-09-21) Bug Fixes eventstore: add owners to unique constraints (#​12740) (c397a60) eventstore: prevent projections from skipping events (#​12703) (d49a665), closes #​8509 #​10480 #​10560 #​10710 login: forward login_hint to the external IdP (#​12760) (482ddc7), closes #​6899 #​11552 #​1…",
+   "source_url": "https://github.com/zitadel/zitadel/releases/tag/v4.18.0",
+   "page_url": "https://www.firmwarely.com/devices/zitadel/"
+  },
+  "kometa": {
+   "id": "kometa",
+   "brand": "Kometa",
+   "model": "Plex metadata manager",
+   "category": "A",
+   "status": "update",
+   "version": "2.5.0",
+   "previous": "2.4.8",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changed Trakt functionality has been removed from Kometa following recent changes to their support of third-party apps and updates to their API and Developer guidances. Please see the FAQ page or Announcements channel in the Discord Server for further information Send explicitly configured watched …",
+   "source_url": "https://github.com/Kometa-Team/Kometa/releases/tag/v2.5.0",
+   "page_url": "https://www.firmwarely.com/devices/kometa/"
+  },
+  "rallly": {
+   "id": "rallly",
+   "brand": "Rallly",
+   "model": "Meeting polls",
+   "category": "A",
+   "status": "update",
+   "version": "4.15.2",
+   "previous": "4.15.1",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "🔐 SSO-only instances could not create new accounts Setting EMAIL_LOGIN_ENABLED=false also switched off user registration (#​3335). That coupling had been there since the variable was introduced, but v4.15.0 started enforcing the registration setting at the point where an account is created, on ever…",
+   "source_url": "https://github.com/lukevella/rallly/releases/tag/v4.15.2",
+   "page_url": "https://www.firmwarely.com/devices/rallly/"
+  },
+  "langfuse": {
+   "id": "langfuse",
+   "brand": "Langfuse",
+   "model": "Agent evals & observability",
+   "category": "A",
+   "status": "update",
+   "version": "4.39.0",
+   "previous": "4.38.0",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed Features feat(web): publish event-loop delay for autoscaling feat(automations): filter prompt events by label feat(ai-gateway): add phase spans so request traces have no gaps feat(ai-gateway): record Codex client metadata as agent metadata feat(auth): authorize every ingestion event …",
+   "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.39.0",
+   "page_url": "https://www.firmwarely.com/devices/langfuse/"
   }
  }
 }
