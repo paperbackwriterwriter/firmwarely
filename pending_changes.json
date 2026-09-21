@@ -466,6 +466,21 @@
    "notes": "Installation Guide https://docs.onedev.io/category/installation-guide Change Log https://code.onedev.io/onedev/server/~builds/8497/fixed-issues?query=%22State%22+is+%22Released%22+order+by+%22Type%22+asc+%2C+%22Priority%22+desc Incompatibilities https://code.onedev.io/onedev/server/~builds/8497/mar…",
    "source_url": "https://github.com/theonedev/onedev/releases/tag/v16.7.2",
    "page_url": "https://www.firmwarely.com/devices/onedev/"
+  },
+  "navidrome": {
+   "id": "navidrome",
+   "brand": "Navidrome",
+   "model": "Music streaming server",
+   "category": "A",
+   "status": "critical",
+   "version": "0.64.1",
+   "previous": "0.64.0",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "This is a security release. It fixes five vulnerabilities reported through our GitHub Security Advisory program, covering Subsonic authentication, artwork fetching, playlist cover images, player ownership, and per-user library filtering. Upgrade as soon as you can. Thanks to the researchers credite…",
+   "source_url": "https://github.com/navidrome/navidrome/releases/tag/v0.64.1",
+   "page_url": "https://www.firmwarely.com/devices/navidrome/"
   }
  }
 }
