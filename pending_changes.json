@@ -181,6 +181,36 @@
    "notes": "🚀 Features Add 'fail' level to level_guesser.go -, and Claude Opus 5 in https://github.com/amir20/dozzle/issues/5166 (6a109) auth: Add DOZZLE_AUTH_OIDC_SCOPES to request extra OIDC scopes - and Claude Opus 5 in https://github.com/amir20/dozzle/issues/5195 (bcf03) charts: Read out the hovered bar on…",
    "source_url": "https://github.com/amir20/dozzle/releases/tag/v11.1.1",
    "page_url": "https://www.firmwarely.com/devices/dozzle/"
+  },
+  "webmin": {
+   "id": "webmin",
+   "brand": "Webmin",
+   "model": "Server control panel",
+   "category": "A",
+   "status": "critical",
+   "version": "2.670",
+   "previous": "2.660",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "Add new Hardware Information module for inspecting system, firmware, security, PCI, USB, storage, network, processor, sensor, driver, and kernel module details Add options to send Webmin and Usermin errors to the systemd journal forum.virtualmin.com/t/136562 Add webserver logging controls to Usermi…",
+   "source_url": "https://github.com/webmin/webmin/releases/tag/2.670",
+   "page_url": "https://www.firmwarely.com/devices/webmin/"
+  },
+  "dbeaver": {
+   "id": "dbeaver",
+   "brand": "DBeaver",
+   "model": "Database tool",
+   "category": "A",
+   "status": "update",
+   "version": "26.2.1",
+   "previous": "26.2.0",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "- Product configuration: - Fixed an issue where toolbars for disabled tools remained visible - AI Assistant: - Added profile and model selectors to AI Chat - Fixed a white flash when opening AI Chat in the dark theme - Improved AI Chat prompt caching, reducing repeated input-token processing in mul…",
+   "source_url": "https://github.com/dbeaver/dbeaver/releases/tag/26.2.1",
+   "page_url": "https://www.firmwarely.com/devices/dbeaver/"
   }
  }
 }
