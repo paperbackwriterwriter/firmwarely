@@ -9389,6 +9389,96 @@
    "type": "github",
    "repo": "ailyProject/aily-blockly",
    "product_url": "https://github.com/ailyProject/aily-blockly"
+  },
+  {
+   "id": "safeline",
+   "brand": "SafeLine",
+   "model": "WAF(Web Application Firewall) / reverse proxy",
+   "category": "R",
+   "type": "github",
+   "repo": "chaitin/SafeLine",
+   "product_url": "https://github.com/chaitin/SafeLine"
+  },
+  {
+   "id": "server",
+   "brand": "Server",
+   "model": "Screen sharing for developers",
+   "category": "A",
+   "type": "github",
+   "repo": "screego/server",
+   "product_url": "https://github.com/screego/server"
+  },
+  {
+   "id": "tinyauth",
+   "brand": "Tinyauth",
+   "model": "Tiniest OpenID Certified™ authorization and authentication",
+   "category": "A",
+   "type": "github",
+   "repo": "tinyauthapp/tinyauth",
+   "product_url": "https://github.com/tinyauthapp/tinyauth"
+  },
+  {
+   "id": "btcpayserver",
+   "brand": "Btcpayserver",
+   "model": "Accept Bitcoin payments",
+   "category": "A",
+   "type": "github",
+   "repo": "btcpayserver/btcpayserver",
+   "product_url": "https://github.com/btcpayserver/btcpayserver"
+  },
+  {
+   "id": "netalertx-netalertx",
+   "brand": "NetAlertX",
+   "model": "Centralized network visibility and continuous asset",
+   "category": "R",
+   "type": "github",
+   "repo": "netalertx/NetAlertX",
+   "product_url": "https://github.com/netalertx/NetAlertX"
+  },
+  {
+   "id": "sparkyfitness",
+   "brand": "SparkyFitness",
+   "model": "Built for Families",
+   "category": "A",
+   "type": "github",
+   "repo": "CodeWithCJ/SparkyFitness",
+   "product_url": "https://github.com/CodeWithCJ/SparkyFitness"
+  },
+  {
+   "id": "bitmagnet",
+   "brand": "Bitmagnet",
+   "model": "BitTorrent indexer, DHT crawler, content classifier",
+   "category": "A",
+   "type": "github",
+   "repo": "bitmagnet-io/bitmagnet",
+   "product_url": "https://github.com/bitmagnet-io/bitmagnet"
+  },
+  {
+   "id": "13ft",
+   "brand": "13ft",
+   "model": "My own custom 12ft.io replacement",
+   "category": "A",
+   "type": "github",
+   "repo": "wasi-master/13ft",
+   "product_url": "https://github.com/wasi-master/13ft"
+  },
+  {
+   "id": "wanderer",
+   "brand": "Wanderer",
+   "model": "Trail database",
+   "category": "A",
+   "type": "github",
+   "repo": "open-wanderer/wanderer",
+   "product_url": "https://github.com/open-wanderer/wanderer"
+  },
+  {
+   "id": "olivetin",
+   "brand": "OliveTin",
+   "model": "Gives safe and simple access",
+   "category": "A",
+   "type": "github",
+   "repo": "OliveTin/OliveTin",
+   "product_url": "https://github.com/OliveTin/OliveTin"
   }
  ]
 }
