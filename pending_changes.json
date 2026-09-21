@@ -286,6 +286,36 @@
    "notes": "Changed Nothing Added Nothing Removed Nothing Fixed #​2658 Fix redis connections left open sometimes. Deprecated Nothing",
    "source_url": "https://github.com/shlinkio/shlink/releases/tag/v5.1.7",
    "page_url": "https://www.firmwarely.com/devices/shlink/"
+  },
+  "windmill": {
+   "id": "windmill",
+   "brand": "Windmill",
+   "model": "Scripts and workflows",
+   "category": "A",
+   "status": "update",
+   "version": "1.816.0",
+   "previous": "1.815.0",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.816.0 (2026-09-21) Features add an ACL editor for data table roles (#​11063) (9994e03) add per-model context window override in workspace AI settings (#​11232) (c637b06) ai-chat: disclose an app's exposure on deploy, refuse drag-and-drop apps (#​11137) (85b36a2) data table roles in the DB manager…",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.816.0",
+   "page_url": "https://www.firmwarely.com/devices/windmill/"
+  },
+  "zulip": {
+   "id": "zulip",
+   "brand": "Zulip",
+   "model": "Team chat",
+   "category": "A",
+   "status": "update",
+   "version": "12.3",
+   "previous": "12.2",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "Complete release notes",
+   "source_url": "https://github.com/zulip/zulip/releases/tag/12.3",
+   "page_url": "https://www.firmwarely.com/devices/zulip/"
   }
  }
 }
