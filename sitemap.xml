@@ -6,10 +6,10 @@
   <url><loc>https://www.firmwarely.com/pro/</loc><lastmod>2026-09-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/legal/</loc><lastmod>2026-09-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/support/</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://www.firmwarely.com/category/routers/</loc><lastmod>2026-09-20</lastmod></url>
+  <url><loc>https://www.firmwarely.com/category/routers/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/nas/</loc><lastmod>2026-09-20</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/smart-home/</loc><lastmod>2026-09-20</lastmod></url>
-  <url><loc>https://www.firmwarely.com/category/consoles-drones-ebikes/</loc><lastmod>2026-09-19</lastmod></url>
+  <url><loc>https://www.firmwarely.com/category/consoles-drones-ebikes/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/makers/</loc><lastmod>2026-09-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/pcs-tvs-gadgets/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/self-hosted/</loc><lastmod>2026-09-21</lastmod></url>
@@ -111,7 +111,7 @@
   <url><loc>https://www.firmwarely.com/devices/zoraxy/</loc><lastmod>2026-09-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/cloudflared/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/frp-tunnel/</loc><lastmod>2026-08-14</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/librenms/</loc><lastmod>2026-08-31</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/librenms/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/netbox/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/uptime-kuma/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ntopng/</loc><lastmod>2025-11-17</lastmod></url>
@@ -374,7 +374,7 @@
   <url><loc>https://www.firmwarely.com/devices/retrodeck/</loc><lastmod>2026-05-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/decky-loader/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/chimeraos/</loc><lastmod>2025-07-26</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/bazzite/</loc><lastmod>2026-09-19</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/bazzite/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/emudeck/</loc><lastmod>2026-09-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/heroic-launcher/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/lutris/</loc><lastmod>2026-02-25</lastmod></url>
@@ -503,7 +503,7 @@
   <url><loc>https://www.firmwarely.com/devices/adminer/</loc><lastmod>2026-09-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/phpmyadmin/</loc><lastmod>2025-10-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/gogs/</loc><lastmod>2026-06-07</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/onedev/</loc><lastmod>2026-09-20</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/onedev/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/woodpecker-ci/</loc><lastmod>2026-09-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/verdaccio/</loc><lastmod>2026-09-20</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/code-server/</loc><lastmod>2026-09-19</lastmod></url>
@@ -652,7 +652,7 @@
   <url><loc>https://www.firmwarely.com/devices/pydio-cells/</loc><lastmod>2026-06-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/playnite/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/zabbix/</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/checkmk/</loc><lastmod>2026-09-14</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/checkmk/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/mariadb/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/mysql-server/</loc><lastmod>2026-07-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/mongodb/</loc><lastmod>2026-09-11</lastmod></url>

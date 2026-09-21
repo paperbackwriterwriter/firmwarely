@@ -83,13 +83,13 @@
    "model": "Git server with CI",
    "category": "A",
    "status": "update",
-   "version": "16.7.0",
+   "version": "16.7.1",
    "previous": "16.6.4",
-   "released": "2026-09-20",
+   "released": "2026-09-21",
    "date_known": true,
    "eol": false,
-   "notes": "Installation Guide https://docs.onedev.io/category/installation-guide Change Log https://code.onedev.io/onedev/server/~builds/8482/fixed-issues?query=%22State%22+is+%22Released%22+order+by+%22Type%22+asc+%2C+%22Priority%22+desc Incompatibilities https://code.onedev.io/onedev/server/~builds/8482/mar…",
-   "source_url": "https://github.com/theonedev/onedev/releases/tag/v16.7.0",
+   "notes": "Installation Guide https://docs.onedev.io/category/installation-guide Change Log https://code.onedev.io/onedev/server/~builds/8492/fixed-issues?query=%22State%22+is+%22Released%22+order+by+%22Type%22+asc+%2C+%22Priority%22+desc Incompatibilities https://code.onedev.io/onedev/server/~builds/8492/mar…",
+   "source_url": "https://github.com/theonedev/onedev/releases/tag/v16.7.1",
    "page_url": "https://www.firmwarely.com/devices/onedev/"
   },
   "ghostfolio": {
@@ -226,6 +226,51 @@
    "notes": "Changes: ea50964ad1d54ddcd2e79eec93c3a648af915404 magnetcat: new alt domains 9e6f9e23d7e5ad9ab05f8c98a3522ed513d667f7 52bt: new domains 27bcb1ff07cbf71c6d686cbac5a176e139488417 myspleen: add new cats and movie mode b9b4f26d83850e2fb897cd4705b6c5a1fb5dc778 LDU: update cats 146d483d05d585bd446ac68574…",
    "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2631",
    "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "librenms": {
+   "id": "librenms",
+   "brand": "LibreNMS",
+   "model": "Network monitoring",
+   "category": "R",
+   "status": "update",
+   "version": "26.9.0",
+   "previous": "26.8.2",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "26.9.0 (2026-09-20) A big thank you to the following 45 contributors this last month: murrant (51) bennetgallein (12) eskyuu (6) laf (5) peejaychilds (4) dependabot (4) ji03mmy18 (3) bennet-agital (2) ahoogerhuis (2) Jannos-443 (2) Jellyfrog (2) alexc-hue (1) itsbb94 (1) hrtrd (1) heitbaum (1) Wenk…",
+   "source_url": "https://github.com/librenms/librenms/releases/tag/26.9.0",
+   "page_url": "https://www.firmwarely.com/devices/librenms/"
+  },
+  "bazzite": {
+   "id": "bazzite",
+   "brand": "Universal Blue",
+   "model": "Bazzite gaming OS",
+   "category": "C",
+   "status": "update",
+   "version": "44.20260921",
+   "previous": "44.20260919",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "This is an automatically generated changelog for release 44.20260921. From previous stable version 44.20260919 there have been the following changes. One package per new version shown. Major packages | Name | Version | | --- | --- | | Kernel | 7.2.4-ogc3.1 | | Kernel (Nvidia LTS) | 6.18.49-ogc1.1 |…",
+   "source_url": "https://github.com/ublue-os/bazzite/releases/tag/44.20260921",
+   "page_url": "https://www.firmwarely.com/devices/bazzite/"
+  },
+  "checkmk": {
+   "id": "checkmk",
+   "brand": "Checkmk",
+   "model": "IT monitoring",
+   "category": "A",
+   "status": "update",
+   "version": "2.5.0",
+   "previous": "2.3.0",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "v2.5.0p14",
+   "source_url": "https://github.com/Checkmk/checkmk/releases/tag/v2.5.0p14",
+   "page_url": "https://www.firmwarely.com/devices/checkmk/"
   }
  }
 }
