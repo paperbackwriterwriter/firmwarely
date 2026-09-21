@@ -166,6 +166,36 @@
    "notes": "What's Changed Features feat(web): publish event-loop delay for autoscaling feat(automations): filter prompt events by label feat(ai-gateway): add phase spans so request traces have no gaps feat(ai-gateway): record Codex client metadata as agent metadata feat(auth): authorize every ingestion event …",
    "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.39.0",
    "page_url": "https://www.firmwarely.com/devices/langfuse/"
+  },
+  "infisical": {
+   "id": "infisical",
+   "brand": "Infisical",
+   "model": "Secrets manager",
+   "category": "A",
+   "status": "update",
+   "version": "0.165.14",
+   "previous": "0.165.13",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed chore: add upgrade impact for v0.165.13[bot] in https://github.com/Infisical/infisical/pull/8217 feat(api): implement billing v2 usage breakdown and organization listing feat: add PowerDNS as a DNS-01 provider for ACME certificate authorities fix(ui): remove autofill seams around rou…",
+   "source_url": "https://github.com/Infisical/infisical/releases/tag/v0.165.14",
+   "page_url": "https://www.firmwarely.com/devices/infisical/"
+  },
+  "clickhouse": {
+   "id": "clickhouse",
+   "brand": "ClickHouse",
+   "model": "Analytics database",
+   "category": "A",
+   "status": "update",
+   "version": "26.7.14.3-stable",
+   "previous": "26.8.9.10-lts",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release v26.7.14.3-stable v26.7.14.3-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.7.14.3-stable",
+   "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   }
  }
 }
