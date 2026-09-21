@@ -346,6 +346,36 @@
    "notes": "7.1.2+260917",
    "source_url": "https://github.com/LimeSurvey/LimeSurvey/releases/tag/7.1.2%2B260917",
    "page_url": "https://www.firmwarely.com/devices/limesurvey/"
+  },
+  "activepieces": {
+   "id": "activepieces",
+   "brand": "Activepieces",
+   "model": "Workflow automation",
+   "category": "A",
+   "status": "update",
+   "version": "0.91.1",
+   "previous": "0.91.0",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "🔌 Pieces fix: cherry-pick subflow retry and connection-reference fixes into 0.91.1 (#​15689),,, ⛓️‍💥 Breaking Changes fix: cherry-pick subflow retry and connection-reference fixes into 0.91.1 (#​15689),,, 🐞 Bug Fixes fix(build): unblock the release — MinIO moved off Docker Hub, and drop the source …",
+   "source_url": "https://github.com/activepieces/activepieces/releases/tag/0.91.1",
+   "page_url": "https://www.firmwarely.com/devices/activepieces/"
+  },
+  "open-webui": {
+   "id": "open-webui",
+   "brand": "Open WebUI",
+   "model": "LLM web interface",
+   "category": "A",
+   "status": "update",
+   "version": "0.11.4",
+   "previous": "0.11.3",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "Added 📉 Far smaller slim image. A slim build now comes down at around 175 MB, near enough 89% smaller than the last release, the local models, the packages around them and the tools that installed them all gone from it; what that changes about the way an instance behaves is set out under Changed be…",
+   "source_url": "https://github.com/open-webui/open-webui/releases/tag/v0.11.4",
+   "page_url": "https://www.firmwarely.com/devices/open-webui/"
   }
  }
 }
