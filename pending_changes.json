@@ -1,5 +1,81 @@
 {
- "since": null,
+ "since": "2026-09-21T09:17:50+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "meilisearch": {
+   "id": "meilisearch",
+   "brand": "Meilisearch",
+   "model": "Search engine",
+   "category": "A",
+   "status": "update",
+   "version": "1.54.0",
+   "previous": "1.53.2",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "💥 Breaking Changes Meilisearch v1.54.0 makes breaking changes to the dynamicSearchRules experimental features. For Cloud users, rules will be migrated automatically, and the UI will adapt to the new API. Only the first change on rulelist might affect users that directly get rules through the API. I…",
+   "source_url": "https://github.com/meilisearch/meilisearch/releases/tag/v1.54.0",
+   "page_url": "https://www.firmwarely.com/devices/meilisearch/"
+  },
+  "mailcow": {
+   "id": "mailcow",
+   "brand": "mailcow",
+   "model": "Mail server suite",
+   "category": "A",
+   "status": "update",
+   "version": "1.26.1",
+   "previous": "3.10.12",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed Features [Web] Add ACL + global switch to disable external alias goto [Web] Add show/hide password toggle on login pages Fixes Fix #​7150: passwd-verify.lua wipes auth cache during any nginx outage [Web] use absolute RHS names in generated DNS zonefile [Web] redirect deep links to th…",
+   "source_url": "https://github.com/mailcow/mailcow-dockerized/releases/tag/2026-09",
+   "page_url": "https://www.firmwarely.com/devices/mailcow/"
+  },
+  "budibase": {
+   "id": "budibase",
+   "brand": "Budibase",
+   "model": "Low-code platform",
+   "category": "A",
+   "status": "critical",
+   "version": "3.46.0",
+   "previous": "3.45.0",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed Increase license cache offline grace period Bump fflate from 0.4.8 to 0.4.9 in the all-non-major-security group across 1 directory[bot] in https://github.com/Budibase/budibase/pull/19622 chore: upgrade Babel to v8 Fix for slack DMs Merge Cloud hotfixes back to master Add vulnerabilit…",
+   "source_url": "https://github.com/Budibase/budibase/releases/tag/v3.46.0",
+   "page_url": "https://www.firmwarely.com/devices/budibase/"
+  },
+  "formbricks": {
+   "id": "formbricks",
+   "brand": "Formbricks",
+   "model": "Surveys",
+   "category": "A",
+   "status": "update",
+   "version": "6.0.0",
+   "previous": "5.4.3",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "Formbricks 6.0 replaces the legacy authorization evaluator with AuthZed SpiceDB and ships Embedded Data V1. It is a major release: read the breaking changes below and the v6 migration guide before you pull a 6.0 image. The moving latest tag stays on the bridge-compatible v5 release for at least 30 …",
+   "source_url": "https://github.com/formbricks/formbricks/releases/tag/6.0.0",
+   "page_url": "https://www.firmwarely.com/devices/formbricks/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "Dns Blocklists",
+   "model": "For a better internet",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.264.33281",
+   "previous": "37522026.263.32686",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​11529 #​11528 #​11527 #​11526 #​11525 #​11524 #​11522 #​11521",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.264.33281",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  }
+ }
 }
