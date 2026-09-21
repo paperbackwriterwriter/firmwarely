@@ -188,13 +188,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.8.10.6-lts",
+   "version": "26.9.1.1629-stable",
    "previous": "26.8.9.10-lts",
    "released": "2026-09-21",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.8.10.6-lts v26.8.10.6-lts",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.10.6-lts",
+   "notes": "Release v26.9.1.1629-stable v26.9.1.1629-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.9.1.1629-stable",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "n8n": {
@@ -451,6 +451,21 @@
    "notes": "See the assets to download this version and install. What's Changed fix: GitHub mcp form token exchange [edit of #​14906] (#​14909) to release v4.7 fix(llm): show the model id in the provider model list (#​14936) to release v4.7 chore(deps): bump anyio to 4.14.2 for GHSA-82r6-8w77-94w6 (#​14889) to…",
    "source_url": "https://github.com/onyx-dot-app/onyx/releases/tag/v4.7.8",
    "page_url": "https://www.firmwarely.com/devices/onyx/"
+  },
+  "onedev": {
+   "id": "onedev",
+   "brand": "OneDev",
+   "model": "Git server with CI",
+   "category": "A",
+   "status": "update",
+   "version": "16.7.2",
+   "previous": "16.7.1",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "Installation Guide https://docs.onedev.io/category/installation-guide Change Log https://code.onedev.io/onedev/server/~builds/8497/fixed-issues?query=%22State%22+is+%22Released%22+order+by+%22Type%22+asc+%2C+%22Priority%22+desc Incompatibilities https://code.onedev.io/onedev/server/~builds/8497/mar…",
+   "source_url": "https://github.com/theonedev/onedev/releases/tag/v16.7.2",
+   "page_url": "https://www.firmwarely.com/devices/onedev/"
   }
  }
 }
