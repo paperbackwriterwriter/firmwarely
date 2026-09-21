@@ -40,7 +40,7 @@
   <url><loc>https://www.firmwarely.com/brands/element/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/grafana/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/icewhale/</loc><lastmod>2026-08-21</lastmod></url>
-  <url><loc>https://www.firmwarely.com/brands/influxdata/</loc><lastmod>2026-09-08</lastmod></url>
+  <url><loc>https://www.firmwarely.com/brands/influxdata/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/jellyfin/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/jupyter/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/m5stack/</loc><lastmod>2026-09-14</lastmod></url>
@@ -425,7 +425,7 @@
   <url><loc>https://www.firmwarely.com/devices/loki/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/victoriametrics/</loc><lastmod>2026-09-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/influxdb/</loc><lastmod>2026-09-08</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/telegraf/</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/telegraf/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/gatus/</loc><lastmod>2026-05-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/dozzle/</loc><lastmod>2026-09-20</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/btop/</loc><lastmod>2026-05-01</lastmod></url>
@@ -632,7 +632,7 @@
   <url><loc>https://www.firmwarely.com/devices/formbricks/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/cal-com/</loc><lastmod>2026-03-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/rallly/</loc><lastmod>2026-09-21</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/limesurvey/</loc><lastmod>2026-09-17</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/limesurvey/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/penpot/</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/excalidraw/</loc><lastmod>2026-04-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/drawio/</loc><lastmod>2026-09-16</lastmod></url>

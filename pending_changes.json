@@ -316,6 +316,36 @@
    "notes": "Complete release notes",
    "source_url": "https://github.com/zulip/zulip/releases/tag/12.3",
    "page_url": "https://www.firmwarely.com/devices/zulip/"
+  },
+  "telegraf": {
+   "id": "telegraf",
+   "brand": "InfluxData",
+   "model": "Telegraf agent",
+   "category": "A",
+   "status": "update",
+   "version": "1.40.1",
+   "previous": "1.40.0",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "v1.40.1 [2026-09-21] Bugfixes #​18780 aggregators Prevent duplicate push on early timer fire #​19686 common.socket Parse vsock CID and port from URL host #​19673 inputs.dns_query Use correct defaults #​19509 inputs.kinesis_consumer Resume expired iterators after the last read record #​19663 inputs.…",
+   "source_url": "https://github.com/influxdata/telegraf/releases/tag/v1.40.1",
+   "page_url": "https://www.firmwarely.com/devices/telegraf/"
+  },
+  "limesurvey": {
+   "id": "limesurvey",
+   "brand": "LimeSurvey",
+   "model": "Survey platform",
+   "category": "A",
+   "status": "update",
+   "version": "7.1.2",
+   "previous": "7.1.1",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "7.1.2+260917",
+   "source_url": "https://github.com/LimeSurvey/LimeSurvey/releases/tag/7.1.2%2B260917",
+   "page_url": "https://www.firmwarely.com/devices/limesurvey/"
   }
  }
 }
