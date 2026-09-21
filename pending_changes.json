@@ -91,6 +91,21 @@
    "notes": "2026.09.0",
    "source_url": "https://github.com/neo4j/neo4j/releases/tag/2026.09.0",
    "page_url": "https://www.firmwarely.com/devices/neo4j/"
+  },
+  "plotjuggler": {
+   "id": "plotjuggler",
+   "brand": "PlotJuggler",
+   "model": "Time Series Visualization Tool that you deserve",
+   "category": "S",
+   "status": "update",
+   "version": "4.0.0",
+   "previous": "3.999.9",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "Full Changelog: https://github.com/PlotJuggler/PlotJuggler/compare/3.999.9...4.0.0",
+   "source_url": "https://github.com/PlotJuggler/PlotJuggler/releases/tag/4.0.0",
+   "page_url": "https://www.firmwarely.com/devices/plotjuggler/"
   }
  }
 }
