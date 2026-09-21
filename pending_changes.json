@@ -241,6 +241,51 @@
    "notes": "v0.9.100 Changes ✨ New Features Added ESP32 partition manager for better memory configuration Added ability to edit project nickname by clicking on the header nickname Implemented default sub-application background support with automatic installation and toolbar configuration 🐛 Bug Fixes Fixed circ…",
    "source_url": "https://github.com/ailyProject/aily-blockly/releases/tag/v0.9.100",
    "page_url": "https://www.firmwarely.com/devices/aily-blockly/"
+  },
+  "jupyterlab": {
+   "id": "jupyterlab",
+   "brand": "Jupyter",
+   "model": "JupyterLab",
+   "category": "A",
+   "status": "critical",
+   "version": "4.6.4",
+   "previous": "4.6.3",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "4.6.4 (Full Changelog) Security fixes GHSA-3325-v43h-43rv - moderate GHSA-6966-vjj6-99xv - high GHSA-jwrc-gm9j-263p - moderate GHSA-3jqq-pw4j-pqcj - moderate Bugs fixed Backport of security patches on 4.6.x branch #​19793 (,) Cache and throttle path resolution to avoid requests storm #​19726 () Fix…",
+   "source_url": "https://github.com/jupyterlab/jupyterlab/releases/tag/v4.6.4",
+   "page_url": "https://www.firmwarely.com/devices/jupyterlab/"
+  },
+  "nzbhydra2": {
+   "id": "nzbhydra2",
+   "brand": "NZBHydra2",
+   "model": "Usenet meta search",
+   "category": "A",
+   "status": "update",
+   "version": "9.0.3",
+   "previous": "9.0.2",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "v9.0.3 (2026-09-21) Fix Restore quality indicators. Fix Show NFOs properly. Fix Show search and download history in cards on mobile. Fix Scrolling in the search results now keep the previous top / bottom row(s) visible instead of skipping roughly three rows. See #​1088 Fix Opening a search result's…",
+   "source_url": "https://github.com/theotherp/nzbhydra2/releases/tag/v9.0.3",
+   "page_url": "https://www.firmwarely.com/devices/nzbhydra2/"
+  },
+  "shlink": {
+   "id": "shlink",
+   "brand": "Shlink",
+   "model": "URL shortener",
+   "category": "A",
+   "status": "update",
+   "version": "5.1.7",
+   "previous": "5.1.6",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changed Nothing Added Nothing Removed Nothing Fixed #​2658 Fix redis connections left open sometimes. Deprecated Nothing",
+   "source_url": "https://github.com/shlinkio/shlink/releases/tag/v5.1.7",
+   "page_url": "https://www.firmwarely.com/devices/shlink/"
   }
  }
 }
