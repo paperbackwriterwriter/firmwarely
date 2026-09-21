@@ -158,13 +158,13 @@
    "model": "Agent evals & observability",
    "category": "A",
    "status": "update",
-   "version": "4.39.0",
+   "version": "4.40.0",
    "previous": "4.38.0",
    "released": "2026-09-21",
    "date_known": true,
    "eol": false,
-   "notes": "What's Changed Features feat(web): publish event-loop delay for autoscaling feat(automations): filter prompt events by label feat(ai-gateway): add phase spans so request traces have no gaps feat(ai-gateway): record Codex client metadata as agent metadata feat(auth): authorize every ingestion event …",
-   "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.39.0",
+   "notes": "What's Changed Features feat(trace-batching): link transcript spans to source traces Fixes fix(auth): evict the API key cache after deleting the row Choes refactor(web): thin remaining fat pages into feature Page components docs: remove duplicated 'override' in table columns README chore(agents): u…",
+   "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.40.0",
    "page_url": "https://www.firmwarely.com/devices/langfuse/"
   },
   "infisical": {
