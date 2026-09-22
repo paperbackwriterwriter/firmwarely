@@ -466,6 +466,21 @@
    "notes": "What's Changed ✨ New Features feat(assistant): slash command menu and 100-step budget feat(agui): let callers opt out of graph state on the stream 🐛 Bug Fixes fix(frontend): keep assistant reopenable mid-run fix(mcp): 404 for missing servers on GET and PATCH fix(frontend): report deleted MCP server…",
    "source_url": "https://github.com/langflow-ai/langflow/releases/tag/v1.12.3",
    "page_url": "https://www.firmwarely.com/devices/langflow/"
+  },
+  "asus-rt-ax86u-pro": {
+   "id": "asus-rt-ax86u-pro",
+   "brand": "ASUS",
+   "model": "RT-AX86U Pro",
+   "category": "R",
+   "status": "update",
+   "version": "3.0.0.6.102_37485",
+   "previous": "3.0.0.6.102_37436",
+   "released": "2026-09-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "",
+   "source_url": "https://www.asus.com/networking-iot-servers/wifi-routers/asus-wifi-routers/rt-ax86u-pro/helpdesk_bios?model2Name=RT-AX86U-Pro",
+   "page_url": "https://www.firmwarely.com/devices/asus-rt-ax86u-pro/"
   }
  }
 }
