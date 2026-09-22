@@ -436,6 +436,21 @@
    "notes": "Added Add an experimental read-only MCP endpoint at /api/v1/mcp for Pro and Family plans (and every self-hosted user), authenticated with the existing API key as a bearer token. MCP clients can read a timeline of up to 7 days, the latest location, and search visits by place, city, country or area n…",
    "source_url": "https://github.com/Freika/dawarich/releases/tag/1.15.2",
    "page_url": "https://www.firmwarely.com/devices/dawarich/"
+  },
+  "ollama": {
+   "id": "ollama",
+   "brand": "Ollama",
+   "model": "Local LLM runner",
+   "category": "A",
+   "status": "update",
+   "version": "0.34.3",
+   "previous": "0.34.2",
+   "released": "2026-09-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed GET /api/show now advertises each model's thinking controls and default: Available in the CLI with: ollama show gemma4 thinking levels false, true default true Available in the API with: sh curl http://localhost:11434/api/show -d '{\"model\": \"glm-5.3-flash:cloud\"}' json { \"thinking\": …",
+   "source_url": "https://github.com/ollama/ollama/releases/tag/v0.34.3",
+   "page_url": "https://www.firmwarely.com/devices/ollama/"
   }
  }
 }
