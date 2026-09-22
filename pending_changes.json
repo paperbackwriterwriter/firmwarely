@@ -481,6 +481,21 @@
    "notes": "This is a security release. It fixes five vulnerabilities reported through our GitHub Security Advisory program, covering Subsonic authentication, artwork fetching, playlist cover images, player ownership, and per-user library filtering. Upgrade as soon as you can. Thanks to the researchers credite…",
    "source_url": "https://github.com/navidrome/navidrome/releases/tag/v0.64.1",
    "page_url": "https://www.firmwarely.com/devices/navidrome/"
+  },
+  "dagster": {
+   "id": "dagster",
+   "brand": "Dagster",
+   "model": "Data orchestrator",
+   "category": "A",
+   "status": "update",
+   "version": "1.13.24",
+   "previous": "1.13.23",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "New Loading a project whose root module is not importable now raises an error explaining that the project package is likely not installed, instead of a bare ModuleNotFoundError. [dagster-cloud] The ECS agent now supports cross-account service discovery. When the Cloud Map namespace lives in a diffe…",
+   "source_url": "https://github.com/dagster-io/dagster/releases/tag/1.13.24",
+   "page_url": "https://www.firmwarely.com/devices/dagster/"
   }
  }
 }
