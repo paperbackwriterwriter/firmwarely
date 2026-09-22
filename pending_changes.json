@@ -556,6 +556,36 @@
    "notes": "jenkins-2.583",
    "source_url": "https://github.com/jenkinsci/jenkins/releases/tag/jenkins-2.583",
    "page_url": "https://www.firmwarely.com/devices/jenkins/"
+  },
+  "siyuan": {
+   "id": "siyuan",
+   "brand": "SiYuan",
+   "model": "Knowledge base",
+   "category": "A",
+   "status": "update",
+   "version": "3.8.5",
+   "previous": "3.8.4",
+   "released": "2026-09-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Overview This release introduces calendar and list views for databases and an editable mind map view for list blocks, giving you more ways to organize your notes. It also improves mobile interactions, data synchronization, and AI support. Editing, documents, and databases Databases now offer calend…",
+   "source_url": "https://github.com/siyuan-note/siyuan/releases/tag/v3.8.5",
+   "page_url": "https://www.firmwarely.com/devices/siyuan/"
+  },
+  "appflowy": {
+   "id": "appflowy",
+   "brand": "AppFlowy",
+   "model": "Workspace",
+   "category": "A",
+   "status": "update",
+   "version": "0.14.5",
+   "previous": "0.14.4",
+   "released": "2026-09-22",
+   "date_known": true,
+   "eol": false,
+   "notes": ":rocket: v0.14.5 (Latest) Added database formulas and improved document recovery and desktop reliability. New Features Formula properties — Added calculated database properties with property references, built-in functions, suggestions, and live previews. Formula results can be filtered, sorted, and…",
+   "source_url": "https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.14.5",
+   "page_url": "https://www.firmwarely.com/devices/appflowy/"
   }
  }
 }
