@@ -121,6 +121,66 @@
    "notes": "Update rauc.txt with new content",
    "source_url": "https://github.com/IceWhaleTech/ZimaOS/releases/tag/1.8.0-beta1",
    "page_url": "https://www.firmwarely.com/devices/zimacube-pro/"
+  },
+  "nebula-mesh": {
+   "id": "nebula-mesh",
+   "brand": "Slack",
+   "model": "Nebula overlay network",
+   "category": "R",
+   "status": "update",
+   "version": "1.11.2",
+   "previous": "1.11.1",
+   "released": "2026-09-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "See the v1.11.2 milestone for a complete list of changes. Fixed Windows tracks NLMTU per address family and Nebula only ever set it for AF_INET, so the IPv6 MTU on every Windows adapter sat at the adapter default of 65535 regardless of tun.mtu and the stack could hand Nebula packets far larger than…",
+   "source_url": "https://github.com/slackhq/nebula/releases/tag/v1.11.2",
+   "page_url": "https://www.firmwarely.com/devices/nebula-mesh/"
+  },
+  "clickhouse": {
+   "id": "clickhouse",
+   "brand": "ClickHouse",
+   "model": "Analytics database",
+   "category": "A",
+   "status": "update",
+   "version": "26.8.11.7-lts",
+   "previous": "26.9.1.1629-stable",
+   "released": "2026-09-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release v26.8.11.7-lts v26.8.11.7-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.11.7-lts",
+   "page_url": "https://www.firmwarely.com/devices/clickhouse/"
+  },
+  "element-web": {
+   "id": "element-web",
+   "brand": "Element",
+   "model": "Element Web client",
+   "category": "A",
+   "status": "update",
+   "version": "1.12.29",
+   "previous": "1.12.28",
+   "released": "2026-09-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Update modules in element-web modules Docker image",
+   "source_url": "https://github.com/element-hq/element-web/releases/tag/v1.12.29",
+   "page_url": "https://www.firmwarely.com/devices/element-web/"
+  },
+  "tooljet": {
+   "id": "tooljet",
+   "brand": "ToolJet",
+   "model": "Low-code platform",
+   "category": "A",
+   "status": "update",
+   "version": "3.20.231-lts",
+   "previous": "3.20.230-lts",
+   "released": "2026-09-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "🚀 Features Added dynamic height support to the Navigation widget and fixed combobox clipping Added Custom Component Library core and 🌟 Enhancements Improved the Navigation widget with issue fixes and new functionality 🛠️ Fixes Fixed home page logo issue Fixed popover widget hover issue Fixed File w…",
+   "source_url": "https://github.com/ToolJet/ToolJet/releases/tag/v3.20.231-lts",
+   "page_url": "https://www.firmwarely.com/devices/tooljet/"
   }
  }
 }
