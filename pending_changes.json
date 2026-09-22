@@ -376,6 +376,51 @@
    "notes": "🏦 fix: Require Named Helm Credential Secrets ( #​16175 ) 🏦 fix: Require Named Helm Credential Secrets docs: Clarify Helm Credential Injection and Meilisearch Secrets --------- Co-authored-by: Lia",
    "source_url": "https://github.com/danny-avila/LibreChat/releases/tag/chart-2.0.13",
    "page_url": "https://www.firmwarely.com/devices/librechat/"
+  },
+  "anythingllm": {
+   "id": "anythingllm",
+   "brand": "AnythingLLM",
+   "model": "Document chat",
+   "category": "A",
+   "status": "update",
+   "version": "1.16.2",
+   "previous": "1.16.1",
+   "released": "2026-09-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "New Features [x] LLMman - OSS is now available as a local LLM provider, replacing Docker Model Runner [x] Google Vertex AI is now available as an LLM provider [x] New generate-image agent skill for creating images from chat [x] You.com is now the default web search provider for richer web-searches …",
+   "source_url": "https://github.com/Mintplex-Labs/anything-llm/releases/tag/v1.16.2",
+   "page_url": "https://www.firmwarely.com/devices/anythingllm/"
+  },
+  "directus": {
+   "id": "directus",
+   "brand": "Directus",
+   "model": "Headless CMS",
+   "category": "A",
+   "status": "update",
+   "version": "12.4.0",
+   "previous": "12.3.1",
+   "released": "2026-09-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "⚠️ Potential Breaking Changes Updated MapLibre GL JS from 1.15.3 to 6.9.0 (#​28216) The map layout and the geometry interface now require WebGL2, which MapLibre has mandated since v3. Browsers that only support WebGL1, chiefly Safari 14 and earlier and older Android devices, will no longer render m…",
+   "source_url": "https://github.com/directus/directus/releases/tag/v12.4.0",
+   "page_url": "https://www.firmwarely.com/devices/directus/"
+  },
+  "archivebox": {
+   "id": "archivebox",
+   "brand": "ArchiveBox",
+   "model": "Web archiving",
+   "category": "N",
+   "status": "update",
+   "version": "0.9.36",
+   "previous": "0.7.4",
+   "released": "2026-09-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed v0.6.0 Release beta 1 Bump y18n from 5.0.1 to 5.0.5[bot] in https://github.com/ArchiveBox/ArchiveBox/pull/685 v0.6.0 Release add command: --parser option (fixes #​235) fix bookmarklet script point to master image, not latest Docs: Improve spelling on readme Exempt /add route from CSR…",
+   "source_url": "https://github.com/ArchiveBox/ArchiveBox/releases/tag/v0.9.36",
+   "page_url": "https://www.firmwarely.com/devices/archivebox/"
   }
  }
 }
