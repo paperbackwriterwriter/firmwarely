@@ -496,6 +496,21 @@
    "notes": "New Loading a project whose root module is not importable now raises an error explaining that the project package is likely not installed, instead of a bare ModuleNotFoundError. [dagster-cloud] The ECS agent now supports cross-account service discovery. When the Cloud Map namespace lives in a diffe…",
    "source_url": "https://github.com/dagster-io/dagster/releases/tag/1.13.24",
    "page_url": "https://www.firmwarely.com/devices/dagster/"
+  },
+  "komga": {
+   "id": "komga",
+   "brand": "Komga",
+   "model": "Comic and manga server",
+   "category": "A",
+   "status": "update",
+   "version": "1.27.1",
+   "previous": "1.27.0",
+   "released": "2026-09-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog 🐛 Fixes api add missing restrictions checks (7f71808) kobo allow proxy requests without raw sync token (c21dbad) prevent Kobo from re-downloading books if the metadata changed (725443d), closes #​2426 nextui better justify poster on entity view page (e7e08ca), closes #​2454 wrap long name…",
+   "source_url": "https://github.com/gotson/komga/releases/tag/1.27.1",
+   "page_url": "https://www.firmwarely.com/devices/komga/"
   }
  }
 }
