@@ -511,6 +511,51 @@
    "notes": "Changelog 🐛 Fixes api add missing restrictions checks (7f71808) kobo allow proxy requests without raw sync token (c21dbad) prevent Kobo from re-downloading books if the metadata changed (725443d), closes #​2426 nextui better justify poster on entity view page (e7e08ca), closes #​2454 wrap long name…",
    "source_url": "https://github.com/gotson/komga/releases/tag/1.27.1",
    "page_url": "https://www.firmwarely.com/devices/komga/"
+  },
+  "vllm": {
+   "id": "vllm",
+   "brand": "vLLM",
+   "model": "LLM inference server",
+   "category": "A",
+   "status": "update",
+   "version": "0.30.0",
+   "previous": "0.29.0",
+   "released": "2026-09-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "v0.30.0 Highlights This release features 762 commits from 315 contributors (104 new)! New models: DeepSeek-V4.1-Flash (#​56214, #​56228, #​56208) with the whole KV stored in MXFP8 through the FlashMLA V4.1 record on SM100 (#​56893), DeepGEMM Mega-mHC (#​56962), and async Engram prefetch with Engram…",
+   "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.30.0",
+   "page_url": "https://www.firmwarely.com/devices/vllm/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.2644",
+   "previous": "0.24.2631",
+   "released": "2026-09-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes: c601589dac25d396a0b8e6503995d7143fcbe689 add ptskit-api resolves #​16106 1d9eb30c5d1cc2311eebb183f6876362661aa4da add oshenpt-api resolves #​8449 626ffed7900fd1143264cf1fcdedb9c8548fb3c6 kufei-api: drop dup description block f29ffaaa8ad3a03673a00406b8fe670bb52eb1a2 ds-reloaded: lint c6e414…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2644",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "jenkins": {
+   "id": "jenkins",
+   "brand": "Jenkins",
+   "model": "Automation server",
+   "category": "A",
+   "status": "update",
+   "version": "2.583",
+   "previous": "2.582",
+   "released": "2026-09-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "jenkins-2.583",
+   "source_url": "https://github.com/jenkinsci/jenkins/releases/tag/jenkins-2.583",
+   "page_url": "https://www.firmwarely.com/devices/jenkins/"
   }
  }
 }
