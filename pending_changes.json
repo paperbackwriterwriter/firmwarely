@@ -256,6 +256,66 @@
    "notes": "Breaking Changes none New Features none Fixes ci: run adapters/repos/db/integrationslowtest as its own integration job Couple authz/use listing bugfixes Remove fsync from CopyFile, which only writes backup copies Drop permanent copy of sharding state from memory Replace WEAVIATE_LICENSE env toggle …",
    "source_url": "https://github.com/weaviate/weaviate/releases/tag/v1.39.6",
    "page_url": "https://www.firmwarely.com/devices/weaviate/"
+  },
+  "umbrel": {
+   "id": "umbrel",
+   "brand": "Umbrel",
+   "model": "Personal server OS",
+   "category": "A",
+   "status": "update",
+   "version": "2.0",
+   "previous": "1.7.4",
+   "released": "2026-09-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "umbrelOS 2.0 is the biggest update we've ever shipped. It brings a new Photos app, Umbrel apps for iPhone and Mac, Machines for running Windows, Ubuntu, and Android inside your Umbrel, multiple user accounts, an MCP server for AI agents, a new Storage Manager with FailSafe (RAID), downloads from cl…",
+   "source_url": "https://github.com/getumbrel/umbrel/releases/tag/2.0.0",
+   "page_url": "https://www.firmwarely.com/devices/umbrel/"
+  },
+  "kestra": {
+   "id": "kestra",
+   "brand": "Kestra",
+   "model": "Orchestration platform",
+   "category": "A",
+   "status": "update",
+   "version": "2.0.3",
+   "previous": "2.0.2",
+   "released": "2026-09-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog 🚀 Features core 77dddbc access-control extension point for MCP tools worker c6a04d9 basic authentication for the worker-to-controller gRPC channel 📘 Subtasks core 9e4f167 delete the translation keys nothing renders (#​19512), closes #​19512 deps c633d3d bump kotlp to 0.1.6 for process.net…",
+   "source_url": "https://github.com/kestra-io/kestra/releases/tag/v2.0.3",
+   "page_url": "https://www.firmwarely.com/devices/kestra/"
+  },
+  "ghost": {
+   "id": "ghost",
+   "brand": "Ghost",
+   "model": "Publishing platform",
+   "category": "A",
+   "status": "update",
+   "version": "6.65.0",
+   "previous": "6.64.0",
+   "released": "2026-09-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "🎨 Updated Source to v1.7.6 - Ghost CI 🎨 Updated Casper to v5.12.5 - Ghost CI 🎨 Improved site responsiveness while the sitemap rebuilds (#​30839) - Austin Burdine 🎨 Improved sitemap memory use on sites with many posts (#​30838) - Austin Burdine 🐛 Fixed the API pipeline cloning its cache adapter - Au…",
+   "source_url": "https://github.com/TryGhost/Ghost/releases/tag/v6.65.0",
+   "page_url": "https://www.firmwarely.com/devices/ghost/"
+  },
+  "discourse": {
+   "id": "discourse",
+   "brand": "Discourse",
+   "model": "Forum platform",
+   "category": "A",
+   "status": "update",
+   "version": "2026.10.0-latest",
+   "previous": "2026.9.0-latest",
+   "released": "2026-09-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "v2026.10.0-latest",
+   "source_url": "https://github.com/discourse/discourse/releases/tag/v2026.10.0-latest",
+   "page_url": "https://www.firmwarely.com/devices/discourse/"
   }
  }
 }
