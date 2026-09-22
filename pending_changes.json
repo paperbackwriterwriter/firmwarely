@@ -16,6 +16,36 @@
    "notes": "New Contributors has recently updated to the latest Pixelfed and sent us seven PRs which make up most of the changes in this release. Thank you for the effort fixing these bugs Lily! To other admins, if you've forked Pixelfed and have any features/bugsfixes. Please send them down stream, I can't pr…",
    "source_url": "https://github.com/pixelfed/pixelfed/releases/tag/v0.14.3",
    "page_url": "https://www.firmwarely.com/devices/pixelfed/"
+  },
+  "evcc": {
+   "id": "evcc",
+   "brand": "evcc",
+   "model": "EV charge controller",
+   "category": "S",
+   "status": "update",
+   "version": "0.316.0",
+   "previous": "0.315.2",
+   "released": "2026-09-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog Breaking Changes 🚨 949002965464831f66fe7fa4200707ba500fed68 Home Assistant charger: make milliamp current control optional (BC) (#​33858) ddbc8f325fb28a1cf2325c020a305babf5805fc6 Home Assistant: drop battery minsoc/maxsoc preset (BC) (#​33707) 54403e68bcb16bf8496401533e05b5ee8e7f03c4 Mode…",
+   "source_url": "https://github.com/evcc-io/evcc/releases/tag/0.316.0",
+   "page_url": "https://www.firmwarely.com/devices/evcc/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "Dns Blocklists",
+   "model": "For a better internet",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.265.33765",
+   "previous": "37522026.264.33281",
+   "released": "2026-09-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​11538 #​11537 #​11535 #​11533 #​11532 #​11531",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.265.33765",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   }
  }
 }
