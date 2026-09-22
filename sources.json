@@ -9479,6 +9479,96 @@
    "type": "github",
    "repo": "OliveTin/OliveTin",
    "product_url": "https://github.com/OliveTin/OliveTin"
+  },
+  {
+   "id": "movie-data-capture",
+   "brand": "Movie Data Capture",
+   "model": "Local Movies Organizer",
+   "category": "N",
+   "type": "github",
+   "repo": "mvdctop/Movie_Data_Capture",
+   "product_url": "https://github.com/mvdctop/Movie_Data_Capture"
+  },
+  {
+   "id": "sun-panel",
+   "brand": "Sun Panel",
+   "model": "Server, NAS navigation panel, Homepage, browser homepage",
+   "category": "N",
+   "type": "github",
+   "repo": "hslr-s/sun-panel",
+   "product_url": "https://github.com/hslr-s/sun-panel"
+  },
+  {
+   "id": "oxicloud",
+   "brand": "OxiCloud",
+   "model": "Ultra-fast, secure & lightweight self-hosted cloud storage",
+   "category": "N",
+   "type": "github",
+   "repo": "AtalayaLabs/OxiCloud",
+   "product_url": "https://github.com/AtalayaLabs/OxiCloud"
+  },
+  {
+   "id": "ani-rss",
+   "brand": "Ani Rss",
+   "model": "基于RSS自动追番、订阅、下载、刮削、洗版",
+   "category": "N",
+   "type": "github",
+   "repo": "wushuo894/ani-rss",
+   "product_url": "https://github.com/wushuo894/ani-rss"
+  },
+  {
+   "id": "arc",
+   "brand": "Arc",
+   "model": "Customized Redpill Loader",
+   "category": "N",
+   "type": "github",
+   "repo": "AuxXxilium/arc",
+   "product_url": "https://github.com/AuxXxilium/arc"
+  },
+  {
+   "id": "lanraragi",
+   "brand": "LANraragi",
+   "model": "Web application for archival and reading of manga/doujinshi",
+   "category": "N",
+   "type": "github",
+   "repo": "Difegue/LANraragi",
+   "product_url": "https://github.com/Difegue/LANraragi"
+  },
+  {
+   "id": "arozos",
+   "brand": "Arozos",
+   "model": "Web Desktop Operating System",
+   "category": "N",
+   "type": "github",
+   "repo": "tobychui/arozos",
+   "product_url": "https://github.com/tobychui/arozos"
+  },
+  {
+   "id": "bili-sync",
+   "brand": "Bili Sync",
+   "model": "由 Rust & Tokio 驱动的哔哩哔哩同步工具",
+   "category": "N",
+   "type": "github",
+   "repo": "amtoaer/bili-sync",
+   "product_url": "https://github.com/amtoaer/bili-sync"
+  },
+  {
+   "id": "songloft",
+   "brand": "Songloft",
+   "model": "插件化、无广告的免费音乐服务器",
+   "category": "N",
+   "type": "github",
+   "repo": "songloft-org/songloft",
+   "product_url": "https://github.com/songloft-org/songloft"
+  },
+  {
+   "id": "orcaslicer-orcaslicer",
+   "brand": "OrcaSlicer",
+   "model": "G-code generator",
+   "category": "M",
+   "type": "github",
+   "repo": "OrcaSlicer/OrcaSlicer",
+   "product_url": "https://github.com/OrcaSlicer/OrcaSlicer"
   }
  ]
 }
