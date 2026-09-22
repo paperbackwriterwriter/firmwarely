@@ -143,13 +143,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.8.11.7-lts",
+   "version": "26.9.2.8-stable",
    "previous": "26.9.1.1629-stable",
    "released": "2026-09-22",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.8.11.7-lts v26.8.11.7-lts",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.11.7-lts",
+   "notes": "Release v26.9.2.8-stable v26.9.2.8-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.9.2.8-stable",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "element-web": {
@@ -241,6 +241,21 @@
    "notes": "Tag 7.1.2 Built from https://develop.svn.wordpress.org/tags/7.1.2 git-svn-id: http://core.svn.wordpress.org/tags/7.1.2 1a063a9b-81f0-0310-95a4-ce76da25c4cd",
    "source_url": "https://github.com/WordPress/WordPress/releases/tag/7.1.2",
    "page_url": "https://www.firmwarely.com/devices/wordpress/"
+  },
+  "weaviate": {
+   "id": "weaviate",
+   "brand": "Weaviate",
+   "model": "Vector database",
+   "category": "A",
+   "status": "update",
+   "version": "1.39.6",
+   "previous": "1.39.5",
+   "released": "2026-09-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Breaking Changes none New Features none Fixes ci: run adapters/repos/db/integrationslowtest as its own integration job Couple authz/use listing bugfixes Remove fsync from CopyFile, which only writes backup copies Drop permanent copy of sharding state from memory Replace WEAVIATE_LICENSE env toggle …",
+   "source_url": "https://github.com/weaviate/weaviate/releases/tag/v1.39.6",
+   "page_url": "https://www.firmwarely.com/devices/weaviate/"
   }
  }
 }
