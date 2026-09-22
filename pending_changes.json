@@ -181,6 +181,66 @@
    "notes": "🚀 Features Added dynamic height support to the Navigation widget and fixed combobox clipping Added Custom Component Library core and 🌟 Enhancements Improved the Navigation widget with issue fixes and new functionality 🛠️ Fixes Fixed home page logo issue Fixed popover widget hover issue Fixed File w…",
    "source_url": "https://github.com/ToolJet/ToolJet/releases/tag/v3.20.231-lts",
    "page_url": "https://www.firmwarely.com/devices/tooljet/"
+  },
+  "manyfold": {
+   "id": "manyfold",
+   "brand": "Manyfold",
+   "model": "3D model library",
+   "category": "M",
+   "status": "critical",
+   "version": "0.150.0",
+   "previous": "0.149.0",
+   "released": "2026-09-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release is all about security! We've been through a big list of security issues that have been identified and fixed them. We've also upgraded the security of ActivityPub federation with RFC9421 signing and verification. Hopefully though, you won't notice any of that, because it's all behind th…",
+   "source_url": "https://github.com/manyfold3d/manyfold/releases/tag/v0.150.0",
+   "page_url": "https://www.firmwarely.com/devices/manyfold/"
+  },
+  "infisical": {
+   "id": "infisical",
+   "brand": "Infisical",
+   "model": "Secrets manager",
+   "category": "A",
+   "status": "update",
+   "version": "0.165.15",
+   "previous": "0.165.14",
+   "released": "2026-09-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed fix(agent-vault): expose agent vault routes in the openapi spec docs: drop redundant \"sync\" from Secret Syncs sidebar labels[bot] in https://github.com/Infisical/infisical/pull/8234 feat: removed license deprecation banner from usage and billing fix: return 204 from delete and resolv…",
+   "source_url": "https://github.com/Infisical/infisical/releases/tag/v0.165.15",
+   "page_url": "https://www.firmwarely.com/devices/infisical/"
+  },
+  "nzbhydra2": {
+   "id": "nzbhydra2",
+   "brand": "NZBHydra2",
+   "model": "Usenet meta search",
+   "category": "A",
+   "status": "update",
+   "version": "9.0.4",
+   "previous": "9.0.3",
+   "released": "2026-09-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "v9.0.4 (2026-09-22) Fix Saving the config could fail with \"...was submitted as UNCHANGED but no stored value could be found to keep\" for indexers, downloaders or logins you never touched. This happened when an older version had saved that placeholder literally instead of the real API key/username/p…",
+   "source_url": "https://github.com/theotherp/nzbhydra2/releases/tag/v9.0.4",
+   "page_url": "https://www.firmwarely.com/devices/nzbhydra2/"
+  },
+  "wordpress": {
+   "id": "wordpress",
+   "brand": "WordPress",
+   "model": "CMS",
+   "category": "A",
+   "status": "update",
+   "version": "7.1.2",
+   "previous": "7.1.1",
+   "released": "2026-09-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Tag 7.1.2 Built from https://develop.svn.wordpress.org/tags/7.1.2 git-svn-id: http://core.svn.wordpress.org/tags/7.1.2 1a063a9b-81f0-0310-95a4-ce76da25c4cd",
+   "source_url": "https://github.com/WordPress/WordPress/releases/tag/7.1.2",
+   "page_url": "https://www.firmwarely.com/devices/wordpress/"
   }
  }
 }
