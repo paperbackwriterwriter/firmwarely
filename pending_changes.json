@@ -46,6 +46,51 @@
    "notes": "#​11538 #​11537 #​11535 #​11533 #​11532 #​11531",
    "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.265.33765",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "bitwarden-server": {
+   "id": "bitwarden-server",
+   "brand": "Bitwarden",
+   "model": "Self-hosted server",
+   "category": "A",
+   "status": "update",
+   "version": "2026.9.1",
+   "previous": "2026.9.0",
+   "released": "2026-09-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed 🐛 Bug fixes Cherry-pick: [PM-43897] set Reply-To on price migration email Full Changelog: https://github.com/bitwarden/server/compare/v2026.9.0...v2026.9.1",
+   "source_url": "https://github.com/bitwarden/server/releases/tag/v2026.9.1",
+   "page_url": "https://www.firmwarely.com/devices/bitwarden-server/"
+  },
+  "zabbix": {
+   "id": "zabbix",
+   "brand": "Zabbix",
+   "model": "Monitoring platform",
+   "category": "A",
+   "status": "update",
+   "version": "7.0.31",
+   "previous": "7.4.15",
+   "released": "2026-09-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "7.0.31",
+   "source_url": "https://github.com/zabbix/zabbix/releases/tag/7.0.31",
+   "page_url": "https://www.firmwarely.com/devices/zabbix/"
+  },
+  "neo4j": {
+   "id": "neo4j",
+   "brand": "Neo4j",
+   "model": "Graph database",
+   "category": "A",
+   "status": "update",
+   "version": "5.26.31",
+   "previous": "2026.09.0",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "5.26.31",
+   "source_url": "https://github.com/neo4j/neo4j/releases/tag/5.26.31",
+   "page_url": "https://www.firmwarely.com/devices/neo4j/"
   }
  }
 }
