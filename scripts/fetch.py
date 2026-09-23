@@ -120,8 +120,24 @@ def get(url):
 MENTION_FRAG = re.compile(r"\s*(?:by|from|-)?\s*@[\w-]+(?:\s+in\s+(?:https?://\S+|#\d+))?", re.I)
 
 
-MD_LINK = re.compile(r"\[([^\]]*)\]\([^)]*\)")                      # [label](url) → label
+MD_IMAGE = re.compile(r"!\[[^\]]*\]\((?:[^)]*\)|[^)\s]*…$)")            # ![badge](url) → gone, even one cut off by "…"
+MD_LINK = re.compile(r"\[((?:[^\[\]]|\[[^\]]*\])*)\]\([^)]*\)")            # [label](url) → label, even [a[b]](url)
+BOT = re.compile(r"@?[\w-]*\[bot\]")                                   # dependabot[bot] and friends
+# Keep-a-Changelog section names that earlier runs flattened into "Added Added a theme"
+REPEATED_SECTION = re.compile(r"\b(Added|Changed|Fixed|Removed|Deprecated|Security|Updated|Improved|Announcement)(?:\s+\1\b)+")
+MD_HEADING = re.compile(r"^[ \t]{0,3}#{1,6}[ \t]+(.+?)[ \t#:]*$", re.M)
 MD_NOISE = re.compile(r"(^|\n)[ \t]{0,3}(?:#{1,6}[ \t]+|[-*+][ \t]+|>[ \t]?|\d+\.[ \t]+)|`{1,3}|\*{1,3}|_{2,3}|~~")
+
+
+def _heading(m):
+    """A markdown heading, flattened into prose. Changelogs repeat the heading as the first
+    word of the next line ("### Added" / "- Added a theme"), so a heading that the following
+    line already says is dropped rather than read twice; any other becomes "Heading:"."""
+    title = m.group(1).strip()
+    rest = m.string[m.end():].lstrip("\n \t-*+>")
+    if rest.lower().startswith(title.lower()):
+        return ""
+    return title + ":"
 
 
 def clean(text, limit=300):
@@ -138,11 +154,15 @@ def clean(text, limit=300):
         if stripped == text and html.unescape(text) == text:
             break  # nothing left to strip and nothing left to decode
         text = html.unescape(stripped)
+    text = MD_IMAGE.sub("", text)
     text = MD_LINK.sub(r"\1", text)
+    text = BOT.sub("", text)
+    text = MD_HEADING.sub(_heading, text)
     text = MD_NOISE.sub(r"\1", text)
     text = MENTION_FRAG.sub("", text)            # "by @user in #123" → gone (would tag real people if re-posted)
     text = re.sub(r"(?<![\w/])#(\d+)", "#\u200b" + r"\1", text)  # "#123" → non-referencing
     text = re.sub(r"\s+", " ", text).strip()
+    text = REPEATED_SECTION.sub(r"\1", text)
     text = text.replace("<", "‹").replace(">", "›")   # whatever the regexes missed can't be a tag either
     return text[: limit - 1] + "…" if len(text) > limit else text
 
@@ -260,7 +280,7 @@ def check_github(src, prev=None):
         if e.code == 304:
             return {"version": prev["version"], "released": prev.get("released"),
                     "date_known": bool(prev.get("date_known")),
-                    "notes": prev.get("notes", ""), "source_url": prev.get("source_url"),
+                    "notes": clean(prev.get("notes", "")), "source_url": prev.get("source_url"),
                     "etag": prev["etag"]}
         # with a catalog this size an exhausted quota looks like dozens of unrelated
         # failures, so say what it really is
@@ -387,6 +407,18 @@ def date_known_default(src, prev):
     return src["type"] in ("feed", "github") or bool(src.get("date_regex"))
 
 
+def full_name(d):
+    """Brand and model as one name, without saying the brand twice: "Eero" + "Eero Pro 6E"
+    is "Eero Pro 6E", "Redis" + "Redis" is "Redis", "Raspberry Pi" + "Pi 5" is "Raspberry Pi 5"."""
+    brand, model = d["brand"].strip(), d["model"].strip()
+    if model.lower() == brand.lower() or model.lower().startswith((brand.lower() + " ", brand.lower() + "-")):
+        return model
+    last, words = brand.split()[-1], model.split()
+    if words and words[0].lower() == last.lower():
+        return " ".join([brand] + words[1:])
+    return f"{brand} {model}"
+
+
 def device_record(src, prev):
     """The devices.json entry for a source before tonight's check, carrying forward
     whatever the last run knew. discover.py builds new devices through this too."""
@@ -395,7 +427,7 @@ def device_record(src, prev):
         "tracked": src["type"] != "manual",
         "version": prev.get("version"), "released": prev.get("released"),
         "date_known": date_known_default(src, prev),
-        "notes": prev.get("notes", ""), "source_url": prev.get("source_url") or src.get("url"),
+        "notes": clean(prev.get("notes", "")), "source_url": prev.get("source_url") or src.get("url"),
         "product_url": src.get("product_url"),
         "update_url": update_url(src),
         "history": prev.get("history", []),
@@ -575,7 +607,7 @@ def build_issue_summary(changed):
     for d in sorted(changed, key=lambda x: (x["status"] != "critical", x["brand"], x["model"])):
         flag = {"critical": "🔴 security", "update": "🟡 update", "eol": "⚫ end of life"}.get(d["status"], "⚪")
         seen = "" if d.get("date_known", True) else "first seen "
-        lines.append(f"- {flag} — {d['brand']} {d['model']}: `{d['version']}` ({seen}{d.get('released','')})")
+        lines.append(f"- {flag} — {full_name(d)}: `{d['version']}` ({seen}{d.get('released','')})")
     lines += ["", "Site: firmwarely dot com (link omitted on purpose)", ""]
     return "\n".join(lines)
 
@@ -596,7 +628,7 @@ def build_digest(changed):
         md += [f"## {heading}", ""]
         html_parts.append(f"<h2>{heading}</h2><ul>")
         for d in items:
-            name = f"{d['brand']} {d['model']}"
+            name = full_name(d)
             when = ("" if d.get("date_known", True) else "first seen ") + (d.get("released") or "")
             note = (d.get("notes") or "").strip()
             note = note[:220] + "…" if len(note) > 220 else note

@@ -34,7 +34,7 @@ def added_section(discovered):
         return ""
     lines = ["", f"## New devices added today ({len(added)})", ""]
     for a in added:
-        lines.append(f"- {a['brand']} {a['model']} — {CATS.get(a.get('category'), a.get('category'))}")
+        lines.append(f"- {fetch.full_name(a)} — {CATS.get(a.get('category'), a.get('category'))}")
     lines.append("")
     return "\n".join(lines)
 

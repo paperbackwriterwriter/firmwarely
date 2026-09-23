@@ -11,7 +11,7 @@ nothing else. Standard library only, same as the rest of the pipeline.
 
 Everyone on a plan in USER_ALERT_PLANS (default "all") with an active subscription gets
 exactly one email. Free accounts are included because the signup box on every device page
-promises them one — "one email when a new or critical firmware ships, free for up to 3
+promises them one — "one email when new firmware or a security fix ships, free for up to 3
 devices" — and /api/me holds them to those three. Pro's daily mail is unlimited devices,
 sorted security-first, with the dashboard behind it:
 
@@ -46,6 +46,8 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
+
+from fetch import full_name
 
 ROOT = Path(__file__).resolve().parent.parent
 CHANGED = ROOT / "changed.json"
@@ -188,7 +190,7 @@ def render_digest(data):
             continue
         parts.append(f"<h3 style=\"font-size:16px;margin:20px 0 6px\">{heading}</h3><ul>")
         for c in items:
-            name = html.escape(f"{c['brand']} {c['model']}")
+            name = html.escape(full_name(c))
             line = f"<strong>{name}</strong> — <code>{html.escape(c['version'])}</code>"
             if c.get("released"):
                 seen = "" if c.get("date_known", True) else "first seen "
@@ -215,7 +217,7 @@ def render_digest(data):
 
 def subject_for(hits):
     one = len(hits) == 1
-    what = (f"your {hits[0]['change']['brand']} {hits[0]['change']['model']}" if one
+    what = (f"your {full_name(hits[0]['change'])}" if one
             else f"{len(hits)} of your devices")
     if any(h["change"]["status"] == "critical" for h in hits):
         return f"Security fix{'' if one else 'es'} for {what}"
@@ -228,7 +230,7 @@ def render(hits):
     rows = []
     for h in hits:
         c, yours = h["change"], h["yours"]
-        name = html.escape(f"{c['brand']} {c['model']}")
+        name = html.escape(full_name(c))
         flag = ("🔴 Security fix" if c["status"] == "critical"
                 else "⚫ End of life" if c.get("eol") else "🟡 Update")
         line = (f"<strong>{name}</strong> — {flag}<br>"
@@ -345,7 +347,7 @@ def main():
             continue
         if hits:
             what = f"{len(hits)} device(s): " + ", ".join(
-                f"{h['change']['brand']} {h['change']['model']}" for h in hits)
+                full_name(h['change']) for h in hits)
             body = render(hits)
         else:
             what = "general digest"

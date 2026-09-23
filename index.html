@@ -244,7 +244,7 @@ footer a:hover{color:var(--text)}
         <ol>
           <li><div class="n">1</div><h3>Pick the devices you own</h3><p>Search the catalog for your router, NAS, cameras, console, drone or e-bike and add them to your list.</p></li>
           <li><div class="n">2</div><h3>We check every hour</h3><p>Firmwarely reads each manufacturer's release page and project feed around the clock and records the version, date and what changed the moment it appears.</p></li>
-          <li><div class="n">3</div><h3>Pro members get one email a day</h3><p>Each morning, Pro members get a single email covering every device of theirs that changed in the last 24 hours, security fixes first. Free members see the same information here on the site.</p></li>
+          <li><div class="n">3</div><h3>You get one email a day</h3><p>Each morning, a single email covers every device of yours that changed in the last 24 hours, security fixes first.</p></li>
         </ol>
       </div>
     </div>
@@ -259,6 +259,7 @@ footer a:hover{color:var(--text)}
           <div class="price">$0</div>
           <ul>
             <li>Up to 3 devices</li>
+            <li>One email a day when they change</li>
             <li>Update guides and one-click update links</li>
             <li>Full catalog access</li>
           </ul>
@@ -270,7 +271,7 @@ footer a:hover{color:var(--text)}
           <ul>
             <li>Unlimited devices</li>
             <li>Dashboard: every device on one screen, security fixes first, one click to update</li>
-            <li>One email a day when your devices change</li>
+            <li>One daily email covering every device you own</li>
             <li>Founding-member price, locked in</li>
             <li>Security fixes flagged and sorted to the top</li>
             <li>End-of-life notices when a vendor says updates are stopping</li>
@@ -317,7 +318,7 @@ footer a:hover{color:var(--text)}
   <section id="signup" class="signup">
     <div class="wrap">
       <h2>Get alerts for your devices</h2>
-      <p style="color:var(--muted)">Add your email and, if you like, the devices you want watched. Free members can save up to 3 devices; Pro members are emailed when one of theirs changes.</p>
+      <p style="color:var(--muted)">Add your email and, if you like, the devices you want watched. We email you once a day when one of them changes. Free covers up to 3 devices; Pro has no limit.</p>
       <form id="signup-form" novalidate>
         <label class="sr" for="s-email">Email address</label>
         <div class="row">
@@ -356,6 +357,15 @@ let loadState = "loading"; // loading | ok | failed
 const STATUS_LABEL = {critical:"critical fix", update:"new version", current:"current", pending:"watching soon", eol:"end of life", stale:"no recent release"};
 const fmtDate = s => s ? new Date(s+"T00:00:00").toLocaleDateString(undefined,{month:"short",day:"numeric",year:"numeric"}) : "—";
 const shortDate = s => new Date(s+"T00:00:00").toLocaleDateString("en-US",{month:"short",day:"2-digit"});
+// Brand and model as one name, without saying the brand twice ("Eero" + "Eero Pro 6E").
+// Same rule as full_name() in scripts/fetch.py. It always starts with the brand.
+const fullName = x => {
+  const b = String(x.brand||"").trim(), m = String(x.model||"").trim();
+  if(m.toLowerCase()===b.toLowerCase() || m.toLowerCase().startsWith(b.toLowerCase()+" ") || m.toLowerCase().startsWith(b.toLowerCase()+"-")) return m;
+  const last = b.split(/\s+/).pop().toLowerCase(), w = m.split(/\s+/);
+  if(w[0] && w[0].toLowerCase()===last) return [b, ...w.slice(1)].join(" ");
+  return b+" "+m;
+};
 const slug = d => d.id || (d.b+" "+d.m).toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/(^-|-$)/g,"");
 // Release notes, names and versions come from upstream projects, not from us. Escape every
 // one on the way into innerHTML, and only ever link to http(s) URLs.
@@ -372,7 +382,7 @@ function buildFeed(){
   const recent = DEVICES.filter(d=>d.d && d.s!=="pending").sort((a,b)=>b.d.localeCompare(a.d)).slice(0,9);
   recent.forEach(d=>{
     const li = document.createElement("li");
-    li.innerHTML = `<span class="t">${shortDate(d.d)}</span><span class="d">${icon(d.i)}${esc(d.b)} ${esc(d.m)} <em>${esc(d.v)}</em></span><span class="s ${STATUS_CLASS(d.s)}">${d.s==="critical"?"CRITICAL":d.s==="update"?"update":d.s==="eol"?"EOL":"ok"}</span>`;
+    li.innerHTML = `<span class="t">${shortDate(d.d)}</span><span class="d">${icon(d.i)}${esc(d.f)} <em>${esc(d.v)}</em></span><span class="s ${STATUS_CLASS(d.s)}">${d.s==="critical"?"CRITICAL":d.s==="update"?"update":d.s==="eol"?"EOL":"ok"}</span>`;
     ol.appendChild(li);
   });
   const end = document.createElement("li");
@@ -395,7 +405,7 @@ const PAGE = 60, more = document.getElementById("more");
 function render(){
   const list = DEVICES.filter(d =>
     (cat==="all" || CATS[d.c]===cat) &&
-    (q==="" || (d.b+" "+d.m).toLowerCase().includes(q))
+    (q==="" || (d.b+" "+d.m).toLowerCase().includes(q) || d.f.toLowerCase().includes(q))
   ).sort((a,b)=> (a.s==="pending")-(b.s==="pending") || (a.b+a.m).localeCompare(b.b+b.m));
   // the unfiltered list is the whole catalogue; show a page of it and offer the rest
   const shown = (showAll || q || cat!=="all") ? list : list.slice(0, PAGE);
@@ -403,7 +413,7 @@ function render(){
   more.textContent = `Show all ${list.length} devices`;
   rows.innerHTML = shown.map(d => `
     <tr data-id="${esc(slug(d))}" tabindex="0">
-      <td>${icon(d.i)}<strong>${esc(d.b)}</strong> ${esc(d.m)}</td>
+      <td>${icon(d.i)}<strong>${esc(d.f.slice(0,d.b.length))}</strong>${esc(d.f.slice(d.b.length))}</td>
       <td class="ver">${esc(d.v) || "—"}</td>
       <td class="date">${fmtDate(d.d)}${d.k || !d.d ? "" : ' <span class="seen">first seen</span>'}</td>
       <td class="cat">${CATS[d.c] || ""}</td>
@@ -450,7 +460,7 @@ function productLink(u){
 function openDevice(id){
   const d = DEVICES.find(x=>slug(x)===id); if(!d) return;
   body.innerHTML = `
-    <div class="top"><h3>${esc(d.b)} ${esc(d.m)}</h3><button class="x" aria-label="Close">×</button></div>
+    <div class="top"><h3>${esc(d.f)}</h3><button class="x" aria-label="Close">×</button></div>
     <span class="status ${STATUS_CLASS(d.s)}">${STATUS_LABEL[d.s] || esc(d.s)}</span>
     <dl class="kv">
       <dt>Latest firmware</dt><dd>${esc(d.v) || "—"}</dd>
@@ -461,7 +471,7 @@ function openDevice(id){
       ${d.id ? `<dt>Page</dt><dd><a href="/devices/${esc(d.id)}/">Full details &amp; version history →</a></dd>` : ""}
     </dl>
     <div class="actions">
-      <button class="btn" data-watch="${esc(d.b)} ${esc(d.m)}">Get alerts for this device</button>
+      <button class="btn" data-watch="${esc(d.f)}">Get alerts for this device</button>
       ${safeUrl(d.u) ? `<a class="btn ghost" href="${safeUrl(d.u)}" target="_blank" rel="noopener">Update this device ↗</a>`
             : (d.id ? `<a class="btn ghost" href="/devices/${esc(d.id)}/#update">How to update</a>` : "")}
       ${productLink(d.p)}
@@ -584,7 +594,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
     const r = await fetch("/devices.json", {cache:"no-cache"});
     if(!r.ok) throw new Error(r.status);
     const data = await r.json();
-    const live = (data.devices||[]).map(x=>({b:x.brand, m:x.model, c:x.category, v:x.version, d:x.released, k:x.date_known !== false, s:x.status, n:x.notes, url:x.source_url, p:x.product_url, u:x.update_url, id:x.id, i:x.icon}));
+    const live = (data.devices||[]).map(x=>({b:x.brand, m:x.model, f:fullName(x), c:x.category, v:x.version, d:x.released, k:x.date_known !== false, s:x.status, n:x.notes, url:x.source_url, p:x.product_url, u:x.update_url, id:x.id, i:x.icon}));
     if(!live.length) throw new Error("empty");
     DEVICES = live; loadState = "ok";
     const withData = live.length;   // devices.json only carries devices we have data for
