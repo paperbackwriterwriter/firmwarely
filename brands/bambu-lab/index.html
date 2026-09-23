@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bambu Lab firmware updates — 4 devices tracked | Firmwarely</title>
-<meta name="description" content="Latest Bambu Lab firmware for 4 devices, checked every hour. Newest release: A1 01.08.01.00 on Sep 15, 2026.">
+<meta name="description" content="Latest Bambu Lab firmware for 4 devices, checked every hour. Newest release: H2D 01.04.00.00 on Sep 15, 2026.">
 <link rel="canonical" href="https://www.firmwarely.com/brands/bambu-lab/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
 <meta property="og:site_name" content="Firmwarely">
 <meta property="og:title" content="Bambu Lab firmware updates — 4 devices tracked | Firmwarely">
-<meta property="og:description" content="Latest Bambu Lab firmware for 4 devices, checked every hour. Newest release: A1 01.08.01.00 on Sep 15, 2026.">
+<meta property="og:description" content="Latest Bambu Lab firmware for 4 devices, checked every hour. Newest release: H2D 01.04.00.00 on Sep 15, 2026.">
 <meta property="og:url" content="https://www.firmwarely.com/brands/bambu-lab/">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://www.firmwarely.com/og.png">
@@ -207,6 +207,13 @@ footer a:hover{color:var(--text)}
   .hist{width:100%;border-collapse:collapse;margin-top:.5rem;font-family:var(--mono);font-size:.85rem}
   .hist td{padding:.5rem 0;border-top:1px solid var(--line)}
   .hist td:last-child{text-align:right;color:var(--muted)}
+  .hist.models th{padding:.5rem 0;text-align:left}
+  .hist.models td{padding-right:.75rem}
+  .hist.models th,.hist.models td:not(:first-child){white-space:nowrap;overflow-wrap:normal}
+  .hist.models td:first-child{width:100%}
+  /* the site-wide phone rule hides a table's 3rd and 4th columns (the homepage catalogue);
+     here the 4th is the Track link, so keep it and let only the date go */
+  @media (max-width:640px){.hist.models th:nth-child(4),.hist.models td:nth-child(4){display:table-cell}}
   ol.upd-steps{display:block;margin:1rem 0 0;padding-left:1.5rem;color:var(--text);list-style:decimal}
   ol.upd-steps li{list-style:decimal;margin:0 0 .6rem;line-height:1.55}
   ol.upd-steps li::marker{color:var(--amber);font-weight:600}
@@ -251,7 +258,7 @@ footer a:hover{color:var(--text)}
 <script defer src="/_vercel/insights/script.js"></script>
 <script defer src="/formguard.js"></script>
 <script defer src="/captcha.js"></script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Bambu Lab", "item": "https://www.firmwarely.com/brands/bambu-lab/"}]}, {"@type": "ItemList", "name": "Bambu Lab firmware", "numberOfItems": 4, "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Bambu Lab Bambu Studio", "url": "https://www.firmwarely.com/devices/bambu-studio/"}, {"@type": "ListItem", "position": 2, "name": "Bambu Lab A1", "url": "https://www.firmwarely.com/devices/bambu-lab-a1/"}, {"@type": "ListItem", "position": 3, "name": "Bambu Lab H2D", "url": "https://www.firmwarely.com/devices/bambu-lab-h2d/"}, {"@type": "ListItem", "position": 4, "name": "Bambu Lab A1 mini", "url": "https://www.firmwarely.com/devices/bambu-lab-a1-mini/"}]}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Bambu Lab", "item": "https://www.firmwarely.com/brands/bambu-lab/"}]}, {"@type": "ItemList", "name": "Bambu Lab firmware", "numberOfItems": 3, "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Bambu Lab Bambu Studio", "url": "https://www.firmwarely.com/devices/bambu-studio/"}, {"@type": "ListItem", "position": 2, "name": "Bambu Lab H2D", "url": "https://www.firmwarely.com/devices/bambu-lab-h2d/"}, {"@type": "ListItem", "position": 3, "name": "Bambu Lab A1 and A1 mini", "url": "https://www.firmwarely.com/devices/bambu-lab-a1-series/"}]}]}</script>
 </head>
 <body>
 <header>
@@ -274,10 +281,10 @@ footer a:hover{color:var(--text)}
 <div class="wrap brandlist" style="padding-top:2rem">
   <div class="crumbs"><a href="/devices/">Devices</a> / Bambu Lab</div>
   <h1 class="dev-h">Bambu Lab firmware updates</h1>
-  <p style="color:var(--muted);max-width:70ch">Firmwarely tracks 4 Bambu Lab devices across makers &amp; open firmware. The most recent Bambu Lab release we recorded is A1 01.08.01.00 on Sep 15, 2026. Each device page has the current version, release notes, version history and how to update.</p>
+  <p style="color:var(--muted);max-width:70ch">Firmwarely tracks 4 Bambu Lab devices across makers &amp; open firmware. The most recent Bambu Lab release we recorded is H2D 01.04.00.00 on Sep 15, 2026. Each device page has the current version, release notes, version history and how to update.</p>
   <div class="browse"><span>Categories</span><a class="chip" href="/category/makers/">Makers &amp; open firmware</a></div>
   <h2>Bambu Lab devices</h2>
-  <ul><li><a href="/devices/bambu-lab-a1/"><svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 10h48v46H8z"/><path d="M8 20h48"/><path d="M28 20v10h8V20"/><path class="g" d="M32 30v8"/><path d="M14 50h36"/><path d="M20 46h24"/></svg>A1</a><span>01.08.01.00 · seen Sep 15, 2026</span></li><li><a href="/devices/bambu-lab-a1-mini/"><svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 10h48v46H8z"/><path d="M8 20h48"/><path d="M28 20v10h8V20"/><path class="g" d="M32 30v8"/><path d="M14 50h36"/><path d="M20 46h24"/></svg>A1 mini</a><span>01.08.01.00 · seen Sep 15, 2026</span></li><li><a href="/devices/bambu-studio/"><svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 10h48v46H8z"/><path d="M8 20h48"/><path d="M28 20v10h8V20"/><path class="g" d="M32 30v8"/><path d="M14 50h36"/><path d="M20 46h24"/></svg>Bambu Studio</a><span>2.8.2.61 · Aug 21, 2026</span></li><li><a href="/devices/bambu-lab-h2d/"><svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 10h48v46H8z"/><path d="M8 20h48"/><path d="M28 20v10h8V20"/><path class="g" d="M32 30v8"/><path d="M14 50h36"/><path d="M20 46h24"/></svg>H2D</a><span>01.04.00.00 · seen Sep 15, 2026</span></li></ul>
+  <ul><li><a href="/devices/bambu-lab-a1-series/"><svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 10h48v46H8z"/><path d="M8 20h48"/><path d="M28 20v10h8V20"/><path class="g" d="M32 30v8"/><path d="M14 50h36"/><path d="M20 46h24"/></svg>A1 and A1 mini</a><span>01.08.01.00 · seen Sep 15, 2026</span></li><li><a href="/devices/bambu-studio/"><svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 10h48v46H8z"/><path d="M8 20h48"/><path d="M28 20v10h8V20"/><path class="g" d="M32 30v8"/><path d="M14 50h36"/><path d="M20 46h24"/></svg>Bambu Studio</a><span>2.8.2.61 · Aug 21, 2026</span></li><li><a href="/devices/bambu-lab-h2d/"><svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 10h48v46H8z"/><path d="M8 20h48"/><path d="M28 20v10h8V20"/><path class="g" d="M32 30v8"/><path d="M14 50h36"/><path d="M20 46h24"/></svg>H2D</a><span>01.04.00.00 · seen Sep 15, 2026</span></li></ul>
 </div>
 
 <section id="signup" class="signup">

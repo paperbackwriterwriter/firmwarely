@@ -2,7 +2,8 @@
 """
 Builds static pages from devices.json:
 
-  devices/<id>/index.html   one page per device  → firmwarely.com/devices/<id>
+  devices/<id>/index.html   one page per device  → firmwarely.com/devices/<id>, except that
+                            models on one firmware line (families.json) share one page
   devices/index.html        all devices, grouped by category
   category/<slug>/          one landing page per category
   brands/<slug>/            one landing page per brand with BRAND_MIN+ devices
@@ -127,6 +128,7 @@ def guide(d):
     """Most specific update guide for a device: by id, then brand, then how it's tracked,
     then its category. Returns (steps, url) — url prefers the guide's own over the derived."""
     g = (GUIDES.get("by_id", {}).get(d["id"])
+         or next((GUIDES["by_id"][m["id"]] for m in d.get("members") or [] if m["id"] in GUIDES.get("by_id", {})), None)
          or GUIDES.get("by_brand", {}).get(d["brand"]))
     if not g and "github.com" in (d.get("update_url") or ""):
         # a GitHub project is either something you run on a server or something you flash
@@ -181,6 +183,13 @@ def styles():
   .hist{width:100%;border-collapse:collapse;margin-top:.5rem;font-family:var(--mono);font-size:.85rem}
   .hist td{padding:.5rem 0;border-top:1px solid var(--line)}
   .hist td:last-child{text-align:right;color:var(--muted)}
+  .hist.models th{padding:.5rem 0;text-align:left}
+  .hist.models td{padding-right:.75rem}
+  .hist.models th,.hist.models td:not(:first-child){white-space:nowrap;overflow-wrap:normal}
+  .hist.models td:first-child{width:100%}
+  /* the site-wide phone rule hides a table's 3rd and 4th columns (the homepage catalogue);
+     here the 4th is the Track link, so keep it and let only the date go */
+  @media (max-width:640px){.hist.models th:nth-child(4),.hist.models td:nth-child(4){display:table-cell}}
   ol.upd-steps{display:block;margin:1rem 0 0;padding-left:1.5rem;color:var(--text);list-style:decimal}
   ol.upd-steps li{list-style:decimal;margin:0 0 .6rem;line-height:1.55}
   ol.upd-steps li::marker{color:var(--amber);font-weight:600}
@@ -358,6 +367,45 @@ def fit_title(candidates):
     return t if len(t) <= TITLE_MAX else t[: TITLE_MAX - 1].rstrip() + "…"
 
 
+def load_families(devices):
+    """families.json → one page-level entry per family, standing in for its models.
+
+    The entry carries the newest member's version, date, notes and history (a model that
+    lags behind shows its own version in the family's table) and the published members
+    themselves under "members". A family with fewer than two published members is skipped,
+    so its members get their own pages back."""
+    path = ROOT / "families.json"
+    if not path.exists():
+        return []
+    by_id = {d["id"]: d for d in devices}
+    out = []
+    for f in json.loads(path.read_text())["families"]:
+        members = sorted((by_id[m] for m in f["members"] if m in by_id and is_live(by_id[m])),
+                         key=lambda d: [int(x) if x.isdigit() else x.lower() for x in re.split(r"(\d+)", d["model"])])
+        if len(members) < 2:
+            continue
+        lead = max(members, key=lambda d: (d.get("released") or "", len(d.get("history") or [])))
+        fam = {k: v for k, v in lead.items() if k not in ("id", "brand", "model", "icon")}
+        icons = [m.get("icon") for m in members if m.get("icon") != "app"] or [members[0].get("icon")]
+        fam.update(id=f["id"], brand=f["brand"], model=f["model"],
+                   category=f.get("category") or lead["category"],
+                   icon=max(dict.fromkeys(icons), key=icons.count), members=members)
+        out.append(fam)
+    return out
+
+
+def models(items):
+    """How many models a list stands for: a family counts each of its models."""
+    return sum(len(d.get("members") or [d]) for d in items)
+
+
+def listed(devices, families):
+    """What the site lists and builds pages for: every device, with a family's members
+    replaced by the family."""
+    grouped = {m["id"] for f in families for m in f["members"]}
+    return [d for d in devices if d["id"] not in grouped] + families
+
+
 FIRMWARE_WORDS = re.compile(r"firmware|bootloader|\bbios\b|eeprom", re.I)
 
 
@@ -367,9 +415,26 @@ def is_software(d):
     ("Traefik Proxy firmware" was wrong), unless its own name says it is firmware."""
     if d["category"] == "A":
         return True
-    if FIRMWARE_WORDS.search(full_name(d)):
+    if d.get("members") or FIRMWARE_WORDS.search(full_name(d)):
         return False
     return d.get("icon") == "app" or bool(APP_HINT.search(d["model"]))
+
+
+def member_name(m):
+    """A model's name inside its family: "DS923+" on the Synology page, but "eero 7", not "7"."""
+    return full_name(m) if m["model"][:1].isdigit() else m["model"]
+
+
+def family_table(d):
+    """Every model on a family page, with its own version and a link to track that model."""
+    if not d.get("members"):
+        return ""
+    rows = "".join(
+        f'<tr><td>{esc(member_name(m))}</td><td>{esc(m["version"])}</td><td>{date_cell(m)}</td>'
+        f'<td><a href="/my-devices.html#d={esc(m["id"])}">Track</a></td></tr>'
+        for m in d["members"])
+    return (f'<h2 id="models" style="margin-top:2rem">Models</h2>'
+            f'<table class="hist models"><tr><th>Model</th><th>Version</th><th>Date</th><th></th></tr>{rows}</table>')
 
 
 def device_page(d, ctx=None):
@@ -450,6 +515,10 @@ def device_page(d, ctx=None):
             latest = (f"Its latest {noun} is {d['version']}. {d['brand']} doesn't publish a date for it, "
                       f"so we show when we first saw it: {fmt(d.get('released'))}.")
         intro = (f"{'' if software else 'The '}{name} is tracked under {CAT_PHRASE[d['category']]}. {latest}{span}")
+        if d.get("members"):
+            intro = (f"Firmwarely tracks {len(d['members'])} {d['brand']} models on this firmware, under "
+                     f"{CAT_PHRASE[d['category']]}: {and_list([member_name(m) for m in d['members']])}. "
+                     + latest.replace("Its latest", "The latest", 1) + span)
     else:
         intro = (f"{'' if software else 'The '}{name} is on our list under {CAT_PHRASE[d['category']]} but isn't being checked yet. "
                  f"Sign up and we'll prioritise it.")
@@ -497,8 +566,10 @@ def device_page(d, ctx=None):
           <dt>{"Released" if dated(d) else "First seen"}</dt><dd>{time_tag(d.get('released')) if live else "—"}</dd>
           <dt>Category</dt><dd><a href="{cat_path(d['category'])}">{esc(cat)}</a></dd>
           <dt>Last checked</dt><dd>{time_tag((d.get('checked') or '')[:10]) if d.get('checked') else "—"}</dd>
+          {f'<dt>Models</dt><dd><a href="#models">{len(d["members"])}</a></dd>' if d.get("members") else ""}
         </dl>
       </div>
+      {family_table(d)}
       {how}
       <h2 style="margin-top:2rem">What changed</h2>
       <p style="color:var(--muted)">{esc(notes) if notes else ("Not tracked yet. Sign up below and we'll prioritise this device." if not live else "See the manufacturer's release notes for details.")}</p>
@@ -524,7 +595,7 @@ def device_page(d, ctx=None):
         <h2 style="margin:0 0 .5rem;font-size:1.05rem">Watch this {"project" if software else "device"}</h2>
         <p style="color:var(--muted);font-size:.95rem;margin:0 0 .75rem">{f"Get one email when {esc(name)} ships a new release or a security fix." if software else f"Get one email when {esc(d['brand'])} ships new firmware or a security fix for the {esc(name)}."}</p>
         <a class="btn" href="#signup">Get alerts</a>
-        <p style="margin:.75rem 0 0"><a href="/my-devices.html#d={esc(d['id'])}">Track this in My devices →</a></p>
+        <p style="margin:.75rem 0 0">{'<a href="#models">Pick your model to track it →</a>' if d.get("members") else f'<a href="/my-devices.html#d={esc(d["id"])}">Track this in My devices →</a>'}</p>
         {f'<p style="margin:.5rem 0 0"><a href="#update">How to update {"it" if software else "this device"}</a></p>' if steps else ""}
         {product_link(d)}
       </div>
@@ -548,8 +619,8 @@ def category_page(key, devices, brands):
                        f"{short} {what} | Firmwarely",
                        f"{short} {what}"])
     kind = "versions" if key == "A" else "firmware"
-    desc = fit_desc([f"Latest {kind} for {len(items)} {CAT_PHRASE[key]} from {names} and more, checked every hour. Version, release date, what changed and how to update.",
-                     f"Latest {kind} for {len(items)} {CAT_PHRASE[key]}, checked every hour, with release notes and update guides.",
+    desc = fit_desc([f"Latest {kind} for {models(items)} {CAT_PHRASE[key]} from {names} and more, checked every hour. Version, release date, what changed and how to update.",
+                     f"Latest {kind} for {models(items)} {CAT_PHRASE[key]}, checked every hour, with release notes and update guides.",
                      f"{cat}: {kind}, release notes and update alerts."])
     recent = by_recent(items)[:8]
     ld = {"@context": "https://schema.org", "@graph": [
@@ -567,7 +638,7 @@ def category_page(key, devices, brands):
   <div class="crumbs"><a href="/devices/">Devices</a> / {esc(cat)}</div>
   <h1 class="dev-h">{esc(cat)}: latest {what}</h1>
   <p style="color:var(--muted);max-width:70ch">{esc(CAT_INTRO[key])}</p>
-  <p style="color:var(--muted)">{len(items)} {"projects" if key == "A" else "devices"} in this category, {len(live)} with a recorded version.</p>
+  <p style="color:var(--muted)">{models(items)} {"projects" if key == "A" else "devices"} in this category, {models(live)} with a recorded version.</p>
   {f'<div class="browse"><span>Brands</span>{brand_links}</div>' if brand_links else ""}
   {f'<h2>Latest releases</h2>{device_list(recent)}' if recent else ""}
   <h2>All {esc(CAT_PHRASE[key])}{"" if key == "A" else " devices"}</h2>
@@ -583,13 +654,13 @@ def brand_page(brand, items):
     software = all(d["category"] == "A" for d in items)
     what = "releases" if software else "firmware updates"
     unit = "projects" if software else "devices"
-    title = fit_title([f"{brand} {what} — {len(items)} {unit} tracked | Firmwarely",
+    title = fit_title([f"{brand} {what} — {models(items)} {unit} tracked | Firmwarely",
                        f"{brand} {what} | Firmwarely",
                        f"{brand} {what}"])
     newest = live[0] if live else None
-    desc = fit_desc([(f"Latest {brand} {'versions' if software else 'firmware'} for {len(items)} {unit}, checked every hour. Newest release: {newest['model']} {newest['version']} on {fmt(newest.get('released'))}." if newest
-                      else f"{brand} {'versions' if software else 'firmware'} for {len(items)} {unit}, checked every hour with release notes and update guides."),
-                     f"{brand} versions, release notes and update alerts for {len(items)} {unit}.",
+    desc = fit_desc([(f"Latest {brand} {'versions' if software else 'firmware'} for {models(items)} {unit}, checked every hour. Newest release: {newest['model']} {newest['version']} on {fmt(newest.get('released'))}." if newest
+                      else f"{brand} {'versions' if software else 'firmware'} for {models(items)} {unit}, checked every hour with release notes and update guides."),
+                     f"{brand} versions, release notes and update alerts for {models(items)} {unit}.",
                      f"{brand} {what} and alerts."])
     ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "BreadcrumbList", "itemListElement": [
@@ -599,7 +670,7 @@ def brand_page(brand, items):
          "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": full_name(d),
                               "url": f"{SITE}/devices/{d['id']}/"} for i, d in enumerate(items)]}]}
     extra = f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>'
-    intro = (f"Firmwarely tracks {len(items)} {brand} {unit} across {and_list([CAT_PHRASE[k] for k in CATS if any(d['category'] == k for d in items)])}. "
+    intro = (f"Firmwarely tracks {models(items)} {brand} {unit} across {and_list([CAT_PHRASE[k] for k in CATS if any(d['category'] == k for d in items)])}. "
              + (f"The most recent {brand} release we recorded is {newest['model']} {newest['version']} on {fmt(newest.get('released'))}. " if newest else "")
              + "Each device page has the current version, release notes, version history and how to update.")
     cat_links = "".join(f'<a class="chip" href="{cat_path(k)}">{esc(CATS[k])}</a>' for k in CATS if any(d["category"] == k for d in items))
@@ -727,9 +798,9 @@ def index_page(devices, brand_pages=()):
         parts.append("</ul>")
     title = "Firmware update tracker — every device we watch | Firmwarely"
     desc = fit_desc([
-        f"Latest firmware versions for {len(devices)} routers, NAS, smart home devices, consoles, PCs, TVs, maker gear and self-hosted apps, checked every hour.",
-        f"Latest firmware for {len(devices)} devices across routers, NAS, smart home, consoles, PCs, TVs and self-hosted apps, checked every hour.",
-        f"Latest firmware for {len(devices)} devices, checked every hour against release pages and project feeds.",
+        f"Latest firmware versions for {models(devices)} routers, NAS, smart home devices, consoles, PCs, TVs, maker gear and self-hosted apps, checked every hour.",
+        f"Latest firmware for {models(devices)} devices across routers, NAS, smart home, consoles, PCs, TVs and self-hosted apps, checked every hour.",
+        f"Latest firmware for {models(devices)} devices, checked every hour against release pages and project feeds.",
     ])
     return head(title, desc, "/devices/") + f"""
 <div class="wrap brandlist" style="padding-top:2rem">
@@ -898,7 +969,7 @@ within 30 days. See <a href="/legal/">privacy &amp; terms</a> for what we hold a
 REDIRECT_CHUNK = 40      # ids per rule, so no single pattern grows unwieldy
 
 
-def write_redirects(published, brand_pages):
+def write_redirects(published, brand_pages, families=()):
     """Send a device we don't publish to the nearest page that does exist.
 
     A device with no data has no page, so a link from a search result, an old email or a
@@ -913,7 +984,8 @@ def write_redirects(published, brand_pages):
     redirects.json adds the permanent moves ({"/devices/old/": "/devices/new/"}).
     """
     sources = json.loads((ROOT / "sources.json").read_text())["devices"]
-    live = {d["id"] for d in published}
+    grouped = {m["id"] for f in families for m in f["members"]}
+    live = {d["id"] for d in published} | grouped
     groups = {}
     for src in sources:
         if src["id"] in live:
@@ -931,6 +1003,19 @@ def write_redirects(published, brand_pages):
             # both spellings: Vercel matches the source path as written
             for path in (f"/devices/:id({group})", f"/devices/:id({group})/"):
                 rules.append({"source": path, "destination": dest, "permanent": False})
+
+    # a family's models: their page is the family's now. Permanent, so search engines
+    # merge what they know about the model pages into the family page.
+    for f in families:
+        for m in f["members"]:
+            if m["id"] != f["id"]:
+                for path in (f"/devices/{m['id']}", f"/devices/{m['id']}/"):
+                    rules.append({"source": path, "destination": f"/devices/{f['id']}/", "permanent": True})
+    # a brand whose models are now one family page: its brand page would list one entry
+    for f in families:
+        if f["brand"] not in brand_pages and all(d["brand"] != f["brand"] or d is f for d in published):
+            for path in (brand_path(f["brand"]).rstrip("/"), brand_path(f["brand"])):
+                rules.append({"source": path, "destination": f"/devices/{f['id']}/", "permanent": False})
 
     # pages that moved for good (a duplicate folded into its original): permanent, so
     # search engines move the listing over instead of waiting for the page to come back
@@ -951,7 +1036,9 @@ def main():
     global STYLES
     STYLES = styles()
     data = json.loads((ROOT / "devices.json").read_text())
-    devices = data["devices"]
+    tracked = data["devices"]
+    families = load_families(tracked)
+    devices = listed(tracked, families)   # one page per entry: a family stands in for its models
     by_brand, by_cat = {}, {}
     for d in devices:
         by_brand.setdefault(d["brand"], []).append(d)
@@ -992,7 +1079,7 @@ def main():
                 shutil.rmtree(child); pruned += 1
     if pruned:
         print(f"pruned {pruned} stale page folder(s)")
-    (ROOT / "pro" / "index.html").write_text(pro_page().replace("{n}", str(len(devices))))
+    (ROOT / "pro" / "index.html").write_text(pro_page().replace("{n}", str(len(tracked))))
 
     # sitemap: one entry per indexable page, with the date its content last actually moved
     today = datetime.now(timezone.utc).date().isoformat()
@@ -1014,9 +1101,10 @@ def main():
     sm.append("</urlset>")
     (ROOT / "sitemap.xml").write_text("\n".join(sm) + "\n")
     (ROOT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nDisallow: /api/\nSitemap: {SITE}/sitemap.xml\n")
-    n_rules, n_devices = write_redirects(devices, brand_pages)
+    n_rules, n_devices = write_redirects(devices, brand_pages, families)
     print(f"{n_devices} unpublished device URLs redirect to a brand or category page ({n_rules} rules)")
-    print(f"built {len(devices)} device pages, {len(CATS)} category pages, {len(brand_pages)} brand pages, "
+    print(f"built {len(devices)} device pages ({len(families)} of them families of "
+          f"{sum(len(f['members']) for f in families)} models), {len(CATS)} category pages, {len(brand_pages)} brand pages, "
           f"index, 404, sitemap ({len(entries)} urls)")
 
 
