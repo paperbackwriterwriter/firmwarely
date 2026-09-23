@@ -1,0 +1,17 @@
+{
+ "_readme": "Models that run one firmware line and would otherwise get near-identical pages. Each family gets one page at /devices/<id>/ with a table of its models; each model's own URL redirects there permanently. Models stay separate everywhere else (My devices, alerts, the homepage table). An id may reuse a member's id, which keeps that URL. A family with fewer than two published members is not built and its members get their own pages back.",
+ "families": [
+  {"id": "synology-dsm", "brand": "Synology", "model": "DiskStation Manager (DSM)", "category": "N", "members": ["synology-ds220j", "synology-ds224-plus", "synology-ds423-plus", "synology-ds425-plus", "synology-ds725-plus", "synology-ds923-plus", "synology-ds925-plus", "synology-ds1522-plus", "synology-ds1825-plus", "synology-rs422-plus"]},
+  {"id": "qnap-qts", "brand": "QNAP", "model": "QTS NAS firmware", "category": "N", "members": ["qnap-ts-233", "qnap-ts-262", "qnap-ts-433", "qnap-ts-464", "qnap-ts-673a", "qnap-ts-1655", "qnap-tvs-h874", "qnap-tbs-h574tx"]},
+  {"id": "ubiquiti-unifi-os-gateways", "brand": "Ubiquiti", "model": "UniFi OS for Dream Machines and gateways", "category": "R", "members": ["ubiquiti-unifi-dream-machine-se", "ubiquiti-unifi-express", "ubiquiti-cloud-gateway-ultra", "ubiquiti-dream-router-7", "ubiquiti-unas-pro", "ubiquiti-unifi-ai-key"]},
+  {"id": "ubiquiti-unifi-access-points", "brand": "Ubiquiti", "model": "UniFi access points and switches", "category": "R", "members": ["ubiquiti-unifi-access-points", "ubiquiti-unifi-u6-plus", "ubiquiti-unifi-u7-pro", "ubiquiti-switch-flex-2-5g"]},
+  {"id": "eero", "brand": "eero", "model": "mesh Wi-Fi routers", "category": "R", "members": ["eero-6-plus", "eero-7", "eero-pro-6e", "eero-pro-7", "eero-max-7"]},
+  {"id": "prusa-mk4-core-one", "brand": "Prusa", "model": "MK4S, XL and Core One (Buddy firmware)", "category": "M", "members": ["prusa-mk4-core-one", "prusa-mk4s", "prusa-xl"]},
+  {"id": "sony-playstation-5-family", "brand": "Sony", "model": "PlayStation 5 and PS5 Pro", "category": "C", "members": ["sony-playstation-5", "sony-playstation-5-pro"]},
+  {"id": "synology-srm", "brand": "Synology", "model": "SRM Wi-Fi routers", "category": "R", "members": ["synology-rt6600ax", "synology-wrx560"]},
+  {"id": "bambu-lab-a1-series", "brand": "Bambu Lab", "model": "A1 and A1 mini", "category": "M", "members": ["bambu-lab-a1", "bambu-lab-a1-mini"]},
+  {"id": "mikrotik-routeros", "brand": "MikroTik", "model": "RouterOS 7", "category": "R", "members": ["mikrotik-routeros", "mikrotik-hap-ax3"]},
+  {"id": "raspberry-pi-5-bootloader", "brand": "Raspberry Pi", "model": "Pi 5 and Pi 500 bootloader", "category": "M", "members": ["raspberry-pi-5", "raspberry-pi-500"]},
+  {"id": "simplisafe-cameras", "brand": "SimpliSafe", "model": "indoor and outdoor cameras", "category": "S", "members": ["simplisafe-indoor-camera", "simplisafe-outdoor-camera"]}
+ ]
+}

@@ -92,16 +92,6 @@
       "permanent": false
     },
     {
-      "source": "/devices/:id(sony-alpha-a7-iv|sony-alpha-a7c-ii|sony-bravia-8-ii|sony-dualsense-controller|sony-dualsense-edge|sony-playstation-portal|sony-psvr2|sony-wf-1000xm5|sony-wh-1000xm6)",
-      "destination": "/brands/sony/",
-      "permanent": false
-    },
-    {
-      "source": "/devices/:id(sony-alpha-a7-iv|sony-alpha-a7c-ii|sony-bravia-8-ii|sony-dualsense-controller|sony-dualsense-edge|sony-playstation-portal|sony-psvr2|sony-wf-1000xm5|sony-wh-1000xm6)/",
-      "destination": "/brands/sony/",
-      "permanent": false
-    },
-    {
       "source": "/devices/:id(synology-beestation-plus)",
       "destination": "/brands/synology/",
       "permanent": false
@@ -132,12 +122,22 @@
       "permanent": false
     },
     {
-      "source": "/devices/:id(insta360-x4|insta360-x5|lectric-xp-4|lectric-xpedition-2|lenovo-legion-go|lenovo-legion-go-s|mahle-x20|meta-quest-3|meta-quest-3s|meta-quest-pro|microsoft-xbox-elite-series-2|microsoft-xbox-wireless-controller|miyoo-mini-plus|msi-claw-8-ai-plus|nintendo-switch-2|nintendo-switch-2-pro-controller|niu-kqi-300x|onewheel-gt-s|onewheel-pint-s|panic-playdate|potensic-atom-2|rad-power-radcity-5-plus|rad-power-radrunner-3-plus|retroid-pocket-5|segway-ninebot-f3|segway-ninebot-max-g2|shimano-steps-ep8|skydio-x10|specialized-turbo-levo-sl|specialized-turbo-vado-sl-2|super73-s2|trek-fuel-exe|trek-rail-9|vanmoof-s5|wahoo-elemnt-bolt-3|wahoo-elemnt-roam|wahoo-kickr-core|zwift-ride)",
+      "source": "/devices/:id(insta360-x4|insta360-x5|lectric-xp-4|lectric-xpedition-2|lenovo-legion-go|lenovo-legion-go-s|mahle-x20|meta-quest-3|meta-quest-3s|meta-quest-pro|microsoft-xbox-elite-series-2|microsoft-xbox-wireless-controller|miyoo-mini-plus|msi-claw-8-ai-plus|nintendo-switch-2|nintendo-switch-2-pro-controller|niu-kqi-300x|onewheel-gt-s|onewheel-pint-s|panic-playdate|potensic-atom-2|rad-power-radcity-5-plus|rad-power-radrunner-3-plus|retroid-pocket-5|segway-ninebot-f3|segway-ninebot-max-g2|shimano-steps-ep8|skydio-x10|sony-dualsense-controller|sony-dualsense-edge|sony-playstation-portal|sony-psvr2|specialized-turbo-levo-sl|specialized-turbo-vado-sl-2|super73-s2|trek-fuel-exe|trek-rail-9|vanmoof-s5|wahoo-elemnt-bolt-3|wahoo-elemnt-roam)",
       "destination": "/category/consoles-drones-ebikes/",
       "permanent": false
     },
     {
-      "source": "/devices/:id(insta360-x4|insta360-x5|lectric-xp-4|lectric-xpedition-2|lenovo-legion-go|lenovo-legion-go-s|mahle-x20|meta-quest-3|meta-quest-3s|meta-quest-pro|microsoft-xbox-elite-series-2|microsoft-xbox-wireless-controller|miyoo-mini-plus|msi-claw-8-ai-plus|nintendo-switch-2|nintendo-switch-2-pro-controller|niu-kqi-300x|onewheel-gt-s|onewheel-pint-s|panic-playdate|potensic-atom-2|rad-power-radcity-5-plus|rad-power-radrunner-3-plus|retroid-pocket-5|segway-ninebot-f3|segway-ninebot-max-g2|shimano-steps-ep8|skydio-x10|specialized-turbo-levo-sl|specialized-turbo-vado-sl-2|super73-s2|trek-fuel-exe|trek-rail-9|vanmoof-s5|wahoo-elemnt-bolt-3|wahoo-elemnt-roam|wahoo-kickr-core|zwift-ride)/",
+      "source": "/devices/:id(insta360-x4|insta360-x5|lectric-xp-4|lectric-xpedition-2|lenovo-legion-go|lenovo-legion-go-s|mahle-x20|meta-quest-3|meta-quest-3s|meta-quest-pro|microsoft-xbox-elite-series-2|microsoft-xbox-wireless-controller|miyoo-mini-plus|msi-claw-8-ai-plus|nintendo-switch-2|nintendo-switch-2-pro-controller|niu-kqi-300x|onewheel-gt-s|onewheel-pint-s|panic-playdate|potensic-atom-2|rad-power-radcity-5-plus|rad-power-radrunner-3-plus|retroid-pocket-5|segway-ninebot-f3|segway-ninebot-max-g2|shimano-steps-ep8|skydio-x10|sony-dualsense-controller|sony-dualsense-edge|sony-playstation-portal|sony-psvr2|specialized-turbo-levo-sl|specialized-turbo-vado-sl-2|super73-s2|trek-fuel-exe|trek-rail-9|vanmoof-s5|wahoo-elemnt-bolt-3|wahoo-elemnt-roam)/",
+      "destination": "/category/consoles-drones-ebikes/",
+      "permanent": false
+    },
+    {
+      "source": "/devices/:id(wahoo-kickr-core|zwift-ride)",
+      "destination": "/category/consoles-drones-ebikes/",
+      "permanent": false
+    },
+    {
+      "source": "/devices/:id(wahoo-kickr-core|zwift-ride)/",
       "destination": "/category/consoles-drones-ebikes/",
       "permanent": false
     },
@@ -172,12 +172,22 @@
       "permanent": false
     },
     {
-      "source": "/devices/:id(kobo-libra-colour|lenovo-thinkpad-t14s-gen-6|lenovo-thinkpad-x1-carbon-gen-13|lg-c5-oled|lg-g5-oled|lg-ultragear-32gs95ue|logitech-brio-4k|logitech-g-pro-x-superlight-2|logitech-mx-keys-s|logitech-mx-master-3s|microsoft-surface-laptop-7|microsoft-surface-pro-11|minisforum-um890-pro|msi-mag-b850-tomahawk|nikon-z6iii|nikon-zf|nothing-ear-3|om-system-om-1-mark-ii|oura-ring-4|panasonic-lumix-s5ii|plex-media-server|razer-blackwidow-v4-pro|remarkable-paper-pro|roku-streaming-stick-4k|roku-ultra-2024|samsung-galaxy-watch-8|samsung-odyssey-g9-g95sd|samsung-qn90f|samsung-s95f|sennheiser-momentum-4|shure-mv7-plus|steelseries-arctis-nova-pro-wireless|tcl-qm8k|whoop-5|wooting-80he|xgimi-horizon-s-max)",
+      "source": "/devices/:id(kobo-libra-colour|lenovo-thinkpad-t14s-gen-6|lenovo-thinkpad-x1-carbon-gen-13|lg-c5-oled|lg-g5-oled|lg-ultragear-32gs95ue|logitech-brio-4k|logitech-g-pro-x-superlight-2|logitech-mx-keys-s|logitech-mx-master-3s|microsoft-surface-laptop-7|microsoft-surface-pro-11|minisforum-um890-pro|msi-mag-b850-tomahawk|nikon-z6iii|nikon-zf|nothing-ear-3|om-system-om-1-mark-ii|oura-ring-4|panasonic-lumix-s5ii|plex-media-server|razer-blackwidow-v4-pro|remarkable-paper-pro|roku-streaming-stick-4k|roku-ultra-2024|samsung-galaxy-watch-8|samsung-odyssey-g9-g95sd|samsung-qn90f|samsung-s95f|sennheiser-momentum-4|shure-mv7-plus|sony-alpha-a7-iv|sony-alpha-a7c-ii|sony-bravia-8-ii|sony-wf-1000xm5|sony-wh-1000xm6|steelseries-arctis-nova-pro-wireless|tcl-qm8k|whoop-5|wooting-80he)",
       "destination": "/category/pcs-tvs-gadgets/",
       "permanent": false
     },
     {
-      "source": "/devices/:id(kobo-libra-colour|lenovo-thinkpad-t14s-gen-6|lenovo-thinkpad-x1-carbon-gen-13|lg-c5-oled|lg-g5-oled|lg-ultragear-32gs95ue|logitech-brio-4k|logitech-g-pro-x-superlight-2|logitech-mx-keys-s|logitech-mx-master-3s|microsoft-surface-laptop-7|microsoft-surface-pro-11|minisforum-um890-pro|msi-mag-b850-tomahawk|nikon-z6iii|nikon-zf|nothing-ear-3|om-system-om-1-mark-ii|oura-ring-4|panasonic-lumix-s5ii|plex-media-server|razer-blackwidow-v4-pro|remarkable-paper-pro|roku-streaming-stick-4k|roku-ultra-2024|samsung-galaxy-watch-8|samsung-odyssey-g9-g95sd|samsung-qn90f|samsung-s95f|sennheiser-momentum-4|shure-mv7-plus|steelseries-arctis-nova-pro-wireless|tcl-qm8k|whoop-5|wooting-80he|xgimi-horizon-s-max)/",
+      "source": "/devices/:id(kobo-libra-colour|lenovo-thinkpad-t14s-gen-6|lenovo-thinkpad-x1-carbon-gen-13|lg-c5-oled|lg-g5-oled|lg-ultragear-32gs95ue|logitech-brio-4k|logitech-g-pro-x-superlight-2|logitech-mx-keys-s|logitech-mx-master-3s|microsoft-surface-laptop-7|microsoft-surface-pro-11|minisforum-um890-pro|msi-mag-b850-tomahawk|nikon-z6iii|nikon-zf|nothing-ear-3|om-system-om-1-mark-ii|oura-ring-4|panasonic-lumix-s5ii|plex-media-server|razer-blackwidow-v4-pro|remarkable-paper-pro|roku-streaming-stick-4k|roku-ultra-2024|samsung-galaxy-watch-8|samsung-odyssey-g9-g95sd|samsung-qn90f|samsung-s95f|sennheiser-momentum-4|shure-mv7-plus|sony-alpha-a7-iv|sony-alpha-a7c-ii|sony-bravia-8-ii|sony-wf-1000xm5|sony-wh-1000xm6|steelseries-arctis-nova-pro-wireless|tcl-qm8k|whoop-5|wooting-80he)/",
+      "destination": "/category/pcs-tvs-gadgets/",
+      "permanent": false
+    },
+    {
+      "source": "/devices/:id(xgimi-horizon-s-max)",
+      "destination": "/category/pcs-tvs-gadgets/",
+      "permanent": false
+    },
+    {
+      "source": "/devices/:id(xgimi-horizon-s-max)/",
       "destination": "/category/pcs-tvs-gadgets/",
       "permanent": false
     },
@@ -232,13 +242,503 @@
       "permanent": false
     },
     {
+      "source": "/devices/synology-ds220j",
+      "destination": "/devices/synology-dsm/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/synology-ds220j/",
+      "destination": "/devices/synology-dsm/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/synology-ds224-plus",
+      "destination": "/devices/synology-dsm/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/synology-ds224-plus/",
+      "destination": "/devices/synology-dsm/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/synology-ds423-plus",
+      "destination": "/devices/synology-dsm/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/synology-ds423-plus/",
+      "destination": "/devices/synology-dsm/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/synology-ds425-plus",
+      "destination": "/devices/synology-dsm/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/synology-ds425-plus/",
+      "destination": "/devices/synology-dsm/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/synology-ds725-plus",
+      "destination": "/devices/synology-dsm/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/synology-ds725-plus/",
+      "destination": "/devices/synology-dsm/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/synology-ds923-plus",
+      "destination": "/devices/synology-dsm/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/synology-ds923-plus/",
+      "destination": "/devices/synology-dsm/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/synology-ds925-plus",
+      "destination": "/devices/synology-dsm/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/synology-ds925-plus/",
+      "destination": "/devices/synology-dsm/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/synology-ds1522-plus",
+      "destination": "/devices/synology-dsm/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/synology-ds1522-plus/",
+      "destination": "/devices/synology-dsm/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/synology-ds1825-plus",
+      "destination": "/devices/synology-dsm/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/synology-ds1825-plus/",
+      "destination": "/devices/synology-dsm/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/synology-rs422-plus",
+      "destination": "/devices/synology-dsm/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/synology-rs422-plus/",
+      "destination": "/devices/synology-dsm/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/qnap-tbs-h574tx",
+      "destination": "/devices/qnap-qts/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/qnap-tbs-h574tx/",
+      "destination": "/devices/qnap-qts/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/qnap-ts-233",
+      "destination": "/devices/qnap-qts/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/qnap-ts-233/",
+      "destination": "/devices/qnap-qts/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/qnap-ts-262",
+      "destination": "/devices/qnap-qts/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/qnap-ts-262/",
+      "destination": "/devices/qnap-qts/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/qnap-ts-433",
+      "destination": "/devices/qnap-qts/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/qnap-ts-433/",
+      "destination": "/devices/qnap-qts/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/qnap-ts-464",
+      "destination": "/devices/qnap-qts/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/qnap-ts-464/",
+      "destination": "/devices/qnap-qts/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/qnap-ts-673a",
+      "destination": "/devices/qnap-qts/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/qnap-ts-673a/",
+      "destination": "/devices/qnap-qts/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/qnap-ts-1655",
+      "destination": "/devices/qnap-qts/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/qnap-ts-1655/",
+      "destination": "/devices/qnap-qts/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/qnap-tvs-h874",
+      "destination": "/devices/qnap-qts/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/qnap-tvs-h874/",
+      "destination": "/devices/qnap-qts/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/ubiquiti-unas-pro",
+      "destination": "/devices/ubiquiti-unifi-os-gateways/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/ubiquiti-unas-pro/",
+      "destination": "/devices/ubiquiti-unifi-os-gateways/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/ubiquiti-unifi-ai-key",
+      "destination": "/devices/ubiquiti-unifi-os-gateways/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/ubiquiti-unifi-ai-key/",
+      "destination": "/devices/ubiquiti-unifi-os-gateways/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/ubiquiti-cloud-gateway-ultra",
+      "destination": "/devices/ubiquiti-unifi-os-gateways/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/ubiquiti-cloud-gateway-ultra/",
+      "destination": "/devices/ubiquiti-unifi-os-gateways/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/ubiquiti-unifi-dream-machine-se",
+      "destination": "/devices/ubiquiti-unifi-os-gateways/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/ubiquiti-unifi-dream-machine-se/",
+      "destination": "/devices/ubiquiti-unifi-os-gateways/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/ubiquiti-dream-router-7",
+      "destination": "/devices/ubiquiti-unifi-os-gateways/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/ubiquiti-dream-router-7/",
+      "destination": "/devices/ubiquiti-unifi-os-gateways/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/ubiquiti-unifi-express",
+      "destination": "/devices/ubiquiti-unifi-os-gateways/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/ubiquiti-unifi-express/",
+      "destination": "/devices/ubiquiti-unifi-os-gateways/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/ubiquiti-switch-flex-2-5g",
+      "destination": "/devices/ubiquiti-unifi-access-points/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/ubiquiti-switch-flex-2-5g/",
+      "destination": "/devices/ubiquiti-unifi-access-points/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/ubiquiti-unifi-u6-plus",
+      "destination": "/devices/ubiquiti-unifi-access-points/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/ubiquiti-unifi-u6-plus/",
+      "destination": "/devices/ubiquiti-unifi-access-points/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/ubiquiti-unifi-u7-pro",
+      "destination": "/devices/ubiquiti-unifi-access-points/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/ubiquiti-unifi-u7-pro/",
+      "destination": "/devices/ubiquiti-unifi-access-points/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/eero-6-plus",
+      "destination": "/devices/eero/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/eero-6-plus/",
+      "destination": "/devices/eero/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/eero-7",
+      "destination": "/devices/eero/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/eero-7/",
+      "destination": "/devices/eero/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/eero-max-7",
+      "destination": "/devices/eero/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/eero-max-7/",
+      "destination": "/devices/eero/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/eero-pro-6e",
+      "destination": "/devices/eero/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/eero-pro-6e/",
+      "destination": "/devices/eero/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/eero-pro-7",
+      "destination": "/devices/eero/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/eero-pro-7/",
+      "destination": "/devices/eero/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/prusa-mk4s",
+      "destination": "/devices/prusa-mk4-core-one/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/prusa-mk4s/",
+      "destination": "/devices/prusa-mk4-core-one/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/prusa-xl",
+      "destination": "/devices/prusa-mk4-core-one/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/prusa-xl/",
+      "destination": "/devices/prusa-mk4-core-one/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/sony-playstation-5",
+      "destination": "/devices/sony-playstation-5-family/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/sony-playstation-5/",
+      "destination": "/devices/sony-playstation-5-family/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/sony-playstation-5-pro",
+      "destination": "/devices/sony-playstation-5-family/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/sony-playstation-5-pro/",
+      "destination": "/devices/sony-playstation-5-family/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/synology-rt6600ax",
+      "destination": "/devices/synology-srm/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/synology-rt6600ax/",
+      "destination": "/devices/synology-srm/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/synology-wrx560",
+      "destination": "/devices/synology-srm/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/synology-wrx560/",
+      "destination": "/devices/synology-srm/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/bambu-lab-a1",
+      "destination": "/devices/bambu-lab-a1-series/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/bambu-lab-a1/",
+      "destination": "/devices/bambu-lab-a1-series/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/bambu-lab-a1-mini",
+      "destination": "/devices/bambu-lab-a1-series/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/bambu-lab-a1-mini/",
+      "destination": "/devices/bambu-lab-a1-series/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/mikrotik-hap-ax3",
+      "destination": "/devices/mikrotik-routeros/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/mikrotik-hap-ax3/",
+      "destination": "/devices/mikrotik-routeros/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/raspberry-pi-5",
+      "destination": "/devices/raspberry-pi-5-bootloader/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/raspberry-pi-5/",
+      "destination": "/devices/raspberry-pi-5-bootloader/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/raspberry-pi-500",
+      "destination": "/devices/raspberry-pi-5-bootloader/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/raspberry-pi-500/",
+      "destination": "/devices/raspberry-pi-5-bootloader/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/simplisafe-indoor-camera",
+      "destination": "/devices/simplisafe-cameras/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/simplisafe-indoor-camera/",
+      "destination": "/devices/simplisafe-cameras/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/simplisafe-outdoor-camera",
+      "destination": "/devices/simplisafe-cameras/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/simplisafe-outdoor-camera/",
+      "destination": "/devices/simplisafe-cameras/",
+      "permanent": true
+    },
+    {
+      "source": "/brands/qnap",
+      "destination": "/devices/qnap-qts/",
+      "permanent": false
+    },
+    {
+      "source": "/brands/qnap/",
+      "destination": "/devices/qnap-qts/",
+      "permanent": false
+    },
+    {
+      "source": "/brands/eero",
+      "destination": "/devices/eero/",
+      "permanent": false
+    },
+    {
+      "source": "/brands/eero/",
+      "destination": "/devices/eero/",
+      "permanent": false
+    },
+    {
+      "source": "/brands/sony",
+      "destination": "/devices/sony-playstation-5-family/",
+      "permanent": false
+    },
+    {
+      "source": "/brands/sony/",
+      "destination": "/devices/sony-playstation-5-family/",
+      "permanent": false
+    },
+    {
+      "source": "/brands/mikrotik",
+      "destination": "/devices/mikrotik-routeros/",
+      "permanent": false
+    },
+    {
+      "source": "/brands/mikrotik/",
+      "destination": "/devices/mikrotik-routeros/",
+      "permanent": false
+    },
+    {
       "source": "/brands/amazon",
-      "destination": "/brands/eero/",
+      "destination": "/devices/eero/",
       "permanent": true
     },
     {
       "source": "/brands/amazon/",
-      "destination": "/brands/eero/",
+      "destination": "/devices/eero/",
       "permanent": true
     },
     {

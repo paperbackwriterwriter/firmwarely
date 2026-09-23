@@ -462,6 +462,11 @@ def test_withdrawn_devices_redirect():
     waiting = {s["id"] for s in json.loads(Path("sources.json").read_text())["devices"]} - live
 
     check("the security headers survived the rewrite", bool(cfg.get("headers")), True)
+    fams = json.loads(Path("families.json").read_text())["families"]
+    fam_pages = {f"/devices/{f['id']}/" for f in fams}
+    listed_moves = {p for k in json.loads(Path("redirects.json").read_text()) for p in (k.rstrip("/"), k.rstrip("/") + "/")}
+    family_rules = [r for r in rules if r["destination"] in fam_pages and r["source"] not in listed_moves]
+    rules = [r for r in rules if r not in family_rules]
     moves = [r for r in rules if r.get("permanent")]
     rules = [r for r in rules if not r.get("permanent")]
     covered = set()
@@ -501,6 +506,45 @@ def test_withdrawn_devices_redirect():
     wf = Path(".github/workflows/nightly.yml").read_text()
     check("the check commits vercel.json with the pages it rebuilt", "vercel.json" in wf, True)
 
+
+# ---- models on one firmware line share one page ----
+def test_families():
+    fams = json.loads(Path("families.json").read_text())["families"]
+    devs = {d["id"]: d for d in json.loads(Path("devices.json").read_text())["devices"]}
+    src_ids = {s["id"] for s in json.loads(Path("sources.json").read_text())["devices"]}
+    rules = json.loads(Path("vercel.json").read_text())["redirects"]
+    sitemap = Path("sitemap.xml").read_text()
+    cat_html = "".join(p.read_text() for p in Path("category").glob("*/index.html"))
+    check("a family id is new, or one of its own members", [f["id"] for f in fams if f["id"] in src_ids and f["id"] not in f["members"]], [])
+    check("no model is in two families", len([m for f in fams for m in f["members"]]), len({m for f in fams for m in f["members"]}))
+    built = [f for f in fams if len([m for m in f["members"] if m in devs and build_pages.is_live(devs[m])]) >= 2]
+    check("the catalogue has families to build", len(built) >= 10, True)
+    for f in built:
+        page = Path("devices") / f["id"] / "index.html"
+        check(f"family {f['id']}: page exists", page.exists(), True)
+        html = page.read_text() if page.exists() else ""
+        live = [m for m in f["members"] if m in devs and build_pages.is_live(devs[m])]
+        check(f"family {f['id']}: every model has a row and a track link",
+              [m for m in live if f'/my-devices.html#d={m}"' not in html], [])
+        h1 = re.search(r"<h1[^>]*>(.*?)</h1>", html, re.S).group(1)
+        check(f"family {f['id']}: heading reads once and says firmware",
+              (bool(re.search(r"\b(\w+)\s+\1\b", _html.unescape(h1), re.I)), "releases" in h1), (False, False))
+        check(f"family {f['id']}: in the sitemap", f"/devices/{f['id']}/</loc>" in sitemap, True)
+        for m in live:
+            if m == f["id"]:
+                continue
+            check(f"family {f['id']}: {m} has no page of its own", (Path("devices") / m).exists(), False)
+            check(f"family {f['id']}: {m} redirects to it, both spellings",
+                  sorted(r["source"] for r in rules if r["destination"] == f"/devices/{f['id']}/"
+                         and r["source"] in (f"/devices/{m}", f"/devices/{m}/") and r.get("permanent")),
+                  [f"/devices/{m}", f"/devices/{m}/"])
+            check(f"family {f['id']}: {m} left the sitemap and the category lists",
+                  (f"/devices/{m}/</loc>" in sitemap, f'href="/devices/{m}/"' in cat_html), (False, False))
+    # a brand redirected to its family must not also have a page
+    for r in rules:
+        if r["source"].startswith("/brands/"):
+            check(f"{r['source']} redirects only because its page is gone",
+                  (Path(r["source"].strip("/")) / "index.html").exists(), False)
 
 # ---- counting visits, and saying so ----
 def test_analytics_and_its_disclosure():
@@ -1040,7 +1084,7 @@ def test_schedule_and_digest():
 
 
 for t in (test_compare, test_new_release, test_saved_devices, test_routing, test_weekly_roll, test_forced_guard,
-          test_update_guides, test_sources_well_formed, test_site_shows_only_real_data, test_names_said_once, test_support_page, test_dates_are_honest, test_withdrawn_devices_redirect, test_analytics_and_its_disclosure, test_form_rate_limit, test_captcha, test_side_gutter, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
+          test_update_guides, test_sources_well_formed, test_site_shows_only_real_data, test_names_said_once, test_support_page, test_dates_are_honest, test_withdrawn_devices_redirect, test_families, test_analytics_and_its_disclosure, test_form_rate_limit, test_captcha, test_side_gutter, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
           test_landing_pages, test_schedule_and_digest):
     print(f"\n{t.__name__}")
     t()

@@ -111,6 +111,14 @@ RENAME = {
     "eero-pro-7": ("eero", "Pro 7", "R"),
 }
 
+# hardware that auto-categorisation filed as self-hosted software
+CATEGORY = {"synology-ds220j": "N", "synology-ds425-plus": "N", "synology-ds1522-plus": "N",
+            "synology-rs422-plus": "N", "ubiquiti-unas-pro": "N"}
+
+# one naming style within a family: "DS923+", not "DiskStation DS923+" next to "DS220j"
+MODEL = {f"synology-ds{m}": f"DS{m.replace('-plus', '+')}" for m in
+         ("224-plus", "423-plus", "725-plus", "923-plus", "925-plus", "1825-plus")}
+
 # duplicate id → (original id, the repo the original should now follow)
 # Each project moved on GitHub and discovery added the new repo as a new device.
 DUPLICATES = {
@@ -128,6 +136,12 @@ def apply(doc, key, is_sources):
         d = by_id.get(dev_id)
         if d:
             d["brand"], d["model"], d["category"] = brand, model, cat
+    for dev_id, model in MODEL.items():
+        if dev_id in by_id:
+            by_id[dev_id]["model"] = model
+    for dev_id, cat in CATEGORY.items():
+        if dev_id in by_id:
+            by_id[dev_id]["category"] = cat
     for dup, (orig, repo) in DUPLICATES.items():
         if dup in by_id and orig in by_id and is_sources:
             o = by_id[orig]
@@ -135,6 +149,7 @@ def apply(doc, key, is_sources):
             if "github.com/" in (o.get("product_url") or ""):
                 o["product_url"] = f"https://github.com/{repo}"
     doc[key] = [d for d in items if d["id"] not in DUPLICATES]
+
     return len(items) - len(doc[key])
 
 
@@ -150,8 +165,8 @@ def main():
     red = json.loads(red_path.read_text()) if red_path.exists() else {}
     for dup, (orig, _) in DUPLICATES.items():
         red[f"/devices/{dup}/"] = f"/devices/{orig}/"
-    # every published Amazon device was an eero, so the Amazon brand page goes with them
-    red["/brands/amazon/"] = "/brands/eero/"
+    # every published Amazon device was an eero, so the Amazon brand page goes to the eero page
+    red["/brands/amazon/"] = "/devices/eero/"
     # a brand page existed only because of its duplicate; with one device left it goes
     for brand in ("podman", "orcaslicer", "netalertx"):
         red[f"/brands/{brand}/"] = f"/devices/{brand}/"
