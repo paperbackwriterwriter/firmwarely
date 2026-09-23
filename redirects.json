@@ -1,0 +1,10 @@
+{
+ "/brands/amazon/": "/brands/eero/",
+ "/brands/netalertx/": "/devices/netalertx/",
+ "/brands/orcaslicer/": "/devices/orcaslicer/",
+ "/brands/podman/": "/devices/podman/",
+ "/devices/firmware/": "/devices/bruce-firmware/",
+ "/devices/netalertx-netalertx/": "/devices/netalertx/",
+ "/devices/orcaslicer-orcaslicer/": "/devices/orcaslicer/",
+ "/devices/podman-container-tools-podman/": "/devices/podman/"
+}

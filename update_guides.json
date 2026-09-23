@@ -199,13 +199,6 @@
     "Leave lights powered at the wall switch so they can receive the update."
    ]
   },
-  "eero-pro-6e": {
-   "steps": [
-    "eero updates automatically overnight, usually between 2am and 3am.",
-    "To check: open the eero app, then Settings, then Software Update.",
-    "The network drops for a minute or two while nodes reboot in sequence."
-   ]
-  },
   "asus-rog-ally-x": {
    "steps": [
     "Open Armoury Crate SE, then Update Center — this covers the BIOS, drivers and MyASUS components together.",
@@ -1497,6 +1490,13 @@
    "steps": [
     "Open the JetKVM web UI, Settings, General, and click Check for updates.",
     "Keep it powered and connected during the update."
+   ]
+  },
+  "eero": {
+   "steps": [
+    "eero updates automatically overnight, usually between 2am and 3am.",
+    "To check: open the eero app, then Settings, then Software Update.",
+    "The network drops for a minute or two while nodes reboot in sequence."
    ]
   }
  },
