@@ -7,7 +7,7 @@
 // While SITE_KEY is empty nothing is loaded, no widget appears, and the forms behave exactly
 // as they did before: unconfigured must never mean broken. The server half is inert in the
 // same way until TURNSTILE_SECRET is set, so the two can be switched on in either order.
-var TURNSTILE_SITE_KEY = "";
+var TURNSTILE_SITE_KEY = "0x4AAAAAAFBDZ45f7AUzE4Vk";
 
 (function (w, d) {
   var SCRIPT = "https://challenges.cloudflare.com/turnstile/v0/api.js";
