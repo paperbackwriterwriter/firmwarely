@@ -68,13 +68,13 @@
    "model": "Server web console",
    "category": "A",
    "status": "critical",
-   "version": "356",
+   "version": "368",
    "previous": "367",
    "released": "2026-09-23",
    "date_known": true,
    "eol": false,
-   "notes": "Fixes for CVE-2026-91147, CVE-2026-91149, CVE-2026-76235, CVE-2026-91148 Resolves: RHEL-244637, RHEL-262905, RHEL-263074 (rhel-9.8.z) Resolves: RHEL-244640, RHEL-262894, RHEL-263062 (rhel-10.2.z)",
-   "source_url": "https://github.com/cockpit-project/cockpit/releases/tag/356.4",
+   "notes": "Limit concurrent connections CVE-2026-91149 Harden cockpit-ws against trailing slash CVE-2026-91147 Sanitize URLs from PackageKit CVE-2026-91148 Interactive file chooser for SSH keys Bug fixes and translation updates Resolves RHEL-263070, RHEL-262891, RHEL-253609 for rhel-10.4 Resolves RHEL-263066 …",
+   "source_url": "https://github.com/cockpit-project/cockpit/releases/tag/368",
    "page_url": "https://www.firmwarely.com/devices/cockpit/"
   },
   "terraform": {
@@ -121,6 +121,36 @@
    "notes": "What's Changed Features feat(members): filter project and organization members by role feat(scores): Allow creating scores from annotation sidebar feat(feature-flags): introduce internal view mode and related components feat(evals): route TypeSafe decision-model connections through OpenRouter or Ve…",
    "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.43.0",
    "page_url": "https://www.firmwarely.com/devices/langfuse/"
+  },
+  "appwrite": {
+   "id": "appwrite",
+   "brand": "Appwrite",
+   "model": "Backend platform",
+   "category": "A",
+   "status": "update",
+   "version": "2.3.0",
+   "previous": "2.2.0",
+   "released": "2026-09-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Appwrite 2.3 removes dev keys, builds every console link from one _APP_CONSOLE_URL, reports execution duration the way the caller experienced it, adds Jaspr to Sites and a nightly channel for self-hosting, and folds in two weeks of fixes across auth, databases, functions, messaging, storage and the…",
+   "source_url": "https://github.com/appwrite/appwrite/releases/tag/2.3.0",
+   "page_url": "https://www.firmwarely.com/devices/appwrite/"
+  },
+  "pydio-cells": {
+   "id": "pydio-cells",
+   "brand": "Pydio",
+   "model": "Cells file platform",
+   "category": "A",
+   "status": "update",
+   "version": "5.0.3",
+   "previous": "5.0.2",
+   "released": "2026-09-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release Notes — v5.0.3 --- Bug Fixes Collabora Action Buttons Hidden Hide Collabora action buttons based on feature controls, giving administrators finer-grained management of Collabora functionality. etcd Stability Improvements Multiple fixes to stabilize startup sequence, default site configurati…",
+   "source_url": "https://github.com/pydio/cells/releases/tag/v5.0.3",
+   "page_url": "https://www.firmwarely.com/devices/pydio-cells/"
   }
  }
 }
