@@ -68,13 +68,13 @@
    "model": "Monitoring platform",
    "category": "A",
    "status": "update",
-   "version": "7.0.31",
+   "version": "7.4.15",
    "previous": "7.4.15",
-   "released": "2026-09-22",
+   "released": "2026-09-23",
    "date_known": true,
    "eol": false,
-   "notes": "7.0.31",
-   "source_url": "https://github.com/zabbix/zabbix/releases/tag/7.0.31",
+   "notes": "7.4.15",
+   "source_url": "https://github.com/zabbix/zabbix/releases/tag/7.4.15",
    "page_url": "https://www.firmwarely.com/devices/zabbix/"
   },
   "neo4j": {
@@ -541,6 +541,51 @@
    "notes": "7.2.0",
    "source_url": "https://github.com/zammad/zammad/releases/tag/7.2.0",
    "page_url": "https://www.firmwarely.com/devices/zammad/"
+  },
+  "zitadel": {
+   "id": "zitadel",
+   "brand": "ZITADEL",
+   "model": "Identity platform",
+   "category": "A",
+   "status": "update",
+   "version": "4.19.0",
+   "previous": "4.18.0",
+   "released": "2026-09-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "4.19.0 (2026-09-23) Bug Fixes eventstore: omit owners on empty unique constraint inserts (#​12785) (6308539), closes #​12740 #​12780 #​12740 Features eventstore: remove application constraints by app owner (#​12798) (765027e)",
+   "source_url": "https://github.com/zitadel/zitadel/releases/tag/v4.19.0",
+   "page_url": "https://www.firmwarely.com/devices/zitadel/"
+  },
+  "casdoor": {
+   "id": "casdoor",
+   "brand": "Casdoor",
+   "model": "Identity and access",
+   "category": "A",
+   "status": "update",
+   "version": "4.8.0",
+   "previous": "4.7.0",
+   "released": "2026-09-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog Bug fixes eff25f63b7e6231b0d57d43330a5e8a5582e4266 fix: allow an org-scoped subject to update its own organization af0b022c2cd954197f5872bb0a1c41a597803dc2 fix: attribute audit records of unauthenticated requests to an organization 92c2db60a4a2249c91171b5f1adc141b97e4ff9f fix: correct Ukr…",
+   "source_url": "https://github.com/casdoor/casdoor/releases/tag/v4.8.0",
+   "page_url": "https://www.firmwarely.com/devices/casdoor/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "critical",
+   "version": "0.24.2651",
+   "previous": "0.24.2644",
+   "released": "2026-09-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes: c24c9dd528b7e4480aebd217097c8e4709e43350 Update SECURITY.md d59a329504b288511b8a65be36afb07bc8b4d318 Update SECURITY.md 8b7dcbc4b0476f7790c7ebbf061c8bb3ddc93bbb Create SECURITY.md (#​17080) c9867de8670d0872d81d343a75c7caa0c3be306f extratorrents: new cats c551cfdf69281817328f435341869db2cc3…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2651",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
