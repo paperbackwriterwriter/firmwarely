@@ -65,65 +65,86 @@ def test_saved_devices():
         check(f"saved_devices: junk {junk!r} is empty, not a crash", ua.saved_devices(junk), [])
 
 
-# ---- routing: exactly one email each, personal when we can, digest otherwise ----
+# ---- routing: mail only about your own devices; Pro daily, free weekly ----
 def test_routing():
-    changed = {"date": "2026-09-14", "forced": False, "count": 1, "devices": [
-        {"id": "dev1", "brand": "Acme", "model": "Router", "status": "critical",
-         "version": "2.0", "previous": "1.0", "released": "2026-09-13", "eol": False,
-         "notes": "Fixes a thing.", "source_url": "https://e/x",
-         "page_url": "https://www.firmwarely.com/devices/dev1/"}]}
-    people = [
-        ("behind@e.com", "pro", [["dev1", "1.0"]], "personal"),
-        ("blank@e.com", "pro", [["dev1", ""]], "personal"),
-        ("current@e.com", "pro", [["dev1", "2.0"]], "digest"),
-        ("ahead@e.com", "pro", [["dev1", "2.1"]], "digest"),
-        ("other@e.com", "pro", [["dev2", "1.0"]], "digest"),
-        ("empty@e.com", "pro", None, "digest"),
-        ("free@e.com", "free", [["dev1", "1.0"]], None),
+    change = {"id": "dev1", "brand": "Acme", "model": "Router", "status": "critical",
+              "version": "2.0", "previous": "1.0", "released": "2026-09-13", "eol": False,
+              "notes": "Fixes a thing.", "source_url": "https://e/x",
+              "page_url": "https://www.firmwarely.com/devices/dev1/"}
+    changed = {"date": "2026-09-14", "forced": False, "count": 1, "devices": [change]}
+    people = [   # email, plan, saved devices, what they get on a weekday, what they get on the weekly day
+        ("behind@e.com", "pro", [["dev1", "1.0"]], "daily", "daily"),
+        ("blank@e.com", "pro", [["dev1", ""]], "daily", "daily"),
+        ("current@e.com", "pro", [["dev1", "2.0"]], None, None),
+        ("ahead@e.com", "pro", [["dev1", "2.1"]], None, None),
+        ("other@e.com", "pro", [["dev2", "1.0"]], None, None),
+        ("empty@e.com", "pro", None, None, None),
+        ("free@e.com", "free", [["dev1", "1.0"]], None, "weekly"),
+        ("freecurrent@e.com", "free", [["dev1", "2.0"]], None, None),
+        ("freeother@e.com", "free", [["dev2", "1.0"]], None, None),
     ]
-    tmp = Path(tempfile.mkdtemp()) / "changed.json"
-    tmp.write_text(json.dumps(changed))
-    orig_changed, orig_send, orig_subs, orig_gap = ua.CHANGED, ua.send, ua.subscribers, ua.SEND_GAP
-    sent = {}
-    try:
-        ua.CHANGED, ua.SEND_GAP = tmp, 0
-        ua.PLANS = ["pro"]
-        ua.subscribers = lambda k, p: iter([
-            {"email": e, "custom_fields": [{"name": "plan", "value": plan}]
-             + ([{"name": "devices", "value": json.dumps(d)}] if d is not None else [])}
-            for e, plan, d, _ in people])
-        ua.send = lambda to, subj, body: (sent.__setitem__(to, subj), (True, ""))[1]
-        rc = ua.main()
-    finally:
-        ua.CHANGED, ua.send, ua.subscribers, ua.SEND_GAP = orig_changed, orig_send, orig_subs, orig_gap
+    tmpdir = Path(tempfile.mkdtemp())
+    daily_f, weekly_f = tmpdir / "changed.json", tmpdir / "changed_weekly.json"
+    daily_f.write_text(json.dumps(changed))
 
-    check("routing: exit code", rc, 0)
-    for email, _, _, want in people:
-        subj = sent.get(email)
-        got = None if subj is None else ("digest" if subj.startswith("Firmware digest") else "personal")
-        check(f"routing: plans=pro, {email} -> {want or 'no mail'}", got, want)
+    def run(weekly, plans=("all",)):
+        if weekly:
+            weekly_f.write_text(json.dumps(dict(changed, weekly=True)))
+        elif weekly_f.exists():
+            weekly_f.unlink()
+        saved = ua.CHANGED, ua.CHANGED_WEEKLY, ua.send, ua.subscribers, ua.SEND_GAP, ua.PLANS
+        sent = {}
+        try:
+            ua.CHANGED, ua.CHANGED_WEEKLY, ua.SEND_GAP, ua.PLANS = daily_f, weekly_f, 0, list(plans)
+            ua.subscribers = lambda k, p: iter([
+                {"email": e, "custom_fields": [{"name": "plan", "value": plan}]
+                 + ([{"name": "devices", "value": json.dumps(d)}] if d is not None else [])}
+                for e, plan, d, _, _ in people])
+            ua.send = lambda to, subj, body: (sent.__setitem__(to, (subj, body)), (True, ""))[1]
+            rc = ua.main()
+        finally:
+            ua.CHANGED, ua.CHANGED_WEEKLY, ua.send, ua.subscribers, ua.SEND_GAP, ua.PLANS = saved
+        check(f"routing: exit code ({'weekly day' if weekly else 'weekday'})", rc, 0)
+        return {e: ("weekly" if subj.startswith("This week:") else "daily") for e, (subj, _) in sent.items()}, sent
 
-    # The default mails everyone: the signup box on every device page promises a free
-    # account one email when its devices change, and nothing else sends it.
+    got, _ = run(weekly=False)
+    for email, _, _, want, _ in people:
+        check(f"routing: weekday, {email} -> {want or 'no mail'}", got.get(email), want)
+    got, sent = run(weekly=True)
+    for email, _, _, _, want in people:
+        check(f"routing: weekly day, {email} -> {want or 'no mail'}", got.get(email), want)
+    check("the weekly email says it's the free plan and points to Pro",
+          "once a week" in sent["free@e.com"][1] and "/pro/" in sent["free@e.com"][1], True)
+    check("the daily email doesn't", "once a week" in sent["behind@e.com"][1], False)
+    got, _ = run(weekly=True, plans=("pro",))
+    check("USER_ALERT_PLANS=pro holds the free weekly back", sorted(got), ["behind@e.com", "blank@e.com"])
     check("the default is every plan, not just the paying one",
           [p.strip().lower() for p in (os.environ.get("USER_ALERT_PLANS") or "all").split(",") if p.strip()],
           ["all"])
-    sent.clear()
-    try:
-        ua.CHANGED, ua.SEND_GAP = tmp, 0
-        ua.PLANS = ["all"]
-        ua.subscribers = lambda k, p: iter([
-            {"email": e, "custom_fields": [{"name": "plan", "value": plan}]
-             + ([{"name": "devices", "value": json.dumps(d)}] if d is not None else [])}
-            for e, plan, d, _ in people])
-        ua.send = lambda to, subj, body: (sent.__setitem__(to, subj), (True, ""))[1]
-        ua.main()
-    finally:
-        ua.CHANGED, ua.send, ua.subscribers, ua.SEND_GAP = orig_changed, orig_send, orig_subs, orig_gap
-    check("a free account gets the alert its signup promised",
-          bool(sent.get("free@e.com")) and not sent["free@e.com"].startswith("Firmware digest"), True)
-    check("...and everyone else still gets exactly what they got before",
-          len(sent), len([x for x in people if x[3]]) + 1)
+
+
+def test_weekly_roll():
+    import digest, schedule
+    from datetime import datetime, timezone
+    rec = lambda i, v, st="update": {"id": i, "brand": "B", "model": i, "status": st, "version": v}
+    week, today = {"since": None, "devices": {}}, "2026-09-24"
+    out, week = digest.roll_week(week, {"forced": False, "devices": [rec("a", "1")]}, today, False)
+    check("weekday: nothing to send, the change is kept", (out, list(week["devices"]), week["since"]), (None, ["a"], today))
+    out, week = digest.roll_week(week, {"forced": True, "devices": [rec("z", "9")]}, "2026-09-25", False)
+    check("a forced run never joins the week", list(week["devices"]), ["a"])
+    out, week = digest.roll_week(week, None, "2026-09-26", False)
+    check("a day with no changes keeps the week", list(week["devices"]), ["a"])
+    out, week = digest.roll_week(week, {"forced": False, "devices": [rec("a", "2"), rec("b", "5", "critical")]}, "2026-09-28", True)
+    check("weekly day: the whole week goes out, security first", [c["id"] for c in out["devices"]], ["b", "a"])
+    check("a device that moved twice is sent at its newest version", out["devices"][1]["version"], "2")
+    check("the weekly email knows when its week began", out["since"], today)
+    check("and the week starts over", week, {"since": None, "devices": {}})
+    check("an empty week sends nothing", digest.roll_week(week, None, "2026-10-05", True)[0], None)
+    d = lambda day: datetime.fromisoformat(day + "T09:00:00+00:00")
+    check("Monday is the weekly day", schedule.is_weekly_day(d("2026-09-28"), {}), True)
+    check("Tuesday isn't", schedule.is_weekly_day(d("2026-09-29"), {"last_weekly": "2026-09-28"}), False)
+    check("a missed Monday is made up the next day", schedule.is_weekly_day(d("2026-10-06"), {"last_weekly": "2026-09-28"}), True)
+    check("nothing is sent mid-week before the first Monday", schedule.is_weekly_day(d("2026-09-24"), {}), False)
 
 
 # ---- a forced run must not reach real subscribers ----
@@ -133,14 +154,14 @@ def test_forced_guard():
         {"id": "d", "brand": "B", "model": "M", "status": "update", "version": "2",
          "previous": "1", "released": "2026-09-13", "notes": "", "source_url": "",
          "page_url": "https://www.firmwarely.com/devices/d/"}]}))
-    orig_changed, orig_subs, orig_test = ua.CHANGED, ua.subscribers, ua.TEST_TO
+    orig_changed, orig_weekly, orig_subs, orig_test = ua.CHANGED, ua.CHANGED_WEEKLY, ua.subscribers, ua.TEST_TO
     reached = []
     try:
-        ua.CHANGED, ua.TEST_TO = tmp, ""
+        ua.CHANGED, ua.CHANGED_WEEKLY, ua.TEST_TO = tmp, tmp.parent / "none.json", ""
         ua.subscribers = lambda k, p: reached.append(1) or iter([])
         rc = ua.main()
     finally:
-        ua.CHANGED, ua.subscribers, ua.TEST_TO = orig_changed, orig_subs, orig_test
+        ua.CHANGED, ua.CHANGED_WEEKLY, ua.subscribers, ua.TEST_TO = orig_changed, orig_weekly, orig_subs, orig_test
     check("forced run without a test address sends nothing", (rc, reached), (0, []))
 
 
@@ -720,7 +741,9 @@ def test_homepage_honesty():
     for field in ("d.b", "d.m", "d.v", "d.n"):
         check(f"no raw ${{{field}}} interpolation", "${" + field + "}" in html, False)
     check("[hidden] beats .btn display", "[hidden]{display:none!important}" in html, True)
-    check("no 'weekly' promise left in the copy", "weekly" in html.lower(), False)
+    check("the copy promises what user_alerts.py sends: free weekly, Pro daily",
+          ("once a week on the free plan" in html and "weekly on the free plan" in html
+           and "daily on Pro" in html), True)
     for f in ("index.html", "my-devices.html", "dashboard.html"):
         check(f"{f} has a favicon", 'rel="icon"' in Path(f).read_text(), True)
     import re as _re
@@ -976,7 +999,7 @@ def test_schedule_and_digest():
           all(hasattr(fetch, f) for f in ("device_record", "check_source", "apply_result", "finish_record", "load_pending")), True)
 
 
-for t in (test_compare, test_new_release, test_saved_devices, test_routing, test_forced_guard,
+for t in (test_compare, test_new_release, test_saved_devices, test_routing, test_weekly_roll, test_forced_guard,
           test_update_guides, test_sources_well_formed, test_site_shows_only_real_data, test_names_said_once, test_support_page, test_dates_are_honest, test_withdrawn_devices_redirect, test_analytics_and_its_disclosure, test_form_rate_limit, test_captcha, test_side_gutter, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
           test_landing_pages, test_schedule_and_digest):
     print(f"\n{t.__name__}")

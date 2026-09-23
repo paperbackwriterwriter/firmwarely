@@ -292,7 +292,7 @@ def signup(device_name="", software=False):
 <section id="signup" class="signup">
   <div class="wrap">
     <h2>Get alerts for {esc(device_name) if device_name else "your devices"}</h2>
-    <p style="color:var(--muted)">One email when {"a new release or a security fix" if software else "new firmware or a security fix"} ships. Free for up to 3 devices.</p>
+    <p style="color:var(--muted)">One email when {"a new release or a security fix" if software else "new firmware or a security fix"} ships: weekly and free for up to 3 devices, daily on Pro.</p>
     <form id="signup-form" novalidate>
       <label class="sr" for="s-email">Email address</label>
       <div class="row"><input id="s-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required></div>
@@ -499,7 +499,7 @@ def device_page(d, ctx=None):
         <h3>How do I update {"" if software else "the "}{esc(name)}?</h3>
         <p><a href="#update">See the step-by-step above.</a> {esc(HOWTO.get(d['category'], ''))}</p>
         <h3>How does Firmwarely know when there's a new version?</h3>
-        <p>Every hour we read the {"project's" if software else "manufacturer's"} official release page{((" for " if software else " for the ") + esc(name)) if live else ""} and record the version, date and changelog. Subscribers watching {"it" if software else "this device"} get one email a day when it changes.</p>
+        <p>Every hour we read the {"project's" if software else "manufacturer's"} official release page{((" for " if software else " for the ") + esc(name)) if live else ""} and record the version, date and changelog. Subscribers watching {"it" if software else "this device"} get an email when it changes: the next morning on Pro, in the Monday roundup on the free plan.</p>
         <h3>Is this an official {esc(d['brand'])} page?</h3>
         <p>No. Firmwarely is independent. {"Project and product names belong to their owners; always install releases from the project's own source." if software else "Device and brand names belong to their manufacturers; always download firmware from the official source."}</p>
       </div>
@@ -675,11 +675,11 @@ def pro_page():
   <div class="pro-perks">
     <div class="card"><h3>Every device you own</h3><p>No three-device cap. Add the router, both NAS boxes, every camera and the kids' console.</p></div>
     <div class="card"><h3>The dashboard</h3><p>One screen showing what's current, what has an update and what has a security fix waiting, with a button to go apply it.</p></div>
-    <div class="card"><h3>One email a day, for all of it</h3><p>Each morning, a single email covering everything of yours that changed in the last 24 hours, security fixes first.</p></div>
+    <div class="card"><h3>One email a day, for all of it</h3><p>Each morning, a single email covering everything of yours that changed in the last 24 hours, security fixes first. Free accounts get it once a week.</p></div>
   </div>
 
   <h2 style="margin-top:2.5rem">{meanwhile_head}</h2>
-  <p style="color:var(--muted);max-width:64ch">The free plan is live today. <a href="/my-devices.html">Save up to three devices</a>, see which need an update and get an email when they change, or <a href="/devices/">browse the {'{n}'} devices we watch</a>. {carry}</p>
+  <p style="color:var(--muted);max-width:64ch">The free plan is live today. <a href="/my-devices.html">Save up to three devices</a>, see which need an update and get a weekly email when they change, or <a href="/devices/">browse the {'{n}'} devices we watch</a>. {carry}</p>
 </div>
 """ + FOOT
 

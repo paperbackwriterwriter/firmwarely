@@ -4,15 +4,19 @@ Once a day: turn the changes collected by the hourly checks into the digest.
 
 Reads pending_changes.json (fetch.py appends to it on every run), writes
   digest.md     the GitHub issue body (names, versions, dates; no links, so it can't ping anyone)
-  changed.json  the payload scripts/user_alerts.py mails from
+  changed.json  the payload scripts/user_alerts.py mails Pro accounts from
 creates the Beehiiv draft, then empties the pending set and marks today as done.
+
+Free accounts are mailed once a week. Each day's changes are also added to
+weekly_changes.json (committed); on the weekly day (schedule.WEEKLY_DAY, or
+FORCE_WEEKLY=true) that set becomes changed_weekly.json for user_alerts.py and is emptied.
 
     python3 scripts/digest.py            # normal daily run
     python3 scripts/digest.py --dry-run  # print what would be sent, touch nothing
 
 Devices added by discover.py in the same run are listed at the bottom of the issue.
 """
-import json, sys
+import json, os, sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -52,12 +56,39 @@ def build(pending, discovered=None):
     return issue, payload, md.splitlines()[0].lstrip("# ").strip(), html_body
 
 
+def load_weekly():
+    try:
+        week = json.loads(fetch.WEEKLY.read_text())
+        if isinstance(week.get("devices"), dict):
+            return week
+    except Exception:
+        pass
+    return {"since": None, "devices": {}}
+
+
+def roll_week(week, payload, today, weekly_day):
+    """Add today's changes to the week. On the weekly day, return (payload for
+    changed_weekly.json or None, emptied week); otherwise (None, the grown week).
+    A forced run's "everything changed" never joins the week."""
+    week = {"since": week.get("since"), "devices": dict(week.get("devices") or {})}
+    if payload and not payload.get("forced"):
+        for c in payload["devices"]:
+            week["devices"][c["id"]] = c   # a device that moved twice this week: the newest wins
+        week["since"] = week["since"] or today
+    if not weekly_day:
+        return None, week
+    items = fetch.sort_changes(list(week["devices"].values()))
+    out = ({"generated": fetch.NOW, "date": today, "since": week["since"], "weekly": True,
+            "forced": False, "count": len(items), "devices": items} if items else None)
+    return out, {"since": None, "devices": {}}
+
+
 def main():
     pending = fetch.load_pending()
     discovered = json.loads(DISCOVERED.read_text()) if DISCOVERED.exists() else None
     issue, payload, title, html_body = build(pending, discovered)
 
-    for f in (fetch.DIGEST, fetch.CHANGED):
+    for f in (fetch.DIGEST, fetch.CHANGED, fetch.CHANGED_WEEKLY):
         if f.exists() and not DRY_RUN:
             f.unlink()
 
@@ -76,9 +107,18 @@ def main():
             fetch.CHANGED.write_text(json.dumps(payload, indent=1, ensure_ascii=False) + "\n")
             fetch.beehiiv_draft(title, html_body)
 
+    weekly_day = schedule.is_weekly_day(force=os.environ.get("FORCE_WEEKLY", "").lower() == "true")
+    weekly, week = roll_week(load_weekly(), payload, fetch.TODAY.isoformat(), weekly_day)
+    if weekly:
+        print(f"weekly: {weekly['count']} change(s) since {weekly['since']} for free accounts")
     if not DRY_RUN:
+        if weekly:
+            fetch.CHANGED_WEEKLY.write_text(json.dumps(weekly, indent=1, ensure_ascii=False) + "\n")
+        fetch.WEEKLY.write_text(json.dumps(week, indent=1, ensure_ascii=False) + "\n")
         fetch.PENDING.write_text(json.dumps({"since": None, "forced": False, "devices": {}}, indent=1) + "\n")
         schedule.mark_daily()
+        if weekly_day:
+            schedule.mark_weekly()
     return 0
 
 
