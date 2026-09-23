@@ -213,6 +213,7 @@ footer a:hover{color:var(--text)}
   .contact textarea,.contact select{font:inherit;font-size:1rem;color:var(--text);background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:.6rem .8rem;width:100%}
   .contact textarea{resize:vertical;min-height:9rem}
   .contact .hp{position:absolute;left:-9999px}
+  .fw-captcha:not(:empty){margin:.25rem 0}
   .faq p{color:var(--muted);margin:0}
   .brandlist h2{font-family:var(--mono);font-size:1rem;color:var(--amber);margin:1.75rem 0 .5rem}
   .brandlist ul{list-style:none;padding:0;margin:0;display:grid;gap:.4rem}
@@ -245,6 +246,7 @@ footer a:hover{color:var(--text)}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
 <script defer src="/formguard.js"></script>
+<script defer src="/captcha.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Routers & networking", "item": "https://www.firmwarely.com/category/routers/"}, {"@type": "ListItem", "position": 3, "name": "Pomerium Identity-aware access proxy", "item": "https://www.firmwarely.com/devices/pomerium/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/pomerium/", "url": "https://www.firmwarely.com/devices/pomerium/", "name": "Pomerium Identity-aware access proxy firmware 0.33.3 | Firmwarely", "description": "Latest Pomerium Identity-aware access proxy firmware is 0.33.3, released Sep 9, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-23"}, {"@type": "SoftwareApplication", "name": "Pomerium Identity-aware access proxy firmware", "applicationCategory": "Firmware", "operatingSystem": "Pomerium Identity-aware access proxy", "softwareVersion": "0.33.3", "author": {"@type": "Organization", "name": "Pomerium"}, "datePublished": "2026-09-09", "releaseNotes": "What's Changed Fixes grpc: identify owner and changed options when the outbound connection reloads (#​6738) mcp: keep ext_proc databroker access working across outbound connection reloads (#​6740) mcp: negotiate supported token auth endpoint methods based on Oauth2 server metadata[bot] in https://g…", "url": "https://github.com/pomerium/pomerium/releases/tag/v0.33.3"}]}</script>
 </head>
 <body>
@@ -328,6 +330,7 @@ footer a:hover{color:var(--text)}
       <label class="sr" for="s-devices">Devices to watch</label>
       <input id="s-devices" name="devices" type="text" value="Pomerium Identity-aware access proxy" placeholder="Devices to watch (optional)">
       <input type="hidden" name="plan" value="free">
+      <div class="fw-captcha"></div>
       <div><button class="btn" type="submit">Start watching</button></div>
       <div id="s-msg" aria-live="polite"></div>
     </form>
@@ -350,15 +353,20 @@ if (f) f.addEventListener("submit", async e => {
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
   if (window.formGuard && window.formGuard.hold("subscribe", msg, "err")) return;
+  if (window.formCaptcha && window.formCaptcha.required() && !window.formCaptcha.token(f)) {
+    msg.className = "err"; msg.textContent = window.formCaptcha.pending; return;
+  }
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
     if (window.formGuard) window.formGuard.record("subscribe");
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
+      body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim(),
+        captcha: window.formCaptcha ? window.formCaptcha.token(f) : "" }) });
     let d = {}; try { d = await r.json(); } catch {}
     if (!r.ok || !d.ok) throw new Error(d.error || "Couldn't save that just now. Try again in a minute.");
     f.innerHTML = '<p class="ok" style="margin:0">You\'re on the list. Check your inbox for a confirmation.</p>';
   } catch (err) { btn.disabled = false; msg.className = "err"; msg.textContent = err.message; }
+  finally { if (window.formCaptcha) window.formCaptcha.reset(f); }   // single-use token
 });
 </script>
 </body>

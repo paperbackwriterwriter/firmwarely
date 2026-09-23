@@ -213,6 +213,7 @@ footer a:hover{color:var(--text)}
   .contact textarea,.contact select{font:inherit;font-size:1rem;color:var(--text);background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:.6rem .8rem;width:100%}
   .contact textarea{resize:vertical;min-height:9rem}
   .contact .hp{position:absolute;left:-9999px}
+  .fw-captcha:not(:empty){margin:.25rem 0}
   .faq p{color:var(--muted);margin:0}
   .brandlist h2{font-family:var(--mono);font-size:1rem;color:var(--amber);margin:1.75rem 0 .5rem}
   .brandlist ul{list-style:none;padding:0;margin:0;display:grid;gap:.4rem}
@@ -245,6 +246,7 @@ footer a:hover{color:var(--text)}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
 <script defer src="/formguard.js"></script>
+<script defer src="/captcha.js"></script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Makers & open firmware", "item": "https://www.firmwarely.com/category/makers/"}, {"@type": "ListItem", "position": 3, "name": "Xiaozhi Esp32 Server 本项目为xiaozhi-esp32提供后端服务，帮助您快速搭建ESP32设备控制服务器。Backend service", "item": "https://www.firmwarely.com/devices/xiaozhi-esp32-server/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/xiaozhi-esp32-server/", "url": "https://www.firmwarely.com/devices/xiaozhi-esp32-server/", "name": "Xiaozhi Esp32 Server 本项目为xiaozhi-esp32提供后端服务，帮助您快速搭建ESP32设备控制服务器。Back…", "description": "Xiaozhi Esp32 Server 本项目为xiaozhi-esp32提供后端服务，帮助您快速搭建ESP32设备控制服务器。Backend service firmware 0.9.6 (Jul 24, 2026): release notes, history and alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-09-23"}, {"@type": "SoftwareApplication", "name": "Xiaozhi Esp32 Server 本项目为xiaozhi-esp32提供后端服务，帮助您快速搭建ESP32设备控制服务器。Backend service firmware", "applicationCategory": "Firmware", "operatingSystem": "Xiaozhi Esp32 Server 本项目为xiaozhi-esp32提供后端服务，帮助您快速搭建ESP32设备控制服务器。Backend service", "softwareVersion": "0.9.6", "author": {"@type": "Organization", "name": "Xiaozhi Esp32 Server"}, "datePublished": "2026-07-24", "releaseNotes": "在服务端增加了AEC（声学回声消除）功能，从此以后，单麦设备在编译环节开启了服务端AEC，也能实时打断了。消除了以往只有双麦设备才能实时打断的局限 增加智能体快照的历史记录功能，害怕提示词丢失的问题，得到缓解 解决了设备在跨时区使用时的时间显示和在线状态不一致的问题 优化了声纹称呼的提示词和注入逻辑，减少了模型每次回答都带说话人信息的情况", "url": "https://github.com/xinnan-tech/xiaozhi-esp32-server/releases/tag/v0.9.6"}]}</script>
 </head>
 <body>
@@ -328,6 +330,7 @@ footer a:hover{color:var(--text)}
       <label class="sr" for="s-devices">Devices to watch</label>
       <input id="s-devices" name="devices" type="text" value="Xiaozhi Esp32 Server 本项目为xiaozhi-esp32提供后端服务，帮助您快速搭建ESP32设备控制服务器。Backend service" placeholder="Devices to watch (optional)">
       <input type="hidden" name="plan" value="free">
+      <div class="fw-captcha"></div>
       <div><button class="btn" type="submit">Start watching</button></div>
       <div id="s-msg" aria-live="polite"></div>
     </form>
@@ -350,15 +353,20 @@ if (f) f.addEventListener("submit", async e => {
   const email = f.email.value.trim();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
   if (window.formGuard && window.formGuard.hold("subscribe", msg, "err")) return;
+  if (window.formCaptcha && window.formCaptcha.required() && !window.formCaptcha.token(f)) {
+    msg.className = "err"; msg.textContent = window.formCaptcha.pending; return;
+  }
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
     if (window.formGuard) window.formGuard.record("subscribe");
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
+      body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim(),
+        captcha: window.formCaptcha ? window.formCaptcha.token(f) : "" }) });
     let d = {}; try { d = await r.json(); } catch {}
     if (!r.ok || !d.ok) throw new Error(d.error || "Couldn't save that just now. Try again in a minute.");
     f.innerHTML = '<p class="ok" style="margin:0">You\'re on the list. Check your inbox for a confirmation.</p>';
   } catch (err) { btn.disabled = false; msg.className = "err"; msg.textContent = err.message; }
+  finally { if (window.formCaptcha) window.formCaptcha.reset(f); }   // single-use token
 });
 </script>
 </body>

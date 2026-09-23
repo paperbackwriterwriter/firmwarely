@@ -3,6 +3,7 @@
 // SUPPORT_TO and answered by hitting Reply, which lands in the sender's inbox.
 const fw = require("../lib/fw");
 const rl = require("../lib/ratelimit");
+const captcha = require("../lib/captcha");
 
 const TO = process.env.SUPPORT_TO || "hello@firmwarely.com";
 const MAX = { name: 120, subject: 160, message: 5000 };
@@ -34,6 +35,12 @@ module.exports = async function (req, res) {
 
   if (!fw.validEmail(email)) return fw.json(res, 400, { error: "Enter a valid email address so we can reply." });
   if (message.length < 10) return fw.json(res, 400, { error: "Tell us a bit more about what you need — a sentence is plenty." });
+
+  const check = await captcha.verify(body.captcha, rl.clientIp(req));
+  if (!check.ok) {
+    console.warn("contact: turnstile", check.reason, check.codes || "");
+    return fw.json(res, 400, { error: "Please complete the anti-spam check and try again." });
+  }
 
   // This endpoint puts mail in our own inbox, so the risk is flooding rather than
   // spamming strangers. Throttle per address and per source either way.

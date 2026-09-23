@@ -184,6 +184,7 @@ def styles():
   .contact textarea,.contact select{font:inherit;font-size:1rem;color:var(--text);background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:.6rem .8rem;width:100%}
   .contact textarea{resize:vertical;min-height:9rem}
   .contact .hp{position:absolute;left:-9999px}
+  .fw-captcha:not(:empty){margin:.25rem 0}
   .faq p{color:var(--muted);margin:0}
   .brandlist h2{font-family:var(--mono);font-size:1rem;color:var(--amber);margin:1.75rem 0 .5rem}
   .brandlist ul{list-style:none;padding:0;margin:0;display:grid;gap:.4rem}
@@ -224,6 +225,9 @@ ANALYTICS = '<script defer src="/_vercel/insights/script.js"></script>'
 # Shared by every form on the site: three submissions in thirty seconds, then a countdown.
 FORMGUARD = '<script defer src="/formguard.js"></script>'
 
+# Turnstile, inert until a site key is pasted into captcha.js.
+CAPTCHA = '<script defer src="/captcha.js"></script>'
+
 
 def head(title, desc, path, extra="", noindex=False):
     robots = '<meta name="robots" content="noindex">\n' if noindex else ""
@@ -253,6 +257,7 @@ def head(title, desc, path, extra="", noindex=False):
 <style>{STYLES}</style>
 {ANALYTICS}
 {FORMGUARD}
+{CAPTCHA}
 {extra}
 </head>
 <body>
@@ -287,6 +292,7 @@ def signup(device_name=""):
       <label class="sr" for="s-devices">Devices to watch</label>
       <input id="s-devices" name="devices" type="text" value="{esc(device_name)}" placeholder="Devices to watch (optional)">
       <input type="hidden" name="plan" value="free">
+      <div class="fw-captcha"></div>
       <div><button class="btn" type="submit">Start watching</button></div>
       <div id="s-msg" aria-live="polite"></div>
     </form>
@@ -312,15 +318,20 @@ if (f) f.addEventListener("submit", async e => {
   const email = f.email.value.trim();
   if (!/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address to continue."; return; }
   if (window.formGuard && window.formGuard.hold("subscribe", msg, "err")) return;
+  if (window.formCaptcha && window.formCaptcha.required() && !window.formCaptcha.token(f)) {
+    msg.className = "err"; msg.textContent = window.formCaptcha.pending; return;
+  }
   btn.disabled = true; msg.className = ""; msg.textContent = "Saving…";
   try {
     if (window.formGuard) window.formGuard.record("subscribe");
     const r = await fetch("/api/subscribe", { method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim() }) });
+      body: JSON.stringify({ email, plan: f.plan.value, devices: f.devices.value.trim(),
+        captcha: window.formCaptcha ? window.formCaptcha.token(f) : "" }) });
     let d = {}; try { d = await r.json(); } catch {}
     if (!r.ok || !d.ok) throw new Error(d.error || "Couldn't save that just now. Try again in a minute.");
     f.innerHTML = '<p class="ok" style="margin:0">You\\'re on the list. Check your inbox for a confirmation.</p>';
   } catch (err) { btn.disabled = false; msg.className = "err"; msg.textContent = err.message; }
+  finally { if (window.formCaptcha) window.formCaptcha.reset(f); }   // single-use token
 });
 </script>
 </body>
@@ -637,6 +648,7 @@ def pro_page():
         </div>
         <input type="hidden" name="plan" value="pro">
         <input type="hidden" name="devices" value="">
+        <div class="fw-captcha"></div>
         <div id="s-msg" aria-live="polite"></div>
         <p class="fine" style="margin:.25rem 0 0">One email when Pro opens. No card needed today. Unsubscribe any time.</p>
       </form>"""
@@ -744,14 +756,16 @@ def product_link(d):
 def legal_page():
     return simple_page("Privacy & terms — Firmwarely", "Firmwarely privacy policy and terms of service.", "/legal/", """
 <h1 class="dev-h">Privacy &amp; terms</h1>
-<p style="color:var(--muted)">Last updated September 17, 2026. Firmwarely is an independent service operated by an individual in Iowa, USA. Questions: <a href="mailto:hello@firmwarely.com">hello@firmwarely.com</a>.</p>
+<p style="color:var(--muted)">Last updated September 23, 2026. Firmwarely is an independent service operated by an individual in Iowa, USA. Questions: <a href="mailto:hello@firmwarely.com">hello@firmwarely.com</a>.</p>
 <div class="faq">
 <h2 style="margin-top:2rem">Privacy policy</h2>
 <h3>What we collect</h3><p>Your email address when you subscribe, the device names you choose to tell us about, standard web server logs, and an anonymous count of which pages are read. If you buy Pro, Stripe collects your payment details; we never see your card number. We store the email you paid with and whether your subscription is active.</p>
 <h3>How we use it</h3><p>To send you the firmware update emails you asked for, to manage your subscription, and to understand which devices people want tracked. We don't sell or rent your data.</p>
-<h3>Who we share it with</h3><p>Beehiiv (subscriber list and newsletter delivery), Resend (sign-in links and device alerts), Stripe (payments), Vercel (hosting, sign-in API and page analytics), and GitHub (where our data pipeline runs). Each is bound by its own privacy policy. We share only what's needed for them to do their job.</p>
+<h3>Who we share it with</h3><p>Beehiiv (subscriber list and newsletter delivery), Resend (sign-in links and device alerts), Stripe (payments), Vercel (hosting, sign-in API and page analytics), Cloudflare (the anti-spam check on our forms), and GitHub (where our data pipeline runs). Each is bound by its own privacy policy. We share only what's needed for them to do their job.</p>
 <h3>Affiliate links</h3><p>Some product links may earn us a commission at no extra cost to you. They don't affect which updates we report.</p>
 <h3>Your choices</h3><p>Every email has an unsubscribe link. To delete your data entirely, email us and we'll remove it within 30 days. We set one cookie, only when you sign in, so you stay signed in for 30 days. Your device list is kept in your browser's local storage and, once you sign in, in your account.</p><h3>How we count visits</h3><p>We use Vercel Web Analytics to see which pages people actually read, because we'd rather write about the devices you're looking for than guess. It sets no cookies and does not follow you to other sites. To avoid counting the same person twice in a day it derives a temporary identifier from your IP address and browser, which rotates daily and which we never see; what reaches us is the page, the referring site, the rough country, and the kind of device — never a name, an address, or a profile. There are no advertising trackers, and we sell nothing to anyone.</p>
+<h3>The check on our forms</h3><p>Every form here runs Cloudflare Turnstile, which tells us whether a submission came from a person or a script. It is there because the alternative is a contact inbox and a mailing list full of bot signups. Cloudflare sees your IP address and some signals about your browser to make that call, and we receive only its yes or no — never a profile of you. Turnstile is designed not to track you across sites and, unlike the usual image puzzles, usually asks you to do nothing at all.</p>
+
 <h2 style="margin-top:2.5rem">Terms of service</h2>
 <h3>What Firmwarely is</h3><p>An information service that watches manufacturers' public release pages and tells you what changed. It is not affiliated with any manufacturer. Device and brand names belong to their owners.</p>
 <h3>What it isn't</h3><p>We don't distribute firmware, and we can't guarantee we catch every release or that release notes are accurate — manufacturers change their pages without notice. Always download firmware from the official source and read the manufacturer's notes before installing. You're responsible for updates you apply to your own devices.</p>
@@ -816,6 +830,7 @@ within 30 days. See <a href="/legal/">privacy &amp; terms</a> for what we hold a
     <textarea id="c-message" name="message" rows="7" required placeholder="The more detail the better — device model, what you expected, what you saw."></textarea>
   </div>
   <p class="hp" aria-hidden="true"><label for="c-website">Leave this field empty</label><input id="c-website" name="website" type="text" tabindex="-1" autocomplete="off"></p>
+  <div class="fw-captcha"></div>
   <div><button class="btn" type="submit">Send message</button></div>
   <div id="c-msg" aria-live="polite"></div>
   <p class="fine" style="margin:0">We use your address to answer you and nothing else. It never goes on a
@@ -835,17 +850,24 @@ within 30 days. See <a href="/legal/">privacy &amp; terms</a> for what we hold a
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { msg.className = "err"; msg.textContent = "Enter a valid email address so we can reply."; el("c-email").focus(); return; }
     if (message.length < 10) { msg.className = "err"; msg.textContent = "Tell us a bit more about what you need — a sentence is plenty."; el("c-message").focus(); return; }
     if (window.formGuard && window.formGuard.hold("contact", msg, "err")) return;
+    if (window.formCaptcha && window.formCaptcha.required() && !window.formCaptcha.token(f)) {
+      msg.className = "err"; msg.textContent = window.formCaptcha.pending; return;
+    }
     btn.disabled = true; msg.className = ""; msg.textContent = "Sending…";
     try {
       if (window.formGuard) window.formGuard.record("contact");
       var r = await fetch("/api/contact", { method: "POST", headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name: el("c-name").value.trim(), email: email, subject: el("c-subject").value,
-          message: message, website: el("c-website").value }) });
+          message: message, website: el("c-website").value,
+          captcha: window.formCaptcha ? window.formCaptcha.token(f) : "" }) });
       var d = {}; try { d = await r.json(); } catch (err) {}
       if (!r.ok || !d.ok) throw new Error(d.error || "Couldn't send that just now. Please email """ + SUPPORT_EMAIL + r""" directly.");
       f.innerHTML = '<p class="ok" style="margin:0">Message sent. We\'ll reply to <b></b> — usually within a business day.</p>';
       f.querySelector("b").textContent = email;   // textContent, so an address is never markup
-    } catch (err) { btn.disabled = false; msg.className = "err"; msg.textContent = err.message; }
+    } catch (err) {
+      btn.disabled = false; msg.className = "err"; msg.textContent = err.message;
+      if (window.formCaptcha) window.formCaptcha.reset(f);   // the send failed; the token is spent
+    }
   });
 })();
 </script>

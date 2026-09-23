@@ -140,6 +140,7 @@ footer a:hover{color:var(--text)}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
 <script defer src="/formguard.js"></script>
+<script defer src="/captcha.js"></script>
 </head>
 <body>
 <header>
@@ -168,6 +169,7 @@ footer a:hover{color:var(--text)}
       <form id="loginForm" novalidate>
         <label class="sr" for="loginEmail">Email address</label>
         <input id="loginEmail" type="email" placeholder="you@example.com" autocomplete="email" required>
+        <div class="fw-captcha"></div>
         <button class="btn" type="submit" id="loginBtn">Email me a sign-in link</button>
         <p class="hint">No password. We email you a link; click it and you're in.</p>
         <div class="msg" id="loginMsg" aria-live="polite"></div>
@@ -364,14 +366,19 @@ footer a:hover{color:var(--text)}
     var btn = document.getElementById("loginBtn");
     if (!validEmail(email)) { msg.className = "msg err"; msg.textContent = "Enter a valid email address."; return; }
     if (window.formGuard && window.formGuard.hold("signin", msg, "msg err")) return;
+    var form = document.getElementById("loginForm");
+    if (window.formCaptcha && window.formCaptcha.required() && !window.formCaptcha.token(form)) {
+      msg.className = "msg err"; msg.textContent = window.formCaptcha.pending; return;
+    }
     btn.disabled = true; msg.className = "msg"; msg.textContent = "Sending…";
     if (window.formGuard) window.formGuard.record("signin");
     fetch("/api/auth-request", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email: email })
+      body: JSON.stringify({ email: email, captcha: window.formCaptcha ? window.formCaptcha.token(form) : "" })
     }).then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
       .then(function (x) {
+        if (window.formCaptcha) window.formCaptcha.reset(form);   // single-use token
         if (x.ok) { msg.className = "msg ok"; msg.textContent = "Check " + email + " for your sign-in link. It works for 15 minutes."; }
         else { msg.className = "msg err"; msg.textContent = x.d.error || "Couldn't send the link just now."; btn.disabled = false; }
       }).catch(function () { msg.className = "msg err"; msg.textContent = "Couldn't reach the server."; btn.disabled = false; });

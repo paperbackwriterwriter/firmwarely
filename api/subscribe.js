@@ -3,6 +3,7 @@
 // Needs two environment variables in Vercel: BEEHIIV_API_KEY and BEEHIIV_PUB_ID.
 
 const rl = require("../lib/ratelimit");
+const captcha = require("../lib/captcha");
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -36,6 +37,12 @@ module.exports = async (req, res) => {
 
   if (!EMAIL_RE.test(email)) {
     return res.status(400).json({ ok: false, error: "Enter a valid email address." });
+  }
+
+  const check = await captcha.verify(body?.captcha, rl.clientIp(req));
+  if (!check.ok) {
+    console.warn("subscribe: turnstile", check.reason, check.codes || "");
+    return res.status(400).json({ ok: false, error: "Please complete the anti-spam check and try again." });
   }
 
   const payload = {
