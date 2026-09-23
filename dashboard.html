@@ -98,6 +98,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:space-betwee
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
 <script defer src="/formguard.js"></script>
+<script defer src="/captcha.js"></script>
 </head>
 <body>
 <header>
@@ -122,6 +123,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:space-betwee
       <form id="loginForm" novalidate>
         <label for="loginEmail" class="who">Already on Pro? Sign in to open your dashboard</label>
         <input id="loginEmail" type="email" placeholder="you@example.com" autocomplete="email" required>
+        <div class="fw-captcha"></div>
         <button class="btn" type="submit" id="loginBtn">Email me a sign-in link</button>
         <div class="msg" id="loginMsg" aria-live="polite"></div>
       </form>
@@ -267,12 +269,18 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:space-betwee
     var msg = document.getElementById("loginMsg"), btn = document.getElementById("loginBtn");
     if (!validEmail(email)) { msg.className = "msg err"; msg.textContent = "Enter a valid email address."; return; }
     if (window.formGuard && window.formGuard.hold("signin", msg, "msg err")) return;
+    var form = document.getElementById("loginForm");
+    if (window.formCaptcha && window.formCaptcha.required() && !window.formCaptcha.token(form)) {
+      msg.className = "msg err"; msg.textContent = window.formCaptcha.pending; return;
+    }
     btn.disabled = true; msg.className = "msg"; msg.textContent = "Sending…";
     if (window.formGuard) window.formGuard.record("signin");
     fetch("/api/auth-request", { method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email: email, next: "/dashboard.html" }) })
+      body: JSON.stringify({ email: email, next: "/dashboard.html",
+        captcha: window.formCaptcha ? window.formCaptcha.token(form) : "" }) })
       .then(function (r) { return r.json().then(function (d) { return { ok: r.ok && d.ok, d: d }; }); })
       .then(function (x) {
+        if (window.formCaptcha) window.formCaptcha.reset(form);   // single-use token
         if (x.ok) { msg.className = "msg ok"; msg.textContent = "Check your inbox — the link works for 15 minutes."; }
         else { msg.className = "msg err"; msg.textContent = (x.d && x.d.error) || "Couldn't send the link just now."; btn.disabled = false; }
       }).catch(function () { msg.className = "msg err"; msg.textContent = "Couldn't reach the server."; btn.disabled = false; });

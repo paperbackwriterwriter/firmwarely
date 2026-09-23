@@ -40,6 +40,11 @@ jobs:
       - name: Form rate-limit self-test
         run: node scripts/selftest_forms.mjs
 
+      # Has network, so this one also checks the real siteverify contract with Cloudflare's
+      # published test keys — the part that can't run in a sandbox.
+      - name: Captcha self-test
+        run: node scripts/selftest_captcha.mjs
+
   sources:
     runs-on: ubuntu-latest
     steps:

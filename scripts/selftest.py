@@ -465,7 +465,8 @@ def test_analytics_and_its_disclosure():
           all(w in legal for w in ("no cookies", "rotates daily", "advertising")), True)
     check("...and Vercel is listed among the processors for it",
           "Vercel (hosting, sign-in API and page analytics)" in legal, True)
-    check("the policy is dated the day it changed", "Last updated September 17, 2026" in legal, True)
+    # deliberately pinned: change the policy and this fails until the date is bumped with it
+    check("the policy is dated the day it changed", "Last updated September 23, 2026" in legal, True)
 
 
 # ---- no single form can be fired twice in half a minute ----
@@ -533,6 +534,70 @@ def test_form_rate_limit():
 
     wf = Path(".github/workflows/check-sources.yml").read_text()
     check("CI runs the limiter's own test", "selftest_forms.mjs" in wf, True)
+
+
+# ---- every form that posts carries the anti-spam check ----
+def test_captcha():
+    build_pages.STYLES = build_pages.styles()
+    devs = json.loads(Path("devices.json").read_text())["devices"]
+    pages = {"index.html": Path("index.html").read_text(),
+             "my-devices.html": Path("my-devices.html").read_text(),
+             "dashboard.html": Path("dashboard.html").read_text(),
+             "support": build_pages.support_page(),
+             "device": build_pages.device_page(devs[0])}
+
+    check("every page with a form loads the captcha script",
+          [n for n, h in pages.items() if '<script defer src="/captcha.js">' not in h], [])
+    check("every posting form has somewhere for the widget to render",
+          [n for n, h in pages.items() if 'class="fw-captcha"' not in h], [])
+    check("the homepage's two forms each have their own slot",
+          pages["index.html"].count('class="fw-captcha"'), 2)
+    # the pro page only shows a form while checkout is closed, so render that state
+    was, build_pages.pro_link = build_pages.pro_link, lambda: ""
+    try:
+        closed = build_pages.pro_page()
+    finally:
+        build_pages.pro_link = was
+    check("the pro waitlist form has a slot when it's the one on show",
+          'name="plan" value="pro"' in closed and 'class="fw-captcha"' in closed, True)
+
+    # the token has to reach the endpoint, and the widget has to be reset after: it is single-use
+    for n, h in pages.items():
+        check(f"{n}: sends the token", "formCaptcha.token(" in h, True)
+    for n in ("index.html", "my-devices.html", "dashboard.html", "support", "device"):
+        check(f"{n}: resets the widget once the token is spent",
+              "formCaptcha.reset(" in pages[n], True)
+    check("a missing token is explained rather than silently dropped",
+          [n for n, h in pages.items() if "formCaptcha.pending" not in h], [])
+    check("every call is guarded, so an unconfigured key can't break the forms",
+          [n for n, h in pages.items()
+           if re.search(r"(?<!window\.)(?<!window\.formCaptcha && window\.)formCaptcha\.", h)], [])
+
+    # the server half
+    for f in ("api/subscribe.js", "api/contact.js", "api/auth-request.js"):
+        src = Path(f).read_text()
+        check(f"{f} verifies the token", "captcha.verify(" in src, True)
+        check(f"{f} refuses when verification fails", "if (!check.ok)" in src, True)
+    lib = Path("lib/captcha.js").read_text()
+    check("the endpoint is the documented one",
+          "https://challenges.cloudflare.com/turnstile/v0/siteverify" in lib, True)
+    check("it stays inert until a secret is configured", "if (!secret) return { ok: true" in lib, True)
+
+    # shipping with a key but a CSP that blocks the widget would be a silently broken form
+    csp = json.loads(Path("vercel.json").read_text())["headers"][0]["headers"][0]["value"]
+    for part in ("script-src", "frame-src", "connect-src"):
+        check(f"the CSP lets Cloudflare through in {part}",
+              re.search(part + r"[^;]*challenges\.cloudflare\.com", csp) is not None, True)
+
+    check("the site key lives in one place, empty until it's created",
+          re.search(r'var TURNSTILE_SITE_KEY = "(.*?)"', Path("captcha.js").read_text()).group(1), "")
+    wf = Path(".github/workflows/check-sources.yml").read_text()
+    check("CI checks the captcha too", "selftest_captcha.mjs" in wf, True)
+
+    legal = build_pages.legal_page()
+    check("the policy names who runs the check", "Cloudflare Turnstile" in legal, True)
+    check("...and lists them as a processor",
+          "Cloudflare (the anti-spam check on our forms)" in legal, True)
 
 
 def test_clean():
@@ -834,7 +899,7 @@ def test_schedule_and_digest():
 
 
 for t in (test_compare, test_new_release, test_saved_devices, test_routing, test_forced_guard,
-          test_update_guides, test_sources_well_formed, test_site_shows_only_real_data, test_support_page, test_dates_are_honest, test_withdrawn_devices_redirect, test_analytics_and_its_disclosure, test_form_rate_limit, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
+          test_update_guides, test_sources_well_formed, test_site_shows_only_real_data, test_support_page, test_dates_are_honest, test_withdrawn_devices_redirect, test_analytics_and_its_disclosure, test_form_rate_limit, test_captcha, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
           test_landing_pages, test_schedule_and_digest):
     print(f"\n{t.__name__}")
     t()

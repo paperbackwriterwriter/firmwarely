@@ -196,6 +196,7 @@ footer a:hover{color:var(--text)}
 </style>
 <script defer src="/_vercel/insights/script.js"></script>
 <script defer src="/formguard.js"></script>
+<script defer src="/captcha.js"></script>
 </head>
 <body>
 <header>
@@ -221,6 +222,7 @@ footer a:hover{color:var(--text)}
       <form id="hero-form" novalidate>
         <label class="sr" for="hero-email">Email address</label>
         <input id="hero-email" type="email" placeholder="you@example.com" autocomplete="email" required>
+        <div class="fw-captcha"></div>
         <button class="btn" type="submit">Start watching</button>
       </form>
       <p class="fine">Free for up to 3 devices. No account needed to browse the catalog.</p>
@@ -320,6 +322,7 @@ footer a:hover{color:var(--text)}
         <label class="sr" for="s-devices">Devices to watch</label>
         <input id="s-devices" name="devices" type="text" placeholder="Devices to watch (optional), e.g. ASUS RT-AX88U, Synology DS923+">
         <input type="hidden" name="plan" id="s-plan" value="free">
+        <div class="fw-captcha"></div>
         <div><button class="btn" type="submit">Start watching</button></div>
         <div id="s-msg" aria-live="polite"></div>
       </form>
@@ -495,11 +498,12 @@ const PRO_LINK = "https://buy.stripe.com/fZubJ1aOP6ve9TF8FU9sk00";
 /* ---------- forms → /api/subscribe → Beehiiv ---------- */
 const validEmail = v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
 
-async function subscribe(email, plan, devices){
+async function subscribe(email, plan, devices, form){
+  const captcha = window.formCaptcha ? window.formCaptcha.token(form) : "";
   const r = await fetch("/api/subscribe", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ email, plan, devices })
+    body: JSON.stringify({ email, plan, devices, captcha })
   });
   let data = {};
   try { data = await r.json(); } catch {}
@@ -519,10 +523,13 @@ heroForm.addEventListener("submit", async e=>{
   }
   const heroMsg = document.getElementById("s-msg");
   if (window.formGuard && window.formGuard.hold("subscribe", heroMsg, "err")) { location.hash = "#signup"; return; }
+  if (window.formCaptcha && window.formCaptcha.required() && !window.formCaptcha.token(heroForm)) {
+    heroMsg.className = "err"; heroMsg.textContent = window.formCaptcha.pending; location.hash = "#signup"; return;
+  }
   heroBtn.disabled = true; heroBtn.textContent = "Saving…";
   try{
     if (window.formGuard) window.formGuard.record("subscribe");
-    await subscribe(v, "free", "");
+    await subscribe(v, "free", "", heroForm);
     heroForm.innerHTML = '<p class="ok" style="margin:0">You\'re on the list. Check your inbox for a confirmation.</p>';
   }catch(err){
     heroBtn.disabled = false; heroBtn.textContent = "Start watching";
@@ -544,10 +551,13 @@ signupForm.addEventListener("submit", async e=>{
   const email = signupForm.email.value.trim();
   if(!validEmail(email)){ msg.className="err"; msg.textContent="Enter a valid email address to continue."; signupForm.email.focus(); return; }
   if (window.formGuard && window.formGuard.hold("subscribe", msg, "err")) return;
+  if (window.formCaptcha && window.formCaptcha.required() && !window.formCaptcha.token(signupForm)) {
+    msg.className = "err"; msg.textContent = window.formCaptcha.pending; return;
+  }
   btn.disabled = true; msg.className=""; msg.textContent="Saving…";
   try{
     if (window.formGuard) window.formGuard.record("subscribe");
-    await subscribe(email, signupForm.plan.value, signupForm.devices.value.trim());
+    await subscribe(email, signupForm.plan.value, signupForm.devices.value.trim(), signupForm);
     msg.className="ok";
     msg.textContent = signupForm.plan.value==="pro" && !PRO_LINK.startsWith("http")
       ? "You're on the Pro waitlist. Check your inbox for a confirmation."
@@ -555,7 +565,11 @@ signupForm.addEventListener("submit", async e=>{
     signupForm.reset();
   }catch(err){
     msg.className="err"; msg.textContent = err.message;
-  }finally{ btn.disabled = false; }
+  }finally{
+    btn.disabled = false;
+    // the token is single-use, so the form needs a fresh one whichever way that went
+    if (window.formCaptcha) window.formCaptcha.reset(signupForm);
+  }
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();

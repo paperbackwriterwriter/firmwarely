@@ -1,12 +1,19 @@
 // POST {email} -> emails a sign-in link.
 const fw = require("../lib/fw");
 const rl = require("../lib/ratelimit");
+const captcha = require("../lib/captcha");
 
 module.exports = async function (req, res) {
   if (req.method !== "POST") return fw.json(res, 405, { error: "POST only" });
   const body = await fw.readBody(req);
   const email = fw.normEmail(body.email);
   if (!fw.validEmail(email)) return fw.json(res, 400, { error: "Enter a valid email address." });
+
+  const check = await captcha.verify(body.captcha, rl.clientIp(req));
+  if (!check.ok) {
+    console.warn("auth-request: turnstile", check.reason, check.codes || "");
+    return fw.json(res, 400, { error: "Please complete the anti-spam check and try again." });
+  }
 
   // The browser applies this too (formguard.js), but anything can skip the browser.
   // Same numbers, enforced per source and per form: one submission every thirty seconds.
