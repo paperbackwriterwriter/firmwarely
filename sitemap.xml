@@ -8,8 +8,8 @@
   <url><loc>https://www.firmwarely.com/support/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/routers/</loc><lastmod>2026-09-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/nas/</loc><lastmod>2026-09-23</lastmod></url>
-  <url><loc>https://www.firmwarely.com/category/smart-home/</loc><lastmod>2026-09-22</lastmod></url>
-  <url><loc>https://www.firmwarely.com/category/consoles-drones-ebikes/</loc><lastmod>2026-09-22</lastmod></url>
+  <url><loc>https://www.firmwarely.com/category/smart-home/</loc><lastmod>2026-09-23</lastmod></url>
+  <url><loc>https://www.firmwarely.com/category/consoles-drones-ebikes/</loc><lastmod>2026-09-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/makers/</loc><lastmod>2026-09-22</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/pcs-tvs-gadgets/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/self-hosted/</loc><lastmod>2026-09-23</lastmod></url>
@@ -31,7 +31,7 @@
   <url><loc>https://www.firmwarely.com/brands/espressif/</loc><lastmod>2026-09-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/simplisafe/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/adguard/</loc><lastmod>2026-09-13</lastmod></url>
-  <url><loc>https://www.firmwarely.com/brands/analogue/</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://www.firmwarely.com/brands/analogue/</loc><lastmod>2026-09-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/coder/</loc><lastmod>2026-09-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/dbeaver/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/docker/</loc><lastmod>2026-09-15</lastmod></url>
@@ -585,7 +585,7 @@
   <url><loc>https://www.firmwarely.com/devices/flarum/</loc><lastmod>2026-08-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/listmonk/</loc><lastmod>2026-06-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/mailcow/</loc><lastmod>2026-09-21</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/mailu/</loc><lastmod>2026-08-12</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/mailu/</loc><lastmod>2026-09-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/roundcube/</loc><lastmod>2026-09-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/postal/</loc><lastmod>2026-06-03</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/chatwoot/</loc><lastmod>2026-09-18</lastmod></url>
@@ -706,7 +706,7 @@
   <url><loc>https://www.firmwarely.com/devices/ubiquiti-unifi-ai-key/</loc><lastmod>2026-09-09</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/simplisafe-outdoor-camera/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/home-assistant-voice-pe/</loc><lastmod>2026-09-18</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/analogue-3d/</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/analogue-3d/</loc><lastmod>2026-09-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/m5stack-cardputer/</loc><lastmod>2026-06-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/raspberry-pi-pico-2-w/</loc><lastmod>2026-09-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/arduino-nano-esp32/</loc><lastmod>2024-11-21</lastmod></url>
@@ -778,7 +778,7 @@
   <url><loc>https://www.firmwarely.com/devices/tiez-clipboard/</loc><lastmod>2026-04-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/trystero/</loc><lastmod>2026-08-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/openmower/</loc><lastmod>2026-09-03</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/aily-blockly/</loc><lastmod>2026-09-21</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/aily-blockly/</loc><lastmod>2026-09-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/safeline/</loc><lastmod>2026-09-03</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/server/</loc><lastmod>2026-08-20</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/tinyauth/</loc><lastmod>2026-09-07</lastmod></url>
