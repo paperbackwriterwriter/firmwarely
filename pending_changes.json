@@ -226,6 +226,66 @@
    "notes": "fix(flows): stop template imports from failing when the v23 upgrade has no stored flow- #​15736 #​15736 📌 Upgrading a self-hosted instance? Review the Breaking Changes page for any actions required before you upgrade. Thanks ❤️ No contributors",
    "source_url": "https://github.com/activepieces/activepieces/releases/tag/0.91.2",
    "page_url": "https://www.firmwarely.com/devices/activepieces/"
+  },
+  "openbao": {
+   "id": "openbao",
+   "brand": "OpenBao",
+   "model": "Secrets manager",
+   "category": "A",
+   "status": "critical",
+   "version": "2.6.3",
+   "previous": "2.6.2",
+   "released": "2026-09-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "SECURITY agent, proxy: Ensure the quit endpoint correctly requires the X-Vault-Request header when specified by listener configuration. GHSA-8gmq-wv9h-fcwp. [GH-4065] auth/cert, auth/kubernetes, auth/userpass, secrets/pki, core/policies, core/workflows: Use ResolvePathOperation to define canonical …",
+   "source_url": "https://github.com/openbao/openbao/releases/tag/v2.6.3",
+   "page_url": "https://www.firmwarely.com/devices/openbao/"
+  },
+  "zitadel": {
+   "id": "zitadel",
+   "brand": "ZITADEL",
+   "model": "Identity platform",
+   "category": "A",
+   "status": "update",
+   "version": "4.19.1",
+   "previous": "4.19.0",
+   "released": "2026-09-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "4.19.1 (2026-09-23) Bug Fixes setup step 79 batch unique constraint owner backfill (#​12803) (42cdd5d)",
+   "source_url": "https://github.com/zitadel/zitadel/releases/tag/v4.19.1",
+   "page_url": "https://www.firmwarely.com/devices/zitadel/"
+  },
+  "directus": {
+   "id": "directus",
+   "brand": "Directus",
+   "model": "Headless CMS",
+   "category": "A",
+   "status": "update",
+   "version": "12.4.1",
+   "previous": "12.4.0",
+   "released": "2026-09-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "🐛 Bug Fixes & Optimizations/api Fixed reading from folders endpoint as non admin (#​28286) 📦 Published Versions/app.0.1/api.2.1",
+   "source_url": "https://github.com/directus/directus/releases/tag/v12.4.1",
+   "page_url": "https://www.firmwarely.com/devices/directus/"
+  },
+  "onyx": {
+   "id": "onyx",
+   "brand": "Onyx",
+   "model": "AI Platform",
+   "category": "A",
+   "status": "update",
+   "version": "4.8.0",
+   "previous": "4.7.8",
+   "released": "2026-09-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Warning Do not upgrade to this release if you want to preserve your existing indexed documents but have not yet run the document index migration, which can be done from any version v3.x. See additional documentation here. See the assets to download this version and install. What's Changed chore(dev…",
+   "source_url": "https://github.com/onyx-dot-app/onyx/releases/tag/v4.8.0",
+   "page_url": "https://www.firmwarely.com/devices/onyx/"
   }
  }
 }
