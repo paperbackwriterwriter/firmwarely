@@ -9389,6 +9389,276 @@
    "type": "github",
    "repo": "ailyProject/aily-blockly",
    "product_url": "https://github.com/ailyProject/aily-blockly"
+  },
+  {
+   "id": "safeline",
+   "brand": "SafeLine",
+   "model": "WAF(Web Application Firewall) / reverse proxy",
+   "category": "R",
+   "type": "github",
+   "repo": "chaitin/SafeLine",
+   "product_url": "https://github.com/chaitin/SafeLine"
+  },
+  {
+   "id": "server",
+   "brand": "Server",
+   "model": "Screen sharing for developers",
+   "category": "A",
+   "type": "github",
+   "repo": "screego/server",
+   "product_url": "https://github.com/screego/server"
+  },
+  {
+   "id": "tinyauth",
+   "brand": "Tinyauth",
+   "model": "Tiniest OpenID Certified™ authorization and authentication",
+   "category": "A",
+   "type": "github",
+   "repo": "tinyauthapp/tinyauth",
+   "product_url": "https://github.com/tinyauthapp/tinyauth"
+  },
+  {
+   "id": "btcpayserver",
+   "brand": "Btcpayserver",
+   "model": "Accept Bitcoin payments",
+   "category": "A",
+   "type": "github",
+   "repo": "btcpayserver/btcpayserver",
+   "product_url": "https://github.com/btcpayserver/btcpayserver"
+  },
+  {
+   "id": "netalertx-netalertx",
+   "brand": "NetAlertX",
+   "model": "Centralized network visibility and continuous asset",
+   "category": "R",
+   "type": "github",
+   "repo": "netalertx/NetAlertX",
+   "product_url": "https://github.com/netalertx/NetAlertX"
+  },
+  {
+   "id": "sparkyfitness",
+   "brand": "SparkyFitness",
+   "model": "Built for Families",
+   "category": "A",
+   "type": "github",
+   "repo": "CodeWithCJ/SparkyFitness",
+   "product_url": "https://github.com/CodeWithCJ/SparkyFitness"
+  },
+  {
+   "id": "bitmagnet",
+   "brand": "Bitmagnet",
+   "model": "BitTorrent indexer, DHT crawler, content classifier",
+   "category": "A",
+   "type": "github",
+   "repo": "bitmagnet-io/bitmagnet",
+   "product_url": "https://github.com/bitmagnet-io/bitmagnet"
+  },
+  {
+   "id": "13ft",
+   "brand": "13ft",
+   "model": "My own custom 12ft.io replacement",
+   "category": "A",
+   "type": "github",
+   "repo": "wasi-master/13ft",
+   "product_url": "https://github.com/wasi-master/13ft"
+  },
+  {
+   "id": "wanderer",
+   "brand": "Wanderer",
+   "model": "Trail database",
+   "category": "A",
+   "type": "github",
+   "repo": "open-wanderer/wanderer",
+   "product_url": "https://github.com/open-wanderer/wanderer"
+  },
+  {
+   "id": "olivetin",
+   "brand": "OliveTin",
+   "model": "Gives safe and simple access",
+   "category": "A",
+   "type": "github",
+   "repo": "OliveTin/OliveTin",
+   "product_url": "https://github.com/OliveTin/OliveTin"
+  },
+  {
+   "id": "movie-data-capture",
+   "brand": "Movie Data Capture",
+   "model": "Local Movies Organizer",
+   "category": "N",
+   "type": "github",
+   "repo": "mvdctop/Movie_Data_Capture",
+   "product_url": "https://github.com/mvdctop/Movie_Data_Capture"
+  },
+  {
+   "id": "sun-panel",
+   "brand": "Sun Panel",
+   "model": "Server, NAS navigation panel, Homepage, browser homepage",
+   "category": "N",
+   "type": "github",
+   "repo": "hslr-s/sun-panel",
+   "product_url": "https://github.com/hslr-s/sun-panel"
+  },
+  {
+   "id": "oxicloud",
+   "brand": "OxiCloud",
+   "model": "Ultra-fast, secure & lightweight self-hosted cloud storage",
+   "category": "N",
+   "type": "github",
+   "repo": "AtalayaLabs/OxiCloud",
+   "product_url": "https://github.com/AtalayaLabs/OxiCloud"
+  },
+  {
+   "id": "ani-rss",
+   "brand": "Ani Rss",
+   "model": "基于RSS自动追番、订阅、下载、刮削、洗版",
+   "category": "N",
+   "type": "github",
+   "repo": "wushuo894/ani-rss",
+   "product_url": "https://github.com/wushuo894/ani-rss"
+  },
+  {
+   "id": "arc",
+   "brand": "Arc",
+   "model": "Customized Redpill Loader",
+   "category": "N",
+   "type": "github",
+   "repo": "AuxXxilium/arc",
+   "product_url": "https://github.com/AuxXxilium/arc"
+  },
+  {
+   "id": "lanraragi",
+   "brand": "LANraragi",
+   "model": "Web application for archival and reading of manga/doujinshi",
+   "category": "N",
+   "type": "github",
+   "repo": "Difegue/LANraragi",
+   "product_url": "https://github.com/Difegue/LANraragi"
+  },
+  {
+   "id": "arozos",
+   "brand": "Arozos",
+   "model": "Web Desktop Operating System",
+   "category": "N",
+   "type": "github",
+   "repo": "tobychui/arozos",
+   "product_url": "https://github.com/tobychui/arozos"
+  },
+  {
+   "id": "bili-sync",
+   "brand": "Bili Sync",
+   "model": "由 Rust & Tokio 驱动的哔哩哔哩同步工具",
+   "category": "N",
+   "type": "github",
+   "repo": "amtoaer/bili-sync",
+   "product_url": "https://github.com/amtoaer/bili-sync"
+  },
+  {
+   "id": "songloft",
+   "brand": "Songloft",
+   "model": "插件化、无广告的免费音乐服务器",
+   "category": "N",
+   "type": "github",
+   "repo": "songloft-org/songloft",
+   "product_url": "https://github.com/songloft-org/songloft"
+  },
+  {
+   "id": "orcaslicer-orcaslicer",
+   "brand": "OrcaSlicer",
+   "model": "G-code generator",
+   "category": "M",
+   "type": "github",
+   "repo": "OrcaSlicer/OrcaSlicer",
+   "product_url": "https://github.com/OrcaSlicer/OrcaSlicer"
+  },
+  {
+   "id": "tock",
+   "brand": "Tock",
+   "model": "Secure embedded operating system for microcontrollers",
+   "category": "S",
+   "type": "github",
+   "repo": "tock/tock",
+   "product_url": "https://github.com/tock/tock"
+  },
+  {
+   "id": "hass-xiaomi-miot",
+   "brand": "Hass Xiaomi Miot",
+   "model": "Automatic integrate all Xiaomi devices",
+   "category": "S",
+   "type": "github",
+   "repo": "al-one/hass-xiaomi-miot",
+   "product_url": "https://github.com/al-one/hass-xiaomi-miot"
+  },
+  {
+   "id": "wasm-micro-runtime",
+   "brand": "Wasm Micro Runtime",
+   "model": "WebAssembly Micro Runtime (WAMR)",
+   "category": "S",
+   "type": "github",
+   "repo": "wasm-micro-runtime/wasm-micro-runtime",
+   "product_url": "https://github.com/wasm-micro-runtime/wasm-micro-runtime"
+  },
+  {
+   "id": "node-serialport",
+   "brand": "Node Serialport",
+   "model": "Access serial ports with JavaScript",
+   "category": "S",
+   "type": "github",
+   "repo": "serialport/node-serialport",
+   "product_url": "https://github.com/serialport/node-serialport"
+  },
+  {
+   "id": "freeswitch",
+   "brand": "Freeswitch",
+   "model": "Software Defined Telecom Stack",
+   "category": "S",
+   "type": "github",
+   "repo": "signalwire/freeswitch",
+   "product_url": "https://github.com/signalwire/freeswitch"
+  },
+  {
+   "id": "livekit",
+   "brand": "Livekit",
+   "model": "End-to-end realtime stack for connecting humans and AI",
+   "category": "A",
+   "type": "github",
+   "repo": "livekit/livekit",
+   "product_url": "https://github.com/livekit/livekit"
+  },
+  {
+   "id": "nginx-http-flv-module",
+   "brand": "Nginx Http Flv Module",
+   "model": "Media streaming server based on nginx-rtmp-module",
+   "category": "A",
+   "type": "github",
+   "repo": "winshining/nginx-http-flv-module",
+   "product_url": "https://github.com/winshining/nginx-http-flv-module"
+  },
+  {
+   "id": "tubesync",
+   "brand": "Tubesync",
+   "model": "Syncs YouTube channels and playlists",
+   "category": "A",
+   "type": "github",
+   "repo": "meeb/tubesync",
+   "product_url": "https://github.com/meeb/tubesync"
+  },
+  {
+   "id": "universalmediaserver",
+   "brand": "UniversalMediaServer",
+   "model": "DLNA, UPnP and HTTP(S) Media Server",
+   "category": "A",
+   "type": "github",
+   "repo": "UniversalMediaServer/UniversalMediaServer",
+   "product_url": "https://github.com/UniversalMediaServer/UniversalMediaServer"
+  },
+  {
+   "id": "nsmusics",
+   "brand": "NSMusicS",
+   "model": "NineSong Cloud-Native Music Server/ Full platform",
+   "category": "A",
+   "type": "github",
+   "repo": "Super-Badmen-Viper/NSMusicS",
+   "product_url": "https://github.com/Super-Badmen-Viper/NSMusicS"
   }
  ]
 }
