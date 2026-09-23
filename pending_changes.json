@@ -1,5 +1,21 @@
 {
- "since": null,
+ "since": "2026-09-23T09:16:48+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "penpot": {
+   "id": "penpot",
+   "brand": "Penpot",
+   "model": "Design tool",
+   "category": "A",
+   "status": "update",
+   "version": "2.18.0",
+   "previous": "2.17.2",
+   "released": "2026-09-23",
+   "date_known": true,
+   "eol": false,
+   "notes": ":rocket: Epics and highlights Group toolbar drawing tools into shape and free-draw flyouts #​9316 (PR: #​9480, #​10354) Add dedicated Line and Arrow drawing tools () #​9145 (PR: #​9146) Show and manage comments while designing in the workspace #​10239 (PR: #​10275) :bug: Bugs fixed Fix MCP integrat…",
+   "source_url": "https://github.com/penpot/penpot/releases/tag/2.18.0",
+   "page_url": "https://www.firmwarely.com/devices/penpot/"
+  }
+ }
 }
