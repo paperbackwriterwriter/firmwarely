@@ -189,8 +189,8 @@
   },
   {
    "id": "eero-pro-6e",
-   "brand": "Eero",
-   "model": "Eero Pro 6E",
+   "brand": "eero",
+   "model": "Pro 6E",
    "category": "R",
    "type": "html",
    "url": "https://eero.com/support/articles/eero-software-release-notes",
@@ -1023,7 +1023,7 @@
    "id": "authelia",
    "brand": "Authelia",
    "model": "Authentication gateway",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "authelia/authelia",
    "product_url": "https://github.com/authelia/authelia"
@@ -1327,7 +1327,7 @@
    "id": "apprise",
    "brand": "Apprise",
    "model": "Notification gateway",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "caronc/apprise",
    "product_url": "https://github.com/caronc/apprise"
@@ -1363,7 +1363,7 @@
    "id": "beszel",
    "brand": "Beszel",
    "model": "Server monitoring hub",
-   "category": "N",
+   "category": "A",
    "type": "github",
    "repo": "henrygd/beszel",
    "product_url": "https://github.com/henrygd/beszel"
@@ -1743,8 +1743,8 @@
    "model": "ESP32 pentest firmware",
    "category": "S",
    "type": "github",
-   "repo": "pr3y/Bruce",
-   "product_url": "https://github.com/pr3y/Bruce"
+   "repo": "BruceDevices/firmware",
+   "product_url": "https://github.com/BruceDevices/firmware"
   },
   {
    "id": "klipper",
@@ -1797,8 +1797,8 @@
    "model": "Slicer software",
    "category": "M",
    "type": "github",
-   "repo": "SoftFever/OrcaSlicer",
-   "product_url": "https://github.com/SoftFever/OrcaSlicer"
+   "repo": "OrcaSlicer/OrcaSlicer",
+   "product_url": "https://github.com/OrcaSlicer/OrcaSlicer"
   },
   {
    "id": "ultimaker-cura",
@@ -2284,8 +2284,8 @@
   },
   {
    "id": "eero-max-7",
-   "brand": "Amazon",
-   "model": "eero Max 7",
+   "brand": "eero",
+   "model": "Max 7",
    "category": "R",
    "type": "html",
    "url": "https://eero.com/support/articles/eero-software-release-notes",
@@ -2295,8 +2295,8 @@
   },
   {
    "id": "eero-6-plus",
-   "brand": "Amazon",
-   "model": "eero 6+",
+   "brand": "eero",
+   "model": "6+",
    "category": "R",
    "type": "html",
    "url": "https://eero.com/support/articles/eero-software-release-notes",
@@ -3447,8 +3447,8 @@
    "model": "Network intruder detector",
    "category": "R",
    "type": "github",
-   "repo": "jokob-sk/NetAlertX",
-   "product_url": "https://github.com/jokob-sk/NetAlertX"
+   "repo": "netalertx/NetAlertX",
+   "product_url": "https://github.com/netalertx/NetAlertX"
   },
   {
    "id": "watchyourlan",
@@ -4649,8 +4649,8 @@
    "model": "Container engine",
    "category": "A",
    "type": "github",
-   "repo": "containers/podman",
-   "product_url": "https://github.com/containers/podman"
+   "repo": "podman-container-tools/podman",
+   "product_url": "https://github.com/podman-container-tools/podman"
   },
   {
    "id": "docker-engine",
@@ -6745,8 +6745,8 @@
   },
   {
    "id": "eero-7",
-   "brand": "Amazon",
-   "model": "eero 7",
+   "brand": "eero",
+   "model": "7",
    "category": "R",
    "type": "html",
    "url": "https://eero.com/support/articles/eero-software-release-notes",
@@ -6756,8 +6756,8 @@
   },
   {
    "id": "eero-pro-7",
-   "brand": "Amazon",
-   "model": "eero Pro 7",
+   "brand": "eero",
+   "model": "Pro 7",
    "category": "R",
    "type": "html",
    "url": "https://eero.com/support/articles/eero-software-release-notes",
@@ -8830,7 +8830,7 @@
   {
    "id": "glance",
    "brand": "Glance",
-   "model": "Dashboard that puts all your feeds in one place",
+   "model": "Feed dashboard",
    "category": "A",
    "type": "github",
    "repo": "glanceapp/glance",
@@ -8839,7 +8839,7 @@
   {
    "id": "qwenpaw",
    "brand": "QwenPaw",
-   "model": "Personal AI Assistant",
+   "model": "Personal AI assistant",
    "category": "A",
    "type": "github",
    "repo": "agentscope-ai/QwenPaw",
@@ -8848,7 +8848,7 @@
   {
    "id": "langfuse",
    "brand": "Langfuse",
-   "model": "Agent evals & observability",
+   "model": "LLM observability",
    "category": "A",
    "type": "github",
    "repo": "langfuse/langfuse",
@@ -8866,7 +8866,7 @@
   {
    "id": "onyx",
    "brand": "Onyx",
-   "model": "AI Platform",
+   "model": "AI platform",
    "category": "A",
    "type": "github",
    "repo": "onyx-dot-app/onyx",
@@ -8875,7 +8875,7 @@
   {
    "id": "meetily",
    "brand": "Meetily",
-   "model": "Privacy first, AI meeting assistant",
+   "model": "AI meeting assistant",
    "category": "A",
    "type": "github",
    "repo": "Zackriya-Solutions/meetily",
@@ -8884,16 +8884,16 @@
   {
    "id": "archivebox",
    "brand": "ArchiveBox",
-   "model": "Web archiving",
-   "category": "N",
+   "model": "Web archiver",
+   "category": "A",
    "type": "github",
    "repo": "ArchiveBox/ArchiveBox",
    "product_url": "https://github.com/ArchiveBox/ArchiveBox"
   },
   {
    "id": "pentagi",
-   "brand": "Pentagi",
-   "model": "Fully autonomous AI Agents system",
+   "brand": "PentAGI",
+   "model": "AI penetration testing agents",
    "category": "A",
    "type": "github",
    "repo": "vxcontrol/pentagi",
@@ -8902,7 +8902,7 @@
   {
    "id": "pangolin",
    "brand": "Pangolin",
-   "model": "Networking and security platform",
+   "model": "Tunneled reverse proxy",
    "category": "R",
    "type": "github",
    "repo": "fosrl/pangolin",
@@ -8942,8 +8942,8 @@
   },
   {
    "id": "xiaozhi-esp32",
-   "brand": "Xiaozhi Esp32",
-   "model": "MCP-based chatbot",
+   "brand": "Xiaozhi",
+   "model": "ESP32 AI voice assistant firmware",
    "category": "M",
    "type": "github",
    "repo": "78/xiaozhi-esp32",
@@ -8951,16 +8951,16 @@
   },
   {
    "id": "xiaozhi-esp32-server",
-   "brand": "Xiaozhi Esp32 Server",
-   "model": "本项目为xiaozhi-esp32提供后端服务，帮助您快速搭建ESP32设备控制服务器。Backend service",
-   "category": "M",
+   "brand": "Xiaozhi",
+   "model": "Voice assistant server",
+   "category": "A",
    "type": "github",
    "repo": "xinnan-tech/xiaozhi-esp32-server",
    "product_url": "https://github.com/xinnan-tech/xiaozhi-esp32-server"
   },
   {
    "id": "crosspoint-reader",
-   "brand": "Crosspoint Reader",
+   "brand": "CrossPoint",
    "model": "E-reader firmware",
    "category": "M",
    "type": "github",
@@ -8970,7 +8970,7 @@
   {
    "id": "esp32-bit-pirate",
    "brand": "ESP32 Bit Pirate",
-   "model": "Hardware Hacking Tool",
+   "model": "Hardware hacking tool",
    "category": "M",
    "type": "github",
    "repo": "geo-tp/ESP32-Bit-Pirate",
@@ -8978,8 +8978,8 @@
   },
   {
    "id": "esp32-div",
-   "brand": "ESP32 DIV",
-   "model": "ESP32DIV is a multi-purpose wireless offensive",
+   "brand": "ESP32-DIV",
+   "model": "Wireless security toolkit firmware",
    "category": "M",
    "type": "github",
    "repo": "cifertech/ESP32-DIV",
@@ -8987,17 +8987,17 @@
   },
   {
    "id": "py-xiaozhi",
-   "brand": "Py Xiaozhi",
-   "model": "AI assistant ecosystem",
-   "category": "S",
+   "brand": "Xiaozhi",
+   "model": "Python voice assistant client",
+   "category": "A",
    "type": "github",
    "repo": "huangjunsen0406/py-xiaozhi",
    "product_url": "https://github.com/huangjunsen0406/py-xiaozhi"
   },
   {
    "id": "esp-homekit-devices",
-   "brand": "Esp Homekit Devices",
-   "model": "Advanced firmware",
+   "brand": "RavenSystem",
+   "model": "HomeKit firmware for ESP devices",
    "category": "S",
    "type": "github",
    "repo": "RavenSystem/esp-homekit-devices",
@@ -9006,7 +9006,7 @@
   {
    "id": "velxio",
    "brand": "Velxio",
-   "model": "Emulate Arduino, ESP32 & Raspberry Pi",
+   "model": "Arduino and ESP32 emulator",
    "category": "M",
    "type": "github",
    "repo": "davidmonterocrespo24/velxio",
@@ -9015,7 +9015,7 @@
   {
    "id": "opendtu",
    "brand": "OpenDTU",
-   "model": "Software for ESP32 to talk to Hoymiles/TSUN/Solenso",
+   "model": "Solar inverter gateway firmware",
    "category": "S",
    "type": "github",
    "repo": "tbnobody/OpenDTU",
@@ -9024,8 +9024,8 @@
   {
    "id": "puter",
    "brand": "Puter",
-   "model": "Internet Computer",
-   "category": "N",
+   "model": "Web desktop OS",
+   "category": "A",
    "type": "github",
    "repo": "HeyPuter/puter",
    "product_url": "https://github.com/HeyPuter/puter"
@@ -9033,16 +9033,16 @@
   {
    "id": "tdengine",
    "brand": "TDengine",
-   "model": "High-performance, scalable time-series database",
-   "category": "S",
+   "model": "Time-series database",
+   "category": "A",
    "type": "github",
    "repo": "taosdata/TDengine",
    "product_url": "https://github.com/taosdata/TDengine"
   },
   {
    "id": "apisix",
-   "brand": "Apisix",
-   "model": "Cloud-Native API Gateway and AI Gateway",
+   "brand": "Apache",
+   "model": "APISIX API gateway",
    "category": "R",
    "type": "github",
    "repo": "apache/apisix",
@@ -9050,36 +9050,36 @@
   },
   {
    "id": "salt",
-   "brand": "Salt",
-   "model": "Software to automate the management and configuration",
-   "category": "S",
+   "brand": "Salt Project",
+   "model": "Salt configuration management",
+   "category": "A",
    "type": "github",
    "repo": "saltstack/salt",
    "product_url": "https://github.com/saltstack/salt"
   },
   {
    "id": "mongoose",
-   "brand": "Mongoose",
-   "model": "Embedded web server",
-   "category": "S",
+   "brand": "Cesanta",
+   "model": "Mongoose embedded web server",
+   "category": "M",
    "type": "github",
    "repo": "cesanta/mongoose",
    "product_url": "https://github.com/cesanta/mongoose"
   },
   {
    "id": "rt-thread",
-   "brand": "Rt Thread",
-   "model": "RT-Thread is an open source IoT Real-Time Operating System",
-   "category": "S",
+   "brand": "RT-Thread",
+   "model": "IoT real-time OS",
+   "category": "M",
    "type": "github",
    "repo": "RT-Thread/rt-thread",
    "product_url": "https://github.com/RT-Thread/rt-thread"
   },
   {
    "id": "microk8s",
-   "brand": "Microk8s",
-   "model": "Small, fast, single-package Kubernetes",
-   "category": "S",
+   "brand": "Canonical",
+   "model": "MicroK8s",
+   "category": "A",
    "type": "github",
    "repo": "canonical/microk8s",
    "product_url": "https://github.com/canonical/microk8s"
@@ -9087,17 +9087,17 @@
   {
    "id": "wasm3",
    "brand": "Wasm3",
-   "model": "WebAssembly interpreter and the most universal WASM runtime",
-   "category": "S",
+   "model": "WebAssembly interpreter",
+   "category": "M",
    "type": "github",
    "repo": "wasm3/wasm3",
    "product_url": "https://github.com/wasm3/wasm3"
   },
   {
    "id": "jerryscript",
-   "brand": "Jerryscript",
-   "model": "Ultra-lightweight JavaScript engine",
-   "category": "S",
+   "brand": "JerryScript",
+   "model": "Lightweight JavaScript engine",
+   "category": "M",
    "type": "github",
    "repo": "jerryscript-project/jerryscript",
    "product_url": "https://github.com/jerryscript-project/jerryscript"
@@ -9106,24 +9106,15 @@
    "id": "serial-studio",
    "brand": "Serial Studio",
    "model": "Telemetry dashboard",
-   "category": "S",
+   "category": "M",
    "type": "github",
    "repo": "Serial-Studio/Serial-Studio",
    "product_url": "https://github.com/Serial-Studio/Serial-Studio"
   },
   {
-   "id": "firmware",
-   "brand": "Firmware",
-   "model": "Predatory ESP32 Firmware",
-   "category": "S",
-   "type": "github",
-   "repo": "BruceDevices/firmware",
-   "product_url": "https://github.com/BruceDevices/firmware"
-  },
-  {
    "id": "dns-blocklists",
-   "brand": "Dns Blocklists",
-   "model": "For a better internet",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
    "category": "R",
    "type": "github",
    "repo": "hagezi/dns-blocklists",
@@ -9131,8 +9122,8 @@
   },
   {
    "id": "gost",
-   "brand": "Gost",
-   "model": "GO Simple Tunnel",
+   "brand": "GOST",
+   "model": "Simple tunnel",
    "category": "R",
    "type": "github",
    "repo": "ginuerzh/gost",
@@ -9140,9 +9131,9 @@
   },
   {
    "id": "amass",
-   "brand": "Amass",
-   "model": "In-depth attack surface mapping and asset discovery",
-   "category": "R",
+   "brand": "OWASP",
+   "model": "Amass attack surface mapper",
+   "category": "A",
    "type": "github",
    "repo": "owasp-amass/amass",
    "product_url": "https://github.com/owasp-amass/amass"
@@ -9150,16 +9141,16 @@
   {
    "id": "gobuster",
    "brand": "Gobuster",
-   "model": "Directory/File, DNS and VHost busting tool written in Go",
-   "category": "R",
+   "model": "Directory and DNS brute-forcer",
+   "category": "A",
    "type": "github",
    "repo": "OJ/gobuster",
    "product_url": "https://github.com/OJ/gobuster"
   },
   {
    "id": "portmaster",
-   "brand": "Portmaster",
-   "model": "Love Freedom",
+   "brand": "Safing",
+   "model": "Portmaster application firewall",
    "category": "R",
    "type": "github",
    "repo": "safing/portmaster",
@@ -9167,8 +9158,8 @@
   },
   {
    "id": "docker-pi-hole",
-   "brand": "Docker Pi Hole",
-   "model": "Official Pi-hole Docker image from pi-hole.net",
+   "brand": "Pi-hole",
+   "model": "Docker image",
    "category": "R",
    "type": "github",
    "repo": "pi-hole/docker-pi-hole",
@@ -9176,7 +9167,7 @@
   },
   {
    "id": "smartdns",
-   "brand": "Smartdns",
+   "brand": "SmartDNS",
    "model": "Local DNS server",
    "category": "R",
    "type": "github",
@@ -9186,7 +9177,7 @@
   {
    "id": "networkmanager",
    "brand": "NETworkManager",
-   "model": "Tool for managing networks and troubleshooting network",
+   "model": "Network troubleshooting tool",
    "category": "R",
    "type": "github",
    "repo": "BornToBeRoot/NETworkManager",
@@ -9194,9 +9185,9 @@
   },
   {
    "id": "reconftw",
-   "brand": "Reconftw",
-   "model": "Tool designed to perform automated recon on a target domain",
-   "category": "R",
+   "brand": "reconFTW",
+   "model": "Automated recon scanner",
+   "category": "A",
    "type": "github",
    "repo": "six2dez/reconftw",
    "product_url": "https://github.com/six2dez/reconftw"
@@ -9213,7 +9204,7 @@
   {
    "id": "dive",
    "brand": "Dive",
-   "model": "Tool for exploring each layer in a docker image",
+   "model": "Docker image explorer",
    "category": "A",
    "type": "github",
    "repo": "wagoodman/dive",
@@ -9221,8 +9212,8 @@
   },
   {
    "id": "windows",
-   "brand": "Windows",
-   "model": "Inside a Docker container",
+   "brand": "Dockur",
+   "model": "Windows in Docker",
    "category": "A",
    "type": "github",
    "repo": "dockur/windows",
@@ -9231,7 +9222,7 @@
   {
    "id": "harness",
    "brand": "Harness",
-   "model": "Is an end-to-end developer platform",
+   "model": "Developer platform",
    "category": "A",
    "type": "github",
    "repo": "harness/harness",
@@ -9240,25 +9231,16 @@
   {
    "id": "1panel",
    "brand": "1Panel",
-   "model": "Modern, open-source Linux server management panel",
+   "model": "Linux server panel",
    "category": "A",
    "type": "github",
    "repo": "1Panel-dev/1Panel",
    "product_url": "https://github.com/1Panel-dev/1Panel"
   },
   {
-   "id": "podman-container-tools-podman",
-   "brand": "Podman",
-   "model": "Tool for managing OCI containers and pods",
-   "category": "A",
-   "type": "github",
-   "repo": "podman-container-tools/podman",
-   "product_url": "https://github.com/podman-container-tools/podman"
-  },
-  {
    "id": "colima",
    "brand": "Colima",
-   "model": "Container runtimes on macOS (and Linux) with minimal setup",
+   "model": "Container runtime for macOS",
    "category": "A",
    "type": "github",
    "repo": "abiosoft/colima",
@@ -9266,8 +9248,8 @@
   },
   {
    "id": "faas",
-   "brand": "Faas",
-   "model": "OpenFaaS",
+   "brand": "OpenFaaS",
+   "model": "Functions as a service",
    "category": "A",
    "type": "github",
    "repo": "openfaas/faas",
@@ -9276,8 +9258,8 @@
   {
    "id": "floci",
    "brand": "Floci",
-   "model": "Light, fluffy, and always free",
-   "category": "N",
+   "model": "Local cloud emulator",
+   "category": "A",
    "type": "github",
    "repo": "floci-io/floci",
    "product_url": "https://github.com/floci-io/floci"
@@ -9285,7 +9267,7 @@
   {
    "id": "kong",
    "brand": "Kong",
-   "model": "API and AI Gateway",
+   "model": "API gateway",
    "category": "R",
    "type": "github",
    "repo": "Kong/kong",
@@ -9293,8 +9275,8 @@
   },
   {
    "id": "nginx",
-   "brand": "Nginx",
-   "model": "Official NGINX Open Source repository",
+   "brand": "NGINX",
+   "model": "Web server",
    "category": "R",
    "type": "github",
    "repo": "nginx/nginx",
@@ -9303,16 +9285,16 @@
   {
    "id": "smsforwarder",
    "brand": "SmsForwarder",
-   "model": "短信转发器——监控Android手机短信、来电、APP通知，并根据指定规则转发到其他手机：钉钉群自定义机器人、钉钉企业内",
-   "category": "S",
+   "model": "Android SMS forwarder",
+   "category": "P",
    "type": "github",
    "repo": "pppscn/SmsForwarder",
    "product_url": "https://github.com/pppscn/SmsForwarder"
   },
   {
    "id": "jetlinks-community",
-   "brand": "Jetlinks Community",
-   "model": "JetLinks 基于Java,Spring Boot",
+   "brand": "JetLinks",
+   "model": "IoT platform",
    "category": "S",
    "type": "github",
    "repo": "jetlinks/jetlinks-community",
@@ -9321,16 +9303,16 @@
   {
    "id": "plotjuggler",
    "brand": "PlotJuggler",
-   "model": "Time Series Visualization Tool that you deserve",
-   "category": "S",
+   "model": "Time-series plotting tool",
+   "category": "M",
    "type": "github",
    "repo": "PlotJuggler/PlotJuggler",
    "product_url": "https://github.com/PlotJuggler/PlotJuggler"
   },
   {
    "id": "mqttx",
-   "brand": "MQTTX",
-   "model": "All-in-One MQTT 5.0 client toolbox",
+   "brand": "EMQX",
+   "model": "MQTTX client",
    "category": "S",
    "type": "github",
    "repo": "emqx/MQTTX",
@@ -9339,7 +9321,7 @@
   {
    "id": "fuxa",
    "brand": "FUXA",
-   "model": "Web-based Process Visualization (SCADA/HMI/Dashboard)",
+   "model": "SCADA and HMI dashboard",
    "category": "S",
    "type": "github",
    "repo": "frangoteam/FUXA",
@@ -9347,8 +9329,8 @@
   },
   {
    "id": "dgiot",
-   "brand": "Dgiot",
-   "model": "Industrial IoT Platform",
+   "brand": "DGIOT",
+   "model": "Industrial IoT platform",
    "category": "S",
    "type": "github",
    "repo": "dgiot/dgiot",
@@ -9356,9 +9338,9 @@
   },
   {
    "id": "tiez-clipboard",
-   "brand": "Tiez Clipboard",
-   "model": "TieZ 是一款基于 Tauri 的跨平台剪贴板管理器 / A cross-platform clipboard",
-   "category": "S",
+   "brand": "TieZ",
+   "model": "Clipboard manager",
+   "category": "P",
    "type": "github",
    "repo": "jimuzhe/tiez-clipboard",
    "product_url": "https://github.com/jimuzhe/tiez-clipboard"
@@ -9366,8 +9348,8 @@
   {
    "id": "trystero",
    "brand": "Trystero",
-   "model": "Build instant multiplayer webapps, no server required",
-   "category": "S",
+   "model": "Peer-to-peer web app toolkit",
+   "category": "A",
    "type": "github",
    "repo": "dmotz/trystero",
    "product_url": "https://github.com/dmotz/trystero"
@@ -9375,7 +9357,7 @@
   {
    "id": "openmower",
    "brand": "OpenMower",
-   "model": "Let's upgrade cheap off-the-shelf robotic mowers",
+   "model": "Robotic mower firmware",
    "category": "M",
    "type": "github",
    "repo": "ClemensElflein/OpenMower",
@@ -9383,17 +9365,17 @@
   },
   {
    "id": "aily-blockly",
-   "brand": "Aily Blockly",
-   "model": "AI IDE",
-   "category": "S",
+   "brand": "Aily",
+   "model": "Blockly AI IDE for Arduino",
+   "category": "M",
    "type": "github",
    "repo": "ailyProject/aily-blockly",
    "product_url": "https://github.com/ailyProject/aily-blockly"
   },
   {
    "id": "safeline",
-   "brand": "SafeLine",
-   "model": "WAF(Web Application Firewall) / reverse proxy",
+   "brand": "Chaitin",
+   "model": "SafeLine web application firewall",
    "category": "R",
    "type": "github",
    "repo": "chaitin/SafeLine",
@@ -9401,8 +9383,8 @@
   },
   {
    "id": "server",
-   "brand": "Server",
-   "model": "Screen sharing for developers",
+   "brand": "Screego",
+   "model": "Screen sharing server",
    "category": "A",
    "type": "github",
    "repo": "screego/server",
@@ -9411,7 +9393,7 @@
   {
    "id": "tinyauth",
    "brand": "Tinyauth",
-   "model": "Tiniest OpenID Certified™ authorization and authentication",
+   "model": "Authentication server",
    "category": "A",
    "type": "github",
    "repo": "tinyauthapp/tinyauth",
@@ -9419,26 +9401,17 @@
   },
   {
    "id": "btcpayserver",
-   "brand": "Btcpayserver",
-   "model": "Accept Bitcoin payments",
+   "brand": "BTCPay Server",
+   "model": "Bitcoin payment processor",
    "category": "A",
    "type": "github",
    "repo": "btcpayserver/btcpayserver",
    "product_url": "https://github.com/btcpayserver/btcpayserver"
   },
   {
-   "id": "netalertx-netalertx",
-   "brand": "NetAlertX",
-   "model": "Centralized network visibility and continuous asset",
-   "category": "R",
-   "type": "github",
-   "repo": "netalertx/NetAlertX",
-   "product_url": "https://github.com/netalertx/NetAlertX"
-  },
-  {
    "id": "sparkyfitness",
    "brand": "SparkyFitness",
-   "model": "Built for Families",
+   "model": "Family fitness tracker",
    "category": "A",
    "type": "github",
    "repo": "CodeWithCJ/SparkyFitness",
@@ -9447,7 +9420,7 @@
   {
    "id": "bitmagnet",
    "brand": "Bitmagnet",
-   "model": "BitTorrent indexer, DHT crawler, content classifier",
+   "model": "BitTorrent indexer",
    "category": "A",
    "type": "github",
    "repo": "bitmagnet-io/bitmagnet",
@@ -9456,7 +9429,7 @@
   {
    "id": "13ft",
    "brand": "13ft",
-   "model": "My own custom 12ft.io replacement",
+   "model": "12ft.io alternative",
    "category": "A",
    "type": "github",
    "repo": "wasi-master/13ft",
@@ -9474,7 +9447,7 @@
   {
    "id": "olivetin",
    "brand": "OliveTin",
-   "model": "Gives safe and simple access",
+   "model": "Web buttons for shell commands",
    "category": "A",
    "type": "github",
    "repo": "OliveTin/OliveTin",
@@ -9483,8 +9456,8 @@
   {
    "id": "movie-data-capture",
    "brand": "Movie Data Capture",
-   "model": "Local Movies Organizer",
-   "category": "N",
+   "model": "Local movie organizer",
+   "category": "A",
    "type": "github",
    "repo": "mvdctop/Movie_Data_Capture",
    "product_url": "https://github.com/mvdctop/Movie_Data_Capture"
@@ -9492,8 +9465,8 @@
   {
    "id": "sun-panel",
    "brand": "Sun Panel",
-   "model": "Server, NAS navigation panel, Homepage, browser homepage",
-   "category": "N",
+   "model": "Server and NAS dashboard",
+   "category": "A",
    "type": "github",
    "repo": "hslr-s/sun-panel",
    "product_url": "https://github.com/hslr-s/sun-panel"
@@ -9501,7 +9474,7 @@
   {
    "id": "oxicloud",
    "brand": "OxiCloud",
-   "model": "Ultra-fast, secure & lightweight self-hosted cloud storage",
+   "model": "Cloud storage server",
    "category": "N",
    "type": "github",
    "repo": "AtalayaLabs/OxiCloud",
@@ -9509,9 +9482,9 @@
   },
   {
    "id": "ani-rss",
-   "brand": "Ani Rss",
-   "model": "基于RSS自动追番、订阅、下载、刮削、洗版",
-   "category": "N",
+   "brand": "ANi-RSS",
+   "model": "Anime RSS downloader",
+   "category": "A",
    "type": "github",
    "repo": "wushuo894/ani-rss",
    "product_url": "https://github.com/wushuo894/ani-rss"
@@ -9519,7 +9492,7 @@
   {
    "id": "arc",
    "brand": "Arc",
-   "model": "Customized Redpill Loader",
+   "model": "Redpill loader for Synology DSM",
    "category": "N",
    "type": "github",
    "repo": "AuxXxilium/arc",
@@ -9528,16 +9501,16 @@
   {
    "id": "lanraragi",
    "brand": "LANraragi",
-   "model": "Web application for archival and reading of manga/doujinshi",
-   "category": "N",
+   "model": "Manga archive reader",
+   "category": "A",
    "type": "github",
    "repo": "Difegue/LANraragi",
    "product_url": "https://github.com/Difegue/LANraragi"
   },
   {
    "id": "arozos",
-   "brand": "Arozos",
-   "model": "Web Desktop Operating System",
+   "brand": "ArozOS",
+   "model": "Web desktop NAS OS",
    "category": "N",
    "type": "github",
    "repo": "tobychui/arozos",
@@ -9545,9 +9518,9 @@
   },
   {
    "id": "bili-sync",
-   "brand": "Bili Sync",
-   "model": "由 Rust & Tokio 驱动的哔哩哔哩同步工具",
-   "category": "N",
+   "brand": "bili-sync",
+   "model": "Bilibili downloader",
+   "category": "A",
    "type": "github",
    "repo": "amtoaer/bili-sync",
    "product_url": "https://github.com/amtoaer/bili-sync"
@@ -9555,34 +9528,25 @@
   {
    "id": "songloft",
    "brand": "Songloft",
-   "model": "插件化、无广告的免费音乐服务器",
-   "category": "N",
+   "model": "Music server",
+   "category": "A",
    "type": "github",
    "repo": "songloft-org/songloft",
    "product_url": "https://github.com/songloft-org/songloft"
   },
   {
-   "id": "orcaslicer-orcaslicer",
-   "brand": "OrcaSlicer",
-   "model": "G-code generator",
-   "category": "M",
-   "type": "github",
-   "repo": "OrcaSlicer/OrcaSlicer",
-   "product_url": "https://github.com/OrcaSlicer/OrcaSlicer"
-  },
-  {
    "id": "tock",
    "brand": "Tock",
-   "model": "Secure embedded operating system for microcontrollers",
-   "category": "S",
+   "model": "Embedded OS for microcontrollers",
+   "category": "M",
    "type": "github",
    "repo": "tock/tock",
    "product_url": "https://github.com/tock/tock"
   },
   {
    "id": "hass-xiaomi-miot",
-   "brand": "Hass Xiaomi Miot",
-   "model": "Automatic integrate all Xiaomi devices",
+   "brand": "Xiaomi Miot Auto",
+   "model": "Home Assistant integration",
    "category": "S",
    "type": "github",
    "repo": "al-one/hass-xiaomi-miot",
@@ -9590,35 +9554,35 @@
   },
   {
    "id": "wasm-micro-runtime",
-   "brand": "Wasm Micro Runtime",
-   "model": "WebAssembly Micro Runtime (WAMR)",
-   "category": "S",
+   "brand": "WAMR",
+   "model": "WebAssembly micro runtime",
+   "category": "M",
    "type": "github",
    "repo": "wasm-micro-runtime/wasm-micro-runtime",
    "product_url": "https://github.com/wasm-micro-runtime/wasm-micro-runtime"
   },
   {
    "id": "node-serialport",
-   "brand": "Node Serialport",
-   "model": "Access serial ports with JavaScript",
-   "category": "S",
+   "brand": "SerialPort",
+   "model": "Node.js serial port library",
+   "category": "M",
    "type": "github",
    "repo": "serialport/node-serialport",
    "product_url": "https://github.com/serialport/node-serialport"
   },
   {
    "id": "freeswitch",
-   "brand": "Freeswitch",
-   "model": "Software Defined Telecom Stack",
-   "category": "S",
+   "brand": "FreeSWITCH",
+   "model": "Telephony server",
+   "category": "A",
    "type": "github",
    "repo": "signalwire/freeswitch",
    "product_url": "https://github.com/signalwire/freeswitch"
   },
   {
    "id": "livekit",
-   "brand": "Livekit",
-   "model": "End-to-end realtime stack for connecting humans and AI",
+   "brand": "LiveKit",
+   "model": "Real-time video and audio server",
    "category": "A",
    "type": "github",
    "repo": "livekit/livekit",
@@ -9626,8 +9590,8 @@
   },
   {
    "id": "nginx-http-flv-module",
-   "brand": "Nginx Http Flv Module",
-   "model": "Media streaming server based on nginx-rtmp-module",
+   "brand": "nginx-http-flv-module",
+   "model": "NGINX live streaming module",
    "category": "A",
    "type": "github",
    "repo": "winshining/nginx-http-flv-module",
@@ -9635,8 +9599,8 @@
   },
   {
    "id": "tubesync",
-   "brand": "Tubesync",
-   "model": "Syncs YouTube channels and playlists",
+   "brand": "TubeSync",
+   "model": "YouTube channel sync",
    "category": "A",
    "type": "github",
    "repo": "meeb/tubesync",
@@ -9644,8 +9608,8 @@
   },
   {
    "id": "universalmediaserver",
-   "brand": "UniversalMediaServer",
-   "model": "DLNA, UPnP and HTTP(S) Media Server",
+   "brand": "Universal Media Server",
+   "model": "DLNA media server",
    "category": "A",
    "type": "github",
    "repo": "UniversalMediaServer/UniversalMediaServer",
@@ -9654,7 +9618,7 @@
   {
    "id": "nsmusics",
    "brand": "NSMusicS",
-   "model": "NineSong Cloud-Native Music Server/ Full platform",
+   "model": "Music server",
    "category": "A",
    "type": "github",
    "repo": "Super-Badmen-Viper/NSMusicS",

@@ -46,6 +46,21 @@ NOT_A_PRODUCT = re.compile(
     r"wallpapers?|\bicons?\b|\bfonts?\b|\btheme\b|\bsdk\b|\blibrary\b|\bframework\b|bindings|wrapper|\bplugin\b|"
     r"\bextension\b|starter|scaffold|\bmirror\b|archive of|deprecated|unmaintained|no longer", re.I)
 
+# repo names too generic to be a brand: "BruceDevices/firmware" became a device called
+# "Firmware", "dockur/windows" one called "Windows"
+GENERIC_NAMES = {"firmware", "server", "windows", "linux", "app", "core", "web", "client", "api",
+                 "backend", "frontend", "cli", "engine", "platform", "tools", "project", "main"}
+
+# a description in another script can't become an English product line
+NON_LATIN = re.compile(r"[\u0400-\u04ff\u0600-\u06ff\u3040-\u30ff\u3400-\u9fff\uac00-\ud7af]")
+
+# a model line that reads as a sentence or a slogan rather than naming a thing:
+# "Accept Bitcoin payments", "Let's upgrade…", "Light, fluffy, and always free", "Is an…"
+TAGLINE = re.compile(
+    r"^(?:is|are|my|our|let'?s|gives?|build|built|access|accept|syncs?|emulate|love|inside|for|"
+    r"official|automatic(?:ally)?)\b|^light,|always free\b|^(?:tool|software|app)\s+(?:designed\s+)?(?:to|for)\b|"
+    r"^\S+\s+is\s+(?:an?|the)\b|you deserve", re.I)
+
 # topic → category, most specific first; anything else is self-hosted software
 CATEGORY_TOPICS = [
     ("R", r"^(router|openwrt|dns|vpn|networking|proxy|reverse-proxy|wireguard|firewall|network-monitoring|adblock|tunnel|ddns|certificates?|tls|dhcp)$"),
@@ -164,12 +179,23 @@ def vet(repo, known_repos, known_names):
     pushed = fetch.parse_date(repo.get("pushed_at") or "")
     if not pushed or (datetime.now(timezone.utc).date() - datetime.fromisoformat(pushed).date()).days > MAX_PUSH_AGE_DAYS:
         return "not pushed in a year"
+    if NON_LATIN.search(desc):
+        return "description not in English"
+    name = repo["name"].lower()
+    if name in GENERIC_NAMES:
+        return "repo name too generic to be a brand"
+    # a project that moved to a new owner comes back under a new full_name
+    if name in {r.rsplit("/", 1)[-1] for r in known_repos}:
+        return "already tracked under its old owner"
     blob = " ".join([repo["name"], desc, " ".join(repo.get("topics") or [])])
     if NOT_A_PRODUCT.search(blob):
         return "not a product (list/library/tutorial)"
     brand = humanize(repo["name"])
-    if (brand.lower(), short_model(desc, brand).lower()) in known_names:
+    model = short_model(desc, brand)
+    if (brand.lower(), model.lower()) in known_names:
         return "name already in catalogue"
+    if TAGLINE.search(model):
+        return "description is a slogan, not a product line"
     return None
 
 

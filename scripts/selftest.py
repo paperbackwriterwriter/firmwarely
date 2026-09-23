@@ -308,6 +308,14 @@ def test_names_said_once():
         if re.search(r"\b(\w+)\s+\1\b", _html.unescape(h1), re.I):
             stutter.append(h1)
     check("no device heading says a word twice", stutter[:5], [])
+    for brand, model, cat, icon, want in [("Traefik Labs", "Traefik Proxy", "R", "app", True),
+                                          ("EMQX", "MQTTX client", "S", "hub", True),
+                                          ("Redis", "Redis", "A", "app", True),
+                                          ("M5Stack", "Cardputer", "M", "board", False),
+                                          ("Konnected", "ESPHome firmware", "S", "app", False),
+                                          ("eero", "Pro 6E", "R", "router", False)]:
+        check(f"is_software: {brand} {model}", build_pages.is_software(
+            {"brand": brand, "model": model, "category": cat, "icon": icon}), want)
     # the pages that list devices in the browser use the same rule
     for page in ("index.html", "dashboard.html", "my-devices.html"):
         src = (ROOT / page).read_text()
@@ -454,6 +462,8 @@ def test_withdrawn_devices_redirect():
     waiting = {s["id"] for s in json.loads(Path("sources.json").read_text())["devices"]} - live
 
     check("the security headers survived the rewrite", bool(cfg.get("headers")), True)
+    moves = [r for r in rules if r.get("permanent")]
+    rules = [r for r in rules if not r.get("permanent")]
     covered = set()
     for r in rules:
         covered |= set(re.search(r"\(([^)]*)\)", r["source"]).group(1).split("|"))
@@ -471,7 +481,21 @@ def test_withdrawn_devices_redirect():
     srcs = {r["source"] for r in rules}
     check("both spellings of the path are covered — /devices/x and /devices/x/",
           [x[:40] for x in sorted(srcs) if not x.endswith("/") and x + "/" not in srcs][:3], [])
-    check("comfortably inside Vercel's 1024-rule ceiling", len(rules) < 900, True)
+    check("comfortably inside Vercel's 1024-rule ceiling", len(rules) + len(moves) < 900, True)
+
+    # permanent moves: a duplicate folded into its original (redirects.json)
+    wanted = json.loads(Path("redirects.json").read_text())
+    wanted = {k: v for k, v in wanted.items() if not (Path(k.strip("/")) / "index.html").exists()}
+    check("every entry in redirects.json becomes a permanent rule, both spellings",
+          sorted(r["source"] for r in moves), sorted(p for k in wanted for p in (k.rstrip("/"), k.rstrip("/") + "/")))
+    check("a permanent move lands on a page that exists",
+          [r["destination"] for r in moves if not (Path(r["destination"].strip("/")) / "index.html").exists()][:3], [])
+    check("a permanent move never hides a live page",
+          [r["source"] for r in moves if (Path(r["source"].strip("/")) / "index.html").exists()
+           or (r["source"].startswith("/devices/") and r["source"].rstrip("/").rsplit("/", 1)[-1] in live)][:3], [])
+    check("a folded duplicate is gone from the catalogue",
+          sorted({k.strip("/").rsplit("/", 1)[-1] for k in wanted if k.startswith("/devices/")}
+                 & {s["id"] for s in json.loads(Path("sources.json").read_text())["devices"]}), [])
 
     # the hourly run has to commit the file it regenerates, or the rules drift from the pages
     wf = Path(".github/workflows/nightly.yml").read_text()
@@ -926,6 +950,22 @@ def test_schedule_and_digest():
     check("unlicensed repos are skipped", discover.vet(dict(base, license=None), set(), set()), "no license")
     check("small repos are skipped", discover.vet(dict(base, stargazers_count=200), set(), set()), "too few stars")
     check("stale repos are skipped", discover.vet(dict(base, pushed_at="2024-01-01T00:00:00Z"), set(), set()), "not pushed in a year")
+    for label, repo, want in [
+        ("a Chinese-only description", dict(base, description="插件化、无广告的免费音乐服务器"), "description not in English"),
+        ("a generic repo name", dict(base, full_name="BruceDevices/firmware", name="firmware",
+                                     description="Predatory ESP32 firmware for security testing"), "repo name too generic to be a brand"),
+        ("a project that moved owners", dict(base, full_name="netalertx/NetAlertX", name="NetAlertX",
+                                             description="Network intruder and presence detector"), "already tracked under its old owner"),
+        ("a slogan", dict(base, name="floci", description="Light, fluffy, and always free"), "description is a slogan, not a product line"),
+        ("a sentence", dict(base, name="btcpayserver", description="Accept Bitcoin payments. Free, open-source and self-hosted"),
+         "description is a slogan, not a product line"),
+        ("an 'X is a' line", dict(base, name="esp32-div", description="ESP32DIV is a multi-purpose wireless offensive toolkit"),
+         "description is a slogan, not a product line"),
+        ("'Tool for' opener", dict(base, name="dive", description="Tool for exploring each layer in a docker image"),
+         "description is a slogan, not a product line"),
+    ]:
+        check(f"discovery skips {label}", discover.vet(repo, {"jokob-sk/netalertx"}, set()), want)
+    check("...but not a plain product line", discover.vet(dict(base, name="smartdns", description="A local DNS server"), set(), set()), None)
     check("brand from repo name", discover.humanize("uptime-kuma"), "Uptime Kuma")
     check("brand keeps deliberate casing", discover.humanize("NocoDB"), "NocoDB")
     check("model drops marketing and the project's own name",

@@ -32,16 +32,6 @@
   ],
   "redirects": [
     {
-      "source": "/devices/:id(amazon-echo-dot-5|amazon-echo-hub|amazon-echo-pop|amazon-echo-show-8-3|amazon-echo-spot-2024|amazon-fire-tv-cube|amazon-fire-tv-stick-4k-max|amazon-kindle-paperwhite-12|amazon-kindle-scribe|blink-mini-2|blink-outdoor-4|ring-alarm-base-station|ring-alarm-pro|ring-battery-doorbell-2024|ring-battery-doorbell-plus|ring-floodlight-cam-wired-pro|ring-indoor-cam-2|ring-stick-up-cam|ring-video-doorbell-pro-2)",
-      "destination": "/brands/amazon/",
-      "permanent": false
-    },
-    {
-      "source": "/devices/:id(amazon-echo-dot-5|amazon-echo-hub|amazon-echo-pop|amazon-echo-show-8-3|amazon-echo-spot-2024|amazon-fire-tv-cube|amazon-fire-tv-stick-4k-max|amazon-kindle-paperwhite-12|amazon-kindle-scribe|blink-mini-2|blink-outdoor-4|ring-alarm-base-station|ring-alarm-pro|ring-battery-doorbell-2024|ring-battery-doorbell-plus|ring-floodlight-cam-wired-pro|ring-indoor-cam-2|ring-stick-up-cam|ring-video-doorbell-pro-2)/",
-      "destination": "/brands/amazon/",
-      "permanent": false
-    },
-    {
       "source": "/devices/:id(apple-airpods-max|apple-airpods-pro-2|apple-homepod-2|apple-homepod-mini)",
       "destination": "/brands/apple/",
       "permanent": false
@@ -172,22 +162,22 @@
       "permanent": false
     },
     {
-      "source": "/devices/:id(acer-swift-14-ai|asrock-b850m-steel-legend|beats-studio-pro|beelink-ser9|boox-palma-2|bose-quietcomfort-ultra-headphones|brother-hl-l2460dw|brother-mfc-j4335dw|caldigit-ts4|canon-eos-r5-mark-ii|canon-eos-r6-mark-ii|canon-pixma-tr8620a|channels-dvr|corsair-k70-pro|dell-latitude-7450|dell-u2725qe|dell-xps-13-9350|elgato-facecam-pro|elgato-stream-deck-plus|elgato-wave-3|epson-ecotank-et-2850|fitbit-charge-6|framework-desktop|framework-laptop-12|fujifilm-x-t5|fujifilm-x100vi|gigabyte-x870e-aorus-master|google-pixel-watch-3|google-tv-streamer|hisense-u8qg|hp-elitebook-840-g11|hp-laserjet-pro-mfp-3101fdw|hp-officejet-pro-9125e|hp-spectre-x360-14|jabra-elite-10|keychron-q1-pro|kobo-libra-colour|lenovo-thinkpad-t14s-gen-6|lenovo-thinkpad-x1-carbon-gen-13|lg-c5-oled)",
+      "source": "/devices/:id(acer-swift-14-ai|amazon-fire-tv-cube|amazon-fire-tv-stick-4k-max|amazon-kindle-paperwhite-12|amazon-kindle-scribe|asrock-b850m-steel-legend|beats-studio-pro|beelink-ser9|boox-palma-2|bose-quietcomfort-ultra-headphones|brother-hl-l2460dw|brother-mfc-j4335dw|caldigit-ts4|canon-eos-r5-mark-ii|canon-eos-r6-mark-ii|canon-pixma-tr8620a|channels-dvr|corsair-k70-pro|dell-latitude-7450|dell-u2725qe|dell-xps-13-9350|elgato-facecam-pro|elgato-stream-deck-plus|elgato-wave-3|epson-ecotank-et-2850|fitbit-charge-6|framework-desktop|framework-laptop-12|fujifilm-x-t5|fujifilm-x100vi|gigabyte-x870e-aorus-master|google-pixel-watch-3|google-tv-streamer|hisense-u8qg|hp-elitebook-840-g11|hp-laserjet-pro-mfp-3101fdw|hp-officejet-pro-9125e|hp-spectre-x360-14|jabra-elite-10|keychron-q1-pro)",
       "destination": "/category/pcs-tvs-gadgets/",
       "permanent": false
     },
     {
-      "source": "/devices/:id(acer-swift-14-ai|asrock-b850m-steel-legend|beats-studio-pro|beelink-ser9|boox-palma-2|bose-quietcomfort-ultra-headphones|brother-hl-l2460dw|brother-mfc-j4335dw|caldigit-ts4|canon-eos-r5-mark-ii|canon-eos-r6-mark-ii|canon-pixma-tr8620a|channels-dvr|corsair-k70-pro|dell-latitude-7450|dell-u2725qe|dell-xps-13-9350|elgato-facecam-pro|elgato-stream-deck-plus|elgato-wave-3|epson-ecotank-et-2850|fitbit-charge-6|framework-desktop|framework-laptop-12|fujifilm-x-t5|fujifilm-x100vi|gigabyte-x870e-aorus-master|google-pixel-watch-3|google-tv-streamer|hisense-u8qg|hp-elitebook-840-g11|hp-laserjet-pro-mfp-3101fdw|hp-officejet-pro-9125e|hp-spectre-x360-14|jabra-elite-10|keychron-q1-pro|kobo-libra-colour|lenovo-thinkpad-t14s-gen-6|lenovo-thinkpad-x1-carbon-gen-13|lg-c5-oled)/",
+      "source": "/devices/:id(acer-swift-14-ai|amazon-fire-tv-cube|amazon-fire-tv-stick-4k-max|amazon-kindle-paperwhite-12|amazon-kindle-scribe|asrock-b850m-steel-legend|beats-studio-pro|beelink-ser9|boox-palma-2|bose-quietcomfort-ultra-headphones|brother-hl-l2460dw|brother-mfc-j4335dw|caldigit-ts4|canon-eos-r5-mark-ii|canon-eos-r6-mark-ii|canon-pixma-tr8620a|channels-dvr|corsair-k70-pro|dell-latitude-7450|dell-u2725qe|dell-xps-13-9350|elgato-facecam-pro|elgato-stream-deck-plus|elgato-wave-3|epson-ecotank-et-2850|fitbit-charge-6|framework-desktop|framework-laptop-12|fujifilm-x-t5|fujifilm-x100vi|gigabyte-x870e-aorus-master|google-pixel-watch-3|google-tv-streamer|hisense-u8qg|hp-elitebook-840-g11|hp-laserjet-pro-mfp-3101fdw|hp-officejet-pro-9125e|hp-spectre-x360-14|jabra-elite-10|keychron-q1-pro)/",
       "destination": "/category/pcs-tvs-gadgets/",
       "permanent": false
     },
     {
-      "source": "/devices/:id(lg-g5-oled|lg-ultragear-32gs95ue|logitech-brio-4k|logitech-g-pro-x-superlight-2|logitech-mx-keys-s|logitech-mx-master-3s|microsoft-surface-laptop-7|microsoft-surface-pro-11|minisforum-um890-pro|msi-mag-b850-tomahawk|nikon-z6iii|nikon-zf|nothing-ear-3|om-system-om-1-mark-ii|oura-ring-4|panasonic-lumix-s5ii|plex-media-server|razer-blackwidow-v4-pro|remarkable-paper-pro|roku-streaming-stick-4k|roku-ultra-2024|samsung-galaxy-watch-8|samsung-odyssey-g9-g95sd|samsung-qn90f|samsung-s95f|sennheiser-momentum-4|shure-mv7-plus|steelseries-arctis-nova-pro-wireless|tcl-qm8k|whoop-5|wooting-80he|xgimi-horizon-s-max)",
+      "source": "/devices/:id(kobo-libra-colour|lenovo-thinkpad-t14s-gen-6|lenovo-thinkpad-x1-carbon-gen-13|lg-c5-oled|lg-g5-oled|lg-ultragear-32gs95ue|logitech-brio-4k|logitech-g-pro-x-superlight-2|logitech-mx-keys-s|logitech-mx-master-3s|microsoft-surface-laptop-7|microsoft-surface-pro-11|minisforum-um890-pro|msi-mag-b850-tomahawk|nikon-z6iii|nikon-zf|nothing-ear-3|om-system-om-1-mark-ii|oura-ring-4|panasonic-lumix-s5ii|plex-media-server|razer-blackwidow-v4-pro|remarkable-paper-pro|roku-streaming-stick-4k|roku-ultra-2024|samsung-galaxy-watch-8|samsung-odyssey-g9-g95sd|samsung-qn90f|samsung-s95f|sennheiser-momentum-4|shure-mv7-plus|steelseries-arctis-nova-pro-wireless|tcl-qm8k|whoop-5|wooting-80he|xgimi-horizon-s-max)",
       "destination": "/category/pcs-tvs-gadgets/",
       "permanent": false
     },
     {
-      "source": "/devices/:id(lg-g5-oled|lg-ultragear-32gs95ue|logitech-brio-4k|logitech-g-pro-x-superlight-2|logitech-mx-keys-s|logitech-mx-master-3s|microsoft-surface-laptop-7|microsoft-surface-pro-11|minisforum-um890-pro|msi-mag-b850-tomahawk|nikon-z6iii|nikon-zf|nothing-ear-3|om-system-om-1-mark-ii|oura-ring-4|panasonic-lumix-s5ii|plex-media-server|razer-blackwidow-v4-pro|remarkable-paper-pro|roku-streaming-stick-4k|roku-ultra-2024|samsung-galaxy-watch-8|samsung-odyssey-g9-g95sd|samsung-qn90f|samsung-s95f|sennheiser-momentum-4|shure-mv7-plus|steelseries-arctis-nova-pro-wireless|tcl-qm8k|whoop-5|wooting-80he|xgimi-horizon-s-max)/",
+      "source": "/devices/:id(kobo-libra-colour|lenovo-thinkpad-t14s-gen-6|lenovo-thinkpad-x1-carbon-gen-13|lg-c5-oled|lg-g5-oled|lg-ultragear-32gs95ue|logitech-brio-4k|logitech-g-pro-x-superlight-2|logitech-mx-keys-s|logitech-mx-master-3s|microsoft-surface-laptop-7|microsoft-surface-pro-11|minisforum-um890-pro|msi-mag-b850-tomahawk|nikon-z6iii|nikon-zf|nothing-ear-3|om-system-om-1-mark-ii|oura-ring-4|panasonic-lumix-s5ii|plex-media-server|razer-blackwidow-v4-pro|remarkable-paper-pro|roku-streaming-stick-4k|roku-ultra-2024|samsung-galaxy-watch-8|samsung-odyssey-g9-g95sd|samsung-qn90f|samsung-s95f|sennheiser-momentum-4|shure-mv7-plus|steelseries-arctis-nova-pro-wireless|tcl-qm8k|whoop-5|wooting-80he|xgimi-horizon-s-max)/",
       "destination": "/category/pcs-tvs-gadgets/",
       "permanent": false
     },
@@ -212,34 +202,114 @@
       "permanent": false
     },
     {
-      "source": "/devices/:id(abode-iota|aqara-camera-hub-g3|aqara-camera-hub-g5|aqara-doorbell-g4|aqara-fp2|aqara-hub-m2|aqara-hub-m3|aqara-smart-lock-u300|arlo-essential-2|arlo-pro-5s|arlo-video-doorbell-2k|august-wifi-smart-lock|bose-smart-soundbar|brilliant-control|chamberlain-myq|chargepoint-home-flex|dreame-l40-ultra|dreame-x40-ultra|ecobee-smart-premium|ecobee-smart-thermostat-enhanced|ecovacs-deebot-t30s-omni|ecovacs-deebot-x2-omni|emporia-ev-charger|emporia-vue-3|enphase-iq-gateway|eufy-e340-doorbell|eufy-eufycam-3|eufy-omni-s1-pro|eufy-s330-doorbell|eufy-s350-indoor-cam|eve-energy|flume-2|google-nest-audio|google-nest-cam-battery|google-nest-cam-indoor|google-nest-doorbell|google-nest-doorbell-wired-2|google-nest-hub-2|google-nest-hub-max|google-nest-mini)",
+      "source": "/devices/:id(abode-iota|amazon-echo-dot-5|amazon-echo-hub|amazon-echo-pop|amazon-echo-show-8-3|amazon-echo-spot-2024|aqara-camera-hub-g3|aqara-camera-hub-g5|aqara-doorbell-g4|aqara-fp2|aqara-hub-m2|aqara-hub-m3|aqara-smart-lock-u300|arlo-essential-2|arlo-pro-5s|arlo-video-doorbell-2k|august-wifi-smart-lock|blink-mini-2|blink-outdoor-4|bose-smart-soundbar|brilliant-control|chamberlain-myq|chargepoint-home-flex|dreame-l40-ultra|dreame-x40-ultra|ecobee-smart-premium|ecobee-smart-thermostat-enhanced|ecovacs-deebot-t30s-omni|ecovacs-deebot-x2-omni|emporia-ev-charger|emporia-vue-3|enphase-iq-gateway|eufy-e340-doorbell|eufy-eufycam-3|eufy-omni-s1-pro|eufy-s330-doorbell|eufy-s350-indoor-cam|eve-energy|flume-2|google-nest-audio)",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/devices/:id(abode-iota|aqara-camera-hub-g3|aqara-camera-hub-g5|aqara-doorbell-g4|aqara-fp2|aqara-hub-m2|aqara-hub-m3|aqara-smart-lock-u300|arlo-essential-2|arlo-pro-5s|arlo-video-doorbell-2k|august-wifi-smart-lock|bose-smart-soundbar|brilliant-control|chamberlain-myq|chargepoint-home-flex|dreame-l40-ultra|dreame-x40-ultra|ecobee-smart-premium|ecobee-smart-thermostat-enhanced|ecovacs-deebot-t30s-omni|ecovacs-deebot-x2-omni|emporia-ev-charger|emporia-vue-3|enphase-iq-gateway|eufy-e340-doorbell|eufy-eufycam-3|eufy-omni-s1-pro|eufy-s330-doorbell|eufy-s350-indoor-cam|eve-energy|flume-2|google-nest-audio|google-nest-cam-battery|google-nest-cam-indoor|google-nest-doorbell|google-nest-doorbell-wired-2|google-nest-hub-2|google-nest-hub-max|google-nest-mini)/",
+      "source": "/devices/:id(abode-iota|amazon-echo-dot-5|amazon-echo-hub|amazon-echo-pop|amazon-echo-show-8-3|amazon-echo-spot-2024|aqara-camera-hub-g3|aqara-camera-hub-g5|aqara-doorbell-g4|aqara-fp2|aqara-hub-m2|aqara-hub-m3|aqara-smart-lock-u300|arlo-essential-2|arlo-pro-5s|arlo-video-doorbell-2k|august-wifi-smart-lock|blink-mini-2|blink-outdoor-4|bose-smart-soundbar|brilliant-control|chamberlain-myq|chargepoint-home-flex|dreame-l40-ultra|dreame-x40-ultra|ecobee-smart-premium|ecobee-smart-thermostat-enhanced|ecovacs-deebot-t30s-omni|ecovacs-deebot-x2-omni|emporia-ev-charger|emporia-vue-3|enphase-iq-gateway|eufy-e340-doorbell|eufy-eufycam-3|eufy-omni-s1-pro|eufy-s330-doorbell|eufy-s350-indoor-cam|eve-energy|flume-2|google-nest-audio)/",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/devices/:id(google-nest-protect|google-nest-thermostat|google-nest-thermostat-4|govee-envisual-t2|honeywell-t9|hue-sync-box|irobot-roomba-combo-10|irobot-roomba-j9-plus|kwikset-halo-select|level-bolt|level-lock-plus|leviton-decora-smart-wifi|lifx-a19|lutron-caseta-bridge|meross-smart-plug-mss315|moen-flo|nanoleaf-lines|nanoleaf-shapes|netatmo-smart-thermostat|rachio-3|reolink-altas-pt-ultra|reolink-argus-4-pro|reolink-argus-pt-ultra|reolink-duo-3|reolink-home-hub|reolink-rlc-810a|reolink-rlc-820a|roborock-qrevo-curv|roborock-s8-maxv-ultra|samsung-smartthings-hub-v3|schlage-encode-plus|schlage-sense-pro|shelly-plus-1pm|shelly-pro-4pm|sonos-ace|sonos-arc|sonos-beam-2|sonos-era-100|sonos-era-300|sonos-move-2)",
+      "source": "/devices/:id(google-nest-cam-battery|google-nest-cam-indoor|google-nest-doorbell|google-nest-doorbell-wired-2|google-nest-hub-2|google-nest-hub-max|google-nest-mini|google-nest-protect|google-nest-thermostat|google-nest-thermostat-4|govee-envisual-t2|honeywell-t9|hue-sync-box|irobot-roomba-combo-10|irobot-roomba-j9-plus|kwikset-halo-select|level-bolt|level-lock-plus|leviton-decora-smart-wifi|lifx-a19|lutron-caseta-bridge|meross-smart-plug-mss315|moen-flo|nanoleaf-lines|nanoleaf-shapes|netatmo-smart-thermostat|rachio-3|reolink-altas-pt-ultra|reolink-argus-4-pro|reolink-argus-pt-ultra|reolink-duo-3|reolink-home-hub|reolink-rlc-810a|reolink-rlc-820a|ring-alarm-base-station|ring-alarm-pro|ring-battery-doorbell-2024|ring-battery-doorbell-plus|ring-floodlight-cam-wired-pro|ring-indoor-cam-2)",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/devices/:id(google-nest-protect|google-nest-thermostat|google-nest-thermostat-4|govee-envisual-t2|honeywell-t9|hue-sync-box|irobot-roomba-combo-10|irobot-roomba-j9-plus|kwikset-halo-select|level-bolt|level-lock-plus|leviton-decora-smart-wifi|lifx-a19|lutron-caseta-bridge|meross-smart-plug-mss315|moen-flo|nanoleaf-lines|nanoleaf-shapes|netatmo-smart-thermostat|rachio-3|reolink-altas-pt-ultra|reolink-argus-4-pro|reolink-argus-pt-ultra|reolink-duo-3|reolink-home-hub|reolink-rlc-810a|reolink-rlc-820a|roborock-qrevo-curv|roborock-s8-maxv-ultra|samsung-smartthings-hub-v3|schlage-encode-plus|schlage-sense-pro|shelly-plus-1pm|shelly-pro-4pm|sonos-ace|sonos-arc|sonos-beam-2|sonos-era-100|sonos-era-300|sonos-move-2)/",
+      "source": "/devices/:id(google-nest-cam-battery|google-nest-cam-indoor|google-nest-doorbell|google-nest-doorbell-wired-2|google-nest-hub-2|google-nest-hub-max|google-nest-mini|google-nest-protect|google-nest-thermostat|google-nest-thermostat-4|govee-envisual-t2|honeywell-t9|hue-sync-box|irobot-roomba-combo-10|irobot-roomba-j9-plus|kwikset-halo-select|level-bolt|level-lock-plus|leviton-decora-smart-wifi|lifx-a19|lutron-caseta-bridge|meross-smart-plug-mss315|moen-flo|nanoleaf-lines|nanoleaf-shapes|netatmo-smart-thermostat|rachio-3|reolink-altas-pt-ultra|reolink-argus-4-pro|reolink-argus-pt-ultra|reolink-duo-3|reolink-home-hub|reolink-rlc-810a|reolink-rlc-820a|ring-alarm-base-station|ring-alarm-pro|ring-battery-doorbell-2024|ring-battery-doorbell-plus|ring-floodlight-cam-wired-pro|ring-indoor-cam-2)/",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/devices/:id(sonos-one-sl|sonos-roam-2|switchbot-curtain-3|switchbot-hub-2|switchbot-lock-pro|tado-smart-thermostat-x|tesla-powerwall-3|tesla-wall-connector|tuya-cloudcutter|wallbox-pulsar-plus|wyze-cam-og|wyze-cam-pan-v3|wyze-cam-v4|wyze-video-doorbell-v2|yale-approach-lock|yale-assure-lock-2)",
+      "source": "/devices/:id(ring-stick-up-cam|ring-video-doorbell-pro-2|roborock-qrevo-curv|roborock-s8-maxv-ultra|samsung-smartthings-hub-v3|schlage-encode-plus|schlage-sense-pro|shelly-plus-1pm|shelly-pro-4pm|sonos-ace|sonos-arc|sonos-beam-2|sonos-era-100|sonos-era-300|sonos-move-2|sonos-one-sl|sonos-roam-2|switchbot-curtain-3|switchbot-hub-2|switchbot-lock-pro|tado-smart-thermostat-x|tesla-powerwall-3|tesla-wall-connector|tuya-cloudcutter|wallbox-pulsar-plus|wyze-cam-og|wyze-cam-pan-v3|wyze-cam-v4|wyze-video-doorbell-v2|yale-approach-lock|yale-assure-lock-2)",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/devices/:id(sonos-one-sl|sonos-roam-2|switchbot-curtain-3|switchbot-hub-2|switchbot-lock-pro|tado-smart-thermostat-x|tesla-powerwall-3|tesla-wall-connector|tuya-cloudcutter|wallbox-pulsar-plus|wyze-cam-og|wyze-cam-pan-v3|wyze-cam-v4|wyze-video-doorbell-v2|yale-approach-lock|yale-assure-lock-2)/",
+      "source": "/devices/:id(ring-stick-up-cam|ring-video-doorbell-pro-2|roborock-qrevo-curv|roborock-s8-maxv-ultra|samsung-smartthings-hub-v3|schlage-encode-plus|schlage-sense-pro|shelly-plus-1pm|shelly-pro-4pm|sonos-ace|sonos-arc|sonos-beam-2|sonos-era-100|sonos-era-300|sonos-move-2|sonos-one-sl|sonos-roam-2|switchbot-curtain-3|switchbot-hub-2|switchbot-lock-pro|tado-smart-thermostat-x|tesla-powerwall-3|tesla-wall-connector|tuya-cloudcutter|wallbox-pulsar-plus|wyze-cam-og|wyze-cam-pan-v3|wyze-cam-v4|wyze-video-doorbell-v2|yale-approach-lock|yale-assure-lock-2)/",
       "destination": "/category/smart-home/",
       "permanent": false
+    },
+    {
+      "source": "/brands/amazon",
+      "destination": "/brands/eero/",
+      "permanent": true
+    },
+    {
+      "source": "/brands/amazon/",
+      "destination": "/brands/eero/",
+      "permanent": true
+    },
+    {
+      "source": "/brands/netalertx",
+      "destination": "/devices/netalertx/",
+      "permanent": true
+    },
+    {
+      "source": "/brands/netalertx/",
+      "destination": "/devices/netalertx/",
+      "permanent": true
+    },
+    {
+      "source": "/brands/orcaslicer",
+      "destination": "/devices/orcaslicer/",
+      "permanent": true
+    },
+    {
+      "source": "/brands/orcaslicer/",
+      "destination": "/devices/orcaslicer/",
+      "permanent": true
+    },
+    {
+      "source": "/brands/podman",
+      "destination": "/devices/podman/",
+      "permanent": true
+    },
+    {
+      "source": "/brands/podman/",
+      "destination": "/devices/podman/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/firmware",
+      "destination": "/devices/bruce-firmware/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/firmware/",
+      "destination": "/devices/bruce-firmware/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/netalertx-netalertx",
+      "destination": "/devices/netalertx/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/netalertx-netalertx/",
+      "destination": "/devices/netalertx/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/orcaslicer-orcaslicer",
+      "destination": "/devices/orcaslicer/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/orcaslicer-orcaslicer/",
+      "destination": "/devices/orcaslicer/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/podman-container-tools-podman",
+      "destination": "/devices/podman/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/podman-container-tools-podman/",
+      "destination": "/devices/podman/",
+      "permanent": true
     }
   ]
 }

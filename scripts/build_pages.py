@@ -17,7 +17,7 @@ import json, re, html
 from datetime import datetime, timezone
 from pathlib import Path
 
-from fetch import full_name
+from fetch import full_name, APP_HINT
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://www.firmwarely.com"  # the apex redirects here, so canonicals must too
@@ -358,6 +358,20 @@ def fit_title(candidates):
     return t if len(t) <= TITLE_MAX else t[: TITLE_MAX - 1].rstrip() + "…"
 
 
+FIRMWARE_WORDS = re.compile(r"firmware|bootloader|\bbios\b|eeprom", re.I)
+
+
+def is_software(d):
+    """Software gets "releases" and "project" wording, hardware gets "firmware". The
+    self-hosted category is all software; elsewhere a proxy, slicer or DNS server is too
+    ("Traefik Proxy firmware" was wrong), unless its own name says it is firmware."""
+    if d["category"] == "A":
+        return True
+    if FIRMWARE_WORDS.search(full_name(d)):
+        return False
+    return d.get("icon") == "app" or bool(APP_HINT.search(d["model"]))
+
+
 def device_page(d, ctx=None):
     ctx = ctx or {}
     name = full_name(d)
@@ -367,7 +381,7 @@ def device_page(d, ctx=None):
     # plenty of names already end in "firmware" ("Klipper 3D printer firmware"), so only
     # add the word when it isn't there — otherwise the title stutters. Self-hosted software
     # doesn't have firmware at all, so it gets "releases" wording throughout.
-    software = d["category"] == "A"
+    software = is_software(d)
     fw = "" if (software or "firmware" in name.lower()) else " firmware"
     noun = "version" if software else "firmware"
     if live:
@@ -895,6 +909,8 @@ def write_redirects(published, brand_pages):
     Regenerated on every build for exactly that reason — Vercel applies redirects before
     it looks for a file, so a rule left behind for a device that has returned would shadow
     its page. The workflow commits vercel.json with the pages for the same reason.
+
+    redirects.json adds the permanent moves ({"/devices/old/": "/devices/new/"}).
     """
     sources = json.loads((ROOT / "sources.json").read_text())["devices"]
     live = {d["id"] for d in published}
@@ -915,6 +931,15 @@ def write_redirects(published, brand_pages):
             # both spellings: Vercel matches the source path as written
             for path in (f"/devices/:id({group})", f"/devices/:id({group})/"):
                 rules.append({"source": path, "destination": dest, "permanent": False})
+
+    # pages that moved for good (a duplicate folded into its original): permanent, so
+    # search engines move the listing over instead of waiting for the page to come back
+    moved = ROOT / "redirects.json"
+    for src_path, dest in (json.loads(moved.read_text()).items() if moved.exists() else []):
+        if (ROOT / src_path.strip("/") / "index.html").exists():
+            continue                      # the page is back (a brand regained devices): let it show
+        for path in (src_path.rstrip("/"), src_path.rstrip("/") + "/"):
+            rules.append({"source": path, "destination": dest, "permanent": True})
 
     cfg = json.loads((ROOT / "vercel.json").read_text())
     cfg["redirects"] = rules
