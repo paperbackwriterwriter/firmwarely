@@ -68,7 +68,7 @@
   <url><loc>https://www.firmwarely.com/devices/flipper-zero/</loc><lastmod>2025-12-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/meshtastic-radio/</loc><lastmod>2026-09-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/sony-playstation-5/</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/microsoft-xbox-series-x/</loc><lastmod>2026-08-12</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/microsoft-xbox-series-x/</loc><lastmod>2026-09-22</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/nintendo-switch/</loc><lastmod>2026-09-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/asus-rt-ax88u/</loc><lastmod>2026-04-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/asus-rt-ax86u-pro/</loc><lastmod>2026-09-22</lastmod></url>
@@ -440,7 +440,7 @@
   <url><loc>https://www.firmwarely.com/devices/elasticsearch/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/vector/</loc><lastmod>2026-09-22</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/fluent-bit/</loc><lastmod>2026-09-05</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/signoz/</loc><lastmod>2026-09-17</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/signoz/</loc><lastmod>2026-09-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/jaeger/</loc><lastmod>2026-09-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/otel-collector/</loc><lastmod>2026-09-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/sentry-self-hosted/</loc><lastmod>2026-09-16</lastmod></url>
@@ -576,7 +576,7 @@
   <url><loc>https://www.firmwarely.com/devices/mumble/</loc><lastmod>2026-07-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ejabberd/</loc><lastmod>2026-07-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/mastodon/</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/misskey/</loc><lastmod>2026-09-06</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/misskey/</loc><lastmod>2026-09-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/lemmy/</loc><lastmod>2026-07-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/pixelfed/</loc><lastmod>2026-09-22</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/peertube/</loc><lastmod>2026-09-15</lastmod></url>
@@ -721,7 +721,7 @@
   <url><loc>https://www.firmwarely.com/devices/trilium/</loc><lastmod>2026-08-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/glance/</loc><lastmod>2026-09-03</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/qwenpaw/</loc><lastmod>2026-09-11</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/langfuse/</loc><lastmod>2026-09-21</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/langfuse/</loc><lastmod>2026-09-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/dokku/</loc><lastmod>2026-09-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/onyx/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/meetily/</loc><lastmod>2026-09-12</lastmod></url>
@@ -799,4 +799,14 @@
   <url><loc>https://www.firmwarely.com/devices/bili-sync/</loc><lastmod>2026-05-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/songloft/</loc><lastmod>2026-09-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/orcaslicer-orcaslicer/</loc><lastmod>2026-07-07</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/tock/</loc><lastmod>2025-01-06</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/hass-xiaomi-miot/</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/wasm-micro-runtime/</loc><lastmod>2026-06-29</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/node-serialport/</loc><lastmod>2024-12-24</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/freeswitch/</loc><lastmod>2026-08-28</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/livekit/</loc><lastmod>2026-09-14</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/nginx-http-flv-module/</loc><lastmod>2026-07-04</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/tubesync/</loc><lastmod>2026-09-04</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/universalmediaserver/</loc><lastmod>2026-08-23</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/nsmusics/</loc><lastmod>2026-04-09</lastmod></url>
 </urlset>

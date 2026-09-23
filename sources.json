@@ -9569,6 +9569,96 @@
    "type": "github",
    "repo": "OrcaSlicer/OrcaSlicer",
    "product_url": "https://github.com/OrcaSlicer/OrcaSlicer"
+  },
+  {
+   "id": "tock",
+   "brand": "Tock",
+   "model": "Secure embedded operating system for microcontrollers",
+   "category": "S",
+   "type": "github",
+   "repo": "tock/tock",
+   "product_url": "https://github.com/tock/tock"
+  },
+  {
+   "id": "hass-xiaomi-miot",
+   "brand": "Hass Xiaomi Miot",
+   "model": "Automatic integrate all Xiaomi devices",
+   "category": "S",
+   "type": "github",
+   "repo": "al-one/hass-xiaomi-miot",
+   "product_url": "https://github.com/al-one/hass-xiaomi-miot"
+  },
+  {
+   "id": "wasm-micro-runtime",
+   "brand": "Wasm Micro Runtime",
+   "model": "WebAssembly Micro Runtime (WAMR)",
+   "category": "S",
+   "type": "github",
+   "repo": "wasm-micro-runtime/wasm-micro-runtime",
+   "product_url": "https://github.com/wasm-micro-runtime/wasm-micro-runtime"
+  },
+  {
+   "id": "node-serialport",
+   "brand": "Node Serialport",
+   "model": "Access serial ports with JavaScript",
+   "category": "S",
+   "type": "github",
+   "repo": "serialport/node-serialport",
+   "product_url": "https://github.com/serialport/node-serialport"
+  },
+  {
+   "id": "freeswitch",
+   "brand": "Freeswitch",
+   "model": "Software Defined Telecom Stack",
+   "category": "S",
+   "type": "github",
+   "repo": "signalwire/freeswitch",
+   "product_url": "https://github.com/signalwire/freeswitch"
+  },
+  {
+   "id": "livekit",
+   "brand": "Livekit",
+   "model": "End-to-end realtime stack for connecting humans and AI",
+   "category": "A",
+   "type": "github",
+   "repo": "livekit/livekit",
+   "product_url": "https://github.com/livekit/livekit"
+  },
+  {
+   "id": "nginx-http-flv-module",
+   "brand": "Nginx Http Flv Module",
+   "model": "Media streaming server based on nginx-rtmp-module",
+   "category": "A",
+   "type": "github",
+   "repo": "winshining/nginx-http-flv-module",
+   "product_url": "https://github.com/winshining/nginx-http-flv-module"
+  },
+  {
+   "id": "tubesync",
+   "brand": "Tubesync",
+   "model": "Syncs YouTube channels and playlists",
+   "category": "A",
+   "type": "github",
+   "repo": "meeb/tubesync",
+   "product_url": "https://github.com/meeb/tubesync"
+  },
+  {
+   "id": "universalmediaserver",
+   "brand": "UniversalMediaServer",
+   "model": "DLNA, UPnP and HTTP(S) Media Server",
+   "category": "A",
+   "type": "github",
+   "repo": "UniversalMediaServer/UniversalMediaServer",
+   "product_url": "https://github.com/UniversalMediaServer/UniversalMediaServer"
+  },
+  {
+   "id": "nsmusics",
+   "brand": "NSMusicS",
+   "model": "NineSong Cloud-Native Music Server/ Full platform",
+   "category": "A",
+   "type": "github",
+   "repo": "Super-Badmen-Viper/NSMusicS",
+   "product_url": "https://github.com/Super-Badmen-Viper/NSMusicS"
   }
  ]
 }
