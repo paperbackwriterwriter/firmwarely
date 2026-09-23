@@ -11,6 +11,12 @@ on:
       - "scripts/**"
       - "lib/**"
       - "api/**"
+      # the browser half lives at the root, and the tests read the pages too — without
+      # these, pasting a Turnstile key or editing a form would skip every check
+      - "*.js"
+      - "*.html"
+      - "vercel.json"
+      - ".github/workflows/**"
   workflow_dispatch:
     inputs:
       only:

@@ -589,8 +589,16 @@ def test_captcha():
         check(f"the CSP lets Cloudflare through in {part}",
               re.search(part + r"[^;]*challenges\.cloudflare\.com", csp) is not None, True)
 
-    check("the site key lives in one place, empty until it's created",
-          re.search(r'var TURNSTILE_SITE_KEY = "(.*?)"', Path("captcha.js").read_text()).group(1), "")
+    # The site key is public and belongs here; the secret never does. Empty is the shipped
+    # state, a real key is the configured one — both are fine, anything else is a typo.
+    src = Path("captcha.js").read_text()
+    key = re.search(r'var TURNSTILE_SITE_KEY = "(.*?)"', src).group(1)
+    check("the site key lives in exactly one place",
+          key == "" or re.fullmatch(r"[0-9]x[A-Za-z0-9_-]{10,}", key) is not None, True)
+    # A Turnstile secret looks much like a site key, so shape can't tell them apart — what
+    # can is someone assigning one here at all. The file may name the env var in a comment.
+    check("and no secret has been pasted in beside it",
+          re.search(r'(?i)secret\s*=\s*["\'][^"\']+["\']', src) is None, True)
     wf = Path(".github/workflows/check-sources.yml").read_text()
     check("CI checks the captcha too", "selftest_captcha.mjs" in wf, True)
 
