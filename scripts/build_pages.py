@@ -17,6 +17,8 @@ import json, re, html
 from datetime import datetime, timezone
 from pathlib import Path
 
+from fetch import full_name
+
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://www.firmwarely.com"  # the apex redirects here, so canonicals must too
 CATS = {"R": "Routers & networking", "N": "NAS & storage", "S": "Smart home & cameras",
@@ -100,11 +102,16 @@ def date_cell(d):
     return time_tag(d.get("released")) + seen
 
 
+def and_list(words):
+    """["a", "b", "c"] → "a, b and c"."""
+    return words[0] if len(words) == 1 else ", ".join(words[:-1]) + " and " + words[-1]
+
+
 def device_list(items, show_brand=True):
     """The same compact list the catalogue uses: name → version, date."""
     out = ["<ul>"]
     for d in items:
-        name = f"{d['brand']} {d['model']}" if show_brand else d["model"]
+        name = full_name(d) if show_brand else d["model"]
         when = fmt(d.get("released")) if dated(d) else f"seen {fmt(d.get('released'))}"
         v = f"{esc(d['version'])} · {when}" if is_live(d) else "watching soon"
         out.append(f'<li><a href="/devices/{d["id"]}/">{icon_svg(d.get("icon"))}{esc(name)}</a><span>{v}</span></li>')
@@ -280,12 +287,12 @@ def head(title, desc, path, extra="", noindex=False):
 """
 
 
-def signup(device_name=""):
+def signup(device_name="", software=False):
     return f"""
 <section id="signup" class="signup">
   <div class="wrap">
     <h2>Get alerts for {esc(device_name) if device_name else "your devices"}</h2>
-    <p style="color:var(--muted)">One email when a new or critical firmware ships. Free for up to 3 devices.</p>
+    <p style="color:var(--muted)">One email when {"a new release or a security fix" if software else "new firmware or a security fix"} ships. Free for up to 3 devices.</p>
     <form id="signup-form" novalidate>
       <label class="sr" for="s-email">Email address</label>
       <div class="row"><input id="s-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required></div>
@@ -353,7 +360,7 @@ def fit_title(candidates):
 
 def device_page(d, ctx=None):
     ctx = ctx or {}
-    name = f"{d['brand']} {d['model']}"
+    name = full_name(d)
     path = f"/devices/{d['id']}/"
     cat = CATS.get(d["category"], "")
     live = is_live(d)
@@ -370,10 +377,10 @@ def device_page(d, ctx=None):
                           [f"{name}{fw} — latest version {v} | Firmwarely",
                            f"{name}{fw} {v} | Firmwarely",
                            f"{name}{fw} {v}"])
-        desc = fit_desc(([f"Latest {name} {noun} is {v}, released {fmt(d['released'])}. Release notes, version history, how to update, and email alerts for new or security fixes.",
+        desc = fit_desc(([f"Latest {name} {noun} is {v}, released {fmt(d['released'])}. Release notes, version history, how to update, and email alerts for new releases and security fixes.",
                           f"Latest {name} {noun} is {v}, released {fmt(d['released'])}. Release notes, version history and update alerts.",
                           f"{name} {noun} {v} ({fmt(d['released'])}): release notes, history and alerts."] if real_date else
-                         [f"Latest {name} {noun} is {v}. Release notes, version history, how to update, and email alerts for new or security fixes.",
+                         [f"Latest {name} {noun} is {v}. Release notes, version history, how to update, and email alerts for new releases and security fixes.",
                           f"Latest {name} {noun} is {v}. Release notes, version history and update alerts."]) +
                         [f"{name} {noun} {v}: release notes, history and alerts."])
     else:
@@ -381,8 +388,8 @@ def device_page(d, ctx=None):
                            f"{name}{fw} updates — release tracking | Firmwarely",
                            f"{name}{fw} updates | Firmwarely",
                            f"{name}{fw} updates"])
-        desc = fit_desc([f"Track {name}{fw} updates. Firmwarely watches the manufacturer's release page and emails you when a new or security update ships.",
-                         f"Track {name}{fw} updates and get an email when a new or security update ships.",
+        desc = fit_desc([f"Track {name}{fw} updates. Firmwarely watches the manufacturer's release page and emails you when a new release or security fix ships.",
+                         f"Track {name}{fw} updates and get an email when a new release or security fix ships.",
                          f"{name}{fw} update tracking and alerts."])
 
     notes = d.get("notes") or ""
@@ -403,7 +410,7 @@ def device_page(d, ctx=None):
          **({"dateModified": d["checked"][:10]} if d.get("checked") else {})},
     ]
     if live:
-        app = {"@type": "SoftwareApplication", "name": f"{name} firmware", "applicationCategory": "Firmware",
+        app = {"@type": "SoftwareApplication", "name": f"{name}{fw}", "applicationCategory": "Firmware",
                "operatingSystem": name, "softwareVersion": d["version"],
                "author": {"@type": "Organization", "name": d["brand"]}}
         if d.get("released") and dated(d):
@@ -443,8 +450,8 @@ def device_page(d, ctx=None):
       <div class="card">
         {cta}
         <ol class="upd-steps">{step_html}</ol>
-        <p class="fine" style="margin:.75rem 0 0">Always download firmware from the manufacturer or project itself.
-        Firmwarely links out; it never hosts firmware.</p>
+        <p class="fine" style="margin:.75rem 0 0">{"Always install releases from the project itself." if software else "Always download firmware from the manufacturer or project itself."}
+        Firmwarely links out; it never hosts {"downloads" if software else "firmware"}.</p>
       </div>"""
 
     # internal links: the rest of the brand, and what else moved recently in this category
@@ -454,11 +461,11 @@ def device_page(d, ctx=None):
     if siblings or others:
         related = '<div class="related brandlist">'
         if siblings:
-            more = (f' <a href="{brand_path(d["brand"])}">All {esc(d["brand"])} devices →</a>'
+            more = (f' <a href="{brand_path(d["brand"])}">All {esc(d["brand"])} {"projects" if software else "devices"} →</a>'
                     if len(ctx.get("by_brand", {}).get(d["brand"], [])) >= BRAND_MIN else "")
             related += f'<h2>More from {esc(d["brand"])}</h2>{device_list(sorted(siblings, key=lambda x: x["model"])[:6], show_brand=False)}<p class="fine">{more}</p>'
         if others:
-            related += f'<h2>Recently updated in {esc(cat)}</h2>{device_list(others)}<p class="fine"><a href="{cat_path(d["category"])}">All {esc(CAT_PHRASE[d["category"]])} devices →</a></p>'
+            related += f'<h2>Recently updated in {esc(cat)}</h2>{device_list(others)}<p class="fine"><a href="{cat_path(d["category"])}">All {esc(CAT_PHRASE[d["category"]])}{"" if software else " devices"} →</a></p>'
         related += "</div>"
 
     body = head(title, desc, path, extra)
@@ -467,7 +474,7 @@ def device_page(d, ctx=None):
   <div class="crumbs"><a href="/devices/">Devices</a> / <a href="{cat_path(d['category'])}">{esc(cat)}</a> / {esc(name)}</div>
   <div class="dev">
     <div>
-      <h1 class="dev-h">{esc(name)} {"releases" if software else "firmware"}</h1>
+      <h1 class="dev-h">{esc(name)}{" releases" if software else fw}</h1>
       <span class="status {d['status']}">{LABEL.get(d['status'], d['status'])}</span>
       <p style="color:var(--muted);margin:1rem 0 0">{esc(intro)}</p>
       <div class="card" style="margin-top:1.25rem">
@@ -488,11 +495,11 @@ def device_page(d, ctx=None):
         <h3>What is the latest {noun} {"of" if software else "for the"} {esc(name)}?</h3>
         <p>{(f"Version {esc(d['version'])}, released {fmt(d.get('released'))}. " if live and dated(d)
              else f"Version {esc(d['version'])}, which we first saw on {fmt(d.get('released'))}; {esc(d['brand'])} doesn't publish a release date for it. " if live
-             else "We haven't recorded a version yet. ")}This page is refreshed every hour from the manufacturer's release page.</p>
+             else "We haven't recorded a version yet. ")}This page is refreshed every hour from the {"project's" if software else "manufacturer's"} release page.</p>
         <h3>How do I update {"" if software else "the "}{esc(name)}?</h3>
         <p><a href="#update">See the step-by-step above.</a> {esc(HOWTO.get(d['category'], ''))}</p>
         <h3>How does Firmwarely know when there's a new version?</h3>
-        <p>Every hour we read the manufacturer's official release page{(" for the " + esc(name)) if live else ""} and record the version, date and changelog. Subscribers watching this device get one email a day when it changed.</p>
+        <p>Every hour we read the {"project's" if software else "manufacturer's"} official release page{((" for " if software else " for the ") + esc(name)) if live else ""} and record the version, date and changelog. Subscribers watching {"it" if software else "this device"} get one email a day when it changes.</p>
         <h3>Is this an official {esc(d['brand'])} page?</h3>
         <p>No. Firmwarely is independent. {"Project and product names belong to their owners; always install releases from the project's own source." if software else "Device and brand names belong to their manufacturers; always download firmware from the official source."}</p>
       </div>
@@ -500,18 +507,18 @@ def device_page(d, ctx=None):
     </div>
     <aside>
       <div class="card">
-        <h2 style="margin:0 0 .5rem;font-size:1.05rem">Watch this device</h2>
-        <p style="color:var(--muted);font-size:.95rem;margin:0 0 .75rem">Get one email when {esc(d['brand'])} ships a new or security {"release of" if software else "firmware for the"} {esc(d['model'])}.</p>
+        <h2 style="margin:0 0 .5rem;font-size:1.05rem">Watch this {"project" if software else "device"}</h2>
+        <p style="color:var(--muted);font-size:.95rem;margin:0 0 .75rem">{f"Get one email when {esc(name)} ships a new release or a security fix." if software else f"Get one email when {esc(d['brand'])} ships new firmware or a security fix for the {esc(name)}."}</p>
         <a class="btn" href="#signup">Get alerts</a>
         <p style="margin:.75rem 0 0"><a href="/my-devices.html#d={esc(d['id'])}">Track this in My devices →</a></p>
-        {f'<p style="margin:.5rem 0 0"><a href="#update">How to update this device</a></p>' if steps else ""}
+        {f'<p style="margin:.5rem 0 0"><a href="#update">How to update {"it" if software else "this device"}</a></p>' if steps else ""}
         {product_link(d)}
       </div>
     </aside>
   </div>
 </div>
 """
-    body += signup(name) + FOOT
+    body += signup(name, software) + FOOT
     return body
 
 
@@ -536,7 +543,7 @@ def category_page(key, devices, brands):
             {"@type": "ListItem", "position": 1, "name": "Devices", "item": f"{SITE}/devices/"},
             {"@type": "ListItem", "position": 2, "name": cat, "item": f"{SITE}{cat_path(key)}"}]},
         {"@type": "ItemList", "name": f"{cat} firmware", "numberOfItems": len(items),
-         "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": f"{d['brand']} {d['model']}",
+         "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": full_name(d),
                               "url": f"{SITE}/devices/{d['id']}/"} for i, d in enumerate(items)]}]}
     extra = f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>'
     brand_links = "".join(f'<a class="chip" href="{brand_path(b)}">{esc(b)}</a>' for b in top_brands)
@@ -546,14 +553,14 @@ def category_page(key, devices, brands):
   <div class="crumbs"><a href="/devices/">Devices</a> / {esc(cat)}</div>
   <h1 class="dev-h">{esc(cat)}: latest {what}</h1>
   <p style="color:var(--muted);max-width:70ch">{esc(CAT_INTRO[key])}</p>
-  <p style="color:var(--muted)">{len(items)} devices in this category, {len(live)} with a recorded version.</p>
+  <p style="color:var(--muted)">{len(items)} {"projects" if key == "A" else "devices"} in this category, {len(live)} with a recorded version.</p>
   {f'<div class="browse"><span>Brands</span>{brand_links}</div>' if brand_links else ""}
   {f'<h2>Latest releases</h2>{device_list(recent)}' if recent else ""}
-  <h2>All {esc(CAT_PHRASE[key])} devices</h2>
+  <h2>All {esc(CAT_PHRASE[key])}{"" if key == "A" else " devices"}</h2>
   {device_list(sorted(items, key=lambda x: (not is_live(x), x["brand"], x["model"])))}
   <div class="browse" style="margin-top:2rem"><span>Other categories</span>{other_cats}</div>
 </div>
-""" + signup() + FOOT
+""" + signup(software=key == "A") + FOOT
 
 
 def brand_page(brand, items):
@@ -575,10 +582,10 @@ def brand_page(brand, items):
             {"@type": "ListItem", "position": 1, "name": "Devices", "item": f"{SITE}/devices/"},
             {"@type": "ListItem", "position": 2, "name": brand, "item": f"{SITE}{brand_path(brand)}"}]},
         {"@type": "ItemList", "name": f"{brand} firmware", "numberOfItems": len(items),
-         "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": f"{d['brand']} {d['model']}",
+         "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": full_name(d),
                               "url": f"{SITE}/devices/{d['id']}/"} for i, d in enumerate(items)]}]}
     extra = f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>'
-    intro = (f"Firmwarely tracks {len(items)} {brand} {unit} across {', '.join(CAT_PHRASE[k] for k in CATS if any(d['category'] == k for d in items))}. "
+    intro = (f"Firmwarely tracks {len(items)} {brand} {unit} across {and_list([CAT_PHRASE[k] for k in CATS if any(d['category'] == k for d in items)])}. "
              + (f"The most recent {brand} release we recorded is {newest['model']} {newest['version']} on {fmt(newest.get('released'))}. " if newest else "")
              + "Each device page has the current version, release notes, version history and how to update.")
     cat_links = "".join(f'<a class="chip" href="{cat_path(k)}">{esc(CATS[k])}</a>' for k in CATS if any(d["category"] == k for d in items))
@@ -591,7 +598,7 @@ def brand_page(brand, items):
   <h2>{esc(brand)} {unit}</h2>
   {device_list(sorted(items, key=lambda x: (not is_live(x), x["model"])), show_brand=False)}
 </div>
-""" + signup(brand) + FOOT
+""" + signup(brand, software) + FOOT
 
 
 # Stylised line-art of the device families we track: drawn here so the page needs no
@@ -629,8 +636,8 @@ def pro_page():
         f'<a href="{cat_path(key)}" aria-label="{esc(label)}">{icon_svg(icon, "")}<span>{esc(label)}</span></a>'
         for label, key, icon in DEVICE_ART)
     if is_open:
-        hero = f"""<p class="lede">Pro is open. Unlimited devices, the dashboard, and one email a day when
-        something you own changes — at the founding-member price, locked in for as long as you stay.</p>
+        hero = f"""<p class="lede">Pro is open. Unlimited devices, the dashboard, and one daily email that covers
+        everything you own — at the founding-member price, locked in for as long as you stay.</p>
       <p class="pro-price">$4.99<small> /month · founding-member price</small></p>
       <a class="btn" href="{esc(link)}">Subscribe to Pro</a>
       <p class="fine" style="margin:.6rem 0 0">Secure checkout through Stripe. Cancel any time from the link
@@ -668,11 +675,11 @@ def pro_page():
   <div class="pro-perks">
     <div class="card"><h3>Every device you own</h3><p>No three-device cap. Add the router, both NAS boxes, every camera and the kids' console.</p></div>
     <div class="card"><h3>The dashboard</h3><p>One screen showing what's current, what has an update and what has a security fix waiting, with a button to go apply it.</p></div>
-    <div class="card"><h3>One email a day, when it matters</h3><p>Each morning, a single email covering everything of yours that changed in the last 24 hours, security fixes first. Silence otherwise.</p></div>
+    <div class="card"><h3>One email a day, for all of it</h3><p>Each morning, a single email covering everything of yours that changed in the last 24 hours, security fixes first.</p></div>
   </div>
 
   <h2 style="margin-top:2.5rem">{meanwhile_head}</h2>
-  <p style="color:var(--muted);max-width:64ch">The free plan is live today. <a href="/my-devices.html">Save up to three devices</a> and see which need an update, or <a href="/devices/">browse the {'{n}'} devices we watch</a>. {carry}</p>
+  <p style="color:var(--muted);max-width:64ch">The free plan is live today. <a href="/my-devices.html">Save up to three devices</a>, see which need an update and get an email when they change, or <a href="/devices/">browse the {'{n}'} devices we watch</a>. {carry}</p>
 </div>
 """ + FOOT
 
@@ -702,7 +709,7 @@ def index_page(devices, brand_pages=()):
         parts.append(f'<h2 id="{cat_key}"><a href="{cat_path(cat_key)}">{esc(cat_name)}</a></h2><ul>')
         for d in sorted(items, key=lambda x: (x["brand"], x["model"])):
             v = esc(d["version"])
-            parts.append(f'<li><a href="/devices/{d["id"]}/">{icon_svg(d.get("icon"))}{esc(d["brand"])} {esc(d["model"])}</a><span>{v}</span></li>')
+            parts.append(f'<li><a href="/devices/{d["id"]}/">{icon_svg(d.get("icon"))}{esc(full_name(d))}</a><span>{v}</span></li>')
         parts.append("</ul>")
     title = "Firmware update tracker — every device we watch | Firmwarely"
     desc = fit_desc([
@@ -759,9 +766,9 @@ def legal_page():
 <p style="color:var(--muted)">Last updated September 23, 2026. Firmwarely is an independent service operated by an individual in Iowa, USA. Questions: <a href="mailto:hello@firmwarely.com">hello@firmwarely.com</a>.</p>
 <div class="faq">
 <h2 style="margin-top:2rem">Privacy policy</h2>
-<h3>What we collect</h3><p>Your email address when you subscribe, the device names you choose to tell us about, standard web server logs, and an anonymous count of which pages are read. If you buy Pro, Stripe collects your payment details; we never see your card number. We store the email you paid with and whether your subscription is active.</p>
-<h3>How we use it</h3><p>To send you the firmware update emails you asked for, to manage your subscription, and to understand which devices people want tracked. We don't sell or rent your data.</p>
-<h3>Who we share it with</h3><p>Beehiiv (subscriber list and newsletter delivery), Resend (sign-in links and device alerts), Stripe (payments), Vercel (hosting, sign-in API and page analytics), Cloudflare (the anti-spam check on our forms), and GitHub (where our data pipeline runs). Each is bound by its own privacy policy. We share only what's needed for them to do their job.</p>
+<h3>What we collect</h3><p>Your email address when you subscribe, the device names you choose to tell us about, anything you send us through the support form, standard web server logs, and an anonymous count of which pages are read. If you buy Pro, Stripe collects your payment details; we never see your card number. We store the email you paid with and whether your subscription is active.</p>
+<h3>How we use it</h3><p>To send you the firmware update emails you asked for, to answer you when you write to us, to manage your subscription, and to understand which devices people want tracked. We don't sell or rent your data.</p>
+<h3>Who we share it with</h3><p>Beehiiv (subscriber list and newsletter delivery), Resend (sign-in links, device alerts and support messages), Stripe (payments), Vercel (hosting, sign-in API and page analytics), Cloudflare (the anti-spam check on our forms), and GitHub (where our data pipeline runs). Each is bound by its own privacy policy. We share only what's needed for them to do their job.</p>
 <h3>Affiliate links</h3><p>Some product links may earn us a commission at no extra cost to you. They don't affect which updates we report.</p>
 <h3>Your choices</h3><p>Every email has an unsubscribe link. To delete your data entirely, email us and we'll remove it within 30 days. We set one cookie, only when you sign in, so you stay signed in for 30 days. Your device list is kept in your browser's local storage and, once you sign in, in your account.</p><h3>How we count visits</h3><p>We use Vercel Web Analytics to see which pages people actually read, because we'd rather write about the devices you're looking for than guess. It sets no cookies and does not follow you to other sites. To avoid counting the same person twice in a day it derives a temporary identifier from your IP address and browser, which rotates daily and which we never see; what reaches us is the page, the referring site, the rough country, and the kind of device — never a name, an address, or a profile. There are no advertising trackers, and we sell nothing to anyone.</p>
 <h3>The check on our forms</h3><p>Every form here runs Cloudflare Turnstile, which tells us whether a submission came from a person or a script. It is there because the alternative is a contact inbox and a mailing list full of bot signups. Cloudflare sees your IP address and some signals about your browser to make that call, and we receive only its yes or no — never a profile of you. Turnstile is designed not to track you across sites and, unlike the usual image puzzles, usually asks you to do nothing at all.</p>

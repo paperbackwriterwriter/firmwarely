@@ -202,8 +202,8 @@ footer a:hover{color:var(--text)}
     <p class="fine">Don't see your device? <a href="/#signup">Tell us the model</a> and we'll add it to the tracker.</p>
 
     <div class="plan" id="proBox">
-      <h3>Know the day any of these gets a new release</h3>
-      <p>Pro emails you the same day a new firmware or security fix is spotted for a device on your list, removes the 3-device limit, and unlocks the <a href="/dashboard.html">dashboard</a>: every device on one screen, security fixes first, one click to update each.</p>
+      <h3>Watch everything you own</h3>
+      <p>Pro removes the 3-device limit, so your daily email covers every device on your list, and unlocks the <a href="/dashboard.html">dashboard</a>: every device on one screen, security fixes first, one click to update each.</p>
       <a class="btn" href="/#pricing">See Pro</a>
     </div>
   </div>
@@ -239,6 +239,16 @@ footer a:hover{color:var(--text)}
     }
   }
   function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+  // Brand and model as one name, without saying the brand twice ("Eero" + "Eero Pro 6E").
+  // Same rule as full_name() in scripts/fetch.py.
+  function fullName(d) {
+    var b = String(d.brand || "").trim(), m = String(d.model || "").trim();
+    var ml = m.toLowerCase(), bl = b.toLowerCase();
+    if (ml === bl || ml.indexOf(bl + " ") === 0 || ml.indexOf(bl + "-") === 0) return m;
+    var last = b.split(/\s+/).pop().toLowerCase(), w = m.split(/\s+/);
+    if (w[0] && w[0].toLowerCase() === last) return [b].concat(w.slice(1)).join(" ");
+    return b + " " + m;
+  }
   function toast(msg) {
     var t = document.getElementById("toast");
     t.textContent = msg; t.classList.add("show");
@@ -410,7 +420,7 @@ footer a:hover{color:var(--text)}
       if (v.cls === "update") need++;
       if (v.cls === "critical") { need++; sec++; }
       if (v.cls === "pending") unknown++;
-      var name = d ? esc(d.brand) + " " + esc(d.model) : esc(e.id);
+      var name = d ? esc(fullName(d)) : esc(e.id);
       var yours = norm(e.version) ? "<em>" + esc(e.version) + "</em>" : "not set";
       var when = d && d.released ? (d.date_known === false ? " seen " : " ") + esc(fmtDate(d.released)) : "";
       var latest = d && d.version ? "<em>" + esc(d.version) + "</em>" + when : "no data yet";
@@ -449,7 +459,7 @@ footer a:hover{color:var(--text)}
       og.label = CATS[c];
       groups[c].sort(function (a, b) { return (a.brand + a.model).localeCompare(b.brand + b.model); }).forEach(function (d) {
         var o = document.createElement("option");
-        o.value = d.id; o.textContent = d.brand + " " + d.model;
+        o.value = d.id; o.textContent = fullName(d);
         og.appendChild(o);
       });
       sel.appendChild(og);

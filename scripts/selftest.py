@@ -271,6 +271,29 @@ def test_site_shows_only_real_data():
 
 # ---- upstream release notes end up in innerHTML on every page ----
 # ---- the support page and the form behind it ----
+def test_names_said_once():
+    """A brand the model already starts with isn't said twice, and "firmware" isn't either."""
+    cases = [("Eero", "Eero Pro 6E", "Eero Pro 6E"), ("Redis", "Redis", "Redis"),
+             ("Raspberry Pi", "Pi 5", "Raspberry Pi 5"), ("Stirling PDF", "PDF toolkit", "Stirling PDF toolkit"),
+             ("Shadowsocks", "shadowsocks-rust", "shadowsocks-rust"), ("ASUS", "RT-AX58U", "ASUS RT-AX58U"),
+             ("OBS", "OBSidian", "OBS OBSidian")]
+    for b, m, want in cases:
+        check(f"full_name: {b} + {m}", fetch.full_name({"brand": b, "model": m}), want)
+    import glob
+    ROOT = Path(__file__).resolve().parent.parent
+    stutter = []
+    for f in glob.glob(str(ROOT / "devices" / "*" / "index.html")):
+        h1 = re.search(r"<h1[^>]*>(.*?)</h1>", Path(f).read_text(), re.S).group(1)
+        if re.search(r"\b(\w+)\s+\1\b", _html.unescape(h1), re.I):
+            stutter.append(h1)
+    check("no device heading says a word twice", stutter[:5], [])
+    # the pages that list devices in the browser use the same rule
+    for page in ("index.html", "dashboard.html", "my-devices.html"):
+        src = (ROOT / page).read_text()
+        check(f"{page} names devices with fullName()", "fullName(" in src and 'd.brand + " " + d.model' not in src
+              and "esc(d.b)} ${esc(d.m)}" not in src, True)
+
+
 def test_support_page():
     build_pages.STYLES = build_pages.styles()
     page = build_pages.support_page()
@@ -656,7 +679,12 @@ def test_clean():
         ("entity-hidden tag is stripped", "&lt;img src=x onerror=alert(1)&gt;", ""),
         ("double-encoded tag is stripped", "&amp;lt;b&amp;gt;x", "x"),
         ("markdown link keeps its text", "see [the notes](https://x.y/z) here", "see the notes here"),
-        ("markdown headings and bullets drop their markers", "## Fixes\n- one\n* two\n1. three", "Fixes one two three"),
+        ("markdown headings and bullets drop their markers", "## Fixes\n- one\n* two\n1. three", "Fixes: one two three"),
+        ("a heading the next line repeats is read once", "### Added\n- Added a theme\n### Security\n- Security: fix CVE", "Added a theme Security: fix CVE"),
+        ("section names flattened by earlier runs are read once", "Added Added a theme. Fixed Fixed a crash", "Added a theme. Fixed a crash"),
+        ("badge images are dropped", "[![Docs](https://img.shields.io/x.svg)](https://docs) ![logo](https://x/logo.png) Real notes", "Real notes"),
+        ("an image cut off by the length limit is dropped", "Notes ![Documentation](https://github.com/x/y/tree/2026.08.1…", "Notes"),
+        ("bot links and handles are dropped", "Bump pako (#717) @[dependabot[bot]](https://github.com/apps/dependabot) Bump x", "Bump pako (#\u200b717) Bump x"),
         ("inline code and emphasis lose their fences", "use `foo` and **bar** and _baz_", "use foo and bar and _baz_"),
         ("issue refs can't ping anyone", "fixes #123 and #4", "fixes #\u200b123 and #\u200b4"),
         ("long text is cut with an ellipsis", "x" * 400, "x" * 299 + "…"),
@@ -949,7 +977,7 @@ def test_schedule_and_digest():
 
 
 for t in (test_compare, test_new_release, test_saved_devices, test_routing, test_forced_guard,
-          test_update_guides, test_sources_well_formed, test_site_shows_only_real_data, test_support_page, test_dates_are_honest, test_withdrawn_devices_redirect, test_analytics_and_its_disclosure, test_form_rate_limit, test_captcha, test_side_gutter, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
+          test_update_guides, test_sources_well_formed, test_site_shows_only_real_data, test_names_said_once, test_support_page, test_dates_are_honest, test_withdrawn_devices_redirect, test_analytics_and_its_disclosure, test_form_rate_limit, test_captcha, test_side_gutter, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
           test_landing_pages, test_schedule_and_digest):
     print(f"\n{t.__name__}")
     t()

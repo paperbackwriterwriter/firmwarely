@@ -153,6 +153,16 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:space-betwee
   function load() { try { return JSON.parse(localStorage.getItem(KEY) || "[]"); } catch (e) { return []; } }
   function save() { try { localStorage.setItem(KEY, JSON.stringify(mine)); } catch (e) {} }
   function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+  // Brand and model as one name, without saying the brand twice ("Eero" + "Eero Pro 6E").
+  // Same rule as full_name() in scripts/fetch.py.
+  function fullName(d) {
+    var b = String(d.brand || "").trim(), m = String(d.model || "").trim();
+    var ml = m.toLowerCase(), bl = b.toLowerCase();
+    if (ml === bl || ml.indexOf(bl + " ") === 0 || ml.indexOf(bl + "-") === 0) return m;
+    var last = b.split(/\s+/).pop().toLowerCase(), w = m.split(/\s+/);
+    if (w[0] && w[0].toLowerCase() === last) return [b].concat(w.slice(1)).join(" ");
+    return b + " " + m;
+  }
   function fmtDate(s) { return s ? new Date(s + "T00:00:00").toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" }) : ""; }
   function shortDate(s) { return s ? new Date(s + "T00:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric" }) : ""; }
   function validEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
@@ -245,7 +255,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:space-betwee
 
   /* ---------- the gate: this page is part of Pro ---------- */
   var PITCH = '<p style="margin:.5rem 0 0;max-width:52ch;margin-left:auto;margin-right:auto">Every device you own on one screen: security fixes first, ' +
-    'your version against the latest, and one click to the update for each. Plus unlimited devices and same-day alerts.</p>';
+    'your version against the latest, and one click to the update for each. Plus unlimited devices, all in your daily email.</p>';
 
   function renderSignedOut() {
     document.getElementById("content").innerHTML = '<div class="empty">' +
@@ -332,7 +342,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:space-betwee
       .sort(function (a, b) { return (a.v.cls === "update") - (b.v.cls === "update"); });
     if (todo.length) {
       html += '<h2 id="attention">Needs attention</h2><ul class="list">' + todo.map(function (r) {
-        var d = r.d, e = r.e, name = esc(d.brand) + " " + esc(d.model);
+        var d = r.d, e = r.e, name = esc(fullName(d));
         var note = (d.notes || "").trim(); if (note.length > 160) note = note.slice(0, 159) + "…";
         return '<li data-id="' + esc(e.id) + '"><div>' +
           '<div class="name"><a href="/devices/' + esc(e.id) + '/">' + name + '</a></div>' +
@@ -353,7 +363,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:space-betwee
       html += '<h2>Recent releases for your devices</h2><ul class="list recent">' + recent.map(function (r) {
         var d = r.d;
         return '<li><span class="when">' + esc(shortDate(d.released)) + '</span><div>' +
-          '<div class="name"><a href="/devices/' + esc(r.e.id) + '/">' + esc(d.brand) + " " + esc(d.model) + '</a> <span class="vers" style="display:inline;margin-left:.4rem"><em>' + esc(d.version) + '</em></span></div>' +
+          '<div class="name"><a href="/devices/' + esc(r.e.id) + '/">' + esc(fullName(d)) + '</a> <span class="vers" style="display:inline;margin-left:.4rem"><em>' + esc(d.version) + '</em></span></div>' +
           '</div><span class="status ' + r.v.cls + '">' + esc(r.v.text) + '</span></li>';
       }).join("") + '</ul>';
     }
@@ -362,7 +372,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:space-betwee
     var unknown = rows.filter(function (r) { return r.v.cls === "pending" && r.d && r.d.version; });
     if (unknown.length) {
       html += '<h2>Version not set</h2><p class="fine" style="margin:-.25rem 0 .75rem">Firmwarely can\'t tell whether these need updating until you enter the version they\'re on.</p><ul class="list">' + unknown.map(function (r) {
-        return '<li><div><div class="name"><a href="/devices/' + esc(r.e.id) + '/">' + esc(r.d.brand) + " " + esc(r.d.model) + '</a></div>' +
+        return '<li><div><div class="name"><a href="/devices/' + esc(r.e.id) + '/">' + esc(fullName(r.d)) + '</a></div>' +
           '<div class="vers">latest: <em>' + esc(r.d.version) + '</em></div>' +
           '<div class="acts"><a class="btn ghost sm" href="/my-devices.html">Enter your version</a>' +
           '<button type="button" class="btn ghost sm" data-act="done">I\'m on ' + esc(r.d.version) + '</button></div></div>' +
@@ -385,7 +395,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:space-betwee
     var e = mine.filter(function (x) { return x.id === id; })[0], d = catalog[id];
     if (!e || !d || !d.version) return;
     e.version = d.version; save(); syncUp(); render();
-    toast("Marked " + d.brand + " " + d.model + " up to date");
+    toast("Marked " + fullName(d) + " up to date");
   });
 
   document.getElementById("year").textContent = new Date().getFullYear();
