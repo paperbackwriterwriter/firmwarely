@@ -61,6 +61,66 @@
    "notes": "#​11541 #​11540 #​11539",
    "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.266.37242",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "cockpit": {
+   "id": "cockpit",
+   "brand": "Cockpit",
+   "model": "Server web console",
+   "category": "A",
+   "status": "critical",
+   "version": "356",
+   "previous": "367",
+   "released": "2026-09-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Fixes for CVE-2026-91147, CVE-2026-91149, CVE-2026-76235, CVE-2026-91148 Resolves: RHEL-244637, RHEL-262905, RHEL-263074 (rhel-9.8.z) Resolves: RHEL-244640, RHEL-262894, RHEL-263062 (rhel-10.2.z)",
+   "source_url": "https://github.com/cockpit-project/cockpit/releases/tag/356.4",
+   "page_url": "https://www.firmwarely.com/devices/cockpit/"
+  },
+  "terraform": {
+   "id": "terraform",
+   "brand": "HashiCorp",
+   "model": "Terraform",
+   "category": "A",
+   "status": "update",
+   "version": "1.16.4",
+   "previous": "1.16.3",
+   "released": "2026-09-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.16.4 (September 23, 2026) BUG FIXES: Fixed an issue where Terraform fails when rendering policy evaluation outcomes for older versions of Terraform Enterprise (#​39095) stacks: Fix invalid deferred error triggered by provider returning a deferral when a resource also has an unknown count/for_each…",
+   "source_url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.4",
+   "page_url": "https://www.firmwarely.com/devices/terraform/"
+  },
+  "strapi": {
+   "id": "strapi",
+   "brand": "Strapi",
+   "model": "Headless CMS",
+   "category": "A",
+   "status": "update",
+   "version": "5.55.0",
+   "previous": "5.54.0",
+   "released": "2026-09-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "5.55.0 (2026-09-23) 🚀 New feature admin: record token management in audit logs (#​27605) admin: content type folders (#​27419) 🔥 Bug fix ai endpoints requested when the ai feature is unavailable (#​27525) admin: suppress MISSING_TRANSLATION errors to fix sluggish editing (#​26108) admin: sso defaul…",
+   "source_url": "https://github.com/strapi/strapi/releases/tag/v5.55.0",
+   "page_url": "https://www.firmwarely.com/devices/strapi/"
+  },
+  "langfuse": {
+   "id": "langfuse",
+   "brand": "Langfuse",
+   "model": "Agent evals & observability",
+   "category": "A",
+   "status": "update",
+   "version": "4.43.0",
+   "previous": "4.42.0",
+   "released": "2026-09-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed Features feat(members): filter project and organization members by role feat(scores): Allow creating scores from annotation sidebar feat(feature-flags): introduce internal view mode and related components feat(evals): route TypeSafe decision-model connections through OpenRouter or Ve…",
+   "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.43.0",
+   "page_url": "https://www.firmwarely.com/devices/langfuse/"
   }
  }
 }
