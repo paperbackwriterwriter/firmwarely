@@ -602,6 +602,13 @@ def test_captcha():
     wf = Path(".github/workflows/check-sources.yml").read_text()
     check("CI checks the captcha too", "selftest_captcha.mjs" in wf, True)
 
+    # The widget is 300px wide and the hero form is one flex row capped at 460px: without its
+    # own line it crushed the email field to 29px (measured), so pin the rules that prevent it.
+    css = build_pages.STYLES
+    check("the hero form wraps", "flex-wrap:wrap" in re.search(r"\.hero form\{[^}]*\}", css).group(0), True)
+    check("...and the widget takes a line of its own",
+          ".hero form .fw-captcha{order:3;flex-basis:100%}" in css, True)
+
     legal = build_pages.legal_page()
     check("the policy names who runs the check", "Cloudflare Turnstile" in legal, True)
     check("...and lists them as a processor",
