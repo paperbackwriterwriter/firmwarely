@@ -615,6 +615,41 @@ def test_captcha():
           "Cloudflare (the anti-spam check on our forms)" in legal, True)
 
 
+# ---- every page keeps its side margin on a phone ----
+def test_side_gutter():
+    build_pages.STYLES = build_pages.styles()
+    devs = json.loads(Path("devices.json").read_text())["devices"]
+    pages = {"index.html": Path("index.html").read_text(),
+             "my-devices.html": Path("my-devices.html").read_text(),
+             "dashboard.html": Path("dashboard.html").read_text(),
+             "support": build_pages.support_page(), "legal": build_pages.legal_page(),
+             "404": build_pages.not_found_page(devs), "device": build_pages.device_page(devs[0])}
+    # .wrap supplies the 1.25rem side gutter. A padding shorthand on the same element —
+    # "padding:3rem 0 4rem" — silently sets the sides to 0 and the page touches the screen
+    # edge on a phone. It happened in four places at once, so check every one.
+    # Each page against its own stylesheet: the dashboard has a padded .hero card of its own
+    # that never sits on a .wrap, and must not be confused with the homepage's .hero.
+    shorthand = r"(?<![-\w])padding\s*:"
+    inline, wiping = [], []
+    for name, html in pages.items():
+        css = "".join(re.findall(r"<style>(.*?)</style>", html, re.S))
+        for cls, style in re.findall(r'class="([^"]*\bwrap\b[^"]*)"(?:\s+style="([^"]*)")?', html):
+            if style and re.search(shorthand, style):
+                inline.append(name)
+            for c in set(cls.split()) - {"wrap"}:
+                if any(re.search(shorthand, rule)
+                       for rule in re.findall(r"(?<![-\w])\." + re.escape(c) + r"\{([^}]*)\}", css)):
+                    wiping.append(f"{name}: .{c}")
+    check("no .wrap carries an inline padding shorthand", sorted(set(inline)), [])
+    check("no class sharing an element with .wrap resets its padding", sorted(set(wiping)), [])
+    css = build_pages.STYLES
+
+    # a bare URL in release notes has nowhere to break and pushed device pages sideways
+    check("the device column can shrink below its content",
+          "grid-template-columns:minmax(0,1fr)" in css, True)
+    check("...and long words in it wrap", re.search(r"\.dev\{[^}]*overflow-wrap:anywhere", css) is not None, True)
+
+
 def test_clean():
     cases = [
         ("script tag is neutralised", "<script>alert(1)</script>ok", "alert(1) ok"),
@@ -914,7 +949,7 @@ def test_schedule_and_digest():
 
 
 for t in (test_compare, test_new_release, test_saved_devices, test_routing, test_forced_guard,
-          test_update_guides, test_sources_well_formed, test_site_shows_only_real_data, test_support_page, test_dates_are_honest, test_withdrawn_devices_redirect, test_analytics_and_its_disclosure, test_form_rate_limit, test_captcha, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
+          test_update_guides, test_sources_well_formed, test_site_shows_only_real_data, test_support_page, test_dates_are_honest, test_withdrawn_devices_redirect, test_analytics_and_its_disclosure, test_form_rate_limit, test_captcha, test_side_gutter, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
           test_landing_pages, test_schedule_and_digest):
     print(f"\n{t.__name__}")
     t()

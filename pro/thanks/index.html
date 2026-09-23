@@ -75,7 +75,7 @@ header{position:sticky;top:0;z-index:5;background:rgba(12,17,23,.92);backdrop-fi
 }
 
 /* hero */
-.hero{padding:4rem 0 4.5rem;border-top:0;display:grid;grid-template-columns:1.05fr 1fr;gap:3rem;align-items:start}
+.hero{padding-top:4rem;padding-bottom:4.5rem;border-top:0;display:grid;grid-template-columns:1.05fr 1fr;gap:3rem;align-items:start}
 .hero p.lede{font-size:1.15rem;color:var(--muted);margin:1.25rem 0 1.75rem}
 .hero form{display:flex;flex-wrap:wrap;gap:.6rem;max-width:460px}
 /* the anti-spam widget is 300px wide: give it its own line under the email and button,
@@ -199,8 +199,8 @@ footer a:hover{color:var(--text)}
 
   .crumbs{font-family:var(--mono);font-size:.8rem;color:var(--muted);margin:1.5rem 0 .5rem}
   .crumbs a{color:var(--muted)}
-  .dev{display:grid;grid-template-columns:1fr;gap:2rem;padding-top:2rem}
-  @media(min-width:900px){.dev{grid-template-columns:2fr 1fr}}
+  .dev{display:grid;grid-template-columns:minmax(0,1fr);gap:2rem;padding-top:2rem;overflow-wrap:anywhere}
+  @media(min-width:900px){.dev{grid-template-columns:minmax(0,2fr) minmax(0,1fr)}}
   .card{border:1px solid var(--line);border-radius:12px;padding:1.25rem;background:var(--panel)}
   .kv{display:grid;grid-template-columns:150px 1fr;gap:.55rem 1rem;font-size:.95rem;margin:1rem 0 0}
   .kv dt{color:var(--muted);font-family:var(--mono);font-size:.8rem}
@@ -272,7 +272,7 @@ footer a:hover{color:var(--text)}
 <script>(function(){var n=document.querySelector(".nav"),b=n&&n.querySelector(".menu");if(!b)return;b.addEventListener("click",function(){var o=n.classList.toggle("open");b.setAttribute("aria-expanded",String(o));b.textContent=o?"✕":"☰";});})();</script>
 <main>
 
-<div class="wrap" style="padding:3rem 0 4rem;max-width:760px">
+<div class="wrap" style="padding-top:3rem;padding-bottom:4rem;max-width:760px">
 
 <h1 class="dev-h">You're on Pro. Thank you.</h1>
 <p style="font-size:1.1rem;margin-top:1rem;color:var(--muted)">Your receipt is on its way from Stripe. Here's what happens next:</p>
