@@ -165,8 +165,8 @@ def styles():
     return (m.group(1) if m else "") + """
   .crumbs{font-family:var(--mono);font-size:.8rem;color:var(--muted);margin:1.5rem 0 .5rem}
   .crumbs a{color:var(--muted)}
-  .dev{display:grid;grid-template-columns:1fr;gap:2rem;padding-top:2rem}
-  @media(min-width:900px){.dev{grid-template-columns:2fr 1fr}}
+  .dev{display:grid;grid-template-columns:minmax(0,1fr);gap:2rem;padding-top:2rem;overflow-wrap:anywhere}
+  @media(min-width:900px){.dev{grid-template-columns:minmax(0,2fr) minmax(0,1fr)}}
   .card{border:1px solid var(--line);border-radius:12px;padding:1.25rem;background:var(--panel)}
   .kv{display:grid;grid-template-columns:150px 1fr;gap:.55rem 1rem;font-size:.95rem;margin:1rem 0 0}
   .kv dt{color:var(--muted);font-family:var(--mono);font-size:.8rem}
@@ -681,7 +681,7 @@ def not_found_page(devices):
     cats = "".join(f'<a class="chip" href="{cat_path(k)}">{esc(CATS[k])}</a>' for k in CATS)
     recent = by_recent(devices)[:6]
     return head("Page not found | Firmwarely", "That page doesn't exist. Browse the devices Firmwarely tracks.", "/404.html", noindex=True) + f"""
-<div class="wrap brandlist" style="padding:3rem 0 4rem;max-width:760px">
+<div class="wrap brandlist" style="padding-top:3rem;padding-bottom:4rem;max-width:760px">
   <h1 class="dev-h">That page isn't here</h1>
   <p style="color:var(--muted)">The link may be old, or the device may be listed under a different name. Try a search, or browse by category.</p>
   <form action="/" method="get" class="search" style="margin:1.25rem 0"><label class="sr" for="q">Search devices</label><input id="q" name="q" type="search" placeholder="Search brand or model"></form>
@@ -723,7 +723,7 @@ def index_page(devices, brand_pages=()):
 
 def simple_page(title, desc, path, body, noindex=False):
     return head(title, desc, path, noindex=noindex) + f"""
-<div class="wrap" style="padding:3rem 0 4rem;max-width:760px">
+<div class="wrap" style="padding-top:3rem;padding-bottom:4rem;max-width:760px">
 {body}
 </div>
 """ + FOOT
