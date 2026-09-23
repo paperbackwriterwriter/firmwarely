@@ -5,8 +5,13 @@
 // that goes in Vercel as TURNSTILE_SECRET, and the endpoints verify tokens against it.
 //
 // While SITE_KEY is empty nothing is loaded, no widget appears, and the forms behave exactly
-// as they did before: unconfigured must never mean broken. The server half is inert in the
-// same way until TURNSTILE_SECRET is set, so the two can be switched on in either order.
+// as they did before: unconfigured must never mean broken. The server half is inert until
+// TURNSTILE_SECRET is set.
+//
+// ORDER MATTERS. Site key first, secret second — and to switch it off, the reverse: remove
+// the secret, then empty the key. A secret with no key live makes the server demand a token
+// no page is sending, and every form is refused. That happened for a few minutes on
+// 2026-09-23 when the secret went in before the key had deployed.
 var TURNSTILE_SITE_KEY = "0x4AAAAAAFBDZ45f7AUzE4Vk";
 
 (function (w, d) {
