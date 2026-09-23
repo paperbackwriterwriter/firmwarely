@@ -72,7 +72,8 @@ jobs:
         run: python3 scripts/build_pages.py
 
       # Drains pending_changes.json into digest.md + changed.json, creates the Beehiiv draft,
-      # marks today as done. Only on the daily run so Pro members get one email a day.
+      # marks today as done. Only on the daily run so Pro members get one email a day. Also
+      # adds the day to weekly_changes.json, which becomes changed_weekly.json each Monday.
       - name: Build the daily digest
         if: steps.when.outputs.daily == 'true'
         env:
@@ -90,7 +91,7 @@ jobs:
           # vercel.json carries the redirects for devices we don't publish, and build_pages
           # rewrites it from the catalogue — leaving it out would let a rule for a device
           # that has come back shadow its page, because Vercel redirects before it serves files.
-          git add devices.json sources.json pending_changes.json digest_state.json vercel.json \
+          git add devices.json sources.json pending_changes.json weekly_changes.json digest_state.json vercel.json \
                   devices category brands 404.html sitemap.xml robots.txt pro legal support
           if git diff --cached --quiet; then
             echo "No changes."
@@ -119,12 +120,13 @@ jobs:
             --body-file digest.md \
             --label digest || gh issue create --title "$(head -n 1 digest.md | sed 's/^# //')" --body-file digest.md
 
-      # One email per Pro subscriber: the devices they saved on /my-devices.html, or the
-      # general digest if none of theirs moved. Skipped automatically when RESEND_API_KEY /
-      # the Beehiiv secrets aren't set. On a force_digest run it refuses to mail real people
-      # unless USER_ALERT_TEST_EMAIL is set, in which case every alert goes there instead.
+      # Mail each subscriber about the devices they saved on /my-devices.html, and only when
+      # one of them moved: Pro daily (changed.json), free weekly (changed_weekly.json, written
+      # on the weekly run). Skipped automatically when RESEND_API_KEY / the Beehiiv secrets
+      # aren't set. On a force_digest run it refuses to mail real people unless
+      # USER_ALERT_TEST_EMAIL is set, in which case every alert goes there instead.
       - name: Send per-user device alerts
-        if: ${{ hashFiles('changed.json') != '' }}
+        if: ${{ hashFiles('changed.json') != '' || hashFiles('changed_weekly.json') != '' }}
         env:
           BEEHIIV_API_KEY: ${{ secrets.BEEHIIV_API_KEY }}
           BEEHIIV_PUB_ID: ${{ secrets.BEEHIIV_PUB_ID }}

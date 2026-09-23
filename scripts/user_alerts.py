@@ -9,18 +9,14 @@ nothing else. Standard library only, same as the rest of the pipeline.
   python3 scripts/user_alerts.py             # send
   python3 scripts/user_alerts.py --dry-run   # print who would get what, send nothing
 
-Everyone on a plan in USER_ALERT_PLANS (default "all") with an active subscription gets
-exactly one email. Free accounts are included because the signup box on every device page
-promises them one — "one email when new firmware or a security fix ships, free for up to 3
-devices" — and /api/me holds them to those three. Pro's daily mail is unlimited devices,
-sorted security-first, with the dashboard behind it:
+Everyone on a plan in USER_ALERT_PLANS (default "all") with an active subscription is
+mailed only about devices *they* saved, and only when the version they recorded is older
+than the one we found (a blank version counts as older). Nothing of theirs moved, no email.
 
-- the personal one, when they saved a device that moved tonight AND the version they
-  recorded is older than the one we just found. Someone already on tonight's version, or
-  ahead of it, does not count; a blank version does.
-- the general digest of everything that changed, when nothing of theirs matched — the
-  same mail the Beehiiv Pro segment blast used to send, so nobody loses coverage for
-  not having filled in their device list yet.
+- Pro accounts: daily, from changed.json (what moved since yesterday), unlimited devices.
+- Free accounts: weekly, from changed_weekly.json, which scripts/digest.py writes only on
+  the weekly run (schedule.WEEKLY_DAY). /api/me holds them to three devices. On the other
+  six days there is no weekly file, so free accounts get nothing.
 
 Env:
   BEEHIIV_API_KEY, BEEHIIV_PUB_ID   read the subscriber list and their saved devices
@@ -51,6 +47,7 @@ from fetch import full_name
 
 ROOT = Path(__file__).resolve().parent.parent
 CHANGED = ROOT / "changed.json"
+CHANGED_WEEKLY = ROOT / "changed_weekly.json"
 UA = "Mozilla/5.0 (compatible; FirmwarelyBot/1.0; +https://www.firmwarely.com)"
 BEEHIIV = "https://api.beehiiv.com/v2/publications/"
 RESEND = "https://api.resend.com/emails"
@@ -161,14 +158,6 @@ def saved_devices(value):
 
 # ---------- the email ----------
 
-GROUPS = [("critical", "Security fixes — update now"), ("update", "New firmware"),
-          ("current", "Also released"), ("eol", "End of life notices")]
-
-
-def digest_subject(data):
-    return f"Firmware digest — {pretty_date(data.get('date'))}"
-
-
 def pretty_date(iso):
     try:
         y, m, d = (int(x) for x in str(iso).split("-"))
@@ -178,55 +167,20 @@ def pretty_date(iso):
         return str(iso or "")
 
 
-def render_digest(data):
-    """Everything that changed tonight, for subscribers whose own devices didn't move."""
-    groups = {}
-    for c in data.get("devices", []):
-        groups.setdefault("current" if c.get("status") == "stale" else c.get("status"), []).append(c)
-    parts = []
-    for key, heading in GROUPS:
-        items = groups.get(key) or []
-        if not items:
-            continue
-        parts.append(f"<h3 style=\"font-size:16px;margin:20px 0 6px\">{heading}</h3><ul>")
-        for c in items:
-            name = html.escape(full_name(c))
-            line = f"<strong>{name}</strong> — <code>{html.escape(c['version'])}</code>"
-            if c.get("released"):
-                seen = "" if c.get("date_known", True) else "first seen "
-                line += f" ({seen}{html.escape(c['released'])})"
-            note = (c.get("notes") or "").strip()
-            if note:
-                note = note[:180] + "…" if len(note) > 180 else note
-                line += f'<br><span style="color:#555">{html.escape(note)}</span>'
-            line += (f'<br><span style="font-size:14px">'
-                     f'<a href="{html.escape(c["page_url"])}">device page</a></span>')
-            parts.append(f'<li style="margin:0 0 14px">{line}</li>')
-        parts.append("</ul>")
-    n = len(data.get("devices", []))
-    return (
-        '<div style="font-family:-apple-system,Helvetica,Arial,sans-serif;font-size:16px;'
-        'line-height:1.5;color:#111;max-width:600px">'
-        f"<p>{n} device{'' if n == 1 else 's'} shipped new firmware.</p>"
-        + "".join(parts) +
-        '<p style="color:#666;font-size:14px">Want only the ones you own? Save your devices on '
-        f'<a href="{html.escape(SITE)}/my-devices.html">My devices</a> and this becomes a short '
-        "list about your hardware instead.</p></div>"
-    )
-
-
-def subject_for(hits):
+def subject_for(hits, weekly=False):
     one = len(hits) == 1
     what = (f"your {full_name(hits[0]['change'])}" if one
             else f"{len(hits)} of your devices")
     if any(h["change"]["status"] == "critical" for h in hits):
-        return f"Security fix{'' if one else 'es'} for {what}"
-    if all(h["change"].get("eol") for h in hits):
-        return f"End-of-life notice{'' if one else 's'} for {what}"
-    return f"New firmware for {what}"
+        subject = f"Security fix{'' if one else 'es'} for {what}"
+    elif all(h["change"].get("eol") for h in hits):
+        subject = f"End-of-life notice{'' if one else 's'} for {what}"
+    else:
+        subject = f"New firmware for {what}"
+    return ("This week: " + subject[0].lower() + subject[1:]) if weekly else subject
 
 
-def render(hits):
+def render(hits, weekly=False):
     rows = []
     for h in hits:
         c, yours = h["change"], h["yours"]
@@ -254,9 +208,12 @@ def render(hits):
     return (
         '<div style="font-family:-apple-system,Helvetica,Arial,sans-serif;font-size:16px;'
         'line-height:1.5;color:#111;max-width:600px">'
-        f"<p>Here's what changed on {'a device' if n == 1 else f'{n} devices'} you track "
-        "on Firmwarely.</p>"
+        f"<p>Here's what changed {'this week ' if weekly else ''}on "
+        f"{'a device' if n == 1 else f'{n} devices'} you track on Firmwarely.</p>"
         '<ul style="padding-left:18px">' + "".join(rows) + "</ul>"
+        + (f'<p style="color:#666;font-size:14px">You\'re on the free plan, so this comes once a week. '
+           f'<a href="{html.escape(SITE)}/pro/">Pro</a> emails you the morning after a release and '
+           "covers every device you own.</p>" if weekly else "") +
         '<p style="color:#666;font-size:14px">You are getting this because you saved these '
         f'devices on <a href="{html.escape(SITE)}/my-devices.html">My devices</a>. '
         "Add, remove or update them there any time.</p></div>"
@@ -282,19 +239,39 @@ def send(to, subject, body):
 
 # ---------- run ----------
 
-def main():
-    if not CHANGED.exists():
-        print("No changed.json — nothing changed tonight, no per-user alerts.")
-        return 0
-
-    data = json.loads(CHANGED.read_text())
-    changes = {c["id"]: c for c in data.get("devices", []) if c.get("id") and c.get("version")}
-    if not changes:
-        print("changed.json is empty — no per-user alerts.")
-        return 0
+def load_changes(path, label):
+    """{id: change} from a changed file, or None if there isn't one tonight."""
+    if not path.exists():
+        return None
+    data = json.loads(path.read_text())
     if data.get("forced") and not TEST_TO:
-        print("changed.json is from a forced run (every device looks changed). "
-              "Set USER_ALERT_TEST_EMAIL to send it somewhere safe. Skipping.")
+        print(f"{label} is from a forced run (every device looks changed). "
+              "Set USER_ALERT_TEST_EMAIL to send it somewhere safe. Skipping it.")
+        return None
+    return {c["id"]: c for c in data.get("devices", []) if c.get("id") and c.get("version")} or None
+
+
+def hits_for(saved, changes):
+    """The saved devices that moved to a version newer than the one the person recorded."""
+    hits = []
+    for d in saved:
+        c = changes.get(d["id"])
+        if not c:
+            continue
+        # already on that version (or ahead of it) → nothing to tell them
+        if compare(d["version"], c["version"]) in (0, 1):
+            continue
+        hits.append({"change": c, "yours": d["version"]})
+    hits.sort(key=lambda h: (h["change"]["status"] != "critical",
+                             h["change"]["brand"], h["change"]["model"]))
+    return hits
+
+
+def main():
+    daily = load_changes(CHANGED, "changed.json")
+    weekly = load_changes(CHANGED_WEEKLY, "changed_weekly.json")
+    if not (daily or weekly):
+        print("Nothing changed for anyone tonight — no per-user alerts.")
         return 0
 
     key, pub = os.environ.get("BEEHIIV_API_KEY"), os.environ.get("BEEHIIV_PUB_ID")
@@ -305,11 +282,13 @@ def main():
         print("No RESEND_API_KEY — per-user alerts not configured, skipping.")
         return 0
 
-    print(f"{len(changes)} device(s) changed; mailing plans: {', '.join(PLANS)}"
+    print(f"{len(daily or {})} device(s) changed since yesterday (Pro), "
+          f"{len(weekly or {}) if weekly else 'no weekly email tonight'}"
+          f"{' this week (free)' if weekly else ''}; mailing plans: {', '.join(PLANS)}"
           + (f"; TEST → {TEST_TO}" if TEST_TO else "")
           + ("; DRY RUN" if DRY_RUN else ""))
 
-    seen = sent = skipped = failed = digests = 0
+    seen = sent = skipped = failed = quiet = 0
     try:
         people = list(subscribers(key, pub))
     except Exception as e:
@@ -325,39 +304,29 @@ def main():
         plan = (f.get("plan") or "free").strip().lower()
         if "all" not in PLANS and plan not in PLANS:
             continue
-
-        hits = []
-        for d in saved_devices(f.get("devices")):
-            c = changes.get(d["id"])
-            if not c:
-                continue
-            # already on tonight's version (or ahead of it) → nothing to tell them
-            if compare(d["version"], c["version"]) in (0, 1):
-                continue
-            hits.append({"change": c, "yours": d["version"]})
-        hits.sort(key=lambda h: (h["change"]["status"] != "critical",
-                                 h["change"]["brand"], h["change"]["model"]))
-        subject = subject_for(hits) if hits else digest_subject(data)
-        to = TEST_TO or email
-        if TEST_TO:
-            subject = "[TEST] " + subject
+        is_weekly = plan != "pro"
+        changes = weekly if is_weekly else daily
+        if not changes:
+            continue   # a free account on one of the six days without a weekly email
+        hits = hits_for(saved_devices(f.get("devices")), changes)
+        if not hits:
+            quiet += 1
+            continue   # nothing of theirs moved: no email
 
         if sent >= MAX_EMAILS:
             skipped += 1
             continue
-        if hits:
-            what = f"{len(hits)} device(s): " + ", ".join(
-                full_name(h['change']) for h in hits)
-            body = render(hits)
-        else:
-            what = "general digest"
-            body = render_digest(data)
-            digests += 1
+        subject = subject_for(hits, is_weekly)
+        to = TEST_TO or email
+        if TEST_TO:
+            subject = "[TEST] " + subject
+        what = (f"{'weekly' if is_weekly else 'daily'}, {len(hits)} device(s): "
+                + ", ".join(full_name(h["change"]) for h in hits))
         if DRY_RUN:
             print(f"  would mail {to:40s} {what}")
             sent += 1
             continue
-        ok, err = send(to, subject, body)
+        ok, err = send(to, subject, render(hits, is_weekly))
         if ok:
             sent += 1
             print(f"  sent  {to:40s} {what}")
@@ -367,8 +336,8 @@ def main():
         time.sleep(SEND_GAP)
 
     verb = "would send" if DRY_RUN else "sent"
-    print(f"\n{seen} subscriber(s) checked, {verb} {sent} email(s) "
-          f"({sent - digests} personal, {digests} general digest), {failed} failed"
+    print(f"\n{seen} subscriber(s) checked, {verb} {sent} email(s), "
+          f"{quiet} with nothing of theirs changed, {failed} failed"
           + (f", {skipped} over the {MAX_EMAILS} cap" if skipped else ""))
     return 1 if failed else 0
 
