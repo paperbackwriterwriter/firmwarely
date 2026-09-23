@@ -53,13 +53,13 @@
    "model": "For a better internet",
    "category": "R",
    "status": "update",
-   "version": "37522026.266.37242",
+   "version": "37522026.266.58003",
    "previous": "37522026.265.33765",
    "released": "2026-09-23",
    "date_known": true,
    "eol": false,
-   "notes": "#​11541 #​11540 #​11539",
-   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.266.37242",
+   "notes": "#​11544 #​11543 #​11542",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.266.58003",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   },
   "cockpit": {
@@ -196,6 +196,36 @@
    "notes": "v0.9.101 Changes ✨ New Features Added education edition login support Added STC32 upload progress display 🐛 Bug Fixes Fixed editing lock issues causing abnormal block drag behavior Fixed certain projects failing to load after opening Fixed Mac partition manager close button not working on first ins…",
    "source_url": "https://github.com/ailyProject/aily-blockly/releases/tag/v0.9.101",
    "page_url": "https://www.firmwarely.com/devices/aily-blockly/"
+  },
+  "infisical": {
+   "id": "infisical",
+   "brand": "Infisical",
+   "model": "Secrets manager",
+   "category": "A",
+   "status": "update",
+   "version": "0.165.16",
+   "previous": "0.165.15",
+   "released": "2026-09-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed feat: block certificate deletion until expiry fix: prevent renewal identity bypass via ambiguous DN comparison feature(gateway): gcp enrollment docs(audit-logs): audit audit logs chore: add upgrade impact for v0.165.12[bot] in https://github.com/Infisical/infisical/pull/8176 chore: a…",
+   "source_url": "https://github.com/Infisical/infisical/releases/tag/v0.165.16",
+   "page_url": "https://www.firmwarely.com/devices/infisical/"
+  },
+  "activepieces": {
+   "id": "activepieces",
+   "brand": "Activepieces",
+   "model": "Workflow automation",
+   "category": "A",
+   "status": "update",
+   "version": "0.91.2",
+   "previous": "0.91.1",
+   "released": "2026-09-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "fix(flows): stop template imports from failing when the v23 upgrade has no stored flow- #​15736 #​15736 📌 Upgrading a self-hosted instance? Review the Breaking Changes page for any actions required before you upgrade. Thanks ❤️ No contributors",
+   "source_url": "https://github.com/activepieces/activepieces/releases/tag/0.91.2",
+   "page_url": "https://www.firmwarely.com/devices/activepieces/"
   }
  }
 }
