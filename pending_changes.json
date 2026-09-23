@@ -376,6 +376,66 @@
    "notes": "Minimum supported Tailscale client version: v1.80.0 Changes: Fix a node being listed among its own peers in an incremental map update, which crashes the Tailscale Android app on the device list #​3459 Fix deleting a node leaving its long poll open, so the client stayed connected instead of asking f…",
    "source_url": "https://github.com/juanfont/headscale/releases/tag/v0.29.4",
    "page_url": "https://www.firmwarely.com/devices/headscale/"
+  },
+  "asuswrt-merlin": {
+   "id": "asuswrt-merlin",
+   "brand": "Asuswrt-Merlin",
+   "model": "Router firmware",
+   "category": "R",
+   "status": "update",
+   "version": "3006.102.9",
+   "previous": "3006.102.9-beta1",
+   "released": "2026-09-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "3006.102.9",
+   "source_url": "https://github.com/RMerl/asuswrt-merlin.ng/releases/tag/3006.102.9",
+   "page_url": "https://www.firmwarely.com/devices/asuswrt-merlin/"
+  },
+  "rancher": {
+   "id": "rancher",
+   "brand": "Rancher",
+   "model": "Kubernetes management",
+   "category": "A",
+   "status": "update",
+   "version": "2.15.2",
+   "previous": "2.15.1",
+   "released": "2026-09-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release v2.15.2: [!IMPORTANT] - If you are using Active Directory Federation Service (AD FS), upgrading to Rancher v2.10.1 or later may cause issues with authentication, requiring manual intervention. These issues are due to the AD FS Relying Party Trust not being able to pick up a signature verifi…",
+   "source_url": "https://github.com/rancher/rancher/releases/tag/v2.15.2",
+   "page_url": "https://www.firmwarely.com/devices/rancher/"
+  },
+  "llama-cpp": {
+   "id": "llama-cpp",
+   "brand": "ggml",
+   "model": "llama.cpp",
+   "category": "A",
+   "status": "update",
+   "version": "0.5.0",
+   "previous": "0.4.1",
+   "released": "2026-09-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Overview: This release focuses on backend performance and correctness, broader model coverage, and more robust server/router operation. It adds HRM-Text (DFM Mimir 1B) support, MiMo-V2.6 and HunyuanOCR conversion support, ggml 0.25.0 backend improvements, multi-address HTTP binding, image outputs f…",
+   "source_url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.5.0",
+   "page_url": "https://www.firmwarely.com/devices/llama-cpp/"
+  },
+  "archivebox": {
+   "id": "archivebox",
+   "brand": "ArchiveBox",
+   "model": "Web archiver",
+   "category": "A",
+   "status": "update",
+   "version": "0.9.51",
+   "previous": "0.9.50",
+   "released": "2026-09-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "ArchiveBox v0.9 is now released. 🎉: It's been a long time since our last major release back in 2024! Thanks for hanging in there, but I promise this release was worth the wait! ↗️ ArchiveBox 0.9 brings an entirely new archiving engine, massive performance & stability gains, UI improvements, all-new…",
+   "source_url": "https://github.com/ArchiveBox/ArchiveBox/releases/tag/v0.9.51",
+   "page_url": "https://www.firmwarely.com/devices/archivebox/"
   }
  }
 }
