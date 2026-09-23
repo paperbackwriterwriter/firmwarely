@@ -361,6 +361,21 @@
    "notes": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
    "source_url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.37.1",
    "page_url": "https://www.firmwarely.com/devices/kubernetes/"
+  },
+  "headscale": {
+   "id": "headscale",
+   "brand": "Headscale",
+   "model": "Tailscale control server",
+   "category": "R",
+   "status": "update",
+   "version": "0.29.4",
+   "previous": "0.29.3",
+   "released": "2026-09-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Minimum supported Tailscale client version: v1.80.0 Changes: Fix a node being listed among its own peers in an incremental map update, which crashes the Tailscale Android app on the device list #​3459 Fix deleting a node leaving its long poll open, so the client stayed connected instead of asking f…",
+   "source_url": "https://github.com/juanfont/headscale/releases/tag/v0.29.4",
+   "page_url": "https://www.firmwarely.com/devices/headscale/"
   }
  }
 }
