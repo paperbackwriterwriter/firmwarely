@@ -181,6 +181,21 @@
    "notes": "Added: Trace Plex queries before they start and report completion or failure with elapsed time, making pending requests visible when diagnosing apparent hangs. Fixed: Use Prime Video watch provider ID 9 for the streaming default when no region is specified, honoring the default US region. Report ar…",
    "source_url": "https://github.com/Kometa-Team/Kometa/releases/tag/v2.5.1",
    "page_url": "https://www.firmwarely.com/devices/kometa/"
+  },
+  "stirling-pdf": {
+   "id": "stirling-pdf",
+   "brand": "Stirling PDF",
+   "model": "PDF toolkit",
+   "category": "A",
+   "status": "critical",
+   "version": "3.0.0",
+   "previous": "2.14.3",
+   "released": "2026-09-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Stirling PDF V3.0 is live! With this update we are introducing a lot of exciting new changes, A brand new automation system, Free OAuth SSO for all, brand new text editor and a ton of new features, bug fixes and security fixes We have a new system along side the \"PDF Editor\" called the \"PDF Process…",
+   "source_url": "https://github.com/Stirling-Tools/Stirling-PDF/releases/tag/v3.0.0",
+   "page_url": "https://www.firmwarely.com/devices/stirling-pdf/"
   }
  }
 }
