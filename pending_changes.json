@@ -241,6 +241,36 @@
    "notes": "vdev-v0.3.23 vdev-v0.3.23",
    "source_url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.23",
    "page_url": "https://www.firmwarely.com/devices/vector/"
+  },
+  "bookstack": {
+   "id": "bookstack",
+   "brand": "BookStack",
+   "model": "Wiki and documentation",
+   "category": "A",
+   "status": "update",
+   "version": "26.09",
+   "previous": "26.05.5",
+   "released": "2026-09-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Links: Release video overview Update instructions Update details on blog Upgrade Notices: Config - An APP_KEY value now must be set. It should be already set in the vast majority of cases, we just no longer fall back to a default value where unset, and instead error. If you get an error upon access…",
+   "source_url": "https://github.com/BookStackApp/BookStack/releases/tag/v26.09",
+   "page_url": "https://www.firmwarely.com/devices/bookstack/"
+  },
+  "nzbhydra2": {
+   "id": "nzbhydra2",
+   "brand": "NZBHydra2",
+   "model": "Usenet meta search",
+   "category": "A",
+   "status": "update",
+   "version": "9.0.5",
+   "previous": "9.0.4",
+   "released": "2026-09-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "v9.0.5 (2026-09-24): Fix After a restart or update you now stay logged in if \"Remember users\" is enabled. Previously every restart logged you out. See #​1099 Fix After a restart or update the page now reloads when NZBHydra is back, even if you need to log in again. Previously it could wait on \"Rest…",
+   "source_url": "https://github.com/theotherp/nzbhydra2/releases/tag/v9.0.5",
+   "page_url": "https://www.firmwarely.com/devices/nzbhydra2/"
   }
  }
 }
