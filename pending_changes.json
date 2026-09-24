@@ -31,6 +31,66 @@
    "notes": "What's Changed: Features: feat(llm-connections): send extra headers on Vertex AI Gemini requests feat(worker): add isolated OTEL replay integration harness feat(evals): add conversation-signals decision-model gallery template feat(trace-batching): enhance transcript assembly with timing metrics and…",
    "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.44.0",
    "page_url": "https://www.firmwarely.com/devices/langfuse/"
+  },
+  "nginx-proxy-manager": {
+   "id": "nginx-proxy-manager",
+   "brand": "Nginx Proxy Manager",
+   "model": "Reverse proxy manager",
+   "category": "R",
+   "status": "update",
+   "version": "2.16.0",
+   "previous": "2.15.1",
+   "released": "2026-09-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "[!WARNING] Certbot has been updated. Exercise caution with this upgrade as your DNS plugins may not work as expected and require tweaks to dependencies. See the Certbot Doc for more info. New Features: Add a Logs viewer to the UI (thanks) Per-path access lists in Proxy Host modal (thanks) Changes: …",
+   "source_url": "https://github.com/NginxProxyManager/nginx-proxy-manager/releases/tag/v2.16.0",
+   "page_url": "https://www.firmwarely.com/devices/nginx-proxy-manager/"
+  },
+  "cockpit": {
+   "id": "cockpit",
+   "brand": "Cockpit",
+   "model": "Server web console",
+   "category": "A",
+   "status": "critical",
+   "version": "310",
+   "previous": "368",
+   "released": "2026-09-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "ws: don't crash when urlroot has no trailing slash (RHEL-262904) [CVE-2026-91147] ws: Free \"language\" string also when it comes from the cookie (RHEL-244631) [CVE-2026-76235] packagekit: Sanitize markdown urls [CVE-2026-91148]",
+   "source_url": "https://github.com/cockpit-project/cockpit/releases/tag/310.10",
+   "page_url": "https://www.firmwarely.com/devices/cockpit/"
+  },
+  "fwupd": {
+   "id": "fwupd",
+   "brand": "fwupd",
+   "model": "Linux firmware update daemon",
+   "category": "P",
+   "status": "update",
+   "version": "2.1.8",
+   "previous": "2.1.7",
+   "released": "2026-09-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release adds the following features: Add a new plugin to poke bootupd when the ESP changes Add RSA-3072 signature verification support for Lenovo accessories This release fixes the following bugs: Add a workaround for the systemd-pcrosseparator.service PCR0 extension Add hashes for the latest …",
+   "source_url": "https://github.com/fwupd/fwupd/releases/tag/2.1.8",
+   "page_url": "https://www.firmwarely.com/devices/fwupd/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.267.34293",
+   "previous": "37522026.266.58003",
+   "released": "2026-09-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​11554 #​11553 #​11552 #​11551 #​11550 #​11549 #​11548 #​11546 #​11545",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.267.34293",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   }
  }
 }
