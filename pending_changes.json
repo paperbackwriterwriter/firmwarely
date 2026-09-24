@@ -631,6 +631,21 @@
    "notes": "Upgrade notes: Set APP_URL to the address people use to reach Koel, for example APP_URL=https://music.example.com. Password reset and invitation emails now always link to it. On Docker, pass it as an environment variable. Behind a proxy on a public IP address, such as Cloudflare: set TRUSTED_PROXIE…",
    "source_url": "https://github.com/koel/koel/releases/tag/v9.14.0",
    "page_url": "https://www.firmwarely.com/devices/koel/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.2663",
+   "previous": "0.24.2651",
+   "released": "2026-09-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: 4a48cabd5b80a1d0874b0c157ed2c9d8aa7c4340 magnetcat: new alt domains 72ad8a6d03ffa39befba7f85484072e94a125e72 52bt: new domains 9ecba570b8fa35de23d58499a45bc5b350ab20e7 simurg: preserve explicit content categories (#​17083) 7293964520b21ebc9ef07a1c8fa543b3746d748e lostfilm: drop CA bypass …",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2663",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
