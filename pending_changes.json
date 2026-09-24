@@ -271,6 +271,36 @@
    "notes": "v9.0.5 (2026-09-24): Fix After a restart or update you now stay logged in if \"Remember users\" is enabled. Previously every restart logged you out. See #​1099 Fix After a restart or update the page now reloads when NZBHydra is back, even if you need to log in again. Previously it could wait on \"Rest…",
    "source_url": "https://github.com/theotherp/nzbhydra2/releases/tag/v9.0.5",
    "page_url": "https://www.firmwarely.com/devices/nzbhydra2/"
+  },
+  "onyx": {
+   "id": "onyx",
+   "brand": "Onyx",
+   "model": "AI platform",
+   "category": "A",
+   "status": "update",
+   "version": "4.8.1",
+   "previous": "4.8.0",
+   "released": "2026-09-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "See the assets to download this version and install. What's Changed: fix(web): hide craft_file from the Add Connector page (#​14991) to release v4.8 by in https://github.com/onyx-dot-app/onyx/pull/14996 fix(whitelabeling): use the custom app name in every catalog string (#​15049) to release v4.8 fi…",
+   "source_url": "https://github.com/onyx-dot-app/onyx/releases/tag/v4.8.1",
+   "page_url": "https://www.firmwarely.com/devices/onyx/"
+  },
+  "aily-blockly": {
+   "id": "aily-blockly",
+   "brand": "Aily",
+   "model": "Blockly AI IDE for Arduino",
+   "category": "M",
+   "status": "update",
+   "version": "0.9.102",
+   "previous": "0.9.101",
+   "released": "2026-09-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "v0.9.102: Changes: 🐛 Bug Fixes Fixed race condition when compiling in Blockly after page refresh Fixed scrollbar styling issues in Blockly right-click menus Fixed library right-click menu display issues Fixed secondary menu scrolling to ensure content scrolls properly and aligns with main menus Fix…",
+   "source_url": "https://github.com/ailyProject/aily-blockly/releases/tag/v0.9.102",
+   "page_url": "https://www.firmwarely.com/devices/aily-blockly/"
   }
  }
 }
