@@ -23,13 +23,13 @@
    "model": "LLM observability",
    "category": "A",
    "status": "update",
-   "version": "4.45.1",
+   "version": "4.45.2",
    "previous": "4.43.0",
    "released": "2026-09-24",
    "date_known": true,
    "eol": false,
-   "notes": "What's Changed: fix(charts): Make PieChart colors match other charts test(scores): give the updated score a strictly later event_ts feat(llm-connections): default and custom models for TypeSafe connections Full Changelog: https://github.com/langfuse/langfuse/compare/v4.45.0...v4.45.1",
-   "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.45.1",
+   "notes": "What's Changed: Features: feat(ai-gateway): batch inference telemetry per project and retry transient failures Fixes: fix(shared): keep metadata keys that collide with Object.prototype fix(batch-export): surface the real read failure, not a generic S3 error fix(api): type OtelSpan scalars and datas…",
+   "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.45.2",
    "page_url": "https://www.firmwarely.com/devices/langfuse/"
   },
   "nginx-proxy-manager": {
