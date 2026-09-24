@@ -9623,6 +9623,96 @@
    "type": "github",
    "repo": "Super-Badmen-Viper/NSMusicS",
    "product_url": "https://github.com/Super-Badmen-Viper/NSMusicS"
+  },
+  {
+   "id": "masterdnsvpn",
+   "brand": "MasterDnsVPN",
+   "model": "Advanced DNS tunneling VPN",
+   "category": "R",
+   "type": "github",
+   "repo": "masterking32/MasterDnsVPN",
+   "product_url": "https://github.com/masterking32/MasterDnsVPN"
+  },
+  {
+   "id": "twisted",
+   "brand": "Twisted",
+   "model": "Event-driven networking engine written in Python",
+   "category": "R",
+   "type": "github",
+   "repo": "twisted/twisted",
+   "product_url": "https://github.com/twisted/twisted"
+  },
+  {
+   "id": "rethink-app",
+   "brand": "Rethink App",
+   "model": "DNS over HTTPS / DNS over Tor / DNSCrypt client, WireGuard",
+   "category": "R",
+   "type": "github",
+   "repo": "celzero/rethink-app",
+   "product_url": "https://github.com/celzero/rethink-app"
+  },
+  {
+   "id": "hickory-dns",
+   "brand": "Hickory Dns",
+   "model": "Rust based DNS client, server, and resolver",
+   "category": "R",
+   "type": "github",
+   "repo": "hickory-dns/hickory-dns",
+   "product_url": "https://github.com/hickory-dns/hickory-dns"
+  },
+  {
+   "id": "doggo",
+   "brand": "Doggo",
+   "model": "Dog",
+   "category": "R",
+   "type": "github",
+   "repo": "mr-karan/doggo",
+   "product_url": "https://github.com/mr-karan/doggo"
+  },
+  {
+   "id": "dnscontrol",
+   "brand": "Dnscontrol",
+   "model": "Infrastructure as code for DNS",
+   "category": "R",
+   "type": "github",
+   "repo": "DNSControl/dnscontrol",
+   "product_url": "https://github.com/DNSControl/dnscontrol"
+  },
+  {
+   "id": "findomain",
+   "brand": "Findomain",
+   "model": "Fastest and complete solution for domain recognition",
+   "category": "R",
+   "type": "github",
+   "repo": "Findomain/Findomain",
+   "product_url": "https://github.com/Findomain/Findomain"
+  },
+  {
+   "id": "shadps4",
+   "brand": "shadPS4",
+   "model": "PlayStation 4 emulator",
+   "category": "C",
+   "type": "github",
+   "repo": "shadps4-emu/shadPS4",
+   "product_url": "https://github.com/shadps4-emu/shadPS4"
+  },
+  {
+   "id": "rpcs3",
+   "brand": "Rpcs3",
+   "model": "PlayStation 3 emulator and debugger",
+   "category": "C",
+   "type": "github",
+   "repo": "RPCS3/rpcs3",
+   "product_url": "https://github.com/RPCS3/rpcs3"
+  },
+  {
+   "id": "ruffle",
+   "brand": "Ruffle",
+   "model": "Flash Player emulator written in Rust",
+   "category": "C",
+   "type": "github",
+   "repo": "ruffle-rs/ruffle",
+   "product_url": "https://github.com/ruffle-rs/ruffle"
   }
  ]
 }
