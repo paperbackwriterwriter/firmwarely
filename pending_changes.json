@@ -496,6 +496,36 @@
    "notes": "vdev-v0.3.22 vdev-v0.3.22",
    "source_url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.22",
    "page_url": "https://www.firmwarely.com/devices/vector/"
+  },
+  "unpoller": {
+   "id": "unpoller",
+   "brand": "UnPoller",
+   "model": "UniFi metrics exporter",
+   "category": "R",
+   "status": "update",
+   "version": "5.2.8",
+   "previous": "5.2.7",
+   "released": "2026-09-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: a1cdb21b58d9c04e3d22114ea2d390595e669247 Merge pull request #​1094 from wolkenlosIT/patch-1 2152c020f9bd0130cfe70c6b2f646627b323f1c8 Update uap.go d46146bdd08164d6e42792b091f2e92b795e2a7d Merge pull request #​1093 from neilmunday/master 47ba6ca5f7bc035980f13af020fa4e3ea406ba04 Updated RE…",
+   "source_url": "https://github.com/unpoller/unpoller/releases/tag/v5.2.8",
+   "page_url": "https://www.firmwarely.com/devices/unpoller/"
+  },
+  "meshcentral": {
+   "id": "meshcentral",
+   "brand": "MeshCentral",
+   "model": "Remote management server",
+   "category": "R",
+   "status": "update",
+   "version": "1.2.6",
+   "previous": "1.2.5",
+   "released": "2026-09-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "029b7338 Version 1.2.6 2bbe3e55 add new sep 2026 agents for testing c146225f Verify the agent signature even when ignoreAgentHashCheck is set (#​8171) 3f3331d3 Apply per-device rights to the single-device query (SQL drivers) (#​8170) 9864ae39 win-wmi-fixed: workaround handle leak (#​8168) ed76eba1 …",
+   "source_url": "https://github.com/Ylianst/MeshCentral/releases/tag/1.2.6",
+   "page_url": "https://www.firmwarely.com/devices/meshcentral/"
   }
  }
 }
