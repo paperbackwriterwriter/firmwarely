@@ -571,6 +571,21 @@
    "notes": "🟢 New: 完成项目信息 - 列表视图 支持多字段显示与排序 🔨 Fixed: 移除登录后用户名收缩动画导致的BUG 其他细微调整 --- Docker 误报毒请下载结尾multi.zip版本或加入白名单 在线查杀报告 8.1.1",
    "source_url": "https://github.com/mvdctop/Movie_Data_Capture/releases/tag/8.1.2",
    "page_url": "https://www.firmwarely.com/devices/movie-data-capture/"
+  },
+  "1panel": {
+   "id": "1panel",
+   "brand": "1Panel",
+   "model": "Linux server panel",
+   "category": "A",
+   "status": "update",
+   "version": "2.3.2",
+   "previous": "2.3.1",
+   "released": "2026-09-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "English | 中文 New Features Panel Settings: Added support for creating multiple API keys Virtual Machine Management: Added support for mounting multiple CD-ROM ISO images Enhancements: Overview: Improved logging for disk command failures File Browser: Improved task messages for file copy, move, compr…",
+   "source_url": "https://github.com/1Panel-dev/1Panel/releases/tag/v2.3.2",
+   "page_url": "https://www.firmwarely.com/devices/1panel/"
   }
  }
 }
