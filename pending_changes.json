@@ -151,6 +151,36 @@
    "notes": "Mattermost Platform Release 11.11.1",
    "source_url": "https://github.com/mattermost/mattermost/releases/tag/v11.11.1",
    "page_url": "https://www.firmwarely.com/devices/mattermost/"
+  },
+  "nextcloud-server": {
+   "id": "nextcloud-server",
+   "brand": "Nextcloud",
+   "model": "Nextcloud server",
+   "category": "A",
+   "status": "update",
+   "version": "35.0.1",
+   "previous": "35.0.0",
+   "released": "2026-09-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "https://github.com/nextcloud-releases/server/releases/tag/v35.0.1",
+   "source_url": "https://github.com/nextcloud/server/releases/tag/v35.0.1",
+   "page_url": "https://www.firmwarely.com/devices/nextcloud-server/"
+  },
+  "kometa": {
+   "id": "kometa",
+   "brand": "Kometa",
+   "model": "Plex metadata manager",
+   "category": "A",
+   "status": "update",
+   "version": "2.5.1",
+   "previous": "2.5.0",
+   "released": "2026-09-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Added: Trace Plex queries before they start and report completion or failure with elapsed time, making pending requests visible when diagnosing apparent hangs. Fixed: Use Prime Video watch provider ID 9 for the streaming default when no region is specified, honoring the default US region. Report ar…",
+   "source_url": "https://github.com/Kometa-Team/Kometa/releases/tag/v2.5.1",
+   "page_url": "https://www.firmwarely.com/devices/kometa/"
   }
  }
 }
