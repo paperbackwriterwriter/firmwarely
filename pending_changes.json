@@ -301,6 +301,21 @@
    "notes": "v0.9.102: Changes: 🐛 Bug Fixes Fixed race condition when compiling in Blockly after page refresh Fixed scrollbar styling issues in Blockly right-click menus Fixed library right-click menu display issues Fixed secondary menu scrolling to ensure content scrolls properly and aligns with main menus Fix…",
    "source_url": "https://github.com/ailyProject/aily-blockly/releases/tag/v0.9.102",
    "page_url": "https://www.firmwarely.com/devices/aily-blockly/"
+  },
+  "activepieces": {
+   "id": "activepieces",
+   "brand": "Activepieces",
+   "model": "Workflow automation",
+   "category": "A",
+   "status": "update",
+   "version": "0.92.0",
+   "previous": "0.91.2",
+   "released": "2026-09-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "refactor(web): variable fonts, and a real --font-mono for the first time (#​15663) feat(delay): improve the step forms (#​15318) feat(analytics): stamp marketing attribution on the PostHog person at sign-up (#​15534) change the image download screenshot in builder canvas control (#​15608) chore(dep…",
+   "source_url": "https://github.com/activepieces/activepieces/releases/tag/0.92.0",
+   "page_url": "https://www.firmwarely.com/devices/activepieces/"
   }
  }
 }
