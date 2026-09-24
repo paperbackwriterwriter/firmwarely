@@ -196,6 +196,51 @@
    "notes": "Stirling PDF V3.0 is live! With this update we are introducing a lot of exciting new changes, A brand new automation system, Free OAuth SSO for all, brand new text editor and a ton of new features, bug fixes and security fixes We have a new system along side the \"PDF Editor\" called the \"PDF Process…",
    "source_url": "https://github.com/Stirling-Tools/Stirling-PDF/releases/tag/v3.0.0",
    "page_url": "https://www.firmwarely.com/devices/stirling-pdf/"
+  },
+  "cloudflared": {
+   "id": "cloudflared",
+   "brand": "Cloudflare",
+   "model": "Tunnel daemon",
+   "category": "R",
+   "status": "update",
+   "version": "2026.9.3",
+   "previous": "2026.9.1",
+   "released": "2026-09-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "SHA256 Checksums: cloudflared-amd64.pkg: 48d0d3b28b3b5d142490f57316981b65ae46fbbe33408c22b0a4a11b5242de50 cloudflared-arm64.pkg: 79f17181cda2bbcfe6ad36cd9ee1946faaf079e6a9d6c0bc4a32fbb644a4c29d cloudflared-darwin-amd64.tgz: ab588b3b4db9cdb4476c30a3db2a72635b1d8327d44741fee6799a0f37b0ec07 cloudflare…",
+   "source_url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.9.3",
+   "page_url": "https://www.firmwarely.com/devices/cloudflared/"
+  },
+  "mealie": {
+   "id": "mealie",
+   "brand": "Mealie",
+   "model": "Recipe manager",
+   "category": "A",
+   "status": "update",
+   "version": "3.28.0",
+   "previous": "3.27.0",
+   "released": "2026-09-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "🍴🍴🍴🍴🍴🍴: With the popularity of agentic AI, pull requests are popping and the contributors list keeps growing! Lots of exciting features and bug fixes in this release, and it's only been a week since the last one. Thanks to all our contributors, new and old! 🎉 Highlights: The food seed data has been…",
+   "source_url": "https://github.com/mealie-recipes/mealie/releases/tag/v3.28.0",
+   "page_url": "https://www.firmwarely.com/devices/mealie/"
+  },
+  "vector": {
+   "id": "vector",
+   "brand": "Vector",
+   "model": "Observability pipeline",
+   "category": "A",
+   "status": "update",
+   "version": "0.3.23",
+   "previous": "0.3.22",
+   "released": "2026-09-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "vdev-v0.3.23 vdev-v0.3.23",
+   "source_url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.23",
+   "page_url": "https://www.firmwarely.com/devices/vector/"
   }
  }
 }
