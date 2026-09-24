@@ -338,14 +338,29 @@
    "model": "Live streaming server",
    "category": "A",
    "status": "update",
-   "version": "5.0-r4",
+   "version": "6.0-r2",
    "previous": "6.0-r1",
    "released": "2026-09-24",
    "date_known": true,
    "eol": false,
-   "notes": "62202f7d748930bc8faf805afe1003c8f41ae0b3 Claude: Fix the 5.0 release workflow for the Windows package, Aliyun push and retired hosts. The v5.0-r4 release failed in cygwin64, where the Package SRS step exited 127 because makensis.exe is gone from the windows-latest runner, and in aliyun-srs, where t…",
-   "source_url": "https://github.com/ossrs/srs/releases/tag/v5.0-r4",
+   "notes": "If you would like to support SRS, please consider contributing to our OpenCollective. aab043c7dbe038a997e14eb8b4286d089315858e Claude: Remove the release update job that deploys to retired hosts. The v6.0-r2 release failed in the update job because lh.ossrs.net and d.ossrs.net no longer resolve, so…",
+   "source_url": "https://github.com/ossrs/srs/releases/tag/v6.0-r2",
    "page_url": "https://www.firmwarely.com/devices/srs/"
+  },
+  "firezone": {
+   "id": "firezone",
+   "brand": "Firezone",
+   "model": "Zero-trust access gateway",
+   "category": "R",
+   "status": "update",
+   "version": "1.5.21",
+   "previous": "1.6.2",
+   "released": "2026-09-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Please see our changelog for more details.",
+   "source_url": "https://github.com/firezone/firezone/releases/tag/apple-client-1.5.21",
+   "page_url": "https://www.firmwarely.com/devices/firezone/"
   }
  }
 }
