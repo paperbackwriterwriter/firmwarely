@@ -466,6 +466,36 @@
    "notes": "Install/update via the bootstrap script: shell wget -NP . https://dokku.com/install/v0.38.30/bootstrap.sh sudo DOKKU_TAG=v0.38.30 bash bootstrap.sh New Features: #​9074: Allow storage:mount --replace to vary fields per mount #​9075: Report each node-sysctls scope's stored map Tests: #​9071: chore(d…",
    "source_url": "https://github.com/dokku/dokku/releases/tag/v0.38.30",
    "page_url": "https://www.firmwarely.com/devices/dokku/"
+  },
+  "gatus": {
+   "id": "gatus",
+   "brand": "Gatus",
+   "model": "Health dashboard",
+   "category": "A",
+   "status": "update",
+   "version": "5.37.0",
+   "previous": "5.36.0",
+   "released": "2026-09-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: feat(alerting): allow configuring the topic for Zulip alerts feat(client): Allow configuration of client cookie storage feat(dns): Support TXT query type ci: Remove codecov from repository with fix(jsonpath): prevent panic on negative array index docs(alerting): Revise HomeAssistant…",
+   "source_url": "https://github.com/TwiN/gatus/releases/tag/v5.37.0",
+   "page_url": "https://www.firmwarely.com/devices/gatus/"
+  },
+  "vector": {
+   "id": "vector",
+   "brand": "Vector",
+   "model": "Observability pipeline",
+   "category": "A",
+   "status": "update",
+   "version": "0.3.22",
+   "previous": "0.3.21",
+   "released": "2026-09-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "vdev-v0.3.22 vdev-v0.3.22",
+   "source_url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.22",
+   "page_url": "https://www.firmwarely.com/devices/vector/"
   }
  }
 }
