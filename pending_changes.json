@@ -353,14 +353,29 @@
    "model": "Zero-trust access gateway",
    "category": "R",
    "status": "update",
-   "version": "1.5.21",
+   "version": "1.5.15",
    "previous": "1.6.2",
    "released": "2026-09-24",
    "date_known": true,
    "eol": false,
    "notes": "Please see our changelog for more details.",
-   "source_url": "https://github.com/firezone/firezone/releases/tag/apple-client-1.5.21",
+   "source_url": "https://github.com/firezone/firezone/releases/tag/android-client-1.5.15",
    "page_url": "https://www.firmwarely.com/devices/firezone/"
+  },
+  "navidrome": {
+   "id": "navidrome",
+   "brand": "Navidrome",
+   "model": "Music streaming server",
+   "category": "A",
+   "status": "update",
+   "version": "0.64.2",
+   "previous": "0.64.1",
+   "released": "2026-09-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "This is a bug fix release. The main fix is for users on slow storage (USB disks, remote drives), who have seen floods of database is locked errors, UI freezes and failed full scans since 0.64.0. Scans now cause much less lock contention: the artwork worker pauses while a scan runs, and ANALYZE no l…",
+   "source_url": "https://github.com/navidrome/navidrome/releases/tag/v0.64.2",
+   "page_url": "https://www.firmwarely.com/devices/navidrome/"
   }
  }
 }
