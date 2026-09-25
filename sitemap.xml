@@ -306,7 +306,7 @@
   <url><loc>https://www.firmwarely.com/devices/inadyn/</loc><lastmod>2025-10-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/snort3/</loc><lastmod>2026-04-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/zeek/</loc><lastmod>2026-08-21</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/wazuh/</loc><lastmod>2026-07-30</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/wazuh/</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/3proxy/</loc><lastmod>2026-08-22</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/envoy-proxy/</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/pomerium/</loc><lastmod>2026-09-09</lastmod></url>
@@ -482,7 +482,7 @@
   <url><loc>https://www.firmwarely.com/devices/jupyterlab/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/n8n/</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/activepieces/</loc><lastmod>2026-09-24</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/windmill/</loc><lastmod>2026-09-22</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/windmill/</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/temporal/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/airflow/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/prefect/</loc><lastmod>2026-09-14</lastmod></url>
@@ -667,7 +667,7 @@
   <url><loc>https://www.firmwarely.com/devices/pinetime/</loc><lastmod>2026-07-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/nvidia-shield-tv-pro/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/apple-watch-ultra-2/</loc><lastmod>2026-09-14</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/trilium/</loc><lastmod>2026-08-19</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/trilium/</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/glance/</loc><lastmod>2026-09-03</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/qwenpaw/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/langfuse/</loc><lastmod>2026-09-25</lastmod></url>
