@@ -128,13 +128,13 @@
    "model": "LLM observability",
    "category": "A",
    "status": "update",
-   "version": "4.45.4",
+   "version": "4.46.0",
    "previous": "4.45.2",
    "released": "2026-09-25",
    "date_known": true,
    "eol": false,
-   "notes": "What's Changed: chore(assistant): refresh embedded Langfuse skills test(worker): skip Azure LLM connection tests until CI key is replaced Full Changelog: https://github.com/langfuse/langfuse/compare/v4.45.3...v4.45.4",
-   "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.45.4",
+   "notes": "What's Changed: Features: feat(experiments): streamline side-by-side comparison feat(web): Add formatted json to the dataset item feat(skills): basic skill management feat(web): add 100-row page size option to tracing tables https://github.com/langfuse/langfuse/pull/17926 Fixes: fix(web): header me…",
+   "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.46.0",
    "page_url": "https://www.firmwarely.com/devices/langfuse/"
   },
   "dns-blocklists": {
@@ -226,6 +226,21 @@
    "notes": "Breaking Changes: none New Features: none Fixes: async replication: retry a panicking hashtree init attempt and gate hashbeat on readiness fix(reindex): index writes that land in a semantic migration's swap window backport: try to safe cast array values fix(raft): guard the bootstrap candidates map…",
    "source_url": "https://github.com/weaviate/weaviate/releases/tag/v1.39.7",
    "page_url": "https://www.firmwarely.com/devices/weaviate/"
+  },
+  "firefly-iii": {
+   "id": "firefly-iii",
+   "brand": "Firefly III",
+   "model": "Personal finance manager",
+   "category": "A",
+   "status": "update",
+   "version": "6.7.4",
+   "previous": "6.7.3",
+   "released": "2026-09-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "Welcome to release v6.7.4 of Firefly III. It contains the latest fixes, translations and features. Docker users can find this release under the latest tag. Changelog: Many issues fixed with some lingering issues still on my list. Added: Improved fonts. Ability to sort account list on a limited numb…",
+   "source_url": "https://github.com/firefly-iii/firefly-iii/releases/tag/v6.7.4",
+   "page_url": "https://www.firmwarely.com/devices/firefly-iii/"
   }
  }
 }
