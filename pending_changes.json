@@ -1,5 +1,21 @@
 {
- "since": null,
+ "since": "2026-09-25T09:17:14+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "prometheus": {
+   "id": "prometheus",
+   "brand": "Prometheus",
+   "model": "Metrics database",
+   "category": "A",
+   "status": "update",
+   "version": "3.15.0",
+   "previous": "3.14.0",
+   "released": "2026-09-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "[CHANGE] PromQL: A range query whose end was not aligned to step caused subqueries inside it to evaluate past the parent's last actual step, inflating peakSamples in the query stats and against the query.max-samples limit, and wasting storage I/O reading samples that were never used in the result. …",
+   "source_url": "https://github.com/prometheus/prometheus/releases/tag/v3.15.0",
+   "page_url": "https://www.firmwarely.com/devices/prometheus/"
+  }
+ }
 }
