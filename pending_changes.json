@@ -151,6 +151,36 @@
    "notes": "#​11567 #​11566 #​11565 #​11564 #​11562 #​11559 #​11558 #​11557 #​11556 #​11555",
    "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.268.34149",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "owncloud-server": {
+   "id": "owncloud-server",
+   "brand": "ownCloud",
+   "model": "File sync server",
+   "category": "A",
+   "status": "update",
+   "version": "11.0.1",
+   "previous": "11.0.0",
+   "released": "2026-09-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "v11.0.1 v11.0.1",
+   "source_url": "https://github.com/owncloud/core/releases/tag/v11.0.1",
+   "page_url": "https://www.firmwarely.com/devices/owncloud-server/"
+  },
+  "tooljet": {
+   "id": "tooljet",
+   "brand": "ToolJet",
+   "model": "Low-code platform",
+   "category": "A",
+   "status": "update",
+   "version": "3.20.233-lts",
+   "previous": "3.20.232-lts",
+   "released": "2026-09-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Fix: Text input inside a list view shows the previous query run's data chore: rebuild AI release with integrations, notifications, and datasource fixes Feat: add TJDB row limit, raise app/table limits (Free/Basic/Pro) Full Changelog: https://github.com/ToolJet/ToolJet/compare/v3.20.…",
+   "source_url": "https://github.com/ToolJet/ToolJet/releases/tag/v3.20.233-lts",
+   "page_url": "https://www.firmwarely.com/devices/tooljet/"
   }
  }
 }
