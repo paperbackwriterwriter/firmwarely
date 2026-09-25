@@ -196,6 +196,36 @@
    "notes": "Full Changelog: https://github.com/project-chip/connectedhomeip/compare/v1.6.0.0...v1.6.1.0 Matter SDK Release Notes: v1.6.1 (compared to v1.6.0): Executive Summary: The v1.6.1 release incorporates 332 commits beyond the v1.6.0 release baseline (commit 59bb2d613a / tag v1.6.0.0). Primary changes: D…",
    "source_url": "https://github.com/project-chip/connectedhomeip/releases/tag/v1.6.1.0",
    "page_url": "https://www.firmwarely.com/devices/matter-sdk/"
+  },
+  "spoolman": {
+   "id": "spoolman",
+   "brand": "Spoolman",
+   "model": "Filament inventory",
+   "category": "M",
+   "status": "update",
+   "version": "0.27.0",
+   "previous": "0.26.1",
+   "released": "2026-09-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release adds NFC/RFID tag support and a round of improvements to the new client. Highlights: NFC/RFID tags. Spools and filaments can now have tags linked to them. A tag is keyed on its hardware UID alone, so blank NTAG stickers work, and so do read-only vendor tags like Bambu, Creality, Qidi a…",
+   "source_url": "https://github.com/Donkie/Spoolman/releases/tag/v0.27.0",
+   "page_url": "https://www.firmwarely.com/devices/spoolman/"
+  },
+  "weaviate": {
+   "id": "weaviate",
+   "brand": "Weaviate",
+   "model": "Vector database",
+   "category": "A",
+   "status": "update",
+   "version": "1.39.7",
+   "previous": "1.39.6",
+   "released": "2026-09-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "Breaking Changes: none New Features: none Fixes: async replication: retry a panicking hashtree init attempt and gate hashbeat on readiness fix(reindex): index writes that land in a semantic migration's swap window backport: try to safe cast array values fix(raft): guard the bootstrap candidates map…",
+   "source_url": "https://github.com/weaviate/weaviate/releases/tag/v1.39.7",
+   "page_url": "https://www.firmwarely.com/devices/weaviate/"
   }
  }
 }
