@@ -421,6 +421,21 @@
    "notes": "refactor: 调整文件上传大小限制 refactor: 移除合集下载磁力链接支持",
    "source_url": "https://github.com/wushuo894/ani-rss/releases/tag/v3.2.38",
    "page_url": "https://www.firmwarely.com/devices/ani-rss/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.2668",
+   "previous": "0.24.2663",
+   "released": "2026-09-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: cf228beea7574389da01d7b6a00805e6a9ec77ea Revert \"crabpt: drop redundant default: true from cats\" 0a3d3780bf0e6488a47579ac77f1755e503d3241 kickasstorrents-to: add headers section to fix 403 error when using flaresolverr/byparr (#​17089) e5cad093bc082b9c5014218d7e18d8c524b1cbfe extratorrent…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2668",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
