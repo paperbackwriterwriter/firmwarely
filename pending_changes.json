@@ -181,6 +181,21 @@
    "notes": "What's Changed: Fix: Text input inside a list view shows the previous query run's data chore: rebuild AI release with integrations, notifications, and datasource fixes Feat: add TJDB row limit, raise app/table limits (Free/Basic/Pro) Full Changelog: https://github.com/ToolJet/ToolJet/compare/v3.20.…",
    "source_url": "https://github.com/ToolJet/ToolJet/releases/tag/v3.20.233-lts",
    "page_url": "https://www.firmwarely.com/devices/tooljet/"
+  },
+  "matter-sdk": {
+   "id": "matter-sdk",
+   "brand": "Matter",
+   "model": "connectedhomeip SDK",
+   "category": "S",
+   "status": "update",
+   "version": "1.6.1.0",
+   "previous": "1.6.0.0",
+   "released": "2026-09-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "Full Changelog: https://github.com/project-chip/connectedhomeip/compare/v1.6.0.0...v1.6.1.0 Matter SDK Release Notes: v1.6.1 (compared to v1.6.0): Executive Summary: The v1.6.1 release incorporates 332 commits beyond the v1.6.0 release baseline (commit 59bb2d613a / tag v1.6.0.0). Primary changes: D…",
+   "source_url": "https://github.com/project-chip/connectedhomeip/releases/tag/v1.6.1.0",
+   "page_url": "https://www.firmwarely.com/devices/matter-sdk/"
   }
  }
 }
