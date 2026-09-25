@@ -9713,6 +9713,96 @@
    "type": "github",
    "repo": "ruffle-rs/ruffle",
    "product_url": "https://github.com/ruffle-rs/ruffle"
+  },
+  {
+   "id": "nginx-proxy",
+   "brand": "Nginx Proxy",
+   "model": "Automated Nginx Reverse Proxy for Docker",
+   "category": "R",
+   "type": "github",
+   "repo": "nginx-proxy/nginx-proxy",
+   "product_url": "https://github.com/nginx-proxy/nginx-proxy"
+  },
+  {
+   "id": "bunkerweb",
+   "brand": "Bunkerweb",
+   "model": "Cloud-native Web Application Firewall (WAF)",
+   "category": "R",
+   "type": "github",
+   "repo": "bunkerity/bunkerweb",
+   "product_url": "https://github.com/bunkerity/bunkerweb"
+  },
+  {
+   "id": "tyk",
+   "brand": "Tyk",
+   "model": "API and AI Gateway",
+   "category": "R",
+   "type": "github",
+   "repo": "TykTechnologies/tyk",
+   "product_url": "https://github.com/TykTechnologies/tyk"
+  },
+  {
+   "id": "ocelot",
+   "brand": "Ocelot",
+   "model": "NET API Gateway",
+   "category": "R",
+   "type": "github",
+   "repo": "ThreeMammals/Ocelot",
+   "product_url": "https://github.com/ThreeMammals/Ocelot"
+  },
+  {
+   "id": "bfe",
+   "brand": "Bfe",
+   "model": "Layer 7 load balancer from baidu",
+   "category": "R",
+   "type": "github",
+   "repo": "bfenetworks/bfe",
+   "product_url": "https://github.com/bfenetworks/bfe"
+  },
+  {
+   "id": "easegress",
+   "brand": "Easegress",
+   "model": "Cloud Native traffic orchestration system",
+   "category": "R",
+   "type": "github",
+   "repo": "easegress-io/easegress",
+   "product_url": "https://github.com/easegress-io/easegress"
+  },
+  {
+   "id": "modlishka",
+   "brand": "Modlishka",
+   "model": "Reverse Proxy",
+   "category": "R",
+   "type": "github",
+   "repo": "drk1wi/Modlishka",
+   "product_url": "https://github.com/drk1wi/Modlishka"
+  },
+  {
+   "id": "agentgateway",
+   "brand": "Agentgateway",
+   "model": "Next Generation Agentic Proxy for AI Agents and MCP servers",
+   "category": "R",
+   "type": "github",
+   "repo": "agentgateway/agentgateway",
+   "product_url": "https://github.com/agentgateway/agentgateway"
+  },
+  {
+   "id": "zrok",
+   "brand": "Zrok",
+   "model": "Secure internet sharing made simple",
+   "category": "R",
+   "type": "github",
+   "repo": "openziti/zrok",
+   "product_url": "https://github.com/openziti/zrok"
+  },
+  {
+   "id": "godoxy",
+   "brand": "Godoxy",
+   "model": "High-performance reverse proxy and container orchestrator",
+   "category": "R",
+   "type": "github",
+   "repo": "yusing/godoxy",
+   "product_url": "https://github.com/yusing/godoxy"
   }
  ]
 }
