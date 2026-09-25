@@ -376,6 +376,21 @@
    "notes": "This is a bug fix release. The main fix is for users on slow storage (USB disks, remote drives), who have seen floods of database is locked errors, UI freezes and failed full scans since 0.64.0. Scans now cause much less lock contention: the artwork worker pauses while a scan runs, and ANALYZE no l…",
    "source_url": "https://github.com/navidrome/navidrome/releases/tag/v0.64.2",
    "page_url": "https://www.firmwarely.com/devices/navidrome/"
+  },
+  "incus": {
+   "id": "incus",
+   "brand": "Incus",
+   "model": "System container manager",
+   "category": "A",
+   "status": "update",
+   "version": "7.5.1",
+   "previous": "7.4",
+   "released": "2026-09-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "Full Changelog: https://github.com/lxc/incus/compare/v7.5.0...v7.5.1",
+   "source_url": "https://github.com/lxc/incus/releases/tag/v7.5.1",
+   "page_url": "https://www.firmwarely.com/devices/incus/"
   }
  }
 }
