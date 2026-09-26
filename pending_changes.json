@@ -38,13 +38,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.8.12.53-lts",
+   "version": "26.9.3.38-stable",
    "previous": "26.9.2.8-stable",
    "released": "2026-09-26",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.8.12.53-lts v26.8.12.53-lts",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.12.53-lts",
+   "notes": "Release v26.9.3.38-stable v26.9.3.38-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.9.3.38-stable",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "glances": {
