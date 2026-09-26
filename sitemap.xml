@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.firmwarely.com/</loc><lastmod>2026-09-25</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/</loc><lastmod>2026-09-25</lastmod></url>
-  <url><loc>https://www.firmwarely.com/my-devices.html</loc><lastmod>2026-09-25</lastmod></url>
+  <url><loc>https://www.firmwarely.com/</loc><lastmod>2026-09-26</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/</loc><lastmod>2026-09-26</lastmod></url>
+  <url><loc>https://www.firmwarely.com/my-devices.html</loc><lastmod>2026-09-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/pro/</loc><lastmod>2026-09-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/legal/</loc><lastmod>2026-09-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/support/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/routers/</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/nas/</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/smart-home/</loc><lastmod>2026-09-25</lastmod></url>
-  <url><loc>https://www.firmwarely.com/category/consoles-drones-ebikes/</loc><lastmod>2026-09-24</lastmod></url>
+  <url><loc>https://www.firmwarely.com/category/consoles-drones-ebikes/</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/makers/</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/pcs-tvs-gadgets/</loc><lastmod>2026-09-24</lastmod></url>
-  <url><loc>https://www.firmwarely.com/category/self-hosted/</loc><lastmod>2026-09-25</lastmod></url>
+  <url><loc>https://www.firmwarely.com/category/self-hosted/</loc><lastmod>2026-09-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/tp-link/</loc><lastmod>2026-09-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/apache/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/netgear/</loc><lastmod>2026-09-16</lastmod></url>
@@ -31,7 +31,7 @@
   <url><loc>https://www.firmwarely.com/brands/adguard/</loc><lastmod>2026-09-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/analogue/</loc><lastmod>2026-09-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/canonical/</loc><lastmod>2026-09-23</lastmod></url>
-  <url><loc>https://www.firmwarely.com/brands/coder/</loc><lastmod>2026-09-19</lastmod></url>
+  <url><loc>https://www.firmwarely.com/brands/coder/</loc><lastmod>2026-09-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/dbeaver/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/docker/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/duet3d/</loc><lastmod>2026-06-02</lastmod></url>
@@ -233,7 +233,7 @@
   <url><loc>https://www.firmwarely.com/devices/reprapfirmware/</loc><lastmod>2026-06-02</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/duet-web-control/</loc><lastmod>2026-06-02</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/grbl/</loc><lastmod>2019-08-26</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/fluidnc/</loc><lastmod>2026-09-12</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/fluidnc/</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/linuxcnc/</loc><lastmod>2026-07-03</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/lasergrbl/</loc><lastmod>2025-03-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/qmk-firmware/</loc><lastmod>2026-09-05</lastmod></url>
@@ -278,7 +278,7 @@
   <url><loc>https://www.firmwarely.com/devices/tp-link-tapo-c210/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/simplisafe-base-station/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/apple-tv-4k/</loc><lastmod>2026-09-14</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/valve-steam-deck-oled/</loc><lastmod>2026-09-22</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/valve-steam-deck-oled/</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/analogue-pocket/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/apple-vision-pro/</loc><lastmod>2026-09-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/bambu-lab-h2d/</loc><lastmod>2026-09-15</lastmod></url>
@@ -476,7 +476,7 @@
   <url><loc>https://www.firmwarely.com/devices/onedev/</loc><lastmod>2026-09-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/woodpecker-ci/</loc><lastmod>2026-09-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/verdaccio/</loc><lastmod>2026-09-20</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/code-server/</loc><lastmod>2026-09-19</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/code-server/</loc><lastmod>2026-09-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/coder/</loc><lastmod>2026-09-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/jupyterhub/</loc><lastmod>2026-09-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/jupyterlab/</loc><lastmod>2026-09-21</lastmod></url>
@@ -604,7 +604,7 @@
   <url><loc>https://www.firmwarely.com/devices/limesurvey/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/penpot/</loc><lastmod>2026-09-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/excalidraw/</loc><lastmod>2026-04-21</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/drawio/</loc><lastmod>2026-09-23</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/drawio/</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/onlyoffice-docs/</loc><lastmod>2026-05-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/cryptpad/</loc><lastmod>2026-05-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/etherpad/</loc><lastmod>2026-09-21</lastmod></url>

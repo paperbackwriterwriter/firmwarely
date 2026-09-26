@@ -331,6 +331,66 @@
    "notes": "New: Add setting to hide the AI Chat toolbar button (#​16607) Improved: AI Chat: Persist conversation history and add a chat switcher (#​16583) (#​16498) Improved: Improve how semantic search interacts with item IDs (#​16652) (#​16644) Fixed: Fix AI configuration test failing on reasoning models (#…",
    "source_url": "https://github.com/laurent22/joplin/releases/tag/v3.7.21",
    "page_url": "https://www.firmwarely.com/devices/joplin/"
+  },
+  "fluidnc": {
+   "id": "fluidnc",
+   "brand": "FluidNC",
+   "model": "CNC controller firmware",
+   "category": "M",
+   "status": "update",
+   "version": "4.1.1",
+   "previous": "4.1.0",
+   "released": "2026-09-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: CI cleanup: bump action versions, drop orphaned submodule gitlink Update bundled WebUI: fix tablet visualizer probe-argument parsing Fix laser/spindle power not updating during motion (regression from #​1817) A recursive file listing should not reset the board Emit the low-memory wa…",
+   "source_url": "https://github.com/bdring/FluidNC/releases/tag/v4.1.1",
+   "page_url": "https://www.firmwarely.com/devices/fluidnc/"
+  },
+  "valve-steam-deck-oled": {
+   "id": "valve-steam-deck-oled",
+   "brand": "Valve",
+   "model": "Steam Deck OLED",
+   "category": "C",
+   "status": "update",
+   "version": "3.9.2",
+   "previous": "3.8.28",
+   "released": "2026-09-25",
+   "date_known": false,
+   "eol": false,
+   "notes": "SteamOS release. See the news feed for details.",
+   "source_url": "https://store.steampowered.com/news/app/1675200",
+   "page_url": "https://www.firmwarely.com/devices/valve-steam-deck-oled/"
+  },
+  "code-server": {
+   "id": "code-server",
+   "brand": "Coder",
+   "model": "code-server",
+   "category": "A",
+   "status": "update",
+   "version": "4.139.1",
+   "previous": "4.138.0",
+   "released": "2026-09-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "Code v1.139.1 Changed: Update to Code 1.139.1 Fixed: --idle-timeout-seconds was only validated when passed as --idle-timeout-seconds= ; values of 60 or less passed as --idle-timeout-seconds were silently accepted.",
+   "source_url": "https://github.com/coder/code-server/releases/tag/v4.139.1",
+   "page_url": "https://www.firmwarely.com/devices/code-server/"
+  },
+  "drawio": {
+   "id": "drawio",
+   "brand": "draw.io",
+   "model": "Diagrams",
+   "category": "A",
+   "status": "update",
+   "version": "31.5.3",
+   "previous": "31.5.2",
+   "released": "2026-09-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "v31.5.3 v31.5.3",
+   "source_url": "https://github.com/jgraph/drawio/releases/tag/v31.5.3",
+   "page_url": "https://www.firmwarely.com/devices/drawio/"
   }
  }
 }
