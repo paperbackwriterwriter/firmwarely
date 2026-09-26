@@ -406,6 +406,36 @@
    "notes": "From newest to oldest: Fixed cutoff logic to correctly consider non-HI subtitles when HI is excluded in language profile for both series and movies. #​3607 7448b2a Added clickable GitHub issue links to release notes by parsing # patterns and converting them to hyperlinks 02bae52 Fixed napiprojekt t…",
    "source_url": "https://github.com/morpheus65535/bazarr/releases/tag/v1.6.2",
    "page_url": "https://www.firmwarely.com/devices/bazarr/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.2670",
+   "previous": "0.24.2668",
+   "released": "2026-09-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: 7f116875c2ef3a0dc1c61a143cc333cd6f359d66 0dayfiles: new cats 5664e720ce57a223b5b2a11368a24f31ea902402 build(deps): bump github/codeql-action from 4.38.0 to 4.38.1 (#​17092) This list of changes was auto generated.",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2670",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "freescout": {
+   "id": "freescout",
+   "brand": "FreeScout",
+   "model": "Help desk",
+   "category": "A",
+   "status": "update",
+   "version": "1.8.242",
+   "previous": "1.8.241",
+   "released": "2026-09-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "Added Make storage system compatible with remote storages (#​5603) Fixed Mailbox::excludeArchived() (#​5647) Fixed default module icon when the app is used in a subfolder. Trim ending space from users without last name (#​5651) Fixed extra space inserted into long customer names (#​5653) Fixed \"Att…",
+   "source_url": "https://github.com/freescout-help-desk/freescout/releases/tag/1.8.242",
+   "page_url": "https://www.firmwarely.com/devices/freescout/"
   }
  }
 }
