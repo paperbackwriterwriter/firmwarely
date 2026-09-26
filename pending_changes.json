@@ -16,6 +16,21 @@
    "notes": "#​11571 #​11570 #​11569 #​11568",
    "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.269.39607",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "technitium-dns": {
+   "id": "technitium-dns",
+   "brand": "Technitium",
+   "model": "DNS Server",
+   "category": "R",
+   "status": "critical",
+   "version": "15.5.1",
+   "previous": "15.5",
+   "released": "2026-09-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "Technitium DNS Server v15.5.1 is now available for download. This is a service update for the previous release that fixes multiple issues. This update also fixes multiple security issues that were reported. See what's new in this release: https://github.com/TechnitiumSoftware/DnsServer/blob/master/…",
+   "source_url": "https://github.com/TechnitiumSoftware/DnsServer/releases/tag/v15.5.1",
+   "page_url": "https://www.firmwarely.com/devices/technitium-dns/"
   }
  }
 }
