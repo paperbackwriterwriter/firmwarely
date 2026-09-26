@@ -391,6 +391,21 @@
    "notes": "v31.5.3 v31.5.3",
    "source_url": "https://github.com/jgraph/drawio/releases/tag/v31.5.3",
    "page_url": "https://www.firmwarely.com/devices/drawio/"
+  },
+  "bazarr": {
+   "id": "bazarr",
+   "brand": "Bazarr",
+   "model": "Subtitle manager",
+   "category": "A",
+   "status": "update",
+   "version": "1.6.2",
+   "previous": "1.6.1",
+   "released": "2026-09-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "From newest to oldest: Fixed cutoff logic to correctly consider non-HI subtitles when HI is excluded in language profile for both series and movies. #​3607 7448b2a Added clickable GitHub issue links to release notes by parsing # patterns and converting them to hyperlinks 02bae52 Fixed napiprojekt t…",
+   "source_url": "https://github.com/morpheus65535/bazarr/releases/tag/v1.6.2",
+   "page_url": "https://www.firmwarely.com/devices/bazarr/"
   }
  }
 }
