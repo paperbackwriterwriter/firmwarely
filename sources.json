@@ -9803,6 +9803,96 @@
    "type": "github",
    "repo": "yusing/godoxy",
    "product_url": "https://github.com/yusing/godoxy"
+  },
+  {
+   "id": "openbot",
+   "brand": "OpenBot",
+   "model": "Leverages smartphones as brains for low-cost robots",
+   "category": "M",
+   "type": "github",
+   "repo": "ob-f/OpenBot",
+   "product_url": "https://github.com/ob-f/OpenBot"
+  },
+  {
+   "id": "arduino-pico",
+   "brand": "Arduino Pico",
+   "model": "Raspberry Pi Pico Arduino core",
+   "category": "M",
+   "type": "github",
+   "repo": "earlephilhower/arduino-pico",
+   "product_url": "https://github.com/earlephilhower/arduino-pico"
+  },
+  {
+   "id": "nnn",
+   "brand": "Nnn",
+   "model": "N³ The unorthodox terminal file manager",
+   "category": "N",
+   "type": "github",
+   "repo": "jarun/nnn",
+   "product_url": "https://github.com/jarun/nnn"
+  },
+  {
+   "id": "sherpa-onnx",
+   "brand": "Sherpa Onnx",
+   "model": "Speech-to-text, text-to-speech, speaker diarization, speech",
+   "category": "M",
+   "type": "github",
+   "repo": "k2-fsa/sherpa-onnx",
+   "product_url": "https://github.com/k2-fsa/sherpa-onnx"
+  },
+  {
+   "id": "pivpn",
+   "brand": "Pivpn",
+   "model": "Simplest VPN installer, designed for Raspberry Pi",
+   "category": "R",
+   "type": "github",
+   "repo": "pivpn/pivpn",
+   "product_url": "https://github.com/pivpn/pivpn"
+  },
+  {
+   "id": "deskhop",
+   "brand": "Deskhop",
+   "model": "Desktop Switching Device",
+   "category": "M",
+   "type": "github",
+   "repo": "hrvach/deskhop",
+   "product_url": "https://github.com/hrvach/deskhop"
+  },
+  {
+   "id": "k3sup",
+   "brand": "K3sup",
+   "model": "Bootstrap K3s over SSH in < 60s",
+   "category": "M",
+   "type": "github",
+   "repo": "alexellis/k3sup",
+   "product_url": "https://github.com/alexellis/k3sup"
+  },
+  {
+   "id": "glslviewer",
+   "brand": "glslViewer",
+   "model": "Console-based GLSL Sandbox for 2D/3D shaders",
+   "category": "M",
+   "type": "github",
+   "repo": "patriciogonzalezvivo/glslViewer",
+   "product_url": "https://github.com/patriciogonzalezvivo/glslViewer"
+  },
+  {
+   "id": "raspotify",
+   "brand": "Raspotify",
+   "model": "Spotify Connect client that mostly Just Works™",
+   "category": "M",
+   "type": "github",
+   "repo": "dtcooper/raspotify",
+   "product_url": "https://github.com/dtcooper/raspotify"
+  },
+  {
+   "id": "xplr",
+   "brand": "Xplr",
+   "model": "Hackable, minimal, fast TUI file explorer",
+   "category": "N",
+   "type": "github",
+   "repo": "sayanarijit/xplr",
+   "product_url": "https://github.com/sayanarijit/xplr"
   }
  ]
 }
