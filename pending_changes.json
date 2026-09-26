@@ -31,6 +31,21 @@
    "notes": "Technitium DNS Server v15.5.1 is now available for download. This is a service update for the previous release that fixes multiple issues. This update also fixes multiple security issues that were reported. See what's new in this release: https://github.com/TechnitiumSoftware/DnsServer/blob/master/…",
    "source_url": "https://github.com/TechnitiumSoftware/DnsServer/releases/tag/v15.5.1",
    "page_url": "https://www.firmwarely.com/devices/technitium-dns/"
+  },
+  "clickhouse": {
+   "id": "clickhouse",
+   "brand": "ClickHouse",
+   "model": "Analytics database",
+   "category": "A",
+   "status": "update",
+   "version": "26.3.34.136-lts",
+   "previous": "26.9.2.8-stable",
+   "released": "2026-09-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release v26.3.34.136-lts v26.3.34.136-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.3.34.136-lts",
+   "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   }
  }
 }
