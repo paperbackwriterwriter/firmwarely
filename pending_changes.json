@@ -61,6 +61,36 @@
    "notes": "Bugs corrected: processcount pid_max always 0, and status comparison uses is instead of == #​3637 mcp extra allows mcp 2.0.0 which breaks --enable-mcp (No module named 'mcp.server.fastmcp') #​3640 TypeError: string indices must be integers, not 'str' in smart plugin during _add_device_stats #​3704 …",
    "source_url": "https://github.com/nicolargo/glances/releases/tag/v4.5.7",
    "page_url": "https://www.firmwarely.com/devices/glances/"
+  },
+  "nzbhydra2": {
+   "id": "nzbhydra2",
+   "brand": "NZBHydra2",
+   "model": "Usenet meta search",
+   "category": "A",
+   "status": "update",
+   "version": "9.0.6",
+   "previous": "9.0.5",
+   "released": "2026-09-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "v9.0.6 (2026-09-26): Fix The search progress dialog now counts indexer queries instead of claiming more indexers were searched than selected. One indexer may be queried several times to load more results. Fix When no loaded result passed your filters (e.g. a minimum age on a broad query) the search…",
+   "source_url": "https://github.com/theotherp/nzbhydra2/releases/tag/v9.0.6",
+   "page_url": "https://www.firmwarely.com/devices/nzbhydra2/"
+  },
+  "aily-blockly": {
+   "id": "aily-blockly",
+   "brand": "Aily",
+   "model": "Blockly AI IDE for Arduino",
+   "category": "M",
+   "status": "update",
+   "version": "0.9.103",
+   "previous": "0.9.102",
+   "released": "2026-09-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "v0.9.103: Changes: ✨ New Features Added student project management support to cloud features while preserving all existing operations 🐛 Bug Fixes Fixed project closure to properly cancel dependent tasks and record stop events Resolved project square loading issues including compilation errors and l…",
+   "source_url": "https://github.com/ailyProject/aily-blockly/releases/tag/v0.9.103",
+   "page_url": "https://www.firmwarely.com/devices/aily-blockly/"
   }
  }
 }
