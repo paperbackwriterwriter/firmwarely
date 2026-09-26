@@ -38,14 +38,29 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.3.34.136-lts",
+   "version": "26.7.15.52-stable",
    "previous": "26.9.2.8-stable",
    "released": "2026-09-26",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.3.34.136-lts v26.3.34.136-lts",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.3.34.136-lts",
+   "notes": "Release v26.7.15.52-stable v26.7.15.52-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.7.15.52-stable",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
+  },
+  "glances": {
+   "id": "glances",
+   "brand": "Glances",
+   "model": "System monitor",
+   "category": "A",
+   "status": "update",
+   "version": "4.5.7",
+   "previous": "4.5.6",
+   "released": "2026-09-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "Bugs corrected: processcount pid_max always 0, and status comparison uses is instead of == #​3637 mcp extra allows mcp 2.0.0 which breaks --enable-mcp (No module named 'mcp.server.fastmcp') #​3640 TypeError: string indices must be integers, not 'str' in smart plugin during _add_device_stats #​3704 …",
+   "source_url": "https://github.com/nicolargo/glances/releases/tag/v4.5.7",
+   "page_url": "https://www.firmwarely.com/devices/glances/"
   }
  }
 }
