@@ -1,5 +1,21 @@
 {
- "since": null,
+ "since": "2026-09-27T09:16:17+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "crosspoint-reader": {
+   "id": "crosspoint-reader",
+   "brand": "CrossPoint",
+   "model": "E-reader firmware",
+   "category": "M",
+   "status": "update",
+   "version": "1.6.5",
+   "previous": "1.6.0",
+   "released": "2026-09-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "Summary: Library view: Recent Books has grown into a powerful way to browse your entire collection on your SD card. Sort by recently added, title, or author, or just search for the book you want. TTF support: Devices with external RAM can now use TrueType (.ttf) fonts directly — no need to convert …",
+   "source_url": "https://github.com/crosspoint-reader/crosspoint-reader/releases/tag/1.6.5",
+   "page_url": "https://www.firmwarely.com/devices/crosspoint-reader/"
+  }
+ }
 }
