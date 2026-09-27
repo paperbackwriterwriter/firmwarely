@@ -196,6 +196,21 @@
    "notes": "v6.16.0 v6.16.0",
    "source_url": "https://github.com/traccar/traccar/releases/tag/v6.16.0",
    "page_url": "https://www.firmwarely.com/devices/traccar/"
+  },
+  "dokku": {
+   "id": "dokku",
+   "brand": "Dokku",
+   "model": "Docker-powered PaaS",
+   "category": "A",
+   "status": "update",
+   "version": "0.38.31",
+   "previous": "0.38.30",
+   "released": "2026-09-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "Install/update via the bootstrap script: shell wget -NP . https://dokku.com/install/v0.38.31/bootstrap.sh sudo DOKKU_TAG=v0.38.31 bash bootstrap.sh Bug Fixes: #​9084: Report stored node-sysctls images globally #​9082: Verify existing apps in git commands #​9081: Validate run:logs arguments #​9080: …",
+   "source_url": "https://github.com/dokku/dokku/releases/tag/v0.38.31",
+   "page_url": "https://www.firmwarely.com/devices/dokku/"
   }
  }
 }
