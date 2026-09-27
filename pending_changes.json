@@ -128,13 +128,13 @@
    "model": "Web archiver",
    "category": "A",
    "status": "update",
-   "version": "0.9.64",
+   "version": "0.9.70",
    "previous": "0.9.51",
-   "released": "2026-09-26",
+   "released": "2026-09-27",
    "date_known": true,
    "eol": false,
-   "notes": "Changes since v0.9.51: 🗂️ Improved snapshot cards, plugin previews, capture progress, and navigation across public and admin views. 🗃️ Fixed migrated snapshots failing to open, including archives created in non-UTC time zones. 🔗 Fixed saved-output links and previews for older and static archives, e…",
-   "source_url": "https://github.com/ArchiveBox/ArchiveBox/releases/tag/v0.9.64",
+   "notes": "Changes since v0.9.64: 🛠️ Fix an upgrade bug that could leave the background runner using 100% CPU with nothing left to archive. Existing affected collections are repaired automatically during upgrade. #​1892 🧠 Adjust parallel captures to the memory available on your server, using the memory consum…",
+   "source_url": "https://github.com/ArchiveBox/ArchiveBox/releases/tag/v0.9.70",
    "page_url": "https://www.firmwarely.com/devices/archivebox/"
   },
   "qmk-firmware": {
@@ -211,6 +211,21 @@
    "notes": "Install/update via the bootstrap script: shell wget -NP . https://dokku.com/install/v0.38.31/bootstrap.sh sudo DOKKU_TAG=v0.38.31 bash bootstrap.sh Bug Fixes: #​9084: Report stored node-sysctls images globally #​9082: Verify existing apps in git commands #​9081: Validate run:logs arguments #​9080: …",
    "source_url": "https://github.com/dokku/dokku/releases/tag/v0.38.31",
    "page_url": "https://www.firmwarely.com/devices/dokku/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.2680",
+   "previous": "0.24.2670",
+   "released": "2026-09-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: 0d4fdb290f95316ff671d559f2a6b33ee3cb2db4 magnetcat: new alt domains 9812a6aa90a0461ec0e94dcabfa3d534c2130d1c 52bt: new domanis d396f7c43015b3541e12b011ec14a56f2cb24078 amigosshare: new engine (#​17100) resolves #​4642 dc706d3d3c24a81e7c5ceaa23111f800db5531cf add thewordmusic a private Ger…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2680",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
