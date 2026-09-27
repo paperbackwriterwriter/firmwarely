@@ -143,13 +143,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.8.13.2-lts",
+   "version": "26.9.4.3-stable",
    "previous": "26.9.3.38-stable",
    "released": "2026-09-27",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.8.13.2-lts v26.8.13.2-lts",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.13.2-lts",
+   "notes": "Release v26.9.4.3-stable v26.9.4.3-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.9.4.3-stable",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "server": {
