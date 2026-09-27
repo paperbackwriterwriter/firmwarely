@@ -16,6 +16,36 @@
    "notes": "Summary: Library view: Recent Books has grown into a powerful way to browse your entire collection on your SD card. Sort by recently added, title, or author, or just search for the book you want. TTF support: Devices with external RAM can now use TrueType (.ttf) fonts directly — no need to convert …",
    "source_url": "https://github.com/crosspoint-reader/crosspoint-reader/releases/tag/1.6.5",
    "page_url": "https://www.firmwarely.com/devices/crosspoint-reader/"
+  },
+  "home-assistant-core": {
+   "id": "home-assistant-core",
+   "brand": "Home Assistant",
+   "model": "Core (monthly release)",
+   "category": "S",
+   "status": "update",
+   "version": "2026.9.4",
+   "previous": "2026.9.3",
+   "released": "2026-09-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "Turn off Tuya fans when the speed is set to 0% ([] - [#​181972]) ([tuya docs]) Fix Todoist timed calendar event duration ([] - [#​182121]) ([todoist docs]) Fix ISEO Argo BLE offering unrelated devices for discovery ([] - [#​182315]) ([iseo_argo_ble docs]) Bump pyenphase to 4.0.5 ([] - [#​182473]) (…",
+   "source_url": "https://github.com/home-assistant/core/releases/tag/2026.9.4",
+   "page_url": "https://www.firmwarely.com/devices/home-assistant-core/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.270.34476",
+   "previous": "37522026.269.39607",
+   "released": "2026-09-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​11580 #​11579 #​11577 #​11576 #​11575 #​11574 #​11573 #​11572",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.270.34476",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   }
  }
 }
