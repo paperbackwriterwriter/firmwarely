@@ -9893,6 +9893,96 @@
    "type": "github",
    "repo": "sayanarijit/xplr",
    "product_url": "https://github.com/sayanarijit/xplr"
+  },
+  {
+   "id": "linkace",
+   "brand": "LinkAce",
+   "model": "Archive to collect links of your favorite websites",
+   "category": "A",
+   "type": "github",
+   "repo": "Kovah/LinkAce",
+   "product_url": "https://github.com/Kovah/LinkAce"
+  },
+  {
+   "id": "tianji",
+   "brand": "Tianji",
+   "model": "Insight into everything, Website Analytics + Uptime Monitor",
+   "category": "A",
+   "type": "github",
+   "repo": "msgbyte/tianji",
+   "product_url": "https://github.com/msgbyte/tianji"
+  },
+  {
+   "id": "bambuddy",
+   "brand": "Bambuddy",
+   "model": "Bambu Lab",
+   "category": "M",
+   "type": "github",
+   "repo": "maziggy/bambuddy",
+   "product_url": "https://github.com/maziggy/bambuddy"
+  },
+  {
+   "id": "gokapi",
+   "brand": "Gokapi",
+   "model": "Selfhosted Firefox Send alternative without public upload",
+   "category": "A",
+   "type": "github",
+   "repo": "Forceu/Gokapi",
+   "product_url": "https://github.com/Forceu/Gokapi"
+  },
+  {
+   "id": "voidauth",
+   "brand": "Voidauth",
+   "model": "Single Sign-On for Your Self-Hosted Universe",
+   "category": "A",
+   "type": "github",
+   "repo": "voidauth/voidauth",
+   "product_url": "https://github.com/voidauth/voidauth"
+  },
+  {
+   "id": "alexandrie",
+   "brand": "Alexandrie",
+   "model": "Open-source, offline-first Notion, Obsidian & Confluence",
+   "category": "A",
+   "type": "github",
+   "repo": "Smaug6739/Alexandrie",
+   "product_url": "https://github.com/Smaug6739/Alexandrie"
+  },
+  {
+   "id": "donetick",
+   "brand": "Donetick",
+   "model": "Open-source, user-friendly app",
+   "category": "A",
+   "type": "github",
+   "repo": "donetick/donetick",
+   "product_url": "https://github.com/donetick/donetick"
+  },
+  {
+   "id": "dockflare",
+   "brand": "DockFlare",
+   "model": "Automate Cloudflare Tunnels with Docker Labels",
+   "category": "R",
+   "type": "github",
+   "repo": "ChrispyBacon-dev/DockFlare",
+   "product_url": "https://github.com/ChrispyBacon-dev/DockFlare"
+  },
+  {
+   "id": "local-deep-research",
+   "brand": "Local Deep Research",
+   "model": "~95% on SimpleQA (e.g",
+   "category": "S",
+   "type": "github",
+   "repo": "LearningCircuit/local-deep-research",
+   "product_url": "https://github.com/LearningCircuit/local-deep-research"
+  },
+  {
+   "id": "android",
+   "brand": "Android",
+   "model": "Home Assistant Companion",
+   "category": "S",
+   "type": "github",
+   "repo": "home-assistant/android",
+   "product_url": "https://github.com/home-assistant/android"
   }
  ]
 }
