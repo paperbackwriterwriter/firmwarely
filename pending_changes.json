@@ -166,6 +166,21 @@
    "notes": "Fix encoding and decoding of the room id sharing link via https://github.com/screego/server/pull/254",
    "source_url": "https://github.com/screego/server/releases/tag/v1.12.6",
    "page_url": "https://www.firmwarely.com/devices/server/"
+  },
+  "zrok": {
+   "id": "zrok",
+   "brand": "Zrok",
+   "model": "Secure internet sharing made simple",
+   "category": "R",
+   "status": "update",
+   "version": "2.0.5",
+   "previous": "2.0.4",
+   "released": "2026-09-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "CHANGELOG: FIX: The controller no longer crashes when the bandwidth-limit relax cycle meets a public share with no frontend selection. An account's limit is now cleared only once every one of its shares has been relaxed; a share that cannot be relaxed is retried on the next cycle without disturbing…",
+   "source_url": "https://github.com/openziti/zrok/releases/tag/v2.0.5",
+   "page_url": "https://www.firmwarely.com/devices/zrok/"
   }
  }
 }
