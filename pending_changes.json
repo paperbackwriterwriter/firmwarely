@@ -203,14 +203,29 @@
    "model": "Insight into everything, Website Analytics + Uptime Monitor",
    "category": "A",
    "status": "update",
-   "version": "1.33.5",
+   "version": "1.33.6",
    "previous": "1.33.3",
    "released": "2026-09-27",
    "date_known": true,
    "eol": false,
-   "notes": "1.33.5 (2026-09-27): Others: ai-gateway: load log payloads on demand (f0d58d4)",
-   "source_url": "https://github.com/msgbyte/tianji/releases/tag/v1.33.5",
+   "notes": "1.33.6 (2026-09-27): Bug Fixes: server: log elapsed time for express errors (65a5e8a)",
+   "source_url": "https://github.com/msgbyte/tianji/releases/tag/v1.33.6",
    "page_url": "https://www.firmwarely.com/devices/tianji/"
+  },
+  "metube": {
+   "id": "metube",
+   "brand": "MeTube",
+   "model": "yt-dlp web UI",
+   "category": "A",
+   "status": "update",
+   "version": "2026.09.27",
+   "previous": "2026.09.26",
+   "released": "2026-09-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "Docker images have been built and pushed: Docker Hub: alexta69/metube:latest alexta69/metube:2026.09.27 GitHub Container Registry: ghcr.io/alexta69/metube:latest ghcr.io/alexta69/metube:2026.09.27 Changes: feat: pair the video password with presets, give custom yt-dlp options a full row (345b8ae) f…",
+   "source_url": "https://github.com/alexta69/metube/releases/tag/2026.09.27",
+   "page_url": "https://www.firmwarely.com/devices/metube/"
   }
  }
 }
