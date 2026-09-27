@@ -181,6 +181,36 @@
    "notes": "CHANGELOG: FIX: The controller no longer crashes when the bandwidth-limit relax cycle meets a public share with no frontend selection. An account's limit is now cleared only once every one of its shares has been relaxed; a share that cannot be relaxed is retried on the next cycle without disturbing…",
    "source_url": "https://github.com/openziti/zrok/releases/tag/v2.0.5",
    "page_url": "https://www.firmwarely.com/devices/zrok/"
+  },
+  "ghostfolio": {
+   "id": "ghostfolio",
+   "brand": "Ghostfolio",
+   "model": "Wealth tracker",
+   "category": "A",
+   "status": "update",
+   "version": "3.74.0",
+   "previous": "3.73.0",
+   "released": "2026-09-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "Added: Added the dividend performance to the analysis page (experimental) Changed: Simplified the portfolio summary by hiding the currency on mobile Improved the performance of the logo endpoints by enabling the browser cache Improved the language localization for Catalan (ca) Improved the language…",
+   "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.74.0",
+   "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
+  },
+  "tianji": {
+   "id": "tianji",
+   "brand": "Tianji",
+   "model": "Insight into everything, Website Analytics + Uptime Monitor",
+   "category": "A",
+   "status": "update",
+   "version": "1.33.5",
+   "previous": "1.33.3",
+   "released": "2026-09-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.33.5 (2026-09-27): Others: ai-gateway: load log payloads on demand (f0d58d4)",
+   "source_url": "https://github.com/msgbyte/tianji/releases/tag/v1.33.5",
+   "page_url": "https://www.firmwarely.com/devices/tianji/"
   }
  }
 }
