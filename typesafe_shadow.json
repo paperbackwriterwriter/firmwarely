@@ -432,6 +432,78 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.9.5.2-stable",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-09-28T17:17:25+00:00",
+   "notes_chars": 41,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "unpoller",
+   "version": "5.2.10",
+   "name": "UnPoller UniFi metrics exporter",
+   "judged_at": "2026-09-28T17:17:25+00:00",
+   "notes_chars": 212,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "immich-server",
+   "version": "3.2.4",
+   "name": "Immich Photo backup server",
+   "judged_at": "2026-09-28T17:17:25+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "tianji",
+   "version": "1.33.7",
+   "name": "Tianji Insight into everything, Website Analytics + Uptime Monitor",
+   "judged_at": "2026-09-28T17:17:25+00:00",
+   "notes_chars": 214,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

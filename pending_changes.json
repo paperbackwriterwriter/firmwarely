@@ -173,13 +173,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.8.14.3-lts",
+   "version": "26.9.5.2-stable",
    "previous": "26.9.4.3-stable",
    "released": "2026-09-28",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.8.14.3-lts v26.8.14.3-lts",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.14.3-lts",
+   "notes": "Release v26.9.5.2-stable v26.9.5.2-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.9.5.2-stable",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "koel": {
@@ -263,13 +263,13 @@
    "model": "UniFi metrics exporter",
    "category": "R",
    "status": "update",
-   "version": "5.2.9",
+   "version": "5.2.10",
    "previous": "5.2.8",
    "released": "2026-09-28",
    "date_known": true,
    "eol": false,
-   "notes": "Changelog: fb46e13f621832340d7caddb5747f99450f8b254 Merge pull request #​1096 from unpoller/dependabot/go_modules/all-35c05f5449 5675702b51c03cf0d38abe36d4919d90882b0433 build(deps): bump the all group with 2 updates d34f837b031246424ce64dda02f972f509c56871 Merge pull request #​1095 from NotAFlight…",
-   "source_url": "https://github.com/unpoller/unpoller/releases/tag/v5.2.9",
+   "notes": "Changelog: 7a69a30771d92af43cb6fa3b1941eec6e79d82bf Merge pull request #​1097 from unpoller/fix/homebrew-tap-main 3cfd05b5cf7e91e93174efa290b80f56f1c39729 Point the Homebrew cask publish at the tap's main branch.",
+   "source_url": "https://github.com/unpoller/unpoller/releases/tag/v5.2.10",
    "page_url": "https://www.firmwarely.com/devices/unpoller/"
   },
   "seaweedfs": {
@@ -331,6 +331,36 @@
    "notes": "🚀 Features: Feature: Show firmware compile datetime in system info view Feature: Show daily maximum temperature of the inverter Feature: Show daily maximum production power of the inverter 🐛 Fixes: Fix: CMT radio loses channel, PA level and RX state on country mode change Fix: burst processing read…",
    "source_url": "https://github.com/tbnobody/OpenDTU/releases/tag/v26.9.28",
    "page_url": "https://www.firmwarely.com/devices/opendtu/"
+  },
+  "immich-server": {
+   "id": "immich-server",
+   "brand": "Immich",
+   "model": "Photo backup server",
+   "category": "A",
+   "status": "update",
+   "version": "3.2.4",
+   "previous": "3.2.2",
+   "released": "2026-09-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "It's been a while since we last had to sacrifice a release. Let's hope v3.2.3 was a good sacrifice for v3.3, which is right around the corner! Just another small patch that primarily fixes the memory leak people have observed through a dependency update. What's Changed: 🐛 Bug fixes: fix(mobile): sy…",
+   "source_url": "https://github.com/immich-app/immich/releases/tag/v3.2.4",
+   "page_url": "https://www.firmwarely.com/devices/immich-server/"
+  },
+  "tianji": {
+   "id": "tianji",
+   "brand": "Tianji",
+   "model": "Insight into everything, Website Analytics + Uptime Monitor",
+   "category": "A",
+   "status": "update",
+   "version": "1.33.7",
+   "previous": "1.33.6",
+   "released": "2026-09-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.33.7 (2026-09-28): Bug Fixes: ai-gateway: use event-safe blank SSE heartbeats (8365ce7) ai-router: keep heartbeat-only stream failures retryable (b3c1842) application: handle concurrent session creation (3dc5fce)",
+   "source_url": "https://github.com/msgbyte/tianji/releases/tag/v1.33.7",
+   "page_url": "https://www.firmwarely.com/devices/tianji/"
   }
  }
 }
