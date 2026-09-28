@@ -1,0 +1,56 @@
+name: Resend a weekly email
+
+# Manual only. Rebuilds a free-plan weekly email from the repo's history (see
+# scripts/rebuild_week.py) and sends it through scripts/user_alerts.py. Only the weekly
+# file exists in this run, so Pro subscribers are not mailed. Commits nothing.
+# Run it with dry_run first: the log lists who would get what.
+on:
+  workflow_dispatch:
+    inputs:
+      before:
+        description: "Commit just before the daily run whose weekly email went out wrong"
+        required: true
+      after:
+        description: "That daily run's own commit"
+        required: true
+      date:
+        description: "The weekly email's date (YYYY-MM-DD)"
+        required: true
+      dry_run:
+        description: "List who would be mailed, send nothing"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+jobs:
+  resend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Rebuild the week
+        run: python3 scripts/rebuild_week.py "${{ inputs.before }}" "${{ inputs.after }}" "${{ inputs.date }}"
+
+      - name: Send it to free subscribers
+        env:
+          BEEHIIV_API_KEY: ${{ secrets.BEEHIIV_API_KEY }}
+          BEEHIIV_PUB_ID: ${{ secrets.BEEHIIV_PUB_ID }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_FROM: ${{ vars.RESEND_FROM }}
+          SITE_URL: ${{ vars.SITE_URL }}
+          USER_ALERT_PLANS: ${{ vars.USER_ALERT_PLANS }}
+          USER_ALERT_TEST_EMAIL: ${{ secrets.USER_ALERT_TEST_EMAIL }}
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            python3 scripts/user_alerts.py --dry-run
+          else
+            python3 scripts/user_alerts.py
+          fi
