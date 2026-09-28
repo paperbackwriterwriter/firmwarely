@@ -286,6 +286,36 @@
    "notes": "3.5.0 - 2026-09-28: 🚀 Features: (api) Send a Seerr user agent on outbound requests (#​3395) - (a123d20) (notifications) Add support for ntfy.sh tags (#​3350) - (92bad10) (notifications) Add embed poster option for Gotify (#​3332) - (afb17aa) (overriderules) Apply override rules to advanced requests…",
    "source_url": "https://github.com/seerr-team/seerr/releases/tag/v3.5.0",
    "page_url": "https://www.firmwarely.com/devices/jellyseerr/"
+  },
+  "sparkyfitness": {
+   "id": "sparkyfitness",
+   "brand": "SparkyFitness",
+   "model": "Family fitness tracker",
+   "category": "A",
+   "status": "update",
+   "version": "1.7.3",
+   "previous": "1.7.2",
+   "released": "2026-09-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "💙 Support SparkyFitness: If SparkyFitness has been useful to you & your family, please consider sponsoring on GitHub or supporting via Ko-fi. Your support helps cover recurring costs such as AI coding tools, development infrastructure, and Apple & Google Developer memberships to keep the project ac…",
+   "source_url": "https://github.com/CodeWithCJ/SparkyFitness/releases/tag/v1.7.3",
+   "page_url": "https://www.firmwarely.com/devices/sparkyfitness/"
+  },
+  "ani-rss": {
+   "id": "ani-rss",
+   "brand": "ANi-RSS",
+   "model": "Anime RSS downloader",
+   "category": "A",
+   "status": "update",
+   "version": "3.2.39",
+   "previous": "3.2.38",
+   "released": "2026-09-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "refactor: 默认点击封面操作改为编辑订阅 refactor: 优化移动端布局",
+   "source_url": "https://github.com/wushuo894/ani-rss/releases/tag/v3.2.39",
+   "page_url": "https://www.firmwarely.com/devices/ani-rss/"
   }
  }
 }
