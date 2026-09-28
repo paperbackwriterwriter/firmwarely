@@ -16,7 +16,7 @@
   <url><loc>https://www.firmwarely.com/brands/tp-link/</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/apache/</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/netgear/</loc><lastmod>2026-09-16</lastmod></url>
-  <url><loc>https://www.firmwarely.com/brands/raspberry-pi/</loc><lastmod>2026-09-24</lastmod></url>
+  <url><loc>https://www.firmwarely.com/brands/raspberry-pi/</loc><lastmod>2026-09-27</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/home-assistant/</loc><lastmod>2026-09-27</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/asus/</loc><lastmod>2026-09-22</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/arduino/</loc><lastmod>2026-06-09</lastmod></url>
@@ -459,7 +459,7 @@
   <url><loc>https://www.firmwarely.com/devices/timescaledb/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/questdb/</loc><lastmod>2026-08-24</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/duckdb/</loc><lastmod>2026-07-22</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/meilisearch/</loc><lastmod>2026-09-21</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/meilisearch/</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/typesense/</loc><lastmod>2026-04-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/qdrant/</loc><lastmod>2026-09-04</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/weaviate/</loc><lastmod>2026-09-25</lastmod></url>
@@ -553,7 +553,7 @@
   <url><loc>https://www.firmwarely.com/devices/flarum/</loc><lastmod>2026-08-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/listmonk/</loc><lastmod>2026-06-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/mailcow/</loc><lastmod>2026-09-21</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/mailu/</loc><lastmod>2026-09-23</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/mailu/</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/roundcube/</loc><lastmod>2026-09-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/postal/</loc><lastmod>2026-06-03</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/chatwoot/</loc><lastmod>2026-09-18</lastmod></url>
@@ -696,7 +696,7 @@
   <url><loc>https://www.firmwarely.com/devices/wasm3/</loc><lastmod>2026-09-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/jerryscript/</loc><lastmod>2024-12-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/serial-studio/</loc><lastmod>2026-08-31</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/dns-blocklists/</loc><lastmod>2026-09-27</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/dns-blocklists/</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/gost/</loc><lastmod>2024-10-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/amass/</loc><lastmod>2026-04-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/gobuster/</loc><lastmod>2025-09-04</lastmod></url>
@@ -813,6 +813,6 @@
   <url><loc>https://www.firmwarely.com/devices/synology-srm/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/bambu-lab-a1-series/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/mikrotik-routeros/</loc><lastmod>2026-09-16</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/raspberry-pi-5-bootloader/</loc><lastmod>2026-09-24</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/raspberry-pi-5-bootloader/</loc><lastmod>2026-09-27</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/simplisafe-cameras/</loc><lastmod>2026-09-15</lastmod></url>
 </urlset>
