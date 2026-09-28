@@ -342,6 +342,96 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.03
    }
+  },
+  {
+   "id": "unpoller",
+   "version": "5.2.9",
+   "name": "UnPoller UniFi metrics exporter",
+   "judged_at": "2026-09-28T16:21:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "seaweedfs",
+   "version": "4.48",
+   "name": "SeaweedFS Distributed file store",
+   "judged_at": "2026-09-28T16:21:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.07,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "hugo",
+   "version": "0.167.0",
+   "name": "Hugo Static site generator",
+   "judged_at": "2026-09-28T16:21:49+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.59,
+    "security_fix_plain": 0.77,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "limesurvey",
+   "version": "7.3.0",
+   "name": "LimeSurvey Survey platform",
+   "judged_at": "2026-09-28T16:21:49+00:00",
+   "notes_chars": 12,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.09,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "opendtu",
+   "version": "26.9.28",
+   "name": "OpenDTU Solar inverter gateway firmware",
+   "judged_at": "2026-09-28T16:21:49+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
