@@ -391,6 +391,36 @@
    "notes": "🟢 New: 本地配置和云配置支持国际化 首次启动时提供语言选择 完成项目信息中，媒体元数据中新增标语字段 🔨 Fixed: 修复 NFO 文件读写及 XML 特殊字符处理 修正 NFO 字段映射：plot 写入剧情，outline 写入标语 修复原地刮削并重命名模式下，任务失败时字幕未重命名的问题 --- Docker 误报毒请下载结尾multi.zip版本或加入白名单 在线查杀报告 8.1.2",
    "source_url": "https://github.com/mvdctop/Movie_Data_Capture/releases/tag/8.1.3",
    "page_url": "https://www.firmwarely.com/devices/movie-data-capture/"
+  },
+  "zitadel": {
+   "id": "zitadel",
+   "brand": "ZITADEL",
+   "model": "Identity platform",
+   "category": "A",
+   "status": "critical",
+   "version": "4.19.2",
+   "previous": "4.19.1",
+   "released": "2026-09-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release fixes three security vulnerabilities. We recommend all 4.x deployments upgrade. Security: GHSA-x4c7-fpcx-w9q6 (high): SAML identity-provider confusion leading to account takeover GHSA-jh92-5mrj-p2w2 (high): account takeover through the unsigned Login V2 session cookie GHSA-w4gv-rcwj-w6…",
+   "source_url": "https://github.com/zitadel/zitadel/releases/tag/v4.19.2",
+   "page_url": "https://www.firmwarely.com/devices/zitadel/"
+  },
+  "safeline": {
+   "id": "safeline",
+   "brand": "Chaitin",
+   "model": "SafeLine web application firewall",
+   "category": "R",
+   "status": "update",
+   "version": "9.4.2",
+   "previous": "9.4.1",
+   "released": "2026-09-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "Added: Pro Added support for custom response status codes in the Error Limiting rule under HTTP Flood. Improved: Lite/Pro Support direct downgrade to the next lower edition when a license expires, while preserving the configurations and data for features available in that edition. Added support for…",
+   "source_url": "https://github.com/chaitin/SafeLine/releases/tag/v9.4.2",
+   "page_url": "https://www.firmwarely.com/devices/safeline/"
   }
  }
 }
