@@ -43,6 +43,32 @@ def added_section(discovered):
     return "\n".join(lines)
 
 
+def typesafe_section(now=None):
+    """Where TypeSafe's Jev and the regexes disagreed in the last day (shadow test)."""
+    try:
+        import typesafe_shadow as ts
+        from datetime import datetime, timedelta, timezone
+        now = now or datetime.now(timezone.utc)
+        recent = [j for j in ts.load_log()["judged"]
+                  if datetime.fromisoformat(j["judged_at"]) >= now - timedelta(days=1)]
+    except Exception:
+        return ""
+    if not recent:
+        return ""
+    lines = ["", f"## TypeSafe shadow test ({len(recent)} release(s) judged)", "",
+             f"Nothing here changes the site. Jev is the probability of yes: {ts.YES}+ counts as yes, "
+             f"{ts.NO} or less as no, anything between as unsure.", ""]
+    diffs = ts.disagreements(recent)
+    for j, q, kind in diffs:
+        what = "security fix" if q == "security_fix" else "end of life"
+        lines.append(f"- {'Differs' if kind == 'differs' else 'Unsure'}: {j['name']} `{j['version']}` — "
+                     f"{what}: rules say {'yes' if j['regex'][q] else 'no'}, Jev {j['jev'][q]:.2f}")
+    if not diffs:
+        lines.append("- Jev and the rules agree on every release.")
+    lines.append("")
+    return "\n".join(lines)
+
+
 def build(pending, discovered=None):
     """(issue markdown, changed.json payload dict, beehiiv title, beehiiv html) from the pending set."""
     items = fetch.sort_changes(list(pending.get("devices", {}).values()))
@@ -50,7 +76,7 @@ def build(pending, discovered=None):
     if not items:
         return None, None, None, None
     md, html_body = fetch.build_digest(items)
-    issue = fetch.build_issue_summary(items) + added_section(discovered)
+    issue = fetch.build_issue_summary(items) + added_section(discovered) + typesafe_section()
     payload = {"generated": fetch.NOW, "date": fetch.TODAY.isoformat(), "forced": forced,
                "count": len(items), "devices": items}
     return issue, payload, md.splitlines()[0].lstrip("# ").strip(), html_body

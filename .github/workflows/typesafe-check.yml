@@ -1,0 +1,25 @@
+name: TypeSafe check
+
+# Manual. Sends one known example (a release note fixing a CVE) to TypeSafe with the same
+# questions the shadow test asks, and fails unless the answers are the obvious ones. Use it
+# after adding or rotating TYPESAFE_API_KEY, and to see the shadow test's agreement so far.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Probe the API
+        env:
+          TYPESAFE_API_KEY: ${{ secrets.TYPESAFE_API_KEY }}
+        run: python3 scripts/typesafe_shadow.py --probe
+      - name: Agreement so far
+        run: python3 scripts/typesafe_shadow.py --report

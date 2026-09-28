@@ -187,6 +187,85 @@ def test_typed_devices():
           sent.get("vague@e.com", "").startswith("Firmware digest"), True)
 
 
+def test_typesafe_shadow():
+    """The TypeSafe shadow test only records; it must never change the site or stop the run."""
+    import typesafe_shadow as ts, digest, urllib.request, urllib.error, io
+    from datetime import datetime, timezone
+    rec = lambda i, v, notes: {"id": i, "brand": "Acme", "model": i, "version": v, "previous": "1",
+                               "notes": notes, "status": "update"}
+    pending = {"since": "t", "forced": False, "devices": {
+        "a": rec("a", "2", "Fixes CVE-2026-1 in the login page."),
+        "b": rec("b", "3", "Security hardening advice: keep your firmware updated. New dark mode."),
+        "c": rec("c", "4", "This product has reached end of life and will receive no further updates.")}}
+    seen = []
+    def fake(state, key):
+        seen.append(state)
+        p = {"a": (0.97, 0.01), "b": (0.08, 0.02), "c": (0.45, 0.96)}[state["product"].split()[-1]]
+        return {"security_fix": p[0], "security_fix_plain": p[0], "end_of_life": p[1]}, "jev-test"
+    log, judged, failed, left = ts.judge_pending("k", pending, {"judged": []}, fake)
+    check("every new release is judged once", (judged, failed, left), (3, 0, 0))
+    check("the model sees the product, version and notes", sorted(seen[0]), ["previous_version", "product", "release_notes", "version"])
+    check("judging again asks nothing new", ts.judge_pending("k", pending, log, fake)[1], 0)
+    check("a forced test run is not judged", ts.judge_pending("k", dict(pending, forced=True), {"judged": []}, fake)[1], 0)
+    b = next(j for j in log["judged"] if j["id"] == "b")
+    check("the regex flags boilerplate security wording (the reason for this test)", b["regex"]["security_fix"], True)
+    check("confident disagreements and unsure answers are told apart",
+          [(j["id"], q, kind) for j, q, kind in ts.disagreements(log["judged"])],
+          [("b", "security_fix", "differs"), ("c", "security_fix", "unsure")])
+    check("a Noul reads as yes / no / unsure", [ts.verdict(p) for p in (0.95, 0.5, 0.1)], ["yes", "unsure", "no"])
+    def broken(state, key):
+        raise RuntimeError("HTTP 529: overloaded")
+    check("an API failure skips the release and is retried next run",
+          ts.judge_pending("k", pending, {"judged": []}, broken)[1:3], (0, 3))
+
+    # the HTTP call: request shape per docs.typesafe.ai/api, retry on 429, parse the Noul answers
+    sent, calls = [], {"n": 0}
+    class Resp(io.BytesIO):
+        def __enter__(self): return self
+        def __exit__(self, *a): return False
+    def fake_urlopen(req, timeout=None):
+        calls["n"] += 1
+        sent.append(json.loads(req.data))
+        if calls["n"] == 1:
+            raise urllib.error.HTTPError(req.full_url, 429, "rate", {}, io.BytesIO(b"{}"))
+        return Resp(json.dumps({"model": "jev-1.13.0", "answers": {
+            "security_fix": {"type": "noul", "noul": 0.93}, "end_of_life": {"type": "noul", "noul": 0.02}},
+            "usage": {"input_tokens": 1, "output_tokens": 1}}).encode())
+    orig, orig_sleep = urllib.request.urlopen, ts.time.sleep
+    try:
+        urllib.request.urlopen, ts.time.sleep = fake_urlopen, lambda s: None
+        answers, model = ts.ask({"product": "x"}, "k")
+    finally:
+        urllib.request.urlopen, ts.time.sleep = orig, orig_sleep
+    check("a 429 is retried", calls["n"], 2)
+    check("answers come back as probabilities by question", (answers, model), ({"security_fix": 0.93, "end_of_life": 0.02}, "jev-1.13.0"))
+    check("the request names the model and every question is a Noul",
+          (sent[0]["model"], {q: v["type"] for q, v in sent[0]["questions"].items()}),
+          ("jev-latest", {"security_fix": "noul", "security_fix_plain": "noul", "end_of_life": "noul"}))
+    check("the plain variant is the same question without criteria",
+          (sent[0]["questions"]["security_fix_plain"]["instructions"] == sent[0]["questions"]["security_fix"]["instructions"],
+           "criteria" in sent[0]["questions"]["security_fix_plain"]), (True, False))
+
+    # the daily issue lists the day's disagreements
+    tmp = Path(tempfile.mkdtemp()) / "typesafe_shadow.json"
+    now = datetime.now(timezone.utc)
+    for j in log["judged"]:
+        j["judged_at"] = now.replace(microsecond=0).isoformat()
+    tmp.write_text(json.dumps(log))
+    orig_log = ts.LOG
+    try:
+        ts.LOG = tmp
+        section = digest.typesafe_section(now)
+    finally:
+        ts.LOG = orig_log
+    check("the daily issue shows where Jev and the rules differ", "Differs: Acme b `3` — security fix: rules say yes, Jev 0.08" in section, True)
+    check("...and where Jev is unsure", "Unsure: Acme c" in section, True)
+    check("...and never carries a link", "http" in section, False)
+    wf = Path(".github/workflows/nightly.yml").read_text()
+    check("the hourly run commits the shadow log", "typesafe_shadow.json" in wf, True)
+    check("the shadow step can't fail the run", "continue-on-error: true" in wf.split("TypeSafe shadow judgments")[1][:200], True)
+
+
 def test_weekly_roll():
     import digest, schedule
     from datetime import datetime, timezone
@@ -1147,7 +1226,7 @@ def test_schedule_and_digest():
           all(hasattr(fetch, f) for f in ("device_record", "check_source", "apply_result", "finish_record", "load_pending")), True)
 
 
-for t in (test_compare, test_new_release, test_saved_devices, test_routing, test_typed_devices, test_weekly_roll, test_forced_guard,
+for t in (test_compare, test_new_release, test_saved_devices, test_routing, test_typed_devices, test_typesafe_shadow, test_weekly_roll, test_forced_guard,
           test_update_guides, test_sources_well_formed, test_site_shows_only_real_data, test_names_said_once, test_support_page, test_dates_are_honest, test_withdrawn_devices_redirect, test_families, test_analytics_and_its_disclosure, test_form_rate_limit, test_captcha, test_side_gutter, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
           test_landing_pages, test_schedule_and_digest):
     print(f"\n{t.__name__}")
