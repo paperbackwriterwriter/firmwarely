@@ -307,6 +307,12 @@ def load_changes(path, label):
     return {c["id"]: c for c in data.get("devices", []) if c.get("id") and c.get("version")} or None
 
 
+def mask(email):
+    """c****l@gmail.com: enough to tell addresses apart in a public log, not to read them."""
+    name, _, domain = email.partition("@")
+    return (name[:1] + "*" * max(len(name) - 2, 1) + name[-1:] if len(name) > 1 else name) + "@" + domain
+
+
 def hits_for(saved, changes):
     """The saved devices that moved to a version newer than the one the person recorded."""
     hits = []
@@ -346,6 +352,7 @@ def main():
 
     seen = sent = skipped = failed = quiet = typed = unmatched = 0
     catalog = load_catalog()
+    reasons = {}
     try:
         people = list(subscribers(key, pub))
     except Exception as e:
@@ -373,6 +380,12 @@ def main():
         hits = hits_for(saved, changes)
         if not hits:
             quiet += 1
+            why = ("no devices saved" if not saved
+                   else "none of their devices changed" if not any(d["id"] in changes for d in saved)
+                   else "already on the new version")
+            reasons[why] = reasons.get(why, 0) + 1
+            if DRY_RUN:
+                print(f"  quiet {mask(email):40s} {plan}, {len(saved)} device(s): {why}")
             continue   # nothing of theirs moved: no email
 
         if sent >= MAX_EMAILS:
@@ -401,6 +414,7 @@ def main():
     print(f"\n{seen} subscriber(s) checked, {verb} {sent} email(s), "
           f"{quiet} with nothing of theirs changed, {failed} failed; "
           f"{typed} device list(s) typed into a signup box, {unmatched} of them matching nothing"
+          + (" | quiet: " + ", ".join(f"{n} {why}" for why, n in sorted(reasons.items())) if reasons else "")
           + (f", {skipped} over the {MAX_EMAILS} cap" if skipped else ""))
     return 1 if failed else 0
 
