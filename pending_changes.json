@@ -8,13 +8,13 @@
    "model": "Z-Wave driver",
    "category": "S",
    "status": "update",
-   "version": "15.30.0",
+   "version": "15.31.0",
    "previous": "15.29.0",
    "released": "2026-09-28",
    "date_known": true,
    "eol": false,
-   "notes": "Features: Implemented parsing and serialization for several commands that normally don't appear in everyday communication Bugfixes: Enforce the Thermostat Mode Set manufacturer-data byte limit (#​9222) Config file changes: Add manual refresh delay for Leviton DZ6HD (#​9272) Correct Shelly Wave Shut…",
-   "source_url": "https://github.com/zwave-js/zwave-js/releases/tag/v15.30.0",
+   "notes": "Features: Support grouping endpoints through configuration files (#​9205) Bugfixes: Added lint rules for correct firmware version formatting, fix conditions that never matched (#​9279) Changes under the hood: Config file lints now check all possible firmware and SDK version ranges config files with…",
+   "source_url": "https://github.com/zwave-js/zwave-js/releases/tag/v15.31.0",
    "page_url": "https://www.firmwarely.com/devices/node-zwave-js/"
   },
   "victoriametrics": {
@@ -436,6 +436,21 @@
    "notes": "Changed: Extended the net performance on the analysis page to include the dividends (experimental) Extended the net performance in the portfolio summary to include the dividends (experimental) Improved the get quotes functionality of the _Manual_ service Migrated the historical market data editor d…",
    "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.75.0",
    "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
+  },
+  "apple-watch-ultra-2": {
+   "id": "apple-watch-ultra-2",
+   "brand": "Apple",
+   "model": "Watch Ultra 2 (watchOS)",
+   "category": "P",
+   "status": "update",
+   "version": "27.0.1",
+   "previous": "27.0",
+   "released": "2026-09-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "View downloads",
+   "source_url": "https://developer.apple.com/news/releases/?id=09282026e",
+   "page_url": "https://www.firmwarely.com/devices/apple-watch-ultra-2/"
   }
  }
 }

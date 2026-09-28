@@ -594,6 +594,42 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "node-zwave-js",
+   "version": "15.31.0",
+   "name": "Z-Wave JS Z-Wave driver",
+   "judged_at": "2026-09-28T20:16:35+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "apple-watch-ultra-2",
+   "version": "27.0.1",
+   "name": "Apple Watch Ultra 2 (watchOS)",
+   "judged_at": "2026-09-28T20:16:35+00:00",
+   "notes_chars": 14,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
