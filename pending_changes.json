@@ -406,6 +406,36 @@
    "notes": "Docker images have been built and pushed: Docker Hub: alexta69/metube:latest alexta69/metube:2026.09.28 GitHub Container Registry: ghcr.io/alexta69/metube:latest ghcr.io/alexta69/metube:2026.09.28 Changes: fix: confine playlist/channel metadata files to the download directory (098cba4) fix: also pr…",
    "source_url": "https://github.com/alexta69/metube/releases/tag/2026.09.28",
    "page_url": "https://www.firmwarely.com/devices/metube/"
+  },
+  "qbittorrent": {
+   "id": "qbittorrent",
+   "brand": "qBittorrent",
+   "model": "BitTorrent client",
+   "category": "A",
+   "status": "update",
+   "version": "5.2.4",
+   "previous": "5.2.3",
+   "released": "2026-09-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "BUGFIX: Enable links in add torrent comments (TurboTheTurtle) #​24604 BUGFIX: Resolve relative UI theme paths against config folder (vrubleg) #​24658 BUGFIX: Fix redefined signal (glassez) #​24679 BUGFIX: Skip processing of already being added torrent source (glassez) #​24743 BUGFIX: Close file des…",
+   "source_url": "https://github.com/qbittorrent/qBittorrent/releases/tag/release-5.2.4",
+   "page_url": "https://www.firmwarely.com/devices/qbittorrent/"
+  },
+  "ghostfolio": {
+   "id": "ghostfolio",
+   "brand": "Ghostfolio",
+   "model": "Wealth tracker",
+   "category": "A",
+   "status": "update",
+   "version": "3.75.0",
+   "previous": "3.74.0",
+   "released": "2026-09-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changed: Extended the net performance on the analysis page to include the dividends (experimental) Extended the net performance in the portfolio summary to include the dividends (experimental) Improved the get quotes functionality of the _Manual_ service Migrated the historical market data editor d…",
+   "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.75.0",
+   "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
   }
  }
 }
