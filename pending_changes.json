@@ -1,5 +1,51 @@
 {
- "since": null,
+ "since": "2026-09-28T09:21:08+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "node-zwave-js": {
+   "id": "node-zwave-js",
+   "brand": "Z-Wave JS",
+   "model": "Z-Wave driver",
+   "category": "S",
+   "status": "update",
+   "version": "15.30.0",
+   "previous": "15.29.0",
+   "released": "2026-09-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "Features: Implemented parsing and serialization for several commands that normally don't appear in everyday communication Bugfixes: Enforce the Thermostat Mode Set manufacturer-data byte limit (#​9222) Config file changes: Add manual refresh delay for Leviton DZ6HD (#​9272) Correct Shelly Wave Shut…",
+   "source_url": "https://github.com/zwave-js/zwave-js/releases/tag/v15.30.0",
+   "page_url": "https://www.firmwarely.com/devices/node-zwave-js/"
+  },
+  "victoriametrics": {
+   "id": "victoriametrics",
+   "brand": "VictoriaMetrics",
+   "model": "Time series database",
+   "category": "A",
+   "status": "critical",
+   "version": "1.153.0",
+   "previous": "1.152.0",
+   "released": "2026-09-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "v1.153.0: Released at 2026-09-25 SECURITY: vminsert, vmagent and vmsingle: properly apply memory limits to the zstd encoded blocks ingested via native import. This prevents excessive memory allocation during ingestion when handling maliciously crafted requests. See GHSA-8g4f-32hw-vqf8. SECURITY: vm…",
+   "source_url": "https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.153.0",
+   "page_url": "https://www.firmwarely.com/devices/victoriametrics/"
+  },
+  "budibase": {
+   "id": "budibase",
+   "brand": "Budibase",
+   "model": "Low-code platform",
+   "category": "A",
+   "status": "critical",
+   "version": "3.47.0",
+   "previous": "3.46.0",
+   "released": "2026-09-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Increase license cache offline grace period Bump fflate from 0.4.8 to 0.4.9 in the all-non-major-security group across 1 directory by in https://github.com/Budibase/budibase/pull/19622 chore: upgrade Babel to v8 Fix for slack DMs Merge Cloud hotfixes back to master Add vulnerability…",
+   "source_url": "https://github.com/Budibase/budibase/releases/tag/v3.47.0",
+   "page_url": "https://www.firmwarely.com/devices/budibase/"
+  }
+ }
 }
