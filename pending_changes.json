@@ -53,13 +53,13 @@
    "model": "Personal finance manager",
    "category": "A",
    "status": "update",
-   "version": "6.7.5",
+   "version": "6.7.6",
    "previous": "6.7.4",
-   "released": "2026-09-27",
+   "released": "2026-09-28",
    "date_known": true,
    "eol": false,
-   "notes": "Welcome to release v6.7.5 of Firefly III. It contains the latest fixes, translations and features. Docker users can find this release under the latest tag. Changelog: Fixed: Issue 12878 (Reconciling Accounts directly from Assets Account page causes 404) reported Issue 12860 (Not yet stored attachme…",
-   "source_url": "https://github.com/firefly-iii/firefly-iii/releases/tag/v6.7.5",
+   "notes": "Welcome to release v6.7.6 of Firefly III. It contains the latest fixes, translations and features. Docker users can find this release under the latest tag. Changelog: Fixed: Issue 12908 (OAuth redirect breaks due to broken function call) reported Installation and upgrade instructions: Please read t…",
+   "source_url": "https://github.com/firefly-iii/firefly-iii/releases/tag/v6.7.6",
    "page_url": "https://www.firmwarely.com/devices/firefly-iii/"
   },
   "openbk7231t": {
@@ -316,6 +316,21 @@
    "notes": "refactor: 默认点击封面操作改为编辑订阅 refactor: 优化移动端布局",
    "source_url": "https://github.com/wushuo894/ani-rss/releases/tag/v3.2.39",
    "page_url": "https://www.firmwarely.com/devices/ani-rss/"
+  },
+  "apisix": {
+   "id": "apisix",
+   "brand": "Apache",
+   "model": "APISIX API gateway",
+   "category": "R",
+   "status": "update",
+   "version": "3.19.0",
+   "previous": "3.18.0",
+   "released": "2026-09-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "3.19.0 3.19.0",
+   "source_url": "https://github.com/apache/apisix/releases/tag/3.19.0",
+   "page_url": "https://www.firmwarely.com/devices/apisix/"
   }
  }
 }
