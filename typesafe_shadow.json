@@ -504,6 +504,60 @@
     "security_fix_plain": 0.05,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "apple-vision-pro",
+   "version": "27.0.1",
+   "name": "Apple Vision Pro",
+   "judged_at": "2026-09-28T18:20:42+00:00",
+   "notes_chars": 32,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.08,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "bazzite",
+   "version": "44.20260928.1",
+   "name": "Universal Blue Bazzite gaming OS",
+   "judged_at": "2026-09-28T18:20:42+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "metube",
+   "version": "2026.09.28",
+   "name": "MeTube yt-dlp web UI",
+   "judged_at": "2026-09-28T18:20:43+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.19,
+    "security_fix_plain": 0.16,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

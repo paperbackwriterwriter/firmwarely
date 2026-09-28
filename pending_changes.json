@@ -361,6 +361,51 @@
    "notes": "1.33.7 (2026-09-28): Bug Fixes: ai-gateway: use event-safe blank SSE heartbeats (8365ce7) ai-router: keep heartbeat-only stream failures retryable (b3c1842) application: handle concurrent session creation (3dc5fce)",
    "source_url": "https://github.com/msgbyte/tianji/releases/tag/v1.33.7",
    "page_url": "https://www.firmwarely.com/devices/tianji/"
+  },
+  "apple-vision-pro": {
+   "id": "apple-vision-pro",
+   "brand": "Apple",
+   "model": "Vision Pro",
+   "category": "C",
+   "status": "update",
+   "version": "27.0.1",
+   "previous": "27.0",
+   "released": "2026-09-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "View downloadsView release notes",
+   "source_url": "https://developer.apple.com/news/releases/?id=09282026d",
+   "page_url": "https://www.firmwarely.com/devices/apple-vision-pro/"
+  },
+  "bazzite": {
+   "id": "bazzite",
+   "brand": "Universal Blue",
+   "model": "Bazzite gaming OS",
+   "category": "C",
+   "status": "update",
+   "version": "44.20260928.1",
+   "previous": "44.20260928",
+   "released": "2026-09-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "This is an automatically generated changelog for release 44.20260928.1. From previous stable version 44.20260928 there have been the following changes. One package per new version shown. Major packages: | Name | Version | | --- | --- | | Kernel | 7.2.7-ogc1.1 | | Kernel (Nvidia LTS) | 6.18.52-ogc1.…",
+   "source_url": "https://github.com/ublue-os/bazzite/releases/tag/44.20260928.1",
+   "page_url": "https://www.firmwarely.com/devices/bazzite/"
+  },
+  "metube": {
+   "id": "metube",
+   "brand": "MeTube",
+   "model": "yt-dlp web UI",
+   "category": "A",
+   "status": "update",
+   "version": "2026.09.28",
+   "previous": "2026.09.27",
+   "released": "2026-09-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "Docker images have been built and pushed: Docker Hub: alexta69/metube:latest alexta69/metube:2026.09.28 GitHub Container Registry: ghcr.io/alexta69/metube:latest ghcr.io/alexta69/metube:2026.09.28 Changes: fix: confine playlist/channel metadata files to the download directory (098cba4) fix: also pr…",
+   "source_url": "https://github.com/alexta69/metube/releases/tag/2026.09.28",
+   "page_url": "https://www.firmwarely.com/devices/metube/"
   }
  }
 }
