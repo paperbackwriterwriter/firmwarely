@@ -200,8 +200,8 @@ def test_typesafe_shadow():
     seen = []
     def fake(state, key):
         seen.append(state)
-        p = {"a": (0.97, 0.01), "b": (0.08, 0.02), "c": (0.03, 0.96)}[state["product"].split()[-1]]
-        return {"security_fix": p[0], "end_of_life": p[1]}, "jev-test"
+        p = {"a": (0.97, 0.01), "b": (0.08, 0.02), "c": (0.45, 0.96)}[state["product"].split()[-1]]
+        return {"security_fix": p[0], "security_fix_plain": p[0], "end_of_life": p[1]}, "jev-test"
     log, judged, failed, left = ts.judge_pending("k", pending, {"judged": []}, fake)
     check("every new release is judged once", (judged, failed, left), (3, 0, 0))
     check("the model sees the product, version and notes", sorted(seen[0]), ["previous_version", "product", "release_notes", "version"])
@@ -209,7 +209,10 @@ def test_typesafe_shadow():
     check("a forced test run is not judged", ts.judge_pending("k", dict(pending, forced=True), {"judged": []}, fake)[1], 0)
     b = next(j for j in log["judged"] if j["id"] == "b")
     check("the regex flags boilerplate security wording (the reason for this test)", b["regex"]["security_fix"], True)
-    check("...and that shows as a disagreement", [(j["id"], q) for j, q in ts.disagreements(log["judged"])], [("b", "security_fix")])
+    check("confident disagreements and unsure answers are told apart",
+          [(j["id"], q, kind) for j, q, kind in ts.disagreements(log["judged"])],
+          [("b", "security_fix", "differs"), ("c", "security_fix", "unsure")])
+    check("a Noul reads as yes / no / unsure", [ts.verdict(p) for p in (0.95, 0.5, 0.1)], ["yes", "unsure", "no"])
     def broken(state, key):
         raise RuntimeError("HTTP 529: overloaded")
     check("an API failure skips the release and is retried next run",
@@ -236,9 +239,12 @@ def test_typesafe_shadow():
         urllib.request.urlopen, ts.time.sleep = orig, orig_sleep
     check("a 429 is retried", calls["n"], 2)
     check("answers come back as probabilities by question", (answers, model), ({"security_fix": 0.93, "end_of_life": 0.02}, "jev-1.13.0"))
-    check("the request names the model and both questions as Noul",
+    check("the request names the model and every question is a Noul",
           (sent[0]["model"], {q: v["type"] for q, v in sent[0]["questions"].items()}),
-          ("jev-latest", {"security_fix": "noul", "end_of_life": "noul"}))
+          ("jev-latest", {"security_fix": "noul", "security_fix_plain": "noul", "end_of_life": "noul"}))
+    check("the plain variant is the same question without criteria",
+          (sent[0]["questions"]["security_fix_plain"]["instructions"] == sent[0]["questions"]["security_fix"]["instructions"],
+           "criteria" in sent[0]["questions"]["security_fix_plain"]), (True, False))
 
     # the daily issue lists the day's disagreements
     tmp = Path(tempfile.mkdtemp()) / "typesafe_shadow.json"
@@ -252,7 +258,8 @@ def test_typesafe_shadow():
         section = digest.typesafe_section(now)
     finally:
         ts.LOG = orig_log
-    check("the daily issue shows where Jev and the rules differ", "rules say yes, Jev 0.08" in section, True)
+    check("the daily issue shows where Jev and the rules differ", "Differs: Acme b `3` — security fix: rules say yes, Jev 0.08" in section, True)
+    check("...and where Jev is unsure", "Unsure: Acme c" in section, True)
     check("...and never carries a link", "http" in section, False)
     wf = Path(".github/workflows/nightly.yml").read_text()
     check("the hourly run commits the shadow log", "typesafe_shadow.json" in wf, True)

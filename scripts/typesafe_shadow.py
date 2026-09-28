@@ -35,7 +35,9 @@ ENDPOINT = "https://api.typesafe.ai/v1/systemone"
 MODEL = "jev-latest"
 MAX_PER_RUN = 40      # a normal hour has a handful of releases; a backlog drains over a few runs
 TIMEOUT = 20
-THRESHOLD = 0.5       # for reporting agreement only; the real cut-off gets chosen from this data
+# Reporting only (the real cut-off gets chosen from this data). A Noul is the probability of
+# yes, so the middle band is "unsure" rather than a weak yes: docs.typesafe.ai/primitives/noul.
+YES, NO = 0.8, 0.2
 
 QUESTIONS = {
     "security_fix": {
@@ -50,6 +52,13 @@ QUESTIONS = {
                      "mention security only generally (advice to keep firmware updated, a security "
                      "setting or feature, boilerplate) without saying this release fixes a flaw.",
         },
+    },
+    # the same question without criteria: the Noul guide suggests trying both on real data
+    # and keeping whichever does better; questions in one request run in parallel
+    "security_fix_plain": {
+        "type": "noul",
+        "instructions": "Do `release_notes` say that this release of `product` fixes a security "
+                        "vulnerability in `product` itself?",
     },
     "end_of_life": {
         "type": "noul",
@@ -88,8 +97,14 @@ def ask(state, key, tries=3):
 
 def regex_verdicts(rec):
     text = f"{rec.get('notes', '')} {rec.get('version', '')}"
-    return {"security_fix": bool(fetch.SECURITY.search(text)),
+    security = bool(fetch.SECURITY.search(text))
+    return {"security_fix": security, "security_fix_plain": security,
             "end_of_life": bool(fetch.EOL.search(rec.get("notes") or ""))}
+
+
+def verdict(p):
+    """A Noul as yes / no / unsure."""
+    return "yes" if p >= YES else "no" if p <= NO else "unsure"
 
 
 def load_log():
@@ -128,24 +143,33 @@ def judge_pending(key, pending=None, log=None, asker=ask):
     return log, judged, failed, max(len(todo) - MAX_PER_RUN, 0)
 
 
-def disagreements(entries, threshold=THRESHOLD):
+def disagreements(entries, questions=("security_fix", "end_of_life")):
+    """(entry, question, kind): kind "differs" when Jev is confident and the regex says the
+    opposite, "unsure" when Jev is in the middle band."""
     out = []
     for j in entries:
-        for q in QUESTIONS:
-            if q in j["jev"] and (j["jev"][q] >= threshold) != j["regex"][q]:
-                out.append((j, q))
+        for q in questions:
+            if q not in j["jev"]:
+                continue
+            v = verdict(j["jev"][q])
+            if v == "unsure":
+                out.append((j, q, "unsure"))
+            elif (v == "yes") != j["regex"][q]:
+                out.append((j, q, "differs"))
     return out
 
 
 def report(entries):
-    lines = [f"{len(entries)} release(s) judged."]
+    lines = [f"{len(entries)} release(s) judged. Jev yes >= {YES}, no <= {NO}, unsure between."]
     for q in QUESTIONS:
         both = [j for j in entries if q in j["jev"]]
-        agree = sum((j["jev"][q] >= THRESHOLD) == j["regex"][q] for j in both)
-        lines.append(f"  {q}: agree on {agree}/{len(both)}; regex yes {sum(j['regex'][q] for j in both)}, "
-                     f"Jev yes {sum(j['jev'][q] >= THRESHOLD for j in both)}")
-    for j, q in disagreements(entries):
-        lines.append(f"  - {j['name']} {j['version']}: {q} regex={'yes' if j['regex'][q] else 'no'}, "
+        vs = [verdict(j["jev"][q]) for j in both]
+        agree = sum(v != "unsure" and (v == "yes") == j["regex"][q] for v, j in zip(vs, both))
+        lines.append(f"  {q}: agree {agree}/{len(both)}, differ {sum(v != 'unsure' for v in vs) - agree}, "
+                     f"unsure {vs.count('unsure')}; regex yes {sum(j['regex'][q] for j in both)}, "
+                     f"Jev yes {vs.count('yes')}")
+    for j, q, kind in disagreements(entries, tuple(QUESTIONS)):
+        lines.append(f"  - {kind}: {j['name']} {j['version']}: {q} regex={'yes' if j['regex'][q] else 'no'}, "
                      f"Jev={j['jev'][q]:.2f}")
     return "\n".join(lines)
 
@@ -166,7 +190,7 @@ def main():
     if "--probe" in sys.argv:
         answers, model = ask(state_for(PROBE), key)
         print(f"typesafe probe ({model}): {answers}")
-        ok = answers.get("security_fix", 0) >= 0.5 and answers.get("end_of_life", 1) < 0.5
+        ok = answers.get("security_fix", 0) >= YES and answers.get("end_of_life", 1) <= NO
         print("probe: as expected" if ok else "probe: UNEXPECTED answers for a clear CVE fix")
         return 0 if ok else 1
     log, judged, failed, left = judge_pending(key)

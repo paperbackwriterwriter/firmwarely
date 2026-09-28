@@ -56,15 +56,15 @@ def typesafe_section(now=None):
     if not recent:
         return ""
     lines = ["", f"## TypeSafe shadow test ({len(recent)} release(s) judged)", "",
-             "Nothing here changes the site. A difference is where Jev (probability) and our keyword "
-             "rules would label a release differently.", ""]
+             f"Nothing here changes the site. Jev is the probability of yes: {ts.YES}+ counts as yes, "
+             f"{ts.NO} or less as no, anything between as unsure.", ""]
     diffs = ts.disagreements(recent)
-    for j, q in diffs:
+    for j, q, kind in diffs:
         what = "security fix" if q == "security_fix" else "end of life"
-        lines.append(f"- {j['name']} `{j['version']}` — {what}: rules say "
-                     f"{'yes' if j['regex'][q] else 'no'}, Jev {j['jev'][q]:.2f}")
+        lines.append(f"- {'Differs' if kind == 'differs' else 'Unsure'}: {j['name']} `{j['version']}` — "
+                     f"{what}: rules say {'yes' if j['regex'][q] else 'no'}, Jev {j['jev'][q]:.2f}")
     if not diffs:
-        lines.append("- No differences.")
+        lines.append("- Jev and the rules agree on every release.")
     lines.append("")
     return "\n".join(lines)
 
