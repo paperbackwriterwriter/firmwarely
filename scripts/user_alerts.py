@@ -3,8 +3,9 @@
 Firmwarely per-user alerts.
 
 Reads changed.json (written by scripts/fetch.py only when something actually changed)
-and emails each subscriber about the devices *they* saved on /my-devices.html — and
-nothing else. Standard library only, same as the rest of the pipeline.
+and emails each subscriber about the devices *they* saved on /my-devices.html, or, when
+they haven't saved any, about everything. Standard library only, same as the rest of the
+pipeline.
 
   python3 scripts/user_alerts.py             # send
   python3 scripts/user_alerts.py --dry-run   # print who would get what, send nothing
@@ -12,6 +13,8 @@ nothing else. Standard library only, same as the rest of the pipeline.
 Everyone on a plan in USER_ALERT_PLANS (default "all") with an active subscription is
 mailed only about devices *they* saved, and only when the version they recorded is older
 than the one we found (a blank version counts as older). Nothing of theirs moved, no email.
+Someone with no devices saved at all (the homepage signup asks only for an address) gets
+the digest of everything that changed instead, with a nudge to pick their devices.
 
 - Pro accounts: daily, from changed.json (what moved since yesterday), unlimited devices.
 - Free accounts: weekly, from changed_weekly.json, which scripts/digest.py writes only on
@@ -223,6 +226,64 @@ def pretty_date(iso):
         return str(iso or "")
 
 
+GROUPS = [("critical", "Security fixes — update now"), ("update", "New firmware"),
+          ("current", "Also released"), ("eol", "End of life notices")]
+DIGEST_MAX = 40   # a week can carry 100+ releases; security fixes and EOL always, the rest capped
+
+
+def digest_subject(date, weekly=False):
+    return f"{'Firmware this week' if weekly else 'Firmware digest'} — {pretty_date(date)}"
+
+
+def render_digest(changes, weekly=False):
+    """Everything that changed, for a subscriber who hasn't saved any devices yet, and an
+    invitation to pick them. Security fixes and end-of-life notices are always listed in
+    full; ordinary releases are capped at DIGEST_MAX with a pointer to the rest."""
+    groups = {}
+    for c in changes:
+        groups.setdefault("current" if c.get("status") == "stale" else c.get("status"), []).append(c)
+    room = DIGEST_MAX - len(groups.get("critical", [])) - len(groups.get("eol", []))
+    parts, left_out = [], 0
+    for key, heading in GROUPS:
+        items = groups.get(key) or []
+        if key in ("update", "current"):
+            keep = items[:max(room, 0)]
+            room -= len(keep)
+            left_out += len(items) - len(keep)
+            items = keep
+        if not items:
+            continue
+        parts.append(f"<h3 style=\"font-size:16px;margin:20px 0 6px\">{heading}</h3><ul>")
+        for c in items:
+            line = f"<strong>{html.escape(full_name(c))}</strong> — <code>{html.escape(c['version'])}</code>"
+            if c.get("released"):
+                seen = "" if c.get("date_known", True) else "first seen "
+                line += f" ({seen}{html.escape(c['released'])})"
+            note = (c.get("notes") or "").strip()
+            if note:
+                note = note[:180] + "…" if len(note) > 180 else note
+                line += f'<br><span style="color:#555">{html.escape(note)}</span>'
+            line += (f'<br><span style="font-size:14px">'
+                     f'<a href="{html.escape(c["page_url"])}">device page</a></span>')
+            parts.append(f'<li style="margin:0 0 14px">{line}</li>')
+        parts.append("</ul>")
+    if left_out:
+        parts.append(f'<p>…and {left_out} more. <a href="{html.escape(SITE)}/devices/">See every device</a>.</p>')
+    n = len(changes)
+    return (
+        '<div style="font-family:-apple-system,Helvetica,Arial,sans-serif;font-size:16px;'
+        'line-height:1.5;color:#111;max-width:600px">'
+        f"<p>{n} device{'' if n == 1 else 's'} shipped new firmware {'this week' if weekly else 'since yesterday'}.</p>"
+        f'<p style="background:#f4f4f4;padding:10px 12px;border-radius:6px">You haven\'t picked your devices yet. '
+        f'<a href="{html.escape(SITE)}/my-devices.html">Add them on My devices</a> and this email becomes a short '
+        "list about your own hardware, with the version you're on.</p>"
+        + "".join(parts) +
+        (f'<p style="color:#666;font-size:14px">You\'re on the free plan, so this comes once a week. '
+         f'<a href="{html.escape(SITE)}/pro/">Pro</a> sends it every morning.</p>' if weekly else "")
+        + "</div>"
+    )
+
+
 def subject_for(hits, weekly=False):
     one = len(hits) == 1
     what = (f"your {full_name(hits[0]['change'])}" if one
@@ -329,9 +390,17 @@ def hits_for(saved, changes):
     return hits
 
 
+def file_date(path):
+    try:
+        return json.loads(path.read_text()).get("date")
+    except Exception:
+        return None
+
+
 def main():
     daily = load_changes(CHANGED, "changed.json")
     weekly = load_changes(CHANGED_WEEKLY, "changed_weekly.json")
+    dates = {False: file_date(CHANGED), True: file_date(CHANGED_WEEKLY)}
     if not (daily or weekly):
         print("Nothing changed for anyone tonight — no per-user alerts.")
         return 0
@@ -350,7 +419,7 @@ def main():
           + (f"; TEST → {TEST_TO}" if TEST_TO else "")
           + ("; DRY RUN" if DRY_RUN else ""))
 
-    seen = sent = skipped = failed = quiet = typed = unmatched = 0
+    seen = sent = skipped = failed = quiet = typed = unmatched = digests = 0
     catalog = load_catalog()
     reasons = {}
     try:
@@ -378,7 +447,8 @@ def main():
             typed += 1
             unmatched += not saved
         hits = hits_for(saved, changes)
-        if not hits:
+        digest = not saved   # no devices yet: everything that changed, and a nudge to pick some
+        if not hits and not digest:
             quiet += 1
             why = ("no devices saved" if not saved
                    else "none of their devices changed" if not any(d["id"] in changes for d in saved)
@@ -391,17 +461,24 @@ def main():
         if sent >= MAX_EMAILS:
             skipped += 1
             continue
-        subject = subject_for(hits, is_weekly)
+        if digest:
+            subject = digest_subject(dates[is_weekly], is_weekly)
+            body = render_digest(list(changes.values()), is_weekly)
+            what = f"{'weekly' if is_weekly else 'daily'} digest, {len(changes)} change(s), no devices saved"
+            digests += 1
+        else:
+            subject = subject_for(hits, is_weekly)
+            body = render(hits, is_weekly)
+            what = (f"{'weekly' if is_weekly else 'daily'}, {len(hits)} device(s): "
+                    + ", ".join(full_name(h["change"]) for h in hits))
         to = TEST_TO or email
         if TEST_TO:
             subject = "[TEST] " + subject
-        what = (f"{'weekly' if is_weekly else 'daily'}, {len(hits)} device(s): "
-                + ", ".join(full_name(h["change"]) for h in hits))
         if DRY_RUN:
             print(f"  would mail {to:40s} {what}")
             sent += 1
             continue
-        ok, err = send(to, subject, render(hits, is_weekly))
+        ok, err = send(to, subject, body)
         if ok:
             sent += 1
             print(f"  sent  {to:40s} {what}")
@@ -411,7 +488,8 @@ def main():
         time.sleep(SEND_GAP)
 
     verb = "would send" if DRY_RUN else "sent"
-    print(f"\n{seen} subscriber(s) checked, {verb} {sent} email(s), "
+    print(f"\n{seen} subscriber(s) checked, {verb} {sent} email(s) "
+          f"({digests} digest(s) to people with no devices saved), "
           f"{quiet} with nothing of theirs changed, {failed} failed; "
           f"{typed} device list(s) typed into a signup box, {unmatched} of them matching nothing"
           + (" | quiet: " + ", ".join(f"{n} {why}" for why, n in sorted(reasons.items())) if reasons else "")

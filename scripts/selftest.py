@@ -78,7 +78,10 @@ def test_routing():
         ("current@e.com", "pro", [["dev1", "2.0"]], None, None),
         ("ahead@e.com", "pro", [["dev1", "2.1"]], None, None),
         ("other@e.com", "pro", [["dev2", "1.0"]], None, None),
-        ("empty@e.com", "pro", None, None, None),
+        # no devices saved (the homepage signup asks only for an address): everything, on their plan's schedule
+        ("empty@e.com", "pro", None, "daily digest", "daily digest"),
+        ("emptylist@e.com", "pro", [], "daily digest", "daily digest"),
+        ("freeempty@e.com", "free", None, None, "weekly digest"),
         ("free@e.com", "free", [["dev1", "1.0"]], None, "weekly"),
         ("freecurrent@e.com", "free", [["dev1", "2.0"]], None, None),
         ("freeother@e.com", "free", [["dev2", "1.0"]], None, None),
@@ -105,7 +108,10 @@ def test_routing():
         finally:
             ua.CHANGED, ua.CHANGED_WEEKLY, ua.send, ua.subscribers, ua.SEND_GAP, ua.PLANS = saved
         check(f"routing: exit code ({'weekly day' if weekly else 'weekday'})", rc, 0)
-        return {e: ("weekly" if subj.startswith("This week:") else "daily") for e, (subj, _) in sent.items()}, sent
+        kind = lambda subj: ("weekly digest" if subj.startswith("Firmware this week") else
+                             "daily digest" if subj.startswith("Firmware digest") else
+                             "weekly" if subj.startswith("This week:") else "daily")
+        return {e: kind(subj) for e, (subj, _) in sent.items()}, sent
 
     got, _ = run(weekly=False)
     for email, _, _, want, _ in people:
@@ -116,8 +122,20 @@ def test_routing():
     check("the weekly email says it's the free plan and points to Pro",
           "once a week" in sent["free@e.com"][1] and "/pro/" in sent["free@e.com"][1], True)
     check("the daily email doesn't", "once a week" in sent["behind@e.com"][1], False)
+    digest = sent["freeempty@e.com"][1]
+    check("the digest asks them to pick their devices", "/my-devices.html" in digest and "picked your devices" in digest, True)
+    check("the digest lists what changed", "Acme Router" in digest and "2.0" in digest, True)
+    check("the weekly digest says it's the free plan", "once a week" in digest, True)
     got, _ = run(weekly=True, plans=("pro",))
-    check("USER_ALERT_PLANS=pro holds the free weekly back", sorted(got), ["behind@e.com", "blank@e.com"])
+    check("USER_ALERT_PLANS=pro holds the free weekly back", sorted(got),
+          ["behind@e.com", "blank@e.com", "empty@e.com", "emptylist@e.com"])
+
+    # a long week: security fixes and EOL always in full, the rest capped with a pointer
+    many = [dict(change, id=f"d{i}", model=f"R{i}", status="update") for i in range(ua.DIGEST_MAX + 15)]
+    many += [dict(change, id="sec", model="Secure", status="critical")]
+    body = ua.render_digest(many, weekly=True)
+    check("a long digest keeps every security fix", "Secure" in body, True)
+    check("...caps ordinary releases and says how many more", f"and {len(many) - ua.DIGEST_MAX} more" in body, True)
     check("the default is every plan, not just the paying one",
           [p.strip().lower() for p in (os.environ.get("USER_ALERT_PLANS") or "all").split(",") if p.strip()],
           ["all"])
@@ -164,7 +182,9 @@ def test_typed_devices():
         ua.main()
     finally:
         ua.CHANGED, ua.CHANGED_WEEKLY, ua.send, ua.subscribers, ua.SEND_GAP, ua.PLANS, ua.ROOT = saved
-    check("a signup-box subscriber is mailed about the device they typed", sorted(sent), ["typed@e.com"])
+    check("a signup-box subscriber is mailed about the device they typed", sent.get("typed@e.com", "").startswith("New firmware"), True)
+    check("typed text that matches nothing counts as no devices: the digest",
+          sent.get("vague@e.com", "").startswith("Firmware digest"), True)
 
 
 def test_weekly_roll():
