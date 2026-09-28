@@ -198,6 +198,60 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.3.35.3-lts",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-09-28T13:19:37+00:00",
+   "notes_chars": 37,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "koel",
+   "version": "9.15.0",
+   "name": "Koel Music streaming",
+   "judged_at": "2026-09-28T13:19:37+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.11,
+    "security_fix_plain": 0.1,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "apache-kafka",
+   "version": "4.2.2",
+   "name": "Apache Kafka",
+   "judged_at": "2026-09-28T13:19:37+00:00",
+   "notes_chars": 5,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.16,
+    "security_fix_plain": 0.15,
+    "end_of_life": 0.05
+   }
   }
  ]
 }

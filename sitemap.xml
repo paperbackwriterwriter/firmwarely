@@ -455,7 +455,7 @@
   <url><loc>https://www.firmwarely.com/devices/cryptomator/</loc><lastmod>2026-06-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/redis/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/valkey/</loc><lastmod>2026-09-01</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/clickhouse/</loc><lastmod>2026-09-27</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/clickhouse/</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/timescaledb/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/questdb/</loc><lastmod>2026-08-24</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/duckdb/</loc><lastmod>2026-07-22</lastmod></url>
@@ -528,7 +528,7 @@
   <url><loc>https://www.firmwarely.com/devices/srs/</loc><lastmod>2026-09-24</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/beets/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/picard/</loc><lastmod>2025-02-17</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/koel/</loc><lastmod>2026-09-25</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/koel/</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/gonic/</loc><lastmod>2026-06-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/calibre/</loc><lastmod>2026-09-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/stirling-pdf/</loc><lastmod>2026-09-26</lastmod></url>
@@ -629,7 +629,7 @@
   <url><loc>https://www.firmwarely.com/devices/wordpress/</loc><lastmod>2026-09-22</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/discourse/</loc><lastmod>2026-09-22</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/jenkins/</loc><lastmod>2026-09-22</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/apache-kafka/</loc><lastmod>2026-06-23</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/apache-kafka/</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/apache-superset/</loc><lastmod>2026-09-09</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/guacamole/</loc><lastmod>2025-06-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/couchdb/</loc><lastmod>2026-06-19</lastmod></url>

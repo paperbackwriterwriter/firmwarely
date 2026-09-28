@@ -166,6 +166,51 @@
    "notes": "0.21.0: Mobile app beta: The wanderer mobile app for Android and iOS is now officially in public beta. Record and navigate trails, work offline with downloaded regions, and sync with your wanderer instance. Join via TestFlight, the Google Play open test, or download the APK from the app-v pre-relea…",
    "source_url": "https://github.com/open-wanderer/wanderer/releases/tag/v0.21.0",
    "page_url": "https://www.firmwarely.com/devices/wanderer/"
+  },
+  "clickhouse": {
+   "id": "clickhouse",
+   "brand": "ClickHouse",
+   "model": "Analytics database",
+   "category": "A",
+   "status": "update",
+   "version": "26.3.35.3-lts",
+   "previous": "26.9.4.3-stable",
+   "released": "2026-09-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release v26.3.35.3-lts v26.3.35.3-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.3.35.3-lts",
+   "page_url": "https://www.firmwarely.com/devices/clickhouse/"
+  },
+  "koel": {
+   "id": "koel",
+   "brand": "Koel",
+   "model": "Music streaming",
+   "category": "A",
+   "status": "update",
+   "version": "9.15.0",
+   "previous": "9.14.1",
+   "released": "2026-09-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: feat: tell an open tab when a newer build of Koel is live feat: show offline storage usage with a color-graded meter chore(deps): bump zbateson/mail-mime-parser from 4.0.1 to 4.0.5 by in https://github.com/koel/koel/pull/2728 fix: refuse presigned uploads bigger than the declared fi…",
+   "source_url": "https://github.com/koel/koel/releases/tag/v9.15.0",
+   "page_url": "https://www.firmwarely.com/devices/koel/"
+  },
+  "apache-kafka": {
+   "id": "apache-kafka",
+   "brand": "Apache",
+   "model": "Kafka",
+   "category": "A",
+   "status": "update",
+   "version": "4.2.2",
+   "previous": "4.3.1",
+   "released": "2026-09-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "4.2.2",
+   "source_url": "https://github.com/apache/kafka/releases/tag/4.2.2",
+   "page_url": "https://www.firmwarely.com/devices/apache-kafka/"
   }
  }
 }
