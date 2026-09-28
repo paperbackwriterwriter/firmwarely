@@ -121,6 +121,51 @@
    "notes": "#​11594 #​11593 #​11592 #​11591 #​11590 #​11589 #​11588 #​11587 #​11583 #​11582",
    "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.271.34796",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "peertube": {
+   "id": "peertube",
+   "brand": "PeerTube",
+   "model": "Video platform",
+   "category": "A",
+   "status": "critical",
+   "version": "8.3.1",
+   "previous": "8.3.0",
+   "released": "2026-09-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "SECURITY: This release addresses vulnerabilities ranging from medium to critical severity affecting PeerTube. In a week, this changelog will be updated to disclose the vulnerabilities. Bug fixes: Force video encoding if there are rotation info Fix broken studio on only intro/outro/cut task Fix brok…",
+   "source_url": "https://github.com/Chocobozzz/PeerTube/releases/tag/v8.3.1",
+   "page_url": "https://www.firmwarely.com/devices/peertube/"
+  },
+  "erpnext": {
+   "id": "erpnext",
+   "brand": "Frappe",
+   "model": "ERPNext",
+   "category": "A",
+   "status": "update",
+   "version": "16.36.1",
+   "previous": "16.36.0",
+   "released": "2026-09-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "Bug Fixes: New CRM records skip activity-history loading until they are saved, preventing permission errors during record creation. (https://github.com/frappe/erpnext/pull/59557) Authors: Reviewers: AI content For these release notes, we used an LLM (OpenAI gpt-6-luna) to review and summarise the c…",
+   "source_url": "https://github.com/frappe/erpnext/releases/tag/v16.36.1",
+   "page_url": "https://www.firmwarely.com/devices/erpnext/"
+  },
+  "wanderer": {
+   "id": "wanderer",
+   "brand": "Wanderer",
+   "model": "Trail database",
+   "category": "A",
+   "status": "update",
+   "version": "0.21.0",
+   "previous": "0.20.0",
+   "released": "2026-09-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "0.21.0: Mobile app beta: The wanderer mobile app for Android and iOS is now officially in public beta. Record and navigate trails, work offline with downloaded regions, and sync with your wanderer instance. Join via TestFlight, the Google Play open test, or download the APK from the app-v pre-relea…",
+   "source_url": "https://github.com/open-wanderer/wanderer/releases/tag/v0.21.0",
+   "page_url": "https://www.firmwarely.com/devices/wanderer/"
   }
  }
 }

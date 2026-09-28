@@ -1,4 +1,203 @@
 {
  "_readme": "TypeSafe shadow test; see scripts/typesafe_shadow.py. Nothing here changes the site.",
- "judged": []
+ "judged": [
+  {
+   "id": "node-zwave-js",
+   "version": "15.30.0",
+   "name": "Z-Wave JS Z-Wave driver",
+   "judged_at": "2026-09-28T12:24:00+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "victoriametrics",
+   "version": "1.153.0",
+   "name": "VictoriaMetrics Time series database",
+   "judged_at": "2026-09-28T12:24:00+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.97,
+    "security_fix_plain": 0.94,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "budibase",
+   "version": "3.47.0",
+   "name": "Budibase Low-code platform",
+   "judged_at": "2026-09-28T12:24:01+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.46,
+    "security_fix_plain": 0.58,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "raspberry-pi-5",
+   "version": "28.33-1",
+   "name": "Raspberry Pi 5",
+   "judged_at": "2026-09-28T12:24:01+00:00",
+   "notes_chars": 55,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "meilisearch",
+   "version": "1.54.1",
+   "name": "Meilisearch Search engine",
+   "judged_at": "2026-09-28T12:24:01+00:00",
+   "notes_chars": 210,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.07,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "mailu",
+   "version": "2024.06.60",
+   "name": "Mailu Mail server",
+   "judged_at": "2026-09-28T12:24:01+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.14,
+    "security_fix_plain": 0.15,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "raspberry-pi-500",
+   "version": "28.33-1",
+   "name": "Raspberry Pi 500",
+   "judged_at": "2026-09-28T12:24:01+00:00",
+   "notes_chars": 55,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.271.34796",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-09-28T12:24:02+00:00",
+   "notes_chars": 79,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "peertube",
+   "version": "8.3.1",
+   "name": "PeerTube Video platform",
+   "judged_at": "2026-09-28T12:24:02+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.97,
+    "security_fix_plain": 0.96,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "erpnext",
+   "version": "16.36.1",
+   "name": "Frappe ERPNext",
+   "judged_at": "2026-09-28T12:24:02+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.12,
+    "security_fix_plain": 0.07,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "wanderer",
+   "version": "0.21.0",
+   "name": "Wanderer Trail database",
+   "judged_at": "2026-09-28T12:24:02+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  }
+ ]
 }
