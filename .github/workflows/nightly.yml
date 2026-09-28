@@ -62,6 +62,15 @@ jobs:
             python3 scripts/fetch.py
           fi
 
+      # Shadow test: TypeSafe's Jev judges each new release (security fix? end of life?) next
+      # to the regexes and logs both to typesafe_shadow.json. Changes nothing on the site.
+      # Skipped without the secret; can never fail the run.
+      - name: TypeSafe shadow judgments
+        continue-on-error: true
+        env:
+          TYPESAFE_API_KEY: ${{ secrets.TYPESAFE_API_KEY }}
+        run: python3 scripts/typesafe_shadow.py
+
       - name: Discover and vet new projects
         if: steps.when.outputs.daily == 'true'
         env:
@@ -91,7 +100,7 @@ jobs:
           # vercel.json carries the redirects for devices we don't publish, and build_pages
           # rewrites it from the catalogue — leaving it out would let a rule for a device
           # that has come back shadow its page, because Vercel redirects before it serves files.
-          git add devices.json sources.json pending_changes.json weekly_changes.json digest_state.json vercel.json \
+          git add devices.json sources.json pending_changes.json weekly_changes.json digest_state.json typesafe_shadow.json vercel.json \
                   devices category brands 404.html sitemap.xml robots.txt pro legal support
           if git diff --cached --quiet; then
             echo "No changes."
