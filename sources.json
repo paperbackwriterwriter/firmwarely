@@ -9983,6 +9983,96 @@
    "type": "github",
    "repo": "home-assistant/android",
    "product_url": "https://github.com/home-assistant/android"
+  },
+  {
+   "id": "meshlab",
+   "brand": "Meshlab",
+   "model": "Mesh processing system",
+   "category": "M",
+   "type": "github",
+   "repo": "cnr-isti-vclab/meshlab",
+   "product_url": "https://github.com/cnr-isti-vclab/meshlab"
+  },
+  {
+   "id": "dust3d",
+   "brand": "Dust3d",
+   "model": "Cross-platform 3D modeling software",
+   "category": "M",
+   "type": "github",
+   "repo": "huxingyi/dust3d",
+   "product_url": "https://github.com/huxingyi/dust3d"
+  },
+  {
+   "id": "ha-bambulab",
+   "brand": "Ha Bambulab",
+   "model": "Home Assistant Integration for Bambu Lab Printers",
+   "category": "S",
+   "type": "github",
+   "repo": "greghesp/ha-bambulab",
+   "product_url": "https://github.com/greghesp/ha-bambulab"
+  },
+  {
+   "id": "dune3d",
+   "brand": "Dune3d",
+   "model": "3D CAD application",
+   "category": "M",
+   "type": "github",
+   "repo": "dune3d/dune3d",
+   "product_url": "https://github.com/dune3d/dune3d"
+  },
+  {
+   "id": "uvtools",
+   "brand": "UVtools",
+   "model": "MSLA/DLP, file analysis, calibration, repair, conversion",
+   "category": "M",
+   "type": "github",
+   "repo": "sn4k3/UVtools",
+   "product_url": "https://github.com/sn4k3/UVtools"
+  },
+  {
+   "id": "rackstack",
+   "brand": "Rackstack",
+   "model": "Modular 3d-printable mini rack system",
+   "category": "M",
+   "type": "github",
+   "repo": "jazwa/rackstack",
+   "product_url": "https://github.com/jazwa/rackstack"
+  },
+  {
+   "id": "chi",
+   "brand": "Chi",
+   "model": "Lightweight, idiomatic and composable router",
+   "category": "R",
+   "type": "github",
+   "repo": "go-chi/chi",
+   "product_url": "https://github.com/go-chi/chi"
+  },
+  {
+   "id": "uwebsockets",
+   "brand": "uWebSockets",
+   "model": "Simple, secure & standards compliant web server",
+   "category": "R",
+   "type": "github",
+   "repo": "uNetworking/uWebSockets",
+   "product_url": "https://github.com/uNetworking/uWebSockets"
+  },
+  {
+   "id": "lantern",
+   "brand": "Lantern",
+   "model": "VPN for speed, privacy, and censorship circumvention",
+   "category": "R",
+   "type": "github",
+   "repo": "getlantern/lantern",
+   "product_url": "https://github.com/getlantern/lantern"
+  },
+  {
+   "id": "single-spa",
+   "brand": "Single Spa",
+   "model": "Router for easy microfrontends",
+   "category": "R",
+   "type": "github",
+   "repo": "single-spa/single-spa",
+   "product_url": "https://github.com/single-spa/single-spa"
   }
  ]
 }
