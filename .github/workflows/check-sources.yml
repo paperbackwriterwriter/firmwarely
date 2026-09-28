@@ -51,6 +51,10 @@ jobs:
       - name: Captcha self-test
         run: node scripts/selftest_captcha.mjs
 
+      # a signup box must not overwrite the list someone keeps on My devices
+      - name: Signup self-test
+        run: node scripts/selftest_subscribe.mjs
+
   sources:
     runs-on: ubuntu-latest
     steps:
