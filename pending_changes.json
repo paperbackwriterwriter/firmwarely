@@ -271,6 +271,21 @@
    "notes": "This release fixes a number of bugs in version 6.14.1 and adds a couple of useful new features. New Features in this release: You can now import custom fonts for use with the Canvas text tool () You can now transfer an image's style to krea-2 by providing a reference image () Bug fixes: Keep a pass…",
    "source_url": "https://github.com/invoke-ai/InvokeAI/releases/tag/v6.14.2",
    "page_url": "https://www.firmwarely.com/devices/invokeai/"
+  },
+  "jellyseerr": {
+   "id": "jellyseerr",
+   "brand": "Jellyseerr",
+   "model": "Media request manager",
+   "category": "A",
+   "status": "update",
+   "version": "3.5.0",
+   "previous": "3.4.1",
+   "released": "2026-09-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "3.5.0 - 2026-09-28: 🚀 Features: (api) Send a Seerr user agent on outbound requests (#​3395) - (a123d20) (notifications) Add support for ntfy.sh tags (#​3350) - (92bad10) (notifications) Add embed poster option for Gotify (#​3332) - (afb17aa) (overriderules) Apply override rules to advanced requests…",
+   "source_url": "https://github.com/seerr-team/seerr/releases/tag/v3.5.0",
+   "page_url": "https://www.firmwarely.com/devices/jellyseerr/"
   }
  }
 }
