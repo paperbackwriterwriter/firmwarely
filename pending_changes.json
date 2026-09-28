@@ -451,6 +451,21 @@
    "notes": "View downloads",
    "source_url": "https://developer.apple.com/news/releases/?id=09282026e",
    "page_url": "https://www.firmwarely.com/devices/apple-watch-ultra-2/"
+  },
+  "linuxcnc": {
+   "id": "linuxcnc",
+   "brand": "LinuxCNC",
+   "model": "CNC machine controller",
+   "category": "M",
+   "status": "update",
+   "version": "2.10.0-pre2",
+   "previous": "2.9.10",
+   "released": "2026-09-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "v2.10.0-pre2 v2.10.0-pre2",
+   "source_url": "https://github.com/LinuxCNC/linuxcnc/releases/tag/v2.10.0-pre2",
+   "page_url": "https://www.firmwarely.com/devices/linuxcnc/"
   }
  }
 }
