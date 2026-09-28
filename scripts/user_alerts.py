@@ -139,6 +139,62 @@ def fields(sub):
     return {f.get("name"): f.get("value") for f in (sub.get("custom_fields") or []) if f.get("name")}
 
 
+# ---------- devices typed into a signup box ----------
+# The "Get alerts" box on every page stores what the visitor typed ("Eero Pro 6E", the
+# device page's own name, a family or a brand) in the same field My devices fills with
+# [["id","ver"],...]. Unmatched, that text meant nobody who signed up there was ever mailed.
+
+def _key(text):
+    return " ".join(re.findall(r"[a-z0-9+]+", str(text or "").lower()))
+
+
+def load_catalog(root=None):
+    """name → device ids, from devices.json (models, full names, ids), families.json
+    (a family's page name covers its models) and brands (a brand covers its devices)."""
+    root = root or ROOT
+    try:
+        devices = json.loads((root / "devices.json").read_text())["devices"]
+    except Exception:
+        return {"names": {}, "brands": {}, "devices": []}
+    names, brands = {}, {}
+    for d in devices:
+        for k in (_key(full_name(d)), _key(d["model"]), _key(d["id"].replace("-", " "))):
+            if k:
+                names.setdefault(k, set()).add(d["id"])
+        brands.setdefault(_key(d["brand"]), set()).add(d["id"])
+    try:
+        for f in json.loads((root / "families.json").read_text())["families"]:
+            for k in (_key(full_name(f)), _key(f["model"]), _key(f["id"].replace("-", " "))):
+                names.setdefault(k, set()).update(f["members"])
+    except Exception:
+        pass
+    return {"names": names, "brands": brands,
+            "devices": [(d["id"], set(_key(full_name(d)).split())) for d in devices]}
+
+
+def typed_devices(value, catalog):
+    """Device ids for what someone typed into a signup box; [] when nothing matches.
+    Whole text first (a prefilled name may contain "and" or commas), then each
+    comma-separated part: an exact name, a brand, or a few devices whose names contain
+    every word typed ("ds923+" finds the Synology DS923+; "router" finds too many)."""
+    text = str(value or "").strip()
+    if not text or text[:1] in "[{" or text.lower() == "null":
+        return []
+    found = []
+    parts = [text] if _key(text) in catalog["names"] else re.split(r"[,;\n|]+", text)
+    for part in parts:
+        k = _key(part)
+        if not k:
+            continue
+        ids = catalog["names"].get(k) or catalog["brands"].get(k)
+        if not ids and len(k) >= 3:
+            words = set(k.split())
+            ids = {i for i, name_words in catalog["devices"] if words <= name_words}
+            ids = ids if len(ids) <= 5 else set()
+        found += sorted(ids or ())
+    return [{"id": i, "version": ""} for i in dict.fromkeys(found)]
+
+
 def saved_devices(value):
     """The `devices` custom field written by /api/me — [["id","ver"],...] or [{id,version}]."""
     out = []
@@ -288,7 +344,8 @@ def main():
           + (f"; TEST → {TEST_TO}" if TEST_TO else "")
           + ("; DRY RUN" if DRY_RUN else ""))
 
-    seen = sent = skipped = failed = quiet = 0
+    seen = sent = skipped = failed = quiet = typed = unmatched = 0
+    catalog = load_catalog()
     try:
         people = list(subscribers(key, pub))
     except Exception as e:
@@ -308,7 +365,12 @@ def main():
         changes = weekly if is_weekly else daily
         if not changes:
             continue   # a free account on one of the six days without a weekly email
-        hits = hits_for(saved_devices(f.get("devices")), changes)
+        saved = saved_devices(f.get("devices"))
+        if not saved and f.get("devices"):
+            saved = typed_devices(f.get("devices"), catalog)
+            typed += 1
+            unmatched += not saved
+        hits = hits_for(saved, changes)
         if not hits:
             quiet += 1
             continue   # nothing of theirs moved: no email
@@ -337,7 +399,8 @@ def main():
 
     verb = "would send" if DRY_RUN else "sent"
     print(f"\n{seen} subscriber(s) checked, {verb} {sent} email(s), "
-          f"{quiet} with nothing of theirs changed, {failed} failed"
+          f"{quiet} with nothing of theirs changed, {failed} failed; "
+          f"{typed} device list(s) typed into a signup box, {unmatched} of them matching nothing"
           + (f", {skipped} over the {MAX_EMAILS} cap" if skipped else ""))
     return 1 if failed else 0
 

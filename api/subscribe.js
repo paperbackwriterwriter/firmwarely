@@ -4,6 +4,7 @@
 
 const rl = require("../lib/ratelimit");
 const captcha = require("../lib/captcha");
+const fw = require("../lib/fw");
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -54,7 +55,16 @@ module.exports = async (req, res) => {
     utm_campaign: plan,
     referring_site: "https://www.firmwarely.com"
   };
-  if (devices) payload.custom_fields = [{ name: "devices", value: devices }];
+  // What was typed here goes in the same field My devices keeps its list in, and alerts
+  // read that list first. So someone who already saved devices there keeps them: a
+  // second signup from a device page must not replace the list with one typed name.
+  if (devices) {
+    let existing = null;
+    try { existing = await fw.getSubscriber(email); } catch (e) { existing = null; }
+    if (!(existing && existing.devices && existing.devices.length)) {
+      payload.custom_fields = [{ name: "devices", value: devices }];
+    }
+  }
 
   const call = async (p) => fetch(`https://api.beehiiv.com/v2/publications/${pub}/subscriptions`, {
     method: "POST",

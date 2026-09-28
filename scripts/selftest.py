@@ -123,6 +123,50 @@ def test_routing():
           ["all"])
 
 
+def test_typed_devices():
+    """What people type into a signup box has to reach the alert, or they never get one."""
+    root = Path(tempfile.mkdtemp())
+    (root / "devices.json").write_text(json.dumps({"devices": [
+        {"id": "dev1", "brand": "Acme", "model": "Router", "category": "R"},
+        {"id": "acme-nas-2", "brand": "Acme", "model": "NAS 2", "category": "N"},
+        {"id": "eero-pro-6e", "brand": "eero", "model": "Pro 6E", "category": "R"},
+        {"id": "synology-ds923-plus", "brand": "Synology", "model": "DS923+", "category": "N"},
+        {"id": "synology-ds220j", "brand": "Synology", "model": "DS220j", "category": "N"}]}))
+    (root / "families.json").write_text(json.dumps({"families": [
+        {"id": "synology-dsm", "brand": "Synology", "model": "DiskStation Manager (DSM)",
+         "members": ["synology-ds923-plus", "synology-ds220j"]}]}))
+    cat = ua.load_catalog(root)
+    ids = lambda text: [d["id"] for d in ua.typed_devices(text, cat)]
+    for text, want in [("Eero Pro 6E", ["eero-pro-6e"]),               # a device page's prefill
+                       ("eero pro 6e", ["eero-pro-6e"]),
+                       ("Synology DiskStation Manager (DSM)", ["synology-ds220j", "synology-ds923-plus"]),  # a family page
+                       ("Synology", ["synology-ds220j", "synology-ds923-plus"]),                            # a brand page
+                       ("ds923+", ["synology-ds923-plus"]),
+                       ("Acme Router, eero Pro 6E", ["dev1", "eero-pro-6e"]),
+                       ("my stuff", []), ("", []), ("[1,2,3]", []), ("null", [])]:
+        check(f"typed devices: {text!r}", ids(text), want)
+    check("typed devices are matched with no version, so any release counts",
+          ua.typed_devices("Eero Pro 6E", cat), [{"id": "eero-pro-6e", "version": ""}])
+
+    # end to end: a subscriber who only ever used a signup box gets the alert
+    tmp = Path(tempfile.mkdtemp()) / "changed.json"
+    tmp.write_text(json.dumps({"date": "2026-09-28", "forced": False, "count": 1, "devices": [
+        {"id": "dev1", "brand": "Acme", "model": "Router", "status": "update", "version": "2.0",
+         "released": "2026-09-27", "notes": "", "source_url": "", "page_url": "https://www.firmwarely.com/devices/dev1/"}]}))
+    saved = ua.CHANGED, ua.CHANGED_WEEKLY, ua.send, ua.subscribers, ua.SEND_GAP, ua.PLANS, ua.ROOT
+    sent = {}
+    try:
+        ua.CHANGED, ua.CHANGED_WEEKLY, ua.SEND_GAP, ua.PLANS, ua.ROOT = tmp, tmp.parent / "none.json", 0, ["all"], root
+        ua.subscribers = lambda k, p: iter([
+            {"email": "typed@e.com", "custom_fields": [{"name": "plan", "value": "pro"}, {"name": "devices", "value": "Acme Router"}]},
+            {"email": "vague@e.com", "custom_fields": [{"name": "plan", "value": "pro"}, {"name": "devices", "value": "my stuff"}]}])
+        ua.send = lambda to, subj, body: (sent.__setitem__(to, subj), (True, ""))[1]
+        ua.main()
+    finally:
+        ua.CHANGED, ua.CHANGED_WEEKLY, ua.send, ua.subscribers, ua.SEND_GAP, ua.PLANS, ua.ROOT = saved
+    check("a signup-box subscriber is mailed about the device they typed", sorted(sent), ["typed@e.com"])
+
+
 def test_weekly_roll():
     import digest, schedule
     from datetime import datetime, timezone
@@ -1083,7 +1127,7 @@ def test_schedule_and_digest():
           all(hasattr(fetch, f) for f in ("device_record", "check_source", "apply_result", "finish_record", "load_pending")), True)
 
 
-for t in (test_compare, test_new_release, test_saved_devices, test_routing, test_weekly_roll, test_forced_guard,
+for t in (test_compare, test_new_release, test_saved_devices, test_routing, test_typed_devices, test_weekly_roll, test_forced_guard,
           test_update_guides, test_sources_well_formed, test_site_shows_only_real_data, test_names_said_once, test_support_page, test_dates_are_honest, test_withdrawn_devices_redirect, test_families, test_analytics_and_its_disclosure, test_form_rate_limit, test_captcha, test_side_gutter, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
           test_landing_pages, test_schedule_and_digest):
     print(f"\n{t.__name__}")
