@@ -1206,6 +1206,78 @@
     "security_fix_plain": 0.2,
     "end_of_life": 0.03
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.3.36.6-lts",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-09-29T13:21:39+00:00",
+   "notes_chars": 37,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "meilisearch",
+   "version": "1.54.2",
+   "name": "Meilisearch Search engine",
+   "judged_at": "2026-09-29T13:21:39+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "librephotos",
+   "version": "1.2.1",
+   "name": "LibrePhotos Photo management",
+   "judged_at": "2026-09-29T13:21:39+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "element-web",
+   "version": "1.12.30",
+   "name": "Element Web client",
+   "judged_at": "2026-09-29T13:21:40+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.03
+   }
   }
  ]
 }

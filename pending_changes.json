@@ -121,6 +121,66 @@
    "notes": "What's Changed: fix(helm): make v6 upgrades safer for self-hosters (backport 6.0) docs: add release and maintenance policy page (backport #​9273 to release/6.0) fix: replace MinIO client with RustFS CLI (backport #​9395 to release/6.0) fix(web): require Manage access to change survey custom head sc…",
    "source_url": "https://github.com/formbricks/formbricks/releases/tag/6.0.1",
    "page_url": "https://www.firmwarely.com/devices/formbricks/"
+  },
+  "clickhouse": {
+   "id": "clickhouse",
+   "brand": "ClickHouse",
+   "model": "Analytics database",
+   "category": "A",
+   "status": "update",
+   "version": "26.3.36.6-lts",
+   "previous": "26.9.5.2-stable",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release v26.3.36.6-lts v26.3.36.6-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.3.36.6-lts",
+   "page_url": "https://www.firmwarely.com/devices/clickhouse/"
+  },
+  "meilisearch": {
+   "id": "meilisearch",
+   "brand": "Meilisearch",
+   "model": "Search engine",
+   "category": "A",
+   "status": "update",
+   "version": "1.54.2",
+   "previous": "1.54.1",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "Meilisearch v1.54.2 contains an important fix for users of the dynamicSearchRule experimental feature. 🦋 Fixes: Trying to process, display, delete or cancel dynamic search rules update tasks that were created in Meilisearch v1.53 or prior no longer causes internal errors. Thanks to for their report…",
+   "source_url": "https://github.com/meilisearch/meilisearch/releases/tag/v1.54.2",
+   "page_url": "https://www.firmwarely.com/devices/meilisearch/"
+  },
+  "librephotos": {
+   "id": "librephotos",
+   "brand": "LibrePhotos",
+   "model": "Photo management",
+   "category": "A",
+   "status": "update",
+   "version": "1.2.1",
+   "previous": "1.2.0",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "This point release repairs SQLite databases. SQLite is the database of the unified Docker image and of the standalone Windows build, so if you run either of them, please upgrade. PostgreSQL installs are not affected by the repair. Before you upgrade (SQLite only): two one-time migrations rebuild so…",
+   "source_url": "https://github.com/LibrePhotos/librephotos/releases/tag/1.2.1",
+   "page_url": "https://www.firmwarely.com/devices/librephotos/"
+  },
+  "element-web": {
+   "id": "element-web",
+   "brand": "Element",
+   "model": "Element Web client",
+   "category": "A",
+   "status": "update",
+   "version": "1.12.30",
+   "previous": "1.12.29",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "🦖 Deprecations: Remove legacy Module \\& Customisation API (#​33941). Contributed. ✨ Features: [Backport staging] Prepare module-api 2.2.0 release (#​35149). Contributed. [Backport staging] Implement the X.509 IPC into the module API (#​35146). Contributed. List the shortcut of the room list resizer…",
+   "source_url": "https://github.com/element-hq/element-web/releases/tag/v1.12.30",
+   "page_url": "https://www.firmwarely.com/devices/element-web/"
   }
  }
 }
