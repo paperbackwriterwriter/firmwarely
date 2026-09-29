@@ -616,6 +616,51 @@
    "notes": "What's Changed: Improve qwen 2.1 KV cache location logic Compile Qwen Image 2.1 transformer blocks Allow model files to contain which attention should be used for each block. JsonExtractString can now handle JSON with prefix and/or suffix. Remove torchaudio dependency. Cuda graphs + memory compiler…",
    "source_url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.38.0",
    "page_url": "https://www.firmwarely.com/devices/comfyui/"
+  },
+  "audiobookshelf": {
+   "id": "audiobookshelf",
+   "brand": "Audiobookshelf",
+   "model": "Audiobook and podcast server",
+   "category": "A",
+   "status": "update",
+   "version": "2.37.1",
+   "previous": "2.37.0",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "Important: New authentication system was added in v2.26.0. See https://github.com/advplyr/audiobookshelf/discussions/4460 for details.: Fixed: Debian install EACCES error #​5613 Clean up abandoned OIDC mobile login sessions #​5604 Updated: OIDC callback cookie expiration extended to 10 minutes & re…",
+   "source_url": "https://github.com/advplyr/audiobookshelf/releases/tag/v2.37.1",
+   "page_url": "https://www.firmwarely.com/devices/audiobookshelf/"
+  },
+  "zigpy": {
+   "id": "zigpy",
+   "brand": "zigpy",
+   "model": "Zigbee stack",
+   "category": "S",
+   "status": "update",
+   "version": "2.3.0",
+   "previous": "2.2.0",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Remove stale ruff.toml Ignore inactive endpoints during initialization Split up BaseDevice into GreenPowerDevice and ZigbeeDevice Enable opt-in APS encryption for ZCL clusters Raise ValueError for unknown ZCL data type IDs in DataType.from_type_id New Contributors: made their first …",
+   "source_url": "https://github.com/zigpy/zigpy/releases/tag/2.3.0",
+   "page_url": "https://www.firmwarely.com/devices/zigpy/"
+  },
+  "m5unified": {
+   "id": "m5unified",
+   "brand": "M5Stack",
+   "model": "M5Unified library",
+   "category": "M",
+   "status": "update",
+   "version": "0.2.24",
+   "previous": "0.2.23",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "Fixes: CoreS3 family / Core2 v1.1 (AXP2101): on a weak USB supply without a battery (e.g. behind several hubs) the board powered off right after the backlight came on and stayed off until the power key was pressed: switching the external 5V output on in begin() pulled a DCDC output below 85% and th…",
+   "source_url": "https://github.com/m5stack/M5Unified/releases/tag/0.2.24",
+   "page_url": "https://www.firmwarely.com/devices/m5unified/"
   }
  }
 }

@@ -1908,6 +1908,60 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "audiobookshelf",
+   "version": "2.37.1",
+   "name": "Audiobookshelf Audiobook and podcast server",
+   "judged_at": "2026-09-29T23:16:08+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.28,
+    "security_fix_plain": 0.25,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "zigpy",
+   "version": "2.3.0",
+   "name": "zigpy Zigbee stack",
+   "judged_at": "2026-09-29T23:16:08+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.07,
+    "security_fix_plain": 0.15,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "m5unified",
+   "version": "0.2.24",
+   "name": "M5Stack M5Unified library",
+   "judged_at": "2026-09-29T23:16:08+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
