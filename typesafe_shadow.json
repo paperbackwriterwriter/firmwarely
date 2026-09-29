@@ -1782,6 +1782,60 @@
     "security_fix_plain": 0.37,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "playnite",
+   "version": "10.62",
+   "name": "Playnite Game library manager",
+   "judged_at": "2026-09-29T21:17:06+00:00",
+   "notes_chars": 45,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "bazzite",
+   "version": "44.20260929",
+   "name": "Universal Blue Bazzite gaming OS",
+   "judged_at": "2026-09-29T21:17:07+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "talos-linux",
+   "version": "1.14.2",
+   "name": "Sidero Labs Talos Linux",
+   "judged_at": "2026-09-29T21:17:07+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

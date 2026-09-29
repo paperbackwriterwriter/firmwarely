@@ -278,13 +278,13 @@
    "model": "Game library manager",
    "category": "A",
    "status": "update",
-   "version": "10.61",
+   "version": "10.62",
    "previous": "10.60",
    "released": "2026-09-29",
    "date_known": true,
    "eol": false,
-   "notes": "New: Added {Developers} and {Publishers} as supported variables to default web image search settings Option to refocus on Guide button only when no game is running Fixed: Taskbar jumplist menu is not properly initialized in Fullscreen mode Updated emulation profiles Emulators not starting from corr…",
-   "source_url": "https://github.com/JosefNemec/Playnite/releases/tag/10.61",
+   "notes": "Fixed: \"Alternative\" image scaler not working",
+   "source_url": "https://github.com/JosefNemec/Playnite/releases/tag/10.62",
    "page_url": "https://www.firmwarely.com/devices/playnite/"
   },
   "podman": {
@@ -541,6 +541,36 @@
    "notes": "What's Changed: 🐛 Bug Fixes: fix: reject mixed blocked DNS answers with IP allowlists fix(agent): compute recursion_limit accounting for middleware graph nodes fix(ci): keep PR filenames out of shell scripts fix(twelvelabs): confine Split Video file reads fix(auth): replace Passlib with bcrypt on r…",
    "source_url": "https://github.com/langflow-ai/langflow/releases/tag/v1.12.4",
    "page_url": "https://www.firmwarely.com/devices/langflow/"
+  },
+  "bazzite": {
+   "id": "bazzite",
+   "brand": "Universal Blue",
+   "model": "Bazzite gaming OS",
+   "category": "C",
+   "status": "update",
+   "version": "44.20260929",
+   "previous": "44.20260928.1",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "This is an automatically generated changelog for release 44.20260929. From previous stable version 44.20260928.1 there have been the following changes. One package per new version shown. Major packages: | Name | Version | | --- | --- | | Kernel | 7.2.7-ogc1.1 | | Kernel (Nvidia LTS) | 6.18.52-ogc1.…",
+   "source_url": "https://github.com/ublue-os/bazzite/releases/tag/44.20260929",
+   "page_url": "https://www.firmwarely.com/devices/bazzite/"
+  },
+  "talos-linux": {
+   "id": "talos-linux",
+   "brand": "Sidero Labs",
+   "model": "Talos Linux",
+   "category": "A",
+   "status": "update",
+   "version": "1.14.2",
+   "previous": "1.14.1",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "Talos 1.14.2 (2026-09-29): Welcome to the v1.14.2 release of Talos! Please try out the release binaries and report any issues at https://github.com/siderolabs/talos/issues. Kubelet Resource Manager State: Talos now validates the kubelet CPU manager and memory manager state files (/var/lib/kubelet/c…",
+   "source_url": "https://github.com/siderolabs/talos/releases/tag/v1.14.2",
+   "page_url": "https://www.firmwarely.com/devices/talos-linux/"
   }
  }
 }
