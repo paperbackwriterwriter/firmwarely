@@ -128,13 +128,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.8.15.10-lts",
+   "version": "26.9.6.6-stable",
    "previous": "26.9.5.2-stable",
    "released": "2026-09-29",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.8.15.10-lts v26.8.15.10-lts",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.15.10-lts",
+   "notes": "Release v26.9.6.6-stable v26.9.6.6-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.9.6.6-stable",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "meilisearch": {
@@ -203,13 +203,13 @@
    "model": "UniFi metrics exporter",
    "category": "R",
    "status": "update",
-   "version": "5.2.11",
+   "version": "5.3.0",
    "previous": "5.2.10",
    "released": "2026-09-29",
    "date_known": true,
    "eol": false,
-   "notes": "Changelog: dcbb4070dc3edb9ae2072e334ee2215655a15411 Merge pull request #​1099 from unpoller/cursor/bump-unifi-v6.1.3 45d60f7824145bef08e2e4b98b63574af3bbc2de chore(deps): bump github.com/unpoller/unifi/v6 to v6.1.3",
-   "source_url": "https://github.com/unpoller/unpoller/releases/tag/v5.2.11",
+   "notes": "Changelog: 69aea34ac9daee0ce9601c5b15a6f32ccb2fcdab Merge pull request #​1100 from unpoller/feat/protect-air-quality c742df91e88c7e52535bc92fb30d2ac418b19f10 chore(deps): bump github.com/unpoller/unifi/v6 to v6.2.0 912ea91ac0b3fd76161abc39c93013a5f775ed7d feat(protect): export air quality readings …",
+   "source_url": "https://github.com/unpoller/unpoller/releases/tag/v5.3.0",
    "page_url": "https://www.firmwarely.com/devices/unpoller/"
   },
   "teslamate": {
@@ -346,6 +346,36 @@
    "notes": "﻿ Changes: 4.10.1.0: Fix cases of intro detection trying to run on episode files containing no audio streams Fix playlist image not being updated when removing items Improve search performance Improve the design of the new spotlight feature Filter duplicate person credits Fix error caused when conn…",
    "source_url": "https://github.com/MediaBrowser/Emby.Releases/releases/tag/4.10.1.0",
    "page_url": "https://www.firmwarely.com/devices/emby-server/"
+  },
+  "activepieces": {
+   "id": "activepieces",
+   "brand": "Activepieces",
+   "model": "Workflow automation",
+   "category": "A",
+   "status": "update",
+   "version": "0.91.4",
+   "previous": "0.91.3",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "🔌 Pieces: fix: cherry-pick subflow retry and connection-reference fixes into 0.91.1 (#​15689),,, ⛓️‍💥 Breaking Changes: fix: cherry-pick subflow retry and connection-reference fixes into 0.91.1 (#​15689),,, 🐞 Bug Fixes: fix(build): unblock the release — MinIO moved off Docker Hub, and drop the sour…",
+   "source_url": "https://github.com/activepieces/activepieces/releases/tag/0.91.4",
+   "page_url": "https://www.firmwarely.com/devices/activepieces/"
+  },
+  "synapse": {
+   "id": "synapse",
+   "brand": "Element",
+   "model": "Synapse Matrix server",
+   "category": "A",
+   "status": "update",
+   "version": "1.162.0",
+   "previous": "1.161.0",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: https://github.com/element-hq/synapse/blob/release-v1.162/CHANGES.md",
+   "source_url": "https://github.com/element-hq/synapse/releases/tag/v1.162.0",
+   "page_url": "https://www.firmwarely.com/devices/synapse/"
   }
  }
 }
