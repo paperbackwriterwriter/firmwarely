@@ -286,6 +286,66 @@
    "notes": "New: Added {Developers} and {Publishers} as supported variables to default web image search settings Option to refocus on Guide button only when no game is running Fixed: Taskbar jumplist menu is not properly initialized in Fullscreen mode Updated emulation profiles Emulators not starting from corr…",
    "source_url": "https://github.com/JosefNemec/Playnite/releases/tag/10.61",
    "page_url": "https://www.firmwarely.com/devices/playnite/"
+  },
+  "podman": {
+   "id": "podman",
+   "brand": "Podman",
+   "model": "Container engine",
+   "category": "A",
+   "status": "critical",
+   "version": "6.1.3",
+   "previous": "6.1.2",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "Security: This release addresses CVE-2026-94603, where a podman run on a checkpoint image (any image with the io.podman.annotations.checkpoint.runtime.name annotation) could disable all sandboxing, including sandboxing specified by the user, when the container was created. Breaking Changes: Removed…",
+   "source_url": "https://github.com/podman-container-tools/podman/releases/tag/v6.1.3",
+   "page_url": "https://www.firmwarely.com/devices/podman/"
+  },
+  "zitadel": {
+   "id": "zitadel",
+   "brand": "ZITADEL",
+   "model": "Identity platform",
+   "category": "A",
+   "status": "update",
+   "version": "4.19.3",
+   "previous": "4.19.2",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "4.19.3 (2026-09-29): Performance Improvements: query: index users14 by instance and org (#​12830) (d378dea), closes #​12826 query: stop expanding login names for every ListUsers row (#​12826) (2c6acd8), closes #​10037 #​10840 #​11768 #​12830",
+   "source_url": "https://github.com/zitadel/zitadel/releases/tag/v4.19.3",
+   "page_url": "https://www.firmwarely.com/devices/zitadel/"
+  },
+  "timescaledb": {
+   "id": "timescaledb",
+   "brand": "Timescale",
+   "model": "TimescaleDB",
+   "category": "A",
+   "status": "update",
+   "version": "2.30.2",
+   "previous": "2.30.1",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release contains bug fixes since the 2.30.1 release. We recommend that you upgrade at the next available opportunity. Bugfixes #​10665 Fix crash when merging chunks with different column layouts #​10668 Fix DROP SCHEMA CASCADE leaving orphaned compressed chunks #​10682 Fix vectorized text comp…",
+   "source_url": "https://github.com/timescale/timescaledb/releases/tag/2.30.2",
+   "page_url": "https://www.firmwarely.com/devices/timescaledb/"
+  },
+  "emby-server": {
+   "id": "emby-server",
+   "brand": "Emby",
+   "model": "Media server",
+   "category": "A",
+   "status": "update",
+   "version": "4.10.1.0",
+   "previous": "4.10.0.40",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "﻿ Changes: 4.10.1.0: Fix cases of intro detection trying to run on episode files containing no audio streams Fix playlist image not being updated when removing items Improve search performance Improve the design of the new spotlight feature Filter duplicate person credits Fix error caused when conn…",
+   "source_url": "https://github.com/MediaBrowser/Emby.Releases/releases/tag/4.10.1.0",
+   "page_url": "https://www.firmwarely.com/devices/emby-server/"
   }
  }
 }

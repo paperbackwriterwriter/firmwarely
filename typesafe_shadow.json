@@ -1440,6 +1440,78 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "podman",
+   "version": "6.1.3",
+   "name": "Podman Container engine",
+   "judged_at": "2026-09-29T16:20:32+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.98,
+    "security_fix_plain": 0.96,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "zitadel",
+   "version": "4.19.3",
+   "name": "ZITADEL Identity platform",
+   "judged_at": "2026-09-29T16:20:32+00:00",
+   "notes_chars": 241,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "timescaledb",
+   "version": "2.30.2",
+   "name": "Timescale TimescaleDB",
+   "judged_at": "2026-09-29T16:20:32+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "emby-server",
+   "version": "4.10.1.0",
+   "name": "Emby Media server",
+   "judged_at": "2026-09-29T16:20:32+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
