@@ -1584,6 +1584,78 @@
     "security_fix_plain": 0.31,
     "end_of_life": 0.03
    }
+  },
+  {
+   "id": "rook",
+   "version": "1.20.8",
+   "name": "Rook Ceph storage orchestrator",
+   "judged_at": "2026-09-29T18:21:39+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "casdoor",
+   "version": "4.12.0",
+   "name": "Casdoor Identity and access",
+   "judged_at": "2026-09-29T18:21:39+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "metube",
+   "version": "2026.09.29",
+   "name": "MeTube yt-dlp web UI",
+   "judged_at": "2026-09-29T18:21:40+00:00",
+   "notes_chars": 292,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.3,
+    "security_fix_plain": 0.31,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ghost",
+   "version": "6.67.0",
+   "name": "Ghost Publishing platform",
+   "judged_at": "2026-09-29T18:21:40+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

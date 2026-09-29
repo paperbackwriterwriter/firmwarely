@@ -376,6 +376,66 @@
    "notes": "Changelog: https://github.com/element-hq/synapse/blob/release-v1.162/CHANGES.md",
    "source_url": "https://github.com/element-hq/synapse/releases/tag/v1.162.0",
    "page_url": "https://www.firmwarely.com/devices/synapse/"
+  },
+  "rook": {
+   "id": "rook",
+   "brand": "Rook",
+   "model": "Ceph storage orchestrator",
+   "category": "N",
+   "status": "update",
+   "version": "1.20.8",
+   "previous": "1.20.7",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "Improvements: Rook v1.20.8 is a patch release limited in scope and focusing on feature additions and bug fixes to the Ceph operator. osd: Run prepare pods on the host network with provider host (#​18454,) helm : Add default httproute backend parameters (#​18455,) core: Make util.retry context aware…",
+   "source_url": "https://github.com/rook/rook/releases/tag/v1.20.8",
+   "page_url": "https://www.firmwarely.com/devices/rook/"
+  },
+  "casdoor": {
+   "id": "casdoor",
+   "brand": "Casdoor",
+   "model": "Identity and access",
+   "category": "A",
+   "status": "update",
+   "version": "4.12.0",
+   "previous": "4.11.0",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: Features: 9f1300532a7fbffe0d7d39fdde1c098403cfd970 feat: add application-level token group format option 3377f35609b84c54d4bea0fd5b48c54a70948abd feat: support OIDC prompt=none on the authorize page (#​5884) de6fc6d2621e835ca10dbee0a99866921ba04a50 feat: support RFC 9207 iss parameter in…",
+   "source_url": "https://github.com/casdoor/casdoor/releases/tag/v4.12.0",
+   "page_url": "https://www.firmwarely.com/devices/casdoor/"
+  },
+  "metube": {
+   "id": "metube",
+   "brand": "MeTube",
+   "model": "yt-dlp web UI",
+   "category": "A",
+   "status": "update",
+   "version": "2026.09.29",
+   "previous": "2026.09.28",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "Docker images have been built and pushed: Docker Hub: alexta69/metube:latest alexta69/metube:2026.09.29 GitHub Container Registry: ghcr.io/alexta69/metube:latest ghcr.io/alexta69/metube:2026.09.29 Changes: fix: apply the connect-time address guard to playlist/channel metadata files (a389660)",
+   "source_url": "https://github.com/alexta69/metube/releases/tag/2026.09.29",
+   "page_url": "https://www.firmwarely.com/devices/metube/"
+  },
+  "ghost": {
+   "id": "ghost",
+   "brand": "Ghost",
+   "model": "Publishing platform",
+   "category": "A",
+   "status": "update",
+   "version": "6.67.0",
+   "previous": "6.65.0",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "🎨 Improved integration creation with keyboard submission (#​31030) - Weyland Swart 🐛 Fixed post history crashing for posts without revisions (#​31080) - Steve Larson 🐛 Fixed scroll restoration when returning to posts and members (#​31069) - Steve Larson 🐛 Fixed repeated Stripe portal configuration …",
+   "source_url": "https://github.com/TryGhost/Ghost/releases/tag/v6.67.0",
+   "page_url": "https://www.firmwarely.com/devices/ghost/"
   }
  }
 }
