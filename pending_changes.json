@@ -511,6 +511,21 @@
    "notes": "Important: New authentication system was added in v2.26.0. See https://github.com/advplyr/audiobookshelf/discussions/4460 for details.: Important: Node.js version updated to 24: Added: API keys can authenticate websocket connections Fixed: Server crash decoding invalid filter groups Server crash wh…",
    "source_url": "https://github.com/advplyr/audiobookshelf/releases/tag/v2.37.0",
    "page_url": "https://www.firmwarely.com/devices/audiobookshelf/"
+  },
+  "lychee-photos": {
+   "id": "lychee-photos",
+   "brand": "Lychee",
+   "model": "Photo gallery",
+   "category": "A",
+   "status": "critical",
+   "version": "7.10.0",
+   "previous": "7.9.0",
+   "released": "2026-09-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: 🏕 Features: Strip completely at the php level to avoid xss Add CAN_MOVE rights fix(security): block all IPv6-transition spellings that embed an internal IPv4 Configurable size variant format (WebP) and lossless quality Translations update from LycheeOrg - Weblate Refactor agentic to…",
+   "source_url": "https://github.com/LycheeOrg/Lychee/releases/tag/v7.10.0",
+   "page_url": "https://www.firmwarely.com/devices/lychee-photos/"
   }
  }
 }
