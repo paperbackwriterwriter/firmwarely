@@ -533,14 +533,59 @@
    "model": "Time-series plotting tool",
    "category": "M",
    "status": "update",
-   "version": "4.0.1",
+   "version": "4.0.0",
    "previous": "4.0.0",
+   "released": "2026-09-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "Full Changelog: https://github.com/PlotJuggler/PlotJuggler/compare/3.999.9...4.0.0",
+   "source_url": "https://github.com/PlotJuggler/PlotJuggler/releases/tag/4.0.0",
+   "page_url": "https://www.firmwarely.com/devices/plotjuggler/"
+  },
+  "raspap": {
+   "id": "raspap",
+   "brand": "RaspAP",
+   "model": "Wi-Fi router for Raspberry Pi",
+   "category": "R",
+   "status": "update",
+   "version": "3.5.6",
+   "previous": "3.5.5",
    "released": "2026-09-29",
    "date_known": true,
    "eol": false,
-   "notes": "Full Changelog: https://github.com/PlotJuggler/PlotJuggler/compare/4.0.0...4.0.1 Full Changelog: https://github.com/PlotJuggler/PlotJuggler/compare/4.0.0...4.0.1",
-   "source_url": "https://github.com/PlotJuggler/PlotJuggler/releases/tag/4.0.1",
-   "page_url": "https://www.firmwarely.com/devices/plotjuggler/"
+   "notes": "What's Changed: Feature: Merge Insiders-exclusive features (the big merge 🎉) Feature: Extended user theme customization support Bump browserslist from 4.16.6 to 4.28.8 by in https://github.com/RaspAP/raspap-webgui/pull/2150 Bump brace-expansion from 1.1.13 to 1.1.18 by in https://github.com/RaspAP/…",
+   "source_url": "https://github.com/RaspAP/raspap-webgui/releases/tag/3.5.6",
+   "page_url": "https://www.firmwarely.com/devices/raspap/"
+  },
+  "siyuan": {
+   "id": "siyuan",
+   "brand": "SiYuan",
+   "model": "Knowledge base",
+   "category": "A",
+   "status": "update",
+   "version": "3.8.6",
+   "previous": "3.8.5",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "Overview: This release expands mind maps and database calendars, adds more ways to customize editing workflows, improves mobile interactions and window management, and introduces workspace storage statistics. It also brings performance improvements and new capabilities for AI, MCP, and plugins. Edi…",
+   "source_url": "https://github.com/siyuan-note/siyuan/releases/tag/v3.8.6",
+   "page_url": "https://www.firmwarely.com/devices/siyuan/"
+  },
+  "xiaozhi-esp32-server": {
+   "id": "xiaozhi-esp32-server",
+   "brand": "Xiaozhi",
+   "model": "Voice assistant server",
+   "category": "A",
+   "status": "update",
+   "version": "0.9.7",
+   "previous": "0.9.6",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "快照对话框新增代码对比视图，支持 v-code-diff 斜体样式兼容与窄屏适配 阿里百炼 TTS 支持 workspace endpoints 与流式字幕同步 参数管理按命名空间聚合展示，支持分页拉全量并重置空态全选 豆包模型更新为 doubao-seed-2-0-lite-260215，DeepSeek 改为 deepseek-v4-flash 并关闭思考模式 合并 HA 设备控制插件为 hass_state 模块，修复模块级插件展开与函数同名遗漏问题 根治 ManageApiClient 单例 TOCTOU 竞态，修复连接池创建竞态与 safe_close() 空指针风险",
+   "source_url": "https://github.com/xinnan-tech/xiaozhi-esp32-server/releases/tag/v0.9.7",
+   "page_url": "https://www.firmwarely.com/devices/xiaozhi-esp32-server/"
   }
  }
 }

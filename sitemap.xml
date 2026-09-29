@@ -6,13 +6,13 @@
   <url><loc>https://www.firmwarely.com/pro/</loc><lastmod>2026-09-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/legal/</loc><lastmod>2026-09-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/support/</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://www.firmwarely.com/category/routers/</loc><lastmod>2026-09-28</lastmod></url>
+  <url><loc>https://www.firmwarely.com/category/routers/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/nas/</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/smart-home/</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/consoles-drones-ebikes/</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/makers/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/pcs-tvs-gadgets/</loc><lastmod>2026-09-28</lastmod></url>
-  <url><loc>https://www.firmwarely.com/category/self-hosted/</loc><lastmod>2026-09-28</lastmod></url>
+  <url><loc>https://www.firmwarely.com/category/self-hosted/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/tp-link/</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/apache/</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/netgear/</loc><lastmod>2026-09-16</lastmod></url>
@@ -27,7 +27,7 @@
   <url><loc>https://www.firmwarely.com/brands/espressif/</loc><lastmod>2026-09-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/pi-hole/</loc><lastmod>2026-09-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/prusa/</loc><lastmod>2026-09-25</lastmod></url>
-  <url><loc>https://www.firmwarely.com/brands/xiaozhi/</loc><lastmod>2026-09-11</lastmod></url>
+  <url><loc>https://www.firmwarely.com/brands/xiaozhi/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/adguard/</loc><lastmod>2026-09-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/analogue/</loc><lastmod>2026-09-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/canonical/</loc><lastmod>2026-09-23</lastmod></url>
@@ -110,7 +110,7 @@
   <url><loc>https://www.firmwarely.com/devices/openvpn/</loc><lastmod>2026-09-03</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/softether-vpn/</loc><lastmod>2025-07-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/gluetun/</loc><lastmod>2026-07-30</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/raspap/</loc><lastmod>2026-07-07</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/raspap/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/frrouting/</loc><lastmod>2026-08-31</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/kea-dhcp/</loc><lastmod>2026-08-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/smokeping/</loc><lastmod>2025-02-19</lastmod></url>
@@ -582,7 +582,7 @@
   <url><loc>https://www.firmwarely.com/devices/wiki-js/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/joplin/</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/memos/</loc><lastmod>2026-09-19</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/siyuan/</loc><lastmod>2026-09-22</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/siyuan/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/logseq/</loc><lastmod>2026-07-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/affine/</loc><lastmod>2026-08-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/appflowy/</loc><lastmod>2026-09-22</lastmod></url>
@@ -678,7 +678,7 @@
   <url><loc>https://www.firmwarely.com/devices/pentagi/</loc><lastmod>2026-05-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/pangolin/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/xiaozhi-esp32/</loc><lastmod>2026-09-10</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/xiaozhi-esp32-server/</loc><lastmod>2026-07-24</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/xiaozhi-esp32-server/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/crosspoint-reader/</loc><lastmod>2026-09-27</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/esp32-bit-pirate/</loc><lastmod>2026-08-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/esp32-div/</loc><lastmod>2026-08-06</lastmod></url>
