@@ -496,6 +496,51 @@
    "notes": "1.820.0 (2026-09-29): Features: add pull_batch to claim jobs for many waiting workers at once (#​11350) (9f40cdc) add tree view to the schedules page (#​11360) (e68ff0d) ai-agent: add compaction memory that summarizes older context (#​10928) (c1b59f7) detect and alert when a schedule skips occurren…",
    "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.820.0",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
+  },
+  "netbox": {
+   "id": "netbox",
+   "brand": "NetBox Labs",
+   "model": "NetBox",
+   "category": "R",
+   "status": "update",
+   "version": "4.7.2",
+   "previous": "4.7.1",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "[!WARNING] NetBox v4.7.0 and v4.7.1 recorded the plaintext of API tokens created via background bulk requests in the job results, where they were readable by any user permitted to view jobs. This release rejects such requests; any tokens created this way should be considered exposed and replaced. S…",
+   "source_url": "https://github.com/netbox-community/netbox/releases/tag/v4.7.2",
+   "page_url": "https://www.firmwarely.com/devices/netbox/"
+  },
+  "reticulum": {
+   "id": "reticulum",
+   "brand": "Reticulum",
+   "model": "Cryptographic network stack",
+   "category": "M",
+   "status": "update",
+   "version": "1.5.5",
+   "previous": "1.5.2",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release adds live interface attach, detach and reload, as well as significant improvements to interface discovery. Auto-connecting interfaces is now also supported on Windows and macOS. It also brings improvements to rngit and fixes discovered I2PInterface configuration snippets, along with a …",
+   "source_url": "https://github.com/markqvist/Reticulum/releases/tag/1.5.5",
+   "page_url": "https://www.firmwarely.com/devices/reticulum/"
+  },
+  "langflow": {
+   "id": "langflow",
+   "brand": "Langflow",
+   "model": "Agent builder",
+   "category": "A",
+   "status": "update",
+   "version": "1.12.4",
+   "previous": "1.12.3",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: 🐛 Bug Fixes: fix: reject mixed blocked DNS answers with IP allowlists fix(agent): compute recursion_limit accounting for middleware graph nodes fix(ci): keep PR filenames out of shell scripts fix(twelvelabs): confine Split Video file reads fix(auth): replace Passlib with bcrypt on r…",
+   "source_url": "https://github.com/langflow-ai/langflow/releases/tag/v1.12.4",
+   "page_url": "https://www.firmwarely.com/devices/langflow/"
   }
  }
 }

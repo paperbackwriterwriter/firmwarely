@@ -1728,6 +1728,60 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "netbox",
+   "version": "4.7.2",
+   "name": "NetBox Labs NetBox",
+   "judged_at": "2026-09-29T20:19:18+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.95,
+    "security_fix_plain": 0.92,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "reticulum",
+   "version": "1.5.5",
+   "name": "Reticulum Cryptographic network stack",
+   "judged_at": "2026-09-29T20:19:18+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "langflow",
+   "version": "1.12.4",
+   "name": "Langflow Agent builder",
+   "judged_at": "2026-09-29T20:19:18+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.43,
+    "security_fix_plain": 0.37,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
