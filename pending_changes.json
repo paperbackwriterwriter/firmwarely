@@ -526,6 +526,21 @@
    "notes": "What's Changed: 🏕 Features: Strip completely at the php level to avoid xss Add CAN_MOVE rights fix(security): block all IPv6-transition spellings that embed an internal IPv4 Configurable size variant format (WebP) and lossless quality Translations update from LycheeOrg - Weblate Refactor agentic to…",
    "source_url": "https://github.com/LycheeOrg/Lychee/releases/tag/v7.10.0",
    "page_url": "https://www.firmwarely.com/devices/lychee-photos/"
+  },
+  "plotjuggler": {
+   "id": "plotjuggler",
+   "brand": "PlotJuggler",
+   "model": "Time-series plotting tool",
+   "category": "M",
+   "status": "update",
+   "version": "4.0.1",
+   "previous": "4.0.0",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "Full Changelog: https://github.com/PlotJuggler/PlotJuggler/compare/4.0.0...4.0.1 Full Changelog: https://github.com/PlotJuggler/PlotJuggler/compare/4.0.0...4.0.1",
+   "source_url": "https://github.com/PlotJuggler/PlotJuggler/releases/tag/4.0.1",
+   "page_url": "https://www.firmwarely.com/devices/plotjuggler/"
   }
  }
 }
