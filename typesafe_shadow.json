@@ -1170,6 +1170,42 @@
     "security_fix_plain": 0.05,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "tooljet",
+   "version": "3.20.235-lts",
+   "name": "ToolJet Low-code platform",
+   "judged_at": "2026-09-29T12:23:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "formbricks",
+   "version": "6.0.1",
+   "name": "Formbricks Surveys",
+   "judged_at": "2026-09-29T12:23:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.41,
+    "security_fix_plain": 0.2,
+    "end_of_life": 0.03
+   }
   }
  ]
 }

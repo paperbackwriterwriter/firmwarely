@@ -91,6 +91,36 @@
    "notes": "11.24.2 (2026-09-29): ✨ Features: bump zwave-js.30.0 (#​4833) (e61be98) bump zwave-js.31.0 (#​4835) (729d9ff) 🐛 Bug Fixes: deps: update dependency/server to ^3.11.0 (#​4840) (8900ded) 🔧 Chores: deps: update dependency morgan to v1.12.1 (#​4838) (275faab) deps: update dependency multer to v2.4.0 (#​…",
    "source_url": "https://github.com/zwave-js/zwave-js-ui/releases/tag/v11.24.2",
    "page_url": "https://www.firmwarely.com/devices/zwave-js-ui/"
+  },
+  "tooljet": {
+   "id": "tooljet",
+   "brand": "ToolJet",
+   "model": "Low-code platform",
+   "category": "A",
+   "status": "update",
+   "version": "3.20.235-lts",
+   "previous": "3.20.234-lts",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: chore:submodule update fix(ai): restore chat clarifications while retaining datasource connection UI fix(ai): include checkpoint outage recovery in release fix: backport scalar editor and table search toggle fixes Release AI Builder reliability and property editor fixes Full Changel…",
+   "source_url": "https://github.com/ToolJet/ToolJet/releases/tag/v3.20.235-lts",
+   "page_url": "https://www.firmwarely.com/devices/tooljet/"
+  },
+  "formbricks": {
+   "id": "formbricks",
+   "brand": "Formbricks",
+   "model": "Surveys",
+   "category": "A",
+   "status": "update",
+   "version": "6.0.1",
+   "previous": "6.0.0",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: fix(helm): make v6 upgrades safer for self-hosters (backport 6.0) docs: add release and maintenance policy page (backport #​9273 to release/6.0) fix: replace MinIO client with RustFS CLI (backport #​9395 to release/6.0) fix(web): require Manage access to change survey custom head sc…",
+   "source_url": "https://github.com/formbricks/formbricks/releases/tag/6.0.1",
+   "page_url": "https://www.firmwarely.com/devices/formbricks/"
   }
  }
 }
