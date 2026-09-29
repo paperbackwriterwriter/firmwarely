@@ -1,5 +1,66 @@
 {
- "since": null,
+ "since": "2026-09-29T09:19:11+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "longhorn": {
+   "id": "longhorn",
+   "brand": "Longhorn",
+   "model": "Distributed block storage",
+   "category": "N",
+   "status": "update",
+   "version": "1.13.0",
+   "previous": "1.12.1",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "Longhorn v1.13.0 Release Notes: The Longhorn team is excited to announce the release of Longhorn v1.13.0. This feature release brings live upgrade to the V2 Data Engine, which reached general availability in v1.12.0. V2 volumes can now stay attached while Longhorn is upgraded, as long as your clust…",
+   "source_url": "https://github.com/longhorn/longhorn/releases/tag/v1.13.0",
+   "page_url": "https://www.firmwarely.com/devices/longhorn/"
+  },
+  "thingsboard": {
+   "id": "thingsboard",
+   "brand": "ThingsBoard",
+   "model": "IoT platform",
+   "category": "S",
+   "status": "critical",
+   "version": "4.4",
+   "previous": "4.3.1.5",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Major Core & Rule Engine: Migration to Java 25 Remote agents Integration executor: push directly to rule engine Major UI: Front-end sidebar/toolbar redesign Security: Fixed CVE-2026-17495, CVE-2026-84375, CVE-2026-85061, CVE-2026-87776, CVE-2026-90711 Fixed CVE-2026-63126, CVE-2026-…",
+   "source_url": "https://github.com/thingsboard/thingsboard/releases/tag/v4.4",
+   "page_url": "https://www.firmwarely.com/devices/thingsboard/"
+  },
+  "grafana": {
+   "id": "grafana",
+   "brand": "Grafana",
+   "model": "Dashboards",
+   "category": "A",
+   "status": "critical",
+   "version": "13.2.3",
+   "previous": "13.2.2",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "Download page What's new highlights Security: Fix CVE-2026-13719 Security: Fix CVE-2026-13720 Security: Fix CVE-2026-81841",
+   "source_url": "https://github.com/grafana/grafana/releases/tag/v13.2.3",
+   "page_url": "https://www.firmwarely.com/devices/grafana/"
+  },
+  "godoxy": {
+   "id": "godoxy",
+   "brand": "Godoxy",
+   "model": "High-performance reverse proxy and container orchestrator",
+   "category": "R",
+   "status": "update",
+   "version": "0.31.4",
+   "previous": "0.31.3",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "Bug Fixes: Proxy: WebSocket and other HTTP/1 upgrades work on h2c:// upstream routes. (c351b2d) Upgrade requests use the HTTP/1 transport; ordinary requests and h2c upgrades retain HTTP/2 behavior. Includes the fix in the pinned yusing/goutils submodule. (b0525ee) TCP: TLS-terminated routes negotia…",
+   "source_url": "https://github.com/yusing/godoxy/releases/tag/v0.31.4",
+   "page_url": "https://www.firmwarely.com/devices/godoxy/"
+  }
+ }
 }

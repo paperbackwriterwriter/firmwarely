@@ -1062,6 +1062,78 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "longhorn",
+   "version": "1.13.0",
+   "name": "Longhorn Distributed block storage",
+   "judged_at": "2026-09-29T09:19:35+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "thingsboard",
+   "version": "4.4",
+   "name": "ThingsBoard IoT platform",
+   "judged_at": "2026-09-29T09:19:35+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.98,
+    "security_fix_plain": 0.95,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "grafana",
+   "version": "13.2.3",
+   "name": "Grafana Dashboards",
+   "judged_at": "2026-09-29T09:19:35+00:00",
+   "notes_chars": 122,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.96,
+    "security_fix_plain": 0.9,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "godoxy",
+   "version": "0.31.4",
+   "name": "Godoxy High-performance reverse proxy and container orchestrator",
+   "judged_at": "2026-09-29T09:19:35+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
