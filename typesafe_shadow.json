@@ -1656,6 +1656,78 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "tailscale",
+   "version": "1.102.5",
+   "name": "Tailscale client",
+   "judged_at": "2026-09-29T19:18:00+00:00",
+   "notes_chars": 74,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "esphome",
+   "version": "2026.9.1",
+   "name": "ESPHome ESP32 / ESP8266 device firmware",
+   "judged_at": "2026-09-29T19:18:00+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.11,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "vector",
+   "version": "0.3.25",
+   "name": "Vector Observability pipeline",
+   "judged_at": "2026-09-29T19:18:00+00:00",
+   "notes_chars": 25,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "windmill",
+   "version": "1.820.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-09-29T19:18:01+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

@@ -36,7 +36,7 @@
   <url><loc>https://www.firmwarely.com/brands/docker/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/duet3d/</loc><lastmod>2026-06-02</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/emqx/</loc><lastmod>2026-09-20</lastmod></url>
-  <url><loc>https://www.firmwarely.com/brands/esphome/</loc><lastmod>2026-09-16</lastmod></url>
+  <url><loc>https://www.firmwarely.com/brands/esphome/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/element/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/grafana/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/icewhale/</loc><lastmod>2026-09-24</lastmod></url>
@@ -69,9 +69,9 @@
   <url><loc>https://www.firmwarely.com/devices/philips-hue-bridge/</loc><lastmod>2026-07-02</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/pi-hole/</loc><lastmod>2026-07-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/adguard-home/</loc><lastmod>2026-08-18</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/tailscale/</loc><lastmod>2026-09-10</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/tailscale/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/opnsense-firewall/</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/esphome/</loc><lastmod>2026-09-16</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/esphome/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/home-assistant-core/</loc><lastmod>2026-09-27</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/zigbee2mqtt/</loc><lastmod>2026-09-03</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/frigate-nvr/</loc><lastmod>2026-09-12</lastmod></url>
@@ -406,7 +406,7 @@
   <url><loc>https://www.firmwarely.com/devices/graylog/</loc><lastmod>2026-09-02</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/opensearch/</loc><lastmod>2026-08-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/elasticsearch/</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/vector/</loc><lastmod>2026-09-24</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/vector/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/fluent-bit/</loc><lastmod>2026-09-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/signoz/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/jaeger/</loc><lastmod>2026-09-14</lastmod></url>

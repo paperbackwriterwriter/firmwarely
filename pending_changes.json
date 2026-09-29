@@ -436,6 +436,66 @@
    "notes": "🎨 Improved integration creation with keyboard submission (#​31030) - Weyland Swart 🐛 Fixed post history crashing for posts without revisions (#​31080) - Steve Larson 🐛 Fixed scroll restoration when returning to posts and members (#​31069) - Steve Larson 🐛 Fixed repeated Stripe portal configuration …",
    "source_url": "https://github.com/TryGhost/Ghost/releases/tag/v6.67.0",
    "page_url": "https://www.firmwarely.com/devices/ghost/"
+  },
+  "tailscale": {
+   "id": "tailscale",
+   "brand": "Tailscale",
+   "model": "Tailscale client",
+   "category": "R",
+   "status": "update",
+   "version": "1.102.5",
+   "previous": "1.102.4",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "Please refer to the changelog available at https://tailscale.com/changelog",
+   "source_url": "https://github.com/tailscale/tailscale/releases/tag/v1.102.5",
+   "page_url": "https://www.firmwarely.com/devices/tailscale/"
+  },
+  "esphome": {
+   "id": "esphome",
+   "brand": "ESPHome",
+   "model": "ESP32 / ESP8266 device firmware",
+   "category": "S",
+   "status": "update",
+   "version": "2026.9.1",
+   "previous": "2026.9.0",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "[mipi_dsi] Let IDF pick the DPHY PLL reference clock esphome#18984 [ota] Skip the web_server plaintext warning when web_server ota is disabled esphome#19348 [mixer] Don't discard a start request while reaping a stopped task esphome#19368 [esp32][rp2] Print the previous boot crash report before the …",
+   "source_url": "https://github.com/esphome/esphome/releases/tag/2026.9.1",
+   "page_url": "https://www.firmwarely.com/devices/esphome/"
+  },
+  "vector": {
+   "id": "vector",
+   "brand": "Vector",
+   "model": "Observability pipeline",
+   "category": "A",
+   "status": "update",
+   "version": "0.3.25",
+   "previous": "0.3.24",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "vdev-v0.3.25 vdev-v0.3.25",
+   "source_url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.25",
+   "page_url": "https://www.firmwarely.com/devices/vector/"
+  },
+  "windmill": {
+   "id": "windmill",
+   "brand": "Windmill",
+   "model": "Scripts and workflows",
+   "category": "A",
+   "status": "update",
+   "version": "1.820.0",
+   "previous": "1.819.0",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.820.0 (2026-09-29): Features: add pull_batch to claim jobs for many waiting workers at once (#​11350) (9f40cdc) add tree view to the schedules page (#​11360) (e68ff0d) ai-agent: add compaction memory that summarizes older context (#​10928) (c1b59f7) detect and alert when a schedule skips occurren…",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.820.0",
+   "page_url": "https://www.firmwarely.com/devices/windmill/"
   }
  }
 }
