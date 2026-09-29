@@ -631,6 +631,66 @@
    "notes": "jenkins-2.584",
    "source_url": "https://github.com/jenkinsci/jenkins/releases/tag/jenkins-2.584",
    "page_url": "https://www.firmwarely.com/devices/jenkins/"
+  },
+  "komga": {
+   "id": "komga",
+   "brand": "Komga",
+   "model": "Comic and manga server",
+   "category": "A",
+   "status": "update",
+   "version": "1.28.0",
+   "previous": "1.27.1",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release brings the 3rd beta of NextUI, mostly focusing on contextual navigation. Changelog: 🚀 Features: nextui contextual item card subtitle (e3d2adc) sort order is retrieved/updated in url (74165a0) contextual filter navigation (5e3dfdc) navigation within series of a collection (5803f2c) book…",
+   "source_url": "https://github.com/gotson/komga/releases/tag/1.28.0",
+   "page_url": "https://www.firmwarely.com/devices/komga/"
+  },
+  "signoz": {
+   "id": "signoz",
+   "brand": "SigNoz",
+   "model": "Observability platform",
+   "category": "A",
+   "status": "update",
+   "version": "0.144.0",
+   "previous": "0.143.0",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "🚀 Features: feat(bottom-strip): add the layout shell behind a feature flag (#​12936) feat(saved-views): read saved views from the v2 api on home, noz and column sync (#​12970) feat(alerts): New list API for alert rules (powers filters, sorting, pagination) (#​12780) feat(onboarding): add Cursor, Cl…",
+   "source_url": "https://github.com/SigNoz/signoz/releases/tag/v0.144.0",
+   "page_url": "https://www.firmwarely.com/devices/signoz/"
+  },
+  "windmill": {
+   "id": "windmill",
+   "brand": "Windmill",
+   "model": "Scripts and workflows",
+   "category": "A",
+   "status": "update",
+   "version": "1.819.0",
+   "previous": "1.818.0",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.819.0 (2026-09-28): Features: add hub sync button to the resource types tab (#​11375) (d76a962) add provenance claims to job OIDC tokens (#​11369) (990a726) Bug Fixes: complete a canceled flow whose worker died between two steps (#​11366) (c2d8997) frontend: apply operator write locks from the se…",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.819.0",
+   "page_url": "https://www.firmwarely.com/devices/windmill/"
+  },
+  "nzbhydra2": {
+   "id": "nzbhydra2",
+   "brand": "NZBHydra2",
+   "model": "Usenet meta search",
+   "category": "A",
+   "status": "update",
+   "version": "9.1.0",
+   "previous": "9.0.6",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "v9.1.0 (2026-09-29): Feature The Category and Details columns of the search results can now be hidden in the Display menu. Hiding a column also hides its filter in the Refine sidebar. Your choice is remembered. Feature When the movie quality indicator is enabled, the quality rating now has its own …",
+   "source_url": "https://github.com/theotherp/nzbhydra2/releases/tag/v9.1.0",
+   "page_url": "https://www.firmwarely.com/devices/nzbhydra2/"
   }
  }
 }

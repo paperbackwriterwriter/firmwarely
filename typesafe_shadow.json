@@ -864,6 +864,78 @@
     "security_fix_plain": 0.22,
     "end_of_life": 0.03
    }
+  },
+  {
+   "id": "komga",
+   "version": "1.28.0",
+   "name": "Komga Comic and manga server",
+   "judged_at": "2026-09-29T07:19:34+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "signoz",
+   "version": "0.144.0",
+   "name": "SigNoz Observability platform",
+   "judged_at": "2026-09-29T07:19:34+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "windmill",
+   "version": "1.819.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-09-29T07:19:34+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "nzbhydra2",
+   "version": "9.1.0",
+   "name": "NZBHydra2 Usenet meta search",
+   "judged_at": "2026-09-29T07:19:34+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
