@@ -10073,6 +10073,96 @@
    "type": "github",
    "repo": "single-spa/single-spa",
    "product_url": "https://github.com/single-spa/single-spa"
+  },
+  {
+   "id": "avideo",
+   "brand": "AVideo",
+   "model": "Own Broadcast Network",
+   "category": "A",
+   "type": "github",
+   "repo": "WWBN/AVideo",
+   "product_url": "https://github.com/WWBN/AVideo"
+  },
+  {
+   "id": "databasus",
+   "brand": "Databasus",
+   "model": "PostgreSQL backup tool",
+   "category": "N",
+   "type": "github",
+   "repo": "databasus/databasus",
+   "product_url": "https://github.com/databasus/databasus"
+  },
+  {
+   "id": "elasticsearch-dump",
+   "brand": "Elasticsearch Dump",
+   "model": "Import and export tools for elasticsearch & opensearch",
+   "category": "N",
+   "type": "github",
+   "repo": "elasticsearch-dump/elasticsearch-dump",
+   "product_url": "https://github.com/elasticsearch-dump/elasticsearch-dump"
+  },
+  {
+   "id": "android-databackup",
+   "brand": "Android DataBackup",
+   "model": "DataBackup for Android 7.0+",
+   "category": "N",
+   "type": "github",
+   "repo": "XayahSuSuSu/Android-DataBackup",
+   "product_url": "https://github.com/XayahSuSuSu/Android-DataBackup"
+  },
+  {
+   "id": "zerobyte",
+   "brand": "Zerobyte",
+   "model": "Backup automation for self-hosters",
+   "category": "N",
+   "type": "github",
+   "repo": "nicotsx/zerobyte",
+   "product_url": "https://github.com/nicotsx/zerobyte"
+  },
+  {
+   "id": "ludusavi",
+   "brand": "Ludusavi",
+   "model": "Backup tool for PC game saves",
+   "category": "N",
+   "type": "github",
+   "repo": "mtkennerly/ludusavi",
+   "product_url": "https://github.com/mtkennerly/ludusavi"
+  },
+  {
+   "id": "laravel-backup",
+   "brand": "Laravel Backup",
+   "model": "Package to backup your Laravel app",
+   "category": "N",
+   "type": "github",
+   "repo": "spatie/laravel-backup",
+   "product_url": "https://github.com/spatie/laravel-backup"
+  },
+  {
+   "id": "imessage-exporter",
+   "brand": "Imessage Exporter",
+   "model": "Export iMessage data + run iMessage Diagnostics",
+   "category": "N",
+   "type": "github",
+   "repo": "ReagentX/imessage-exporter",
+   "product_url": "https://github.com/ReagentX/imessage-exporter"
+  },
+  {
+   "id": "wal-g",
+   "brand": "Wal G",
+   "model": "Archival and Restoration for databases in the Cloud",
+   "category": "N",
+   "type": "github",
+   "repo": "wal-g/wal-g",
+   "product_url": "https://github.com/wal-g/wal-g"
+  },
+  {
+   "id": "docker-volume-backup",
+   "brand": "Docker Volume Backup",
+   "model": "Backup Docker volumes locally",
+   "category": "N",
+   "type": "github",
+   "repo": "offen/docker-volume-backup",
+   "product_url": "https://github.com/offen/docker-volume-backup"
   }
  ]
 }
