@@ -76,6 +76,21 @@
    "notes": "#​11606 #​11605 #​11604 #​11603 #​11602 #​11601 #​11600 #​11599 #​11598 #​11597 #​11596 #​11595",
    "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.272.34454",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "zwave-js-ui": {
+   "id": "zwave-js-ui",
+   "brand": "Z-Wave JS",
+   "model": "Z-Wave control panel",
+   "category": "S",
+   "status": "update",
+   "version": "11.24.2",
+   "previous": "11.24.1",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "11.24.2 (2026-09-29): ✨ Features: bump zwave-js.30.0 (#​4833) (e61be98) bump zwave-js.31.0 (#​4835) (729d9ff) 🐛 Bug Fixes: deps: update dependency/server to ^3.11.0 (#​4840) (8900ded) 🔧 Chores: deps: update dependency morgan to v1.12.1 (#​4838) (275faab) deps: update dependency multer to v2.4.0 (#​…",
+   "source_url": "https://github.com/zwave-js/zwave-js-ui/releases/tag/v11.24.2",
+   "page_url": "https://www.firmwarely.com/devices/zwave-js-ui/"
   }
  }
 }
