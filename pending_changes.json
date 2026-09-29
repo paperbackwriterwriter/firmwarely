@@ -61,6 +61,21 @@
    "notes": "Bug Fixes: Proxy: WebSocket and other HTTP/1 upgrades work on h2c:// upstream routes. (c351b2d) Upgrade requests use the HTTP/1 transport; ordinary requests and h2c upgrades retain HTTP/2 behavior. Includes the fix in the pinned yusing/goutils submodule. (b0525ee) TCP: TLS-terminated routes negotia…",
    "source_url": "https://github.com/yusing/godoxy/releases/tag/v0.31.4",
    "page_url": "https://www.firmwarely.com/devices/godoxy/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.272.34454",
+   "previous": "37522026.271.34796",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​11606 #​11605 #​11604 #​11603 #​11602 #​11601 #​11600 #​11599 #​11598 #​11597 #​11596 #​11595",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.272.34454",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   }
  }
 }
