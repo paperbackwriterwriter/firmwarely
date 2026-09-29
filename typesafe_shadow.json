@@ -1836,6 +1836,78 @@
     "security_fix_plain": 0.04,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "unpoller",
+   "version": "5.4.0",
+   "name": "UnPoller UniFi metrics exporter",
+   "judged_at": "2026-09-29T22:17:26+00:00",
+   "notes_chars": 197,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "dozzle",
+   "version": "11.1.3",
+   "name": "Dozzle Container log viewer",
+   "judged_at": "2026-09-29T22:17:26+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "opensearch",
+   "version": "3.9.0",
+   "name": "OpenSearch Search and analytics",
+   "judged_at": "2026-09-29T22:17:26+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "comfyui",
+   "version": "0.38.0",
+   "name": "ComfyUI Diffusion workflow UI",
+   "judged_at": "2026-09-29T22:17:27+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
