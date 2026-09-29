@@ -1296,6 +1296,150 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.8.15.10-lts",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-09-29T15:20:38+00:00",
+   "notes_chars": 39,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "bookstack",
+   "version": "26.09.1",
+   "name": "BookStack Wiki and documentation",
+   "judged_at": "2026-09-29T15:20:38+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.07,
+    "security_fix_plain": 0.07,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "unpoller",
+   "version": "5.2.11",
+   "name": "UnPoller UniFi metrics exporter",
+   "judged_at": "2026-09-29T15:20:38+00:00",
+   "notes_chars": 214,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "teslamate",
+   "version": "4.3.0",
+   "name": "TeslaMate Tesla data logger",
+   "judged_at": "2026-09-29T15:20:39+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "kestra",
+   "version": "2.0.4",
+   "name": "Kestra Orchestration platform",
+   "judged_at": "2026-09-29T15:20:39+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.37,
+    "security_fix_plain": 0.33,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "nocodb",
+   "version": "2026.09.1",
+   "name": "NocoDB Spreadsheet database",
+   "judged_at": "2026-09-29T15:20:39+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "rallly",
+   "version": "4.15.3",
+   "name": "Rallly Meeting polls",
+   "judged_at": "2026-09-29T15:20:39+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "playnite",
+   "version": "10.61",
+   "name": "Playnite Game library manager",
+   "judged_at": "2026-09-29T15:20:39+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
