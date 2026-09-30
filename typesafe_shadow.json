@@ -2052,6 +2052,42 @@
     "security_fix_plain": 0.08,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "raspap",
+   "version": "3.5.7",
+   "name": "RaspAP Wi-Fi router for Raspberry Pi",
+   "judged_at": "2026-09-30T03:19:03+00:00",
+   "notes_chars": 254,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "onedev",
+   "version": "16.8.0",
+   "name": "OneDev Git server with CI",
+   "judged_at": "2026-09-30T03:19:03+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

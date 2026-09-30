@@ -736,6 +736,36 @@
    "notes": "Warning: Do not upgrade to this release if you want to preserve your existing indexed documents but have not yet run the document index migration, which can be done from any version v3.x. See additional documentation here. See the assets to download this version and install. What's Changed: fix(cc-…",
    "source_url": "https://github.com/onyx-dot-app/onyx/releases/tag/v4.8.2",
    "page_url": "https://www.firmwarely.com/devices/onyx/"
+  },
+  "raspap": {
+   "id": "raspap",
+   "brand": "RaspAP",
+   "model": "Wi-Fi router for Raspberry Pi",
+   "category": "R",
+   "status": "update",
+   "version": "3.5.7",
+   "previous": "3.5.6",
+   "released": "2026-09-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Add hero image for README Update hero image path in README.md Fix: Remove getRepository() and related checks from plugin handler Update release version to 3.5.7 Full Changelog: https://github.com/RaspAP/raspap-webgui/compare/3.5.6...3.5.7",
+   "source_url": "https://github.com/RaspAP/raspap-webgui/releases/tag/3.5.7",
+   "page_url": "https://www.firmwarely.com/devices/raspap/"
+  },
+  "onedev": {
+   "id": "onedev",
+   "brand": "OneDev",
+   "model": "Git server with CI",
+   "category": "A",
+   "status": "update",
+   "version": "16.8.0",
+   "previous": "16.7.3",
+   "released": "2026-09-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "Installation Guide: https://docs.onedev.io/category/installation-guide Change Log: https://code.onedev.io/onedev/server/~builds/8551/fixed-issues?query=%22State%22+is+%22Released%22+order+by+%22Type%22+asc+%2C+%22Priority%22+desc Incompatibilities: https://code.onedev.io/onedev/server/~builds/8551/…",
+   "source_url": "https://github.com/theonedev/onedev/releases/tag/v16.8.0",
+   "page_url": "https://www.firmwarely.com/devices/onedev/"
   }
  }
 }
