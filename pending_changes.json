@@ -766,6 +766,36 @@
    "notes": "Installation Guide: https://docs.onedev.io/category/installation-guide Change Log: https://code.onedev.io/onedev/server/~builds/8551/fixed-issues?query=%22State%22+is+%22Released%22+order+by+%22Type%22+asc+%2C+%22Priority%22+desc Incompatibilities: https://code.onedev.io/onedev/server/~builds/8551/…",
    "source_url": "https://github.com/theonedev/onedev/releases/tag/v16.8.0",
    "page_url": "https://www.firmwarely.com/devices/onedev/"
+  },
+  "n8n": {
+   "id": "n8n",
+   "brand": "n8n",
+   "model": "Workflow automation",
+   "category": "A",
+   "status": "update",
+   "version": "2.41.4",
+   "previous": "2.41.3",
+   "released": "2026-09-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "2.41.4 (2026-09-30): Bug Fixes: API: Return an execution when its stored trace context is incomplete (#​39827) (940f65e) core: Count a database ping as successful when its reply arrives during event-loop lag (#​39757) (fe3c5bc) core: Store queue job results only for executions this process enqueued…",
+   "source_url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.41.4",
+   "page_url": "https://www.firmwarely.com/devices/n8n/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.2738",
+   "previous": "0.24.2713",
+   "released": "2026-09-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: 07164620fa0c741360b83f0866a2a18693b1a3de magnetcat: new alt domains a16eca607c3b57004a1b56768240af77b2d1c49d 52bt: new domains 6ec31d485e045f1e4452a659893db1be8a749ced docs(schema): update schema docs (#​17134) 8dc28132f81b89c8a259e31290cd8f155d900842 docs(schema): fix truncated summaries…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2738",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
