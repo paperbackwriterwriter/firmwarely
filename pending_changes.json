@@ -53,13 +53,13 @@
    "model": "Workflow automation",
    "category": "A",
    "status": "update",
-   "version": "0.92.0",
+   "version": "0.92.1",
    "previous": "0.91.4",
-   "released": "2026-09-24",
+   "released": "2026-09-30",
    "date_known": true,
    "eol": false,
-   "notes": "refactor(web): variable fonts, and a real --font-mono for the first time (#​15663) feat(delay): improve the step forms (#​15318) feat(analytics): stamp marketing attribution on the PostHog person at sign-up (#​15534) change the image download screenshot in builder canvas control (#​15608) chore(dep…",
-   "source_url": "https://github.com/activepieces/activepieces/releases/tag/0.92.0",
+   "notes": "No changes 📌 Upgrading a self-hosted instance? Review the Breaking Changes page for any actions required before you upgrade. Thanks ❤️: No contributors",
+   "source_url": "https://github.com/activepieces/activepieces/releases/tag/0.92.1",
    "page_url": "https://www.firmwarely.com/devices/activepieces/"
   },
   "ejabberd": {
@@ -151,6 +151,36 @@
    "notes": "chart-2.0.15",
    "source_url": "https://github.com/LibreChat-AI/LibreChat/releases/tag/chart-2.0.15",
    "page_url": "https://www.firmwarely.com/devices/librechat/"
+  },
+  "pixelfed": {
+   "id": "pixelfed",
+   "brand": "Pixelfed",
+   "model": "Photo sharing",
+   "category": "A",
+   "status": "update",
+   "version": "0.14.4",
+   "previous": "0.14.3",
+   "released": "2026-09-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "Contributors: Thank you to,, for submitting bugfixes and improvements. BREAKING CHANGE: Moved both to admin/horizon and admin/pulse (/horizon will still redirect to admin/horizon). Pulse is enabled with PULSE_ENABLED=true. What's Changed: fix issue #​7390 and enable ffi.enable in Dockerfile in http…",
+   "source_url": "https://github.com/pixelfed/pixelfed/releases/tag/v0.14.4",
+   "page_url": "https://www.firmwarely.com/devices/pixelfed/"
+  },
+  "strapi": {
+   "id": "strapi",
+   "brand": "Strapi",
+   "model": "Headless CMS",
+   "category": "A",
+   "status": "update",
+   "version": "5.56.0",
+   "previous": "5.55.1",
+   "released": "2026-09-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "5.56.0 (2026-09-30): 🚀 New feature: admin: record admin account and password actions in audit logs (#​27748) admin: audit webhook create, update and delete (#​27779) strapi: compile Tailwind for the admin panel from one host stylesheet (#​27550) 🔥 Bug fix: update create edit e2e test (#​27751) admi…",
+   "source_url": "https://github.com/strapi/strapi/releases/tag/v5.56.0",
+   "page_url": "https://www.firmwarely.com/devices/strapi/"
   }
  }
 }

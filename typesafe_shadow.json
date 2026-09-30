@@ -2340,6 +2340,60 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "activepieces",
+   "version": "0.92.1",
+   "name": "Activepieces Workflow automation",
+   "judged_at": "2026-09-30T12:26:40+00:00",
+   "notes_chars": 151,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "pixelfed",
+   "version": "0.14.4",
+   "name": "Pixelfed Photo sharing",
+   "judged_at": "2026-09-30T12:26:40+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "strapi",
+   "version": "5.56.0",
+   "name": "Strapi Headless CMS",
+   "judged_at": "2026-09-30T12:26:41+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "end_of_life": 0.02,
+    "security_fix": 0.04,
+    "security_fix_plain": 0.06
+   }
   }
  ]
 }
