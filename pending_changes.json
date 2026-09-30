@@ -181,6 +181,36 @@
    "notes": "5.56.0 (2026-09-30): 🚀 New feature: admin: record admin account and password actions in audit logs (#​27748) admin: audit webhook create, update and delete (#​27779) strapi: compile Tailwind for the admin panel from one host stylesheet (#​27550) 🔥 Bug fix: update create edit e2e test (#​27751) admi…",
    "source_url": "https://github.com/strapi/strapi/releases/tag/v5.56.0",
    "page_url": "https://www.firmwarely.com/devices/strapi/"
+  },
+  "openvas-scanner": {
+   "id": "openvas-scanner",
+   "brand": "Greenbone",
+   "model": "OpenVAS scanner",
+   "category": "A",
+   "status": "update",
+   "version": "23.50.25",
+   "previous": "23.50.24",
+   "released": "2026-09-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "[23.50.25] - 2026-09-30: Bug Fixes: don't include .inc files in GET /vts response (#​2379) 200c0674 [23.50.25]: https://github.com/greenbone/openvas-scanner/compare/v23.50.24...v23.50.25",
+   "source_url": "https://github.com/greenbone/openvas-scanner/releases/tag/v23.50.25",
+   "page_url": "https://www.firmwarely.com/devices/openvas-scanner/"
+  },
+  "clickhouse": {
+   "id": "clickhouse",
+   "brand": "ClickHouse",
+   "model": "Analytics database",
+   "category": "A",
+   "status": "update",
+   "version": "26.3.37.3-lts",
+   "previous": "26.9.6.6-stable",
+   "released": "2026-09-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release v26.3.37.3-lts v26.3.37.3-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.3.37.3-lts",
+   "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   }
  }
 }
