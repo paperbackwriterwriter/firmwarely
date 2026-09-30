@@ -10163,6 +10163,96 @@
    "type": "github",
    "repo": "offen/docker-volume-backup",
    "product_url": "https://github.com/offen/docker-volume-backup"
+  },
+  {
+   "id": "docker-android",
+   "brand": "Docker Android",
+   "model": "Android in docker solution with noVNC supported, video",
+   "category": "C",
+   "type": "github",
+   "repo": "budtmo/docker-android",
+   "product_url": "https://github.com/budtmo/docker-android"
+  },
+  {
+   "id": "cemu",
+   "brand": "Cemu",
+   "model": "Wii U emulator",
+   "category": "C",
+   "type": "github",
+   "repo": "cemu-project/Cemu",
+   "product_url": "https://github.com/cemu-project/Cemu"
+  },
+  {
+   "id": "mobile-mcp",
+   "brand": "Mobile Mcp",
+   "model": "Model Context Protocol Server",
+   "category": "C",
+   "type": "github",
+   "repo": "mobile-next/mobile-mcp",
+   "product_url": "https://github.com/mobile-next/mobile-mcp"
+  },
+  {
+   "id": "mgba",
+   "brand": "Mgba",
+   "model": "Game Boy Advance Emulator",
+   "category": "C",
+   "type": "github",
+   "repo": "mgba-emu/mgba",
+   "product_url": "https://github.com/mgba-emu/mgba"
+  },
+  {
+   "id": "retrobios",
+   "brand": "Retrobios",
+   "model": "Source-verified BIOS and firmware packs",
+   "category": "C",
+   "type": "github",
+   "repo": "Abdess/retrobios",
+   "product_url": "https://github.com/Abdess/retrobios"
+  },
+  {
+   "id": "jsnes",
+   "brand": "Jsnes",
+   "model": "JavaScript NES emulator",
+   "category": "C",
+   "type": "github",
+   "repo": "bfirsh/jsnes",
+   "product_url": "https://github.com/bfirsh/jsnes"
+  },
+  {
+   "id": "provenance",
+   "brand": "Provenance",
+   "model": "IOS & tvOS multi-emulator frontend",
+   "category": "C",
+   "type": "github",
+   "repo": "Provenance-Emu/Provenance",
+   "product_url": "https://github.com/Provenance-Emu/Provenance"
+  },
+  {
+   "id": "box64",
+   "brand": "Box64",
+   "model": "Linux Userspace x86_64 Emulator",
+   "category": "C",
+   "type": "github",
+   "repo": "ptitSeb/box64",
+   "product_url": "https://github.com/ptitSeb/box64"
+  },
+  {
+   "id": "sharpemu",
+   "brand": "Sharpemu",
+   "model": "Experimental PlayStation 5 emulator",
+   "category": "C",
+   "type": "github",
+   "repo": "sharpemu/sharpemu",
+   "product_url": "https://github.com/sharpemu/sharpemu"
+  },
+  {
+   "id": "melonds",
+   "brand": "melonDS",
+   "model": "DS emulator, sorta",
+   "category": "C",
+   "type": "github",
+   "repo": "melonDS-emu/melonDS",
+   "product_url": "https://github.com/melonDS-emu/melonDS"
   }
  ]
 }

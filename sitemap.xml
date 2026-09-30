@@ -450,7 +450,7 @@
   <url><loc>https://www.firmwarely.com/devices/lldap/</loc><lastmod>2026-04-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ory-kratos/</loc><lastmod>2026-03-20</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/casdoor/</loc><lastmod>2026-09-29</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/logto/</loc><lastmod>2026-08-31</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/logto/</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/keepassxc/</loc><lastmod>2026-03-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/cryptomator/</loc><lastmod>2026-06-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/redis/</loc><lastmod>2026-09-17</lastmod></url>
@@ -813,6 +813,16 @@
   <url><loc>https://www.firmwarely.com/devices/imessage-exporter/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/wal-g/</loc><lastmod>2026-08-20</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/docker-volume-backup/</loc><lastmod>2026-09-21</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/docker-android/</loc><lastmod>2026-09-18</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/cemu/</loc><lastmod>2025-02-06</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/mobile-mcp/</loc><lastmod>2026-09-13</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/mgba/</loc><lastmod>2025-03-09</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/retrobios/</loc><lastmod>2026-09-04</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/jsnes/</loc><lastmod>2026-04-11</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/provenance/</loc><lastmod>2026-03-14</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/box64/</loc><lastmod>2026-08-02</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/sharpemu/</loc><lastmod>2026-09-25</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/melonds/</loc><lastmod>2025-11-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/synology-dsm/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/qnap-qts/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ubiquiti-unifi-os-gateways/</loc><lastmod>2026-09-09</lastmod></url>
