@@ -2808,6 +2808,96 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "openbk7231t",
+   "version": "1.18.315",
+   "name": "OpenBeken OpenBK7231T firmware",
+   "judged_at": "2026-09-30T21:17:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "rpi-eeprom",
+   "version": "2026.09.25-2712",
+   "name": "Raspberry Pi Bootloader EEPROM",
+   "judged_at": "2026-09-30T21:17:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.07,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "docker-engine",
+   "version": "29.8.2",
+   "name": "Docker Engine (moby)",
+   "judged_at": "2026-09-30T21:17:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.98,
+    "security_fix_plain": 0.96,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "pangolin",
+   "version": "1.24.0",
+   "name": "Pangolin Tunneled reverse proxy",
+   "judged_at": "2026-09-30T21:17:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "salt",
+   "version": "3007.15",
+   "name": "Salt Project Salt configuration management",
+   "judged_at": "2026-09-30T21:17:31+00:00",
+   "notes_chars": 17,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
