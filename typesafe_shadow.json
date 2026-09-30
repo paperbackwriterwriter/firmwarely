@@ -2160,6 +2160,42 @@
     "security_fix_plain": 0.04,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "casdoor",
+   "version": "4.13.0",
+   "name": "Casdoor Identity and access",
+   "judged_at": "2026-09-30T09:18:53+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "jenkins",
+   "version": "2.580.1",
+   "name": "Jenkins Automation server",
+   "judged_at": "2026-09-30T09:18:53+00:00",
+   "notes_chars": 15,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.23,
+    "security_fix_plain": 0.16,
+    "end_of_life": 0.03
+   }
   }
  ]
 }

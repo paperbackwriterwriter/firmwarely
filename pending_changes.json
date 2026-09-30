@@ -1,5 +1,36 @@
 {
- "since": null,
+ "since": "2026-09-30T09:18:25+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "casdoor": {
+   "id": "casdoor",
+   "brand": "Casdoor",
+   "model": "Identity and access",
+   "category": "A",
+   "status": "update",
+   "version": "4.13.0",
+   "previous": "4.12.0",
+   "released": "2026-09-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: Features: c9adca039f3c24b570567e0def8d1018e9194c9f feat: add Audit provider to forward audit logs to Syslog Bug fixes: 99447318f951724b9d538e0fd025cbc9a31bd9f8 fix: keep provider host, endpoint and type unchanged on demo database 11f53fbf9f2f53de650c7451106a72c2f8b63ac5 fix: publish all …",
+   "source_url": "https://github.com/casdoor/casdoor/releases/tag/v4.13.0",
+   "page_url": "https://www.firmwarely.com/devices/casdoor/"
+  },
+  "jenkins": {
+   "id": "jenkins",
+   "brand": "Jenkins",
+   "model": "Automation server",
+   "category": "A",
+   "status": "update",
+   "version": "2.580.1",
+   "previous": "2.584",
+   "released": "2026-09-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "jenkins-2.580.1",
+   "source_url": "https://github.com/jenkinsci/jenkins/releases/tag/jenkins-2.580.1",
+   "page_url": "https://www.firmwarely.com/devices/jenkins/"
+  }
+ }
 }
