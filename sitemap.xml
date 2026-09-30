@@ -10,7 +10,7 @@
   <url><loc>https://www.firmwarely.com/category/nas/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/smart-home/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/consoles-drones-ebikes/</loc><lastmod>2026-09-30</lastmod></url>
-  <url><loc>https://www.firmwarely.com/category/makers/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://www.firmwarely.com/category/makers/</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/pcs-tvs-gadgets/</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/self-hosted/</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/tp-link/</loc><lastmod>2026-09-28</lastmod></url>
@@ -177,9 +177,9 @@
   <url><loc>https://www.firmwarely.com/devices/gotify/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ntfy/</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/apprise/</loc><lastmod>2026-09-26</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/scrutiny-disk/</loc><lastmod>2026-09-13</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/scrutiny-disk/</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/glances/</loc><lastmod>2026-09-26</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/netdata/</loc><lastmod>2026-09-16</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/netdata/</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/beszel/</loc><lastmod>2026-09-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/mergerfs/</loc><lastmod>2026-05-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/snapraid/</loc><lastmod>2026-09-29</lastmod></url>
@@ -236,7 +236,7 @@
   <url><loc>https://www.firmwarely.com/devices/fluidnc/</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/linuxcnc/</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/lasergrbl/</loc><lastmod>2025-03-01</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/qmk-firmware/</loc><lastmod>2026-09-26</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/qmk-firmware/</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/zmk-firmware/</loc><lastmod>2025-08-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/arduino-ide/</loc><lastmod>2026-06-09</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/arduino-esp32/</loc><lastmod>2026-09-18</lastmod></url>
@@ -511,7 +511,7 @@
   <url><loc>https://www.firmwarely.com/devices/whoogle/</loc><lastmod>2026-04-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/emby-server/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/jackett/</loc><lastmod>2026-09-30</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/nzbhydra2/</loc><lastmod>2026-09-29</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/nzbhydra2/</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/flaresolverr/</loc><lastmod>2026-09-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/autobrr/</loc><lastmod>2026-09-24</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/recyclarr/</loc><lastmod>2026-09-03</lastmod></url>
@@ -595,7 +595,7 @@
   <url><loc>https://www.firmwarely.com/devices/directus/</loc><lastmod>2026-09-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/strapi/</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/budibase/</loc><lastmod>2026-09-28</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/appsmith/</loc><lastmod>2026-09-24</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/appsmith/</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/tooljet/</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/typebot/</loc><lastmod>2026-09-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/formbricks/</loc><lastmod>2026-09-29</lastmod></url>

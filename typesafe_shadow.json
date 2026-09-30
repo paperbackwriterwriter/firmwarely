@@ -2574,6 +2574,150 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.273.57810",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-09-30T16:21:11+00:00",
+   "notes_chars": 63,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.9.7.9-stable",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-09-30T16:21:11+00:00",
+   "notes_chars": 41,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "onedev",
+   "version": "16.8.2",
+   "name": "OneDev Git server with CI",
+   "judged_at": "2026-09-30T16:21:11+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "scrutiny-disk",
+   "version": "0.9.5",
+   "name": "Scrutiny Disk health monitor",
+   "judged_at": "2026-09-30T16:21:12+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "netdata",
+   "version": "2.12.0",
+   "name": "Netdata System monitoring agent",
+   "judged_at": "2026-09-30T16:21:12+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "qmk-firmware",
+   "version": "0.34.6",
+   "name": "QMK Keyboard firmware",
+   "judged_at": "2026-09-30T16:21:12+00:00",
+   "notes_chars": 6,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.03,
+    "security_fix": 0.05
+   }
+  },
+  {
+   "id": "nzbhydra2",
+   "version": "9.1.1",
+   "name": "NZBHydra2 Usenet meta search",
+   "judged_at": "2026-09-30T16:21:12+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01,
+    "security_fix": 0.02
+   }
+  },
+  {
+   "id": "appsmith",
+   "version": "2.4.3",
+   "name": "Appsmith Internal tools builder",
+   "judged_at": "2026-09-30T16:21:12+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": true
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.15
+   }
   }
  ]
 }
