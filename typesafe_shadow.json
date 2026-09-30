@@ -2196,6 +2196,132 @@
     "security_fix_plain": 0.16,
     "end_of_life": 0.03
    }
+  },
+  {
+   "id": "opnsense-firewall",
+   "version": "26.7.5",
+   "name": "OPNsense Firewall (community edition)",
+   "judged_at": "2026-09-30T10:19:36+00:00",
+   "notes_chars": 6,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.26,
+    "security_fix_plain": 0.25,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "activepieces",
+   "version": "0.92.0",
+   "name": "Activepieces Workflow automation",
+   "judged_at": "2026-09-30T10:19:37+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ejabberd",
+   "version": "26.09",
+   "name": "ProcessOne ejabberd XMPP server",
+   "judged_at": "2026-09-30T10:19:37+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.55,
+    "security_fix_plain": 0.82,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "glpi",
+   "version": "11.0.10",
+   "name": "GLPI IT asset management",
+   "judged_at": "2026-09-30T10:19:37+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.98,
+    "security_fix_plain": 0.98,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "langfuse",
+   "version": "4.48.0",
+   "name": "Langfuse LLM observability",
+   "judged_at": "2026-09-30T10:19:37+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01,
+    "security_fix": 0.02
+   }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.273.34353",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-09-30T10:19:37+00:00",
+   "notes_chars": 119,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "mobile-mcp",
+   "version": "1.0.6",
+   "name": "Mobile Mcp Model Context Protocol Server",
+   "judged_at": "2026-09-30T10:19:37+00:00",
+   "notes_chars": 19,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
