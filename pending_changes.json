@@ -571,6 +571,21 @@
    "notes": "_Please note that our version increases are landmarks and not stable builds_ Always download the latest build from https://rpcs3.net/download Note: These are NOT stable builds. RPCS3 is a rolling release software without stable builds. These are random tags we do from time to time. Do NOT use the b…",
    "source_url": "https://github.com/RPCS3/rpcs3/releases/tag/v0.0.43",
    "page_url": "https://www.firmwarely.com/devices/rpcs3/"
+  },
+  "arduino-pico": {
+   "id": "arduino-pico",
+   "brand": "Arduino Pico",
+   "model": "Raspberry Pi Pico Arduino core",
+   "category": "M",
+   "status": "update",
+   "version": "6.2.0",
+   "previous": "6.1.1",
+   "released": "2026-09-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "Overview: This release only contains changes related to making networking (LWIP) on this core as bulletproof as possible. LWIP has been changed to verify that it is being called from the proper LWIP task (under FreeRTOS) or while the LWIPMutex is owned (under baremetal). Additionally, critical regi…",
+   "source_url": "https://github.com/earlephilhower/arduino-pico/releases/tag/6.2.0",
+   "page_url": "https://www.firmwarely.com/devices/arduino-pico/"
   }
  }
 }

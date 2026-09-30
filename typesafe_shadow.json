@@ -2952,6 +2952,24 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "arduino-pico",
+   "version": "6.2.0",
+   "name": "Arduino Pico Raspberry Pi Pico Arduino core",
+   "judged_at": "2026-09-30T23:15:53+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.08,
+    "security_fix_plain": 0.1,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
