@@ -1962,6 +1962,60 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "gitea",
+   "version": "28.0.0",
+   "name": "Gitea Self-hosted Git service",
+   "judged_at": "2026-09-30T00:26:13+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.91,
+    "security_fix_plain": 0.91,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ollama",
+   "version": "0.35.0",
+   "name": "Ollama Local LLM runner",
+   "judged_at": "2026-09-30T00:26:13+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "zrok",
+   "version": "2.0.6",
+   "name": "Zrok Secure internet sharing made simple",
+   "judged_at": "2026-09-30T00:26:13+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

@@ -661,6 +661,51 @@
    "notes": "Fixes: CoreS3 family / Core2 v1.1 (AXP2101): on a weak USB supply without a battery (e.g. behind several hubs) the board powered off right after the backlight came on and stayed off until the power key was pressed: switching the external 5V output on in begin() pulled a DCDC output below 85% and th…",
    "source_url": "https://github.com/m5stack/M5Unified/releases/tag/0.2.24",
    "page_url": "https://www.firmwarely.com/devices/m5unified/"
+  },
+  "gitea": {
+   "id": "gitea",
+   "brand": "Gitea",
+   "model": "Self-hosted Git service",
+   "category": "A",
+   "status": "critical",
+   "version": "28.0.0",
+   "previous": "1.27.3",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "BREAKING Fix(git)!: route Git network operations through an internal proxy and update egress settings (#​39426) Feat(actions)!: add RUN_RETENTION_DAYS to delete old action runs (#​38855) SECURITY Fix(git): reject invalid and duplicate Git objects on push (#​39472) Fix(git)!: route Git network opera…",
+   "source_url": "https://github.com/go-gitea/gitea/releases/tag/v28.0.0",
+   "page_url": "https://www.firmwarely.com/devices/gitea/"
+  },
+  "ollama": {
+   "id": "ollama",
+   "brand": "Ollama",
+   "model": "Local LLM runner",
+   "category": "A",
+   "status": "update",
+   "version": "0.35.0",
+   "previous": "0.34.4",
+   "released": "2026-09-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "Decision models: Ollama now supports decision models through /v1/systemone, based on TypeSafe’s Jev API. Decision models return choices, probabilities, and scores instead of text. Use them for tasks such as ticket triage, model routing, and content classification. Available models: Nimble from Besp…",
+   "source_url": "https://github.com/ollama/ollama/releases/tag/v0.35.0",
+   "page_url": "https://www.firmwarely.com/devices/ollama/"
+  },
+  "zrok": {
+   "id": "zrok",
+   "brand": "Zrok",
+   "model": "Secure internet sharing made simple",
+   "category": "R",
+   "status": "update",
+   "version": "2.0.6",
+   "previous": "2.0.5",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "CHANGELOG: FIX: A share request that fails part-way now removes the OpenZiti objects it created (config, service and policies) and reports the underlying error. Previously the controller logged a chk_z_id constraint failure in place of the real OpenZiti error, and any failure after allocation, such…",
+   "source_url": "https://github.com/openziti/zrok/releases/tag/v2.0.6",
+   "page_url": "https://www.firmwarely.com/devices/zrok/"
   }
  }
 }
