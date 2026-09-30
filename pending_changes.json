@@ -391,6 +391,36 @@
    "notes": "🗑️ Feature Removal Reminder - September 30, 2026 - EOL: Appsmith AI reaches end of life on September 30th, 2026. As announced in v2.3 and v2.4, you can no longer add new Appsmith AI datasource connections or queries. Existing ones stop working on that date — whether or not you have upgraded. Migrat…",
    "source_url": "https://github.com/appsmithorg/appsmith/releases/tag/v2.4.3",
    "page_url": "https://www.firmwarely.com/devices/appsmith/"
+  },
+  "keycloak": {
+   "id": "keycloak",
+   "brand": "Keycloak",
+   "model": "Identity provider",
+   "category": "A",
+   "status": "critical",
+   "version": "26.7.5",
+   "previous": "26.7.4",
+   "released": "2026-09-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "Upgrading Before upgrading refer to the migration guide for a complete list of changes. All resolved issues Security fixes #​50996 [CVE-2026-16103] Incomplete fix for CVE-2026-9798 (Keycloak CIBA brute-force lockout bypass at token redemption) oidc #​51278 [CVE-2026-18206] Client policy source-host…",
+   "source_url": "https://github.com/keycloak/keycloak/releases/tag/26.7.5",
+   "page_url": "https://www.firmwarely.com/devices/keycloak/"
+  },
+  "ghostfolio": {
+   "id": "ghostfolio",
+   "brand": "Ghostfolio",
+   "model": "Wealth tracker",
+   "category": "A",
+   "status": "update",
+   "version": "3.76.0",
+   "previous": "3.75.0",
+   "released": "2026-09-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "Added: Added a loading indicator to the platform management of the admin control panel Added a loading indicator to the tag management of the admin control panel Added a _Refresh_ action to the user detail dialog menu in the admin control panel Added the total column to the table of the tag managem…",
+   "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.76.0",
+   "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
   }
  }
 }
