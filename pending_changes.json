@@ -533,14 +533,44 @@
    "model": "Salt configuration management",
    "category": "A",
    "status": "update",
-   "version": "3007.15",
+   "version": "3008.3",
    "previous": "3008.1-2",
    "released": "2026-09-30",
    "date_known": true,
    "eol": false,
-   "notes": "v3007.15 v3007.15",
-   "source_url": "https://github.com/saltstack/salt/releases/tag/v3007.15",
+   "notes": "v3008.3 v3008.3",
+   "source_url": "https://github.com/saltstack/salt/releases/tag/v3008.3",
    "page_url": "https://www.firmwarely.com/devices/salt/"
+  },
+  "netalertx": {
+   "id": "netalertx",
+   "brand": "NetAlertX",
+   "model": "Network intruder detector",
+   "category": "R",
+   "status": "update",
+   "version": "26.10.0",
+   "previous": "26.9.0",
+   "released": "2026-09-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "Hi all 👋 I’ve focused this release heavily on observability, giving you better tools to understand exactly what’s happening under the hood of your deployment. The biggest addition is the new System Info -› Performance page. You can now track CPU, memory, I/O, and scan durations across hour, day, we…",
+   "source_url": "https://github.com/netalertx/NetAlertX/releases/tag/v26.10.0",
+   "page_url": "https://www.firmwarely.com/devices/netalertx/"
+  },
+  "rpcs3": {
+   "id": "rpcs3",
+   "brand": "Rpcs3",
+   "model": "PlayStation 3 emulator and debugger",
+   "category": "C",
+   "status": "update",
+   "version": "0.0.43",
+   "previous": "0.0.42",
+   "released": "2026-09-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "_Please note that our version increases are landmarks and not stable builds_ Always download the latest build from https://rpcs3.net/download Note: These are NOT stable builds. RPCS3 is a rolling release software without stable builds. These are random tags we do from time to time. Do NOT use the b…",
+   "source_url": "https://github.com/RPCS3/rpcs3/releases/tag/v0.0.43",
+   "page_url": "https://www.firmwarely.com/devices/rpcs3/"
   }
  }
 }
