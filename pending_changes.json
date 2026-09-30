@@ -421,6 +421,21 @@
    "notes": "Added: Added a loading indicator to the platform management of the admin control panel Added a loading indicator to the tag management of the admin control panel Added a _Refresh_ action to the user detail dialog menu in the admin control panel Added the total column to the table of the tag managem…",
    "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.76.0",
    "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
+  },
+  "snipe-it": {
+   "id": "snipe-it",
+   "brand": "Snipe-IT",
+   "model": "Asset management",
+   "category": "A",
+   "status": "critical",
+   "version": "8.8.0",
+   "previous": "8.7.2",
+   "released": "2026-09-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "[!CAUTION] This version of Snipe-IT REQUIRES PHP 8.2.0 or greater, 8.4+ recommended. PHP 8.2 is still in security release support until 31 Dec 2026, but let's not play that game - and some of the new features we're working on will require PHP 8.3+, so... get on that! Whew! Over 750 commits and 83 m…",
+   "source_url": "https://github.com/grokability/snipe-it/releases/tag/v8.8.0",
+   "page_url": "https://www.firmwarely.com/devices/snipe-it/"
   }
  }
 }
