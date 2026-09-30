@@ -2502,6 +2502,78 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "onedev",
+   "version": "16.8.1",
+   "name": "OneDev Git server with CI",
+   "judged_at": "2026-09-30T15:22:01+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "mailu",
+   "version": "2024.06.61",
+   "name": "Mailu Mail server",
+   "judged_at": "2026-09-30T15:22:01+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.41,
+    "security_fix_plain": 0.22,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "tooljet",
+   "version": "3.20.236-lts",
+   "name": "ToolJet Low-code platform",
+   "judged_at": "2026-09-30T15:22:01+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "songloft",
+   "version": "2.13.0",
+   "name": "Songloft Music server",
+   "judged_at": "2026-09-30T15:22:01+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

@@ -256,6 +256,66 @@
    "notes": "Release Notes — v5.1.0 — Entity Value Policies & Metadata Refactor: --- Overview: This release introduces access policies for Namespace Entity Values (EV), refactors the user metadata service layer, and improves the admin console experience for managing metadata namespaces and their associated enti…",
    "source_url": "https://github.com/pydio/cells/releases/tag/v5.1.0",
    "page_url": "https://www.firmwarely.com/devices/pydio-cells/"
+  },
+  "onedev": {
+   "id": "onedev",
+   "brand": "OneDev",
+   "model": "Git server with CI",
+   "category": "A",
+   "status": "update",
+   "version": "16.8.1",
+   "previous": "16.8.0",
+   "released": "2026-09-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "Installation Guide: https://docs.onedev.io/category/installation-guide Change Log: https://code.onedev.io/onedev/server/~builds/8576/fixed-issues?query=%22State%22+is+%22Released%22+order+by+%22Type%22+asc+%2C+%22Priority%22+desc Incompatibilities: https://code.onedev.io/onedev/server/~builds/8576/…",
+   "source_url": "https://github.com/theonedev/onedev/releases/tag/v16.8.1",
+   "page_url": "https://www.firmwarely.com/devices/onedev/"
+  },
+  "mailu": {
+   "id": "mailu",
+   "brand": "Mailu",
+   "model": "Mail server",
+   "category": "A",
+   "status": "update",
+   "version": "2024.06.61",
+   "previous": "2024.06.60",
+   "released": "2026-09-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog :mailbox: --------- Clear stale webmail session cookies on SSO login, so switching accounts without logging out no longer leaves the webmail on the previous user (AUTHENTICATIONFAILED folders error) This release was triggered by PR/Issue 4109. The release notes of the original main releas…",
+   "source_url": "https://github.com/Mailu/Mailu/releases/tag/2024.06.61",
+   "page_url": "https://www.firmwarely.com/devices/mailu/"
+  },
+  "tooljet": {
+   "id": "tooljet",
+   "brand": "ToolJet",
+   "model": "Low-code platform",
+   "category": "A",
+   "status": "update",
+   "version": "3.20.236-lts",
+   "previous": "3.20.235-lts",
+   "released": "2026-09-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "🚀 Features: Added GPT-6.1 Sol to the AI model catalog Added storage of AI attachment metadata and proxying of agent storage Released AI Builder attachments and GPT-6.1 Sol support 🌟 Enhancements: Added newer models to the Anthropic, OpenAI and Gemini marketplace plugins 🛠️ Fixes: Fixed AI attachmen…",
+   "source_url": "https://github.com/ToolJet/ToolJet/releases/tag/v3.20.236-lts",
+   "page_url": "https://www.firmwarely.com/devices/tooljet/"
+  },
+  "songloft": {
+   "id": "songloft",
+   "brand": "Songloft",
+   "model": "Music server",
+   "category": "A",
+   "status": "update",
+   "version": "2.13.0",
+   "previous": "2.12.1",
+   "released": "2026-09-30",
+   "date_known": true,
+   "eol": false,
+   "notes": ":boom: BREAKING CHANGES: due to 20cf441 - 彻底移除 WebF 渲染引擎支持 (commit): 声明 renderEngine: \"webf\" 的插件在新宿主上安装/更新 会被拒绝；存量已安装条目由客户端回落到系统 WebView。 songloft-org/songloft#341 :sparkles: New Features: 2b8bbf2 - jsplugin: 主页插件网格新增自定义排序设置 (commit) 0606c81 - cover: 视频无封面时从视频抽帧兜底 (commit) 0b8c0d2 - jsplugin: songs…",
+   "source_url": "https://github.com/songloft-org/songloft/releases/tag/v2.13.0",
+   "page_url": "https://www.firmwarely.com/devices/songloft/"
   }
  }
 }
