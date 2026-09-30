@@ -706,6 +706,36 @@
    "notes": "CHANGELOG: FIX: A share request that fails part-way now removes the OpenZiti objects it created (config, service and policies) and reports the underlying error. Previously the controller logged a chk_z_id constraint failure in place of the real OpenZiti error, and any failure after allocation, such…",
    "source_url": "https://github.com/openziti/zrok/releases/tag/v2.0.6",
    "page_url": "https://www.firmwarely.com/devices/zrok/"
+  },
+  "bitwarden-server": {
+   "id": "bitwarden-server",
+   "brand": "Bitwarden",
+   "model": "Self-hosted server",
+   "category": "A",
+   "status": "update",
+   "version": "2026.9.2",
+   "previous": "2026.9.1",
+   "released": "2026-09-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: :shipit: Feature Development: [PM-33527] Allow multiple tasks per budget feat(sso): check assertion type [PM-39100] - Removing ChangeMemberEmailNoMp FF feat(saml): SimpleSaml local assertion encryption Add support for DDG ext device type [PM-43285] add feature flag [PM-43378] Impl n…",
+   "source_url": "https://github.com/bitwarden/server/releases/tag/v2026.9.2",
+   "page_url": "https://www.firmwarely.com/devices/bitwarden-server/"
+  },
+  "onyx": {
+   "id": "onyx",
+   "brand": "Onyx",
+   "model": "AI platform",
+   "category": "A",
+   "status": "update",
+   "version": "4.8.2",
+   "previous": "4.8.1",
+   "released": "2026-09-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "Warning: Do not upgrade to this release if you want to preserve your existing indexed documents but have not yet run the document index migration, which can be done from any version v3.x. See additional documentation here. See the assets to download this version and install. What's Changed: fix(cc-…",
+   "source_url": "https://github.com/onyx-dot-app/onyx/releases/tag/v4.8.2",
+   "page_url": "https://www.firmwarely.com/devices/onyx/"
   }
  }
 }

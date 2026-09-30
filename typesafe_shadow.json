@@ -2016,6 +2016,42 @@
     "security_fix_plain": 0.08,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "bitwarden-server",
+   "version": "2026.9.2",
+   "name": "Bitwarden Self-hosted server",
+   "judged_at": "2026-09-30T01:18:02+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.07,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "onyx",
+   "version": "4.8.2",
+   "name": "Onyx AI platform",
+   "judged_at": "2026-09-30T01:18:02+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.07,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
