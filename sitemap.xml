@@ -112,7 +112,7 @@
   <url><loc>https://www.firmwarely.com/devices/gluetun/</loc><lastmod>2026-07-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/raspap/</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/frrouting/</loc><lastmod>2026-08-31</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/kea-dhcp/</loc><lastmod>2026-08-25</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/kea-dhcp/</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/smokeping/</loc><lastmod>2025-02-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/speedtest-tracker/</loc><lastmod>2026-08-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/adguardhome-sync/</loc><lastmod>2026-09-13</lastmod></url>
@@ -437,7 +437,7 @@
   <url><loc>https://www.firmwarely.com/devices/vault/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/consul/</loc><lastmod>2026-09-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/terraform/</loc><lastmod>2026-09-23</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/opentofu/</loc><lastmod>2026-08-19</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/opentofu/</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/semaphore-ui/</loc><lastmod>2026-08-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/openvas-scanner/</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/trivy/</loc><lastmod>2026-08-14</lastmod></url>
@@ -619,7 +619,7 @@
   <url><loc>https://www.firmwarely.com/devices/dawarich/</loc><lastmod>2026-09-22</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/owntracks-recorder/</loc><lastmod>2026-09-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/traccar/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/pydio-cells/</loc><lastmod>2026-09-23</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/pydio-cells/</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/playnite/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/zabbix/</loc><lastmod>2026-09-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/checkmk/</loc><lastmod>2026-09-21</lastmod></url>

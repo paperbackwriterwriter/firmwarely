@@ -2430,6 +2430,78 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.7.18.2-stable",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-09-30T14:21:41+00:00",
+   "notes_chars": 43,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "kea-dhcp",
+   "version": "3.3.2",
+   "name": "ISC Kea DHCP",
+   "judged_at": "2026-09-30T14:21:41+00:00",
+   "notes_chars": 9,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.17,
+    "security_fix_plain": 0.14,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "opentofu",
+   "version": "1.13.0",
+   "name": "OpenTofu Infrastructure as code",
+   "judged_at": "2026-09-30T14:21:41+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "pydio-cells",
+   "version": "5.1.0",
+   "name": "Pydio Cells file platform",
+   "judged_at": "2026-09-30T14:21:42+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
