@@ -301,6 +301,51 @@
    "notes": "This release contains bug fixes and various other improvements Enhancements: add support for selective page cropping better tool recommendation based on user usage add visual feedback during page reordering Bugs fixed: translations missing Certain languages not loading correctly Processor not corre…",
    "source_url": "https://github.com/Stirling-Tools/Stirling-PDF/releases/tag/v3.0.2",
    "page_url": "https://www.firmwarely.com/devices/stirling-pdf/"
+  },
+  "k3s": {
+   "id": "k3s",
+   "brand": "K3s",
+   "model": "Lightweight Kubernetes",
+   "category": "A",
+   "status": "update",
+   "version": "1.37.1",
+   "previous": "1.37.0",
+   "released": "2026-09-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release updates Kubernetes to v1.37.1, and fixes a number of issues. For more details on what's new, see the Kubernetes release notes. Changes since v1.37.0+k3s1:: Backports for 2026-09 (#​14631) Fix restore from compressed etcd snapshot #​14528 Enable seccomp in riscv64 builds #​14529 Use gin…",
+   "source_url": "https://github.com/k3s-io/k3s/releases/tag/v1.37.1%2Bk3s1",
+   "page_url": "https://www.firmwarely.com/devices/k3s/"
+  },
+  "opentofu": {
+   "id": "opentofu",
+   "brand": "OpenTofu",
+   "model": "Infrastructure as code",
+   "category": "A",
+   "status": "update",
+   "version": "1.13.1",
+   "previous": "1.13.0",
+   "released": "2026-10-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "BUG FIXES: tofu show -json now works again when ephemeral resources are present in the configuration. (4623). Ephemeral output values are now always re-evaluated during the apply phase, instead of sometimes using stale values from the planning phase. (#​4582)",
+   "source_url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.1",
+   "page_url": "https://www.firmwarely.com/devices/opentofu/"
+  },
+  "windmill": {
+   "id": "windmill",
+   "brand": "Windmill",
+   "model": "Scripts and workflows",
+   "category": "A",
+   "status": "update",
+   "version": "1.821.0",
+   "previous": "1.820.0",
+   "released": "2026-10-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.821.0 (2026-10-01): Features: add //no_network annotation for native scripts (#​11445) (c25bb1e) add alert actions and reduce alert padding (#​11439) (52c3188) add test key button to AI resource drawers (#​11466) (26be1d7) add wmill datatable migrate status (#​11465) (7f1bead) agents as a standal…",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.821.0",
+   "page_url": "https://www.firmwarely.com/devices/windmill/"
   }
  }
 }
