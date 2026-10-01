@@ -10253,6 +10253,96 @@
    "type": "github",
    "repo": "melonDS-emu/melonDS",
    "product_url": "https://github.com/melonDS-emu/melonDS"
+  },
+  {
+   "id": "browserbox",
+   "brand": "BrowserBox",
+   "model": "🇺🇸Secure remote browsing anywhere, any way you like",
+   "category": "R",
+   "type": "github",
+   "repo": "BrowserBox/BrowserBox",
+   "product_url": "https://github.com/BrowserBox/BrowserBox"
+  },
+  {
+   "id": "vulcain",
+   "brand": "Vulcain",
+   "model": "Idiomatic client-driven REST APIs",
+   "category": "R",
+   "type": "github",
+   "repo": "dunglas/vulcain",
+   "product_url": "https://github.com/dunglas/vulcain"
+  },
+  {
+   "id": "krakend-ce",
+   "brand": "Krakend Ce",
+   "model": "KrakenD Community Edition",
+   "category": "R",
+   "type": "github",
+   "repo": "krakend/krakend-ce",
+   "product_url": "https://github.com/krakend/krakend-ce"
+  },
+  {
+   "id": "angie",
+   "brand": "Angie",
+   "model": "Drop-in replacement for nginx",
+   "category": "R",
+   "type": "github",
+   "repo": "webserver-llc/angie",
+   "product_url": "https://github.com/webserver-llc/angie"
+  },
+  {
+   "id": "piko",
+   "brand": "Piko",
+   "model": "Alternative to Ngrok, designed to serve production traffic",
+   "category": "R",
+   "type": "github",
+   "repo": "andydunstall/piko",
+   "product_url": "https://github.com/andydunstall/piko"
+  },
+  {
+   "id": "trickster",
+   "brand": "Trickster",
+   "model": "HTTP Reverse Proxy Cache and Time Series DB Query",
+   "category": "R",
+   "type": "github",
+   "repo": "trickstercache/trickster",
+   "product_url": "https://github.com/trickstercache/trickster"
+  },
+  {
+   "id": "frpmgr",
+   "brand": "Frpmgr",
+   "model": "User-friendly desktop GUI client for FRP on Windows",
+   "category": "R",
+   "type": "github",
+   "repo": "koho/frpmgr",
+   "product_url": "https://github.com/koho/frpmgr"
+  },
+  {
+   "id": "wiredoor",
+   "brand": "Wiredoor",
+   "model": "Ingress-as-a-service platform",
+   "category": "R",
+   "type": "github",
+   "repo": "wiredoor/wiredoor",
+   "product_url": "https://github.com/wiredoor/wiredoor"
+  },
+  {
+   "id": "wordops",
+   "brand": "WordOps",
+   "model": "Install and manage a high performance WordPress stack",
+   "category": "R",
+   "type": "github",
+   "repo": "WordOps/WordOps",
+   "product_url": "https://github.com/WordOps/WordOps"
+  },
+  {
+   "id": "keepassdx",
+   "brand": "KeePassDX",
+   "model": "Vault and password manager",
+   "category": "A",
+   "type": "github",
+   "repo": "Kunzisoft/KeePassDX",
+   "product_url": "https://github.com/Kunzisoft/KeePassDX"
   }
  ]
 }
