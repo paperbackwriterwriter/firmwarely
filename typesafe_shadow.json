@@ -3330,6 +3330,60 @@
     "security_fix_plain": 0.08,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "openvas-scanner",
+   "version": "23.50.26",
+   "name": "Greenbone OpenVAS scanner",
+   "judged_at": "2026-10-01T13:22:33+00:00",
+   "notes_chars": 173,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.52,
+    "security_fix_plain": 0.65,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "zitadel",
+   "version": "4.19.4",
+   "name": "ZITADEL Identity platform",
+   "judged_at": "2026-10-01T13:22:33+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.07,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.3.38.2-lts",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-01T13:22:33+00:00",
+   "notes_chars": 37,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

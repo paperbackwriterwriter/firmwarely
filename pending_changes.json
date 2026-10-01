@@ -106,6 +106,51 @@
    "notes": "7.4.0+260928",
    "source_url": "https://github.com/LimeSurvey/LimeSurvey/releases/tag/7.4.0%2B260928",
    "page_url": "https://www.firmwarely.com/devices/limesurvey/"
+  },
+  "openvas-scanner": {
+   "id": "openvas-scanner",
+   "brand": "Greenbone",
+   "model": "OpenVAS scanner",
+   "category": "A",
+   "status": "update",
+   "version": "23.50.26",
+   "previous": "23.50.25",
+   "released": "2026-10-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "[23.50.26] - 2026-10-01: Bug Fixes: harden various cryptographical operations f3a7480e [23.50.26]: https://github.com/greenbone/openvas-scanner/compare/v23.50.25...v23.50.26",
+   "source_url": "https://github.com/greenbone/openvas-scanner/releases/tag/v23.50.26",
+   "page_url": "https://www.firmwarely.com/devices/openvas-scanner/"
+  },
+  "zitadel": {
+   "id": "zitadel",
+   "brand": "ZITADEL",
+   "model": "Identity platform",
+   "category": "A",
+   "status": "update",
+   "version": "4.19.4",
+   "previous": "4.19.3",
+   "released": "2026-10-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "4.19.4 (2026-10-01): Bug Fixes: actions: set instance ID in async execution worker context (#​12730) (03a2469), closes #​11985 notification: correct ID order of the invite code sent handler (#​12846) (101343a) skip finalized unique-constraint backfill and exclusive owner deletes (#​12833) (aee8b88)…",
+   "source_url": "https://github.com/zitadel/zitadel/releases/tag/v4.19.4",
+   "page_url": "https://www.firmwarely.com/devices/zitadel/"
+  },
+  "clickhouse": {
+   "id": "clickhouse",
+   "brand": "ClickHouse",
+   "model": "Analytics database",
+   "category": "A",
+   "status": "update",
+   "version": "26.3.38.2-lts",
+   "previous": "26.9.7.9-stable",
+   "released": "2026-10-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release v26.3.38.2-lts v26.3.38.2-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.3.38.2-lts",
+   "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   }
  }
 }
