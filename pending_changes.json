@@ -143,13 +143,13 @@
    "model": "Chat interface",
    "category": "A",
    "status": "update",
-   "version": "2.0.15",
+   "version": "2.0.16",
    "previous": "2.0.13",
    "released": "2026-09-30",
    "date_known": true,
    "eol": false,
-   "notes": "chart-2.0.15",
-   "source_url": "https://github.com/LibreChat-AI/LibreChat/releases/tag/chart-2.0.15",
+   "notes": "🆙 chore: Bump Packages and Helm for v0.8.8 ( #​16573 ) Co-authored-by: Lia",
+   "source_url": "https://github.com/LibreChat-AI/LibreChat/releases/tag/chart-2.0.16",
    "page_url": "https://www.firmwarely.com/devices/librechat/"
   },
   "pixelfed": {
@@ -586,6 +586,36 @@
    "notes": "Overview: This release only contains changes related to making networking (LWIP) on this core as bulletproof as possible. LWIP has been changed to verify that it is being called from the proper LWIP task (under FreeRTOS) or while the LWIPMutex is owned (under baremetal). Additionally, critical regi…",
    "source_url": "https://github.com/earlephilhower/arduino-pico/releases/tag/6.2.0",
    "page_url": "https://www.firmwarely.com/devices/arduino-pico/"
+  },
+  "nintendo-switch": {
+   "id": "nintendo-switch",
+   "brand": "Nintendo",
+   "model": "Switch",
+   "category": "C",
+   "status": "update",
+   "version": "23.0.1",
+   "previous": "23.0.0",
+   "released": "2026-09-30",
+   "date_known": false,
+   "eol": false,
+   "notes": "Nintendo Switch system update. Nintendo usually lists these as stability improvements.",
+   "source_url": "https://en-americas-support.nintendo.com/app/answers/detail/a_id/22525",
+   "page_url": "https://www.firmwarely.com/devices/nintendo-switch/"
+  },
+  "openthread": {
+   "id": "openthread",
+   "brand": "OpenThread",
+   "model": "Thread networking stack",
+   "category": "S",
+   "status": "update",
+   "version": "2026.10.0",
+   "previous": "2026.09.0",
+   "released": "2026-10-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: 🚀 Features: [routing-manager] introduce kToAdvertise state in OnLinkPrefixManager [dnssd] bound question count in ShouldForwardToUpstream() [mac] make Frame::ParseInfo public and unify frame field access [mac-frame] remove unused PerformAesCcm() declaration from TxFrame [test] check…",
+   "source_url": "https://github.com/openthread/openthread/releases/tag/v2026.10.0",
+   "page_url": "https://www.firmwarely.com/devices/openthread/"
   }
  }
 }

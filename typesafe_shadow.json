@@ -2970,6 +2970,60 @@
     "security_fix_plain": 0.1,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "librechat",
+   "version": "2.0.16",
+   "name": "LibreChat Chat interface",
+   "judged_at": "2026-10-01T01:18:43+00:00",
+   "notes_chars": 74,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "nintendo-switch",
+   "version": "23.0.1",
+   "name": "Nintendo Switch",
+   "judged_at": "2026-10-01T01:18:43+00:00",
+   "notes_chars": 86,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "openthread",
+   "version": "2026.10.0",
+   "name": "OpenThread Thread networking stack",
+   "judged_at": "2026-10-01T01:18:43+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
