@@ -406,6 +406,21 @@
    "notes": "Dep: Bump basic-ftp override to v6.2.1 for vuln fixes Dep: Bump moment to v2.31.0 for vuln fix. Dep: Bump pixl-mail to v1.1.11 for upstream vuln fixes in nodemailer.",
    "source_url": "https://github.com/jhuckaby/Cronicle/releases/tag/v0.9.135",
    "page_url": "https://www.firmwarely.com/devices/cronicle/"
+  },
+  "zigbee2mqtt": {
+   "id": "zigbee2mqtt",
+   "brand": "Zigbee2MQTT",
+   "model": "Zigbee bridge software",
+   "category": "S",
+   "status": "update",
+   "version": "2.14.2",
+   "previous": "2.14.1",
+   "released": "2026-10-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "Improvements: #​13337 Aqara UT-A01E: support custom NTC floor sensors () #​13315 NodOn SIN-4-1-20, SIN-4-1-21 and SIN-4-2-20: make wired input self-bind configurable () #​13345 Tuya TS0601_cover_1: expose slat tilt on DP21 () #​13341 Yale LIA: expose lock action, source and user from operation even…",
+   "source_url": "https://github.com/Koenkk/zigbee2mqtt/releases/tag/2.14.2",
+   "page_url": "https://www.firmwarely.com/devices/zigbee2mqtt/"
   }
  }
 }
