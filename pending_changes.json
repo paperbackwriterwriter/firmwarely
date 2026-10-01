@@ -143,13 +143,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.7.19.5-stable",
+   "version": "26.9.8.3-stable",
    "previous": "26.9.7.9-stable",
    "released": "2026-10-01",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.7.19.5-stable v26.7.19.5-stable",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.7.19.5-stable",
+   "notes": "Release v26.9.8.3-stable v26.9.8.3-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.9.8.3-stable",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "trivy": {
@@ -226,6 +226,51 @@
    "notes": "8.0.0rc1",
    "source_url": "https://github.com/zabbix/zabbix/releases/tag/8.0.0rc1",
    "page_url": "https://www.firmwarely.com/devices/zabbix/"
+  },
+  "formbricks": {
+   "id": "formbricks",
+   "brand": "Formbricks",
+   "model": "Surveys",
+   "category": "A",
+   "status": "critical",
+   "version": "6.0.2",
+   "previous": "6.0.1",
+   "released": "2026-10-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: fix(docker): ship a slim Cube image without known CVEs [ENG-3431] (backport #​9457 to release/6.0) fix(helm): run Cube with a read-only root filesystem and no capabilities (backport #​9461 to release/6.0) fix(security): bump next to 16.3.6 for GHSA-vcvr-r3jv-pc5j (backport #​9478 to…",
+   "source_url": "https://github.com/formbricks/formbricks/releases/tag/6.0.2",
+   "page_url": "https://www.firmwarely.com/devices/formbricks/"
+  },
+  "drawio": {
+   "id": "drawio",
+   "brand": "draw.io",
+   "model": "Diagrams",
+   "category": "A",
+   "status": "update",
+   "version": "31.6.1",
+   "previous": "31.5.3",
+   "released": "2026-10-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "v31.6.1 v31.6.1",
+   "source_url": "https://github.com/jgraph/drawio/releases/tag/v31.6.1",
+   "page_url": "https://www.firmwarely.com/devices/drawio/"
+  },
+  "mobile-mcp": {
+   "id": "mobile-mcp",
+   "brand": "Mobile Mcp",
+   "model": "Model Context Protocol Server",
+   "category": "C",
+   "status": "update",
+   "version": "1.0.7",
+   "previous": "1.0.6",
+   "released": "2026-10-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "Version 1.0.7 1.0.7",
+   "source_url": "https://github.com/mobile-next/mobile-mcp/releases/tag/1.0.7",
+   "page_url": "https://www.firmwarely.com/devices/mobile-mcp/"
   }
  }
 }

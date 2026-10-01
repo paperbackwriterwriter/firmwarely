@@ -3492,6 +3492,78 @@
     "security_fix_plain": 0.13,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.9.8.3-stable",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-01T15:19:56+00:00",
+   "notes_chars": 41,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "end_of_life": 0.02,
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03
+   }
+  },
+  {
+   "id": "formbricks",
+   "version": "6.0.2",
+   "name": "Formbricks Surveys",
+   "judged_at": "2026-10-01T15:19:56+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.89,
+    "security_fix_plain": 0.77,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "drawio",
+   "version": "31.6.1",
+   "name": "draw.io Diagrams",
+   "judged_at": "2026-10-01T15:19:56+00:00",
+   "notes_chars": 15,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "mobile-mcp",
+   "version": "1.0.7",
+   "name": "Mobile Mcp Model Context Protocol Server",
+   "judged_at": "2026-10-01T15:19:57+00:00",
+   "notes_chars": 19,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
