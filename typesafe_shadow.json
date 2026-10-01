@@ -3114,6 +3114,42 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "glpi",
+   "version": "11.0.11",
+   "name": "GLPI IT asset management",
+   "judged_at": "2026-10-01T07:20:32+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.97,
+    "security_fix_plain": 0.95,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "domoticz",
+   "version": "2026.4",
+   "name": "Domoticz Home automation server",
+   "judged_at": "2026-10-01T07:20:32+00:00",
+   "notes_chars": 28,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

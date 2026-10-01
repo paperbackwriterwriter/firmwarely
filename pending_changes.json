@@ -83,13 +83,13 @@
    "model": "IT asset management",
    "category": "A",
    "status": "critical",
-   "version": "11.0.10",
+   "version": "11.0.11",
    "previous": "11.0.9",
-   "released": "2026-09-30",
+   "released": "2026-10-01",
    "date_known": true,
    "eol": false,
-   "notes": "This is a security release, upgrading is recommended: You will find below the list of security issues fixed in this bugfixes version: [SECURITY - High] Authorization bypass in massive actions [SECURITY - High] Privilege escalation via user cloning [SECURITY - High] Improper rights checks in users d…",
-   "source_url": "https://github.com/glpi-project/glpi/releases/tag/11.0.10",
+   "notes": "This is a security release, upgrading is recommended: [!IMPORTANT] This release replaces version 11.0.10 that introduced a regression in plugins system. You will find below the list of security issues fixed in this bugfixes version: [SECURITY - High] Authorization bypass in massive actions [SECURIT…",
+   "source_url": "https://github.com/glpi-project/glpi/releases/tag/11.0.11",
    "page_url": "https://www.firmwarely.com/devices/glpi/"
   },
   "langfuse": {
@@ -661,6 +661,21 @@
    "notes": "Changes:: d0d2362905ee577482697359a20a7932d52b9458 sportz247: update cats & layout 1896181ab866cce218ea7b4df2f28927796cce83 TPB: drop same more proxies 681965d08280c98b7b38f16b426959b062a6739b Update schema-docs.yml d72fd263a7d6268e737c636d5f229caa140ca5aa yts: drop a proxy 6e945adfbe8ab8c2532d995b…",
    "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2748",
    "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "domoticz": {
+   "id": "domoticz",
+   "brand": "Domoticz",
+   "model": "Home automation server",
+   "category": "S",
+   "status": "update",
+   "version": "2026.4",
+   "previous": "2026.3",
+   "released": "2026-10-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "Stable Release 2026.4 2026.4",
+   "source_url": "https://github.com/domoticz/domoticz/releases/tag/2026.4",
+   "page_url": "https://www.firmwarely.com/devices/domoticz/"
   }
  }
 }
