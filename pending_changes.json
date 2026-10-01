@@ -271,6 +271,36 @@
    "notes": "Version 1.0.7 1.0.7",
    "source_url": "https://github.com/mobile-next/mobile-mcp/releases/tag/1.0.7",
    "page_url": "https://www.firmwarely.com/devices/mobile-mcp/"
+  },
+  "caddy-server": {
+   "id": "caddy-server",
+   "brand": "Caddy",
+   "model": "Web server and reverse proxy",
+   "category": "R",
+   "status": "update",
+   "version": "2.11.6",
+   "previous": "2.11.4",
+   "released": "2026-10-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "This patch release contains a large number of minor and some noticeable enhancements and bug fixes. Thank you to everyone who contributed or spent their LLM tokens responsibly to help with this release! We have much more in the pipeline still, as AI has made contributions of all quality levels chea…",
+   "source_url": "https://github.com/caddyserver/caddy/releases/tag/v2.11.6",
+   "page_url": "https://www.firmwarely.com/devices/caddy-server/"
+  },
+  "stirling-pdf": {
+   "id": "stirling-pdf",
+   "brand": "Stirling PDF",
+   "model": "PDF toolkit",
+   "category": "A",
+   "status": "update",
+   "version": "3.0.2",
+   "previous": "3.0.1",
+   "released": "2026-10-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release contains bug fixes and various other improvements Enhancements: add support for selective page cropping better tool recommendation based on user usage add visual feedback during page reordering Bugs fixed: translations missing Certain languages not loading correctly Processor not corre…",
+   "source_url": "https://github.com/Stirling-Tools/Stirling-PDF/releases/tag/v3.0.2",
+   "page_url": "https://www.firmwarely.com/devices/stirling-pdf/"
   }
  }
 }
