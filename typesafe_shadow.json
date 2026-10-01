@@ -3312,6 +3312,24 @@
     "security_fix_plain": 0.05,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "limesurvey",
+   "version": "7.4.0",
+   "name": "LimeSurvey Survey platform",
+   "judged_at": "2026-10-01T11:18:22+00:00",
+   "notes_chars": 12,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.1,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
