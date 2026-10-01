@@ -3384,6 +3384,114 @@
     "security_fix_plain": 0.04,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.7.19.5-stable",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-01T14:21:10+00:00",
+   "notes_chars": 43,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "trivy",
+   "version": "0.75.0",
+   "name": "Aqua Trivy vulnerability scanner",
+   "judged_at": "2026-10-01T14:21:10+00:00",
+   "notes_chars": 161,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "openbao",
+   "version": "2.7.1",
+   "name": "OpenBao Secrets manager",
+   "judged_at": "2026-10-01T14:21:11+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.98,
+    "security_fix_plain": 0.97,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "mastodon",
+   "version": "4.7.3",
+   "name": "Mastodon Social network server",
+   "judged_at": "2026-10-01T14:21:11+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.1,
+    "security_fix_plain": 0.21,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "metabase",
+   "version": "63.19",
+   "name": "Metabase Business intelligence",
+   "judged_at": "2026-10-01T14:21:11+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "zabbix",
+   "version": "8.0.0",
+   "name": "Zabbix Monitoring platform",
+   "judged_at": "2026-10-01T14:21:11+00:00",
+   "notes_chars": 8,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.13,
+    "security_fix_plain": 0.13,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
