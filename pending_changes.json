@@ -436,6 +436,66 @@
    "notes": "Changelog: 69f39c4cd89afa9cefa8da9ec18aeea39136fe8b Merge pull request #​1102 from tomwilkie/feat/umbb dd8a42476afee07cafe3009f4c39a0d3eacf595d feat(umbb): review fixes for cellular modem metrics 5ed9b00598059452ec8e5a9b4d20de033b63e883 chore(deps): bump github.com/unpoller/unifi/v6 to v6.3.0 00b6f…",
    "source_url": "https://github.com/unpoller/unpoller/releases/tag/v5.5.0",
    "page_url": "https://www.firmwarely.com/devices/unpoller/"
+  },
+  "sony-playstation-5": {
+   "id": "sony-playstation-5",
+   "brand": "Sony",
+   "model": "PlayStation 5",
+   "category": "C",
+   "status": "update",
+   "version": "26.06-14.10.00",
+   "previous": "26.06-14.00.00",
+   "released": "2026-10-01",
+   "date_known": false,
+   "eol": false,
+   "notes": "PS5 system software. Sony usually describes these as performance and stability improvements; see the release notes for details.",
+   "source_url": "https://www.playstation.com/en-us/support/hardware/ps5/system-software-info/",
+   "page_url": "https://www.firmwarely.com/devices/sony-playstation-5/"
+  },
+  "sony-playstation-5-pro": {
+   "id": "sony-playstation-5-pro",
+   "brand": "Sony",
+   "model": "PlayStation 5 Pro",
+   "category": "C",
+   "status": "update",
+   "version": "26.06-14.10.00",
+   "previous": "26.06-14.00.00",
+   "released": "2026-10-01",
+   "date_known": false,
+   "eol": false,
+   "notes": "PS5 system software. Sony usually describes these as performance and stability improvements; see the release notes for details.",
+   "source_url": "https://www.playstation.com/en-us/support/hardware/ps5/system-software-info/",
+   "page_url": "https://www.firmwarely.com/devices/sony-playstation-5-pro/"
+  },
+  "anythingllm": {
+   "id": "anythingllm",
+   "brand": "AnythingLLM",
+   "model": "Document chat",
+   "category": "A",
+   "status": "update",
+   "version": "1.17.0",
+   "previous": "1.16.2",
+   "released": "2026-10-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: fix(collector): read spreadsheet dates as dates, not serial numbers Drop temp param for Anthropic models Allow Generic OpenAI max tokens of 0 to omit max_tokens from request fix: support SearchApi engines in agent web browsing fix: ignore malformed agent WebSocket frames instead of …",
+   "source_url": "https://github.com/Mintplex-Labs/anything-llm/releases/tag/v1.17.0",
+   "page_url": "https://www.firmwarely.com/devices/anythingllm/"
+  },
+  "onyx": {
+   "id": "onyx",
+   "brand": "Onyx",
+   "model": "AI platform",
+   "category": "A",
+   "status": "update",
+   "version": "4.8.3",
+   "previous": "4.8.2",
+   "released": "2026-10-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "Warning: Do not upgrade to this release if you want to preserve your existing indexed documents but have not yet run the document index migration, which can be done from any version v3.x. See additional documentation here. See the assets to download this version and install. What's Changed: chore(d…",
+   "source_url": "https://github.com/onyx-dot-app/onyx/releases/tag/v4.8.3",
+   "page_url": "https://www.firmwarely.com/devices/onyx/"
   }
  }
 }
