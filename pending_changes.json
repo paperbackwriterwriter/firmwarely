@@ -397,14 +397,14 @@
    "brand": "Keycloak",
    "model": "Identity provider",
    "category": "A",
-   "status": "critical",
-   "version": "26.7.5",
+   "status": "update",
+   "version": "26.8.0",
    "previous": "26.7.4",
-   "released": "2026-09-30",
+   "released": "2026-10-01",
    "date_known": true,
    "eol": false,
-   "notes": "Upgrading Before upgrading refer to the migration guide for a complete list of changes. All resolved issues Security fixes #​50996 [CVE-2026-16103] Incomplete fix for CVE-2026-9798 (Keycloak CIBA brute-force lockout bypass at token redemption) oidc #​51278 [CVE-2026-18206] Client policy source-host…",
-   "source_url": "https://github.com/keycloak/keycloak/releases/tag/26.7.5",
+   "notes": "Highlights This release features new capabilities for users and administrators of Keycloak. The highlights of this release are: Issue and verify digital wallet credentials with OID4VCI and OID4VP Automate user provisioning across identity systems with the SCIM API Run multi-cluster deployments with…",
+   "source_url": "https://github.com/keycloak/keycloak/releases/tag/26.8.0",
    "page_url": "https://www.firmwarely.com/devices/keycloak/"
   },
   "ghostfolio": {
@@ -631,6 +631,36 @@
    "notes": ":rocket: v0.14.6 (Latest): New Features: Database history — Added read-only previews and restoration of saved database views and rows, with a recovery checkpoint before restoring. Available for editable databases in server-backed workspaces when the server enables database history. PDF and Word imp…",
    "source_url": "https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.14.6",
    "page_url": "https://www.firmwarely.com/devices/appflowy/"
+  },
+  "fluent-bit": {
+   "id": "fluent-bit",
+   "brand": "Fluent Bit",
+   "model": "Log processor",
+   "category": "A",
+   "status": "update",
+   "version": "5.1.3",
+   "previous": "5.1.2",
+   "released": "2026-10-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "https://fluentbit.io/announcements/v5.1.3/ What's Changed: release: update to 5.1.3 by in https://github.com/fluent/fluent-bit/pull/12379 workflows: bump reviewdog/action-actionlint from 1.73.3 to 1.73.4 by in https://github.com/fluent/fluent-bit/pull/12381 github: workflows: Mitigate order depende…",
+   "source_url": "https://github.com/fluent/fluent-bit/releases/tag/v5.1.3",
+   "page_url": "https://www.firmwarely.com/devices/fluent-bit/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.2748",
+   "previous": "0.24.2738",
+   "released": "2026-10-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: d0d2362905ee577482697359a20a7932d52b9458 sportz247: update cats & layout 1896181ab866cce218ea7b4df2f28927796cce83 TPB: drop same more proxies 681965d08280c98b7b38f16b426959b062a6739b Update schema-docs.yml d72fd263a7d6268e737c636d5f229caa140ca5aa yts: drop a proxy 6e945adfbe8ab8c2532d995b…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2748",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
