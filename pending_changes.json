@@ -421,6 +421,21 @@
    "notes": "Improvements: #​13337 Aqara UT-A01E: support custom NTC floor sensors () #​13315 NodOn SIN-4-1-20, SIN-4-1-21 and SIN-4-2-20: make wired input self-bind configurable () #​13345 Tuya TS0601_cover_1: expose slat tilt on DP21 () #​13341 Yale LIA: expose lock action, source and user from operation even…",
    "source_url": "https://github.com/Koenkk/zigbee2mqtt/releases/tag/2.14.2",
    "page_url": "https://www.firmwarely.com/devices/zigbee2mqtt/"
+  },
+  "unpoller": {
+   "id": "unpoller",
+   "brand": "UnPoller",
+   "model": "UniFi metrics exporter",
+   "category": "R",
+   "status": "update",
+   "version": "5.5.0",
+   "previous": "5.4.0",
+   "released": "2026-10-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: 69f39c4cd89afa9cefa8da9ec18aeea39136fe8b Merge pull request #​1102 from tomwilkie/feat/umbb dd8a42476afee07cafe3009f4c39a0d3eacf595d feat(umbb): review fixes for cellular modem metrics 5ed9b00598059452ec8e5a9b4d20de033b63e883 chore(deps): bump github.com/unpoller/unifi/v6 to v6.3.0 00b6f…",
+   "source_url": "https://github.com/unpoller/unpoller/releases/tag/v5.5.0",
+   "page_url": "https://www.firmwarely.com/devices/unpoller/"
   }
  }
 }
