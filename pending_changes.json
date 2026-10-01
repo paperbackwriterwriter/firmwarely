@@ -346,6 +346,51 @@
    "notes": "1.821.0 (2026-10-01): Features: add //no_network annotation for native scripts (#​11445) (c25bb1e) add alert actions and reduce alert padding (#​11439) (52c3188) add test key button to AI resource drawers (#​11466) (26be1d7) add wmill datatable migrate status (#​11465) (7f1bead) agents as a standal…",
    "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.821.0",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
+  },
+  "netbird": {
+   "id": "netbird",
+   "brand": "NetBird",
+   "model": "Mesh VPN",
+   "category": "R",
+   "status": "update",
+   "version": "0.80.0",
+   "previous": "0.79.0",
+   "released": "2026-10-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "v0.80.0 v0.80.0",
+   "source_url": "https://github.com/netbirdio/netbird/releases/tag/v0.80.0",
+   "page_url": "https://www.firmwarely.com/devices/netbird/"
+  },
+  "weaviate": {
+   "id": "weaviate",
+   "brand": "Weaviate",
+   "model": "Vector database",
+   "category": "A",
+   "status": "update",
+   "version": "1.39.8",
+   "previous": "1.39.7",
+   "released": "2026-10-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "Breaking Changes: none New Features: none Fixes: fix: MMR normalize query vector fix(auth): clear db user login cache on snapshot restore Stop backup endpoints from exposing collections the caller cannot access hnsw: fix commit log crash loop after a kill during heavy writes fix: named vector tombs…",
+   "source_url": "https://github.com/weaviate/weaviate/releases/tag/v1.39.8",
+   "page_url": "https://www.firmwarely.com/devices/weaviate/"
+  },
+  "dagster": {
+   "id": "dagster",
+   "brand": "Dagster",
+   "model": "Data orchestrator",
+   "category": "A",
+   "status": "update",
+   "version": "1.13.25",
+   "previous": "1.13.24",
+   "released": "2026-10-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "New: Improved the performance of declarative automation for partitioned assets with a long materialization history. [ui] The UI now has a mobile layout for phones, with a new navigation menu and mobile versions of the Home, Jobs, Automation, Timeline, Asset Catalog, and Asset Overview pages. Pages …",
+   "source_url": "https://github.com/dagster-io/dagster/releases/tag/1.13.25",
+   "page_url": "https://www.firmwarely.com/devices/dagster/"
   }
  }
 }
