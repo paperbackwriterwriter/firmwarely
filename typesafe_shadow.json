@@ -3222,6 +3222,96 @@
     "security_fix_plain": 0.79,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "meilisearch",
+   "version": "1.54.3",
+   "name": "Meilisearch Search engine",
+   "judged_at": "2026-10-01T10:20:05+00:00",
+   "notes_chars": 170,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "misskey",
+   "version": "2026.10.0",
+   "name": "Misskey Social platform",
+   "judged_at": "2026-10-01T10:20:06+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.21,
+    "security_fix_plain": 0.15,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "penpot",
+   "version": "2.18.1",
+   "name": "Penpot Design tool",
+   "judged_at": "2026-10-01T10:20:06+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "langfuse",
+   "version": "4.49.0",
+   "name": "Langfuse LLM observability",
+   "judged_at": "2026-10-01T10:20:06+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.274.35023",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-10-01T10:20:06+00:00",
+   "notes_chars": 71,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
