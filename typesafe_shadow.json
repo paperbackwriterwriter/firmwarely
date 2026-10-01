@@ -3204,6 +3204,24 @@
     "security_fix_plain": 0.04,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "oauth2-proxy",
+   "version": "7.15.5",
+   "name": "OAuth2 Proxy Reverse proxy with OAuth",
+   "judged_at": "2026-10-01T09:20:12+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.89,
+    "security_fix_plain": 0.79,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
