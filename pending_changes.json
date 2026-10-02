@@ -331,6 +331,36 @@
    "notes": "What's Changed: Add pending package updates list to the system page (#​2357, #​2427) Add Wi-Fi signal strength monitoring (#​2367) Add TLS certificate expiry check to HTTPS network monitors (#​2401) Add systemd service logs to service details (#​2440) Add option to set the DNS server queried by DNS…",
    "source_url": "https://github.com/henrygd/beszel/releases/tag/v0.21.0",
    "page_url": "https://www.firmwarely.com/devices/beszel/"
+  },
+  "ollama": {
+   "id": "ollama",
+   "brand": "Ollama",
+   "model": "Local LLM runner",
+   "category": "A",
+   "status": "update",
+   "version": "0.35.1",
+   "previous": "0.35.0",
+   "released": "2026-09-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "Clef decision models: Ollama now supports Clef and Clef Flash, Cloudflare's new open-source decision models, through /v1/systemone. Clef (27B) and Clef Flash (9B) are multimodal: requests can now include images alongside the text state, shared by all questions and scored jointly with it. sh curl ht…",
+   "source_url": "https://github.com/ollama/ollama/releases/tag/v0.35.1",
+   "page_url": "https://www.firmwarely.com/devices/ollama/"
+  },
+  "homarr": {
+   "id": "homarr",
+   "brand": "Homarr",
+   "model": "Dashboard",
+   "category": "A",
+   "status": "update",
+   "version": "2.0.0",
+   "previous": "1.77.2",
+   "released": "2026-10-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "2.0.0 (2026-10-02): We just shipped Homarr 2.0.0, the biggest homarr update ever: The big two: Custom Widgets and Workshop: Custom Widgets v2 lets you build almost any widgets. Build it with JSX, define the options it has and add it to your instance. Write them yourself, or describe what you want a…",
+   "source_url": "https://github.com/homarr-labs/homarr/releases/tag/v2.0.0",
+   "page_url": "https://www.firmwarely.com/devices/homarr/"
   }
  }
 }
