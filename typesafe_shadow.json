@@ -4482,6 +4482,42 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "vector",
+   "version": "0.3.26",
+   "name": "Vector Observability pipeline",
+   "judged_at": "2026-10-02T21:17:34+00:00",
+   "notes_chars": 25,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "onyx",
+   "version": "4.8.4",
+   "name": "Onyx AI platform",
+   "judged_at": "2026-10-02T21:17:34+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "end_of_life": 0.02,
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03
+   }
   }
  ]
 }

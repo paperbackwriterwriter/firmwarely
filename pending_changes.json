@@ -361,6 +361,36 @@
    "notes": "2.0.0 (2026-10-02): We just shipped Homarr 2.0.0, the biggest homarr update ever: The big two: Custom Widgets and Workshop: Custom Widgets v2 lets you build almost any widgets. Build it with JSX, define the options it has and add it to your instance. Write them yourself, or describe what you want a…",
    "source_url": "https://github.com/homarr-labs/homarr/releases/tag/v2.0.0",
    "page_url": "https://www.firmwarely.com/devices/homarr/"
+  },
+  "vector": {
+   "id": "vector",
+   "brand": "Vector",
+   "model": "Observability pipeline",
+   "category": "A",
+   "status": "update",
+   "version": "0.3.26",
+   "previous": "0.3.25",
+   "released": "2026-10-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "vdev-v0.3.26 vdev-v0.3.26",
+   "source_url": "https://github.com/vectordotdev/vector/releases/tag/vdev-v0.3.26",
+   "page_url": "https://www.firmwarely.com/devices/vector/"
+  },
+  "onyx": {
+   "id": "onyx",
+   "brand": "Onyx",
+   "model": "AI platform",
+   "category": "A",
+   "status": "update",
+   "version": "4.8.4",
+   "previous": "4.8.3",
+   "released": "2026-10-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "Warning: Do not upgrade to this release if you want to preserve your existing indexed documents but have not yet run the document index migration, which can be done from any version v3.x. See additional documentation here. See the assets to download this version and install. What's Changed: chore(h…",
+   "source_url": "https://github.com/onyx-dot-app/onyx/releases/tag/v4.8.4",
+   "page_url": "https://www.firmwarely.com/devices/onyx/"
   }
  }
 }
