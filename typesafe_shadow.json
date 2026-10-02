@@ -4338,6 +4338,78 @@
     "security_fix_plain": 0.16,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "actual-budget",
+   "version": "26.10.0",
+   "name": "Actual Budgeting server",
+   "judged_at": "2026-10-02T16:19:15+00:00",
+   "notes_chars": 177,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "docker-compose",
+   "version": "5.6.0",
+   "name": "Docker Compose",
+   "judged_at": "2026-10-02T16:19:15+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "aily-blockly",
+   "version": "0.9.104",
+   "name": "Aily Blockly AI IDE for Arduino",
+   "judged_at": "2026-10-02T16:19:15+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "vulcain",
+   "version": "1.4.4",
+   "name": "Vulcain Idiomatic client-driven REST APIs",
+   "judged_at": "2026-10-02T16:19:16+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

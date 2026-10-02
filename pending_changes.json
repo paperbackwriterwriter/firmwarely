@@ -241,6 +241,66 @@
    "notes": "Bambuddy 1.2.5.7 What this is A feature release on top of 1.2.5.6. 25 new features, four changes, 40 fixes and four dependency advisories closed. 29 community PRs were merged, and 28 people are credited. The headline is post-print outcome confirmation. Until now a print that completed counted as a …",
    "source_url": "https://github.com/maziggy/bambuddy/releases/tag/v1.2.5.7",
    "page_url": "https://www.firmwarely.com/devices/bambuddy/"
+  },
+  "actual-budget": {
+   "id": "actual-budget",
+   "brand": "Actual",
+   "model": "Budgeting server",
+   "category": "A",
+   "status": "update",
+   "version": "26.10.0",
+   "previous": "26.9.0",
+   "released": "2026-10-02",
+   "date_known": true,
+   "eol": false,
+   "notes": ":link: View release notes Desktop releases: Please note: Microsoft store updates can sometimes lag behind the main release by a couple of days while they verify the new version.",
+   "source_url": "https://github.com/actualbudget/actual/releases/tag/v26.10.0",
+   "page_url": "https://www.firmwarely.com/devices/actual-budget/"
+  },
+  "docker-compose": {
+   "id": "docker-compose",
+   "brand": "Docker",
+   "model": "Compose",
+   "category": "A",
+   "status": "update",
+   "version": "5.6.0",
+   "previous": "5.5.1",
+   "released": "2026-10-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: ℹ️ This release adds partial support for jobs: only manually-triggered jobs are supported for now, scheduled jobs are not yet available. Full job support will land once the corresponding Docker Engine support is merged. ✨ Improvements: Jobs Adopt compose-go jobs and container-spec l…",
+   "source_url": "https://github.com/docker/compose/releases/tag/v5.6.0",
+   "page_url": "https://www.firmwarely.com/devices/docker-compose/"
+  },
+  "aily-blockly": {
+   "id": "aily-blockly",
+   "brand": "Aily",
+   "model": "Blockly AI IDE for Arduino",
+   "category": "M",
+   "status": "update",
+   "version": "0.9.104",
+   "previous": "0.9.103",
+   "released": "2026-10-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "v0.9.104: Changes: ✨ New Features Added support for opening Arduino projects directly in Coder mode Introduced drag-and-drop folder support for quick project file management Added left sidebar collapse/expand toggle in Coder mode Enhanced window resizing with improved event handling and content bou…",
+   "source_url": "https://github.com/ailyProject/aily-blockly/releases/tag/v0.9.104",
+   "page_url": "https://www.firmwarely.com/devices/aily-blockly/"
+  },
+  "vulcain": {
+   "id": "vulcain",
+   "brand": "Vulcain",
+   "model": "Idiomatic client-driven REST APIs",
+   "category": "R",
+   "status": "update",
+   "version": "1.4.4",
+   "previous": "1.4.2",
+   "released": "2026-10-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "Vulcain 1.4.4 drops gjson and sjson in favor of Go 1.27's new encoding/json/jsontext package. Documents are now walked in a single streaming pass, making preload and fields processing up to 46% faster with up to 52% fewer allocations. The rewrite also fixes several long-standing selector bugs and b…",
+   "source_url": "https://github.com/dunglas/vulcain/releases/tag/v1.4.4",
+   "page_url": "https://www.firmwarely.com/devices/vulcain/"
   }
  }
 }
