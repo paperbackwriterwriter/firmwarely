@@ -4140,6 +4140,60 @@
     "security_fix_plain": 0.06,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "ubiquiti-unifi-protect-application",
+   "version": "7.3.70",
+   "name": "Ubiquiti UniFi Protect (NVR application)",
+   "judged_at": "2026-10-02T13:19:55+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "terraform",
+   "version": "1.16.5",
+   "name": "HashiCorp Terraform",
+   "judged_at": "2026-10-02T13:19:55+00:00",
+   "notes_chars": 232,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.3.39.7-lts",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-02T13:19:56+00:00",
+   "notes_chars": 37,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
