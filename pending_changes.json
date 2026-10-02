@@ -83,13 +83,13 @@
    "model": "DNS blocklists",
    "category": "R",
    "status": "update",
-   "version": "37522026.274.35023",
+   "version": "37522026.275.192",
    "previous": "37522026.273.57810",
-   "released": "2026-10-01",
+   "released": "2026-10-02",
    "date_known": true,
    "eol": false,
-   "notes": "#​11641 #​11640 #​11639 #​11638 #​11637 #​11636 #​11635 #​11634 #​11633",
-   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.274.35023",
+   "notes": "#​11661 #​11660 #​11659 #​11658 #​11657 #​11656 #​11655 #​11654 #​11653 #​11652 #​11651 #​11650 #​11649 #​11647 #​11646 #​11645 #​11644 #​11643",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.275.192",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   },
   "limesurvey": {
@@ -496,6 +496,21 @@
    "notes": "Warning: Do not upgrade to this release if you want to preserve your existing indexed documents but have not yet run the document index migration, which can be done from any version v3.x. See additional documentation here. See the assets to download this version and install. What's Changed: chore(d…",
    "source_url": "https://github.com/onyx-dot-app/onyx/releases/tag/v4.8.3",
    "page_url": "https://www.firmwarely.com/devices/onyx/"
+  },
+  "code-server": {
+   "id": "code-server",
+   "brand": "Coder",
+   "model": "code-server",
+   "category": "A",
+   "status": "update",
+   "version": "4.140.0",
+   "previous": "4.139.1",
+   "released": "2026-10-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "Code v1.140.0 Changed: Update to Code 1.140.0",
+   "source_url": "https://github.com/coder/code-server/releases/tag/v4.140.0",
+   "page_url": "https://www.firmwarely.com/devices/code-server/"
   }
  }
 }

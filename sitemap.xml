@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.firmwarely.com/</loc><lastmod>2026-10-01</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/</loc><lastmod>2026-10-01</lastmod></url>
-  <url><loc>https://www.firmwarely.com/my-devices.html</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://www.firmwarely.com/</loc><lastmod>2026-10-02</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/</loc><lastmod>2026-10-02</lastmod></url>
+  <url><loc>https://www.firmwarely.com/my-devices.html</loc><lastmod>2026-10-02</lastmod></url>
   <url><loc>https://www.firmwarely.com/pro/</loc><lastmod>2026-09-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/legal/</loc><lastmod>2026-09-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/support/</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://www.firmwarely.com/category/routers/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://www.firmwarely.com/category/routers/</loc><lastmod>2026-10-02</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/nas/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/smart-home/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/consoles-drones-ebikes/</loc><lastmod>2026-10-01</lastmod></url>
@@ -31,7 +31,7 @@
   <url><loc>https://www.firmwarely.com/brands/adguard/</loc><lastmod>2026-09-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/analogue/</loc><lastmod>2026-09-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/canonical/</loc><lastmod>2026-09-23</lastmod></url>
-  <url><loc>https://www.firmwarely.com/brands/coder/</loc><lastmod>2026-09-26</lastmod></url>
+  <url><loc>https://www.firmwarely.com/brands/coder/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/dbeaver/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/docker/</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/duet3d/</loc><lastmod>2026-06-02</lastmod></url>
@@ -476,7 +476,7 @@
   <url><loc>https://www.firmwarely.com/devices/onedev/</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/woodpecker-ci/</loc><lastmod>2026-09-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/verdaccio/</loc><lastmod>2026-09-20</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/code-server/</loc><lastmod>2026-09-26</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/code-server/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/coder/</loc><lastmod>2026-09-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/jupyterhub/</loc><lastmod>2026-09-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/jupyterlab/</loc><lastmod>2026-09-21</lastmod></url>
@@ -696,7 +696,7 @@
   <url><loc>https://www.firmwarely.com/devices/wasm3/</loc><lastmod>2026-09-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/jerryscript/</loc><lastmod>2024-12-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/serial-studio/</loc><lastmod>2026-08-31</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/dns-blocklists/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/dns-blocklists/</loc><lastmod>2026-10-02</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/gost/</loc><lastmod>2024-10-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/amass/</loc><lastmod>2026-04-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/gobuster/</loc><lastmod>2025-09-04</lastmod></url>

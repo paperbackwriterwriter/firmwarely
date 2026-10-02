@@ -3834,6 +3834,42 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.275.192",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-10-02T00:25:41+00:00",
+   "notes_chars": 143,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "end_of_life": 0.02,
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04
+   }
+  },
+  {
+   "id": "code-server",
+   "version": "4.140.0",
+   "name": "Coder code-server",
+   "judged_at": "2026-10-02T00:25:41+00:00",
+   "notes_chars": 45,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
