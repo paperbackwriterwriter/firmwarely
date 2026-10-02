@@ -541,6 +541,21 @@
    "notes": "Installation Guide: https://docs.onedev.io/category/installation-guide Change Log: https://code.onedev.io/onedev/server/~builds/8598/fixed-issues?query=%22State%22+is+%22Released%22+order+by+%22Type%22+asc+%2C+%22Priority%22+desc Incompatibilities: https://code.onedev.io/onedev/server/~builds/8598/…",
    "source_url": "https://github.com/theonedev/onedev/releases/tag/v16.8.3",
    "page_url": "https://www.firmwarely.com/devices/onedev/"
+  },
+  "tooljet": {
+   "id": "tooljet",
+   "brand": "ToolJet",
+   "model": "Low-code platform",
+   "category": "A",
+   "status": "update",
+   "version": "3.20.237-lts",
+   "previous": "3.20.236-lts",
+   "released": "2026-10-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "🚀 Features: Added app-scoped sessions issued from a workspace personal access token Introduced workspace limits for ToolJet Cloud 🌟 Enhancements: Extended workspace limit enforcement for ToolJet Cloud Added an upgrade modal to prompt plan upgrades 🛠️ Fixes: Updated the support email shown in the wo…",
+   "source_url": "https://github.com/ToolJet/ToolJet/releases/tag/v3.20.237-lts",
+   "page_url": "https://www.firmwarely.com/devices/tooljet/"
   }
  }
 }
