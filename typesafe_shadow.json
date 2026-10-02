@@ -4590,6 +4590,24 @@
     "security_fix_plain": 0.82,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "pomerium",
+   "version": "0.33.4",
+   "name": "Pomerium Identity-aware access proxy",
+   "judged_at": "2026-10-02T23:14:34+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.15,
+    "security_fix_plain": 0.17,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

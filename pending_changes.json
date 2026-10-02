@@ -451,6 +451,21 @@
    "notes": "What's Changed: [releng release-5.15] gromit: sync templates by in https://github.com/TykTechnologies/tyk/pull/8612 Merging to release-5.15: TT-17795: bump golang.org/x/text and google.golang.org/grpc for CVE fixes (#​8582) by in https://github.com/TykTechnologies/tyk/pull/8606 [releng release-5.15…",
    "source_url": "https://github.com/TykTechnologies/tyk/releases/tag/v5.15.1",
    "page_url": "https://www.firmwarely.com/devices/tyk/"
+  },
+  "pomerium": {
+   "id": "pomerium",
+   "brand": "Pomerium",
+   "model": "Identity-aware access proxy",
+   "category": "R",
+   "status": "critical",
+   "version": "0.33.4",
+   "previous": "0.33.3",
+   "released": "2026-10-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "Security: This release includes an update to Envoy v1.38.5 (from v1.38.2). Please see the following Envoy release notes for a full list of security fixes: https://www.envoyproxy.io/docs/envoy/v1.38.5/version_history/v1.38/v1.38.3 https://www.envoyproxy.io/docs/envoy/v1.38.5/version_history/v1.38/v1…",
+   "source_url": "https://github.com/pomerium/pomerium/releases/tag/v0.33.4",
+   "page_url": "https://www.firmwarely.com/devices/pomerium/"
   }
  }
 }
