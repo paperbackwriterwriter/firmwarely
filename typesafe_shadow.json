@@ -3924,6 +3924,78 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "raspap",
+   "version": "3.5.8",
+   "name": "RaspAP Wi-Fi router for Raspberry Pi",
+   "judged_at": "2026-10-02T04:19:09+00:00",
+   "notes_chars": 174,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.96,
+    "security_fix_plain": 0.92,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "m5unified",
+   "version": "0.2.25",
+   "name": "M5Stack M5Unified library",
+   "judged_at": "2026-10-02T04:19:10+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "wiki-js",
+   "version": "3.0.0-beta",
+   "name": "Wiki.js Wiki",
+   "judged_at": "2026-10-02T04:19:10+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "uvtools",
+   "version": "7.0.1",
+   "name": "UVtools MSLA/DLP, file analysis, calibration, repair, conversion",
+   "judged_at": "2026-10-02T04:19:10+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

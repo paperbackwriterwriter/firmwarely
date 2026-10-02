@@ -556,6 +556,66 @@
    "notes": "🚀 Features: Added app-scoped sessions issued from a workspace personal access token Introduced workspace limits for ToolJet Cloud 🌟 Enhancements: Extended workspace limit enforcement for ToolJet Cloud Added an upgrade modal to prompt plan upgrades 🛠️ Fixes: Updated the support email shown in the wo…",
    "source_url": "https://github.com/ToolJet/ToolJet/releases/tag/v3.20.237-lts",
    "page_url": "https://www.firmwarely.com/devices/tooljet/"
+  },
+  "raspap": {
+   "id": "raspap",
+   "brand": "RaspAP",
+   "model": "Wi-Fi router for Raspberry Pi",
+   "category": "R",
+   "status": "update",
+   "version": "3.5.8",
+   "previous": "3.5.7",
+   "released": "2026-10-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Fix command injection in SSID and OpenVPN cfg_id handling Update release version Full Changelog: https://github.com/RaspAP/raspap-webgui/compare/3.5.7...3.5.8",
+   "source_url": "https://github.com/RaspAP/raspap-webgui/releases/tag/3.5.8",
+   "page_url": "https://www.firmwarely.com/devices/raspap/"
+  },
+  "m5unified": {
+   "id": "m5unified",
+   "brand": "M5Stack",
+   "model": "M5Unified library",
+   "category": "M",
+   "status": "update",
+   "version": "0.2.25",
+   "previous": "0.2.24",
+   "released": "2026-10-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "Fixes: StopWatch: calling M5.Display.init() before M5.begin() showed wrong colors (black as a bright color): begin() drove GPIO46 as a power hold although it is a display data line on that board. The early hold is skipped in that case and applied once the board is known, only on boards whose power …",
+   "source_url": "https://github.com/m5stack/M5Unified/releases/tag/0.2.25",
+   "page_url": "https://www.firmwarely.com/devices/m5unified/"
+  },
+  "wiki-js": {
+   "id": "wiki-js",
+   "brand": "Wiki.js",
+   "model": "Wiki",
+   "category": "A",
+   "status": "update",
+   "version": "3.0.0-beta",
+   "previous": "2.5.315",
+   "released": "2026-10-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "[!WARNING] 3.x Beta Release - Not for production use See https://docs.js.wiki for instructions :sparkles: New Features: 9e36597 - notifications (commit) 9712cbf - rerender all pages utility + avoid blanking render on imports / render failure (commit) 6dc3c3b - colorize broken links + update links o…",
+   "source_url": "https://github.com/requarks/wiki/releases/tag/3.0.0-beta.617",
+   "page_url": "https://www.firmwarely.com/devices/wiki-js/"
+  },
+  "uvtools": {
+   "id": "uvtools",
+   "brand": "UVtools",
+   "model": "MSLA/DLP, file analysis, calibration, repair, conversion",
+   "category": "M",
+   "status": "update",
+   "version": "7.0.1",
+   "previous": "7.0.0",
+   "released": "2026-10-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "(Improvement) Add a Windows renderer preference in 3D preview settings to prefer native OpenGL (WGL) after restarting UVtools; ANGLE stays the default, with WGL tried before software rendering (#​1152, #​1153) (Add) Pixel Arithmetic options to apply changes only to model top surfaces, with an optio…",
+   "source_url": "https://github.com/sn4k3/UVtools/releases/tag/v7.0.1",
+   "page_url": "https://www.firmwarely.com/devices/uvtools/"
   }
  }
 }
