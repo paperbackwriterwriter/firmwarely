@@ -3870,6 +3870,42 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "rustdesk",
+   "version": "1.5.0",
+   "name": "RustDesk Remote desktop",
+   "judged_at": "2026-10-02T02:17:26+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "end_of_life": 0.02,
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04
+   }
+  },
+  {
+   "id": "onedev",
+   "version": "16.8.3",
+   "name": "OneDev Git server with CI",
+   "judged_at": "2026-10-02T02:17:26+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
