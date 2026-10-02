@@ -4410,6 +4410,24 @@
     "security_fix_plain": 0.04,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "agentgateway",
+   "version": "1.6.0",
+   "name": "Agentgateway Next Generation Agentic Proxy for AI Agents and MCP servers",
+   "judged_at": "2026-10-02T17:18:19+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.08,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

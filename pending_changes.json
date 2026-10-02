@@ -301,6 +301,21 @@
    "notes": "Vulcain 1.4.4 drops gjson and sjson in favor of Go 1.27's new encoding/json/jsontext package. Documents are now walked in a single streaming pass, making preload and fields processing up to 46% faster with up to 52% fewer allocations. The rewrite also fixes several long-standing selector bugs and b…",
    "source_url": "https://github.com/dunglas/vulcain/releases/tag/v1.4.4",
    "page_url": "https://www.firmwarely.com/devices/vulcain/"
+  },
+  "agentgateway": {
+   "id": "agentgateway",
+   "brand": "Agentgateway",
+   "model": "Next Generation Agentic Proxy for AI Agents and MCP servers",
+   "category": "R",
+   "status": "update",
+   "version": "1.6.0",
+   "previous": "1.5.0",
+   "released": "2026-10-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "🎉 Welcome to the 1.6.0 release of the agentgateway project! This release makes LLM routing more resilient, turns on the Kubernetes AgentgatewayModel API by default, adds zero-configuration cost tracking for common public models, improves OIDC and JWT authentication, and fills important MCP compatib…",
+   "source_url": "https://github.com/agentgateway/agentgateway/releases/tag/v1.6.0",
+   "page_url": "https://www.firmwarely.com/devices/agentgateway/"
   }
  }
 }
