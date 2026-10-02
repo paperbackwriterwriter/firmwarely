@@ -391,6 +391,66 @@
    "notes": "Warning: Do not upgrade to this release if you want to preserve your existing indexed documents but have not yet run the document index migration, which can be done from any version v3.x. See additional documentation here. See the assets to download this version and install. What's Changed: chore(h…",
    "source_url": "https://github.com/onyx-dot-app/onyx/releases/tag/v4.8.4",
    "page_url": "https://www.firmwarely.com/devices/onyx/"
+  },
+  "owncloud-ocis": {
+   "id": "owncloud-ocis",
+   "brand": "ownCloud",
+   "model": "Infinite Scale",
+   "category": "N",
+   "status": "critical",
+   "version": "8.2.1",
+   "previous": "8.2.0",
+   "released": "2026-10-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "Table of Contents: Changelog for 8.2.1 Changes in 8.2.1: Summary: Security - Bump golang.org/x/image to v0.45.0: #​12806 Security - Bump Go and deps: #​12902 Security - Bump vulnerable dependencies: #​12912 Security - Harden public link brute force protection: #​12945 Security - Bump grpc-go depend…",
+   "source_url": "https://github.com/owncloud/ocis/releases/tag/v8.2.1",
+   "page_url": "https://www.firmwarely.com/devices/owncloud-ocis/"
+  },
+  "localai": {
+   "id": "localai",
+   "brand": "LocalAI",
+   "model": "OpenAI-compatible local API",
+   "category": "A",
+   "status": "update",
+   "version": "4.11.0",
+   "previous": "4.10.0",
+   "released": "2026-10-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "🎉 LocalAI 4.11.0 Release! 🚀: LocalAI 4.11.0 is out! This release makes LocalAI more useful for audio understanding, resilient model serving, structured decisions, and day-to-day operation. Audio scenes can now combine transcription, diarization, sound detection, and remembered speaker names. Ordere…",
+   "source_url": "https://github.com/mudler/LocalAI/releases/tag/v4.11.0",
+   "page_url": "https://www.firmwarely.com/devices/localai/"
+  },
+  "vikunja": {
+   "id": "vikunja",
+   "brand": "Vikunja",
+   "model": "Task manager",
+   "category": "A",
+   "status": "critical",
+   "version": "2.7.0",
+   "previous": "2.6.0",
+   "released": "2026-10-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "🦙 Vikunja 2.7.0 is out! 🔒 Six security fixes 🤖 An MCP server so your AI assistant can work with your tasks 📅 Plus a new date picker https://vikunja.io/changelog/vikunja-2.7.0-was-released/",
+   "source_url": "https://github.com/go-vikunja/vikunja/releases/tag/v2.7.0",
+   "page_url": "https://www.firmwarely.com/devices/vikunja/"
+  },
+  "tyk": {
+   "id": "tyk",
+   "brand": "Tyk",
+   "model": "API and AI Gateway",
+   "category": "R",
+   "status": "update",
+   "version": "5.15.1",
+   "previous": "5.14.0",
+   "released": "2026-10-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: [releng release-5.15] gromit: sync templates by in https://github.com/TykTechnologies/tyk/pull/8612 Merging to release-5.15: TT-17795: bump golang.org/x/text and google.golang.org/grpc for CVE fixes (#​8582) by in https://github.com/TykTechnologies/tyk/pull/8606 [releng release-5.15…",
+   "source_url": "https://github.com/TykTechnologies/tyk/releases/tag/v5.15.1",
+   "page_url": "https://www.firmwarely.com/devices/tyk/"
   }
  }
 }

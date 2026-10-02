@@ -4518,6 +4518,78 @@
     "security_fix": 0.03,
     "security_fix_plain": 0.03
    }
+  },
+  {
+   "id": "owncloud-ocis",
+   "version": "8.2.1",
+   "name": "ownCloud Infinite Scale",
+   "judged_at": "2026-10-02T22:17:04+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.81,
+    "security_fix_plain": 0.82,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "localai",
+   "version": "4.11.0",
+   "name": "LocalAI OpenAI-compatible local API",
+   "judged_at": "2026-10-02T22:17:04+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "vikunja",
+   "version": "2.7.0",
+   "name": "Vikunja Task manager",
+   "judged_at": "2026-10-02T22:17:04+00:00",
+   "notes_chars": 188,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.8,
+    "security_fix_plain": 0.9,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "tyk",
+   "version": "5.15.1",
+   "name": "Tyk API and AI Gateway",
+   "judged_at": "2026-10-02T22:17:04+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.83,
+    "security_fix_plain": 0.82,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
