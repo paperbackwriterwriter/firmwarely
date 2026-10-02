@@ -46,6 +46,36 @@
    "notes": "#​11672 #​11671 #​11670 #​11669 #​11668 #​11667 #​11666 #​11665 #​11664 #​11663 #​11662",
    "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.275.36185",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "ratgdo": {
+   "id": "ratgdo",
+   "brand": "ratgdo",
+   "model": "Garage door firmware",
+   "category": "S",
+   "status": "update",
+   "version": "1620",
+   "previous": "1535",
+   "released": "2026-10-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "Automated firmware release from commit e63d257ad859d191436ad7123e3a9f544270dd15",
+   "source_url": "https://github.com/ratgdo/esphome-ratgdo/releases/tag/v1620",
+   "page_url": "https://www.firmwarely.com/devices/ratgdo/"
+  },
+  "music-assistant": {
+   "id": "music-assistant",
+   "brand": "Music Assistant",
+   "model": "Media library server",
+   "category": "S",
+   "status": "update",
+   "version": "2.10.5",
+   "previous": "2.10.4",
+   "released": "2026-10-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "📦 Stable Release: _Changes since 2.10.4_ 🚀 Features and enhancements: Link existing libraries to MusicBrainz in the background () 🐛 Bugfixes: Fix OpenSubsonic credential preservation during reconfiguration () Stop the audio analysis background scan from spawning a task per track () Update py-openso…",
+   "source_url": "https://github.com/music-assistant/server/releases/tag/2.10.5",
+   "page_url": "https://www.firmwarely.com/devices/music-assistant/"
   }
  }
 }
