@@ -4302,6 +4302,42 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "kener",
+   "version": "4.1.6",
+   "name": "Kener Status page",
+   "judged_at": "2026-10-02T15:20:25+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "bambuddy",
+   "version": "1.2.5.7",
+   "name": "Bambuddy Bambu Lab",
+   "judged_at": "2026-10-02T15:20:25+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.12,
+    "security_fix_plain": 0.16,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

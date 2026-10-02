@@ -211,6 +211,36 @@
    "notes": "Feat: mobile-mcp is now a Claude Code plugin, and it brings /mobile-mirror: the device's live screen in a pane, where you can tap, type, and press Home/Back/App Switch, or open a URL (Claude Code in Ghostty or kitty). See the README for plugin installation instructions (#​468)",
    "source_url": "https://github.com/mobile-next/mobile-mcp/releases/tag/1.0.8",
    "page_url": "https://www.firmwarely.com/devices/mobile-mcp/"
+  },
+  "kener": {
+   "id": "kener",
+   "brand": "Kener",
+   "model": "Status page",
+   "category": "A",
+   "status": "update",
+   "version": "4.1.6",
+   "previous": "4.1.5",
+   "released": "2026-10-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: fix(seed): default Kener.ing monitor hits /healthcheck instead of / fix(analytics): send no-cache on /capture.js so provider changes apply immediately fix(captcha): render Turnstile without ready() Filter hidden/inactive monitors in dashboard-apis monitor lookups New Contributors: m…",
+   "source_url": "https://github.com/rajnandan1/kener/releases/tag/v4.1.6",
+   "page_url": "https://www.firmwarely.com/devices/kener/"
+  },
+  "bambuddy": {
+   "id": "bambuddy",
+   "brand": "Bambuddy",
+   "model": "Bambu Lab",
+   "category": "M",
+   "status": "update",
+   "version": "1.2.5.7",
+   "previous": "1.2.5.6",
+   "released": "2026-10-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "Bambuddy 1.2.5.7 What this is A feature release on top of 1.2.5.6. 25 new features, four changes, 40 fixes and four dependency advisories closed. 29 community PRs were merged, and 28 people are credited. The headline is post-print outcome confirmation. Until now a print that completed counted as a …",
+   "source_url": "https://github.com/maziggy/bambuddy/releases/tag/v1.2.5.7",
+   "page_url": "https://www.firmwarely.com/devices/bambuddy/"
   }
  }
 }
