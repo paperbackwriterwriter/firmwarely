@@ -4194,6 +4194,114 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "ubiquiti-unifi-access-points",
+   "version": "8.0.77",
+   "name": "Ubiquiti UniFi Access Points & Switches (device firmware)",
+   "judged_at": "2026-10-02T14:20:21+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ubiquiti-unifi-u6-plus",
+   "version": "8.0.77",
+   "name": "Ubiquiti UniFi U6+ Access Point",
+   "judged_at": "2026-10-02T14:20:21+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ubiquiti-unifi-u7-pro",
+   "version": "8.0.77",
+   "name": "Ubiquiti UniFi U7 Pro access point",
+   "judged_at": "2026-10-02T14:20:21+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ubiquiti-switch-flex-2-5g",
+   "version": "8.0.77",
+   "name": "Ubiquiti UniFi Switch Flex 2.5G",
+   "judged_at": "2026-10-02T14:20:21+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "shadps4",
+   "version": "0.19.0",
+   "name": "shadPS4 PlayStation 4 emulator",
+   "judged_at": "2026-10-02T14:20:21+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "mobile-mcp",
+   "version": "1.0.8",
+   "name": "Mobile Mcp Model Context Protocol Server",
+   "judged_at": "2026-10-02T14:20:21+00:00",
+   "notes_chars": 277,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
