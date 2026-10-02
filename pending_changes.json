@@ -631,6 +631,21 @@
    "notes": "Changes:: 9e63cc0ef0036438a18bfed9a7c29dfacea31e21 wolfmax4k: speed up search with the episodes api (#​17149) 9deff2317a7c35740982d665d687cdf5b0773fb5 speedapp; new cat 06c095f4e8de8051f6331459f2eda76397fb2e10 p2pbg; site added h&r, add MST . also login detection has changed. This list of changes w…",
    "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2756",
    "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "komga": {
+   "id": "komga",
+   "brand": "Komga",
+   "model": "Comic and manga server",
+   "category": "A",
+   "status": "update",
+   "version": "1.28.1",
+   "previous": "1.28.0",
+   "released": "2026-10-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: 🐛 Fixes: api search for series or books with authors without providing a name nor a role now returns accurate results (0956951) nextui fix 401 refetching and cache clearing on logout (cb5e852) allow searching by any/none for contributors with any role (5d99e8e) library context was not ac…",
+   "source_url": "https://github.com/gotson/komga/releases/tag/1.28.1",
+   "page_url": "https://www.firmwarely.com/devices/komga/"
   }
  }
 }
