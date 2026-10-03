@@ -10343,6 +10343,96 @@
    "type": "github",
    "repo": "Kunzisoft/KeePassDX",
    "product_url": "https://github.com/Kunzisoft/KeePassDX"
+  },
+  {
+   "id": "gladys",
+   "brand": "Gladys",
+   "model": "Privacy-first, open-source home assistant",
+   "category": "S",
+   "type": "github",
+   "repo": "GladysAssistant/Gladys",
+   "product_url": "https://github.com/GladysAssistant/Gladys"
+  },
+  {
+   "id": "button-card",
+   "brand": "Button Card",
+   "model": "Lovelace button-card for home assistant",
+   "category": "S",
+   "type": "github",
+   "repo": "custom-cards/button-card",
+   "product_url": "https://github.com/custom-cards/button-card"
+  },
+  {
+   "id": "ios",
+   "brand": "iOS",
+   "model": "Iphone",
+   "category": "S",
+   "type": "github",
+   "repo": "home-assistant/iOS",
+   "product_url": "https://github.com/home-assistant/iOS"
+  },
+  {
+   "id": "homeassistant-tapo-control",
+   "brand": "HomeAssistant Tapo Control",
+   "model": "Control for Tapo cameras as a Home Assistant component",
+   "category": "S",
+   "type": "github",
+   "repo": "JurajNyiri/HomeAssistant-Tapo-Control",
+   "product_url": "https://github.com/JurajNyiri/HomeAssistant-Tapo-Control"
+  },
+  {
+   "id": "lovelace-xiaomi-vacuum-map-card",
+   "brand": "Lovelace Xiaomi Vacuum Map Card",
+   "model": "This card provides a user-friendly way",
+   "category": "S",
+   "type": "github",
+   "repo": "PiotrMachowski/lovelace-xiaomi-vacuum-map-card",
+   "product_url": "https://github.com/PiotrMachowski/lovelace-xiaomi-vacuum-map-card"
+  },
+  {
+   "id": "openccu",
+   "brand": "OpenCCU",
+   "model": "House",
+   "category": "S",
+   "type": "github",
+   "repo": "OpenCCU/OpenCCU",
+   "product_url": "https://github.com/OpenCCU/OpenCCU"
+  },
+  {
+   "id": "http-shortcuts",
+   "brand": "HTTP Shortcuts",
+   "model": "Android app",
+   "category": "S",
+   "type": "github",
+   "repo": "Waboodoo/HTTP-Shortcuts",
+   "product_url": "https://github.com/Waboodoo/HTTP-Shortcuts"
+  },
+  {
+   "id": "netboot-xyz",
+   "brand": "Netboot.xyz",
+   "model": "Favorite operating systems in one place",
+   "category": "R",
+   "type": "github",
+   "repo": "netbootxyz/netboot.xyz",
+   "product_url": "https://github.com/netbootxyz/netboot.xyz"
+  },
+  {
+   "id": "pulse",
+   "brand": "Pulse",
+   "model": "Real-time monitoring dashboard",
+   "category": "A",
+   "type": "github",
+   "repo": "rcourtman/Pulse",
+   "product_url": "https://github.com/rcourtman/Pulse"
+  },
+  {
+   "id": "ezbookkeeping",
+   "brand": "Ezbookkeeping",
+   "model": "Open source, powerful, self-hosted personal finance app",
+   "category": "A",
+   "type": "github",
+   "repo": "mayswind/ezbookkeeping",
+   "product_url": "https://github.com/mayswind/ezbookkeeping"
   }
  ]
 }
