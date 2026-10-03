@@ -1,5 +1,21 @@
 {
- "since": null,
+ "since": "2026-10-03T10:15:56+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.276.34277",
+   "previous": "37522026.275.36185",
+   "released": "2026-10-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​11678 #​11676 #​11674 #​11673",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.276.34277",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  }
+ }
 }
