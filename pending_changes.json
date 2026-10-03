@@ -466,6 +466,21 @@
    "notes": "Security: This release includes an update to Envoy v1.38.5 (from v1.38.2). Please see the following Envoy release notes for a full list of security fixes: https://www.envoyproxy.io/docs/envoy/v1.38.5/version_history/v1.38/v1.38.3 https://www.envoyproxy.io/docs/envoy/v1.38.5/version_history/v1.38/v1…",
    "source_url": "https://github.com/pomerium/pomerium/releases/tag/v0.33.4",
    "page_url": "https://www.firmwarely.com/devices/pomerium/"
+  },
+  "zrok": {
+   "id": "zrok",
+   "brand": "Zrok",
+   "model": "Secure internet sharing made simple",
+   "category": "R",
+   "status": "update",
+   "version": "2.0.7",
+   "previous": "2.0.6",
+   "released": "2026-10-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "CHANGELOG: FIX: zrok2 admin gc now decides which share an OpenZiti object belongs to by its zrokShareToken tag rather than its name, so it no longer deletes the bind, dial and service edge router policies of live shares; objects with no share token, such as agent-remote services and policies, are n…",
+   "source_url": "https://github.com/openziti/zrok/releases/tag/v2.0.7",
+   "page_url": "https://www.firmwarely.com/devices/zrok/"
   }
  }
 }
