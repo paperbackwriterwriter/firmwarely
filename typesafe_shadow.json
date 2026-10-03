@@ -4842,6 +4842,132 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "technitium-dns",
+   "version": "15.6",
+   "name": "Technitium DNS Server",
+   "judged_at": "2026-10-03T18:31:09+00:00",
+   "notes_chars": 269,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.73,
+    "security_fix_plain": 0.86,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "dozzle",
+   "version": "11.2.0",
+   "name": "Dozzle Container log viewer",
+   "judged_at": "2026-10-03T18:31:09+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.9.9.28-stable",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-03T18:31:09+00:00",
+   "notes_chars": 43,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ghostfolio",
+   "version": "3.78.0",
+   "name": "Ghostfolio Wealth tracker",
+   "judged_at": "2026-10-03T18:31:09+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "drawio",
+   "version": "32.0.1",
+   "name": "draw.io Diagrams",
+   "judged_at": "2026-10-03T18:31:09+00:00",
+   "notes_chars": 15,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02,
+    "security_fix": 0.02
+   }
+  },
+  {
+   "id": "donetick",
+   "version": "0.1.80",
+   "name": "Donetick Open-source, user-friendly app",
+   "judged_at": "2026-10-03T18:31:10+00:00",
+   "notes_chars": 128,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "zerobyte",
+   "version": "0.43.2",
+   "name": "Zerobyte Backup automation for self-hosters",
+   "judged_at": "2026-10-03T18:31:10+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.09,
+    "security_fix_plain": 0.11,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
