@@ -481,6 +481,51 @@
    "notes": "CHANGELOG: FIX: zrok2 admin gc now decides which share an OpenZiti object belongs to by its zrokShareToken tag rather than its name, so it no longer deletes the bind, dial and service edge router policies of live shares; objects with no share token, such as agent-remote services and policies, are n…",
    "source_url": "https://github.com/openziti/zrok/releases/tag/v2.0.7",
    "page_url": "https://www.firmwarely.com/devices/zrok/"
+  },
+  "retrodeck": {
+   "id": "retrodeck",
+   "brand": "RetroDECK",
+   "model": "Emulation for Steam Deck",
+   "category": "C",
+   "status": "update",
+   "version": "0.10.10",
+   "previous": "0.10.9",
+   "released": "2026-10-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "Full Patch Notes:: Read the full patch notes on the RetroDECK Wiki. 🔗 Link: RetroDECK v0.10.10b About: RetroDECK GitHub Releases: RetroDECK is NOT considered \"released\" until it is published on Flathub. That is because GitHub releases can on rare occasions break in the publication process between: …",
+   "source_url": "https://github.com/RetroDECK/RetroDECK/releases/tag/0.10.10b",
+   "page_url": "https://www.firmwarely.com/devices/retrodeck/"
+  },
+  "casdoor": {
+   "id": "casdoor",
+   "brand": "Casdoor",
+   "model": "Identity and access",
+   "category": "A",
+   "status": "update",
+   "version": "4.14.0",
+   "previous": "4.13.0",
+   "released": "2026-10-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: Features: b94dce99fa1d9fd21de82e1c93b50640f9d3968f feat: open account menu on hover bd130188f034625f76d3b1e51f15340d8e33ca81 feat: return stable error code in login failure response Bug fixes: 8f7efcf0d89ea98dc21db1b15c21b5bdcd8384c9 fix: check terms of use by default on login page c92ff…",
+   "source_url": "https://github.com/casdoor/casdoor/releases/tag/v4.14.0",
+   "page_url": "https://www.firmwarely.com/devices/casdoor/"
+  },
+  "sharpemu": {
+   "id": "sharpemu",
+   "brand": "Sharpemu",
+   "model": "Experimental PlayStation 5 emulator",
+   "category": "C",
+   "status": "update",
+   "version": "0.0.5-nexus",
+   "previous": "0.0.4-release",
+   "released": "2026-10-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "Automated SharpEmu v0.0.5-nexus build for commit 6fe8b87. Changes since v0.0.4-release.2: [Memory] Pre-reserve the guest address space on POSIX hosts (#​905) (1759e18) [Pad] Reject pad handle 0 after the title opens a pad (#​912) (ac8ffc3) [CPU] Cache readable stack ranges per thread for import arg…",
+   "source_url": "https://github.com/sharpemu/sharpemu/releases/tag/v0.0.5-nexus",
+   "page_url": "https://www.firmwarely.com/devices/sharpemu/"
   }
  }
 }

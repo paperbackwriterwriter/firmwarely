@@ -4626,6 +4626,60 @@
     "security_fix_plain": 0.18,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "retrodeck",
+   "version": "0.10.10",
+   "name": "RetroDECK Emulation for Steam Deck",
+   "judged_at": "2026-10-03T03:24:21+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "casdoor",
+   "version": "4.14.0",
+   "name": "Casdoor Identity and access",
+   "judged_at": "2026-10-03T03:24:21+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.09,
+    "security_fix_plain": 0.11,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "sharpemu",
+   "version": "0.0.5-nexus",
+   "name": "Sharpemu Experimental PlayStation 5 emulator",
+   "judged_at": "2026-10-03T03:24:21+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
