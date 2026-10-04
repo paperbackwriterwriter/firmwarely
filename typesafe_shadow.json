@@ -4968,6 +4968,114 @@
     "security_fix_plain": 0.11,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "drawio",
+   "version": "32.0.2",
+   "name": "draw.io Diagrams",
+   "judged_at": "2026-10-04T02:31:16+00:00",
+   "notes_chars": 15,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "apprise",
+   "version": "2.0.1",
+   "name": "Apprise Notification gateway",
+   "judged_at": "2026-10-04T02:31:16+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "moonlight-qt",
+   "version": "6.2.0",
+   "name": "Moonlight Game streaming client",
+   "judged_at": "2026-10-04T02:31:16+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02,
+    "security_fix": 0.02
+   }
+  },
+  {
+   "id": "verdaccio",
+   "version": "6.10.5",
+   "name": "Verdaccio npm registry",
+   "judged_at": "2026-10-04T02:31:17+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "homarr",
+   "version": "2.1.1",
+   "name": "Homarr Dashboard",
+   "judged_at": "2026-10-04T02:31:17+00:00",
+   "notes_chars": 19,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "vulcain",
+   "version": "1.4.5",
+   "name": "Vulcain Idiomatic client-driven REST APIs",
+   "judged_at": "2026-10-04T02:31:17+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
