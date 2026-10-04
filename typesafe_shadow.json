@@ -5076,6 +5076,150 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.277.34020",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-10-04T11:40:28+00:00",
+   "notes_chars": 95,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.9.10.4-stable",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-04T11:40:28+00:00",
+   "notes_chars": 43,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ghostfolio",
+   "version": "3.79.0",
+   "name": "Ghostfolio Wealth tracker",
+   "judged_at": "2026-10-04T11:40:28+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "homarr",
+   "version": "2.1.2",
+   "name": "Homarr Dashboard",
+   "judged_at": "2026-10-04T11:40:29+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "pgbackrest",
+   "version": "2.59.3",
+   "name": "pgBackRest PostgreSQL backup",
+   "judged_at": "2026-10-04T11:40:29+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.55,
+    "security_fix_plain": 0.72,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "nuttx",
+   "version": "13.1.0",
+   "name": "Apache NuttX RTOS",
+   "judged_at": "2026-10-04T11:40:29+00:00",
+   "notes_chars": 12,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.21,
+    "security_fix_plain": 0.16,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "casdoor",
+   "version": "4.15.0",
+   "name": "Casdoor Identity and access",
+   "judged_at": "2026-10-04T11:40:29+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.14,
+    "security_fix_plain": 0.11,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "jackett",
+   "version": "0.24.2788",
+   "name": "Jackett Torrent indexer proxy",
+   "judged_at": "2026-10-04T11:40:29+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

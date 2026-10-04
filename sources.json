@@ -10433,6 +10433,96 @@
    "type": "github",
    "repo": "mayswind/ezbookkeeping",
    "product_url": "https://github.com/mayswind/ezbookkeeping"
+  },
+  {
+   "id": "ui-router",
+   "brand": "Ui Router",
+   "model": "De-facto solution",
+   "category": "R",
+   "type": "github",
+   "repo": "angular-ui/ui-router",
+   "product_url": "https://github.com/angular-ui/ui-router"
+  },
+  {
+   "id": "uwebsockets-js",
+   "brand": "uWebSockets.js",
+   "model": "ΜWebSockets for Node.js back-ends :metal",
+   "category": "R",
+   "type": "github",
+   "repo": "uNetworking/uWebSockets.js",
+   "product_url": "https://github.com/uNetworking/uWebSockets.js"
+  },
+  {
+   "id": "path-to-regexp",
+   "brand": "Path To Regexp",
+   "model": "Path string such as `/user/:name` into a regular expression",
+   "category": "R",
+   "type": "github",
+   "repo": "pillarjs/path-to-regexp",
+   "product_url": "https://github.com/pillarjs/path-to-regexp"
+  },
+  {
+   "id": "wouter",
+   "brand": "Wouter",
+   "model": "Minimalist-friendly ~2.2KB routing for React and Preact",
+   "category": "R",
+   "type": "github",
+   "repo": "molefrog/wouter",
+   "product_url": "https://github.com/molefrog/wouter"
+  },
+  {
+   "id": "routing",
+   "brand": "Routing",
+   "model": "Maps an HTTP request to a set of configuration variables",
+   "category": "R",
+   "type": "github",
+   "repo": "symfony/routing",
+   "product_url": "https://github.com/symfony/routing"
+  },
+  {
+   "id": "lura",
+   "brand": "Lura",
+   "model": "Ultra performant API Gateway with middlewares",
+   "category": "R",
+   "type": "github",
+   "repo": "luraproject/lura",
+   "product_url": "https://github.com/luraproject/lura"
+  },
+  {
+   "id": "skipper",
+   "brand": "Skipper",
+   "model": "HTTP router and reverse proxy",
+   "category": "R",
+   "type": "github",
+   "repo": "zalando/skipper",
+   "product_url": "https://github.com/zalando/skipper"
+  },
+  {
+   "id": "freerouting",
+   "brand": "Freerouting",
+   "model": "Advanced PCB auto-router",
+   "category": "R",
+   "type": "github",
+   "repo": "freerouting/freerouting",
+   "product_url": "https://github.com/freerouting/freerouting"
+  },
+  {
+   "id": "linux-router",
+   "brand": "Linux Router",
+   "model": "Set Linux as router in one command",
+   "category": "R",
+   "type": "github",
+   "repo": "garywill/linux-router",
+   "product_url": "https://github.com/garywill/linux-router"
+  },
+  {
+   "id": "ha-xiaomi-home",
+   "brand": "Ha Xiaomi Home",
+   "model": "Xiaomi Home Integration for Home Assistant",
+   "category": "S",
+   "type": "github",
+   "repo": "XiaoMi/ha_xiaomi_home",
+   "product_url": "https://github.com/XiaoMi/ha_xiaomi_home"
   }
  ]
 }
