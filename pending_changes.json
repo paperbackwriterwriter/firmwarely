@@ -121,6 +121,66 @@
    "notes": "See Changelog for details",
    "source_url": "https://github.com/Waboodoo/HTTP-Shortcuts/releases/tag/v4.8.0",
    "page_url": "https://www.firmwarely.com/devices/http-shortcuts/"
+  },
+  "thingino": {
+   "id": "thingino",
+   "brand": "thingino",
+   "model": "Camera firmware",
+   "category": "M",
+   "status": "update",
+   "version": "2026-10-04",
+   "previous": "2026-09-14",
+   "released": "2026-10-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes in this release: 2c76a59 package/ingenic-sdk: update to 635afc9 Update ingenic-sdk from e097418 to 635afc9 Hash change: e0974182df7e001ff76e6cdf25d36d593fde7ed4 -› 635afc94a74afc1358c1164fd3bf46822ff32fca Changelog: 635afc9: sensor-iq: add default IQ file for sc231hai sensor c408301 Fix WS7…",
+   "source_url": "https://github.com/themactep/thingino-firmware/releases/tag/firmware-2026-10-04",
+   "page_url": "https://www.firmwarely.com/devices/thingino/"
+  },
+  "decky-loader": {
+   "id": "decky-loader",
+   "brand": "Decky",
+   "model": "Steam Deck plugin loader",
+   "category": "C",
+   "status": "update",
+   "version": "3.2.10",
+   "previous": "3.2.9",
+   "released": "2026-10-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: fix: add more deps to pyinstaller spec Add sort plugins setting Fix file picker with inaccessible directory entriesFix file picker with inaccessible directory entries New Contributors: made their first contribution in https://github.com/SteamDeckHomebrew/decky-loader/pull/859 made t…",
+   "source_url": "https://github.com/SteamDeckHomebrew/decky-loader/releases/tag/v3.2.10",
+   "page_url": "https://www.firmwarely.com/devices/decky-loader/"
+  },
+  "matomo": {
+   "id": "matomo",
+   "brand": "Matomo",
+   "model": "Web analytics",
+   "category": "A",
+   "status": "update",
+   "version": "5.14.1",
+   "previous": "5.14.0",
+   "released": "2026-10-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "Matomo 5.14.1 Changelog: Please use the attached archives for installing or updating Matomo. The source code download is only meant for developers and will require extra work to install it. Latest stable production release can be found at https://matomo.org/download/ (learn more) (recommended) Beta…",
+   "source_url": "https://github.com/matomo-org/matomo/releases/tag/5.14.1",
+   "page_url": "https://www.firmwarely.com/devices/matomo/"
+  },
+  "dbeaver": {
+   "id": "dbeaver",
+   "brand": "DBeaver",
+   "model": "Database tool",
+   "category": "A",
+   "status": "update",
+   "version": "26.2.2",
+   "previous": "26.2.1",
+   "released": "2026-10-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "- AI Assistant: - Redesigned the AI engine selector with a native drop-down, engine icons, and improved keyboard accessibility - Fixed model discovery for self-hosted OpenAI-compatible endpoints with non-OpenAI model names - Improved error messages for HTTP redirects from custom OpenAI-compatible e…",
+   "source_url": "https://github.com/dbeaver/dbeaver/releases/tag/26.2.2",
+   "page_url": "https://www.firmwarely.com/devices/dbeaver/"
   }
  }
 }

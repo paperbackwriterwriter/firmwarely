@@ -5364,6 +5364,78 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "thingino",
+   "version": "2026-10-04",
+   "name": "thingino Camera firmware",
+   "judged_at": "2026-10-04T21:23:53+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02,
+    "security_fix": 0.03
+   }
+  },
+  {
+   "id": "decky-loader",
+   "version": "3.2.10",
+   "name": "Decky Steam Deck plugin loader",
+   "judged_at": "2026-10-04T21:23:54+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "matomo",
+   "version": "5.14.1",
+   "name": "Matomo Web analytics",
+   "judged_at": "2026-10-04T21:23:54+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "end_of_life": 0.02,
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03
+   }
+  },
+  {
+   "id": "dbeaver",
+   "version": "26.2.2",
+   "name": "DBeaver Database tool",
+   "judged_at": "2026-10-04T21:23:54+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
