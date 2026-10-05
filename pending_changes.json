@@ -511,6 +511,21 @@
    "notes": "See Changelog for details",
    "source_url": "https://github.com/Waboodoo/HTTP-Shortcuts/releases/tag/v4.8.1",
    "page_url": "https://www.firmwarely.com/devices/http-shortcuts/"
+  },
+  "envoy-proxy": {
+   "id": "envoy-proxy",
+   "brand": "Envoy",
+   "model": "Edge and service proxy",
+   "category": "R",
+   "status": "critical",
+   "version": "1.39.2",
+   "previous": "1.39.1",
+   "released": "2026-10-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "Summary of changes: Security fixes: CVE-2026-35189: tls: updated BoringSSL to fix excessive memory allocation when parsing certificates with nameRelativeToCRLIssuer CRL Distribution Points, which could be exploited for remote denial of service during TLS handshakes. Build/packaging: Removed Debian …",
+   "source_url": "https://github.com/envoyproxy/envoy/releases/tag/v1.39.2",
+   "page_url": "https://www.firmwarely.com/devices/envoy-proxy/"
   }
  }
 }
