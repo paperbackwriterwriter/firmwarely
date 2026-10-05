@@ -1,5 +1,51 @@
 {
- "since": null,
+ "since": "2026-10-05T10:20:03+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.278.34362",
+   "previous": "37522026.277.86082",
+   "released": "2026-10-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​11710 #​11709 #​11708 #​11707 #​11706 #​11705",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.278.34362",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "godoxy": {
+   "id": "godoxy",
+   "brand": "Godoxy",
+   "model": "High-performance reverse proxy and container orchestrator",
+   "category": "R",
+   "status": "update",
+   "version": "0.32.1",
+   "previous": "0.31.4",
+   "released": "2026-10-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "v0.32.1 v0.32.1",
+   "source_url": "https://github.com/yusing/godoxy/releases/tag/v0.32.1",
+   "page_url": "https://www.firmwarely.com/devices/godoxy/"
+  },
+  "skipper": {
+   "id": "skipper",
+   "brand": "Skipper",
+   "model": "HTTP router and reverse proxy",
+   "category": "R",
+   "status": "update",
+   "version": "0.28.21",
+   "previous": "0.28.20",
+   "released": "2026-10-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes: Make tests pass on macOS and document Colima setup (#​4317) This PR improves local test runs on macOS: Build test plugins without DWARF on macOS to avoid the Mach-O chained-fixups load error. Linux plugin builds keep DWARF. Let the TrafficSegment test client retain enough idle connections …",
+   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.21",
+   "page_url": "https://www.firmwarely.com/devices/skipper/"
+  }
+ }
 }

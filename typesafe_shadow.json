@@ -5616,6 +5616,60 @@
     "security_fix_plain": 0.11,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.278.34362",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-10-05T10:20:26+00:00",
+   "notes_chars": 47,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "godoxy",
+   "version": "0.32.1",
+   "name": "Godoxy High-performance reverse proxy and container orchestrator",
+   "judged_at": "2026-10-05T10:20:26+00:00",
+   "notes_chars": 15,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "skipper",
+   "version": "0.28.21",
+   "name": "Skipper HTTP router and reverse proxy",
+   "judged_at": "2026-10-05T10:20:27+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
