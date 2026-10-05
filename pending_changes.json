@@ -196,6 +196,21 @@
    "notes": "What's Changed: feat: name the issuing app in share emails, and cut the digest window to 5s fix: a team seat's plan card names its team, and an unreadable plan is not Free (PUT-1843) fix: make the block list bite on team shares, and unshare every re-share (PUT-1813) show app icon when login from ex…",
    "source_url": "https://github.com/HeyPuter/puter/releases/tag/26.10",
    "page_url": "https://www.firmwarely.com/devices/puter/"
+  },
+  "onedev": {
+   "id": "onedev",
+   "brand": "OneDev",
+   "model": "Git server with CI",
+   "category": "A",
+   "status": "update",
+   "version": "16.8.4",
+   "previous": "16.8.3",
+   "released": "2026-10-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "Installation Guide: https://docs.onedev.io/category/installation-guide Change Log: https://code.onedev.io/onedev/server/~builds/8619/fixed-issues?query=%22State%22+is+%22Released%22+order+by+%22Type%22+asc+%2C+%22Priority%22+desc Incompatibilities: https://code.onedev.io/onedev/server/~builds/8619/…",
+   "source_url": "https://github.com/theonedev/onedev/releases/tag/v16.8.4",
+   "page_url": "https://www.firmwarely.com/devices/onedev/"
   }
  }
 }
