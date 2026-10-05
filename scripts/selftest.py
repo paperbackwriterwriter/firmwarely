@@ -705,6 +705,16 @@ def test_families():
             check(f"{r['source']} redirects only because its page is gone",
                   (Path(r["source"].strip("/")) / "index.html").exists(), False)
 
+def test_workflows_pinned():
+    """Every workflow runs on one pinned Ubuntu, so a label move can't change it under us."""
+    found = {}
+    for f in sorted(Path(".github/workflows").glob("*.yml")):
+        found[f.name] = re.findall(r"runs-on:\s*(\S+)", f.read_text())
+    check("every job names its runner", all(found.values()), True)
+    check("no workflow follows ubuntu-latest", [n for n, r in found.items() if "ubuntu-latest" in r], [])
+    check("all workflows are on the same Ubuntu", sorted({x for r in found.values() for x in r}), ["ubuntu-24.04"])
+
+
 # ---- counting visits, and saying so ----
 def test_analytics_and_its_disclosure():
     build_pages.STYLES = build_pages.styles()
@@ -1243,7 +1253,7 @@ def test_schedule_and_digest():
 
 
 for t in (test_compare, test_new_release, test_saved_devices, test_routing, test_typed_devices, test_typesafe_shadow, test_weekly_roll, test_forced_guard,
-          test_update_guides, test_sources_well_formed, test_site_shows_only_real_data, test_names_said_once, test_support_page, test_dates_are_honest, test_withdrawn_devices_redirect, test_families, test_analytics_and_its_disclosure, test_form_rate_limit, test_captcha, test_side_gutter, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
+          test_update_guides, test_sources_well_formed, test_site_shows_only_real_data, test_names_said_once, test_support_page, test_dates_are_honest, test_withdrawn_devices_redirect, test_families, test_workflows_pinned, test_analytics_and_its_disclosure, test_form_rate_limit, test_captcha, test_side_gutter, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
           test_landing_pages, test_schedule_and_digest):
     print(f"\n{t.__name__}")
     t()
