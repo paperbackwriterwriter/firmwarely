@@ -241,6 +241,51 @@
    "notes": "Changes:: 0e73d70304340b26fd9b0c60847d9c65c37ba0ff add FileIplay a private site. resolves #​17171 189f14a54f41d513c98d61a3d12e226abd78c6bf Revert \"add FileIplay a private site. resolves #​17171\" f7a273ba4c11dc2abaf9b8572ca8792353b49293 add FileIplay a private site. resolves #​17171 061e60eaa9063697…",
    "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2793",
    "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "signoz": {
+   "id": "signoz",
+   "brand": "SigNoz",
+   "model": "Observability platform",
+   "category": "A",
+   "status": "update",
+   "version": "0.145.0",
+   "previous": "0.144.0",
+   "released": "2026-10-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "🚀 Features: feat(logparsingpipeline): add json_body_dual_ingestion flag for dual body ingestion (#​12831) feat: resolve semconv families across logs and metrics (#​12870) feat(bottom-strip): show the page count on the left for noz, alerts and home (#​12963) feat(bottom-strip): add right side action…",
+   "source_url": "https://github.com/SigNoz/signoz/releases/tag/v0.145.0",
+   "page_url": "https://www.firmwarely.com/devices/signoz/"
+  },
+  "vllm": {
+   "id": "vllm",
+   "brand": "vLLM",
+   "model": "LLM inference server",
+   "category": "A",
+   "status": "update",
+   "version": "0.31.0",
+   "previous": "0.30.0",
+   "released": "2026-10-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "v0.31.0: Highlights: This release features 717 commits from 307 contributors (96 new)! DeepSeek-V4.1-Flash performance: FlashMLA mega attention with the V4.1 NVFP4 compressed KV cache is now the SM100 default (#​56935); DeepGEMM sparse MQA logits for the indexer (#​56254) and Mega-Gate fusing the g…",
+   "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.31.0",
+   "page_url": "https://www.firmwarely.com/devices/vllm/"
+  },
+  "pentagi": {
+   "id": "pentagi",
+   "brand": "PentAGI",
+   "model": "AI penetration testing agents",
+   "category": "A",
+   "status": "critical",
+   "version": "2.2.0",
+   "previous": "2.1.0",
+   "released": "2026-10-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "--- PentAGI 2.2 — Any Modern LLM, a Contained Sandbox, Unified Web Search, and Multi-Instance Deployment This release supports the current generation of LLMs with a tested configuration for every provider, closes CVE-2026-14784 with rebuilt sandbox isolation, replaces seven search tools with one in…",
+   "source_url": "https://github.com/vxcontrol/pentagi/releases/tag/v2.2.0",
+   "page_url": "https://www.firmwarely.com/devices/pentagi/"
   }
  }
 }
