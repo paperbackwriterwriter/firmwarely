@@ -5886,6 +5886,60 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.8.18.2-lts",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-05T15:21:08+00:00",
+   "notes_chars": 37,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "openbk7231t",
+   "version": "1.18.317",
+   "name": "OpenBeken OpenBK7231T firmware",
+   "judged_at": "2026-10-05T15:21:09+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02,
+    "security_fix": 0.03
+   }
+  },
+  {
+   "id": "tooljet",
+   "version": "3.20.238-lts",
+   "name": "ToolJet Low-code platform",
+   "judged_at": "2026-10-05T15:21:09+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
