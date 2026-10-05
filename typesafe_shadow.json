@@ -5436,6 +5436,42 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.277.86082",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-10-05T00:27:45+00:00",
+   "notes_chars": 47,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "puter",
+   "version": "26.10",
+   "name": "Puter Web desktop OS",
+   "judged_at": "2026-10-05T00:27:45+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.29,
+    "security_fix_plain": 0.25,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

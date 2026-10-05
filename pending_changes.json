@@ -83,13 +83,13 @@
    "model": "DNS blocklists",
    "category": "R",
    "status": "update",
-   "version": "37522026.277.57258",
+   "version": "37522026.277.86082",
    "previous": "37522026.277.34020",
    "released": "2026-10-04",
    "date_known": true,
    "eol": false,
-   "notes": "#​11698 #​11697 #​11694",
-   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.277.57258",
+   "notes": "#​11704 #​11703 #​11702 #​11701 #​11700 #​11699",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.277.86082",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   },
   "trystero": {
@@ -181,6 +181,21 @@
    "notes": "- AI Assistant: - Redesigned the AI engine selector with a native drop-down, engine icons, and improved keyboard accessibility - Fixed model discovery for self-hosted OpenAI-compatible endpoints with non-OpenAI model names - Improved error messages for HTTP redirects from custom OpenAI-compatible e…",
    "source_url": "https://github.com/dbeaver/dbeaver/releases/tag/26.2.2",
    "page_url": "https://www.firmwarely.com/devices/dbeaver/"
+  },
+  "puter": {
+   "id": "puter",
+   "brand": "Puter",
+   "model": "Web desktop OS",
+   "category": "A",
+   "status": "update",
+   "version": "26.10",
+   "previous": "26.09.1",
+   "released": "2026-10-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: feat: name the issuing app in share emails, and cut the digest window to 5s fix: a team seat's plan card names its team, and an unreadable plan is not Free (PUT-1843) fix: make the block list bite on team shares, and unshare every re-share (PUT-1813) show app icon when login from ex…",
+   "source_url": "https://github.com/HeyPuter/puter/releases/tag/26.10",
+   "page_url": "https://www.firmwarely.com/devices/puter/"
   }
  }
 }
