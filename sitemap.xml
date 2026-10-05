@@ -50,7 +50,7 @@
   <url><loc>https://www.firmwarely.com/brands/simplisafe/</loc><lastmod>2026-10-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/synology/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/z-wave-js/</loc><lastmod>2026-09-29</lastmod></url>
-  <url><loc>https://www.firmwarely.com/brands/ggml/</loc><lastmod>2026-09-23</lastmod></url>
+  <url><loc>https://www.firmwarely.com/brands/ggml/</loc><lastmod>2026-10-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/owncloud/</loc><lastmod>2026-10-02</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ubiquiti-unifi-protect-application/</loc><lastmod>2026-10-02</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ubiquiti-unifi-network-application/</loc><lastmod>2026-09-10</lastmod></url>
@@ -193,7 +193,7 @@
   <url><loc>https://www.firmwarely.com/devices/node-red/</loc><lastmod>2026-09-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/openhab/</loc><lastmod>2026-08-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/domoticz/</loc><lastmod>2026-10-01</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/iobroker/</loc><lastmod>2026-10-03</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/iobroker/</loc><lastmod>2026-10-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/zoneminder/</loc><lastmod>2026-08-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/motioneye/</loc><lastmod>2026-06-20</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/scrypted/</loc><lastmod>2026-09-13</lastmod></url>
@@ -396,7 +396,7 @@
   <url><loc>https://www.firmwarely.com/devices/influxdb/</loc><lastmod>2026-09-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/telegraf/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/gatus/</loc><lastmod>2026-09-24</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/dozzle/</loc><lastmod>2026-10-03</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/dozzle/</loc><lastmod>2026-10-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/btop/</loc><lastmod>2026-05-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/nagios-core/</loc><lastmod>2026-08-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/icinga2/</loc><lastmod>2026-08-18</lastmod></url>
@@ -491,7 +491,7 @@
   <url><loc>https://www.firmwarely.com/devices/ollama/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/open-webui/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/localai/</loc><lastmod>2026-10-02</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/llama-cpp/</loc><lastmod>2026-09-23</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/llama-cpp/</loc><lastmod>2026-10-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/vllm/</loc><lastmod>2026-10-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/text-generation-webui/</loc><lastmod>2026-05-20</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/comfyui/</loc><lastmod>2026-09-29</lastmod></url>

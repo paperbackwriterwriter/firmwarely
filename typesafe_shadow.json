@@ -6084,6 +6084,114 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.03
    }
+  },
+  {
+   "id": "skipper",
+   "version": "0.28.26",
+   "name": "Skipper HTTP router and reverse proxy",
+   "judged_at": "2026-10-05T17:17:16+00:00",
+   "notes_chars": 252,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.9.11.2-stable",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-05T17:17:16+00:00",
+   "notes_chars": 43,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "tooljet",
+   "version": "3.20.239-lts",
+   "name": "ToolJet Low-code platform",
+   "judged_at": "2026-10-05T17:17:16+00:00",
+   "notes_chars": 175,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "iobroker",
+   "version": "7.2.5",
+   "name": "ioBroker js-controller",
+   "judged_at": "2026-10-05T17:17:17+00:00",
+   "notes_chars": 16,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "dozzle",
+   "version": "11.3.0",
+   "name": "Dozzle Container log viewer",
+   "judged_at": "2026-10-05T17:17:17+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "llama-cpp",
+   "version": "0.6.0",
+   "name": "ggml llama.cpp",
+   "judged_at": "2026-10-05T17:17:17+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
