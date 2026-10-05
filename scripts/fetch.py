@@ -600,6 +600,16 @@ def write_changed_file(items, forced=False):
     CHANGED.write_text(json.dumps(payload, indent=1, ensure_ascii=False) + "\n")
 
 
+# One color per status, shared by the GitHub issue and the subscriber emails
+# (scripts/user_alerts.py): red security fix, yellow new version, black end of life,
+# white anything else (an ordinary release on something older or quieter).
+STATUS_DOT = {"critical": "🔴", "update": "🟡", "eol": "⚫"}
+
+
+def status_dot(d):
+    return STATUS_DOT.get(d.get("status")) or ("⚫" if d.get("eol") else "⚪")
+
+
 def build_issue_summary(changed):
     """Plain summary for the GitHub issue. Deliberately contains no release-note text and no external
     links, so it can never @mention or cross-reference anyone on GitHub."""
@@ -607,7 +617,8 @@ def build_issue_summary(changed):
     lines = [f"# Firmware digest — {date}", "",
              f"{len(changed)} change(s). Full digest with release notes is in the Beehiiv draft.", ""]
     for d in sorted(changed, key=lambda x: (x["status"] != "critical", x["brand"], x["model"])):
-        flag = {"critical": "🔴 security", "update": "🟡 update", "eol": "⚫ end of life"}.get(d["status"], "⚪")
+        label = {"critical": " security", "update": " update", "eol": " end of life"}.get(d["status"], "")
+        flag = status_dot(d) + label
         seen = "" if d.get("date_known", True) else "first seen "
         lines.append(f"- {flag} — {full_name(d)}: `{d['version']}` ({seen}{d.get('released','')})")
     lines += ["", "Site: firmwarely dot com (link omitted on purpose)", ""]

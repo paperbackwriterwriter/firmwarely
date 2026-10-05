@@ -46,7 +46,7 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
-from fetch import full_name
+from fetch import full_name, status_dot
 
 ROOT = Path(__file__).resolve().parent.parent
 CHANGED = ROOT / "changed.json"
@@ -231,6 +231,17 @@ GROUPS = [("critical", "Security fixes — update now"), ("update", "New firmwar
 DIGEST_MAX = 40   # a week can carry 100+ releases; security fixes and EOL always, the rest capped
 
 
+# Each item's bullet is its status color (fetch.status_dot): red security fix, yellow new
+# version, black end of life, white other releases. A hanging indent keeps the wrapped
+# lines aligned under the name; list-style and text-indent both hold up in Gmail and Mail.
+UL = '<ul style="list-style:none;padding-left:0;margin:0">'
+
+
+def li(dot, line, gap=14):
+    return (f'<li style="margin:0 0 {gap}px;padding-left:1.6em;text-indent:-1.6em">'
+            f'{dot}&nbsp;&nbsp;{line}</li>')
+
+
 def digest_subject(date, weekly=False):
     return f"{'Firmware this week' if weekly else 'Firmware digest'} — {pretty_date(date)}"
 
@@ -253,7 +264,7 @@ def render_digest(changes, weekly=False):
             items = keep
         if not items:
             continue
-        parts.append(f"<h3 style=\"font-size:16px;margin:20px 0 6px\">{heading}</h3><ul>")
+        parts.append(f"<h3 style=\"font-size:16px;margin:20px 0 6px\">{heading}</h3>{UL}")
         for c in items:
             line = f"<strong>{html.escape(full_name(c))}</strong> — <code>{html.escape(c['version'])}</code>"
             if c.get("released"):
@@ -265,7 +276,7 @@ def render_digest(changes, weekly=False):
                 line += f'<br><span style="color:#555">{html.escape(note)}</span>'
             line += (f'<br><span style="font-size:14px">'
                      f'<a href="{html.escape(c["page_url"])}">device page</a></span>')
-            parts.append(f'<li style="margin:0 0 14px">{line}</li>')
+            parts.append(li(status_dot(c), line))
         parts.append("</ul>")
     if left_out:
         parts.append(f'<p>…and {left_out} more. <a href="{html.escape(SITE)}/devices/">See every device</a>.</p>')
@@ -302,8 +313,8 @@ def render(hits, weekly=False):
     for h in hits:
         c, yours = h["change"], h["yours"]
         name = html.escape(full_name(c))
-        flag = ("🔴 Security fix" if c["status"] == "critical"
-                else "⚫ End of life" if c.get("eol") else "🟡 Update")
+        flag = ("Security fix" if c["status"] == "critical"
+                else "End of life" if c.get("eol") else "Update")
         line = (f"<strong>{name}</strong> — {flag}<br>"
                 f"Latest: <code>{html.escape(c['version'])}</code>")
         if c.get("released"):
@@ -319,7 +330,7 @@ def render(hits, weekly=False):
         if c.get("source_url"):
             links.append(f'<a href="{html.escape(c["source_url"])}">release notes</a>')
         line += '<br><span style="font-size:14px">' + " · ".join(links) + "</span>"
-        rows.append(f'<li style="margin:0 0 18px">{line}</li>')
+        rows.append(li("🔴" if c["status"] == "critical" else "⚫" if c.get("eol") else "🟡", line, 18))
 
     n = len(hits)
     return (
@@ -327,7 +338,7 @@ def render(hits, weekly=False):
         'line-height:1.5;color:#111;max-width:600px">'
         f"<p>Here's what changed {'this week ' if weekly else ''}on "
         f"{'a device' if n == 1 else f'{n} devices'} you track on Firmwarely.</p>"
-        '<ul style="padding-left:18px">' + "".join(rows) + "</ul>"
+        + UL + "".join(rows) + "</ul>"
         + (f'<p style="color:#666;font-size:14px">You\'re on the free plan, so this comes once a week. '
            f'<a href="{html.escape(SITE)}/pro/">Pro</a> emails you the morning after a release and '
            "covers every device you own.</p>" if weekly else "") +
