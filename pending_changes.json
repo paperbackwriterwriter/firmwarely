@@ -46,6 +46,51 @@
    "notes": "Changes: Make tests pass on macOS and document Colima setup (#​4317) This PR improves local test runs on macOS: Build test plugins without DWARF on macOS to avoid the Mach-O chained-fixups load error. Linux plugin builds keep DWARF. Let the TrafficSegment test client retain enough idle connections …",
    "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.21",
    "page_url": "https://www.firmwarely.com/devices/skipper/"
+  },
+  "weaviate": {
+   "id": "weaviate",
+   "brand": "Weaviate",
+   "model": "Vector database",
+   "category": "A",
+   "status": "update",
+   "version": "1.39.9",
+   "previous": "1.39.8",
+   "released": "2026-10-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "Breaking Changes: none New Features: none Fixes: fix(backups): allow backups without collections fix(errors): recover a panic from every way an error group runs a callback perf(lsmkv): replay a large write-ahead log as a run of segments fix(object-ttl): stop delete goroutines from reading a map the…",
+   "source_url": "https://github.com/weaviate/weaviate/releases/tag/v1.39.9",
+   "page_url": "https://www.firmwarely.com/devices/weaviate/"
+  },
+  "kimai": {
+   "id": "kimai",
+   "brand": "Kimai",
+   "model": "Time tracking",
+   "category": "A",
+   "status": "update",
+   "version": "2.68.0",
+   "previous": "2.67.0",
+   "released": "2026-10-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "Compatible with PHP 8.2 to 8.5 Features: Dropdowns: visible label length increased to 180 char + scroll to selected element on open (#​6222) Reports: sticky first column in horizontal tables (#​6216) Better duration input handling on all duration fields (#​6210) Shorter duration entry: Interpret in…",
+   "source_url": "https://github.com/kimai/kimai/releases/tag/2.68.0",
+   "page_url": "https://www.firmwarely.com/devices/kimai/"
+  },
+  "penpot": {
+   "id": "penpot",
+   "brand": "Penpot",
+   "model": "Design tool",
+   "category": "A",
+   "status": "update",
+   "version": "2.18.2",
+   "previous": "2.18.1",
+   "released": "2026-10-05",
+   "date_known": true,
+   "eol": false,
+   "notes": ":bug: Bugs fixed: Fix workspace showing an internal error when syncing components or dragging in the color picker #​11933 (PR: #​11941) Fix SVG sanitizer keeping namespace-prefixed script elements when uploading SVG files #​12071 (PR: #​12073)",
+   "source_url": "https://github.com/penpot/penpot/releases/tag/2.18.2",
+   "page_url": "https://www.firmwarely.com/devices/penpot/"
   }
  }
 }

@@ -5670,6 +5670,60 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "weaviate",
+   "version": "1.39.9",
+   "name": "Weaviate Vector database",
+   "judged_at": "2026-10-05T11:18:58+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "kimai",
+   "version": "2.68.0",
+   "name": "Kimai Time tracking",
+   "judged_at": "2026-10-05T11:18:59+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "penpot",
+   "version": "2.18.2",
+   "name": "Penpot Design tool",
+   "judged_at": "2026-10-05T11:18:59+00:00",
+   "notes_chars": 243,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.75,
+    "security_fix_plain": 0.68,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
