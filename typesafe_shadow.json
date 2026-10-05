@@ -5724,6 +5724,24 @@
     "security_fix_plain": 0.68,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "avideo",
+   "version": "29.3.0",
+   "name": "AVideo Own Broadcast Network",
+   "judged_at": "2026-10-05T12:24:32+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
