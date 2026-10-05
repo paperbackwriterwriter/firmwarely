@@ -38,13 +38,13 @@
    "model": "HTTP router and reverse proxy",
    "category": "R",
    "status": "update",
-   "version": "0.28.21",
+   "version": "0.28.23",
    "previous": "0.28.20",
    "released": "2026-10-05",
    "date_known": true,
    "eol": false,
-   "notes": "Changes: Make tests pass on macOS and document Colima setup (#​4317) This PR improves local test runs on macOS: Build test plugins without DWARF on macOS to avoid the Mach-O chained-fixups load error. Linux plugin builds keep DWARF. Let the TrafficSegment test client retain enough idle connections …",
-   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.21",
+   "notes": "Changes: fix: Forwarded predicates ignore parameters whose names are not lower case (#​4320) Symptom: ForwardedHost and ForwardedProtocol don't match a Forwarded header whose parameter names aren't lower case: r: ForwardedProtocol(\"https\") -› \"http://backend\" | Forwarded header | master | expected …",
+   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.23",
    "page_url": "https://www.firmwarely.com/devices/skipper/"
   },
   "weaviate": {
@@ -106,6 +106,36 @@
    "notes": "29.3.0 (2026-10-05): Features: EncoderAlert: implement email alerts for encoder monitoring and add related tests (02f5aba) locale: add PayPerView decision reports translations in Portuguese (01c6b6c) locale: add PayPerView report translations in Portuguese (5e1701f) MobileYPT: send blockedUsersIds …",
    "source_url": "https://github.com/WWBN/AVideo/releases/tag/v29.3.0",
    "page_url": "https://www.firmwarely.com/devices/avideo/"
+  },
+  "clickhouse": {
+   "id": "clickhouse",
+   "brand": "ClickHouse",
+   "model": "Analytics database",
+   "category": "A",
+   "status": "update",
+   "version": "26.3.42.3-lts",
+   "previous": "26.8.17.4-lts",
+   "released": "2026-10-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release v26.3.42.3-lts v26.3.42.3-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.3.42.3-lts",
+   "page_url": "https://www.firmwarely.com/devices/clickhouse/"
+  },
+  "homarr": {
+   "id": "homarr",
+   "brand": "Homarr",
+   "model": "Dashboard",
+   "category": "A",
+   "status": "update",
+   "version": "2.2.0",
+   "previous": "2.1.2",
+   "released": "2026-10-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "2.2.0 (2026-10-05):",
+   "source_url": "https://github.com/homarr-labs/homarr/releases/tag/v2.2.0",
+   "page_url": "https://www.firmwarely.com/devices/homarr/"
   }
  }
 }
