@@ -248,13 +248,13 @@
    "model": "Scripts and workflows",
    "category": "A",
    "status": "update",
-   "version": "1.824.0",
+   "version": "1.824.1",
    "previous": "1.823.1",
    "released": "2026-10-05",
    "date_known": true,
    "eol": false,
-   "notes": "1.824.0 (2026-10-05): Features: add an AI decision flow step (TypeSafe's Jev, Cloudflare's Clef) (#​11474) (3cba8a7) add notion oauth provider (#​11528) (8b2dc1e) ai-chat: show per-file diffs for raw app edits (#​11521) (ec0883a) bill team-plan service accounts as half a seat (#​11298) (3aee181) ca…",
-   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.824.0",
+   "notes": "1.824.1 (2026-10-05): Bug Fixes: keep monaco's diff engine out of the app shell bundle (#​11542) (0908dee) --- This PR was generated with Release Please. See documentation.",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.824.1",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
   },
   "budibase": {
@@ -526,6 +526,66 @@
    "notes": "Summary of changes: Security fixes: CVE-2026-35189: tls: updated BoringSSL to fix excessive memory allocation when parsing certificates with nameRelativeToCRLIssuer CRL Distribution Points, which could be exploited for remote denial of service during TLS handshakes. Build/packaging: Removed Debian …",
    "source_url": "https://github.com/envoyproxy/envoy/releases/tag/v1.39.2",
    "page_url": "https://www.firmwarely.com/devices/envoy-proxy/"
+  },
+  "jellyfin-server": {
+   "id": "jellyfin-server",
+   "brand": "Jellyfin",
+   "model": "Media server",
+   "category": "A",
+   "status": "update",
+   "version": "12.2",
+   "previous": "12.1",
+   "released": "2026-10-05",
+   "date_known": true,
+   "eol": false,
+   "notes": ":rocket: Jellyfin Server 12.2: We are pleased to announce the latest stable release of Jellyfin, version 12.2! This minor release brings several bugfixes to improve your Jellyfin experience. As always, please ensure you take a full backup before upgrading! Discuss this release further on our forums…",
+   "source_url": "https://github.com/jellyfin/jellyfin/releases/tag/v12.2",
+   "page_url": "https://www.firmwarely.com/devices/jellyfin-server/"
+  },
+  "zoneminder": {
+   "id": "zoneminder",
+   "brand": "ZoneMinder",
+   "model": "Camera NVR",
+   "category": "S",
+   "status": "critical",
+   "version": "1.38.5",
+   "previous": "1.38.4",
+   "released": "2026-10-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "ZoneMinder 1.38.5 Release Notes: This is a maintenance release for the 1.38 series. It is primarily a security release: it fixes 19 reported vulnerabilities, including an authenticated remote code execution, a heap overflow and a stack overflow, as well as cross-monitor authorization bypasses throu…",
+   "source_url": "https://github.com/ZoneMinder/zoneminder/releases/tag/1.38.5",
+   "page_url": "https://www.firmwarely.com/devices/zoneminder/"
+  },
+  "comfyui": {
+   "id": "comfyui",
+   "brand": "ComfyUI",
+   "model": "Diffusion workflow UI",
+   "category": "A",
+   "status": "update",
+   "version": "0.39.0",
+   "previous": "0.38.0",
+   "released": "2026-10-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Support LynnReal light Minimax-H3 vae Update embedded docs to v0.5.13 Use higher quality defaults for Save Video encoding. feat: add DynamicGroup widget input fix(assets): don't let a model category that can't be listed abort the scan fix(assets): recover records when a drive comes …",
+   "source_url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.39.0",
+   "page_url": "https://www.firmwarely.com/devices/comfyui/"
+  },
+  "stirling-pdf": {
+   "id": "stirling-pdf",
+   "brand": "Stirling PDF",
+   "model": "PDF toolkit",
+   "category": "A",
+   "status": "update",
+   "version": "3.1.0",
+   "previous": "3.0.2",
+   "released": "2026-10-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "Some big changes in this release yet again! Group signing (Called Stirling Sign) is moving out of alpha and is now being enabled by default for new users, with it, you can share, track, and sign PDFs across your org. It also comes with a brand new sign UI, drastically improving the user experience …",
+   "source_url": "https://github.com/Stirling-Tools/Stirling-PDF/releases/tag/v3.1.0",
+   "page_url": "https://www.firmwarely.com/devices/stirling-pdf/"
   }
  }
 }

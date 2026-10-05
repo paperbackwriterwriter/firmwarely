@@ -6372,6 +6372,96 @@
     "security_fix_plain": 0.93,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "windmill",
+   "version": "1.824.1",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-10-05T23:15:42+00:00",
+   "notes_chars": 172,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "jellyfin-server",
+   "version": "12.2",
+   "name": "Jellyfin Media server",
+   "judged_at": "2026-10-05T23:15:42+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "zoneminder",
+   "version": "1.38.5",
+   "name": "ZoneMinder Camera NVR",
+   "judged_at": "2026-10-05T23:15:42+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.98,
+    "security_fix_plain": 0.97,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "comfyui",
+   "version": "0.39.0",
+   "name": "ComfyUI Diffusion workflow UI",
+   "judged_at": "2026-10-05T23:15:43+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "stirling-pdf",
+   "version": "3.1.0",
+   "name": "Stirling PDF toolkit",
+   "judged_at": "2026-10-05T23:15:43+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
