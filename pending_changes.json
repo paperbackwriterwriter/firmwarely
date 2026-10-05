@@ -211,6 +211,21 @@
    "notes": "Installation Guide: https://docs.onedev.io/category/installation-guide Change Log: https://code.onedev.io/onedev/server/~builds/8619/fixed-issues?query=%22State%22+is+%22Released%22+order+by+%22Type%22+asc+%2C+%22Priority%22+desc Incompatibilities: https://code.onedev.io/onedev/server/~builds/8619/…",
    "source_url": "https://github.com/theonedev/onedev/releases/tag/v16.8.4",
    "page_url": "https://www.firmwarely.com/devices/onedev/"
+  },
+  "piko": {
+   "id": "piko",
+   "brand": "Piko",
+   "model": "Alternative to Ngrok, designed to serve production traffic",
+   "category": "R",
+   "status": "update",
+   "version": "0.9.1",
+   "previous": "0.10.0",
+   "released": "2026-10-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: build(deps): bump golang.org/x/sync from 0.20.0 to 0.22.0 by in https://github.com/andydunstall/piko/pull/317 build(deps): bump github.com/stretchr/testify from 1.11.1 to 1.12.1 by in https://github.com/andydunstall/piko/pull/321 build(deps): bump github.com/MicahParks/keyfunc/v3 fr…",
+   "source_url": "https://github.com/andydunstall/piko/releases/tag/v0.9.1",
+   "page_url": "https://www.firmwarely.com/devices/piko/"
   }
  }
 }
