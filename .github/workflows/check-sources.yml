@@ -29,7 +29,7 @@ permissions:
 
 jobs:
   selftest:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -56,7 +56,7 @@ jobs:
         run: node scripts/selftest_subscribe.mjs
 
   sources:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
 

@@ -28,7 +28,10 @@ concurrency:
 
 jobs:
   check:
-    runs-on: ubuntu-latest
+    # Pinned, not ubuntu-latest: that label moves to Ubuntu 26 from Oct 19, 2026, and the
+    # daily run installs headless Chromium with its system packages, the step most likely
+    # to break on a new OS. Move every workflow to 26 together, after a test run on it.
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
 
