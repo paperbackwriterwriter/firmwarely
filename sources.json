@@ -10523,6 +10523,96 @@
    "type": "github",
    "repo": "XiaoMi/ha_xiaomi_home",
    "product_url": "https://github.com/XiaoMi/ha_xiaomi_home"
+  },
+  {
+   "id": "oxidized",
+   "brand": "Oxidized",
+   "model": "Network device configuration backup tool",
+   "category": "N",
+   "type": "github",
+   "repo": "ytti/oxidized",
+   "product_url": "https://github.com/ytti/oxidized"
+  },
+  {
+   "id": "rustic",
+   "brand": "Rustic",
+   "model": "Fast, encrypted, and deduplicated backups powered by Rust",
+   "category": "N",
+   "type": "github",
+   "repo": "rustic-rs/rustic",
+   "product_url": "https://github.com/rustic-rs/rustic"
+  },
+  {
+   "id": "barman",
+   "brand": "Barman",
+   "model": "Backup and Recovery Manager for PostgreSQL",
+   "category": "N",
+   "type": "github",
+   "repo": "EnterpriseDB/barman",
+   "product_url": "https://github.com/EnterpriseDB/barman"
+  },
+  {
+   "id": "proxmenux",
+   "brand": "ProxMenux",
+   "model": "Menu-driven Proxmox VE toolkit",
+   "category": "N",
+   "type": "github",
+   "repo": "MacRimi/ProxMenux",
+   "product_url": "https://github.com/MacRimi/ProxMenux"
+  },
+  {
+   "id": "gobackup",
+   "brand": "Gobackup",
+   "model": "CLI tool",
+   "category": "N",
+   "type": "github",
+   "repo": "gobackup/gobackup",
+   "product_url": "https://github.com/gobackup/gobackup"
+  },
+  {
+   "id": "dbatools",
+   "brand": "Dbatools",
+   "model": "SQL Server automation and instance migrations have never",
+   "category": "N",
+   "type": "github",
+   "repo": "dataplat/dbatools",
+   "product_url": "https://github.com/dataplat/dbatools"
+  },
+  {
+   "id": "slackdump",
+   "brand": "Slackdump",
+   "model": "Save or export your private and public Slack messages",
+   "category": "N",
+   "type": "github",
+   "repo": "rusq/slackdump",
+   "product_url": "https://github.com/rusq/slackdump"
+  },
+  {
+   "id": "pgbackweb",
+   "brand": "Pgbackweb",
+   "model": "Effortless PostgreSQL backups",
+   "category": "N",
+   "type": "github",
+   "repo": "eduardolat/pgbackweb",
+   "product_url": "https://github.com/eduardolat/pgbackweb"
+  },
+  {
+   "id": "databasement",
+   "brand": "Databasement",
+   "model": "Database backup manager",
+   "category": "N",
+   "type": "github",
+   "repo": "David-Crty/databasement",
+   "product_url": "https://github.com/David-Crty/databasement"
+  },
+  {
+   "id": "pv-migrate",
+   "brand": "Pv Migrate",
+   "model": "CLI tool",
+   "category": "N",
+   "type": "github",
+   "repo": "utkuozdemir/pv-migrate",
+   "product_url": "https://github.com/utkuozdemir/pv-migrate"
   }
  ]
 }
