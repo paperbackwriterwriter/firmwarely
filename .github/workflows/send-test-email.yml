@@ -1,0 +1,30 @@
+name: Send a test email
+
+# Manual. Sends the weekly digest and a personal alert, built from this week's real
+# changes, to one address with [TEST] in the subject. No subscriber is mailed and
+# nothing is committed. See scripts/send_test.py.
+on:
+  workflow_dispatch:
+    inputs:
+      to:
+        description: "Send the test emails to"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Send
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_FROM: ${{ vars.RESEND_FROM }}
+          SITE_URL: ${{ vars.SITE_URL }}
+          TO: ${{ inputs.to }}
+        run: python3 scripts/send_test.py "$TO"
