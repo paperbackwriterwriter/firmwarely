@@ -6246,6 +6246,114 @@
     "security_fix_plain": 0.98,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "freshrss",
+   "version": "1.30.1",
+   "name": "FreshRSS RSS reader",
+   "judged_at": "2026-10-05T21:32:10+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.84,
+    "security_fix_plain": 0.88,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "home-assistant-supervisor",
+   "version": "2026.10.0",
+   "name": "Home Assistant Supervisor",
+   "judged_at": "2026-10-05T21:32:10+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.09,
+    "security_fix_plain": 0.07,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "infisical",
+   "version": "0.165.17",
+   "name": "Infisical Secrets manager",
+   "judged_at": "2026-10-05T21:32:10+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.09,
+    "security_fix_plain": 0.07,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ghostfolio",
+   "version": "3.80.1",
+   "name": "Ghostfolio Wealth tracker",
+   "judged_at": "2026-10-05T21:32:10+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "windows",
+   "version": "6.06",
+   "name": "Dockur Windows in Docker",
+   "judged_at": "2026-10-05T21:32:10+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "http-shortcuts",
+   "version": "4.8.1",
+   "name": "HTTP Shortcuts Android app",
+   "judged_at": "2026-10-05T21:32:11+00:00",
+   "notes_chars": 25,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
