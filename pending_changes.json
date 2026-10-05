@@ -376,6 +376,51 @@
    "notes": "Overview: llama.cpp v0.6.0 introduces the new llama_batch_ext extended batch API (with llama_process) for mixed token/embedding inputs and MTP/deepstack state embeddings, adds support for the GLM-5.3-Flash (GLM5-Next) 320B hybrid model, the Clef decision model (text and vision) and MTP speculative …",
    "source_url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.6.0",
    "page_url": "https://www.firmwarely.com/devices/llama-cpp/"
+  },
+  "cloudflared": {
+   "id": "cloudflared",
+   "brand": "Cloudflare",
+   "model": "Tunnel daemon",
+   "category": "R",
+   "status": "update",
+   "version": "2026.10.0",
+   "previous": "2026.9.3",
+   "released": "2026-10-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "SHA256 Checksums: cloudflared-amd64.pkg: 17ed82e54fbd27ec4bf85848cc5a82f1e704b8154feaf024730f6fed99fafacf cloudflared-arm64.pkg: dac1a4b4ef25e9474a095ee0c634103ecaf990b5368d2afe920e97c5ea85fcfc cloudflared-darwin-amd64.tgz: 0560c9ab7281ac3f746055323623ed23bc0405b6dab9400474020cba33a978da cloudflare…",
+   "source_url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.10.0",
+   "page_url": "https://www.firmwarely.com/devices/cloudflared/"
+  },
+  "rocket-chat": {
+   "id": "rocket-chat",
+   "brand": "Rocket.Chat",
+   "model": "Team chat",
+   "category": "A",
+   "status": "update",
+   "version": "8.9.0",
+   "previous": "8.8.1",
+   "released": "2026-10-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "Engine versions: Node: ›=22.22.3 =24.15.0 Users while still visible in Spotlight and Administration › Users. (#​42029) Improves the performance of sending and deleting messages in discussions by updating the discussion's message counter incrementally instead of recounting hidden system messages on …",
+   "source_url": "https://github.com/RocketChat/Rocket.Chat/releases/tag/8.9.0",
+   "page_url": "https://www.firmwarely.com/devices/rocket-chat/"
+  },
+  "etherpad": {
+   "id": "etherpad",
+   "brand": "Etherpad",
+   "model": "Collaborative editor",
+   "category": "A",
+   "status": "critical",
+   "version": "3.3.7",
+   "previous": "3.3.6",
+   "released": "2026-10-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "3.3.7 is a security release. It closes a stored XSS in the pad and timeslider renderer (GHSA-4mx2-rqx5-2pp6). Security: Renderer — attribute-pool values can no longer forge class tokens (GHSA-4mx2-rqx5-2pp6, #​8302). linestylefilter appended the start and list line-attribute values verbatim to the …",
+   "source_url": "https://github.com/ether/etherpad/releases/tag/v3.3.7",
+   "page_url": "https://www.firmwarely.com/devices/etherpad/"
   }
  }
 }

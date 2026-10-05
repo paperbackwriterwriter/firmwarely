@@ -6192,6 +6192,60 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "cloudflared",
+   "version": "2026.10.0",
+   "name": "Cloudflare Tunnel daemon",
+   "judged_at": "2026-10-05T18:22:32+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "rocket-chat",
+   "version": "8.9.0",
+   "name": "Rocket.Chat Team chat",
+   "judged_at": "2026-10-05T18:22:32+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "etherpad",
+   "version": "3.3.7",
+   "name": "Etherpad Collaborative editor",
+   "judged_at": "2026-10-05T18:22:32+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.98,
+    "security_fix_plain": 0.98,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
