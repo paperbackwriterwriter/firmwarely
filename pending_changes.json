@@ -53,13 +53,13 @@
    "model": "Scripts and workflows",
    "category": "A",
    "status": "update",
-   "version": "1.823.0",
+   "version": "1.823.1",
    "previous": "1.822.0",
-   "released": "2026-10-04",
+   "released": "2026-10-05",
    "date_known": true,
    "eol": false,
-   "notes": "1.823.0 (2026-10-04): Features: redesign the service logs page (#​11506) (0f65df2) Bug Fixes: apply the pg keepalive settings to the postgres trigger connection (#​11512) (33f6de0) bound the datatable migration lock wait and reap a dead holder (#​11510) (711e08c) bound the pg cached-connection rese…",
-   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.823.0",
+   "notes": "1.823.1 (2026-10-05): Bug Fixes: python results with a KeyError-raising getattr fail the job (#​11517) (3fff1bd) stream the ai chat compaction request (#​11514) (289d3c3)",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.823.1",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
   },
   "picard": {
@@ -226,6 +226,21 @@
    "notes": "What's Changed: build(deps): bump golang.org/x/sync from 0.20.0 to 0.22.0 by in https://github.com/andydunstall/piko/pull/317 build(deps): bump github.com/stretchr/testify from 1.11.1 to 1.12.1 by in https://github.com/andydunstall/piko/pull/321 build(deps): bump github.com/MicahParks/keyfunc/v3 fr…",
    "source_url": "https://github.com/andydunstall/piko/releases/tag/v0.9.1",
    "page_url": "https://www.firmwarely.com/devices/piko/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.2793",
+   "previous": "0.24.2788",
+   "released": "2026-10-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: 0e73d70304340b26fd9b0c60847d9c65c37ba0ff add FileIplay a private site. resolves #​17171 189f14a54f41d513c98d61a3d12e226abd78c6bf Revert \"add FileIplay a private site. resolves #​17171\" f7a273ba4c11dc2abaf9b8572ca8792353b49293 add FileIplay a private site. resolves #​17171 061e60eaa9063697…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2793",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
