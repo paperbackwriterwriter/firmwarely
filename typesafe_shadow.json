@@ -5796,6 +5796,96 @@
     "security_fix_plain": 0.04,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "skipper",
+   "version": "0.28.25",
+   "name": "Skipper HTTP router and reverse proxy",
+   "judged_at": "2026-10-05T14:23:21+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.7.22.4-stable",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-05T14:23:21+00:00",
+   "notes_chars": 43,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "qdrant",
+   "version": "1.19.2",
+   "name": "Qdrant Vector database",
+   "judged_at": "2026-10-05T14:23:21+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "kestra",
+   "version": "2.0.5",
+   "name": "Kestra Orchestration platform",
+   "judged_at": "2026-10-05T14:23:22+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "homeassistant-tapo-control",
+   "version": "7.2.6",
+   "name": "HomeAssistant Tapo Control for Tapo cameras as a Home Assistant component",
+   "judged_at": "2026-10-05T14:23:22+00:00",
+   "notes_chars": 277,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

@@ -38,13 +38,13 @@
    "model": "HTTP router and reverse proxy",
    "category": "R",
    "status": "update",
-   "version": "0.28.23",
+   "version": "0.28.25",
    "previous": "0.28.20",
    "released": "2026-10-05",
    "date_known": true,
    "eol": false,
-   "notes": "Changes: fix: Forwarded predicates ignore parameters whose names are not lower case (#​4320) Symptom: ForwardedHost and ForwardedProtocol don't match a Forwarded header whose parameter names aren't lower case: r: ForwardedProtocol(\"https\") -› \"http://backend\" | Forwarded header | master | expected …",
-   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.23",
+   "notes": "Changes: build(deps): bump amazonlinux from 2023.12.20260831.0 to 2023.12.20260918.0 in /fuzz (#​4323) Bumps amazonlinux from 2023.12.20260831.0 to 2023.12.20260918.0. Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually b…",
+   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.25",
    "page_url": "https://www.firmwarely.com/devices/skipper/"
   },
   "weaviate": {
@@ -113,13 +113,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.3.42.3-lts",
+   "version": "26.7.22.4-stable",
    "previous": "26.8.17.4-lts",
    "released": "2026-10-05",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.3.42.3-lts v26.3.42.3-lts",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.3.42.3-lts",
+   "notes": "Release v26.7.22.4-stable v26.7.22.4-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.7.22.4-stable",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "homarr": {
@@ -136,6 +136,51 @@
    "notes": "2.2.0 (2026-10-05):",
    "source_url": "https://github.com/homarr-labs/homarr/releases/tag/v2.2.0",
    "page_url": "https://www.firmwarely.com/devices/homarr/"
+  },
+  "qdrant": {
+   "id": "qdrant",
+   "brand": "Qdrant",
+   "model": "Vector database",
+   "category": "A",
+   "status": "update",
+   "version": "1.19.2",
+   "previous": "1.19.1",
+   "released": "2026-10-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "Change log: Improvements: https://github.com/qdrant/qdrant/pull/10682 - Don't rewrite full sparse posting list on every upsert, making sparse vector upserts significantly faster https://github.com/qdrant/qdrant/pull/10349, https://github.com/qdrant/qdrant/pull/10445, https://github.com/qdrant/qdran…",
+   "source_url": "https://github.com/qdrant/qdrant/releases/tag/v1.19.2",
+   "page_url": "https://www.firmwarely.com/devices/qdrant/"
+  },
+  "kestra": {
+   "id": "kestra",
+   "brand": "Kestra",
+   "model": "Orchestration platform",
+   "category": "A",
+   "status": "update",
+   "version": "2.0.5",
+   "previous": "2.0.4",
+   "released": "2026-10-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: 🚀 Features: core 777ceef centralized HTTP retry mechanism in core (#​19904), closes #​19904 worker 0b35619 reach namespace files through the controller, configurably 0dff4d1 make the fetched job buffer size configurable 📘 Subtasks: core fe0ba63 remove duckdb ld_preload workaround from se…",
+   "source_url": "https://github.com/kestra-io/kestra/releases/tag/v2.0.5",
+   "page_url": "https://www.firmwarely.com/devices/kestra/"
+  },
+  "homeassistant-tapo-control": {
+   "id": "homeassistant-tapo-control",
+   "brand": "HomeAssistant Tapo Control",
+   "model": "Control for Tapo cameras as a Home Assistant component",
+   "category": "S",
+   "status": "update",
+   "version": "7.2.6",
+   "previous": "7.2.5",
+   "released": "2026-10-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes: Fix https://github.com/JurajNyiri/HomeAssistant-Tapo-Control/pull/1455, https://github.com/JurajNyiri/HomeAssistant-Tapo-Control/issues/1454: Motion sensors not working on certain cameras where they should be due to onvif connection not getting initialized, thank you,",
+   "source_url": "https://github.com/JurajNyiri/HomeAssistant-Tapo-Control/releases/tag/7.2.6",
+   "page_url": "https://www.firmwarely.com/devices/homeassistant-tapo-control/"
   }
  }
 }
