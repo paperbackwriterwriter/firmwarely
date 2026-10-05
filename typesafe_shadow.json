@@ -5940,6 +5940,150 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "simplisafe-base-station",
+   "version": "2.29",
+   "name": "SimpliSafe Base Station (Gen 3)",
+   "judged_at": "2026-10-05T16:20:07+00:00",
+   "notes_chars": 73,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "coder",
+   "version": "2.36.7",
+   "name": "Coder Remote dev environments",
+   "judged_at": "2026-10-05T16:20:07+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.68,
+    "security_fix_plain": 0.65,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "windmill",
+   "version": "1.824.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-10-05T16:20:07+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "budibase",
+   "version": "3.48.0",
+   "name": "Budibase Low-code platform",
+   "judged_at": "2026-10-05T16:20:07+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "simplisafe-outdoor-camera",
+   "version": "1.53",
+   "name": "SimpliSafe Wireless Outdoor Camera",
+   "judged_at": "2026-10-05T16:20:07+00:00",
+   "notes_chars": 73,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "langfuse",
+   "version": "4.51.0",
+   "name": "Langfuse LLM observability",
+   "judged_at": "2026-10-05T16:20:07+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "simplisafe-indoor-camera",
+   "version": "1.53",
+   "name": "SimpliSafe Wireless Indoor Camera",
+   "judged_at": "2026-10-05T16:20:08+00:00",
+   "notes_chars": 73,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "freerouting",
+   "version": "2.5.0",
+   "name": "Freerouting Advanced PCB auto-router",
+   "judged_at": "2026-10-05T16:20:08+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.03
+   }
   }
  ]
 }
