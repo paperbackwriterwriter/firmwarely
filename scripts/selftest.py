@@ -135,6 +135,22 @@ def test_routing():
     many += [dict(change, id="sec", model="Secure", status="critical")]
     body = ua.render_digest(many, weekly=True)
     check("a long digest keeps every security fix", "Secure" in body, True)
+
+    # every item's bullet is its status color, as in the GitHub issue
+    kinds = [dict(change, id="s", model="Sec", status="critical"), dict(change, id="u", model="Upd", status="update"),
+             dict(change, id="c", model="Cur", status="current"), dict(change, id="t", model="Old", status="stale"),
+             dict(change, id="e", model="Gone", status="eol", eol=True)]
+    colored = ua.render_digest(kinds)
+    for model, dot in (("Sec", "🔴"), ("Upd", "🟡"), ("Cur", "⚪"), ("Old", "⚪"), ("Gone", "⚫")):
+        check(f"digest bullet for {model} is {dot}", f"{dot}&nbsp;&nbsp;<strong>Acme {model}</strong>" in colored, True)
+    check("...replacing the plain list bullet", "list-style:none" in colored and "<ul>" not in colored, True)
+    alert = ua.render([{"change": dict(change, status="critical"), "yours": "1.0"},
+                       {"change": dict(change, id="u", model="Upd", status="update"), "yours": ""}])
+    check("a personal alert's bullets are colored too",
+          ("🔴&nbsp;&nbsp;<strong>Acme Router</strong>" in alert, "🟡&nbsp;&nbsp;<strong>Acme Upd</strong>" in alert), (True, True))
+    check("the GitHub issue and the emails share one color per status",
+          [fetch.status_dot({"status": s}) for s in ("critical", "update", "current", "stale", "eol")],
+          ["🔴", "🟡", "⚪", "⚪", "⚫"])
     check("...caps ordinary releases and says how many more", f"and {len(many) - ua.DIGEST_MAX} more" in body, True)
     check("the default is every plan, not just the paying one",
           [p.strip().lower() for p in (os.environ.get("USER_ALERT_PLANS") or "all").split(",") if p.strip()],
