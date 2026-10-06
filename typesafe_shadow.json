@@ -7488,6 +7488,78 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "gitea",
+   "version": "28.1.0",
+   "name": "Gitea Self-hosted Git service",
+   "judged_at": "2026-10-06T20:18:08+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "weaviate",
+   "version": "1.39.10",
+   "name": "Weaviate Vector database",
+   "judged_at": "2026-10-06T20:18:08+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.51,
+    "security_fix_plain": 0.26,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "langflow",
+   "version": "1.12.5",
+   "name": "Langflow Agent builder",
+   "judged_at": "2026-10-06T20:18:08+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.72,
+    "security_fix_plain": 0.6,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "autobrr",
+   "version": "1.88.0",
+   "name": "autobrr Download automation",
+   "judged_at": "2026-10-06T20:18:09+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

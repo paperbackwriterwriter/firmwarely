@@ -481,6 +481,66 @@
    "notes": "What's Changed: Models run on MLX on Apple Silicon by default In this release, on Apple Silicon devices, model architectures supported by the MLX runtime will automatically run on MLX. ollama pull qwen3.8 ollama run qwen3.8 Additional models include gemma4, qwen3.6 and qwen3.5 Decision models are n…",
    "source_url": "https://github.com/ollama/ollama/releases/tag/v0.40.0",
    "page_url": "https://www.firmwarely.com/devices/ollama/"
+  },
+  "gitea": {
+   "id": "gitea",
+   "brand": "Gitea",
+   "model": "Self-hosted Git service",
+   "category": "A",
+   "status": "update",
+   "version": "28.1.0",
+   "previous": "28.0.0",
+   "released": "2026-10-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "[28.1.0] - 2026-10-06: Enhancements: (packages/npm) Improve npm client compatibility (#​39434) (#​39522) Bug Fixes: (actions) Keep runs order after auto refresh (#​39479) (#​39481) Npm route (#​39488) (#​39490) Copy new access token to clipboard (#​39496) (#​39499) (markup) Skip post-processing ins…",
+   "source_url": "https://github.com/go-gitea/gitea/releases/tag/v28.1.0",
+   "page_url": "https://www.firmwarely.com/devices/gitea/"
+  },
+  "weaviate": {
+   "id": "weaviate",
+   "brand": "Weaviate",
+   "model": "Vector database",
+   "category": "A",
+   "status": "update",
+   "version": "1.39.10",
+   "previous": "1.39.9",
+   "released": "2026-10-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "Breaking Changes: none New Features: none Fixes: fix(object-ttl): stop a panicking shard delete from ending a collection's sweep Authz bugfix sweep fix(modules): read a fractional json.Number in float module settings fix(object-ttl): stop sweeping a shard or tenant whose delete makes no progress En…",
+   "source_url": "https://github.com/weaviate/weaviate/releases/tag/v1.39.10",
+   "page_url": "https://www.firmwarely.com/devices/weaviate/"
+  },
+  "langflow": {
+   "id": "langflow",
+   "brand": "Langflow",
+   "model": "Agent builder",
+   "category": "A",
+   "status": "update",
+   "version": "1.12.5",
+   "previous": "1.12.4",
+   "released": "2026-10-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: 🐛 Bug Fixes: fix(mcp): stop session leak and timeout retries fix(mcp): bound server discovery concurrency and cleanup fix(mcp): forward global variable headers from the environment fix(mcp): redact server credentials from management responses fix(a2a): enforce authenticated executio…",
+   "source_url": "https://github.com/langflow-ai/langflow/releases/tag/v1.12.5",
+   "page_url": "https://www.firmwarely.com/devices/langflow/"
+  },
+  "autobrr": {
+   "id": "autobrr",
+   "brand": "autobrr",
+   "model": "Download automation",
+   "category": "A",
+   "status": "update",
+   "version": "1.88.0",
+   "previous": "1.87.0",
+   "released": "2026-10-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: New Features: b48c5d0742fc2078a592be46b683216bc1a0eab3: feat(alerts): show update, IRC and list issues in header banner (#​2741) () 31ebf52276d708378cb93331f3226055f4119e48: feat(arr): send tvdbId to Sonarr and use feed publish date (#​2746) () 2360bc8a2b847eea3cf82f8a2e22c42c870bb1f8: f…",
+   "source_url": "https://github.com/autobrr/autobrr/releases/tag/v1.88.0",
+   "page_url": "https://www.firmwarely.com/devices/autobrr/"
   }
  }
 }
