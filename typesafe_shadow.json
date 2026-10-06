@@ -6516,6 +6516,60 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "copyparty",
+   "version": "1.20.25",
+   "name": "copyparty Portable file server",
+   "judged_at": "2026-10-06T01:17:56+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.41,
+    "security_fix_plain": 0.37,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "universalmediaserver",
+   "version": "15.8.2",
+   "name": "Universal Media Server DLNA media server",
+   "judged_at": "2026-10-06T01:17:56+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "pulse",
+   "version": "6.5.0",
+   "name": "Pulse Real-time monitoring dashboard",
+   "judged_at": "2026-10-06T01:17:56+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

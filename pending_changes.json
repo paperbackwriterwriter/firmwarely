@@ -616,6 +616,51 @@
    "notes": "Fixed: CLI: Raw list output was replaced by log messages when redirected or piped to another process Sync: Crash on Windows when output is redirected to a file or piped to another process Docker: Stopping the container interrupted a sync in progress instead of letting it finish",
    "source_url": "https://github.com/recyclarr/recyclarr/releases/tag/v8.7.3",
    "page_url": "https://www.firmwarely.com/devices/recyclarr/"
+  },
+  "copyparty": {
+   "id": "copyparty",
+   "brand": "copyparty",
+   "model": "Portable file server",
+   "category": "N",
+   "status": "critical",
+   "version": "1.20.25",
+   "previous": "1.20.24",
+   "released": "2026-10-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "read-only demo server at https://a.ocv.me/pub/demo/ docker image ╱ similar software ╱ client testbed there is a discord server with an in case of future important updates, such as vulnerabilities (most recently 2026-07-06) ⚠️ ATTN: this release mitigates a Windows/MacOS-specific issue with shadowin…",
+   "source_url": "https://github.com/9001/copyparty/releases/tag/v1.20.25",
+   "page_url": "https://www.firmwarely.com/devices/copyparty/"
+  },
+  "universalmediaserver": {
+   "id": "universalmediaserver",
+   "brand": "Universal Media Server",
+   "model": "DLNA media server",
+   "category": "A",
+   "status": "update",
+   "version": "15.8.2",
+   "previous": "15.8.1",
+   "released": "2026-09-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "Here's a bugfix release for v15 while we continue to work on v16. It fixes slow browsing since 15.8.0 (sorry!), DVD ISO support, and broken browsing of parent directories when children are added. Thanks for reporting bugs to us so we can squash them! Full changelog: General: Fixed slow browsing sin…",
+   "source_url": "https://github.com/UniversalMediaServer/UniversalMediaServer/releases/tag/15.8.2",
+   "page_url": "https://www.firmwarely.com/devices/universalmediaserver/"
+  },
+  "pulse": {
+   "id": "pulse",
+   "brand": "Pulse",
+   "model": "Real-time monitoring dashboard",
+   "category": "A",
+   "status": "update",
+   "version": "6.5.0",
+   "previous": "6.4.5",
+   "released": "2026-10-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "✅ Release Asset Validation: PASSED: The required release asset checks passed. Status: Release asset checks passed ✅ Validated: 2026-10-06 00:17:56 UTC Workflow: Pulse Release Pipeline #​426 Validation Summary: All required assets present ✓ Checksums verified ✓ Version strings correct ✓ Binary archi…",
+   "source_url": "https://github.com/rcourtman/Pulse/releases/tag/v6.5.0",
+   "page_url": "https://www.firmwarely.com/devices/pulse/"
   }
  }
 }
