@@ -6588,6 +6588,132 @@
     "security_fix_plain": 0.09,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "ghostfolio",
+   "version": "3.80.2",
+   "name": "Ghostfolio Wealth tracker",
+   "judged_at": "2026-10-06T06:23:08+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.02,
+    "security_fix": 0.04
+   }
+  },
+  {
+   "id": "syncthing",
+   "version": "2.1.6",
+   "name": "Syncthing Continuous file sync",
+   "judged_at": "2026-10-06T06:23:08+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "bazzite",
+   "version": "44.20261006",
+   "name": "Universal Blue Bazzite gaming OS",
+   "judged_at": "2026-10-06T06:23:08+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "jackett",
+   "version": "0.24.2798",
+   "name": "Jackett Torrent indexer proxy",
+   "judged_at": "2026-10-06T06:23:09+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "zammad",
+   "version": "7.2.1",
+   "name": "Zammad Help desk",
+   "judged_at": "2026-10-06T06:23:09+00:00",
+   "notes_chars": 5,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.08,
+    "security_fix_plain": 0.07,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "jenkins",
+   "version": "2.585",
+   "name": "Jenkins Automation server",
+   "judged_at": "2026-10-06T06:23:09+00:00",
+   "notes_chars": 13,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.21,
+    "security_fix_plain": 0.16,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "floci",
+   "version": "2.2.0",
+   "name": "Floci Local cloud emulator",
+   "judged_at": "2026-10-06T06:23:09+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.1,
+    "security_fix_plain": 0.18,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
