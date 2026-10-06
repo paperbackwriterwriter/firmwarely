@@ -368,13 +368,13 @@
    "model": "Secrets manager",
    "category": "A",
    "status": "update",
-   "version": "0.166.0",
+   "version": "0.166.1",
    "previous": "0.165.17",
    "released": "2026-10-06",
    "date_known": true,
    "eol": false,
-   "notes": "What's Changed: feat(gateways): display PAM connected resources fix: enforce validation rules when moving secrets and folders fix: update sanitized-schema.yaml docs(agent-vault): add openclaw guides improvement(kms): migrate export actions and rotation notice to v3 improvement(kms): migrate encrypt…",
-   "source_url": "https://github.com/Infisical/infisical/releases/tag/v0.166.0",
+   "notes": "What's Changed: chore(frontend): upgrade ESLint to v9 while preserving lint policy chore(deps): refresh backend lockfile within existing ranges feature: implemented dynamic secret oauth 2.0 fix: adjust realtime scan concurrency from 5 to 2 jobs docs(agent-vault): move and clarify session logs docs …",
+   "source_url": "https://github.com/Infisical/infisical/releases/tag/v0.166.1",
    "page_url": "https://www.firmwarely.com/devices/infisical/"
   },
   "prefect": {
@@ -586,6 +586,21 @@
    "notes": "Changes: Fix #​1459: Integration setup failing when ONVIF connection fails on certain cameras after updating to 7.2.6 Add: More detailed debug logs for ONVIF connection and event subscription failures",
    "source_url": "https://github.com/JurajNyiri/HomeAssistant-Tapo-Control/releases/tag/7.2.7",
    "page_url": "https://www.firmwarely.com/devices/homeassistant-tapo-control/"
+  },
+  "bazzite": {
+   "id": "bazzite",
+   "brand": "Universal Blue",
+   "model": "Bazzite gaming OS",
+   "category": "C",
+   "status": "update",
+   "version": "44.20261006.1",
+   "previous": "44.20261006",
+   "released": "2026-10-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "This is an automatically generated changelog for release 44.20261006.1. From previous stable version 44.20261006 there have been the following changes. One package per new version shown. Major packages: | Name | Version | | --- | --- | | Kernel | 7.2.8-ogc4.1 ➡️ 7.2.8-ogc5.1 | | Kernel (Nvidia LTS)…",
+   "source_url": "https://github.com/ublue-os/bazzite/releases/tag/44.20261006.1",
+   "page_url": "https://www.firmwarely.com/devices/bazzite/"
   }
  }
 }
