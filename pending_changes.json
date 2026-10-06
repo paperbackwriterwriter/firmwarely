@@ -547,14 +547,14 @@
    "brand": "ZoneMinder",
    "model": "Camera NVR",
    "category": "S",
-   "status": "critical",
-   "version": "1.38.5",
+   "status": "update",
+   "version": "1.38.6",
    "previous": "1.38.4",
    "released": "2026-10-05",
    "date_known": true,
    "eol": false,
-   "notes": "ZoneMinder 1.38.5 Release Notes: This is a maintenance release for the 1.38 series. It is primarily a security release: it fixes 19 reported vulnerabilities, including an authenticated remote code execution, a heap overflow and a stack overflow, as well as cross-monitor authorization bypasses throu…",
-   "source_url": "https://github.com/ZoneMinder/zoneminder/releases/tag/1.38.5",
+   "notes": "ZoneMinder 1.38.6 Release Notes: This is a packaging fix for 1.38.5. Its code is 1.38.5's, with one build change. 1.38.5's RPM builds failed on Rocky Linux 8, whose GCC 8 needs libstdc++fs linked explicitly for std::filesystem. Because that one target failed, no 1.38.5 RPM packages were published f…",
+   "source_url": "https://github.com/ZoneMinder/zoneminder/releases/tag/1.38.6",
    "page_url": "https://www.firmwarely.com/devices/zoneminder/"
   },
   "comfyui": {
@@ -586,6 +586,36 @@
    "notes": "Some big changes in this release yet again! Group signing (Called Stirling Sign) is moving out of alpha and is now being enabled by default for new users, with it, you can share, track, and sign PDFs across your org. It also comes with a brand new sign UI, drastically improving the user experience …",
    "source_url": "https://github.com/Stirling-Tools/Stirling-PDF/releases/tag/v3.1.0",
    "page_url": "https://www.firmwarely.com/devices/stirling-pdf/"
+  },
+  "vaultwarden": {
+   "id": "vaultwarden",
+   "brand": "Vaultwarden",
+   "model": "Password manager server",
+   "category": "A",
+   "status": "critical",
+   "version": "1.37.4",
+   "previous": "1.37.3",
+   "released": "2026-10-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "Security Fixes: This release contains security fixes for the following advisories. We strongly advise updating as soon as possible. Organization member revocation [GHSA-69q9-v8p6-xvx3] (High, 8.1) Two-factor authentication [GHSA-7jg8-8m5x-6j9r] (Medium, 6.8) Organization invitations [GHSA-v576-3wvq…",
+   "source_url": "https://github.com/dani-garcia/vaultwarden/releases/tag/1.37.4",
+   "page_url": "https://www.firmwarely.com/devices/vaultwarden/"
+  },
+  "recyclarr": {
+   "id": "recyclarr",
+   "brand": "Recyclarr",
+   "model": "Arr config sync",
+   "category": "A",
+   "status": "update",
+   "version": "8.7.3",
+   "previous": "8.7.2",
+   "released": "2026-10-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "Fixed: CLI: Raw list output was replaced by log messages when redirected or piped to another process Sync: Crash on Windows when output is redirected to a file or piped to another process Docker: Stopping the container interrupted a sync in progress instead of letting it finish",
+   "source_url": "https://github.com/recyclarr/recyclarr/releases/tag/v8.7.3",
+   "page_url": "https://www.firmwarely.com/devices/recyclarr/"
   }
  }
 }

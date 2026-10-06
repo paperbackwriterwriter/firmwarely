@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.firmwarely.com/</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://www.firmwarely.com/my-devices.html</loc><lastmod>2026-10-05</lastmod></url>
+  <url><loc>https://www.firmwarely.com/</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://www.firmwarely.com/my-devices.html</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/pro/</loc><lastmod>2026-09-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/legal/</loc><lastmod>2026-09-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/support/</loc><lastmod>2026-09-15</lastmod></url>
@@ -145,7 +145,7 @@
   <url><loc>https://www.firmwarely.com/devices/watchtower/</loc><lastmod>2023-11-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/authelia/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/authentik/</loc><lastmod>2026-09-17</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/vaultwarden/</loc><lastmod>2026-09-13</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/vaultwarden/</loc><lastmod>2026-10-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/bitwarden-server/</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/homepage-dashboard/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/heimdall-dashboard/</loc><lastmod>2026-09-05</lastmod></url>
@@ -514,7 +514,7 @@
   <url><loc>https://www.firmwarely.com/devices/nzbhydra2/</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/flaresolverr/</loc><lastmod>2026-09-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/autobrr/</loc><lastmod>2026-09-24</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/recyclarr/</loc><lastmod>2026-09-03</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/recyclarr/</loc><lastmod>2026-10-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/unpackerr/</loc><lastmod>2026-08-31</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ombi/</loc><lastmod>2026-05-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/wizarr/</loc><lastmod>2026-09-14</lastmod></url>

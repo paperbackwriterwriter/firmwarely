@@ -6462,6 +6462,60 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "zoneminder",
+   "version": "1.38.6",
+   "name": "ZoneMinder Camera NVR",
+   "judged_at": "2026-10-06T00:28:19+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "vaultwarden",
+   "version": "1.37.4",
+   "name": "Vaultwarden Password manager server",
+   "judged_at": "2026-10-06T00:28:19+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.97,
+    "security_fix_plain": 0.95,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "recyclarr",
+   "version": "8.7.3",
+   "name": "Recyclarr Arr config sync",
+   "judged_at": "2026-10-06T00:28:19+00:00",
+   "notes_chars": 278,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
