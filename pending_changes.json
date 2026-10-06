@@ -83,13 +83,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.8.19.9-lts",
+   "version": "26.9.12.8-stable",
    "previous": "26.9.11.2-stable",
    "released": "2026-10-06",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.8.19.9-lts v26.8.19.9-lts",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.19.9-lts",
+   "notes": "Release v26.9.12.8-stable v26.9.12.8-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.9.12.8-stable",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "windmill": {
@@ -248,13 +248,13 @@
    "model": "Anime RSS downloader",
    "category": "A",
    "status": "update",
-   "version": "3.2.41",
+   "version": "3.2.42",
    "previous": "3.2.39",
    "released": "2026-10-06",
    "date_known": true,
    "eol": false,
-   "notes": "refactor: 优化下载列表 refactor: 优化标签显示 refactor: 关于页面移动端布局 refactor: 优化排除布局",
-   "source_url": "https://github.com/wushuo894/ani-rss/releases/tag/v3.2.41",
+   "notes": "fix: 修复 x.5 集刮削错误",
+   "source_url": "https://github.com/wushuo894/ani-rss/releases/tag/v3.2.42",
    "page_url": "https://www.firmwarely.com/devices/ani-rss/"
   },
   "zimaos": {
@@ -391,6 +391,51 @@
    "notes": "This is the last release that will support Python 3.10 — future releases will require Python 3.11 or later. Bug Fixes 🐞 Fix get_call_parameters to unwrap FieldInfo defaults for flow runs Page through all runs in cancellation cleanup and pause expiration monitors Fix UnboundLocalError in observer _g…",
    "source_url": "https://github.com/PrefectHQ/prefect/releases/tag/3.8.8",
    "page_url": "https://www.firmwarely.com/devices/prefect/"
+  },
+  "esp32-marauder": {
+   "id": "esp32-marauder",
+   "brand": "Marauder",
+   "model": "ESP32 Marauder",
+   "category": "S",
+   "status": "update",
+   "version": "1.18.0",
+   "previous": "1.17.0",
+   "released": "2026-10-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Generate release asset tables from target registry Fix SD firmware updater null menu crash Add POOM support and iBeacon discovery Skips PSRAM initialization for v6 boards Fix NimBLE client lifecycle cleanup Add Remote ID collection and live tracking Add Remote ID route history, GPX …",
+   "source_url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v1.18.0",
+   "page_url": "https://www.firmwarely.com/devices/esp32-marauder/"
+  },
+  "whisper-cpp": {
+   "id": "whisper-cpp",
+   "brand": "ggml",
+   "model": "whisper.cpp",
+   "category": "A",
+   "status": "update",
+   "version": "1.9.5",
+   "previous": "1.9.4",
+   "released": "2026-10-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "Overview: New version has been released. Nightly build: b5454 More info: dist : releases and versioning of ggml-org projects Changelog since v1.9.4: d1be6fde whisper : bump version to 1.9.5 (#​4102) 4afec37b talk-llama : update llama.cpp to v0.6.0 3d451abe sync : ggml 47f1c7dc ggml : bump version t…",
+   "source_url": "https://github.com/ggml-org/whisper.cpp/releases/tag/v1.9.5",
+   "page_url": "https://www.firmwarely.com/devices/whisper-cpp/"
+  },
+  "pydio-cells": {
+   "id": "pydio-cells",
+   "brand": "Pydio",
+   "model": "Cells file platform",
+   "category": "A",
+   "status": "update",
+   "version": "4.4.18",
+   "previous": "5.1.0",
+   "released": "2026-10-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "Fix an issue with Nats jetstream, Adds collabora feature controls Change log: You can find a summary of the change log here.",
+   "source_url": "https://github.com/pydio/cells/releases/tag/v4.4.18",
+   "page_url": "https://www.firmwarely.com/devices/pydio-cells/"
   }
  }
 }

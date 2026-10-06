@@ -8,7 +8,7 @@
   <url><loc>https://www.firmwarely.com/support/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/routers/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/nas/</loc><lastmod>2026-10-06</lastmod></url>
-  <url><loc>https://www.firmwarely.com/category/smart-home/</loc><lastmod>2026-10-05</lastmod></url>
+  <url><loc>https://www.firmwarely.com/category/smart-home/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/consoles-drones-ebikes/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/makers/</loc><lastmod>2026-10-04</lastmod></url>
   <url><loc>https://www.firmwarely.com/category/pcs-tvs-gadgets/</loc><lastmod>2026-10-05</lastmod></url>
@@ -50,7 +50,7 @@
   <url><loc>https://www.firmwarely.com/brands/simplisafe/</loc><lastmod>2026-10-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/synology/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/z-wave-js/</loc><lastmod>2026-09-29</lastmod></url>
-  <url><loc>https://www.firmwarely.com/brands/ggml/</loc><lastmod>2026-10-05</lastmod></url>
+  <url><loc>https://www.firmwarely.com/brands/ggml/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/brands/owncloud/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ubiquiti-unifi-protect-application/</loc><lastmod>2026-10-02</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ubiquiti-unifi-network-application/</loc><lastmod>2026-09-10</lastmod></url>
@@ -220,7 +220,7 @@
   <url><loc>https://www.firmwarely.com/devices/openwakeword/</loc><lastmod>2024-02-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/govee2mqtt/</loc><lastmod>2026-03-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/hyperion-ng/</loc><lastmod>2026-04-06</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/esp32-marauder/</loc><lastmod>2026-09-16</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/esp32-marauder/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/bruce-firmware/</loc><lastmod>2026-08-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/klipper/</loc><lastmod>2025-04-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/mainsail/</loc><lastmod>2026-08-27</lastmod></url>
@@ -506,7 +506,7 @@
   <url><loc>https://www.firmwarely.com/devices/dify/</loc><lastmod>2026-09-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/flowise/</loc><lastmod>2026-07-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/langflow/</loc><lastmod>2026-09-29</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/whisper-cpp/</loc><lastmod>2026-09-11</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/whisper-cpp/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/libretranslate/</loc><lastmod>2026-05-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/whoogle/</loc><lastmod>2026-04-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/emby-server/</loc><lastmod>2026-09-29</lastmod></url>
@@ -619,7 +619,7 @@
   <url><loc>https://www.firmwarely.com/devices/dawarich/</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/owntracks-recorder/</loc><lastmod>2026-09-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/traccar/</loc><lastmod>2026-09-27</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/pydio-cells/</loc><lastmod>2026-09-30</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/pydio-cells/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/playnite/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/zabbix/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/checkmk/</loc><lastmod>2026-10-05</lastmod></url>
