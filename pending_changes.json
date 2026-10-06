@@ -661,6 +661,21 @@
    "notes": "✅ Release Asset Validation: PASSED: The required release asset checks passed. Status: Release asset checks passed ✅ Validated: 2026-10-06 00:17:56 UTC Workflow: Pulse Release Pipeline #​426 Validation Summary: All required assets present ✓ Checksums verified ✓ Version strings correct ✓ Binary archi…",
    "source_url": "https://github.com/rcourtman/Pulse/releases/tag/v6.5.0",
    "page_url": "https://www.firmwarely.com/devices/pulse/"
+  },
+  "paperless-ngx": {
+   "id": "paperless-ngx",
+   "brand": "Paperless-ngx",
+   "model": "Document scanner and archive",
+   "category": "A",
+   "status": "update",
+   "version": "3.3.0",
+   "previous": "3.2.1",
+   "released": "2026-10-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "paperless-ngx 3.3.0: Features / Enhancements: Enhancement: more control over suggestion requests (#​14258) Chorehancement: set manifest CORS for credentials (#​14307) Enhancement: include Django admin with 2FA (#​14270) Feature: propagate resolved secrets to interactive container shells (#​14254) E…",
+   "source_url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.3.0",
+   "page_url": "https://www.firmwarely.com/devices/paperless-ngx/"
   }
  }
 }
