@@ -601,6 +601,21 @@
    "notes": "This is an automatically generated changelog for release 44.20261006.1. From previous stable version 44.20261006 there have been the following changes. One package per new version shown. Major packages: | Name | Version | | --- | --- | | Kernel | 7.2.8-ogc4.1 ➡️ 7.2.8-ogc5.1 | | Kernel (Nvidia LTS)…",
    "source_url": "https://github.com/ublue-os/bazzite/releases/tag/44.20261006.1",
    "page_url": "https://www.firmwarely.com/devices/bazzite/"
+  },
+  "uvtools": {
+   "id": "uvtools",
+   "brand": "UVtools",
+   "model": "MSLA/DLP, file analysis, calibration, repair, conversion",
+   "category": "M",
+   "status": "update",
+   "version": "7.0.2",
+   "previous": "7.0.1",
+   "released": "2026-10-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "File formats: (Improvement) Encoding is up to 10x faster for GR1 and MDLP, 2x for PWS, and 25-35% faster for cbddlp, N4/N7, and Photon S; decoding PWS, cbddlp, FDG, and PHZ is 25-45% faster. Runs are found with vectorized searches, and the duplicated CTB, anti-aliasing plane, and column line codecs…",
+   "source_url": "https://github.com/sn4k3/UVtools/releases/tag/v7.0.2",
+   "page_url": "https://www.firmwarely.com/devices/uvtools/"
   }
  }
 }
