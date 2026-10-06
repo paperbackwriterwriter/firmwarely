@@ -83,13 +83,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.3.43.4-lts",
+   "version": "26.7.23.7-stable",
    "previous": "26.9.11.2-stable",
    "released": "2026-10-06",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.3.43.4-lts v26.3.43.4-lts",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.3.43.4-lts",
+   "notes": "Release v26.7.23.7-stable v26.7.23.7-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.7.23.7-stable",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "windmill": {
@@ -151,6 +151,66 @@
    "notes": "What's Changed: Features: feat(ai-gateway): expose resolution context in response headers, spans and logs Fixes / Improvements: fix(web): zinc neutral tokens, surface tokens, observation line and fill colours fix(evals): skip Bedrock URL media interpolation fix(web): filled badge variant, score and…",
    "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.53.0",
    "page_url": "https://www.firmwarely.com/devices/langfuse/"
+  },
+  "owncloud-server": {
+   "id": "owncloud-server",
+   "brand": "ownCloud",
+   "model": "File sync server",
+   "category": "A",
+   "status": "update",
+   "version": "10.16.6",
+   "previous": "11.0.1",
+   "released": "2026-10-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "v10.16.6 v10.16.6",
+   "source_url": "https://github.com/owncloud/core/releases/tag/v10.16.6",
+   "page_url": "https://www.firmwarely.com/devices/owncloud-server/"
+  },
+  "elasticsearch": {
+   "id": "elasticsearch",
+   "brand": "Elastic",
+   "model": "Elasticsearch",
+   "category": "A",
+   "status": "update",
+   "version": "9.5.5",
+   "previous": "9.5.4",
+   "released": "2026-10-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "Downloads: https://elastic.co/downloads/elasticsearch Release notes: https://www.elastic.co/docs/release-notes/elasticsearch#elasticsearch-9.5.5-release-notes",
+   "source_url": "https://github.com/elastic/elasticsearch/releases/tag/v9.5.5",
+   "page_url": "https://www.firmwarely.com/devices/elasticsearch/"
+  },
+  "erpnext": {
+   "id": "erpnext",
+   "brand": "Frappe",
+   "model": "ERPNext",
+   "category": "A",
+   "status": "update",
+   "version": "16.50.0",
+   "previous": "15.121.6",
+   "released": "2026-10-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "Breaking Changes: Checks user permissions for records used in accounting, stock, asset, manufacturing, and project actions, and updates role access for Payment Terms Template, POS Invoice, Serial and Batch Bundle, and Address. (https://github.com/frappe/erpnext/pull/59360) Allows relevant sales, pu…",
+   "source_url": "https://github.com/frappe/erpnext/releases/tag/v16.50.0",
+   "page_url": "https://www.firmwarely.com/devices/erpnext/"
+  },
+  "skipper": {
+   "id": "skipper",
+   "brand": "Skipper",
+   "model": "HTTP router and reverse proxy",
+   "category": "R",
+   "status": "update",
+   "version": "0.28.28",
+   "previous": "0.28.27",
+   "released": "2026-10-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes: fix: make background cache revalidation reliable in force and RFC mode (#​4315) Problem: Background revalidation (stale-while-revalidate) in filters/cache loops the request back through skipper's own listener so the full filter chain reruns. Two independent bugs made that unreliable: It re…",
+   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.28",
+   "page_url": "https://www.firmwarely.com/devices/skipper/"
   }
  }
 }

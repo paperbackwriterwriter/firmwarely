@@ -6984,6 +6984,96 @@
     "security_fix_plain": 0.04,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.7.23.7-stable",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-06T14:19:59+00:00",
+   "notes_chars": 43,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "owncloud-server",
+   "version": "10.16.6",
+   "name": "ownCloud File sync server",
+   "judged_at": "2026-10-06T14:19:59+00:00",
+   "notes_chars": 17,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "elasticsearch",
+   "version": "9.5.5",
+   "name": "Elastic Elasticsearch",
+   "judged_at": "2026-10-06T14:19:59+00:00",
+   "notes_chars": 158,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.4,
+    "security_fix_plain": 0.37,
+    "end_of_life": 0.04
+   }
+  },
+  {
+   "id": "erpnext",
+   "version": "16.50.0",
+   "name": "Frappe ERPNext",
+   "judged_at": "2026-10-06T14:19:59+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.48,
+    "security_fix_plain": 0.33,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "skipper",
+   "version": "0.28.28",
+   "name": "Skipper HTTP router and reverse proxy",
+   "judged_at": "2026-10-06T14:19:59+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
