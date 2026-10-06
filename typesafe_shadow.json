@@ -6876,6 +6876,114 @@
     "security_fix_plain": 0.8,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "harbor",
+   "version": "2.15.3",
+   "name": "Harbor Container registry",
+   "judged_at": "2026-10-06T13:20:14+00:00",
+   "notes_chars": 43,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.3.43.4-lts",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-06T13:20:14+00:00",
+   "notes_chars": 37,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "windmill",
+   "version": "1.825.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-10-06T13:20:14+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.32,
+    "security_fix_plain": 0.22,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "appflowy",
+   "version": "0.14.7",
+   "name": "AppFlowy Workspace",
+   "judged_at": "2026-10-06T13:20:15+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "penpot",
+   "version": "2.18.3",
+   "name": "Penpot Design tool",
+   "judged_at": "2026-10-06T13:20:15+00:00",
+   "notes_chars": 213,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.9,
+    "security_fix_plain": 0.85,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "langfuse",
+   "version": "4.53.0",
+   "name": "Langfuse LLM observability",
+   "judged_at": "2026-10-06T13:20:15+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
