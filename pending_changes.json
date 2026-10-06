@@ -248,13 +248,13 @@
    "model": "Anime RSS downloader",
    "category": "A",
    "status": "update",
-   "version": "3.2.40",
+   "version": "3.2.41",
    "previous": "3.2.39",
    "released": "2026-10-06",
    "date_known": true,
    "eol": false,
-   "notes": "refactor: 优化标签显示 refactor: 去除卡片列表模式; 优化封面展示; 封面菜单增加 刷新、刮削、刮削 [F] refactor: 更新种子存放位置 refactor: 增加 BgmUrl 按钮 refactor: 优化初始化配置 refactor: docker 容器更新 jdk27",
-   "source_url": "https://github.com/wushuo894/ani-rss/releases/tag/v3.2.40",
+   "notes": "refactor: 优化下载列表 refactor: 优化标签显示 refactor: 关于页面移动端布局 refactor: 优化排除布局",
+   "source_url": "https://github.com/wushuo894/ani-rss/releases/tag/v3.2.41",
    "page_url": "https://www.firmwarely.com/devices/ani-rss/"
   },
   "zimaos": {
@@ -346,6 +346,51 @@
    "notes": "Added Spotlight support, allowing users to quickly search for and access relevant device features and content through Spotlight. Fixed an issue where map data did not load automatically. Maps now display without requiring a click, and data is retained after refreshing the page. Fixed an issue where…",
    "source_url": "https://github.com/IceWhaleTech/ZimaOS/releases/tag/1.8.0-beta2",
    "page_url": "https://www.firmwarely.com/devices/zimacube-pro/"
+  },
+  "coolify": {
+   "id": "coolify",
+   "brand": "Coolify",
+   "model": "Self-hosting platform",
+   "category": "A",
+   "status": "update",
+   "version": "4.4.0",
+   "previous": "4.3.23",
+   "released": "2026-10-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release adds built in traffic analytics for Traefik and Caddy, experimental support for SQLite as a database, readable container names with a configurable container prefix, third-party secret managers, Cloudflare DNS management, OpenID Connect sign-in, GitHub Actions runners on build servers, …",
+   "source_url": "https://github.com/coollabsio/coolify/releases/tag/v4.4.0",
+   "page_url": "https://www.firmwarely.com/devices/coolify/"
+  },
+  "infisical": {
+   "id": "infisical",
+   "brand": "Infisical",
+   "model": "Secrets manager",
+   "category": "A",
+   "status": "update",
+   "version": "0.166.0",
+   "previous": "0.165.17",
+   "released": "2026-10-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: feat(gateways): display PAM connected resources fix: enforce validation rules when moving secrets and folders fix: update sanitized-schema.yaml docs(agent-vault): add openclaw guides improvement(kms): migrate export actions and rotation notice to v3 improvement(kms): migrate encrypt…",
+   "source_url": "https://github.com/Infisical/infisical/releases/tag/v0.166.0",
+   "page_url": "https://www.firmwarely.com/devices/infisical/"
+  },
+  "prefect": {
+   "id": "prefect",
+   "brand": "Prefect",
+   "model": "Workflow orchestration",
+   "category": "A",
+   "status": "update",
+   "version": "3.8.8",
+   "previous": "3.8.7",
+   "released": "2026-10-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "This is the last release that will support Python 3.10 — future releases will require Python 3.11 or later. Bug Fixes 🐞 Fix get_call_parameters to unwrap FieldInfo defaults for flow runs Page through all runs in cancellation cleanup and pause expiration monitors Fix UnboundLocalError in observer _g…",
+   "source_url": "https://github.com/PrefectHQ/prefect/releases/tag/3.8.8",
+   "page_url": "https://www.firmwarely.com/devices/prefect/"
   }
  }
 }
