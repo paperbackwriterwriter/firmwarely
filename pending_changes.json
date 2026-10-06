@@ -541,6 +541,51 @@
    "notes": "Changelog: New Features: b48c5d0742fc2078a592be46b683216bc1a0eab3: feat(alerts): show update, IRC and list issues in header banner (#​2741) () 31ebf52276d708378cb93331f3226055f4119e48: feat(arr): send tvdbId to Sonarr and use feed publish date (#​2746) () 2360bc8a2b847eea3cf82f8a2e22c42c870bb1f8: f…",
    "source_url": "https://github.com/autobrr/autobrr/releases/tag/v1.88.0",
    "page_url": "https://www.firmwarely.com/devices/autobrr/"
+  },
+  "kicad": {
+   "id": "kicad",
+   "brand": "KiCad",
+   "model": "EDA suite",
+   "category": "M",
+   "status": "update",
+   "version": "10.0.7",
+   "previous": "10.0.6",
+   "released": "2026-10-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "10.0.7",
+   "source_url": "https://github.com/KiCad/kicad-source-mirror/releases/tag/10.0.7",
+   "page_url": "https://www.firmwarely.com/devices/kicad/"
+  },
+  "archivebox": {
+   "id": "archivebox",
+   "brand": "ArchiveBox",
+   "model": "Web archiver",
+   "category": "A",
+   "status": "update",
+   "version": "0.9.73",
+   "previous": "0.9.71",
+   "released": "2026-10-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes since v0.9.71: Four new plugins for cloud documents, shared folders, and better mobile replay — plus faster large archives and a more useful file browser. 📄 Save Google Docs, Sheets, Slides, and Drawings in everyday file formats. The new Google Docs plugin exports DOCX, XLSX, PPTX, CSV, PDF…",
+   "source_url": "https://github.com/ArchiveBox/ArchiveBox/releases/tag/v0.9.73",
+   "page_url": "https://www.firmwarely.com/devices/archivebox/"
+  },
+  "homeassistant-tapo-control": {
+   "id": "homeassistant-tapo-control",
+   "brand": "HomeAssistant Tapo Control",
+   "model": "Control for Tapo cameras as a Home Assistant component",
+   "category": "S",
+   "status": "update",
+   "version": "7.2.7",
+   "previous": "7.2.6",
+   "released": "2026-10-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes: Fix #​1459: Integration setup failing when ONVIF connection fails on certain cameras after updating to 7.2.6 Add: More detailed debug logs for ONVIF connection and event subscription failures",
+   "source_url": "https://github.com/JurajNyiri/HomeAssistant-Tapo-Control/releases/tag/7.2.7",
+   "page_url": "https://www.firmwarely.com/devices/homeassistant-tapo-control/"
   }
  }
 }
