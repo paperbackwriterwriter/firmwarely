@@ -31,6 +31,21 @@
    "notes": "#​11731 #​11730 #​11729 #​11728 #​11727 #​11726 #​11725 #​11723 #​11722 #​11721 #​11720 #​11718 #​11717 #​11716 #​11715 #​11714 #​11713 #​11711",
    "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.279.34568",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "livekit": {
+   "id": "livekit",
+   "brand": "LiveKit",
+   "model": "Real-time video and audio server",
+   "category": "A",
+   "status": "update",
+   "version": "1.13.8",
+   "previous": "1.13.7",
+   "released": "2026-10-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "Added: agent: HTTP endpoints data plane (#​4779) use sender report pass through setting to forward abs-capture-time verbatim (#​4812) Add sdk lable to session start time and participant join (#​4885) Add a local participant method to get recently disconnected (#​4911) service: start room composite …",
+   "source_url": "https://github.com/livekit/livekit/releases/tag/v1.13.8",
+   "page_url": "https://www.firmwarely.com/devices/livekit/"
   }
  }
 }
