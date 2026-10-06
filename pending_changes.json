@@ -46,6 +46,21 @@
    "notes": "Added: agent: HTTP endpoints data plane (#​4779) use sender report pass through setting to forward abs-capture-time verbatim (#​4812) Add sdk lable to session start time and participant join (#​4885) Add a local participant method to get recently disconnected (#​4911) service: start room composite …",
    "source_url": "https://github.com/livekit/livekit/releases/tag/v1.13.8",
    "page_url": "https://www.firmwarely.com/devices/livekit/"
+  },
+  "btcpayserver": {
+   "id": "btcpayserver",
+   "brand": "BTCPay Server",
+   "model": "Bitcoin payment processor",
+   "category": "A",
+   "status": "update",
+   "version": "2.4.5",
+   "previous": "2.4.4",
+   "released": "2026-10-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "Breaking changes: Outbound HTTP requests: Block private-network destinations for Lightning connections, LNURL requests, invoice notification URLs, and webhooks by default to prevent SSRF. Operators using private services must allow them with ssrfexceptions (#​7581 #​7626 #​7627 #​7635 #​7636 #​7637…",
+   "source_url": "https://github.com/btcpayserver/btcpayserver/releases/tag/v2.4.5",
+   "page_url": "https://www.firmwarely.com/devices/btcpayserver/"
   }
  }
 }

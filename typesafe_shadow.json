@@ -6858,6 +6858,24 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "btcpayserver",
+   "version": "2.4.5",
+   "name": "BTCPay Server Bitcoin payment processor",
+   "judged_at": "2026-10-06T12:22:41+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.77,
+    "security_fix_plain": 0.8,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
