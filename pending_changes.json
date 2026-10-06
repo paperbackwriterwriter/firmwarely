@@ -211,6 +211,51 @@
    "notes": "Changes: fix: make background cache revalidation reliable in force and RFC mode (#​4315) Problem: Background revalidation (stale-while-revalidate) in filters/cache loops the request back through skipper's own listener so the full filter chain reruns. Two independent bugs made that unreliable: It re…",
    "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.28",
    "page_url": "https://www.firmwarely.com/devices/skipper/"
+  },
+  "vector": {
+   "id": "vector",
+   "brand": "Vector",
+   "model": "Observability pipeline",
+   "category": "A",
+   "status": "update",
+   "version": "0.59.0",
+   "previous": "0.3.26",
+   "released": "2026-10-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "The COSE team is excited to announce version 0.59.0! 🚀 View release notes",
+   "source_url": "https://github.com/vectordotdev/vector/releases/tag/v0.59.0",
+   "page_url": "https://www.firmwarely.com/devices/vector/"
+  },
+  "jaeger": {
+   "id": "jaeger",
+   "brand": "Jaeger",
+   "model": "Distributed tracing",
+   "category": "A",
+   "status": "update",
+   "version": "2.22.0",
+   "previous": "2.21.0",
+   "released": "2026-10-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "Backend Changes: ⛔ Breaking Changes: Fix(es): configure numeric attribute indexing instead of gating it () Refactor(es): give the span index its own options type () Fix(remote-storage): configure the service from one confmap-decoded file () Fix(es): honor index-prefix in dependencies/sampling legac…",
+   "source_url": "https://github.com/jaegertracing/jaeger/releases/tag/v2.22.0",
+   "page_url": "https://www.firmwarely.com/devices/jaeger/"
+  },
+  "ani-rss": {
+   "id": "ani-rss",
+   "brand": "ANi-RSS",
+   "model": "Anime RSS downloader",
+   "category": "A",
+   "status": "update",
+   "version": "3.2.40",
+   "previous": "3.2.39",
+   "released": "2026-10-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "refactor: 优化标签显示 refactor: 去除卡片列表模式; 优化封面展示; 封面菜单增加 刷新、刮削、刮削 [F] refactor: 更新种子存放位置 refactor: 增加 BgmUrl 按钮 refactor: 优化初始化配置 refactor: docker 容器更新 jdk27",
+   "source_url": "https://github.com/wushuo894/ani-rss/releases/tag/v3.2.40",
+   "page_url": "https://www.firmwarely.com/devices/ani-rss/"
   }
  }
 }
