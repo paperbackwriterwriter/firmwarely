@@ -436,6 +436,51 @@
    "notes": "Fix an issue with Nats jetstream, Adds collabora feature controls Change log: You can find a summary of the change log here.",
    "source_url": "https://github.com/pydio/cells/releases/tag/v4.4.18",
    "page_url": "https://www.firmwarely.com/devices/pydio-cells/"
+  },
+  "envoy-proxy": {
+   "id": "envoy-proxy",
+   "brand": "Envoy",
+   "model": "Edge and service proxy",
+   "category": "R",
+   "status": "critical",
+   "version": "1.39.3",
+   "previous": "1.39.2",
+   "released": "2026-10-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "Summary of changes: Security fixes: GHSA-8vc2-jrm4-835w: oauth2: crash on requests without a :path header (i.e. CONNECT). The filter now rejects such requests with 400. GHSA-47vj-9r25-wv5j: api_key_auth: crash when hide_credentials is enabled with a query key source and a request without a :path he…",
+   "source_url": "https://github.com/envoyproxy/envoy/releases/tag/v1.39.3",
+   "page_url": "https://www.firmwarely.com/devices/envoy-proxy/"
+  },
+  "rook": {
+   "id": "rook",
+   "brand": "Rook",
+   "model": "Ceph storage orchestrator",
+   "category": "N",
+   "status": "update",
+   "version": "1.21.0",
+   "previous": "1.20.8",
+   "released": "2026-10-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "Upgrade Guide: To upgrade from previous versions of Rook, see the Rook upgrade guide. Breaking Changes: Helm OCI chart tags no longer include the v prefix (e.g., 1.21.0 instead of v1.21.0). Update any scripts or tooling that reference the chart by tag. Ceph msgrv2 is required by default. Msgrv2 req…",
+   "source_url": "https://github.com/rook/rook/releases/tag/v1.21.0",
+   "page_url": "https://www.firmwarely.com/devices/rook/"
+  },
+  "ollama": {
+   "id": "ollama",
+   "brand": "Ollama",
+   "model": "Local LLM runner",
+   "category": "A",
+   "status": "update",
+   "version": "0.40.0",
+   "previous": "0.35.1",
+   "released": "2026-09-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Models run on MLX on Apple Silicon by default In this release, on Apple Silicon devices, model architectures supported by the MLX runtime will automatically run on MLX. ollama pull qwen3.8 ollama run qwen3.8 Additional models include gemma4, qwen3.6 and qwen3.5 Decision models are n…",
+   "source_url": "https://github.com/ollama/ollama/releases/tag/v0.40.0",
+   "page_url": "https://www.firmwarely.com/devices/ollama/"
   }
  }
 }
