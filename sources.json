@@ -10613,6 +10613,96 @@
    "type": "github",
    "repo": "utkuozdemir/pv-migrate",
    "product_url": "https://github.com/utkuozdemir/pv-migrate"
+  },
+  {
+   "id": "86box",
+   "brand": "86Box",
+   "model": "Emulator of x86-based machines",
+   "category": "C",
+   "type": "github",
+   "repo": "86Box/86Box",
+   "product_url": "https://github.com/86Box/86Box"
+  },
+  {
+   "id": "lemuroid",
+   "brand": "Lemuroid",
+   "model": "All in one emulator on Android",
+   "category": "C",
+   "type": "github",
+   "repo": "Swordfish90/Lemuroid",
+   "product_url": "https://github.com/Swordfish90/Lemuroid"
+  },
+  {
+   "id": "emulatorjs",
+   "brand": "EmulatorJS",
+   "model": "Web-based frontend for RetroArch",
+   "category": "C",
+   "type": "github",
+   "repo": "EmulatorJS/EmulatorJS",
+   "product_url": "https://github.com/EmulatorJS/EmulatorJS"
+  },
+  {
+   "id": "xemu",
+   "brand": "Xemu",
+   "model": "Original Xbox Emulator",
+   "category": "C",
+   "type": "github",
+   "repo": "xemu-project/xemu",
+   "product_url": "https://github.com/xemu-project/xemu"
+  },
+  {
+   "id": "furnace",
+   "brand": "Furnace",
+   "model": "Multi-system chiptune tracker compatible",
+   "category": "C",
+   "type": "github",
+   "repo": "tildearrow/furnace",
+   "product_url": "https://github.com/tildearrow/furnace"
+  },
+  {
+   "id": "bizhawk",
+   "brand": "BizHawk",
+   "model": "Multi-system emulator written",
+   "category": "C",
+   "type": "github",
+   "repo": "TASEmulators/BizHawk",
+   "product_url": "https://github.com/TASEmulators/BizHawk"
+  },
+  {
+   "id": "vectras-vm-android",
+   "brand": "Vectras VM Android",
+   "model": "It's a Virtual Machine App",
+   "category": "C",
+   "type": "github",
+   "repo": "xoureldeen/Vectras-VM-Android",
+   "product_url": "https://github.com/xoureldeen/Vectras-VM-Android"
+  },
+  {
+   "id": "nethersx2-patch",
+   "brand": "NetherSX2 Patch",
+   "model": "Continuation of NetherSX2 based on AetherSX2 4248",
+   "category": "C",
+   "type": "github",
+   "repo": "Trixarian/NetherSX2-patch",
+   "product_url": "https://github.com/Trixarian/NetherSX2-patch"
+  },
+  {
+   "id": "openclash",
+   "brand": "OpenClash",
+   "model": "Clash Client For OpenWrt",
+   "category": "R",
+   "type": "github",
+   "repo": "vernesong/OpenClash",
+   "product_url": "https://github.com/vernesong/OpenClash"
+  },
+  {
+   "id": "openwrt-nikki",
+   "brand": "OpenWrt Nikki",
+   "model": "Transparent Proxy with Mihomo on OpenWrt",
+   "category": "R",
+   "type": "github",
+   "repo": "nikkinikki-org/OpenWrt-nikki",
+   "product_url": "https://github.com/nikkinikki-org/OpenWrt-nikki"
   }
  ]
 }

@@ -6714,6 +6714,96 @@
     "security_fix_plain": 0.18,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "skipper",
+   "version": "0.28.27",
+   "name": "Skipper HTTP router and reverse proxy",
+   "judged_at": "2026-10-06T08:26:10+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "langfuse",
+   "version": "4.52.0",
+   "name": "Langfuse LLM observability",
+   "judged_at": "2026-10-06T08:26:10+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "traefik",
+   "version": "3.7.14",
+   "name": "Traefik Labs Traefik Proxy",
+   "judged_at": "2026-10-06T08:26:10+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.07,
+    "security_fix_plain": 0.11,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "n8n",
+   "version": "2.42.3",
+   "name": "n8n Workflow automation",
+   "judged_at": "2026-10-06T08:26:10+00:00",
+   "notes_chars": 287,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.09,
+    "security_fix_plain": 0.12,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "rallly",
+   "version": "4.15.4",
+   "name": "Rallly Meeting polls",
+   "judged_at": "2026-10-06T08:26:10+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.68,
+    "security_fix_plain": 0.41,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
