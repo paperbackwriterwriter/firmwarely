@@ -1,5 +1,21 @@
 {
- "since": null,
+ "since": "2026-10-06T09:18:58+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "drawio": {
+   "id": "drawio",
+   "brand": "draw.io",
+   "model": "Diagrams",
+   "category": "A",
+   "status": "update",
+   "version": "32.2.0",
+   "previous": "32.0.2",
+   "released": "2026-10-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "v32.2.0 v32.2.0",
+   "source_url": "https://github.com/jgraph/drawio/releases/tag/v32.2.0",
+   "page_url": "https://www.firmwarely.com/devices/drawio/"
+  }
+ }
 }
