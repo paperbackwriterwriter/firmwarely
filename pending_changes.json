@@ -616,6 +616,21 @@
    "notes": "File formats: (Improvement) Encoding is up to 10x faster for GR1 and MDLP, 2x for PWS, and 25-35% faster for cbddlp, N4/N7, and Photon S; decoding PWS, cbddlp, FDG, and PHZ is 25-45% faster. Runs are found with vectorized searches, and the duplicated CTB, anti-aliasing plane, and column line codecs…",
    "source_url": "https://github.com/sn4k3/UVtools/releases/tag/v7.0.2",
    "page_url": "https://www.firmwarely.com/devices/uvtools/"
+  },
+  "invoice-ninja": {
+   "id": "invoice-ninja",
+   "brand": "Invoice Ninja",
+   "model": "Invoicing",
+   "category": "A",
+   "status": "update",
+   "version": "5.13.44",
+   "previous": "5.13.43",
+   "released": "2026-10-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Fixes for quote numbers when Apply Number is set to When Sent Quote Cancellation Add support for deep linking in the new mobile apps Fixes for credit balance Fix Brevo webhook event matching and email history status Embed attached documents into CII/ZUGFeRD XML (BG-24) v5.13.44 New …",
+   "source_url": "https://github.com/invoiceninja/invoiceninja/releases/tag/v5.13.44",
+   "page_url": "https://www.firmwarely.com/devices/invoice-ninja/"
   }
  }
 }
