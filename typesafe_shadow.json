@@ -8388,6 +8388,60 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "unpoller",
+   "version": "5.5.1",
+   "name": "UnPoller UniFi metrics exporter",
+   "judged_at": "2026-10-07T15:29:37+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "logseq",
+   "version": "2.0.2",
+   "name": "Logseq Knowledge graph",
+   "judged_at": "2026-10-07T15:29:37+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "piko",
+   "version": "0.10.0",
+   "name": "Piko Self-hosted ngrok alternative",
+   "judged_at": "2026-10-07T15:29:37+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.11,
+    "security_fix_plain": 0.19,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
