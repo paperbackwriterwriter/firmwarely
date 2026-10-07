@@ -969,6 +969,24 @@ within 30 days. See <a href="/legal/">privacy &amp; terms</a> for what we hold a
 REDIRECT_CHUNK = 40      # ids per rule, so no single pattern grows unwieldy
 
 
+def resolves(path, rules=None):
+    """Whether a site path still leads somewhere: a page or file, or a redirect rule
+    (exact, or one of the /devices/:id(a|b) and /brands/:b(a|b) groups)."""
+    rel = path.strip("/")
+    if not rel or (ROOT / rel / "index.html").is_file() or (ROOT / rel).is_file():
+        return True
+    rules = rules if rules is not None else json.loads((ROOT / "vercel.json").read_text()).get("redirects", [])
+    last = path.rstrip("/").rsplit("/", 1)[-1]
+    for r in rules:
+        src = r["source"]
+        if src.rstrip("/") == path.rstrip("/"):
+            return True
+        m = re.fullmatch(r"(/[a-z]+)/:\w+\(([^)]*)\)/?", src)
+        if m and path.startswith(m.group(1) + "/") and last in m.group(2).split("|"):
+            return True
+    return False
+
+
 def write_redirects(published, brand_pages, families=()):
     """Send a device we don't publish to the nearest page that does exist.
 
@@ -1017,10 +1035,32 @@ def write_redirects(published, brand_pages, families=()):
             for path in (brand_path(f["brand"]).rstrip("/"), brand_path(f["brand"])):
                 rules.append({"source": path, "destination": f"/devices/{f['id']}/", "permanent": False})
 
+    moved = ROOT / "redirects.json"
+    moves = json.loads(moved.read_text()) if moved.exists() else {}
+
+    # a brand with no page of its own (none of its devices has data yet, or too few): its old
+    # brand page was in the sitemap once, so send it to the category most of its devices are
+    # in. Temporary, like the device rules: the brand page returns when the brand has data.
+    taken = {r["source"].rstrip("/") for r in rules} | {k.rstrip("/") for k in moves}
+    page_slugs = {slugify(b) for b in brand_pages}
+    cats_by_brand = {}
+    for src in sources:
+        cats_by_brand.setdefault(slugify(src["brand"]), []).append(src["category"])
+    brand_groups = {}
+    for slug, cats in cats_by_brand.items():
+        if slug in page_slugs or f"/brands/{slug}" in taken or not re.fullmatch(r"[a-z0-9-]+", slug):
+            continue
+        brand_groups.setdefault(cat_path(max(set(cats), key=cats.count)), []).append(slug)
+    for dest, slugs in sorted(brand_groups.items()):
+        slugs = sorted(slugs)
+        for i in range(0, len(slugs), REDIRECT_CHUNK):
+            group = "|".join(slugs[i:i + REDIRECT_CHUNK])
+            for path in (f"/brands/:b({group})", f"/brands/:b({group})/"):
+                rules.append({"source": path, "destination": dest, "permanent": False})
+
     # pages that moved for good (a duplicate folded into its original): permanent, so
     # search engines move the listing over instead of waiting for the page to come back
-    moved = ROOT / "redirects.json"
-    for src_path, dest in (json.loads(moved.read_text()).items() if moved.exists() else []):
+    for src_path, dest in moves.items():
         if (ROOT / src_path.strip("/") / "index.html").exists():
             continue                      # the page is back (a brand regained devices): let it show
         for path in (src_path.rstrip("/"), src_path.rstrip("/") + "/"):
@@ -1096,12 +1136,25 @@ def main():
     entries += [(f"{SITE}{cat_path(k)}", max([dev_mod(d) for d in by_cat.get(k, [])] or [gen])) for k in CATS]
     entries += [(f"{SITE}{brand_path(b)}", max(dev_mod(d) for d in by_brand[b])) for b in brand_pages]
     entries += [(f"{SITE}/devices/{d['id']}/", dev_mod(d)) for d in devices]
+    sitemap = ROOT / "sitemap.xml"
+    listed_before = re.findall(r"<loc>" + re.escape(SITE) + r"(/[^<]*)</loc>", sitemap.read_text()) if sitemap.exists() else []
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     sm += [f"  <url><loc>{u}</loc><lastmod>{m}</lastmod></url>" for u, m in entries]
     sm.append("</urlset>")
-    (ROOT / "sitemap.xml").write_text("\n".join(sm) + "\n")
+    sitemap.write_text("\n".join(sm) + "\n")
     (ROOT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nDisallow: /api/\nSitemap: {SITE}/sitemap.xml\n")
     n_rules, n_devices = write_redirects(devices, brand_pages, families)
+    # Safety net: an address that was in the last sitemap must not turn into a 404 (a device
+    # removed from sources.json outright gets no rule above). Send it to the device list for
+    # good, and say so in the log, so a better destination can go in redirects.json.
+    gone = [p for p in listed_before if not resolves(p)]
+    if gone:
+        moves_file = ROOT / "redirects.json"
+        moves = json.loads(moves_file.read_text()) if moves_file.exists() else {}
+        moves.update({p if p.endswith("/") else p + "/": "/devices/" for p in gone})
+        moves_file.write_text(json.dumps(dict(sorted(moves.items())), indent=1) + "\n")
+        n_rules, n_devices = write_redirects(devices, brand_pages, families)
+        print(f"{len(gone)} address(es) left the sitemap with nowhere to go; now redirect to /devices/: {', '.join(gone)}")
     print(f"{n_devices} unpublished device URLs redirect to a brand or category page ({n_rules} rules)")
     print(f"built {len(devices)} device pages ({len(families)} of them families of "
           f"{sum(len(f['members']) for f in families)} models), {len(CATS)} category pages, {len(brand_pages)} brand pages, "

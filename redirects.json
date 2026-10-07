@@ -3,8 +3,13 @@
  "/brands/netalertx/": "/devices/netalertx/",
  "/brands/orcaslicer/": "/devices/orcaslicer/",
  "/brands/podman/": "/devices/podman/",
+ "/devices/buspirate5-firmware/": "/category/makers/",
  "/devices/firmware/": "/devices/bruce-firmware/",
+ "/devices/gotosocial/": "/category/self-hosted/",
  "/devices/netalertx-netalertx/": "/devices/netalertx/",
+ "/devices/openwrt-luci/": "/devices/openwrt-router/",
  "/devices/orcaslicer-orcaslicer/": "/devices/orcaslicer/",
- "/devices/podman-container-tools-podman/": "/devices/podman/"
+ "/devices/pikvm-os/": "/category/pcs-tvs-gadgets/",
+ "/devices/podman-container-tools-podman/": "/devices/podman/",
+ "/devices/yacht/": "/category/self-hosted/"
 }
