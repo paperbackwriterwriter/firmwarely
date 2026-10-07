@@ -556,6 +556,21 @@
    "notes": "Please note that release v1.13.8 introduced a behaviour change that caused egress start failures explained in #​4955. This release restores the behaviour to what it was in v1.13.7 and before. Changed: bump protocol and psrpc deps (#​4958) sfu/buffer: parse the dependency descriptor without allocati…",
    "source_url": "https://github.com/livekit/livekit/releases/tag/v1.13.9",
    "page_url": "https://www.firmwarely.com/devices/livekit/"
+  },
+  "woodpecker-ci": {
+   "id": "woodpecker-ci",
+   "brand": "Woodpecker",
+   "model": "CI engine",
+   "category": "A",
+   "status": "critical",
+   "version": "3.19.0",
+   "previous": "3.18.1",
+   "released": "2026-10-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "3.19.0 - 2026-10-07: ❤️ Thanks to all contributors! ❤️:,,,,,,,,,,,,,,,,,,,,,,, 🔒 Security: Prevent injection of matrix env vars into default clone step [#​7157] ✨ Features: Local backend gets support for custom shell paths [#​7194] Server side enforced agent labels [#​4131] 📈 Enhancement: CLI exec …",
+   "source_url": "https://github.com/woodpecker-ci/woodpecker/releases/tag/v3.19.0",
+   "page_url": "https://www.firmwarely.com/devices/woodpecker-ci/"
   }
  }
 }
