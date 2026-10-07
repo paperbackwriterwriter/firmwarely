@@ -732,22 +732,22 @@
       "permanent": false
     },
     {
-      "source": "/brands/:b(86box|8bitdo|anbernic|apollo|arkos|autel-robotics|aventon|bizhawk|bosch|box64|cemu|chimeraos|cowboy|decky|dji|docker-android|dolphin|emudeck|emuflight|emulatorjs|fazua|furnace|future-motion|garmin|gloriouseggroll|gopro|heroic|holy-stone|insta360|jsnes|knulli|lakka|lectric|lemuroid|lutris|mahle|melonds|meta|mgba|microsoft)",
+      "source": "/brands/:b(86box|8bitdo|anbernic|apollo|arkos|autel-robotics|aventon|bizhawk|bosch|box64|cemu|chimeraos|cowboy|decky|dji|docker-android|dolphin|emudeck|emuflight|emulatorjs|fazua|furnace|future-motion|garmin|gloriouseggroll|gopro|heroic|holy-stone|insta360|jsnes|knulli|lakka|lectric|lemuroid|lenovo|lutris|mahle|melonds|meta|mgba)",
       "destination": "/category/consoles-drones-ebikes/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(86box|8bitdo|anbernic|apollo|arkos|autel-robotics|aventon|bizhawk|bosch|box64|cemu|chimeraos|cowboy|decky|dji|docker-android|dolphin|emudeck|emuflight|emulatorjs|fazua|furnace|future-motion|garmin|gloriouseggroll|gopro|heroic|holy-stone|insta360|jsnes|knulli|lakka|lectric|lemuroid|lutris|mahle|melonds|meta|mgba|microsoft)/",
+      "source": "/brands/:b(86box|8bitdo|anbernic|apollo|arkos|autel-robotics|aventon|bizhawk|bosch|box64|cemu|chimeraos|cowboy|decky|dji|docker-android|dolphin|emudeck|emuflight|emulatorjs|fazua|furnace|future-motion|garmin|gloriouseggroll|gopro|heroic|holy-stone|insta360|jsnes|knulli|lakka|lectric|lemuroid|lenovo|lutris|mahle|melonds|meta|mgba)/",
       "destination": "/category/consoles-drones-ebikes/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(miyoo|mobile-mcp|nethersx2-patch|nintendo|niu|onion|openrgb|panic|pcsx2|potensic|ppsspp|provenance|rad-power|retrobios|retrodeck|retroid|rotorflight|rpcs3|ruffle|segway|shadps4|sharpemu|shimano|skydio|specialized|super73|trek|universal-blue|vanmoof|vectras-vm-android|wahoo|winlator|xemu|zero-zero-robotics|zwift)",
+      "source": "/brands/:b(microsoft|miyoo|mobile-mcp|msi|nethersx2-patch|nintendo|niu|onion|openrgb|panic|pcsx2|potensic|ppsspp|provenance|rad-power|retrobios|retrodeck|retroid|rotorflight|rpcs3|ruffle|segway|shadps4|sharpemu|shimano|skydio|specialized|super73|trek|universal-blue|valve|vanmoof|vectras-vm-android|wahoo|winlator|xemu|zero-zero-robotics|zwift)",
       "destination": "/category/consoles-drones-ebikes/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(miyoo|mobile-mcp|nethersx2-patch|nintendo|niu|onion|openrgb|panic|pcsx2|potensic|ppsspp|provenance|rad-power|retrobios|retrodeck|retroid|rotorflight|rpcs3|ruffle|segway|shadps4|sharpemu|shimano|skydio|specialized|super73|trek|universal-blue|vanmoof|vectras-vm-android|wahoo|winlator|xemu|zero-zero-robotics|zwift)/",
+      "source": "/brands/:b(microsoft|miyoo|mobile-mcp|msi|nethersx2-patch|nintendo|niu|onion|openrgb|panic|pcsx2|potensic|ppsspp|provenance|rad-power|retrobios|retrodeck|retroid|rotorflight|rpcs3|ruffle|segway|shadps4|sharpemu|shimano|skydio|specialized|super73|trek|universal-blue|valve|vanmoof|vectras-vm-android|wahoo|winlator|xemu|zero-zero-robotics|zwift)/",
       "destination": "/category/consoles-drones-ebikes/",
       "permanent": false
     },
@@ -772,52 +772,52 @@
       "permanent": false
     },
     {
-      "source": "/brands/:b(retroarch|retropie|riot|rt-thread|seeed-studio|serial-studio|serialport|sherpa-onnx|sipeed|snapmaker|sovol|spoolman|stmicroelectronics|system76|thingino|tinygo|tock|ultimaker|uvtools|valve|velxio|wamr|wasm3|xtool|zephyr|zmk)",
+      "source": "/brands/:b(retroarch|retropie|riot|rt-thread|seeed-studio|serial-studio|serialport|sherpa-onnx|sipeed|snapmaker|sovol|spoolman|stmicroelectronics|system76|thingino|tinygo|tock|ultimaker|uvtools|velxio|wamr|wasm3|xtool|zephyr|zmk)",
       "destination": "/category/makers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(retroarch|retropie|riot|rt-thread|seeed-studio|serial-studio|serialport|sherpa-onnx|sipeed|snapmaker|sovol|spoolman|stmicroelectronics|system76|thingino|tinygo|tock|ultimaker|uvtools|valve|velxio|wamr|wasm3|xtool|zephyr|zmk)/",
+      "source": "/brands/:b(retroarch|retropie|riot|rt-thread|seeed-studio|serial-studio|serialport|sherpa-onnx|sipeed|snapmaker|sovol|spoolman|stmicroelectronics|system76|thingino|tinygo|tock|ultimaker|uvtools|velxio|wamr|wasm3|xtool|zephyr|zmk)/",
       "destination": "/category/makers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(android-databackup|aoostar|arc|arozos|asustor|barman|copyparty|crucial|databasement|databasus|dbatools|deuxfleurs|docker-volume-backup|dufs|duplicacy|elasticsearch-dump|eshtek|gobackup|imessage-exporter|juicefs|lacie|laravel-backup|lime-technology|longhorn|ludusavi|nnn|openmediavault|oxicloud|oxidized|pgbackrest|pgbackweb|proxmenux|pv-migrate|rockstor|rook|rustic|seaweedfs|slackdump|terramaster|truenas)",
+      "source": "/brands/:b(android-databackup|aoostar|arc|arozos|asustor|barman|copyparty|crucial|databasement|databasus|dbatools|deuxfleurs|docker-volume-backup|dufs|duplicacy|elasticsearch-dump|eshtek|gobackup|imessage-exporter|juicefs|lacie|laravel-backup|lime-technology|longhorn|ludusavi|minisforum|nnn|openmediavault|oxicloud|oxidized|pgbackrest|pgbackweb|proxmenux|pv-migrate|rockstor|rook|rustic|seaweedfs|slackdump|terramaster)",
       "destination": "/category/nas/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(android-databackup|aoostar|arc|arozos|asustor|barman|copyparty|crucial|databasement|databasus|dbatools|deuxfleurs|docker-volume-backup|dufs|duplicacy|elasticsearch-dump|eshtek|gobackup|imessage-exporter|juicefs|lacie|laravel-backup|lime-technology|longhorn|ludusavi|nnn|openmediavault|oxicloud|oxidized|pgbackrest|pgbackweb|proxmenux|pv-migrate|rockstor|rook|rustic|seaweedfs|slackdump|terramaster|truenas)/",
+      "source": "/brands/:b(android-databackup|aoostar|arc|arozos|asustor|barman|copyparty|crucial|databasement|databasus|dbatools|deuxfleurs|docker-volume-backup|dufs|duplicacy|elasticsearch-dump|eshtek|gobackup|imessage-exporter|juicefs|lacie|laravel-backup|lime-technology|longhorn|ludusavi|minisforum|nnn|openmediavault|oxicloud|oxidized|pgbackrest|pgbackweb|proxmenux|pv-migrate|rockstor|rook|rustic|seaweedfs|slackdump|terramaster)/",
       "destination": "/category/nas/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(ugreen|velero|vorta|wal-g|western-digital|xplr|zerobyte)",
+      "source": "/brands/:b(truenas|ugreen|velero|vorta|wal-g|western-digital|xplr|zerobyte)",
       "destination": "/category/nas/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(ugreen|velero|vorta|wal-g|western-digital|xplr|zerobyte)/",
+      "source": "/brands/:b(truenas|ugreen|velero|vorta|wal-g|western-digital|xplr|zerobyte)/",
       "destination": "/category/nas/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(acer|armbian|asrock|beats|beelink|bose|brother|caldigit|canon|channels|corsair|dell|dietpi|elgato|epson|fujifilm|fwupd|gigabyte|handbrake|hisense|hp|jabra|keychron|kobo|lenovo|lg|librehardwaremonitor|lizardbyte|logitech|minisforum|moonlight|msi|nikon|nothing|obs|om-system|onyx-boox|openrazer|oura|panasonic)",
+      "source": "/brands/:b(acer|armbian|asrock|beats|beelink|bose|brother|caldigit|canon|channels|corsair|dell|dietpi|elgato|epson|fujifilm|fwupd|gigabyte|handbrake|hisense|hp|jabra|keychron|kobo|lg|librehardwaremonitor|lizardbyte|logitech|moonlight|nikon|nothing|obs|om-system|onyx-boox|openrazer|oura|panasonic|plex|razer|remarkable)",
       "destination": "/category/pcs-tvs-gadgets/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(acer|armbian|asrock|beats|beelink|bose|brother|caldigit|canon|channels|corsair|dell|dietpi|elgato|epson|fujifilm|fwupd|gigabyte|handbrake|hisense|hp|jabra|keychron|kobo|lenovo|lg|librehardwaremonitor|lizardbyte|logitech|minisforum|moonlight|msi|nikon|nothing|obs|om-system|onyx-boox|openrazer|oura|panasonic)/",
+      "source": "/brands/:b(acer|armbian|asrock|beats|beelink|bose|brother|caldigit|canon|channels|corsair|dell|dietpi|elgato|epson|fujifilm|fwupd|gigabyte|handbrake|hisense|hp|jabra|keychron|kobo|lg|librehardwaremonitor|lizardbyte|logitech|moonlight|nikon|nothing|obs|om-system|onyx-boox|openrazer|oura|panasonic|plex|razer|remarkable)/",
       "destination": "/category/pcs-tvs-gadgets/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(plex|razer|remarkable|roku|rufus|samsung|sennheiser|shure|smsforwarder|solaar|steelseries|tcl|tiez|ventoy|whoop|wooting|xgimi)",
+      "source": "/brands/:b(roku|rufus|samsung|sennheiser|shure|smsforwarder|solaar|steelseries|tcl|tiez|ventoy|whoop|wooting|xgimi)",
       "destination": "/category/pcs-tvs-gadgets/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(plex|razer|remarkable|roku|rufus|samsung|sennheiser|shure|smsforwarder|solaar|steelseries|tcl|tiez|ventoy|whoop|wooting|xgimi)/",
+      "source": "/brands/:b(roku|rufus|samsung|sennheiser|shure|smsforwarder|solaar|steelseries|tcl|tiez|ventoy|whoop|wooting|xgimi)/",
       "destination": "/category/pcs-tvs-gadgets/",
       "permanent": false
     },

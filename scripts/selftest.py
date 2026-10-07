@@ -545,7 +545,7 @@ def test_support_page():
     check("the canonical host is the one with www", build_pages.SITE, "https://www.firmwarely.com")
 
     check("the support page is in the sitemap",
-          f"<loc>{build_pages.SITE}/support/</loc>" in Path("sitemap.xml").read_text(), True)
+          "/support/" in build_pages.sitemap_paths(), True)
 
 
 # ---- a date on the site is either the manufacturer's or labelled as ours ----
@@ -646,6 +646,14 @@ def test_withdrawn_devices_redirect():
     check("brand pages go to a category, temporarily",
           sorted({(r["destination"].startswith("/category/"), r["permanent"]) for r in brand_rules}), [(True, False)])
     check("the old dji brand page is one of them", "dji" in brand_covered, True)
+    # the rules must not change from one build to the next (string hashing is randomized per process)
+    import subprocess, sys
+    runs = {subprocess.run([sys.executable, "-c", "import sys; sys.path.insert(0, 'scripts'); import build_pages, json;"
+                            "build_pages.write_redirects(json.load(open('devices.json'))['devices'], [], ());"
+                            "print(open('vercel.json').read())"], capture_output=True, text=True,
+                           env={**os.environ, "PYTHONHASHSEED": seed}).stdout for seed in ("1", "2", "3")}
+    subprocess.run([sys.executable, "scripts/build_pages.py"], capture_output=True)   # put the real rules back
+    check("the redirect rules come out the same on every build", len(runs), 1)
 
     # Vercel redirects before it serves a file, so a stale rule would shadow a real page.
     check("no published device is redirected away from its own page",
@@ -689,12 +697,39 @@ def test_no_dead_addresses():
                        ("/devices/beta", True), ("/brands/gamma/", True), ("/devices/moved", True),
                        ("/devices/alphabet/", False), ("/devices/nowhere/", False), ("/brands/delta/", False)]:
         check(f"resolves {path}", build_pages.resolves(path, rules), want)
-    listed = re.findall(r"<loc>https://www\.firmwarely\.com(/[^<]*)</loc>", Path("sitemap.xml").read_text())
+    listed = build_pages.sitemap_paths()
     check("every address in the sitemap leads somewhere", [p for p in listed if not build_pages.resolves(p)][:5], [])
     for old in ("/brands/dji/", "/brands/sonos/", "/devices/gotosocial/", "/devices/pikvm-os/"):
         check(f"once-listed {old} still leads somewhere", build_pages.resolves(old), True)
     wf = Path(".github/workflows/nightly.yml").read_text()
     check("the hourly run commits redirects.json, where the safety net writes", "redirects.json" in wf, True)
+
+
+# ---- sitemap.xml is an index of one sitemap per kind of page ----
+def test_sitemap_index():
+    top = Path("sitemap.xml").read_text()
+    children = re.findall(r"<loc>https://www\.firmwarely\.com/(sitemaps/[a-z-]+\.xml)</loc>", top)
+    check("sitemap.xml is a sitemap index", "<sitemapindex" in top and "<urlset" not in top, True)
+    check("it lists each kind of page", sorted(Path(c).stem for c in children),
+          ["brands", "categories", "devices-hardware", "devices-software", "families", "pages"])
+    check("every child it lists exists", [c for c in children if not Path(c).is_file()], [])
+    check("...and nothing stale is left beside them",
+          sorted(str(p) for p in Path("sitemaps").glob("*.xml") if str(p) not in children), [])
+    check("every child carries a lastmod", top.count("<lastmod>"), len(children))
+    paths = build_pages.sitemap_paths()
+    check("no page is listed twice", len(paths), len(set(paths)))
+    built = {f"/devices/{p.parent.name}/" for p in Path("devices").glob("*/index.html")}
+    check("every device page is in exactly one section", sorted(built - set(paths))[:5], [])
+    hw = Path("sitemaps/devices-hardware.xml").read_text()
+    sw = Path("sitemaps/devices-software.xml").read_text()
+    fam = Path("sitemaps/families.xml").read_text()
+    check("Redis is filed as software, the eero family as a family, a Cardputer as hardware",
+          ("/devices/redis/" in sw, "/devices/eero/" in fam, "/devices/m5stack-cardputer/" in hw), (True, True, True))
+    check("each child is within Google's 50,000-URL limit",
+          all(Path(c).read_text().count("<url>") <= 50000 for c in children), True)
+    wf = Path(".github/workflows/nightly.yml").read_text()
+    check("the hourly run commits the sitemaps folder", " sitemaps " in wf, True)
+    check("robots.txt still points at sitemap.xml", "Sitemap: https://www.firmwarely.com/sitemap.xml" in Path("robots.txt").read_text(), True)
 
 
 # ---- models on one firmware line share one page ----
@@ -703,7 +738,7 @@ def test_families():
     devs = {d["id"]: d for d in json.loads(Path("devices.json").read_text())["devices"]}
     src_ids = {s["id"] for s in json.loads(Path("sources.json").read_text())["devices"]}
     rules = json.loads(Path("vercel.json").read_text())["redirects"]
-    sitemap = Path("sitemap.xml").read_text()
+    sitemap = "".join(f"<loc>{build_pages.SITE}{p}</loc>" for p in build_pages.sitemap_paths())
     cat_html = "".join(p.read_text() for p in Path("category").glob("*/index.html"))
     check("a family id is new, or one of its own members", [f["id"] for f in fams if f["id"] in src_ids and f["id"] not in f["members"]], [])
     check("no model is in two families", len([m for f in fams for m in f["members"]]), len({m for f in fams for m in f["members"]}))
@@ -1284,7 +1319,7 @@ def test_schedule_and_digest():
 
 
 for t in (test_compare, test_new_release, test_saved_devices, test_routing, test_typed_devices, test_typesafe_shadow, test_weekly_roll, test_forced_guard,
-          test_update_guides, test_sources_well_formed, test_site_shows_only_real_data, test_names_said_once, test_support_page, test_dates_are_honest, test_withdrawn_devices_redirect, test_no_dead_addresses, test_families, test_workflows_pinned, test_analytics_and_its_disclosure, test_form_rate_limit, test_captcha, test_side_gutter, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
+          test_update_guides, test_sources_well_formed, test_site_shows_only_real_data, test_names_said_once, test_support_page, test_dates_are_honest, test_withdrawn_devices_redirect, test_no_dead_addresses, test_sitemap_index, test_families, test_workflows_pinned, test_analytics_and_its_disclosure, test_form_rate_limit, test_captcha, test_side_gutter, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
           test_landing_pages, test_schedule_and_digest):
     print(f"\n{t.__name__}")
     t()

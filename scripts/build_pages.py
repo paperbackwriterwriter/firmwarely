@@ -10,7 +10,9 @@ Builds static pages from devices.json:
   pro/thanks/index.html     post-checkout page
   legal/index.html          privacy + terms
   404.html                  Vercel serves it for unknown paths
-  sitemap.xml, robots.txt   per-URL lastmod from the newest release each page shows
+  sitemap.xml               a sitemap index: one child per kind of page in sitemaps/,
+                            per-URL lastmod from the newest release each page shows
+  robots.txt                points at sitemap.xml
 
 Reuses the <style> block from index.html so pages match the site. Run after fetch.py.
 """
@@ -969,6 +971,51 @@ within 30 days. See <a href="/legal/">privacy &amp; terms</a> for what we hold a
 REDIRECT_CHUNK = 40      # ids per rule, so no single pattern grows unwieldy
 
 
+SITEMAP_DIR = ROOT / "sitemaps"
+
+
+def write_sitemaps(sections):
+    """sitemap.xml is a sitemap index (the address Search Console and robots.txt already
+    know), pointing at one sitemap per kind of page in sitemaps/. Search Console reports
+    indexing per child, so it shows which kind of page Google skips. Each child's lastmod
+    is its newest page's."""
+    SITEMAP_DIR.mkdir(exist_ok=True)
+    for old in SITEMAP_DIR.glob("*.xml"):
+        if old.stem not in sections:
+            old.unlink()                 # a section that no longer exists must not linger
+    index = ['<?xml version="1.0" encoding="UTF-8"?>',
+             '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for name, urls in sections.items():
+        if not urls:
+            continue
+        body = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+        body += [f"  <url><loc>{u}</loc><lastmod>{m}</lastmod></url>" for u, m in urls]
+        body.append("</urlset>")
+        (SITEMAP_DIR / f"{name}.xml").write_text("\n".join(body) + "\n")
+        index.append(f"  <sitemap><loc>{SITE}/sitemaps/{name}.xml</loc>"
+                     f"<lastmod>{max(m for _, m in urls)}</lastmod></sitemap>")
+    index.append("</sitemapindex>")
+    (ROOT / "sitemap.xml").write_text("\n".join(index) + "\n")
+
+
+def sitemap_paths():
+    """Every page path the sitemap lists now: through the index and its children, or a
+    plain urlset (how sitemap.xml looked before it became an index)."""
+    top = ROOT / "sitemap.xml"
+    if not top.exists():
+        return []
+    text = top.read_text()
+    loc = re.compile(r"<loc>" + re.escape(SITE) + r"(/[^<]*)</loc>")
+    if "<sitemapindex" not in text:
+        return loc.findall(text)
+    paths = []
+    for child in loc.findall(text):
+        f = ROOT / child.strip("/")
+        if f.is_file():
+            paths += loc.findall(f.read_text())
+    return paths
+
+
 def resolves(path, rules=None):
     """Whether a site path still leads somewhere: a page or file, or a redirect rule
     (exact, or one of the /devices/:id(a|b) and /brands/:b(a|b) groups)."""
@@ -1050,7 +1097,8 @@ def write_redirects(published, brand_pages, families=()):
     for slug, cats in cats_by_brand.items():
         if slug in page_slugs or f"/brands/{slug}" in taken or not re.fullmatch(r"[a-z0-9-]+", slug):
             continue
-        brand_groups.setdefault(cat_path(max(set(cats), key=cats.count)), []).append(slug)
+        # most devices wins; a tie goes to the first category by key, so the rule is the same every build
+        brand_groups.setdefault(cat_path(min(set(cats), key=lambda c: (-cats.count(c), c))), []).append(slug)
     for dest, slugs in sorted(brand_groups.items()):
         slugs = sorted(slugs)
         for i in range(0, len(slugs), REDIRECT_CHUNK):
@@ -1130,18 +1178,20 @@ def main():
         dates = [x for x in dates if x]
         return max(dates) if dates else gen
 
-    entries = [(f"{SITE}/", gen), (f"{SITE}/devices/", gen), (f"{SITE}/my-devices.html", today),
-               (f"{SITE}/pro/", "2026-09-14"), (f"{SITE}/legal/", "2026-09-13"),
-               (f"{SITE}/support/", "2026-09-15")]
-    entries += [(f"{SITE}{cat_path(k)}", max([dev_mod(d) for d in by_cat.get(k, [])] or [gen])) for k in CATS]
-    entries += [(f"{SITE}{brand_path(b)}", max(dev_mod(d) for d in by_brand[b])) for b in brand_pages]
-    entries += [(f"{SITE}/devices/{d['id']}/", dev_mod(d)) for d in devices]
-    sitemap = ROOT / "sitemap.xml"
-    listed_before = re.findall(r"<loc>" + re.escape(SITE) + r"(/[^<]*)</loc>", sitemap.read_text()) if sitemap.exists() else []
-    sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    sm += [f"  <url><loc>{u}</loc><lastmod>{m}</lastmod></url>" for u, m in entries]
-    sm.append("</urlset>")
-    sitemap.write_text("\n".join(sm) + "\n")
+    dev_url = lambda d: (f"{SITE}/devices/{d['id']}/", dev_mod(d))
+    sections = {
+        "pages": [(f"{SITE}/", gen), (f"{SITE}/devices/", gen), (f"{SITE}/my-devices.html", today),
+                  (f"{SITE}/pro/", "2026-09-14"), (f"{SITE}/legal/", "2026-09-13"),
+                  (f"{SITE}/support/", "2026-09-15")],
+        "categories": [(f"{SITE}{cat_path(k)}", max([dev_mod(d) for d in by_cat.get(k, [])] or [gen])) for k in CATS],
+        "brands": [(f"{SITE}{brand_path(b)}", max(dev_mod(d) for d in by_brand[b])) for b in brand_pages],
+        "families": [dev_url(d) for d in devices if d.get("members")],
+        "devices-hardware": [dev_url(d) for d in devices if not d.get("members") and not is_software(d)],
+        "devices-software": [dev_url(d) for d in devices if not d.get("members") and is_software(d)],
+    }
+    entries = [e for urls in sections.values() for e in urls]
+    listed_before = sitemap_paths()
+    write_sitemaps(sections)
     (ROOT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nDisallow: /api/\nSitemap: {SITE}/sitemap.xml\n")
     n_rules, n_devices = write_redirects(devices, brand_pages, families)
     # Safety net: an address that was in the last sitemap must not turn into a 404 (a device
