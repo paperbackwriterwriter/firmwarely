@@ -8640,6 +8640,96 @@
     "security_fix_plain": 0.88,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "ruffle",
+   "version": "0.7.1",
+   "name": "Ruffle Flash Player emulator",
+   "judged_at": "2026-10-07T19:18:53+00:00",
+   "notes_chars": 75,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.02,
+    "security_fix": 0.1
+   }
+  },
+  {
+   "id": "immich-server",
+   "version": "3.3.0",
+   "name": "Immich Photo backup server",
+   "judged_at": "2026-10-07T19:18:53+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "homarr",
+   "version": "2.3.0",
+   "name": "Homarr Dashboard",
+   "judged_at": "2026-10-07T19:18:53+00:00",
+   "notes_chars": 19,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "directus",
+   "version": "12.5.0",
+   "name": "Directus Headless CMS",
+   "judged_at": "2026-10-07T19:18:54+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.64,
+    "security_fix_plain": 0.4,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "metabase",
+   "version": "64.1",
+   "name": "Metabase Business intelligence",
+   "judged_at": "2026-10-07T19:18:54+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
