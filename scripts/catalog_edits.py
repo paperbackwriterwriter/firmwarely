@@ -111,6 +111,111 @@ RENAME = {
     "eero-pro-7": ("eero", "Pro 7", "R"),
 }
 
+# 2026-10-07 QA: projects discovery added since, still named after taglines, with emoji or
+# invisible characters, or after a generic repo name ("Android", "iOS")
+RENAME.update({
+    "android": ("Home Assistant", "Android companion app", "S"),
+    "ios": ("Home Assistant", "iOS companion app", "S"),
+    "rethink-app": ("Rethink", "DNS and firewall app for Android", "R"),
+    "hickory-dns": ("Hickory DNS", "DNS server and resolver", "R"),
+    "dnscontrol": ("DNSControl", "DNS as code", "R"),
+    "findomain": ("Findomain", "Subdomain finder", "A"),
+    "rpcs3": ("RPCS3", "PlayStation 3 emulator", "C"),
+    "ruffle": ("Ruffle", "Flash Player emulator", "C"),
+    "nginx-proxy": ("nginx-proxy", "Automatic reverse proxy for Docker", "R"),
+    "bunkerweb": ("BunkerWeb", "Web application firewall", "R"),
+    "easegress": ("Easegress", "Traffic orchestration gateway", "R"),
+    "agentgateway": ("agentgateway", "AI agent and MCP proxy", "R"),
+    "godoxy": ("GoDoxy", "Reverse proxy and container manager", "R"),
+    "openbot": ("OpenBot", "Smartphone-powered robot platform", "M"),
+    "arduino-pico": ("Arduino-Pico", "Arduino core for Raspberry Pi Pico", "M"),
+    "nnn": ("nnn", "Terminal file manager", "P"),
+    "sherpa-onnx": ("sherpa-onnx", "Offline speech recognition and TTS", "M"),
+    "pivpn": ("PiVPN", "VPN installer for Raspberry Pi", "R"),
+    "glslviewer": ("glslViewer", "GLSL shader sandbox", "M"),
+    "raspotify": ("Raspotify", "Spotify Connect for Raspberry Pi", "M"),
+    "xplr": ("xplr", "Terminal file explorer", "P"),
+    "linkace": ("LinkAce", "Bookmark archive", "A"),
+    "tianji": ("Tianji", "Website analytics and uptime monitor", "A"),
+    "gokapi": ("Gokapi", "File sharing server", "A"),
+    "voidauth": ("VoidAuth", "Single sign-on server", "A"),
+    "alexandrie": ("Alexandrie", "Offline-first note-taking app", "A"),
+    "donetick": ("Donetick", "Task and chore manager", "A"),
+    "dockflare": ("DockFlare", "Cloudflare Tunnel manager for Docker", "R"),
+    "local-deep-research": ("Local Deep Research", "AI research assistant", "A"),
+    "dust3d": ("Dust3D", "3D modeling software", "M"),
+    "ha-bambulab": ("ha-bambulab", "Bambu Lab Home Assistant integration", "S"),
+    "uvtools": ("UVtools", "Resin printer file toolkit", "M"),
+    "rackstack": ("Rackstack", "3D-printable mini rack", "M"),
+    "lantern": ("Lantern", "Censorship circumvention VPN", "R"),
+    "elasticsearch-dump": ("elasticsearch-dump", "Elasticsearch import and export tool", "N"),
+    "zerobyte": ("Zerobyte", "Backup automation", "N"),
+    "imessage-exporter": ("imessage-exporter", "iMessage export tool", "N"),
+    "wal-g": ("WAL-G", "Database backup and restore", "N"),
+    "docker-volume-backup": ("docker-volume-backup", "Docker volume backups", "N"),
+    "docker-android": ("docker-android", "Emulated phones in containers", "C"),
+    "retrobios": ("RetroBIOS", "Emulator BIOS packs", "C"),
+    "provenance": ("Provenance", "iOS and tvOS emulator frontend", "C"),
+    "sharpemu": ("SharpEmu", "PlayStation 5 emulator", "C"),
+    "melonds": ("melonDS", "Nintendo DS emulator", "C"),
+    "browserbox": ("BrowserBox", "Remote browser isolation", "R"),
+    "vulcain": ("Vulcain", "REST API preload gateway", "R"),
+    "piko": ("Piko", "Self-hosted ngrok alternative", "R"),
+    "trickster": ("Trickster", "HTTP reverse proxy cache", "R"),
+    "frpmgr": ("frpmgr", "Windows GUI for FRP", "R"),
+    "wordops": ("WordOps", "WordPress server stack", "A"),
+    "gladys": ("Gladys", "Home automation hub", "S"),
+    "button-card": ("button-card", "Home Assistant dashboard card", "S"),
+    "homeassistant-tapo-control": ("Tapo Control", "Home Assistant integration for Tapo cameras", "S"),
+    "lovelace-xiaomi-vacuum-map-card": ("Xiaomi Vacuum Map Card", "Home Assistant dashboard card", "S"),
+    "netboot-xyz": ("netboot.xyz", "Network boot menu", "P"),
+    "ezbookkeeping": ("ezBookkeeping", "Personal finance app", "A"),
+    "linux-router": ("linux-router", "Turn Linux into a router", "R"),
+    "ha-xiaomi-home": ("Xiaomi Home", "Home Assistant integration", "S"),
+    "oxidized": ("Oxidized", "Network device config backup", "N"),
+    "rustic": ("rustic", "Encrypted deduplicated backups", "N"),
+    "barman": ("Barman", "PostgreSQL backup and recovery", "N"),
+    "dbatools": ("dbatools", "SQL Server automation", "A"),
+    "slackdump": ("Slackdump", "Slack message exporter", "N"),
+    "furnace": ("Furnace", "Chiptune tracker", "C"),
+    "vectras-vm-android": ("Vectras VM", "Virtual machines on Android", "C"),
+    "nethersx2-patch": ("NetherSX2", "PlayStation 2 emulator for Android", "C"),
+    "keepass2android": ("Keepass2Android", "Password manager for Android", "A"),
+    "nodewarden": ("Nodewarden", "Bitwarden server for Cloudflare Workers", "A"),
+    "sniffnet": ("Sniffnet", "Network traffic monitor", "R"),
+    "gping": ("gping", "Ping with a graph", "R"),
+    "arkime": ("Arkime", "Packet capture and search", "R"),
+    "openccu": ("OpenCCU", "HomeMatic smart home OS", "S"),
+    "doggo": ("doggo", "DNS lookup tool", "R"),
+    "bambuddy": ("Bambuddy", "Bambu Lab printer manager", "M"),
+    "gobackup": ("GoBackup", "Database and file backup tool", "N"),
+    "pv-migrate": ("pv-migrate", "Kubernetes volume migration", "N"),
+    "avideo": ("AVideo", "Video streaming platform", "A"),
+    "passforios": ("Pass for iOS", "Password store client", "A"),
+    "http-shortcuts": ("HTTP Shortcuts", "Android automation app", "S"),
+    "bizhawk": ("BizHawk", "Multi-system emulator", "C"),
+    "bfe": ("BFE", "Layer 7 load balancer", "R"),
+    "ocelot": ("Ocelot", ".NET API gateway", "R"),
+    "modlishka": ("Modlishka", "Phishing simulation proxy", "A"),
+    "krakend-ce": ("KrakenD", "API gateway (Community Edition)", "R"),
+    "zrok": ("zrok", "Secure sharing tunnel", "R"),
+    "deskhop": ("DeskHop", "Keyboard and mouse switcher", "M"),
+    "tyk": ("Tyk", "API gateway", "R"),
+    "lemuroid": ("Lemuroid", "Android emulator frontend", "C"),
+    "xemu": ("xemu", "Original Xbox emulator", "C"),
+    "86box": ("86Box", "x86 PC emulator", "C"),
+    "esp32-marauder": ("ESP32 Marauder", "Wi-Fi and Bluetooth pentest firmware", "M"),
+})
+
+# code libraries discovery took for products (the "router" topic also means web routing):
+# not something anyone installs or updates as a device or a server. id → where its URL goes
+REMOVE = {
+    "path-to-regexp": "/category/routers/", "wouter": "/category/routers/", "routing": "/category/routers/",
+    "chi": "/category/routers/", "single-spa": "/category/routers/", "ui-router": "/category/routers/",
+    "lura": "/category/routers/", "uwebsockets": "/category/routers/", "uwebsockets-js": "/category/routers/",
+    "twisted": "/category/routers/", "laravel-backup": "/category/nas/", "node-serialport": "/category/makers/",
+}
+
 # hardware that auto-categorisation filed as self-hosted software
 CATEGORY = {"synology-ds220j": "N", "synology-ds425-plus": "N", "synology-ds1522-plus": "N",
             "synology-rs422-plus": "N", "ubiquiti-unas-pro": "N"}
@@ -148,7 +253,7 @@ def apply(doc, key, is_sources):
             o["repo"] = repo
             if "github.com/" in (o.get("product_url") or ""):
                 o["product_url"] = f"https://github.com/{repo}"
-    doc[key] = [d for d in items if d["id"] not in DUPLICATES]
+    doc[key] = [d for d in items if d["id"] not in DUPLICATES and d["id"] not in REMOVE]
 
     return len(items) - len(doc[key])
 
@@ -170,6 +275,8 @@ def main():
     # a brand page existed only because of its duplicate; with one device left it goes
     for brand in ("podman", "orcaslicer", "netalertx"):
         red[f"/brands/{brand}/"] = f"/devices/{brand}/"
+    for dev_id, dest in REMOVE.items():
+        red[f"/devices/{dev_id}/"] = dest
     red_path.write_text(json.dumps(dict(sorted(red.items())), indent=1) + "\n")
 
 

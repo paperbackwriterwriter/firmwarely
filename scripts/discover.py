@@ -44,12 +44,34 @@ NOT_A_PRODUCT = re.compile(
     r"\bexamples?\b|\bsamples?\b|\bdemo\b|collection|resources|\blearn(ing)?\b|\bguide\b|\bdocs?\b|documentation|"
     r"specification|proposal|\bpaper\b|dataset|benchmark|hackathon|challenge|algorithms|leetcode|dotfiles|"
     r"wallpapers?|\bicons?\b|\bfonts?\b|\btheme\b|\bsdk\b|\blibrary\b|\bframework\b|bindings|wrapper|\bplugin\b|"
-    r"\bextension\b|starter|scaffold|\bmirror\b|archive of|deprecated|unmaintained|no longer", re.I)
+    r"\bextension\b|starter|scaffold|\bmirror\b|archive of|deprecated|unmaintained|no longer|"
+    r"\bpackage to\b|\bnpm package\b|\bfor (?:react|preact|vue|angular|svelte|node\.?js|laravel|symfony)\b|"
+    r"\bmiddlewares?\b|\bmicrofrontends?\b|\bregular expression\b|\bevent-driven networking\b", re.I)
 
 # repo names too generic to be a brand: "BruceDevices/firmware" became a device called
 # "Firmware", "dockur/windows" one called "Windows"
 GENERIC_NAMES = {"firmware", "server", "windows", "linux", "app", "core", "web", "client", "api",
-                 "backend", "frontend", "cli", "engine", "platform", "tools", "project", "main"}
+                 "backend", "frontend", "cli", "engine", "platform", "tools", "project", "main",
+                 "android", "ios", "iphone", "ipad", "macos", "mac", "desktop", "mobile", "website",
+                 "site", "routing", "router", "proxy", "backup", "docs"}
+
+# a repo carrying these topics is code other programmers build with, not something anyone
+# installs and keeps updated: the "router" topic brought in React and Go URL routers
+LIBRARY_TOPICS = {"react", "preact", "vue", "vuejs", "angular", "angularjs", "svelte", "laravel",
+                  "laravel-package", "symfony", "symfony-component", "npm", "npm-package", "library",
+                  "framework", "middleware", "sdk", "microfrontends", "composer-package", "package",
+                  "go-library", "golang-library", "python-library", "rust-library", "crate",
+                  "javascript-library", "typescript-library", "php-library", "nodejs-library",
+                  "react-router", "http-router", "url-router", "router-library", "event-driven"}
+# ...unless it also says it is something you run
+PRODUCT_TOPICS = {"self-hosted", "selfhosted", "firmware", "home-assistant", "homeassistant",
+                  "docker-image", "app", "android-app", "ios-app", "desktop-app"}
+
+# model lines too vague to tell a reader what the thing is: discovery once added a DNS tool
+# called "Dog", a smart home OS called "House" and a backup tool called "CLI tool"
+GENERIC_MODELS = {"cli tool", "cli", "tool", "tools", "app", "android app", "ios app", "iphone",
+                  "ipad", "desktop app", "mobile app", "web app", "software", "solution",
+                  "de-facto solution", "reverse proxy", "self-hosted software", "server", "client"}
 
 # a description in another script can't become an English product line
 NON_LATIN = re.compile(r"[\u0400-\u04ff\u0600-\u06ff\u3040-\u30ff\u3400-\u9fff\uac00-\ud7af]")
@@ -57,7 +79,7 @@ NON_LATIN = re.compile(r"[\u0400-\u04ff\u0600-\u06ff\u3040-\u30ff\u3400-\u9fff\u
 # a model line that reads as a sentence or a slogan rather than naming a thing:
 # "Accept Bitcoin payments", "Let's upgrade…", "Light, fluffy, and always free", "Is an…"
 TAGLINE = re.compile(
-    r"^(?:is|are|my|our|let'?s|gives?|build|built|access|accept|syncs?|emulate|love|inside|for|"
+    r"^(?:is|are|my|our|let'?s|gives?|build|built|access|accept|syncs?|emulate|love|inside|for|this|that|it'?s|"
     r"official|automatic(?:ally)?)\b|^light,|always free\b|^(?:tool|software|app)\s+(?:designed\s+)?(?:to|for)\b|"
     r"^\S+\s+is\s+(?:an?|the)\b|you deserve", re.I)
 
@@ -78,14 +100,24 @@ def api(url):
         return json.loads(r.read().decode("utf-8"))
 
 
-def humanize(name):
-    """Repo name → brand: 'uptime-kuma' → 'Uptime Kuma', 'NocoDB' stays 'NocoDB'."""
+# words in repo names that are abbreviations: 'hickory-dns' → 'Hickory DNS', not 'Hickory Dns'
+ACRONYMS = {"dns", "api", "vpn", "ui", "nas", "http", "ssh", "tv", "os", "ai", "mqtt", "usb", "iot",
+            "cli", "vm", "nvr", "ip", "ota", "sdr", "sso", "ha", "db", "rss", "ce", "gui", "tui"}
+
+
+def humanize(name, owner=""):
+    """Repo name → brand: 'uptime-kuma' → 'Uptime Kuma', 'NocoDB' stays 'NocoDB'.
+
+    An organisation named after its project spells it the way the project does:
+    'RPCS3/rpcs3' → 'RPCS3', 'DNSControl/dnscontrol' → 'DNSControl', not 'Rpcs3'."""
+    if owner and owner.lower() == name.lower() and owner != owner.lower():
+        return owner
     words = re.split(r"[-_]+", name.strip())
     out = []
     for w in words:
         if not w:
             continue
-        out.append(w.capitalize() if w.islower() else w)
+        out.append(w.upper() if w.lower() in ACRONYMS else w.capitalize() if w.islower() else w)
     return " ".join(out) or name
 
 
@@ -95,7 +127,8 @@ DANGLING = {"a", "an", "the", "and", "or", "of", "to", "in", "on", "at", "by", "
             "from", "into", "via", "that", "which", "who", "your", "our", "its", "their", "this",
             "is", "are", "be", "as", "so", "you", "can", "will", "helps", "capable", "providing",
             "performing", "using", "made", "built", "designed", "powered", "based", "more", "than",
-            "all", "any", "every", "without", "while", "when", "where", "how", "what", "it"}
+            "all", "any", "every", "without", "while", "when", "where", "how", "what", "it",
+            "written", "compatible", "never", "have", "has", "e.g", "eg", "like", "such"}
 
 
 # a trailing phrase that the 60-char cut left incomplete: drop the whole phrase, not just
@@ -113,15 +146,41 @@ def trim_dangling(text):
     return " ".join(words).rstrip(" ,;:-–—")
 
 
+# emoji (including flags made of regional indicators), joiners and other invisible
+# characters, trademark signs and GitHub :shortcodes: all ended up in live page titles
+INVISIBLE = re.compile(r"[\U0001F000-\U0001FAFF\u2600-\u27BF\u2B00-\u2BFF\u200B-\u200F\u2060\uFE0F\uFEFF™®©]")
+SHORTCODE = re.compile(r":[a-z0-9_+-]+:?(?=\s|$)|(?<=\s):[a-z0-9_+-]+$", re.I)
+
+
+def clean_text(text):
+    text = SHORTCODE.sub("", INVISIBLE.sub("", text or ""))
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def model_problem(model, name=""):
+    """Why a discovered model line can't name a product, or None."""
+    if not re.match(r"[A-Za-z0-9]", model or ""):
+        return "model line does not start with a word"
+    if model.count("(") != model.count(")"):
+        return "model line is cut off mid-parenthesis"
+    if model.count(",") >= 2:
+        return "model line is a feature list"
+    if len(model.split()) < 2 or model.lower() in GENERIC_MODELS:
+        return "model line too vague to name a product"
+    if name and re.sub(r"[^a-z0-9]", "", model.lower()) == re.sub(r"[^a-z0-9]", "", name.lower()):
+        return "model line just repeats the repo name"
+    return None
+
+
 def short_model(description, brand):
     """Description → the catalogue's 'model' line: one plain clause, no marketing, <= 60 chars.
 
     This text becomes the device page's <title> and meta description, so a fragment ending
     mid-phrase ("…build and manage the") is visible on the live site, not just in the data."""
-    d = re.sub(r"[\U0001F300-\U0001FAFF☀-➿⭐✅️]", "", description or "")  # emoji
+    d = clean_text(description)
     d = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", d)              # markdown links
     d = re.sub(r"https?://\S+", "", d)
-    d = re.sub(r"\s+", " ", d).strip(" .!-–—|:")
+    d = re.sub(r"\s+", " ", d).lstrip(" !-–—|:").rstrip(" .!-–—|:")
     # first clause that isn't just the project's own name ("Immich - High performance ..." style)
     clauses = [c.strip() for c in re.split(r"(?<=[a-z0-9\)])[.!]\s|\s[-–—|]\s|;|:\s", d) if c.strip()]
     clauses = [c for c in clauses if c.lower() not in (brand.lower(), brand.lower().replace(" ", "-"), brand.lower().replace(" ", ""))]
@@ -162,8 +221,9 @@ def slug(name):
     return re.sub(r"(^-|-$)", "", re.sub(r"[^a-z0-9]+", "-", name.lower()))
 
 
-def vet(repo, known_repos, known_names):
-    """Return a rejection reason, or None if the repo may be added."""
+def vet(repo, known_repos, known_names, declined=frozenset()):
+    """Return a rejection reason, or None if the repo may be added. declined: device ids that
+    were taken out of the catalogue on purpose (see declined_ids), so they stay out."""
     full = repo["full_name"].lower()
     if full in known_repos:
         return "already tracked"
@@ -182,25 +242,39 @@ def vet(repo, known_repos, known_names):
     if NON_LATIN.search(desc):
         return "description not in English"
     name = repo["name"].lower()
-    if name in GENERIC_NAMES:
+    if name in GENERIC_NAMES or name.strip("-_.") in GENERIC_NAMES:
         return "repo name too generic to be a brand"
     # a project that moved to a new owner comes back under a new full_name
     if name in {r.rsplit("/", 1)[-1] for r in known_repos}:
         return "already tracked under its old owner"
-    blob = " ".join([repo["name"], desc, " ".join(repo.get("topics") or [])])
-    if NOT_A_PRODUCT.search(blob):
+    if slug(repo["name"]) in declined:
+        return "removed from the catalogue before"
+    topics = set(repo.get("topics") or [])
+    blob = " ".join([repo["name"], desc, " ".join(topics)])
+    if NOT_A_PRODUCT.search(blob) or (topics & LIBRARY_TOPICS and not topics & PRODUCT_TOPICS):
         return "not a product (list/library/tutorial)"
-    brand = humanize(repo["name"])
+    brand = humanize(repo["name"], (repo.get("owner") or {}).get("login", ""))
     model = short_model(desc, brand)
     if (brand.lower(), model.lower()) in known_names:
         return "name already in catalogue"
     if TAGLINE.search(model):
         return "description is a slogan, not a product line"
-    return None
+    return model_problem(model, repo["name"])
+
+
+def declined_ids():
+    """Ids whose device URL now redirects elsewhere (redirects.json): projects removed or
+    folded by hand in scripts/catalog_edits.py. Without this, discovery re-adds a removed
+    library the next time its topic comes round."""
+    try:
+        moves = json.loads((ROOT / "redirects.json").read_text())
+    except Exception:
+        return set()
+    return {m.group(1) for k in moves for m in [re.match(r"^/devices/([^/]+)/$", k)] if m}
 
 
 def candidate_entry(repo, ids):
-    brand = humanize(repo["name"])
+    brand = humanize(repo["name"], (repo.get("owner") or {}).get("login", ""))
     model = short_model(repo.get("description") or "", brand)
     dev_id = slug(repo["name"])
     if dev_id in ids:
@@ -224,6 +298,7 @@ def main():
                     for m in [re.search(r"github\.com/([^/]+/[^/]+)/", d["url"])] if m}
     known_names = {(d["brand"].lower(), d["model"].lower()) for d in src["devices"]}
     ids = {d["id"] for d in src["devices"]}
+    declined = declined_ids() - ids
 
     rejected, added, seen, checks, out_of_budget = {}, [], set(), 0, False
     for topic in todays_topics():
@@ -239,7 +314,7 @@ def main():
             if repo["full_name"].lower() in seen:
                 continue
             seen.add(repo["full_name"].lower())
-            why = vet(repo, known_repos, known_names)
+            why = vet(repo, known_repos, known_names, declined)
             if why:
                 rejected[why] = rejected.get(why, 0) + 1
                 continue

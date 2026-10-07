@@ -475,6 +475,17 @@ def test_names_said_once():
                                           ("eero", "Pro 6E", "R", "router", False)]:
         check(f"is_software: {brand} {model}", build_pages.is_software(
             {"brand": brand, "model": model, "category": cat, "icon": icon}), want)
+    # a project tracked from GitHub releases is software unless its name says firmware
+    gh = {s["id"]: s for s in json.loads((ROOT / "sources.json").read_text())["devices"] if s.get("type") == "github"}
+    devs_by_id = {d["id"]: d for d in json.loads((ROOT / "devices.json").read_text())["devices"]}
+    called_firmware = [fetch.full_name(devs_by_id[i]) for i in gh if i in devs_by_id and not build_pages.is_software(devs_by_id[i])
+                       and not build_pages.FIRMWARE_WORDS.search(fetch.full_name(devs_by_id[i]))]
+    check("no GitHub project is called firmware unless its name says so", called_firmware[:5], [])
+    for i, want in [("kong", True), ("pcsx2", True), ("valetudo", False), ("ubiquiti-cloud-gateway-ultra", False),
+                    ("home-assistant-voice-pe", False)]:
+        if i in devs_by_id:
+            check(f"is_software: {i}", build_pages.is_software(devs_by_id[i]), want)
+    check("ChimeraOS is not a doorbell", fetch.icon_for({"brand": "ChimeraOS", "model": "Couch gaming OS", "category": "C"}) != "doorbell", True)
     # the pages that list devices in the browser use the same rule
     for page in ("index.html", "dashboard.html", "my-devices.html"):
         src = (ROOT / page).read_text()
@@ -780,6 +791,36 @@ def test_workflows_pinned():
     check("no workflow follows ubuntu-latest", [n for n, r in found.items() if "ubuntu-latest" in r], [])
     check("all workflows are on the same Ubuntu", sorted({x for r in found.values() for x in r}), ["ubuntu-24.04"])
 
+
+
+def test_rebase_data():
+    """A change merging mid-run must not fail the hourly push (2026-10-07 11:17): the run's
+    data goes on top of the moved branch and the pages are rebuilt, never hand-merged."""
+    import tempfile, rebase_data
+    root, saved = Path(tempfile.mkdtemp()), Path(tempfile.mkdtemp())
+    w = lambda p, o: p.write_text(json.dumps(o))
+    w(root / "sources.json", {"_readme": "branch", "devices": [{"id": "a"}, {"id": "hand-added"}]})
+    w(root / "devices.json", {"tracked": 2, "devices": [{"id": "a", "version": "1.0"}, {"id": "hand-added", "version": "3"}]})
+    w(root / "pending_changes.json", {"devices": {}})
+    w(saved / "sources.json", {"_readme": "run", "devices": [{"id": "a"}, {"id": "discovered"}]})
+    w(saved / "devices.json", {"tracked": 3, "devices": [{"id": "a", "version": "2.0"}, {"id": "discovered", "version": "1"}]})
+    w(saved / "pending_changes.json", {"devices": {"a": {"version": "2.0"}}})
+    rebase_data.rebase(saved, root)
+    src = json.loads((root / "sources.json").read_text())
+    devs = json.loads((root / "devices.json").read_text())
+    check("sources keep the branch's hand edits and add what the run discovered",
+          ([d["id"] for d in src["devices"]], src["_readme"]), (["a", "hand-added", "discovered"], "branch"))
+    check("devices keep the run's fresh versions and the branch's new devices",
+          [(d["id"], d["version"]) for d in devs["devices"]], [("a", "2.0"), ("discovered", "1"), ("hand-added", "3")])
+    check("files only the run writes are the run's", json.loads((root / "pending_changes.json").read_text())["devices"], {"a": {"version": "2.0"}})
+    wf = Path(".github/workflows/nightly.yml").read_text()
+    step = wf[wf.index("Commit data and pages"):wf.index("Open an issue")]
+    check("the hourly push recovers from a moved branch by rebuilding",
+          all(x in step for x in ("git rebase --abort", "scripts/rebase_data.py", "scripts/catalog_edits.py",
+                                  "scripts/build_pages.py", "git reset -q --hard FETCH_HEAD")), True)
+    check("...and no longer stops at a plain pull --rebase", "git pull --rebase" in step, False)
+    check("the data it saves is the data rebase_data merges",
+          all(f in step for f in rebase_data.DATA), True)
 
 # ---- counting visits, and saying so ----
 def test_analytics_and_its_disclosure():
@@ -1245,6 +1286,43 @@ def test_schedule_and_digest():
     ]:
         check(f"discovery skips {label}", discover.vet(repo, {"jokob-sk/netalertx"}, set()), want)
     check("...but not a plain product line", discover.vet(dict(base, name="smartdns", description="A local DNS server"), set(), set()), None)
+    # 2026-10-07 QA: what discovery had added that a reader could not make sense of
+    for label, repo, want in [
+        ("a phone app named after its platform", dict(base, full_name="home-assistant/android", name="android",
+                                                     description="Home Assistant Companion for Android"), "repo name too generic to be a brand"),
+        ("a one-word model", dict(base, name="openccu", description="House: a smart home central for HomeMatic"), "model line too vague to name a product"),
+        ("a generic model", dict(base, name="gobackup", description="CLI tool for backup your databases, files to cloud storages in schedully"), "model line too vague to name a product"),
+        ("a model that repeats the repo", dict(base, name="passforios", description="Pass for iOS - an iOS client compatible with Pass command line application"), "model line just repeats the repo name"),
+        ("a model that opens on a symbol", dict(base, name="ldr", description="~95% on SimpleQA (e.g. with a local model)"),
+         "model line does not start with a word"),
+        ("a feature list", dict(base, name="arkime", description="Open source, large scale, full packet capturing, indexing, and database system"),
+         "model line is a feature list"),
+        ("a 'This card' opener", dict(base, name="map-card", description="This card provides a user-friendly way to fully control vacuums"),
+         "description is a slogan, not a product line"),
+        ("a React router", dict(base, name="wouter", description="Minimalist-friendly ~2.2KB routing for React and Preact"),
+         "not a product (list/library/tutorial)"),
+        ("a Laravel package", dict(base, name="laravel-backup", description="A package to backup your Laravel app"),
+         "not a product (list/library/tutorial)"),
+        ("a Go router by its topics", dict(base, name="chi", description="Lightweight, idiomatic and composable router for building Go HTTP services",
+                                           topics=["go", "golang", "router", "http-router", "middleware"]), "not a product (list/library/tutorial)"),
+        ("a project removed by hand", dict(base, name="twisted", description="Asynchronous networking engine"), "removed from the catalogue before"),
+    ]:
+        check(f"discovery skips {label}", discover.vet(repo, set(), set(), {"twisted"}), want)
+    check("...a library topic with a self-hosted topic is still a product",
+          discover.vet(dict(base, topics=["self-hosted", "react"]), set(), set()), None)
+    check("removed projects are read from redirects.json", {"wouter", "path-to-regexp"} <= discover.declined_ids(), True)
+    check("brand takes the casing of an org named after it", discover.humanize("rpcs3", "RPCS3"), "RPCS3")
+    check("brand spells abbreviations in capitals", discover.humanize("hickory-dns"), "Hickory DNS")
+    for desc, want in [(":dog: Command-line DNS client for humans", "Command-line DNS client for humans"),
+                       ("\U0001F1FA\U0001F1F8Secure remote browsing", "Secure remote browsing"),
+                       ("Comfortably monitor your network traffic \u200d\U0001F575\ufe0f\u200d\u2642\ufe0f", "Comfortably monitor your network traffic"),
+                       ("Spotify Connect client that mostly Just Works\u2122", "Spotify Connect client that mostly Just Works")]:
+        check(f"model drops what can't be read: {want}", discover.short_model(desc, "X"), want)
+    # nothing in the catalogue carries emoji, invisible characters or a cut-off parenthesis
+    devs_now = json.loads(Path("devices.json").read_text())["devices"]
+    unreadable = [d["id"] for d in devs_now for v in (d["brand"], d["model"])
+                  if discover.INVISIBLE.search(v) or v.count("(") != v.count(")") or not re.match(r"[A-Za-z0-9.]", v)]
+    check("every catalogue name is plain readable text", unreadable[:5], [])
     check("brand from repo name", discover.humanize("uptime-kuma"), "Uptime Kuma")
     check("brand keeps deliberate casing", discover.humanize("NocoDB"), "NocoDB")
     check("model drops marketing and the project's own name",
@@ -1319,7 +1397,7 @@ def test_schedule_and_digest():
 
 
 for t in (test_compare, test_new_release, test_saved_devices, test_routing, test_typed_devices, test_typesafe_shadow, test_weekly_roll, test_forced_guard,
-          test_update_guides, test_sources_well_formed, test_site_shows_only_real_data, test_names_said_once, test_support_page, test_dates_are_honest, test_withdrawn_devices_redirect, test_no_dead_addresses, test_sitemap_index, test_families, test_workflows_pinned, test_analytics_and_its_disclosure, test_form_rate_limit, test_captcha, test_side_gutter, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
+          test_update_guides, test_sources_well_formed, test_site_shows_only_real_data, test_names_said_once, test_support_page, test_dates_are_honest, test_withdrawn_devices_redirect, test_no_dead_addresses, test_sitemap_index, test_families, test_workflows_pinned, test_rebase_data, test_analytics_and_its_disclosure, test_form_rate_limit, test_captcha, test_side_gutter, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
           test_landing_pages, test_schedule_and_digest):
     print(f"\n{t.__name__}")
     t()
