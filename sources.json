@@ -10703,6 +10703,96 @@
    "type": "github",
    "repo": "nikkinikki-org/OpenWrt-nikki",
    "product_url": "https://github.com/nikkinikki-org/OpenWrt-nikki"
+  },
+  {
+   "id": "macpass",
+   "brand": "MacPass",
+   "model": "Native macOS KeePass client",
+   "category": "A",
+   "type": "github",
+   "repo": "MacPass/MacPass",
+   "product_url": "https://github.com/MacPass/MacPass"
+  },
+  {
+   "id": "keepass2android",
+   "brand": "Keepass2android",
+   "model": "Password manager app for Android",
+   "category": "A",
+   "type": "github",
+   "repo": "PhilippC/keepass2android",
+   "product_url": "https://github.com/PhilippC/keepass2android"
+  },
+  {
+   "id": "nodewarden",
+   "brand": "Nodewarden",
+   "model": "Bitwarden-compatible server running on Cloudflare Workers",
+   "category": "A",
+   "type": "github",
+   "repo": "shuaiplus/nodewarden",
+   "product_url": "https://github.com/shuaiplus/nodewarden"
+  },
+  {
+   "id": "gokey",
+   "brand": "Gokey",
+   "model": "Vaultless password manager in Go",
+   "category": "A",
+   "type": "github",
+   "repo": "cloudflare/gokey",
+   "product_url": "https://github.com/cloudflare/gokey"
+  },
+  {
+   "id": "passforios",
+   "brand": "Passforios",
+   "model": "Pass for iOS",
+   "category": "A",
+   "type": "github",
+   "repo": "mssun/passforios",
+   "product_url": "https://github.com/mssun/passforios"
+  },
+  {
+   "id": "sniffnet",
+   "brand": "Sniffnet",
+   "model": "Comfortably monitor your network traffic ‍",
+   "category": "R",
+   "type": "github",
+   "repo": "GyulyVGC/sniffnet",
+   "product_url": "https://github.com/GyulyVGC/sniffnet"
+  },
+  {
+   "id": "gping",
+   "brand": "Gping",
+   "model": "Ping, but with a graph",
+   "category": "R",
+   "type": "github",
+   "repo": "orf/gping",
+   "product_url": "https://github.com/orf/gping"
+  },
+  {
+   "id": "maltrail",
+   "brand": "Maltrail",
+   "model": "Malicious traffic detection system",
+   "category": "R",
+   "type": "github",
+   "repo": "stamparm/maltrail",
+   "product_url": "https://github.com/stamparm/maltrail"
+  },
+  {
+   "id": "arkime",
+   "brand": "Arkime",
+   "model": "Open source, large scale, full packet capturing, indexing",
+   "category": "R",
+   "type": "github",
+   "repo": "arkime/arkime",
+   "product_url": "https://github.com/arkime/arkime"
+  },
+  {
+   "id": "rustnet",
+   "brand": "Rustnet",
+   "model": "Per-process network monitoring",
+   "category": "R",
+   "type": "github",
+   "repo": "domcyrus/rustnet",
+   "product_url": "https://github.com/domcyrus/rustnet"
   }
  ]
 }
