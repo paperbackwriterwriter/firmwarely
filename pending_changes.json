@@ -293,13 +293,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.7.24.8-stable",
+   "version": "26.8.20.9-lts",
    "previous": "26.9.12.8-stable",
    "released": "2026-10-07",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.7.24.8-stable v26.7.24.8-stable",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.7.24.8-stable",
+   "notes": "Release v26.8.20.9-lts v26.8.20.9-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.20.9-lts",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "kometa": {
@@ -526,6 +526,36 @@
    "notes": "Greetings DNS fans! Thanks to all contributors involved in this release! This is a community project and we couldn't do it without all of your contributions! Sincerely, --Tom Limoncelli Monthly video call!: Everyone is invited to the Monthly DNSControl Community Video Conference Call on the 2nd Tue…",
    "source_url": "https://github.com/DNSControl/dnscontrol/releases/tag/v5.3.1",
    "page_url": "https://www.firmwarely.com/devices/dnscontrol/"
+  },
+  "home-assistant-core": {
+   "id": "home-assistant-core",
+   "brand": "Home Assistant",
+   "model": "Core (monthly release)",
+   "category": "S",
+   "status": "update",
+   "version": "2026.10.0",
+   "previous": "2026.9.4",
+   "released": "2026-10-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "https://www.home-assistant.io/blog/2026/10/07/release-202610/",
+   "source_url": "https://github.com/home-assistant/core/releases/tag/2026.10.0",
+   "page_url": "https://www.firmwarely.com/devices/home-assistant-core/"
+  },
+  "livekit": {
+   "id": "livekit",
+   "brand": "LiveKit",
+   "model": "Real-time video and audio server",
+   "category": "A",
+   "status": "update",
+   "version": "1.13.9",
+   "previous": "1.13.8",
+   "released": "2026-10-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "Please note that release v1.13.8 introduced a behaviour change that caused egress start failures explained in #​4955. This release restores the behaviour to what it was in v1.13.7 and before. Changed: bump protocol and psrpc deps (#​4958) sfu/buffer: parse the dependency descriptor without allocati…",
+   "source_url": "https://github.com/livekit/livekit/releases/tag/v1.13.9",
+   "page_url": "https://www.firmwarely.com/devices/livekit/"
   }
  }
 }

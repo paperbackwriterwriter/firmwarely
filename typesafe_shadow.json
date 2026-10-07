@@ -8568,6 +8568,60 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.8.20.9-lts",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-07T17:23:04+00:00",
+   "notes_chars": 37,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "home-assistant-core",
+   "version": "2026.10.0",
+   "name": "Home Assistant Core (monthly release)",
+   "judged_at": "2026-10-07T17:23:04+00:00",
+   "notes_chars": 61,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.3,
+    "security_fix_plain": 0.33,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "livekit",
+   "version": "1.13.9",
+   "name": "LiveKit Real-time video and audio server",
+   "judged_at": "2026-10-07T17:23:04+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
