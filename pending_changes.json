@@ -503,13 +503,13 @@
    "model": "Vector database",
    "category": "A",
    "status": "update",
-   "version": "1.39.10",
+   "version": "1.40.0",
    "previous": "1.39.9",
-   "released": "2026-10-06",
+   "released": "2026-10-07",
    "date_known": true,
    "eol": false,
-   "notes": "Breaking Changes: none New Features: none Fixes: fix(object-ttl): stop a panicking shard delete from ending a collection's sweep Authz bugfix sweep fix(modules): read a fractional json.Number in float module settings fix(object-ttl): stop sweeping a shard or tenant whose delete makes no progress En…",
-   "source_url": "https://github.com/weaviate/weaviate/releases/tag/v1.39.10",
+   "notes": "Breaking Changes: none Namespaces (GA): Namespaces add control-plane and data isolation between users on a shared cluster. Namespaces: Gate tenant actions Namespaces: Add plumbing for namespace exister Pin replacement replicas to a namespace's home node Namespaces: Effective-suspended derivation + …",
+   "source_url": "https://github.com/weaviate/weaviate/releases/tag/v1.40.0",
    "page_url": "https://www.firmwarely.com/devices/weaviate/"
   },
   "langflow": {
@@ -676,6 +676,21 @@
    "notes": "The following summarizes the changes compared to the previous release v0.8.0. Full Changelog: https://github.com/ob-f/OpenBot/compare/v0.8.0...v0.9.0 New Features: Add a settings drawer, network server selection, and switching between tilt and on-screen driving modes to the Flutter controller OpenB…",
    "source_url": "https://github.com/ob-f/OpenBot/releases/tag/v0.9.0",
    "page_url": "https://www.firmwarely.com/devices/openbot/"
+  },
+  "strapi": {
+   "id": "strapi",
+   "brand": "Strapi",
+   "model": "Headless CMS",
+   "category": "A",
+   "status": "update",
+   "version": "5.57.0",
+   "previous": "5.56.0",
+   "released": "2026-10-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "5.57.0 (2026-10-07): 🚀 New feature: cli: add strapi enterprise install command (#​27849) content-type-builder: Preserve data on renaming attributes (#​26749) review-workflows: record workflow and review actions in audit logs (#​27814) 🔥 Bug fix: updating xhmikosr/decompress (#​27885) documentId upl…",
+   "source_url": "https://github.com/strapi/strapi/releases/tag/v5.57.0",
+   "page_url": "https://www.firmwarely.com/devices/strapi/"
   }
  }
 }
