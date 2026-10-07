@@ -485,6 +485,10 @@ def test_names_said_once():
                     ("home-assistant-voice-pe", False)]:
         if i in devs_by_id:
             check(f"is_software: {i}", build_pages.is_software(devs_by_id[i]), want)
+    # a software page gets software advice, whatever category it is filed under
+    hw_advice = [i for i in ("kong", "pcsx2") if i in devs_by_id and
+                 any(x in build_pages.device_page(devs_by_id[i]) for x in ("192.168.1.1", "Consoles update through", '"applicationCategory": "Firmware"'))]
+    check("software pages carry no hardware update advice", hw_advice, [])
     check("ChimeraOS is not a doorbell", fetch.icon_for({"brand": "ChimeraOS", "model": "Couch gaming OS", "category": "C"}) != "doorbell", True)
     # the pages that list devices in the browser use the same rule
     for page in ("index.html", "dashboard.html", "my-devices.html"):
