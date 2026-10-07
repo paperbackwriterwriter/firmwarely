@@ -103,8 +103,9 @@ jobs:
           # vercel.json carries the redirects for devices we don't publish, and build_pages
           # rewrites it from the catalogue — leaving it out would let a rule for a device
           # that has come back shadow its page, because Vercel redirects before it serves files.
-          git add devices.json sources.json pending_changes.json weekly_changes.json digest_state.json typesafe_shadow.json redirects.json vercel.json \
-                  devices category brands 404.html sitemap.xml sitemaps robots.txt pro legal support
+          PUBLISHED="devices.json sources.json pending_changes.json weekly_changes.json digest_state.json typesafe_shadow.json redirects.json vercel.json
+                     devices category brands 404.html sitemap.xml sitemaps robots.txt pro legal support"
+          git add $PUBLISHED
           if git diff --cached --quiet; then
             echo "No changes."
             exit 0
@@ -118,8 +119,29 @@ jobs:
           git commit -m "check: update devices.json ($(date -u +%Y-%m-%dT%H:%MZ))"
           # rebase onto the branch this run is on (main on schedule; a PR branch when dispatched
           # for validation) — pulling main into a shallow PR checkout conflicts on every file
-          git pull --rebase origin "$GITHUB_REF_NAME"
-          git push origin "HEAD:$GITHUB_REF_NAME"
+          for attempt in 1 2 3; do
+            git fetch -q origin "$GITHUB_REF_NAME"
+            if git rebase -q FETCH_HEAD; then
+              git push origin "HEAD:$GITHUB_REF_NAME" && exit 0
+              continue
+            fi
+            # A change merged while this run was checking and both touched generated pages.
+            # Never hand-merge those: keep this run's data, take the branch as it now is,
+            # re-apply the hand edits and rebuild every page with the merged code.
+            git rebase --abort
+            echo "Branch moved during the run (attempt $attempt); rebuilding on top of it."
+            SAVED="$RUNNER_TEMP/run-data"; rm -rf "$SAVED"; mkdir -p "$SAVED"
+            cp pending_changes.json weekly_changes.json digest_state.json typesafe_shadow.json sources.json devices.json "$SAVED"/ 2>/dev/null || true
+            git reset -q --hard FETCH_HEAD
+            python3 scripts/rebase_data.py "$SAVED"
+            python3 scripts/catalog_edits.py
+            python3 scripts/build_pages.py
+            git add $PUBLISHED
+            git diff --cached --quiet && exit 0
+            git commit -q -m "check: update devices.json ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git push origin "HEAD:$GITHUB_REF_NAME" && exit 0
+          done
+          echo "::error::could not push after 3 attempts"; exit 1
 
       - name: Open an issue with the digest (emails you)
         if: ${{ hashFiles('digest.md') != '' }}

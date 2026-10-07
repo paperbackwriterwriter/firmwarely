@@ -615,7 +615,7 @@ def build_issue_summary(changed):
     links, so it can never @mention or cross-reference anyone on GitHub."""
     date = TODAY.strftime("%b %-d, %Y")
     lines = [f"# Firmware digest — {date}", "",
-             f"{len(changed)} change(s). Full digest with release notes is in the Beehiiv draft.", ""]
+             f"{len(changed)} change(s). Release notes are on each device's page and in subscribers' emails.", ""]
     for d in sorted(changed, key=lambda x: (x["status"] != "critical", x["brand"], x["model"])):
         label = {"critical": " security", "update": " update", "eol": " end of life"}.get(d["status"], "")
         flag = status_dot(d) + label
@@ -672,7 +672,13 @@ def beehiiv_draft(title, html_body):
             body = json.loads(r.read().decode())
             print(f"beehiiv: draft created — {body.get('data', {}).get('web_url') or body.get('data', {}).get('id')}")
     except urllib.error.HTTPError as e:
-        print(f"beehiiv: draft FAILED {e.code}: {e.read().decode()[:300]}")
+        detail = e.read().decode("utf-8", "replace")[:300]
+        # the posts API is Enterprise-only; on any other plan this fails every day by design,
+        # and the digest still goes out as the GitHub issue and the subscriber emails
+        if e.code == 403 and "NOT_ENTERPRISE_PLAN" in detail:
+            print("beehiiv: drafts need Beehiiv's Enterprise plan; skipped (the issue and the emails carry the digest)")
+            return
+        print(f"beehiiv: draft FAILED {e.code}: {detail}")
     except Exception as e:
         print(f"beehiiv: draft FAILED: {e}")
 

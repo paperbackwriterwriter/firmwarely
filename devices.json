@@ -23650,33 +23650,6 @@
    "icon": "board"
   },
   {
-   "id": "node-serialport",
-   "brand": "SerialPort",
-   "model": "Node.js serial port library",
-   "category": "M",
-   "tracked": true,
-   "version": "13.0.0",
-   "released": "2024-12-24",
-   "date_known": true,
-   "notes": "Breaking Changes Drop Node 16 and 18 Lots of bug fixes and people to thank from bindings-cpp.0.0. Big thanks to; for https://github.com/serialport/node-serialport/pull/2709 for https://github.com/serialport/node-serialport/pull/2879 (huge help) for fixing types in https://github.com/serialport/node…",
-   "source_url": "https://github.com/serialport/node-serialport/releases/tag/v13.0.0",
-   "product_url": "https://github.com/serialport/node-serialport",
-   "update_url": "https://github.com/serialport/node-serialport/releases",
-   "history": [
-    {
-     "version": "13.0.0",
-     "released": "2024-12-24",
-     "date_known": true
-    }
-   ],
-   "etag": "\"8d38a36f137eb5cbbd7983b5b32f3cba5e1a0ff999ed5ed89715296713e61359\"",
-   "checked": "2026-10-07T10:19:06+00:00",
-   "source_status": "ok",
-   "eol": false,
-   "status": "stale",
-   "icon": "app"
-  },
-  {
    "id": "freeswitch",
    "brand": "FreeSWITCH",
    "model": "Telephony server",
@@ -23876,36 +23849,9 @@
    "icon": "router"
   },
   {
-   "id": "twisted",
-   "brand": "Twisted",
-   "model": "Event-driven networking engine written in Python",
-   "category": "R",
-   "tracked": true,
-   "version": "26.4.0",
-   "released": "2026-05-11",
-   "date_known": true,
-   "notes": "Twisted 26.4.0 (2026-05-11) ============================== This is the last release with support for Python 3.9. Security -------- twisted.names was fix for Denial of Service (DoS) attack via resource exhaustion during DNS name decompression. Reported and fixed by Tomas Illuminati Balbin CVE-2026-4…",
-   "source_url": "https://github.com/twisted/twisted/releases/tag/twisted-26.4.0",
-   "product_url": "https://github.com/twisted/twisted",
-   "update_url": "https://github.com/twisted/twisted/releases",
-   "history": [
-    {
-     "version": "26.4.0",
-     "released": "2026-05-11",
-     "date_known": true
-    }
-   ],
-   "etag": "\"36c77901b68e8dcc6365c3ea2ba77253d661c27edeb6cc3ee775133959557c4d\"",
-   "checked": "2026-10-07T10:19:06+00:00",
-   "source_status": "ok",
-   "eol": false,
-   "status": "current",
-   "icon": "app"
-  },
-  {
    "id": "rethink-app",
-   "brand": "Rethink App",
-   "model": "DNS over HTTPS / DNS over Tor / DNSCrypt client, WireGuard",
+   "brand": "Rethink",
+   "model": "DNS and firewall app for Android",
    "category": "R",
    "tracked": true,
    "version": "0.5.7",
@@ -23931,8 +23877,8 @@
   },
   {
    "id": "hickory-dns",
-   "brand": "Hickory Dns",
-   "model": "Rust based DNS client, server, and resolver",
+   "brand": "Hickory DNS",
+   "model": "DNS server and resolver",
    "category": "R",
    "tracked": true,
    "version": "0.26.3",
@@ -23958,8 +23904,8 @@
   },
   {
    "id": "doggo",
-   "brand": "Doggo",
-   "model": "Dog",
+   "brand": "doggo",
+   "model": "DNS lookup tool",
    "category": "R",
    "tracked": true,
    "version": "1.4.0",
@@ -23985,8 +23931,8 @@
   },
   {
    "id": "dnscontrol",
-   "brand": "Dnscontrol",
-   "model": "Infrastructure as code for DNS",
+   "brand": "DNSControl",
+   "model": "DNS as code",
    "category": "R",
    "tracked": true,
    "version": "5.3.0",
@@ -24018,8 +23964,8 @@
   {
    "id": "findomain",
    "brand": "Findomain",
-   "model": "Fastest and complete solution for domain recognition",
-   "category": "R",
+   "model": "Subdomain finder",
+   "category": "A",
    "tracked": true,
    "version": "10.0.1",
    "released": "2025-07-28",
@@ -24076,8 +24022,8 @@
   },
   {
    "id": "rpcs3",
-   "brand": "Rpcs3",
-   "model": "PlayStation 3 emulator and debugger",
+   "brand": "RPCS3",
+   "model": "PlayStation 3 emulator",
    "category": "C",
    "tracked": true,
    "version": "0.0.43",
@@ -24109,7 +24055,7 @@
   {
    "id": "ruffle",
    "brand": "Ruffle",
-   "model": "Flash Player emulator written in Rust",
+   "model": "Flash Player emulator",
    "category": "C",
    "tracked": true,
    "version": "0.7.0",
@@ -24140,8 +24086,8 @@
   },
   {
    "id": "nginx-proxy",
-   "brand": "Nginx Proxy",
-   "model": "Automated Nginx Reverse Proxy for Docker",
+   "brand": "nginx-proxy",
+   "model": "Automatic reverse proxy for Docker",
    "category": "R",
    "tracked": true,
    "version": "1.11.6",
@@ -24167,8 +24113,8 @@
   },
   {
    "id": "bunkerweb",
-   "brand": "Bunkerweb",
-   "model": "Cloud-native Web Application Firewall (WAF)",
+   "brand": "BunkerWeb",
+   "model": "Web application firewall",
    "category": "R",
    "tracked": true,
    "version": "1.6.15",
@@ -24195,7 +24141,7 @@
   {
    "id": "tyk",
    "brand": "Tyk",
-   "model": "API and AI Gateway",
+   "model": "API gateway",
    "category": "R",
    "tracked": true,
    "version": "5.15.1",
@@ -24227,7 +24173,7 @@
   {
    "id": "ocelot",
    "brand": "Ocelot",
-   "model": "NET API Gateway",
+   "model": ".NET API gateway",
    "category": "R",
    "tracked": true,
    "version": "25.0.1",
@@ -24253,8 +24199,8 @@
   },
   {
    "id": "bfe",
-   "brand": "Bfe",
-   "model": "Layer 7 load balancer from baidu",
+   "brand": "BFE",
+   "model": "Layer 7 load balancer",
    "category": "R",
    "tracked": true,
    "version": "1.8.8",
@@ -24281,7 +24227,7 @@
   {
    "id": "easegress",
    "brand": "Easegress",
-   "model": "Cloud Native traffic orchestration system",
+   "model": "Traffic orchestration gateway",
    "category": "R",
    "tracked": true,
    "version": "2.11.0",
@@ -24308,8 +24254,8 @@
   {
    "id": "modlishka",
    "brand": "Modlishka",
-   "model": "Reverse Proxy",
-   "category": "R",
+   "model": "Phishing simulation proxy",
+   "category": "A",
    "tracked": true,
    "version": "1.1.1",
    "released": "2025-05-18",
@@ -24334,8 +24280,8 @@
   },
   {
    "id": "agentgateway",
-   "brand": "Agentgateway",
-   "model": "Next Generation Agentic Proxy for AI Agents and MCP servers",
+   "brand": "agentgateway",
+   "model": "AI agent and MCP proxy",
    "category": "R",
    "tracked": true,
    "version": "1.6.0",
@@ -24366,8 +24312,8 @@
   },
   {
    "id": "zrok",
-   "brand": "Zrok",
-   "model": "Secure internet sharing made simple",
+   "brand": "zrok",
+   "model": "Secure sharing tunnel",
    "category": "R",
    "tracked": true,
    "version": "2.0.7",
@@ -24408,8 +24354,8 @@
   },
   {
    "id": "godoxy",
-   "brand": "Godoxy",
-   "model": "High-performance reverse proxy and container orchestrator",
+   "brand": "GoDoxy",
+   "model": "Reverse proxy and container manager",
    "category": "R",
    "tracked": true,
    "version": "0.32.1",
@@ -24446,7 +24392,7 @@
   {
    "id": "openbot",
    "brand": "OpenBot",
-   "model": "Leverages smartphones as brains for low-cost robots",
+   "model": "Smartphone-powered robot platform",
    "category": "M",
    "tracked": true,
    "version": "0.9.0",
@@ -24477,8 +24423,8 @@
   },
   {
    "id": "arduino-pico",
-   "brand": "Arduino Pico",
-   "model": "Raspberry Pi Pico Arduino core",
+   "brand": "Arduino-Pico",
+   "model": "Arduino core for Raspberry Pi Pico",
    "category": "M",
    "tracked": true,
    "version": "6.2.0",
@@ -24509,9 +24455,9 @@
   },
   {
    "id": "nnn",
-   "brand": "Nnn",
-   "model": "N³ The unorthodox terminal file manager",
-   "category": "N",
+   "brand": "nnn",
+   "model": "Terminal file manager",
+   "category": "P",
    "tracked": true,
    "version": "5.3",
    "released": "2026-08-15",
@@ -24536,8 +24482,8 @@
   },
   {
    "id": "sherpa-onnx",
-   "brand": "Sherpa Onnx",
-   "model": "Speech-to-text, text-to-speech, speaker diarization, speech",
+   "brand": "sherpa-onnx",
+   "model": "Offline speech recognition and TTS",
    "category": "M",
    "tracked": true,
    "version": "1.13.8",
@@ -24563,8 +24509,8 @@
   },
   {
    "id": "pivpn",
-   "brand": "Pivpn",
-   "model": "Simplest VPN installer, designed for Raspberry Pi",
+   "brand": "PiVPN",
+   "model": "VPN installer for Raspberry Pi",
    "category": "R",
    "tracked": true,
    "version": "4.11.1",
@@ -24590,8 +24536,8 @@
   },
   {
    "id": "deskhop",
-   "brand": "Deskhop",
-   "model": "Desktop Switching Device",
+   "brand": "DeskHop",
+   "model": "Keyboard and mouse switcher",
    "category": "M",
    "tracked": true,
    "version": "0.80",
@@ -24645,7 +24591,7 @@
   {
    "id": "glslviewer",
    "brand": "glslViewer",
-   "model": "Console-based GLSL Sandbox for 2D/3D shaders",
+   "model": "GLSL shader sandbox",
    "category": "M",
    "tracked": true,
    "version": "3.5.2",
@@ -24672,7 +24618,7 @@
   {
    "id": "raspotify",
    "brand": "Raspotify",
-   "model": "Spotify Connect client that mostly Just Works™",
+   "model": "Spotify Connect for Raspberry Pi",
    "category": "M",
    "tracked": true,
    "version": "0.48.3",
@@ -24698,9 +24644,9 @@
   },
   {
    "id": "xplr",
-   "brand": "Xplr",
-   "model": "Hackable, minimal, fast TUI file explorer",
-   "category": "N",
+   "brand": "xplr",
+   "model": "Terminal file explorer",
+   "category": "P",
    "tracked": true,
    "version": "1.1.2",
    "released": "2026-09-15",
@@ -24726,7 +24672,7 @@
   {
    "id": "linkace",
    "brand": "LinkAce",
-   "model": "Archive to collect links of your favorite websites",
+   "model": "Bookmark archive",
    "category": "A",
    "tracked": true,
    "version": "2.6.1",
@@ -24753,7 +24699,7 @@
   {
    "id": "tianji",
    "brand": "Tianji",
-   "model": "Insight into everything, Website Analytics + Uptime Monitor",
+   "model": "Website analytics and uptime monitor",
    "category": "A",
    "tracked": true,
    "version": "1.33.7",
@@ -24795,7 +24741,7 @@
   {
    "id": "bambuddy",
    "brand": "Bambuddy",
-   "model": "Bambu Lab",
+   "model": "Bambu Lab printer manager",
    "category": "M",
    "tracked": true,
    "version": "1.2.5.7",
@@ -24827,7 +24773,7 @@
   {
    "id": "gokapi",
    "brand": "Gokapi",
-   "model": "Selfhosted Firefox Send alternative without public upload",
+   "model": "File sharing server",
    "category": "A",
    "tracked": true,
    "version": "2.2.4",
@@ -24853,8 +24799,8 @@
   },
   {
    "id": "voidauth",
-   "brand": "Voidauth",
-   "model": "Single Sign-On for Your Self-Hosted Universe",
+   "brand": "VoidAuth",
+   "model": "Single sign-on server",
    "category": "A",
    "tracked": true,
    "version": "1.16.0",
@@ -24881,7 +24827,7 @@
   {
    "id": "alexandrie",
    "brand": "Alexandrie",
-   "model": "Open-source, offline-first Notion, Obsidian & Confluence",
+   "model": "Offline-first note-taking app",
    "category": "A",
    "tracked": true,
    "version": "8.14.2",
@@ -24908,7 +24854,7 @@
   {
    "id": "donetick",
    "brand": "Donetick",
-   "model": "Open-source, user-friendly app",
+   "model": "Task and chore manager",
    "category": "A",
    "tracked": true,
    "version": "0.1.80",
@@ -24940,7 +24886,7 @@
   {
    "id": "dockflare",
    "brand": "DockFlare",
-   "model": "Automate Cloudflare Tunnels with Docker Labels",
+   "model": "Cloudflare Tunnel manager for Docker",
    "category": "R",
    "tracked": true,
    "version": "3.1.6",
@@ -24967,8 +24913,8 @@
   {
    "id": "local-deep-research",
    "brand": "Local Deep Research",
-   "model": "~95% on SimpleQA (e.g",
-   "category": "S",
+   "model": "AI research assistant",
+   "category": "A",
    "tracked": true,
    "version": "1.10.7",
    "released": "2026-08-28",
@@ -24993,8 +24939,8 @@
   },
   {
    "id": "android",
-   "brand": "Android",
-   "model": "Home Assistant Companion",
+   "brand": "Home Assistant",
+   "model": "Android companion app",
    "category": "S",
    "tracked": true,
    "version": "2026.8.4",
@@ -25052,8 +24998,8 @@
   },
   {
    "id": "dust3d",
-   "brand": "Dust3d",
-   "model": "Cross-platform 3D modeling software",
+   "brand": "Dust3D",
+   "model": "3D modeling software",
    "category": "M",
    "tracked": true,
    "version": "1.1.6",
@@ -25079,8 +25025,8 @@
   },
   {
    "id": "ha-bambulab",
-   "brand": "Ha Bambulab",
-   "model": "Home Assistant Integration for Bambu Lab Printers",
+   "brand": "ha-bambulab",
+   "model": "Bambu Lab Home Assistant integration",
    "category": "S",
    "tracked": true,
    "version": "2.2.26",
@@ -25134,7 +25080,7 @@
   {
    "id": "uvtools",
    "brand": "UVtools",
-   "model": "MSLA/DLP, file analysis, calibration, repair, conversion",
+   "model": "Resin printer file toolkit",
    "category": "M",
    "tracked": true,
    "version": "7.0.2",
@@ -25171,7 +25117,7 @@
   {
    "id": "rackstack",
    "brand": "Rackstack",
-   "model": "Modular 3d-printable mini rack system",
+   "model": "3D-printable mini rack",
    "category": "M",
    "tracked": true,
    "version": "1.2.0",
@@ -25196,63 +25142,9 @@
    "icon": "app"
   },
   {
-   "id": "chi",
-   "brand": "Chi",
-   "model": "Lightweight, idiomatic and composable router",
-   "category": "R",
-   "tracked": true,
-   "version": "5.3.2",
-   "released": "2026-08-20",
-   "date_known": true,
-   "notes": "What's Changed: feat(middleware): add text/markdown, text/csv, text/vtt to default compressible types docs: deployment recipe for middleware.ClientIPFromXFFTrustedProxies() fix: don't drop handlers that collide with a Mount()/Route() pattern Don't duplicate methods in Allow: header for 405 response…",
-   "source_url": "https://github.com/go-chi/chi/releases/tag/v5.3.2",
-   "product_url": "https://github.com/go-chi/chi",
-   "update_url": "https://github.com/go-chi/chi/releases",
-   "history": [
-    {
-     "version": "5.3.2",
-     "released": "2026-08-20",
-     "date_known": true
-    }
-   ],
-   "etag": "\"eb034a4fc29402180eb01da7dfcd2e9e255b1f50bedca3ff8ccbb2c343faeeef\"",
-   "checked": "2026-10-07T10:19:06+00:00",
-   "source_status": "ok",
-   "eol": false,
-   "status": "current",
-   "icon": "router"
-  },
-  {
-   "id": "uwebsockets",
-   "brand": "uWebSockets",
-   "model": "Simple, secure & standards compliant web server",
-   "category": "R",
-   "tracked": true,
-   "version": "20.80.0",
-   "released": "2026-09-03",
-   "date_known": true,
-   "notes": "Standards compliance tracking & fixes: We are now part of the excellent Http11Probe (https://http-probe.com) tracking RFC9112, 9110 compliance of various servers. We are 90th percentile: Even though we've been fully standards compliant when it comes to WebSockets for the last decade, this release f…",
-   "source_url": "https://github.com/uNetworking/uWebSockets/releases/tag/v20.80.0",
-   "product_url": "https://github.com/uNetworking/uWebSockets",
-   "update_url": "https://github.com/uNetworking/uWebSockets/releases",
-   "history": [
-    {
-     "version": "20.80.0",
-     "released": "2026-09-03",
-     "date_known": true
-    }
-   ],
-   "etag": "\"4fe0728e830da564cd39f5c1501ef61f186375338c72dfdf1f2483e19235ed81\"",
-   "checked": "2026-10-07T10:19:06+00:00",
-   "source_status": "ok",
-   "eol": false,
-   "status": "update",
-   "icon": "app"
-  },
-  {
    "id": "lantern",
    "brand": "Lantern",
-   "model": "VPN for speed, privacy, and censorship circumvention",
+   "model": "Censorship circumvention VPN",
    "category": "R",
    "tracked": true,
    "version": "10.0.0",
@@ -25277,36 +25169,9 @@
    "icon": "router"
   },
   {
-   "id": "single-spa",
-   "brand": "Single Spa",
-   "model": "Router for easy microfrontends",
-   "category": "R",
-   "tracked": true,
-   "version": "6.0.3",
-   "released": "2024-09-29",
-   "date_known": true,
-   "notes": "What's Changed: Upgrade build dependencies, upgrade pnpm version Upgrade rollup (security fix) Full Changelog: https://github.com/single-spa/single-spa/blob/main/CHANGELOG.md#603",
-   "source_url": "https://github.com/single-spa/single-spa/releases/tag/v6.0.3",
-   "product_url": "https://github.com/single-spa/single-spa",
-   "update_url": "https://github.com/single-spa/single-spa/releases",
-   "history": [
-    {
-     "version": "6.0.3",
-     "released": "2024-09-29",
-     "date_known": true
-    }
-   ],
-   "etag": "\"d7a7e47323291f0459090ade1b7b83ca4d83a7d59b491894f145e89d4a7e8a22\"",
-   "checked": "2026-10-07T10:19:06+00:00",
-   "source_status": "ok",
-   "eol": false,
-   "status": "stale",
-   "icon": "router"
-  },
-  {
    "id": "avideo",
    "brand": "AVideo",
-   "model": "Own Broadcast Network",
+   "model": "Video streaming platform",
    "category": "A",
    "tracked": true,
    "version": "29.3.0",
@@ -25364,8 +25229,8 @@
   },
   {
    "id": "elasticsearch-dump",
-   "brand": "Elasticsearch Dump",
-   "model": "Import and export tools for elasticsearch & opensearch",
+   "brand": "elasticsearch-dump",
+   "model": "Elasticsearch import and export tool",
    "category": "N",
    "tracked": true,
    "version": "6.125.1",
@@ -25419,7 +25284,7 @@
   {
    "id": "zerobyte",
    "brand": "Zerobyte",
-   "model": "Backup automation for self-hosters",
+   "model": "Backup automation",
    "category": "N",
    "tracked": true,
    "version": "0.43.2",
@@ -25476,36 +25341,9 @@
    "icon": "console"
   },
   {
-   "id": "laravel-backup",
-   "brand": "Laravel Backup",
-   "model": "Package to backup your Laravel app",
-   "category": "N",
-   "tracked": true,
-   "version": "10.3.3",
-   "released": "2026-09-14",
-   "date_known": true,
-   "notes": "An empty BACKUP_ARCHIVE_PASSWORD in your .env now disables encryption, as documented. Previously the empty string was treated as a password, which made the backup fail with ZipArchive::close(): Invalid argument. Thanks to for tracking this down. What's Changed: Fix an empty-string archive password …",
-   "source_url": "https://github.com/spatie/laravel-backup/releases/tag/10.3.3",
-   "product_url": "https://github.com/spatie/laravel-backup",
-   "update_url": "https://github.com/spatie/laravel-backup/releases",
-   "history": [
-    {
-     "version": "10.3.3",
-     "released": "2026-09-14",
-     "date_known": true
-    }
-   ],
-   "etag": "\"7a106d26dbf878e892f5b4c494f84134f87f393fe7e2528d785ecd595ad9992d\"",
-   "checked": "2026-10-07T10:19:06+00:00",
-   "source_status": "ok",
-   "eol": false,
-   "status": "update",
-   "icon": "app"
-  },
-  {
    "id": "imessage-exporter",
-   "brand": "Imessage Exporter",
-   "model": "Export iMessage data + run iMessage Diagnostics",
+   "brand": "imessage-exporter",
+   "model": "iMessage export tool",
    "category": "N",
    "tracked": true,
    "version": "4.3.0",
@@ -25531,8 +25369,8 @@
   },
   {
    "id": "wal-g",
-   "brand": "Wal G",
-   "model": "Archival and Restoration for databases in the Cloud",
+   "brand": "WAL-G",
+   "model": "Database backup and restore",
    "category": "N",
    "tracked": true,
    "version": "3.0.9",
@@ -25558,8 +25396,8 @@
   },
   {
    "id": "docker-volume-backup",
-   "brand": "Docker Volume Backup",
-   "model": "Backup Docker volumes locally",
+   "brand": "docker-volume-backup",
+   "model": "Docker volume backups",
    "category": "N",
    "tracked": true,
    "version": "2.49.1",
@@ -25585,8 +25423,8 @@
   },
   {
    "id": "docker-android",
-   "brand": "Docker Android",
-   "model": "Android in docker solution with noVNC supported, video",
+   "brand": "docker-android",
+   "model": "Emulated phones in containers",
    "category": "C",
    "tracked": true,
    "version": "3.7.0-p1",
@@ -25708,8 +25546,8 @@
   },
   {
    "id": "retrobios",
-   "brand": "Retrobios",
-   "model": "Source-verified BIOS and firmware packs",
+   "brand": "RetroBIOS",
+   "model": "Emulator BIOS packs",
    "category": "C",
    "tracked": true,
    "version": "2026.09.04",
@@ -25763,7 +25601,7 @@
   {
    "id": "provenance",
    "brand": "Provenance",
-   "model": "IOS & tvOS multi-emulator frontend",
+   "model": "iOS and tvOS emulator frontend",
    "category": "C",
    "tracked": true,
    "version": "3.3.0",
@@ -25816,8 +25654,8 @@
   },
   {
    "id": "sharpemu",
-   "brand": "Sharpemu",
-   "model": "Experimental PlayStation 5 emulator",
+   "brand": "SharpEmu",
+   "model": "PlayStation 5 emulator",
    "category": "C",
    "tracked": true,
    "version": "0.0.5-nexus",
@@ -25849,7 +25687,7 @@
   {
    "id": "melonds",
    "brand": "melonDS",
-   "model": "DS emulator, sorta",
+   "model": "Nintendo DS emulator",
    "category": "C",
    "tracked": true,
    "version": "1.1",
@@ -25876,7 +25714,7 @@
   {
    "id": "browserbox",
    "brand": "BrowserBox",
-   "model": "🇺🇸Secure remote browsing anywhere, any way you like",
+   "model": "Remote browser isolation",
    "category": "R",
    "tracked": true,
    "version": "19.3.1",
@@ -25903,7 +25741,7 @@
   {
    "id": "vulcain",
    "brand": "Vulcain",
-   "model": "Idiomatic client-driven REST APIs",
+   "model": "REST API preload gateway",
    "category": "R",
    "tracked": true,
    "version": "1.4.5",
@@ -25939,8 +25777,8 @@
   },
   {
    "id": "krakend-ce",
-   "brand": "Krakend Ce",
-   "model": "KrakenD Community Edition",
+   "brand": "KrakenD",
+   "model": "API gateway (Community Edition)",
    "category": "R",
    "tracked": true,
    "version": "3.0.0",
@@ -25994,7 +25832,7 @@
   {
    "id": "piko",
    "brand": "Piko",
-   "model": "Alternative to Ngrok, designed to serve production traffic",
+   "model": "Self-hosted ngrok alternative",
    "category": "R",
    "tracked": true,
    "version": "0.9.1",
@@ -26026,7 +25864,7 @@
   {
    "id": "trickster",
    "brand": "Trickster",
-   "model": "HTTP Reverse Proxy Cache and Time Series DB Query",
+   "model": "HTTP reverse proxy cache",
    "category": "R",
    "tracked": true,
    "version": "2.1.0",
@@ -26052,8 +25890,8 @@
   },
   {
    "id": "frpmgr",
-   "brand": "Frpmgr",
-   "model": "User-friendly desktop GUI client for FRP on Windows",
+   "brand": "frpmgr",
+   "model": "Windows GUI for FRP",
    "category": "R",
    "tracked": true,
    "version": "1.27.2",
@@ -26107,8 +25945,8 @@
   {
    "id": "wordops",
    "brand": "WordOps",
-   "model": "Install and manage a high performance WordPress stack",
-   "category": "R",
+   "model": "WordPress server stack",
+   "category": "A",
    "tracked": true,
    "version": "3.23.1",
    "released": "2026-08-07",
@@ -26161,7 +25999,7 @@
   {
    "id": "gladys",
    "brand": "Gladys",
-   "model": "Privacy-first, open-source home assistant",
+   "model": "Home automation hub",
    "category": "S",
    "tracked": true,
    "version": "5.1.4",
@@ -26187,8 +26025,8 @@
   },
   {
    "id": "button-card",
-   "brand": "Button Card",
-   "model": "Lovelace button-card for home assistant",
+   "brand": "button-card",
+   "model": "Home Assistant dashboard card",
    "category": "S",
    "tracked": true,
    "version": "7.0.1",
@@ -26214,8 +26052,8 @@
   },
   {
    "id": "ios",
-   "brand": "iOS",
-   "model": "Iphone",
+   "brand": "Home Assistant",
+   "model": "iOS companion app",
    "category": "S",
    "tracked": true,
    "version": "2026.9.3",
@@ -26241,8 +26079,8 @@
   },
   {
    "id": "homeassistant-tapo-control",
-   "brand": "HomeAssistant Tapo Control",
-   "model": "Control for Tapo cameras as a Home Assistant component",
+   "brand": "Tapo Control",
+   "model": "Home Assistant integration for Tapo cameras",
    "category": "S",
    "tracked": true,
    "version": "7.2.7",
@@ -26278,8 +26116,8 @@
   },
   {
    "id": "lovelace-xiaomi-vacuum-map-card",
-   "brand": "Lovelace Xiaomi Vacuum Map Card",
-   "model": "This card provides a user-friendly way",
+   "brand": "Xiaomi Vacuum Map Card",
+   "model": "Home Assistant dashboard card",
    "category": "S",
    "tracked": true,
    "version": "2.4.1",
@@ -26306,7 +26144,7 @@
   {
    "id": "openccu",
    "brand": "OpenCCU",
-   "model": "House",
+   "model": "HomeMatic smart home OS",
    "category": "S",
    "tracked": true,
    "version": "3.89.11.20260919",
@@ -26333,7 +26171,7 @@
   {
    "id": "http-shortcuts",
    "brand": "HTTP Shortcuts",
-   "model": "Android app",
+   "model": "Android automation app",
    "category": "S",
    "tracked": true,
    "version": "4.8.1",
@@ -26369,9 +26207,9 @@
   },
   {
    "id": "netboot-xyz",
-   "brand": "Netboot.xyz",
-   "model": "Favorite operating systems in one place",
-   "category": "R",
+   "brand": "netboot.xyz",
+   "model": "Network boot menu",
+   "category": "P",
    "tracked": true,
    "version": "3.0.3",
    "released": "2026-08-29",
@@ -26428,8 +26266,8 @@
   },
   {
    "id": "ezbookkeeping",
-   "brand": "Ezbookkeeping",
-   "model": "Open source, powerful, self-hosted personal finance app",
+   "brand": "ezBookkeeping",
+   "model": "Personal finance app",
    "category": "A",
    "tracked": true,
    "version": "2.0.1",
@@ -26452,168 +26290,6 @@
    "eol": false,
    "status": "update",
    "icon": "app"
-  },
-  {
-   "id": "ui-router",
-   "brand": "Ui Router",
-   "model": "De-facto solution",
-   "category": "R",
-   "tracked": true,
-   "version": "1.1.2",
-   "released": "2025-12-31",
-   "date_known": true,
-   "notes": "1.1.2 (2025-12-31): Compare/angularjs versions 1.1.1 and 1.1.2 --- Updated/core from 6.1.1 to 6.1.2: Changelog for/core: Compare/core versions 6.1.1 and 6.1.2 Bug Fixes: urlMatcher: Fix potential ReDoS, thanks to www.HeroDevs.com (0c00a12)",
-   "source_url": "https://github.com/angular-ui/ui-router/releases/tag/1.1.2",
-   "product_url": "https://github.com/angular-ui/ui-router",
-   "update_url": "https://github.com/angular-ui/ui-router/releases",
-   "history": [
-    {
-     "version": "1.1.2",
-     "released": "2025-12-31",
-     "date_known": true
-    }
-   ],
-   "etag": "\"3a8792ca31b32309180aef6f944b001b39600965c58e12635565a332d56c10b2\"",
-   "checked": "2026-10-07T10:19:06+00:00",
-   "source_status": "ok",
-   "eol": false,
-   "status": "current",
-   "icon": "router"
-  },
-  {
-   "id": "uwebsockets-js",
-   "brand": "uWebSockets.js",
-   "model": "ΜWebSockets for Node.js back-ends :metal",
-   "category": "R",
-   "tracked": true,
-   "version": "20.71.0",
-   "released": "2026-09-16",
-   "date_known": true,
-   "notes": "Microcaching JavaScript invocations for 13x performance: This release adds the concept of Microcaching. Any idempotent HTTP handler dealing with dynamic-but-public content can benefit from significant (3x) performance improvements and reduced business logic complexity by enabling some degree of mic…",
-   "source_url": "https://github.com/uNetworking/uWebSockets.js/releases/tag/v20.71.0",
-   "product_url": "https://github.com/uNetworking/uWebSockets.js",
-   "update_url": "https://github.com/uNetworking/uWebSockets.js/releases",
-   "history": [
-    {
-     "version": "20.71.0",
-     "released": "2026-09-16",
-     "date_known": true
-    }
-   ],
-   "etag": "\"79f5ac4fba87ccc3eafe6f545915b462df75b0ce7d66b8628a386a291f107949\"",
-   "checked": "2026-10-07T10:19:06+00:00",
-   "source_status": "ok",
-   "eol": false,
-   "status": "update",
-   "icon": "router"
-  },
-  {
-   "id": "path-to-regexp",
-   "brand": "Path To Regexp",
-   "model": "Path string such as `/user/:name` into a regular expression",
-   "category": "R",
-   "tracked": true,
-   "version": "8.4.2",
-   "released": "2026-04-01",
-   "date_known": true,
-   "notes": "Fixed Error on trailing backslash (#​434) 9a78879 Performance Minimize array allocations (#​437) 937c02d Improve compile performance (#​436) 57247e6 Should improve compilation performance by ~25% Remove internal tokenization during parse (#​435) 5844988 Should improve parse performance by ~20% Bund…",
-   "source_url": "https://github.com/pillarjs/path-to-regexp/releases/tag/v8.4.2",
-   "product_url": "https://github.com/pillarjs/path-to-regexp",
-   "update_url": "https://github.com/pillarjs/path-to-regexp/releases",
-   "history": [
-    {
-     "version": "8.4.2",
-     "released": "2026-04-01",
-     "date_known": true
-    }
-   ],
-   "etag": "\"8150ad77f041ba40e3d71f535399a0f8a1c677119fd79b7b29f1cbaaa57a57b7\"",
-   "checked": "2026-10-07T10:19:06+00:00",
-   "source_status": "ok",
-   "eol": false,
-   "status": "current",
-   "icon": "router"
-  },
-  {
-   "id": "wouter",
-   "brand": "Wouter",
-   "model": "Minimalist-friendly ~2.2KB routing for React and Preact",
-   "category": "R",
-   "tracked": true,
-   "version": "3.13.0",
-   "released": "2026-09-30",
-   "date_known": true,
-   "notes": "Adds an opt-in native URLPattern parser for React and Preact, including nested routes (#​576). jsx import { Router, Route } from \"wouter\"; import { urlPatternParser } from \"wouter/url-pattern\"; {(params) =› ‹›User: {params.id ?? \"all\"} } ; For Preact, import the adapter from wouter-preact/url-patte…",
-   "source_url": "https://github.com/molefrog/wouter/releases/tag/v3.13.0",
-   "product_url": "https://github.com/molefrog/wouter",
-   "update_url": "https://github.com/molefrog/wouter/releases",
-   "history": [
-    {
-     "version": "3.13.0",
-     "released": "2026-09-30",
-     "date_known": true
-    }
-   ],
-   "etag": "\"020131528a7b8a19063851ae37d1498ae1867359eb8601f88f4a3529db55fb1f\"",
-   "checked": "2026-10-07T10:19:06+00:00",
-   "source_status": "ok",
-   "eol": false,
-   "status": "update",
-   "icon": "router"
-  },
-  {
-   "id": "routing",
-   "brand": "Routing",
-   "model": "Maps an HTTP request to a set of configuration variables",
-   "category": "R",
-   "tracked": true,
-   "version": "8.1.8",
-   "released": "2026-09-29",
-   "date_known": true,
-   "notes": "Changelog (https://github.com/symfony/routing/compare/v8.1.6...v8.1.8) bug #​66416 Escape identifiers in generated PHP ()",
-   "source_url": "https://github.com/symfony/routing/releases/tag/v8.1.8",
-   "product_url": "https://github.com/symfony/routing",
-   "update_url": "https://github.com/symfony/routing/releases",
-   "history": [
-    {
-     "version": "8.1.8",
-     "released": "2026-09-29",
-     "date_known": true
-    }
-   ],
-   "etag": "\"292faf93c4e25f8337ce297e2d4ec176ad5439876c863d46aee3251da6d4642a\"",
-   "checked": "2026-10-07T10:19:06+00:00",
-   "source_status": "ok",
-   "eol": false,
-   "status": "update",
-   "icon": "router"
-  },
-  {
-   "id": "lura",
-   "brand": "Lura",
-   "model": "Ultra performant API Gateway with middlewares",
-   "category": "R",
-   "tracked": true,
-   "version": "2.13.0",
-   "released": "2025-10-30",
-   "date_known": true,
-   "notes": "What's Changed: Add max_shutdown_wait_time option Update README.md Full Changelog: https://github.com/luraproject/lura/compare/v2.12.1...v2.13.0",
-   "source_url": "https://github.com/luraproject/lura/releases/tag/v2.13.0",
-   "product_url": "https://github.com/luraproject/lura",
-   "update_url": "https://github.com/luraproject/lura/releases",
-   "history": [
-    {
-     "version": "2.13.0",
-     "released": "2025-10-30",
-     "date_known": true
-    }
-   ],
-   "etag": "\"477b89a6e03c5d487de3cbb3496143cbd17292b900073cd3fc38535d3f29c070\"",
-   "checked": "2026-10-07T10:19:06+00:00",
-   "source_status": "ok",
-   "eol": false,
-   "status": "current",
-   "icon": "hub"
   },
   {
    "id": "skipper",
@@ -26701,8 +26377,8 @@
   },
   {
    "id": "linux-router",
-   "brand": "Linux Router",
-   "model": "Set Linux as router in one command",
+   "brand": "linux-router",
+   "model": "Turn Linux into a router",
    "category": "R",
    "tracked": true,
    "version": "0.8.2",
@@ -26728,8 +26404,8 @@
   },
   {
    "id": "ha-xiaomi-home",
-   "brand": "Ha Xiaomi Home",
-   "model": "Xiaomi Home Integration for Home Assistant",
+   "brand": "Xiaomi Home",
+   "model": "Home Assistant integration",
    "category": "S",
    "tracked": true,
    "version": "0.5.0",
@@ -26756,7 +26432,7 @@
   {
    "id": "oxidized",
    "brand": "Oxidized",
-   "model": "Network device configuration backup tool",
+   "model": "Network device config backup",
    "category": "N",
    "tracked": true,
    "version": "0.37.0",
@@ -26782,8 +26458,8 @@
   },
   {
    "id": "rustic",
-   "brand": "Rustic",
-   "model": "Fast, encrypted, and deduplicated backups powered by Rust",
+   "brand": "rustic",
+   "model": "Encrypted deduplicated backups",
    "category": "N",
    "tracked": true,
    "version": "0.11.4",
@@ -26810,7 +26486,7 @@
   {
    "id": "barman",
    "brand": "Barman",
-   "model": "Backup and Recovery Manager for PostgreSQL",
+   "model": "PostgreSQL backup and recovery",
    "category": "N",
    "tracked": true,
    "version": "3.20.1",
@@ -26863,8 +26539,8 @@
   },
   {
    "id": "gobackup",
-   "brand": "Gobackup",
-   "model": "CLI tool",
+   "brand": "GoBackup",
+   "model": "Database and file backup tool",
    "category": "N",
    "tracked": true,
    "version": "3.1.1",
@@ -26890,9 +26566,9 @@
   },
   {
    "id": "dbatools",
-   "brand": "Dbatools",
-   "model": "SQL Server automation and instance migrations have never",
-   "category": "N",
+   "brand": "dbatools",
+   "model": "SQL Server automation",
+   "category": "A",
    "tracked": true,
    "version": "2.9.0",
    "released": "2026-09-16",
@@ -26918,7 +26594,7 @@
   {
    "id": "slackdump",
    "brand": "Slackdump",
-   "model": "Save or export your private and public Slack messages",
+   "model": "Slack message exporter",
    "category": "N",
    "tracked": true,
    "version": "4.5.0",
@@ -26998,8 +26674,8 @@
   },
   {
    "id": "pv-migrate",
-   "brand": "Pv Migrate",
-   "model": "CLI tool",
+   "brand": "pv-migrate",
+   "model": "Kubernetes volume migration",
    "category": "N",
    "tracked": true,
    "version": "3.6.2",
@@ -27026,7 +26702,7 @@
   {
    "id": "86box",
    "brand": "86Box",
-   "model": "Emulator of x86-based machines",
+   "model": "x86 PC emulator",
    "category": "C",
    "tracked": true,
    "version": "6.0",
@@ -27053,7 +26729,7 @@
   {
    "id": "lemuroid",
    "brand": "Lemuroid",
-   "model": "All in one emulator on Android",
+   "model": "Android emulator frontend",
    "category": "C",
    "tracked": true,
    "version": "1.17.0",
@@ -27106,8 +26782,8 @@
   },
   {
    "id": "xemu",
-   "brand": "Xemu",
-   "model": "Original Xbox Emulator",
+   "brand": "xemu",
+   "model": "Original Xbox emulator",
    "category": "C",
    "tracked": true,
    "version": "0.8.136",
@@ -27134,7 +26810,7 @@
   {
    "id": "furnace",
    "brand": "Furnace",
-   "model": "Multi-system chiptune tracker compatible",
+   "model": "Chiptune tracker",
    "category": "C",
    "tracked": true,
    "version": "0.6.8.3",
@@ -27161,7 +26837,7 @@
   {
    "id": "bizhawk",
    "brand": "BizHawk",
-   "model": "Multi-system emulator written",
+   "model": "Multi-system emulator",
    "category": "C",
    "tracked": true,
    "version": "2.11.1",
@@ -27187,8 +26863,8 @@
   },
   {
    "id": "vectras-vm-android",
-   "brand": "Vectras VM Android",
-   "model": "It's a Virtual Machine App",
+   "brand": "Vectras VM",
+   "model": "Virtual machines on Android",
    "category": "C",
    "tracked": true,
    "version": "4.4.0",
@@ -27214,8 +26890,8 @@
   },
   {
    "id": "nethersx2-patch",
-   "brand": "NetherSX2 Patch",
-   "model": "Continuation of NetherSX2 based on AetherSX2 4248",
+   "brand": "NetherSX2",
+   "model": "PlayStation 2 emulator for Android",
    "category": "C",
    "tracked": true,
    "version": "2.2",
@@ -27322,8 +26998,8 @@
   },
   {
    "id": "keepass2android",
-   "brand": "Keepass2android",
-   "model": "Password manager app for Android",
+   "brand": "Keepass2Android",
+   "model": "Password manager for Android",
    "category": "A",
    "tracked": true,
    "version": "1.15-r4",
@@ -27350,7 +27026,7 @@
   {
    "id": "nodewarden",
    "brand": "Nodewarden",
-   "model": "Bitwarden-compatible server running on Cloudflare Workers",
+   "model": "Bitwarden server for Cloudflare Workers",
    "category": "A",
    "tracked": true,
    "version": "1.8.1",
@@ -27403,8 +27079,8 @@
   },
   {
    "id": "passforios",
-   "brand": "Passforios",
-   "model": "Pass for iOS",
+   "brand": "Pass for iOS",
+   "model": "Password store client",
    "category": "A",
    "tracked": true,
    "version": "0.18.0",
@@ -27431,7 +27107,7 @@
   {
    "id": "sniffnet",
    "brand": "Sniffnet",
-   "model": "Comfortably monitor your network traffic ‍",
+   "model": "Network traffic monitor",
    "category": "R",
    "tracked": true,
    "version": "1.5.1",
@@ -27457,8 +27133,8 @@
   },
   {
    "id": "gping",
-   "brand": "Gping",
-   "model": "Ping, but with a graph",
+   "brand": "gping",
+   "model": "Ping with a graph",
    "category": "R",
    "tracked": true,
    "version": "1.21.0",
@@ -27512,7 +27188,7 @@
   {
    "id": "arkime",
    "brand": "Arkime",
-   "model": "Open source, large scale, full packet capturing, indexing",
+   "model": "Packet capture and search",
    "category": "R",
    "tracked": true,
    "version": "6.8.0",

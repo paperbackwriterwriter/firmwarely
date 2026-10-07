@@ -9562,15 +9562,6 @@
    "product_url": "https://github.com/wasm-micro-runtime/wasm-micro-runtime"
   },
   {
-   "id": "node-serialport",
-   "brand": "SerialPort",
-   "model": "Node.js serial port library",
-   "category": "M",
-   "type": "github",
-   "repo": "serialport/node-serialport",
-   "product_url": "https://github.com/serialport/node-serialport"
-  },
-  {
    "id": "freeswitch",
    "brand": "FreeSWITCH",
    "model": "Telephony server",
@@ -9634,18 +9625,9 @@
    "product_url": "https://github.com/masterking32/MasterDnsVPN"
   },
   {
-   "id": "twisted",
-   "brand": "Twisted",
-   "model": "Event-driven networking engine written in Python",
-   "category": "R",
-   "type": "github",
-   "repo": "twisted/twisted",
-   "product_url": "https://github.com/twisted/twisted"
-  },
-  {
    "id": "rethink-app",
-   "brand": "Rethink App",
-   "model": "DNS over HTTPS / DNS over Tor / DNSCrypt client, WireGuard",
+   "brand": "Rethink",
+   "model": "DNS and firewall app for Android",
    "category": "R",
    "type": "github",
    "repo": "celzero/rethink-app",
@@ -9653,8 +9635,8 @@
   },
   {
    "id": "hickory-dns",
-   "brand": "Hickory Dns",
-   "model": "Rust based DNS client, server, and resolver",
+   "brand": "Hickory DNS",
+   "model": "DNS server and resolver",
    "category": "R",
    "type": "github",
    "repo": "hickory-dns/hickory-dns",
@@ -9662,8 +9644,8 @@
   },
   {
    "id": "doggo",
-   "brand": "Doggo",
-   "model": "Dog",
+   "brand": "doggo",
+   "model": "DNS lookup tool",
    "category": "R",
    "type": "github",
    "repo": "mr-karan/doggo",
@@ -9671,8 +9653,8 @@
   },
   {
    "id": "dnscontrol",
-   "brand": "Dnscontrol",
-   "model": "Infrastructure as code for DNS",
+   "brand": "DNSControl",
+   "model": "DNS as code",
    "category": "R",
    "type": "github",
    "repo": "DNSControl/dnscontrol",
@@ -9681,8 +9663,8 @@
   {
    "id": "findomain",
    "brand": "Findomain",
-   "model": "Fastest and complete solution for domain recognition",
-   "category": "R",
+   "model": "Subdomain finder",
+   "category": "A",
    "type": "github",
    "repo": "Findomain/Findomain",
    "product_url": "https://github.com/Findomain/Findomain"
@@ -9698,8 +9680,8 @@
   },
   {
    "id": "rpcs3",
-   "brand": "Rpcs3",
-   "model": "PlayStation 3 emulator and debugger",
+   "brand": "RPCS3",
+   "model": "PlayStation 3 emulator",
    "category": "C",
    "type": "github",
    "repo": "RPCS3/rpcs3",
@@ -9708,7 +9690,7 @@
   {
    "id": "ruffle",
    "brand": "Ruffle",
-   "model": "Flash Player emulator written in Rust",
+   "model": "Flash Player emulator",
    "category": "C",
    "type": "github",
    "repo": "ruffle-rs/ruffle",
@@ -9716,8 +9698,8 @@
   },
   {
    "id": "nginx-proxy",
-   "brand": "Nginx Proxy",
-   "model": "Automated Nginx Reverse Proxy for Docker",
+   "brand": "nginx-proxy",
+   "model": "Automatic reverse proxy for Docker",
    "category": "R",
    "type": "github",
    "repo": "nginx-proxy/nginx-proxy",
@@ -9725,8 +9707,8 @@
   },
   {
    "id": "bunkerweb",
-   "brand": "Bunkerweb",
-   "model": "Cloud-native Web Application Firewall (WAF)",
+   "brand": "BunkerWeb",
+   "model": "Web application firewall",
    "category": "R",
    "type": "github",
    "repo": "bunkerity/bunkerweb",
@@ -9735,7 +9717,7 @@
   {
    "id": "tyk",
    "brand": "Tyk",
-   "model": "API and AI Gateway",
+   "model": "API gateway",
    "category": "R",
    "type": "github",
    "repo": "TykTechnologies/tyk",
@@ -9744,7 +9726,7 @@
   {
    "id": "ocelot",
    "brand": "Ocelot",
-   "model": "NET API Gateway",
+   "model": ".NET API gateway",
    "category": "R",
    "type": "github",
    "repo": "ThreeMammals/Ocelot",
@@ -9752,8 +9734,8 @@
   },
   {
    "id": "bfe",
-   "brand": "Bfe",
-   "model": "Layer 7 load balancer from baidu",
+   "brand": "BFE",
+   "model": "Layer 7 load balancer",
    "category": "R",
    "type": "github",
    "repo": "bfenetworks/bfe",
@@ -9762,7 +9744,7 @@
   {
    "id": "easegress",
    "brand": "Easegress",
-   "model": "Cloud Native traffic orchestration system",
+   "model": "Traffic orchestration gateway",
    "category": "R",
    "type": "github",
    "repo": "easegress-io/easegress",
@@ -9771,16 +9753,16 @@
   {
    "id": "modlishka",
    "brand": "Modlishka",
-   "model": "Reverse Proxy",
-   "category": "R",
+   "model": "Phishing simulation proxy",
+   "category": "A",
    "type": "github",
    "repo": "drk1wi/Modlishka",
    "product_url": "https://github.com/drk1wi/Modlishka"
   },
   {
    "id": "agentgateway",
-   "brand": "Agentgateway",
-   "model": "Next Generation Agentic Proxy for AI Agents and MCP servers",
+   "brand": "agentgateway",
+   "model": "AI agent and MCP proxy",
    "category": "R",
    "type": "github",
    "repo": "agentgateway/agentgateway",
@@ -9788,8 +9770,8 @@
   },
   {
    "id": "zrok",
-   "brand": "Zrok",
-   "model": "Secure internet sharing made simple",
+   "brand": "zrok",
+   "model": "Secure sharing tunnel",
    "category": "R",
    "type": "github",
    "repo": "openziti/zrok",
@@ -9797,8 +9779,8 @@
   },
   {
    "id": "godoxy",
-   "brand": "Godoxy",
-   "model": "High-performance reverse proxy and container orchestrator",
+   "brand": "GoDoxy",
+   "model": "Reverse proxy and container manager",
    "category": "R",
    "type": "github",
    "repo": "yusing/godoxy",
@@ -9807,7 +9789,7 @@
   {
    "id": "openbot",
    "brand": "OpenBot",
-   "model": "Leverages smartphones as brains for low-cost robots",
+   "model": "Smartphone-powered robot platform",
    "category": "M",
    "type": "github",
    "repo": "ob-f/OpenBot",
@@ -9815,8 +9797,8 @@
   },
   {
    "id": "arduino-pico",
-   "brand": "Arduino Pico",
-   "model": "Raspberry Pi Pico Arduino core",
+   "brand": "Arduino-Pico",
+   "model": "Arduino core for Raspberry Pi Pico",
    "category": "M",
    "type": "github",
    "repo": "earlephilhower/arduino-pico",
@@ -9824,17 +9806,17 @@
   },
   {
    "id": "nnn",
-   "brand": "Nnn",
-   "model": "N³ The unorthodox terminal file manager",
-   "category": "N",
+   "brand": "nnn",
+   "model": "Terminal file manager",
+   "category": "P",
    "type": "github",
    "repo": "jarun/nnn",
    "product_url": "https://github.com/jarun/nnn"
   },
   {
    "id": "sherpa-onnx",
-   "brand": "Sherpa Onnx",
-   "model": "Speech-to-text, text-to-speech, speaker diarization, speech",
+   "brand": "sherpa-onnx",
+   "model": "Offline speech recognition and TTS",
    "category": "M",
    "type": "github",
    "repo": "k2-fsa/sherpa-onnx",
@@ -9842,8 +9824,8 @@
   },
   {
    "id": "pivpn",
-   "brand": "Pivpn",
-   "model": "Simplest VPN installer, designed for Raspberry Pi",
+   "brand": "PiVPN",
+   "model": "VPN installer for Raspberry Pi",
    "category": "R",
    "type": "github",
    "repo": "pivpn/pivpn",
@@ -9851,8 +9833,8 @@
   },
   {
    "id": "deskhop",
-   "brand": "Deskhop",
-   "model": "Desktop Switching Device",
+   "brand": "DeskHop",
+   "model": "Keyboard and mouse switcher",
    "category": "M",
    "type": "github",
    "repo": "hrvach/deskhop",
@@ -9870,7 +9852,7 @@
   {
    "id": "glslviewer",
    "brand": "glslViewer",
-   "model": "Console-based GLSL Sandbox for 2D/3D shaders",
+   "model": "GLSL shader sandbox",
    "category": "M",
    "type": "github",
    "repo": "patriciogonzalezvivo/glslViewer",
@@ -9879,7 +9861,7 @@
   {
    "id": "raspotify",
    "brand": "Raspotify",
-   "model": "Spotify Connect client that mostly Just Works™",
+   "model": "Spotify Connect for Raspberry Pi",
    "category": "M",
    "type": "github",
    "repo": "dtcooper/raspotify",
@@ -9887,9 +9869,9 @@
   },
   {
    "id": "xplr",
-   "brand": "Xplr",
-   "model": "Hackable, minimal, fast TUI file explorer",
-   "category": "N",
+   "brand": "xplr",
+   "model": "Terminal file explorer",
+   "category": "P",
    "type": "github",
    "repo": "sayanarijit/xplr",
    "product_url": "https://github.com/sayanarijit/xplr"
@@ -9897,7 +9879,7 @@
   {
    "id": "linkace",
    "brand": "LinkAce",
-   "model": "Archive to collect links of your favorite websites",
+   "model": "Bookmark archive",
    "category": "A",
    "type": "github",
    "repo": "Kovah/LinkAce",
@@ -9906,7 +9888,7 @@
   {
    "id": "tianji",
    "brand": "Tianji",
-   "model": "Insight into everything, Website Analytics + Uptime Monitor",
+   "model": "Website analytics and uptime monitor",
    "category": "A",
    "type": "github",
    "repo": "msgbyte/tianji",
@@ -9915,7 +9897,7 @@
   {
    "id": "bambuddy",
    "brand": "Bambuddy",
-   "model": "Bambu Lab",
+   "model": "Bambu Lab printer manager",
    "category": "M",
    "type": "github",
    "repo": "maziggy/bambuddy",
@@ -9924,7 +9906,7 @@
   {
    "id": "gokapi",
    "brand": "Gokapi",
-   "model": "Selfhosted Firefox Send alternative without public upload",
+   "model": "File sharing server",
    "category": "A",
    "type": "github",
    "repo": "Forceu/Gokapi",
@@ -9932,8 +9914,8 @@
   },
   {
    "id": "voidauth",
-   "brand": "Voidauth",
-   "model": "Single Sign-On for Your Self-Hosted Universe",
+   "brand": "VoidAuth",
+   "model": "Single sign-on server",
    "category": "A",
    "type": "github",
    "repo": "voidauth/voidauth",
@@ -9942,7 +9924,7 @@
   {
    "id": "alexandrie",
    "brand": "Alexandrie",
-   "model": "Open-source, offline-first Notion, Obsidian & Confluence",
+   "model": "Offline-first note-taking app",
    "category": "A",
    "type": "github",
    "repo": "Smaug6739/Alexandrie",
@@ -9951,7 +9933,7 @@
   {
    "id": "donetick",
    "brand": "Donetick",
-   "model": "Open-source, user-friendly app",
+   "model": "Task and chore manager",
    "category": "A",
    "type": "github",
    "repo": "donetick/donetick",
@@ -9960,7 +9942,7 @@
   {
    "id": "dockflare",
    "brand": "DockFlare",
-   "model": "Automate Cloudflare Tunnels with Docker Labels",
+   "model": "Cloudflare Tunnel manager for Docker",
    "category": "R",
    "type": "github",
    "repo": "ChrispyBacon-dev/DockFlare",
@@ -9969,16 +9951,16 @@
   {
    "id": "local-deep-research",
    "brand": "Local Deep Research",
-   "model": "~95% on SimpleQA (e.g",
-   "category": "S",
+   "model": "AI research assistant",
+   "category": "A",
    "type": "github",
    "repo": "LearningCircuit/local-deep-research",
    "product_url": "https://github.com/LearningCircuit/local-deep-research"
   },
   {
    "id": "android",
-   "brand": "Android",
-   "model": "Home Assistant Companion",
+   "brand": "Home Assistant",
+   "model": "Android companion app",
    "category": "S",
    "type": "github",
    "repo": "home-assistant/android",
@@ -9995,8 +9977,8 @@
   },
   {
    "id": "dust3d",
-   "brand": "Dust3d",
-   "model": "Cross-platform 3D modeling software",
+   "brand": "Dust3D",
+   "model": "3D modeling software",
    "category": "M",
    "type": "github",
    "repo": "huxingyi/dust3d",
@@ -10004,8 +9986,8 @@
   },
   {
    "id": "ha-bambulab",
-   "brand": "Ha Bambulab",
-   "model": "Home Assistant Integration for Bambu Lab Printers",
+   "brand": "ha-bambulab",
+   "model": "Bambu Lab Home Assistant integration",
    "category": "S",
    "type": "github",
    "repo": "greghesp/ha-bambulab",
@@ -10023,7 +10005,7 @@
   {
    "id": "uvtools",
    "brand": "UVtools",
-   "model": "MSLA/DLP, file analysis, calibration, repair, conversion",
+   "model": "Resin printer file toolkit",
    "category": "M",
    "type": "github",
    "repo": "sn4k3/UVtools",
@@ -10032,52 +10014,25 @@
   {
    "id": "rackstack",
    "brand": "Rackstack",
-   "model": "Modular 3d-printable mini rack system",
+   "model": "3D-printable mini rack",
    "category": "M",
    "type": "github",
    "repo": "jazwa/rackstack",
    "product_url": "https://github.com/jazwa/rackstack"
   },
   {
-   "id": "chi",
-   "brand": "Chi",
-   "model": "Lightweight, idiomatic and composable router",
-   "category": "R",
-   "type": "github",
-   "repo": "go-chi/chi",
-   "product_url": "https://github.com/go-chi/chi"
-  },
-  {
-   "id": "uwebsockets",
-   "brand": "uWebSockets",
-   "model": "Simple, secure & standards compliant web server",
-   "category": "R",
-   "type": "github",
-   "repo": "uNetworking/uWebSockets",
-   "product_url": "https://github.com/uNetworking/uWebSockets"
-  },
-  {
    "id": "lantern",
    "brand": "Lantern",
-   "model": "VPN for speed, privacy, and censorship circumvention",
+   "model": "Censorship circumvention VPN",
    "category": "R",
    "type": "github",
    "repo": "getlantern/lantern",
    "product_url": "https://github.com/getlantern/lantern"
   },
   {
-   "id": "single-spa",
-   "brand": "Single Spa",
-   "model": "Router for easy microfrontends",
-   "category": "R",
-   "type": "github",
-   "repo": "single-spa/single-spa",
-   "product_url": "https://github.com/single-spa/single-spa"
-  },
-  {
    "id": "avideo",
    "brand": "AVideo",
-   "model": "Own Broadcast Network",
+   "model": "Video streaming platform",
    "category": "A",
    "type": "github",
    "repo": "WWBN/AVideo",
@@ -10094,8 +10049,8 @@
   },
   {
    "id": "elasticsearch-dump",
-   "brand": "Elasticsearch Dump",
-   "model": "Import and export tools for elasticsearch & opensearch",
+   "brand": "elasticsearch-dump",
+   "model": "Elasticsearch import and export tool",
    "category": "N",
    "type": "github",
    "repo": "elasticsearch-dump/elasticsearch-dump",
@@ -10113,7 +10068,7 @@
   {
    "id": "zerobyte",
    "brand": "Zerobyte",
-   "model": "Backup automation for self-hosters",
+   "model": "Backup automation",
    "category": "N",
    "type": "github",
    "repo": "nicotsx/zerobyte",
@@ -10129,18 +10084,9 @@
    "product_url": "https://github.com/mtkennerly/ludusavi"
   },
   {
-   "id": "laravel-backup",
-   "brand": "Laravel Backup",
-   "model": "Package to backup your Laravel app",
-   "category": "N",
-   "type": "github",
-   "repo": "spatie/laravel-backup",
-   "product_url": "https://github.com/spatie/laravel-backup"
-  },
-  {
    "id": "imessage-exporter",
-   "brand": "Imessage Exporter",
-   "model": "Export iMessage data + run iMessage Diagnostics",
+   "brand": "imessage-exporter",
+   "model": "iMessage export tool",
    "category": "N",
    "type": "github",
    "repo": "ReagentX/imessage-exporter",
@@ -10148,8 +10094,8 @@
   },
   {
    "id": "wal-g",
-   "brand": "Wal G",
-   "model": "Archival and Restoration for databases in the Cloud",
+   "brand": "WAL-G",
+   "model": "Database backup and restore",
    "category": "N",
    "type": "github",
    "repo": "wal-g/wal-g",
@@ -10157,8 +10103,8 @@
   },
   {
    "id": "docker-volume-backup",
-   "brand": "Docker Volume Backup",
-   "model": "Backup Docker volumes locally",
+   "brand": "docker-volume-backup",
+   "model": "Docker volume backups",
    "category": "N",
    "type": "github",
    "repo": "offen/docker-volume-backup",
@@ -10166,8 +10112,8 @@
   },
   {
    "id": "docker-android",
-   "brand": "Docker Android",
-   "model": "Android in docker solution with noVNC supported, video",
+   "brand": "docker-android",
+   "model": "Emulated phones in containers",
    "category": "C",
    "type": "github",
    "repo": "budtmo/docker-android",
@@ -10202,8 +10148,8 @@
   },
   {
    "id": "retrobios",
-   "brand": "Retrobios",
-   "model": "Source-verified BIOS and firmware packs",
+   "brand": "RetroBIOS",
+   "model": "Emulator BIOS packs",
    "category": "C",
    "type": "github",
    "repo": "Abdess/retrobios",
@@ -10221,7 +10167,7 @@
   {
    "id": "provenance",
    "brand": "Provenance",
-   "model": "IOS & tvOS multi-emulator frontend",
+   "model": "iOS and tvOS emulator frontend",
    "category": "C",
    "type": "github",
    "repo": "Provenance-Emu/Provenance",
@@ -10238,8 +10184,8 @@
   },
   {
    "id": "sharpemu",
-   "brand": "Sharpemu",
-   "model": "Experimental PlayStation 5 emulator",
+   "brand": "SharpEmu",
+   "model": "PlayStation 5 emulator",
    "category": "C",
    "type": "github",
    "repo": "sharpemu/sharpemu",
@@ -10248,7 +10194,7 @@
   {
    "id": "melonds",
    "brand": "melonDS",
-   "model": "DS emulator, sorta",
+   "model": "Nintendo DS emulator",
    "category": "C",
    "type": "github",
    "repo": "melonDS-emu/melonDS",
@@ -10257,7 +10203,7 @@
   {
    "id": "browserbox",
    "brand": "BrowserBox",
-   "model": "🇺🇸Secure remote browsing anywhere, any way you like",
+   "model": "Remote browser isolation",
    "category": "R",
    "type": "github",
    "repo": "BrowserBox/BrowserBox",
@@ -10266,7 +10212,7 @@
   {
    "id": "vulcain",
    "brand": "Vulcain",
-   "model": "Idiomatic client-driven REST APIs",
+   "model": "REST API preload gateway",
    "category": "R",
    "type": "github",
    "repo": "dunglas/vulcain",
@@ -10274,8 +10220,8 @@
   },
   {
    "id": "krakend-ce",
-   "brand": "Krakend Ce",
-   "model": "KrakenD Community Edition",
+   "brand": "KrakenD",
+   "model": "API gateway (Community Edition)",
    "category": "R",
    "type": "github",
    "repo": "krakend/krakend-ce",
@@ -10293,7 +10239,7 @@
   {
    "id": "piko",
    "brand": "Piko",
-   "model": "Alternative to Ngrok, designed to serve production traffic",
+   "model": "Self-hosted ngrok alternative",
    "category": "R",
    "type": "github",
    "repo": "andydunstall/piko",
@@ -10302,7 +10248,7 @@
   {
    "id": "trickster",
    "brand": "Trickster",
-   "model": "HTTP Reverse Proxy Cache and Time Series DB Query",
+   "model": "HTTP reverse proxy cache",
    "category": "R",
    "type": "github",
    "repo": "trickstercache/trickster",
@@ -10310,8 +10256,8 @@
   },
   {
    "id": "frpmgr",
-   "brand": "Frpmgr",
-   "model": "User-friendly desktop GUI client for FRP on Windows",
+   "brand": "frpmgr",
+   "model": "Windows GUI for FRP",
    "category": "R",
    "type": "github",
    "repo": "koho/frpmgr",
@@ -10329,8 +10275,8 @@
   {
    "id": "wordops",
    "brand": "WordOps",
-   "model": "Install and manage a high performance WordPress stack",
-   "category": "R",
+   "model": "WordPress server stack",
+   "category": "A",
    "type": "github",
    "repo": "WordOps/WordOps",
    "product_url": "https://github.com/WordOps/WordOps"
@@ -10347,7 +10293,7 @@
   {
    "id": "gladys",
    "brand": "Gladys",
-   "model": "Privacy-first, open-source home assistant",
+   "model": "Home automation hub",
    "category": "S",
    "type": "github",
    "repo": "GladysAssistant/Gladys",
@@ -10355,8 +10301,8 @@
   },
   {
    "id": "button-card",
-   "brand": "Button Card",
-   "model": "Lovelace button-card for home assistant",
+   "brand": "button-card",
+   "model": "Home Assistant dashboard card",
    "category": "S",
    "type": "github",
    "repo": "custom-cards/button-card",
@@ -10364,8 +10310,8 @@
   },
   {
    "id": "ios",
-   "brand": "iOS",
-   "model": "Iphone",
+   "brand": "Home Assistant",
+   "model": "iOS companion app",
    "category": "S",
    "type": "github",
    "repo": "home-assistant/iOS",
@@ -10373,8 +10319,8 @@
   },
   {
    "id": "homeassistant-tapo-control",
-   "brand": "HomeAssistant Tapo Control",
-   "model": "Control for Tapo cameras as a Home Assistant component",
+   "brand": "Tapo Control",
+   "model": "Home Assistant integration for Tapo cameras",
    "category": "S",
    "type": "github",
    "repo": "JurajNyiri/HomeAssistant-Tapo-Control",
@@ -10382,8 +10328,8 @@
   },
   {
    "id": "lovelace-xiaomi-vacuum-map-card",
-   "brand": "Lovelace Xiaomi Vacuum Map Card",
-   "model": "This card provides a user-friendly way",
+   "brand": "Xiaomi Vacuum Map Card",
+   "model": "Home Assistant dashboard card",
    "category": "S",
    "type": "github",
    "repo": "PiotrMachowski/lovelace-xiaomi-vacuum-map-card",
@@ -10392,7 +10338,7 @@
   {
    "id": "openccu",
    "brand": "OpenCCU",
-   "model": "House",
+   "model": "HomeMatic smart home OS",
    "category": "S",
    "type": "github",
    "repo": "OpenCCU/OpenCCU",
@@ -10401,7 +10347,7 @@
   {
    "id": "http-shortcuts",
    "brand": "HTTP Shortcuts",
-   "model": "Android app",
+   "model": "Android automation app",
    "category": "S",
    "type": "github",
    "repo": "Waboodoo/HTTP-Shortcuts",
@@ -10409,9 +10355,9 @@
   },
   {
    "id": "netboot-xyz",
-   "brand": "Netboot.xyz",
-   "model": "Favorite operating systems in one place",
-   "category": "R",
+   "brand": "netboot.xyz",
+   "model": "Network boot menu",
+   "category": "P",
    "type": "github",
    "repo": "netbootxyz/netboot.xyz",
    "product_url": "https://github.com/netbootxyz/netboot.xyz"
@@ -10427,66 +10373,12 @@
   },
   {
    "id": "ezbookkeeping",
-   "brand": "Ezbookkeeping",
-   "model": "Open source, powerful, self-hosted personal finance app",
+   "brand": "ezBookkeeping",
+   "model": "Personal finance app",
    "category": "A",
    "type": "github",
    "repo": "mayswind/ezbookkeeping",
    "product_url": "https://github.com/mayswind/ezbookkeeping"
-  },
-  {
-   "id": "ui-router",
-   "brand": "Ui Router",
-   "model": "De-facto solution",
-   "category": "R",
-   "type": "github",
-   "repo": "angular-ui/ui-router",
-   "product_url": "https://github.com/angular-ui/ui-router"
-  },
-  {
-   "id": "uwebsockets-js",
-   "brand": "uWebSockets.js",
-   "model": "ΜWebSockets for Node.js back-ends :metal",
-   "category": "R",
-   "type": "github",
-   "repo": "uNetworking/uWebSockets.js",
-   "product_url": "https://github.com/uNetworking/uWebSockets.js"
-  },
-  {
-   "id": "path-to-regexp",
-   "brand": "Path To Regexp",
-   "model": "Path string such as `/user/:name` into a regular expression",
-   "category": "R",
-   "type": "github",
-   "repo": "pillarjs/path-to-regexp",
-   "product_url": "https://github.com/pillarjs/path-to-regexp"
-  },
-  {
-   "id": "wouter",
-   "brand": "Wouter",
-   "model": "Minimalist-friendly ~2.2KB routing for React and Preact",
-   "category": "R",
-   "type": "github",
-   "repo": "molefrog/wouter",
-   "product_url": "https://github.com/molefrog/wouter"
-  },
-  {
-   "id": "routing",
-   "brand": "Routing",
-   "model": "Maps an HTTP request to a set of configuration variables",
-   "category": "R",
-   "type": "github",
-   "repo": "symfony/routing",
-   "product_url": "https://github.com/symfony/routing"
-  },
-  {
-   "id": "lura",
-   "brand": "Lura",
-   "model": "Ultra performant API Gateway with middlewares",
-   "category": "R",
-   "type": "github",
-   "repo": "luraproject/lura",
-   "product_url": "https://github.com/luraproject/lura"
   },
   {
    "id": "skipper",
@@ -10508,8 +10400,8 @@
   },
   {
    "id": "linux-router",
-   "brand": "Linux Router",
-   "model": "Set Linux as router in one command",
+   "brand": "linux-router",
+   "model": "Turn Linux into a router",
    "category": "R",
    "type": "github",
    "repo": "garywill/linux-router",
@@ -10517,8 +10409,8 @@
   },
   {
    "id": "ha-xiaomi-home",
-   "brand": "Ha Xiaomi Home",
-   "model": "Xiaomi Home Integration for Home Assistant",
+   "brand": "Xiaomi Home",
+   "model": "Home Assistant integration",
    "category": "S",
    "type": "github",
    "repo": "XiaoMi/ha_xiaomi_home",
@@ -10527,7 +10419,7 @@
   {
    "id": "oxidized",
    "brand": "Oxidized",
-   "model": "Network device configuration backup tool",
+   "model": "Network device config backup",
    "category": "N",
    "type": "github",
    "repo": "ytti/oxidized",
@@ -10535,8 +10427,8 @@
   },
   {
    "id": "rustic",
-   "brand": "Rustic",
-   "model": "Fast, encrypted, and deduplicated backups powered by Rust",
+   "brand": "rustic",
+   "model": "Encrypted deduplicated backups",
    "category": "N",
    "type": "github",
    "repo": "rustic-rs/rustic",
@@ -10545,7 +10437,7 @@
   {
    "id": "barman",
    "brand": "Barman",
-   "model": "Backup and Recovery Manager for PostgreSQL",
+   "model": "PostgreSQL backup and recovery",
    "category": "N",
    "type": "github",
    "repo": "EnterpriseDB/barman",
@@ -10562,8 +10454,8 @@
   },
   {
    "id": "gobackup",
-   "brand": "Gobackup",
-   "model": "CLI tool",
+   "brand": "GoBackup",
+   "model": "Database and file backup tool",
    "category": "N",
    "type": "github",
    "repo": "gobackup/gobackup",
@@ -10571,9 +10463,9 @@
   },
   {
    "id": "dbatools",
-   "brand": "Dbatools",
-   "model": "SQL Server automation and instance migrations have never",
-   "category": "N",
+   "brand": "dbatools",
+   "model": "SQL Server automation",
+   "category": "A",
    "type": "github",
    "repo": "dataplat/dbatools",
    "product_url": "https://github.com/dataplat/dbatools"
@@ -10581,7 +10473,7 @@
   {
    "id": "slackdump",
    "brand": "Slackdump",
-   "model": "Save or export your private and public Slack messages",
+   "model": "Slack message exporter",
    "category": "N",
    "type": "github",
    "repo": "rusq/slackdump",
@@ -10607,8 +10499,8 @@
   },
   {
    "id": "pv-migrate",
-   "brand": "Pv Migrate",
-   "model": "CLI tool",
+   "brand": "pv-migrate",
+   "model": "Kubernetes volume migration",
    "category": "N",
    "type": "github",
    "repo": "utkuozdemir/pv-migrate",
@@ -10617,7 +10509,7 @@
   {
    "id": "86box",
    "brand": "86Box",
-   "model": "Emulator of x86-based machines",
+   "model": "x86 PC emulator",
    "category": "C",
    "type": "github",
    "repo": "86Box/86Box",
@@ -10626,7 +10518,7 @@
   {
    "id": "lemuroid",
    "brand": "Lemuroid",
-   "model": "All in one emulator on Android",
+   "model": "Android emulator frontend",
    "category": "C",
    "type": "github",
    "repo": "Swordfish90/Lemuroid",
@@ -10643,8 +10535,8 @@
   },
   {
    "id": "xemu",
-   "brand": "Xemu",
-   "model": "Original Xbox Emulator",
+   "brand": "xemu",
+   "model": "Original Xbox emulator",
    "category": "C",
    "type": "github",
    "repo": "xemu-project/xemu",
@@ -10653,7 +10545,7 @@
   {
    "id": "furnace",
    "brand": "Furnace",
-   "model": "Multi-system chiptune tracker compatible",
+   "model": "Chiptune tracker",
    "category": "C",
    "type": "github",
    "repo": "tildearrow/furnace",
@@ -10662,7 +10554,7 @@
   {
    "id": "bizhawk",
    "brand": "BizHawk",
-   "model": "Multi-system emulator written",
+   "model": "Multi-system emulator",
    "category": "C",
    "type": "github",
    "repo": "TASEmulators/BizHawk",
@@ -10670,8 +10562,8 @@
   },
   {
    "id": "vectras-vm-android",
-   "brand": "Vectras VM Android",
-   "model": "It's a Virtual Machine App",
+   "brand": "Vectras VM",
+   "model": "Virtual machines on Android",
    "category": "C",
    "type": "github",
    "repo": "xoureldeen/Vectras-VM-Android",
@@ -10679,8 +10571,8 @@
   },
   {
    "id": "nethersx2-patch",
-   "brand": "NetherSX2 Patch",
-   "model": "Continuation of NetherSX2 based on AetherSX2 4248",
+   "brand": "NetherSX2",
+   "model": "PlayStation 2 emulator for Android",
    "category": "C",
    "type": "github",
    "repo": "Trixarian/NetherSX2-patch",
@@ -10715,8 +10607,8 @@
   },
   {
    "id": "keepass2android",
-   "brand": "Keepass2android",
-   "model": "Password manager app for Android",
+   "brand": "Keepass2Android",
+   "model": "Password manager for Android",
    "category": "A",
    "type": "github",
    "repo": "PhilippC/keepass2android",
@@ -10725,7 +10617,7 @@
   {
    "id": "nodewarden",
    "brand": "Nodewarden",
-   "model": "Bitwarden-compatible server running on Cloudflare Workers",
+   "model": "Bitwarden server for Cloudflare Workers",
    "category": "A",
    "type": "github",
    "repo": "shuaiplus/nodewarden",
@@ -10742,8 +10634,8 @@
   },
   {
    "id": "passforios",
-   "brand": "Passforios",
-   "model": "Pass for iOS",
+   "brand": "Pass for iOS",
+   "model": "Password store client",
    "category": "A",
    "type": "github",
    "repo": "mssun/passforios",
@@ -10752,7 +10644,7 @@
   {
    "id": "sniffnet",
    "brand": "Sniffnet",
-   "model": "Comfortably monitor your network traffic ‍",
+   "model": "Network traffic monitor",
    "category": "R",
    "type": "github",
    "repo": "GyulyVGC/sniffnet",
@@ -10760,8 +10652,8 @@
   },
   {
    "id": "gping",
-   "brand": "Gping",
-   "model": "Ping, but with a graph",
+   "brand": "gping",
+   "model": "Ping with a graph",
    "category": "R",
    "type": "github",
    "repo": "orf/gping",
@@ -10779,7 +10671,7 @@
   {
    "id": "arkime",
    "brand": "Arkime",
-   "model": "Open source, large scale, full packet capturing, indexing",
+   "model": "Packet capture and search",
    "category": "R",
    "type": "github",
    "repo": "arkime/arkime",

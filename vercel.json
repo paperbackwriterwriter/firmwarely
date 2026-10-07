@@ -742,12 +742,12 @@
       "permanent": false
     },
     {
-      "source": "/brands/:b(microsoft|miyoo|mobile-mcp|msi|nethersx2-patch|nintendo|niu|onion|openrgb|panic|pcsx2|potensic|ppsspp|provenance|rad-power|retrobios|retrodeck|retroid|rotorflight|rpcs3|ruffle|segway|shadps4|sharpemu|shimano|skydio|specialized|super73|trek|universal-blue|valve|vanmoof|vectras-vm-android|wahoo|winlator|xemu|zero-zero-robotics|zwift)",
+      "source": "/brands/:b(microsoft|miyoo|mobile-mcp|msi|nethersx2|nintendo|niu|onion|openrgb|panic|pcsx2|potensic|ppsspp|provenance|rad-power|retrobios|retrodeck|retroid|rotorflight|rpcs3|ruffle|segway|shadps4|sharpemu|shimano|skydio|specialized|super73|trek|universal-blue|valve|vanmoof|vectras-vm|wahoo|winlator|xemu|zero-zero-robotics|zwift)",
       "destination": "/category/consoles-drones-ebikes/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(microsoft|miyoo|mobile-mcp|msi|nethersx2-patch|nintendo|niu|onion|openrgb|panic|pcsx2|potensic|ppsspp|provenance|rad-power|retrobios|retrodeck|retroid|rotorflight|rpcs3|ruffle|segway|shadps4|sharpemu|shimano|skydio|specialized|super73|trek|universal-blue|valve|vanmoof|vectras-vm-android|wahoo|winlator|xemu|zero-zero-robotics|zwift)/",
+      "source": "/brands/:b(microsoft|miyoo|mobile-mcp|msi|nethersx2|nintendo|niu|onion|openrgb|panic|pcsx2|potensic|ppsspp|provenance|rad-power|retrobios|retrodeck|retroid|rotorflight|rpcs3|ruffle|segway|shadps4|sharpemu|shimano|skydio|specialized|super73|trek|universal-blue|valve|vanmoof|vectras-vm|wahoo|winlator|xemu|zero-zero-robotics|zwift)/",
       "destination": "/category/consoles-drones-ebikes/",
       "permanent": false
     },
@@ -772,92 +772,92 @@
       "permanent": false
     },
     {
-      "source": "/brands/:b(retroarch|retropie|riot|rt-thread|seeed-studio|serial-studio|serialport|sherpa-onnx|sipeed|snapmaker|sovol|spoolman|stmicroelectronics|system76|thingino|tinygo|tock|ultimaker|uvtools|velxio|wamr|wasm3|xtool|zephyr|zmk)",
+      "source": "/brands/:b(retroarch|retropie|riot|rt-thread|seeed-studio|serial-studio|sherpa-onnx|sipeed|snapmaker|sovol|spoolman|stmicroelectronics|system76|thingino|tinygo|tock|ultimaker|uvtools|velxio|wamr|wasm3|xtool|zephyr|zmk)",
       "destination": "/category/makers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(retroarch|retropie|riot|rt-thread|seeed-studio|serial-studio|serialport|sherpa-onnx|sipeed|snapmaker|sovol|spoolman|stmicroelectronics|system76|thingino|tinygo|tock|ultimaker|uvtools|velxio|wamr|wasm3|xtool|zephyr|zmk)/",
+      "source": "/brands/:b(retroarch|retropie|riot|rt-thread|seeed-studio|serial-studio|sherpa-onnx|sipeed|snapmaker|sovol|spoolman|stmicroelectronics|system76|thingino|tinygo|tock|ultimaker|uvtools|velxio|wamr|wasm3|xtool|zephyr|zmk)/",
       "destination": "/category/makers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(android-databackup|aoostar|arc|arozos|asustor|barman|copyparty|crucial|databasement|databasus|dbatools|deuxfleurs|docker-volume-backup|dufs|duplicacy|elasticsearch-dump|eshtek|gobackup|imessage-exporter|juicefs|lacie|laravel-backup|lime-technology|longhorn|ludusavi|minisforum|nnn|openmediavault|oxicloud|oxidized|pgbackrest|pgbackweb|proxmenux|pv-migrate|rockstor|rook|rustic|seaweedfs|slackdump|terramaster)",
+      "source": "/brands/:b(android-databackup|aoostar|arc|arozos|asustor|barman|copyparty|crucial|databasement|databasus|deuxfleurs|docker-volume-backup|dufs|duplicacy|elasticsearch-dump|eshtek|gobackup|imessage-exporter|juicefs|lacie|lime-technology|longhorn|ludusavi|minisforum|openmediavault|oxicloud|oxidized|pgbackrest|pgbackweb|proxmenux|pv-migrate|rockstor|rook|rustic|seaweedfs|slackdump|terramaster|truenas|ugreen|velero)",
       "destination": "/category/nas/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(android-databackup|aoostar|arc|arozos|asustor|barman|copyparty|crucial|databasement|databasus|dbatools|deuxfleurs|docker-volume-backup|dufs|duplicacy|elasticsearch-dump|eshtek|gobackup|imessage-exporter|juicefs|lacie|laravel-backup|lime-technology|longhorn|ludusavi|minisforum|nnn|openmediavault|oxicloud|oxidized|pgbackrest|pgbackweb|proxmenux|pv-migrate|rockstor|rook|rustic|seaweedfs|slackdump|terramaster)/",
+      "source": "/brands/:b(android-databackup|aoostar|arc|arozos|asustor|barman|copyparty|crucial|databasement|databasus|deuxfleurs|docker-volume-backup|dufs|duplicacy|elasticsearch-dump|eshtek|gobackup|imessage-exporter|juicefs|lacie|lime-technology|longhorn|ludusavi|minisforum|openmediavault|oxicloud|oxidized|pgbackrest|pgbackweb|proxmenux|pv-migrate|rockstor|rook|rustic|seaweedfs|slackdump|terramaster|truenas|ugreen|velero)/",
       "destination": "/category/nas/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(truenas|ugreen|velero|vorta|wal-g|western-digital|xplr|zerobyte)",
+      "source": "/brands/:b(vorta|wal-g|western-digital|zerobyte)",
       "destination": "/category/nas/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(truenas|ugreen|velero|vorta|wal-g|western-digital|xplr|zerobyte)/",
+      "source": "/brands/:b(vorta|wal-g|western-digital|zerobyte)/",
       "destination": "/category/nas/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(acer|armbian|asrock|beats|beelink|bose|brother|caldigit|canon|channels|corsair|dell|dietpi|elgato|epson|fujifilm|fwupd|gigabyte|handbrake|hisense|hp|jabra|keychron|kobo|lg|librehardwaremonitor|lizardbyte|logitech|moonlight|nikon|nothing|obs|om-system|onyx-boox|openrazer|oura|panasonic|plex|razer|remarkable)",
+      "source": "/brands/:b(acer|armbian|asrock|beats|beelink|bose|brother|caldigit|canon|channels|corsair|dell|dietpi|elgato|epson|fujifilm|fwupd|gigabyte|handbrake|hisense|hp|jabra|keychron|kobo|lg|librehardwaremonitor|lizardbyte|logitech|moonlight|netboot-xyz|nikon|nnn|nothing|obs|om-system|onyx-boox|openrazer|oura|panasonic|plex)",
       "destination": "/category/pcs-tvs-gadgets/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(acer|armbian|asrock|beats|beelink|bose|brother|caldigit|canon|channels|corsair|dell|dietpi|elgato|epson|fujifilm|fwupd|gigabyte|handbrake|hisense|hp|jabra|keychron|kobo|lg|librehardwaremonitor|lizardbyte|logitech|moonlight|nikon|nothing|obs|om-system|onyx-boox|openrazer|oura|panasonic|plex|razer|remarkable)/",
+      "source": "/brands/:b(acer|armbian|asrock|beats|beelink|bose|brother|caldigit|canon|channels|corsair|dell|dietpi|elgato|epson|fujifilm|fwupd|gigabyte|handbrake|hisense|hp|jabra|keychron|kobo|lg|librehardwaremonitor|lizardbyte|logitech|moonlight|netboot-xyz|nikon|nnn|nothing|obs|om-system|onyx-boox|openrazer|oura|panasonic|plex)/",
       "destination": "/category/pcs-tvs-gadgets/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(roku|rufus|samsung|sennheiser|shure|smsforwarder|solaar|steelseries|tcl|tiez|ventoy|whoop|wooting|xgimi)",
+      "source": "/brands/:b(razer|remarkable|roku|rufus|samsung|sennheiser|shure|smsforwarder|solaar|steelseries|tcl|tiez|ventoy|whoop|wooting|xgimi|xplr)",
       "destination": "/category/pcs-tvs-gadgets/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(roku|rufus|samsung|sennheiser|shure|smsforwarder|solaar|steelseries|tcl|tiez|ventoy|whoop|wooting|xgimi)/",
+      "source": "/brands/:b(razer|remarkable|roku|rufus|samsung|sennheiser|shure|smsforwarder|solaar|steelseries|tcl|tiez|ventoy|whoop|wooting|xgimi|xplr)/",
       "destination": "/category/pcs-tvs-gadgets/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(3proxy|acme-sh|agentgateway|angie|arkime|arris|asuswrt-merlin|bfe|blocky|browserbox|bunkerweb|caddy|certbot|chaitin|chi|cisco|cloudflare|cloudflare-ddns|coredns|crowdsec|d-link|ddclient|dnscontrol|dnscrypt|dockflare|doggo|easegress|envoy|fail2ban|findomain|firewalla|firezone|freerouting|frp|frpmgr|frrouting|gl-inet|gluetun|godoxy|gost)",
+      "source": "/brands/:b(3proxy|acme-sh|agentgateway|angie|arkime|arris|asuswrt-merlin|bfe|blocky|browserbox|bunkerweb|caddy|certbot|chaitin|cisco|cloudflare|cloudflare-ddns|coredns|crowdsec|d-link|ddclient|dnscontrol|dnscrypt|dockflare|doggo|easegress|envoy|fail2ban|firewalla|firezone|freerouting|frp|frpmgr|frrouting|gl-inet|gluetun|godoxy|gost|gping|hagezi)",
       "destination": "/category/routers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(3proxy|acme-sh|agentgateway|angie|arkime|arris|asuswrt-merlin|bfe|blocky|browserbox|bunkerweb|caddy|certbot|chaitin|chi|cisco|cloudflare|cloudflare-ddns|coredns|crowdsec|d-link|ddclient|dnscontrol|dnscrypt|dockflare|doggo|easegress|envoy|fail2ban|findomain|firewalla|firezone|freerouting|frp|frpmgr|frrouting|gl-inet|gluetun|godoxy|gost)/",
+      "source": "/brands/:b(3proxy|acme-sh|agentgateway|angie|arkime|arris|asuswrt-merlin|bfe|blocky|browserbox|bunkerweb|caddy|certbot|chaitin|cisco|cloudflare|cloudflare-ddns|coredns|crowdsec|d-link|ddclient|dnscontrol|dnscrypt|dockflare|doggo|easegress|envoy|fail2ban|firewalla|firezone|freerouting|frp|frpmgr|frrouting|gl-inet|gluetun|godoxy|gost|gping|hagezi)/",
       "destination": "/category/routers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(gping|hagezi|headscale|hickory-dns|hpe|in-a-dyn|inseego|isc|kong|krakend-ce|lantern|librenms|librespeed|linksys|linux-router|lura|maltrail|masterdnsvpn|meshcentral|mitmproxy|modlishka|motorola|netbird|netboot-xyz|netbox-labs|netgate|netmaker|networkmanager|nextdns|nginx|nginx-proxy|nginx-proxy-manager|nlnet-labs|ntop|oauth2-proxy|ocelot|oisf|openclash|openvpn|openwrt)",
+      "source": "/brands/:b(headscale|hickory-dns|hpe|in-a-dyn|inseego|isc|kong|krakend|lantern|librenms|librespeed|linksys|linux-router|maltrail|masterdnsvpn|meshcentral|mitmproxy|motorola|netbird|netbox-labs|netgate|netmaker|networkmanager|nextdns|nginx|nginx-proxy|nginx-proxy-manager|nlnet-labs|ntop|oauth2-proxy|ocelot|oisf|openclash|openvpn|openwrt|openwrt-nikki|openziti|opnsense|pangolin|peplink)",
       "destination": "/category/routers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(gping|hagezi|headscale|hickory-dns|hpe|in-a-dyn|inseego|isc|kong|krakend-ce|lantern|librenms|librespeed|linksys|linux-router|lura|maltrail|masterdnsvpn|meshcentral|mitmproxy|modlishka|motorola|netbird|netboot-xyz|netbox-labs|netgate|netmaker|networkmanager|nextdns|nginx|nginx-proxy|nginx-proxy-manager|nlnet-labs|ntop|oauth2-proxy|ocelot|oisf|openclash|openvpn|openwrt)/",
+      "source": "/brands/:b(headscale|hickory-dns|hpe|in-a-dyn|inseego|isc|kong|krakend|lantern|librenms|librespeed|linksys|linux-router|maltrail|masterdnsvpn|meshcentral|mitmproxy|motorola|netbird|netbox-labs|netgate|netmaker|networkmanager|nextdns|nginx|nginx-proxy|nginx-proxy-manager|nlnet-labs|ntop|oauth2-proxy|ocelot|oisf|openclash|openvpn|openwrt|openwrt-nikki|openziti|opnsense|pangolin|peplink)/",
       "destination": "/category/routers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(openwrt-nikki|openziti|opnsense|pangolin|path-to-regexp|peplink|piko|pivpn|pomerium|powerdns|pritunl|project-x|protectli|raspap|rethink-app|routing|rustdesk|rustnet|safing|sagernet|shadowsocks|single-spa|skipper|slack|smallstep|smartdns|smokeping|sniffnet|snort|softether|spacex|speedtest-tracker|tailscale|technitium|teleport|teltonika|traefik-labs|trickster|trippy|twisted)",
+      "source": "/brands/:b(piko|pivpn|pomerium|powerdns|pritunl|project-x|protectli|raspap|rethink|rustdesk|rustnet|safing|sagernet|shadowsocks|skipper|slack|smallstep|smartdns|smokeping|sniffnet|snort|softether|spacex|speedtest-tracker|tailscale|technitium|teleport|teltonika|traefik-labs|trickster|trippy|tyk|unpoller|uptime-kuma|v2fly|vulcain|watchyourlan|wazuh|wg-easy|wiredoor)",
       "destination": "/category/routers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(openwrt-nikki|openziti|opnsense|pangolin|path-to-regexp|peplink|piko|pivpn|pomerium|powerdns|pritunl|project-x|protectli|raspap|rethink-app|routing|rustdesk|rustnet|safing|sagernet|shadowsocks|single-spa|skipper|slack|smallstep|smartdns|smokeping|sniffnet|snort|softether|spacex|speedtest-tracker|tailscale|technitium|teleport|teltonika|traefik-labs|trickster|trippy|twisted)/",
+      "source": "/brands/:b(piko|pivpn|pomerium|powerdns|pritunl|project-x|protectli|raspap|rethink|rustdesk|rustnet|safing|sagernet|shadowsocks|skipper|slack|smallstep|smartdns|smokeping|sniffnet|snort|softether|spacex|speedtest-tracker|tailscale|technitium|teleport|teltonika|traefik-labs|trickster|trippy|tyk|unpoller|uptime-kuma|v2fly|vulcain|watchyourlan|wazuh|wg-easy|wiredoor)/",
       "destination": "/category/routers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(tyk|ui-router|unpoller|uptime-kuma|uwebsockets|uwebsockets-js|v2fly|vulcain|watchyourlan|wazuh|wg-easy|wiredoor|wordops|wouter|zeek|zerotier|zoraxy|zrok|zyxel)",
+      "source": "/brands/:b(zeek|zerotier|zoraxy|zrok|zyxel)",
       "destination": "/category/routers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(tyk|ui-router|unpoller|uptime-kuma|uwebsockets|uwebsockets-js|v2fly|vulcain|watchyourlan|wazuh|wg-easy|wiredoor|wordops|wouter|zeek|zerotier|zoraxy|zrok|zyxel)/",
+      "source": "/brands/:b(zeek|zerotier|zoraxy|zrok|zyxel)/",
       "destination": "/category/routers/",
       "permanent": false
     },
@@ -872,112 +872,112 @@
       "permanent": false
     },
     {
-      "source": "/brands/:b(casdoor|ceph|changedetection-io|chatwoot|checkmk|clickhouse|cockpit|colima|comfyui|coolify|cosmos|cronicle|cryptomator|cryptpad|dagster|dashy|datarhei|dawarich|deluge|dify|directus|discourse|dive|dockge|dockur|docmost|dokku|dokploy|donetick|dozzle|dragonfly|draw-io|duckdb|duplicati|elastic|emby|etherpad|excalidraw|ezbookkeeping|file-browser)",
+      "source": "/brands/:b(casdoor|ceph|changedetection-io|chatwoot|checkmk|clickhouse|cockpit|colima|comfyui|coolify|cosmos|cronicle|cryptomator|cryptpad|dagster|dashy|datarhei|dawarich|dbatools|deluge|dify|directus|discourse|dive|dockge|dockur|docmost|dokku|dokploy|donetick|dozzle|dragonfly|draw-io|duckdb|duplicati|elastic|emby|etherpad|excalidraw|ezbookkeeping)",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(casdoor|ceph|changedetection-io|chatwoot|checkmk|clickhouse|cockpit|colima|comfyui|coolify|cosmos|cronicle|cryptomator|cryptpad|dagster|dashy|datarhei|dawarich|deluge|dify|directus|discourse|dive|dockge|dockur|docmost|dokku|dokploy|donetick|dozzle|dragonfly|draw-io|duckdb|duplicati|elastic|emby|etherpad|excalidraw|ezbookkeeping|file-browser)/",
+      "source": "/brands/:b(casdoor|ceph|changedetection-io|chatwoot|checkmk|clickhouse|cockpit|colima|comfyui|coolify|cosmos|cronicle|cryptomator|cryptpad|dagster|dashy|datarhei|dawarich|dbatools|deluge|dify|directus|discourse|dive|dockge|dockur|docmost|dokku|dokploy|donetick|dozzle|dragonfly|draw-io|duckdb|duplicati|elastic|emby|etherpad|excalidraw|ezbookkeeping)/",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(firefly-iii|flaresolverr|flarum|floci|flowise|fluent-bit|fooocus|formbricks|frappe|freescout|freeswitch|freshrss|gatus|ghost|ghostfolio|gitea|glance|glances|glpi|goatcounter|gobuster|gogs|gokapi|gokey|gonic|gotify|graylog|greenbone|grocy|harbor|harness|harvester|healthchecks|hedgedoc|heimdall|homarr|homebox|homepage|homer|hugo)",
+      "source": "/brands/:b(file-browser|findomain|firefly-iii|flaresolverr|flarum|floci|flowise|fluent-bit|fooocus|formbricks|frappe|freescout|freeswitch|freshrss|gatus|ghost|ghostfolio|gitea|glance|glances|glpi|goatcounter|gobuster|gogs|gokapi|gokey|gonic|gotify|graylog|greenbone|grocy|harbor|harness|harvester|healthchecks|hedgedoc|heimdall|homarr|homebox|homepage)",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(firefly-iii|flaresolverr|flarum|floci|flowise|fluent-bit|fooocus|formbricks|frappe|freescout|freeswitch|freshrss|gatus|ghost|ghostfolio|gitea|glance|glances|glpi|goatcounter|gobuster|gogs|gokapi|gokey|gonic|gotify|graylog|greenbone|grocy|harbor|harness|harvester|healthchecks|hedgedoc|heimdall|homarr|homebox|homepage|homer|hugo)/",
+      "source": "/brands/:b(file-browser|findomain|firefly-iii|flaresolverr|flarum|floci|flowise|fluent-bit|fooocus|formbricks|frappe|freescout|freeswitch|freshrss|gatus|ghost|ghostfolio|gitea|glance|glances|glpi|goatcounter|gobuster|gogs|gokapi|gokey|gonic|gotify|graylog|greenbone|grocy|harbor|harness|harvester|healthchecks|hedgedoc|heimdall|homarr|homebox|homepage)/",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(icinga|immich|incus|infisical|invoice-ninja|invokeai|jackett|jaeger|jan|jellyseerr|jenkins|jitsi|joplin|k3s|karakeep|kavita|keepass2android|keepassdx|keepassxc|kener|kestra|keycloak|kimai|koel|kometa|komga|komodo|kopia|kubernetes|kutt|langflow|langfuse|lanraragi|lemmy|librechat|librephotos|libretranslate|lidarr|limesurvey|linkace)",
+      "source": "/brands/:b(homer|hugo|icinga|immich|incus|infisical|invoice-ninja|invokeai|jackett|jaeger|jan|jellyseerr|jenkins|jitsi|joplin|k3s|karakeep|kavita|keepass2android|keepassdx|keepassxc|kener|kestra|keycloak|kimai|koel|kometa|komga|komodo|kopia|kubernetes|kutt|langflow|langfuse|lanraragi|lemmy|librechat|librephotos|libretranslate|lidarr)",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(icinga|immich|incus|infisical|invoice-ninja|invokeai|jackett|jaeger|jan|jellyseerr|jenkins|jitsi|joplin|k3s|karakeep|kavita|keepass2android|keepassdx|keepassxc|kener|kestra|keycloak|kimai|koel|kometa|komga|komodo|kopia|kubernetes|kutt|langflow|langfuse|lanraragi|lemmy|librechat|librephotos|libretranslate|lidarr|limesurvey|linkace)/",
+      "source": "/brands/:b(homer|hugo|icinga|immich|incus|infisical|invoice-ninja|invokeai|jackett|jaeger|jan|jellyseerr|jenkins|jitsi|joplin|k3s|karakeep|kavita|keepass2android|keepassdx|keepassxc|kener|kestra|keycloak|kimai|koel|kometa|komga|komodo|kopia|kubernetes|kutt|langflow|langfuse|lanraragi|lemmy|librechat|librephotos|libretranslate|lidarr)/",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(linkding|listmonk|livekit|lldap|lobehub|localai|logseq|logto|lychee|macpass|mailcow|mailu|mariadb|mastodon|matomo|matrix|mealie|mediamtx|meetily|meilisearch|memos|mergerfs|metabase|metube|milvus|miniflux|minio|misskey|mongodb|monica|movie-data-capture|mumble|musicbrainz|mysql|n8n|nagios|nats|navidrome|neo4j|netdata)",
+      "source": "/brands/:b(limesurvey|linkace|linkding|listmonk|livekit|lldap|lobehub|local-deep-research|localai|logseq|logto|lychee|macpass|mailcow|mailu|mariadb|mastodon|matomo|matrix|mealie|mediamtx|meetily|meilisearch|memos|mergerfs|metabase|metube|milvus|miniflux|minio|misskey|modlishka|mongodb|monica|movie-data-capture|mumble|musicbrainz|mysql|n8n|nagios)",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(linkding|listmonk|livekit|lldap|lobehub|localai|logseq|logto|lychee|macpass|mailcow|mailu|mariadb|mastodon|matomo|matrix|mealie|mediamtx|meetily|meilisearch|memos|mergerfs|metabase|metube|milvus|miniflux|minio|misskey|mongodb|monica|movie-data-capture|mumble|musicbrainz|mysql|n8n|nagios|nats|navidrome|neo4j|netdata)/",
+      "source": "/brands/:b(limesurvey|linkace|linkding|listmonk|livekit|lldap|lobehub|local-deep-research|localai|logseq|logto|lychee|macpass|mailcow|mailu|mariadb|mastodon|matomo|matrix|mealie|mediamtx|meetily|meilisearch|memos|mergerfs|metabase|metube|milvus|miniflux|minio|misskey|modlishka|mongodb|monica|movie-data-capture|mumble|musicbrainz|mysql|n8n|nagios)/",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(nextcloud|nginx-http-flv-module|nocodb|nodewarden|nomic|nsmusics|ntfy|nzbhydra2|olivetin|ollama|ombi|onedev|onlyoffice|onyx|oobabooga|open-webui|openbao|openfaas|opensearch|opentelemetry|opentofu|openzfs|ory|osticket|outline|overseerr|owasp|owntracks|pairdrop|paperless-ngx|passbolt|passforios|peertube|penpot|pentagi|photoprism|phpipam|phpmyadmin|pinchflat|pingvin-share)",
+      "source": "/brands/:b(nats|navidrome|neo4j|netdata|nextcloud|nginx-http-flv-module|nocodb|nodewarden|nomic|nsmusics|ntfy|nzbhydra2|olivetin|ollama|ombi|onedev|onlyoffice|onyx|oobabooga|open-webui|openbao|openfaas|opensearch|opentelemetry|opentofu|openzfs|ory|osticket|outline|overseerr|owasp|owntracks|pairdrop|paperless-ngx|pass-for-ios|passbolt|peertube|penpot|pentagi|photoprism)",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(nextcloud|nginx-http-flv-module|nocodb|nodewarden|nomic|nsmusics|ntfy|nzbhydra2|olivetin|ollama|ombi|onedev|onlyoffice|onyx|oobabooga|open-webui|openbao|openfaas|opensearch|opentelemetry|opentofu|openzfs|ory|osticket|outline|overseerr|owasp|owntracks|pairdrop|paperless-ngx|passbolt|passforios|peertube|penpot|pentagi|photoprism|phpipam|phpmyadmin|pinchflat|pingvin-share)/",
+      "source": "/brands/:b(nats|navidrome|neo4j|netdata|nextcloud|nginx-http-flv-module|nocodb|nodewarden|nomic|nsmusics|ntfy|nzbhydra2|olivetin|ollama|ombi|onedev|onlyoffice|onyx|oobabooga|open-webui|openbao|openfaas|opensearch|opentelemetry|opentofu|openzfs|ory|osticket|outline|overseerr|owasp|owntracks|pairdrop|paperless-ngx|pass-for-ios|passbolt|peertube|penpot|pentagi|photoprism)/",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(piwigo|pixelfed|planka|plausible|playnite|pocketbase|portainer|postal|prefect|processone|projectdiscovery|prometheus|prowlarr|proxmox|pulse|puter|pydio|qbittorrent|qdrant|questdb|qwenpaw|rabbitmq|radarr|rallly|rancher|rclone|readarr|reconftw|recyclarr|redash|redis|redpanda|restic|rocket-chat|roundcube|runtipi|sabnzbd|salt-project|screego|scrutiny)",
+      "source": "/brands/:b(phpipam|phpmyadmin|pinchflat|pingvin-share|piwigo|pixelfed|planka|plausible|playnite|pocketbase|portainer|postal|prefect|processone|projectdiscovery|prometheus|prowlarr|proxmox|pulse|puter|pydio|qbittorrent|qdrant|questdb|qwenpaw|rabbitmq|radarr|rallly|rancher|rclone|readarr|reconftw|recyclarr|redash|redis|redpanda|restic|rocket-chat|roundcube|runtipi)",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(piwigo|pixelfed|planka|plausible|playnite|pocketbase|portainer|postal|prefect|processone|projectdiscovery|prometheus|prowlarr|proxmox|pulse|puter|pydio|qbittorrent|qdrant|questdb|qwenpaw|rabbitmq|radarr|rallly|rancher|rclone|readarr|reconftw|recyclarr|redash|redis|redpanda|restic|rocket-chat|roundcube|runtipi|sabnzbd|salt-project|screego|scrutiny)/",
+      "source": "/brands/:b(phpipam|phpmyadmin|pinchflat|pingvin-share|piwigo|pixelfed|planka|plausible|playnite|pocketbase|portainer|postal|prefect|processone|projectdiscovery|prometheus|prowlarr|proxmox|pulse|puter|pydio|qbittorrent|qdrant|questdb|qwenpaw|rabbitmq|radarr|rallly|rancher|rclone|readarr|reconftw|recyclarr|redash|redis|redpanda|restic|rocket-chat|roundcube|runtipi)/",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(seafile|semaphore|sentry|shiori|shlink|sidero-labs|signoz|siyuan|snapraid|snipe-it|sonarr|songloft|sparkyfitness|srs|statping-ng|stirling-pdf|strapi|sun-panel|syncthing|tandoor|tautulli|tdarr|tdengine|temporal|tianji|timescale|tinyauth|tooljet|traccar|transmission|trilium|trystero|tube-archivist|tubesync|typebot|typesense|umami|umbrel|universal-media-server|unpackerr)",
+      "source": "/brands/:b(sabnzbd|salt-project|screego|scrutiny|seafile|semaphore|sentry|shiori|shlink|sidero-labs|signoz|siyuan|snapraid|snipe-it|sonarr|songloft|sparkyfitness|srs|statping-ng|stirling-pdf|strapi|sun-panel|syncthing|tandoor|tautulli|tdarr|tdengine|temporal|tianji|timescale|tinyauth|tooljet|traccar|transmission|trilium|trystero|tube-archivist|tubesync|typebot|typesense)",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(seafile|semaphore|sentry|shiori|shlink|sidero-labs|signoz|siyuan|snapraid|snipe-it|sonarr|songloft|sparkyfitness|srs|statping-ng|stirling-pdf|strapi|sun-panel|syncthing|tandoor|tautulli|tdarr|tdengine|temporal|tianji|timescale|tinyauth|tooljet|traccar|transmission|trilium|trystero|tube-archivist|tubesync|typebot|typesense|umami|umbrel|universal-media-server|unpackerr)/",
+      "source": "/brands/:b(sabnzbd|salt-project|screego|scrutiny|seafile|semaphore|sentry|shiori|shlink|sidero-labs|signoz|siyuan|snapraid|snipe-it|sonarr|songloft|sparkyfitness|srs|statping-ng|stirling-pdf|strapi|sun-panel|syncthing|tandoor|tautulli|tdarr|tdengine|temporal|tianji|timescale|tinyauth|tooljet|traccar|transmission|trilium|trystero|tube-archivist|tubesync|typebot|typesense)/",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(valkey|vaultwarden|vector|verdaccio|victoriametrics|vikunja|vllm|voidauth|wallabag|wanderer|watchtower|weaviate|webmin|wger|whoogle|wiki-js|windmill|wizarr|woodpecker|wordpress|yourls|yt-dlp|yunohost|zabbix|zammad|zitadel|zulip)",
+      "source": "/brands/:b(umami|umbrel|universal-media-server|unpackerr|valkey|vaultwarden|vector|verdaccio|victoriametrics|vikunja|vllm|voidauth|wallabag|wanderer|watchtower|weaviate|webmin|wger|whoogle|wiki-js|windmill|wizarr|woodpecker|wordops|wordpress|yourls|yt-dlp|yunohost|zabbix|zammad|zitadel|zulip)",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(valkey|vaultwarden|vector|verdaccio|victoriametrics|vikunja|vllm|voidauth|wallabag|wanderer|watchtower|weaviate|webmin|wger|whoogle|wiki-js|windmill|wizarr|woodpecker|wordpress|yourls|yt-dlp|yunohost|zabbix|zammad|zitadel|zulip)/",
+      "source": "/brands/:b(umami|umbrel|universal-media-server|unpackerr|valkey|vaultwarden|vector|verdaccio|victoriametrics|vikunja|vllm|voidauth|wallabag|wanderer|watchtower|weaviate|webmin|wger|whoogle|wiki-js|windmill|wizarr|woodpecker|wordops|wordpress|yourls|yt-dlp|yunohost|zabbix|zammad|zitadel|zulip)/",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(abode|android|anker|aqara|arlo|august|brilliant|bruce|button-card|chamberlain|chargepoint|dgiot|domoticz|dreame|dresden-elektronik|eclipse|ecobee|ecovacs|emporia|enphase|espeasy|espresense|evcc|eve|flume|frigate|fuxa|gladys|go2rtc|google|govee|ha-bambulab|ha-xiaomi-home|homeassistant-tapo-control|homebridge|http-shortcuts|hyperion|iobroker|ios|irobot)",
+      "source": "/brands/:b(abode|anker|aqara|arlo|august|brilliant|bruce|button-card|chamberlain|chargepoint|dgiot|domoticz|dreame|dresden-elektronik|eclipse|ecobee|ecovacs|emporia|enphase|espeasy|espresense|evcc|eve|flume|frigate|fuxa|gladys|go2rtc|google|govee|ha-bambulab|homebridge|http-shortcuts|hyperion|iobroker|irobot|jetlinks|konnected|kwikset|level)",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(abode|android|anker|aqara|arlo|august|brilliant|bruce|button-card|chamberlain|chargepoint|dgiot|domoticz|dreame|dresden-elektronik|eclipse|ecobee|ecovacs|emporia|enphase|espeasy|espresense|evcc|eve|flume|frigate|fuxa|gladys|go2rtc|google|govee|ha-bambulab|ha-xiaomi-home|homeassistant-tapo-control|homebridge|http-shortcuts|hyperion|iobroker|ios|irobot)/",
+      "source": "/brands/:b(abode|anker|aqara|arlo|august|brilliant|bruce|button-card|chamberlain|chargepoint|dgiot|domoticz|dreame|dresden-elektronik|eclipse|ecobee|ecovacs|emporia|enphase|espeasy|espresense|evcc|eve|flume|frigate|fuxa|gladys|go2rtc|google|govee|ha-bambulab|homebridge|http-shortcuts|hyperion|iobroker|irobot|jetlinks|konnected|kwikset|level)/",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(jetlinks|konnected|kwikset|level|leviton|libretiny|lifx|local-deep-research|lovelace-xiaomi-vacuum-map-card|lutron|marauder|matter|meross|moen|motioneye|music-assistant|nanoleaf|netatmo|node-red|nodemcu|openbeken|openccu|opendtu|openenergymonitor|openevse|openhab|openhasp|openmqttgateway|opensprinkler|openthread|openwakeword|openwb|philips|piper|rachio|ratgdo|ravensystem|reolink|resideo|rhasspy)",
+      "source": "/brands/:b(leviton|libretiny|lifx|lutron|marauder|matter|meross|moen|motioneye|music-assistant|nanoleaf|netatmo|node-red|nodemcu|openbeken|openccu|opendtu|openenergymonitor|openevse|openhab|openhasp|openmqttgateway|opensprinkler|openthread|openwakeword|openwb|philips|piper|rachio|ratgdo|ravensystem|reolink|resideo|rhasspy|roborock|schlage|scrypted|shelly|sonos|switchbot)",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(jetlinks|konnected|kwikset|level|leviton|libretiny|lifx|local-deep-research|lovelace-xiaomi-vacuum-map-card|lutron|marauder|matter|meross|moen|motioneye|music-assistant|nanoleaf|netatmo|node-red|nodemcu|openbeken|openccu|opendtu|openenergymonitor|openevse|openhab|openhasp|openmqttgateway|opensprinkler|openthread|openwakeword|openwb|philips|piper|rachio|ratgdo|ravensystem|reolink|resideo|rhasspy)/",
+      "source": "/brands/:b(leviton|libretiny|lifx|lutron|marauder|matter|meross|moen|motioneye|music-assistant|nanoleaf|netatmo|node-red|nodemcu|openbeken|openccu|opendtu|openenergymonitor|openevse|openhab|openhasp|openmqttgateway|opensprinkler|openthread|openwakeword|openwb|philips|piper|rachio|ratgdo|ravensystem|reolink|resideo|rhasspy|roborock|schlage|scrypted|shelly|sonos|switchbot)/",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(roborock|schlage|scrypted|shelly|sonos|switchbot|tado|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|valetudo|wallbox|wled|wyze|xiaomi-miot-auto|yale|zigbee2mqtt|zigpy|zoneminder)",
+      "source": "/brands/:b(tado|tapo-control|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|valetudo|wallbox|wled|wyze|xiaomi-home|xiaomi-miot-auto|xiaomi-vacuum-map-card|yale|zigbee2mqtt|zigpy|zoneminder)",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(roborock|schlage|scrypted|shelly|sonos|switchbot|tado|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|valetudo|wallbox|wled|wyze|xiaomi-miot-auto|yale|zigbee2mqtt|zigpy|zoneminder)/",
+      "source": "/brands/:b(tado|tapo-control|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|valetudo|wallbox|wled|wyze|xiaomi-home|xiaomi-miot-auto|xiaomi-vacuum-map-card|yale|zigbee2mqtt|zigpy|zoneminder)/",
       "destination": "/category/smart-home/",
       "permanent": false
     },
@@ -1032,6 +1032,16 @@
       "permanent": true
     },
     {
+      "source": "/devices/chi",
+      "destination": "/category/routers/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/chi/",
+      "destination": "/category/routers/",
+      "permanent": true
+    },
+    {
       "source": "/devices/firmware",
       "destination": "/devices/bruce-firmware/",
       "permanent": true
@@ -1052,6 +1062,26 @@
       "permanent": true
     },
     {
+      "source": "/devices/laravel-backup",
+      "destination": "/category/nas/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/laravel-backup/",
+      "destination": "/category/nas/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/lura",
+      "destination": "/category/routers/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/lura/",
+      "destination": "/category/routers/",
+      "permanent": true
+    },
+    {
       "source": "/devices/netalertx-netalertx",
       "destination": "/devices/netalertx/",
       "permanent": true
@@ -1059,6 +1089,16 @@
     {
       "source": "/devices/netalertx-netalertx/",
       "destination": "/devices/netalertx/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/node-serialport",
+      "destination": "/category/makers/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/node-serialport/",
+      "destination": "/category/makers/",
       "permanent": true
     },
     {
@@ -1082,6 +1122,16 @@
       "permanent": true
     },
     {
+      "source": "/devices/path-to-regexp",
+      "destination": "/category/routers/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/path-to-regexp/",
+      "destination": "/category/routers/",
+      "permanent": true
+    },
+    {
       "source": "/devices/pikvm-os",
       "destination": "/category/pcs-tvs-gadgets/",
       "permanent": true
@@ -1099,6 +1149,76 @@
     {
       "source": "/devices/podman-container-tools-podman/",
       "destination": "/devices/podman/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/routing",
+      "destination": "/category/routers/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/routing/",
+      "destination": "/category/routers/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/single-spa",
+      "destination": "/category/routers/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/single-spa/",
+      "destination": "/category/routers/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/twisted",
+      "destination": "/category/routers/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/twisted/",
+      "destination": "/category/routers/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/ui-router",
+      "destination": "/category/routers/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/ui-router/",
+      "destination": "/category/routers/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/uwebsockets-js",
+      "destination": "/category/routers/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/uwebsockets-js/",
+      "destination": "/category/routers/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/uwebsockets",
+      "destination": "/category/routers/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/uwebsockets/",
+      "destination": "/category/routers/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/wouter",
+      "destination": "/category/routers/",
+      "permanent": true
+    },
+    {
+      "source": "/devices/wouter/",
+      "destination": "/category/routers/",
       "permanent": true
     },
     {

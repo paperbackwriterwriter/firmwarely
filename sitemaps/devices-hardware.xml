@@ -201,10 +201,10 @@
   <url><loc>https://www.firmwarely.com/devices/hass-xiaomi-miot/</loc><lastmod>2026-09-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/wasm-micro-runtime/</loc><lastmod>2026-06-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/masterdnsvpn/</loc><lastmod>2026-06-13</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/doggo/</loc><lastmod>2026-09-01</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/rethink-app/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/dnscontrol/</loc><lastmod>2026-09-30</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/findomain/</loc><lastmod>2025-07-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/shadps4/</loc><lastmod>2026-10-02</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/rpcs3/</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/tyk/</loc><lastmod>2026-10-02</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ocelot/</loc><lastmod>2026-09-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/bfe/</loc><lastmod>2026-09-24</lastmod></url>
@@ -216,14 +216,9 @@
   <url><loc>https://www.firmwarely.com/devices/deskhop/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/k3sup/</loc><lastmod>2026-09-03</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/glslviewer/</loc><lastmod>2026-02-07</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/bambuddy/</loc><lastmod>2026-10-02</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/dockflare/</loc><lastmod>2026-09-20</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/local-deep-research/</loc><lastmod>2026-08-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/android/</loc><lastmod>2026-08-31</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/meshlab/</loc><lastmod>2025-07-22</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ha-bambulab/</loc><lastmod>2026-09-12</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/uvtools/</loc><lastmod>2026-10-06</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/chi/</loc><lastmod>2026-08-20</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/lantern/</loc><lastmod>2026-09-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/docker-android/</loc><lastmod>2026-09-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/cemu/</loc><lastmod>2025-02-06</lastmod></url>
@@ -238,21 +233,12 @@
   <url><loc>https://www.firmwarely.com/devices/piko/</loc><lastmod>2026-10-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/wiredoor/</loc><lastmod>2026-09-22</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/gladys/</loc><lastmod>2026-10-02</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/button-card/</loc><lastmod>2025-11-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ios/</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/homeassistant-tapo-control/</loc><lastmod>2026-10-06</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/lovelace-xiaomi-vacuum-map-card/</loc><lastmod>2026-06-23</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/openccu/</loc><lastmod>2026-09-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/http-shortcuts/</loc><lastmod>2026-10-05</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/ui-router/</loc><lastmod>2025-12-31</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/uwebsockets-js/</loc><lastmod>2026-09-16</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/path-to-regexp/</loc><lastmod>2026-04-01</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/wouter/</loc><lastmod>2026-09-30</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/routing/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/freerouting/</loc><lastmod>2026-10-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ha-xiaomi-home/</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/86box/</loc><lastmod>2026-05-31</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/lemuroid/</loc><lastmod>2026-04-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/xemu/</loc><lastmod>2026-06-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/furnace/</loc><lastmod>2025-06-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/bizhawk/</loc><lastmod>2026-05-01</lastmod></url>
