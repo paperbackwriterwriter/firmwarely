@@ -268,10 +268,10 @@
   <url><loc>https://www.firmwarely.com/devices/btop/</loc><lastmod>2026-05-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/nagios-core/</loc><lastmod>2026-08-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/icinga2/</loc><lastmod>2026-08-18</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/kener/</loc><lastmod>2026-10-02</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/kener/</loc><lastmod>2026-10-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/statping-ng/</loc><lastmod>2025-06-04</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/cronicle/</loc><lastmod>2026-10-01</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/graylog/</loc><lastmod>2026-09-02</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/graylog/</loc><lastmod>2026-10-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/opensearch/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/elasticsearch/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/vector/</loc><lastmod>2026-10-06</lastmod></url>
@@ -350,7 +350,7 @@
   <url><loc>https://www.firmwarely.com/devices/jupyterlab/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/n8n/</loc><lastmod>2026-10-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/activepieces/</loc><lastmod>2026-10-07</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/windmill/</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/windmill/</loc><lastmod>2026-10-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/temporal/</loc><lastmod>2026-09-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/airflow/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/prefect/</loc><lastmod>2026-10-06</lastmod></url>
@@ -370,7 +370,7 @@
   <url><loc>https://www.firmwarely.com/devices/gpt4all/</loc><lastmod>2025-02-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/anythingllm/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/librechat/</loc><lastmod>2026-10-01</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/lobe-chat/</loc><lastmod>2026-09-20</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/lobe-chat/</loc><lastmod>2026-10-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/dify/</loc><lastmod>2026-09-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/flowise/</loc><lastmod>2026-07-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/langflow/</loc><lastmod>2026-10-06</lastmod></url>
@@ -428,7 +428,7 @@
   <url><loc>https://www.firmwarely.com/devices/freescout/</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/zammad/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/osticket/</loc><lastmod>2026-06-17</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/glpi/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/glpi/</loc><lastmod>2026-10-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/snipe-it/</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/phpipam/</loc><lastmod>2026-09-09</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/erpnext/</loc><lastmod>2026-10-07</lastmod></url>
@@ -613,7 +613,7 @@
   <url><loc>https://www.firmwarely.com/devices/glslviewer/</loc><lastmod>2026-02-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/raspotify/</loc><lastmod>2026-09-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/xplr/</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/linkace/</loc><lastmod>2026-08-03</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/linkace/</loc><lastmod>2026-10-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/tianji/</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/bambuddy/</loc><lastmod>2026-10-02</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/gokapi/</loc><lastmod>2026-03-10</lastmod></url>

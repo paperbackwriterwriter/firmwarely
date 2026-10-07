@@ -8046,6 +8046,168 @@
     "security_fix_plain": 0.05,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "prusa-mk4-core-one",
+   "version": "6.9.2",
+   "name": "Prusa MK4 / MK4S / Core One (Buddy firmware)",
+   "judged_at": "2026-10-07T12:24:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "prusa-mk4s",
+   "version": "6.9.2",
+   "name": "Prusa MK4S",
+   "judged_at": "2026-10-07T12:24:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "prusa-xl",
+   "version": "6.9.2",
+   "name": "Prusa XL",
+   "judged_at": "2026-10-07T12:24:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "kener",
+   "version": "4.1.7",
+   "name": "Kener Status page",
+   "judged_at": "2026-10-07T12:24:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.55,
+    "security_fix_plain": 0.53,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "graylog",
+   "version": "7.1.10",
+   "name": "Graylog Log management",
+   "judged_at": "2026-10-07T12:24:48+00:00",
+   "notes_chars": 6,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.12,
+    "security_fix_plain": 0.11,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "windmill",
+   "version": "1.826.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-10-07T12:24:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.07,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "lobe-chat",
+   "version": "2.2.19",
+   "name": "LobeHub Lobe Chat",
+   "judged_at": "2026-10-07T12:24:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "glpi",
+   "version": "12.0.0",
+   "name": "GLPI IT asset management",
+   "judged_at": "2026-10-07T12:24:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "linkace",
+   "version": "2.6.2",
+   "name": "LinkAce Archive to collect links of your favorite websites",
+   "judged_at": "2026-10-07T12:24:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.23,
+    "security_fix_plain": 0.51,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
