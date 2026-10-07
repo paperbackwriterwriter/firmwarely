@@ -278,13 +278,13 @@
    "model": "Identity and access",
    "category": "A",
    "status": "update",
-   "version": "4.17.0",
+   "version": "4.18.0",
    "previous": "4.15.0",
-   "released": "2026-10-06",
+   "released": "2026-10-07",
    "date_known": true,
    "eol": false,
-   "notes": "Changelog: Features: 817334ed69d92e8bcb3c7b24589f1f3b6f5272b9 feat: add a README to the Helm chart 69aba14845c38955b741dcade5edf7030050204d feat: let the global admin set the trusted database hosts of an organization",
-   "source_url": "https://github.com/casdoor/casdoor/releases/tag/v4.17.0",
+   "notes": "Changelog: Features: 4ee572a3e31191bb3834b2148bce7145825bf180 feat: add columns parameter to update-role and update-permission 00c52f5ddacbc00c38d48fe4cea5f4acfcda532f feat: add container health checks bc93b03f9c320ca3eea8674f39f1ea5f4bd6a899 feat: add initData values to the Helm chart ab4ed7ef3b44…",
+   "source_url": "https://github.com/casdoor/casdoor/releases/tag/v4.18.0",
    "page_url": "https://www.firmwarely.com/devices/casdoor/"
   },
   "ghost": {
@@ -646,6 +646,36 @@
    "notes": "Installation Guide: https://docs.onedev.io/category/installation-guide Change Log: https://code.onedev.io/onedev/server/~builds/8640/fixed-issues?query=%22State%22+is+%22Released%22+order+by+%22Type%22+asc+%2C+%22Priority%22+desc Incompatibilities: https://code.onedev.io/onedev/server/~builds/8640/…",
    "source_url": "https://github.com/theonedev/onedev/releases/tag/v16.8.5",
    "page_url": "https://www.firmwarely.com/devices/onedev/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.2800",
+   "previous": "0.24.2798",
+   "released": "2026-10-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: a22ee4dbba11fcf3c1c6078033720e1a5e6f595e world-torrent: new domains edfd738baaf6cf8a528010a29200fa087b405776 ptgtk: bump engine tag 52c8307a503a800f3de44596cf35287d6f120385 Update README.md 033b013f784011ec9fd0676a4ddc137134b6c1ef wolfmax4k: new domain #​17176 This list of changes was aut…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2800",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "openbot": {
+   "id": "openbot",
+   "brand": "OpenBot",
+   "model": "Leverages smartphones as brains for low-cost robots",
+   "category": "M",
+   "status": "update",
+   "version": "0.9.0",
+   "previous": "0.8.0",
+   "released": "2026-10-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "The following summarizes the changes compared to the previous release v0.8.0. Full Changelog: https://github.com/ob-f/OpenBot/compare/v0.8.0...v0.9.0 New Features: Add a settings drawer, network server selection, and switching between tilt and on-screen driving modes to the Flutter controller OpenB…",
+   "source_url": "https://github.com/ob-f/OpenBot/releases/tag/v0.9.0",
+   "page_url": "https://www.firmwarely.com/devices/openbot/"
   }
  }
 }
