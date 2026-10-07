@@ -256,6 +256,66 @@
    "notes": "[!WARNING] Using SSO? Check your email verification. LinkAce links a provider login to an existing account by email address. If your provider lets users set an unverified address, they can take over the account using it. Set SSO_REQUIRE_VERIFIED_EMAIL=true if your provider supports it, see the deta…",
    "source_url": "https://github.com/Kovah/LinkAce/releases/tag/v2.6.2",
    "page_url": "https://www.firmwarely.com/devices/linkace/"
+  },
+  "duplicati": {
+   "id": "duplicati",
+   "brand": "Duplicati",
+   "model": "Encrypted backup client",
+   "category": "A",
+   "status": "critical",
+   "version": "2.4.0.1_stable_2026-10-07",
+   "previous": "2.4.0.0_stable_2026-09-03",
+   "released": "2026-10-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "About this release: This release patches version 2.4.0.0 with fixes for a number of issues that were discovered after the release. The main focus of this release is stability, with many fixes to restore, abort handling and the new sync mode, along with security hardening of the server and remote co…",
+   "source_url": "https://github.com/duplicati/duplicati/releases/tag/v2.4.0.1_stable_2026-10-07",
+   "page_url": "https://www.firmwarely.com/devices/duplicati/"
+  },
+  "cockpit": {
+   "id": "cockpit",
+   "brand": "Cockpit",
+   "model": "Server web console",
+   "category": "A",
+   "status": "update",
+   "version": "369",
+   "previous": "310",
+   "released": "2026-10-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "Translations and dependency updates",
+   "source_url": "https://github.com/cockpit-project/cockpit/releases/tag/369",
+   "page_url": "https://www.firmwarely.com/devices/cockpit/"
+  },
+  "clickhouse": {
+   "id": "clickhouse",
+   "brand": "ClickHouse",
+   "model": "Analytics database",
+   "category": "A",
+   "status": "update",
+   "version": "26.3.44.2-lts",
+   "previous": "26.9.12.8-stable",
+   "released": "2026-10-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release v26.3.44.2-lts v26.3.44.2-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.3.44.2-lts",
+   "page_url": "https://www.firmwarely.com/devices/clickhouse/"
+  },
+  "kometa": {
+   "id": "kometa",
+   "brand": "Kometa",
+   "model": "Plex metadata manager",
+   "category": "A",
+   "status": "update",
+   "version": "2.5.2",
+   "previous": "2.5.1",
+   "released": "2026-10-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changed: Standardize collection-level Radarr and Sonarr definition setting names: radarr_root_folder_path, radarr_minimum_availability, radarr_quality_profile, radarr_tags, sonarr_root_folder_path, sonarr_quality_profile, sonarr_language_profile, sonarr_series_type, sonarr_season_folder, and sonarr…",
+   "source_url": "https://github.com/Kometa-Team/Kometa/releases/tag/v2.5.2",
+   "page_url": "https://www.firmwarely.com/devices/kometa/"
   }
  }
 }

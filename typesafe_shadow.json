@@ -8208,6 +8208,78 @@
     "security_fix_plain": 0.51,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "duplicati",
+   "version": "2.4.0.1_stable_2026-10-07",
+   "name": "Duplicati Encrypted backup client",
+   "judged_at": "2026-10-07T13:21:42+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.29,
+    "security_fix_plain": 0.4,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "cockpit",
+   "version": "369",
+   "name": "Cockpit Server web console",
+   "judged_at": "2026-10-07T13:21:42+00:00",
+   "notes_chars": 35,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.3.44.2-lts",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-07T13:21:42+00:00",
+   "notes_chars": 37,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "kometa",
+   "version": "2.5.2",
+   "name": "Kometa Plex metadata manager",
+   "judged_at": "2026-10-07T13:21:42+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
