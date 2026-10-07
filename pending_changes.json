@@ -248,13 +248,13 @@
    "model": "Anime RSS downloader",
    "category": "A",
    "status": "update",
-   "version": "3.2.42",
+   "version": "3.2.43",
    "previous": "3.2.39",
-   "released": "2026-10-06",
+   "released": "2026-10-07",
    "date_known": true,
    "eol": false,
-   "notes": "fix: 修复 x.5 集刮削错误",
-   "source_url": "https://github.com/wushuo894/ani-rss/releases/tag/v3.2.42",
+   "notes": "fix: 修复自动偏移遇到 x.5 的偏移错误 build: 更新依赖",
+   "source_url": "https://github.com/wushuo894/ani-rss/releases/tag/v3.2.43",
    "page_url": "https://www.firmwarely.com/devices/ani-rss/"
   },
   "zimaos": {
