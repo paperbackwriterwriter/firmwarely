@@ -509,9 +509,11 @@ def device_page(d, ctx=None):
          **({"dateModified": d["checked"][:10]} if d.get("checked") else {})},
     ]
     if live:
-        app = {"@type": "SoftwareApplication", "name": f"{name}{fw}", "applicationCategory": "Firmware",
-               "operatingSystem": name, "softwareVersion": d["version"],
-               "author": {"@type": "Organization", "name": d["brand"]}}
+        # firmware runs on the device it is named for; a project is just an application
+        app = {"@type": "SoftwareApplication", "name": f"{name}{fw}",
+               **({"applicationCategory": "UtilitiesApplication"} if software
+                  else {"applicationCategory": "Firmware", "operatingSystem": name}),
+               "softwareVersion": d["version"], "author": {"@type": "Organization", "name": d["brand"]}}
         if d.get("released") and dated(d):
             app["datePublished"] = d["released"]
         if notes:
@@ -602,7 +604,7 @@ def device_page(d, ctx=None):
              else f"Version {esc(d['version'])}, which we first saw on {fmt(d.get('released'))}; {esc(d['brand'])} doesn't publish a release date for it. " if live
              else "We haven't recorded a version yet. ")}This page is refreshed every hour from the {"project's" if software else "manufacturer's"} release page.</p>
         <h3>How do I update {"" if software else "the "}{esc(name)}?</h3>
-        <p><a href="#update">See the step-by-step above.</a> {esc(HOWTO.get(d['category'], ''))}</p>
+        <p><a href="#update">See the step-by-step above.</a> {esc(HOWTO.get("A" if software else d['category'], ''))}</p>
         <h3>How does Firmwarely know when there's a new version?</h3>
         <p>Every hour we read the {"project's" if software else "manufacturer's"} official release page{((" for " if software else " for the ") + esc(name)) if live else ""} and record the version, date and changelog. Subscribers watching {"it" if software else "this device"} get an email when it changes: the next morning on Pro, in the Monday roundup on the free plan.</p>
         <h3>Is this an official {esc(d['brand'])} page?</h3>
