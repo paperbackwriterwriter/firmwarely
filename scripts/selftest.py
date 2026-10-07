@@ -627,11 +627,25 @@ def test_withdrawn_devices_redirect():
     family_rules = [r for r in rules if r["destination"] in fam_pages and r["source"] not in listed_moves]
     rules = [r for r in rules if r not in family_rules]
     moves = [r for r in rules if r.get("permanent")]
-    rules = [r for r in rules if not r.get("permanent")]
+    brand_rules = [r for r in rules if not r.get("permanent") and r["source"].startswith("/brands/:b(")]
+    rules = [r for r in rules if not r.get("permanent") and r not in brand_rules]
     covered = set()
     for r in rules:
         covered |= set(re.search(r"\(([^)]*)\)", r["source"]).group(1).split("|"))
     check("every device we don't publish has somewhere to land", sorted(waiting - covered)[:5], [])
+
+    # a brand with no page (its old page was in the sitemap once) lands on its category
+    brand_covered = set()
+    for r in brand_rules:
+        brand_covered |= set(re.search(r"\(([^)]*)\)", r["source"]).group(1).split("|"))
+    pageless = {build_pages.slugify(s["brand"]) for s in json.loads(Path("sources.json").read_text())["devices"]
+                if not (Path("brands") / build_pages.slugify(s["brand"]) / "index.html").exists()}
+    elsewhere = {r["source"].rstrip("/").rsplit("/", 1)[-1] for r in family_rules + moves if r["source"].startswith("/brands/")}
+    check("every brand without a page has somewhere to land", sorted(pageless - brand_covered - elsewhere)[:5], [])
+    check("no brand page that exists is redirected away", sorted(b for b in brand_covered if (Path("brands") / b / "index.html").exists())[:5], [])
+    check("brand pages go to a category, temporarily",
+          sorted({(r["destination"].startswith("/category/"), r["permanent"]) for r in brand_rules}), [(True, False)])
+    check("the old dji brand page is one of them", "dji" in brand_covered, True)
 
     # Vercel redirects before it serves a file, so a stale rule would shadow a real page.
     check("no published device is redirected away from its own page",
@@ -664,6 +678,23 @@ def test_withdrawn_devices_redirect():
     # the hourly run has to commit the file it regenerates, or the rules drift from the pages
     wf = Path(".github/workflows/nightly.yml").read_text()
     check("the check commits vercel.json with the pages it rebuilt", "vercel.json" in wf, True)
+
+
+# ---- an address that was ever listed keeps leading somewhere ----
+def test_no_dead_addresses():
+    rules = [{"source": "/devices/:id(alpha|beta)/", "destination": "/category/makers/", "permanent": False},
+             {"source": "/brands/:b(gamma)", "destination": "/category/routers/", "permanent": False},
+             {"source": "/devices/moved/", "destination": "/devices/", "permanent": True}]
+    for path, want in [("/", True), ("/devices/", True), ("/support/", True), ("/devices/alpha/", True),
+                       ("/devices/beta", True), ("/brands/gamma/", True), ("/devices/moved", True),
+                       ("/devices/alphabet/", False), ("/devices/nowhere/", False), ("/brands/delta/", False)]:
+        check(f"resolves {path}", build_pages.resolves(path, rules), want)
+    listed = re.findall(r"<loc>https://www\.firmwarely\.com(/[^<]*)</loc>", Path("sitemap.xml").read_text())
+    check("every address in the sitemap leads somewhere", [p for p in listed if not build_pages.resolves(p)][:5], [])
+    for old in ("/brands/dji/", "/brands/sonos/", "/devices/gotosocial/", "/devices/pikvm-os/"):
+        check(f"once-listed {old} still leads somewhere", build_pages.resolves(old), True)
+    wf = Path(".github/workflows/nightly.yml").read_text()
+    check("the hourly run commits redirects.json, where the safety net writes", "redirects.json" in wf, True)
 
 
 # ---- models on one firmware line share one page ----
@@ -701,7 +732,7 @@ def test_families():
                   (f"/devices/{m}/</loc>" in sitemap, f'href="/devices/{m}/"' in cat_html), (False, False))
     # a brand redirected to its family must not also have a page
     for r in rules:
-        if r["source"].startswith("/brands/"):
+        if r["source"].startswith("/brands/") and ":" not in r["source"]:
             check(f"{r['source']} redirects only because its page is gone",
                   (Path(r["source"].strip("/")) / "index.html").exists(), False)
 
@@ -1253,7 +1284,7 @@ def test_schedule_and_digest():
 
 
 for t in (test_compare, test_new_release, test_saved_devices, test_routing, test_typed_devices, test_typesafe_shadow, test_weekly_roll, test_forced_guard,
-          test_update_guides, test_sources_well_formed, test_site_shows_only_real_data, test_names_said_once, test_support_page, test_dates_are_honest, test_withdrawn_devices_redirect, test_families, test_workflows_pinned, test_analytics_and_its_disclosure, test_form_rate_limit, test_captcha, test_side_gutter, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
+          test_update_guides, test_sources_well_formed, test_site_shows_only_real_data, test_names_said_once, test_support_page, test_dates_are_honest, test_withdrawn_devices_redirect, test_no_dead_addresses, test_families, test_workflows_pinned, test_analytics_and_its_disclosure, test_form_rate_limit, test_captcha, test_side_gutter, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
           test_landing_pages, test_schedule_and_digest):
     print(f"\n{t.__name__}")
     t()
