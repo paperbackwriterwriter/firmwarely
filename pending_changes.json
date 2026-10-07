@@ -23,13 +23,13 @@
    "model": "DNS blocklists",
    "category": "R",
    "status": "update",
-   "version": "37522026.279.34568",
+   "version": "37522026.280.323",
    "previous": "37522026.278.34362",
-   "released": "2026-10-06",
+   "released": "2026-10-07",
    "date_known": true,
    "eol": false,
-   "notes": "#​11731 #​11730 #​11729 #​11728 #​11727 #​11726 #​11725 #​11723 #​11722 #​11721 #​11720 #​11718 #​11717 #​11716 #​11715 #​11714 #​11713 #​11711",
-   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.279.34568",
+   "notes": "#​11739 #​11738 #​11736 #​11735 #​11734 #​11733 #​11732",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.280.323",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   },
   "livekit": {
