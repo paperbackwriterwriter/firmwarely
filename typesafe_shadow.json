@@ -8442,6 +8442,132 @@
     "security_fix_plain": 0.19,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "piko",
+   "version": "0.10.1",
+   "name": "Piko Self-hosted ngrok alternative",
+   "judged_at": "2026-10-07T16:21:02+00:00",
+   "notes_chars": 77,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.11,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ntfy",
+   "version": "2.29.0",
+   "name": "ntfy Push notification server",
+   "judged_at": "2026-10-07T16:21:03+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ghostfolio",
+   "version": "3.81.0",
+   "name": "Ghostfolio Wealth tracker",
+   "judged_at": "2026-10-07T16:21:03+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "tooljet",
+   "version": "3.20.240-lts",
+   "name": "ToolJet Low-code platform",
+   "judged_at": "2026-10-07T16:21:03+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "limesurvey",
+   "version": "7.5.0",
+   "name": "LimeSurvey Survey platform",
+   "judged_at": "2026-10-07T16:21:03+00:00",
+   "notes_chars": 12,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.09,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "cryptpad",
+   "version": "2026.9.0",
+   "name": "CryptPad Encrypted collaboration",
+   "judged_at": "2026-10-07T16:21:03+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "dnscontrol",
+   "version": "5.3.1",
+   "name": "DNSControl DNS as code",
+   "judged_at": "2026-10-07T16:21:04+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

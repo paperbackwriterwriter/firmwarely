@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ntfy Push notification server — latest version 2.28.0 | Firmwarely</title>
-<meta name="description" content="Latest ntfy Push notification server version is 2.28.0, released Aug 27, 2026. Release notes, version history and update alerts.">
+<title>ntfy Push notification server — latest version 2.29.0 | Firmwarely</title>
+<meta name="description" content="Latest ntfy Push notification server version is 2.29.0, released Oct 7, 2026. Release notes, version history and update alerts.">
 <link rel="canonical" href="https://www.firmwarely.com/devices/ntfy/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
 <meta property="og:site_name" content="Firmwarely">
-<meta property="og:title" content="ntfy Push notification server — latest version 2.28.0 | Firmwarely">
-<meta property="og:description" content="Latest ntfy Push notification server version is 2.28.0, released Aug 27, 2026. Release notes, version history and update alerts.">
+<meta property="og:title" content="ntfy Push notification server — latest version 2.29.0 | Firmwarely">
+<meta property="og:description" content="Latest ntfy Push notification server version is 2.29.0, released Oct 7, 2026. Release notes, version history and update alerts.">
 <meta property="og:url" content="https://www.firmwarely.com/devices/ntfy/">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://www.firmwarely.com/og.png">
@@ -258,7 +258,7 @@ footer a:hover{color:var(--text)}
 <script defer src="/_vercel/insights/script.js"></script>
 <script defer src="/formguard.js"></script>
 <script defer src="/captcha.js"></script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Self-hosted apps & servers", "item": "https://www.firmwarely.com/category/self-hosted/"}, {"@type": "ListItem", "position": 3, "name": "ntfy Push notification server", "item": "https://www.firmwarely.com/devices/ntfy/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/ntfy/", "url": "https://www.firmwarely.com/devices/ntfy/", "name": "ntfy Push notification server — latest version 2.28.0 | Firmwarely", "description": "Latest ntfy Push notification server version is 2.28.0, released Aug 27, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-10-07"}, {"@type": "SoftwareApplication", "name": "ntfy Push notification server", "applicationCategory": "UtilitiesApplication", "softwareVersion": "2.28.0", "author": {"@type": "Organization", "name": "ntfy"}, "datePublished": "2026-08-27", "releaseNotes": "This is a hardening release. A single topic on ntfy.sh was polled continuously with poll=1 and no since cursor, which replays a topic's entire cache on every request. The changes below bound what one replay can cost, close two fields that had no size limit at all, and fix an ordering bug found whil…", "url": "https://github.com/binwiederhier/ntfy/releases/tag/v2.28.0"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Self-hosted apps & servers", "item": "https://www.firmwarely.com/category/self-hosted/"}, {"@type": "ListItem", "position": 3, "name": "ntfy Push notification server", "item": "https://www.firmwarely.com/devices/ntfy/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/ntfy/", "url": "https://www.firmwarely.com/devices/ntfy/", "name": "ntfy Push notification server — latest version 2.29.0 | Firmwarely", "description": "Latest ntfy Push notification server version is 2.29.0, released Oct 7, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-10-07"}, {"@type": "SoftwareApplication", "name": "ntfy Push notification server", "applicationCategory": "UtilitiesApplication", "softwareVersion": "2.29.0", "author": {"@type": "Organization", "name": "ntfy"}, "datePublished": "2026-10-07", "releaseNotes": "This release fixes cache writes under load. On ntfy.sh, hourly cron bursts overwhelmed the batch writer: messages took up to 40s to reach the database (so poll=1 and since= missed them) and publishes stalled. Batches are now written in one statement, publishes no longer wait on the writer, and Post…", "url": "https://github.com/binwiederhier/ntfy/releases/tag/v2.29.0"}]}</script>
 </head>
 <body>
 <header>
@@ -283,12 +283,12 @@ footer a:hover{color:var(--text)}
   <div class="dev">
     <div>
       <h1 class="dev-h">ntfy Push notification server releases</h1>
-      <span class="status critical">critical fix</span>
-      <p style="color:var(--muted);margin:1rem 0 0">ntfy Push notification server is tracked under self-hosted apps &amp; servers. Its latest version, 2.28.0, shipped on Aug 27, 2026.</p>
+      <span class="status update">new version</span>
+      <p style="color:var(--muted);margin:1rem 0 0">ntfy Push notification server is tracked under self-hosted apps &amp; servers. Its latest version, 2.29.0, shipped on Oct 7, 2026. Firmwarely has recorded 2 versions since Aug 27, 2026.</p>
       <div class="card" style="margin-top:1.25rem">
         <dl class="kv">
-          <dt>Latest version</dt><dd>2.28.0</dd>
-          <dt>Released</dt><dd><time datetime="2026-08-27">Aug 27, 2026</time></dd>
+          <dt>Latest version</dt><dd>2.29.0</dd>
+          <dt>Released</dt><dd><time datetime="2026-10-07">Oct 7, 2026</time></dd>
           <dt>Category</dt><dd><a href="/category/self-hosted/">Self-hosted apps &amp; servers</a></dd>
           <dt>Last checked</dt><dd><time datetime="2026-10-07">Oct 7, 2026</time></dd>
           
@@ -304,13 +304,13 @@ footer a:hover{color:var(--text)}
         Firmwarely links out; it never hosts downloads.</p>
       </div>
       <h2 style="margin-top:2rem">What changed</h2>
-      <p style="color:var(--muted)">This is a hardening release. A single topic on ntfy.sh was polled continuously with poll=1 and no since cursor, which replays a topic&#x27;s entire cache on every request. The changes below bound what one replay can cost, close two fields that had no size limit at all, and fix an ordering bug found whil…</p>
-      <p><a href="https://github.com/binwiederhier/ntfy/releases/tag/v2.28.0" target="_blank" rel="noopener">Manufacturer release notes ↗</a></p>
-      <h2 style="margin-top:2rem">Version history</h2><table class="hist"><tr><td>2.28.0</td><td><time datetime="2026-08-27">Aug 27, 2026</time></td></tr></table>
+      <p style="color:var(--muted)">This release fixes cache writes under load. On ntfy.sh, hourly cron bursts overwhelmed the batch writer: messages took up to 40s to reach the database (so poll=1 and since= missed them) and publishes stalled. Batches are now written in one statement, publishes no longer wait on the writer, and Post…</p>
+      <p><a href="https://github.com/binwiederhier/ntfy/releases/tag/v2.29.0" target="_blank" rel="noopener">Manufacturer release notes ↗</a></p>
+      <h2 style="margin-top:2rem">Version history</h2><table class="hist"><tr><td>2.29.0</td><td><time datetime="2026-10-07">Oct 7, 2026</time></td></tr><tr><td>2.28.0</td><td><time datetime="2026-08-27">Aug 27, 2026</time></td></tr></table>
       <div class="faq">
         <h2 style="margin-top:2rem">FAQ</h2>
         <h3>What is the latest version of ntfy Push notification server?</h3>
-        <p>Version 2.28.0, released Aug 27, 2026. This page is refreshed every hour from the project's release page.</p>
+        <p>Version 2.29.0, released Oct 7, 2026. This page is refreshed every hour from the project's release page.</p>
         <h3>How do I update ntfy Push notification server?</h3>
         <p><a href="#update">See the step-by-step above.</a> Pull the new image or package and restart the service. Read the release notes and back up the data directory first; most projects can&#x27;t downgrade once the database has migrated.</p>
         <h3>How does Firmwarely know when there's a new version?</h3>
