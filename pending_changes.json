@@ -203,13 +203,13 @@
    "model": "Scripts and workflows",
    "category": "A",
    "status": "update",
-   "version": "1.826.0",
+   "version": "1.827.0",
    "previous": "1.825.0",
    "released": "2026-10-07",
    "date_known": true,
    "eol": false,
-   "notes": "1.826.0 (2026-10-07): Features: count OIDC signatures and reuse server-side tokens (#​11556) (e277735) isolate the raw-app editor preview when the app opts into sandboxing (#​11572) (fa25397) job_token_scopes OIDC claim (#​11551) (d493eff) set up a new app in one modal over its AI session, fix its …",
-   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.826.0",
+   "notes": "1.827.0 (2026-10-07): Features: audit instance settings writes, stable audit OTel target (#​11593) (0792332) default new raw apps to react 19 and ask for the data setup (#​11586) (818ddd5) export queue delay as OTel and Prometheus metrics (#​11588) (7565349) pause a worker group without stopping it…",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.827.0",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
   },
   "lobe-chat": {
@@ -631,6 +631,21 @@
    "notes": "Upgrading: Before you upgrade, back up your Metabase application database! Check out our upgrading instructions. Get the most out of Metabase. Learn more about advanced features, managed cloud, and first-class support. Metabase Open Source: Docker image: metabase/metabase:v0.64.1.x JAR download: ht…",
    "source_url": "https://github.com/metabase/metabase/releases/tag/v0.64.1",
    "page_url": "https://www.firmwarely.com/devices/metabase/"
+  },
+  "onyx": {
+   "id": "onyx",
+   "brand": "Onyx",
+   "model": "AI platform",
+   "category": "A",
+   "status": "update",
+   "version": "4.9.0",
+   "previous": "4.8.4",
+   "released": "2026-10-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "See the assets to download this version and install. What's Changed: chore(llm): drop Claude Sonnet 4.5 from the provisioning fallback and cache test (#​15309) to release v4.9 by in https://github.com/onyx-dot-app/onyx/pull/15313 fix(search): don't scope search to a source that is the question's to…",
+   "source_url": "https://github.com/onyx-dot-app/onyx/releases/tag/v4.9.0",
+   "page_url": "https://www.firmwarely.com/devices/onyx/"
   }
  }
 }
