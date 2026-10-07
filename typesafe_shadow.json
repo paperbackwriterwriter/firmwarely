@@ -7956,6 +7956,96 @@
     "security_fix_plain": 0.04,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "photoprism",
+   "version": "261007-65faaae5d",
+   "name": "PhotoPrism Photo library server",
+   "judged_at": "2026-10-07T10:19:23+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "semaphore-ui",
+   "version": "2.19.16",
+   "name": "Semaphore Ansible and Terraform UI",
+   "judged_at": "2026-10-07T10:19:24+00:00",
+   "notes_chars": 114,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "activepieces",
+   "version": "0.92.2",
+   "name": "Activepieces Workflow automation",
+   "judged_at": "2026-10-07T10:19:24+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.1,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "erpnext",
+   "version": "15.122.0",
+   "name": "Frappe ERPNext",
+   "judged_at": "2026-10-07T10:19:24+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.47,
+    "security_fix_plain": 0.28,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.280.37009",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-10-07T10:19:24+00:00",
+   "notes_chars": 47,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
