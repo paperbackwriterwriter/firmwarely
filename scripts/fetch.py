@@ -60,7 +60,7 @@ SECURITY = re.compile(
 # the keyword rules pick out the sub-families a category mixes together (cameras vs hubs,
 # drones vs consoles, 3D printers vs dev boards, hardware NAS vs self-hosted apps).
 ICON_RULES = [
-    ("doorbell", r"doorbell|door ?lock|\block\b|chime|deadbolt"),
+    ("doorbell", r"doorbell|door ?lock|\block\b|\bchimes?\b|deadbolt"),   # not "ChimeraOS"
     ("camera", r"\bcam(era)?s?\b|bullet|dome|floodlight|nvr|frigate|unifi protect|reolink|arlo|wyze|eufycam|blink|rtsp|ipcam|openipc|thingino|insta360|gopro|action cam|alpha a7|eos r|x-t\d|x100|lumix|om-1|nikon z"),
     ("headphones", r"headphone|earbud|airpods|wh-1000|wf-1000|quietcomfort|momentum|elite \d|beats|arctis|\bear \(|sonos ace"),
     ("speaker", r"echo|homepod|nest audio|nest mini|nest hub|sonos|speaker|\bshow\b|soundbar"),

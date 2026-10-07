@@ -411,15 +411,33 @@ def listed(devices, families):
 FIRMWARE_WORDS = re.compile(r"firmware|bootloader|\bbios\b|eeprom", re.I)
 
 
+_GITHUB_IDS = None
+
+
+def github_ids():
+    """Ids tracked from GitHub releases (sources.json type "github")."""
+    global _GITHUB_IDS
+    if _GITHUB_IDS is None:
+        try:
+            _GITHUB_IDS = {s["id"] for s in json.loads((ROOT / "sources.json").read_text())["devices"]
+                           if s.get("type") == "github"}
+        except (OSError, ValueError, KeyError):
+            _GITHUB_IDS = set()
+    return _GITHUB_IDS
+
+
 def is_software(d):
     """Software gets "releases" and "project" wording, hardware gets "firmware". The
     self-hosted category is all software; elsewhere a proxy, slicer or DNS server is too
-    ("Traefik Proxy firmware" was wrong), unless its own name says it is firmware."""
+    ("Traefik Proxy firmware" was wrong), unless its own name says it is firmware.
+    A project tracked from GitHub releases is software too: hardware makers don't publish
+    there, and the open firmware that does (Valetudo, ZMK) says "firmware" in its name.
+    Before this, "Kong API gateway firmware" and "PCSX2 PlayStation 2 emulator firmware"."""
     if d["category"] == "A":
         return True
     if d.get("members") or FIRMWARE_WORDS.search(full_name(d)):
         return False
-    return d.get("icon") == "app" or bool(APP_HINT.search(d["model"]))
+    return d.get("icon") == "app" or bool(APP_HINT.search(d["model"])) or d.get("id") in github_ids()
 
 
 def member_name(m):
@@ -848,7 +866,7 @@ def product_link(d):
 
 
 def legal_page():
-    return simple_page("Privacy & terms — Firmwarely", "Firmwarely privacy policy and terms of service.", "/legal/", """
+    return simple_page("Privacy & terms — Firmwarely", "Firmwarely privacy policy and terms of service: what we collect, how alerts and payments work, and how to delete your data.", "/legal/", """
 <h1 class="dev-h">Privacy &amp; terms</h1>
 <p style="color:var(--muted)">Last updated September 23, 2026. Firmwarely is an independent service operated by an individual in Iowa, USA. Questions: <a href="mailto:hello@firmwarely.com">hello@firmwarely.com</a>.</p>
 <div class="faq">

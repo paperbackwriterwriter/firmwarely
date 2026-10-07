@@ -752,32 +752,32 @@
       "permanent": false
     },
     {
-      "source": "/brands/:b(adafruit|aily|anycubic|arduino-pico|ardupilot|bambuddy|batocera|bcnc|beagleboard|betaflight|blender|carbide-3d|cesanta|comma-ai|creality|cricut|crosspoint|deskhop|dune3d|dust3d|edgetx|elegoo|esp32-bit-pirate|esp32-div|espruino|expresslrs|flipper|flsun|fluidd|fluidnc|formlabs|framework|freecad|freertos|glowforge|glslviewer|grbl|inav|infinitime|jerryscript)",
+      "source": "/brands/:b(adafruit|aily|anycubic|arduino-pico|ardupilot|bambuddy|batocera|bcnc|beagleboard|betaflight|blender|carbide-3d|cesanta|comma-ai|creality|cricut|crosspoint|deskhop|dune3d|dust3d|edgetx|elegoo|esp32-bit-pirate|esp32-div|esp32-marauder|espruino|expresslrs|flipper|flsun|fluidd|fluidnc|formlabs|framework|freecad|freertos|glowforge|glslviewer|grbl|inav|infinitime)",
       "destination": "/category/makers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(adafruit|aily|anycubic|arduino-pico|ardupilot|bambuddy|batocera|bcnc|beagleboard|betaflight|blender|carbide-3d|cesanta|comma-ai|creality|cricut|crosspoint|deskhop|dune3d|dust3d|edgetx|elegoo|esp32-bit-pirate|esp32-div|espruino|expresslrs|flipper|flsun|fluidd|fluidnc|formlabs|framework|freecad|freertos|glowforge|glslviewer|grbl|inav|infinitime|jerryscript)/",
+      "source": "/brands/:b(adafruit|aily|anycubic|arduino-pico|ardupilot|bambuddy|batocera|bcnc|beagleboard|betaflight|blender|carbide-3d|cesanta|comma-ai|creality|cricut|crosspoint|deskhop|dune3d|dust3d|edgetx|elegoo|esp32-bit-pirate|esp32-div|esp32-marauder|espruino|expresslrs|flipper|flsun|fluidd|fluidnc|formlabs|framework|freecad|freertos|glowforge|glslviewer|grbl|inav|infinitime)/",
       "destination": "/category/makers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(jetkvm|k3sup|kicad|klipper|kodi|lasergrbl|libreelec|lilygo|linuxcnc|mainsail|manyfold|marlin|meshcore|meshlab|micropython|moonraker|nordic|nvidia|obico|octoprint|openbot|openipc|openmower|openocd|openpnp|openscad|orange-pi|ortur|pine64|platformio|plotjuggler|probe-rs|pwnagotchi|px4|qidi|qmk|rackstack|radxa|raspotify|reticulum)",
+      "source": "/brands/:b(jerryscript|jetkvm|k3sup|kicad|klipper|kodi|lasergrbl|libreelec|lilygo|linuxcnc|mainsail|manyfold|marlin|meshcore|meshlab|micropython|moonraker|nordic|nvidia|obico|octoprint|openbot|openipc|openmower|openocd|openpnp|openscad|orange-pi|ortur|pine64|platformio|plotjuggler|probe-rs|pwnagotchi|px4|qidi|qmk|rackstack|radxa|raspotify)",
       "destination": "/category/makers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(jetkvm|k3sup|kicad|klipper|kodi|lasergrbl|libreelec|lilygo|linuxcnc|mainsail|manyfold|marlin|meshcore|meshlab|micropython|moonraker|nordic|nvidia|obico|octoprint|openbot|openipc|openmower|openocd|openpnp|openscad|orange-pi|ortur|pine64|platformio|plotjuggler|probe-rs|pwnagotchi|px4|qidi|qmk|rackstack|radxa|raspotify|reticulum)/",
+      "source": "/brands/:b(jerryscript|jetkvm|k3sup|kicad|klipper|kodi|lasergrbl|libreelec|lilygo|linuxcnc|mainsail|manyfold|marlin|meshcore|meshlab|micropython|moonraker|nordic|nvidia|obico|octoprint|openbot|openipc|openmower|openocd|openpnp|openscad|orange-pi|ortur|pine64|platformio|plotjuggler|probe-rs|pwnagotchi|px4|qidi|qmk|rackstack|radxa|raspotify)/",
       "destination": "/category/makers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(retroarch|retropie|riot|rt-thread|seeed-studio|serial-studio|sherpa-onnx|sipeed|snapmaker|sovol|spoolman|stmicroelectronics|system76|thingino|tinygo|tock|ultimaker|uvtools|velxio|wamr|wasm3|xtool|zephyr|zmk)",
+      "source": "/brands/:b(reticulum|retroarch|retropie|riot|rt-thread|seeed-studio|serial-studio|sherpa-onnx|sipeed|snapmaker|sovol|spoolman|stmicroelectronics|system76|thingino|tinygo|tock|ultimaker|uvtools|velxio|wamr|wasm3|xtool|zephyr|zmk)",
       "destination": "/category/makers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(retroarch|retropie|riot|rt-thread|seeed-studio|serial-studio|sherpa-onnx|sipeed|snapmaker|sovol|spoolman|stmicroelectronics|system76|thingino|tinygo|tock|ultimaker|uvtools|velxio|wamr|wasm3|xtool|zephyr|zmk)/",
+      "source": "/brands/:b(reticulum|retroarch|retropie|riot|rt-thread|seeed-studio|serial-studio|sherpa-onnx|sipeed|snapmaker|sovol|spoolman|stmicroelectronics|system76|thingino|tinygo|tock|ultimaker|uvtools|velxio|wamr|wasm3|xtool|zephyr|zmk)/",
       "destination": "/category/makers/",
       "permanent": false
     },
@@ -962,22 +962,22 @@
       "permanent": false
     },
     {
-      "source": "/brands/:b(leviton|libretiny|lifx|lutron|marauder|matter|meross|moen|motioneye|music-assistant|nanoleaf|netatmo|node-red|nodemcu|openbeken|openccu|opendtu|openenergymonitor|openevse|openhab|openhasp|openmqttgateway|opensprinkler|openthread|openwakeword|openwb|philips|piper|rachio|ratgdo|ravensystem|reolink|resideo|rhasspy|roborock|schlage|scrypted|shelly|sonos|switchbot)",
+      "source": "/brands/:b(leviton|libretiny|lifx|lutron|matter|meross|moen|motioneye|music-assistant|nanoleaf|netatmo|node-red|nodemcu|openbeken|openccu|opendtu|openenergymonitor|openevse|openhab|openhasp|openmqttgateway|opensprinkler|openthread|openwakeword|openwb|philips|piper|rachio|ratgdo|ravensystem|reolink|resideo|rhasspy|roborock|schlage|scrypted|shelly|sonos|switchbot|tado)",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(leviton|libretiny|lifx|lutron|marauder|matter|meross|moen|motioneye|music-assistant|nanoleaf|netatmo|node-red|nodemcu|openbeken|openccu|opendtu|openenergymonitor|openevse|openhab|openhasp|openmqttgateway|opensprinkler|openthread|openwakeword|openwb|philips|piper|rachio|ratgdo|ravensystem|reolink|resideo|rhasspy|roborock|schlage|scrypted|shelly|sonos|switchbot)/",
+      "source": "/brands/:b(leviton|libretiny|lifx|lutron|matter|meross|moen|motioneye|music-assistant|nanoleaf|netatmo|node-red|nodemcu|openbeken|openccu|opendtu|openenergymonitor|openevse|openhab|openhasp|openmqttgateway|opensprinkler|openthread|openwakeword|openwb|philips|piper|rachio|ratgdo|ravensystem|reolink|resideo|rhasspy|roborock|schlage|scrypted|shelly|sonos|switchbot|tado)/",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(tado|tapo-control|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|valetudo|wallbox|wled|wyze|xiaomi-home|xiaomi-miot-auto|xiaomi-vacuum-map-card|yale|zigbee2mqtt|zigpy|zoneminder)",
+      "source": "/brands/:b(tapo-control|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|valetudo|wallbox|wled|wyze|xiaomi-home|xiaomi-miot-auto|xiaomi-vacuum-map-card|yale|zigbee2mqtt|zigpy|zoneminder)",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(tado|tapo-control|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|valetudo|wallbox|wled|wyze|xiaomi-home|xiaomi-miot-auto|xiaomi-vacuum-map-card|yale|zigbee2mqtt|zigpy|zoneminder)/",
+      "source": "/brands/:b(tapo-control|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|valetudo|wallbox|wled|wyze|xiaomi-home|xiaomi-miot-auto|xiaomi-vacuum-map-card|yale|zigbee2mqtt|zigpy|zoneminder)/",
       "destination": "/category/smart-home/",
       "permanent": false
     },

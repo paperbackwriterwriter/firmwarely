@@ -475,6 +475,17 @@ def test_names_said_once():
                                           ("eero", "Pro 6E", "R", "router", False)]:
         check(f"is_software: {brand} {model}", build_pages.is_software(
             {"brand": brand, "model": model, "category": cat, "icon": icon}), want)
+    # a project tracked from GitHub releases is software unless its name says firmware
+    gh = {s["id"]: s for s in json.loads((ROOT / "sources.json").read_text())["devices"] if s.get("type") == "github"}
+    devs_by_id = {d["id"]: d for d in json.loads((ROOT / "devices.json").read_text())["devices"]}
+    called_firmware = [fetch.full_name(devs_by_id[i]) for i in gh if i in devs_by_id and not build_pages.is_software(devs_by_id[i])
+                       and not build_pages.FIRMWARE_WORDS.search(fetch.full_name(devs_by_id[i]))]
+    check("no GitHub project is called firmware unless its name says so", called_firmware[:5], [])
+    for i, want in [("kong", True), ("pcsx2", True), ("valetudo", False), ("ubiquiti-cloud-gateway-ultra", False),
+                    ("home-assistant-voice-pe", False)]:
+        if i in devs_by_id:
+            check(f"is_software: {i}", build_pages.is_software(devs_by_id[i]), want)
+    check("ChimeraOS is not a doorbell", fetch.icon_for({"brand": "ChimeraOS", "model": "Couch gaming OS", "category": "C"}) != "doorbell", True)
     # the pages that list devices in the browser use the same rule
     for page in ("index.html", "dashboard.html", "my-devices.html"):
         src = (ROOT / page).read_text()

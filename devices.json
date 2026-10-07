@@ -5576,9 +5576,9 @@
   },
   {
    "id": "esp32-marauder",
-   "brand": "Marauder",
-   "model": "ESP32 Marauder",
-   "category": "S",
+   "brand": "ESP32 Marauder",
+   "model": "Wi-Fi and Bluetooth pentest firmware",
+   "category": "M",
    "tracked": true,
    "version": "1.18.0",
    "released": "2026-10-06",

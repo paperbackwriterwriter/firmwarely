@@ -204,6 +204,7 @@ RENAME.update({
     "lemuroid": ("Lemuroid", "Android emulator frontend", "C"),
     "xemu": ("xemu", "Original Xbox emulator", "C"),
     "86box": ("86Box", "x86 PC emulator", "C"),
+    "esp32-marauder": ("ESP32 Marauder", "Wi-Fi and Bluetooth pentest firmware", "M"),
 })
 
 # code libraries discovery took for products (the "router" topic also means web routing):

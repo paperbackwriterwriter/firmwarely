@@ -1730,9 +1730,9 @@
   },
   {
    "id": "esp32-marauder",
-   "brand": "Marauder",
-   "model": "ESP32 Marauder",
-   "category": "S",
+   "brand": "ESP32 Marauder",
+   "model": "Wi-Fi and Bluetooth pentest firmware",
+   "category": "M",
    "type": "github",
    "repo": "justcallmekoko/ESP32Marauder",
    "product_url": "https://github.com/justcallmekoko/ESP32Marauder"
