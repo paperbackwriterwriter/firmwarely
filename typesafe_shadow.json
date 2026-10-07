@@ -8280,6 +8280,114 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.7.24.8-stable",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-07T14:20:18+00:00",
+   "notes_chars": 43,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "openvpn",
+   "version": "2.7.8",
+   "name": "OpenVPN VPN server and client",
+   "judged_at": "2026-10-07T14:20:19+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.97,
+    "security_fix_plain": 0.93,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "coolify",
+   "version": "4.4.2",
+   "name": "Coolify Self-hosting platform",
+   "judged_at": "2026-10-07T14:20:19+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "vault",
+   "version": "2.1.2",
+   "name": "HashiCorp Vault",
+   "judged_at": "2026-10-07T14:20:19+00:00",
+   "notes_chars": 13,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ghost",
+   "version": "6.69.0",
+   "name": "Ghost Publishing platform",
+   "judged_at": "2026-10-07T14:20:19+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "drawio",
+   "version": "32.3.0",
+   "name": "draw.io Diagrams",
+   "judged_at": "2026-10-07T14:20:19+00:00",
+   "notes_chars": 15,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
