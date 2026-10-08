@@ -781,6 +781,21 @@
    "notes": "1.33.8 (2026-10-07): Features: ai-gateway: add provider filter to pricing lookup (4a18dd5) insights: add first-visit website metrics (7505191) insights: support built-in website properties (76b7bcd) website: detect in-app host browsers from user agent (b8102b9) website: show daily new and active us…",
    "source_url": "https://github.com/msgbyte/tianji/releases/tag/v1.33.8",
    "page_url": "https://www.firmwarely.com/devices/tianji/"
+  },
+  "songloft": {
+   "id": "songloft",
+   "brand": "Songloft",
+   "model": "Music server",
+   "category": "A",
+   "status": "update",
+   "version": "2.13.1",
+   "previous": "2.13.0",
+   "released": "2026-10-08",
+   "date_known": true,
+   "eol": false,
+   "notes": ":sparkles: New Features: ed20db7 - jsplugin: 支持 DLNA 接收所需的网络能力 (commit) :bug: Bug Fixes: 76ae4d3 - hls: seek 流增加 Content-Length 与 Range 支持 (commit) 5670554 - jsplugin: 同步 MIoT 对话轮询修复 (commit) fb0d644 - lynx: 同步安卓通知栏歌词修复 (commit) 8797dc3 - jsplugin: 更新 MIoT 切歌复播修复 (commit) 5479a2d - miot: 同步语音序号口令误匹…",
+   "source_url": "https://github.com/songloft-org/songloft/releases/tag/v2.13.1",
+   "page_url": "https://www.firmwarely.com/devices/songloft/"
   }
  }
 }
