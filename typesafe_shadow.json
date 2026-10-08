@@ -9684,6 +9684,204 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "eero-pro-6e",
+   "version": "7.17.2",
+   "name": "eero Pro 6E",
+   "judged_at": "2026-10-08T22:18:47+00:00",
+   "notes_chars": 113,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "immich-server",
+   "version": "3.3.1",
+   "name": "Immich Photo backup server",
+   "judged_at": "2026-10-08T22:18:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "eero-max-7",
+   "version": "7.17.2",
+   "name": "eero Max 7",
+   "judged_at": "2026-10-08T22:18:47+00:00",
+   "notes_chars": 113,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "eero-6-plus",
+   "version": "7.17.2",
+   "name": "eero 6+",
+   "judged_at": "2026-10-08T22:18:48+00:00",
+   "notes_chars": 113,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "docker-engine",
+   "version": "29.9.0",
+   "name": "Docker Engine (moby)",
+   "judged_at": "2026-10-08T22:18:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.97,
+    "security_fix_plain": 0.94,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "infisical",
+   "version": "0.166.3",
+   "name": "Infisical Secrets manager",
+   "judged_at": "2026-10-08T22:18:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "temporal",
+   "version": "1.32.1",
+   "name": "Temporal Workflow engine",
+   "judged_at": "2026-10-08T22:18:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.07,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "mediamtx",
+   "version": "1.21.2",
+   "name": "MediaMTX Media server",
+   "judged_at": "2026-10-08T22:18:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "drawio",
+   "version": "32.4.1",
+   "name": "draw.io Diagrams",
+   "judged_at": "2026-10-08T22:18:49+00:00",
+   "notes_chars": 15,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "eero-7",
+   "version": "7.17.2",
+   "name": "eero 7",
+   "judged_at": "2026-10-08T22:18:49+00:00",
+   "notes_chars": 113,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "eero-pro-7",
+   "version": "7.17.2",
+   "name": "eero Pro 7",
+   "judged_at": "2026-10-08T22:18:49+00:00",
+   "notes_chars": 113,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.07,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
