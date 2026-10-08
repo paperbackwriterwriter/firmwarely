@@ -98,13 +98,13 @@
    "model": "Team messaging",
    "category": "A",
    "status": "update",
-   "version": "11.7.12",
+   "version": "11.11.1",
    "previous": "11.11.1",
-   "released": "2026-10-08",
+   "released": "2026-09-24",
    "date_known": true,
    "eol": false,
-   "notes": "Mattermost Platform Release 11.7.12",
-   "source_url": "https://github.com/mattermost/mattermost/releases/tag/v11.7.12",
+   "notes": "Mattermost Platform Release 11.11.1 contains various bug fixes.",
+   "source_url": "https://github.com/mattermost/mattermost/releases/tag/v11.11.1",
    "page_url": "https://www.firmwarely.com/devices/mattermost/"
   },
   "appflowy": {
@@ -151,6 +151,51 @@
    "notes": "What's Changed: feat: detect lost agents while a backup command runs feat: stream agent command output live and simplify how commands are reported fix: stop an agent still running a restore that timed out feat: cancel a running backup or restore chore(deps): bump Dependabot and Snyk dependency upda…",
    "source_url": "https://github.com/David-Crty/databasement/releases/tag/v1.9.0",
    "page_url": "https://www.firmwarely.com/devices/databasement/"
+  },
+  "opnsense-firewall": {
+   "id": "opnsense-firewall",
+   "brand": "OPNsense",
+   "model": "Firewall (community edition)",
+   "category": "R",
+   "status": "update",
+   "version": "26.7.6",
+   "previous": "26.7.5",
+   "released": "2026-10-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "26.7.6",
+   "source_url": "https://github.com/opnsense/core/releases/tag/26.7.6",
+   "page_url": "https://www.firmwarely.com/devices/opnsense-firewall/"
+  },
+  "tubesync": {
+   "id": "tubesync",
+   "brand": "TubeSync",
+   "model": "YouTube channel sync",
+   "category": "A",
+   "status": "update",
+   "version": "0.18.5",
+   "previous": "0.18.4",
+   "released": "2026-10-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: feat: per-source setting to choose between original and default audio chore: upgrade bgutil-ytdlp-pot-provider to 2.0.0 fix(yt-dlp): gracefully handle mpegts formats feat(scripts): install_bun.sh fix: improve source deletion fix: download thumbnails with curl feat(logs): less slow s…",
+   "source_url": "https://github.com/meeb/tubesync/releases/tag/v0.18.5",
+   "page_url": "https://www.firmwarely.com/devices/tubesync/"
+  },
+  "browserbox": {
+   "id": "browserbox",
+   "brand": "BrowserBox",
+   "model": "Remote browser isolation",
+   "category": "R",
+   "status": "update",
+   "version": "20.0.0",
+   "previous": "19.3.1",
+   "released": "2026-10-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "Tested BrowserBox release. Install with: curl -fsSL browserbox.io/install.sh | bash",
+   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.0.0",
+   "page_url": "https://www.firmwarely.com/devices/browserbox/"
   }
  }
 }

@@ -9252,6 +9252,78 @@
     "security_fix_plain": 0.04,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "mattermost",
+   "version": "11.11.1",
+   "name": "Mattermost Team messaging",
+   "judged_at": "2026-10-08T12:24:55+00:00",
+   "notes_chars": 63,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "opnsense-firewall",
+   "version": "26.7.6",
+   "name": "OPNsense Firewall (community edition)",
+   "judged_at": "2026-10-08T12:24:55+00:00",
+   "notes_chars": 6,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.27,
+    "security_fix_plain": 0.28,
+    "end_of_life": 0.04
+   }
+  },
+  {
+   "id": "tubesync",
+   "version": "0.18.5",
+   "name": "TubeSync YouTube channel sync",
+   "judged_at": "2026-10-08T12:24:55+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "browserbox",
+   "version": "20.0.0",
+   "name": "BrowserBox Remote browser isolation",
+   "judged_at": "2026-10-08T12:24:55+00:00",
+   "notes_chars": 83,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
