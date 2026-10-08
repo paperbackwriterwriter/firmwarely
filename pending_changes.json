@@ -676,6 +676,21 @@
    "notes": "This is a patch release.: What's Changed: Fixed a crash when DFLYMIGRATE was sent to a server that is not in cluster mode. It now returns the standard \"Cluster is disabled\" error (#​8290). Fixed a crash on glob patterns with many wildcards in KEYS, SCAN/HSCAN/SSCAN/ZSCAN MATCH, ACL key patterns, PS…",
    "source_url": "https://github.com/dragonflydb/dragonfly/releases/tag/v2.0.2",
    "page_url": "https://www.firmwarely.com/devices/dragonfly/"
+  },
+  "ratgdo": {
+   "id": "ratgdo",
+   "brand": "ratgdo",
+   "model": "Garage door firmware",
+   "category": "S",
+   "status": "update",
+   "version": "1625",
+   "previous": "1620",
+   "released": "2026-10-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "Automated firmware release from commit 00a3149bfec119d33531bcfd86ce44abc0b75c09",
+   "source_url": "https://github.com/ratgdo/esphome-ratgdo/releases/tag/v1625",
+   "page_url": "https://www.firmwarely.com/devices/ratgdo/"
   }
  }
 }
