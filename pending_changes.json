@@ -188,13 +188,13 @@
    "model": "Remote browser isolation",
    "category": "R",
    "status": "update",
-   "version": "20.0.0",
+   "version": "20.0.1",
    "previous": "19.3.1",
    "released": "2026-10-08",
    "date_known": true,
    "eol": false,
    "notes": "Tested BrowserBox release. Install with: curl -fsSL browserbox.io/install.sh | bash",
-   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.0.0",
+   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.0.1",
    "page_url": "https://www.firmwarely.com/devices/browserbox/"
   },
   "clickhouse": {
@@ -203,13 +203,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.7.25.6-stable",
+   "version": "26.8.21.10-lts",
    "previous": "26.8.20.9-lts",
    "released": "2026-10-08",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.7.25.6-stable v26.7.25.6-stable",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.7.25.6-stable",
+   "notes": "Release v26.8.21.10-lts v26.8.21.10-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.21.10-lts",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "home-assistant-supervisor": {
@@ -271,6 +271,51 @@
    "notes": "What's Changed: Features: feat(docker): create zero vuln base images and add fips mode feat(topics): rework the summary system prompt and default facets feat(web): show ClickHouse organization id in org debug information feat(topics): summarize all facets of a trace in one call feat(skills): import…",
    "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.55.0",
    "page_url": "https://www.firmwarely.com/devices/langfuse/"
+  },
+  "reprapfirmware": {
+   "id": "reprapfirmware",
+   "brand": "Duet3D",
+   "model": "RepRapFirmware",
+   "category": "M",
+   "status": "update",
+   "version": "3.7.0",
+   "previous": "3.6.3",
+   "released": "2026-10-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "This is the first stable release of the 3.7 firmware line. Headline features are TLS support in standalone mode so that DWC can be served over HTTPS, experimental third-order motion control on the MB6HC, phase stepping and microstep waveform correction for drivers on CAN-connected boards, two-slope…",
+   "source_url": "https://github.com/Duet3D/RepRapFirmware/releases/tag/3.7.0",
+   "page_url": "https://www.firmwarely.com/devices/reprapfirmware/"
+  },
+  "duet-web-control": {
+   "id": "duet-web-control",
+   "brand": "Duet3D",
+   "model": "Duet Web Control",
+   "category": "M",
+   "status": "update",
+   "version": "3.7.0",
+   "previous": "3.6.3",
+   "released": "2026-10-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "Compatible versions: DuetSoftwareFramework 3.7.0 RepRapFirmware 3.7.0 New features: Completely rewritten on Vue 3, Vuetify 4, Pinia, Vue Router 5 and Vite (replacing the Vue 2 / Vuetify 2 / Vuex / Vue CLI stack) DWC now ships with a service worker that caches the app and auto-updates after a redepl…",
+   "source_url": "https://github.com/Duet3D/DuetWebControl/releases/tag/v3.7.0",
+   "page_url": "https://www.firmwarely.com/devices/duet-web-control/"
+  },
+  "vector": {
+   "id": "vector",
+   "brand": "Vector",
+   "model": "Observability pipeline",
+   "category": "A",
+   "status": "critical",
+   "version": "0.59.0",
+   "previous": "0.3.27",
+   "released": "2026-10-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "The COSE team is happy to announce Vector 0.59.0! 🚀 Vector is a lightweight, ultra-fast tool for building observability pipelines that puts you in control of your data. Thanks to the 21 contributors who made the 41 changes in this release! 6 breaking changes 2 security changes 3 new features 10 enh…",
+   "source_url": "https://github.com/vectordotdev/vector/releases/tag/v0.59.0",
+   "page_url": "https://www.firmwarely.com/devices/vector/"
   }
  }
 }

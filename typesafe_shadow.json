@@ -9432,6 +9432,78 @@
     "security_fix_plain": 0.25,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "browserbox",
+   "version": "20.0.1",
+   "name": "BrowserBox Remote browser isolation",
+   "judged_at": "2026-10-08T16:22:21+00:00",
+   "notes_chars": 83,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.8.21.10-lts",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-08T16:22:21+00:00",
+   "notes_chars": 39,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "reprapfirmware",
+   "version": "3.7.0",
+   "name": "Duet3D RepRapFirmware",
+   "judged_at": "2026-10-08T16:22:21+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "duet-web-control",
+   "version": "3.7.0",
+   "name": "Duet3D Duet Web Control",
+   "judged_at": "2026-10-08T16:22:22+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
