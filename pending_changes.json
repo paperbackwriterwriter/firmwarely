@@ -811,6 +811,21 @@
    "notes": "Installation Guide: https://docs.onedev.io/category/installation-guide Change Log: https://code.onedev.io/onedev/server/~builds/8654/fixed-issues?query=%22State%22+is+%22Released%22+order+by+%22Type%22+asc+%2C+%22Priority%22+desc Incompatibilities: https://code.onedev.io/onedev/server/~builds/8654/…",
    "source_url": "https://github.com/theonedev/onedev/releases/tag/v16.8.6",
    "page_url": "https://www.firmwarely.com/devices/onedev/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.2806",
+   "previous": "0.24.2800",
+   "released": "2026-10-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: c3723bcf6e408cc4e1a147b4464df9cc9fd3e1ae add hdbao-api resolves #​15893 02ac809c3e9badca5b1b010803a8ffd2c5cfcd7b v3x: add Newznab subcategories (#​17181) e73510b0772655abfcf3e192233be27fb00c3027 world-torrent: complete alt domain update 173e4018dab06d54516fff9db97b09b5a1dcec74 torrenttip:…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2806",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
