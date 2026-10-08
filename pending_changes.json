@@ -196,6 +196,21 @@
    "notes": "Tested BrowserBox release. Install with: curl -fsSL browserbox.io/install.sh | bash",
    "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.0.0",
    "page_url": "https://www.firmwarely.com/devices/browserbox/"
+  },
+  "clickhouse": {
+   "id": "clickhouse",
+   "brand": "ClickHouse",
+   "model": "Analytics database",
+   "category": "A",
+   "status": "update",
+   "version": "26.3.45.3-lts",
+   "previous": "26.8.20.9-lts",
+   "released": "2026-10-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release v26.3.45.3-lts v26.3.45.3-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.3.45.3-lts",
+   "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   }
  }
 }
