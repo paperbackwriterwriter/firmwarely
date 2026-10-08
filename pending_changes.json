@@ -691,6 +691,36 @@
    "notes": "Automated firmware release from commit 00a3149bfec119d33531bcfd86ce44abc0b75c09",
    "source_url": "https://github.com/ratgdo/esphome-ratgdo/releases/tag/v1625",
    "page_url": "https://www.firmwarely.com/devices/ratgdo/"
+  },
+  "dolphin-emu": {
+   "id": "dolphin-emu",
+   "brand": "Dolphin",
+   "model": "GameCube and Wii emulator",
+   "category": "C",
+   "status": "update",
+   "version": "2609a",
+   "previous": "2609",
+   "released": "2026-10-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "2609a",
+   "source_url": "https://github.com/dolphin-emu/dolphin/releases/tag/2609a",
+   "page_url": "https://www.firmwarely.com/devices/dolphin-emu/"
+  },
+  "tock": {
+   "id": "tock",
+   "brand": "Tock",
+   "model": "Embedded OS for microcontrollers",
+   "category": "M",
+   "status": "update",
+   "version": "2.3.0",
+   "previous": "2.2",
+   "released": "2026-10-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "We're excited to release Tock 2.3. With our last release landing in early 2025, we're looking at over 1.5 years of new subsystems, boards, and important fixes to the operating system. This release contains 2681 commits across 632 merged pull requests by 62 contributors (43 of them new contributors!…",
+   "source_url": "https://github.com/tock/tock/releases/tag/release-2.3.0",
+   "page_url": "https://www.firmwarely.com/devices/tock/"
   }
  }
 }
