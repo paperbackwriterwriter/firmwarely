@@ -9180,6 +9180,78 @@
     "security_fix_plain": 0.04,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "mattermost",
+   "version": "11.7.12",
+   "name": "Mattermost Team messaging",
+   "judged_at": "2026-10-08T11:19:10+00:00",
+   "notes_chars": 35,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.13,
+    "security_fix_plain": 0.1,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "appflowy",
+   "version": "0.14.8",
+   "name": "AppFlowy Workspace",
+   "judged_at": "2026-10-08T11:19:10+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "appwrite",
+   "version": "2.4.0",
+   "name": "Appwrite Backend platform",
+   "judged_at": "2026-10-08T11:19:10+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.08,
+    "security_fix_plain": 0.19,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "databasement",
+   "version": "1.9.0",
+   "name": "Databasement Database backup manager",
+   "judged_at": "2026-10-08T11:19:11+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

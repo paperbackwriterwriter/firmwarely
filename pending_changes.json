@@ -91,6 +91,66 @@
    "notes": "#​11757 #​11756 #​11755 #​11754 #​11753 #​11752 #​11751 #​11750 #​11749 #​11748",
    "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.281.35041",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "mattermost": {
+   "id": "mattermost",
+   "brand": "Mattermost",
+   "model": "Team messaging",
+   "category": "A",
+   "status": "update",
+   "version": "11.7.12",
+   "previous": "11.11.1",
+   "released": "2026-10-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "Mattermost Platform Release 11.7.12",
+   "source_url": "https://github.com/mattermost/mattermost/releases/tag/v11.7.12",
+   "page_url": "https://www.firmwarely.com/devices/mattermost/"
+  },
+  "appflowy": {
+   "id": "appflowy",
+   "brand": "AppFlowy",
+   "model": "Workspace",
+   "category": "A",
+   "status": "update",
+   "version": "0.14.8",
+   "previous": "0.14.7",
+   "released": "2026-10-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "🚀 v0.14.8: New Features: Conditional formula styling — Added colors, highlights, and text formatting through style() and unstyle() to highlight results based on formula conditions. Displayed the formatting in database cells and formula previews. Simple table conversion — Added actions to turn simpl…",
+   "source_url": "https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.14.8",
+   "page_url": "https://www.firmwarely.com/devices/appflowy/"
+  },
+  "appwrite": {
+   "id": "appwrite",
+   "brand": "Appwrite",
+   "model": "Backend platform",
+   "category": "A",
+   "status": "update",
+   "version": "2.4.0",
+   "previous": "2.3.0",
+   "released": "2026-10-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "Appwrite 2.4 adds custom profile photos, Webflow sign-in, push messages straight to a user without a device target, and webhook delivery IDs with retries that only resend what failed. The Console gets CLI and MCP onboarding and a breached password policy. Outbound requests and sign-in tokens are lo…",
+   "source_url": "https://github.com/appwrite/appwrite/releases/tag/2.4.0",
+   "page_url": "https://www.firmwarely.com/devices/appwrite/"
+  },
+  "databasement": {
+   "id": "databasement",
+   "brand": "Databasement",
+   "model": "Database backup manager",
+   "category": "N",
+   "status": "update",
+   "version": "1.9.0",
+   "previous": "1.8.4",
+   "released": "2026-10-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: feat: detect lost agents while a backup command runs feat: stream agent command output live and simplify how commands are reported fix: stop an agent still running a restore that timed out feat: cancel a running backup or restore chore(deps): bump Dependabot and Snyk dependency upda…",
+   "source_url": "https://github.com/David-Crty/databasement/releases/tag/v1.9.0",
+   "page_url": "https://www.firmwarely.com/devices/databasement/"
   }
  }
 }
