@@ -766,6 +766,21 @@
    "notes": "--- [!IMPORTANT] 💾 Upgrade Notice: Always remember to back up your database and environment before upgrading to a new version. 👍 Community Prioritization: Want to see a specific feature or fix in the next release? Add a 👍 reaction to open Issues to help us prioritize what to build next! --- 🚀 Key H…",
    "source_url": "https://github.com/CodeWithCJ/SparkyFitness/releases/tag/v1.8.0",
    "page_url": "https://www.firmwarely.com/devices/sparkyfitness/"
+  },
+  "tianji": {
+   "id": "tianji",
+   "brand": "Tianji",
+   "model": "Website analytics and uptime monitor",
+   "category": "A",
+   "status": "update",
+   "version": "1.33.8",
+   "previous": "1.33.7",
+   "released": "2026-10-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.33.8 (2026-10-07): Features: ai-gateway: add provider filter to pricing lookup (4a18dd5) insights: add first-visit website metrics (7505191) insights: support built-in website properties (76b7bcd) website: detect in-app host browsers from user agent (b8102b9) website: show daily new and active us…",
+   "source_url": "https://github.com/msgbyte/tianji/releases/tag/v1.33.8",
+   "page_url": "https://www.firmwarely.com/devices/tianji/"
   }
  }
 }
