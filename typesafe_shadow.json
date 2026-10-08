@@ -8856,6 +8856,60 @@
     "security_fix_plain": 0.06,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "portainer",
+   "version": "2.45.2",
+   "name": "Portainer Container management",
+   "judged_at": "2026-10-08T02:17:50+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ollama",
+   "version": "0.40.1",
+   "name": "Ollama Local LLM runner",
+   "judged_at": "2026-10-08T02:17:50+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.12,
+    "security_fix_plain": 0.14,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "sparkyfitness",
+   "version": "1.8.0",
+   "name": "SparkyFitness Family fitness tracker",
+   "judged_at": "2026-10-08T02:17:50+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

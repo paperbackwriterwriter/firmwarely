@@ -721,6 +721,51 @@
    "notes": "We're excited to release Tock 2.3. With our last release landing in early 2025, we're looking at over 1.5 years of new subsystems, boards, and important fixes to the operating system. This release contains 2681 commits across 632 merged pull requests by 62 contributors (43 of them new contributors!…",
    "source_url": "https://github.com/tock/tock/releases/tag/release-2.3.0",
    "page_url": "https://www.firmwarely.com/devices/tock/"
+  },
+  "portainer": {
+   "id": "portainer",
+   "brand": "Portainer",
+   "model": "Container management",
+   "category": "A",
+   "status": "update",
+   "version": "2.45.2",
+   "previous": "2.45.1",
+   "released": "2026-10-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "Known issues: On Async Edge environments, an invalid update schedule date can be displayed when browsing a snapshot Known issues with Podman support: Podman environments aren't supported by auto-onboarding script It's not possible to add Podman environments via socket, when running a Portainer serv…",
+   "source_url": "https://github.com/portainer/portainer/releases/tag/2.45.2",
+   "page_url": "https://www.firmwarely.com/devices/portainer/"
+  },
+  "ollama": {
+   "id": "ollama",
+   "brand": "Ollama",
+   "model": "Local LLM runner",
+   "category": "A",
+   "status": "update",
+   "version": "0.40.1",
+   "previous": "0.40.0",
+   "released": "2026-10-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: server: proxy cloud usage and balance APIs llama: fix clef head reads past 2GiB on windows cmd: remove account step from CLI onboarding manifest: avoid symlinks on Windows docs: fix 6 dead links in README community integrations list docs: fix broken download links in app README mlx:…",
+   "source_url": "https://github.com/ollama/ollama/releases/tag/v0.40.1",
+   "page_url": "https://www.firmwarely.com/devices/ollama/"
+  },
+  "sparkyfitness": {
+   "id": "sparkyfitness",
+   "brand": "SparkyFitness",
+   "model": "Family fitness tracker",
+   "category": "A",
+   "status": "update",
+   "version": "1.8.0",
+   "previous": "1.7.3",
+   "released": "2026-10-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "--- [!IMPORTANT] 💾 Upgrade Notice: Always remember to back up your database and environment before upgrading to a new version. 👍 Community Prioritization: Want to see a specific feature or fix in the next release? Add a 👍 reaction to open Issues to help us prioritize what to build next! --- 🚀 Key H…",
+   "source_url": "https://github.com/CodeWithCJ/SparkyFitness/releases/tag/v1.8.0",
+   "page_url": "https://www.firmwarely.com/devices/sparkyfitness/"
   }
  }
 }
