@@ -9108,6 +9108,78 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "node-red",
+   "version": "5.0.8",
+   "name": "Node-RED Automation flow editor",
+   "judged_at": "2026-10-08T10:20:28+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "picard",
+   "version": "3.0.1",
+   "name": "MusicBrainz Picard tagger",
+   "judged_at": "2026-10-08T10:20:28+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "zammad",
+   "version": "7.2.2",
+   "name": "Zammad Help desk",
+   "judged_at": "2026-10-08T10:20:29+00:00",
+   "notes_chars": 5,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.09,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.281.35041",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-10-08T10:20:29+00:00",
+   "notes_chars": 79,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

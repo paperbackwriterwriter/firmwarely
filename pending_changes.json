@@ -31,6 +31,66 @@
    "notes": "Changes: test(proxy): fix flaky TestShadow timing and counter assertions (#​4327) Summary: Fixes non-deterministic failures in TestShadow caused by rigid timing thresholds & Vegeta request count variance under CI load Changes: FIFO Shedding Assertions: Replaced the rigid statusFifoFull = 10 and sta…",
    "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.30",
    "page_url": "https://www.firmwarely.com/devices/skipper/"
+  },
+  "node-red": {
+   "id": "node-red",
+   "brand": "Node-RED",
+   "model": "Automation flow editor",
+   "category": "S",
+   "status": "update",
+   "version": "5.0.8",
+   "previous": "5.0.7",
+   "released": "2026-10-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Fix legacy CSV parsing of leading empty columns Docs: document msg.reset behaviour for tcp out/request nodes Wait for a library entry to be written before resolving the save Fix websocket client leaking a connection on every deploy Update dependencies Fix editor search indexing of p…",
+   "source_url": "https://github.com/node-red/node-red/releases/tag/5.0.8",
+   "page_url": "https://www.firmwarely.com/devices/node-red/"
+  },
+  "picard": {
+   "id": "picard",
+   "brand": "MusicBrainz",
+   "model": "Picard tagger",
+   "category": "A",
+   "status": "update",
+   "version": "3.0.1",
+   "previous": "3.0",
+   "released": "2026-10-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "Please refer to the download page for official download locations. Bugfixes: PICARD-2509 - macOS: No check marks in Options menu in languages other than English PICARD-3411 - macOS: Checkboxes not displaying properly in plugin list and profile settings PICARD-3475 - Windows Store release blocked by…",
+   "source_url": "https://github.com/metabrainz/picard/releases/tag/release-3.0.1",
+   "page_url": "https://www.firmwarely.com/devices/picard/"
+  },
+  "zammad": {
+   "id": "zammad",
+   "brand": "Zammad",
+   "model": "Help desk",
+   "category": "A",
+   "status": "update",
+   "version": "7.2.2",
+   "previous": "7.2.1",
+   "released": "2026-10-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "7.2.2",
+   "source_url": "https://github.com/zammad/zammad/releases/tag/7.2.2",
+   "page_url": "https://www.firmwarely.com/devices/zammad/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.281.35041",
+   "previous": "37522026.280.37009",
+   "released": "2026-10-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​11757 #​11756 #​11755 #​11754 #​11753 #​11752 #​11751 #​11750 #​11749 #​11748",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.281.35041",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   }
  }
 }
