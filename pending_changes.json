@@ -203,13 +203,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.8.21.10-lts",
+   "version": "26.9.13.15-stable",
    "previous": "26.8.20.9-lts",
    "released": "2026-10-08",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.8.21.10-lts v26.8.21.10-lts",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.21.10-lts",
+   "notes": "Release v26.9.13.15-stable v26.9.13.15-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.9.13.15-stable",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "home-assistant-supervisor": {
@@ -316,6 +316,66 @@
    "notes": "The COSE team is happy to announce Vector 0.59.0! 🚀 Vector is a lightweight, ultra-fast tool for building observability pipelines that puts you in control of your data. Thanks to the 21 contributors who made the 41 changes in this release! 6 breaking changes 2 security changes 3 new features 10 enh…",
    "source_url": "https://github.com/vectordotdev/vector/releases/tag/v0.59.0",
    "page_url": "https://www.firmwarely.com/devices/vector/"
+  },
+  "netdata": {
+   "id": "netdata",
+   "brand": "Netdata",
+   "model": "System monitoring agent",
+   "category": "A",
+   "status": "update",
+   "version": "2.12.1",
+   "previous": "2.12.0",
+   "released": "2026-10-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "Netdata v2.12.1 is a patch release to address issues discovered since v2.12.0. This release fixes a startup crash and a timezone detection bug in the Windows Agent, stabilizes the eBPF collector across a wider range of kernels and libbpf versions, reduces the load the Docker collector places on the…",
+   "source_url": "https://github.com/netdata/netdata/releases/tag/v2.12.1",
+   "page_url": "https://www.firmwarely.com/devices/netdata/"
+  },
+  "rpi-imager": {
+   "id": "rpi-imager",
+   "brand": "Raspberry Pi",
+   "model": "Imager",
+   "category": "M",
+   "status": "update",
+   "version": "2.0.12",
+   "previous": "2.0.11.1",
+   "released": "2026-10-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's changed: Embedded (Raspberry Pi network installer): - See a network that comes up late. Imager cached \"offline\" and only the netlink monitor cleared it, which embedded mode never started, so a PHY slow to negotiate (the Pi 5 Rev 1.2's MXL86110) was still down at the first poll and the instal…",
+   "source_url": "https://github.com/raspberrypi/rpi-imager/releases/tag/v2.0.12",
+   "page_url": "https://www.firmwarely.com/devices/rpi-imager/"
+  },
+  "pocketbase": {
+   "id": "pocketbase",
+   "brand": "PocketBase",
+   "model": "Backend in one file",
+   "category": "A",
+   "status": "update",
+   "version": "0.40.5",
+   "previous": "0.40.4",
+   "released": "2026-10-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "_To update the prebuilt executable you can run ./pocketbase update._ Minor improvements for the JSVM migration error handling: - Included the recovered panic stack trace of routine.SafeWrap in the returned error (max 2KB). - Wrapped the individual up/down JSVM migration arguments in routine.SafeWra…",
+   "source_url": "https://github.com/pocketbase/pocketbase/releases/tag/v0.40.5",
+   "page_url": "https://www.firmwarely.com/devices/pocketbase/"
+  },
+  "keepass2android": {
+   "id": "keepass2android",
+   "brand": "Keepass2Android",
+   "model": "Password manager for Android",
+   "category": "A",
+   "status": "update",
+   "version": "1.15-r5",
+   "previous": "1.15-r4",
+   "released": "2026-10-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "disable donation menu to be compliant with Google's guidelines",
+   "source_url": "https://github.com/PhilippC/keepass2android/releases/tag/v1.15-r5",
+   "page_url": "https://www.firmwarely.com/devices/keepass2android/"
   }
  }
 }
