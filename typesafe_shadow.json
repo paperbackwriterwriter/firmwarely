@@ -9882,6 +9882,24 @@
     "security_fix_plain": 0.07,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "sharpemu",
+   "version": "0.0.5-nexus-release",
+   "name": "SharpEmu PlayStation 5 emulator",
+   "judged_at": "2026-10-08T23:17:10+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

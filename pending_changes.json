@@ -601,6 +601,21 @@
    "notes": "Fixed an issue where certain devices couldn’t connect with WPA2 encryption Performance and stability improvements",
    "source_url": "https://eero.com/support/articles/eero-software-release-notes",
    "page_url": "https://www.firmwarely.com/devices/eero-pro-7/"
+  },
+  "sharpemu": {
+   "id": "sharpemu",
+   "brand": "SharpEmu",
+   "model": "PlayStation 5 emulator",
+   "category": "C",
+   "status": "update",
+   "version": "0.0.5-nexus-release",
+   "previous": "0.0.5-nexus",
+   "released": "2026-10-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "Automated SharpEmu v0.0.5-nexus-release.2 build for commit 47d4c07. Changes since v0.0.5-nexus: [SpirvTranslator] Shader fixes (#​1019) (d489122) [readme] update screenshot (8903e37) [DeS] Fixes for page faults and stack bounds issues in the emulator and audio fixes (#​1021) (ec0198f) [VideoOut] Ke…",
+   "source_url": "https://github.com/sharpemu/sharpemu/releases/tag/v0.0.5-nexus-release.2",
+   "page_url": "https://www.firmwarely.com/devices/sharpemu/"
   }
  }
 }
