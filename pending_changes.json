@@ -188,13 +188,13 @@
    "model": "Remote browser isolation",
    "category": "R",
    "status": "update",
-   "version": "20.0.1",
+   "version": "20.0.2",
    "previous": "19.3.1",
    "released": "2026-10-08",
    "date_known": true,
    "eol": false,
    "notes": "Tested BrowserBox release. Install with: curl -fsSL browserbox.io/install.sh | bash",
-   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.0.1",
+   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.0.2",
    "page_url": "https://www.firmwarely.com/devices/browserbox/"
   },
   "clickhouse": {
