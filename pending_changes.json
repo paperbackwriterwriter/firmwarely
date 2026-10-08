@@ -406,6 +406,36 @@
    "notes": "CHANGELOG: CHANGE: Share and access commands exit with status 2, not 1, when the controller refuses the request. zrok2 share public, zrok2 share private and zrok2 access private exit 2 for a refusal a retry cannot change (such as a name held by another share, now named in the message) and 1 for a f…",
    "source_url": "https://github.com/openziti/zrok/releases/tag/v2.0.8",
    "page_url": "https://www.firmwarely.com/devices/zrok/"
+  },
+  "arduino-pico": {
+   "id": "arduino-pico",
+   "brand": "Arduino-Pico",
+   "model": "Arduino core for Raspberry Pi Pico",
+   "category": "M",
+   "status": "update",
+   "version": "6.3.0",
+   "previous": "6.2.0",
+   "released": "2026-10-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "Overview: Updates to latest SDK release from Raspberry Pi. Redoes the LWIP wrapper to better bulletproof networking and enhance FreeRTOS stability. Several FreeRTOS and FreeRTOS + BT tweaks. Note this increases the FreeRTOS priority levels to 32 from 8. If you use a function of configMAX_PRIORITIES…",
+   "source_url": "https://github.com/earlephilhower/arduino-pico/releases/tag/6.3.0",
+   "page_url": "https://www.firmwarely.com/devices/arduino-pico/"
+  },
+  "vectras-vm-android": {
+   "id": "vectras-vm-android",
+   "brand": "Vectras VM",
+   "model": "Virtual machines on Android",
+   "category": "C",
+   "status": "update",
+   "version": "4.5.0-3dfx",
+   "previous": "4.4.0",
+   "released": "2026-10-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "Vectras VM 4.5.0-3dfx — Github/Community Version: This release is functionally unchanged from 4.4.9. It fixes server and download configuration issues and updates the branding for the GitHub Community Version. No new emulation features are introduced. 🔧 Changes: Fixed server links and online resour…",
+   "source_url": "https://github.com/xoureldeen/Vectras-VM-Android/releases/tag/4.5.0-3dfx",
+   "page_url": "https://www.firmwarely.com/devices/vectras-vm-android/"
   }
  }
 }
