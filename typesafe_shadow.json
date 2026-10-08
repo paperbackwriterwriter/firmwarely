@@ -9342,6 +9342,96 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.03
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.7.25.6-stable",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-08T14:22:02+00:00",
+   "notes_chars": 43,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "home-assistant-supervisor",
+   "version": "2026.10.1",
+   "name": "Home Assistant Supervisor",
+   "judged_at": "2026-10-08T14:22:02+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.31,
+    "security_fix_plain": 0.41,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "coolify",
+   "version": "4.4.3",
+   "name": "Coolify Self-hosting platform",
+   "judged_at": "2026-10-08T14:22:02+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "tooljet",
+   "version": "3.20.241-lts",
+   "name": "ToolJet Low-code platform",
+   "judged_at": "2026-10-08T14:22:02+00:00",
+   "notes_chars": 295,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "langfuse",
+   "version": "4.55.0",
+   "name": "Langfuse LLM observability",
+   "judged_at": "2026-10-08T14:22:03+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.12,
+    "security_fix_plain": 0.25,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
