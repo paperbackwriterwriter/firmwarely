@@ -1,5 +1,36 @@
 {
- "since": null,
+ "since": "2026-10-08T09:19:20+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "jan-ai": {
+   "id": "jan-ai",
+   "brand": "Jan",
+   "model": "Local AI assistant",
+   "category": "A",
+   "status": "update",
+   "version": "0.8.5",
+   "previous": "0.8.4",
+   "released": "2026-10-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release is fixes only: No new features are announced in v0.8.5. Work in progress stays in the nightly channel: Cowork and the current agent work ship there until they are announced, and a stable build does not show them. One thing a first launch will notice: the first-run setup is now a guided…",
+   "source_url": "https://github.com/janhq/jan/releases/tag/v0.8.5",
+   "page_url": "https://www.firmwarely.com/devices/jan-ai/"
+  },
+  "skipper": {
+   "id": "skipper",
+   "brand": "Skipper",
+   "model": "HTTP router and reverse proxy",
+   "category": "R",
+   "status": "update",
+   "version": "0.28.30",
+   "previous": "0.28.28",
+   "released": "2026-10-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes: test(proxy): fix flaky TestShadow timing and counter assertions (#​4327) Summary: Fixes non-deterministic failures in TestShadow caused by rigid timing thresholds & Vegeta request count variance under CI load Changes: FIFO Shedding Assertions: Replaced the rigid statusFifoFull = 10 and sta…",
+   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.30",
+   "page_url": "https://www.firmwarely.com/devices/skipper/"
+  }
+ }
 }
