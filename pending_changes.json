@@ -361,6 +361,51 @@
    "notes": "Tested BrowserBox release. Install with: curl -fsSL browserbox.io/install.sh | bash",
    "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.1.2",
    "page_url": "https://www.firmwarely.com/devices/browserbox/"
+  },
+  "homarr": {
+   "id": "homarr",
+   "brand": "Homarr",
+   "model": "Dashboard",
+   "category": "A",
+   "status": "update",
+   "version": "2.4.0",
+   "previous": "2.3.0",
+   "released": "2026-10-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "2.4.0 (2026-10-09):",
+   "source_url": "https://github.com/homarr-labs/homarr/releases/tag/v2.4.0",
+   "page_url": "https://www.firmwarely.com/devices/homarr/"
+  },
+  "dashy": {
+   "id": "dashy",
+   "brand": "Dashy",
+   "model": "Dashboard",
+   "category": "A",
+   "status": "update",
+   "version": "4.8.0",
+   "previous": "4.7.0",
+   "released": "2026-10-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: ✨ New Features: Item aliases for quick launching 🦋 Bug Fixes: Fixes stock price history widget Rebuilt Pi-Hole v6 widget to account for new pi-hole API Fixes APOD widget for video days, missing fields and proxy Fixes Sports Scores widget's dead default API key 🌐 Localization: Adds m…",
+   "source_url": "https://github.com/lissy93/dashy/releases/tag/4.8.0",
+   "page_url": "https://www.firmwarely.com/devices/dashy/"
+  },
+  "kiosk-satellite": {
+   "id": "kiosk-satellite",
+   "brand": "Kiosk Satellite",
+   "model": "Turn any Android device",
+   "category": "S",
+   "status": "update",
+   "version": "2026.10.18",
+   "previous": "2026.10.17",
+   "released": "2026-10-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's new in Kiosk Satellite 2026.10.18: This release lets the adaptive brightness curve run the other way and shows entity states in Home Assistant's own wording. It also fixes the remote admin failing to load, the Sendspin progress bar drifting after Previous and seeks, and screensaver videos si…",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.10.18",
+   "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   }
  }
 }
