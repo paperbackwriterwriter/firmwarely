@@ -10685,6 +10685,96 @@
    "type": "github",
    "repo": "domcyrus/rustnet",
    "product_url": "https://github.com/domcyrus/rustnet"
+  },
+  {
+   "id": "panel",
+   "brand": "Panel",
+   "model": "Free, open source game server management panel",
+   "category": "A",
+   "type": "github",
+   "repo": "pelican/panel",
+   "product_url": "https://github.com/pelican/panel"
+  },
+  {
+   "id": "kiosk-satellite",
+   "brand": "Kiosk Satellite",
+   "model": "Turn any Android device",
+   "category": "S",
+   "type": "github",
+   "repo": "jxlarrea/kiosk-satellite",
+   "product_url": "https://github.com/jxlarrea/kiosk-satellite"
+  },
+  {
+   "id": "olares",
+   "brand": "Olares",
+   "model": "Personal Cloud OS for Always-On Agents",
+   "category": "A",
+   "type": "github",
+   "repo": "beclab/Olares",
+   "product_url": "https://github.com/beclab/Olares"
+  },
+  {
+   "id": "octelium",
+   "brand": "Octelium",
+   "model": "Next-gen FOSS self-hosted unified zero trust secure access",
+   "category": "R",
+   "type": "github",
+   "repo": "octelium/octelium",
+   "product_url": "https://github.com/octelium/octelium"
+  },
+  {
+   "id": "homelable",
+   "brand": "Homelable",
+   "model": "Homelab infrastructure visualizer",
+   "category": "S",
+   "type": "github",
+   "repo": "Pouzor/homelable",
+   "product_url": "https://github.com/Pouzor/homelable"
+  },
+  {
+   "id": "fugleramme",
+   "brand": "Fugleramme",
+   "model": "Bird frame for Raspberry Pi or your homelab",
+   "category": "M",
+   "type": "github",
+   "repo": "arnegiacomo/fugleramme",
+   "product_url": "https://github.com/arnegiacomo/fugleramme"
+  },
+  {
+   "id": "snapotter",
+   "brand": "SnapOtter",
+   "model": "Open-source, self-hosted file-processing tool",
+   "category": "A",
+   "type": "github",
+   "repo": "snapotter-hq/SnapOtter",
+   "product_url": "https://github.com/snapotter-hq/SnapOtter"
+  },
+  {
+   "id": "profilarr",
+   "brand": "Profilarr",
+   "model": "Configuration Management Platform for Radarr/Sonarr",
+   "category": "A",
+   "type": "github",
+   "repo": "Dictionarry-Hub/profilarr",
+   "product_url": "https://github.com/Dictionarry-Hub/profilarr"
+  },
+  {
+   "id": "dockcheck",
+   "brand": "Dockcheck",
+   "model": "CLI tool to automate docker image updates",
+   "category": "A",
+   "type": "github",
+   "repo": "mag37/dockcheck",
+   "product_url": "https://github.com/mag37/dockcheck"
+  },
+  {
+   "id": "jotty",
+   "brand": "Jotty",
+   "model": "But powerful alternative",
+   "category": "A",
+   "type": "github",
+   "repo": "fccview/jotty",
+   "product_url": "https://github.com/fccview/jotty"
   }
  ]
 }
