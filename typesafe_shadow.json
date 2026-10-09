@@ -10188,6 +10188,96 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "evcc",
+   "version": "0.317.0",
+   "name": "evcc EV charge controller",
+   "judged_at": "2026-10-09T10:20:17+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "rpicam-apps",
+   "version": "1.12.0",
+   "name": "Raspberry Pi rpicam-apps",
+   "judged_at": "2026-10-09T10:20:17+00:00",
+   "notes_chars": 15,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "cryptpad",
+   "version": "2026.5.1",
+   "name": "CryptPad Encrypted collaboration",
+   "judged_at": "2026-10-09T10:20:17+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.08,
+    "security_fix_plain": 0.1,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "langfuse",
+   "version": "4.56.0",
+   "name": "Langfuse LLM observability",
+   "judged_at": "2026-10-09T10:20:17+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.282.33752",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-10-09T10:20:18+00:00",
+   "notes_chars": 103,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
