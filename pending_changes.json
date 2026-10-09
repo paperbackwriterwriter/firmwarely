@@ -466,6 +466,21 @@
    "notes": "Added: Extended the content of the _General_ section by information about the import of activities from _Interactive Brokers_ on the Frequently Asked Questions (FAQ) page Changed: Extended the user account deletion flow in the user settings of the user account page to users without a _Security Toke…",
    "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.82.0",
    "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
+  },
+  "tinygo": {
+   "id": "tinygo",
+   "brand": "TinyGo",
+   "model": "Go compiler for microcontrollers",
+   "category": "M",
+   "status": "update",
+   "version": "0.43.0",
+   "previous": "0.42.0",
+   "released": "2026-10-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "In our latest release, we have over 160 commits to our main repo, with a major focus on Go compatibility and correctness. The runtime now supports synctest, NumGoroutine, and panic recovery on Xtensa and on WebAssembly without exceptions. The testing package adds parallel tests, AllocsPerRun, and B…",
+   "source_url": "https://github.com/tinygo-org/tinygo/releases/tag/v0.43.0",
+   "page_url": "https://www.firmwarely.com/devices/tinygo/"
   }
  }
 }
