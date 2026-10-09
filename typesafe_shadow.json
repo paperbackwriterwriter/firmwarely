@@ -10440,6 +10440,78 @@
     "security_fix_plain": 0.89,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "tooljet",
+   "version": "3.20.243-lts",
+   "name": "ToolJet Low-code platform",
+   "judged_at": "2026-10-09T15:18:47+00:00",
+   "notes_chars": 170,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.62,
+    "security_fix_plain": 0.18,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "music-assistant",
+   "version": "2.10.6",
+   "name": "Music Assistant Media library server",
+   "judged_at": "2026-10-09T15:18:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "windmill",
+   "version": "1.829.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-10-09T15:18:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "neo4j",
+   "version": "5.26.32",
+   "name": "Neo4j Graph database",
+   "judged_at": "2026-10-09T15:18:47+00:00",
+   "notes_chars": 7,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.12,
+    "security_fix_plain": 0.12,
+    "end_of_life": 0.03
+   }
   }
  ]
 }
