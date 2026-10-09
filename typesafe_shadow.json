@@ -9972,6 +9972,42 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "harbor",
+   "version": "2.15.4",
+   "name": "Harbor Container registry",
+   "judged_at": "2026-10-09T04:20:10+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.18,
+    "security_fix_plain": 0.24,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ollama",
+   "version": "0.40.2",
+   "name": "Ollama Local LLM runner",
+   "judged_at": "2026-10-09T04:20:10+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
