@@ -631,6 +631,21 @@
    "notes": "What's Changed: Fixes for FI sending Updated lock fixes for translation strings Additional translations Fixes for P&L exports static analysis cleanup Updated client portal workflows Fixes for mobile views and workflows Fixes for tests feat(oidc): replace OIDC_WELL_KNOWN with OIDC_ISSUER v5.13.45 Ne…",
    "source_url": "https://github.com/invoiceninja/invoiceninja/releases/tag/v5.13.45",
    "page_url": "https://www.firmwarely.com/devices/invoice-ninja/"
+  },
+  "zoraxy": {
+   "id": "zoraxy",
+   "brand": "Zoraxy",
+   "model": "Reverse proxy",
+   "category": "R",
+   "status": "critical",
+   "version": "3.3.5-rc3",
+   "previous": "3.3.5-rc2",
+   "released": "2026-10-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "v3.3.5-rc3: This version improved a few security related weakness as well as fixing a plugin racing issue, patching hardware interfacing bugs and so on. The rest of the changes are mostly small re-factorize and hardening of implementations in varies modules. btw, I also added the darwin arm64 binar…",
+   "source_url": "https://github.com/tobychui/zoraxy/releases/tag/v3.3.5-rc3",
+   "page_url": "https://www.firmwarely.com/devices/zoraxy/"
   }
  }
 }
