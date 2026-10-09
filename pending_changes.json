@@ -121,6 +121,36 @@
    "notes": "This is the v1.75.2 release of rclone. Full details of the changes can be found in the changelog.",
    "source_url": "https://github.com/rclone/rclone/releases/tag/v1.75.2",
    "page_url": "https://www.firmwarely.com/devices/rclone/"
+  },
+  "mobile-mcp": {
+   "id": "mobile-mcp",
+   "brand": "Mobile Mcp",
+   "model": "Model Context Protocol Server",
+   "category": "C",
+   "status": "update",
+   "version": "1.0.9",
+   "previous": "1.0.8",
+   "released": "2026-10-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "Version 1.0.9 1.0.9",
+   "source_url": "https://github.com/mobile-next/mobile-mcp/releases/tag/1.0.9",
+   "page_url": "https://www.firmwarely.com/devices/mobile-mcp/"
+  },
+  "http-shortcuts": {
+   "id": "http-shortcuts",
+   "brand": "HTTP Shortcuts",
+   "model": "Android automation app",
+   "category": "S",
+   "status": "update",
+   "version": "4.8.2",
+   "previous": "4.8.1",
+   "released": "2026-10-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "See Changelog for details",
+   "source_url": "https://github.com/Waboodoo/HTTP-Shortcuts/releases/tag/v4.8.2",
+   "page_url": "https://www.firmwarely.com/devices/http-shortcuts/"
   }
  }
 }

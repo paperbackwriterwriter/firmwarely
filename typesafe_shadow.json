@@ -10314,6 +10314,42 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "mobile-mcp",
+   "version": "1.0.9",
+   "name": "Mobile Mcp Model Context Protocol Server",
+   "judged_at": "2026-10-09T12:22:26+00:00",
+   "notes_chars": 19,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "http-shortcuts",
+   "version": "4.8.2",
+   "name": "HTTP Shortcuts Android automation app",
+   "judged_at": "2026-10-09T12:22:26+00:00",
+   "notes_chars": 25,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
