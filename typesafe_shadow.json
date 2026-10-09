@@ -10800,6 +10800,42 @@
     "security_fix_plain": 0.05,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "windmill",
+   "version": "1.830.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-10-09T19:17:13+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "coolify",
+   "version": "4.4.6",
+   "name": "Coolify Self-hosting platform",
+   "judged_at": "2026-10-09T19:17:13+00:00",
+   "notes_chars": 205,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

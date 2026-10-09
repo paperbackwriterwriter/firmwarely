@@ -233,13 +233,13 @@
    "model": "Scripts and workflows",
    "category": "A",
    "status": "update",
-   "version": "1.829.0",
+   "version": "1.830.0",
    "previous": "1.828.0",
    "released": "2026-10-09",
    "date_known": true,
    "eol": false,
-   "notes": "1.829.0 (2026-10-09): Features: add an api base url instance setting for displayed urls (#​11628) (6acf185) add Pi template to the AI sandbox picker (#​11619) (a85d0b7) agent nits: multi-select, memory-off notice, agent step label (#​11622) (c52ba2f) export worker cpu, memory and occupancy metrics …",
-   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.829.0",
+   "notes": "1.830.0 (2026-10-09): Features: add a jobs:run:dependencies token scope for lock generation (#​11643) (1dc4ed5) let operators compose full-code apps when the workspace grants it (#​11229) (02e4697) operators get AI sessions (#​11443) (338c4e9) replace the hub_sync script with an opt-in daily server…",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.830.0",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
   },
   "neo4j": {
@@ -428,13 +428,13 @@
    "model": "Self-hosting platform",
    "category": "A",
    "status": "update",
-   "version": "4.4.5",
+   "version": "4.4.6",
    "previous": "4.4.3",
    "released": "2026-10-09",
    "date_known": true,
    "eol": false,
-   "notes": "Fixes: Removed the 5 GB free disk space requirement that blocked manual and automatic updates. Full Changelog: https://github.com/coollabsio/coolify/compare/v4.4.4...v4.4.5",
-   "source_url": "https://github.com/coollabsio/coolify/releases/tag/v4.4.5",
+   "notes": "Fixes: Fixed self-hosted startup failures caused by an incompatible PHP base image by pinning it to a stable version (#​12141). Full Changelog: https://github.com/coollabsio/coolify/compare/v4.4.5...v4.4.6",
+   "source_url": "https://github.com/coollabsio/coolify/releases/tag/v4.4.6",
    "page_url": "https://www.firmwarely.com/devices/coolify/"
   },
   "flarum": {
