@@ -10278,6 +10278,42 @@
     "security_fix_plain": 0.05,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "rpicam-apps",
+   "version": "1.13.0",
+   "name": "Raspberry Pi rpicam-apps",
+   "judged_at": "2026-10-09T11:18:28+00:00",
+   "notes_chars": 15,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "rclone",
+   "version": "1.75.2",
+   "name": "rclone Cloud storage sync",
+   "judged_at": "2026-10-09T11:18:28+00:00",
+   "notes_chars": 97,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
