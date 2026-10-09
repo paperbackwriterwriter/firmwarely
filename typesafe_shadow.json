@@ -10350,6 +10350,60 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "zwave-js-ui",
+   "version": "11.24.3",
+   "name": "Z-Wave JS Z-Wave control panel",
+   "judged_at": "2026-10-09T13:22:09+00:00",
+   "notes_chars": 146,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.3.46.2-lts",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-09T13:22:09+00:00",
+   "notes_chars": 37,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "onedev",
+   "version": "16.8.7",
+   "name": "OneDev Git server with CI",
+   "judged_at": "2026-10-09T13:22:09+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

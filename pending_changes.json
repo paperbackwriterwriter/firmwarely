@@ -151,6 +151,51 @@
    "notes": "See Changelog for details",
    "source_url": "https://github.com/Waboodoo/HTTP-Shortcuts/releases/tag/v4.8.2",
    "page_url": "https://www.firmwarely.com/devices/http-shortcuts/"
+  },
+  "zwave-js-ui": {
+   "id": "zwave-js-ui",
+   "brand": "Z-Wave JS",
+   "model": "Z-Wave control panel",
+   "category": "S",
+   "status": "update",
+   "version": "11.24.3",
+   "previous": "11.24.2",
+   "released": "2026-10-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "11.24.3 (2026-10-09): ✨ Features: bump zwave-js.31.1 (#​4848) (2a3a415) 🔧 Chores: deps: update dependency compression to v1.8.2 (#​4849) (18cc89f)",
+   "source_url": "https://github.com/zwave-js/zwave-js-ui/releases/tag/v11.24.3",
+   "page_url": "https://www.firmwarely.com/devices/zwave-js-ui/"
+  },
+  "clickhouse": {
+   "id": "clickhouse",
+   "brand": "ClickHouse",
+   "model": "Analytics database",
+   "category": "A",
+   "status": "update",
+   "version": "26.3.46.2-lts",
+   "previous": "26.9.13.15-stable",
+   "released": "2026-10-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release v26.3.46.2-lts v26.3.46.2-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.3.46.2-lts",
+   "page_url": "https://www.firmwarely.com/devices/clickhouse/"
+  },
+  "onedev": {
+   "id": "onedev",
+   "brand": "OneDev",
+   "model": "Git server with CI",
+   "category": "A",
+   "status": "update",
+   "version": "16.8.7",
+   "previous": "16.8.6",
+   "released": "2026-10-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "Installation Guide: https://docs.onedev.io/category/installation-guide Change Log: https://code.onedev.io/onedev/server/~builds/8665/fixed-issues?query=%22State%22+is+%22Released%22+order+by+%22Type%22+asc+%2C+%22Priority%22+desc Incompatibilities: https://code.onedev.io/onedev/server/~builds/8665/…",
+   "source_url": "https://github.com/theonedev/onedev/releases/tag/v16.8.7",
+   "page_url": "https://www.firmwarely.com/devices/onedev/"
   }
  }
 }
