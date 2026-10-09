@@ -188,13 +188,13 @@
    "model": "Remote browser isolation",
    "category": "R",
    "status": "update",
-   "version": "20.0.2",
+   "version": "20.1.1",
    "previous": "19.3.1",
-   "released": "2026-10-08",
+   "released": "2026-10-09",
    "date_known": true,
    "eol": false,
    "notes": "Tested BrowserBox release. Install with: curl -fsSL browserbox.io/install.sh | bash",
-   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.0.2",
+   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.1.1",
    "page_url": "https://www.firmwarely.com/devices/browserbox/"
   },
   "clickhouse": {
@@ -706,6 +706,66 @@
    "notes": "Model upgrades: Models downloaded with earlier versions of Ollama are upgraded in the background the first time you run them, for better performance and compatibility when running on llama.cpp. To make downgrading safe, Ollama keeps the original copy as a backup, so upgraded models are temporarily …",
    "source_url": "https://github.com/ollama/ollama/releases/tag/v0.40.2",
    "page_url": "https://www.firmwarely.com/devices/ollama/"
+  },
+  "sing-box": {
+   "id": "sing-box",
+   "brand": "SagerNet",
+   "model": "sing-box proxy platform",
+   "category": "R",
+   "status": "update",
+   "version": "1.14.3",
+   "previous": "1.14.2",
+   "released": "2026-10-09",
+   "date_known": true,
+   "eol": false,
+   "notes": ":memo: Release Notes: Fixes and improvements",
+   "source_url": "https://github.com/SagerNet/sing-box/releases/tag/v1.14.3",
+   "page_url": "https://www.firmwarely.com/devices/sing-box/"
+  },
+  "ventoy": {
+   "id": "ventoy",
+   "brand": "Ventoy",
+   "model": "Bootable USB tool",
+   "category": "P",
+   "status": "update",
+   "version": "1.1.18",
+   "previous": "1.1.17",
+   "released": "2026-10-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog Experimental support for SteamOS recovery images. (#​3712 #​2875 #​1815) Improve the Linux remount feature to make the ISO partition mountable out of the box on mainstream desktop distros. (Notes) Suppress the duplicate disk icons in the sidebar on some Linux desktop distros. Change the I…",
+   "source_url": "https://github.com/ventoy/Ventoy/releases/tag/v1.1.18",
+   "page_url": "https://www.firmwarely.com/devices/ventoy/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.2810",
+   "previous": "0.24.2806",
+   "released": "2026-10-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: 04bcc652a0c2acc6df80a1a726604794a8927ee8 magnetcat: new alt domains 3357c526685545c87f829a1e1b2d9cd29d48b837 52bt: new domains d734f69053190410b0b763331cb4f844781b842b torrentlt: back to .ai domain d326504a83272206f6d25ff0d59b19ab82733301 ultrabits: update selectors 4a7e3f95cde7fe10528cfd…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2810",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "bfe": {
+   "id": "bfe",
+   "brand": "BFE",
+   "model": "Layer 7 load balancer",
+   "category": "R",
+   "status": "update",
+   "version": "1.8.8.1",
+   "previous": "1.8.8",
+   "released": "2026-10-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "BFE v1.8.8.1 Fixed (issue #​1398): zeroed token usage in access logs and billing for requests without a final usage event (billing/log view isolation, estimate mirror) final usage events with zero output tokens not recognized inject stream_options.include_usage for OpenAI streaming chat completions…",
+   "source_url": "https://github.com/bfenetworks/bfe/releases/tag/v1.8.8.1",
+   "page_url": "https://www.firmwarely.com/devices/bfe/"
   }
  }
 }
