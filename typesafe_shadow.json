@@ -10512,6 +10512,150 @@
     "security_fix_plain": 0.12,
     "end_of_life": 0.03
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.9.14.10-stable",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-09T16:18:48+00:00",
+   "notes_chars": 45,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "uptime-kuma",
+   "version": "2.5.6",
+   "name": "Uptime Kuma Uptime monitor",
+   "judged_at": "2026-10-09T16:18:48+00:00",
+   "notes_chars": 130,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.2,
+    "security_fix_plain": 0.48,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "adguardhome-sync",
+   "version": "0.9.4",
+   "name": "AdGuard Home Sync",
+   "judged_at": "2026-10-09T16:18:49+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.1,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ceph-storage",
+   "version": "21.1.2",
+   "name": "Ceph Distributed storage",
+   "judged_at": "2026-10-09T16:18:50+00:00",
+   "notes_chars": 7,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.14,
+    "security_fix_plain": 0.11,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "appsmith",
+   "version": "2.5.0",
+   "name": "Appsmith Internal tools builder",
+   "judged_at": "2026-10-09T16:18:50+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": true
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.21
+   }
+  },
+  {
+   "id": "dnscontrol",
+   "version": "5.4.0",
+   "name": "DNSControl DNS as code",
+   "judged_at": "2026-10-09T16:18:51+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "bfe",
+   "version": "1.8.8.2",
+   "name": "BFE Layer 7 load balancer",
+   "judged_at": "2026-10-09T16:18:51+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.07,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "browserbox",
+   "version": "20.1.2",
+   "name": "BrowserBox Remote browser isolation",
+   "judged_at": "2026-10-09T16:18:52+00:00",
+   "notes_chars": 83,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
