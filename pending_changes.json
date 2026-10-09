@@ -173,13 +173,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.3.46.2-lts",
+   "version": "26.8.22.13-lts",
    "previous": "26.9.13.15-stable",
    "released": "2026-10-09",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.3.46.2-lts v26.3.46.2-lts",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.3.46.2-lts",
+   "notes": "Release v26.8.22.13-lts v26.8.22.13-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.22.13-lts",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "onedev": {
@@ -196,6 +196,21 @@
    "notes": "Installation Guide: https://docs.onedev.io/category/installation-guide Change Log: https://code.onedev.io/onedev/server/~builds/8665/fixed-issues?query=%22State%22+is+%22Released%22+order+by+%22Type%22+asc+%2C+%22Priority%22+desc Incompatibilities: https://code.onedev.io/onedev/server/~builds/8665/…",
    "source_url": "https://github.com/theonedev/onedev/releases/tag/v16.8.7",
    "page_url": "https://www.firmwarely.com/devices/onedev/"
+  },
+  "tooljet": {
+   "id": "tooljet",
+   "brand": "ToolJet",
+   "model": "Low-code platform",
+   "category": "A",
+   "status": "critical",
+   "version": "3.20.242-lts",
+   "previous": "3.20.241-lts",
+   "released": "2026-10-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Navigation properties to styles migration added to app import/export Fix: Ghost component vanish or is incorrectly placed when dropping component on the canvas fix: enforce ENABLE_SIGNUP instance toggle on signup endpoint (security) Full Changelog: https://github.com/ToolJet/ToolJet…",
+   "source_url": "https://github.com/ToolJet/ToolJet/releases/tag/v3.20.242-lts",
+   "page_url": "https://www.firmwarely.com/devices/tooljet/"
   }
  }
 }

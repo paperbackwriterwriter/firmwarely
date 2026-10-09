@@ -10404,6 +10404,42 @@
     "security_fix_plain": 0.09,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.8.22.13-lts",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-09T14:21:24+00:00",
+   "notes_chars": 39,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "tooljet",
+   "version": "3.20.242-lts",
+   "name": "ToolJet Low-code platform",
+   "judged_at": "2026-10-09T14:21:24+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.8,
+    "security_fix_plain": 0.89,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
