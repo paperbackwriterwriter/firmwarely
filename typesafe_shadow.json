@@ -10710,6 +10710,96 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "browserbox",
+   "version": "20.1.3",
+   "name": "BrowserBox Remote browser isolation",
+   "judged_at": "2026-10-09T18:20:49+00:00",
+   "notes_chars": 83,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "vector",
+   "version": "0.3.29",
+   "name": "Vector Observability pipeline",
+   "judged_at": "2026-10-09T18:20:50+00:00",
+   "notes_chars": 25,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "coolify",
+   "version": "4.4.5",
+   "name": "Coolify Self-hosting platform",
+   "judged_at": "2026-10-09T18:20:50+00:00",
+   "notes_chars": 172,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "flarum",
+   "version": "2.0.0",
+   "name": "Flarum Forum software",
+   "judged_at": "2026-10-09T18:20:50+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ghostfolio",
+   "version": "3.82.0",
+   "name": "Ghostfolio Wealth tracker",
+   "judged_at": "2026-10-09T18:20:50+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
