@@ -121,7 +121,7 @@
   <url><loc>https://www.firmwarely.com/devices/zwave-js-ui/</loc><lastmod>2026-10-09</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/node-zwave-js/</loc><lastmod>2026-10-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/node-red/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/openhab/</loc><lastmod>2026-10-07</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/openhab/</loc><lastmod>2026-10-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/domoticz/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/iobroker/</loc><lastmod>2026-10-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/zoneminder/</loc><lastmod>2026-10-05</lastmod></url>
@@ -712,4 +712,5 @@
   <url><loc>https://www.firmwarely.com/devices/profilarr/</loc><lastmod>2026-08-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/dockcheck/</loc><lastmod>2026-08-04</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/jotty/</loc><lastmod>2026-09-28</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/homeassistant-powercalc/</loc><lastmod>2026-09-27</lastmod></url>
 </urlset>

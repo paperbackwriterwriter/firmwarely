@@ -10775,6 +10775,15 @@
    "type": "github",
    "repo": "fccview/jotty",
    "product_url": "https://github.com/fccview/jotty"
+  },
+  {
+   "id": "homeassistant-powercalc",
+   "brand": "Homeassistant Powercalc",
+   "model": "Home Assistant Custom component",
+   "category": "S",
+   "type": "github",
+   "repo": "bramstroker/homeassistant-powercalc",
+   "product_url": "https://github.com/bramstroker/homeassistant-powercalc"
   }
  ]
 }
