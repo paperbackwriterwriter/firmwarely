@@ -541,6 +541,36 @@
    "notes": "Automated firmware release from commit 26e2ba36070b6162f345e38ea44af5e55cbdf532",
    "source_url": "https://github.com/ratgdo/esphome-ratgdo/releases/tag/v1629",
    "page_url": "https://www.firmwarely.com/devices/ratgdo/"
+  },
+  "firefly-iii": {
+   "id": "firefly-iii",
+   "brand": "Firefly III",
+   "model": "Personal finance manager",
+   "category": "A",
+   "status": "update",
+   "version": "6.7.8",
+   "previous": "6.7.7",
+   "released": "2026-10-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "Welcome to release v6.7.8 of Firefly III. It contains the latest fixes, translations and features. Docker users can find this release under the latest tag. Changelog: Added: Issue 8405 (Feature Request: New color field for category object) reported A \"release notes\" popup will tell you about the cu…",
+   "source_url": "https://github.com/firefly-iii/firefly-iii/releases/tag/v6.7.8",
+   "page_url": "https://www.firmwarely.com/devices/firefly-iii/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.2813",
+   "previous": "0.24.2810",
+   "released": "2026-10-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: c973353ed817b7597d25b29803d8d89882c62fa1 gaytorrentru: lint 8c2f161c32261e57fb953f25bbee54dd1d22deb0 gaytorrentru: add useragent 441b2d3501ab4f60086c39f7dd01385f385c62a0 oldtoonsworld: new cats e5e756a43f4538ec107af38f9733c83d7476f1f8 linuxtracker: new cat d5747632ca151cd349855c7f895c8298…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2813",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
