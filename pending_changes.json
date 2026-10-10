@@ -526,6 +526,21 @@
    "notes": "3.5.3",
    "source_url": "https://github.com/apache/couchdb/releases/tag/3.5.3",
    "page_url": "https://www.firmwarely.com/devices/couchdb/"
+  },
+  "ratgdo": {
+   "id": "ratgdo",
+   "brand": "ratgdo",
+   "model": "Garage door firmware",
+   "category": "S",
+   "status": "update",
+   "version": "1629",
+   "previous": "1625",
+   "released": "2026-10-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "Automated firmware release from commit 26e2ba36070b6162f345e38ea44af5e55cbdf532",
+   "source_url": "https://github.com/ratgdo/esphome-ratgdo/releases/tag/v1629",
+   "page_url": "https://www.firmwarely.com/devices/ratgdo/"
   }
  }
 }

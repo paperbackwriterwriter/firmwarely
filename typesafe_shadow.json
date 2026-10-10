@@ -10962,6 +10962,24 @@
     "security_fix_plain": 0.16,
     "end_of_life": 0.03
    }
+  },
+  {
+   "id": "ratgdo",
+   "version": "1629",
+   "name": "ratgdo Garage door firmware",
+   "judged_at": "2026-10-10T05:17:39+00:00",
+   "notes_chars": 79,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
