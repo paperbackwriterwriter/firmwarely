@@ -571,6 +571,36 @@
    "notes": "Changes:: c973353ed817b7597d25b29803d8d89882c62fa1 gaytorrentru: lint 8c2f161c32261e57fb953f25bbee54dd1d22deb0 gaytorrentru: add useragent 441b2d3501ab4f60086c39f7dd01385f385c62a0 oldtoonsworld: new cats e5e756a43f4538ec107af38f9733c83d7476f1f8 linuxtracker: new cat d5747632ca151cd349855c7f895c8298…",
    "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2813",
    "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "freescout": {
+   "id": "freescout",
+   "brand": "FreeScout",
+   "model": "Help desk",
+   "category": "A",
+   "status": "update",
+   "version": "1.8.246",
+   "previous": "1.8.245",
+   "released": "2026-10-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "Added Company to customers search filters. Improved customers table view. Updated form styles: larger buttons and inputs. Fixed Take into account strings from safe_raw_html() on Translate page. Keep aspect ratio of shrunk images with inline height in conversation view (#​5697) Allow pinch zoom on A…",
+   "source_url": "https://github.com/freescout-help-desk/freescout/releases/tag/1.8.246",
+   "page_url": "https://www.firmwarely.com/devices/freescout/"
+  },
+  "invoice-ninja": {
+   "id": "invoice-ninja",
+   "brand": "Invoice Ninja",
+   "model": "Invoicing",
+   "category": "A",
+   "status": "update",
+   "version": "5.13.47",
+   "previous": "5.13.45",
+   "released": "2026-10-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Patch for en/texts.php v5.13.47 Full Changelog: https://github.com/invoiceninja/invoiceninja/compare/v5.13.46...v5.13.47",
+   "source_url": "https://github.com/invoiceninja/invoiceninja/releases/tag/v5.13.47",
+   "page_url": "https://www.firmwarely.com/devices/invoice-ninja/"
   }
  }
 }
