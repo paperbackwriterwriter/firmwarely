@@ -353,13 +353,13 @@
    "model": "Remote browser isolation",
    "category": "R",
    "status": "update",
-   "version": "20.1.3",
+   "version": "20.1.5",
    "previous": "20.1.1",
-   "released": "2026-10-09",
+   "released": "2026-10-10",
    "date_known": true,
    "eol": false,
    "notes": "Tested BrowserBox release. Install with: curl -fsSL browserbox.io/install.sh | bash",
-   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.1.3",
+   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.1.5",
    "page_url": "https://www.firmwarely.com/devices/browserbox/"
   },
   "homarr": {
@@ -511,6 +511,21 @@
    "notes": "Every BIOS and firmware file your emulator setup needs, in one pack per platform, each file checked against what the emulator's own code expects. 12 platforms and 506 emulators read from source. Install in one command: Detects your platform and BIOS folder, downloads only what is missing, checks ev…",
    "source_url": "https://github.com/Abdess/retrobios/releases/tag/v2026.10.10",
    "page_url": "https://www.firmwarely.com/devices/retrobios/"
+  },
+  "couchdb": {
+   "id": "couchdb",
+   "brand": "Apache",
+   "model": "CouchDB",
+   "category": "A",
+   "status": "update",
+   "version": "3.5.3",
+   "previous": "3.5.2",
+   "released": "2026-10-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "3.5.3",
+   "source_url": "https://github.com/apache/couchdb/releases/tag/3.5.3",
+   "page_url": "https://www.firmwarely.com/devices/couchdb/"
   }
  }
 }

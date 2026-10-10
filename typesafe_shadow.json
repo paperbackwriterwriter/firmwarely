@@ -10926,6 +10926,42 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "browserbox",
+   "version": "20.1.5",
+   "name": "BrowserBox Remote browser isolation",
+   "judged_at": "2026-10-10T03:18:00+00:00",
+   "notes_chars": 83,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "couchdb",
+   "version": "3.5.3",
+   "name": "Apache CouchDB",
+   "judged_at": "2026-10-10T03:18:00+00:00",
+   "notes_chars": 5,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.17,
+    "security_fix_plain": 0.16,
+    "end_of_life": 0.03
+   }
   }
  ]
 }
