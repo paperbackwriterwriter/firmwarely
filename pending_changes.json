@@ -496,6 +496,21 @@
    "notes": "Breaking Changes: [dagster-dbt] dagster-dbt no longer installs dbt-core. It is now available as the dagster-dbt[dbt-core] extra. Do not install dbt-core into an environment that also has dbt Fusion's dbt PyPI package: both claim the dbt import namespace and overwrite each other's files, and pip rep…",
    "source_url": "https://github.com/dagster-io/dagster/releases/tag/1.13.26",
    "page_url": "https://www.firmwarely.com/devices/dagster/"
+  },
+  "retrobios": {
+   "id": "retrobios",
+   "brand": "RetroBIOS",
+   "model": "Emulator BIOS packs",
+   "category": "C",
+   "status": "update",
+   "version": "2026.10.10",
+   "previous": "2026.09.04",
+   "released": "2026-10-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "Every BIOS and firmware file your emulator setup needs, in one pack per platform, each file checked against what the emulator's own code expects. 12 platforms and 506 emulators read from source. Install in one command: Detects your platform and BIOS folder, downloads only what is missing, checks ev…",
+   "source_url": "https://github.com/Abdess/retrobios/releases/tag/v2026.10.10",
+   "page_url": "https://www.firmwarely.com/devices/retrobios/"
   }
  }
 }
