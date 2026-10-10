@@ -37,14 +37,14 @@
    "brand": "Databasement",
    "model": "Database backup manager",
    "category": "N",
-   "status": "critical",
-   "version": "1.9.1",
+   "status": "update",
+   "version": "1.9.2",
    "previous": "1.9.0",
    "released": "2026-10-10",
    "date_known": true,
    "eol": false,
-   "notes": "What's Changed: feat: accept a Unix socket path as the MySQL/MariaDB and PostgreSQL host [Snyk] Security upgrade concurrently from 10.0.5 to 10.0.6 feat: bulk delete snapshots from the UI and API feat(agent): deployment snippets per platform and Helm chart agents feat: demo role, and snapshot delet…",
-   "source_url": "https://github.com/David-Crty/databasement/releases/tag/v1.9.1",
+   "notes": "What's Changed: feat: stream database dumps straight into the compressor fix: notify and log jobs failed by the stuck-job recovery fix: keep MSSQL and Firebird connection fields saved through the API, and merge duplicated code Full Changelog: https://github.com/David-Crty/databasement/compare/v1.9.…",
+   "source_url": "https://github.com/David-Crty/databasement/releases/tag/v1.9.2",
    "page_url": "https://www.firmwarely.com/devices/databasement/"
   },
   "openwrt-nikki": {
@@ -83,13 +83,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.8.23.6-lts",
+   "version": "26.9.15.5-stable",
    "previous": "26.9.14.10-stable",
    "released": "2026-10-10",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.8.23.6-lts v26.8.23.6-lts",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.23.6-lts",
+   "notes": "Release v26.9.15.5-stable v26.9.15.5-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.9.15.5-stable",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "ghostfolio": {
@@ -151,6 +151,36 @@
    "notes": "Split Matter TemperatureOffset range by Thermostat ClusterRevision ([] - [#​180517]) ([matter docs]) Bump pywaze to 1.2.4 ([] - [#​184663]) ([waze_travel_time docs]) (dependency) Bump pyicloud to 2.7.0 ([] - [#​184728]) ([icloud docs]) (dependency) Retry failed Analytics insights refresh ([] - [#​1…",
    "source_url": "https://github.com/home-assistant/core/releases/tag/2026.10.1",
    "page_url": "https://www.firmwarely.com/devices/home-assistant-core/"
+  },
+  "3proxy": {
+   "id": "3proxy",
+   "brand": "3proxy",
+   "model": "Tiny proxy server",
+   "category": "R",
+   "status": "update",
+   "version": "1.0.1",
+   "previous": "1.0.0",
+   "released": "2026-10-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "! Fix: crash (segmentation fault) on configuration reload (SIGUSR1) on a busy server: a closing session could still use its service after the reload had freed it; the race existed since 0.9.7, the 5 second linger added in 0.9.9 made it much more likely (#​1278) ! Fix: -Di and -De (bind to interface…",
+   "source_url": "https://github.com/3proxy/3proxy/releases/tag/1.0.1",
+   "page_url": "https://www.firmwarely.com/devices/3proxy/"
+  },
+  "ani-rss": {
+   "id": "ani-rss",
+   "brand": "ANi-RSS",
+   "model": "Anime RSS downloader",
+   "category": "A",
+   "status": "update",
+   "version": "3.2.45",
+   "previous": "3.2.44",
+   "released": "2026-10-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "feat: 批量添加大升级 refactor: 批量添加备用rss可以自动偏移了",
+   "source_url": "https://github.com/wushuo894/ani-rss/releases/tag/v3.2.45",
+   "page_url": "https://www.firmwarely.com/devices/ani-rss/"
   }
  }
 }
