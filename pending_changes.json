@@ -316,6 +316,21 @@
    "notes": "What's Changed: Use Allocation create permission for creating allocations during server creation Register queue health monitoring Support for concurrent S3 part uploads Fix: servers per-page setting resets after session expiry Validate the generated OpenAPI specs in CI Point contributors at the API…",
    "source_url": "https://github.com/pelican/panel/releases/tag/v1.0.0-rc.1",
    "page_url": "https://www.firmwarely.com/devices/panel/"
+  },
+  "ios": {
+   "id": "ios",
+   "brand": "Home Assistant",
+   "model": "iOS companion app",
+   "category": "S",
+   "status": "update",
+   "version": "2026.10.1",
+   "previous": "2026.9.3",
+   "released": "2026-10-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Fixed Crash when audio devices change Voice tools server stopping after a while Images missing in notifications Assist stuck with text-only pipelines Repeated \"Login attempt failed\" alerts New Contributors: made their first contribution in https://github.com/home-assistant/iOS/pull/…",
+   "source_url": "https://github.com/home-assistant/iOS/releases/tag/release/2026.10.1/2026.3213",
+   "page_url": "https://www.firmwarely.com/devices/ios/"
   }
  }
 }
