@@ -10890,6 +10890,24 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.282.84782",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-10-10T00:28:22+00:00",
+   "notes_chars": 103,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

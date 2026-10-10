@@ -98,13 +98,13 @@
    "model": "DNS blocklists",
    "category": "R",
    "status": "update",
-   "version": "37522026.282.33752",
+   "version": "37522026.282.84782",
    "previous": "37522026.281.35041",
    "released": "2026-10-09",
    "date_known": true,
    "eol": false,
-   "notes": "#​11772 #​11771 #​11770 #​11769 #​11768 #​11765 #​11764 #​11763 #​11762 #​11761 #​11760 #​11759 #​11758",
-   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.282.33752",
+   "notes": "#​11787 #​11786 #​11785 #​11784 #​11782 #​11781 #​11780 #​11779 #​11778 #​11777 #​11776 #​11775 #​11774",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.282.84782",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   },
   "rclone": {
