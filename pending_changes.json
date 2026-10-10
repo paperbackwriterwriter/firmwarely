@@ -76,6 +76,36 @@
    "notes": "Fixes: Restore widget and app alignment after the v2.4.0 regression. An invisible widget control occupied 22px of layout space, causing widgets to shift down and overlap adjacent apps. #​7130 Recognize revert-only hotfixes as patch releases. #​7131 The board snapshot debugging feature introduced in…",
    "source_url": "https://github.com/homarr-labs/homarr/releases/tag/v2.4.1",
    "page_url": "https://www.firmwarely.com/devices/homarr/"
+  },
+  "clickhouse": {
+   "id": "clickhouse",
+   "brand": "ClickHouse",
+   "model": "Analytics database",
+   "category": "A",
+   "status": "update",
+   "version": "26.3.47.6-lts",
+   "previous": "26.9.14.10-stable",
+   "released": "2026-10-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release v26.3.47.6-lts v26.3.47.6-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.3.47.6-lts",
+   "page_url": "https://www.firmwarely.com/devices/clickhouse/"
+  },
+  "ghostfolio": {
+   "id": "ghostfolio",
+   "brand": "Ghostfolio",
+   "model": "Wealth tracker",
+   "category": "A",
+   "status": "update",
+   "version": "3.83.0",
+   "previous": "3.82.0",
+   "released": "2026-10-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "Added: Added the performance timeline grouped by year to the analysis page (experimental) Extended the GET api/v2/portfolio/performance endpoint by the groupBy query parameter (year) Changed: Extended the benchmark comparator to support benchmarks whose market data starts later than the portfolio H…",
+   "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.83.0",
+   "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
   }
  }
 }
