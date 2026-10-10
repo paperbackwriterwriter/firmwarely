@@ -83,13 +83,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.3.47.6-lts",
+   "version": "26.7.26.8-stable",
    "previous": "26.9.14.10-stable",
    "released": "2026-10-10",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.3.47.6-lts v26.3.47.6-lts",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.3.47.6-lts",
+   "notes": "Release v26.7.26.8-stable v26.7.26.8-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.7.26.8-stable",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "ghostfolio": {
@@ -106,6 +106,36 @@
    "notes": "Added: Added the performance timeline grouped by year to the analysis page (experimental) Extended the GET api/v2/portfolio/performance endpoint by the groupBy query parameter (year) Changed: Extended the benchmark comparator to support benchmarks whose market data starts later than the portfolio H…",
    "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.83.0",
    "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
+  },
+  "aily-blockly": {
+   "id": "aily-blockly",
+   "brand": "Aily",
+   "model": "Blockly AI IDE for Arduino",
+   "category": "M",
+   "status": "update",
+   "version": "0.9.105",
+   "previous": "0.9.104",
+   "released": "2026-10-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "v0.9.105: Changes: 🔧 Improvements ✨ New Features Function slice display for improved code organization Enable block viewport rendering for better large-project interactions 🐛 Bug Fixes Fixed large project import and batch rendering issues Fixed ABS import and deep link handling for large projects F…",
+   "source_url": "https://github.com/ailyProject/aily-blockly/releases/tag/v0.9.105",
+   "page_url": "https://www.firmwarely.com/devices/aily-blockly/"
+  },
+  "browserbox": {
+   "id": "browserbox",
+   "brand": "BrowserBox",
+   "model": "Remote browser isolation",
+   "category": "R",
+   "status": "update",
+   "version": "20.1.6",
+   "previous": "20.1.5",
+   "released": "2026-10-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "Tested BrowserBox release. Install with: curl -fsSL browserbox.io/install.sh | bash",
+   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.1.6",
+   "page_url": "https://www.firmwarely.com/devices/browserbox/"
   }
  }
 }
