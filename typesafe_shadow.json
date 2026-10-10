@@ -11070,6 +11070,78 @@
     "security_fix_plain": 0.21,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "freescout",
+   "version": "1.8.247",
+   "name": "FreeScout Help desk",
+   "judged_at": "2026-10-10T10:16:56+00:00",
+   "notes_chars": 86,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.283.33877",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-10-10T10:16:56+00:00",
+   "notes_chars": 23,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "databasement",
+   "version": "1.9.1",
+   "name": "Databasement Database backup manager",
+   "judged_at": "2026-10-10T10:16:57+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.23,
+    "security_fix_plain": 0.5,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "openwrt-nikki",
+   "version": "1.26.2",
+   "name": "OpenWrt Nikki Transparent Proxy with Mihomo on OpenWrt",
+   "judged_at": "2026-10-10T10:16:57+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.09,
+    "security_fix_plain": 0.14,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

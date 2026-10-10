@@ -1,5 +1,66 @@
 {
- "since": null,
+ "since": "2026-10-10T10:16:28+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "freescout": {
+   "id": "freescout",
+   "brand": "FreeScout",
+   "model": "Help desk",
+   "category": "A",
+   "status": "update",
+   "version": "1.8.247",
+   "previous": "1.8.246",
+   "released": "2026-10-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "Fixed User::mailboxesIdsCanView() crash on PHP 8.1+ when mailbox meta is NULL (#​5719)",
+   "source_url": "https://github.com/freescout-help-desk/freescout/releases/tag/1.8.247",
+   "page_url": "https://www.firmwarely.com/devices/freescout/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.283.33877",
+   "previous": "37522026.282.84782",
+   "released": "2026-10-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​11792 #​11791 #​11790",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.283.33877",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "databasement": {
+   "id": "databasement",
+   "brand": "Databasement",
+   "model": "Database backup manager",
+   "category": "N",
+   "status": "critical",
+   "version": "1.9.1",
+   "previous": "1.9.0",
+   "released": "2026-10-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: feat: accept a Unix socket path as the MySQL/MariaDB and PostgreSQL host [Snyk] Security upgrade concurrently from 10.0.5 to 10.0.6 feat: bulk delete snapshots from the UI and API feat(agent): deployment snippets per platform and Helm chart agents feat: demo role, and snapshot delet…",
+   "source_url": "https://github.com/David-Crty/databasement/releases/tag/v1.9.1",
+   "page_url": "https://www.firmwarely.com/devices/databasement/"
+  },
+  "openwrt-nikki": {
+   "id": "openwrt-nikki",
+   "brand": "OpenWrt Nikki",
+   "model": "Transparent Proxy with Mihomo on OpenWrt",
+   "category": "R",
+   "status": "update",
+   "version": "1.26.2",
+   "previous": "1.26.1",
+   "released": "2026-10-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: fix(rpcd): use TLS listen address for API requests when configured fix: read yq output fully before json() in load_profile (Hijack failed / Trailing garbage after JSON data) chore: update mihomo-meta to v1.19.32 by in https://github.com/nikkinikki-org/OpenWrt-nikki/pull/911 New Cont…",
+   "source_url": "https://github.com/nikkinikki-org/OpenWrt-nikki/releases/tag/v1.26.2",
+   "page_url": "https://www.firmwarely.com/devices/openwrt-nikki/"
+  }
+ }
 }
