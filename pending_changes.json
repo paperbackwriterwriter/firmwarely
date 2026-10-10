@@ -271,6 +271,51 @@
    "notes": "Changelog: [3.61.0] - 2026-10-10: ✨ Features: notifiers: Let a Telegram notifier send through a self-hosted Bot API server or reverse proxy set in its advanced settings, so networks without access to api.telegram.org can still get notifications (cb37d67) mongodb: Support MongoDB 9 with Database Too…",
    "source_url": "https://github.com/databasus/databasus/releases/tag/v3.61.0",
    "page_url": "https://www.firmwarely.com/devices/databasus/"
+  },
+  "dozzle": {
+   "id": "dozzle",
+   "brand": "Dozzle",
+   "model": "Container log viewer",
+   "category": "A",
+   "status": "update",
+   "version": "11.3.1",
+   "previous": "11.3.0",
+   "released": "2026-10-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "🚀 Features: Inspect a container from the log menu - and Claude Opus 5.5 (1M context) in https://github.com/amir20/dozzle/issues/5378 (673b6) host: List every drive in a disk popover - and Claude Opus 5.5 (1M context) in https://github.com/amir20/dozzle/issues/5385 (18d76) notifications: Expand ${VA…",
+   "source_url": "https://github.com/amir20/dozzle/releases/tag/v11.3.1",
+   "page_url": "https://www.firmwarely.com/devices/dozzle/"
+  },
+  "open-webui": {
+   "id": "open-webui",
+   "brand": "Open WebUI",
+   "model": "LLM web interface",
+   "category": "A",
+   "status": "update",
+   "version": "0.12.0",
+   "previous": "0.11.4",
+   "released": "2026-10-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "Added: ☎️ Realtime voice calls. Administrators can now switch Call mode in the Voice calls section of Audio settings from Standard to Realtime, so Voice mode talks through an OpenAI Realtime voice model (gpt-realtime-2.1-mini with the Marin voice by default) that handles small talk itself and hands…",
+   "source_url": "https://github.com/open-webui/open-webui/releases/tag/v0.12.0",
+   "page_url": "https://www.firmwarely.com/devices/open-webui/"
+  },
+  "panel": {
+   "id": "panel",
+   "brand": "Panel",
+   "model": "Free, open source game server management panel",
+   "category": "A",
+   "status": "update",
+   "version": "1.0.0-rc",
+   "previous": "1.0.0-beta38",
+   "released": "2026-10-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Use Allocation create permission for creating allocations during server creation Register queue health monitoring Support for concurrent S3 part uploads Fix: servers per-page setting resets after session expiry Validate the generated OpenAPI specs in CI Point contributors at the API…",
+   "source_url": "https://github.com/pelican/panel/releases/tag/v1.0.0-rc.1",
+   "page_url": "https://www.firmwarely.com/devices/panel/"
   }
  }
 }
