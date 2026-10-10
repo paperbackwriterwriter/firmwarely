@@ -241,6 +241,36 @@
    "notes": "Select: Quote again the quoted values of IN Select: Accept the unquoted values of IN in parentheses (bug #​1350, regression from 6.0.1) Select: Edit the stored value by Ctrl+click on a non-original value (bug #​1344) Select: Search by BETWEEN (bug #​1346) Select: Report an unknown column in search …",
    "source_url": "https://github.com/vrana/adminer/releases/tag/v6.1.2",
    "page_url": "https://www.firmwarely.com/devices/adminer/"
+  },
+  "movie-data-capture": {
+   "id": "movie-data-capture",
+   "brand": "Movie Data Capture",
+   "model": "Local movie organizer",
+   "category": "A",
+   "status": "update",
+   "version": "8.1.4",
+   "previous": "8.1.3",
+   "released": "2026-10-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "🟢 New: 支持自定义云配置中的 OpenAI 翻译提示词，并在提示词无效时回退到默认设置 封面裁剪支持按比例调整裁剪区域大小 多集影片识别新增 .cdX 和 .partX 格式 🔨 Fixed: 修复部分影片名称解析错误 修复部分网站的抓取优先级和匹配规则 修复在 macOS x86 上无法启动的问题 修复向 Jellyfin 12 上传演员头像失败的问题 修复多集影片刮削时错误复用已有图片的问题 --- Docker 误报毒请下载结尾multi.zip版本或加入白名单 在线查杀报告 8.1.3",
+   "source_url": "https://github.com/mvdctop/Movie_Data_Capture/releases/tag/8.1.4",
+   "page_url": "https://www.firmwarely.com/devices/movie-data-capture/"
+  },
+  "databasus": {
+   "id": "databasus",
+   "brand": "Databasus",
+   "model": "PostgreSQL backup tool",
+   "category": "N",
+   "status": "update",
+   "version": "3.61.0",
+   "previous": "3.60.0",
+   "released": "2026-10-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: [3.61.0] - 2026-10-10: ✨ Features: notifiers: Let a Telegram notifier send through a self-hosted Bot API server or reverse proxy set in its advanced settings, so networks without access to api.telegram.org can still get notifications (cb37d67) mongodb: Support MongoDB 9 with Database Too…",
+   "source_url": "https://github.com/databasus/databasus/releases/tag/v3.61.0",
+   "page_url": "https://www.firmwarely.com/devices/databasus/"
   }
  }
 }

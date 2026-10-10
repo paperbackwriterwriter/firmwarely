@@ -11430,6 +11430,42 @@
     "security_fix_plain": 0.04,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "movie-data-capture",
+   "version": "8.1.4",
+   "name": "Movie Data Capture Local movie organizer",
+   "judged_at": "2026-10-10T20:16:21+00:00",
+   "notes_chars": 252,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "databasus",
+   "version": "3.61.0",
+   "name": "Databasus PostgreSQL backup tool",
+   "judged_at": "2026-10-10T20:16:21+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
