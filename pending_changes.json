@@ -136,6 +136,21 @@
    "notes": "Tested BrowserBox release. Install with: curl -fsSL browserbox.io/install.sh | bash",
    "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.1.6",
    "page_url": "https://www.firmwarely.com/devices/browserbox/"
+  },
+  "home-assistant-core": {
+   "id": "home-assistant-core",
+   "brand": "Home Assistant",
+   "model": "Core (monthly release)",
+   "category": "S",
+   "status": "update",
+   "version": "2026.10.1",
+   "previous": "2026.10.0",
+   "released": "2026-10-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "Split Matter TemperatureOffset range by Thermostat ClusterRevision ([] - [#​180517]) ([matter docs]) Bump pywaze to 1.2.4 ([] - [#​184663]) ([waze_travel_time docs]) (dependency) Bump pyicloud to 2.7.0 ([] - [#​184728]) ([icloud docs]) (dependency) Retry failed Analytics insights refresh ([] - [#​1…",
+   "source_url": "https://github.com/home-assistant/core/releases/tag/2026.10.1",
+   "page_url": "https://www.firmwarely.com/devices/home-assistant-core/"
   }
  }
 }
