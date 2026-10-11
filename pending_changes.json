@@ -46,6 +46,36 @@
    "notes": "What's new in Kiosk Satellite 2026.10.20: This release adds Custom Pages, which shows your own HTML pages from Home Assistant as dashboards. Pages can now follow the kiosk's theme and state through the JavaScript API, and Home Assistant can answer or decline intercom calls. It also fixes a camera w…",
    "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.10.20",
    "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
+  },
+  "librephotos": {
+   "id": "librephotos",
+   "brand": "LibrePhotos",
+   "model": "Photo management",
+   "category": "A",
+   "status": "update",
+   "version": "1.3.0",
+   "previous": "1.2.1",
+   "released": "2026-10-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release makes one open model, OpenCLIP, do all tagging and semantic search, ports the speed work from the Rust and TypeScript backend experiments back to Django so search, the API and scans get a lot faster on less memory, adds a timeline filter to keep screenshots and documents out of the way…",
+   "source_url": "https://github.com/LibrePhotos/librephotos/releases/tag/1.3.0",
+   "page_url": "https://www.firmwarely.com/devices/librephotos/"
+  },
+  "mumble": {
+   "id": "mumble",
+   "brand": "Mumble",
+   "model": "Voice chat",
+   "category": "A",
+   "status": "update",
+   "version": "1.5.939",
+   "previous": "1.5.915",
+   "released": "2026-10-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "This is the sixth stable release of the 1.5 series. Release announcement: https://www.mumble.info/blog/mumble-1.5.939/ Known issues: We are unable to provide new pre-compiled macOS binaries for the 1.5 series. Overlay blocked by CS:GO Trusted Mode",
+   "source_url": "https://github.com/mumble-voip/mumble/releases/tag/v1.5.939",
+   "page_url": "https://www.firmwarely.com/devices/mumble/"
   }
  }
 }
