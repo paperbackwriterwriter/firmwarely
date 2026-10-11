@@ -16,6 +16,36 @@
    "notes": "#​11803 #​11802 #​11801 #​11800 #​11799 #​11797 #​11794 #​11793",
    "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.284.34296",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "evcc": {
+   "id": "evcc",
+   "brand": "evcc",
+   "model": "EV charge controller",
+   "category": "S",
+   "status": "update",
+   "version": "0.317.1",
+   "previous": "0.317.0",
+   "released": "2026-10-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: Other Changes ☀️: c727ee7c5592fe24ba607b107544370bed234793 Energy: build overview slots from all series (#​34624) 259d5fd99774ccb3690eb0de8ebbf873089bd13d Kostal Plenticore: restore manual maxacpower configuration (#​34642) 44a1154e4a163dd49c9d5e17ae729d61a7228dd3 SunSpec: nan option to …",
+   "source_url": "https://github.com/evcc-io/evcc/releases/tag/0.317.1",
+   "page_url": "https://www.firmwarely.com/devices/evcc/"
+  },
+  "kiosk-satellite": {
+   "id": "kiosk-satellite",
+   "brand": "Kiosk Satellite",
+   "model": "Turn any Android device",
+   "category": "S",
+   "status": "update",
+   "version": "2026.10.20",
+   "previous": "2026.10.19",
+   "released": "2026-10-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's new in Kiosk Satellite 2026.10.20: This release adds Custom Pages, which shows your own HTML pages from Home Assistant as dashboards. Pages can now follow the kiosk's theme and state through the JavaScript API, and Home Assistant can answer or decline intercom calls. It also fixes a camera w…",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.10.20",
+   "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   }
  }
 }
