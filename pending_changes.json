@@ -196,6 +196,66 @@
    "notes": "Added: Added the endpoint to read the activities of a CSV, JPEG, PDF or PNG file with _Ghostfolio AI_ (POST api/v1/ai/activities) (experimental) Changed: Simplified the portfolio performance on the overview tab of the home page by hiding the currency on mobile Extended the user detail dialog in the…",
    "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.84.2",
    "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
+  },
+  "firefly-iii": {
+   "id": "firefly-iii",
+   "brand": "Firefly III",
+   "model": "Personal finance manager",
+   "category": "A",
+   "status": "update",
+   "version": "6.7.9",
+   "previous": "6.7.8",
+   "released": "2026-10-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "Welcome to release v6.7.9 of Firefly III. It contains the latest fixes, translations and features. Docker users can find this release under the latest tag. Changelog: Fixed: Self-hosted users should no longer run into Target class [hash] does not exist errors. Explain in the release notes how to cl…",
+   "source_url": "https://github.com/firefly-iii/firefly-iii/releases/tag/v6.7.9",
+   "page_url": "https://www.firmwarely.com/devices/firefly-iii/"
+  },
+  "glances": {
+   "id": "glances",
+   "brand": "Glances",
+   "model": "System monitor",
+   "category": "A",
+   "status": "update",
+   "version": "4.5.8",
+   "previous": "4.5.7",
+   "released": "2026-10-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "Bugs corrected: Stdout: CSV data blocks use the first list item's fields instead of each item's own #​3746 Stdout: raw selector with a dotted item key (network.eth0.100.bytes_recv) raises UnboundLocalError #​3748 Folders: a second configured FolderList appends its entries to the first instance #​37…",
+   "source_url": "https://github.com/nicolargo/glances/releases/tag/v4.5.8",
+   "page_url": "https://www.firmwarely.com/devices/glances/"
+  },
+  "openhab": {
+   "id": "openhab",
+   "brand": "openHAB",
+   "model": "Home automation hub",
+   "category": "S",
+   "status": "update",
+   "version": "5.3.0",
+   "previous": "5.2.3",
+   "released": "2026-10-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "This is a monthly milestone build for the upcoming openHAB 5.3 release, which brings many fixes and improvements. Runtime: | Type | Issue | Change | |-|-|-| | | | | | Enhancements | 1977 | Add Java Sound API SPI provider for FLAC | | | 5189 | Add source to StartLevel event | | | 5872 | Add \"Query P…",
+   "source_url": "https://github.com/openhab/openhab-distro/releases/tag/5.3.0.M3",
+   "page_url": "https://www.firmwarely.com/devices/openhab/"
+  },
+  "esp32-bit-pirate": {
+   "id": "esp32-bit-pirate",
+   "brand": "ESP32 Bit Pirate",
+   "model": "Hardware hacking tool",
+   "category": "M",
+   "status": "update",
+   "version": "1.8",
+   "previous": "1.7",
+   "released": "2026-10-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: ESP SDR: ESP SDR USB Adapter 🔹 Added an experimental ESP32-S3 SDR adapter using the built-in 2.4 GHz radio and USB CDC to stream RF. 🔹 Added a browser-based SDR tool with wideband scanning, live spectrum and waterfall views. 🔹 Radio tuning beyond the standard 2.4 GHz band is experimental…",
+   "source_url": "https://github.com/geo-tp/ESP32-Bit-Pirate/releases/tag/v1.8",
+   "page_url": "https://www.firmwarely.com/devices/esp32-bit-pirate/"
   }
  }
 }

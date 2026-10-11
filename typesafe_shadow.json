@@ -11970,6 +11970,78 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "firefly-iii",
+   "version": "6.7.9",
+   "name": "Firefly III Personal finance manager",
+   "judged_at": "2026-10-11T20:16:24+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "glances",
+   "version": "4.5.8",
+   "name": "Glances System monitor",
+   "judged_at": "2026-10-11T20:16:24+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "openhab",
+   "version": "5.3.0",
+   "name": "openHAB Home automation hub",
+   "judged_at": "2026-10-11T20:16:24+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "esp32-bit-pirate",
+   "version": "1.8",
+   "name": "ESP32 Bit Pirate Hardware hacking tool",
+   "judged_at": "2026-10-11T20:16:24+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
