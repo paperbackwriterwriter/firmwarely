@@ -11736,6 +11736,42 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.13
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.3.48.2-lts",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-11T13:18:32+00:00",
+   "notes_chars": 37,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "bfe",
+   "version": "1.8.8.3",
+   "name": "BFE Layer 7 load balancer",
+   "judged_at": "2026-10-11T13:18:32+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.07,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
