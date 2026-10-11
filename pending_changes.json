@@ -83,13 +83,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.7.27.3-stable",
+   "version": "26.8.24.9-lts",
    "previous": "26.9.15.5-stable",
    "released": "2026-10-11",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.7.27.3-stable v26.7.27.3-stable",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.7.27.3-stable",
+   "notes": "Release v26.8.24.9-lts v26.8.24.9-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.24.9-lts",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "bfe": {
@@ -106,6 +106,36 @@
    "notes": "Fixed: Fix token usage collection for non-streaming gzip responses (Content-Encoding: gzip with Transfer-Encoding: chunked): the compressed body is now decompressed on a parse-only copy (forwarding bytes untouched), the whole-body parse gate accepts chunked non-SSE JSON bodies, and the content-type…",
    "source_url": "https://github.com/bfenetworks/bfe/releases/tag/v1.8.8.3",
    "page_url": "https://www.firmwarely.com/devices/bfe/"
+  },
+  "picard": {
+   "id": "picard",
+   "brand": "MusicBrainz",
+   "model": "Picard tagger",
+   "category": "A",
+   "status": "update",
+   "version": "3.0.2",
+   "previous": "3.0.1",
+   "released": "2026-10-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "Please refer to the download page for official download locations. Bugfixes: PICARD-3484 - Hardcoded link styling in Audio Player options PICARD-3485 - Sticky grey background in metadata pane PICARD-3490 - Program crash after wizard if build with --disable-autoupdate PICARD-3491 - Text color issues…",
+   "source_url": "https://github.com/metabrainz/picard/releases/tag/release-3.0.2",
+   "page_url": "https://www.firmwarely.com/devices/picard/"
+  },
+  "etherpad": {
+   "id": "etherpad",
+   "brand": "Etherpad",
+   "model": "Collaborative editor",
+   "category": "A",
+   "status": "critical",
+   "version": "3.3.8",
+   "previous": "3.3.7",
+   "released": "2026-10-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "3.3.8 is a security release. It closes an HTTP API privilege escalation for instances using the built-in OIDC provider with API clients (GHSA-38vj-95q4-gwvx). Security: HTTP API — client_credentials tokens are identified by a signed grant marker (GHSA-38vj-95q4-gwvx). The API decided whether a bear…",
+   "source_url": "https://github.com/ether/etherpad/releases/tag/v3.3.8",
+   "page_url": "https://www.firmwarely.com/devices/etherpad/"
   }
  }
 }
