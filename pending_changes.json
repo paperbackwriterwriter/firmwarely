@@ -346,6 +346,21 @@
    "notes": "Changes:: 3d3b001d9c3208e88b36836b5ef1b4ac79ed9104 traxary: bump engine tag fc65b6e080e05a65773dafa5876583133823996c slobitgames: removed resolves #​16926 41221387ceef55061802134ac17a0a7610ea0710 milnueve: new cat ee3adf110ff3723dbad506167584b13b97de38fc linuxtracker: fix e5e756a43f4538ec107af38f97…",
    "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2816",
    "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "ollama": {
+   "id": "ollama",
+   "brand": "Ollama",
+   "model": "Local LLM runner",
+   "category": "A",
+   "status": "update",
+   "version": "0.40.3",
+   "previous": "0.40.2",
+   "released": "2026-10-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: ollama launch claude no longer shows a warning about Claude connectors ollama launch codex no longer warns about service tiers Paused background model upgrade for embedding and other request performance, Full Changelog: https://github.com/ollama/ollama/compare/v0.40.2...v0.40.3",
+   "source_url": "https://github.com/ollama/ollama/releases/tag/v0.40.3",
+   "page_url": "https://www.firmwarely.com/devices/ollama/"
   }
  }
 }
