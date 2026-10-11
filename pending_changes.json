@@ -256,6 +256,51 @@
    "notes": "Changelog: ESP SDR: ESP SDR USB Adapter 🔹 Added an experimental ESP32-S3 SDR adapter using the built-in 2.4 GHz radio and USB CDC to stream RF. 🔹 Added a browser-based SDR tool with wideband scanning, live spectrum and waterfall views. 🔹 Radio tuning beyond the standard 2.4 GHz band is experimental…",
    "source_url": "https://github.com/geo-tp/ESP32-Bit-Pirate/releases/tag/v1.8",
    "page_url": "https://www.firmwarely.com/devices/esp32-bit-pirate/"
+  },
+  "xiaozhi-esp32": {
+   "id": "xiaozhi-esp32",
+   "brand": "Xiaozhi",
+   "model": "ESP32 AI voice assistant firmware",
+   "category": "M",
+   "status": "update",
+   "version": "2.5.2",
+   "previous": "2.5.0",
+   "released": "2026-10-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "188 firmware variants for 154 board directories, built with ESP-IDF 6.1.0. Source: 49b4380b3faa0ceadd28a3e78aaf0f311c46c57e. Build and validation. Each firmware ZIP contains merged-binary.bin. SHA-256 checksums and the complete variant manifest are attached. Builds and package checks do not replace…",
+   "source_url": "https://github.com/78/xiaozhi-esp32/releases/tag/v2.5.2",
+   "page_url": "https://www.firmwarely.com/devices/xiaozhi-esp32/"
+  },
+  "mobile-mcp": {
+   "id": "mobile-mcp",
+   "brand": "Mobile Mcp",
+   "model": "Model Context Protocol Server",
+   "category": "C",
+   "status": "update",
+   "version": "1.0.10",
+   "previous": "1.0.9",
+   "released": "2026-10-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "Feat: Add get_more_tools, so an agent can report a capability mobile-mcp is missing (#​491) Fix: A tool that fails with an actionable error now returns isError: true, instead of looking like a success (#​495), thanks to Fix: mobile_long_press_on_screen_at_coordinates accepts a fractional duration, …",
+   "source_url": "https://github.com/mobile-next/mobile-mcp/releases/tag/1.0.10",
+   "page_url": "https://www.firmwarely.com/devices/mobile-mcp/"
+  },
+  "octelium": {
+   "id": "octelium",
+   "brand": "Octelium",
+   "model": "Next-gen FOSS self-hosted unified zero trust secure access",
+   "category": "R",
+   "status": "update",
+   "version": "0.45.0",
+   "previous": "0.44.0",
+   "released": "2026-10-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "You can upgrade an already running Cluster via the command octops upgrade as shown here. You can read the full changelog here. Improvements: Introducing automatic suspend/resume detection for the Octelium client. The octelium connect command now checks whether the Connection is still alive when the…",
+   "source_url": "https://github.com/octelium/octelium/releases/tag/v0.45.0",
+   "page_url": "https://www.firmwarely.com/devices/octelium/"
   }
  }
 }

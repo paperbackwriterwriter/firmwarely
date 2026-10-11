@@ -12042,6 +12042,60 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "xiaozhi-esp32",
+   "version": "2.5.2",
+   "name": "Xiaozhi ESP32 AI voice assistant firmware",
+   "judged_at": "2026-10-11T21:17:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "mobile-mcp",
+   "version": "1.0.10",
+   "name": "Mobile Mcp Model Context Protocol Server",
+   "judged_at": "2026-10-11T21:17:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "octelium",
+   "version": "0.45.0",
+   "name": "Octelium Next-gen FOSS self-hosted unified zero trust secure access",
+   "judged_at": "2026-10-11T21:17:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
