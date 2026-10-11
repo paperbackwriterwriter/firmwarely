@@ -10784,6 +10784,96 @@
    "type": "github",
    "repo": "bramstroker/homeassistant-powercalc",
    "product_url": "https://github.com/bramstroker/homeassistant-powercalc"
+  },
+  {
+   "id": "espconnect",
+   "brand": "ESPConnect",
+   "model": "Zero-installation web application",
+   "category": "N",
+   "type": "github",
+   "repo": "thelastoutpostworkshop/ESPConnect",
+   "product_url": "https://github.com/thelastoutpostworkshop/ESPConnect"
+  },
+  {
+   "id": "worldmonitor",
+   "brand": "Worldmonitor",
+   "model": "Real-time global intelligence dashboard",
+   "category": "A",
+   "type": "github",
+   "repo": "koala73/worldmonitor",
+   "product_url": "https://github.com/koala73/worldmonitor"
+  },
+  {
+   "id": "huginn",
+   "brand": "Huginn",
+   "model": "Create agents that monitor and act on your behalf",
+   "category": "A",
+   "type": "github",
+   "repo": "huginn/huginn",
+   "product_url": "https://github.com/huginn/huginn"
+  },
+  {
+   "id": "sentry",
+   "brand": "Sentry",
+   "model": "Developer-first error tracking and performance monitoring",
+   "category": "A",
+   "type": "github",
+   "repo": "getsentry/sentry",
+   "product_url": "https://github.com/getsentry/sentry"
+  },
+  {
+   "id": "pm2",
+   "brand": "Pm2",
+   "model": "Node.js/Typescript/Bun Production Process Manager",
+   "category": "A",
+   "type": "github",
+   "repo": "Unitech/pm2",
+   "product_url": "https://github.com/Unitech/pm2"
+  },
+  {
+   "id": "osquery",
+   "brand": "Osquery",
+   "model": "SQL powered operating system instrumentation, monitoring",
+   "category": "A",
+   "type": "github",
+   "repo": "osquery/osquery",
+   "product_url": "https://github.com/osquery/osquery"
+  },
+  {
+   "id": "openobserve",
+   "brand": "Openobserve",
+   "model": "Observability platform",
+   "category": "A",
+   "type": "github",
+   "repo": "openobserve/openobserve",
+   "product_url": "https://github.com/openobserve/openobserve"
+  },
+  {
+   "id": "bettercap",
+   "brand": "Bettercap",
+   "model": "Swiss Army knife",
+   "category": "R",
+   "type": "github",
+   "repo": "bettercap/bettercap",
+   "product_url": "https://github.com/bettercap/bettercap"
+  },
+  {
+   "id": "thanos",
+   "brand": "Thanos",
+   "model": "Highly available Prometheus setup",
+   "category": "N",
+   "type": "github",
+   "repo": "thanos-io/thanos",
+   "product_url": "https://github.com/thanos-io/thanos"
+  },
+  {
+   "id": "bottom",
+   "brand": "Bottom",
+   "model": "Yet another cross-platform graphical process/system monitor",
+   "category": "A",
+   "type": "github",
+   "repo": "ClementTsang/bottom",
+   "product_url": "https://github.com/ClementTsang/bottom"
   }
  ]
 }
