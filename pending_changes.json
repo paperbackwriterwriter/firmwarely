@@ -166,6 +166,21 @@
    "notes": "refactor: 彻底移除 OpenList refactor: 去除封面标题 tooltip",
    "source_url": "https://github.com/wushuo894/ani-rss/releases/tag/v3.2.47",
    "page_url": "https://www.firmwarely.com/devices/ani-rss/"
+  },
+  "arc": {
+   "id": "arc",
+   "brand": "Arc",
+   "model": "Redpill loader for Synology DSM",
+   "category": "N",
+   "status": "update",
+   "version": "4.1.0",
+   "previous": "4.0.4",
+   "released": "2026-10-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "Information: Release Notes Dependencies: Addons: 26.10.11 Modules: 26.09.06 Configs: 26.09.06 Patches: 26.05.30 Custom: 26.10.04 LKMs: 26.09.30 Apex: 2024.02.x-260928-0000-apex Build: 2026-10-11 18:19",
+   "source_url": "https://github.com/AuxXxilium/arc/releases/tag/4.1.0",
+   "page_url": "https://www.firmwarely.com/devices/arc/"
   }
  }
 }
