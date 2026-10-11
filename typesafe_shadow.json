@@ -12096,6 +12096,24 @@
     "security_fix_plain": 0.04,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "databasement",
+   "version": "1.10.0",
+   "name": "Databasement Database backup manager",
+   "judged_at": "2026-10-11T22:17:15+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

@@ -301,6 +301,21 @@
    "notes": "You can upgrade an already running Cluster via the command octops upgrade as shown here. You can read the full changelog here. Improvements: Introducing automatic suspend/resume detection for the Octelium client. The octelium connect command now checks whether the Connection is still alive when the…",
    "source_url": "https://github.com/octelium/octelium/releases/tag/v0.45.0",
    "page_url": "https://www.firmwarely.com/devices/octelium/"
+  },
+  "databasement": {
+   "id": "databasement",
+   "brand": "Databasement",
+   "model": "Database backup manager",
+   "category": "N",
+   "status": "update",
+   "version": "1.10.0",
+   "previous": "1.9.3",
+   "released": "2026-10-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: fix: keep a snapshot whose file could not be deleted from its volume fix(docker)!: run the queue worker as the application user feat(agent): delete the files of agent-backed snapshots through the agent perf: skip database reads when booting artisan commands fix: create the demo back…",
+   "source_url": "https://github.com/David-Crty/databasement/releases/tag/v1.10.0",
+   "page_url": "https://www.firmwarely.com/devices/databasement/"
   }
  }
 }
