@@ -38,13 +38,13 @@
    "model": "Database backup manager",
    "category": "N",
    "status": "update",
-   "version": "1.9.2",
+   "version": "1.9.3",
    "previous": "1.9.0",
-   "released": "2026-10-10",
+   "released": "2026-10-11",
    "date_known": true,
    "eol": false,
-   "notes": "What's Changed: feat: stream database dumps straight into the compressor fix: notify and log jobs failed by the stuck-job recovery fix: keep MSSQL and Firebird connection fields saved through the API, and merge duplicated code Full Changelog: https://github.com/David-Crty/databasement/compare/v1.9.…",
-   "source_url": "https://github.com/David-Crty/databasement/releases/tag/v1.9.2",
+   "notes": "What's Changed: fix: show the organization switcher as an icon when the sidebar is collapsed fix(api): keep a backup configuration on update when its id is sent fix: apply retention again to snapshots orphaned by API updates New Contributors: made their first contribution in https://github.com/Davi…",
+   "source_url": "https://github.com/David-Crty/databasement/releases/tag/v1.9.3",
    "page_url": "https://www.firmwarely.com/devices/databasement/"
   },
   "openwrt-nikki": {
@@ -128,13 +128,13 @@
    "model": "Remote browser isolation",
    "category": "R",
    "status": "update",
-   "version": "20.1.6",
+   "version": "20.1.7",
    "previous": "20.1.5",
-   "released": "2026-10-10",
+   "released": "2026-10-11",
    "date_known": true,
    "eol": false,
    "notes": "Tested BrowserBox release. Install with: curl -fsSL browserbox.io/install.sh | bash",
-   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.1.6",
+   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.1.7",
    "page_url": "https://www.firmwarely.com/devices/browserbox/"
   },
   "home-assistant-core": {
@@ -173,13 +173,13 @@
    "model": "Anime RSS downloader",
    "category": "A",
    "status": "update",
-   "version": "3.2.45",
+   "version": "3.2.46",
    "previous": "3.2.44",
-   "released": "2026-10-10",
+   "released": "2026-10-11",
    "date_known": true,
    "eol": false,
-   "notes": "feat: 批量添加大升级 refactor: 批量添加备用rss可以自动偏移了",
-   "source_url": "https://github.com/wushuo894/ani-rss/releases/tag/v3.2.45",
+   "notes": "feat: WASM 播放器 refactor: 优化多音字处理",
+   "source_url": "https://github.com/wushuo894/ani-rss/releases/tag/v3.2.46",
    "page_url": "https://www.firmwarely.com/devices/ani-rss/"
   },
   "casdoor": {
@@ -331,6 +331,21 @@
    "notes": "What's Changed: Fixed Crash when audio devices change Voice tools server stopping after a while Images missing in notifications Assist stuck with text-only pipelines Repeated \"Login attempt failed\" alerts New Contributors: made their first contribution in https://github.com/home-assistant/iOS/pull/…",
    "source_url": "https://github.com/home-assistant/iOS/releases/tag/release/2026.10.1/2026.3213",
    "page_url": "https://www.firmwarely.com/devices/ios/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.2816",
+   "previous": "0.24.2813",
+   "released": "2026-10-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: 3d3b001d9c3208e88b36836b5ef1b4ac79ed9104 traxary: bump engine tag fc65b6e080e05a65773dafa5876583133823996c slobitgames: removed resolves #​16926 41221387ceef55061802134ac17a0a7610ea0710 milnueve: new cat ee3adf110ff3723dbad506167584b13b97de38fc linuxtracker: fix e5e756a43f4538ec107af38f97…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2816",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
