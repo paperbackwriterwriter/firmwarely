@@ -466,6 +466,21 @@
    "notes": "Changelog: Bug fixes: 6d0b17da1a4125a8869cbf5d0ba678d65d4cd091: fix(resolvers): cancel family-bound UDP hostname lookups () Others: 7f6b105f240e562a5c7659976b1c16b683c25385: Merge pull request #​259 from mr-karan/feat/dns-delegation-trace () fcb09f698d68a6a0d915e2730d5a032e629805ec: Merge pull requ…",
    "source_url": "https://github.com/mr-karan/doggo/releases/tag/v1.4.1",
    "page_url": "https://www.firmwarely.com/devices/doggo/"
+  },
+  "komga": {
+   "id": "komga",
+   "brand": "Komga",
+   "model": "Comic and manga server",
+   "category": "A",
+   "status": "update",
+   "version": "1.29.0",
+   "previous": "1.28.1",
+   "released": "2026-10-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "Notable Entities bring a flexible way to store additional metadata at book level. It works similarly to authors in the way you can create any kind of notable entity, and associate it with a list of values. Komga will fetch the following directly from : Teams, Characters, and Locations. Note that No…",
+   "source_url": "https://github.com/gotson/komga/releases/tag/1.29.0",
+   "page_url": "https://www.firmwarely.com/devices/komga/"
   }
  }
 }
