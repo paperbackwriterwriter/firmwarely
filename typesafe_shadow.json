@@ -12708,6 +12708,78 @@
     "security_fix_plain": 0.06,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "telegraf",
+   "version": "1.40.2",
+   "name": "InfluxData Telegraf agent",
+   "judged_at": "2026-10-12T15:21:23+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "wizarr",
+   "version": "2026.10.1",
+   "name": "Wizarr Media server invites",
+   "judged_at": "2026-10-12T15:21:24+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "onlyoffice-docs",
+   "version": "10.0.0",
+   "name": "ONLYOFFICE Document Server",
+   "judged_at": "2026-10-12T15:21:24+00:00",
+   "notes_chars": 27,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.11,
+    "security_fix_plain": 0.07,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "browserbox",
+   "version": "20.2.0",
+   "name": "BrowserBox Remote browser isolation",
+   "judged_at": "2026-10-12T15:21:24+00:00",
+   "notes_chars": 83,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

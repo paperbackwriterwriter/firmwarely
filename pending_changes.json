@@ -211,6 +211,66 @@
    "notes": "What's Changed: fix: honor return_url after local login (#​3152) fix(external-integration): accept decimal values in number fields fix: keep primary, active and danger widget button styles in dark mode (#​3153) fix: apply the default of external integration action fields (#​3155) Gladys Plus pricin…",
    "source_url": "https://github.com/GladysAssistant/Gladys/releases/tag/v5.2.0",
    "page_url": "https://www.firmwarely.com/devices/gladys/"
+  },
+  "telegraf": {
+   "id": "telegraf",
+   "brand": "InfluxData",
+   "model": "Telegraf agent",
+   "category": "A",
+   "status": "update",
+   "version": "1.40.2",
+   "previous": "1.40.1",
+   "released": "2026-10-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "v1.40.2 [2026-10-12]: Bugfixes: #​19813 common.socket Keep percent escapes in unix socket paths #​19818 config Run processors once when there are no aggregators #​19790 inputs.docker Pin API version for pre-1.40 daemons #​19810 inputs.docker_log Pin API version for pre-1.40 daemons #​19791 inputs.k…",
+   "source_url": "https://github.com/influxdata/telegraf/releases/tag/v1.40.2",
+   "page_url": "https://www.firmwarely.com/devices/telegraf/"
+  },
+  "wizarr": {
+   "id": "wizarr",
+   "brand": "Wizarr",
+   "model": "Media server invites",
+   "category": "A",
+   "status": "update",
+   "version": "2026.10.1",
+   "previous": "2026.10.0",
+   "released": "2026-10-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "🚀 Stable Release v2026.10.1: What's Changed: 🐛 Bug Fixes: stop the hide_users_from_login migration from deleting server data 🧹 Chores: Full Changelog: https://github.com/wizarrrr/wizarr/compare/v2026.10.1...v2026.10.1 📋 All Commits Included (2 commits): Click to expand commit list 82d61096b chore: …",
+   "source_url": "https://github.com/wizarrrr/wizarr/releases/tag/v2026.10.1",
+   "page_url": "https://www.firmwarely.com/devices/wizarr/"
+  },
+  "onlyoffice-docs": {
+   "id": "onlyoffice-docs",
+   "brand": "ONLYOFFICE",
+   "model": "Document Server",
+   "category": "A",
+   "status": "update",
+   "version": "10.0.0",
+   "previous": "9.4.0",
+   "released": "2026-10-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "See changes at CHANGELOG.md",
+   "source_url": "https://github.com/ONLYOFFICE/DocumentServer/releases/tag/v10.0.0",
+   "page_url": "https://www.firmwarely.com/devices/onlyoffice-docs/"
+  },
+  "browserbox": {
+   "id": "browserbox",
+   "brand": "BrowserBox",
+   "model": "Remote browser isolation",
+   "category": "R",
+   "status": "update",
+   "version": "20.2.0",
+   "previous": "20.1.8",
+   "released": "2026-10-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "Tested BrowserBox release. Install with: curl -fsSL browserbox.io/install.sh | bash",
+   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.2.0",
+   "page_url": "https://www.firmwarely.com/devices/browserbox/"
   }
  }
 }
