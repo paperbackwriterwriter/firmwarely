@@ -61,6 +61,51 @@
    "notes": "Changes: Fix #​1461: Conflicting python-kasa dependency preventing the built-in TP-Link integration from loading on Home Assistant 2026.10.1",
    "source_url": "https://github.com/JurajNyiri/HomeAssistant-Tapo-Control/releases/tag/7.2.8",
    "page_url": "https://www.firmwarely.com/devices/homeassistant-tapo-control/"
+  },
+  "victoriametrics": {
+   "id": "victoriametrics",
+   "brand": "VictoriaMetrics",
+   "model": "Time series database",
+   "category": "A",
+   "status": "critical",
+   "version": "1.154.0",
+   "previous": "1.153.0",
+   "released": "2026-10-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "v1.154.0: Released at 2026-10-09 SECURITY: upgrade Go builder from Go1.27.1 to Go1.27.2. See the list of issues addressed in Go1.27.2. SECURITY: vmauth: slow down requests with invalid auth tokens even if unauthorized_user has URLs configured. Previously, such requests were proxied to unauthorized_…",
+   "source_url": "https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.154.0",
+   "page_url": "https://www.firmwarely.com/devices/victoriametrics/"
+  },
+  "infisical": {
+   "id": "infisical",
+   "brand": "Infisical",
+   "model": "Secrets manager",
+   "category": "A",
+   "status": "update",
+   "version": "0.166.4",
+   "previous": "0.166.3",
+   "released": "2026-10-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: docs(agent-vault): clarify proxy enrollment steps docs(agent-vault): fix dynamic link styling in quickstart fix(frontend): close product plans popover on View Billing click docs(agent-vault): add programmatic guides fix(billing): use secrets_manager product key for Secrets Managemen…",
+   "source_url": "https://github.com/Infisical/infisical/releases/tag/v0.166.4",
+   "page_url": "https://www.firmwarely.com/devices/infisical/"
+  },
+  "avideo": {
+   "id": "avideo",
+   "brand": "AVideo",
+   "model": "Video streaming platform",
+   "category": "A",
+   "status": "critical",
+   "version": "29.4.0",
+   "previous": "29.3.0",
+   "released": "2026-10-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "29.4.0 (2026-10-12): Features: enhance security checks for AI image callback to prevent local path fetching (a767217) implement SSL certificate renewal handling for WebRTC2RTMP server (6c86195) Fixes: add validation to prevent deletion of records when interval is zero and implement unit tests for a…",
+   "source_url": "https://github.com/WWBN/AVideo/releases/tag/v29.4.0",
+   "page_url": "https://www.firmwarely.com/devices/avideo/"
   }
  }
 }

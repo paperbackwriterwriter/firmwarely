@@ -12510,6 +12510,60 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "victoriametrics",
+   "version": "1.154.0",
+   "name": "VictoriaMetrics Time series database",
+   "judged_at": "2026-10-12T12:35:41+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.84,
+    "security_fix_plain": 0.76,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "infisical",
+   "version": "0.166.4",
+   "name": "Infisical Secrets manager",
+   "judged_at": "2026-10-12T12:35:41+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "avideo",
+   "version": "29.4.0",
+   "name": "AVideo Video streaming platform",
+   "judged_at": "2026-10-12T12:35:41+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.49,
+    "security_fix_plain": 0.35,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
