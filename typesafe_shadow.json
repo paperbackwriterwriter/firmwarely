@@ -12780,6 +12780,60 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.8.25.14-lts",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-12T16:19:57+00:00",
+   "notes_chars": 39,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "rpicam-apps",
+   "version": "1.14.0",
+   "name": "Raspberry Pi rpicam-apps",
+   "judged_at": "2026-10-12T16:19:57+00:00",
+   "notes_chars": 15,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "tianji",
+   "version": "1.33.9",
+   "name": "Tianji Website analytics and uptime monitor",
+   "judged_at": "2026-10-12T16:19:57+00:00",
+   "notes_chars": 203,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.59,
+    "security_fix_plain": 0.68,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

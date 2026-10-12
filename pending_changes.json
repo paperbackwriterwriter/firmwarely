@@ -158,13 +158,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.7.28.6-stable",
+   "version": "26.8.25.14-lts",
    "previous": "26.9.16.11-stable",
    "released": "2026-10-12",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.7.28.6-stable v26.7.28.6-stable",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.7.28.6-stable",
+   "notes": "Release v26.8.25.14-lts v26.8.25.14-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.25.14-lts",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "teltonika-rutx50": {
@@ -271,6 +271,36 @@
    "notes": "Tested BrowserBox release. Install with: curl -fsSL browserbox.io/install.sh | bash",
    "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.2.0",
    "page_url": "https://www.firmwarely.com/devices/browserbox/"
+  },
+  "rpicam-apps": {
+   "id": "rpicam-apps",
+   "brand": "Raspberry Pi",
+   "model": "rpicam-apps",
+   "category": "M",
+   "status": "update",
+   "version": "1.14.0",
+   "previous": "1.13.0",
+   "released": "2026-10-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "v1.14.0 v1.14.0",
+   "source_url": "https://github.com/raspberrypi/rpicam-apps/releases/tag/v1.14.0",
+   "page_url": "https://www.firmwarely.com/devices/rpicam-apps/"
+  },
+  "tianji": {
+   "id": "tianji",
+   "brand": "Tianji",
+   "model": "Website analytics and uptime monitor",
+   "category": "A",
+   "status": "update",
+   "version": "1.33.9",
+   "previous": "1.33.8",
+   "released": "2026-10-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.33.9 (2026-10-12): Bug Fixes: ai-gateway: record upstream responses costs (a29fbb8) auth: generate cryptographically secure jwt secrets (701915f) config: align jwt secret example placeholders (eabd67f)",
+   "source_url": "https://github.com/msgbyte/tianji/releases/tag/v1.33.9",
+   "page_url": "https://www.firmwarely.com/devices/tianji/"
   }
  }
 }
