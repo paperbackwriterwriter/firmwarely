@@ -421,6 +421,51 @@
    "notes": "Overview This is initial release for U7 Industrial. Additional information If you encounter any issues with this release, please provide us with some details on your setup and include the below information: AP model(s) Previous AP release version UniFi Network application version UniFi Console Supp…",
    "source_url": "https://community.ui.com/releases/UniFi-U7-Industrial-8-8-12/2dd402b1-3510-41fb-98fe-28a7ffe71ff8",
    "page_url": "https://www.firmwarely.com/devices/ubiquiti-switch-flex-2-5g/"
+  },
+  "bazzite": {
+   "id": "bazzite",
+   "brand": "Universal Blue",
+   "model": "Bazzite gaming OS",
+   "category": "C",
+   "status": "update",
+   "version": "44.20261012",
+   "previous": "44.20261006.1",
+   "released": "2026-10-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "This is an automatically generated changelog for release 44.20261012. From previous stable version 44.20261006.1 there have been the following changes. One package per new version shown. Major packages: | Name | Version | | --- | --- | | Kernel | 7.2.8-ogc5.1 ➡️ 7.2.9-ogc2.1 | | Kernel (Nvidia LTS)…",
+   "source_url": "https://github.com/ublue-os/bazzite/releases/tag/44.20261012",
+   "page_url": "https://www.firmwarely.com/devices/bazzite/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.2826",
+   "previous": "0.24.2816",
+   "released": "2026-10-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: 3670e516a547c47ec786811494b77a01eb393b22 magnetcat: new alt domains 5247b98f351138ea3341cdfc93e92f7a763907fd 52bt: new domains a4be6727da47b3f557624025672f47615813bbe0 racing4us -. 4.2.13 #​16039 1343e2637ac112453f57c507aaa354c30afb9f1b sportz247 -› racing4us resolves #​16039 83a108cae29b…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2826",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "doggo": {
+   "id": "doggo",
+   "brand": "doggo",
+   "model": "DNS lookup tool",
+   "category": "R",
+   "status": "update",
+   "version": "1.4.1",
+   "previous": "1.4.0",
+   "released": "2026-10-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: Bug fixes: 6d0b17da1a4125a8869cbf5d0ba678d65d4cd091: fix(resolvers): cancel family-bound UDP hostname lookups () Others: 7f6b105f240e562a5c7659976b1c16b683c25385: Merge pull request #​259 from mr-karan/feat/dns-delegation-trace () fcb09f698d68a6a0d915e2730d5a032e629805ec: Merge pull requ…",
+   "source_url": "https://github.com/mr-karan/doggo/releases/tag/v1.4.1",
+   "page_url": "https://www.firmwarely.com/devices/doggo/"
   }
  }
 }
