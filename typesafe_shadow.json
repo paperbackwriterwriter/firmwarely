@@ -12132,6 +12132,24 @@
     "security_fix_plain": 0.09,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "browserbox",
+   "version": "20.1.8",
+   "name": "BrowserBox Remote browser isolation",
+   "judged_at": "2026-10-12T03:20:22+00:00",
+   "notes_chars": 83,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
