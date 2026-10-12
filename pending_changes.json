@@ -361,6 +361,36 @@
    "notes": "What's Changed: Features: feat(ee): refuse FIPS mode with storage options that compute MD5 feat(worker): add optional startup jitter before queue registration feat(auth): hash passwords with PBKDF2 in FIPS mode feat(web): restore optional Cloudflare Turnstile captcha on credential auth feat(web): c…",
    "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.57.0",
    "page_url": "https://www.firmwarely.com/devices/langfuse/"
+  },
+  "activepieces": {
+   "id": "activepieces",
+   "brand": "Activepieces",
+   "model": "Workflow automation",
+   "category": "A",
+   "status": "update",
+   "version": "0.92.3",
+   "previous": "0.92.2",
+   "released": "2026-10-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "🐞 Bug Fixes: fix(engine): force reinstall piece when require fails (#​16106) fix(worker): installing pieces no longer depends on the worker reaching the public URL (#​16037) 📌 Upgrading a self-hosted instance? Review the Breaking Changes page for any actions required before you upgrade. Thanks ❤️:,",
+   "source_url": "https://github.com/activepieces/activepieces/releases/tag/0.92.3",
+   "page_url": "https://www.firmwarely.com/devices/activepieces/"
+  },
+  "tp-link-deco-x55": {
+   "id": "tp-link-deco-x55",
+   "brand": "TP-Link",
+   "model": "Deco X55",
+   "category": "R",
+   "status": "update",
+   "version": "1.11.1",
+   "previous": "1.8.0",
+   "released": "2026-10-12",
+   "date_known": false,
+   "eol": false,
+   "notes": "TP-Link firmware release. See the download page for the changelog.",
+   "source_url": "https://www.tp-link.com/us/support/download/deco-x55/",
+   "page_url": "https://www.firmwarely.com/devices/tp-link-deco-x55/"
   }
  }
 }

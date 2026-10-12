@@ -12924,6 +12924,42 @@
     "security_fix_plain": 0.28,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "activepieces",
+   "version": "0.92.3",
+   "name": "Activepieces Workflow automation",
+   "judged_at": "2026-10-12T19:17:59+00:00",
+   "notes_chars": 299,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "tp-link-deco-x55",
+   "version": "1.11.1",
+   "name": "TP-Link Deco X55",
+   "judged_at": "2026-10-12T19:17:59+00:00",
+   "notes_chars": 66,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
