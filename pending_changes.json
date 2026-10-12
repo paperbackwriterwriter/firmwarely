@@ -31,6 +31,36 @@
    "notes": "#​11814 #​11813 #​11812 #​11811 #​11810 #​11809 #​11808 #​11807 #​6997",
    "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.285.33225",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "graylog": {
+   "id": "graylog",
+   "brand": "Graylog",
+   "model": "Log management",
+   "category": "A",
+   "status": "update",
+   "version": "7.2.0",
+   "previous": "7.1.10",
+   "released": "2026-10-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "7.2.0",
+   "source_url": "https://github.com/Graylog2/graylog2-server/releases/tag/7.2.0",
+   "page_url": "https://www.firmwarely.com/devices/graylog/"
+  },
+  "homeassistant-tapo-control": {
+   "id": "homeassistant-tapo-control",
+   "brand": "Tapo Control",
+   "model": "Home Assistant integration for Tapo cameras",
+   "category": "S",
+   "status": "update",
+   "version": "7.2.8",
+   "previous": "7.2.7",
+   "released": "2026-10-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes: Fix #​1461: Conflicting python-kasa dependency preventing the built-in TP-Link integration from loading on Home Assistant 2026.10.1",
+   "source_url": "https://github.com/JurajNyiri/HomeAssistant-Tapo-Control/releases/tag/7.2.8",
+   "page_url": "https://www.firmwarely.com/devices/homeassistant-tapo-control/"
   }
  }
 }

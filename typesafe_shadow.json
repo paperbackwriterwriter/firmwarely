@@ -12474,6 +12474,42 @@
     "security_fix_plain": 0.05,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "graylog",
+   "version": "7.2.0",
+   "name": "Graylog Log management",
+   "judged_at": "2026-10-12T11:20:34+00:00",
+   "notes_chars": 5,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.13,
+    "security_fix_plain": 0.13,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "homeassistant-tapo-control",
+   "version": "7.2.8",
+   "name": "Tapo Control Home Assistant integration for Tapo cameras",
+   "judged_at": "2026-10-12T11:20:34+00:00",
+   "notes_chars": 140,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
