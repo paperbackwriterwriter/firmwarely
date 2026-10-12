@@ -822,42 +822,42 @@
       "permanent": false
     },
     {
-      "source": "/brands/:b(3proxy|acme-sh|agentgateway|angie|arkime|arris|asuswrt-merlin|bettercap|bfe|blocky|browserbox|bunkerweb|caddy|certbot|chaitin|cisco|cloudflare|cloudflare-ddns|coredns|crowdsec|d-link|ddclient|dnscontrol|dnscrypt|dockflare|doggo|easegress|envoy|fail2ban|firewalla|firezone|freerouting|frp|frpmgr|frrouting|gl-inet|gluetun|godoxy|gost|gping)",
+      "source": "/brands/:b(3proxy|acme-sh|agentgateway|amlogic-s9xxx-openwrt|angie|arkime|arris|asuswrt-merlin|b4|bettercap|bfe|blocky|browserbox|bunkerweb|caddy|certbot|chaitin|cisco|cloudflare|cloudflare-ddns|coredns|crowdsec|d-link|ddclient|dnscontrol|dnscrypt|dockflare|doggo|easegress|envoy|fail2ban|firewalla|firezone|freerouting|frp|frpmgr|frrouting|gl-inet|gluetun|godoxy)",
       "destination": "/category/routers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(3proxy|acme-sh|agentgateway|angie|arkime|arris|asuswrt-merlin|bettercap|bfe|blocky|browserbox|bunkerweb|caddy|certbot|chaitin|cisco|cloudflare|cloudflare-ddns|coredns|crowdsec|d-link|ddclient|dnscontrol|dnscrypt|dockflare|doggo|easegress|envoy|fail2ban|firewalla|firezone|freerouting|frp|frpmgr|frrouting|gl-inet|gluetun|godoxy|gost|gping)/",
+      "source": "/brands/:b(3proxy|acme-sh|agentgateway|amlogic-s9xxx-openwrt|angie|arkime|arris|asuswrt-merlin|b4|bettercap|bfe|blocky|browserbox|bunkerweb|caddy|certbot|chaitin|cisco|cloudflare|cloudflare-ddns|coredns|crowdsec|d-link|ddclient|dnscontrol|dnscrypt|dockflare|doggo|easegress|envoy|fail2ban|firewalla|firezone|freerouting|frp|frpmgr|frrouting|gl-inet|gluetun|godoxy)/",
       "destination": "/category/routers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(hagezi|headscale|hickory-dns|hpe|in-a-dyn|inseego|isc|kong|krakend|lantern|librenms|librespeed|linksys|linux-router|maltrail|masterdnsvpn|meshcentral|mitmproxy|motorola|netbird|netbox-labs|netgate|netmaker|networkmanager|nextdns|nginx|nginx-proxy|nginx-proxy-manager|nlnet-labs|ntop|oauth2-proxy|ocelot|octelium|oisf|openclash|openvpn|openwrt|openwrt-nikki|openziti|opnsense)",
+      "source": "/brands/:b(gost|gping|hagezi|headscale|hickory-dns|hpe|in-a-dyn|inseego|isc|kong|krakend|lantern|librenms|librespeed|linksys|linux-router|maltrail|masterdnsvpn|meshcentral|mitmproxy|motorola|netbird|netbox-labs|netgate|netmaker|networkmanager|nextdns|nginx|nginx-proxy|nginx-proxy-manager|nlnet-labs|ntop|oauth2-proxy|ocelot|octelium|oisf|openclash|openvpn|openwrt|openwrt-nikki)",
       "destination": "/category/routers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(hagezi|headscale|hickory-dns|hpe|in-a-dyn|inseego|isc|kong|krakend|lantern|librenms|librespeed|linksys|linux-router|maltrail|masterdnsvpn|meshcentral|mitmproxy|motorola|netbird|netbox-labs|netgate|netmaker|networkmanager|nextdns|nginx|nginx-proxy|nginx-proxy-manager|nlnet-labs|ntop|oauth2-proxy|ocelot|octelium|oisf|openclash|openvpn|openwrt|openwrt-nikki|openziti|opnsense)/",
+      "source": "/brands/:b(gost|gping|hagezi|headscale|hickory-dns|hpe|in-a-dyn|inseego|isc|kong|krakend|lantern|librenms|librespeed|linksys|linux-router|maltrail|masterdnsvpn|meshcentral|mitmproxy|motorola|netbird|netbox-labs|netgate|netmaker|networkmanager|nextdns|nginx|nginx-proxy|nginx-proxy-manager|nlnet-labs|ntop|oauth2-proxy|ocelot|octelium|oisf|openclash|openvpn|openwrt|openwrt-nikki)/",
       "destination": "/category/routers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(pangolin|peplink|piko|pivpn|pomerium|powerdns|pritunl|project-x|protectli|raspap|rethink|rustdesk|rustnet|safing|sagernet|shadowsocks|skipper|slack|smallstep|smartdns|smokeping|sniffnet|snort|softether|spacex|speedtest-tracker|tailscale|technitium|teleport|teltonika|traefik-labs|trickster|trippy|tyk|unpoller|uptime-kuma|v2fly|vulcain|watchyourlan|wazuh)",
+      "source": "/brands/:b(openwrt-tailscale-enabler|openwrt-v2ray|openziti|opnsense|pangolin|peplink|piko|pivpn|pomerium|powerdns|pritunl|project-x|protectli|raspap|rethink|rustdesk|rustnet|safing|sagernet|shadowsocks|skipper|slack|smallstep|smartdns|smokeping|sniffnet|snort|softether|spacex|speedtest-tracker|tailscale|technitium|teleport|teltonika|traefik-labs|trickster|trippy|tyk|unpoller|uptime-kuma)",
       "destination": "/category/routers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(pangolin|peplink|piko|pivpn|pomerium|powerdns|pritunl|project-x|protectli|raspap|rethink|rustdesk|rustnet|safing|sagernet|shadowsocks|skipper|slack|smallstep|smartdns|smokeping|sniffnet|snort|softether|spacex|speedtest-tracker|tailscale|technitium|teleport|teltonika|traefik-labs|trickster|trippy|tyk|unpoller|uptime-kuma|v2fly|vulcain|watchyourlan|wazuh)/",
+      "source": "/brands/:b(openwrt-tailscale-enabler|openwrt-v2ray|openziti|opnsense|pangolin|peplink|piko|pivpn|pomerium|powerdns|pritunl|project-x|protectli|raspap|rethink|rustdesk|rustnet|safing|sagernet|shadowsocks|skipper|slack|smallstep|smartdns|smokeping|sniffnet|snort|softether|spacex|speedtest-tracker|tailscale|technitium|teleport|teltonika|traefik-labs|trickster|trippy|tyk|unpoller|uptime-kuma)/",
       "destination": "/category/routers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(wg-easy|wiredoor|zeek|zerotier|zoraxy|zrok|zyxel)",
+      "source": "/brands/:b(v2fly|vulcain|watchyourlan|wazuh|wg-easy|wiredoor|yaof|zeek|zerotier|zoraxy|zrok|zyxel)",
       "destination": "/category/routers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(wg-easy|wiredoor|zeek|zerotier|zoraxy|zrok|zyxel)/",
+      "source": "/brands/:b(v2fly|vulcain|watchyourlan|wazuh|wg-easy|wiredoor|yaof|zeek|zerotier|zoraxy|zrok|zyxel)/",
       "destination": "/category/routers/",
       "permanent": false
     },
@@ -962,32 +962,32 @@
       "permanent": false
     },
     {
-      "source": "/brands/:b(abode|anker|aqara|arlo|august|brilliant|bruce|button-card|chamberlain|chargepoint|dgiot|domoticz|dreame|dresden-elektronik|eclipse|ecobee|ecovacs|emporia|enphase|espeasy|espresense|evcc|eve|flume|frigate|fuxa|gladys|go2rtc|google|govee|ha-bambulab|homeassistant-powercalc|homebridge|homelable|http-shortcuts|hyperion|iobroker|irobot|jetlinks|kiosk-satellite)",
+      "source": "/brands/:b(abode|adaptive-lighting|anker|aqara|arlo|august|brilliant|bruce|button-card|chamberlain|chargepoint|dgiot|domoticz|dreame|dresden-elektronik|eclipse|ecobee|ecovacs|emporia|enphase|espeasy|espresense|evcc|eve|flume|frigate|fuxa|gladys|go2rtc|google|govee|ha-bambulab|homeassistant-powercalc|homebridge|homelable|http-shortcuts|hyperion|integration|iobroker|irobot)",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(abode|anker|aqara|arlo|august|brilliant|bruce|button-card|chamberlain|chargepoint|dgiot|domoticz|dreame|dresden-elektronik|eclipse|ecobee|ecovacs|emporia|enphase|espeasy|espresense|evcc|eve|flume|frigate|fuxa|gladys|go2rtc|google|govee|ha-bambulab|homeassistant-powercalc|homebridge|homelable|http-shortcuts|hyperion|iobroker|irobot|jetlinks|kiosk-satellite)/",
+      "source": "/brands/:b(abode|adaptive-lighting|anker|aqara|arlo|august|brilliant|bruce|button-card|chamberlain|chargepoint|dgiot|domoticz|dreame|dresden-elektronik|eclipse|ecobee|ecovacs|emporia|enphase|espeasy|espresense|evcc|eve|flume|frigate|fuxa|gladys|go2rtc|google|govee|ha-bambulab|homeassistant-powercalc|homebridge|homelable|http-shortcuts|hyperion|integration|iobroker|irobot)/",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(konnected|kwikset|level|leviton|libretiny|lifx|lutron|matter|meross|moen|motioneye|music-assistant|nanoleaf|netatmo|node-red|nodemcu|openbeken|openccu|opendtu|openenergymonitor|openevse|openhab|openhasp|openmqttgateway|opensprinkler|openthread|openwakeword|openwb|philips|piper|rachio|ratgdo|ravensystem|reolink|resideo|rhasspy|roborock|schlage|scrypted|shelly)",
+      "source": "/brands/:b(jetlinks|kiosk-satellite|konnected|kwikset|level|leviton|libretiny|lifx|lovelace-mushroom|lutron|matter|meross|mini-graph-card|moen|motioneye|music-assistant|nanoleaf|netatmo|node-red|nodemcu|openbeken|openccu|opendtu|openenergymonitor|openevse|openhab|openhasp|openmqttgateway|opensprinkler|openthread|openwakeword|openwb|philips|piper|rachio|ratgdo|ravensystem|reolink|resideo|rhasspy)",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(konnected|kwikset|level|leviton|libretiny|lifx|lutron|matter|meross|moen|motioneye|music-assistant|nanoleaf|netatmo|node-red|nodemcu|openbeken|openccu|opendtu|openenergymonitor|openevse|openhab|openhasp|openmqttgateway|opensprinkler|openthread|openwakeword|openwb|philips|piper|rachio|ratgdo|ravensystem|reolink|resideo|rhasspy|roborock|schlage|scrypted|shelly)/",
+      "source": "/brands/:b(jetlinks|kiosk-satellite|konnected|kwikset|level|leviton|libretiny|lifx|lovelace-mushroom|lutron|matter|meross|mini-graph-card|moen|motioneye|music-assistant|nanoleaf|netatmo|node-red|nodemcu|openbeken|openccu|opendtu|openenergymonitor|openevse|openhab|openhasp|openmqttgateway|opensprinkler|openthread|openwakeword|openwb|philips|piper|rachio|ratgdo|ravensystem|reolink|resideo|rhasspy)/",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(sonos|switchbot|tado|tapo-control|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|valetudo|wallbox|wled|wyze|xiaomi-home|xiaomi-miot-auto|xiaomi-vacuum-map-card|yale|zigbee2mqtt|zigpy|zoneminder)",
+      "source": "/brands/:b(roborock|schlage|scrypted|shelly|sonos|switchbot|tado|tapo-control|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|tuya-local|valetudo|wallbox|wled|wyze|xiaomi-home|xiaomi-miot-auto|xiaomi-vacuum-map-card|yale|zigbee2mqtt|zigpy|zoneminder)",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(sonos|switchbot|tado|tapo-control|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|valetudo|wallbox|wled|wyze|xiaomi-home|xiaomi-miot-auto|xiaomi-vacuum-map-card|yale|zigbee2mqtt|zigpy|zoneminder)/",
+      "source": "/brands/:b(roborock|schlage|scrypted|shelly|sonos|switchbot|tado|tapo-control|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|tuya-local|valetudo|wallbox|wled|wyze|xiaomi-home|xiaomi-miot-auto|xiaomi-vacuum-map-card|yale|zigbee2mqtt|zigpy|zoneminder)/",
       "destination": "/category/smart-home/",
       "permanent": false
     },

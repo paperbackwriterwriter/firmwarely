@@ -10874,6 +10874,96 @@
    "type": "github",
    "repo": "ClementTsang/bottom",
    "product_url": "https://github.com/ClementTsang/bottom"
+  },
+  {
+   "id": "amlogic-s9xxx-openwrt",
+   "brand": "Amlogic S9xxx Openwrt",
+   "model": "Supports running OpenWrt",
+   "category": "R",
+   "type": "github",
+   "repo": "ophub/amlogic-s9xxx-openwrt",
+   "product_url": "https://github.com/ophub/amlogic-s9xxx-openwrt"
+  },
+  {
+   "id": "yaof",
+   "brand": "YAOF",
+   "model": "OpenWrt for Nanopi R2C/R2S/R4S/X86",
+   "category": "R",
+   "type": "github",
+   "repo": "QiuSimons/YAOF",
+   "product_url": "https://github.com/QiuSimons/YAOF"
+  },
+  {
+   "id": "openwrt-v2ray",
+   "brand": "Openwrt V2ray",
+   "model": "V2Ray for OpenWrt",
+   "category": "R",
+   "type": "github",
+   "repo": "kuoruan/openwrt-v2ray",
+   "product_url": "https://github.com/kuoruan/openwrt-v2ray"
+  },
+  {
+   "id": "b4",
+   "brand": "B4",
+   "model": "Network packet processor",
+   "category": "R",
+   "type": "github",
+   "repo": "DanielLavrushin/b4",
+   "product_url": "https://github.com/DanielLavrushin/b4"
+  },
+  {
+   "id": "openwrt-tailscale-enabler",
+   "brand": "Openwrt Tailscale Enabler",
+   "model": "Brings Tailscale to low powered OpenWRT devices",
+   "category": "R",
+   "type": "github",
+   "repo": "adyanth/openwrt-tailscale-enabler",
+   "product_url": "https://github.com/adyanth/openwrt-tailscale-enabler"
+  },
+  {
+   "id": "integration",
+   "brand": "Integration",
+   "model": "HACS gives you a powerful UI",
+   "category": "S",
+   "type": "github",
+   "repo": "hacs/integration",
+   "product_url": "https://github.com/hacs/integration"
+  },
+  {
+   "id": "lovelace-mushroom",
+   "brand": "Lovelace Mushroom",
+   "model": "Beautiful Home Assistant dashboard easily",
+   "category": "S",
+   "type": "github",
+   "repo": "piitaya/lovelace-mushroom",
+   "product_url": "https://github.com/piitaya/lovelace-mushroom"
+  },
+  {
+   "id": "mini-graph-card",
+   "brand": "Mini Graph Card",
+   "model": "Minimalistic graph card for Home Assistant Lovelace UI",
+   "category": "S",
+   "type": "github",
+   "repo": "kalkih/mini-graph-card",
+   "product_url": "https://github.com/kalkih/mini-graph-card"
+  },
+  {
+   "id": "tuya-local",
+   "brand": "Tuya Local",
+   "model": "Local support for Tuya devices in Home Assistant",
+   "category": "S",
+   "type": "github",
+   "repo": "make-all/tuya-local",
+   "product_url": "https://github.com/make-all/tuya-local"
+  },
+  {
+   "id": "adaptive-lighting",
+   "brand": "Adaptive Lighting",
+   "model": "Custom component for Home Assistant",
+   "category": "S",
+   "type": "github",
+   "repo": "basnijholt/adaptive-lighting",
+   "product_url": "https://github.com/basnijholt/adaptive-lighting"
   }
  ]
 }
