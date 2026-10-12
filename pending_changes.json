@@ -346,6 +346,21 @@
    "notes": "Tested BrowserBox release. Install with: curl -fsSL browserbox.io/install.sh | bash",
    "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.1.8",
    "page_url": "https://www.firmwarely.com/devices/browserbox/"
+  },
+  "openclash": {
+   "id": "openclash",
+   "brand": "OpenClash",
+   "model": "Clash Client For OpenWrt",
+   "category": "R",
+   "status": "update",
+   "version": "0.48.002",
+   "previous": "0.47.156",
+   "released": "2026-10-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "发布时间: 2026-10-12 11:40 GMT+0800 使用手册: WIKI & SKILL 安装命令: SHELL [iptables for ipk]: opkg update opkg install bash iptables dnsmasq-full curl ca-bundle ipset ip-full iptables-mod-tproxy iptables-mod-extra ruby ruby-yaml kmod-tun kmod-inet-diag unzip luci-compat luci luci-base curl -L --retry 2 https:…",
+   "source_url": "https://github.com/vernesong/OpenClash/releases/tag/v0.48.002",
+   "page_url": "https://www.firmwarely.com/devices/openclash/"
   }
  }
 }
