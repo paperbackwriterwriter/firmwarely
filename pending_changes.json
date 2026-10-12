@@ -331,6 +331,36 @@
    "notes": "refactor: 优化订阅添加流程 feat: 批量添加支持选择匹配规则 feat: 检测到订阅重复支持决定是否覆盖",
    "source_url": "https://github.com/wushuo894/ani-rss/releases/tag/v3.2.48",
    "page_url": "https://www.firmwarely.com/devices/ani-rss/"
+  },
+  "ghostfolio": {
+   "id": "ghostfolio",
+   "brand": "Ghostfolio",
+   "model": "Wealth tracker",
+   "category": "A",
+   "status": "update",
+   "version": "3.85.0",
+   "previous": "3.84.2",
+   "released": "2026-10-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "Added: Added an option to enable _Ghostfolio AI_ in the user settings of the user account page (experimental) Added an icon to indicate the client of the last request in the users table of the admin control panel Changed: Removed the deprecated SymbolProfile field from the endpoint POST api/v1/acti…",
+   "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.85.0",
+   "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
+  },
+  "langfuse": {
+   "id": "langfuse",
+   "brand": "Langfuse",
+   "model": "LLM observability",
+   "category": "A",
+   "status": "update",
+   "version": "4.57.0",
+   "previous": "4.56.0",
+   "released": "2026-10-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Features: feat(ee): refuse FIPS mode with storage options that compute MD5 feat(worker): add optional startup jitter before queue registration feat(auth): hash passwords with PBKDF2 in FIPS mode feat(web): restore optional Cloudflare Turnstile captcha on credential auth feat(web): c…",
+   "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.57.0",
+   "page_url": "https://www.firmwarely.com/devices/langfuse/"
   }
  }
 }

@@ -12888,6 +12888,42 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "ghostfolio",
+   "version": "3.85.0",
+   "name": "Ghostfolio Wealth tracker",
+   "judged_at": "2026-10-12T18:21:20+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "langfuse",
+   "version": "4.57.0",
+   "name": "Langfuse LLM observability",
+   "judged_at": "2026-10-12T18:21:20+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.12,
+    "security_fix_plain": 0.28,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
