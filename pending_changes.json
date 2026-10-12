@@ -353,13 +353,13 @@
    "model": "LLM observability",
    "category": "A",
    "status": "update",
-   "version": "4.57.0",
+   "version": "3.225.12",
    "previous": "4.56.0",
    "released": "2026-10-12",
    "date_known": true,
    "eol": false,
-   "notes": "What's Changed: Features: feat(ee): refuse FIPS mode with storage options that compute MD5 feat(worker): add optional startup jitter before queue registration feat(auth): hash passwords with PBKDF2 in FIPS mode feat(web): restore optional Cloudflare Turnstile captcha on credential auth feat(web): c…",
-   "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.57.0",
+   "notes": "What's Changed: feat(web): hint self-hosted v3 deployments to upgrade to Langfuse v4 fix(web): tidy the v3 version menu upgrade hint Full Changelog: https://github.com/langfuse/langfuse/compare/v3.225.11...v3.225.12",
+   "source_url": "https://github.com/langfuse/langfuse/releases/tag/v3.225.12",
    "page_url": "https://www.firmwarely.com/devices/langfuse/"
   },
   "activepieces": {
@@ -436,6 +436,21 @@
    "notes": "Bugfixes: Fixed an issue where Podman would not function when run under WSL 3 (#​29749). Misc: Updated gvproxy to v0.9.0, resolving CVE-2026-107935 Updated Buildah to v1.45.2 Updated Storage to v1.64.2",
    "source_url": "https://github.com/podman-container-tools/podman/releases/tag/v6.1.4",
    "page_url": "https://www.firmwarely.com/devices/podman/"
+  },
+  "databasement": {
+   "id": "databasement",
+   "brand": "Databasement",
+   "model": "Database backup manager",
+   "category": "N",
+   "status": "update",
+   "version": "1.10.1",
+   "previous": "1.10.0",
+   "released": "2026-10-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: fix: keep a server or volume whose backup files cannot be deleted chore: share business operations across every edge through actions fix: same-second backups sharing one file, and other end-to-end test findings feat: ability-scoped API tokens docs: connect MCP clients over HTTP and …",
+   "source_url": "https://github.com/David-Crty/databasement/releases/tag/v1.10.1",
+   "page_url": "https://www.firmwarely.com/devices/databasement/"
   }
  }
 }
