@@ -158,13 +158,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.3.49.3-lts",
+   "version": "26.7.28.6-stable",
    "previous": "26.9.16.11-stable",
    "released": "2026-10-12",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.3.49.3-lts v26.3.49.3-lts",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.3.49.3-lts",
+   "notes": "Release v26.7.28.6-stable v26.7.28.6-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.7.28.6-stable",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "teltonika-rutx50": {
@@ -181,6 +181,36 @@
    "notes": "Teltonika RutOS release. See the wiki for the changelog.",
    "source_url": "https://wiki.teltonika-networks.com/view/RUTX50_Firmware_Downloads",
    "page_url": "https://www.firmwarely.com/devices/teltonika-rutx50/"
+  },
+  "outline": {
+   "id": "outline",
+   "brand": "Outline",
+   "model": "Team knowledge base",
+   "category": "A",
+   "status": "update",
+   "version": "1.11.0",
+   "previous": "1.10.1",
+   "released": "2026-10-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Highlights: A huge focus on server and client performance, see the separate section below. A drag handle is now available on all root-level blocks in https://github.com/outline/outline/pull/12167 Alt+Up/Down now moves to the previous or next document in the sidebar in https://github…",
+   "source_url": "https://github.com/outline/outline/releases/tag/v1.11.0",
+   "page_url": "https://www.firmwarely.com/devices/outline/"
+  },
+  "gladys": {
+   "id": "gladys",
+   "brand": "Gladys",
+   "model": "Home automation hub",
+   "category": "S",
+   "status": "update",
+   "version": "5.2.0",
+   "previous": "5.1.4",
+   "released": "2026-10-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: fix: honor return_url after local login (#​3152) fix(external-integration): accept decimal values in number fields fix: keep primary, active and danger widget button styles in dark mode (#​3153) fix: apply the default of external integration action fields (#​3155) Gladys Plus pricin…",
+   "source_url": "https://github.com/GladysAssistant/Gladys/releases/tag/v5.2.0",
+   "page_url": "https://www.firmwarely.com/devices/gladys/"
   }
  }
 }
