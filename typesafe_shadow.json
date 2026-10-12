@@ -12564,6 +12564,96 @@
     "security_fix_plain": 0.35,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "ubiquiti-unifi-network-application",
+   "version": "11.0.83",
+   "name": "Ubiquiti UniFi Network Application",
+   "judged_at": "2026-10-12T13:34:57+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ntfy",
+   "version": "2.30.0",
+   "name": "ntfy Push notification server",
+   "judged_at": "2026-10-12T13:34:57+00:00",
+   "notes_chars": 111,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "manyfold",
+   "version": "0.151.0",
+   "name": "Manyfold 3D model library",
+   "judged_at": "2026-10-12T13:34:57+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.3.49.3-lts",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-12T13:34:58+00:00",
+   "notes_chars": 37,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "teltonika-rutx50",
+   "version": "7.24.6",
+   "name": "Teltonika RUTX50 cellular router",
+   "judged_at": "2026-10-12T13:34:58+00:00",
+   "notes_chars": 56,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
