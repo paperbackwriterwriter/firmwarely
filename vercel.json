@@ -842,22 +842,22 @@
       "permanent": false
     },
     {
-      "source": "/brands/:b(openwrt-tailscale-enabler|openwrt-v2ray|openziti|opnsense|pangolin|peplink|piko|pivpn|pomerium|powerdns|pritunl|project-x|protectli|raspap|rethink|rustdesk|rustnet|safing|sagernet|shadowsocks|skipper|slack|smallstep|smartdns|smokeping|sniffnet|snort|softether|spacex|speedtest-tracker|tailscale|technitium|teleport|teltonika|traefik-labs|trickster|trippy|tyk|unpoller|uptime-kuma)",
+      "source": "/brands/:b(openwrt-tailscale-enabler|openwrt-v2ray|openziti|opnsense|pangolin|peplink|piko|pivpn|pomerium|powerdns|pritunl|project-x|protectli|raspap|rethink|rustdesk|rustnet|safing|sagernet|shadowsocks|skipper|slack|smallstep|smartdns|smokeping|sniffnet|snort|softether|spacex|speedtest-tracker|tailscale|technitium|teleport|teltonika|titanium-web-proxy|traefik-labs|trickster|trippy|tyk|unpoller)",
       "destination": "/category/routers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(openwrt-tailscale-enabler|openwrt-v2ray|openziti|opnsense|pangolin|peplink|piko|pivpn|pomerium|powerdns|pritunl|project-x|protectli|raspap|rethink|rustdesk|rustnet|safing|sagernet|shadowsocks|skipper|slack|smallstep|smartdns|smokeping|sniffnet|snort|softether|spacex|speedtest-tracker|tailscale|technitium|teleport|teltonika|traefik-labs|trickster|trippy|tyk|unpoller|uptime-kuma)/",
+      "source": "/brands/:b(openwrt-tailscale-enabler|openwrt-v2ray|openziti|opnsense|pangolin|peplink|piko|pivpn|pomerium|powerdns|pritunl|project-x|protectli|raspap|rethink|rustdesk|rustnet|safing|sagernet|shadowsocks|skipper|slack|smallstep|smartdns|smokeping|sniffnet|snort|softether|spacex|speedtest-tracker|tailscale|technitium|teleport|teltonika|titanium-web-proxy|traefik-labs|trickster|trippy|tyk|unpoller)/",
       "destination": "/category/routers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(v2fly|vulcain|watchyourlan|wazuh|wg-easy|wiredoor|yaof|zeek|zerotier|zoraxy|zrok|zyxel)",
+      "source": "/brands/:b(uptime-kuma|v2fly|vulcain|watchyourlan|wazuh|wg-easy|wiredoor|yaof|zeek|zerotier|zoraxy|zrok|zyxel)",
       "destination": "/category/routers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(v2fly|vulcain|watchyourlan|wazuh|wg-easy|wiredoor|yaof|zeek|zerotier|zoraxy|zrok|zyxel)/",
+      "source": "/brands/:b(uptime-kuma|v2fly|vulcain|watchyourlan|wazuh|wg-easy|wiredoor|yaof|zeek|zerotier|zoraxy|zrok|zyxel)/",
       "destination": "/category/routers/",
       "permanent": false
     },
@@ -982,12 +982,12 @@
       "permanent": false
     },
     {
-      "source": "/brands/:b(roborock|schlage|scrypted|shelly|sonos|switchbot|tado|tapo-control|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|tuya-local|valetudo|wallbox|wled|wyze|xiaomi-home|xiaomi-miot-auto|xiaomi-vacuum-map-card|yale|zigbee2mqtt|zigpy|zoneminder)",
+      "source": "/brands/:b(roborock|schlage|scrypted|shelly|sonos|switchbot|tado|tapo-control|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|tuya-local|valetudo|wallbox|wled|wyze|xiaomi-home|xiaomi-miot-auto|xiaomi-vacuum-map-card|xiaomigateway3|yale|zigbee2mqtt|zigpy|zoneminder)",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(roborock|schlage|scrypted|shelly|sonos|switchbot|tado|tapo-control|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|tuya-local|valetudo|wallbox|wled|wyze|xiaomi-home|xiaomi-miot-auto|xiaomi-vacuum-map-card|yale|zigbee2mqtt|zigpy|zoneminder)/",
+      "source": "/brands/:b(roborock|schlage|scrypted|shelly|sonos|switchbot|tado|tapo-control|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|tuya-local|valetudo|wallbox|wled|wyze|xiaomi-home|xiaomi-miot-auto|xiaomi-vacuum-map-card|xiaomigateway3|yale|zigbee2mqtt|zigpy|zoneminder)/",
       "destination": "/category/smart-home/",
       "permanent": false
     },

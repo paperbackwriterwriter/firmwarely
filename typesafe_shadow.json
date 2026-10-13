@@ -13140,6 +13140,312 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.286.33906",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-10-13T11:44:50+00:00",
+   "notes_chars": 119,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "langfuse",
+   "version": "4.58.0",
+   "name": "Langfuse LLM observability",
+   "judged_at": "2026-10-13T11:44:50+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "databasement",
+   "version": "1.10.2",
+   "name": "Databasement Database backup manager",
+   "judged_at": "2026-10-13T11:44:50+00:00",
+   "notes_chars": 213,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.41,
+    "security_fix_plain": 0.61,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "openbk7231t",
+   "version": "1.18.318",
+   "name": "OpenBeken OpenBK7231T firmware",
+   "judged_at": "2026-10-13T11:44:50+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "m5unified",
+   "version": "0.2.26",
+   "name": "M5Stack M5Unified library",
+   "judged_at": "2026-10-13T11:44:51+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "grafana",
+   "version": "13.2.4",
+   "name": "Grafana Dashboards",
+   "judged_at": "2026-10-13T11:44:51+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.97,
+    "security_fix_plain": 0.93,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "keycloak",
+   "version": "26.8.1",
+   "name": "Keycloak Identity provider",
+   "judged_at": "2026-10-13T11:44:51+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.96,
+    "security_fix_plain": 0.91,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "logto",
+   "version": "1.45.0",
+   "name": "Logto Auth platform",
+   "judged_at": "2026-10-13T11:44:51+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "weaviate",
+   "version": "1.40.1",
+   "name": "Weaviate Vector database",
+   "judged_at": "2026-10-13T11:44:51+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "n8n",
+   "version": "2.43.4",
+   "name": "n8n Workflow automation",
+   "judged_at": "2026-10-13T11:44:51+00:00",
+   "notes_chars": 188,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "jackett",
+   "version": "0.24.2830",
+   "name": "Jackett Torrent indexer proxy",
+   "judged_at": "2026-10-13T11:44:51+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "limesurvey",
+   "version": "7.5.1",
+   "name": "LimeSurvey Survey platform",
+   "judged_at": "2026-10-13T11:44:51+00:00",
+   "notes_chars": 12,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.08,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "zabbix",
+   "version": "6.0.49",
+   "name": "Zabbix Monitoring platform",
+   "judged_at": "2026-10-13T11:44:52+00:00",
+   "notes_chars": 9,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.14,
+    "security_fix_plain": 0.1,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "jenkins",
+   "version": "2.586",
+   "name": "Jenkins Automation server",
+   "judged_at": "2026-10-13T11:44:52+00:00",
+   "notes_chars": 5,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.2,
+    "security_fix_plain": 0.16,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "oxicloud",
+   "version": "0.9.3",
+   "name": "OxiCloud Cloud storage server",
+   "judged_at": "2026-10-13T11:44:52+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.17,
+    "security_fix_plain": 0.11,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "krakend-ce",
+   "version": "3.0.1",
+   "name": "KrakenD API gateway (Community Edition)",
+   "judged_at": "2026-10-13T11:44:52+00:00",
+   "notes_chars": 137,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.08,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "skipper",
+   "version": "0.28.33",
+   "name": "Skipper HTTP router and reverse proxy",
+   "judged_at": "2026-10-13T11:44:52+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

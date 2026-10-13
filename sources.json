@@ -10964,6 +10964,24 @@
    "type": "github",
    "repo": "basnijholt/adaptive-lighting",
    "product_url": "https://github.com/basnijholt/adaptive-lighting"
+  },
+  {
+   "id": "titanium-web-proxy",
+   "brand": "Titanium Web Proxy",
+   "model": "Cross-platform high performing HTTP(S) proxy server in C#",
+   "category": "R",
+   "type": "github",
+   "repo": "justcoding121/titanium-web-proxy",
+   "product_url": "https://github.com/justcoding121/titanium-web-proxy"
+  },
+  {
+   "id": "xiaomigateway3",
+   "brand": "XiaomiGateway3",
+   "model": "Home Assistant custom component",
+   "category": "S",
+   "type": "github",
+   "repo": "AlexxIT/XiaomiGateway3",
+   "product_url": "https://github.com/AlexxIT/XiaomiGateway3"
   }
  ]
 }
