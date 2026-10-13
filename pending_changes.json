@@ -323,13 +323,13 @@
    "model": "Anime RSS downloader",
    "category": "A",
    "status": "update",
-   "version": "3.2.48",
+   "version": "3.2.49",
    "previous": "3.2.47",
-   "released": "2026-10-12",
+   "released": "2026-10-13",
    "date_known": true,
    "eol": false,
-   "notes": "refactor: 优化订阅添加流程 feat: 批量添加支持选择匹配规则 feat: 检测到订阅重复支持决定是否覆盖",
-   "source_url": "https://github.com/wushuo894/ani-rss/releases/tag/v3.2.48",
+   "notes": "fix: 修复编辑订阅回填问题 fix: 修复首页编辑订阅错误",
+   "source_url": "https://github.com/wushuo894/ani-rss/releases/tag/v3.2.49",
    "page_url": "https://www.firmwarely.com/devices/ani-rss/"
   },
   "ghostfolio": {
@@ -451,6 +451,51 @@
    "notes": "What's Changed: fix: keep a server or volume whose backup files cannot be deleted chore: share business operations across every edge through actions fix: same-second backups sharing one file, and other end-to-end test findings feat: ability-scoped API tokens docs: connect MCP clients over HTTP and …",
    "source_url": "https://github.com/David-Crty/databasement/releases/tag/v1.10.1",
    "page_url": "https://www.firmwarely.com/devices/databasement/"
+  },
+  "envoy-proxy": {
+   "id": "envoy-proxy",
+   "brand": "Envoy",
+   "model": "Edge and service proxy",
+   "category": "R",
+   "status": "update",
+   "version": "1.39.4",
+   "previous": "1.39.3",
+   "released": "2026-10-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "Summary of changes: Bug fixes: aws: fixed a race where the route-level configuration of the AWS request signing and AWS Lambda filters could be destroyed on a worker thread when an RDS update replaced the route configuration. composite: fixed a race where the route-level configuration of the compos…",
+   "source_url": "https://github.com/envoyproxy/envoy/releases/tag/v1.39.4",
+   "page_url": "https://www.firmwarely.com/devices/envoy-proxy/"
+  },
+  "bazzite": {
+   "id": "bazzite",
+   "brand": "Universal Blue",
+   "model": "Bazzite gaming OS",
+   "category": "C",
+   "status": "update",
+   "version": "44.20261012.1",
+   "previous": "44.20261012",
+   "released": "2026-10-13",
+   "date_known": true,
+   "eol": false,
+   "notes": "This is an automatically generated changelog for release 44.20261012.1. From previous stable version 44.20261012 there have been the following changes. One package per new version shown. Major packages: | Name | Version | | --- | --- | | Kernel | 7.2.9-ogc2.1 ➡️ 7.2.9-ogc3.1 | | Kernel (Nvidia LTS)…",
+   "source_url": "https://github.com/ublue-os/bazzite/releases/tag/44.20261012.1",
+   "page_url": "https://www.firmwarely.com/devices/bazzite/"
+  },
+  "kiosk-satellite": {
+   "id": "kiosk-satellite",
+   "brand": "Kiosk Satellite",
+   "model": "Turn any Android device",
+   "category": "S",
+   "status": "update",
+   "version": "2026.10.22",
+   "previous": "2026.10.21",
+   "released": "2026-10-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's new in Kiosk Satellite 2026.10.22: This release lets a Home Assistant motion sensor take the camera's place for waking the screen, and sends Android broadcasts so apps like Tasker can react to voice, intercom, alarms and the screensaver. Kiosks behind a reverse proxy can now be opened by nam…",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.10.22",
+   "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   }
  }
 }
