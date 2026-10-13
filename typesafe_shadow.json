@@ -13446,6 +13446,438 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "opnsense-firewall",
+   "version": "26.7.7",
+   "name": "OPNsense Firewall (community edition)",
+   "judged_at": "2026-10-13T19:10:57+00:00",
+   "notes_chars": 6,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.28,
+    "security_fix_plain": 0.28,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "headscale",
+   "version": "0.29.5",
+   "name": "Headscale Tailscale control server",
+   "judged_at": "2026-10-13T19:10:57+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.34,
+    "security_fix_plain": 0.21,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "netbox",
+   "version": "4.7.3",
+   "name": "NetBox Labs NetBox",
+   "judged_at": "2026-10-13T19:10:57+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "lychee-photos",
+   "version": "7.11.1",
+   "name": "Lychee Photo gallery",
+   "judged_at": "2026-10-13T19:10:57+00:00",
+   "notes_chars": 120,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "theengs-gateway",
+   "version": "1.8.0",
+   "name": "Theengs BLE to MQTT gateway",
+   "judged_at": "2026-10-13T19:10:57+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "dozzle",
+   "version": "11.3.2",
+   "name": "Dozzle Container log viewer",
+   "judged_at": "2026-10-13T19:10:57+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.9.18.11-stable",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-13T19:10:58+00:00",
+   "notes_chars": 45,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "windmill",
+   "version": "1.832.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-10-13T19:10:58+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.55,
+    "security_fix_plain": 0.59,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "kestra",
+   "version": "2.0.6",
+   "name": "Kestra Orchestration platform",
+   "judged_at": "2026-10-13T19:10:58+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "anythingllm",
+   "version": "1.18.0",
+   "name": "AnythingLLM Document chat",
+   "judged_at": "2026-10-13T19:10:58+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "langflow",
+   "version": "1.12.6",
+   "name": "Langflow Agent builder",
+   "judged_at": "2026-10-13T19:10:58+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.77,
+    "security_fix_plain": 0.72,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "element-web",
+   "version": "1.12.31",
+   "name": "Element Web client",
+   "judged_at": "2026-10-13T19:10:58+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.13,
+    "security_fix_plain": 0.25,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ghost",
+   "version": "6.70.0",
+   "name": "Ghost Publishing platform",
+   "judged_at": "2026-10-13T19:10:58+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "hugo",
+   "version": "0.168.0",
+   "name": "Hugo Static site generator",
+   "judged_at": "2026-10-13T19:10:58+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "mailu",
+   "version": "2024.06.63",
+   "name": "Mailu Mail server",
+   "judged_at": "2026-10-13T19:10:58+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ghostfolio",
+   "version": "3.86.0",
+   "name": "Ghostfolio Wealth tracker",
+   "judged_at": "2026-10-13T19:10:59+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "homarr",
+   "version": "2.5.2",
+   "name": "Homarr Dashboard",
+   "judged_at": "2026-10-13T19:10:59+00:00",
+   "notes_chars": 143,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "tooljet",
+   "version": "3.20.244-lts",
+   "name": "ToolJet Low-code platform",
+   "judged_at": "2026-10-13T19:10:59+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "appwrite",
+   "version": "2.5.0",
+   "name": "Appwrite Backend platform",
+   "judged_at": "2026-10-13T19:10:59+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "zabbix",
+   "version": "7.0.32",
+   "name": "Zabbix Monitoring platform",
+   "judged_at": "2026-10-13T19:10:59+00:00",
+   "notes_chars": 9,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.19,
+    "security_fix_plain": 0.16,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "mongodb",
+   "version": "8.0.34",
+   "name": "MongoDB Document database",
+   "judged_at": "2026-10-13T19:10:59+00:00",
+   "notes_chars": 7,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.28,
+    "security_fix_plain": 0.23,
+    "end_of_life": 0.06
+   }
+  },
+  {
+   "id": "angie",
+   "version": "1.12.3",
+   "name": "Angie Drop-in replacement for nginx",
+   "judged_at": "2026-10-13T19:10:59+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "gladys",
+   "version": "5.2.1",
+   "name": "Gladys Home automation hub",
+   "judged_at": "2026-10-13T19:10:59+00:00",
+   "notes_chars": 157,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.22,
+    "security_fix_plain": 0.13,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "kiosk-satellite",
+   "version": "2026.10.23",
+   "name": "Kiosk Satellite Turn any Android device",
+   "judged_at": "2026-10-13T19:10:59+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
