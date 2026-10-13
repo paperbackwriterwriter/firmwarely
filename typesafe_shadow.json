@@ -13878,6 +13878,204 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "windmill",
+   "version": "1.833.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-10-13T23:41:46+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "mongodb",
+   "version": "8.3.13",
+   "name": "MongoDB Document database",
+   "judged_at": "2026-10-13T23:41:46+00:00",
+   "notes_chars": 7,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.24,
+    "security_fix_plain": 0.21,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "frigate-nvr",
+   "version": "0.18.1",
+   "name": "Frigate NVR (camera AI detection)",
+   "judged_at": "2026-10-13T23:41:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "envoy-proxy",
+   "version": "1.40.0",
+   "name": "Envoy Edge and service proxy",
+   "judged_at": "2026-10-13T23:41:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "proton-ge",
+   "version": "GE-Proton11-8",
+   "name": "GloriousEggroll Proton-GE compatibility layer",
+   "judged_at": "2026-10-13T23:41:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "infisical",
+   "version": "0.166.6",
+   "name": "Infisical Secrets manager",
+   "judged_at": "2026-10-13T23:41:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.33,
+    "security_fix_plain": 0.2,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "comfyui",
+   "version": "0.40.0",
+   "name": "ComfyUI Diffusion workflow UI",
+   "judged_at": "2026-10-13T23:41:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.08,
+    "security_fix_plain": 0.14,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "apache-superset",
+   "version": "7.0.0",
+   "name": "Apache Superset",
+   "judged_at": "2026-10-13T23:41:47+00:00",
+   "notes_chars": 8,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.09,
+    "security_fix_plain": 0.07,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "rethink-app",
+   "version": "0.5.8",
+   "name": "Rethink DNS and firewall app for Android",
+   "judged_at": "2026-10-13T23:41:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "browserbox",
+   "version": "20.3.0",
+   "name": "BrowserBox Remote browser isolation",
+   "judged_at": "2026-10-13T23:41:48+00:00",
+   "notes_chars": 83,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "huginn",
+   "version": "2026.10.14",
+   "name": "Huginn Create agents that monitor and act on your behalf",
+   "judged_at": "2026-10-13T23:41:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
