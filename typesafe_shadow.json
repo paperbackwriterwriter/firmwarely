@@ -14076,6 +14076,150 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "proton-ge",
+   "version": "GE-Proton11-9",
+   "name": "GloriousEggroll Proton-GE compatibility layer",
+   "judged_at": "2026-10-14T04:36:02+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "komga",
+   "version": "1.29.1",
+   "name": "Komga Comic and manga server",
+   "judged_at": "2026-10-14T04:36:02+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "bitwarden-server",
+   "version": "2026.10.0",
+   "name": "Bitwarden Self-hosted server",
+   "judged_at": "2026-10-14T04:36:02+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ardupilot",
+   "version": "4.7.2",
+   "name": "ArduPilot Autopilot firmware",
+   "judged_at": "2026-10-14T04:36:02+00:00",
+   "notes_chars": 182,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "firezone",
+   "version": "1.6.3",
+   "name": "Firezone Zero-trust access gateway",
+   "judged_at": "2026-10-14T04:36:02+00:00",
+   "notes_chars": 42,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "otel-collector",
+   "version": "1.69.0",
+   "name": "OpenTelemetry Collector",
+   "judged_at": "2026-10-14T04:36:03+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ollama",
+   "version": "0.40.4",
+   "name": "Ollama Local LLM runner",
+   "judged_at": "2026-10-14T04:36:03+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "siyuan",
+   "version": "3.8.7",
+   "name": "SiYuan Knowledge base",
+   "judged_at": "2026-10-14T04:36:03+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
