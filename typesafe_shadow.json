@@ -14778,6 +14778,294 @@
     "security_fix_plain": 0.16,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.9.19.9-stable",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-14T20:07:21+00:00",
+   "notes_chars": 43,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ubiquiti-unifi-access-points",
+   "version": "8.8.11",
+   "name": "Ubiquiti UniFi Access Points & Switches (device firmware)",
+   "judged_at": "2026-10-14T20:07:22+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "immich-server",
+   "version": "3.3.3",
+   "name": "Immich Photo backup server",
+   "judged_at": "2026-10-14T20:07:22+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ubiquiti-unifi-u6-plus",
+   "version": "8.8.11",
+   "name": "Ubiquiti UniFi U6+ Access Point",
+   "judged_at": "2026-10-14T20:07:22+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "cronicle",
+   "version": "0.9.136",
+   "name": "Cronicle Task scheduler",
+   "judged_at": "2026-10-14T20:07:22+00:00",
+   "notes_chars": 116,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.23,
+    "security_fix_plain": 0.31,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "docker-engine",
+   "version": "29.9.1",
+   "name": "Docker Engine (moby)",
+   "judged_at": "2026-10-14T20:07:22+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.72,
+    "security_fix_plain": 0.52,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "infisical",
+   "version": "0.166.7",
+   "name": "Infisical Secrets manager",
+   "judged_at": "2026-10-14T20:07:22+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "jupyterhub",
+   "version": "6.1.0",
+   "name": "Jupyter JupyterHub",
+   "judged_at": "2026-10-14T20:07:22+00:00",
+   "notes_chars": 5,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.08,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "open-webui",
+   "version": "0.12.1",
+   "name": "Open WebUI LLM web interface",
+   "judged_at": "2026-10-14T20:07:22+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "tooljet",
+   "version": "3.20.245-lts",
+   "name": "ToolJet Low-code platform",
+   "judged_at": "2026-10-14T20:07:23+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "mongodb",
+   "version": "9.0.4",
+   "name": "MongoDB Document database",
+   "judged_at": "2026-10-14T20:07:23+00:00",
+   "notes_chars": 6,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.23,
+    "security_fix_plain": 0.2,
+    "end_of_life": 0.04
+   }
+  },
+  {
+   "id": "ubiquiti-unifi-u7-pro",
+   "version": "8.8.11",
+   "name": "Ubiquiti UniFi U7 Pro access point",
+   "judged_at": "2026-10-14T20:07:23+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ubiquiti-switch-flex-2-5g",
+   "version": "8.8.11",
+   "name": "Ubiquiti UniFi Switch Flex 2.5G",
+   "judged_at": "2026-10-14T20:07:23+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "onyx",
+   "version": "4.9.1",
+   "name": "Onyx AI platform",
+   "judged_at": "2026-10-14T20:07:23+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.9,
+    "security_fix_plain": 0.89,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "mobile-mcp",
+   "version": "1.0.11",
+   "name": "Mobile Mcp Model Context Protocol Server",
+   "judged_at": "2026-10-14T20:07:23+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.95,
+    "security_fix_plain": 0.94,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "titanium-web-proxy",
+   "version": "7.0.24",
+   "name": "Titanium Web Proxy Cross-platform high performing HTTP(S) proxy server in C#",
+   "judged_at": "2026-10-14T20:07:23+00:00",
+   "notes_chars": 175,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
