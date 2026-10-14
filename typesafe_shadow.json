@@ -14508,6 +14508,276 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "trivy",
+   "version": "0.76.0",
+   "name": "Aqua Trivy vulnerability scanner",
+   "judged_at": "2026-10-14T15:46:50+00:00",
+   "notes_chars": 161,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.8.27.9-lts",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-14T15:46:50+00:00",
+   "notes_chars": 37,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "onedev",
+   "version": "16.9.0",
+   "name": "OneDev Git server with CI",
+   "judged_at": "2026-10-14T15:46:50+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "coder",
+   "version": "2.37.4",
+   "name": "Coder Remote dev environments",
+   "judged_at": "2026-10-14T15:46:50+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.63,
+    "security_fix_plain": 0.53,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "windmill",
+   "version": "1.834.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-10-14T15:46:50+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "recyclarr",
+   "version": "8.8.0",
+   "name": "Recyclarr Arr config sync",
+   "judged_at": "2026-10-14T15:46:51+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "synapse",
+   "version": "1.163.0",
+   "name": "Element Synapse Matrix server",
+   "judged_at": "2026-10-14T15:46:51+00:00",
+   "notes_chars": 79,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.37,
+    "security_fix_plain": 0.26,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "strapi",
+   "version": "5.58.0",
+   "name": "Strapi Headless CMS",
+   "judged_at": "2026-10-14T15:46:51+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "nginx",
+   "version": "1.31.7",
+   "name": "NGINX Web server",
+   "judged_at": "2026-10-14T15:46:51+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.99,
+    "security_fix_plain": 0.97,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ani-rss",
+   "version": "3.2.50",
+   "name": "ANi-RSS Anime RSS downloader",
+   "judged_at": "2026-10-14T15:46:51+00:00",
+   "notes_chars": 21,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "shadps4",
+   "version": "0.20.0",
+   "name": "shadPS4 PlayStation 4 emulator",
+   "judged_at": "2026-10-14T15:46:51+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "bunkerweb",
+   "version": "1.6.16",
+   "name": "BunkerWeb Web application firewall",
+   "judged_at": "2026-10-14T15:46:51+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "skipper",
+   "version": "0.28.36",
+   "name": "Skipper HTTP router and reverse proxy",
+   "judged_at": "2026-10-14T15:46:51+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "maltrail",
+   "version": "3.5",
+   "name": "Maltrail Malicious traffic detection system",
+   "judged_at": "2026-10-14T15:46:51+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "openobserve",
+   "version": "1.1.0",
+   "name": "Openobserve Observability platform",
+   "judged_at": "2026-10-14T15:46:52+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.29,
+    "security_fix_plain": 0.16,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
