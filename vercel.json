@@ -972,22 +972,22 @@
       "permanent": false
     },
     {
-      "source": "/brands/:b(jetlinks|kiosk-satellite|konnected|kwikset|level|leviton|libretiny|lifx|lovelace-mushroom|lutron|matter|meross|mini-graph-card|moen|motioneye|music-assistant|nanoleaf|netatmo|node-red|nodemcu|openbeken|openccu|opendtu|openenergymonitor|openevse|openhab|openhasp|openmqttgateway|opensprinkler|openthread|openwakeword|openwb|philips|piper|rachio|ratgdo|ravensystem|reolink|resideo|rhasspy)",
+      "source": "/brands/:b(jetlinks|kiosk-satellite|konnected|kwikset|level|leviton|libretiny|lifx|lovelace-mushroom|lutron|matter|meross|mini-graph-card|moen|motioneye|music-assistant|nanoleaf|nanomq|netatmo|node-red|nodemcu|openbeken|openccu|opendtu|openenergymonitor|openevse|openhab|openhasp|openmqttgateway|opensprinkler|openthread|openwakeword|openwb|philips|piper|rachio|ratgdo|ravensystem|reolink|resideo)",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(jetlinks|kiosk-satellite|konnected|kwikset|level|leviton|libretiny|lifx|lovelace-mushroom|lutron|matter|meross|mini-graph-card|moen|motioneye|music-assistant|nanoleaf|netatmo|node-red|nodemcu|openbeken|openccu|opendtu|openenergymonitor|openevse|openhab|openhasp|openmqttgateway|opensprinkler|openthread|openwakeword|openwb|philips|piper|rachio|ratgdo|ravensystem|reolink|resideo|rhasspy)/",
+      "source": "/brands/:b(jetlinks|kiosk-satellite|konnected|kwikset|level|leviton|libretiny|lifx|lovelace-mushroom|lutron|matter|meross|mini-graph-card|moen|motioneye|music-assistant|nanoleaf|nanomq|netatmo|node-red|nodemcu|openbeken|openccu|opendtu|openenergymonitor|openevse|openhab|openhasp|openmqttgateway|opensprinkler|openthread|openwakeword|openwb|philips|piper|rachio|ratgdo|ravensystem|reolink|resideo)/",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(roborock|schlage|scrypted|shelly|sonos|switchbot|tado|tapo-control|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|tuya-local|valetudo|wallbox|wled|wyze|xiaomi-home|xiaomi-miot-auto|xiaomi-vacuum-map-card|xiaomigateway3|yale|zigbee2mqtt|zigpy|zoneminder)",
+      "source": "/brands/:b(rhasspy|roborock|schlage|scrypted|shelly|sonos|switchbot|tado|tapo-control|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|tuya-local|valetudo|wallbox|wled|wyze|xiaomi-home|xiaomi-miot-auto|xiaomi-vacuum-map-card|xiaomigateway3|yale|zigbee2mqtt|zigpy|zoneminder)",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(roborock|schlage|scrypted|shelly|sonos|switchbot|tado|tapo-control|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|tuya-local|valetudo|wallbox|wled|wyze|xiaomi-home|xiaomi-miot-auto|xiaomi-vacuum-map-card|xiaomigateway3|yale|zigbee2mqtt|zigpy|zoneminder)/",
+      "source": "/brands/:b(rhasspy|roborock|schlage|scrypted|shelly|sonos|switchbot|tado|tapo-control|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|tuya-local|valetudo|wallbox|wled|wyze|xiaomi-home|xiaomi-miot-auto|xiaomi-vacuum-map-card|xiaomigateway3|yale|zigbee2mqtt|zigpy|zoneminder)/",
       "destination": "/category/smart-home/",
       "permanent": false
     },

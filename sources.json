@@ -10982,6 +10982,15 @@
    "type": "github",
    "repo": "AlexxIT/XiaomiGateway3",
    "product_url": "https://github.com/AlexxIT/XiaomiGateway3"
+  },
+  {
+   "id": "nanomq",
+   "brand": "Nanomq",
+   "model": "Ultra-lightweight and blazing-fast Messaging Bus/MQTT",
+   "category": "S",
+   "type": "github",
+   "repo": "nanomq/nanomq",
+   "product_url": "https://github.com/nanomq/nanomq"
   }
  ]
 }
