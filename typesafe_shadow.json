@@ -15066,6 +15066,132 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "windmill",
+   "version": "1.835.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-10-14T23:49:54+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "open-webui",
+   "version": "0.12.2",
+   "name": "Open WebUI LLM web interface",
+   "judged_at": "2026-10-14T23:49:54+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "authentik",
+   "version": "2026.8.4",
+   "name": "authentik Identity provider",
+   "judged_at": "2026-10-14T23:49:54+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.43,
+    "security_fix_plain": 0.49,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "firezone",
+   "version": "1.5.22",
+   "name": "Firezone Zero-trust access gateway",
+   "judged_at": "2026-10-14T23:49:54+00:00",
+   "notes_chars": 42,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "copyparty",
+   "version": "1.20.26",
+   "name": "copyparty Portable file server",
+   "judged_at": "2026-10-14T23:49:54+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "erpnext",
+   "version": "16.51.0",
+   "name": "Frappe ERPNext",
+   "judged_at": "2026-10-14T23:49:54+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.287.77801",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-10-14T23:49:55+00:00",
+   "notes_chars": 71,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
