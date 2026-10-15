@@ -38,13 +38,13 @@
    "model": "Git server with CI",
    "category": "A",
    "status": "update",
-   "version": "16.9.0",
+   "version": "16.9.1",
    "previous": "16.8.8",
-   "released": "2026-10-14",
+   "released": "2026-10-15",
    "date_known": true,
    "eol": false,
-   "notes": "Installation Guide: https://docs.onedev.io/category/installation-guide Change Log: https://code.onedev.io/onedev/server/~builds/8716/fixed-issues?query=%22State%22+is+%22Released%22+order+by+%22Type%22+asc+%2C+%22Priority%22+desc Incompatibilities: https://code.onedev.io/onedev/server/~builds/8716/…",
-   "source_url": "https://github.com/theonedev/onedev/releases/tag/v16.9.0",
+   "notes": "Installation Guide: https://docs.onedev.io/category/installation-guide Change Log: https://code.onedev.io/onedev/server/~builds/8723/fixed-issues?query=%22State%22+is+%22Released%22+order+by+%22Type%22+asc+%2C+%22Priority%22+desc Incompatibilities: https://code.onedev.io/onedev/server/~builds/8723/…",
+   "source_url": "https://github.com/theonedev/onedev/releases/tag/v16.9.1",
    "page_url": "https://www.firmwarely.com/devices/onedev/"
   },
   "coder": {
@@ -143,13 +143,13 @@
    "model": "Anime RSS downloader",
    "category": "A",
    "status": "update",
-   "version": "3.2.50",
+   "version": "3.2.51",
    "previous": "3.2.49",
-   "released": "2026-10-14",
+   "released": "2026-10-15",
    "date_known": true,
    "eol": false,
-   "notes": "fix: 修复移动端 备用rss 布局异常",
-   "source_url": "https://github.com/wushuo894/ani-rss/releases/tag/v3.2.50",
+   "notes": "refactor: 优化摸鱼检测 Close #​741",
+   "source_url": "https://github.com/wushuo894/ani-rss/releases/tag/v3.2.51",
    "page_url": "https://www.firmwarely.com/devices/ani-rss/"
   },
   "shadps4": {
@@ -526,6 +526,51 @@
    "notes": "#​11868 #​11867 #​11866 #​11865 #​11864 #​11863 #​11862 #​11861 #​11857",
    "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.287.77801",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "heroic-launcher": {
+   "id": "heroic-launcher",
+   "brand": "Heroic",
+   "model": "Games launcher",
+   "category": "C",
+   "status": "update",
+   "version": "2.22.4",
+   "previous": "2.22.3",
+   "released": "2026-10-15",
+   "date_known": true,
+   "eol": false,
+   "notes": "Small hotfix to fix the GOG Login and UMU issue. What's Changed: fix: Don't try to chmod native Linux/macOS binaries on exit Add support for building ARM64 flatpak [FIX] Unset custom user agent to fix GOG login cloudflare check fix: Don't trust isUmuSupported's return value if we're running a nativ…",
+   "source_url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/tag/v2.22.4",
+   "page_url": "https://www.firmwarely.com/devices/heroic-launcher/"
+  },
+  "browserbox": {
+   "id": "browserbox",
+   "brand": "BrowserBox",
+   "model": "Remote browser isolation",
+   "category": "R",
+   "status": "update",
+   "version": "20.3.1",
+   "previous": "20.3.0",
+   "released": "2026-10-15",
+   "date_known": true,
+   "eol": false,
+   "notes": "Tested BrowserBox release. Install with: curl -fsSL browserbox.io/install.sh | bash",
+   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.3.1",
+   "page_url": "https://www.firmwarely.com/devices/browserbox/"
+  },
+  "kiosk-satellite": {
+   "id": "kiosk-satellite",
+   "brand": "Kiosk Satellite",
+   "model": "Turn any Android device",
+   "category": "S",
+   "status": "update",
+   "version": "2026.10.25",
+   "previous": "2026.10.24",
+   "released": "2026-10-15",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's new in Kiosk Satellite 2026.10.25: A new URL Filter page controls which addresses the dashboard and external pages can open. Plugins and custom pages can now talk to Home Assistant through the kiosk's own connection, Voice Satellite gets a KITT skin and proximity detection now works on the N…",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.10.25",
+   "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   }
  }
 }
