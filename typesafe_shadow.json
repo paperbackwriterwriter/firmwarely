@@ -15282,6 +15282,276 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "kiosk-satellite",
+   "version": "2026.10.26",
+   "name": "Kiosk Satellite Turn any Android device",
+   "judged_at": "2026-10-15T09:50:29+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "flipper-zero",
+   "version": "1.5.1",
+   "name": "Flipper Zero",
+   "judged_at": "2026-10-15T09:50:29+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "nextcloud-server",
+   "version": "33.0.10",
+   "name": "Nextcloud server",
+   "judged_at": "2026-10-15T09:50:29+00:00",
+   "notes_chars": 66,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.68,
+    "security_fix_plain": 0.58,
+    "end_of_life": 0.06
+   }
+  },
+  {
+   "id": "zitadel",
+   "version": "4.19.5",
+   "name": "ZITADEL Identity platform",
+   "judged_at": "2026-10-15T09:50:29+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.11,
+    "security_fix_plain": 0.15,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "n8n",
+   "version": "2.43.6",
+   "name": "n8n Workflow automation",
+   "judged_at": "2026-10-15T09:50:29+00:00",
+   "notes_chars": 108,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "jackett",
+   "version": "0.24.2856",
+   "name": "Jackett Torrent indexer proxy",
+   "judged_at": "2026-10-15T09:50:29+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "mailu",
+   "version": "2024.06.64",
+   "name": "Mailu Mail server",
+   "judged_at": "2026-10-15T09:50:29+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "zammad",
+   "version": "6.5.5",
+   "name": "Zammad Help desk",
+   "judged_at": "2026-10-15T09:50:29+00:00",
+   "notes_chars": 5,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.09,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.04
+   }
+  },
+  {
+   "id": "qwenpaw",
+   "version": "2.2.2",
+   "name": "QwenPaw Personal AI assistant",
+   "judged_at": "2026-10-15T09:50:30+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "floci",
+   "version": "2.3.0",
+   "name": "Floci Local cloud emulator",
+   "judged_at": "2026-10-15T09:50:30+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.09,
+    "security_fix_plain": 0.11,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "songloft",
+   "version": "2.13.3",
+   "name": "Songloft Music server",
+   "judged_at": "2026-10-15T09:50:30+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "dbatools",
+   "version": "2.9.1",
+   "name": "dbatools SQL Server automation",
+   "judged_at": "2026-10-15T09:50:30+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.14,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "databasement",
+   "version": "1.10.3",
+   "name": "Databasement Database backup manager",
+   "judged_at": "2026-10-15T09:50:30+00:00",
+   "notes_chars": 230,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "keepass2android",
+   "version": "1.15-r6",
+   "name": "Keepass2Android Password manager for Android",
+   "judged_at": "2026-10-15T09:50:30+00:00",
+   "notes_chars": 117,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "xiaomigateway3",
+   "version": "4.3.0",
+   "name": "XiaomiGateway3 Home Assistant custom component",
+   "judged_at": "2026-10-15T09:50:30+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

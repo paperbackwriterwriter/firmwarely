@@ -10991,6 +10991,96 @@
    "type": "github",
    "repo": "nanomq/nanomq",
    "product_url": "https://github.com/nanomq/nanomq"
+  },
+  {
+   "id": "spook",
+   "brand": "Spook",
+   "model": "Scary powerful toolbox for Home Assistant",
+   "category": "S",
+   "type": "github",
+   "repo": "frenck/spook",
+   "product_url": "https://github.com/frenck/spook"
+  },
+  {
+   "id": "openclaw-android",
+   "brand": "Openclaw Android",
+   "model": "Run OpenClaw on Android with a single command",
+   "category": "A",
+   "type": "github",
+   "repo": "aidanpark/openclaw-android",
+   "product_url": "https://github.com/aidanpark/openclaw-android"
+  },
+  {
+   "id": "httm",
+   "brand": "Httm",
+   "model": "Interactive, file-level Time Machine-like tool",
+   "category": "N",
+   "type": "github",
+   "repo": "kimono-koans/httm",
+   "product_url": "https://github.com/kimono-koans/httm"
+  },
+  {
+   "id": "yubal",
+   "brand": "Yubal",
+   "model": "YouTube Music downloader",
+   "category": "N",
+   "type": "github",
+   "repo": "guillevc/yubal",
+   "product_url": "https://github.com/guillevc/yubal"
+  },
+  {
+   "id": "tugtainer",
+   "brand": "Tugtainer",
+   "model": "Application for automated Docker container updates",
+   "category": "A",
+   "type": "github",
+   "repo": "Quenary/tugtainer",
+   "product_url": "https://github.com/Quenary/tugtainer"
+  },
+  {
+   "id": "expenseowl",
+   "brand": "ExpenseOwl",
+   "model": "Extremely simple, self-hosted expense tracker",
+   "category": "A",
+   "type": "github",
+   "repo": "Tanq16/ExpenseOwl",
+   "product_url": "https://github.com/Tanq16/ExpenseOwl"
+  },
+  {
+   "id": "hometube",
+   "brand": "Hometube",
+   "model": "Friendly video downloader managing single video URL",
+   "category": "A",
+   "type": "github",
+   "repo": "EgalitarianMonkey/hometube",
+   "product_url": "https://github.com/EgalitarianMonkey/hometube"
+  },
+  {
+   "id": "ironos",
+   "brand": "IronOS",
+   "model": "Soldering Iron firmware",
+   "category": "M",
+   "type": "github",
+   "repo": "Ralim/IronOS",
+   "product_url": "https://github.com/Ralim/IronOS"
+  },
+  {
+   "id": "galaxybudsclient",
+   "brand": "GalaxyBudsClient",
+   "model": "Unofficial Galaxy Buds Manager",
+   "category": "M",
+   "type": "github",
+   "repo": "timschneeb/GalaxyBudsClient",
+   "product_url": "https://github.com/timschneeb/GalaxyBudsClient"
+  },
+  {
+   "id": "ipsw",
+   "brand": "Ipsw",
+   "model": "IOS/macOS Research Swiss Army Knife",
+   "category": "M",
+   "type": "github",
+   "repo": "blacktop/ipsw",
+   "product_url": "https://github.com/blacktop/ipsw"
   }
  ]
 }
