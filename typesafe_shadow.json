@@ -16830,6 +16830,168 @@
     "security_fix_plain": 0.06,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "home-assistant-core",
+   "version": "2026.10.2",
+   "name": "Home Assistant Core (monthly release)",
+   "judged_at": "2026-10-16T20:52:27+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ratgdo",
+   "version": "1635",
+   "name": "ratgdo Garage door firmware",
+   "judged_at": "2026-10-16T20:52:27+00:00",
+   "notes_chars": 79,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "fluidd",
+   "version": "1.37.7",
+   "name": "Fluidd Klipper web interface",
+   "judged_at": "2026-10-16T20:52:27+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "valve-steam-deck-oled",
+   "version": "3.9.3",
+   "name": "Valve Steam Deck OLED",
+   "judged_at": "2026-10-16T20:52:27+00:00",
+   "notes_chars": 47,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "emqx",
+   "version": "6.3.2",
+   "name": "EMQX MQTT broker",
+   "judged_at": "2026-10-16T20:52:27+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "windmill",
+   "version": "1.839.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-10-16T20:52:27+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.07,
+    "security_fix_plain": 0.12,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "arc",
+   "version": "4.1.1",
+   "name": "Arc Redpill loader for Synology DSM",
+   "judged_at": "2026-10-16T20:52:28+00:00",
+   "notes_chars": 200,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "angie",
+   "version": "1.12.4",
+   "name": "Angie Drop-in replacement for nginx",
+   "judged_at": "2026-10-16T20:52:28+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.93,
+    "security_fix_plain": 0.79,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "xemu",
+   "version": "0.8.137",
+   "name": "xemu Original Xbox emulator",
+   "judged_at": "2026-10-16T20:52:28+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
