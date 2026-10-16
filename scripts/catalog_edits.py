@@ -207,6 +207,34 @@ RENAME.update({
     "esp32-marauder": ("ESP32 Marauder", "Wi-Fi and Bluetooth pentest firmware", "M"),
 })
 
+# 2026-10-16 QA: taglines discovery took for names since the last cleanup
+RENAME.update({
+    "panel": ("Pelican Panel", "Game server management panel", "A"),
+    "octelium": ("Octelium", "Zero trust access platform", "R"),
+    "fugleramme": ("Fugleramme", "Raspberry Pi bird camera", "M"),
+    "snapotter": ("SnapOtter", "File processing tool", "A"),
+    "profilarr": ("Profilarr", "Radarr and Sonarr profile manager", "A"),
+    "dockcheck": ("dockcheck", "Docker image update checker", "A"),
+    "huginn": ("Huginn", "Automation agents", "A"),
+    "sentry": ("Sentry", "Error tracking and performance monitoring", "A"),
+    "pm2": ("PM2", "Node.js process manager", "A"),
+    "osquery": ("osquery", "SQL-based system monitoring", "A"),
+    "bottom": ("bottom", "Terminal system monitor", "A"),
+    "openwrt-tailscale-enabler": ("OpenWrt Tailscale Enabler", "Tailscale for small OpenWrt routers", "R"),
+    "lovelace-mushroom": ("Mushroom", "Home Assistant dashboard cards", "S"),
+    "mini-graph-card": ("mini-graph-card", "Home Assistant graph card", "S"),
+    "tuya-local": ("Tuya Local", "Home Assistant integration for Tuya devices", "S"),
+    "titanium-web-proxy": ("Titanium Web Proxy", "HTTP(S) proxy server", "R"),
+    "nanomq": ("NanoMQ", "MQTT broker", "S"),
+    "spook": ("Spook", "Home Assistant toolbox", "S"),
+    "openclaw-android": ("OpenClaw Android", "OpenClaw installer for Android", "A"),
+    "httm": ("httm", "ZFS snapshot file browser", "N"),
+    "tugtainer": ("Tugtainer", "Docker container updater", "A"),
+    "expenseowl": ("ExpenseOwl", "Expense tracker", "A"),
+    "hometube": ("HomeTube", "Video downloader", "A"),
+    "esp32-iphone-agent": ("ESP32 iPhone Agent", "AI iPhone control over ESP32", "M"),
+})
+
 # code libraries discovery took for products (the "router" topic also means web routing):
 # not something anyone installs or updates as a device or a server. id → where its URL goes
 REMOVE = {

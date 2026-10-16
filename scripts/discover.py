@@ -79,7 +79,8 @@ NON_LATIN = re.compile(r"[\u0400-\u04ff\u0600-\u06ff\u3040-\u30ff\u3400-\u9fff\u
 # a model line that reads as a sentence or a slogan rather than naming a thing:
 # "Accept Bitcoin payments", "Let's upgrade…", "Light, fluffy, and always free", "Is an…"
 TAGLINE = re.compile(
-    r"^(?:is|are|my|our|let'?s|gives?|build|built|access|accept|syncs?|emulate|love|inside|for|this|that|it'?s|"
+    r"^(?:is|are|my|our|let'?s?|gives?|build|built|access|accept|syncs?|emulate|love|inside|for|this|that|it'?s|"
+    r"create|run|brings?|yet another|extremely|beautiful|scary|friendly|next-gen|ultra-lightweight|"
     r"official|automatic(?:ally)?)\b|^light,|always free\b|^(?:tool|software|app)\s+(?:designed\s+)?(?:to|for)\b|"
     r"^\S+\s+is\s+(?:an?|the)\b|you deserve", re.I)
 
@@ -165,6 +166,8 @@ def model_problem(model, name=""):
         return "model line is cut off mid-parenthesis"
     if model.count(",") >= 2:
         return "model line is a feature list"
+    if len(model) > 45:
+        return "model line too long to read as a name"
     if len(model.split()) < 2 or model.lower() in GENERIC_MODELS:
         return "model line too vague to name a product"
     if name and re.sub(r"[^a-z0-9]", "", model.lower()) == re.sub(r"[^a-z0-9]", "", name.lower()):

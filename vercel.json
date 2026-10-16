@@ -922,12 +922,12 @@
       "permanent": false
     },
     {
-      "source": "/brands/:b(owasp|owntracks|pairdrop|panel|paperless-ngx|pass-for-ios|passbolt|peertube|penpot|pentagi|photoprism|phpipam|phpmyadmin|pinchflat|pingvin-share|piwigo|pixelfed|planka|plausible|playnite|pm2|pocketbase|portainer|postal|prefect|processone|profilarr|projectdiscovery|prometheus|prowlarr|proxmox|pulse|puter|pydio|qbittorrent|qdrant|questdb|qwenpaw|rabbitmq|radarr)",
+      "source": "/brands/:b(owasp|owntracks|pairdrop|paperless-ngx|pass-for-ios|passbolt|peertube|pelican-panel|penpot|pentagi|photoprism|phpipam|phpmyadmin|pinchflat|pingvin-share|piwigo|pixelfed|planka|plausible|playnite|pm2|pocketbase|portainer|postal|prefect|processone|profilarr|projectdiscovery|prometheus|prowlarr|proxmox|pulse|puter|pydio|qbittorrent|qdrant|questdb|qwenpaw|rabbitmq|radarr)",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(owasp|owntracks|pairdrop|panel|paperless-ngx|pass-for-ios|passbolt|peertube|penpot|pentagi|photoprism|phpipam|phpmyadmin|pinchflat|pingvin-share|piwigo|pixelfed|planka|plausible|playnite|pm2|pocketbase|portainer|postal|prefect|processone|profilarr|projectdiscovery|prometheus|prowlarr|proxmox|pulse|puter|pydio|qbittorrent|qdrant|questdb|qwenpaw|rabbitmq|radarr)/",
+      "source": "/brands/:b(owasp|owntracks|pairdrop|paperless-ngx|pass-for-ios|passbolt|peertube|pelican-panel|penpot|pentagi|photoprism|phpipam|phpmyadmin|pinchflat|pingvin-share|piwigo|pixelfed|planka|plausible|playnite|pm2|pocketbase|portainer|postal|prefect|processone|profilarr|projectdiscovery|prometheus|prowlarr|proxmox|pulse|puter|pydio|qbittorrent|qdrant|questdb|qwenpaw|rabbitmq|radarr)/",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
@@ -972,12 +972,12 @@
       "permanent": false
     },
     {
-      "source": "/brands/:b(irobot|jetlinks|kiosk-satellite|konnected|kwikset|level|leviton|libretiny|lifx|lovelace-mushroom|lutron|matter|meross|mini-graph-card|moen|motioneye|music-assistant|nanoleaf|nanomq|netatmo|node-red|nodemcu|openbeken|openccu|opendtu|openenergymonitor|openevse|openhab|openhasp|openmqttgateway|opensprinkler|openthread|openwakeword|openwb|philips|piper|rachio|ratgdo|ravensystem|reolink)",
+      "source": "/brands/:b(irobot|jetlinks|kiosk-satellite|konnected|kwikset|level|leviton|libretiny|lifx|lutron|matter|meross|mini-graph-card|moen|motioneye|mushroom|music-assistant|nanoleaf|nanomq|netatmo|node-red|nodemcu|openbeken|openccu|opendtu|openenergymonitor|openevse|openhab|openhasp|openmqttgateway|opensprinkler|openthread|openwakeword|openwb|philips|piper|rachio|ratgdo|ravensystem|reolink)",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(irobot|jetlinks|kiosk-satellite|konnected|kwikset|level|leviton|libretiny|lifx|lovelace-mushroom|lutron|matter|meross|mini-graph-card|moen|motioneye|music-assistant|nanoleaf|nanomq|netatmo|node-red|nodemcu|openbeken|openccu|opendtu|openenergymonitor|openevse|openhab|openhasp|openmqttgateway|opensprinkler|openthread|openwakeword|openwb|philips|piper|rachio|ratgdo|ravensystem|reolink)/",
+      "source": "/brands/:b(irobot|jetlinks|kiosk-satellite|konnected|kwikset|level|leviton|libretiny|lifx|lutron|matter|meross|mini-graph-card|moen|motioneye|mushroom|music-assistant|nanoleaf|nanomq|netatmo|node-red|nodemcu|openbeken|openccu|opendtu|openenergymonitor|openevse|openhab|openhasp|openmqttgateway|opensprinkler|openthread|openwakeword|openwb|philips|piper|rachio|ratgdo|ravensystem|reolink)/",
       "destination": "/category/smart-home/",
       "permanent": false
     },

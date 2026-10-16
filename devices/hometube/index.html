@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hometube Friendly video downloader managing single video URL 2.13.0</title>
-<meta name="description" content="Hometube Friendly video downloader managing single video URL version 2.13.0 (Sep 22, 2026): release notes, history and alerts.">
+<title>HomeTube Video downloader — latest version 2.13.0 | Firmwarely</title>
+<meta name="description" content="Latest HomeTube Video downloader version is 2.13.0, released Sep 22, 2026. Release notes, version history and update alerts.">
 <link rel="canonical" href="https://www.firmwarely.com/devices/hometube/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
 <meta property="og:site_name" content="Firmwarely">
-<meta property="og:title" content="Hometube Friendly video downloader managing single video URL 2.13.0">
-<meta property="og:description" content="Hometube Friendly video downloader managing single video URL version 2.13.0 (Sep 22, 2026): release notes, history and alerts.">
+<meta property="og:title" content="HomeTube Video downloader — latest version 2.13.0 | Firmwarely">
+<meta property="og:description" content="Latest HomeTube Video downloader version is 2.13.0, released Sep 22, 2026. Release notes, version history and update alerts.">
 <meta property="og:url" content="https://www.firmwarely.com/devices/hometube/">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://www.firmwarely.com/og.png">
@@ -56,6 +56,7 @@ header{position:sticky;top:0;z-index:5;background:rgba(12,17,23,.92);backdrop-fi
 .brand i{width:10px;height:10px;background:var(--amber);border-radius:2px;display:inline-block;box-shadow:0 0 12px rgba(245,179,66,.6)}
 .nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.5rem;align-items:center}
 .nav ul a{text-decoration:none;color:var(--muted);font-size:.95rem}
+.nav ul a.btn,.nav ul a.btn:hover{color:#1A1204}  /* the button keeps dark text: .nav ul a would make it grey on amber */
 .nav ul a:hover{color:var(--text)}
 [hidden]{display:none!important}
 .btn{font-family:var(--sans);font-weight:600;font-size:.95rem;border:1px solid var(--amber);background:var(--amber);color:#1A1204;padding:.6rem 1rem;border-radius:6px;cursor:pointer;text-decoration:none;display:inline-block}
@@ -258,7 +259,7 @@ footer a:hover{color:var(--text)}
 <script defer src="/_vercel/insights/script.js"></script>
 <script defer src="/formguard.js"></script>
 <script defer src="/captcha.js"></script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Self-hosted apps & servers", "item": "https://www.firmwarely.com/category/self-hosted/"}, {"@type": "ListItem", "position": 3, "name": "Hometube Friendly video downloader managing single video URL", "item": "https://www.firmwarely.com/devices/hometube/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/hometube/", "url": "https://www.firmwarely.com/devices/hometube/", "name": "Hometube Friendly video downloader managing single video URL 2.13.0", "description": "Hometube Friendly video downloader managing single video URL version 2.13.0 (Sep 22, 2026): release notes, history and alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-10-16"}, {"@type": "SoftwareApplication", "name": "Hometube Friendly video downloader managing single video URL", "applicationCategory": "UtilitiesApplication", "softwareVersion": "2.13.0", "author": {"@type": "Organization", "name": "Hometube"}, "datePublished": "2026-09-22", "releaseNotes": "Fixed: A crash on videos whose format metadata is incomplete. yt-dlp can return format entries where vcodec, format_note, language or container are explicitly null rather than absent. HomeTube treated them as strings and raised AttributeError, taking the page down on certain videos and sources (#​1…", "url": "https://github.com/EgalitarianMonkey/hometube/releases/tag/v2.13.0"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Self-hosted apps & servers", "item": "https://www.firmwarely.com/category/self-hosted/"}, {"@type": "ListItem", "position": 3, "name": "HomeTube Video downloader", "item": "https://www.firmwarely.com/devices/hometube/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/hometube/", "url": "https://www.firmwarely.com/devices/hometube/", "name": "HomeTube Video downloader — latest version 2.13.0 | Firmwarely", "description": "Latest HomeTube Video downloader version is 2.13.0, released Sep 22, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-10-16"}, {"@type": "SoftwareApplication", "name": "HomeTube Video downloader", "applicationCategory": "UtilitiesApplication", "softwareVersion": "2.13.0", "author": {"@type": "Organization", "name": "HomeTube"}, "datePublished": "2026-09-22", "releaseNotes": "Fixed: A crash on videos whose format metadata is incomplete. yt-dlp can return format entries where vcodec, format_note, language or container are explicitly null rather than absent. HomeTube treated them as strings and raised AttributeError, taking the page down on certain videos and sources (#​1…", "url": "https://github.com/EgalitarianMonkey/hometube/releases/tag/v2.13.0"}]}</script>
 </head>
 <body>
 <header>
@@ -275,16 +276,16 @@ footer a:hover{color:var(--text)}
     </ul>
   </div>
 </header>
-<script>(function(){var n=document.querySelector(".nav"),b=n&&n.querySelector(".menu");if(!b)return;b.addEventListener("click",function(){var o=n.classList.toggle("open");b.setAttribute("aria-expanded",String(o));b.textContent=o?"✕":"☰";});})();</script>
+<script>(function(){var n=document.querySelector(".nav"),b=n&&n.querySelector(".menu");if(!b)return;b.addEventListener("click",function(){var o=n.classList.toggle("open");b.setAttribute("aria-expanded",String(o));b.textContent=o?"✕":"☰";});n.querySelectorAll("ul a").forEach(function(a){a.addEventListener("click",function(){n.classList.remove("open");b.setAttribute("aria-expanded","false");b.textContent="☰";});});})();</script>
 <main>
 
 <div class="wrap">
-  <div class="crumbs"><a href="/devices/">Devices</a> / <a href="/category/self-hosted/">Self-hosted apps &amp; servers</a> / Hometube Friendly video downloader managing single video URL</div>
+  <div class="crumbs"><a href="/devices/">Devices</a> / <a href="/category/self-hosted/">Self-hosted apps &amp; servers</a> / HomeTube Video downloader</div>
   <div class="dev">
     <div>
-      <h1 class="dev-h">Hometube Friendly video downloader managing single video URL releases</h1>
+      <h1 class="dev-h">HomeTube Video downloader releases</h1>
       <span class="status update">new version</span>
-      <p style="color:var(--muted);margin:1rem 0 0">Hometube Friendly video downloader managing single video URL is tracked under self-hosted apps &amp; servers. Its latest version, 2.13.0, shipped on Sep 22, 2026.</p>
+      <p style="color:var(--muted);margin:1rem 0 0">HomeTube Video downloader is tracked under self-hosted apps &amp; servers. Its latest version, 2.13.0, shipped on Sep 22, 2026.</p>
       <div class="card" style="margin-top:1.25rem">
         <dl class="kv">
           <dt>Latest version</dt><dd>2.13.0</dd>
@@ -296,7 +297,7 @@ footer a:hover{color:var(--text)}
       </div>
       
       
-      <h2 id="update" style="margin-top:2rem">How to update Hometube Friendly video downloader managing single video URL</h2>
+      <h2 id="update" style="margin-top:2rem">How to update HomeTube Video downloader</h2>
       <div class="card">
         <a class="btn" href="https://github.com/EgalitarianMonkey/hometube/releases" target="_blank" rel="noopener">Open update page ↗</a>
         <ol class="upd-steps"><li>Read the release notes first — self-hosted projects break config and schemas between versions more often than appliances do.</li><li>Docker: pull the new image tag and recreate the container (`docker compose pull &amp;&amp; docker compose up -d`).</li><li>Package or bare metal: update through your distribution&#x27;s package manager, or replace the binary from the releases page.</li><li>Back up the config and database directory first. For most projects a downgrade is not supported once the schema has migrated.</li></ol>
@@ -305,17 +306,17 @@ footer a:hover{color:var(--text)}
       </div>
       <h2 style="margin-top:2rem">What changed</h2>
       <p style="color:var(--muted)">Fixed: A crash on videos whose format metadata is incomplete. yt-dlp can return format entries where vcodec, format_note, language or container are explicitly null rather than absent. HomeTube treated them as strings and raised AttributeError, taking the page down on certain videos and sources (#​1…</p>
-      <p><a href="https://github.com/EgalitarianMonkey/hometube/releases/tag/v2.13.0" target="_blank" rel="noopener">Manufacturer release notes ↗</a></p>
+      <p><a href="https://github.com/EgalitarianMonkey/hometube/releases/tag/v2.13.0" target="_blank" rel="noopener">Release notes ↗</a></p>
       <h2 style="margin-top:2rem">Version history</h2><table class="hist"><tr><td>2.13.0</td><td><time datetime="2026-09-22">Sep 22, 2026</time></td></tr></table>
       <div class="faq">
         <h2 style="margin-top:2rem">FAQ</h2>
-        <h3>What is the latest version of Hometube Friendly video downloader managing single video URL?</h3>
+        <h3>What is the latest version of HomeTube Video downloader?</h3>
         <p>Version 2.13.0, released Sep 22, 2026. This page is refreshed every hour from the project's release page.</p>
-        <h3>How do I update Hometube Friendly video downloader managing single video URL?</h3>
+        <h3>How do I update HomeTube Video downloader?</h3>
         <p><a href="#update">See the step-by-step above.</a> Pull the new image or package and restart the service. Read the release notes and back up the data directory first; most projects can&#x27;t downgrade once the database has migrated.</p>
         <h3>How does Firmwarely know when there's a new version?</h3>
-        <p>Every hour we read the project's official release page for Hometube Friendly video downloader managing single video URL and record the version, date and changelog. Subscribers watching it get an email when it changes: the next morning on Pro, in the Monday roundup on the free plan.</p>
-        <h3>Is this an official Hometube page?</h3>
+        <p>Every hour we read the project's official release page for HomeTube Video downloader and record the version, date and changelog. Subscribers watching it get an email when it changes: the next morning on Pro, in the Monday roundup on the free plan.</p>
+        <h3>Is this an official HomeTube page?</h3>
         <p>No. Firmwarely is independent. Project and product names belong to their owners; always install releases from the project's own source.</p>
       </div>
       <div class="related brandlist"><h2>Recently updated in Self-hosted apps &amp; servers</h2><ul><li><a href="/devices/paperless-ngx/"><svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="12" width="48" height="40" rx="4"/><path d="M8 22h48"/><circle class="f" cx="14" cy="17" r="1.6"/><circle cx="20" cy="17" r="1.6"/><path d="M16 32h14M16 40h22M36 32h12"/></svg>Paperless-ngx Document scanner and archive</a><span>3.3.2 · Oct 16, 2026</span></li><li><a href="/devices/snapraid/"><svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="12" width="48" height="40" rx="4"/><path d="M8 22h48"/><circle class="f" cx="14" cy="17" r="1.6"/><circle cx="20" cy="17" r="1.6"/><path d="M16 32h14M16 40h22M36 32h12"/></svg>SnapRAID Disk array parity</a><span>15.0 · Oct 16, 2026</span></li><li><a href="/devices/cronicle/"><svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="12" width="48" height="40" rx="4"/><path d="M8 22h48"/><circle class="f" cx="14" cy="17" r="1.6"/><circle cx="20" cy="17" r="1.6"/><path d="M16 32h14M16 40h22M36 32h12"/></svg>Cronicle Task scheduler</a><span>0.9.137 · Oct 16, 2026</span></li><li><a href="/devices/fluent-bit/"><svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="12" width="48" height="40" rx="4"/><path d="M8 22h48"/><circle class="f" cx="14" cy="17" r="1.6"/><circle cx="20" cy="17" r="1.6"/><path d="M16 32h14M16 40h22M36 32h12"/></svg>Fluent Bit Log processor</a><span>5.1.4 · Oct 16, 2026</span></li><li><a href="/devices/sentry-self-hosted/"><svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="12" width="48" height="40" rx="4"/><path d="M8 22h48"/><circle class="f" cx="14" cy="17" r="1.6"/><circle cx="20" cy="17" r="1.6"/><path d="M16 32h14M16 40h22M36 32h12"/></svg>Sentry Self-hosted error tracking</a><span>26.10.0 · Oct 16, 2026</span></li><li><a href="/devices/incus/"><svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="12" width="48" height="40" rx="4"/><path d="M8 22h48"/><circle class="f" cx="14" cy="17" r="1.6"/><circle cx="20" cy="17" r="1.6"/><path d="M16 32h14M16 40h22M36 32h12"/></svg>Incus System container manager</a><span>7.0.2 · Oct 16, 2026</span></li></ul><p class="fine"><a href="/category/self-hosted/">All self-hosted apps &amp; servers →</a></p></div>
@@ -323,7 +324,7 @@ footer a:hover{color:var(--text)}
     <aside>
       <div class="card">
         <h2 style="margin:0 0 .5rem;font-size:1.05rem">Watch this project</h2>
-        <p style="color:var(--muted);font-size:.95rem;margin:0 0 .75rem">Get one email when Hometube Friendly video downloader managing single video URL ships a new release or a security fix.</p>
+        <p style="color:var(--muted);font-size:.95rem;margin:0 0 .75rem">Get one email when HomeTube Video downloader ships a new release or a security fix.</p>
         <a class="btn" href="#signup">Get alerts</a>
         <p style="margin:.75rem 0 0"><a href="/my-devices.html#d=hometube">Track this in My devices →</a></p>
         <p style="margin:.5rem 0 0"><a href="#update">How to update it</a></p>
@@ -335,13 +336,13 @@ footer a:hover{color:var(--text)}
 
 <section id="signup" class="signup">
   <div class="wrap">
-    <h2>Get alerts for Hometube Friendly video downloader managing single video URL</h2>
+    <h2>Get alerts for HomeTube Video downloader</h2>
     <p style="color:var(--muted)">One email when a new release or a security fix ships: weekly and free for up to 3 devices, daily on Pro.</p>
     <form id="signup-form" novalidate>
       <label class="sr" for="s-email">Email address</label>
       <div class="row"><input id="s-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required></div>
       <label class="sr" for="s-devices">Devices to watch</label>
-      <input id="s-devices" name="devices" type="text" value="Hometube Friendly video downloader managing single video URL" placeholder="Devices to watch (optional)">
+      <input id="s-devices" name="devices" type="text" value="HomeTube Video downloader" placeholder="Devices to watch (optional)">
       <input type="hidden" name="plan" value="free">
       <div class="fw-captcha"></div>
       <div><button class="btn" type="submit">Start watching</button></div>

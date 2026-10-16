@@ -30,6 +30,7 @@ header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba
 .brand i{width:10px;height:10px;background:var(--amber);border-radius:2px;display:inline-block}
 .nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.5rem;align-items:center}
 .nav ul a{color:var(--muted);font-size:.95rem}.nav ul a:hover,.nav ul a[aria-current]{color:var(--text);text-decoration:none}
+.nav ul a.btn,.nav ul a.btn:hover{color:#1A1204}  /* the button keeps dark text: .nav ul a would make it grey on amber */
 .btn{font-family:var(--sans);font-weight:600;font-size:.95rem;border:1px solid var(--amber);background:var(--amber);color:#1A1204;padding:.6rem 1rem;border-radius:6px;cursor:pointer;text-decoration:none;display:inline-block}
 .btn:hover{background:#FFC55A;text-decoration:none}.btn:disabled{opacity:.6;cursor:default}
 .btn.ghost{background:transparent;color:var(--text);border-color:var(--line)}.btn.ghost:hover{border-color:var(--muted)}
@@ -408,6 +409,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:space-betwee
       var open = nav.classList.toggle("open");
       btn.setAttribute("aria-expanded", String(open)); btn.textContent = open ? "✕" : "☰";
     });
+    // a tapped link ("#pricing" on this page) closes the menu instead of leaving it over the page
+    nav.querySelectorAll("ul a").forEach(function(a){a.addEventListener("click",function(){nav.classList.remove("open");btn.setAttribute("aria-expanded","false");btn.textContent="☰";});});
   })();
 
 

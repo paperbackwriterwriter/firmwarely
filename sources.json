@@ -10688,8 +10688,8 @@
   },
   {
    "id": "panel",
-   "brand": "Panel",
-   "model": "Free, open source game server management panel",
+   "brand": "Pelican Panel",
+   "model": "Game server management panel",
    "category": "A",
    "type": "github",
    "repo": "pelican/panel",
@@ -10716,7 +10716,7 @@
   {
    "id": "octelium",
    "brand": "Octelium",
-   "model": "Next-gen FOSS self-hosted unified zero trust secure access",
+   "model": "Zero trust access platform",
    "category": "R",
    "type": "github",
    "repo": "octelium/octelium",
@@ -10734,7 +10734,7 @@
   {
    "id": "fugleramme",
    "brand": "Fugleramme",
-   "model": "Bird frame for Raspberry Pi or your homelab",
+   "model": "Raspberry Pi bird camera",
    "category": "M",
    "type": "github",
    "repo": "arnegiacomo/fugleramme",
@@ -10743,7 +10743,7 @@
   {
    "id": "snapotter",
    "brand": "SnapOtter",
-   "model": "Open-source, self-hosted file-processing tool",
+   "model": "File processing tool",
    "category": "A",
    "type": "github",
    "repo": "snapotter-hq/SnapOtter",
@@ -10752,7 +10752,7 @@
   {
    "id": "profilarr",
    "brand": "Profilarr",
-   "model": "Configuration Management Platform for Radarr/Sonarr",
+   "model": "Radarr and Sonarr profile manager",
    "category": "A",
    "type": "github",
    "repo": "Dictionarry-Hub/profilarr",
@@ -10760,8 +10760,8 @@
   },
   {
    "id": "dockcheck",
-   "brand": "Dockcheck",
-   "model": "CLI tool to automate docker image updates",
+   "brand": "dockcheck",
+   "model": "Docker image update checker",
    "category": "A",
    "type": "github",
    "repo": "mag37/dockcheck",
@@ -10806,7 +10806,7 @@
   {
    "id": "huginn",
    "brand": "Huginn",
-   "model": "Create agents that monitor and act on your behalf",
+   "model": "Automation agents",
    "category": "A",
    "type": "github",
    "repo": "huginn/huginn",
@@ -10815,7 +10815,7 @@
   {
    "id": "sentry",
    "brand": "Sentry",
-   "model": "Developer-first error tracking and performance monitoring",
+   "model": "Error tracking and performance monitoring",
    "category": "A",
    "type": "github",
    "repo": "getsentry/sentry",
@@ -10823,8 +10823,8 @@
   },
   {
    "id": "pm2",
-   "brand": "Pm2",
-   "model": "Node.js/Typescript/Bun Production Process Manager",
+   "brand": "PM2",
+   "model": "Node.js process manager",
    "category": "A",
    "type": "github",
    "repo": "Unitech/pm2",
@@ -10832,8 +10832,8 @@
   },
   {
    "id": "osquery",
-   "brand": "Osquery",
-   "model": "SQL powered operating system instrumentation, monitoring",
+   "brand": "osquery",
+   "model": "SQL-based system monitoring",
    "category": "A",
    "type": "github",
    "repo": "osquery/osquery",
@@ -10868,8 +10868,8 @@
   },
   {
    "id": "bottom",
-   "brand": "Bottom",
-   "model": "Yet another cross-platform graphical process/system monitor",
+   "brand": "bottom",
+   "model": "Terminal system monitor",
    "category": "A",
    "type": "github",
    "repo": "ClementTsang/bottom",
@@ -10913,8 +10913,8 @@
   },
   {
    "id": "openwrt-tailscale-enabler",
-   "brand": "Openwrt Tailscale Enabler",
-   "model": "Brings Tailscale to low powered OpenWRT devices",
+   "brand": "OpenWrt Tailscale Enabler",
+   "model": "Tailscale for small OpenWrt routers",
    "category": "R",
    "type": "github",
    "repo": "adyanth/openwrt-tailscale-enabler",
@@ -10931,8 +10931,8 @@
   },
   {
    "id": "lovelace-mushroom",
-   "brand": "Lovelace Mushroom",
-   "model": "Beautiful Home Assistant dashboard easily",
+   "brand": "Mushroom",
+   "model": "Home Assistant dashboard cards",
    "category": "S",
    "type": "github",
    "repo": "piitaya/lovelace-mushroom",
@@ -10940,8 +10940,8 @@
   },
   {
    "id": "mini-graph-card",
-   "brand": "Mini Graph Card",
-   "model": "Minimalistic graph card for Home Assistant Lovelace UI",
+   "brand": "mini-graph-card",
+   "model": "Home Assistant graph card",
    "category": "S",
    "type": "github",
    "repo": "kalkih/mini-graph-card",
@@ -10950,7 +10950,7 @@
   {
    "id": "tuya-local",
    "brand": "Tuya Local",
-   "model": "Local support for Tuya devices in Home Assistant",
+   "model": "Home Assistant integration for Tuya devices",
    "category": "S",
    "type": "github",
    "repo": "make-all/tuya-local",
@@ -10968,7 +10968,7 @@
   {
    "id": "titanium-web-proxy",
    "brand": "Titanium Web Proxy",
-   "model": "Cross-platform high performing HTTP(S) proxy server in C#",
+   "model": "HTTP(S) proxy server",
    "category": "R",
    "type": "github",
    "repo": "justcoding121/titanium-web-proxy",
@@ -10985,8 +10985,8 @@
   },
   {
    "id": "nanomq",
-   "brand": "Nanomq",
-   "model": "Ultra-lightweight and blazing-fast Messaging Bus/MQTT",
+   "brand": "NanoMQ",
+   "model": "MQTT broker",
    "category": "S",
    "type": "github",
    "repo": "nanomq/nanomq",
@@ -10995,7 +10995,7 @@
   {
    "id": "spook",
    "brand": "Spook",
-   "model": "Scary powerful toolbox for Home Assistant",
+   "model": "Home Assistant toolbox",
    "category": "S",
    "type": "github",
    "repo": "frenck/spook",
@@ -11003,8 +11003,8 @@
   },
   {
    "id": "openclaw-android",
-   "brand": "Openclaw Android",
-   "model": "Run OpenClaw on Android with a single command",
+   "brand": "OpenClaw Android",
+   "model": "OpenClaw installer for Android",
    "category": "A",
    "type": "github",
    "repo": "aidanpark/openclaw-android",
@@ -11012,8 +11012,8 @@
   },
   {
    "id": "httm",
-   "brand": "Httm",
-   "model": "Interactive, file-level Time Machine-like tool",
+   "brand": "httm",
+   "model": "ZFS snapshot file browser",
    "category": "N",
    "type": "github",
    "repo": "kimono-koans/httm",
@@ -11031,7 +11031,7 @@
   {
    "id": "tugtainer",
    "brand": "Tugtainer",
-   "model": "Application for automated Docker container updates",
+   "model": "Docker container updater",
    "category": "A",
    "type": "github",
    "repo": "Quenary/tugtainer",
@@ -11040,7 +11040,7 @@
   {
    "id": "expenseowl",
    "brand": "ExpenseOwl",
-   "model": "Extremely simple, self-hosted expense tracker",
+   "model": "Expense tracker",
    "category": "A",
    "type": "github",
    "repo": "Tanq16/ExpenseOwl",
@@ -11048,8 +11048,8 @@
   },
   {
    "id": "hometube",
-   "brand": "Hometube",
-   "model": "Friendly video downloader managing single video URL",
+   "brand": "HomeTube",
+   "model": "Video downloader",
    "category": "A",
    "type": "github",
    "repo": "EgalitarianMonkey/hometube",
@@ -11084,8 +11084,8 @@
   },
   {
    "id": "esp32-iphone-agent",
-   "brand": "Esp32 Iphone Agent",
-   "model": "Let an AI model use a real iPhone with a $7 ESP32",
+   "brand": "ESP32 iPhone Agent",
+   "model": "AI iPhone control over ESP32",
    "category": "M",
    "type": "github",
    "repo": "onehumanbeing/esp32-iphone-agent",

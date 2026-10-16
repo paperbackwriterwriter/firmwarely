@@ -56,6 +56,7 @@ header{position:sticky;top:0;z-index:5;background:rgba(12,17,23,.92);backdrop-fi
 .brand i{width:10px;height:10px;background:var(--amber);border-radius:2px;display:inline-block;box-shadow:0 0 12px rgba(245,179,66,.6)}
 .nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.5rem;align-items:center}
 .nav ul a{text-decoration:none;color:var(--muted);font-size:.95rem}
+.nav ul a.btn,.nav ul a.btn:hover{color:#1A1204}  /* the button keeps dark text: .nav ul a would make it grey on amber */
 .nav ul a:hover{color:var(--text)}
 [hidden]{display:none!important}
 .btn{font-family:var(--sans);font-weight:600;font-size:.95rem;border:1px solid var(--amber);background:var(--amber);color:#1A1204;padding:.6rem 1rem;border-radius:6px;cursor:pointer;text-decoration:none;display:inline-block}
@@ -275,7 +276,7 @@ footer a:hover{color:var(--text)}
     </ul>
   </div>
 </header>
-<script>(function(){var n=document.querySelector(".nav"),b=n&&n.querySelector(".menu");if(!b)return;b.addEventListener("click",function(){var o=n.classList.toggle("open");b.setAttribute("aria-expanded",String(o));b.textContent=o?"✕":"☰";});})();</script>
+<script>(function(){var n=document.querySelector(".nav"),b=n&&n.querySelector(".menu");if(!b)return;b.addEventListener("click",function(){var o=n.classList.toggle("open");b.setAttribute("aria-expanded",String(o));b.textContent=o?"✕":"☰";});n.querySelectorAll("ul a").forEach(function(a){a.addEventListener("click",function(){n.classList.remove("open");b.setAttribute("aria-expanded","false");b.textContent="☰";});});})();</script>
 <main>
 
 <div class="wrap">
@@ -299,13 +300,13 @@ footer a:hover{color:var(--text)}
       <h2 id="update" style="margin-top:2rem">How to update TieZ Clipboard manager</h2>
       <div class="card">
         <a class="btn" href="https://github.com/jimuzhe/tiez-clipboard/releases" target="_blank" rel="noopener">Open update page ↗</a>
-        <ol class="upd-steps"><li>Read the release notes first — self-hosted projects break config and schemas between versions more often than appliances do.</li><li>Docker: pull the new image tag and recreate the container (`docker compose pull &amp;&amp; docker compose up -d`).</li><li>Package or bare metal: update through your distribution&#x27;s package manager, or replace the binary from the releases page.</li><li>Back up the config and database directory first. For most projects a downgrade is not supported once the schema has migrated.</li></ol>
+        <ol class="upd-steps"><li>Read the release notes first for anything that changes your settings or saved data.</li><li>Phone apps: update from the app store, or from the project&#x27;s releases page if you installed it from there.</li><li>Desktop apps: download the build for your system from the releases page and install it over the old one, or update through your package manager if you installed it that way.</li><li>Back up settings and saved data (save files, profiles, configs) before a major version.</li></ol>
         <p class="fine" style="margin:.75rem 0 0">Always install releases from the project itself.
         Firmwarely links out; it never hosts downloads.</p>
       </div>
       <h2 style="margin-top:2rem">What changed</h2>
       <p style="color:var(--muted)">新增： 敏感内容自定义预览 - 支持自定义敏感标签下内容的预览显示方式，隐私保护更灵活。 新增： 标签批量管理 - 支持在标签管理页面对条目进行批量删除、移动等管理操作。 新增： 自定义清洗规则 - 加入高级设置，支持自定义规则清洗剪贴板内容，数据管理更随心。 新增： 富文本 AI - AI 助手现已支持富文本处理，保留原始样式。 新增： 视图记忆 - 加入视图记忆功能，自动保存并还原您的显示偏好。 新增： 数字快速粘贴 - 支持通过快捷键 + 数字进行快速选择与粘贴，效率翻倍。 新增： 颜色值识别 - 自动识别并显示复制内容中的色号（Hex/RGB），无需额外转换。 优化： 响应时延优化 …</p>
-      <p><a href="https://github.com/jimuzhe/tiez-clipboard/releases/tag/mac-v0.1.3" target="_blank" rel="noopener">Manufacturer release notes ↗</a></p>
+      <p><a href="https://github.com/jimuzhe/tiez-clipboard/releases/tag/mac-v0.1.3" target="_blank" rel="noopener">Release notes ↗</a></p>
       <h2 style="margin-top:2rem">Version history</h2><table class="hist"><tr><td>0.1.3</td><td><time datetime="2026-04-11">Apr 11, 2026</time></td></tr></table>
       <div class="faq">
         <h2 style="margin-top:2rem">FAQ</h2>
