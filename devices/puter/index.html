@@ -56,6 +56,7 @@ header{position:sticky;top:0;z-index:5;background:rgba(12,17,23,.92);backdrop-fi
 .brand i{width:10px;height:10px;background:var(--amber);border-radius:2px;display:inline-block;box-shadow:0 0 12px rgba(245,179,66,.6)}
 .nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.5rem;align-items:center}
 .nav ul a{text-decoration:none;color:var(--muted);font-size:.95rem}
+.nav ul a.btn,.nav ul a.btn:hover{color:#1A1204}  /* the button keeps dark text: .nav ul a would make it grey on amber */
 .nav ul a:hover{color:var(--text)}
 [hidden]{display:none!important}
 .btn{font-family:var(--sans);font-weight:600;font-size:.95rem;border:1px solid var(--amber);background:var(--amber);color:#1A1204;padding:.6rem 1rem;border-radius:6px;cursor:pointer;text-decoration:none;display:inline-block}
@@ -275,7 +276,7 @@ footer a:hover{color:var(--text)}
     </ul>
   </div>
 </header>
-<script>(function(){var n=document.querySelector(".nav"),b=n&&n.querySelector(".menu");if(!b)return;b.addEventListener("click",function(){var o=n.classList.toggle("open");b.setAttribute("aria-expanded",String(o));b.textContent=o?"✕":"☰";});})();</script>
+<script>(function(){var n=document.querySelector(".nav"),b=n&&n.querySelector(".menu");if(!b)return;b.addEventListener("click",function(){var o=n.classList.toggle("open");b.setAttribute("aria-expanded",String(o));b.textContent=o?"✕":"☰";});n.querySelectorAll("ul a").forEach(function(a){a.addEventListener("click",function(){n.classList.remove("open");b.setAttribute("aria-expanded","false");b.textContent="☰";});});})();</script>
 <main>
 
 <div class="wrap">
@@ -299,13 +300,13 @@ footer a:hover{color:var(--text)}
       <h2 id="update" style="margin-top:2rem">How to update Puter Web desktop OS</h2>
       <div class="card">
         <a class="btn" href="https://github.com/HeyPuter/puter/releases" target="_blank" rel="noopener">Open update page ↗</a>
-        <ol class="upd-steps"><li>Read the release notes first — self-hosted projects break config and schemas between versions more often than appliances do.</li><li>Docker: pull the new image tag and recreate the container (`docker compose pull &amp;&amp; docker compose up -d`).</li><li>Package or bare metal: update through your distribution&#x27;s package manager, or replace the binary from the releases page.</li><li>Back up the config and database directory first. For most projects a downgrade is not supported once the schema has migrated.</li></ol>
+        <ol class="upd-steps"><li>Read the release notes first for anything that changes your settings or saved data.</li><li>Phone apps: update from the app store, or from the project&#x27;s releases page if you installed it from there.</li><li>Desktop apps: download the build for your system from the releases page and install it over the old one, or update through your package manager if you installed it that way.</li><li>Back up settings and saved data (save files, profiles, configs) before a major version.</li></ol>
         <p class="fine" style="margin:.75rem 0 0">Always install releases from the project itself.
         Firmwarely links out; it never hosts downloads.</p>
       </div>
       <h2 style="margin-top:2rem">What changed</h2>
       <p style="color:var(--muted)">What&#x27;s Changed: feat: name the issuing app in share emails, and cut the digest window to 5s fix: a team seat&#x27;s plan card names its team, and an unreadable plan is not Free (PUT-1843) fix: make the block list bite on team shares, and unshare every re-share (PUT-1813) show app icon when login from ex…</p>
-      <p><a href="https://github.com/HeyPuter/puter/releases/tag/26.10" target="_blank" rel="noopener">Manufacturer release notes ↗</a></p>
+      <p><a href="https://github.com/HeyPuter/puter/releases/tag/26.10" target="_blank" rel="noopener">Release notes ↗</a></p>
       <h2 style="margin-top:2rem">Version history</h2><table class="hist"><tr><td>26.10</td><td><time datetime="2026-10-05">Oct 5, 2026</time></td></tr><tr><td>26.09.1</td><td><time datetime="2026-09-20">Sep 20, 2026</time></td></tr><tr><td>26.09</td><td><time datetime="2026-09-10">Sep 10, 2026</time></td></tr></table>
       <div class="faq">
         <h2 style="margin-top:2rem">FAQ</h2>

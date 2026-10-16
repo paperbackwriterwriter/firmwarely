@@ -56,6 +56,7 @@ header{position:sticky;top:0;z-index:5;background:rgba(12,17,23,.92);backdrop-fi
 .brand i{width:10px;height:10px;background:var(--amber);border-radius:2px;display:inline-block;box-shadow:0 0 12px rgba(245,179,66,.6)}
 .nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.5rem;align-items:center}
 .nav ul a{text-decoration:none;color:var(--muted);font-size:.95rem}
+.nav ul a.btn,.nav ul a.btn:hover{color:#1A1204}  /* the button keeps dark text: .nav ul a would make it grey on amber */
 .nav ul a:hover{color:var(--text)}
 [hidden]{display:none!important}
 .btn{font-family:var(--sans);font-weight:600;font-size:.95rem;border:1px solid var(--amber);background:var(--amber);color:#1A1204;padding:.6rem 1rem;border-radius:6px;cursor:pointer;text-decoration:none;display:inline-block}
@@ -275,7 +276,7 @@ footer a:hover{color:var(--text)}
     </ul>
   </div>
 </header>
-<script>(function(){var n=document.querySelector(".nav"),b=n&&n.querySelector(".menu");if(!b)return;b.addEventListener("click",function(){var o=n.classList.toggle("open");b.setAttribute("aria-expanded",String(o));b.textContent=o?"✕":"☰";});})();</script>
+<script>(function(){var n=document.querySelector(".nav"),b=n&&n.querySelector(".menu");if(!b)return;b.addEventListener("click",function(){var o=n.classList.toggle("open");b.setAttribute("aria-expanded",String(o));b.textContent=o?"✕":"☰";});n.querySelectorAll("ul a").forEach(function(a){a.addEventListener("click",function(){n.classList.remove("open");b.setAttribute("aria-expanded","false");b.textContent="☰";});});})();</script>
 <main>
 
 <div class="wrap">
@@ -310,11 +311,11 @@ footer a:hover{color:var(--text)}
       <div class="faq">
         <h2 style="margin-top:2rem">FAQ</h2>
         <h3>What is the latest firmware for the Netgear Orbi RBK763?</h3>
-        <p>Version 6.3.8.13, which we first saw on Sep 16, 2026; Netgear doesn't publish a release date for it. This page is refreshed every hour from the manufacturer's release page.</p>
+        <p>Version 6.3.8.13, which we first saw on Sep 16, 2026; Netgear doesn't publish a release date for it. This page is refreshed once a day from the manufacturer's release page.</p>
         <h3>How do I update the Netgear Orbi RBK763?</h3>
         <p><a href="#update">See the step-by-step above.</a> Log in to the router&#x27;s admin page (usually at 192.168.1.1 or via the manufacturer&#x27;s app), open the firmware or system update section, and apply the update. Most routers reboot for a minute or two.</p>
         <h3>How does Firmwarely know when there's a new version?</h3>
-        <p>Every hour we read the manufacturer's official release page for the Netgear Orbi RBK763 and record the version, date and changelog. Subscribers watching this device get an email when it changes: the next morning on Pro, in the Monday roundup on the free plan.</p>
+        <p>Once a day we read the manufacturer's official release page for the Netgear Orbi RBK763 and record the version, date and changelog. Subscribers watching this device get an email when it changes: the next morning on Pro, in the Monday roundup on the free plan.</p>
         <h3>Is this an official Netgear page?</h3>
         <p>No. Firmwarely is independent. Device and brand names belong to their manufacturers; always download firmware from the official source.</p>
       </div>

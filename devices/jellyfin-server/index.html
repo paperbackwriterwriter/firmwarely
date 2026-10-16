@@ -56,6 +56,7 @@ header{position:sticky;top:0;z-index:5;background:rgba(12,17,23,.92);backdrop-fi
 .brand i{width:10px;height:10px;background:var(--amber);border-radius:2px;display:inline-block;box-shadow:0 0 12px rgba(245,179,66,.6)}
 .nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.5rem;align-items:center}
 .nav ul a{text-decoration:none;color:var(--muted);font-size:.95rem}
+.nav ul a.btn,.nav ul a.btn:hover{color:#1A1204}  /* the button keeps dark text: .nav ul a would make it grey on amber */
 .nav ul a:hover{color:var(--text)}
 [hidden]{display:none!important}
 .btn{font-family:var(--sans);font-weight:600;font-size:.95rem;border:1px solid var(--amber);background:var(--amber);color:#1A1204;padding:.6rem 1rem;border-radius:6px;cursor:pointer;text-decoration:none;display:inline-block}
@@ -275,7 +276,7 @@ footer a:hover{color:var(--text)}
     </ul>
   </div>
 </header>
-<script>(function(){var n=document.querySelector(".nav"),b=n&&n.querySelector(".menu");if(!b)return;b.addEventListener("click",function(){var o=n.classList.toggle("open");b.setAttribute("aria-expanded",String(o));b.textContent=o?"✕":"☰";});})();</script>
+<script>(function(){var n=document.querySelector(".nav"),b=n&&n.querySelector(".menu");if(!b)return;b.addEventListener("click",function(){var o=n.classList.toggle("open");b.setAttribute("aria-expanded",String(o));b.textContent=o?"✕":"☰";});n.querySelectorAll("ul a").forEach(function(a){a.addEventListener("click",function(){n.classList.remove("open");b.setAttribute("aria-expanded","false");b.textContent="☰";});});})();</script>
 <main>
 
 <div class="wrap">
@@ -305,7 +306,7 @@ footer a:hover{color:var(--text)}
       </div>
       <h2 style="margin-top:2rem">What changed</h2>
       <p style="color:var(--muted)">:rocket: Jellyfin Server 12.2: We are pleased to announce the latest stable release of Jellyfin, version 12.2! This minor release brings several bugfixes to improve your Jellyfin experience. As always, please ensure you take a full backup before upgrading! Discuss this release further on our forums…</p>
-      <p><a href="https://github.com/jellyfin/jellyfin/releases/tag/v12.2" target="_blank" rel="noopener">Manufacturer release notes ↗</a></p>
+      <p><a href="https://github.com/jellyfin/jellyfin/releases/tag/v12.2" target="_blank" rel="noopener">Release notes ↗</a></p>
       <h2 style="margin-top:2rem">Version history</h2><table class="hist"><tr><td>12.2</td><td><time datetime="2026-10-05">Oct 5, 2026</time></td></tr><tr><td>12.1</td><td><time datetime="2026-09-15">Sep 15, 2026</time></td></tr><tr><td>12.0</td><td><time datetime="2026-09-08">Sep 8, 2026</time></td></tr></table>
       <div class="faq">
         <h2 style="margin-top:2rem">FAQ</h2>
@@ -327,7 +328,7 @@ footer a:hover{color:var(--text)}
         <a class="btn" href="#signup">Get alerts</a>
         <p style="margin:.75rem 0 0"><a href="/my-devices.html#d=jellyfin-server">Track this in My devices →</a></p>
         <p style="margin:.5rem 0 0"><a href="#update">How to update it</a></p>
-        <p style="margin:1rem 0 0"><a href="https://jellyfin.org/" target="_blank" rel="nofollow sponsored noopener">See current price ↗</a></p>
+        <p style="margin:1rem 0 0"><a href="https://jellyfin.org/" target="_blank" rel="nofollow noopener">Project page ↗</a></p>
       </div>
     </aside>
   </div>

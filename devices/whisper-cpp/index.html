@@ -56,6 +56,7 @@ header{position:sticky;top:0;z-index:5;background:rgba(12,17,23,.92);backdrop-fi
 .brand i{width:10px;height:10px;background:var(--amber);border-radius:2px;display:inline-block;box-shadow:0 0 12px rgba(245,179,66,.6)}
 .nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.5rem;align-items:center}
 .nav ul a{text-decoration:none;color:var(--muted);font-size:.95rem}
+.nav ul a.btn,.nav ul a.btn:hover{color:#1A1204}  /* the button keeps dark text: .nav ul a would make it grey on amber */
 .nav ul a:hover{color:var(--text)}
 [hidden]{display:none!important}
 .btn{font-family:var(--sans);font-weight:600;font-size:.95rem;border:1px solid var(--amber);background:var(--amber);color:#1A1204;padding:.6rem 1rem;border-radius:6px;cursor:pointer;text-decoration:none;display:inline-block}
@@ -275,7 +276,7 @@ footer a:hover{color:var(--text)}
     </ul>
   </div>
 </header>
-<script>(function(){var n=document.querySelector(".nav"),b=n&&n.querySelector(".menu");if(!b)return;b.addEventListener("click",function(){var o=n.classList.toggle("open");b.setAttribute("aria-expanded",String(o));b.textContent=o?"✕":"☰";});})();</script>
+<script>(function(){var n=document.querySelector(".nav"),b=n&&n.querySelector(".menu");if(!b)return;b.addEventListener("click",function(){var o=n.classList.toggle("open");b.setAttribute("aria-expanded",String(o));b.textContent=o?"✕":"☰";});n.querySelectorAll("ul a").forEach(function(a){a.addEventListener("click",function(){n.classList.remove("open");b.setAttribute("aria-expanded","false");b.textContent="☰";});});})();</script>
 <main>
 
 <div class="wrap">
@@ -305,7 +306,7 @@ footer a:hover{color:var(--text)}
       </div>
       <h2 style="margin-top:2rem">What changed</h2>
       <p style="color:var(--muted)">Overview: Maintenance release. Updates to ggml v0.26.0. Nightly build: b5454 More info: dist : releases and versioning of ggml-org projects Changelog since v1.9.4: d1be6fde whisper : bump version to 1.9.5 (#​4102) 4afec37b talk-llama : update llama.cpp to v0.6.0 3d451abe sync : ggml 47f1c7dc ggml :…</p>
-      <p><a href="https://github.com/ggml-org/whisper.cpp/releases/tag/v1.9.5" target="_blank" rel="noopener">Manufacturer release notes ↗</a></p>
+      <p><a href="https://github.com/ggml-org/whisper.cpp/releases/tag/v1.9.5" target="_blank" rel="noopener">Release notes ↗</a></p>
       <h2 style="margin-top:2rem">Version history</h2><table class="hist"><tr><td>1.9.5</td><td><time datetime="2026-10-06">Oct 6, 2026</time></td></tr><tr><td>1.9.4</td><td><time datetime="2026-09-11">Sep 11, 2026</time></td></tr></table>
       <div class="faq">
         <h2 style="margin-top:2rem">FAQ</h2>

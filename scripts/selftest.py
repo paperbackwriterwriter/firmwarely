@@ -1172,8 +1172,9 @@ def test_generated_pages():
     check("GitHub product link is a project page, not sponsored",
           build_pages.product_link({"product_url": "https://github.com/a/b"}),
           '<p style="margin:1rem 0 0"><a href="https://github.com/a/b" target="_blank" rel="noopener">Project page ↗</a></p>')
-    check("store link is marked sponsored", 'rel="nofollow sponsored noopener">See current price' in
-          build_pages.product_link({"product_url": "https://store.example.com/x"}), True)
+    check("no product link claims a price or a sponsorship (none are affiliate links)",
+          'sponsored' in build_pages.product_link({"id": "x", "brand": "B", "model": "Router", "category": "R",
+                                                   "product_url": "https://store.example.com/x"}), False)
     check("non-http product link is dropped", build_pages.product_link({"product_url": "javascript:alert(1)"}), "")
     check("canonicals use the www host the apex redirects to", build_pages.SITE, "https://www.firmwarely.com")
     # the catalogue index (/devices/) is hand-tuned static copy, not built through fit_desc's

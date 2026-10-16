@@ -1516,6 +1516,14 @@
     "Otherwise build or download the binary for your exact board from the releases page — the wrong board file will not boot.",
     "Keep the previous firmware image and your config backed up so you can roll back."
    ]
+  },
+  "github_app": {
+   "steps": [
+    "Read the release notes first for anything that changes your settings or saved data.",
+    "Phone apps: update from the app store, or from the project's releases page if you installed it from there.",
+    "Desktop apps: download the build for your system from the releases page and install it over the old one, or update through your package manager if you installed it that way.",
+    "Back up settings and saved data (save files, profiles, configs) before a major version."
+   ]
   }
  },
  "flash_ids": [

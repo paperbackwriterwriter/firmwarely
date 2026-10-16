@@ -58,6 +58,7 @@ header{position:sticky;top:0;z-index:5;background:rgba(12,17,23,.92);backdrop-fi
 .brand i{width:10px;height:10px;background:var(--amber);border-radius:2px;display:inline-block;box-shadow:0 0 12px rgba(245,179,66,.6)}
 .nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.5rem;align-items:center}
 .nav ul a{text-decoration:none;color:var(--muted);font-size:.95rem}
+.nav ul a.btn,.nav ul a.btn:hover{color:#1A1204}  /* the button keeps dark text: .nav ul a would make it grey on amber */
 .nav ul a:hover{color:var(--text)}
 [hidden]{display:none!important}
 .btn{font-family:var(--sans);font-weight:600;font-size:.95rem;border:1px solid var(--amber);background:var(--amber);color:#1A1204;padding:.6rem 1rem;border-radius:6px;cursor:pointer;text-decoration:none;display:inline-block}
@@ -446,16 +447,17 @@ more.addEventListener("click", ()=>{ showAll = true; render(); });
     const open = nav.classList.toggle("open");
     btn.setAttribute("aria-expanded", String(open)); btn.textContent = open ? "✕" : "☰";
   });
+    // a tapped link ("#pricing" on this page) closes the menu instead of leaving it over the page
+    nav.querySelectorAll("ul a").forEach(function(a){a.addEventListener("click",function(){nav.classList.remove("open");btn.setAttribute("aria-expanded","false");btn.textContent="☰";});});
 })();
 
 /* ---------- device detail ---------- */
 const dlg = document.getElementById("dlg"), body = document.getElementById("dlg-body");
-const isStore = u => !!safeUrl(u) && !/^https?:\/\/(www\.)?github\.com\//i.test(u);
-function productLink(u){
+// None of these are affiliate links: a product's own page, never "price" or sponsored
+function productLink(u, cat){
   if(!safeUrl(u)) return "";
-  return isStore(u)
-    ? `<a class="btn ghost" href="${safeUrl(u)}" target="_blank" rel="nofollow sponsored noopener">See current price</a>`
-    : `<a class="btn ghost" href="${safeUrl(u)}" target="_blank" rel="noopener">Project page ↗</a>`;
+  const label = cat === "A" || /^https?:\/\/(www\.)?github\.com\//i.test(u) ? "Project page" : "Product page";
+  return `<a class="btn ghost" href="${safeUrl(u)}" target="_blank" rel="nofollow noopener">${label} ↗</a>`;
 }
 function openDevice(id){
   const d = DEVICES.find(x=>slug(x)===id); if(!d) return;
@@ -467,16 +469,16 @@ function openDevice(id){
       <dt>${d.k ? "Released" : "First seen"}</dt><dd>${fmtDate(d.d)}</dd>
       <dt>Category</dt><dd>${CATS[d.c] || ""}</dd>
       <dt>What changed</dt><dd style="font-family:var(--sans);font-size:.95rem">${esc(d.n) || (d.s==="pending" ? "Not tracked yet. Get alerts and we'll prioritise it." : "")}</dd>
-      ${safeUrl(d.url) ? `<dt>Source</dt><dd><a href="${safeUrl(d.url)}" target="_blank" rel="noopener">Manufacturer release notes ↗</a></dd>` : ""}
+      ${safeUrl(d.url) ? `<dt>Source</dt><dd><a href="${safeUrl(d.url)}" target="_blank" rel="noopener">Release notes ↗</a></dd>` : ""}
       ${d.id ? `<dt>Page</dt><dd><a href="/devices/${esc(d.id)}/">Full details &amp; version history →</a></dd>` : ""}
     </dl>
     <div class="actions">
       <button class="btn" data-watch="${esc(d.f)}">Get alerts for this device</button>
       ${safeUrl(d.u) ? `<a class="btn ghost" href="${safeUrl(d.u)}" target="_blank" rel="noopener">Update this device ↗</a>`
             : (d.id ? `<a class="btn ghost" href="/devices/${esc(d.id)}/#update">How to update</a>` : "")}
-      ${productLink(d.p)}
+      ${productLink(d.p, d.c)}
     </div>
-    ${isStore(d.p) ? `<p class="aff">Price links may earn Firmwarely a commission at no cost to you.</p>` : ""}`;
+`;
   history.replaceState(null,"","#d="+id);
   dlg.showModal();
 }
