@@ -40,9 +40,10 @@ export function verify(raw, header, secret) {
   const sigs = pairs.filter(([k]) => k === "v1").map(([, v]) => v).filter(Boolean);
   if (!t || !sigs.length) return false;
   if (Math.abs(Date.now() / 1000 - Number(t)) > 300) return false; // 5-minute tolerance
-  const expected = crypto.createHmac("sha256", secret).update(`${t}.`).update(raw).digest("hex");
-  const mine = Buffer.from(expected);
-  return sigs.some((v) => v.length === expected.length && crypto.timingSafeEqual(mine, Buffer.from(v)));
+  const mine = Buffer.from(crypto.createHmac("sha256", secret).update(`${t}.`).update(raw).digest("hex"));
+  // byte lengths, not string lengths: timingSafeEqual throws on a mismatch, and a forged
+  // header with multi-byte characters would otherwise turn into a 500
+  return sigs.some((v) => { const b = Buffer.from(v); return b.length === mine.length && crypto.timingSafeEqual(mine, b); });
 }
 
 async function stripeGet(path, key) {
@@ -64,17 +65,17 @@ async function setPlan(email, plan) {
     r = await fetch(base, { method: "POST", headers, body: JSON.stringify({
       email, reactivate_existing: true, send_welcome_email: true,
       utm_source: "stripe", utm_campaign: plan, custom_fields: fields }) });
-    return `created ${r.status}`;
+    return { ok: r.ok, detail: `created ${r.status}` };
   }
   const j = await r.json().catch(() => ({}));
   const id = j?.data?.id;
-  if (!id) return `lookup failed ${r.status}`;
+  if (!id) return { ok: false, detail: `lookup failed ${r.status}` };
   for (const method of ["PATCH", "PUT"]) {
     const u = await fetch(`${base}/${id}`, { method, headers, body: JSON.stringify({ custom_fields: fields }) });
-    if (u.ok) return `${method} ok`;
-    if (u.status !== 404 && u.status !== 405) return `${method} ${u.status}: ${(await u.text()).slice(0, 150)}`;
+    if (u.ok) return { ok: true, detail: `${method} ok` };
+    if (u.status !== 404 && u.status !== 405) return { ok: false, detail: `${method} ${u.status}: ${(await u.text()).slice(0, 150)}` };
   }
-  return "update failed";
+  return { ok: false, detail: "update failed" };
 }
 
 // Which plan an event implies, or null for the events we do not act on.
@@ -108,14 +109,23 @@ export default async function handler(req, res) {
 
   // Never downgrade someone who still has a live subscription (events can arrive out of order,
   // and a customer can cancel one subscription and start another).
-  if (plan === "free" && obj.customer && process.env.STRIPE_SECRET_KEY) {
+  // And the mirror case: a retried or late "updated → active" for a subscription that has
+  // since been cancelled must not hand Pro back. Ask Stripe what is true now.
+  const checkLive = (plan === "free" || (plan === "pro" && event.type === "customer.subscription.updated"))
+    && obj.customer && process.env.STRIPE_SECRET_KEY;
+  if (checkLive) {
     const live = await stripeGet(`/subscriptions?customer=${encodeURIComponent(obj.customer)}&status=active&limit=1`,
       process.env.STRIPE_SECRET_KEY);
-    if (live && Array.isArray(live.data) && live.data.length) plan = "pro";
+    if (live && Array.isArray(live.data)) plan = live.data.length ? "pro" : "free";
   }
 
-  let result = "ignored";
-  if (plan && email) result = await setPlan(email.toLowerCase(), plan);
-  console.log(`stripe ${event.type} → ${email || "no email"} → ${plan || "-"} → ${result}`);
-  return res.status(200).json({ received: true, plan, result });
+  if (!(plan && email)) {
+    console.log(`stripe ${event.type} → ${email ? "has email" : "no email"} → ${plan || "-"} → ignored`);
+    return res.status(200).json({ received: true, plan, result: "ignored" });
+  }
+  const result = await setPlan(email.toLowerCase(), plan);
+  console.log(`stripe ${event.type} → ${plan} → ${result.detail}`);
+  // A failed write answers 500 so Stripe retries it (for up to three days) instead of
+  // a paying customer silently staying on free.
+  return res.status(result.ok ? 200 : 500).json({ received: true, plan, result: result.detail });
 }

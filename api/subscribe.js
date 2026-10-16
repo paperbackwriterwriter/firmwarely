@@ -6,7 +6,6 @@ const rl = require("../lib/ratelimit");
 const captcha = require("../lib/captcha");
 const fw = require("../lib/fw");
 
-const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 module.exports = async (req, res) => {
   if (req.method !== "POST") {
@@ -36,7 +35,7 @@ module.exports = async (req, res) => {
   const plan = body?.plan === "pro" ? "pro" : "free";
   const devices = String(body?.devices || "").trim().slice(0, 300);
 
-  if (!EMAIL_RE.test(email)) {
+  if (!fw.validEmail(email)) {
     return res.status(400).json({ ok: false, error: "Enter a valid email address." });
   }
 
@@ -48,7 +47,9 @@ module.exports = async (req, res) => {
 
   const payload = {
     email,
-    reactivate_existing: true,
+    // false: this form is anonymous, so it must not re-subscribe an address that chose to
+    // leave. Coming back goes through a sign-in link (auth-verify), which proves the inbox.
+    reactivate_existing: false,
     send_welcome_email: true,
     utm_source: "firmwarely.com",
     utm_medium: "site",
@@ -58,10 +59,12 @@ module.exports = async (req, res) => {
   // What was typed here goes in the same field My devices keeps its list in, and alerts
   // read that list first. So someone who already saved devices there keeps them: a
   // second signup from a device page must not replace the list with one typed name.
+  // If we can't tell whether they have a saved list, keep the typed names out rather than
+  // risk overwriting it: a lost list is worse than an unsaved typed one.
   if (devices) {
-    let existing = null;
-    try { existing = await fw.getSubscriber(email); } catch (e) { existing = null; }
-    if (!(existing && existing.devices && existing.devices.length)) {
+    let look;
+    try { look = await fw.lookupSubscriber(email); } catch (e) { look = { error: "unreachable" }; }
+    if (look.found === false || (look.found && !(look.sub.devices && look.sub.devices.length))) {
       payload.custom_fields = [{ name: "devices", value: devices }];
     }
   }
@@ -74,10 +77,14 @@ module.exports = async (req, res) => {
 
   try {
     let r = await call(payload);
-    // If the "devices" custom field doesn't exist yet in Beehiiv, retry without it.
-    if (!r.ok && payload.custom_fields) {
-      delete payload.custom_fields;
-      r = await call(payload);
+    // If the "devices" custom field doesn't exist yet in Beehiiv, retry without it. Only for
+    // that error: on anything else a retry would quietly drop the devices they typed.
+    if (!r.ok && payload.custom_fields && [400, 422].includes(r.status)) {
+      const text = await r.clone().text().catch(() => "");
+      if (/custom.?field|devices/i.test(text)) {
+        delete payload.custom_fields;
+        r = await call(payload);
+      }
     }
     if (!r.ok) {
       const text = await r.text();

@@ -55,6 +55,10 @@ jobs:
       - name: Signup self-test
         run: node scripts/selftest_subscribe.mjs
 
+      # sign-in, sign-out, unsubscribe and the webhook against forged and failing input
+      - name: Security self-test
+        run: node scripts/selftest_security.mjs
+
   sources:
     runs-on: ubuntu-24.04
     steps:

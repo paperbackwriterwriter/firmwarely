@@ -49,8 +49,9 @@ module.exports = async function (req, res) {
 
   const sent = await fw.sendEmail(email, "Your Firmwarely sign-in link", html);
   if (!sent.ok) {
-    const msg = (sent.data && sent.data.message) || "Couldn't send the email just now.";
-    return fw.json(res, 502, { error: msg });
+    // Resend's own message can name our sending setup; log it, show a plain one
+    console.error("auth-request: send failed", sent.data && sent.data.message);
+    return fw.json(res, 502, { error: "Couldn't send the email just now. Try again in a minute." });
   }
   return fw.json(res, 200, { ok: true });
 };

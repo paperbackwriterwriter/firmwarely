@@ -80,7 +80,8 @@ def test_routing():
         ("other@e.com", "pro", [["dev2", "1.0"]], None, None),
         # no devices saved (the homepage signup asks only for an address): everything, on their plan's schedule
         ("empty@e.com", "pro", None, "daily digest", "daily digest"),
-        ("emptylist@e.com", "pro", [], "daily digest", "daily digest"),
+        # ...but someone who emptied their list on My devices asked for less mail, not more
+        ("emptylist@e.com", "pro", [], None, None),
         ("freeempty@e.com", "free", None, None, "weekly digest"),
         ("free@e.com", "free", [["dev1", "1.0"]], None, "weekly"),
         ("freecurrent@e.com", "free", [["dev1", "2.0"]], None, None),
@@ -128,7 +129,7 @@ def test_routing():
     check("the weekly digest says it's the free plan", "once a week" in digest, True)
     got, _ = run(weekly=True, plans=("pro",))
     check("USER_ALERT_PLANS=pro holds the free weekly back", sorted(got),
-          ["behind@e.com", "blank@e.com", "empty@e.com", "emptylist@e.com"])
+          ["behind@e.com", "blank@e.com", "empty@e.com"])
 
     # a long week: security fixes and EOL always in full, the rest capped with a pointer
     many = [dict(change, id=f"d{i}", model=f"R{i}", status="update") for i in range(ua.DIGEST_MAX + 15)]
@@ -826,6 +827,57 @@ def test_rebase_data():
     check("the data it saves is the data rebase_data merges",
           all(f in step for f in rebase_data.DATA), True)
 
+def test_email_safety():
+    """2026-10-16 QA: what the emails and their logs must never do."""
+    import io, contextlib, urllib.request
+    import user_alerts as ua
+    # a working unsubscribe in every email, and in the header mail apps read
+    captured = {}
+    class R:
+        def __enter__(self): return self
+        def __exit__(self, *a): return False
+        def read(self): return b"{}"
+    real = urllib.request.urlopen
+    try:
+        urllib.request.urlopen = lambda req, timeout=0: (captured.setdefault("req", req), R())[1]
+        os.environ.setdefault("RESEND_API_KEY", "test")
+        ok, _ = ua.send("pat+x@example.com", "s", "<div><p>hi</p></div>")
+    finally:
+        urllib.request.urlopen = real
+    payload = json.loads(captured["req"].data)
+    check("every email ends with an unsubscribe link for its own address",
+          "/api/unsubscribe?e=pat%2Bx%40example.com" in payload["html"] and payload["html"].endswith("</div>"), True)
+    check("List-Unsubscribe points at the unsubscribe endpoint, with one-click",
+          ("/api/unsubscribe?e=" in payload["headers"]["List-Unsubscribe"],
+           payload["headers"].get("List-Unsubscribe-Post")), (True, "List-Unsubscribe=One-Click"))
+    check("the unsubscribe endpoint exists", Path("api/unsubscribe.js").exists(), True)
+
+    # the repo is public: the run log must never carry a whole address
+    src = Path("scripts/user_alerts.py").read_text()
+    check("no log line prints a raw address",
+          re.findall(r'print\(f"[^"]*\{(?:to|email|TEST_TO)[:}]', src), [])
+    check("mask keeps addresses apart without showing them", ua.mask("christian@gmail.com"), "c*******n@gmail.com")
+
+    # merged devices keep their alerts; free accounts get three devices, as api/me.js allows
+    moved = ua.follow_moves([{"id": "old", "version": "1"}, {"id": "new", "version": "2"}], {"old": "new"})
+    check("a saved device merged into another follows it (once)", moved, [{"id": "new", "version": "1"}])
+    check("removed-on-purpose is told apart from never-picked",
+          (ua.chose_no_devices("[]"), ua.chose_no_devices(None), ua.chose_no_devices("Eero Pro 6E")), (True, False, False))
+
+    # a capped digest drops the oldest releases, not whatever sorts last by name
+    many = [{"id": f"d{i}", "brand": "Zed" if i == 0 else f"A{i:02d}", "model": "R", "version": "1",
+             "status": "update", "released": f"2026-09-{(i % 28) + 1:02d}", "page_url": "u"} for i in range(ua.DIGEST_MAX + 10)]
+    many[0]["released"] = "2026-10-01"
+    check("the newest release survives the digest cap", "Zed" in ua.render_digest(many, True), True)
+
+    # the GitHub issue can't ping anyone through a name
+    import digest
+    issue = digest.build({"devices": {"x": {"id": "x", "brand": "@octocat", "model": "Box", "category": "R",
+                          "status": "update", "version": "1", "released": "2026-09-01", "notes": "", "source_url": "",
+                          "page_url": "", "eol": False}}}, None)[0]
+    check("an @name in the digest issue can't mention anyone", "@octocat" in issue, False)
+
+
 # ---- counting visits, and saying so ----
 def test_analytics_and_its_disclosure():
     build_pages.STYLES = build_pages.styles()
@@ -1246,7 +1298,15 @@ def test_schedule_and_digest():
     check("first run after 08:00 UTC is the daily run", schedule.is_daily_due(d(8), {}), True)
     check("a later run the same day is not", schedule.is_daily_due(d(14), {"last_daily": "2026-09-15"}), False)
     check("next day it is due again", schedule.is_daily_due(d(9, "2026-09-16"), {"last_daily": "2026-09-15"}), True)
-    check("a manual dispatch forces it", schedule.is_daily_due(d(3), {"last_daily": "2026-09-15"}, force=True), True)
+    check("a manual dispatch can run it early", schedule.is_daily_due(d(3), {"last_daily": "2026-09-14"}, force=True), True)
+    check("...but never twice in a day (it would email every Pro subscriber again)",
+          schedule.is_daily_due(d(3), {"last_daily": "2026-09-15"}, force=True), False)
+    check("the weekly email never goes twice in a day either",
+          schedule.is_weekly_day(d(14, "2026-09-14"), {"last_weekly": "2026-09-14"}, force=True), False)
+    wf = Path(".github/workflows/nightly.yml").read_text()
+    check("a manual run doesn't default to the daily steps", "default: false" in wf.split("force_digest")[0], True)
+    check("subscriber emails and the issue only go out from main",
+          wf.count("github.ref == 'refs/heads/main'") >= 2, True)
 
     rec = {"id": "x", "brand": "Acme", "model": "Router", "category": "R", "status": "critical", "version": "2.0",
            "previous": "1.0", "released": "2026-09-14", "eol": False, "notes": "Fixes CVE-2026-1", "source_url": "https://e.com/r",
@@ -1400,7 +1460,7 @@ def test_schedule_and_digest():
           all(hasattr(fetch, f) for f in ("device_record", "check_source", "apply_result", "finish_record", "load_pending")), True)
 
 
-for t in (test_compare, test_new_release, test_saved_devices, test_routing, test_typed_devices, test_typesafe_shadow, test_weekly_roll, test_forced_guard,
+for t in (test_compare, test_new_release, test_saved_devices, test_routing, test_email_safety, test_typed_devices, test_typesafe_shadow, test_weekly_roll, test_forced_guard,
           test_update_guides, test_sources_well_formed, test_site_shows_only_real_data, test_names_said_once, test_support_page, test_dates_are_honest, test_withdrawn_devices_redirect, test_no_dead_addresses, test_sitemap_index, test_families, test_workflows_pinned, test_rebase_data, test_analytics_and_its_disclosure, test_form_rate_limit, test_captcha, test_side_gutter, test_clean, test_classify, test_homepage_honesty, test_generated_pages,
           test_landing_pages, test_schedule_and_digest):
     print(f"\n{t.__name__}")
