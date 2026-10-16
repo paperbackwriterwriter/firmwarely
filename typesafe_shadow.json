@@ -16398,6 +16398,240 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "netbird",
+   "version": "0.81.2",
+   "name": "NetBird Mesh VPN",
+   "judged_at": "2026-10-16T12:25:33+00:00",
+   "notes_chars": 163,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "langfuse",
+   "version": "4.62.0",
+   "name": "Langfuse LLM observability",
+   "judged_at": "2026-10-16T12:25:33+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.289.37028",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-10-16T12:25:33+00:00",
+   "notes_chars": 127,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "skipper",
+   "version": "0.28.39",
+   "name": "Skipper HTTP router and reverse proxy",
+   "judged_at": "2026-10-16T12:25:33+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "tasmota-open-firmware",
+   "version": "16.0.0",
+   "name": "Tasmota Smart plug & switch firmware",
+   "judged_at": "2026-10-16T12:25:33+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "snapraid",
+   "version": "15.0",
+   "name": "SnapRAID Disk array parity",
+   "judged_at": "2026-10-16T12:25:33+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "qmk-firmware",
+   "version": "0.34.7",
+   "name": "QMK Keyboard firmware",
+   "judged_at": "2026-10-16T12:25:34+00:00",
+   "notes_chars": 289,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "fluent-bit",
+   "version": "5.1.4",
+   "name": "Fluent Bit Log processor",
+   "judged_at": "2026-10-16T12:25:34+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "n8n",
+   "version": "2.43.7",
+   "name": "n8n Workflow automation",
+   "judged_at": "2026-10-16T12:25:34+00:00",
+   "notes_chars": 115,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "open-webui",
+   "version": "0.12.3",
+   "name": "Open WebUI LLM web interface",
+   "judged_at": "2026-10-16T12:25:34+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "mattermost",
+   "version": "12.0.0",
+   "name": "Mattermost Team messaging",
+   "judged_at": "2026-10-16T12:25:34+00:00",
+   "notes_chars": 239,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "serial-studio",
+   "version": "4.2.0",
+   "name": "Serial Studio Telemetry dashboard",
+   "judged_at": "2026-10-16T12:25:34+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "openobserve",
+   "version": "1.1.1",
+   "name": "Openobserve Observability platform",
+   "judged_at": "2026-10-16T12:25:35+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

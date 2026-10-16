@@ -11081,6 +11081,24 @@
    "type": "github",
    "repo": "blacktop/ipsw",
    "product_url": "https://github.com/blacktop/ipsw"
+  },
+  {
+   "id": "esp32-iphone-agent",
+   "brand": "Esp32 Iphone Agent",
+   "model": "Let an AI model use a real iPhone with a $7 ESP32",
+   "category": "M",
+   "type": "github",
+   "repo": "onehumanbeing/esp32-iphone-agent",
+   "product_url": "https://github.com/onehumanbeing/esp32-iphone-agent"
+  },
+  {
+   "id": "ha-llmvision",
+   "brand": "HA Llmvision",
+   "model": "Visual intelligence for your home",
+   "category": "S",
+   "type": "github",
+   "repo": "valentinfrlch/ha-llmvision",
+   "product_url": "https://github.com/valentinfrlch/ha-llmvision"
   }
  ]
 }

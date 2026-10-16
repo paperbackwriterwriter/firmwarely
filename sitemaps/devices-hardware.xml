@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.firmwarely.com/devices/openwrt-router/</loc><lastmod>2026-07-26</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/tasmota-open-firmware/</loc><lastmod>2026-08-25</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/tasmota-open-firmware/</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/wled-controller/</loc><lastmod>2026-07-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/flipper-zero/</loc><lastmod>2026-10-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/meshtastic-radio/</loc><lastmod>2026-09-01</lastmod></url>
@@ -35,7 +35,7 @@
   <url><loc>https://www.firmwarely.com/devices/reprapfirmware/</loc><lastmod>2026-10-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/grbl/</loc><lastmod>2019-08-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/fluidnc/</loc><lastmod>2026-09-25</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/qmk-firmware/</loc><lastmod>2026-09-30</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/qmk-firmware/</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/zmk-firmware/</loc><lastmod>2025-08-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ardupilot/</loc><lastmod>2026-10-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/px4-autopilot/</loc><lastmod>2026-05-13</lastmod></url>
