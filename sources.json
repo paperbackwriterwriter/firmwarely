@@ -3272,9 +3272,11 @@
    "brand": "Raspberry Pi",
    "model": "Pi 5",
    "category": "M",
-   "type": "feed",
-   "url": "https://github.com/raspberrypi/rpi-eeprom/releases.atom",
-   "product_url": "https://github.com/raspberrypi/rpi-eeprom"
+   "type": "github",
+   "product_url": "https://github.com/raspberrypi/rpi-eeprom",
+   "repo": "raspberrypi/rpi-eeprom",
+   "tag_match": "-2712$",
+   "version_regex": "(\\d{4}\\.\\d{2}\\.\\d{2})"
   },
   {
    "id": "arduino-uno-r4",
@@ -4434,7 +4436,8 @@
    "category": "A",
    "type": "github",
    "repo": "vectordotdev/vector",
-   "product_url": "https://github.com/vectordotdev/vector"
+   "product_url": "https://github.com/vectordotdev/vector",
+   "tag_match": "^v\\d"
   },
   {
    "id": "fluent-bit",

@@ -16,6 +16,8 @@ on:
       - "*.js"
       - "*.html"
       - "vercel.json"
+      # data the page builder reads without guards: a broken edit must fail here, not hourly
+      - "*.json"
       - ".github/workflows/**"
   workflow_dispatch:
     inputs:
@@ -31,8 +33,8 @@ jobs:
   selftest:
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
       - name: Alert pipeline self-test
@@ -62,9 +64,9 @@ jobs:
   sources:
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 

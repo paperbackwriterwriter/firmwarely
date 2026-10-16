@@ -103,7 +103,9 @@ EOL = re.compile(r"end[- ]of[- ]life|\bEOL\b|no longer (?:be )?(?:updated|suppor
 STALE_DAYS = 540  # ~18 months with no release: still tracked, but "current" would mislead
 DEFAULT_VERSION = re.compile(r"(\d+(?:\.\d+)+(?:[-_]\w+)*)")
 # feed items whose title matches this are skipped unless the source sets its own skip_match
-DEFAULT_SKIP = r"\b(rc\d*|beta|alpha|dev|nightly|pre-?release|release candidate|early access)\b"
+# letter boundaries, not \b: "7.4.16rc1" has no word break before "rc", so \b let release
+# candidates through as stable 7.4.16 (Zabbix, Oct 2026)
+DEFAULT_SKIP = r"(?<![a-z])(rc\d*|beta\d*|alpha\d*|dev|nightly|pre-?release|release candidate|early access)(?![a-z])"
 TAG = re.compile(r"<[^>]+>")
 
 _cache = {}
@@ -268,6 +270,8 @@ def check_github(src, prev=None):
     Sends the ETag from the last successful check as If-None-Match. GitHub answers 304
     when nothing changed and does not count that against the hourly budget (1,000 calls
     for the Actions token), which is what lets ~600 repos be checked every hour."""
+    if src.get("tag_match"):
+        return check_github_matching(src)
     api = f"https://api.github.com/repos/{src['repo']}/releases/latest"
     headers = gh_headers()
     prev = prev or {}
@@ -304,6 +308,33 @@ def check_github(src, prev=None):
         "source_url": rel.get("html_url") or f"https://github.com/{src['repo']}/releases",
         "etag": etag,
     }
+
+
+def check_github_matching(src):
+    """Newest stable release whose tag matches src["tag_match"], for repos whose "latest"
+    release can be a different product (Vector marks its vdev tool's releases latest)."""
+    api = f"https://api.github.com/repos/{src['repo']}/releases?per_page=30"
+    req = urllib.request.Request(api, headers=gh_headers())
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            rels = json.loads(r.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        if e.code in (403, 429) and e.headers.get("X-RateLimit-Remaining") == "0":
+            raise RateLimited("GitHub API rate limit reached") from None
+        raise
+    pat = re.compile(src["tag_match"])
+    for rel in rels:
+        if rel.get("draft") or rel.get("prerelease") or not pat.search(rel.get("tag_name") or ""):
+            continue
+        title = f"{rel.get('name') or ''} {rel.get('tag_name') or ''}"
+        v = extract_version(rel.get("tag_name") or title, src.get("version_regex"))
+        if not v:
+            continue
+        published = parse_date(rel.get("published_at"))
+        return {"version": v, "released": published or TODAY.isoformat(), "date_known": bool(published),
+                "notes": clean(rel.get("body") or "") or clean(title),
+                "source_url": rel.get("html_url") or f"https://github.com/{src['repo']}/releases"}
+    raise ValueError(f"no stable release with a tag matching {src['tag_match']}")
 
 
 def check_html(src, prev):
@@ -453,8 +484,31 @@ def check_source(src, prev):
         return None, f"error: {type(e).__name__}: {str(e)[:120]}"
 
 
-def apply_result(dev, res):
-    """Fold a successful check into the device record (version, history, dates)."""
+PLAIN_VERSION = re.compile(r"^v?\d+(?:\.\d+)+$")
+
+
+def older(new, cur):
+    """True when both are plain dotted numbers and new is lower ("0.3.30" < "0.59.0"). Any other
+    scheme (dates with suffixes, build strings) is never judged."""
+    if not (PLAIN_VERSION.match(str(new or "")) and PLAIN_VERSION.match(str(cur or ""))):
+        return False
+    a = [int(x) for x in str(new).lstrip("v").split(".")]
+    b = [int(x) for x in str(cur).lstrip("v").split(".")]
+    n = max(len(a), len(b))
+    return a + [0] * (n - len(a)) < b + [0] * (n - len(b))
+
+
+def apply_result(dev, res, src=None):
+    """Fold a successful check into the device record (version, history, dates).
+
+    A lower version than the one we have is not a release: a repo that tags several product
+    lines or maintenance branches (Vector's vdev tool, Zabbix 7.0 after 8.0) would otherwise
+    flip the page back and forth and announce each flip as an update. A source that really
+    goes backwards can set "allow_older": true."""
+    if dev.get("version") and older(res["version"], dev["version"]) and not (src or {}).get("allow_older"):
+        dev["checked"] = NOW
+        dev["source_status"] = "ok"
+        return
     entry = {"version": res["version"], "released": res["released"],
              "date_known": bool(res.get("date_known"))}
     if res["version"] != dev["version"]:
@@ -502,7 +556,7 @@ def main():
             results = list(ex.map(lambda pair: check_source(pair[0], previous.get(pair[0]["id"], {})), to_check))
         for (src, dev), (res, err) in zip(to_check, results):
             if res:
-                apply_result(dev, res)
+                apply_result(dev, res, src)
                 ok += 1
                 print(f"  ok   {src['id']:40s} {res['version']}  ({res['released']})")
             elif err.startswith("skipped:"):

@@ -5,7 +5,9 @@ name: Firmware check
 # then send the digest and the per-user emails for everything that moved since yesterday.
 on:
   schedule:
-    - cron: "0 * * * *"
+    # Not minute 0: GitHub drops scheduled runs when its scheduler is busy, and the top of the
+    # hour is the busiest. From Oct 12, 2026 only one run in four or five started at "0 * * * *".
+    - cron: "23 * * * *"
   workflow_dispatch:
     inputs:
       daily:
@@ -32,10 +34,12 @@ jobs:
     # daily run installs headless Chromium with its system packages, the step most likely
     # to break on a new OS. Move every workflow to 26 together, after a test run on it.
     runs-on: ubuntu-24.04
+    # a normal run takes 1-8 minutes; a hung fetch must not hold the concurrency group for 6 hours
+    timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -47,12 +51,16 @@ jobs:
 
       - name: Install Playwright (headless Chromium)
         if: steps.when.outputs.daily == 'true'
+        continue-on-error: true
         run: |
           pip install playwright
           python3 -m playwright install --with-deps chromium
 
+      # Optional daily extras: a failure here (Chromium, a vendor page, the search API) must not
+      # stop the hourly check, the digest and the emails behind it.
       - name: Render JS-only vendor pages
         if: steps.when.outputs.daily == 'true'
+        continue-on-error: true
         run: python3 scripts/fetch_browser.py
 
       - name: Check every tracked source
@@ -76,6 +84,7 @@ jobs:
 
       - name: Discover and vet new projects
         if: steps.when.outputs.daily == 'true'
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: python3 scripts/discover.py
@@ -111,7 +120,11 @@ jobs:
             exit 0
           fi
           AGE=$(( $(date +%s) - $(git log -1 --format=%ct) ))
-          if git diff --cached --quiet -I '"generated": ' -I '"checked": ' -I '"last_daily' && [ "$AGE" -lt 21600 ]; then
+          # (the daily marker is not one of these: dropping it made the next run the daily run
+          # again, with discovery and the digest repeating every hour)
+          # ETags too: GitHub hands out a new one on every run (the job token changes), so all
+          # ~760 change hourly and would force a commit and a deploy with nothing released
+          if git diff --cached --quiet -I '"generated": ' -I '"checked": ' -I '"etag": ' && [ "$AGE" -lt 21600 ]; then
             echo "Only timestamps moved and the last commit is ${AGE}s old; not committing."
             git reset -q
             exit 0

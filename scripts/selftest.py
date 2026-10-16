@@ -443,7 +443,7 @@ def test_site_shows_only_real_data():
 
     # the cron and the copy are edited in different files and drifted apart before
     cron = re.search(r'- cron: "([^"]+)"', (root / ".github/workflows/nightly.yml").read_text()).group(1)
-    check("the check runs hourly", cron, "0 * * * *")
+    check("the check runs hourly", bool(re.fullmatch(r"\d{1,2} \* \* \* \*", cron)), True)
     stale = [f for f in ("index.html", "scripts/build_pages.py", "README.md")
              if "every 30 minutes" in (root / f).read_text() or "half-hourly" in (root / f).read_text()]
     check("no copy still claims the old cadence", stale, [])
@@ -795,6 +795,29 @@ def test_workflows_pinned():
     check("every job names its runner", all(found.values()), True)
     check("no workflow follows ubuntu-latest", [n for n, r in found.items() if "ubuntu-latest" in r], [])
     check("all workflows are on the same Ubuntu", sorted({x for r in found.values() for x in r}), ["ubuntu-24.04"])
+    wf = Path(".github/workflows/nightly.yml").read_text()
+    check("the hourly schedule avoids minute 0 (GitHub drops those runs)",
+          re.findall(r'cron:\s*"(\S+) ', wf)[0] != "0", True)
+    check("the hourly job can't hang for hours", "timeout-minutes:" in wf, True)
+    check("the daily marker is never ignored by the commit check", "-I '\"last_daily" in wf, False)
+    check("ETag churn alone doesn't commit and deploy", "-I '\"etag\": '" in wf, True)
+    # versions: no flipping back to an older line, no release candidates as stable
+    check("an older plain version never replaces a newer one",
+          (fetch.older("0.3.30", "0.59.0"), fetch.older("7.0.32", "7.4.16"), fetch.older("8.0.0", "7.4.16")), (True, True, False))
+    check("other version schemes are never judged", fetch.older("2026.09.25", "28.33-1"), False)
+    dev = {"id": "z", "version": "0.59.0", "history": [{"version": "0.59.0"}]}
+    fetch.apply_result(dev, {"version": "0.3.30", "released": "2026-10-09", "date_known": True, "notes": "vdev"})
+    check("...so the page keeps the newer one", dev["version"], "0.59.0")
+    skip = re.compile(fetch.DEFAULT_SKIP, re.I)
+    check("release candidates glued to the number are skipped",
+          [bool(skip.search(t)) for t in ("7.4.16rc1", "8.0.0beta2", "2.0.0", "vdev-v0.3.30", "Devices 1.2")],
+          [True, True, False, False, False])
+    for step in ("Install Playwright", "Render JS-only vendor pages", "Discover and vet new projects"):
+        block = wf.split("name: " + step, 1)[1].split("- name:", 1)[0]
+        check(f"an optional daily step can't stop the run: {step}", "continue-on-error: true" in block, True)
+    check("no workflow uses the Node 20 action versions",
+          [f.name for f in Path(".github/workflows").glob("*.yml")
+           if re.search(r"actions/(checkout@v4|setup-python@v5)\b", f.read_text())], [])
 
 
 
