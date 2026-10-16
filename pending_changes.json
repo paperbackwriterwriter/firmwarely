@@ -173,13 +173,13 @@
    "model": "DNS blocklists",
    "category": "R",
    "status": "update",
-   "version": "37522026.288.35627",
+   "version": "37522026.288.85503",
    "previous": "37522026.287.77801",
    "released": "2026-10-15",
    "date_known": true,
    "eol": false,
-   "notes": "#​11871 #​11870 #​11869 #​11860 #​11859",
-   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.288.35627",
+   "notes": "#​11916 #​11915 #​11914 #​11913 #​11912 #​11911 #​11910 #​11909 #​11908 #​11907 #​11906 #​11904 #​11903 #​11902 #​11901 #​11900 #​11899 #​11898 #​11897 #​11896 #​11895 #​11894 #​11893 #​11892 #​11891 #​11890 #​11889 #​11888 #​11887 #​11886",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.288.85503",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   },
   "dnscontrol": {
@@ -511,6 +511,66 @@
    "notes": "Changes: refactor: remove direct dependency use syscall.SIGUSR (#​4345) refactor: remove direct dependency use syscall.SIGUSR Multiarch Docker image is available in GitHub's docker registry: docker run -it ghcr.io/zalando/skipper:v0.28.38 skipper --help",
    "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.38",
    "page_url": "https://www.firmwarely.com/devices/skipper/"
+  },
+  "frigate-nvr": {
+   "id": "frigate-nvr",
+   "brand": "Frigate",
+   "model": "NVR (camera AI detection)",
+   "category": "S",
+   "status": "critical",
+   "version": "0.18.2",
+   "previous": "0.18.1",
+   "released": "2026-10-15",
+   "date_known": true,
+   "eol": false,
+   "notes": "This is a maintenance release for Frigate 0.18 that includes some security fixes. Images: ghcr.io/blakeblackshear/frigate:0.18.2 ghcr.io/blakeblackshear/frigate:0.18.2-standard-arm64 ghcr.io/blakeblackshear/frigate:0.18.2-tensorrt ghcr.io/blakeblackshear/frigate:0.18.2-rk ghcr.io/blakeblackshear/fr…",
+   "source_url": "https://github.com/blakeblackshear/frigate/releases/tag/v0.18.2",
+   "page_url": "https://www.firmwarely.com/devices/frigate-nvr/"
+  },
+  "comfyui": {
+   "id": "comfyui",
+   "brand": "ComfyUI",
+   "model": "Diffusion workflow UI",
+   "category": "A",
+   "status": "update",
+   "version": "0.41.0",
+   "previous": "0.40.0",
+   "released": "2026-10-15",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Add ImageSDRToHDR node. feat: Add a core route for the default workflow (CORE-340) Add ReferenceMultiLatent node. Disable the LoRA stack nodes until the frontend supports DynamicGroup Improve ReferenceMultiLatent UX a bit. Revert \"Disable the LoRA stack nodes until the frontend supp…",
+   "source_url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.41.0",
+   "page_url": "https://www.firmwarely.com/devices/comfyui/"
+  },
+  "onyx": {
+   "id": "onyx",
+   "brand": "Onyx",
+   "model": "AI platform",
+   "category": "A",
+   "status": "update",
+   "version": "4.9.2",
+   "previous": "4.9.1",
+   "released": "2026-10-15",
+   "date_known": true,
+   "eol": false,
+   "notes": "See the assets to download this version and install. What's Changed: fix(perm-sync): skip inactive cc_pairs and back off failed group syncs (#​16024) to release v4.9 chore(hotfix): cherry-pick #​16063 to release v4.9 by in https://github.com/onyx-dot-app/onyx/pull/16071 chore(hotfix): cherry-pick #…",
+   "source_url": "https://github.com/onyx-dot-app/onyx/releases/tag/v4.9.2",
+   "page_url": "https://www.firmwarely.com/devices/onyx/"
+  },
+  "sentry": {
+   "id": "sentry",
+   "brand": "Sentry",
+   "model": "Developer-first error tracking and performance monitoring",
+   "category": "A",
+   "status": "update",
+   "version": "26.10.0",
+   "previous": "26.9.0",
+   "released": "2026-10-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "New Features ✨: Aci: Add issue short id to open periods response Update backend to support fetching open periods across groups Ai: Process LLM cache projects Resolve LLM cache candidates Build LLM cache shadow reports Estimate LLM cache savings Query LLM cache validation probes Query LLM cache call…",
+   "source_url": "https://github.com/getsentry/sentry/releases/tag/26.10.0",
+   "page_url": "https://www.firmwarely.com/devices/sentry/"
   }
  }
 }
