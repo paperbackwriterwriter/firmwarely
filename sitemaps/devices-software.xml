@@ -6,7 +6,7 @@
   <url><loc>https://www.firmwarely.com/devices/pi-hole/</loc><lastmod>2026-07-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/adguard-home/</loc><lastmod>2026-08-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/tailscale/</loc><lastmod>2026-10-07</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/home-assistant-core/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/home-assistant-core/</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/zigbee2mqtt/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/frigate-nvr/</loc><lastmod>2026-10-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/octoprint/</loc><lastmod>2026-06-23</lastmod></url>
@@ -140,7 +140,7 @@
   <url><loc>https://www.firmwarely.com/devices/openwakeword/</loc><lastmod>2024-02-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/hyperion-ng/</loc><lastmod>2026-04-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/mainsail/</loc><lastmod>2026-08-27</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/fluidd/</loc><lastmod>2026-09-23</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/fluidd/</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/moonraker/</loc><lastmod>2026-08-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/prusaslicer/</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/orcaslicer/</loc><lastmod>2026-07-07</lastmod></url>
@@ -214,7 +214,7 @@
   <url><loc>https://www.firmwarely.com/devices/garage-s3/</loc><lastmod>2026-09-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/deconz-rest/</loc><lastmod>2026-07-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/thingsboard/</loc><lastmod>2026-09-29</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/emqx/</loc><lastmod>2026-09-18</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/emqx/</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/zigpy/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/theengs-gateway/</loc><lastmod>2026-10-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/teslamate/</loc><lastmod>2026-09-29</lastmod></url>
@@ -350,7 +350,7 @@
   <url><loc>https://www.firmwarely.com/devices/jupyterlab/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/n8n/</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/activepieces/</loc><lastmod>2026-10-12</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/windmill/</loc><lastmod>2026-10-15</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/windmill/</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/temporal/</loc><lastmod>2026-10-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/airflow/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/prefect/</loc><lastmod>2026-10-06</lastmod></url>
@@ -570,7 +570,7 @@
   <url><loc>https://www.firmwarely.com/devices/sun-panel/</loc><lastmod>2025-12-31</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/oxicloud/</loc><lastmod>2026-10-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ani-rss/</loc><lastmod>2026-10-15</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/arc/</loc><lastmod>2026-10-11</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/arc/</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/lanraragi/</loc><lastmod>2026-07-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/arozos/</loc><lastmod>2025-12-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/bili-sync/</loc><lastmod>2026-05-07</lastmod></url>
@@ -651,7 +651,7 @@
   <url><loc>https://www.firmwarely.com/devices/browserbox/</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/vulcain/</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/krakend-ce/</loc><lastmod>2026-10-13</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/angie/</loc><lastmod>2026-10-13</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/angie/</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/piko/</loc><lastmod>2026-10-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/trickster/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/frpmgr/</loc><lastmod>2026-08-30</lastmod></url>
@@ -685,7 +685,7 @@
   <url><loc>https://www.firmwarely.com/devices/86box/</loc><lastmod>2026-05-31</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/lemuroid/</loc><lastmod>2026-04-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/emulatorjs/</loc><lastmod>2025-07-05</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/xemu/</loc><lastmod>2026-06-08</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/xemu/</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/furnace/</loc><lastmod>2025-06-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/bizhawk/</loc><lastmod>2026-05-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/vectras-vm-android/</loc><lastmod>2026-10-08</lastmod></url>
