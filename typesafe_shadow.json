@@ -16632,6 +16632,204 @@
     "security_fix_plain": 0.04,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "cronicle",
+   "version": "0.9.137",
+   "name": "Cronicle Task scheduler",
+   "judged_at": "2026-10-16T17:18:49+00:00",
+   "notes_chars": 76,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "incus",
+   "version": "7.0.2",
+   "name": "Incus System container manager",
+   "judged_at": "2026-10-16T17:18:49+00:00",
+   "notes_chars": 68,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.15,
+    "security_fix_plain": 0.11,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "talos-linux",
+   "version": "1.14.4",
+   "name": "Sidero Labs Talos Linux",
+   "judged_at": "2026-10-16T17:18:49+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "openvas-scanner",
+   "version": "23.52.0",
+   "name": "Greenbone OpenVAS scanner",
+   "judged_at": "2026-10-16T17:18:49+00:00",
+   "notes_chars": 227,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.79,
+    "security_fix_plain": 0.55,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.9.20.23-stable",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-16T17:18:49+00:00",
+   "notes_chars": 45,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "element-web",
+   "version": "1.12.32",
+   "name": "Element Web client",
+   "judged_at": "2026-10-16T17:18:50+00:00",
+   "notes_chars": 236,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.93,
+    "security_fix_plain": 0.9,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "langfuse",
+   "version": "4.63.0",
+   "name": "Langfuse LLM observability",
+   "judged_at": "2026-10-16T17:18:50+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.289.57654",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-10-16T17:18:50+00:00",
+   "notes_chars": 31,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "browserbox",
+   "version": "20.3.2",
+   "name": "BrowserBox Remote browser isolation",
+   "judged_at": "2026-10-16T17:18:50+00:00",
+   "notes_chars": 83,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "worldmonitor",
+   "version": "2.11.0",
+   "name": "Worldmonitor Real-time global intelligence dashboard",
+   "judged_at": "2026-10-16T17:18:50+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.76,
+    "security_fix_plain": 0.72,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "titanium-web-proxy",
+   "version": "7.0.25",
+   "name": "Titanium Web Proxy Cross-platform high performing HTTP(S) proxy server in C#",
+   "judged_at": "2026-10-16T17:18:50+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
