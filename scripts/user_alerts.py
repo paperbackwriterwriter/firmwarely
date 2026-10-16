@@ -18,8 +18,12 @@ the digest of everything that changed instead, with a nudge to pick their device
 
 - Pro accounts: daily, from changed.json (what moved since yesterday), unlimited devices.
 - Free accounts: weekly, from changed_weekly.json, which scripts/digest.py writes only on
-  the weekly run (schedule.WEEKLY_DAY). /api/me holds them to three devices. On the other
-  six days there is no weekly file, so free accounts get nothing.
+  the weekly run (schedule.WEEKLY_DAY). /api/me holds them to three devices, and so does
+  this script (FREE_LIMIT), whatever else is in the field. On the other six days there is
+  no weekly file, so free accounts get nothing.
+- Someone who emptied their list on My devices gets nothing; never-picked gets the digest.
+- Every email carries an unsubscribe link (api/unsubscribe.js). The run log is public, so
+  addresses are only ever printed masked.
 
 Env:
   BEEHIIV_API_KEY, BEEHIIV_PUB_ID   read the subscriber list and their saved devices
@@ -198,6 +202,47 @@ def typed_devices(value, catalog):
     return [{"id": i, "version": ""} for i in dict.fromkeys(found)]
 
 
+FREE_LIMIT = 3   # same as api/me.js: a free account is alerted about its first three devices
+
+
+def load_moves(root=None):
+    """old device id -> current id, from redirects.json. A saved device that was later merged
+    into another page (catalog_edits.py DUPLICATES) keeps getting alerts under its new id."""
+    try:
+        moves = json.loads(((root or ROOT) / "redirects.json").read_text())
+    except Exception:
+        return {}
+    out = {}
+    for src, dst in moves.items():
+        a, b = re.fullmatch(r"/devices/([^/]+)/", src), re.fullmatch(r"/devices/([^/]+)/", str(dst))
+        if a and b:
+            out[a.group(1)] = b.group(1)
+    return out
+
+
+def follow_moves(saved, moves):
+    out, seen = [], set()
+    for d in saved:
+        i = d["id"]
+        for _ in range(5):          # a short chain at most; never loop
+            if i not in moves:
+                break
+            i = moves[i]
+        if i not in seen:
+            seen.add(i)
+            out.append({**d, "id": i})
+    return out
+
+
+def chose_no_devices(value):
+    """True when My devices saved an empty list on purpose ("[]"): someone who removed every
+    device asked for less mail, not for the digest of everything."""
+    try:
+        return json.loads(value) == []
+    except Exception:
+        return False
+
+
 def saved_devices(value):
     """The `devices` custom field written by /api/me — [["id","ver"],...] or [{id,version}]."""
     out = []
@@ -258,6 +303,8 @@ def render_digest(changes, weekly=False):
     for key, heading in GROUPS:
         items = groups.get(key) or []
         if key in ("update", "current"):
+            # newest first, so what is cut is the oldest, not whatever sorts last by name
+            items = sorted(items, key=lambda c: c.get("released") or "", reverse=True)
             keep = items[:max(room, 0)]
             room -= len(keep)
             left_out += len(items) - len(keep)
@@ -342,15 +389,30 @@ def render(hits, weekly=False):
         + (f'<p style="color:#666;font-size:14px">You\'re on the free plan, so this comes once a week. '
            f'<a href="{html.escape(SITE)}/pro/">Pro</a> emails you the morning after a release and '
            "covers every device you own.</p>" if weekly else "") +
-        '<p style="color:#666;font-size:14px">You are getting this because you saved these '
-        f'devices on <a href="{html.escape(SITE)}/my-devices.html">My devices</a>. '
-        "Add, remove or update them there any time.</p></div>"
+        '<p style="color:#666;font-size:14px">You are getting this because these devices are on '
+        f'your Firmwarely list. <a href="{html.escape(SITE)}/my-devices.html">Sign in on My devices</a> '
+        "to add, remove or update them any time.</p></div>"
     )
 
 
+def unsubscribe_url(email):
+    return f"{SITE}/api/unsubscribe?" + urllib.parse.urlencode({"e": email})
+
+
+def with_unsubscribe(body, email):
+    """Every email ends with a working unsubscribe link (the legal page promises one)."""
+    foot = ('<p style="color:#888;font-size:13px;margin-top:24px">'
+            f'<a href="{html.escape(unsubscribe_url(email))}" style="color:#888">Unsubscribe</a>'
+            " from all Firmwarely email.</p>")
+    return body[:-len("</div>")] + foot + "</div>" if body.endswith("</div>") else body + foot
+
+
 def send(to, subject, body):
-    payload = {"from": FROM, "to": [to], "subject": subject, "html": body,
-               "headers": {"List-Unsubscribe": f"<{SITE}/my-devices.html>"}}
+    payload = {"from": FROM, "to": [to], "subject": subject, "html": with_unsubscribe(body, to),
+               # a mail app's own unsubscribe button; the POST form is RFC 8058 one-click
+               "headers": {"List-Unsubscribe": f"<{unsubscribe_url(to)}>, "
+                                               "<mailto:hello@firmwarely.com?subject=Unsubscribe>",
+                           "List-Unsubscribe-Post": "List-Unsubscribe=One-Click"}}
     req = urllib.request.Request(
         RESEND, data=json.dumps(payload).encode(), method="POST",
         headers={"Authorization": "Bearer " + os.environ["RESEND_API_KEY"],
@@ -427,11 +489,12 @@ def main():
     print(f"{len(daily or {})} device(s) changed since yesterday (Pro), "
           f"{len(weekly or {}) if weekly else 'no weekly email tonight'}"
           f"{' this week (free)' if weekly else ''}; mailing plans: {', '.join(PLANS)}"
-          + (f"; TEST → {TEST_TO}" if TEST_TO else "")
+          + (f"; TEST → {mask(TEST_TO)}" if TEST_TO else "")
           + ("; DRY RUN" if DRY_RUN else ""))
 
     seen = sent = skipped = failed = quiet = typed = unmatched = digests = 0
     catalog = load_catalog()
+    moves = load_moves()
     reasons = {}
     try:
         people = list(subscribers(key, pub))
@@ -457,11 +520,17 @@ def main():
             saved = typed_devices(f.get("devices"), catalog)
             typed += 1
             unmatched += not saved
+        saved = follow_moves(saved, moves)
+        if plan != "pro":
+            saved = saved[:FREE_LIMIT]
         hits = hits_for(saved, changes)
-        digest = not saved   # no devices yet: everything that changed, and a nudge to pick some
+        # no devices yet: everything that changed, and a nudge to pick some. Not for someone
+        # who emptied their list on purpose.
+        digest = not saved and not chose_no_devices(f.get("devices"))
         if not hits and not digest:
             quiet += 1
-            why = ("no devices saved" if not saved
+            why = ("removed all their devices" if chose_no_devices(f.get("devices"))
+                   else "no devices saved" if not saved
                    else "none of their devices changed" if not any(d["id"] in changes for d in saved)
                    else "already on the new version")
             reasons[why] = reasons.get(why, 0) + 1
@@ -486,16 +555,16 @@ def main():
         if TEST_TO:
             subject = "[TEST] " + subject
         if DRY_RUN:
-            print(f"  would mail {to:40s} {what}")
+            print(f"  would mail {mask(to):40s} {what}")
             sent += 1
             continue
         ok, err = send(to, subject, body)
         if ok:
             sent += 1
-            print(f"  sent  {to:40s} {what}")
+            print(f"  sent  {mask(to):40s} {what}")
         else:
             failed += 1
-            print(f"  FAIL  {to:40s} {err}", file=sys.stderr)
+            print(f"  FAIL  {mask(to):40s} {err.replace(to, mask(to))}", file=sys.stderr)
         time.sleep(SEND_GAP)
 
     verb = "would send" if DRY_RUN else "sent"
@@ -505,7 +574,8 @@ def main():
           f"{typed} device list(s) typed into a signup box, {unmatched} of them matching nothing"
           + (" | quiet: " + ", ".join(f"{n} {why}" for why, n in sorted(reasons.items())) if reasons else "")
           + (f", {skipped} over the {MAX_EMAILS} cap" if skipped else ""))
-    return 1 if failed else 0
+    # over the cap is people not mailed: fail the run so it shows, like a send failure
+    return 1 if failed or skipped else 0
 
 
 if __name__ == "__main__":

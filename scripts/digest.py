@@ -77,6 +77,9 @@ def build(pending, discovered=None):
         return None, None, None, None
     md, html_body = fetch.build_digest(items)
     issue = fetch.build_issue_summary(items) + added_section(discovered) + typesafe_section()
+    # names come from vendors and GitHub descriptions; an "@name" in one would ping that
+    # account from our issue. A zero-width space after "@" keeps the text and drops the ping.
+    issue = issue.replace("@", "@\u200b")
     payload = {"generated": fetch.NOW, "date": fetch.TODAY.isoformat(), "forced": forced,
                "count": len(items), "devices": items}
     return issue, payload, md.splitlines()[0].lstrip("# ").strip(), html_body

@@ -32,11 +32,13 @@ def load_state():
 
 
 def is_daily_due(now=None, state=None, force=False):
+    """force (a manual dispatch) may run the daily steps early, but never twice in a day:
+    a second run would email every Pro subscriber again."""
     now = now or datetime.now(timezone.utc)
     state = load_state() if state is None else state
-    if force:
-        return True
-    return now.hour >= DAILY_HOUR_UTC and state.get("last_daily") != now.date().isoformat()
+    if state.get("last_daily") == now.date().isoformat():
+        return False
+    return force or now.hour >= DAILY_HOUR_UTC
 
 
 def is_weekly_day(now=None, state=None, force=False):
@@ -44,6 +46,8 @@ def is_weekly_day(now=None, state=None, force=False):
     on any day once a week has gone by without one (a failed Monday run can't skip a week)."""
     now = now or datetime.now(timezone.utc)
     state = load_state() if state is None else state
+    if state.get("last_weekly") == now.date().isoformat():
+        return False   # the weekly email already went out today: never twice
     if force or now.weekday() == WEEKLY_DAY:
         return True
     try:

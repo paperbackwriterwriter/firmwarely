@@ -9,9 +9,9 @@ on:
   workflow_dispatch:
     inputs:
       daily:
-        description: "Run the once-a-day steps too (browser render, discovery, digest, emails)"
+        description: "Run the once-a-day steps too, if they haven't run today (browser render, discovery, digest, emails)"
         type: boolean
-        default: true
+        default: false
       force_digest:
         description: "Build a digest of every tracked device even if nothing changed (for testing)"
         type: boolean
@@ -143,8 +143,10 @@ jobs:
           done
           echo "::error::could not push after 3 attempts"; exit 1
 
+      # Issues and subscriber emails only from main: a run dispatched on a PR branch is a test
+      # of unmerged code, and must not mail real people (main would then mail them again).
       - name: Open an issue with the digest (emails you)
-        if: ${{ hashFiles('digest.md') != '' }}
+        if: ${{ github.ref == 'refs/heads/main' && hashFiles('digest.md') != '' }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -160,7 +162,7 @@ jobs:
       # aren't set. On a force_digest run it refuses to mail real people unless
       # USER_ALERT_TEST_EMAIL is set, in which case every alert goes there instead.
       - name: Send per-user device alerts
-        if: ${{ hashFiles('changed.json') != '' || hashFiles('changed_weekly.json') != '' }}
+        if: ${{ github.ref == 'refs/heads/main' && (hashFiles('changed.json') != '' || hashFiles('changed_weekly.json') != '') }}
         env:
           BEEHIIV_API_KEY: ${{ secrets.BEEHIIV_API_KEY }}
           BEEHIIV_PUB_ID: ${{ secrets.BEEHIIV_PUB_ID }}
