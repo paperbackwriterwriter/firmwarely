@@ -16272,6 +16272,132 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "netbird",
+   "version": "0.81.1",
+   "name": "NetBird Mesh VPN",
+   "judged_at": "2026-10-16T07:00:12+00:00",
+   "notes_chars": 252,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.07,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "paperless-ngx",
+   "version": "3.3.2",
+   "name": "Paperless-ngx Document scanner and archive",
+   "judged_at": "2026-10-16T07:00:12+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.95,
+    "security_fix_plain": 0.94,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "sentry-self-hosted",
+   "version": "26.10.0",
+   "name": "Sentry Self-hosted error tracking",
+   "judged_at": "2026-10-16T07:00:12+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "jackett",
+   "version": "0.24.2864",
+   "name": "Jackett Torrent indexer proxy",
+   "judged_at": "2026-10-16T07:00:12+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "pixelfed",
+   "version": "0.15.0",
+   "name": "Pixelfed Photo sharing",
+   "judged_at": "2026-10-16T07:00:12+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "godoxy",
+   "version": "0.32.3",
+   "name": "GoDoxy Reverse proxy and container manager",
+   "judged_at": "2026-10-16T07:00:12+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ipsw",
+   "version": "3.1.739",
+   "name": "Ipsw IOS/macOS Research Swiss Army Knife",
+   "judged_at": "2026-10-16T07:00:13+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
