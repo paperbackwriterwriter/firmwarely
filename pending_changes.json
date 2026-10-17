@@ -496,6 +496,21 @@
    "notes": "What's Changed: 🐛 Fixes: Refactor: auth architecture (#​7256) Fix: preserve dollar sequences in environment and file secrets (#​7242) 🔒 Security: Resolve GHSA-qxcr-4rv3-v23r 🧰 Maintenance: Refactor: auth architecture (#​7256) Chore(deps): Bump release-drafter/release-drafter/autolabeler from 7.8.0 …",
    "source_url": "https://github.com/gethomepage/homepage/releases/tag/v2.6.0",
    "page_url": "https://www.firmwarely.com/devices/homepage-dashboard/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.2865",
+   "previous": "0.24.2864",
+   "released": "2026-10-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: 4d6f3790622b03d460618eb9eb6e46bca668ec9a linuxtracker: update cat This list of changes was auto generated.",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2865",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
