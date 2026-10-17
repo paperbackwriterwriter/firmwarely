@@ -233,6 +233,10 @@ def check_feed(src):
             continue
         if skip and skip.search(it["title"]):
             continue
+        # a feed shared by several products (one firmware repo, many printers) can carry a
+        # release for just one of them: its notes have to name this product
+        if src.get("notes_match") and not re.search(src["notes_match"], it.get("body") or "", re.I):
+            continue
         v = extract_version(it["title"], src.get("version_regex"))
         if not v:
             continue

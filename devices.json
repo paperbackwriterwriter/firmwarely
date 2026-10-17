@@ -264,24 +264,14 @@
    "model": "MK4 / MK4S / Core One (Buddy firmware)",
    "category": "M",
    "tracked": true,
-   "version": "6.9.2",
-   "released": "2026-10-07",
+   "version": "6.10.2",
+   "released": "2026-09-16",
    "date_known": true,
-   "notes": "Summary New features Filament presets for PVA and BVOH are now available directly on the printer for loading these filament types. This is the stable release of firmware 6.9.2 for the Prusa CORE One+ (Gen 2) INDX and Prusa CORE One/+ INDX ( Firmware 6.9.2 is compatible only with the Prusa CORE One+…",
-   "source_url": "https://github.com/prusa3d/Prusa-Firmware-Buddy/releases/tag/v6.9.2",
+   "notes": "",
+   "source_url": "https://github.com/prusa3d/Prusa-Firmware-Buddy/releases/tag/v6.10.2",
    "product_url": "https://www.prusa3d.com/product/original-prusa-mk4s-kit/",
    "update_url": "https://github.com/prusa3d/Prusa-Firmware-Buddy/releases",
    "history": [
-    {
-     "version": "6.9.2",
-     "released": "2026-10-07",
-     "date_known": true
-    },
-    {
-     "version": "6.9.1",
-     "released": "2026-10-01",
-     "date_known": true
-    },
     {
      "version": "6.10.2",
      "released": "2026-09-16",
@@ -2547,7 +2537,7 @@
    "model": "Encrypted backup client",
    "category": "A",
    "tracked": true,
-   "version": "2.4.0.1_stable_2026-10-07",
+   "version": "2.4.0.1",
    "released": "2026-10-07",
    "date_known": true,
    "notes": "About this release: This release patches version 2.4.0.0 with fixes for a number of issues that were discovered after the release. The main focus of this release is stability, with many fixes to restore, abort handling and the new sync mode, along with security hardening of the server and remote co…",
@@ -2556,12 +2546,12 @@
    "update_url": "https://github.com/duplicati/duplicati/releases",
    "history": [
     {
-     "version": "2.4.0.1_stable_2026-10-07",
+     "version": "2.4.0.1",
      "released": "2026-10-07",
      "date_known": true
     },
     {
-     "version": "2.4.0.0_stable_2026-09-03",
+     "version": "2.4.0.0",
      "released": "2026-09-03",
      "date_known": true
     }
@@ -8203,24 +8193,14 @@
    "model": "MK4S",
    "category": "M",
    "tracked": true,
-   "version": "6.9.2",
-   "released": "2026-10-07",
+   "version": "6.10.2",
+   "released": "2026-09-16",
    "date_known": true,
-   "notes": "Summary New features Filament presets for PVA and BVOH are now available directly on the printer for loading these filament types. This is the stable release of firmware 6.9.2 for the Prusa CORE One+ (Gen 2) INDX and Prusa CORE One/+ INDX ( Firmware 6.9.2 is compatible only with the Prusa CORE One+…",
-   "source_url": "https://github.com/prusa3d/Prusa-Firmware-Buddy/releases/tag/v6.9.2",
+   "notes": "",
+   "source_url": "https://github.com/prusa3d/Prusa-Firmware-Buddy/releases/tag/v6.10.2",
    "product_url": "https://github.com/prusa3d/Prusa-Firmware-Buddy",
    "update_url": "https://github.com/prusa3d/Prusa-Firmware-Buddy/releases",
    "history": [
-    {
-     "version": "6.9.2",
-     "released": "2026-10-07",
-     "date_known": true
-    },
-    {
-     "version": "6.9.1",
-     "released": "2026-10-01",
-     "date_known": true
-    },
     {
      "version": "6.10.2",
      "released": "2026-09-16",
@@ -8245,24 +8225,14 @@
    "model": "XL",
    "category": "M",
    "tracked": true,
-   "version": "6.9.2",
-   "released": "2026-10-07",
+   "version": "6.10.2",
+   "released": "2026-09-16",
    "date_known": true,
-   "notes": "Summary New features Filament presets for PVA and BVOH are now available directly on the printer for loading these filament types. This is the stable release of firmware 6.9.2 for the Prusa CORE One+ (Gen 2) INDX and Prusa CORE One/+ INDX ( Firmware 6.9.2 is compatible only with the Prusa CORE One+…",
-   "source_url": "https://github.com/prusa3d/Prusa-Firmware-Buddy/releases/tag/v6.9.2",
+   "notes": "",
+   "source_url": "https://github.com/prusa3d/Prusa-Firmware-Buddy/releases/tag/v6.10.2",
    "product_url": "https://github.com/prusa3d/Prusa-Firmware-Buddy",
    "update_url": "https://github.com/prusa3d/Prusa-Firmware-Buddy/releases",
    "history": [
-    {
-     "version": "6.9.2",
-     "released": "2026-10-07",
-     "date_known": true
-    },
-    {
-     "version": "6.9.1",
-     "released": "2026-10-01",
-     "date_known": true
-    },
     {
      "version": "6.10.2",
      "released": "2026-09-16",
