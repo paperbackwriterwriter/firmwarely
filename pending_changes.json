@@ -256,6 +256,36 @@
    "notes": "[1.87.0] - 2026-10-17: ADDED: A set can remove ECH keys from DNS answers, so a browser opens sites such as those on Cloudflare where the network drops connections that use ECH - the switch is under DNS & Routing, DNS Redirect, Encrypted ClientHello (ECH) in the set editor, a set that lists cloudfla…",
    "source_url": "https://github.com/DanielLavrushin/b4/releases/tag/v1.87.0",
    "page_url": "https://www.firmwarely.com/devices/b4/"
+  },
+  "unpoller": {
+   "id": "unpoller",
+   "brand": "UnPoller",
+   "model": "UniFi metrics exporter",
+   "category": "R",
+   "status": "update",
+   "version": "5.6.0",
+   "previous": "5.5.1",
+   "released": "2026-10-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: 3737c743cf5120acfc5437c0418a1134c46505af fix(promunifi): export station counts with the right station_type and tag (#​1110) 20ee82b3e63e0f558dc1364194a63e7b20efa69f feat(unas): export the SSD cache and its cache-bay SSDs (#​1109) 87ded9886e4b90e8ce97bbd3d9b0d79e10c2b30c build(deps): bump…",
+   "source_url": "https://github.com/unpoller/unpoller/releases/tag/v5.6.0",
+   "page_url": "https://www.firmwarely.com/devices/unpoller/"
+  },
+  "http-shortcuts": {
+   "id": "http-shortcuts",
+   "brand": "HTTP Shortcuts",
+   "model": "Android automation app",
+   "category": "S",
+   "status": "update",
+   "version": "4.9.0",
+   "previous": "4.8.2",
+   "released": "2026-10-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "See Changelog for details",
+   "source_url": "https://github.com/Waboodoo/HTTP-Shortcuts/releases/tag/v4.9.0",
+   "page_url": "https://www.firmwarely.com/devices/http-shortcuts/"
   }
  }
 }
