@@ -17478,6 +17478,42 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.8.30.8-lts",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-17T15:58:57+00:00",
+   "notes_chars": 37,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "ollama",
+   "version": "0.40.6",
+   "name": "Ollama Local LLM runner",
+   "judged_at": "2026-10-17T15:58:58+00:00",
+   "notes_chars": 240,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
