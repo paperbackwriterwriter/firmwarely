@@ -263,13 +263,13 @@
    "model": "UniFi metrics exporter",
    "category": "R",
    "status": "update",
-   "version": "5.6.0",
+   "version": "5.6.1",
    "previous": "5.5.1",
    "released": "2026-10-17",
    "date_known": true,
    "eol": false,
-   "notes": "Changelog: 3737c743cf5120acfc5437c0418a1134c46505af fix(promunifi): export station counts with the right station_type and tag (#​1110) 20ee82b3e63e0f558dc1364194a63e7b20efa69f feat(unas): export the SSD cache and its cache-bay SSDs (#​1109) 87ded9886e4b90e8ce97bbd3d9b0d79e10c2b30c build(deps): bump…",
-   "source_url": "https://github.com/unpoller/unpoller/releases/tag/v5.6.0",
+   "notes": "Changelog: 263d7a61f01285df54f05556b696b513de7563c2 build(deps): use unifi v6.4.0 and drop the fork replace",
+   "source_url": "https://github.com/unpoller/unpoller/releases/tag/v5.6.1",
    "page_url": "https://www.firmwarely.com/devices/unpoller/"
   },
   "http-shortcuts": {
