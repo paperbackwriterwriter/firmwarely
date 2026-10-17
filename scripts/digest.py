@@ -27,7 +27,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DISCOVERED = ROOT / "discovered.json"
 DRY_RUN = "--dry-run" in sys.argv
 CATS = {"R": "Routers & networking", "N": "NAS & storage", "S": "Smart home & cameras",
-        "C": "Consoles, drones & e-bikes", "M": "Makers & open firmware",
+        "C": "Consoles & gaming", "M": "Makers & open firmware",
         "P": "PCs, TVs & gadgets", "A": "Self-hosted apps & servers"}
 
 

@@ -799,6 +799,11 @@ def test_workflows_pinned():
     check("the hourly schedule avoids minute 0 (GitHub drops those runs)",
           re.findall(r'cron:\s*"(\S+) ', wf)[0] != "0", True)
     check("the hourly job can't hang for hours", "timeout-minutes:" in wf, True)
+    hb = Path(".github/workflows/heartbeat.yml").read_text()
+    check("every finished check (pass or fail) schedules the next one",
+          "gh workflow run heartbeat.yml" in wf and "always()" in wf.split("Schedule the next run")[1], True)
+    check("the heartbeat starts the check after a wait, and only one waits at a time",
+          ("sleep" in hb, "gh workflow run nightly.yml" in hb, "cancel-in-progress: true" in hb), (True, True, True))
     check("the daily marker is never ignored by the commit check", "-I '\"last_daily" in wf, False)
     check("ETag churn alone doesn't commit and deploy", "-I '\"etag\": '" in wf, True)
     # versions: no flipping back to an older line, no release candidates as stable

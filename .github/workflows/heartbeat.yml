@@ -1,0 +1,30 @@
+name: Heartbeat
+
+# Keeps the firmware check hourly. GitHub's scheduler drops most "every hour" runs for this
+# repo (from Oct 12, 2026 only one in four or five started), so each finished check starts
+# this, it waits, and then starts the next check. The cron in nightly.yml stays as a backup
+# that restarts the chain if it ever breaks.
+#
+# Only one heartbeat can wait at a time: a newer one cancels the older, so a cron run and a
+# chained run can't grow into two chains. Free: public repositories don't pay for minutes.
+on:
+  workflow_dispatch:
+
+permissions:
+  actions: write
+
+concurrency:
+  group: heartbeat
+  cancel-in-progress: true
+
+jobs:
+  wait-then-check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 70
+    steps:
+      - name: Wait for the next hour's check
+        run: sleep 3000
+      - name: Start the firmware check
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run nightly.yml --repo "$GITHUB_REPOSITORY" --ref main

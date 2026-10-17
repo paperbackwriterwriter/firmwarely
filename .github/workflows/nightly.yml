@@ -22,6 +22,7 @@ on:
 permissions:
   contents: write
   issues: write
+  actions: write   # to start the heartbeat that schedules the next run
 
 # never let two checks race each other into the same commit
 concurrency:
@@ -185,3 +186,12 @@ jobs:
           USER_ALERT_PLANS: ${{ vars.USER_ALERT_PLANS }}
           USER_ALERT_TEST_EMAIL: ${{ secrets.USER_ALERT_TEST_EMAIL }}
         run: python3 scripts/user_alerts.py
+
+      # Schedule the next check: GitHub's own hourly schedule drops most runs for this repo,
+      # so every run (pass or fail) starts the heartbeat, which starts the next run in about an
+      # hour. Main only, so a branch test can't start a second chain.
+      - name: Schedule the next run
+        if: ${{ always() && github.ref == 'refs/heads/main' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run heartbeat.yml --repo "$GITHUB_REPOSITORY" --ref main || echo "::warning::couldn't start the heartbeat; the cron will"
