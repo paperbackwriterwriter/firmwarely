@@ -16992,6 +16992,132 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.289.85951",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-10-17T01:22:33+00:00",
+   "notes_chars": 55,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ntfy",
+   "version": "2.31.1",
+   "name": "ntfy Push notification server",
+   "judged_at": "2026-10-17T01:22:33+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "raspberry-pi-5",
+   "version": "2026.09.25",
+   "name": "Raspberry Pi 5",
+   "judged_at": "2026-10-17T01:22:33+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.11,
+    "security_fix_plain": 0.12,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "openrgb",
+   "version": "1.1",
+   "name": "OpenRGB RGB lighting control",
+   "judged_at": "2026-10-17T01:22:33+00:00",
+   "notes_chars": 117,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "onedev",
+   "version": "16.9.3",
+   "name": "OneDev Git server with CI",
+   "judged_at": "2026-10-17T01:22:33+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "uvtools",
+   "version": "7.1.0",
+   "name": "UVtools Resin printer file toolkit",
+   "judged_at": "2026-10-17T01:22:33+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "kiosk-satellite",
+   "version": "2026.10.27",
+   "name": "Kiosk Satellite Turn any Android device",
+   "judged_at": "2026-10-17T01:22:33+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
