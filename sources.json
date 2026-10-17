@@ -11106,6 +11106,96 @@
    "type": "github",
    "repo": "valentinfrlch/ha-llmvision",
    "product_url": "https://github.com/valentinfrlch/ha-llmvision"
+  },
+  {
+   "id": "nightingale",
+   "brand": "Nightingale",
+   "model": "Open-source, self-hosted alerting",
+   "category": "A",
+   "type": "github",
+   "repo": "ccfos/nightingale",
+   "product_url": "https://github.com/ccfos/nightingale"
+  },
+  {
+   "id": "keep",
+   "brand": "Keep",
+   "model": "AIOps and alert management platform",
+   "category": "A",
+   "type": "github",
+   "repo": "keephq/keep",
+   "product_url": "https://github.com/keephq/keep"
+  },
+  {
+   "id": "pyroscope",
+   "brand": "Pyroscope",
+   "model": "Continuous Profiling Platform",
+   "category": "A",
+   "type": "github",
+   "repo": "grafana/pyroscope",
+   "product_url": "https://github.com/grafana/pyroscope"
+  },
+  {
+   "id": "nvtop",
+   "brand": "Nvtop",
+   "model": "GPU & Accelerator process monitoring",
+   "category": "A",
+   "type": "github",
+   "repo": "Syllo/nvtop",
+   "product_url": "https://github.com/Syllo/nvtop"
+  },
+  {
+   "id": "hyperdx",
+   "brand": "Hyperdx",
+   "model": "Resolve production issues, fast",
+   "category": "A",
+   "type": "github",
+   "repo": "hyperdxio/hyperdx",
+   "product_url": "https://github.com/hyperdxio/hyperdx"
+  },
+  {
+   "id": "flclash",
+   "brand": "FlClash",
+   "model": "Multi-platform proxy client",
+   "category": "R",
+   "type": "github",
+   "repo": "chen08209/FlClash",
+   "product_url": "https://github.com/chen08209/FlClash"
+  },
+  {
+   "id": "algo",
+   "brand": "Algo",
+   "model": "Set up a personal VPN in the cloud",
+   "category": "R",
+   "type": "github",
+   "repo": "trailofbits/algo",
+   "product_url": "https://github.com/trailofbits/algo"
+  },
+  {
+   "id": "amnezia-client",
+   "brand": "Amnezia Client",
+   "model": "Amnezia VPN Client (Desktop+Mobile)",
+   "category": "R",
+   "type": "github",
+   "repo": "amnezia-vpn/amnezia-client",
+   "product_url": "https://github.com/amnezia-vpn/amnezia-client"
+  },
+  {
+   "id": "adaway",
+   "brand": "AdAway",
+   "model": "Ad blocker for Android",
+   "category": "R",
+   "type": "github",
+   "repo": "AdAway/AdAway",
+   "product_url": "https://github.com/AdAway/AdAway"
+  },
+  {
+   "id": "oblivion-desktop",
+   "brand": "Oblivion Desktop",
+   "model": "Unofficial Warp Client for Windows/Mac/Linux",
+   "category": "R",
+   "type": "github",
+   "repo": "bepass-org/oblivion-desktop",
+   "product_url": "https://github.com/bepass-org/oblivion-desktop"
   }
  ]
 }
