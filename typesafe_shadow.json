@@ -17694,6 +17694,42 @@
     "security_fix_plain": 0.17,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "windmill",
+   "version": "1.840.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-10-17T22:05:19+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.1,
+    "security_fix_plain": 0.15,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "karakeep",
+   "version": "0.34.0",
+   "name": "Karakeep Bookmark everything",
+   "judged_at": "2026-10-17T22:05:20+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
