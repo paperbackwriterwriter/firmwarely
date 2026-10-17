@@ -17154,6 +17154,42 @@
     "security_fix_plain": 0.05,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "librechat",
+   "version": "3.0.0",
+   "name": "LibreChat Chat interface",
+   "judged_at": "2026-10-17T04:39:38+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.58,
+    "security_fix_plain": 0.49,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "donetick",
+   "version": "0.1.82",
+   "name": "Donetick Task and chore manager",
+   "judged_at": "2026-10-17T04:39:38+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

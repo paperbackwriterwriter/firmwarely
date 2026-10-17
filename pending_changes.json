@@ -436,6 +436,36 @@
    "notes": "Features: Conditionally include default IPv6 addr (#​721) Webui better uploaders (#​749) Support HEAD requests for embedded assets and health check (#​750) Render placeholders in custom 404 page (#​752) Preserve directory entries and metadata when zipping a directory (#​760) Bug Fixes: Liblzma dyna…",
    "source_url": "https://github.com/sigoden/dufs/releases/tag/v0.47.0",
    "page_url": "https://www.firmwarely.com/devices/dufs/"
+  },
+  "librechat": {
+   "id": "librechat",
+   "brand": "LibreChat",
+   "model": "Chat interface",
+   "category": "A",
+   "status": "update",
+   "version": "3.0.0",
+   "previous": "0.8.8",
+   "released": "2026-10-14",
+   "date_known": true,
+   "eol": false,
+   "notes": "⎈ fix: Authenticate Bundled Helm Databases and Warn on Plain-HTTP Ing… …ress ( #​17047 ) fix: Enable Bundled Database Auth and Warn On Plain-HTTP Ingress fix: Render the Env ConfigMap When librechat.configEnv Is Unset fix: Respect User-Supplied Mongo and Redis Credentials Over Generated Ones docs: …",
+   "source_url": "https://github.com/LibreChat-AI/LibreChat/releases/tag/chart-3.0.0",
+   "page_url": "https://www.firmwarely.com/devices/librechat/"
+  },
+  "donetick": {
+   "id": "donetick",
+   "brand": "Donetick",
+   "model": "Task and chore manager",
+   "category": "A",
+   "status": "update",
+   "version": "0.1.82",
+   "previous": "0.1.80",
+   "released": "2026-10-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "Donetick v0.1.82: Big one again! This release is headlined by project sharing with selected members or even making it private! reward store, calendar sync plus a whole lot of fixes and a big push on the Home Assistant side. Bare with me if I miss something, will keep updating this over the next few…",
+   "source_url": "https://github.com/donetick/donetick/releases/tag/v0.1.82",
+   "page_url": "https://www.firmwarely.com/devices/donetick/"
   }
  }
 }
