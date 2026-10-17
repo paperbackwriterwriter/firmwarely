@@ -133,7 +133,7 @@
   <url><loc>https://www.firmwarely.com/devices/homebridge/</loc><lastmod>2026-08-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/evcc/</loc><lastmod>2026-10-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/emonesp/</loc><lastmod>2020-12-17</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/music-assistant/</loc><lastmod>2026-10-09</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/music-assistant/</loc><lastmod>2026-10-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/wyoming-satellite/</loc><lastmod>2025-02-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/rhasspy/</loc><lastmod>2021-08-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/piper-tts/</loc><lastmod>2023-11-14</lastmod></url>
@@ -323,7 +323,7 @@
   <url><loc>https://www.firmwarely.com/devices/cryptomator/</loc><lastmod>2026-06-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/redis/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/valkey/</loc><lastmod>2026-09-01</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/clickhouse/</loc><lastmod>2026-10-16</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/clickhouse/</loc><lastmod>2026-10-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/timescaledb/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/questdb/</loc><lastmod>2026-08-24</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/duckdb/</loc><lastmod>2026-09-28</lastmod></url>

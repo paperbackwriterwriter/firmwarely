@@ -136,6 +136,36 @@
    "notes": "What's Changed (Docker Specific): Trust Core and Web repositories for the pihole user (GHSA-xch2-4qxw-g5vj) fix: fail closed on FTL and GitHub release downloads Do not xtrace the Docker secret web password build(deps): Bump alpine from 3.24.1 to 3.24.2 in /src Full Changelog: https://github.com/pi-…",
    "source_url": "https://github.com/pi-hole/docker-pi-hole/releases/tag/2026.10.0",
    "page_url": "https://www.firmwarely.com/devices/docker-pi-hole/"
+  },
+  "music-assistant": {
+   "id": "music-assistant",
+   "brand": "Music Assistant",
+   "model": "Media library server",
+   "category": "S",
+   "status": "update",
+   "version": "2.10.7",
+   "previous": "2.10.6",
+   "released": "2026-10-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "📦 Stable Release: _Changes since 2.10.6_ 🚀 Features and enhancements: List Sendspin line-ins on their own player () 🐛 Bugfixes: Fix DLNA player showing up twice when the device advertises a relative presentation URL () Fix Spotify playlists missing from large libraries () Stop Plex Connect from log…",
+   "source_url": "https://github.com/music-assistant/server/releases/tag/2.10.7",
+   "page_url": "https://www.firmwarely.com/devices/music-assistant/"
+  },
+  "clickhouse": {
+   "id": "clickhouse",
+   "brand": "ClickHouse",
+   "model": "Analytics database",
+   "category": "A",
+   "status": "update",
+   "version": "26.3.54.6-lts",
+   "previous": "26.9.20.23-stable",
+   "released": "2026-10-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release v26.3.54.6-lts v26.3.54.6-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.3.54.6-lts",
+   "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   }
  }
 }
