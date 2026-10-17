@@ -24,7 +24,7 @@
   <url><loc>https://www.firmwarely.com/devices/unbound-dns/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/coredns/</loc><lastmod>2026-08-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/blocky-dns/</loc><lastmod>2026-09-05</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/technitium-dns/</loc><lastmod>2026-10-11</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/technitium-dns/</loc><lastmod>2026-10-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/dnscrypt-proxy/</loc><lastmod>2026-07-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/nginx-proxy-manager/</loc><lastmod>2026-09-24</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/traefik/</loc><lastmod>2026-10-15</lastmod></url>
@@ -484,7 +484,7 @@
   <url><loc>https://www.firmwarely.com/devices/pocketbase/</loc><lastmod>2026-10-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/appwrite/</loc><lastmod>2026-10-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/cachet/</loc><lastmod>2023-11-07</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/dawarich/</loc><lastmod>2026-09-30</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/dawarich/</loc><lastmod>2026-10-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/owntracks-recorder/</loc><lastmod>2026-09-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/traccar/</loc><lastmod>2026-09-27</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/pydio-cells/</loc><lastmod>2026-10-06</lastmod></url>
@@ -529,7 +529,7 @@
   <url><loc>https://www.firmwarely.com/devices/wasm3/</loc><lastmod>2026-09-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/jerryscript/</loc><lastmod>2024-12-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/serial-studio/</loc><lastmod>2026-10-16</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/dns-blocklists/</loc><lastmod>2026-10-16</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/dns-blocklists/</loc><lastmod>2026-10-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/gost/</loc><lastmod>2024-10-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/amass/</loc><lastmod>2026-04-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/gobuster/</loc><lastmod>2025-09-04</lastmod></url>
@@ -703,7 +703,7 @@
   <url><loc>https://www.firmwarely.com/devices/arkime/</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/rustnet/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/panel/</loc><lastmod>2026-10-10</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/kiosk-satellite/</loc><lastmod>2026-10-16</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/kiosk-satellite/</loc><lastmod>2026-10-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/olares/</loc><lastmod>2026-09-24</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/octelium/</loc><lastmod>2026-10-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/homelable/</loc><lastmod>2026-10-06</lastmod></url>
@@ -752,7 +752,7 @@
   <url><loc>https://www.firmwarely.com/devices/pyroscope/</loc><lastmod>2026-10-09</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/nvtop/</loc><lastmod>2026-02-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/hyperdx/</loc><lastmod>2026-10-13</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/flclash/</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/flclash/</loc><lastmod>2026-10-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/algo/</loc><lastmod>2025-11-27</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/amnezia-client/</loc><lastmod>2026-09-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/adaway/</loc><lastmod>2024-10-27</lastmod></url>
