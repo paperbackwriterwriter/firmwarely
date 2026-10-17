@@ -421,6 +421,21 @@
    "notes": "Summary Changes and improvements Improved chamber temperature estimation. Reverted bed lowering to the previous behavior. This is the stable release of firmware 6.10.3 for the Prusa XL+ and XL , bringing changes and improvements.",
    "source_url": "https://github.com/prusa3d/Prusa-Firmware-Buddy/releases/tag/v6.10.3",
    "page_url": "https://www.firmwarely.com/devices/prusa-xl/"
+  },
+  "dufs": {
+   "id": "dufs",
+   "brand": "dufs",
+   "model": "Static file server",
+   "category": "N",
+   "status": "update",
+   "version": "0.47.0",
+   "previous": "0.46.0",
+   "released": "2026-10-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "Features: Conditionally include default IPv6 addr (#​721) Webui better uploaders (#​749) Support HEAD requests for embedded assets and health check (#​750) Render placeholders in custom 404 page (#​752) Preserve directory entries and metadata when zipping a directory (#​760) Bug Fixes: Liblzma dyna…",
+   "source_url": "https://github.com/sigoden/dufs/releases/tag/v0.47.0",
+   "page_url": "https://www.firmwarely.com/devices/dufs/"
   }
  }
 }
