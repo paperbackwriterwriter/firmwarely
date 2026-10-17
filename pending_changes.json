@@ -121,6 +121,21 @@
    "notes": "Security: This release fixes the following security advisories (credit to the reporters named): High GHSA-2h7g-g549-hf74 (CVSS 7.7): document root could be relocated via a Teleporter import or symlink. Reported and. Medium GHSA-667h-gpmh-7gxc (CVSS 6.5): contents of local files echoed when parsing …",
    "source_url": "https://github.com/pi-hole/FTL/releases/tag/v6.8",
    "page_url": "https://www.firmwarely.com/devices/pihole-ftl/"
+  },
+  "docker-pi-hole": {
+   "id": "docker-pi-hole",
+   "brand": "Pi-hole",
+   "model": "Docker image",
+   "category": "R",
+   "status": "update",
+   "version": "2026.10.0",
+   "previous": "2026.09.0",
+   "released": "2026-10-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed (Docker Specific): Trust Core and Web repositories for the pihole user (GHSA-xch2-4qxw-g5vj) fix: fail closed on FTL and GitHub release downloads Do not xtrace the Docker secret web password build(deps): Bump alpine from 3.24.1 to 3.24.2 in /src Full Changelog: https://github.com/pi-…",
+   "source_url": "https://github.com/pi-hole/docker-pi-hole/releases/tag/2026.10.0",
+   "page_url": "https://www.firmwarely.com/devices/docker-pi-hole/"
   }
  }
 }
