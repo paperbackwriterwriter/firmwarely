@@ -286,6 +286,21 @@
    "notes": "See Changelog for details",
    "source_url": "https://github.com/Waboodoo/HTTP-Shortcuts/releases/tag/v4.9.0",
    "page_url": "https://www.firmwarely.com/devices/http-shortcuts/"
+  },
+  "keepassdx": {
+   "id": "keepassdx",
+   "brand": "KeePassDX",
+   "model": "Vault and password manager",
+   "category": "A",
+   "status": "update",
+   "version": "4.5.6",
+   "previous": "4.5.5",
+   "released": "2026-10-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "Web domains without TLD in Autofill #​2744 () Fix upload attachment in Android 12 #​2745 Fix synchronized method for duplicate UUIDs #​2716 Fix attach file in Android 12 #​2745 Fix error message on wrong password #​2739 Fix username OTP field #​2747 Fix rotated signing keys for native app #​2752 Bu…",
+   "source_url": "https://github.com/Kunzisoft/KeePassDX/releases/tag/4.5.6",
+   "page_url": "https://www.firmwarely.com/devices/keepassdx/"
   }
  }
 }
