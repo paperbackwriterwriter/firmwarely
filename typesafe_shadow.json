@@ -17370,6 +17370,42 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "pi-hole",
+   "version": "6.5",
+   "name": "Pi-hole (network ad blocker)",
+   "judged_at": "2026-10-17T11:50:56+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.98,
+    "security_fix_plain": 0.95,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "pihole-ftl",
+   "version": "6.8",
+   "name": "Pi-hole FTL DNS engine",
+   "judged_at": "2026-10-17T11:50:56+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.97,
+    "security_fix_plain": 0.95,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

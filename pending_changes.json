@@ -91,6 +91,36 @@
    "notes": "Breaking Changes: network Desktop TUN keys follow the profile unless picked; changed values carry over Features: l10n French, Spanish and Korean translations android No more Firebase analytics or crash reporting network Per-key desktop TUN settings; system proxy and tray fixes theme Redesigned them…",
    "source_url": "https://github.com/chen08209/FlClash/releases/tag/v0.9.1",
    "page_url": "https://www.firmwarely.com/devices/flclash/"
+  },
+  "pi-hole": {
+   "id": "pi-hole",
+   "brand": "Pi-hole",
+   "model": "Pi-hole (network ad blocker)",
+   "category": "R",
+   "status": "critical",
+   "version": "6.5",
+   "previous": "6.4.3",
+   "released": "2026-10-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "Security: This release fixes the following security advisories (credit to the reporters named): High GHSA-cf36-4hhc-8398 (CVSS 7.8): command execution via a crafted PID. Reported. GHSA-xch2-4qxw-g5vj (CVSS 7.8): root following a symlink when writing the version file. Reported and. GHSA-j8vh-6fp9-cj…",
+   "source_url": "https://github.com/pi-hole/pi-hole/releases/tag/v6.5",
+   "page_url": "https://www.firmwarely.com/devices/pi-hole/"
+  },
+  "pihole-ftl": {
+   "id": "pihole-ftl",
+   "brand": "Pi-hole",
+   "model": "FTL DNS engine",
+   "category": "R",
+   "status": "critical",
+   "version": "6.8",
+   "previous": "6.7.1",
+   "released": "2026-10-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "Security: This release fixes the following security advisories (credit to the reporters named): High GHSA-2h7g-g549-hf74 (CVSS 7.7): document root could be relocated via a Teleporter import or symlink. Reported and. Medium GHSA-667h-gpmh-7gxc (CVSS 6.5): contents of local files echoed when parsing …",
+   "source_url": "https://github.com/pi-hole/FTL/releases/tag/v6.8",
+   "page_url": "https://www.firmwarely.com/devices/pihole-ftl/"
   }
  }
 }
