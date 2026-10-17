@@ -809,6 +809,17 @@ def test_workflows_pinned():
     fetch.apply_result(dev, {"version": "0.3.30", "released": "2026-10-09", "date_known": True, "notes": "vdev"})
     check("...so the page keeps the newer one", dev["version"], "0.59.0")
     skip = re.compile(fetch.DEFAULT_SKIP, re.I)
+    # one firmware repo, many printers: a release whose notes name another model is skipped
+    real_feed = fetch.parse_feed, fetch.get
+    try:
+        fetch.get = lambda url: ""
+        fetch.parse_feed = lambda raw: [
+            {"title": "6.9.2", "body": "Firmware 6.9.2 is compatible only with the Prusa CORE One+ INDX", "date": "2026-10-07", "link": "a"},
+            {"title": "6.10.2", "body": "Stable release for MK4S, MK4, CORE One and XL", "date": "2026-09-16", "link": "b"}]
+        got = fetch.check_feed({"id": "p", "url": "u", "item_match": r"^\d", "version_regex": r"(\d+\.\d+\.\d+)", "notes_match": r"\bMK4S\b"})
+    finally:
+        fetch.parse_feed, fetch.get = real_feed
+    check("a printer is never offered another printer's firmware", got["version"], "6.10.2")
     check("release candidates glued to the number are skipped",
           [bool(skip.search(t)) for t in ("7.4.16rc1", "8.0.0beta2", "2.0.0", "vdev-v0.3.30", "Devices 1.2")],
           [True, True, False, False, False])
