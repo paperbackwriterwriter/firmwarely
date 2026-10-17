@@ -25,7 +25,7 @@ from fetch import full_name, APP_HINT
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://www.firmwarely.com"  # the apex redirects here, so canonicals must too
 CATS = {"R": "Routers & networking", "N": "NAS & storage", "S": "Smart home & cameras",
-        "C": "Consoles, drones & e-bikes", "M": "Makers & open firmware",
+        "C": "Consoles & gaming", "M": "Makers & open firmware",
         "P": "PCs, TVs & gadgets", "A": "Self-hosted apps & servers"}
 LABEL = {"critical": "critical fix", "update": "new version", "current": "current",
          "pending": "watching soon", "eol": "end of life", "stale": "no recent release"}
@@ -36,20 +36,20 @@ GUIDES = json.loads((ROOT / "update_guides.json").read_text()) if (ROOT / "updat
 CAT_SLUG = {"R": "routers", "N": "nas", "S": "smart-home", "C": "consoles-drones-ebikes", "M": "makers",
             "P": "pcs-tvs-gadgets", "A": "self-hosted"}
 CAT_SHORT = {"R": "Router & networking", "N": "NAS & storage", "S": "Smart home & camera",
-             "C": "Console, drone & e-bike", "M": "Maker & open-source",
+             "C": "Console & gaming", "M": "Maker & open-source",
              "P": "PC, TV & gadget", "A": "Self-hosted app"}
 CAT_INTRO = {
     "R": "Routers, mesh systems, switches and access points sit between everything you own and the internet, which makes them the devices most worth keeping patched. Vendors ship fixes for authentication bypasses and remote code execution several times a year, often quietly. Firmwarely reads each manufacturer's release page every hour and records the version, date and what changed.",
     "N": "A NAS holds your backups, photos and documents and is usually reachable from the whole house, so a missed security update matters more here than almost anywhere else. DSM, QTS, TrueNAS and Unraid all publish structured release notes; Firmwarely checks them every hour and flags the releases that fix vulnerabilities.",
-    "S": "Cameras, doorbells, hubs and smart speakers update through their apps and rarely tell you what changed. Firmwarely tracks the manufacturers' official release notes so you can see the current version, when it shipped and whether it closed a security hole, even for devices that update silently.",
-    "C": "Consoles, drones and e-bikes carry firmware that changes how they behave, from flight-safety databases to battery management. Manufacturers publish release notes, but nobody reads them at the right moment. Firmwarely records each release and emails you when one lands for something you own.",
+    "S": "Smart home hubs, camera firmware and home automation software update through their apps and rarely tell you what changed. Firmwarely tracks the manufacturers' official release notes so you can see the current version, when it shipped and whether it closed a security hole, even for devices that update silently.",
+    "C": "Consoles, handhelds and the emulators and gaming OSes people run on them change with every release, from compatibility fixes to new hardware support. Release notes are published, but nobody reads them at the right moment. Firmwarely records each release and emails you when one lands for something you own.",
     "M": "Open-source firmware and self-hosted software move fast, and a stale version can mean missing features or an unpatched dependency. Firmwarely watches the projects' own release feeds on GitHub and elsewhere, so you see new tags and their notes within the hour.",
     "P": "Laptops, motherboards, TVs, printers, headphones, cameras and e-readers all run firmware, and most of it updates from a settings menu nobody opens. BIOS releases close security holes, TV updates change what apps work, and camera firmware adds autofocus modes years after purchase. Firmwarely lists the current version and the manufacturer's notes so you know when it is worth the trip into the menu.",
     "A": "Self-hosted apps and servers are the software people run on their own NAS, mini PC or VPS: media servers, dashboards, password managers, home automation, monitoring and databases. They ship far more often than appliances, and a missed release can mean a known vulnerability on a box reachable from the internet. Firmwarely reads each project's release feed every hour and keeps the version, date and notes in one place.",
 }
 # how a category reads mid-sentence ("NAS" must stay upper-case)
 CAT_PHRASE = {"R": "routers & networking", "N": "NAS & storage", "S": "smart home & cameras",
-              "C": "consoles, drones & e-bikes", "M": "makers & open firmware",
+              "C": "consoles & gaming", "M": "makers & open firmware",
               "P": "PCs, TVs & gadgets", "A": "self-hosted apps & servers"}
 ICONS = json.loads(re.search(r"/\*json\*/(\{.*?\})/\*end\*/", (ROOT / "icons.js").read_text(), re.S).group(1))
 
@@ -158,7 +158,7 @@ HOWTO = {
     "R": "Log in to the router's admin page (usually at 192.168.1.1 or via the manufacturer's app), open the firmware or system update section, and apply the update. Most routers reboot for a minute or two.",
     "N": "Open the NAS control panel, go to the update or system section, and install the new version. Back up important data first; NAS updates can take several minutes.",
     "S": "Updates usually arrive through the manufacturer's phone app or roll out automatically. Open the device's settings in the app and look for a firmware or software section.",
-    "C": "Consoles update through their system settings or on next connection. Drones and e-bikes update through the manufacturer's app while the device is connected.",
+    "C": "Consoles update through their system settings or on next connection; emulators and gaming OSes from their own updater or releases page.",
     "M": "Follow the project's release page for the flashing or OTA procedure. Many maker devices update from a web installer or the project's desktop app.",
     "P": "Use the manufacturer's companion app or the device's own settings menu; PCs and motherboards use a BIOS utility, TVs a Software Update menu, cameras a file copied to a memory card.",
     "A": "Pull the new image or package and restart the service. Read the release notes and back up the data directory first; most projects can't downgrade once the database has migrated.",
@@ -754,11 +754,11 @@ def brand_page(brand, items):
 DEVICE_ART = [  # (label, category page, icon family)
     ("Routers & mesh", "R", "router"),
     ("NAS & storage", "N", "nas"),
-    ("Security cameras", "S", "camera"),
-    ("Doorbells & hubs", "S", "doorbell"),
-    ("Consoles", "C", "console"),
-    ("Drones", "C", "drone"),
-    ("E-bikes", "C", "ebike"),
+    ("Smart home hubs", "S", "hub"),
+    ("Cameras & NVRs", "S", "camera"),
+    ("Consoles & emulators", "C", "console"),
+    ("Dev boards & firmware", "M", "board"),
+    ("Self-hosted apps", "A", "app"),
     ("3D printers & makers", "M", "printer"),
 ]
 
@@ -821,7 +821,7 @@ def pro_page():
 
   <h2 style="margin-top:1.5rem">What you're signing up for</h2>
   <div class="pro-perks">
-    <div class="card"><h3>Every device you own</h3><p>No three-device cap. Add the router, both NAS boxes, every camera and the kids' console.</p></div>
+    <div class="card"><h3>Every device you own</h3><p>No three-device cap. Add the router, both NAS boxes, the smart home hub and every app you self-host.</p></div>
     <div class="card"><h3>The dashboard</h3><p>One screen showing what's current, what has an update and what has a security fix waiting, with a button to go apply it.</p></div>
     <div class="card"><h3>One email a day, for all of it</h3><p>Each morning, a single email covering everything of yours that changed in the last 24 hours, security fixes first. Free accounts get it once a week.</p></div>
   </div>

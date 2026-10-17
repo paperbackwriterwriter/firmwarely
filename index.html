@@ -243,7 +243,7 @@ footer a:hover{color:var(--text)}
       <h2>How it works</h2>
       <div class="steps">
         <ol>
-          <li><div class="n">1</div><h3>Pick the devices you own</h3><p>Search the catalog for your router, NAS, cameras, console, drone or e-bike and add them to your list.</p></li>
+          <li><div class="n">1</div><h3>Pick the devices you own</h3><p>Search the catalog for your router, NAS, smart home hub, console or self-hosted apps and add them to your list.</p></li>
           <li><div class="n">2</div><h3>We check every hour</h3><p>Firmwarely reads each manufacturer's release page and project feed around the clock and records the version, date and what changed the moment it appears.</p></li>
           <li><div class="n">3</div><h3>We email you when yours change</h3><p>One email covers every device of yours that changed, security fixes first. Pro members get it each morning; free members get the week's changes every Monday. Haven't picked your devices yet? You get everything that changed.</p></li>
         </ol>
@@ -301,7 +301,7 @@ footer a:hover{color:var(--text)}
         <a class="chip" data-cat="Routers &amp; networking" href="/category/routers/">Routers &amp; networking</a>
         <a class="chip" data-cat="NAS &amp; storage" href="/category/nas/">NAS &amp; storage</a>
         <a class="chip" data-cat="Smart home &amp; cameras" href="/category/smart-home/">Smart home &amp; cameras</a>
-        <a class="chip" data-cat="Consoles, drones &amp; e-bikes" href="/category/consoles-drones-ebikes/">Consoles, drones &amp; e-bikes</a>
+        <a class="chip" data-cat="Consoles &amp; gaming" href="/category/consoles-drones-ebikes/">Consoles &amp; gaming</a>
         <a class="chip" data-cat="Makers &amp; open firmware" href="/category/makers/">Makers &amp; open firmware</a>
         <a class="chip" data-cat="PCs, TVs &amp; gadgets" href="/category/pcs-tvs-gadgets/">PCs, TVs &amp; gadgets</a>
         <a class="chip" data-cat="Self-hosted apps &amp; servers" href="/category/self-hosted/">Self-hosted apps &amp; servers</a>
@@ -349,7 +349,7 @@ footer a:hover{color:var(--text)}
 /* ---------- data: devices.json from the hourly pipeline. Nothing is invented client-side;
    until it loads (or if it fails) the page says so instead of showing placeholder rows. ---------- */
 const CATS = {
-  R:"Routers & networking", N:"NAS & storage", S:"Smart home & cameras", C:"Consoles, drones & e-bikes", M:"Makers & open firmware",
+  R:"Routers & networking", N:"NAS & storage", S:"Smart home & cameras", C:"Consoles & gaming", M:"Makers & open firmware",
   P:"PCs, TVs & gadgets", A:"Self-hosted apps & servers"
 };
 let DEVICES = [];
