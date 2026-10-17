@@ -241,6 +241,21 @@
    "notes": "[!CAUTION] Homebox now defaults to blocking notifiers to all internal IP addresses, if you have internal services with RFC1918 IPs that Homebox needs access to for webhooks or otherwise, please review our documentation on notifier security configuration: https://homebox.software/en/user-guide/notif…",
    "source_url": "https://github.com/sysadminsmedia/homebox/releases/tag/v0.27.0",
    "page_url": "https://www.firmwarely.com/devices/homebox/"
+  },
+  "b4": {
+   "id": "b4",
+   "brand": "B4",
+   "model": "Network packet processor",
+   "category": "R",
+   "status": "update",
+   "version": "1.87.0",
+   "previous": "1.86.0",
+   "released": "2026-10-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "[1.87.0] - 2026-10-17: ADDED: A set can remove ECH keys from DNS answers, so a browser opens sites such as those on Cloudflare where the network drops connections that use ECH - the switch is under DNS & Routing, DNS Redirect, Encrypted ClientHello (ECH) in the set editor, a set that lists cloudfla…",
+   "source_url": "https://github.com/DanielLavrushin/b4/releases/tag/v1.87.0",
+   "page_url": "https://www.firmwarely.com/devices/b4/"
   }
  }
 }
