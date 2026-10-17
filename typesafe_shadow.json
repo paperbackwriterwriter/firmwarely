@@ -17514,6 +17514,114 @@
     "security_fix_plain": 0.05,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.290.60350",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-10-17T16:49:47+00:00",
+   "notes_chars": 39,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.9.21.9-stable",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-17T16:49:47+00:00",
+   "notes_chars": 43,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "mealie",
+   "version": "3.29.0",
+   "name": "Mealie Recipe manager",
+   "judged_at": "2026-10-17T16:49:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "librephotos",
+   "version": "1.4.0",
+   "name": "LibrePhotos Photo management",
+   "judged_at": "2026-10-17T16:49:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ghostfolio",
+   "version": "3.88.0",
+   "name": "Ghostfolio Wealth tracker",
+   "judged_at": "2026-10-17T16:49:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "homebox",
+   "version": "0.27.0",
+   "name": "Homebox Home inventory",
+   "judged_at": "2026-10-17T16:49:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.12,
+    "security_fix_plain": 0.16,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
