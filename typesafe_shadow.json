@@ -17262,6 +17262,24 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "evcc",
+   "version": "0.317.2",
+   "name": "evcc EV charge controller",
+   "judged_at": "2026-10-17T10:08:34+00:00",
+   "notes_chars": 7,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
