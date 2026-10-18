@@ -46,6 +46,51 @@
    "notes": "v32.5.5 v32.5.5",
    "source_url": "https://github.com/jgraph/drawio/releases/tag/v32.5.5",
    "page_url": "https://www.firmwarely.com/devices/drawio/"
+  },
+  "ntfy": {
+   "id": "ntfy",
+   "brand": "ntfy",
+   "model": "Push notification server",
+   "category": "A",
+   "status": "update",
+   "version": "2.32.0",
+   "previous": "2.31.1",
+   "released": "2026-10-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: 9d0b6d933d6a6ddc5265bfecadaec1fb1538d89b Prep v2.32.0 release: release notes, install docs",
+   "source_url": "https://github.com/binwiederhier/ntfy/releases/tag/v2.32.0",
+   "page_url": "https://www.firmwarely.com/devices/ntfy/"
+  },
+  "clickhouse": {
+   "id": "clickhouse",
+   "brand": "ClickHouse",
+   "model": "Analytics database",
+   "category": "A",
+   "status": "update",
+   "version": "26.3.55.2-lts",
+   "previous": "26.9.21.9-stable",
+   "released": "2026-10-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release v26.3.55.2-lts v26.3.55.2-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.3.55.2-lts",
+   "page_url": "https://www.firmwarely.com/devices/clickhouse/"
+  },
+  "yaof": {
+   "id": "yaof",
+   "brand": "YAOF",
+   "model": "OpenWrt for Nanopi R2C/R2S/R4S/X86",
+   "category": "R",
+   "status": "update",
+   "version": "25.12.6",
+   "previous": "25.12.5",
+   "released": "2026-10-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "OpenWRT-25.12.6 25.12.6",
+   "source_url": "https://github.com/QiuSimons/YAOF/releases/tag/25.12.6",
+   "page_url": "https://www.firmwarely.com/devices/yaof/"
   }
  }
 }

@@ -106,7 +106,7 @@
   <url><loc>https://www.firmwarely.com/devices/changedetection/</loc><lastmod>2026-10-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/healthchecks/</loc><lastmod>2026-08-31</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/gotify/</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/ntfy/</loc><lastmod>2026-10-17</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/ntfy/</loc><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/apprise/</loc><lastmod>2026-10-03</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/scrutiny-disk/</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/glances/</loc><lastmod>2026-10-11</lastmod></url>
@@ -323,7 +323,7 @@
   <url><loc>https://www.firmwarely.com/devices/cryptomator/</loc><lastmod>2026-06-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/redis/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/valkey/</loc><lastmod>2026-09-01</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/clickhouse/</loc><lastmod>2026-10-17</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/clickhouse/</loc><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/timescaledb/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/questdb/</loc><lastmod>2026-08-24</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/duckdb/</loc><lastmod>2026-09-28</lastmod></url>
@@ -724,7 +724,7 @@
   <url><loc>https://www.firmwarely.com/devices/thanos/</loc><lastmod>2026-07-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/bottom/</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/amlogic-s9xxx-openwrt/</loc><lastmod>2026-10-01</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/yaof/</loc><lastmod>2026-07-10</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/yaof/</loc><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/openwrt-v2ray/</loc><lastmod>2026-08-22</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/b4/</loc><lastmod>2026-10-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/openwrt-tailscale-enabler/</loc><lastmod>2026-01-09</lastmod></url>
