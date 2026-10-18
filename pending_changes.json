@@ -151,6 +151,51 @@
    "notes": "What's Changed: feat(loader): support ARM Linux, experimental builds for every platform that exists fix(deps): bump UI to fix beta Implement new plugin update API fix(macOS): fix macOS type checking and missing method [Rebase] Warn users on possible risks on installing third party unvetted plugins …",
    "source_url": "https://github.com/SteamDeckHomebrew/decky-loader/releases/tag/v3.3.0",
    "page_url": "https://www.firmwarely.com/devices/decky-loader/"
+  },
+  "valetudo": {
+   "id": "valetudo",
+   "brand": "Valetudo",
+   "model": "Cloud-free vacuum firmware",
+   "category": "S",
+   "status": "update",
+   "version": "2026.10.0",
+   "previous": "2026.08.0",
+   "released": "2026-10-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "2026.10.0 New robots, new Fab Valetudo 2026.10.0: I have spent a lot of time working on Valetudo, without working directly on Valetudo. While wrapping up, I saw that the first commit for the new bots was in _march_. So, what changed? We now have two modern MOVA robots that can run Valetudo in the s…",
+   "source_url": "https://github.com/Hypfer/Valetudo/releases/tag/2026.10.0",
+   "page_url": "https://www.firmwarely.com/devices/valetudo/"
+  },
+  "casdoor": {
+   "id": "casdoor",
+   "brand": "Casdoor",
+   "model": "Identity and access",
+   "category": "A",
+   "status": "update",
+   "version": "4.21.0",
+   "previous": "4.20.0",
+   "released": "2026-10-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: Features: 0df833ed76c74e25a4c6e12da281cfd0dcb8e17c feat: add basePath to serve Casdoor under a sub-path 5619d6c643195fcee14442b7093541d6a8054d46 feat: restyle toasts as plain cards with colored icons instead of tinted backgrounds 178a8257ee4e18b264d1fc845da67487790d2295 feat: rotate Mark…",
+   "source_url": "https://github.com/casdoor/casdoor/releases/tag/v4.21.0",
+   "page_url": "https://www.firmwarely.com/devices/casdoor/"
+  },
+  "dbeaver": {
+   "id": "dbeaver",
+   "brand": "DBeaver",
+   "model": "Database tool",
+   "category": "A",
+   "status": "update",
+   "version": "26.2.3",
+   "previous": "26.2.2",
+   "released": "2026-10-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "- AI Assistant: - Added drag-and-drop support for Navigator objects and files in AI Chat - Added support for attaching images to AI Chat from files, drag-and-drop, and the clipboard - Fixed an issue where closing multiple SQL Editor tabs cleared the selected AI Chat connection and conversation - Fi…",
+   "source_url": "https://github.com/dbeaver/dbeaver/releases/tag/26.2.3",
+   "page_url": "https://www.firmwarely.com/devices/dbeaver/"
   }
  }
 }
