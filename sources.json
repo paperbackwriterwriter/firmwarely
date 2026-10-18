@@ -11196,6 +11196,33 @@
    "type": "github",
    "repo": "bepass-org/oblivion-desktop",
    "product_url": "https://github.com/bepass-org/oblivion-desktop"
+  },
+  {
+   "id": "sonofflan",
+   "brand": "SonoffLAN",
+   "model": "Control Sonoff Devices",
+   "category": "S",
+   "type": "github",
+   "repo": "AlexxIT/SonoffLAN",
+   "product_url": "https://github.com/AlexxIT/SonoffLAN"
+  },
+  {
+   "id": "dreame-vacuum",
+   "brand": "Dreame Vacuum",
+   "model": "Home Assistant integration",
+   "category": "S",
+   "type": "github",
+   "repo": "Tasshack/dreame-vacuum",
+   "product_url": "https://github.com/Tasshack/dreame-vacuum"
+  },
+  {
+   "id": "webrtc",
+   "brand": "WebRTC",
+   "model": "Home Assistant custom component",
+   "category": "S",
+   "type": "github",
+   "repo": "AlexxIT/WebRTC",
+   "product_url": "https://github.com/AlexxIT/WebRTC"
   }
  ]
 }

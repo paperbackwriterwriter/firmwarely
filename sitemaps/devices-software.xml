@@ -414,7 +414,7 @@
   <url><loc>https://www.firmwarely.com/devices/mastodon/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/misskey/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/lemmy/</loc><lastmod>2026-07-21</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/pixelfed/</loc><lastmod>2026-10-16</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/pixelfed/</loc><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/peertube/</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ghost/</loc><lastmod>2026-10-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/hugo/</loc><lastmod>2026-10-13</lastmod></url>
@@ -757,4 +757,7 @@
   <url><loc>https://www.firmwarely.com/devices/amnezia-client/</loc><lastmod>2026-09-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/adaway/</loc><lastmod>2024-10-27</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/oblivion-desktop/</loc><lastmod>2025-11-10</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/sonofflan/</loc><lastmod>2026-10-17</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/dreame-vacuum/</loc><lastmod>2026-10-11</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/webrtc/</loc><lastmod>2025-08-13</lastmod></url>
 </urlset>
