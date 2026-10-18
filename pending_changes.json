@@ -128,13 +128,13 @@
    "model": "Website analytics and uptime monitor",
    "category": "A",
    "status": "update",
-   "version": "1.33.10",
+   "version": "1.33.11",
    "previous": "1.33.9",
    "released": "2026-10-18",
    "date_known": true,
    "eol": false,
-   "notes": "1.33.10 (2026-10-18): Features: ai-gateway: add custom decisions passthrough (edc3790) ai-gateway: forward OpenRouter decisions (9c77cbf) application: add top event breakdown to statistics (86fbe58) application: show stacked events with session trend (bad5e50) Bug Fixes: analytics: synchronize manu…",
-   "source_url": "https://github.com/msgbyte/tianji/releases/tag/v1.33.10",
+   "notes": "1.33.11 (2026-10-18): Bug Fixes: ai-gateway: preserve Anthropic stream terminal metadata (843278f) ai-gateway: preserve terminal metadata after filter annotations (586f787) ai-gateway: retain chat stream completion details (437a5c4) ai-gateway: retain Responses failure payloads (67cbd11) ai-gateway…",
+   "source_url": "https://github.com/msgbyte/tianji/releases/tag/v1.33.11",
    "page_url": "https://www.firmwarely.com/devices/tianji/"
   },
   "decky-loader": {
@@ -196,6 +196,36 @@
    "notes": "- AI Assistant: - Added drag-and-drop support for Navigator objects and files in AI Chat - Added support for attaching images to AI Chat from files, drag-and-drop, and the clipboard - Fixed an issue where closing multiple SQL Editor tabs cleared the selected AI Chat connection and conversation - Fi…",
    "source_url": "https://github.com/dbeaver/dbeaver/releases/tag/26.2.3",
    "page_url": "https://www.firmwarely.com/devices/dbeaver/"
+  },
+  "gitea": {
+   "id": "gitea",
+   "brand": "Gitea",
+   "model": "Self-hosted Git service",
+   "category": "A",
+   "status": "update",
+   "version": "28.2.0",
+   "previous": "28.1.0",
+   "released": "2026-10-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "[28.2.0] - 2026-10-18: Enhancements: (oauth) Pre-register a builtin OAuth2 application for gitea-vscode (#​39785) (#​39801) Allow custom watches to bypass on-mention email restriction (#​39652) (#​39837) Bug Fixes: Various bugs (#​39661) (#​39667) (markup) Display MathML has no space below it (#​39…",
+   "source_url": "https://github.com/go-gitea/gitea/releases/tag/v28.2.0",
+   "page_url": "https://www.firmwarely.com/devices/gitea/"
+  },
+  "etherpad": {
+   "id": "etherpad",
+   "brand": "Etherpad",
+   "model": "Collaborative editor",
+   "category": "A",
+   "status": "critical",
+   "version": "3.3.9",
+   "previous": "3.3.8",
+   "released": "2026-10-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "3.3.9 is a security and feature release. It closes a path traversal in plugin uninstall (GHSA-g9xm-3pqr-wcph), adds built-in pad retention, and ships a batch of fixes. Security: Plugins — dependency names are validated on uninstall as well as install (GHSA-g9xm-3pqr-wcph). GHSA-92hr-gmr6-h8cp made …",
+   "source_url": "https://github.com/ether/etherpad/releases/tag/v3.3.9",
+   "page_url": "https://www.firmwarely.com/devices/etherpad/"
   }
  }
 }

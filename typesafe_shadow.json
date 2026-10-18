@@ -18198,6 +18198,60 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "tianji",
+   "version": "1.33.11",
+   "name": "Tianji Website analytics and uptime monitor",
+   "judged_at": "2026-10-18T18:32:38+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "gitea",
+   "version": "28.2.0",
+   "name": "Gitea Self-hosted Git service",
+   "judged_at": "2026-10-18T18:32:38+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "etherpad",
+   "version": "3.3.9",
+   "name": "Etherpad Collaborative editor",
+   "judged_at": "2026-10-18T18:32:38+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.93,
+    "security_fix_plain": 0.88,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
