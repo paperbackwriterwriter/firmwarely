@@ -286,6 +286,21 @@
    "notes": "What's Changed: [Partner Nodes] feat(Krea): add Krea 3 Image node Update workflow templates to v0.11.85 Use FLUX 3 Image in node display labels Better documentation about the comfy quant format. Update workflow templates to v0.11.86 feat: Add MOSS-image support [Partner Nodes] chore(Quiver): remove…",
    "source_url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.42.0",
    "page_url": "https://www.firmwarely.com/devices/comfyui/"
+  },
+  "sharpemu": {
+   "id": "sharpemu",
+   "brand": "SharpEmu",
+   "model": "PlayStation 5 emulator",
+   "category": "C",
+   "status": "update",
+   "version": "0.0.6-mono",
+   "previous": "0.0.5-nexus-release",
+   "released": "2026-10-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Automated SharpEmu v0.0.6-mono build for commit ea47b98. Changes since v0.0.5-nexus-release.2: [GPU] Align linear color target pitch like linear textures (#​1063) (289f090) [GUI] improve library tile collection and acceleration fixes (0af8dce) [SharpEmu] Add bundled demo game (#​1072) (f322668) [Ke…",
+   "source_url": "https://github.com/sharpemu/sharpemu/releases/tag/v0.0.6-mono",
+   "page_url": "https://www.firmwarely.com/devices/sharpemu/"
   }
  }
 }
