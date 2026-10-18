@@ -17874,6 +17874,24 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "rallly",
+   "version": "4.15.5",
+   "name": "Rallly Meeting polls",
+   "judged_at": "2026-10-18T04:36:54+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.66,
+    "security_fix_plain": 0.4,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

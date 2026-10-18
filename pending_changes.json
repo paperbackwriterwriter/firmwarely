@@ -391,6 +391,21 @@
    "notes": "What's Changed: Updated translations Fixes for filter() in emailHistory() Fixes for eager loading Fixes for tests Use Batched Chart Summary query Additional test coverage Fies for transaction event query in TaxPeriodReport Skip FR reporting tests Updated lock file Finalizing offline payment sync Fi…",
    "source_url": "https://github.com/invoiceninja/invoiceninja/releases/tag/v5.13.49",
    "page_url": "https://www.firmwarely.com/devices/invoice-ninja/"
+  },
+  "rallly": {
+   "id": "rallly",
+   "brand": "Rallly",
+   "model": "Meeting polls",
+   "category": "A",
+   "status": "critical",
+   "version": "4.15.5",
+   "previous": "4.15.4",
+   "released": "2026-10-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "🔒 Security fix: denial of service through Server Actions: This patch fixes a high severity vulnerability in an upstream dependency. Please upgrade as soon as possible. Rallly v4.15.4 and earlier ship a version of Next.js affected by GHSA-p3m5-59mp-jv5r (high). A crafted request to a Server Action c…",
+   "source_url": "https://github.com/lukevella/rallly/releases/tag/v4.15.5",
+   "page_url": "https://www.firmwarely.com/devices/rallly/"
   }
  }
 }
