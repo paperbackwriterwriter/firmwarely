@@ -361,6 +361,36 @@
    "notes": "OpenWrt v25.12.6 Release",
    "source_url": "https://github.com/openwrt/openwrt/releases/tag/v25.12.6",
    "page_url": "https://www.firmwarely.com/devices/openwrt-router/"
+  },
+  "lobe-chat": {
+   "id": "lobe-chat",
+   "brand": "LobeHub",
+   "model": "Lobe Chat",
+   "category": "A",
+   "status": "update",
+   "version": "2.2.20",
+   "previous": "2.2.19",
+   "released": "2026-10-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "📦 Release v2.2.20: This release was automatically published from PR #​21078. Changes: See PR description: https://github.com/lobehub/lobehub/pull/21078 Commit Message: 🚀 LobeHub Release (20261018): Release Date: October 18, 2026 Since v2.2.19: 419 merged PRs · 14 contributors Agents now reach furth…",
+   "source_url": "https://github.com/lobehub/lobehub/releases/tag/v2.2.20",
+   "page_url": "https://www.firmwarely.com/devices/lobe-chat/"
+  },
+  "invoice-ninja": {
+   "id": "invoice-ninja",
+   "brand": "Invoice Ninja",
+   "model": "Invoicing",
+   "category": "A",
+   "status": "update",
+   "version": "5.13.49",
+   "previous": "5.13.48",
+   "released": "2026-10-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Updated translations Fixes for filter() in emailHistory() Fixes for eager loading Fixes for tests Use Batched Chart Summary query Additional test coverage Fies for transaction event query in TaxPeriodReport Skip FR reporting tests Updated lock file Finalizing offline payment sync Fi…",
+   "source_url": "https://github.com/invoiceninja/invoiceninja/releases/tag/v5.13.49",
+   "page_url": "https://www.firmwarely.com/devices/invoice-ninja/"
   }
  }
 }
