@@ -17802,6 +17802,24 @@
     "security_fix_plain": 0.05,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "openwrt-router",
+   "version": "25.12.6",
+   "name": "OpenWrt Router firmware (stable)",
+   "judged_at": "2026-10-18T01:00:11+00:00",
+   "notes_chars": 24,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.1,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.03
+   }
   }
  ]
 }

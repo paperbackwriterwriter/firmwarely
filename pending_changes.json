@@ -346,6 +346,21 @@
    "notes": "We are pleased to offer EdgeTX \"Queen Anne's Revenge\" v2.12.5, the fifth maintenance release for 2.12, and is recommended for anyone already on 2.12.x. Highlights of this release include hopefully finally putting to rest a bootloader flash lockup that has been here since the OpenTX days, as resolvi…",
    "source_url": "https://github.com/EdgeTX/edgetx/releases/tag/v2.12.5",
    "page_url": "https://www.firmwarely.com/devices/edgetx/"
+  },
+  "openwrt-router": {
+   "id": "openwrt-router",
+   "brand": "OpenWrt",
+   "model": "Router firmware (stable)",
+   "category": "R",
+   "status": "update",
+   "version": "25.12.6",
+   "previous": "24.10.8",
+   "released": "2026-10-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "OpenWrt v25.12.6 Release",
+   "source_url": "https://github.com/openwrt/openwrt/releases/tag/v25.12.6",
+   "page_url": "https://www.firmwarely.com/devices/openwrt-router/"
   }
  }
 }
