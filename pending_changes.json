@@ -226,6 +226,21 @@
    "notes": "3.3.9 is a security and feature release. It closes a path traversal in plugin uninstall (GHSA-g9xm-3pqr-wcph), adds built-in pad retention, and ships a batch of fixes. Security: Plugins — dependency names are validated on uninstall as well as install (GHSA-g9xm-3pqr-wcph). GHSA-92hr-gmr6-h8cp made …",
    "source_url": "https://github.com/ether/etherpad/releases/tag/v3.3.9",
    "page_url": "https://www.firmwarely.com/devices/etherpad/"
+  },
+  "unpoller": {
+   "id": "unpoller",
+   "brand": "UnPoller",
+   "model": "UniFi metrics exporter",
+   "category": "R",
+   "status": "update",
+   "version": "5.6.3",
+   "previous": "5.6.2",
+   "released": "2026-10-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: 4e509de80b9b0d7e6692ee8c4b2a8b1e77b4f02c fix(promunifi): export USG mobile and handheld station counts",
+   "source_url": "https://github.com/unpoller/unpoller/releases/tag/v5.6.3",
+   "page_url": "https://www.firmwarely.com/devices/unpoller/"
   }
  }
 }
