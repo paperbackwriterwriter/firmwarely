@@ -136,6 +136,21 @@
    "notes": "1.33.10 (2026-10-18): Features: ai-gateway: add custom decisions passthrough (edc3790) ai-gateway: forward OpenRouter decisions (9c77cbf) application: add top event breakdown to statistics (86fbe58) application: show stacked events with session trend (bad5e50) Bug Fixes: analytics: synchronize manu…",
    "source_url": "https://github.com/msgbyte/tianji/releases/tag/v1.33.10",
    "page_url": "https://www.firmwarely.com/devices/tianji/"
+  },
+  "decky-loader": {
+   "id": "decky-loader",
+   "brand": "Decky",
+   "model": "Steam Deck plugin loader",
+   "category": "C",
+   "status": "update",
+   "version": "3.3.0",
+   "previous": "3.2.10",
+   "released": "2026-10-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: feat(loader): support ARM Linux, experimental builds for every platform that exists fix(deps): bump UI to fix beta Implement new plugin update API fix(macOS): fix macOS type checking and missing method [Rebase] Warn users on possible risks on installing third party unvetted plugins …",
+   "source_url": "https://github.com/SteamDeckHomebrew/decky-loader/releases/tag/v3.3.0",
+   "page_url": "https://www.firmwarely.com/devices/decky-loader/"
   }
  }
 }
