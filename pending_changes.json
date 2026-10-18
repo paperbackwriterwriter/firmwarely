@@ -256,6 +256,21 @@
    "notes": "Feat: mobile_get_foreground_app reports the focused activity on Android and the view controller on iOS (#​512) Fix: Large UI dumps no longer fail with ENOBUFS when reading mobilecli's output (#​518), thanks to and Fix: mobile_swipe_on_screen rejects a swipe that gives only one of x and y, instead o…",
    "source_url": "https://github.com/mobile-next/mobile-mcp/releases/tag/1.0.12",
    "page_url": "https://www.firmwarely.com/devices/mobile-mcp/"
+  },
+  "octelium": {
+   "id": "octelium",
+   "brand": "Octelium",
+   "model": "Zero trust access platform",
+   "category": "R",
+   "status": "update",
+   "version": "0.46.0",
+   "previous": "0.45.0",
+   "released": "2026-10-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "You can upgrade an already running Cluster via the command octops upgrade as shown here. You can read the full changelog here. Improvements: A new, improved design for the web Portal. Improved reconnection behavior for the Octelium client, especially during Cluster restarts and upgrades. Various fi…",
+   "source_url": "https://github.com/octelium/octelium/releases/tag/v0.46.0",
+   "page_url": "https://www.firmwarely.com/devices/octelium/"
   }
  }
 }
