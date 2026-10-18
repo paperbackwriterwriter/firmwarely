@@ -68,13 +68,13 @@
    "model": "Turn any Android device",
    "category": "S",
    "status": "update",
-   "version": "2026.10.28",
+   "version": "2026.10.29",
    "previous": "2026.10.27",
-   "released": "2026-10-17",
+   "released": "2026-10-18",
    "date_known": true,
    "eol": false,
-   "notes": "What's new in Kiosk Satellite 2026.10.28: Kiosk Satellite now runs headless on devices without a screen, starting with the Echo Dot (2nd generation) on LineageOS. It works as a voice satellite, intercom, alarm clock, timer and speaker for Home Assistant, set up and managed entirely from the remote …",
-   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.10.28",
+   "notes": "What's new in Kiosk Satellite 2026.10.29: Kiosk Satellite can now be an AirPlay speaker, so an iPhone, iPad or Mac can play straight to the kiosk. Voice Satellite also gains a HAL 9000 skin, and this release fixes the remote admin's Player row, the update notice and weather states in the wrong lang…",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.10.29",
    "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   },
   "flclash": {
