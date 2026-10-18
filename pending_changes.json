@@ -406,6 +406,21 @@
    "notes": "🔒 Security fix: denial of service through Server Actions: This patch fixes a high severity vulnerability in an upstream dependency. Please upgrade as soon as possible. Rallly v4.15.4 and earlier ship a version of Next.js affected by GHSA-p3m5-59mp-jv5r (high). A crafted request to a Server Action c…",
    "source_url": "https://github.com/lukevella/rallly/releases/tag/v4.15.5",
    "page_url": "https://www.firmwarely.com/devices/rallly/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.2867",
+   "previous": "0.24.2865",
+   "released": "2026-10-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: 3827993bfea16a1f85a197b3bca3459f98a210a3 world-of-tomorrow: update login #​16903 9505f8f82069aff22fbf048de644ac0cb8104844 dontorrent: new domain ba169195d329865ce02129b1727fa2a27aecdaf0 world-torrent: new domain changes b98fc0d4cdc81b5a5ca77df08ad097d606508dc0 uztracker: new cat 4ee55dd3f…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2867",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
