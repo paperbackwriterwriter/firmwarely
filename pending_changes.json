@@ -16,6 +16,21 @@
    "notes": "IMPORTANT NOTE: The restore command will now error and stop if any restored file contains an invalid page checksum, which leaves the cluster incomplete and unable to start, so the restore must be rerun. The expire command will now refuse to expire if the oldest retained backup would contain checksu…",
    "source_url": "https://github.com/pgbackrest/pgbackrest/releases/tag/release/2.60.0",
    "page_url": "https://www.firmwarely.com/devices/pgbackrest/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.291.36008",
+   "previous": "37522026.291.291",
+   "released": "2026-10-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​11972 #​11971 #​11970 #​11969 #​11968 #​11967 #​11966 #​11965",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.291.36008",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   }
  }
 }
