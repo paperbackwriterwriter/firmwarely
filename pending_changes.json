@@ -466,6 +466,21 @@
    "notes": "New features: Added configurable MQTT and Modbus connection timeouts (#​2507 Thanks) Added per-topic MQTT retain configuration (#​2518 Thanks) Added JavaScript syntax validation to the script editor (#​2514) Added recipe management with PLC upload/download, progress tracking, cancellation, CSV/JSON…",
    "source_url": "https://github.com/frangoteam/FUXA/releases/tag/v1.3.5",
    "page_url": "https://www.firmwarely.com/devices/fuxa/"
+  },
+  "dozzle": {
+   "id": "dozzle",
+   "brand": "Dozzle",
+   "model": "Container log viewer",
+   "category": "A",
+   "status": "update",
+   "version": "11.3.3",
+   "previous": "11.3.2",
+   "released": "2026-10-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "🚀 Features: agent: Warn on the built-in cert and audit mutating calls - and Claude Opus 5.5 (1M context) in https://github.com/amir20/dozzle/issues/5442 (d341c) cloud: Add per-mount rw to inspect_container - and Claude Opus 5.5 (1M context) in https://github.com/amir20/dozzle/issues/5433 (a69af) In…",
+   "source_url": "https://github.com/amir20/dozzle/releases/tag/v11.3.3",
+   "page_url": "https://www.firmwarely.com/devices/dozzle/"
   }
  }
 }
