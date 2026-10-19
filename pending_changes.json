@@ -278,13 +278,13 @@
    "model": "Diffusion workflow UI",
    "category": "A",
    "status": "update",
-   "version": "0.42.0",
+   "version": "0.42.1",
    "previous": "0.41.0",
-   "released": "2026-10-18",
+   "released": "2026-10-19",
    "date_known": true,
    "eol": false,
-   "notes": "What's Changed: [Partner Nodes] feat(Krea): add Krea 3 Image node Update workflow templates to v0.11.85 Use FLUX 3 Image in node display labels Better documentation about the comfy quant format. Update workflow templates to v0.11.86 feat: Add MOSS-image support [Partner Nodes] chore(Quiver): remove…",
-   "source_url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.42.0",
+   "notes": "Fix some crashing issues a few users experienced when running the MOSS image template workflow.",
+   "source_url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.42.1",
    "page_url": "https://www.firmwarely.com/devices/comfyui/"
   },
   "sharpemu": {
