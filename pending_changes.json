@@ -316,6 +316,21 @@
    "notes": "1.841.0 (2026-10-18): Features: let agent workers authenticate with a workload identity token (#​11858) (be23abb) let ALLOW_PRIVATE_MCP_SERVER_URLS name the private hosts it allows (#​11869) (5c205fa) probe nsjail with a real jail and add a gVisor compat mode (#​11865) (69d36f7) Bug Fixes: insert A…",
    "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.841.0",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
+  },
+  "bfe": {
+   "id": "bfe",
+   "brand": "BFE",
+   "model": "Layer 7 load balancer",
+   "category": "R",
+   "status": "update",
+   "version": "1.8.8.4",
+   "previous": "1.8.8.3",
+   "released": "2026-10-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Fixed: Bill streaming (SSE) responses that end at a clean HTTP EOF without the protocol termination event ([DONE] / message_stop) and without any usage, instead of silently deducting 0: ServeHTTPForAI now marks the response completed once the body has been fully delivered (200 SSE, copyResponse suc…",
+   "source_url": "https://github.com/bfenetworks/bfe/releases/tag/v1.8.8.4",
+   "page_url": "https://www.firmwarely.com/devices/bfe/"
   }
  }
 }
