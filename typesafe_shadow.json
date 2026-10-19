@@ -19170,6 +19170,42 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "freshrss",
+   "version": "1.30.2",
+   "name": "FreshRSS RSS reader",
+   "judged_at": "2026-10-19T21:03:59+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.23,
+    "security_fix_plain": 0.52,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "fuxa",
+   "version": "1.3.5",
+   "name": "FUXA SCADA and HMI dashboard",
+   "judged_at": "2026-10-19T21:04:00+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
