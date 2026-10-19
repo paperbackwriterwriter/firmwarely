@@ -158,13 +158,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.8.31.2-lts",
+   "version": "26.9.22.3-stable",
    "previous": "26.7.34.3-stable",
    "released": "2026-10-19",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.8.31.2-lts v26.8.31.2-lts",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.31.2-lts",
+   "notes": "Release v26.9.22.3-stable v26.9.22.3-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.9.22.3-stable",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "homeassistant-powercalc": {
@@ -248,13 +248,13 @@
    "model": "HTTP router and reverse proxy",
    "category": "R",
    "status": "update",
-   "version": "0.28.40",
+   "version": "0.28.41",
    "previous": "0.28.39",
    "released": "2026-10-19",
    "date_known": true,
    "eol": false,
-   "notes": "Changes: Feature: expose priority routes to binary users (#​4347) PriorityRoutes are a very old skipper library feature, that could be useful for binary users, too. PriorityRoutes are matched before the normal route lookup happens and if there is a result then the priority route is used. This is a …",
-   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.40",
+   "notes": "Changes: build(deps): bump github/codeql-action/upload-sarif from 4.38.3 to 4.39.0 (#​4353) Bumps github/codeql-action/upload-sarif from 4.38.3 to 4.39.0. Release notes Sourced from github/codeql-action/upload-sarif's releases . v4.39.0 Breaking change : Bump the minimum required CodeQL bundle vers…",
+   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.41",
    "page_url": "https://www.firmwarely.com/devices/skipper/"
   },
   "titanium-web-proxy": {
@@ -271,6 +271,21 @@
    "notes": "Highlights: Capture local traffic: Unchecking the option now stops routing 127.0.0.1 / localhost through the system proxy. Re-applying the proxy no longer merges the live WinINET bypass list (which kept copying a stale token back in), and the baseline list resets when original settings are restored…",
    "source_url": "https://github.com/justcoding121/titanium-web-proxy/releases/tag/v7.0.26",
    "page_url": "https://www.firmwarely.com/devices/titanium-web-proxy/"
+  },
+  "kimai": {
+   "id": "kimai",
+   "brand": "Kimai",
+   "model": "Time tracking",
+   "category": "A",
+   "status": "critical",
+   "version": "2.70.0",
+   "previous": "2.69.0",
+   "released": "2026-10-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Compatible with PHP 8.2 to 8.5 Features: Password strength configuration (#​6242) CSS classes for customization (working contract screen) (#​6240) Translations update from Hosted Weblate (#​6235) (#​6253) 🚨 Security: Prevent internal preferences from being updated via API - thanks (#​6240) Make sur…",
+   "source_url": "https://github.com/kimai/kimai/releases/tag/2.70.0",
+   "page_url": "https://www.firmwarely.com/devices/kimai/"
   }
  }
 }

@@ -18900,6 +18900,60 @@
     "security_fix_plain": 0.07,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.9.22.3-stable",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-19T16:04:06+00:00",
+   "notes_chars": 43,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "skipper",
+   "version": "0.28.41",
+   "name": "Skipper HTTP router and reverse proxy",
+   "judged_at": "2026-10-19T16:04:06+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "kimai",
+   "version": "2.70.0",
+   "name": "Kimai Time tracking",
+   "judged_at": "2026-10-19T16:04:06+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.9,
+    "security_fix_plain": 0.9,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
