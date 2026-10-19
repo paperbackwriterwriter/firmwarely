@@ -91,6 +91,51 @@
    "notes": "What's new in Kiosk Satellite 2026.10.30: Kiosk Satellite now has a plugin directory, Community Plugins, where you can find, search and install plugins made by the community with one tap. Plugins can also draw Voice Satellite skins, use the camera and scan barcodes, and add buttons to their setting…",
    "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.10.30",
    "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
+  },
+  "appflowy": {
+   "id": "appflowy",
+   "brand": "AppFlowy",
+   "model": "Workspace",
+   "category": "A",
+   "status": "update",
+   "version": "0.14.9",
+   "previous": "0.14.8",
+   "released": "2026-10-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "🚀 v0.14.9: New Features: Database side peek — Added a resizable panel for editing row pages beside their database. Added navigation through visible rows and switching between side peek, center peek, full page, and a new tab while preserving edits. Improvements: Charts and lists — Refreshed chart se…",
+   "source_url": "https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.14.9",
+   "page_url": "https://www.firmwarely.com/devices/appflowy/"
+  },
+  "formbricks": {
+   "id": "formbricks",
+   "brand": "Formbricks",
+   "model": "Surveys",
+   "category": "A",
+   "status": "update",
+   "version": "6.1.0",
+   "previous": "6.0.2",
+   "released": "2026-10-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Overview: Formbricks 6.1 adds survey visibility, so organizations can restrict who sees each survey and its responses, and brings dark mode and Custom CSS to surveys. It also adds Qualtrics survey import from .qsf files, Embedded Data V2 with a shared field library, the v3 Responses API with matchi…",
+   "source_url": "https://github.com/formbricks/formbricks/releases/tag/6.1.0",
+   "page_url": "https://www.firmwarely.com/devices/formbricks/"
+  },
+  "avideo": {
+   "id": "avideo",
+   "brand": "AVideo",
+   "model": "Video streaming platform",
+   "category": "A",
+   "status": "update",
+   "version": "29.5.0",
+   "previous": "29.4.0",
+   "released": "2026-10-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "29.5.0 (2026-10-19): Features: add admin check to listRemoteFiles.php to restrict access for non-admin users (e8f32ab) add CFR sync option detection for FFmpeg compatibility (34c389b) add Local Encoder information to README for video conversion on personal computers (c381d6d) add Local Encoder prom…",
+   "source_url": "https://github.com/WWBN/AVideo/releases/tag/v29.5.0",
+   "page_url": "https://www.firmwarely.com/devices/avideo/"
   }
  }
 }
