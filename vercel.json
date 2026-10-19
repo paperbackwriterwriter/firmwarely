@@ -832,32 +832,32 @@
       "permanent": false
     },
     {
-      "source": "/brands/:b(frrouting|gl-inet|gluetun|godoxy|gost|gping|hagezi|headscale|hickory-dns|hpe|in-a-dyn|inseego|isc|kong|krakend|lantern|librenms|librespeed|linksys|linux-router|maltrail|masterdnsvpn|meshcentral|mitmproxy|motorola|netbird|netbox-labs|netgate|netmaker|networkmanager|nextdns|nginx|nginx-proxy|nginx-proxy-manager|nlnet-labs|ntop|oauth2-proxy|oblivion-desktop|ocelot|octelium)",
+      "source": "/brands/:b(frrouting|gl-inet|gluetun|godoxy|gost|gping|hagezi|headscale|hickory-dns|hpe|in-a-dyn|inseego|isc|kong|krakend|lantern|librenms|librespeed|linksys|linux-router|maltrail|masterdnsvpn|meshcentral|mitmproxy|motorola|netbird|netbox-labs|netgate|netmaker|networkmanager|nextdns|nginx|nginx-proxy|nginx-proxy-manager|nlnet-labs|ntop|numa|oauth2-proxy|oblivion-desktop|ocelot)",
       "destination": "/category/routers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(frrouting|gl-inet|gluetun|godoxy|gost|gping|hagezi|headscale|hickory-dns|hpe|in-a-dyn|inseego|isc|kong|krakend|lantern|librenms|librespeed|linksys|linux-router|maltrail|masterdnsvpn|meshcentral|mitmproxy|motorola|netbird|netbox-labs|netgate|netmaker|networkmanager|nextdns|nginx|nginx-proxy|nginx-proxy-manager|nlnet-labs|ntop|oauth2-proxy|oblivion-desktop|ocelot|octelium)/",
+      "source": "/brands/:b(frrouting|gl-inet|gluetun|godoxy|gost|gping|hagezi|headscale|hickory-dns|hpe|in-a-dyn|inseego|isc|kong|krakend|lantern|librenms|librespeed|linksys|linux-router|maltrail|masterdnsvpn|meshcentral|mitmproxy|motorola|netbird|netbox-labs|netgate|netmaker|networkmanager|nextdns|nginx|nginx-proxy|nginx-proxy-manager|nlnet-labs|ntop|numa|oauth2-proxy|oblivion-desktop|ocelot)/",
       "destination": "/category/routers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(oisf|openclash|openvpn|openwrt|openwrt-nikki|openwrt-tailscale-enabler|openwrt-v2ray|openziti|opnsense|pangolin|peplink|piko|pivpn|pomerium|powerdns|pritunl|project-x|protectli|raspap|rethink|rustdesk|rustnet|safing|sagernet|shadowsocks|skipper|slack|smallstep|smartdns|smokeping|sniffnet|snort|softether|spacex|speedtest-tracker|tailscale|technitium|teleport|teltonika|titanium-web-proxy)",
+      "source": "/brands/:b(octelium|oisf|openclash|openvpn|openwrt|openwrt-nikki|openwrt-tailscale-enabler|openwrt-v2ray|openziti|opnsense|pangolin|peplink|piko|pivpn|pomerium|powerdns|pritunl|project-x|protectli|raspap|rethink|rustdesk|rustnet|safing|sagernet|shadowsocks|skipper|slack|smallstep|smartdns|smokeping|sniffnet|snort|softether|spacex|speedtest-tracker|tailscale|technitium|teleport|teltonika)",
       "destination": "/category/routers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(oisf|openclash|openvpn|openwrt|openwrt-nikki|openwrt-tailscale-enabler|openwrt-v2ray|openziti|opnsense|pangolin|peplink|piko|pivpn|pomerium|powerdns|pritunl|project-x|protectli|raspap|rethink|rustdesk|rustnet|safing|sagernet|shadowsocks|skipper|slack|smallstep|smartdns|smokeping|sniffnet|snort|softether|spacex|speedtest-tracker|tailscale|technitium|teleport|teltonika|titanium-web-proxy)/",
+      "source": "/brands/:b(octelium|oisf|openclash|openvpn|openwrt|openwrt-nikki|openwrt-tailscale-enabler|openwrt-v2ray|openziti|opnsense|pangolin|peplink|piko|pivpn|pomerium|powerdns|pritunl|project-x|protectli|raspap|rethink|rustdesk|rustnet|safing|sagernet|shadowsocks|skipper|slack|smallstep|smartdns|smokeping|sniffnet|snort|softether|spacex|speedtest-tracker|tailscale|technitium|teleport|teltonika)/",
       "destination": "/category/routers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(traefik-labs|trickster|trippy|tyk|unpoller|uptime-kuma|v2fly|vulcain|watchyourlan|wazuh|wg-easy|wiredoor|yaof|zeek|zerotier|zoraxy|zrok|zyxel)",
+      "source": "/brands/:b(titanium-web-proxy|traefik-labs|trickster|trippy|tyk|unpoller|uptime-kuma|v2fly|vulcain|watchyourlan|wazuh|wg-easy|wiredoor|yaof|zeek|zerotier|zoraxy|zrok|zyxel)",
       "destination": "/category/routers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(traefik-labs|trickster|trippy|tyk|unpoller|uptime-kuma|v2fly|vulcain|watchyourlan|wazuh|wg-easy|wiredoor|yaof|zeek|zerotier|zoraxy|zrok|zyxel)/",
+      "source": "/brands/:b(titanium-web-proxy|traefik-labs|trickster|trippy|tyk|unpoller|uptime-kuma|v2fly|vulcain|watchyourlan|wazuh|wg-easy|wiredoor|yaof|zeek|zerotier|zoraxy|zrok|zyxel)/",
       "destination": "/category/routers/",
       "permanent": false
     },

@@ -11223,6 +11223,15 @@
    "type": "github",
    "repo": "AlexxIT/WebRTC",
    "product_url": "https://github.com/AlexxIT/WebRTC"
+  },
+  {
+   "id": "numa",
+   "brand": "Numa",
+   "model": "Portable DNS resolver in Rust",
+   "category": "R",
+   "type": "github",
+   "repo": "razvandimescu/numa",
+   "product_url": "https://github.com/razvandimescu/numa"
   }
  ]
 }

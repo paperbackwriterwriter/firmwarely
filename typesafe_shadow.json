@@ -18504,6 +18504,42 @@
     "security_fix_plain": 0.97,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "budibase",
+   "version": "3.50.0",
+   "name": "Budibase Low-code platform",
+   "judged_at": "2026-10-19T08:25:46+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.13,
+    "security_fix_plain": 0.25,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "tdengine",
+   "version": "3.4.3.3",
+   "name": "TDengine Time-series database",
+   "judged_at": "2026-10-19T08:25:46+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.58,
+    "security_fix_plain": 0.76,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
