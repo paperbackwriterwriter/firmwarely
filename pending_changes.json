@@ -248,13 +248,13 @@
    "model": "HTTP router and reverse proxy",
    "category": "R",
    "status": "update",
-   "version": "0.28.43",
+   "version": "0.28.44",
    "previous": "0.28.39",
    "released": "2026-10-19",
    "date_known": true,
    "eol": false,
-   "notes": "Changes: fix: headerToQuery clears the query param when the header is missing (#​4348) Symptom: headerToQuery changes the query even when the request doesn't have the header: r: -› headerToQuery(\"X-Foo-Header\", \"foo-query-param\") -› \"http://backend\" | Request (no X-Foo-Header) | query sent to the b…",
-   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.43",
+   "notes": "Changes: fix(awssigner): initialize uri escape table once with sync.Once (#​4343) Problem: In filters/awssigner/internal/uri.go, EscapePath() invoked InitializeEscape() on every execution to populate the package-level noEscape [256]bool array. This caused: A data race when multiple goroutines execu…",
+   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.44",
    "page_url": "https://www.firmwarely.com/devices/skipper/"
   },
   "titanium-web-proxy": {
@@ -301,6 +301,36 @@
    "notes": "Changelog: Features: 6d4325dbe34babe55c1bbe3a28ce3e3639ab45c9 feat: accept client ID metadata document URLs as client_id for MCP clients Bug fixes: 6bb563d30802f3be0f73a66c8a9f337cc7248422 fix: default the OIDC user ID mapping to sub and fall back to sub when the mapped claim is missing c5029ae761c…",
    "source_url": "https://github.com/casdoor/casdoor/releases/tag/v4.22.0",
    "page_url": "https://www.firmwarely.com/devices/casdoor/"
+  },
+  "paperless-ngx": {
+   "id": "paperless-ngx",
+   "brand": "Paperless-ngx",
+   "model": "Document scanner and archive",
+   "category": "A",
+   "status": "update",
+   "version": "3.3.3",
+   "previous": "3.3.2",
+   "released": "2026-10-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "paperless-ngx 3.3.3: Bug Fixes: Fix: fix global search input layout shifting (#​14491) Fix: dont include doc content on global search results (#​14488) Fix: remove some redundant pagers (#​14487) Fix: prevent weird wrapping of dashboard widget column titles (#​14486) Fix: dont paginate 'all' tasks …",
+   "source_url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.3.3",
+   "page_url": "https://www.firmwarely.com/devices/paperless-ngx/"
+  },
+  "langfuse": {
+   "id": "langfuse",
+   "brand": "Langfuse",
+   "model": "LLM observability",
+   "category": "A",
+   "status": "update",
+   "version": "4.64.0",
+   "previous": "4.63.0",
+   "released": "2026-10-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Features: feat(trace): Move messages tab and reuse session timeline feat(api-keys): enable project API key permissions by default feat: rename Langfuse Assistant to Halo feat(api-keys): show the Admin role as Full access on API keys feat(topics): show cost of runs feat(web): page-ba…",
+   "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.64.0",
+   "page_url": "https://www.firmwarely.com/devices/langfuse/"
   }
  }
 }
