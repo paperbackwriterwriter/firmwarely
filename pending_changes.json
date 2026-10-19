@@ -346,6 +346,36 @@
    "notes": "Tested BrowserBox release. Install with: curl -fsSL browserbox.io/install.sh | bash",
    "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.4.0",
    "page_url": "https://www.firmwarely.com/devices/browserbox/"
+  },
+  "proton-ge": {
+   "id": "proton-ge",
+   "brand": "GloriousEggroll",
+   "model": "Proton-GE compatibility layer",
+   "category": "C",
+   "status": "update",
+   "version": "GE-Proton11-10",
+   "previous": "GE-Proton11-9",
+   "released": "2026-10-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Component Updates: Wine: Valve bleeding-edge 2026-10-16. This brings upstream syscall emulation through Syscall User Dispatch and native-syscall handling for EAC (EOS) launchers. Also included: Xalia now shuts down cleanly, fewer spurious X11 mouse movement events, a Witcher 3 controller rescan fix…",
+   "source_url": "https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton11-10",
+   "page_url": "https://www.firmwarely.com/devices/proton-ge/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.2875",
+   "previous": "0.24.2867",
+   "released": "2026-10-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: ffd509c8c1cc98091a50db67632ed5c8e207dee3 magnetcat: new alt domains e9dfbce3f783650678b77394f942441cced4075d 52bt: new domains b0dc18f8129dc8a732cdd643bd2c4790c8656156 apachetorrent: removed. #​15714 2f9d977cf13c7357237be92f8cd77aea9dbea3a6 redetorrent: removed. #​15715 159fd200d7cb27cf5d…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2875",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
