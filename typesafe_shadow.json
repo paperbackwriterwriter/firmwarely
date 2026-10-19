@@ -18558,6 +18558,60 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "lxd",
+   "version": "6.10.0",
+   "name": "Canonical LXD",
+   "judged_at": "2026-10-19T10:07:39+00:00",
+   "notes_chars": 280,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.26,
+    "security_fix_plain": 0.23,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "teltonika-rutx50",
+   "version": "7.25.3",
+   "name": "Teltonika RUTX50 cellular router",
+   "judged_at": "2026-10-19T10:07:39+00:00",
+   "notes_chars": 56,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.292.36123",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-10-19T10:07:39+00:00",
+   "notes_chars": 103,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
