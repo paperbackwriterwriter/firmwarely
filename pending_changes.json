@@ -331,6 +331,21 @@
    "notes": "Fixed: Bill streaming (SSE) responses that end at a clean HTTP EOF without the protocol termination event ([DONE] / message_stop) and without any usage, instead of silently deducting 0: ServeHTTPForAI now marks the response completed once the body has been fully delivered (200 SSE, copyResponse suc…",
    "source_url": "https://github.com/bfenetworks/bfe/releases/tag/v1.8.8.4",
    "page_url": "https://www.firmwarely.com/devices/bfe/"
+  },
+  "browserbox": {
+   "id": "browserbox",
+   "brand": "BrowserBox",
+   "model": "Remote browser isolation",
+   "category": "R",
+   "status": "update",
+   "version": "20.4.0",
+   "previous": "20.3.2",
+   "released": "2026-10-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Tested BrowserBox release. Install with: curl -fsSL browserbox.io/install.sh | bash",
+   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.4.0",
+   "page_url": "https://www.firmwarely.com/devices/browserbox/"
   }
  }
 }
