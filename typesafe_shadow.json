@@ -18450,6 +18450,60 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "rabbitmq",
+   "version": "4.4.0",
+   "name": "RabbitMQ Message broker",
+   "judged_at": "2026-10-19T07:28:44+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "n8n",
+   "version": "2.43.8",
+   "name": "n8n Workflow automation",
+   "judged_at": "2026-10-19T07:28:44+00:00",
+   "notes_chars": 94,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "roundcube",
+   "version": "1.7.5",
+   "name": "Roundcube Webmail",
+   "judged_at": "2026-10-19T07:28:44+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.98,
+    "security_fix_plain": 0.97,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
