@@ -248,13 +248,13 @@
    "model": "HTTP router and reverse proxy",
    "category": "R",
    "status": "update",
-   "version": "0.28.41",
+   "version": "0.28.43",
    "previous": "0.28.39",
    "released": "2026-10-19",
    "date_known": true,
    "eol": false,
-   "notes": "Changes: build(deps): bump github/codeql-action/upload-sarif from 4.38.3 to 4.39.0 (#​4353) Bumps github/codeql-action/upload-sarif from 4.38.3 to 4.39.0. Release notes Sourced from github/codeql-action/upload-sarif's releases . v4.39.0 Breaking change : Bump the minimum required CodeQL bundle vers…",
-   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.41",
+   "notes": "Changes: fix: headerToQuery clears the query param when the header is missing (#​4348) Symptom: headerToQuery changes the query even when the request doesn't have the header: r: -› headerToQuery(\"X-Foo-Header\", \"foo-query-param\") -› \"http://backend\" | Request (no X-Foo-Header) | query sent to the b…",
+   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.43",
    "page_url": "https://www.firmwarely.com/devices/skipper/"
   },
   "titanium-web-proxy": {
@@ -286,6 +286,21 @@
    "notes": "Compatible with PHP 8.2 to 8.5 Features: Password strength configuration (#​6242) CSS classes for customization (working contract screen) (#​6240) Translations update from Hosted Weblate (#​6235) (#​6253) 🚨 Security: Prevent internal preferences from being updated via API - thanks (#​6240) Make sur…",
    "source_url": "https://github.com/kimai/kimai/releases/tag/2.70.0",
    "page_url": "https://www.firmwarely.com/devices/kimai/"
+  },
+  "casdoor": {
+   "id": "casdoor",
+   "brand": "Casdoor",
+   "model": "Identity and access",
+   "category": "A",
+   "status": "update",
+   "version": "4.22.0",
+   "previous": "4.21.0",
+   "released": "2026-10-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: Features: 6d4325dbe34babe55c1bbe3a28ce3e3639ab45c9 feat: accept client ID metadata document URLs as client_id for MCP clients Bug fixes: 6bb563d30802f3be0f73a66c8a9f337cc7248422 fix: default the OIDC user ID mapping to sub and fall back to sub when the mapped claim is missing c5029ae761c…",
+   "source_url": "https://github.com/casdoor/casdoor/releases/tag/v4.22.0",
+   "page_url": "https://www.firmwarely.com/devices/casdoor/"
   }
  }
 }

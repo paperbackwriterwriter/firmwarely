@@ -18954,6 +18954,42 @@
     "security_fix_plain": 0.9,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "skipper",
+   "version": "0.28.43",
+   "name": "Skipper HTTP router and reverse proxy",
+   "judged_at": "2026-10-19T16:54:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "casdoor",
+   "version": "4.22.0",
+   "name": "Casdoor Identity and access",
+   "judged_at": "2026-10-19T16:54:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
