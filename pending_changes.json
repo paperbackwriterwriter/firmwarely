@@ -61,6 +61,36 @@
    "notes": "#​11986 #​11985 #​11984 #​11983 #​11982 #​11981 #​11980 #​11978 #​11977 #​11976 #​11975 #​11974 #​11973",
    "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.292.36123",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "graylog": {
+   "id": "graylog",
+   "brand": "Graylog",
+   "model": "Log management",
+   "category": "A",
+   "status": "update",
+   "version": "7.2.1",
+   "previous": "7.2.0",
+   "released": "2026-10-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "7.2.1",
+   "source_url": "https://github.com/Graylog2/graylog2-server/releases/tag/7.2.1",
+   "page_url": "https://www.firmwarely.com/devices/graylog/"
+  },
+  "kiosk-satellite": {
+   "id": "kiosk-satellite",
+   "brand": "Kiosk Satellite",
+   "model": "Turn any Android device",
+   "category": "S",
+   "status": "update",
+   "version": "2026.10.30",
+   "previous": "2026.10.29",
+   "released": "2026-10-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's new in Kiosk Satellite 2026.10.30: Kiosk Satellite now has a plugin directory, Community Plugins, where you can find, search and install plugins made by the community with one tap. Plugins can also draw Voice Satellite skins, use the camera and scan barcodes, and add buttons to their setting…",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.10.30",
+   "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   }
  }
 }
