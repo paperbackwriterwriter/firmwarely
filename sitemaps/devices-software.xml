@@ -16,7 +16,7 @@
   <url><loc>https://www.firmwarely.com/devices/immich-server/</loc><lastmod>2026-10-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/nextcloud-server/</loc><lastmod>2026-10-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/pihole-ftl/</loc><lastmod>2026-10-17</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/netbird/</loc><lastmod>2026-10-16</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/netbird/</loc><lastmod>2026-10-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/headscale/</loc><lastmod>2026-10-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/zerotier/</loc><lastmod>2026-05-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/nebula-mesh/</loc><lastmod>2026-09-22</lastmod></url>
@@ -172,7 +172,7 @@
   <url><loc>https://www.firmwarely.com/devices/certbot/</loc><lastmod>2026-09-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/acme-sh/</loc><lastmod>2026-09-20</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/step-ca/</loc><lastmod>2026-03-23</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/openziti/</loc><lastmod>2026-09-17</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/openziti/</loc><lastmod>2026-10-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/firezone/</loc><lastmod>2026-10-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/netmaker/</loc><lastmod>2026-08-31</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/pritunl/</loc><lastmod>2026-09-27</lastmod></url>
@@ -341,7 +341,7 @@
   <url><loc>https://www.firmwarely.com/devices/adminer/</loc><lastmod>2026-10-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/phpmyadmin/</loc><lastmod>2025-10-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/gogs/</loc><lastmod>2026-06-07</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/onedev/</loc><lastmod>2026-10-17</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/onedev/</loc><lastmod>2026-10-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/woodpecker-ci/</loc><lastmod>2026-10-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/verdaccio/</loc><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/code-server/</loc><lastmod>2026-10-08</lastmod></url>
@@ -668,7 +668,7 @@
   <url><loc>https://www.firmwarely.com/devices/netboot-xyz/</loc><lastmod>2026-08-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/pulse/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ezbookkeeping/</loc><lastmod>2026-10-15</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/skipper/</loc><lastmod>2026-10-16</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/skipper/</loc><lastmod>2026-10-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/freerouting/</loc><lastmod>2026-10-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/linux-router/</loc><lastmod>2026-07-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ha-xiaomi-home/</loc><lastmod>2026-09-28</lastmod></url>
@@ -733,7 +733,7 @@
   <url><loc>https://www.firmwarely.com/devices/mini-graph-card/</loc><lastmod>2025-05-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/tuya-local/</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/adaptive-lighting/</loc><lastmod>2026-09-06</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/titanium-web-proxy/</loc><lastmod>2026-10-16</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/titanium-web-proxy/</loc><lastmod>2026-10-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/xiaomigateway3/</loc><lastmod>2026-10-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/nanomq/</loc><lastmod>2026-08-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/spook/</loc><lastmod>2026-10-14</lastmod></url>
