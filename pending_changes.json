@@ -83,13 +83,13 @@
    "model": "Turn any Android device",
    "category": "S",
    "status": "update",
-   "version": "2026.10.30",
+   "version": "2026.10.31",
    "previous": "2026.10.29",
    "released": "2026-10-19",
    "date_known": true,
    "eol": false,
-   "notes": "What's new in Kiosk Satellite 2026.10.30: Kiosk Satellite now has a plugin directory, Community Plugins, where you can find, search and install plugins made by the community with one tap. Plugins can also draw Voice Satellite skins, use the camera and scan barcodes, and add buttons to their setting…",
-   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.10.30",
+   "notes": "What's new in Kiosk Satellite 2026.10.31: A small follow-up to the previous release, which brought the new Community Plugins Directory. This release redesigns the review you see before installing a plugin, so it is easier to read on the kiosk and in the remote admin. Improvements: Redesigned plugin…",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.10.31",
    "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   },
   "appflowy": {
@@ -136,6 +136,36 @@
    "notes": "29.5.0 (2026-10-19): Features: add admin check to listRemoteFiles.php to restrict access for non-admin users (e8f32ab) add CFR sync option detection for FFmpeg compatibility (34c389b) add Local Encoder information to README for video conversion on personal computers (c381d6d) add Local Encoder prom…",
    "source_url": "https://github.com/WWBN/AVideo/releases/tag/v29.5.0",
    "page_url": "https://www.firmwarely.com/devices/avideo/"
+  },
+  "librenms": {
+   "id": "librenms",
+   "brand": "LibreNMS",
+   "model": "Network monitoring",
+   "category": "R",
+   "status": "update",
+   "version": "26.10.0",
+   "previous": "26.9.1",
+   "released": "2026-10-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "26.10.0: (2026-10-19) A big thank you to the following 52 contributors this last month: murrant (119) Jellyfrog (33) laf (8) mpikzink (7) eskyuu (7) dependabot (6) peejaychilds (6) bennetgallein (5) shivytyahoo (4) chris9951 (4) ahoogerhuis (4) jorgenspange (2) mgrocock-cwcs (2) alexc-hue (2) Janno…",
+   "source_url": "https://github.com/librenms/librenms/releases/tag/26.10.0",
+   "page_url": "https://www.firmwarely.com/devices/librenms/"
+  },
+  "clickhouse": {
+   "id": "clickhouse",
+   "brand": "ClickHouse",
+   "model": "Analytics database",
+   "category": "A",
+   "status": "update",
+   "version": "26.3.56.2-lts",
+   "previous": "26.7.34.3-stable",
+   "released": "2026-10-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release v26.3.56.2-lts v26.3.56.2-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.3.56.2-lts",
+   "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   }
  }
 }
