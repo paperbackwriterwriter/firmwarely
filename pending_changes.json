@@ -1,5 +1,21 @@
 {
- "since": null,
+ "since": "2026-10-19T09:16:28+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "manyfold": {
+   "id": "manyfold",
+   "brand": "Manyfold",
+   "model": "3D model library",
+   "category": "M",
+   "status": "update",
+   "version": "0.152.0",
+   "previous": "0.151.0",
+   "released": "2026-10-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: ✨ New Features ✨: Add simple editing interface for plaintext files (txt, markdown, html, js) 🐛 Bug Fixes 🐛: F3D renderer fixes Fix alternate links for activitypub actors 🛠️ Other Improvements 🛠️: Add rel alternate links to profile pages, linking to activitypub representations Improv…",
+   "source_url": "https://github.com/manyfold3d/manyfold/releases/tag/v0.152.0",
+   "page_url": "https://www.firmwarely.com/devices/manyfold/"
+  }
+ }
 }
