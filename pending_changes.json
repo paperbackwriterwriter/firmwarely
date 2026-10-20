@@ -376,6 +376,21 @@
    "notes": "#​12000 #​11999 #​11998 #​11997 #​11996 #​11992 #​11991 #​11990 #​11989 #​11988 #​11987",
    "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.293.57005",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "metube": {
+   "id": "metube",
+   "brand": "MeTube",
+   "model": "yt-dlp web UI",
+   "category": "A",
+   "status": "update",
+   "version": "2026.10.20",
+   "previous": "2026.10.19",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Docker images have been built and pushed: Docker Hub: alexta69/metube:latest alexta69/metube:2026.10.20 GitHub Container Registry: ghcr.io/alexta69/metube:latest ghcr.io/alexta69/metube:2026.10.20 Changes: build: upgrade Python and frontend dependencies (f651a95) build: drop the duplicate deno.land…",
+   "source_url": "https://github.com/alexta69/metube/releases/tag/2026.10.20",
+   "page_url": "https://www.firmwarely.com/devices/metube/"
   }
  }
 }
