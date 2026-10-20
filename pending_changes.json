@@ -481,6 +481,36 @@
    "notes": "What's new in Kiosk Satellite 2026.10.33: This release adds Celestial, a screensaver that shows the night sky over the kiosk as it is right now, with stars, planets, the Moon, constellations and the Milky Way. On a device with a compass you can hold it up to the sky and see what is in front of you.…",
    "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.10.33",
    "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
+  },
+  "infisical": {
+   "id": "infisical",
+   "brand": "Infisical",
+   "model": "Secrets manager",
+   "category": "A",
+   "status": "update",
+   "version": "0.166.9",
+   "previous": "0.166.8",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: chore: add upgrade impact for v0.166.8 by in https://github.com/Infisical/infisical/pull/8681 docs: note that Palo Alto Networks syncs need the certificate's private key fix(ui): keep the org name visible in project and product scope fix(ui): right-align sheet footers with Cancel be…",
+   "source_url": "https://github.com/Infisical/infisical/releases/tag/v0.166.9",
+   "page_url": "https://www.firmwarely.com/devices/infisical/"
+  },
+  "jupyterhub": {
+   "id": "jupyterhub",
+   "brand": "Jupyter",
+   "model": "JupyterHub",
+   "category": "A",
+   "status": "update",
+   "version": "6.1.1",
+   "previous": "6.1.0",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "6.1.1",
+   "source_url": "https://github.com/jupyterhub/jupyterhub/releases/tag/6.1.1",
+   "page_url": "https://www.firmwarely.com/devices/jupyterhub/"
   }
  }
 }
