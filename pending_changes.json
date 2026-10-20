@@ -526,6 +526,36 @@
    "notes": "29.9.2: For a full list of pull requests and changes in this release, refer to the relevant GitHub milestones: docker/cli, 29.9.2 milestone moby/moby, 29.9.2 milestone Security: The Go runtime update addresses CVE-2026-111943 by rejecting certificate chains that include eight revoked eMudhra interm…",
    "source_url": "https://github.com/moby/moby/releases/tag/docker-v29.9.2",
    "page_url": "https://www.firmwarely.com/devices/docker-engine/"
+  },
+  "tp-link-omada-er605": {
+   "id": "tp-link-omada-er605",
+   "brand": "TP-Link",
+   "model": "Omada ER605 Gateway",
+   "category": "R",
+   "status": "update",
+   "version": "2.4.10",
+   "previous": "2.4.5",
+   "released": "2026-10-20",
+   "date_known": false,
+   "eol": false,
+   "notes": "TP-Link firmware release. See the download page for the changelog.",
+   "source_url": "https://www.tp-link.com/us/support/download/er605/",
+   "page_url": "https://www.firmwarely.com/devices/tp-link-omada-er605/"
+  },
+  "vikunja": {
+   "id": "vikunja",
+   "brand": "Vikunja",
+   "model": "Task manager",
+   "category": "A",
+   "status": "critical",
+   "version": "2.7.1",
+   "previous": "2.7.0",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Vikunja 2.7.1 is out! 🔒 A whopping 41(!) security fixes from community reports and an automated audit, reworked attachment previews, signed Docker images and a pile of bugfixes. Please update as soon as you can. 🦙 https://vikunja.io/changelog/vikunja-2.7.1-was-released/",
+   "source_url": "https://github.com/go-vikunja/vikunja/releases/tag/v2.7.1",
+   "page_url": "https://www.firmwarely.com/devices/vikunja/"
   }
  }
 }
