@@ -1,5 +1,81 @@
 {
- "since": null,
+ "since": "2026-10-20T09:34:25+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "cloudflared": {
+   "id": "cloudflared",
+   "brand": "Cloudflare",
+   "model": "Tunnel daemon",
+   "category": "R",
+   "status": "update",
+   "version": "2026.10.2",
+   "previous": "2026.10.1",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "SHA256 Checksums: cloudflared-amd64.pkg: a0d9804c040821ad7adee1e158fce6e59e3c91b1dd4579f922d17665cea93743 cloudflared-arm64.pkg: a5d619bfb872ac5627b2e46f6a0d1b45b1045e35f25edacd99ebb958e55c852a cloudflared-darwin-amd64.tgz: 4be2a4c0b76f6be4a84bea590743e85041949c294efcee4de86a140a9f11869a cloudflare…",
+   "source_url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.10.2",
+   "page_url": "https://www.firmwarely.com/devices/cloudflared/"
+  },
+  "openvas-scanner": {
+   "id": "openvas-scanner",
+   "brand": "Greenbone",
+   "model": "OpenVAS scanner",
+   "category": "A",
+   "status": "update",
+   "version": "23.52.1",
+   "previous": "23.52.0",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "[23.52.1] - 2026-10-20: Bug Fixes: dependabot alerts by bumping deps c031aa4a6 [23.52.1]: https://github.com/greenbone/openvas-scanner/compare/v23.52.0...v23.52.1",
+   "source_url": "https://github.com/greenbone/openvas-scanner/releases/tag/v23.52.1",
+   "page_url": "https://www.firmwarely.com/devices/openvas-scanner/"
+  },
+  "n8n": {
+   "id": "n8n",
+   "brand": "n8n",
+   "model": "Workflow automation",
+   "category": "A",
+   "status": "update",
+   "version": "2.44.4",
+   "previous": "2.43.8",
+   "released": "2026-10-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "2.44.4 (2026-10-19): Bug Fixes: core: Reuse connections in the log streaming webhook destination (#​41281) (b79afe2) core: Turn off expression spans by default (#​41309) (6965193)",
+   "source_url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.44.4",
+   "page_url": "https://www.firmwarely.com/devices/n8n/"
+  },
+  "typebot": {
+   "id": "typebot",
+   "brand": "Typebot",
+   "model": "Chatbot builder",
+   "category": "A",
+   "status": "update",
+   "version": "3.19.1",
+   "previous": "3.19.0",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "New features: 👌 Add a Send Chat Message action to the Blink block. New Blink credentials use App Identities; existing legacy credentials keep working with Get Users and Send Feed Event. 👌 Allow multi-line placeholders on long Text inputs. 👌 Load Custom OAuth profiles from the OIDC UserInfo endpoint…",
+   "source_url": "https://github.com/baptisteArno/typebot.io/releases/tag/v3.19.1",
+   "page_url": "https://www.firmwarely.com/devices/typebot/"
+  },
+  "xemu": {
+   "id": "xemu",
+   "brand": "xemu",
+   "model": "Original Xbox emulator",
+   "category": "C",
+   "status": "update",
+   "version": "0.8.138",
+   "previous": "0.8.137",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Pull Requests: #​3125 - Improve compatibility with older versions of Vulkan () #​2968 - Fix 2906 memory leak in slow vga path () #​3124 - nv2a/vk: Support Vulkan 1.4 () #​3123 - nv2a/vk: Select SPIR-V target from renderer state at compile time () #​3000 - nv2a/vk: compile SPIR-V for the version the…",
+   "source_url": "https://github.com/xemu-project/xemu/releases/tag/v0.8.138",
+   "page_url": "https://www.firmwarely.com/devices/xemu/"
+  }
+ }
 }

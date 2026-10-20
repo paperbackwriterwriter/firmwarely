@@ -19548,6 +19548,96 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "cloudflared",
+   "version": "2026.10.2",
+   "name": "Cloudflare Tunnel daemon",
+   "judged_at": "2026-10-20T09:34:45+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "openvas-scanner",
+   "version": "23.52.1",
+   "name": "Greenbone OpenVAS scanner",
+   "judged_at": "2026-10-20T09:34:46+00:00",
+   "notes_chars": 162,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.13,
+    "security_fix_plain": 0.28,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "n8n",
+   "version": "2.44.4",
+   "name": "n8n Workflow automation",
+   "judged_at": "2026-10-20T09:34:46+00:00",
+   "notes_chars": 179,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "typebot",
+   "version": "3.19.1",
+   "name": "Typebot Chatbot builder",
+   "judged_at": "2026-10-20T09:34:46+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "xemu",
+   "version": "0.8.138",
+   "name": "xemu Original Xbox emulator",
+   "judged_at": "2026-10-20T09:34:46+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
