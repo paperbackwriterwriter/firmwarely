@@ -19494,6 +19494,24 @@
     "security_fix_plain": 0.17,
     "end_of_life": 0.03
    }
+  },
+  {
+   "id": "1panel",
+   "version": "2.4.0",
+   "name": "1Panel Linux server panel",
+   "judged_at": "2026-10-20T07:44:50+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
