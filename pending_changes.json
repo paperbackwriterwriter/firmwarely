@@ -586,6 +586,36 @@
    "notes": "",
    "source_url": "https://www.asus.com/networking-iot-servers/wifi-routers/asus-wifi-routers/rt-be96u/helpdesk_bios?model2Name=RT-BE96U",
    "page_url": "https://www.firmwarely.com/devices/asus-rt-be96u/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.2884",
+   "previous": "0.24.2875",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: 59362d380a79e1f8b08520501db939d04a5ec68f world-torrent: bump domains 23a6591b961ef5c3af3c3c587f4676b83a4f1e80 52movie: removed, dead. resolves #​17145 (#​17214) cbf1fa3fc3d37d44da80ffc0bf7448546e25c6e9 xwtorrents; new cat e6e4e092deb08b0ff113ab0b6a28d9692fe20d20 dontorrent: fix for recent…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2884",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "openobserve": {
+   "id": "openobserve",
+   "brand": "Openobserve",
+   "model": "Observability platform",
+   "category": "A",
+   "status": "update",
+   "version": "1.1.2",
+   "previous": "1.1.1",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "📦 Download Binaries from https://openobserve.ai/downloads What's Changed: fix(promql): accept constant hash ordering in streaming scans [v1.1.0] fix: port five fixes to v1.1.0 (#​15374, #​15417, #​15459, #​15460, #​15500) Full Changelog: https://github.com/openobserve/openobserve/compare/v1.1.1...v…",
+   "source_url": "https://github.com/openobserve/openobserve/releases/tag/v1.1.2",
+   "page_url": "https://www.firmwarely.com/devices/openobserve/"
   }
  }
 }
