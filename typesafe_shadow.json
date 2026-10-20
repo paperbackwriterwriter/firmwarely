@@ -19926,6 +19926,42 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.7.35.11-stable",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-20T14:32:25+00:00",
+   "notes_chars": 45,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "esp32-marauder",
+   "version": "1.19.0",
+   "name": "ESP32 Marauder Wi-Fi and Bluetooth pentest firmware",
+   "judged_at": "2026-10-20T14:32:25+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.52,
+    "security_fix_plain": 0.55,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
