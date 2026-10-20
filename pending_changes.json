@@ -316,6 +316,21 @@
    "notes": "What's Changed: Add Seeed XIAO ESP32-C5 target Sync master into develop after XIAO ESP32-C5 merge Support IP5306 and MAX17048 on V4/V6/V6.1 Sync develop into master Fix capture buffer boot leak Harden capture buffer synchronization Fix probe response parser bounds Reuse BLE scan callback instance P…",
    "source_url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v1.19.0",
    "page_url": "https://www.firmwarely.com/devices/esp32-marauder/"
+  },
+  "ghost": {
+   "id": "ghost",
+   "brand": "Ghost",
+   "model": "Publishing platform",
+   "category": "A",
+   "status": "update",
+   "version": "6.72.0",
+   "previous": "6.71.0",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "✨ Added Stripe Checkout design customisation - Rob Lester ✨ Released editor fonts, distraction-free writing and other editor improvements (#​32061) - Peter Zimon 🎨 Moved automation renaming to the editor header title - Zach 🎨 Allowed automations with the same name (#​32080) - Evan Hahn 🎨 Allow unpu…",
+   "source_url": "https://github.com/TryGhost/Ghost/releases/tag/v6.72.0",
+   "page_url": "https://www.firmwarely.com/devices/ghost/"
   }
  }
 }
