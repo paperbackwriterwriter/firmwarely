@@ -19296,6 +19296,78 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "librenms",
+   "version": "26.10.1",
+   "name": "LibreNMS Network monitoring",
+   "judged_at": "2026-10-20T05:19:21+00:00",
+   "notes_chars": 144,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "jan-ai",
+   "version": "0.8.7",
+   "name": "Jan Local AI assistant",
+   "judged_at": "2026-10-20T05:19:22+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "siyuan",
+   "version": "3.8.8",
+   "name": "SiYuan Knowledge base",
+   "judged_at": "2026-10-20T05:19:22+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "asus-rt-be96u",
+   "version": "3.0.0.6.102_39435",
+   "name": "ASUS RT-BE96U",
+   "judged_at": "2026-10-20T05:19:22+00:00",
+   "notes_chars": 0,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
