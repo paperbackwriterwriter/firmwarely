@@ -436,6 +436,21 @@
    "notes": "Fixes: SSH host's identity is not validated at all- #​883 Chores: Dependency hygiene #​868 #​867 #​866 #​864 #​865 #​873 #​870 #​871 #​872 #​878 #​877 #​874 #​875 --- Important note for users using the SSH backend: Previous versions (v2.49.1 and below) contained a vulnerability, where the SSH host'…",
    "source_url": "https://github.com/offen/docker-volume-backup/releases/tag/v2.49.2",
    "page_url": "https://www.firmwarely.com/devices/docker-volume-backup/"
+  },
+  "ghostfolio": {
+   "id": "ghostfolio",
+   "brand": "Ghostfolio",
+   "model": "Wealth tracker",
+   "category": "A",
+   "status": "update",
+   "version": "3.89.0",
+   "previous": "3.88.0",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Added: Added a _Storybook_ story for the file drop area component Changed: Improved the layout of the user account settings on mobile Improved the usability of the activities page by eliminating the reload on canceling the import activities dialog Improved the loading state of the file drop area co…",
+   "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.89.0",
+   "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
   }
  }
 }
