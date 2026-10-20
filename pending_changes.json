@@ -451,6 +451,36 @@
    "notes": "Added: Added a _Storybook_ story for the file drop area component Changed: Improved the layout of the user account settings on mobile Improved the usability of the activities page by eliminating the reload on canceling the import activities dialog Improved the loading state of the file drop area co…",
    "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.89.0",
    "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
+  },
+  "dozzle": {
+   "id": "dozzle",
+   "brand": "Dozzle",
+   "model": "Container log viewer",
+   "category": "A",
+   "status": "update",
+   "version": "11.3.4",
+   "previous": "11.3.3",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Sorry y'all for the back-to-back releases. We had to fix a critical bug in MCP server. 🚀 Features: cloud: Match histogram and real total on the log search page - and Claude Opus 5.5 in https://github.com/amir20/dozzle/issues/5466 (5cc18) hosts: Clean up every host on a schedule - and Claude Opus 5.…",
+   "source_url": "https://github.com/amir20/dozzle/releases/tag/v11.3.4",
+   "page_url": "https://www.firmwarely.com/devices/dozzle/"
+  },
+  "kiosk-satellite": {
+   "id": "kiosk-satellite",
+   "brand": "Kiosk Satellite",
+   "model": "Turn any Android device",
+   "category": "S",
+   "status": "update",
+   "version": "2026.10.33",
+   "previous": "2026.10.32",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's new in Kiosk Satellite 2026.10.33: This release adds Celestial, a screensaver that shows the night sky over the kiosk as it is right now, with stars, planets, the Moon, constellations and the Milky Way. On a device with a compass you can hold it up to the sky and see what is in front of you.…",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.10.33",
+   "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   }
  }
 }

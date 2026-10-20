@@ -20196,6 +20196,42 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "dozzle",
+   "version": "11.3.4",
+   "name": "Dozzle Container log viewer",
+   "judged_at": "2026-10-20T19:24:07+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "kiosk-satellite",
+   "version": "2026.10.33",
+   "name": "Kiosk Satellite Turn any Android device",
+   "judged_at": "2026-10-20T19:24:07+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
