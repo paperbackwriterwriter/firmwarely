@@ -203,13 +203,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.8.32.14-lts",
+   "version": "26.9.23.15-stable",
    "previous": "26.9.22.3-stable",
    "released": "2026-10-20",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.8.32.14-lts v26.8.32.14-lts",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.32.14-lts",
+   "notes": "Release v26.9.23.15-stable v26.9.23.15-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.9.23.15-stable",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "chatwoot": {
@@ -293,13 +293,13 @@
    "model": "LLM observability",
    "category": "A",
    "status": "update",
-   "version": "4.65.0",
+   "version": "4.66.0",
    "previous": "4.64.0",
    "released": "2026-10-20",
    "date_known": true,
    "eol": false,
-   "notes": "What's Changed: Features: feat(topics): non-blocking clustering for large numbers feat(topics): name topics by what their facet asks about feat(routes): add recovery option for V4 experience and update sidebar toggle logic feat(skills): stabilize API and restore MCP access feat(ai-gateway): add sel…",
-   "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.65.0",
+   "notes": "What's Changed: Features: feat(topics): one gate for Topics visibility Fixes: fix(sessions): Don't allow expanding empty reasoning messages fix(web): disable Owner role selection without ownership permission fix(web): boxed, sticky I/O sections with a collapse caret fix(otel): store number-like met…",
+   "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.66.0",
    "page_url": "https://www.firmwarely.com/devices/langfuse/"
   },
   "esp32-marauder": {
@@ -391,6 +391,51 @@
    "notes": "Docker images have been built and pushed: Docker Hub: alexta69/metube:latest alexta69/metube:2026.10.20 GitHub Container Registry: ghcr.io/alexta69/metube:latest ghcr.io/alexta69/metube:2026.10.20 Changes: build: upgrade Python and frontend dependencies (f651a95) build: drop the duplicate deno.land…",
    "source_url": "https://github.com/alexta69/metube/releases/tag/2026.10.20",
    "page_url": "https://www.firmwarely.com/devices/metube/"
+  },
+  "windmill": {
+   "id": "windmill",
+   "brand": "Windmill",
+   "model": "Scripts and workflows",
+   "category": "A",
+   "status": "update",
+   "version": "1.842.0",
+   "previous": "1.841.0",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.842.0 (2026-10-20): Features: let AI agents answer in Slack (#​11630) (35b250e) name the action on chat tool confirmation buttons (#​11795) (7d01d25) Bug Fixes: align collapsed conversations sidebar chat icon with the buttons above (#​11873) (24238d4) align sidebar home with the header when ai se…",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.842.0",
+   "page_url": "https://www.firmwarely.com/devices/windmill/"
+  },
+  "mailu": {
+   "id": "mailu",
+   "brand": "Mailu",
+   "model": "Mail server",
+   "category": "A",
+   "status": "update",
+   "version": "2024.06.65",
+   "previous": "2024.06.64",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog :mailbox: --------- Roundcube 1.6.20 This release was triggered by PR/Issue 4141. The release notes of the original main release can be accessed via menu item 'Release notes' on mailu.io. Update ------ The main version X.Y (e.g. 1.9) will always reflect the latest version of the branch. T…",
+   "source_url": "https://github.com/Mailu/Mailu/releases/tag/2024.06.65",
+   "page_url": "https://www.firmwarely.com/devices/mailu/"
+  },
+  "docker-volume-backup": {
+   "id": "docker-volume-backup",
+   "brand": "docker-volume-backup",
+   "model": "Docker volume backups",
+   "category": "N",
+   "status": "critical",
+   "version": "2.49.2",
+   "previous": "2.49.1",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Fixes: SSH host's identity is not validated at all- #​883 Chores: Dependency hygiene #​868 #​867 #​866 #​864 #​865 #​873 #​870 #​871 #​872 #​878 #​877 #​874 #​875 --- Important note for users using the SSH backend: Previous versions (v2.49.1 and below) contained a vulnerability, where the SSH host'…",
+   "source_url": "https://github.com/offen/docker-volume-backup/releases/tag/v2.49.2",
+   "page_url": "https://www.firmwarely.com/devices/docker-volume-backup/"
   }
  }
 }

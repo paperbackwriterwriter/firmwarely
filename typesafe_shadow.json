@@ -20088,6 +20088,96 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.9.23.15-stable",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-20T17:55:26+00:00",
+   "notes_chars": 45,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "langfuse",
+   "version": "4.66.0",
+   "name": "Langfuse LLM observability",
+   "judged_at": "2026-10-20T17:55:26+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.36,
+    "security_fix_plain": 0.2,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "windmill",
+   "version": "1.842.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-10-20T17:55:26+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "mailu",
+   "version": "2024.06.65",
+   "name": "Mailu Mail server",
+   "judged_at": "2026-10-20T17:55:26+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "docker-volume-backup",
+   "version": "2.49.2",
+   "name": "docker-volume-backup Docker volume backups",
+   "judged_at": "2026-10-20T17:55:26+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.95,
+    "security_fix_plain": 0.92,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
