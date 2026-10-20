@@ -188,13 +188,13 @@
    "model": "HTTP router and reverse proxy",
    "category": "R",
    "status": "update",
-   "version": "0.28.45",
+   "version": "0.28.46",
    "previous": "0.28.44",
    "released": "2026-10-20",
    "date_known": true,
    "eol": false,
-   "notes": "Changes: build: fix REST_PACKAGES so tests_rest and check-race_rest run tests (#​4355) CI do not run these tests atm Multiarch Docker image is available in GitHub's docker registry: docker run -it ghcr.io/zalando/skipper:v0.28.45 skipper --help",
-   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.45",
+   "notes": "Changes: Opa gzip fix (#​4357) Multiarch Docker image is available in GitHub's docker registry: docker run -it ghcr.io/zalando/skipper:v0.28.46 skipper --help",
+   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.46",
    "page_url": "https://www.firmwarely.com/devices/skipper/"
   },
   "clickhouse": {
@@ -203,13 +203,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.7.35.11-stable",
+   "version": "26.8.32.14-lts",
    "previous": "26.9.22.3-stable",
    "released": "2026-10-20",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.7.35.11-stable v26.7.35.11-stable",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.7.35.11-stable",
+   "notes": "Release v26.8.32.14-lts v26.8.32.14-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.32.14-lts",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "chatwoot": {
@@ -331,6 +331,51 @@
    "notes": "✨ Added Stripe Checkout design customisation - Rob Lester ✨ Released editor fonts, distraction-free writing and other editor improvements (#​32061) - Peter Zimon 🎨 Moved automation renaming to the editor header title - Zach 🎨 Allowed automations with the same name (#​32080) - Evan Hahn 🎨 Allow unpu…",
    "source_url": "https://github.com/TryGhost/Ghost/releases/tag/v6.72.0",
    "page_url": "https://www.firmwarely.com/devices/ghost/"
+  },
+  "timescaledb": {
+   "id": "timescaledb",
+   "brand": "Timescale",
+   "model": "TimescaleDB",
+   "category": "A",
+   "status": "update",
+   "version": "2.31.0",
+   "previous": "2.30.2",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release contains performance improvements and bug fixes since the 2.30.2 release. We recommend that you upgrade at the next available opportunity. Highlighted features in TimescaleDB v2.31.0 Improved performance for UPDATE and DELETE queries on the columnstore with vectorized key processing fo…",
+   "source_url": "https://github.com/timescale/timescaledb/releases/tag/2.31.0",
+   "page_url": "https://www.firmwarely.com/devices/timescaledb/"
+  },
+  "homarr": {
+   "id": "homarr",
+   "brand": "Homarr",
+   "model": "Dashboard",
+   "category": "A",
+   "status": "update",
+   "version": "2.7.0",
+   "previous": "2.6.0",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: chore(lang): updated translations from crowdin by in https://github.com/homarr-labs/homarr/pull/7204 docs: clarify request limits, Kuma API checks, and JSX icons docs(helm): update chart installation page by in https://github.com/homarr-labs/homarr/pull/7203 chore: update bug report…",
+   "source_url": "https://github.com/homarr-labs/homarr/releases/tag/v2.7.0",
+   "page_url": "https://www.firmwarely.com/devices/homarr/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.293.57005",
+   "previous": "37522026.292.36123",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​12000 #​11999 #​11998 #​11997 #​11996 #​11992 #​11991 #​11990 #​11989 #​11988 #​11987",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.293.57005",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   }
  }
 }
