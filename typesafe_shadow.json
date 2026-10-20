@@ -19872,6 +19872,60 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "dnscrypt-proxy",
+   "version": "2.1.19",
+   "name": "DNSCrypt Encrypted DNS proxy",
+   "judged_at": "2026-10-20T13:40:26+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.18,
+    "security_fix_plain": 0.33,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "qbittorrent",
+   "version": "5.3.0",
+   "name": "qBittorrent BitTorrent client",
+   "judged_at": "2026-10-20T13:40:26+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "langfuse",
+   "version": "4.65.0",
+   "name": "Langfuse LLM observability",
+   "judged_at": "2026-10-20T13:40:26+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

@@ -256,6 +256,51 @@
    "notes": "Songloft v2.13.4 安装说明（中文）: 在本页 Assets 中按用途、操作系统和 CPU 架构选择文件：amd64 / x64 为 Intel/AMD 64 位，arm64 为 ARM 64 位，armv7 / arm-v7 为 ARM 32 位。 | 用途 | 文件 | 使用方式 | | --- | --- | --- | | 服务器 Full | songloft- - （Windows 带 .exe） | 包含 Flutter Web 界面。下载后启动，浏览器访问服务器的 58091 端口。 | | 服务器 Lite | songloft- - -lite（Window…",
    "source_url": "https://github.com/songloft-org/songloft/releases/tag/v2.13.4",
    "page_url": "https://www.firmwarely.com/devices/songloft/"
+  },
+  "dnscrypt-proxy": {
+   "id": "dnscrypt-proxy",
+   "brand": "DNSCrypt",
+   "model": "Encrypted DNS proxy",
+   "category": "R",
+   "status": "update",
+   "version": "2.1.19",
+   "previous": "2.1.18",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Resumed PQDNSCrypt queries now use regular UDP padding, protecting their size and response budget. Oversized tickets are rejected, and oversized queries fall back to TCP. Network changes are detected more reliably, ensuring PQDNSCrypt key material rotates when connections change. Forwarded queries …",
+   "source_url": "https://github.com/DNSCrypt/dnscrypt-proxy/releases/tag/2.1.19",
+   "page_url": "https://www.firmwarely.com/devices/dnscrypt-proxy/"
+  },
+  "qbittorrent": {
+   "id": "qbittorrent",
+   "brand": "qBittorrent",
+   "model": "BitTorrent client",
+   "category": "A",
+   "status": "update",
+   "version": "5.3.0",
+   "previous": "5.2.4",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "FEATURE: Add an option to match all share limits (glassez) #​24043 FEATURE: Put Email examples in placeholder text (Chocobo1) #​23949 FEATURE: Add support for widely used image types in HTTP server (Chocobo1) #​23886 FEATURE: Allow to filter torrent list by infohash (stalkerok) #​23829 FEATURE: Add…",
+   "source_url": "https://github.com/qbittorrent/qBittorrent/releases/tag/release-5.3.0",
+   "page_url": "https://www.firmwarely.com/devices/qbittorrent/"
+  },
+  "langfuse": {
+   "id": "langfuse",
+   "brand": "Langfuse",
+   "model": "LLM observability",
+   "category": "A",
+   "status": "update",
+   "version": "4.65.0",
+   "previous": "4.64.0",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Features: feat(topics): non-blocking clustering for large numbers feat(topics): name topics by what their facet asks about feat(routes): add recovery option for V4 experience and update sidebar toggle logic feat(skills): stabilize API and restore MCP access feat(ai-gateway): add sel…",
+   "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.65.0",
+   "page_url": "https://www.firmwarely.com/devices/langfuse/"
   }
  }
 }

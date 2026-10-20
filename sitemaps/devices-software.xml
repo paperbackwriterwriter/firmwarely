@@ -25,7 +25,7 @@
   <url><loc>https://www.firmwarely.com/devices/coredns/</loc><lastmod>2026-08-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/blocky-dns/</loc><lastmod>2026-09-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/technitium-dns/</loc><lastmod>2026-10-17</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/dnscrypt-proxy/</loc><lastmod>2026-07-18</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/dnscrypt-proxy/</loc><lastmod>2026-10-20</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/nginx-proxy-manager/</loc><lastmod>2026-09-24</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/traefik/</loc><lastmod>2026-10-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/caddy-server/</loc><lastmod>2026-10-03</lastmod></url>
@@ -89,7 +89,7 @@
   <url><loc>https://www.firmwarely.com/devices/readarr/</loc><lastmod>2025-06-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/overseerr/</loc><lastmod>2026-02-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/jellyseerr/</loc><lastmod>2026-09-28</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/qbittorrent/</loc><lastmod>2026-09-28</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/qbittorrent/</loc><lastmod>2026-10-20</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/transmission/</loc><lastmod>2026-06-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/deluge/</loc><lastmod>2025-08-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/sabnzbd/</loc><lastmod>2026-09-08</lastmod></url>
@@ -508,7 +508,7 @@
   <url><loc>https://www.firmwarely.com/devices/trilium/</loc><lastmod>2026-09-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/glance/</loc><lastmod>2026-10-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/qwenpaw/</loc><lastmod>2026-10-15</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/langfuse/</loc><lastmod>2026-10-19</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/langfuse/</loc><lastmod>2026-10-20</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/dokku/</loc><lastmod>2026-09-27</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/onyx/</loc><lastmod>2026-10-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/meetily/</loc><lastmod>2026-09-12</lastmod></url>
