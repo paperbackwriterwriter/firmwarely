@@ -526,6 +526,21 @@
    "notes": "Video conferencing: Organizers can now add a Google Meet, Zoom, Microsoft Teams or Webex call to a poll. Rallly creates the meeting on the organizer's account when the poll is finalized and puts the join link in the event, the calendar invite and the confirmation emails. | Add a video call when cre…",
    "source_url": "https://github.com/lukevella/rallly/releases/tag/v4.16.0",
    "page_url": "https://www.firmwarely.com/devices/rallly/"
+  },
+  "slackdump": {
+   "id": "slackdump",
+   "brand": "Slackdump",
+   "model": "Slack message exporter",
+   "category": "N",
+   "status": "update",
+   "version": "4.5.1",
+   "previous": "4.5.0",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: 39ff08ee0dc666ef1e40d74887d111db20bd100e Merge branch 'master' into i642-impl 5ba27f55d552554342beb5531b50206c2f3659bc Merge branch 'master' into i642-impl 0224ec8263da775bb8941cbfec426a0d06f7111d Merge branch 'master' into i642-impl 88e7c2270bde84006e5218a19228d90f1ed480d0 Merge pull re…",
+   "source_url": "https://github.com/rusq/slackdump/releases/tag/v4.5.1",
+   "page_url": "https://www.firmwarely.com/devices/slackdump/"
   }
  }
 }
