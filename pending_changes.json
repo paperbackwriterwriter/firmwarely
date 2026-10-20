@@ -481,6 +481,51 @@
    "notes": "🚀 Features: agent: Warn on the built-in cert and audit mutating calls - and Claude Opus 5.5 (1M context) in https://github.com/amir20/dozzle/issues/5442 (d341c) cloud: Add per-mount rw to inspect_container - and Claude Opus 5.5 (1M context) in https://github.com/amir20/dozzle/issues/5433 (a69af) In…",
    "source_url": "https://github.com/amir20/dozzle/releases/tag/v11.3.3",
    "page_url": "https://www.firmwarely.com/devices/dozzle/"
+  },
+  "miniflux": {
+   "id": "miniflux",
+   "brand": "Miniflux",
+   "model": "RSS reader",
+   "category": "A",
+   "status": "critical",
+   "version": "2.3.4",
+   "previous": "2.3.3",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "New features: Added Gotify push notification support. Added Steam scraper rules. Added validation with helpful error messages when saving rewrite rules. Performance improvements: Reduced database storage used by enclosure and entry indexes. Reduced memory used by internal data structures. Security:…",
+   "source_url": "https://github.com/miniflux/v2/releases/tag/2.3.4",
+   "page_url": "https://www.firmwarely.com/devices/miniflux/"
+  },
+  "snipe-it": {
+   "id": "snipe-it",
+   "brand": "Snipe-IT",
+   "model": "Asset management",
+   "category": "A",
+   "status": "critical",
+   "version": "8.8.1",
+   "previous": "8.8.0",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "[!CAUTION] This version of Snipe-IT REQUIRES PHP 8.2.0 or greater, 8.4+ recommended. PHP 8.2 is still in security release support until 31 Dec 2026, but let's not play that game - and some of the new features we're working on will require PHP 8.3+, so... get on that, ferreal! Happy Monday (or Tuesd…",
+   "source_url": "https://github.com/grokability/snipe-it/releases/tag/v8.8.1",
+   "page_url": "https://www.firmwarely.com/devices/snipe-it/"
+  },
+  "rallly": {
+   "id": "rallly",
+   "brand": "Rallly",
+   "model": "Meeting polls",
+   "category": "A",
+   "status": "update",
+   "version": "4.16.0",
+   "previous": "4.15.5",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Video conferencing: Organizers can now add a Google Meet, Zoom, Microsoft Teams or Webex call to a poll. Rallly creates the meeting on the organizer's account when the poll is finalized and puts the join link in the event, the calendar invite and the confirmation emails. | Add a video call when cre…",
+   "source_url": "https://github.com/lukevella/rallly/releases/tag/v4.16.0",
+   "page_url": "https://www.firmwarely.com/devices/rallly/"
   }
  }
 }

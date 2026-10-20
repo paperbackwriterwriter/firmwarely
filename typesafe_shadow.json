@@ -19224,6 +19224,60 @@
     "security_fix_plain": 0.16,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "miniflux",
+   "version": "2.3.4",
+   "name": "Miniflux RSS reader",
+   "judged_at": "2026-10-20T01:52:27+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.15,
+    "security_fix_plain": 0.22,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "snipe-it",
+   "version": "8.8.1",
+   "name": "Snipe-IT Asset management",
+   "judged_at": "2026-10-20T01:52:27+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "rallly",
+   "version": "4.16.0",
+   "name": "Rallly Meeting polls",
+   "judged_at": "2026-10-20T01:52:27+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
