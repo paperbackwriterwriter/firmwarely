@@ -19404,6 +19404,96 @@
     "security_fix_plain": 0.05,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "kiosk-satellite",
+   "version": "2026.10.32",
+   "name": "Kiosk Satellite Turn any Android device",
+   "judged_at": "2026-10-20T07:00:57+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "worldmonitor",
+   "version": "2.11.2",
+   "name": "Worldmonitor Real-time global intelligence dashboard",
+   "judged_at": "2026-10-20T07:00:57+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.13,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "healthchecks",
+   "version": "5.0",
+   "name": "Healthchecks Cron job monitor",
+   "judged_at": "2026-10-20T07:00:57+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "m5unified",
+   "version": "0.2.27",
+   "name": "M5Stack M5Unified library",
+   "judged_at": "2026-10-20T07:00:58+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "jenkins",
+   "version": "2.587",
+   "name": "Jenkins Automation server",
+   "judged_at": "2026-10-20T07:00:58+00:00",
+   "notes_chars": 13,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.2,
+    "security_fix_plain": 0.17,
+    "end_of_life": 0.03
+   }
   }
  ]
 }
