@@ -136,6 +136,66 @@
    "notes": "Merge pull request #​6173 from apache/feat/doc-summary-353 Feat/doc summary 353",
    "source_url": "https://github.com/apache/couchdb/releases/tag/3.5.3-post1",
    "page_url": "https://www.firmwarely.com/devices/couchdb/"
+  },
+  "bookstack": {
+   "id": "bookstack",
+   "brand": "BookStack",
+   "model": "Wiki and documentation",
+   "category": "A",
+   "status": "critical",
+   "version": "26.09.2",
+   "previous": "26.09.1",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Security Release: Update Instructions Update details on blog This is a security release to address the following vulnerabilities: Comments of deleted pages could remain visible to API users while the page remained in the recycle bin. Attachments of pages could be modified by others (that have attac…",
+   "source_url": "https://github.com/BookStackApp/BookStack/releases/tag/v26.09.2",
+   "page_url": "https://www.firmwarely.com/devices/bookstack/"
+  },
+  "passbolt": {
+   "id": "passbolt",
+   "brand": "Passbolt",
+   "model": "Team password manager",
+   "category": "A",
+   "status": "update",
+   "version": "5.17.0",
+   "previous": "5.16.0",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Song: https://www.youtube.com/watch?v=Hef-Zf6frk0 Passbolt 5.17.0 \"Mad World\" introduces passkeys for multi factor authentication, improves autofill reliability across websites, makes permission changes easier to review when moving resources, and brings PIN code resources to QuickAccess. This relea…",
+   "source_url": "https://github.com/passbolt/passbolt_api/releases/tag/v5.17.0",
+   "page_url": "https://www.firmwarely.com/devices/passbolt/"
+  },
+  "neo4j": {
+   "id": "neo4j",
+   "brand": "Neo4j",
+   "model": "Graph database",
+   "category": "A",
+   "status": "update",
+   "version": "2026.10.0",
+   "previous": "5.26.32",
+   "released": "2026-10-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "2026.10.0",
+   "source_url": "https://github.com/neo4j/neo4j/releases/tag/2026.10.0",
+   "page_url": "https://www.firmwarely.com/devices/neo4j/"
+  },
+  "skipper": {
+   "id": "skipper",
+   "brand": "Skipper",
+   "model": "HTTP router and reverse proxy",
+   "category": "R",
+   "status": "update",
+   "version": "0.28.45",
+   "previous": "0.28.44",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes: build: fix REST_PACKAGES so tests_rest and check-race_rest run tests (#​4355) CI do not run these tests atm Multiarch Docker image is available in GitHub's docker registry: docker run -it ghcr.io/zalando/skipper:v0.28.45 skipper --help",
+   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.45",
+   "page_url": "https://www.firmwarely.com/devices/skipper/"
   }
  }
 }
