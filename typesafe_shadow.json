@@ -20268,6 +20268,24 @@
     "security_fix_plain": 0.06,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "docker-engine",
+   "version": "29.9.2",
+   "name": "Docker Engine (moby)",
+   "judged_at": "2026-10-20T21:05:28+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.74,
+    "security_fix_plain": 0.77,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

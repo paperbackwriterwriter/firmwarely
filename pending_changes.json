@@ -511,6 +511,21 @@
    "notes": "6.1.1",
    "source_url": "https://github.com/jupyterhub/jupyterhub/releases/tag/6.1.1",
    "page_url": "https://www.firmwarely.com/devices/jupyterhub/"
+  },
+  "docker-engine": {
+   "id": "docker-engine",
+   "brand": "Docker",
+   "model": "Engine (moby)",
+   "category": "A",
+   "status": "critical",
+   "version": "29.9.2",
+   "previous": "29.9.1",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "29.9.2: For a full list of pull requests and changes in this release, refer to the relevant GitHub milestones: docker/cli, 29.9.2 milestone moby/moby, 29.9.2 milestone Security: The Go runtime update addresses CVE-2026-111943 by rejecting certificate chains that include eight revoked eMudhra interm…",
+   "source_url": "https://github.com/moby/moby/releases/tag/docker-v29.9.2",
+   "page_url": "https://www.firmwarely.com/devices/docker-engine/"
   }
  }
 }
