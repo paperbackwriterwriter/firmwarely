@@ -19800,6 +19800,78 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.3.57.12-lts",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-20T12:57:29+00:00",
+   "notes_chars": 39,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "chatwoot",
+   "version": "4.19.0",
+   "name": "Chatwoot Customer messaging",
+   "judged_at": "2026-10-20T12:57:29+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "apache-kafka",
+   "version": "4.3.2",
+   "name": "Apache Kafka",
+   "judged_at": "2026-10-20T12:57:29+00:00",
+   "notes_chars": 5,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.12,
+    "security_fix_plain": 0.11,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "songloft",
+   "version": "2.13.4",
+   "name": "Songloft Music server",
+   "judged_at": "2026-10-20T12:57:29+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

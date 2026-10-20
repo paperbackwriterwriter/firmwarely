@@ -196,6 +196,66 @@
    "notes": "Changes: build: fix REST_PACKAGES so tests_rest and check-race_rest run tests (#​4355) CI do not run these tests atm Multiarch Docker image is available in GitHub's docker registry: docker run -it ghcr.io/zalando/skipper:v0.28.45 skipper --help",
    "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.45",
    "page_url": "https://www.firmwarely.com/devices/skipper/"
+  },
+  "clickhouse": {
+   "id": "clickhouse",
+   "brand": "ClickHouse",
+   "model": "Analytics database",
+   "category": "A",
+   "status": "update",
+   "version": "26.3.57.12-lts",
+   "previous": "26.9.22.3-stable",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release v26.3.57.12-lts v26.3.57.12-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.3.57.12-lts",
+   "page_url": "https://www.firmwarely.com/devices/clickhouse/"
+  },
+  "chatwoot": {
+   "id": "chatwoot",
+   "brand": "Chatwoot",
+   "model": "Customer messaging",
+   "category": "A",
+   "status": "update",
+   "version": "4.19.0",
+   "previous": "4.18.0",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: Automatic conversation translation with Captain or Google Translate. [Enterprise] Conversation monitors, AI automation conditions, and label and priority suggestions. [Enterprise] Refreshed Captain reports, Copilot chat history, and low-credit alerts. [Enterprise] Captain toolset catalog…",
+   "source_url": "https://github.com/chatwoot/chatwoot/releases/tag/v4.19.0",
+   "page_url": "https://www.firmwarely.com/devices/chatwoot/"
+  },
+  "apache-kafka": {
+   "id": "apache-kafka",
+   "brand": "Apache",
+   "model": "Kafka",
+   "category": "A",
+   "status": "update",
+   "version": "4.3.2",
+   "previous": "4.2.2",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "4.3.2",
+   "source_url": "https://github.com/apache/kafka/releases/tag/4.3.2",
+   "page_url": "https://www.firmwarely.com/devices/apache-kafka/"
+  },
+  "songloft": {
+   "id": "songloft",
+   "brand": "Songloft",
+   "model": "Music server",
+   "category": "A",
+   "status": "update",
+   "version": "2.13.4",
+   "previous": "2.13.3",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Songloft v2.13.4 安装说明（中文）: 在本页 Assets 中按用途、操作系统和 CPU 架构选择文件：amd64 / x64 为 Intel/AMD 64 位，arm64 为 ARM 64 位，armv7 / arm-v7 为 ARM 32 位。 | 用途 | 文件 | 使用方式 | | --- | --- | --- | | 服务器 Full | songloft- - （Windows 带 .exe） | 包含 Flutter Web 界面。下载后启动，浏览器访问服务器的 58091 端口。 | | 服务器 Lite | songloft- - -lite（Window…",
+   "source_url": "https://github.com/songloft-org/songloft/releases/tag/v2.13.4",
+   "page_url": "https://www.firmwarely.com/devices/songloft/"
   }
  }
 }
