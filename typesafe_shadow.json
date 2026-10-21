@@ -22374,6 +22374,60 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "esp32-marauder",
+   "version": "1.19.1",
+   "name": "ESP32 Marauder Wi-Fi and Bluetooth pentest firmware",
+   "judged_at": "2026-10-21T23:20:20+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "firezone",
+   "version": "1.5.23",
+   "name": "Firezone Zero-trust access gateway",
+   "judged_at": "2026-10-21T23:20:20+00:00",
+   "notes_chars": 42,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "invoice-ninja",
+   "version": "5.13.50",
+   "name": "Invoice Ninja Invoicing",
+   "judged_at": "2026-10-21T23:20:20+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
