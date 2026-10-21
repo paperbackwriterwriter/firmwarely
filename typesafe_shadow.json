@@ -22050,6 +22050,96 @@
     "security_fix_plain": 0.67,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "windmill",
+   "version": "1.846.1",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-10-21T20:27:52+00:00",
+   "notes_chars": 192,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "zigpy",
+   "version": "2.4.0",
+   "name": "zigpy Zigbee stack",
+   "judged_at": "2026-10-21T20:27:52+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "runtipi",
+   "version": "4.11.0",
+   "name": "Runtipi Home server manager",
+   "judged_at": "2026-10-21T20:27:52+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "infisical",
+   "version": "0.167.0",
+   "name": "Infisical Secrets manager",
+   "judged_at": "2026-10-21T20:27:52+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.09,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "osquery",
+   "version": "5.24.0",
+   "name": "osquery SQL-based system monitoring",
+   "judged_at": "2026-10-21T20:27:52+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

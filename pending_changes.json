@@ -608,13 +608,13 @@
    "model": "Scripts and workflows",
    "category": "A",
    "status": "update",
-   "version": "1.846.0",
+   "version": "1.846.1",
    "previous": "1.842.0",
    "released": "2026-10-21",
    "date_known": true,
    "eol": false,
-   "notes": "1.846.0 (2026-10-21): Features: home list settings menu with sort, library and user-folder toggles (#​11928) (73f655d) Bug Fixes: home's acting-on pick switches the current workspace (#​11929) (cdaddcc) --- This PR was generated with Release Please. See documentation.",
-   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.846.0",
+   "notes": "1.846.1 (2026-10-21): Bug Fixes: home recent cards include items opened on their own page (#​11934) (5019fab) home search suggests filters whose name matches the typed text (#​11933) (bf1eb85)",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.846.1",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
   },
   "kimai": {
@@ -781,6 +781,66 @@
    "notes": "What's Changed: fix: drop the deprecated AWS_ and BACKUP_ env warnings fix(security): update PHP to 8.5.12 for CVE-2026-109618 and CVE-2026-109619 Full Changelog: https://github.com/David-Crty/databasement/compare/v1.10.5...v1.10.6",
    "source_url": "https://github.com/David-Crty/databasement/releases/tag/v1.10.6",
    "page_url": "https://www.firmwarely.com/devices/databasement/"
+  },
+  "zigpy": {
+   "id": "zigpy",
+   "brand": "zigpy",
+   "model": "Zigbee stack",
+   "category": "S",
+   "status": "update",
+   "version": "2.4.0",
+   "previous": "2.3.0",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Add batching of database writes Isolate event listener exceptions in EventBase.emit zgp: add the Green Power manager, device, and proxy runtime Require aiosqlite 0.22.1 Stop the topology scan loop even during a scheduled scan Don't force-commit old device's delete during re-intervie…",
+   "source_url": "https://github.com/zigpy/zigpy/releases/tag/2.4.0",
+   "page_url": "https://www.firmwarely.com/devices/zigpy/"
+  },
+  "runtipi": {
+   "id": "runtipi",
+   "brand": "Runtipi",
+   "model": "Home server manager",
+   "category": "A",
+   "status": "update",
+   "version": "4.11.0",
+   "previous": "4.10.2",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release notes: New features App stores can now ship ordered, one-time migrations in migrations/.yml. Runtipi runs pending migrations during app updates and backs up app data first so it can recover if a migration or deployment fails. Improvements App backups and updates now run as tracked jobs. The…",
+   "source_url": "https://github.com/runtipi/runtipi/releases/tag/v4.11.0",
+   "page_url": "https://www.firmwarely.com/devices/runtipi/"
+  },
+  "infisical": {
+   "id": "infisical",
+   "brand": "Infisical",
+   "model": "Secrets manager",
+   "category": "A",
+   "status": "update",
+   "version": "0.167.0",
+   "previous": "0.166.9",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: feat(code-signing): use an existing DigiCert certificate and its HSM key in a signer feat(cert-manager): add Copy ID to alert and approval policy row menus feat(secrets): show last edited time in the single-environment overview fix(identity-auth): require a trust binding for AWS and…",
+   "source_url": "https://github.com/Infisical/infisical/releases/tag/v0.167.0",
+   "page_url": "https://www.firmwarely.com/devices/infisical/"
+  },
+  "osquery": {
+   "id": "osquery",
+   "brand": "osquery",
+   "model": "SQL-based system monitoring",
+   "category": "A",
+   "status": "update",
+   "version": "5.24.0",
+   "previous": "5.23.1",
+   "released": "2026-10-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: file table : lnk-related columns were not always computed on Windows Fix process_open_handles comments and spec Remove cleanup_ec2_runners action Upgrade Linux toolchain to 1.3.0 Update Linux build docs for toolchain 1.3.0 fix: clear errno before getmntent_r to avoid false error log…",
+   "source_url": "https://github.com/osquery/osquery/releases/tag/5.24.0",
+   "page_url": "https://www.firmwarely.com/devices/osquery/"
   }
  }
 }
