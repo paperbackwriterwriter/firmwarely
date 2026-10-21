@@ -691,6 +691,66 @@
    "notes": "Please refer to the changelog available at https://tailscale.com/changelog",
    "source_url": "https://github.com/tailscale/tailscale/releases/tag/v1.104.2",
    "page_url": "https://www.firmwarely.com/devices/tailscale/"
+  },
+  "coredns": {
+   "id": "coredns",
+   "brand": "CoreDNS",
+   "model": "DNS server",
+   "category": "R",
+   "status": "update",
+   "version": "1.15.0",
+   "previous": "1.14.7",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release improves DNS caching, forwarding, and transport reliability, with fixes for stale-cache handling, upstream connections, crashes/race fixes, as well as enhancemence from quite a few plugins. Forwarding now supports DNS-over-QUIC upstreams. Additional new features include optional JSON q…",
+   "source_url": "https://github.com/coredns/coredns/releases/tag/v1.15.0",
+   "page_url": "https://www.firmwarely.com/devices/coredns/"
+  },
+  "ollama": {
+   "id": "ollama",
+   "brand": "Ollama",
+   "model": "Local LLM runner",
+   "category": "A",
+   "status": "update",
+   "version": "0.40.7",
+   "previous": "0.40.6",
+   "released": "2026-10-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: pplx-decider is a 27B decision model from Perplexity, fine-tuned from Qwen3.8-27B Continuing an OpenAI-compatible Responses conversation no longer fails when switching between models with and without thinking, or when the history contains another provider's compaction items Fixed st…",
+   "source_url": "https://github.com/ollama/ollama/releases/tag/v0.40.7",
+   "page_url": "https://www.firmwarely.com/devices/ollama/"
+  },
+  "appflowy": {
+   "id": "appflowy",
+   "brand": "AppFlowy",
+   "model": "Workspace",
+   "category": "A",
+   "status": "update",
+   "version": "0.14.10",
+   "previous": "0.14.9",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "🚀 v0.14.10: New Features: Database side peek — Added a resizable panel for editing row pages beside their database. Added navigation through visible rows and switching between side peek, center peek, full page, and a new tab while preserving edits. Improvements: Charts and lists — Refreshed chart s…",
+   "source_url": "https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.14.10",
+   "page_url": "https://www.firmwarely.com/devices/appflowy/"
+  },
+  "rallly": {
+   "id": "rallly",
+   "brand": "Rallly",
+   "model": "Meeting polls",
+   "category": "A",
+   "status": "update",
+   "version": "4.16.1",
+   "previous": "4.16.0",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "Turn off Google or Microsoft sign in: Google Meet and Microsoft Teams use your SSO credentials, so setting them up only for conferencing also added a sign in button. If the OAuth app had no sign in redirect URI, that button failed with redirect_uri_mismatch. Set GOOGLE_LOGIN_ENABLED=false or MICROS…",
+   "source_url": "https://github.com/lukevella/rallly/releases/tag/v4.16.1",
+   "page_url": "https://www.firmwarely.com/devices/rallly/"
   }
  }
 }
