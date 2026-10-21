@@ -20484,6 +20484,24 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.17
    }
+  },
+  {
+   "id": "tailscale",
+   "version": "1.104.2",
+   "name": "Tailscale client",
+   "judged_at": "2026-10-21T03:25:36+00:00",
+   "notes_chars": 74,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

@@ -676,6 +676,21 @@
    "notes": "🗑️ Feature Removal Reminder: Appsmith AI reached end of life on September 30, 2026. You can no longer add new Appsmith AI datasource connections or queries. Existing queries have stopped working, whether or not you have upgraded. Migrate remaining Appsmith AI queries to a direct provider datasource…",
    "source_url": "https://github.com/appsmithorg/appsmith/releases/tag/v2.5.1",
    "page_url": "https://www.firmwarely.com/devices/appsmith/"
+  },
+  "tailscale": {
+   "id": "tailscale",
+   "brand": "Tailscale",
+   "model": "Tailscale client",
+   "category": "R",
+   "status": "update",
+   "version": "1.104.2",
+   "previous": "1.104.1",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "Please refer to the changelog available at https://tailscale.com/changelog",
+   "source_url": "https://github.com/tailscale/tailscale/releases/tag/v1.104.2",
+   "page_url": "https://www.firmwarely.com/devices/tailscale/"
   }
  }
 }
