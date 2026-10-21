@@ -120,7 +120,7 @@
   <url><loc>https://www.firmwarely.com/devices/home-assistant-supervisor/</loc><lastmod>2026-10-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/zwave-js-ui/</loc><lastmod>2026-10-09</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/node-zwave-js/</loc><lastmod>2026-10-07</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/node-red/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/node-red/</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/openhab/</loc><lastmod>2026-10-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/domoticz/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/iobroker/</loc><lastmod>2026-10-05</lastmod></url>
@@ -308,7 +308,7 @@
   <url><loc>https://www.firmwarely.com/devices/opentofu/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/semaphore-ui/</loc><lastmod>2026-10-20</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/openvas-scanner/</loc><lastmod>2026-10-21</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/trivy/</loc><lastmod>2026-10-14</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/trivy/</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/nuclei/</loc><lastmod>2026-08-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/passbolt/</loc><lastmod>2026-10-20</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/infisical/</loc><lastmod>2026-10-20</lastmod></url>
@@ -431,7 +431,7 @@
   <url><loc>https://www.firmwarely.com/devices/glpi/</loc><lastmod>2026-10-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/snipe-it/</loc><lastmod>2026-10-20</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/phpipam/</loc><lastmod>2026-09-09</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/erpnext/</loc><lastmod>2026-10-15</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/erpnext/</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/invoice-ninja/</loc><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/akaunting/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/kimai/</loc><lastmod>2026-10-19</lastmod></url>
@@ -529,7 +529,7 @@
   <url><loc>https://www.firmwarely.com/devices/wasm3/</loc><lastmod>2026-09-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/jerryscript/</loc><lastmod>2024-12-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/serial-studio/</loc><lastmod>2026-10-16</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/dns-blocklists/</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/dns-blocklists/</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/gost/</loc><lastmod>2024-10-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/amass/</loc><lastmod>2026-04-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/gobuster/</loc><lastmod>2025-09-04</lastmod></url>

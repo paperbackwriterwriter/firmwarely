@@ -106,6 +106,66 @@
    "notes": "This is the first beta release of 0.25.7. I am proud to announce that NanoMQ now runs on Zephyr! Please refer to the following change logs for more information. Architecture & Platform Evolution Deep Zephyr RTOS Integration: Extensive refactoring was performed at the Platform Layer to resolve memor…",
    "source_url": "https://github.com/nanomq/nanomq/releases/tag/0.25.7",
    "page_url": "https://www.firmwarely.com/devices/nanomq/"
+  },
+  "node-red": {
+   "id": "node-red",
+   "brand": "Node-RED",
+   "model": "Automation flow editor",
+   "category": "S",
+   "status": "update",
+   "version": "5.0.9",
+   "previous": "5.0.8",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Verify resolveMerge is called for valid files pending conflict resolution Fix crash on comms auth packet when adminAuth is not set Fix filter node blocking every Date payload Support node:-prefixed core modules in parseModuleName chore: update monaco editor to 0.57.0 feat: add JavaS…",
+   "source_url": "https://github.com/node-red/node-red/releases/tag/5.0.9",
+   "page_url": "https://www.firmwarely.com/devices/node-red/"
+  },
+  "trivy": {
+   "id": "trivy",
+   "brand": "Aqua",
+   "model": "Trivy vulnerability scanner",
+   "category": "A",
+   "status": "update",
+   "version": "0.76.1",
+   "previous": "0.76.0",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: e713f67f7d54decdcd9b3132c9751833dcced698 release: v0.76.1 [release/v0.76] (#​11445) 6647bd6ec5924087956285b773b8cae10508736e fix(deps): bump the aws group across 1 directory with 6 updates [backport: release/v0.76] (#​11446) e0964c97819b1d6a45b7e0426803745f173fc550 fix(deps): bump the do…",
+   "source_url": "https://github.com/aquasecurity/trivy/releases/tag/v0.76.1",
+   "page_url": "https://www.firmwarely.com/devices/trivy/"
+  },
+  "erpnext": {
+   "id": "erpnext",
+   "brand": "Frappe",
+   "model": "ERPNext",
+   "category": "A",
+   "status": "update",
+   "version": "16.52.0",
+   "previous": "16.51.1",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "Features: Renames the BOM option _Track Semi Finished Goods_ to _Produce an Item at Each Operation_ and adds a _Steps_ list showing raw-material status for each operation, with the final step selected automatically. The BOM now lists all step problems in one “Fix These Steps” message and updates st…",
+   "source_url": "https://github.com/frappe/erpnext/releases/tag/v16.52.0",
+   "page_url": "https://www.firmwarely.com/devices/erpnext/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.294.37788",
+   "previous": "37522026.293.57005",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​12005 #​12004 #​12003 #​12002 #​12001",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.294.37788",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   }
  }
 }
