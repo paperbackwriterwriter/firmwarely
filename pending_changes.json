@@ -38,13 +38,13 @@
    "model": "Workflow automation",
    "category": "A",
    "status": "update",
-   "version": "2.44.4",
+   "version": "2.44.5",
    "previous": "2.43.8",
-   "released": "2026-10-19",
+   "released": "2026-10-21",
    "date_known": true,
    "eol": false,
-   "notes": "2.44.4 (2026-10-19): Bug Fixes: core: Reuse connections in the log streaming webhook destination (#​41281) (b79afe2) core: Turn off expression spans by default (#​41309) (6965193)",
-   "source_url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.44.4",
+   "notes": "2.44.5 (2026-10-21): Bug Fixes: core: Key queue job outcomes by job on shutdown resume (#​41404) (1f074d4) editor: Load credential types on startup (#​41405) (6ff3198)",
+   "source_url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.44.5",
    "page_url": "https://www.firmwarely.com/devices/n8n/"
   },
   "typebot": {
@@ -841,6 +841,21 @@
    "notes": "Tested BrowserBox release. Install with: curl -fsSL browserbox.io/install.sh | bash",
    "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.5.1",
    "page_url": "https://www.firmwarely.com/devices/browserbox/"
+  },
+  "traefik": {
+   "id": "traefik",
+   "brand": "Traefik Labs",
+   "model": "Traefik Proxy",
+   "category": "R",
+   "status": "update",
+   "version": "3.7.16",
+   "previous": "3.7.15",
+   "released": "2026-10-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Bug fixes: [authentication, service, k8s/ingress-nginx] Support NTLM and Kerberos in ForwardAuth and ingress-nginx auth-url (#​14091) [authentication, service] Support NTLM and Kerberos authentication in ForwardAuth (#​14084) [k8s/gatewayapi] Fix Gateway API conformance suite setup with the contain…",
+   "source_url": "https://github.com/traefik/traefik/releases/tag/v3.7.16",
+   "page_url": "https://www.firmwarely.com/devices/traefik/"
   }
  }
 }
