@@ -21744,6 +21744,114 @@
     "security_fix_plain": 0.04,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.9.24.8-stable",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-21T17:21:42+00:00",
+   "notes_chars": 43,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "profilarr",
+   "version": "2.3.1",
+   "name": "Profilarr Radarr and Sonarr profile manager",
+   "judged_at": "2026-10-21T17:21:42+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.2,
+    "security_fix_plain": 0.37,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ubiquiti-unifi-network-application",
+   "version": "11.0.94",
+   "name": "Ubiquiti UniFi Network Application",
+   "judged_at": "2026-10-21T17:21:42+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "windmill",
+   "version": "1.843.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-10-21T17:21:42+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "kimai",
+   "version": "2.70.1",
+   "name": "Kimai Time tracking",
+   "judged_at": "2026-10-21T17:21:42+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.07,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "appwrite",
+   "version": "2.6.0",
+   "name": "Appwrite Backend platform",
+   "judged_at": "2026-10-21T17:21:43+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.27,
+    "security_fix_plain": 0.66,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
