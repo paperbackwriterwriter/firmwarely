@@ -21960,6 +21960,96 @@
     "security_fix_plain": 0.92,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "windmill",
+   "version": "1.846.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-10-21T19:37:16+00:00",
+   "notes_chars": 268,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "snipe-it",
+   "version": "8.8.2",
+   "name": "Snipe-IT Asset management",
+   "judged_at": "2026-10-21T19:37:16+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "pangolin",
+   "version": "1.25.0",
+   "name": "Pangolin Tunneled reverse proxy",
+   "judged_at": "2026-10-21T19:37:16+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "linkace",
+   "version": "2.6.3",
+   "name": "LinkAce Bookmark archive",
+   "judged_at": "2026-10-21T19:37:16+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.83,
+    "security_fix_plain": 0.77,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "databasement",
+   "version": "1.10.6",
+   "name": "Databasement Database backup manager",
+   "judged_at": "2026-10-21T19:37:16+00:00",
+   "notes_chars": 231,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.67,
+    "security_fix_plain": 0.67,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

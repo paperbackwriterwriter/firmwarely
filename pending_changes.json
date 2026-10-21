@@ -608,13 +608,13 @@
    "model": "Scripts and workflows",
    "category": "A",
    "status": "update",
-   "version": "1.845.0",
+   "version": "1.846.0",
    "previous": "1.842.0",
    "released": "2026-10-21",
    "date_known": true,
    "eol": false,
-   "notes": "1.845.0 (2026-10-21): Features: home and empty ai sessions share one session composer (#​11635) (56b2e10) --- This PR was generated with Release Please. See documentation.",
-   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.845.0",
+   "notes": "1.846.0 (2026-10-21): Features: home list settings menu with sort, library and user-folder toggles (#​11928) (73f655d) Bug Fixes: home's acting-on pick switches the current workspace (#​11929) (cdaddcc) --- This PR was generated with Release Please. See documentation.",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.846.0",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
   },
   "kimai": {
@@ -721,6 +721,66 @@
    "notes": "Security fixes: Updated the Go build toolchain to 1.26.10 and distroless runtime images to include the compromised certificate authority mitigations (#​5891). Updated github.com/getkin/kin-openapi to v0.149.0 to address validation bypass and denial-of-service vulnerabilities (#​5832). Updated UI Vi…",
    "source_url": "https://github.com/grafana/pyroscope/releases/tag/v2.4.1",
    "page_url": "https://www.firmwarely.com/devices/pyroscope/"
+  },
+  "snipe-it": {
+   "id": "snipe-it",
+   "brand": "Snipe-IT",
+   "model": "Asset management",
+   "category": "A",
+   "status": "critical",
+   "version": "8.8.2",
+   "previous": "8.8.1",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "[!CAUTION] This version of Snipe-IT REQUIRES PHP 8.2.0 or greater, 8.4+ recommended. PHP 8.2 is still in security release support until 31 Dec 2026, but let's not play that game - and some of the new features we're working on will require PHP 8.3+, so... get on that, ferreal! Happy PHPocalypse for …",
+   "source_url": "https://github.com/grokability/snipe-it/releases/tag/v8.8.2",
+   "page_url": "https://www.firmwarely.com/devices/snipe-it/"
+  },
+  "pangolin": {
+   "id": "pangolin",
+   "brand": "Pangolin",
+   "model": "Tunneled reverse proxy",
+   "category": "R",
+   "status": "update",
+   "version": "1.25.0",
+   "previous": "1.24.0",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "Read the Announcement: Read the full announcement with discussion of new features: Pangolin 1.25: Redirects, mTLS, and Machine Roles What’s Changed: Add redirects Add mTLS authentication method for public resources Add support for assigning roles to machine clients (EE) Add export resource to bluep…",
+   "source_url": "https://github.com/fosrl/pangolin/releases/tag/1.25.0",
+   "page_url": "https://www.firmwarely.com/devices/pangolin/"
+  },
+  "linkace": {
+   "id": "linkace",
+   "brand": "LinkAce",
+   "model": "Bookmark archive",
+   "category": "A",
+   "status": "critical",
+   "version": "2.6.3",
+   "previous": "2.6.2",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release contains a CRITICAL security fix for the Docker setup of Linkace. Please update as soon as possible!: Updates PHP inside the Docker image to 8.5.12 because of the PHP RCE vulnerability published today. Details: https://www.php.net/archive/2026.php#2026-10-21-5 Updates dependencies Full…",
+   "source_url": "https://github.com/Kovah/LinkAce/releases/tag/v2.6.3",
+   "page_url": "https://www.firmwarely.com/devices/linkace/"
+  },
+  "databasement": {
+   "id": "databasement",
+   "brand": "Databasement",
+   "model": "Database backup manager",
+   "category": "N",
+   "status": "critical",
+   "version": "1.10.6",
+   "previous": "1.10.5",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: fix: drop the deprecated AWS_ and BACKUP_ env warnings fix(security): update PHP to 8.5.12 for CVE-2026-109618 and CVE-2026-109619 Full Changelog: https://github.com/David-Crty/databasement/compare/v1.10.5...v1.10.6",
+   "source_url": "https://github.com/David-Crty/databasement/releases/tag/v1.10.6",
+   "page_url": "https://www.firmwarely.com/devices/databasement/"
   }
  }
 }
