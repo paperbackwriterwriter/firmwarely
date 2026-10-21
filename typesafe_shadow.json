@@ -20574,6 +20574,78 @@
     "security_fix_plain": 0.04,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "sony-playstation-5",
+   "version": "26.07-14.20.00",
+   "name": "Sony PlayStation 5",
+   "judged_at": "2026-10-21T05:57:45+00:00",
+   "notes_chars": 127,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "sony-playstation-5-pro",
+   "version": "26.07-14.20.00",
+   "name": "Sony PlayStation 5 Pro",
+   "judged_at": "2026-10-21T05:57:45+00:00",
+   "notes_chars": 127,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "jackett",
+   "version": "0.24.2887",
+   "name": "Jackett Torrent indexer proxy",
+   "judged_at": "2026-10-21T05:57:45+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "pm2",
+   "version": "7.1.0",
+   "name": "PM2 Node.js process manager",
+   "judged_at": "2026-10-21T05:57:45+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

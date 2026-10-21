@@ -751,6 +751,66 @@
    "notes": "Turn off Google or Microsoft sign in: Google Meet and Microsoft Teams use your SSO credentials, so setting them up only for conferencing also added a sign in button. If the OAuth app had no sign in redirect URI, that button failed with redirect_uri_mismatch. Set GOOGLE_LOGIN_ENABLED=false or MICROS…",
    "source_url": "https://github.com/lukevella/rallly/releases/tag/v4.16.1",
    "page_url": "https://www.firmwarely.com/devices/rallly/"
+  },
+  "sony-playstation-5": {
+   "id": "sony-playstation-5",
+   "brand": "Sony",
+   "model": "PlayStation 5",
+   "category": "C",
+   "status": "update",
+   "version": "26.07-14.20.00",
+   "previous": "26.06-14.10.00",
+   "released": "2026-10-21",
+   "date_known": false,
+   "eol": false,
+   "notes": "PS5 system software. Sony usually describes these as performance and stability improvements; see the release notes for details.",
+   "source_url": "https://www.playstation.com/en-us/support/hardware/ps5/system-software-info/",
+   "page_url": "https://www.firmwarely.com/devices/sony-playstation-5/"
+  },
+  "sony-playstation-5-pro": {
+   "id": "sony-playstation-5-pro",
+   "brand": "Sony",
+   "model": "PlayStation 5 Pro",
+   "category": "C",
+   "status": "update",
+   "version": "26.07-14.20.00",
+   "previous": "26.06-14.10.00",
+   "released": "2026-10-21",
+   "date_known": false,
+   "eol": false,
+   "notes": "PS5 system software. Sony usually describes these as performance and stability improvements; see the release notes for details.",
+   "source_url": "https://www.playstation.com/en-us/support/hardware/ps5/system-software-info/",
+   "page_url": "https://www.firmwarely.com/devices/sony-playstation-5-pro/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.2887",
+   "previous": "0.24.2884",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: 600d1b89f731a9d76ea3a2755b3d920da68082db desitorrents: reinstate alternate domains 9a75c3c65c695356d441846dbd559c9eededa81e filelist: new cat c578de61e49ef29eda490efcdaf047defa72a4e9 nostradamus: new cat 05d2b0b538edf2b6a3d7e7ec4e7eda3974cb6d00 torrenttip: bump domain 84623d3ddfdfb598a616…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2887",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "pm2": {
+   "id": "pm2",
+   "brand": "PM2",
+   "model": "Node.js process manager",
+   "category": "A",
+   "status": "update",
+   "version": "7.1.0",
+   "previous": "7.0.4",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "7.1.0: Features: pm2 monit / pm2 dash now preload the last 200 lines (out + err merged) of every process from its log files, most recent first; --lines to display more #​5187 pm2 monit: Ctrl+Up / Ctrl+Down (and PageUp / PageDown) scroll the focused log pane page by page Bug Fixes: Shell environment…",
+   "source_url": "https://github.com/Unitech/pm2/releases/tag/v7.1.0",
+   "page_url": "https://www.firmwarely.com/devices/pm2/"
   }
  }
 }
