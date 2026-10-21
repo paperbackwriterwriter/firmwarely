@@ -20394,6 +20394,60 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "unpoller",
+   "version": "5.7.0",
+   "name": "UnPoller UniFi metrics exporter",
+   "judged_at": "2026-10-21T01:42:54+00:00",
+   "notes_chars": 218,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "langflow",
+   "version": "1.12.7",
+   "name": "Langflow Agent builder",
+   "judged_at": "2026-10-21T01:42:54+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.92,
+    "security_fix_plain": 0.92,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "sparkyfitness",
+   "version": "1.9.0",
+   "name": "SparkyFitness Family fitness tracker",
+   "judged_at": "2026-10-21T01:42:54+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

@@ -601,6 +601,51 @@
    "notes": "﻿ Changes: 4.10.2.0: Improve search performance Fix play from albums tab Add option to disable folder outlines in folder view Fixes related to temporary subtitles on skip back feature Fixes related to temporary subtitles on skip back feature Spotlight fixes for older devices Improve live tv tuner d…",
    "source_url": "https://github.com/MediaBrowser/Emby.Releases/releases/tag/4.10.2.0",
    "page_url": "https://www.firmwarely.com/devices/emby-server/"
+  },
+  "unpoller": {
+   "id": "unpoller",
+   "brand": "UnPoller",
+   "model": "UniFi metrics exporter",
+   "category": "R",
+   "status": "update",
+   "version": "5.7.0",
+   "previous": "5.6.3",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: be8e3a8585788c339363a88ac17df525c1ef987d feat: export per-WAN latency, availability and status for UDM and UXG gateways 75084c354976feceff09aeb4559dba393bb98241 build(deps): bump github.com/prometheus/common",
+   "source_url": "https://github.com/unpoller/unpoller/releases/tag/v5.7.0",
+   "page_url": "https://www.firmwarely.com/devices/unpoller/"
+  },
+  "langflow": {
+   "id": "langflow",
+   "brand": "Langflow",
+   "model": "Agent builder",
+   "category": "A",
+   "status": "critical",
+   "version": "1.12.7",
+   "previous": "1.12.6",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: 🐛 Bug Fixes: fix(security): validate OpenSearch connector URLs fix(security): scope original-file S3 uploads fix(deps): dependency upgrades for 1.12.7 fix(security): reject process and code loader capabilities fix(api): reconstruct workflow status without component instantiation fix…",
+   "source_url": "https://github.com/langflow-ai/langflow/releases/tag/v1.12.7",
+   "page_url": "https://www.firmwarely.com/devices/langflow/"
+  },
+  "sparkyfitness": {
+   "id": "sparkyfitness",
+   "brand": "SparkyFitness",
+   "model": "Family fitness tracker",
+   "category": "A",
+   "status": "update",
+   "version": "1.9.0",
+   "previous": "1.8.0",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "--- [!IMPORTANT] 💾 Upgrade Notice: Always remember to back up your database and environment before upgrading to a new version. 👍 Community Prioritization: Want to see a specific feature or fix in the next release? Add a 👍 reaction to open Issues to help us prioritize what to build next! --- 🚀 Key H…",
+   "source_url": "https://github.com/CodeWithCJ/SparkyFitness/releases/tag/v1.9.0",
+   "page_url": "https://www.firmwarely.com/devices/sparkyfitness/"
   }
  }
 }
