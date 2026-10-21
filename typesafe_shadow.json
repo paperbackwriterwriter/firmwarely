@@ -21042,6 +21042,96 @@
     "security_fix_plain": 0.39,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "owncloud-ocis",
+   "version": "8.2.2",
+   "name": "ownCloud Infinite Scale",
+   "judged_at": "2026-10-21T10:28:51+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.6,
+    "security_fix_plain": 0.59,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "strapi",
+   "version": "5.59.0",
+   "name": "Strapi Headless CMS",
+   "judged_at": "2026-10-21T10:28:51+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "safeline",
+   "version": "9.4.3",
+   "name": "Chaitin SafeLine web application firewall",
+   "judged_at": "2026-10-21T10:28:51+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.15,
+    "security_fix_plain": 0.18,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "bfe",
+   "version": "1.8.8.5",
+   "name": "BFE Layer 7 load balancer",
+   "judged_at": "2026-10-21T10:28:51+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "nanomq",
+   "version": "0.25.7",
+   "name": "NanoMQ MQTT broker",
+   "judged_at": "2026-10-21T10:28:51+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
