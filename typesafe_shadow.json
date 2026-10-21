@@ -20358,6 +20358,42 @@
     "security_fix_plain": 0.07,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "onedev",
+   "version": "16.9.5",
+   "name": "OneDev Git server with CI",
+   "judged_at": "2026-10-21T00:08:05+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "emby-server",
+   "version": "4.10.2.0",
+   "name": "Emby Media server",
+   "judged_at": "2026-10-21T00:08:05+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
