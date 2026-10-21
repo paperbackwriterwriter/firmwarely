@@ -21006,6 +21006,42 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "unbound-dns",
+   "version": "1.26.2",
+   "name": "NLnet Labs Unbound resolver",
+   "judged_at": "2026-10-21T09:38:15+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.72,
+    "security_fix_plain": 0.85,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "manyfold",
+   "version": "0.153.0",
+   "name": "Manyfold 3D model library",
+   "judged_at": "2026-10-21T09:38:15+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.17,
+    "security_fix_plain": 0.39,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

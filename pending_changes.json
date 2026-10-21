@@ -1,5 +1,36 @@
 {
- "since": null,
+ "since": "2026-10-21T09:37:45+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "unbound-dns": {
+   "id": "unbound-dns",
+   "brand": "NLnet Labs",
+   "model": "Unbound resolver",
+   "category": "R",
+   "status": "critical",
+   "version": "1.26.2",
+   "previous": "1.26.1",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "Unbound 1.26.2 This release has a number of security fixes. The release is signed with the OpenPGP software signing key that is in use since Jan 1st 2026: User ID: NLnet Labs releases signing key G2 Key ID: A144 323D EAAC DF45 Fingerprint: 2310 1869 0C4D 903E F419 146A A144 323D EAAC DF45 The key i…",
+   "source_url": "https://github.com/NLnetLabs/unbound/releases/tag/release-1.26.2",
+   "page_url": "https://www.firmwarely.com/devices/unbound-dns/"
+  },
+  "manyfold": {
+   "id": "manyfold",
+   "brand": "Manyfold",
+   "model": "3D model library",
+   "category": "M",
+   "status": "critical",
+   "version": "0.153.0",
+   "previous": "0.152.0",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release is mainly to update CA certificates due to the eMudhra certificate compromise, but also comes with adjustable resolution for the model thumbnail renderer. What's Changed: ✨ New Features ✨: Add adjustable resolution for the F3D preview pictures 🔒 Security 🔒: Set minimum certificate pack…",
+   "source_url": "https://github.com/manyfold3d/manyfold/releases/tag/v0.153.0",
+   "page_url": "https://www.firmwarely.com/devices/manyfold/"
+  }
+ }
 }
