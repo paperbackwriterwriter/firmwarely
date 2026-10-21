@@ -21852,6 +21852,60 @@
     "security_fix_plain": 0.66,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "windmill",
+   "version": "1.845.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-10-21T18:12:31+00:00",
+   "notes_chars": 171,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "terraform",
+   "version": "1.17.0",
+   "name": "HashiCorp Terraform",
+   "judged_at": "2026-10-21T18:12:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "mailcow",
+   "version": "8.2.35",
+   "name": "mailcow Mail server suite",
+   "judged_at": "2026-10-21T18:12:32+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.13,
+    "security_fix_plain": 0.44,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

@@ -608,13 +608,13 @@
    "model": "Scripts and workflows",
    "category": "A",
    "status": "update",
-   "version": "1.843.0",
+   "version": "1.845.0",
    "previous": "1.842.0",
    "released": "2026-10-21",
    "date_known": true,
    "eol": false,
-   "notes": "1.843.0 (2026-10-21): Features: configurable workspace roles with per-workspace overrides (#​11821) (21d2a49) move the open in AI session button to the page header (#​11888) (34db239) ship php only on the full images (#​11922) (b874861) workspace roles settings UI and capability-based gating (#​118…",
-   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.843.0",
+   "notes": "1.845.0 (2026-10-21): Features: home and empty ai sessions share one session composer (#​11635) (56b2e10) --- This PR was generated with Release Please. See documentation.",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.845.0",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
   },
   "kimai": {
@@ -646,6 +646,36 @@
    "notes": "Appwrite 2.6.0 brings image metadata controls, resource descriptions, database and storage fixes, and security updates to self-hosted deployments. It includes self-hosted Console 1.2.97, updated from 1.2.74. Back up your instance and run the migration after upgrading: this minor release includes sc…",
    "source_url": "https://github.com/appwrite/appwrite/releases/tag/2.6.0",
    "page_url": "https://www.firmwarely.com/devices/appwrite/"
+  },
+  "terraform": {
+   "id": "terraform",
+   "brand": "HashiCorp",
+   "model": "Terraform",
+   "category": "A",
+   "status": "update",
+   "version": "1.17.0",
+   "previous": "1.16.6",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.17.0 (October 21, 2026): NEW FEATURES: Terraform now supports variables and locals in provider requirements (#​39153) A new -minimal-refresh planning option has been added, which will only refresh resources that have proposed changes. (#​35290) policy: Terraform Policy is now generally available.…",
+   "source_url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0",
+   "page_url": "https://www.firmwarely.com/devices/terraform/"
+  },
+  "mailcow": {
+   "id": "mailcow",
+   "brand": "mailcow",
+   "model": "Mail server suite",
+   "category": "A",
+   "status": "critical",
+   "version": "8.2.35",
+   "previous": "1.26.1",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Security: [PHP] Update base to Alpine 3.24, build PECL extensions from GitHub [SOGo] Update to 5.12.12 [Nginx] Update to 1.30.6 Features: Feat/update UI Translations update from Weblate Translations update from Weblate Full Changelog: https://github.com/mailcow/mailcow-dockerized/co…",
+   "source_url": "https://github.com/mailcow/mailcow-dockerized/releases/tag/2026-10",
+   "page_url": "https://www.firmwarely.com/devices/mailcow/"
   }
  }
 }
