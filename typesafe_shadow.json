@@ -22230,6 +22230,150 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "kimai",
+   "version": "2.70.2",
+   "name": "Kimai Time tracking",
+   "judged_at": "2026-10-21T22:09:16+00:00",
+   "notes_chars": 215,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.09,
+    "security_fix_plain": 0.14,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "librespeed",
+   "version": "6.3.1",
+   "name": "LibreSpeed Self-hosted speed test",
+   "judged_at": "2026-10-21T22:09:16+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.19,
+    "security_fix_plain": 0.23,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "dietpi",
+   "version": "10.8",
+   "name": "DietPi Lightweight SBC OS",
+   "judged_at": "2026-10-21T22:09:16+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "keepassxc",
+   "version": "2.8.0",
+   "name": "KeePassXC Password manager",
+   "judged_at": "2026-10-21T22:09:17+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ollama",
+   "version": "0.40.8",
+   "name": "Ollama Local LLM runner",
+   "judged_at": "2026-10-21T22:09:17+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "autobrr",
+   "version": "1.89.0",
+   "name": "autobrr Download automation",
+   "judged_at": "2026-10-21T22:09:17+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "yt-dlp",
+   "version": "2026.10.21",
+   "name": "yt-dlp Media downloader",
+   "judged_at": "2026-10-21T22:09:17+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "xemu",
+   "version": "0.8.139",
+   "name": "xemu Original Xbox emulator",
+   "judged_at": "2026-10-21T22:09:17+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
