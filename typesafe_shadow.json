@@ -22140,6 +22140,96 @@
     "security_fix_plain": 0.06,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "freshrss",
+   "version": "1.30.4",
+   "name": "FreshRSS RSS reader",
+   "judged_at": "2026-10-21T21:18:36+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.93,
+    "security_fix_plain": 0.92,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "appwrite",
+   "version": "2.6.1",
+   "name": "Appwrite Backend platform",
+   "judged_at": "2026-10-21T21:18:36+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.23,
+    "security_fix_plain": 0.38,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "pangolin",
+   "version": "1.25.1",
+   "name": "Pangolin Tunneled reverse proxy",
+   "judged_at": "2026-10-21T21:18:36+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.07,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ghostfolio",
+   "version": "3.90.0",
+   "name": "Ghostfolio Wealth tracker",
+   "judged_at": "2026-10-21T21:18:36+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "databasus",
+   "version": "3.62.0",
+   "name": "Databasus PostgreSQL backup tool",
+   "judged_at": "2026-10-21T21:18:36+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
