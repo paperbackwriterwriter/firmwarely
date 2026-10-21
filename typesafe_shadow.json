@@ -20718,6 +20718,24 @@
     "security_fix_plain": 0.1,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "skipper",
+   "version": "0.28.47",
+   "name": "Skipper HTTP router and reverse proxy",
+   "judged_at": "2026-10-21T07:49:11+00:00",
+   "notes_chars": 191,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.15,
+    "security_fix_plain": 0.27,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
