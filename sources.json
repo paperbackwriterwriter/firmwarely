@@ -11232,6 +11232,33 @@
    "type": "github",
    "repo": "razvandimescu/numa",
    "product_url": "https://github.com/razvandimescu/numa"
+  },
+  {
+   "id": "emba",
+   "brand": "Emba",
+   "model": "Firmware security analyzer",
+   "category": "S",
+   "type": "github",
+   "repo": "e-m-b-a/emba",
+   "product_url": "https://github.com/e-m-b-a/emba"
+  },
+  {
+   "id": "gp2040-ce",
+   "brand": "GP2040 CE",
+   "model": "Multi-Platform Gamepad Firmware",
+   "category": "M",
+   "type": "github",
+   "repo": "OpenStickCommunity/GP2040-CE",
+   "product_url": "https://github.com/OpenStickCommunity/GP2040-CE"
+  },
+  {
+   "id": "ipxe",
+   "brand": "Ipxe",
+   "model": "Network bootloader",
+   "category": "M",
+   "type": "github",
+   "repo": "ipxe/ipxe",
+   "product_url": "https://github.com/ipxe/ipxe"
   }
  ]
 }

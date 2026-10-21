@@ -20736,6 +20736,276 @@
     "security_fix_plain": 0.27,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "openvas-scanner",
+   "version": "23.52.3",
+   "name": "Greenbone OpenVAS scanner",
+   "judged_at": "2026-10-21T08:46:52+00:00",
+   "notes_chars": 175,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "qnap-ts-464",
+   "version": "5.2.11.3652",
+   "name": "QNAP TS-464",
+   "judged_at": "2026-10-21T08:46:52+00:00",
+   "notes_chars": 59,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.12,
+    "security_fix_plain": 0.1,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "qnap-ts-262",
+   "version": "5.2.11.3652",
+   "name": "QNAP TS-262",
+   "judged_at": "2026-10-21T08:46:52+00:00",
+   "notes_chars": 59,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.13,
+    "security_fix_plain": 0.11,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "qnap-ts-673a",
+   "version": "5.2.11.3652",
+   "name": "QNAP TS-673A",
+   "judged_at": "2026-10-21T08:46:52+00:00",
+   "notes_chars": 59,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.11,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "qnap-tvs-h874",
+   "version": "5.2.11.3652",
+   "name": "QNAP TVS-h874",
+   "judged_at": "2026-10-21T08:46:52+00:00",
+   "notes_chars": 59,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.1,
+    "security_fix_plain": 0.1,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "docker-compose",
+   "version": "5.6.1",
+   "name": "Docker Compose",
+   "judged_at": "2026-10-21T08:46:52+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.27,
+    "security_fix_plain": 0.31,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "casdoor",
+   "version": "4.23.0",
+   "name": "Casdoor Identity and access",
+   "judged_at": "2026-10-21T08:46:52+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "cryptomator",
+   "version": "1.19.4",
+   "name": "Cryptomator Cloud encryption",
+   "judged_at": "2026-10-21T08:46:52+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.82,
+    "security_fix_plain": 0.84,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "kestra",
+   "version": "2.0.7",
+   "name": "Kestra Orchestration platform",
+   "judged_at": "2026-10-21T08:46:52+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "qnap-ts-233",
+   "version": "5.2.11.3652",
+   "name": "QNAP TS-233",
+   "judged_at": "2026-10-21T08:46:52+00:00",
+   "notes_chars": 59,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.12,
+    "security_fix_plain": 0.1,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "qnap-ts-433",
+   "version": "5.2.11.3652",
+   "name": "QNAP TS-433",
+   "judged_at": "2026-10-21T08:46:52+00:00",
+   "notes_chars": 59,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.13,
+    "security_fix_plain": 0.1,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "qnap-tbs-h574tx",
+   "version": "5.2.11.3652",
+   "name": "QNAP TBS-h574TX",
+   "judged_at": "2026-10-21T08:46:53+00:00",
+   "notes_chars": 59,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.11,
+    "security_fix_plain": 0.1,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "qnap-ts-1655",
+   "version": "5.2.11.3652",
+   "name": "QNAP TS-1655",
+   "judged_at": "2026-10-21T08:46:53+00:00",
+   "notes_chars": 59,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.15,
+    "security_fix_plain": 0.11,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ani-rss",
+   "version": "3.2.52",
+   "name": "ANi-RSS Anime RSS downloader",
+   "judged_at": "2026-10-21T08:46:53+00:00",
+   "notes_chars": 52,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "nightingale",
+   "version": "9.3.0",
+   "name": "Nightingale Open-source, self-hosted alerting",
+   "judged_at": "2026-10-21T08:46:53+00:00",
+   "notes_chars": 13,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

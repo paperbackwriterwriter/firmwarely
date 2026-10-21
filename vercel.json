@@ -762,22 +762,22 @@
       "permanent": false
     },
     {
-      "source": "/brands/:b(grbl|inav|infinitime|ipsw|ironos|jerryscript|jetkvm|k3sup|kicad|klipper|kodi|lasergrbl|libreelec|lilygo|linuxcnc|mainsail|manyfold|marlin|meshcore|meshlab|micropython|moonraker|nordic|nvidia|obico|octoprint|openbot|openipc|openmower|openocd|openpnp|openscad|orange-pi|ortur|pine64|platformio|plotjuggler|probe-rs|pwnagotchi|px4)",
+      "source": "/brands/:b(gp2040-ce|grbl|inav|infinitime|ipsw|ipxe|ironos|jerryscript|jetkvm|k3sup|kicad|klipper|kodi|lasergrbl|libreelec|lilygo|linuxcnc|mainsail|manyfold|marlin|meshcore|meshlab|micropython|moonraker|nordic|nvidia|obico|octoprint|openbot|openipc|openmower|openocd|openpnp|openscad|orange-pi|ortur|pine64|platformio|plotjuggler|probe-rs)",
       "destination": "/category/makers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(grbl|inav|infinitime|ipsw|ironos|jerryscript|jetkvm|k3sup|kicad|klipper|kodi|lasergrbl|libreelec|lilygo|linuxcnc|mainsail|manyfold|marlin|meshcore|meshlab|micropython|moonraker|nordic|nvidia|obico|octoprint|openbot|openipc|openmower|openocd|openpnp|openscad|orange-pi|ortur|pine64|platformio|plotjuggler|probe-rs|pwnagotchi|px4)/",
+      "source": "/brands/:b(gp2040-ce|grbl|inav|infinitime|ipsw|ipxe|ironos|jerryscript|jetkvm|k3sup|kicad|klipper|kodi|lasergrbl|libreelec|lilygo|linuxcnc|mainsail|manyfold|marlin|meshcore|meshlab|micropython|moonraker|nordic|nvidia|obico|octoprint|openbot|openipc|openmower|openocd|openpnp|openscad|orange-pi|ortur|pine64|platformio|plotjuggler|probe-rs)/",
       "destination": "/category/makers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(qidi|qmk|rackstack|radxa|raspotify|reticulum|retroarch|retropie|riot|rt-thread|seeed-studio|serial-studio|sherpa-onnx|sipeed|snapmaker|sovol|spoolman|stmicroelectronics|system76|thingino|tinygo|tock|ultimaker|uvtools|velxio|wamr|wasm3|xtool|zephyr|zmk)",
+      "source": "/brands/:b(pwnagotchi|px4|qidi|qmk|rackstack|radxa|raspotify|reticulum|retroarch|retropie|riot|rt-thread|seeed-studio|serial-studio|sherpa-onnx|sipeed|snapmaker|sovol|spoolman|stmicroelectronics|system76|thingino|tinygo|tock|ultimaker|uvtools|velxio|wamr|wasm3|xtool|zephyr|zmk)",
       "destination": "/category/makers/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(qidi|qmk|rackstack|radxa|raspotify|reticulum|retroarch|retropie|riot|rt-thread|seeed-studio|serial-studio|sherpa-onnx|sipeed|snapmaker|sovol|spoolman|stmicroelectronics|system76|thingino|tinygo|tock|ultimaker|uvtools|velxio|wamr|wasm3|xtool|zephyr|zmk)/",
+      "source": "/brands/:b(pwnagotchi|px4|qidi|qmk|rackstack|radxa|raspotify|reticulum|retroarch|retropie|riot|rt-thread|seeed-studio|serial-studio|sherpa-onnx|sipeed|snapmaker|sovol|spoolman|stmicroelectronics|system76|thingino|tinygo|tock|ultimaker|uvtools|velxio|wamr|wasm3|xtool|zephyr|zmk)/",
       "destination": "/category/makers/",
       "permanent": false
     },
@@ -962,32 +962,32 @@
       "permanent": false
     },
     {
-      "source": "/brands/:b(abode|adaptive-lighting|anker|aqara|arlo|august|brilliant|bruce|button-card|chamberlain|chargepoint|dgiot|domoticz|dreame|dreame-vacuum|dresden-elektronik|eclipse|ecobee|ecovacs|emporia|enphase|espeasy|espresense|evcc|eve|flume|frigate|fuxa|gladys|go2rtc|google|govee|ha-bambulab|ha-llmvision|homeassistant-powercalc|homebridge|homelable|http-shortcuts|hyperion|integration)",
+      "source": "/brands/:b(abode|adaptive-lighting|anker|aqara|arlo|august|brilliant|bruce|button-card|chamberlain|chargepoint|dgiot|domoticz|dreame|dreame-vacuum|dresden-elektronik|eclipse|ecobee|ecovacs|emba|emporia|enphase|espeasy|espresense|evcc|eve|flume|frigate|fuxa|gladys|go2rtc|google|govee|ha-bambulab|ha-llmvision|homeassistant-powercalc|homebridge|homelable|http-shortcuts|hyperion)",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(abode|adaptive-lighting|anker|aqara|arlo|august|brilliant|bruce|button-card|chamberlain|chargepoint|dgiot|domoticz|dreame|dreame-vacuum|dresden-elektronik|eclipse|ecobee|ecovacs|emporia|enphase|espeasy|espresense|evcc|eve|flume|frigate|fuxa|gladys|go2rtc|google|govee|ha-bambulab|ha-llmvision|homeassistant-powercalc|homebridge|homelable|http-shortcuts|hyperion|integration)/",
+      "source": "/brands/:b(abode|adaptive-lighting|anker|aqara|arlo|august|brilliant|bruce|button-card|chamberlain|chargepoint|dgiot|domoticz|dreame|dreame-vacuum|dresden-elektronik|eclipse|ecobee|ecovacs|emba|emporia|enphase|espeasy|espresense|evcc|eve|flume|frigate|fuxa|gladys|go2rtc|google|govee|ha-bambulab|ha-llmvision|homeassistant-powercalc|homebridge|homelable|http-shortcuts|hyperion)/",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(iobroker|irobot|jetlinks|kiosk-satellite|konnected|kwikset|level|leviton|libretiny|lifx|lutron|matter|meross|mini-graph-card|moen|motioneye|mushroom|music-assistant|nanoleaf|nanomq|netatmo|node-red|nodemcu|openbeken|openccu|opendtu|openenergymonitor|openevse|openhab|openhasp|openmqttgateway|opensprinkler|openthread|openwakeword|openwb|philips|piper|rachio|ratgdo|ravensystem)",
+      "source": "/brands/:b(integration|iobroker|irobot|jetlinks|kiosk-satellite|konnected|kwikset|level|leviton|libretiny|lifx|lutron|matter|meross|mini-graph-card|moen|motioneye|mushroom|music-assistant|nanoleaf|nanomq|netatmo|node-red|nodemcu|openbeken|openccu|opendtu|openenergymonitor|openevse|openhab|openhasp|openmqttgateway|opensprinkler|openthread|openwakeword|openwb|philips|piper|rachio|ratgdo)",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(iobroker|irobot|jetlinks|kiosk-satellite|konnected|kwikset|level|leviton|libretiny|lifx|lutron|matter|meross|mini-graph-card|moen|motioneye|mushroom|music-assistant|nanoleaf|nanomq|netatmo|node-red|nodemcu|openbeken|openccu|opendtu|openenergymonitor|openevse|openhab|openhasp|openmqttgateway|opensprinkler|openthread|openwakeword|openwb|philips|piper|rachio|ratgdo|ravensystem)/",
+      "source": "/brands/:b(integration|iobroker|irobot|jetlinks|kiosk-satellite|konnected|kwikset|level|leviton|libretiny|lifx|lutron|matter|meross|mini-graph-card|moen|motioneye|mushroom|music-assistant|nanoleaf|nanomq|netatmo|node-red|nodemcu|openbeken|openccu|opendtu|openenergymonitor|openevse|openhab|openhasp|openmqttgateway|opensprinkler|openthread|openwakeword|openwb|philips|piper|rachio|ratgdo)/",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(reolink|resideo|rhasspy|roborock|schlage|scrypted|shelly|sonofflan|sonos|spook|switchbot|tado|tapo-control|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|tuya-local|valetudo|wallbox|webrtc|wled|wyze|xiaomi-home|xiaomi-miot-auto|xiaomi-vacuum-map-card|xiaomigateway3|yale|zigbee2mqtt|zigpy|zoneminder)",
+      "source": "/brands/:b(ravensystem|reolink|resideo|rhasspy|roborock|schlage|scrypted|shelly|sonofflan|sonos|spook|switchbot|tado|tapo-control|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|tuya-local|valetudo|wallbox|webrtc|wled|wyze|xiaomi-home|xiaomi-miot-auto|xiaomi-vacuum-map-card|xiaomigateway3|yale|zigbee2mqtt|zigpy|zoneminder)",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(reolink|resideo|rhasspy|roborock|schlage|scrypted|shelly|sonofflan|sonos|spook|switchbot|tado|tapo-control|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|tuya-local|valetudo|wallbox|webrtc|wled|wyze|xiaomi-home|xiaomi-miot-auto|xiaomi-vacuum-map-card|xiaomigateway3|yale|zigbee2mqtt|zigpy|zoneminder)/",
+      "source": "/brands/:b(ravensystem|reolink|resideo|rhasspy|roborock|schlage|scrypted|shelly|sonofflan|sonos|spook|switchbot|tado|tapo-control|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|tuya-local|valetudo|wallbox|webrtc|wled|wyze|xiaomi-home|xiaomi-miot-auto|xiaomi-vacuum-map-card|xiaomigateway3|yale|zigbee2mqtt|zigpy|zoneminder)/",
       "destination": "/category/smart-home/",
       "permanent": false
     },
