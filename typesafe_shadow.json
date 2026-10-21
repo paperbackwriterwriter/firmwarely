@@ -21204,6 +21204,60 @@
     "security_fix_plain": 0.06,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "esphome",
+   "version": "2026.10.0",
+   "name": "ESPHome ESP32 / ESP8266 device firmware",
+   "judged_at": "2026-10-21T12:10:26+00:00",
+   "notes_chars": 43,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.31,
+    "security_fix_plain": 0.38,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "langfuse",
+   "version": "4.67.0",
+   "name": "Langfuse LLM observability",
+   "judged_at": "2026-10-21T12:10:27+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "kiosk-satellite",
+   "version": "2026.10.34",
+   "name": "Kiosk Satellite Turn any Android device",
+   "judged_at": "2026-10-21T12:10:27+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
