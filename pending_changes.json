@@ -646,6 +646,36 @@
    "notes": "--- [!IMPORTANT] 💾 Upgrade Notice: Always remember to back up your database and environment before upgrading to a new version. 👍 Community Prioritization: Want to see a specific feature or fix in the next release? Add a 👍 reaction to open Issues to help us prioritize what to build next! --- 🚀 Key H…",
    "source_url": "https://github.com/CodeWithCJ/SparkyFitness/releases/tag/v1.9.0",
    "page_url": "https://www.firmwarely.com/devices/sparkyfitness/"
+  },
+  "prefect": {
+   "id": "prefect",
+   "brand": "Prefect",
+   "model": "Workflow orchestration",
+   "category": "A",
+   "status": "update",
+   "version": "3.9.0",
+   "previous": "3.8.8",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "3.9.0 - Pendulum's last swing: Released on October 21, 2026 Breaking Changes ⚠️ Drop Python 3.10 support by in #​23324 Remove deprecated Runner execution paths Deprecate Pendulum datetime behavior on Python 3.11–3.12 by in #​23328 New Features 🎉 Add Python 3.15 support by in #​23400 Enhancements ➕➕…",
+   "source_url": "https://github.com/PrefectHQ/prefect/releases/tag/3.9.0",
+   "page_url": "https://www.firmwarely.com/devices/prefect/"
+  },
+  "appsmith": {
+   "id": "appsmith",
+   "brand": "Appsmith",
+   "model": "Internal tools builder",
+   "category": "A",
+   "status": "eol",
+   "version": "2.5.1",
+   "previous": "2.5.0",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": true,
+   "notes": "🗑️ Feature Removal Reminder: Appsmith AI reached end of life on September 30, 2026. You can no longer add new Appsmith AI datasource connections or queries. Existing queries have stopped working, whether or not you have upgraded. Migrate remaining Appsmith AI queries to a direct provider datasource…",
+   "source_url": "https://github.com/appsmithorg/appsmith/releases/tag/v2.5.1",
+   "page_url": "https://www.firmwarely.com/devices/appsmith/"
   }
  }
 }
