@@ -21384,6 +21384,150 @@
     "security_fix_plain": 0.07,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.7.36.9-stable",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-21T14:49:14+00:00",
+   "notes_chars": 43,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "freshrss",
+   "version": "1.30.3",
+   "name": "FreshRSS RSS reader",
+   "judged_at": "2026-10-21T14:49:15+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.91,
+    "security_fix_plain": 0.9,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "fluent-bit",
+   "version": "5.1.5",
+   "name": "Fluent Bit Log processor",
+   "judged_at": "2026-10-21T14:49:15+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.14,
+    "security_fix_plain": 0.16,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "coolify",
+   "version": "4.4.7",
+   "name": "Coolify Self-hosting platform",
+   "judged_at": "2026-10-21T14:49:15+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.23,
+    "security_fix_plain": 0.14,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "opentofu",
+   "version": "1.13.2",
+   "name": "OpenTofu Infrastructure as code",
+   "judged_at": "2026-10-21T14:49:15+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.92,
+    "security_fix_plain": 0.88,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "tooljet",
+   "version": "3.20.247-lts",
+   "name": "ToolJet Low-code platform",
+   "judged_at": "2026-10-21T14:49:15+00:00",
+   "notes_chars": 295,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.13,
+    "security_fix_plain": 0.26,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "cryptpad",
+   "version": "2026.10.0",
+   "name": "CryptPad Encrypted collaboration",
+   "judged_at": "2026-10-21T14:49:15+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "dnscontrol",
+   "version": "5.7.0",
+   "name": "DNSControl DNS as code",
+   "judged_at": "2026-10-21T14:49:15+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
