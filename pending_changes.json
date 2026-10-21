@@ -811,6 +811,36 @@
    "notes": "7.1.0: Features: pm2 monit / pm2 dash now preload the last 200 lines (out + err merged) of every process from its log files, most recent first; --lines to display more #​5187 pm2 monit: Ctrl+Up / Ctrl+Down (and PageUp / PageDown) scroll the focused log pane page by page Bug Fixes: Shell environment…",
    "source_url": "https://github.com/Unitech/pm2/releases/tag/v7.1.0",
    "page_url": "https://www.firmwarely.com/devices/pm2/"
+  },
+  "syncthing": {
+   "id": "syncthing",
+   "brand": "Syncthing",
+   "model": "Continuous file sync",
+   "category": "A",
+   "status": "update",
+   "version": "2.1.7",
+   "previous": "2.1.6",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Built with Go 1.27.3. Fixes: fix: handle missing max-sequence file entries fix(sqlite): avoid early garbage collection of deleted recv-enc files fix(sqlite): do not generate unbounded prepared statements (ref #​10913) fix(discover): skip unnecessary identical global announce updates…",
+   "source_url": "https://github.com/syncthing/syncthing/releases/tag/v2.1.7",
+   "page_url": "https://www.firmwarely.com/devices/syncthing/"
+  },
+  "browserbox": {
+   "id": "browserbox",
+   "brand": "BrowserBox",
+   "model": "Remote browser isolation",
+   "category": "R",
+   "status": "update",
+   "version": "20.5.1",
+   "previous": "20.5.0",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "Tested BrowserBox release. Install with: curl -fsSL browserbox.io/install.sh | bash",
+   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.5.1",
+   "page_url": "https://www.firmwarely.com/devices/browserbox/"
   }
  }
 }
