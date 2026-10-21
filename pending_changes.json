@@ -676,6 +676,51 @@
    "notes": "What's Changed: Security: [PHP] Update base to Alpine 3.24, build PECL extensions from GitHub [SOGo] Update to 5.12.12 [Nginx] Update to 1.30.6 Features: Feat/update UI Translations update from Weblate Translations update from Weblate Full Changelog: https://github.com/mailcow/mailcow-dockerized/co…",
    "source_url": "https://github.com/mailcow/mailcow-dockerized/releases/tag/2026-10",
    "page_url": "https://www.firmwarely.com/devices/mailcow/"
+  },
+  "immich-server": {
+   "id": "immich-server",
+   "brand": "Immich",
+   "model": "Photo backup server",
+   "category": "A",
+   "status": "critical",
+   "version": "3.3.5",
+   "previous": "3.3.4",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "[!CAUTION] This version contains a fix for today's CA compromise (https://emudhra.we-have-a-problem.com/). While we don't believe this compromise brings an immediate danger to Immich instances, we still recommend that you update as soon as possible. https://xkcd.com/221/ What's Changed: 🔒 Security:…",
+   "source_url": "https://github.com/immich-app/immich/releases/tag/v3.3.5",
+   "page_url": "https://www.firmwarely.com/devices/immich-server/"
+  },
+  "shlink": {
+   "id": "shlink",
+   "brand": "Shlink",
+   "model": "URL shortener",
+   "category": "A",
+   "status": "critical",
+   "version": "5.1.8",
+   "previous": "5.1.7",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changed: Nothing Added: Nothing Removed: Nothing Fixed: #​2678 Update docker images to Alpine 3.24, so that they get PHP security updates again, including the fix for CVE-2026-109618 and CVE-2026-109619. Deprecated: Nothing",
+   "source_url": "https://github.com/shlinkio/shlink/releases/tag/v5.1.8",
+   "page_url": "https://www.firmwarely.com/devices/shlink/"
+  },
+  "pyroscope": {
+   "id": "pyroscope",
+   "brand": "Pyroscope",
+   "model": "Continuous Profiling Platform",
+   "category": "A",
+   "status": "critical",
+   "version": "2.4.1",
+   "previous": "2.4.0",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "Security fixes: Updated the Go build toolchain to 1.26.10 and distroless runtime images to include the compromised certificate authority mitigations (#​5891). Updated github.com/getkin/kin-openapi to v0.149.0 to address validation bypass and denial-of-service vulnerabilities (#​5832). Updated UI Vi…",
+   "source_url": "https://github.com/grafana/pyroscope/releases/tag/v2.4.1",
+   "page_url": "https://www.firmwarely.com/devices/pyroscope/"
   }
  }
 }
