@@ -181,6 +181,51 @@
    "notes": "Patch Changes: 7bd480a: The Docker image no longer trusts certificates issued through the compromised eMudhra (emSign) intermediate CAs. In October 2026, eMudhra disclosed that the private keys of several of its intermediate certificate authorities had been compromised. Anyone holding those keys ca…",
    "source_url": "https://github.com/verdaccio/verdaccio/releases/tag/v6.10.7",
    "page_url": "https://www.firmwarely.com/devices/verdaccio/"
+  },
+  "questdb": {
+   "id": "questdb",
+   "brand": "QuestDB",
+   "model": "Time series database",
+   "category": "A",
+   "status": "update",
+   "version": "10.1.0",
+   "previous": "10.0.1",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "QuestDB 10.1.0: QuestDB 10.1.0 adds new SQL features, makes several query shapes faster, and fixes a large batch of correctness and reliability bugs. New SQL includes SUBSAMPLE for server-side downsampling, the percentile_disc / percentile_cont functions, right-hand filters in HORIZON JOIN, and aud…",
+   "source_url": "https://github.com/questdb/questdb/releases/tag/10.1.0",
+   "page_url": "https://www.firmwarely.com/devices/questdb/"
+  },
+  "aily-blockly": {
+   "id": "aily-blockly",
+   "brand": "Aily",
+   "model": "Blockly AI IDE for Arduino",
+   "category": "M",
+   "status": "update",
+   "version": "0.9.106",
+   "previous": "0.9.105",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "v0.9.106: Changes: ✨ New Features Added cloud compilation with account-based authentication, regional switching, motherboard compatibility checks, reuse of verified results, and automatic fallback to local compilation when cloud access is unavailable or restricted. 🐛 Bug Fixes Improved serial uploa…",
+   "source_url": "https://github.com/ailyProject/aily-blockly/releases/tag/v0.9.106",
+   "page_url": "https://www.firmwarely.com/devices/aily-blockly/"
+  },
+  "skipper": {
+   "id": "skipper",
+   "brand": "Skipper",
+   "model": "HTTP router and reverse proxy",
+   "category": "R",
+   "status": "update",
+   "version": "0.28.49",
+   "previous": "0.28.48",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes: fix(openpolicyagent): restore PluginStatus() workaround for OPA issue #​8009 (#​4363) Summary: The PluginStatus() workaround originally introduced in #​3692 to address OPA issue #​8009 was accidentally dropped by the fork merge in commit 2cfceaba Restores the fix: discard the stale status …",
+   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.49",
+   "page_url": "https://www.firmwarely.com/devices/skipper/"
   }
  }
 }
