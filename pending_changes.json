@@ -271,6 +271,36 @@
    "notes": "Mattermost Platform Release 12.0.1",
    "source_url": "https://github.com/mattermost/mattermost/releases/tag/v12.0.1",
    "page_url": "https://www.firmwarely.com/devices/mattermost/"
+  },
+  "localai": {
+   "id": "localai",
+   "brand": "LocalAI",
+   "model": "OpenAI-compatible local API",
+   "category": "A",
+   "status": "update",
+   "version": "4.12.0",
+   "previous": "4.11.0",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "🎉 LocalAI 4.12.0 Release! 🚀: LocalAI 4.12.0 is out! This release redesigns the web UI and adds streaming voice responses, native decision routing, and more control over model memory and prompt state. It also adds image upscaling, live motion capture, Qdrant stores, and authenticated chat history. I…",
+   "source_url": "https://github.com/mudler/LocalAI/releases/tag/v4.12.0",
+   "page_url": "https://www.firmwarely.com/devices/localai/"
+  },
+  "tooljet": {
+   "id": "tooljet",
+   "brand": "ToolJet",
+   "model": "Low-code platform",
+   "category": "A",
+   "status": "critical",
+   "version": "3.20.249-lts",
+   "previous": "3.20.248-lts",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Added a fix for permission in files Chore: Bump Node to 22.23.4 for Oct 2026 security release on LTS Full Changelog: https://github.com/ToolJet/ToolJet/compare/v3.20.248-lts...v3.20.249-lts",
+   "source_url": "https://github.com/ToolJet/ToolJet/releases/tag/v3.20.249-lts",
+   "page_url": "https://www.firmwarely.com/devices/tooljet/"
   }
  }
 }

@@ -23166,6 +23166,42 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "localai",
+   "version": "4.12.0",
+   "name": "LocalAI OpenAI-compatible local API",
+   "judged_at": "2026-10-22T13:48:07+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "tooljet",
+   "version": "3.20.249-lts",
+   "name": "ToolJet Low-code platform",
+   "judged_at": "2026-10-22T13:48:07+00:00",
+   "notes_chars": 205,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.37,
+    "security_fix_plain": 0.19,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
