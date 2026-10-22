@@ -1021,6 +1021,21 @@
    "notes": "What's Changed: Fixes for scheduler request layer Updated dependencies Seven small API fixes found building the new apps Improve scoping for purging a user to constrain DB lock contention Four API fixes found building the new apps: endless reminders and activity feed Clean up available includes in …",
    "source_url": "https://github.com/invoiceninja/invoiceninja/releases/tag/v5.13.50",
    "page_url": "https://www.firmwarely.com/devices/invoice-ninja/"
+  },
+  "pixelfed": {
+   "id": "pixelfed",
+   "brand": "Pixelfed",
+   "model": "Photo sharing",
+   "category": "A",
+   "status": "critical",
+   "version": "0.15.2",
+   "previous": "0.15.1",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "Security: Our primary docker image was updated to 5.0.2 - https://github.com/serversideup/docker-php/releases/tag/v5.0.2 (this includes the PHP security patching for 2 CVEs). Details here: https://www.php.net/archive/2026.php#2026-10-21-5 Rebuilt release images with updated CAs Details here: https:…",
+   "source_url": "https://github.com/pixelfed/pixelfed/releases/tag/v0.15.2",
+   "page_url": "https://www.firmwarely.com/devices/pixelfed/"
   }
  }
 }

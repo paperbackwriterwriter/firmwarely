@@ -22428,6 +22428,24 @@
     "security_fix_plain": 0.05,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "pixelfed",
+   "version": "0.15.2",
+   "name": "Pixelfed Photo sharing",
+   "judged_at": "2026-10-22T00:10:59+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.41,
+    "security_fix_plain": 0.34,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
