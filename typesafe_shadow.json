@@ -22968,6 +22968,96 @@
     "security_fix_plain": 0.6,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "asus-rt-ax86u-pro",
+   "version": "3.0.0.6.102_37544",
+   "name": "ASUS RT-AX86U Pro",
+   "judged_at": "2026-10-22T11:15:54+00:00",
+   "notes_chars": 0,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "zoraxy",
+   "version": "3.3.5-rc4",
+   "name": "Zoraxy Reverse proxy",
+   "judged_at": "2026-10-22T11:15:54+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.99,
+    "security_fix_plain": 0.96,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "speedtest-tracker",
+   "version": "1.15.1",
+   "name": "Speedtest Tracker Broadband speed logger",
+   "judged_at": "2026-10-22T11:15:54+00:00",
+   "notes_chars": 221,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "node-zwave-js",
+   "version": "15.31.2",
+   "name": "Z-Wave JS Z-Wave driver",
+   "judged_at": "2026-10-22T11:15:54+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "verdaccio",
+   "version": "6.10.7",
+   "name": "Verdaccio npm registry",
+   "judged_at": "2026-10-22T11:15:54+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.53,
+    "security_fix_plain": 0.53,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
