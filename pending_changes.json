@@ -1096,6 +1096,21 @@
    "notes": "Installation Guide: https://docs.onedev.io/category/installation-guide Change Log: https://code.onedev.io/onedev/server/~builds/8756/fixed-issues?query=%22State%22+is+%22Released%22+order+by+%22Type%22+asc+%2C+%22Priority%22+desc Incompatibilities: https://code.onedev.io/onedev/server/~builds/8756/…",
    "source_url": "https://github.com/theonedev/onedev/releases/tag/v16.9.6",
    "page_url": "https://www.firmwarely.com/devices/onedev/"
+  },
+  "matomo": {
+   "id": "matomo",
+   "brand": "Matomo",
+   "model": "Web analytics",
+   "category": "A",
+   "status": "update",
+   "version": "5.14.2",
+   "previous": "5.14.1",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Matomo 5.14.2 Changelog: Please use the attached archives for installing or updating Matomo. The source code download is only meant for developers and will require extra work to install it. Latest stable production release can be found at https://matomo.org/download/ (learn more) (recommended) Beta…",
+   "source_url": "https://github.com/matomo-org/matomo/releases/tag/5.14.2",
+   "page_url": "https://www.firmwarely.com/devices/matomo/"
   }
  }
 }
