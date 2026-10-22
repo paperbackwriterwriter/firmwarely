@@ -23706,6 +23706,42 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "synapse",
+   "version": "1.163.1",
+   "name": "Element Synapse Matrix server",
+   "judged_at": "2026-10-22T19:30:09+00:00",
+   "notes_chars": 79,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.46,
+    "security_fix_plain": 0.39,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "onyx",
+   "version": "4.9.4",
+   "name": "Onyx AI platform",
+   "judged_at": "2026-10-22T19:30:09+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.18,
+    "security_fix_plain": 0.1,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
