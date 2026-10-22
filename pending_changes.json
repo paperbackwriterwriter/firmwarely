@@ -721,6 +721,51 @@
    "notes": "What's Changed: fix(secrets): stop overview search reverting after clear and add a clear action to no-matches state chore: add upgrade impact for v0.167.0 by in https://github.com/Infisical/infisical/pull/8814 chore(frontend): remove low-signal unit tests docs(seo): audit titles and descriptions ch…",
    "source_url": "https://github.com/Infisical/infisical/releases/tag/v0.167.1",
    "page_url": "https://www.firmwarely.com/devices/infisical/"
+  },
+  "asus-rt-ax88u": {
+   "id": "asus-rt-ax88u",
+   "brand": "ASUS",
+   "model": "RT-AX88U",
+   "category": "R",
+   "status": "update",
+   "version": "3.0.0.4.388_24386",
+   "previous": "3.0.0.4.388_24385",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Fixed an issue that could cause DNS resolution failures and loss of Internet access when DNSSEC is enabled.",
+   "source_url": "https://www.asus.com/networking-iot-servers/wifi-routers/asus-wifi-routers/rt-ax88u/helpdesk_bios?model2Name=RT-AX88U",
+   "page_url": "https://www.firmwarely.com/devices/asus-rt-ax88u/"
+  },
+  "paperless-ngx": {
+   "id": "paperless-ngx",
+   "brand": "Paperless-ngx",
+   "model": "Document scanner and archive",
+   "category": "A",
+   "status": "update",
+   "version": "3.3.4",
+   "previous": "3.3.3",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "paperless-ngx 3.3.4: Documentation: add scratch\\_dir setting (#​14498) All App Changes: Chore: Update certifi for eMudhra CA incident (#​14533)",
+   "source_url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.3.4",
+   "page_url": "https://www.firmwarely.com/devices/paperless-ngx/"
+  },
+  "asus-rt-ax58u": {
+   "id": "asus-rt-ax58u",
+   "brand": "ASUS",
+   "model": "RT-AX58U",
+   "category": "R",
+   "status": "update",
+   "version": "3.0.0.4.388_25278",
+   "previous": "3.0.0.4.388_25277",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Fixed an issue that could cause DNS resolution failures and loss of Internet access when DNSSEC is enabled.",
+   "source_url": "https://www.asus.com/networking-iot-servers/wifi-routers/asus-wifi-routers/rt-ax58u/helpdesk_bios?model2Name=RT-AX58U",
+   "page_url": "https://www.firmwarely.com/devices/asus-rt-ax58u/"
   }
  }
 }
