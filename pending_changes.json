@@ -203,13 +203,13 @@
    "model": "Turn any Android device",
    "category": "S",
    "status": "update",
-   "version": "2026.10.34",
+   "version": "2026.10.35",
    "previous": "2026.10.33",
-   "released": "2026-10-21",
+   "released": "2026-10-22",
    "date_known": true,
    "eol": false,
-   "notes": "What's new in Kiosk Satellite 2026.10.34: This release adds Panalume support, so a kiosk can show Panalume full screen as its dashboard, and every other app in the Home Assistant sidebar works the same way. It also brings Amazon's own wake word engine to the Kiosk Satellite Edition image for the Ec…",
-   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.10.34",
+   "notes": "What's new in Kiosk Satellite 2026.10.35: This release adds a Hand Clock style to the Clock screensaver and a Full screen setting that keeps the status and navigation bars on screen, so a tablet's taskbar stays in reach. Plugins can now draw native screensavers, switch which screensaver shows, and …",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.10.35",
    "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   },
   "authentik": {
@@ -1066,6 +1066,36 @@
    "notes": "Docker images have been built and pushed: Docker Hub: alexta69/metube:latest alexta69/metube:2026.10.22 GitHub Container Registry: ghcr.io/alexta69/metube:latest ghcr.io/alexta69/metube:2026.10.22 Changes: upgrade yt-dlp from 2026.8.19 to 2026.10.21 (f794c99)",
    "source_url": "https://github.com/alexta69/metube/releases/tag/2026.10.22",
    "page_url": "https://www.firmwarely.com/devices/metube/"
+  },
+  "mitmproxy": {
+   "id": "mitmproxy",
+   "brand": "mitmproxy",
+   "model": "Interactive HTTPS proxy",
+   "category": "R",
+   "status": "update",
+   "version": "12.3.0",
+   "previous": "12.2.3",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes: See CHANGELOG.md. You can find the latest release packages at https://mitmproxy.org/downloads/.",
+   "source_url": "https://github.com/mitmproxy/mitmproxy/releases/tag/v12.3.0",
+   "page_url": "https://www.firmwarely.com/devices/mitmproxy/"
+  },
+  "onedev": {
+   "id": "onedev",
+   "brand": "OneDev",
+   "model": "Git server with CI",
+   "category": "A",
+   "status": "update",
+   "version": "16.9.6",
+   "previous": "16.9.5",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Installation Guide: https://docs.onedev.io/category/installation-guide Change Log: https://code.onedev.io/onedev/server/~builds/8756/fixed-issues?query=%22State%22+is+%22Released%22+order+by+%22Type%22+asc+%2C+%22Priority%22+desc Incompatibilities: https://code.onedev.io/onedev/server/~builds/8756/…",
+   "source_url": "https://github.com/theonedev/onedev/releases/tag/v16.9.6",
+   "page_url": "https://www.firmwarely.com/devices/onedev/"
   }
  }
 }

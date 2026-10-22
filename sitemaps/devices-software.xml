@@ -180,7 +180,7 @@
   <url><loc>https://www.firmwarely.com/devices/xray-core/</loc><lastmod>2026-03-27</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/v2ray-core/</loc><lastmod>2026-08-02</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/shadowsocks-rust/</loc><lastmod>2026-08-26</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/mitmproxy/</loc><lastmod>2026-05-12</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/mitmproxy/</loc><lastmod>2026-10-22</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/librespeed/</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/netalertx/</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/watchyourlan/</loc><lastmod>2025-09-10</lastmod></url>
@@ -341,7 +341,7 @@
   <url><loc>https://www.firmwarely.com/devices/adminer/</loc><lastmod>2026-10-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/phpmyadmin/</loc><lastmod>2025-10-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/gogs/</loc><lastmod>2026-06-07</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/onedev/</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/onedev/</loc><lastmod>2026-10-22</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/woodpecker-ci/</loc><lastmod>2026-10-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/verdaccio/</loc><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/code-server/</loc><lastmod>2026-10-08</lastmod></url>
@@ -703,7 +703,7 @@
   <url><loc>https://www.firmwarely.com/devices/arkime/</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/rustnet/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/panel/</loc><lastmod>2026-10-10</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/kiosk-satellite/</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/kiosk-satellite/</loc><lastmod>2026-10-22</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/olares/</loc><lastmod>2026-09-24</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/octelium/</loc><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/homelable/</loc><lastmod>2026-10-06</lastmod></url>
