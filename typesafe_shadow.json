@@ -22680,6 +22680,60 @@
     "security_fix_plain": 0.15,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "portainer",
+   "version": "2.45.3",
+   "name": "Portainer Container management",
+   "judged_at": "2026-10-22T07:33:29+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "stirling-pdf",
+   "version": "3.2.1",
+   "name": "Stirling PDF toolkit",
+   "judged_at": "2026-10-22T07:33:30+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "browserbox",
+   "version": "20.5.2",
+   "name": "BrowserBox Remote browser isolation",
+   "judged_at": "2026-10-22T07:33:30+00:00",
+   "notes_chars": 83,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
