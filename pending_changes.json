@@ -728,13 +728,13 @@
    "model": "Asset management",
    "category": "A",
    "status": "critical",
-   "version": "8.8.2",
+   "version": "8.8.3",
    "previous": "8.8.1",
-   "released": "2026-10-21",
+   "released": "2026-10-22",
    "date_known": true,
    "eol": false,
-   "notes": "[!CAUTION] This version of Snipe-IT REQUIRES PHP 8.2.0 or greater, 8.4+ recommended. PHP 8.2 is still in security release support until 31 Dec 2026, but let's not play that game - and some of the new features we're working on will require PHP 8.3+, so... get on that, ferreal! Happy PHPocalypse for …",
-   "source_url": "https://github.com/grokability/snipe-it/releases/tag/v8.8.2",
+   "notes": "[!CAUTION] This version of Snipe-IT REQUIRES PHP 8.2.0 or greater, 8.4+ recommended. PHP 8.2 is still in security release support until 31 Dec 2026, but let's not play that game - and some of the new features we're working on will require PHP 8.3+, so... get on that, ferreal! Didja miss us? Sorry f…",
+   "source_url": "https://github.com/grokability/snipe-it/releases/tag/v8.8.3",
    "page_url": "https://www.firmwarely.com/devices/snipe-it/"
   },
   "pangolin": {
