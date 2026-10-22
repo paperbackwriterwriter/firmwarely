@@ -466,6 +466,21 @@
    "notes": "2.1.0 (October 21, 2026): BREAKING CHANGES: agent: (Enterprise only) Agent HTTP API request bodies are now limited to 512 KiB by default, including chunked requests and requests with an unsupported method, and oversized requests return HTTP 413 before the body is read in full. Very large /v1/config…",
    "source_url": "https://github.com/hashicorp/consul/releases/tag/v2.1.0",
    "page_url": "https://www.firmwarely.com/devices/consul/"
+  },
+  "lychee-photos": {
+   "id": "lychee-photos",
+   "brand": "Lychee",
+   "model": "Photo gallery",
+   "category": "A",
+   "status": "update",
+   "version": "7.12.0",
+   "previous": "7.11.1",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: 🏕 Features: Ensure that config always have translation keys Add support for email login Worktree moderation history Translations [AI GENERATED] - if you are native speaker, we do accept pull requests ;) Bucketing refactor Translations update from LycheeOrg - Weblate Support Vite+ op…",
+   "source_url": "https://github.com/LycheeOrg/Lychee/releases/tag/v7.12.0",
+   "page_url": "https://www.firmwarely.com/devices/lychee-photos/"
   }
  }
 }
