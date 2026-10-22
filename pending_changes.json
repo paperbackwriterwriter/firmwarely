@@ -226,6 +226,51 @@
    "notes": "Changes: fix(openpolicyagent): restore PluginStatus() workaround for OPA issue #​8009 (#​4363) Summary: The PluginStatus() workaround originally introduced in #​3692 to address OPA issue #​8009 was accidentally dropped by the fork merge in commit 2cfceaba Restores the fix: discard the stale status …",
    "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.49",
    "page_url": "https://www.firmwarely.com/devices/skipper/"
+  },
+  "thingsboard": {
+   "id": "thingsboard",
+   "brand": "ThingsBoard",
+   "model": "IoT platform",
+   "category": "S",
+   "status": "update",
+   "version": "4.4.0.1",
+   "previous": "4.4",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Core & Rule Engine: Updated Java time zone data in Docker images to reflect 2026 daylight saving time changes Updated Node.js to 22.23.4 in Docker images to reflect 2026 daylight saving time changes and https://github.com/thingsboard/thingsboard/pull/16381 UI: Updated UI time zone d…",
+   "source_url": "https://github.com/thingsboard/thingsboard/releases/tag/v4.4.0.1",
+   "page_url": "https://www.firmwarely.com/devices/thingsboard/"
+  },
+  "clickhouse": {
+   "id": "clickhouse",
+   "brand": "ClickHouse",
+   "model": "Analytics database",
+   "category": "A",
+   "status": "update",
+   "version": "26.3.59.10-lts",
+   "previous": "26.9.24.8-stable",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release v26.3.59.10-lts v26.3.59.10-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.3.59.10-lts",
+   "page_url": "https://www.firmwarely.com/devices/clickhouse/"
+  },
+  "mattermost": {
+   "id": "mattermost",
+   "brand": "Mattermost",
+   "model": "Team messaging",
+   "category": "A",
+   "status": "update",
+   "version": "12.0.1",
+   "previous": "12.0.0",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Mattermost Platform Release 12.0.1",
+   "source_url": "https://github.com/mattermost/mattermost/releases/tag/v12.0.1",
+   "page_url": "https://www.firmwarely.com/devices/mattermost/"
   }
  }
 }
