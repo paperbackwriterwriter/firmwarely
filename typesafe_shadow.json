@@ -22896,6 +22896,78 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "juicefs",
+   "version": "1.4.2",
+   "name": "JuiceFS Distributed POSIX file system",
+   "judged_at": "2026-10-22T10:24:59+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "zitadel",
+   "version": "4.20.0",
+   "name": "ZITADEL Identity platform",
+   "judged_at": "2026-10-22T10:24:59+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.295.35127",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-10-22T10:24:59+00:00",
+   "notes_chars": 15,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "bfe",
+   "version": "1.8.8.6",
+   "name": "BFE Layer 7 load balancer",
+   "judged_at": "2026-10-22T10:25:00+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.77,
+    "security_fix_plain": 0.6,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

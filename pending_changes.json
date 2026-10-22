@@ -46,6 +46,66 @@
    "notes": "2.44.6 (2026-10-22): Bug Fixes: Postgres Node: Prevent global pgtypes overwrite (#​41667) (654315e)",
    "source_url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.44.6",
    "page_url": "https://www.firmwarely.com/devices/n8n/"
+  },
+  "juicefs": {
+   "id": "juicefs",
+   "brand": "JuiceFS",
+   "model": "Distributed POSIX file system",
+   "category": "N",
+   "status": "update",
+   "version": "1.4.2",
+   "previous": "1.4.1",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "This is the second patch release for JuiceFS v1.4. It has 33 commits from 13 contributors, thanks to Bugfix: chunk: prevent incorrect reads after object storage timeouts (#​7503, #​7500, #​7509, #​7520) chunk: prevent zstd decompression from overwriting adjacent slices (#​7556) vfs/meta: fix ioctl …",
+   "source_url": "https://github.com/juicedata/juicefs/releases/tag/v1.4.2",
+   "page_url": "https://www.firmwarely.com/devices/juicefs/"
+  },
+  "zitadel": {
+   "id": "zitadel",
+   "brand": "ZITADEL",
+   "model": "Identity platform",
+   "category": "A",
+   "status": "update",
+   "version": "4.20.0",
+   "previous": "4.19.5",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "4.20.0 (2026-10-22): Bug Fixes: console: derive environment.json api from the requested origin (#​12893) (e01ccc9), closes #​12009 #​12195 deps: build with Go 1.26.10 and golang.org/x/net v0.60.0 (#​12932) (3fe639d), closes #​12969 #​12969 Features: login: configurable text if external user can nei…",
+   "source_url": "https://github.com/zitadel/zitadel/releases/tag/v4.20.0",
+   "page_url": "https://www.firmwarely.com/devices/zitadel/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.295.35127",
+   "previous": "37522026.294.57019",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​12016 #​12014",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.295.35127",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "bfe": {
+   "id": "bfe",
+   "brand": "BFE",
+   "model": "Layer 7 load balancer",
+   "category": "R",
+   "status": "update",
+   "version": "1.8.8.6",
+   "previous": "1.8.8.5",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Fixed: Make the outbound credential headers mutually exclusive so a client-supplied credential can no longer override the gateway-injected upstream key: once BFE takes ownership of the upstream credential, the outbound request keeps only the header the request's model_protocol adapt…",
+   "source_url": "https://github.com/bfenetworks/bfe/releases/tag/v1.8.8.6",
+   "page_url": "https://www.firmwarely.com/devices/bfe/"
   }
  }
 }
