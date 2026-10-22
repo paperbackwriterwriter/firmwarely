@@ -23652,6 +23652,60 @@
     "security_fix_plain": 0.49,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "kiosk-satellite",
+   "version": "2026.10.37",
+   "name": "Kiosk Satellite Turn any Android device",
+   "judged_at": "2026-10-22T18:38:55+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "dokploy",
+   "version": "0.30.10",
+   "name": "Dokploy Deployment platform",
+   "judged_at": "2026-10-22T18:38:55+00:00",
+   "notes_chars": 77,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "espresense",
+   "version": "4.0.8",
+   "name": "ESPresense BLE room presence firmware",
+   "judged_at": "2026-10-22T18:38:55+00:00",
+   "notes_chars": 13,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
