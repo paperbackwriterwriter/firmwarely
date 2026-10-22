@@ -1036,6 +1036,36 @@
    "notes": "Security: Our primary docker image was updated to 5.0.2 - https://github.com/serversideup/docker-php/releases/tag/v5.0.2 (this includes the PHP security patching for 2 CVEs). Details here: https://www.php.net/archive/2026.php#2026-10-21-5 Rebuilt release images with updated CAs Details here: https:…",
    "source_url": "https://github.com/pixelfed/pixelfed/releases/tag/v0.15.2",
    "page_url": "https://www.firmwarely.com/devices/pixelfed/"
+  },
+  "ceph-storage": {
+   "id": "ceph-storage",
+   "brand": "Ceph",
+   "model": "Distributed storage",
+   "category": "A",
+   "status": "update",
+   "version": "21.2.0",
+   "previous": "21.1.2",
+   "released": "2026-10-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "v21.2.0",
+   "source_url": "https://github.com/ceph/ceph/releases/tag/v21.2.0",
+   "page_url": "https://www.firmwarely.com/devices/ceph-storage/"
+  },
+  "metube": {
+   "id": "metube",
+   "brand": "MeTube",
+   "model": "yt-dlp web UI",
+   "category": "A",
+   "status": "update",
+   "version": "2026.10.22",
+   "previous": "2026.10.20",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Docker images have been built and pushed: Docker Hub: alexta69/metube:latest alexta69/metube:2026.10.22 GitHub Container Registry: ghcr.io/alexta69/metube:latest ghcr.io/alexta69/metube:2026.10.22 Changes: upgrade yt-dlp from 2026.8.19 to 2026.10.21 (f794c99)",
+   "source_url": "https://github.com/alexta69/metube/releases/tag/2026.10.22",
+   "page_url": "https://www.firmwarely.com/devices/metube/"
   }
  }
 }

@@ -22446,6 +22446,42 @@
     "security_fix_plain": 0.34,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "ceph-storage",
+   "version": "21.2.0",
+   "name": "Ceph Distributed storage",
+   "judged_at": "2026-10-22T01:01:41+00:00",
+   "notes_chars": 7,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.13,
+    "security_fix_plain": 0.1,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "metube",
+   "version": "2026.10.22",
+   "name": "MeTube yt-dlp web UI",
+   "judged_at": "2026-10-22T01:01:41+00:00",
+   "notes_chars": 259,
+   "model": "jev-1.13.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
