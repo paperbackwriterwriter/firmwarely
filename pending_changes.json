@@ -1111,6 +1111,21 @@
    "notes": "Matomo 5.14.2 Changelog: Please use the attached archives for installing or updating Matomo. The source code download is only meant for developers and will require extra work to install it. Latest stable production release can be found at https://matomo.org/download/ (learn more) (recommended) Beta…",
    "source_url": "https://github.com/matomo-org/matomo/releases/tag/5.14.2",
    "page_url": "https://www.firmwarely.com/devices/matomo/"
+  },
+  "valve-steam-deck-oled": {
+   "id": "valve-steam-deck-oled",
+   "brand": "Valve",
+   "model": "Steam Deck OLED",
+   "category": "C",
+   "status": "update",
+   "version": "3.9.4",
+   "previous": "3.9.3",
+   "released": "2026-10-21",
+   "date_known": false,
+   "eol": false,
+   "notes": "SteamOS release. See the news feed for details.",
+   "source_url": "https://store.steampowered.com/news/app/1675200",
+   "page_url": "https://www.firmwarely.com/devices/valve-steam-deck-oled/"
   }
  }
 }
