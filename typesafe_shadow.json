@@ -23220,6 +23220,186 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "skipper",
+   "version": "0.28.50",
+   "name": "Skipper HTTP router and reverse proxy",
+   "judged_at": "2026-10-22T14:46:48+00:00",
+   "notes_chars": 216,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "qdrant",
+   "version": "1.20.0",
+   "name": "Qdrant Vector database",
+   "judged_at": "2026-10-22T14:46:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "mailu",
+   "version": "2024.06.66",
+   "name": "Mailu Mail server",
+   "judged_at": "2026-10-22T14:46:49+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.92,
+    "security_fix_plain": 0.7,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "erpnext",
+   "version": "16.52.1",
+   "name": "Frappe ERPNext",
+   "judged_at": "2026-10-22T14:46:49+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "langfuse",
+   "version": "4.68.0",
+   "name": "Langfuse LLM observability",
+   "judged_at": "2026-10-22T14:46:49+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "pangolin",
+   "version": "1.25.2",
+   "name": "Pangolin Tunneled reverse proxy",
+   "judged_at": "2026-10-22T14:46:49+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.08,
+    "security_fix_plain": 0.17,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "wanderer",
+   "version": "0.21.1",
+   "name": "Wanderer Trail database",
+   "judged_at": "2026-10-22T14:46:49+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "raspotify",
+   "version": "0.48.4",
+   "name": "Raspotify Spotify Connect for Raspberry Pi",
+   "judged_at": "2026-10-22T14:46:49+00:00",
+   "notes_chars": 149,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "kiosk-satellite",
+   "version": "2026.10.36",
+   "name": "Kiosk Satellite Turn any Android device",
+   "judged_at": "2026-10-22T14:46:49+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "fugleramme",
+   "version": "0.29.0",
+   "name": "Fugleramme Raspberry Pi bird camera",
+   "judged_at": "2026-10-22T14:46:50+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
