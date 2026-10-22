@@ -646,6 +646,51 @@
    "notes": "See the assets to download this version and install. What's Changed: fix(deps): pin storybook to 10.6.2 everywhere to release v4.9 in https://github.com/onyx-dot-app/onyx/pull/16395 perf(permissions): list only the groups nested in an Entra group for document readers (#​15764) to release v4.9 in ht…",
    "source_url": "https://github.com/onyx-dot-app/onyx/releases/tag/v4.9.4",
    "page_url": "https://www.firmwarely.com/devices/onyx/"
+  },
+  "dnscrypt-proxy": {
+   "id": "dnscrypt-proxy",
+   "brand": "DNSCrypt",
+   "model": "Encrypted DNS proxy",
+   "category": "R",
+   "status": "update",
+   "version": "2.1.20",
+   "previous": "2.1.19",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Name lists now support regex: rules for matching domain names with regular expressions. Added doh_check_cert_hashes_on_connect to optionally check DoH certificate hashes from DNS stamps on every new connection, rather than only during probes. Fixed PQDNSCrypt TCP padding and padding delimiter handl…",
+   "source_url": "https://github.com/DNSCrypt/dnscrypt-proxy/releases/tag/2.1.20",
+   "page_url": "https://www.firmwarely.com/devices/dnscrypt-proxy/"
+  },
+  "arc": {
+   "id": "arc",
+   "brand": "Arc",
+   "model": "Redpill loader for Synology DSM",
+   "category": "N",
+   "status": "update",
+   "version": "4.1.2",
+   "previous": "4.1.1",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Information: Release Notes Dependencies: Addons: 26.10.22 Modules: 26.10.19 Configs: 26.09.06 Patches: 26.05.30 Custom: 26.10.18 LKMs: 26.10.18 Apex: 2026.02.3-261019-2337-apex Build: 2026-10-22 23:03",
+   "source_url": "https://github.com/AuxXxilium/arc/releases/tag/4.1.2",
+   "page_url": "https://www.firmwarely.com/devices/arc/"
+  },
+  "databasus": {
+   "id": "databasus",
+   "brand": "Databasus",
+   "model": "PostgreSQL backup tool",
+   "category": "N",
+   "status": "update",
+   "version": "3.63.1",
+   "previous": "3.63.0",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: [3.63.1] - 2026-10-22: 🐛 Bug Fixes: verification: Start restore containers as postgres with no capabilities instead of no-new-privileges, which hangs Postgres under AppArmor on rootful Podman, and archive start-restore-containers-unprivileged (issue #​833) (dff7d41) verification: Report …",
+   "source_url": "https://github.com/databasus/databasus/releases/tag/v3.63.1",
+   "page_url": "https://www.firmwarely.com/devices/databasus/"
   }
  }
 }
