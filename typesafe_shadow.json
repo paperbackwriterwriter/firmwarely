@@ -22734,6 +22734,114 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "tooljet",
+   "version": "3.20.248-lts",
+   "name": "ToolJet Low-code platform",
+   "judged_at": "2026-10-22T08:43:16+00:00",
+   "notes_chars": 263,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.07,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "databasus",
+   "version": "3.63.0",
+   "name": "Databasus PostgreSQL backup tool",
+   "judged_at": "2026-10-22T08:43:16+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "cockpit",
+   "version": "370",
+   "name": "Cockpit Server web console",
+   "judged_at": "2026-10-22T08:43:16+00:00",
+   "notes_chars": 164,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.11,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "kener",
+   "version": "4.1.8",
+   "name": "Kener Status page",
+   "judged_at": "2026-10-22T08:43:16+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "blender",
+   "version": "5.2.3",
+   "name": "Blender 3D creation suite",
+   "judged_at": "2026-10-22T08:43:16+00:00",
+   "notes_chars": 6,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "1panel",
+   "version": "2.4.1",
+   "name": "1Panel Linux server panel",
+   "judged_at": "2026-10-22T08:43:16+00:00",
+   "notes_chars": 177,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.94,
+    "security_fix_plain": 0.93,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
