@@ -1,5 +1,51 @@
 {
- "since": null,
+ "since": "2026-10-22T09:33:57+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "healthchecks": {
+   "id": "healthchecks",
+   "brand": "Healthchecks",
+   "model": "Cron job monitor",
+   "category": "A",
+   "status": "update",
+   "version": "5.0.1",
+   "previous": "5.0",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Improvements: Docker, add support for custom HTTP listening port via $GUNICORN_PORT (#​1354) Update Docker base image to python:3.14.9-slim-trixie Docker, add $GUNICORN_DISABLE_LOGGING which disables access log (#​1351)",
+   "source_url": "https://github.com/healthchecks/healthchecks/releases/tag/v5.0.1",
+   "page_url": "https://www.firmwarely.com/devices/healthchecks/"
+  },
+  "weaviate": {
+   "id": "weaviate",
+   "brand": "Weaviate",
+   "model": "Vector database",
+   "category": "A",
+   "status": "critical",
+   "version": "1.40.2",
+   "previous": "1.40.1",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Breaking Changes: none New Features: none Fixes: Security patch for 8 eMudhra intermediate certificates leak Full Changelog: https://github.com/weaviate/weaviate/compare/v1.40.1...v1.40.2",
+   "source_url": "https://github.com/weaviate/weaviate/releases/tag/v1.40.2",
+   "page_url": "https://www.firmwarely.com/devices/weaviate/"
+  },
+  "n8n": {
+   "id": "n8n",
+   "brand": "n8n",
+   "model": "Workflow automation",
+   "category": "A",
+   "status": "update",
+   "version": "2.44.6",
+   "previous": "2.44.5",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "2.44.6 (2026-10-22): Bug Fixes: Postgres Node: Prevent global pgtypes overwrite (#​41667) (654315e)",
+   "source_url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.44.6",
+   "page_url": "https://www.firmwarely.com/devices/n8n/"
+  }
+ }
 }
