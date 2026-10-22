@@ -766,6 +766,21 @@
    "notes": "Fixed an issue that could cause DNS resolution failures and loss of Internet access when DNSSEC is enabled.",
    "source_url": "https://www.asus.com/networking-iot-servers/wifi-routers/asus-wifi-routers/rt-ax58u/helpdesk_bios?model2Name=RT-AX58U",
    "page_url": "https://www.firmwarely.com/devices/asus-rt-ax58u/"
+  },
+  "komodo": {
+   "id": "komodo",
+   "brand": "Komodo",
+   "model": "Server and container manager",
+   "category": "A",
+   "status": "update",
+   "version": "2.3.4",
+   "previous": "2.3.3",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: Bump webpki-roots to 1.0.10 to drop eMudhra root after intermediate key compromise. #​1700",
+   "source_url": "https://github.com/moghtech/komodo/releases/tag/v2.3.4",
+   "page_url": "https://www.firmwarely.com/devices/komodo/"
   }
  }
 }
