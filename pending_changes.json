@@ -248,13 +248,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.7.37.6-stable",
+   "version": "26.8.34.13-lts",
    "previous": "26.9.24.8-stable",
    "released": "2026-10-22",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.7.37.6-stable v26.7.37.6-stable",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.7.37.6-stable",
+   "notes": "Release v26.8.34.13-lts v26.8.34.13-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.34.13-lts",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "mattermost": {
@@ -436,6 +436,36 @@
    "notes": "v0.29.0 (2026-10-22): _This release is published under the MIT License._ Bug Fixes: #​263 offer BirdWeather in the installer (6185efe) #​294 read each timestamp at its own season's UTC offset (#​301, 6b265b5) #​302 pick each bird's variant by day, so residents show their other plates (#​304, 09bb86…",
    "source_url": "https://github.com/arnegiacomo/fugleramme/releases/tag/v0.29.0",
    "page_url": "https://www.firmwarely.com/devices/fugleramme/"
+  },
+  "libretiny": {
+   "id": "libretiny",
+   "brand": "LibreTiny",
+   "model": "Replacement IoT chip firmware",
+   "category": "S",
+   "status": "update",
+   "version": "1.14.0",
+   "previous": "1.13.0",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: [docs] Remove outdated ESPHome/Cloudcutter information [docs] Replace Discord CDN links with archive.org [core] Declare POSIX compat functions with C linkage [core] Remove DATE/TIME from banner macro [builder] Write custom option headers to env-independent path [builder] Use uv to i…",
+   "source_url": "https://github.com/libretiny-eu/libretiny/releases/tag/v1.14.0",
+   "page_url": "https://www.firmwarely.com/devices/libretiny/"
+  },
+  "consul": {
+   "id": "consul",
+   "brand": "HashiCorp",
+   "model": "Consul",
+   "category": "A",
+   "status": "update",
+   "version": "2.1.0",
+   "previous": "2.0.4",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "2.1.0 (October 21, 2026): BREAKING CHANGES: agent: (Enterprise only) Agent HTTP API request bodies are now limited to 512 KiB by default, including chunked requests and requests with an unsupported method, and oversized requests return HTTP 413 before the body is read in full. Very large /v1/config…",
+   "source_url": "https://github.com/hashicorp/consul/releases/tag/v2.1.0",
+   "page_url": "https://www.firmwarely.com/devices/consul/"
   }
  }
 }
