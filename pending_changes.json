@@ -503,13 +503,13 @@
    "model": "Agent builder",
    "category": "A",
    "status": "update",
-   "version": "1.12.8",
+   "version": "1.13.0",
    "previous": "1.12.7",
    "released": "2026-10-22",
    "date_known": true,
    "eol": false,
-   "notes": "What's Changed: 🐛 Bug Fixes: fix: normalize exported flow code before execution fix: allow caller-supplied credentials in public MCP flows Full Changelog: https://github.com/langflow-ai/langflow/compare/v1.12.7...v1.12.8",
-   "source_url": "https://github.com/langflow-ai/langflow/releases/tag/v1.12.8",
+   "notes": "What's Changed: ✨ New Features: feat(admin): add team and user administration API and CLI feat(authz): add enterprise directory provenance and CLI feat: add FunASR transcription component feat: add Plivo bundle with SMS, voice call, and number lookup components feat(integrations): add lfx connectio…",
+   "source_url": "https://github.com/langflow-ai/langflow/releases/tag/v1.13.0",
    "page_url": "https://www.firmwarely.com/devices/langflow/"
   },
   "gonic": {
@@ -691,6 +691,36 @@
    "notes": "Changelog: [3.63.1] - 2026-10-22: 🐛 Bug Fixes: verification: Start restore containers as postgres with no capabilities instead of no-new-privileges, which hangs Postgres under AppArmor on rootful Podman, and archive start-restore-containers-unprivileged (issue #​833) (dff7d41) verification: Report …",
    "source_url": "https://github.com/databasus/databasus/releases/tag/v3.63.1",
    "page_url": "https://www.firmwarely.com/devices/databasus/"
+  },
+  "vault": {
+   "id": "vault",
+   "brand": "HashiCorp",
+   "model": "Vault",
+   "category": "A",
+   "status": "update",
+   "version": "2.2.1",
+   "previous": "2.2.0",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "v2.2.1 v2.2.1",
+   "source_url": "https://github.com/hashicorp/vault/releases/tag/v2.2.1",
+   "page_url": "https://www.firmwarely.com/devices/vault/"
+  },
+  "infisical": {
+   "id": "infisical",
+   "brand": "Infisical",
+   "model": "Secrets manager",
+   "category": "A",
+   "status": "update",
+   "version": "0.167.1",
+   "previous": "0.167.0",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: fix(secrets): stop overview search reverting after clear and add a clear action to no-matches state chore: add upgrade impact for v0.167.0 by in https://github.com/Infisical/infisical/pull/8814 chore(frontend): remove low-signal unit tests docs(seo): audit titles and descriptions ch…",
+   "source_url": "https://github.com/Infisical/infisical/releases/tag/v0.167.1",
+   "page_url": "https://www.firmwarely.com/devices/infisical/"
   }
  }
 }

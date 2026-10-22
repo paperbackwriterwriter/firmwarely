@@ -23796,6 +23796,60 @@
     "security_fix_plain": 0.1,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "langflow",
+   "version": "1.13.0",
+   "name": "Langflow Agent builder",
+   "judged_at": "2026-10-22T22:02:30+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "vault",
+   "version": "2.2.1",
+   "name": "HashiCorp Vault",
+   "judged_at": "2026-10-22T22:02:30+00:00",
+   "notes_chars": 13,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "infisical",
+   "version": "0.167.1",
+   "name": "Infisical Secrets manager",
+   "judged_at": "2026-10-22T22:02:30+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
