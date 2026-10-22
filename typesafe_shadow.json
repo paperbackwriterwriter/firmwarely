@@ -23472,6 +23472,150 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "aily-blockly",
+   "version": "0.9.107",
+   "name": "Aily Blockly AI IDE for Arduino",
+   "judged_at": "2026-10-22T17:19:16+00:00",
+   "notes_chars": 293,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.9.25.15-stable",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-22T17:19:17+00:00",
+   "notes_chars": 45,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "dokploy",
+   "version": "0.30.9",
+   "name": "Dokploy Deployment platform",
+   "judged_at": "2026-10-22T17:19:17+00:00",
+   "notes_chars": 142,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.07,
+    "security_fix_plain": 0.29,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "langflow",
+   "version": "1.12.8",
+   "name": "Langflow Agent builder",
+   "judged_at": "2026-10-22T17:19:17+00:00",
+   "notes_chars": 220,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.12,
+    "security_fix_plain": 0.1,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "gonic",
+   "version": "0.23.0",
+   "name": "gonic Subsonic server",
+   "judged_at": "2026-10-22T17:19:17+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "homarr",
+   "version": "2.8.0",
+   "name": "Homarr Dashboard",
+   "judged_at": "2026-10-22T17:19:17+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "docker-volume-backup",
+   "version": "2.49.3",
+   "name": "docker-volume-backup Docker volume backups",
+   "judged_at": "2026-10-22T17:19:17+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.62,
+    "security_fix_plain": 0.58,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "arkime",
+   "version": "6.9.1",
+   "name": "Arkime Packet capture and search",
+   "judged_at": "2026-10-22T17:19:17+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
