@@ -24210,6 +24210,42 @@
     "security_fix_plain": 0.39,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "mailu",
+   "version": "2024.06.67",
+   "name": "Mailu Mail server",
+   "judged_at": "2026-10-23T07:35:03+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.98,
+    "security_fix_plain": 0.92,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "homarr",
+   "version": "2.8.1",
+   "name": "Homarr Dashboard",
+   "judged_at": "2026-10-23T07:35:03+00:00",
+   "notes_chars": 238,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.63,
+    "security_fix_plain": 0.63,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
