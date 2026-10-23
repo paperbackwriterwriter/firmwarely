@@ -781,6 +781,21 @@
    "notes": "Changelog: Bump webpki-roots to 1.0.10 to drop eMudhra root after intermediate key compromise. #​1700",
    "source_url": "https://github.com/moghtech/komodo/releases/tag/v2.3.4",
    "page_url": "https://www.firmwarely.com/devices/komodo/"
+  },
+  "windmill": {
+   "id": "windmill",
+   "brand": "Windmill",
+   "model": "Scripts and workflows",
+   "category": "A",
+   "status": "update",
+   "version": "1.847.0",
+   "previous": "1.846.1",
+   "released": "2026-10-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.847.0 (2026-10-22): Features: add job_id and flow_path to flow step error objects (#​11941) (eeb48f0) chat with a saved agent from a raw app through an agent runnable (#​11921) (c6a93a9) let native triggers act through per-user or shared connections (#​11352) (dc1fb50) slack agents through a work…",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.847.0",
+   "page_url": "https://www.firmwarely.com/devices/windmill/"
   }
  }
 }
