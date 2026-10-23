@@ -1,5 +1,21 @@
 {
- "since": null,
+ "since": "2026-10-23T09:30:38+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "snapraid": {
+   "id": "snapraid",
+   "brand": "SnapRAID",
+   "model": "Disk array parity",
+   "category": "A",
+   "status": "update",
+   "version": "15.1",
+   "previous": "15.0",
+   "released": "2026-10-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Add synthetic device IDs on Linux, allowing SnapRAID Daemon to preserve history for devices without unique hardware IDs while they remain connected within the same boot. Fix a failed internal inconsistency check when '--gui-touch-before' is used before the first sync when no content file exists yet…",
+   "source_url": "https://github.com/amadvance/snapraid/releases/tag/v15.1",
+   "page_url": "https://www.firmwarely.com/devices/snapraid/"
+  }
+ }
 }
