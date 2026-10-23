@@ -916,6 +916,21 @@
    "notes": "v3008.3 v3008.3",
    "source_url": "https://github.com/saltstack/salt/releases/tag/v3008.3",
    "page_url": "https://www.firmwarely.com/devices/salt/"
+  },
+  "obs-studio": {
+   "id": "obs-studio",
+   "brand": "OBS",
+   "model": "OBS Studio",
+   "category": "P",
+   "status": "update",
+   "version": "33.0.0",
+   "previous": "32.2.2",
+   "released": "2026-10-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "33.0 New Features ----------------- Updated CEF from 127/6533 to 150/7871 [WizardCM] (#​13900) This is a massive update to the underlying framework used for browser sources and docks from the July 2024 release to September 2026 All of this work is on the backend and should be invisible to users. Pl…",
+   "source_url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.0",
+   "page_url": "https://www.firmwarely.com/devices/obs-studio/"
   }
  }
 }
