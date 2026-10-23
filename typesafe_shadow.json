@@ -24642,6 +24642,150 @@
     "security_fix_plain": 0.89,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "music-assistant",
+   "version": "2.10.8",
+   "name": "Music Assistant Media library server",
+   "judged_at": "2026-10-23T14:27:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "cloudflare-ddns",
+   "version": "1.18.0",
+   "name": "Cloudflare DDNS Dynamic DNS updater",
+   "judged_at": "2026-10-23T14:27:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.51,
+    "security_fix_plain": 0.76,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "metube",
+   "version": "2026.10.23",
+   "name": "MeTube yt-dlp web UI",
+   "judged_at": "2026-10-23T14:27:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "langfuse",
+   "version": "4.69.0",
+   "name": "Langfuse LLM observability",
+   "judged_at": "2026-10-23T14:27:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.1,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "pangolin",
+   "version": "1.25.3",
+   "name": "Pangolin Tunneled reverse proxy",
+   "judged_at": "2026-10-23T14:27:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.65,
+    "security_fix_plain": 0.5,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "kiosk-satellite",
+   "version": "2026.10.38",
+   "name": "Kiosk Satellite Turn any Android device",
+   "judged_at": "2026-10-23T14:27:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "tuya-local",
+   "version": "2026.10.0",
+   "name": "Tuya Local Home Assistant integration for Tuya devices",
+   "judged_at": "2026-10-23T14:27:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "numa",
+   "version": "0.25.0",
+   "name": "Numa Portable DNS resolver in Rust",
+   "judged_at": "2026-10-23T14:27:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.68,
+    "security_fix_plain": 0.79,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
