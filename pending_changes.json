@@ -961,6 +961,51 @@
    "notes": "v3008.3-1 v3008.3-1",
    "source_url": "https://github.com/saltstack/salt/releases/tag/v3008.3-1",
    "page_url": "https://www.firmwarely.com/devices/salt/"
+  },
+  "dify": {
+   "id": "dify",
+   "brand": "Dify",
+   "model": "LLM app platform",
+   "category": "A",
+   "status": "update",
+   "version": "1.18.0",
+   "previous": "1.17.1",
+   "released": "2026-10-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Dify 1.18.0 brings Agents that route workflows, portable app packages, deeper visibility into nested workflow runs, and the opt-in Agent Knowledge Base experience. OpenAPI and the new difyctl expand how you build and manage apps from the command line. [!IMPORTANT] Read the upgrade guide below befor…",
+   "source_url": "https://github.com/langgenius/dify/releases/tag/1.18.0",
+   "page_url": "https://www.firmwarely.com/devices/dify/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.2900",
+   "previous": "0.24.2890",
+   "released": "2026-10-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: 672c0fd29a128054b4b2de84be10fbbd9500bc42 gay-torrents: lupdate selectors resolves #​17213 61283d75618133acdac16f0f92502a5a3d237dbe turktorrent: map streaming platform categories to Movies too (#​17218) 4e8e0c6614b4a59d571ea31fe7996284ed606494 magnetcat: new alt domains 4db88c3045252a41e0d…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2900",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "rallly": {
+   "id": "rallly",
+   "brand": "Rallly",
+   "model": "Meeting polls",
+   "category": "A",
+   "status": "critical",
+   "version": "4.16.2",
+   "previous": "4.16.1",
+   "released": "2026-10-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Node.js security update: This release rebuilds the image on Node.js 24.22.1, which fixes CVE-2026-111497, a remote code execution in the Brotli decoder, along with several high severity TLS and DNS issues from the October 2026 Node.js security releases. The 4.16.1 image and every earlier one run an…",
+   "source_url": "https://github.com/lukevella/rallly/releases/tag/v4.16.2",
+   "page_url": "https://www.firmwarely.com/devices/rallly/"
   }
  }
 }
