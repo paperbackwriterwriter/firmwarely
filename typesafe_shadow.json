@@ -24354,6 +24354,78 @@
     "security_fix_plain": 0.04,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "coolify",
+   "version": "4.5.0",
+   "name": "Coolify Self-hosting platform",
+   "judged_at": "2026-10-23T11:12:40+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "localai",
+   "version": "4.12.1",
+   "name": "LocalAI OpenAI-compatible local API",
+   "judged_at": "2026-10-23T11:12:40+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.96,
+    "security_fix_plain": 0.96,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "penpot",
+   "version": "2.18.4",
+   "name": "Penpot Design tool",
+   "judged_at": "2026-10-23T11:12:40+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "xiaozhi-esp32-server",
+   "version": "0.9.8",
+   "name": "Xiaozhi Voice assistant server",
+   "judged_at": "2026-10-23T11:12:40+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.98,
+    "security_fix_plain": 0.95,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

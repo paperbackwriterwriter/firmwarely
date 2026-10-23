@@ -31,6 +31,66 @@
    "notes": "#​12032 #​12031 #​12029 #​12028 #​12026 #​12025 #​12024 #​12022 #​12021 #​12020 #​12019 #​12018",
    "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.296.35553",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "coolify": {
+   "id": "coolify",
+   "brand": "Coolify",
+   "model": "Self-hosting platform",
+   "category": "A",
+   "status": "critical",
+   "version": "4.5.0",
+   "previous": "4.4.7",
+   "released": "2026-10-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Features: Added Gitea App sources to deploy private Gitea repositories (#​12234) Added server patching (beta) with automatic security updates per server, reboot and risky package warnings, and patch status in the server list Added a fleet Metrics page with server and container tables, trend charts,…",
+   "source_url": "https://github.com/coollabsio/coolify/releases/tag/v4.5.0",
+   "page_url": "https://www.firmwarely.com/devices/coolify/"
+  },
+  "localai": {
+   "id": "localai",
+   "brand": "LocalAI",
+   "model": "OpenAI-compatible local API",
+   "category": "A",
+   "status": "critical",
+   "version": "4.12.1",
+   "previous": "4.12.0",
+   "released": "2026-10-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Patch release v4.12.1. Security fix only. Security Hardened the external URL policy for user-supplied URLs (chat vision image/audio/video URLs, image and audio endpoints). Redirect targets are now validated on every hop, 100.64.0.0/10 and 0.0.0.0/8 are treated as non-public, and the connection goes…",
+   "source_url": "https://github.com/mudler/LocalAI/releases/tag/v4.12.1",
+   "page_url": "https://www.firmwarely.com/devices/localai/"
+  },
+  "penpot": {
+   "id": "penpot",
+   "brand": "Penpot",
+   "model": "Design tool",
+   "category": "A",
+   "status": "update",
+   "version": "2.18.4",
+   "previous": "2.18.3",
+   "released": "2026-10-23",
+   "date_known": true,
+   "eol": false,
+   "notes": ":bug: Bugs fixed: Fix storage GC deleting nothing when one pending object is still referenced #​12276 (PR: #​12269) Fix objects GC stopping file deletion when one file still has a child row #​12277 (PR: #​12269) Fix file restore leaving its storage objects marked for deletion #​12278 (PR: #​12269) …",
+   "source_url": "https://github.com/penpot/penpot/releases/tag/2.18.4",
+   "page_url": "https://www.firmwarely.com/devices/penpot/"
+  },
+  "xiaozhi-esp32-server": {
+   "id": "xiaozhi-esp32-server",
+   "brand": "Xiaozhi",
+   "model": "Voice assistant server",
+   "category": "A",
+   "status": "update",
+   "version": "0.9.8",
+   "previous": "0.9.7",
+   "released": "2026-10-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "修复通讯录越权：读取、改别名、授权、解绑一律先校验设备归属，不属于当前用户的设备一律按查不到处理 修复 edge-tts 自 2026 年 10 月起被微软返回 403 造成的失声问题 修复已登录状态下仍能进入登录、注册等白名单页面的问题，路由守卫改为反向匹配 根治火山双流 TTS 的 4 个会话协议与监听竞态问题：会话等待 SessionStarted 确认、监听任务隔离跨连接、二进制协议解析四处修正、句尾替换词残留提前下发 修复 TTS 分句在引号内切开句子，引号被拆到两段或留下孤立标点 修复 SenseVoice 日语识别结果按词带空格，日文对话历史不再夹杂多余空格 唤醒词音频直接转 …",
+   "source_url": "https://github.com/xinnan-tech/xiaozhi-esp32-server/releases/tag/v0.9.8",
+   "page_url": "https://www.firmwarely.com/devices/xiaozhi-esp32-server/"
   }
  }
 }
