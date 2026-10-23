@@ -173,13 +173,13 @@
    "model": "Home Assistant integration for Tapo cameras",
    "category": "S",
    "status": "update",
-   "version": "7.2.12",
+   "version": "7.2.13",
    "previous": "7.2.10",
    "released": "2026-10-23",
    "date_known": true,
    "eol": false,
-   "notes": "Changes: Update: Use getSnapshot for direct camera entities snapshots (currently only primary lens stream) Add #​1415: NightLight light entity",
-   "source_url": "https://github.com/JurajNyiri/HomeAssistant-Tapo-Control/releases/tag/7.2.12",
+   "notes": "Changes: Fix #​1482: Avoid HA deadlock when fetching direct snapshots",
+   "source_url": "https://github.com/JurajNyiri/HomeAssistant-Tapo-Control/releases/tag/7.2.13",
    "page_url": "https://www.firmwarely.com/devices/homeassistant-tapo-control/"
   },
   "pm2": {
@@ -766,6 +766,36 @@
    "notes": "Added: Added a link to the holdings tab in the holdings table on the overview tab of the home page (experimental) Changed: Extended the account detail dialog to include the change and the performance (experimental) Improved the market price in the benchmark detail dialog by adding the currency and …",
    "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.91.0",
    "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
+  },
+  "code-server": {
+   "id": "code-server",
+   "brand": "Coder",
+   "model": "code-server",
+   "category": "A",
+   "status": "critical",
+   "version": "4.141.1",
+   "previous": "4.141.0",
+   "released": "2026-10-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Security: Update bundled Node.js to 24.22.1 to fix a remote code execution bug in the Brotli decoder (CVE-2026-111497). Reject compressed request bodies (Content-Encoding: br, gzip, or deflate) instead of decompressing them.",
+   "source_url": "https://github.com/coder/code-server/releases/tag/v4.141.1",
+   "page_url": "https://www.firmwarely.com/devices/code-server/"
+  },
+  "browserbox": {
+   "id": "browserbox",
+   "brand": "BrowserBox",
+   "model": "Remote browser isolation",
+   "category": "R",
+   "status": "update",
+   "version": "20.5.4",
+   "previous": "20.5.3",
+   "released": "2026-10-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Tested BrowserBox release. Install with: curl -fsSL browserbox.io/install.sh | bash",
+   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.5.4",
+   "page_url": "https://www.firmwarely.com/devices/browserbox/"
   }
  }
 }

@@ -25290,6 +25290,60 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "homeassistant-tapo-control",
+   "version": "7.2.13",
+   "name": "Tapo Control Home Assistant integration for Tapo cameras",
+   "judged_at": "2026-10-23T20:12:48+00:00",
+   "notes_chars": 69,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "code-server",
+   "version": "4.141.1",
+   "name": "Coder code-server",
+   "judged_at": "2026-10-23T20:12:49+00:00",
+   "notes_chars": 224,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.97,
+    "security_fix_plain": 0.92,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "browserbox",
+   "version": "20.5.4",
+   "name": "BrowserBox Remote browser isolation",
+   "judged_at": "2026-10-23T20:12:49+00:00",
+   "notes_chars": 83,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
