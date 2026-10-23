@@ -24426,6 +24426,42 @@
     "security_fix_plain": 0.95,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "outline",
+   "version": "1.12.0",
+   "name": "Outline Team knowledge base",
+   "judged_at": "2026-10-23T12:03:26+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.31,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "pocketbase",
+   "version": "0.40.6",
+   "name": "PocketBase Backend in one file",
+   "judged_at": "2026-10-23T12:03:26+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.37
+   }
   }
  ]
 }

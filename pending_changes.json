@@ -91,6 +91,36 @@
    "notes": "修复通讯录越权：读取、改别名、授权、解绑一律先校验设备归属，不属于当前用户的设备一律按查不到处理 修复 edge-tts 自 2026 年 10 月起被微软返回 403 造成的失声问题 修复已登录状态下仍能进入登录、注册等白名单页面的问题，路由守卫改为反向匹配 根治火山双流 TTS 的 4 个会话协议与监听竞态问题：会话等待 SessionStarted 确认、监听任务隔离跨连接、二进制协议解析四处修正、句尾替换词残留提前下发 修复 TTS 分句在引号内切开句子，引号被拆到两段或留下孤立标点 修复 SenseVoice 日语识别结果按词带空格，日文对话历史不再夹杂多余空格 唤醒词音频直接转 …",
    "source_url": "https://github.com/xinnan-tech/xiaozhi-esp32-server/releases/tag/v0.9.8",
    "page_url": "https://www.firmwarely.com/devices/xiaozhi-esp32-server/"
+  },
+  "outline": {
+   "id": "outline",
+   "brand": "Outline",
+   "model": "Team knowledge base",
+   "category": "A",
+   "status": "critical",
+   "version": "1.12.0",
+   "previous": "1.11.0",
+   "released": "2026-10-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: This release introduces personal documents - a private space for every user, alongside a large round of mobile polish, security hardening, and continued performance work on both the client and server. Highlights: Every user now has a personal section for private documents in the sid…",
+   "source_url": "https://github.com/outline/outline/releases/tag/v1.12.0",
+   "page_url": "https://www.firmwarely.com/devices/outline/"
+  },
+  "pocketbase": {
+   "id": "pocketbase",
+   "brand": "PocketBase",
+   "model": "Backend in one file",
+   "category": "A",
+   "status": "update",
+   "version": "0.40.6",
+   "previous": "0.40.5",
+   "released": "2026-10-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "_To update the prebuilt executable you can run ./pocketbase update._ Replaced the GitHub update command with update from the new host in relation to #​7841. ⚠️ Note that this will be most likely the last release here on GitHub. The next time when you run update, new releases will be fetched from ht…",
+   "source_url": "https://github.com/pocketbase/pocketbase/releases/tag/v0.40.6",
+   "page_url": "https://www.firmwarely.com/devices/pocketbase/"
   }
  }
 }
