@@ -871,6 +871,51 @@
    "notes": "Dawarich gets lighter and faster in this release. On a test account with a million points over three years, compared with 1.16.0: It needs about half the memory at idle: 230 MiB instead of 480 MiB. Long trips open in a fraction of the time. A 300-day trip no longer downloads every recorded point: t…",
    "source_url": "https://github.com/Freika/dawarich/releases/tag/1.17.0",
    "page_url": "https://www.firmwarely.com/devices/dawarich/"
+  },
+  "openpilot": {
+   "id": "openpilot",
+   "brand": "comma.ai",
+   "model": "openpilot",
+   "category": "M",
+   "status": "update",
+   "version": "0.11.2",
+   "previous": "0.11.1",
+   "released": "2026-10-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Check out our release blog post for more details! New driving model Big model with 880M parameters Support for big models running on an external GPU Live stream cameras from comma connect Generate dashcam clips from comma connect Remote comma body control from comma connect New alert sounds CUPRA B…",
+   "source_url": "https://github.com/commaai/openpilot/releases/tag/v0.11.2",
+   "page_url": "https://www.firmwarely.com/devices/openpilot/"
+  },
+  "trilium": {
+   "id": "trilium",
+   "brand": "Trilium",
+   "model": "Personal knowledge base",
+   "category": "A",
+   "status": "critical",
+   "version": "0.106.1",
+   "previous": "0.106.0",
+   "released": "2026-10-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "v0.106.1: [!IMPORTANT] This is a security release for the server and Docker images. If you run Trilium as a server, especially one reachable from the internet, update as soon as possible. 🔒 Security: Updated Node.js in the Docker images to 24.22.1 (22.23.4 for the legacy image), taking in the Node.…",
+   "source_url": "https://github.com/TriliumNext/Trilium/releases/tag/v0.106.1",
+   "page_url": "https://www.firmwarely.com/devices/trilium/"
+  },
+  "salt": {
+   "id": "salt",
+   "brand": "Salt Project",
+   "model": "Salt configuration management",
+   "category": "A",
+   "status": "update",
+   "version": "3008.3",
+   "previous": "3008.3-1",
+   "released": "2026-09-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "v3008.3 v3008.3",
+   "source_url": "https://github.com/saltstack/salt/releases/tag/v3008.3",
+   "page_url": "https://www.firmwarely.com/devices/salt/"
   }
  }
 }

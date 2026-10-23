@@ -25434,6 +25434,42 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "openpilot",
+   "version": "0.11.2",
+   "name": "comma.ai openpilot",
+   "judged_at": "2026-10-23T21:54:10+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "trilium",
+   "version": "0.106.1",
+   "name": "Trilium Personal knowledge base",
+   "judged_at": "2026-10-23T21:54:10+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.42,
+    "security_fix_plain": 0.83,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
