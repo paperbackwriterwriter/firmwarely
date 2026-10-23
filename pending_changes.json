@@ -916,6 +916,21 @@
    "notes": "What's Changed: chore: bump version 2.11.2 → 2.11.3 (#​9556) perf(ci): install cached browser fonts with dpkg, not apt (#​9554) fix(aaii): read sentiment.xls through the OLE2 FAT chain and parse the redesigned page (#​9557) chore(deps): bump the npm-security group across 4 directories with 4 update…",
    "source_url": "https://github.com/koala73/worldmonitor/releases/tag/v2.11.3",
    "page_url": "https://www.firmwarely.com/devices/worldmonitor/"
+  },
+  "browserbox": {
+   "id": "browserbox",
+   "brand": "BrowserBox",
+   "model": "Remote browser isolation",
+   "category": "R",
+   "status": "update",
+   "version": "20.5.3",
+   "previous": "20.5.2",
+   "released": "2026-10-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Tested BrowserBox release. Install with: curl -fsSL browserbox.io/install.sh | bash",
+   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.5.3",
+   "page_url": "https://www.firmwarely.com/devices/browserbox/"
   }
  }
 }
