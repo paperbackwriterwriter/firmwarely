@@ -24462,6 +24462,96 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.37
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.3.60.2-lts",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-23T12:54:07+00:00",
+   "notes_chars": 37,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "sherpa-onnx",
+   "version": "2.0.0",
+   "name": "sherpa-onnx Offline speech recognition and TTS",
+   "judged_at": "2026-10-23T12:54:07+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "xplr",
+   "version": "1.2.0",
+   "name": "xplr Terminal file explorer",
+   "judged_at": "2026-10-23T12:54:07+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "homeassistant-tapo-control",
+   "version": "7.2.11",
+   "name": "Tapo Control Home Assistant integration for Tapo cameras",
+   "judged_at": "2026-10-23T12:54:07+00:00",
+   "notes_chars": 242,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "pm2",
+   "version": "7.1.1",
+   "name": "PM2 Node.js process manager",
+   "judged_at": "2026-10-23T12:54:07+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
