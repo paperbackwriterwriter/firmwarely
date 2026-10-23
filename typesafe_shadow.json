@@ -24786,6 +24786,78 @@
     "security_fix_plain": 0.79,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "homepage-dashboard",
+   "version": "2.7.0",
+   "name": "Homepage Service dashboard",
+   "judged_at": "2026-10-23T15:18:36+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "esp32-marauder",
+   "version": "1.19.2",
+   "name": "ESP32 Marauder Wi-Fi and Bluetooth pentest firmware",
+   "judged_at": "2026-10-23T15:18:36+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "directus",
+   "version": "12.5.1",
+   "name": "Directus Headless CMS",
+   "judged_at": "2026-10-23T15:18:36+00:00",
+   "notes_chars": 234,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.16,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ani-rss",
+   "version": "3.2.53",
+   "name": "ANi-RSS Anime RSS downloader",
+   "judged_at": "2026-10-23T15:18:37+00:00",
+   "notes_chars": 31,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
