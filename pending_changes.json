@@ -811,6 +811,21 @@
    "notes": ":rocket: Jellyfin Server 12.3: We are pleased to announce the latest stable release of Jellyfin, version 12.3! This minor release brings several bugfixes to improve your Jellyfin experience. As always, please ensure you take a full backup before upgrading! Discuss this release further on our forums…",
    "source_url": "https://github.com/jellyfin/jellyfin/releases/tag/v12.3",
    "page_url": "https://www.firmwarely.com/devices/jellyfin-server/"
+  },
+  "ntfy": {
+   "id": "ntfy",
+   "brand": "ntfy",
+   "model": "Push notification server",
+   "category": "A",
+   "status": "critical",
+   "version": "2.33.0",
+   "previous": "2.32.0",
+   "released": "2026-10-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release builds ntfy with Go 1.27.3 (security fixes, including rejecting the compromised eMudhra intermediate CAs), and adds monitoring for the experimental cluster: each node's view of its peers, per-peer and database connection pool metrics. Features: Show each cluster node's view of its peer…",
+   "source_url": "https://github.com/binwiederhier/ntfy/releases/tag/v2.33.0",
+   "page_url": "https://www.firmwarely.com/devices/ntfy/"
   }
  }
 }
