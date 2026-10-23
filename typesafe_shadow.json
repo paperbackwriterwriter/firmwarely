@@ -24048,6 +24048,60 @@
     "security_fix_plain": 0.05,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "seaweedfs",
+   "version": "4.49",
+   "name": "SeaweedFS Distributed file store",
+   "judged_at": "2026-10-23T04:12:08+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.1,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "calibre",
+   "version": "9.17.0",
+   "name": "Calibre Ebook manager",
+   "judged_at": "2026-10-23T04:12:08+00:00",
+   "notes_chars": 22,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "worldmonitor",
+   "version": "2.11.3",
+   "name": "Worldmonitor Real-time global intelligence dashboard",
+   "judged_at": "2026-10-23T04:12:08+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.1,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

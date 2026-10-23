@@ -871,6 +871,51 @@
    "notes": "Installation Guide: https://docs.onedev.io/category/installation-guide Change Log: https://code.onedev.io/onedev/server/~builds/8763/fixed-issues?query=%22State%22+is+%22Released%22+order+by+%22Type%22+asc+%2C+%22Priority%22+desc Incompatibilities: https://code.onedev.io/onedev/server/~builds/8763/…",
    "source_url": "https://github.com/theonedev/onedev/releases/tag/v16.9.7",
    "page_url": "https://www.firmwarely.com/devices/onedev/"
+  },
+  "seaweedfs": {
+   "id": "seaweedfs",
+   "brand": "SeaweedFS",
+   "model": "Distributed file store",
+   "category": "N",
+   "status": "update",
+   "version": "4.49",
+   "previous": "4.48",
+   "released": "2026-10-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: build(deps): bump golang.org/x/oauth2 from 0.36.0 to 0.37.0 by in https://github.com/seaweedfs/seaweedfs/pull/11504 build(deps): bump github.com/dustin/go-humanize from 1.0.1 to 1.1.0 by in https://github.com/seaweedfs/seaweedfs/pull/11505 build(deps): bump github.com/Azure/azure-sd…",
+   "source_url": "https://github.com/seaweedfs/seaweedfs/releases/tag/4.49",
+   "page_url": "https://www.firmwarely.com/devices/seaweedfs/"
+  },
+  "calibre": {
+   "id": "calibre",
+   "brand": "Calibre",
+   "model": "Ebook manager",
+   "category": "A",
+   "status": "update",
+   "version": "9.17.0",
+   "previous": "9.16.0",
+   "released": "2026-10-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release version 9.17.0",
+   "source_url": "https://github.com/kovidgoyal/calibre/releases/tag/v9.17.0",
+   "page_url": "https://www.firmwarely.com/devices/calibre/"
+  },
+  "worldmonitor": {
+   "id": "worldmonitor",
+   "brand": "Worldmonitor",
+   "model": "Real-time global intelligence dashboard",
+   "category": "A",
+   "status": "critical",
+   "version": "2.11.3",
+   "previous": "2.11.2",
+   "released": "2026-10-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: chore: bump version 2.11.2 → 2.11.3 (#​9556) perf(ci): install cached browser fonts with dpkg, not apt (#​9554) fix(aaii): read sentiment.xls through the OLE2 FAT chain and parse the redesigned page (#​9557) chore(deps): bump the npm-security group across 4 directories with 4 update…",
+   "source_url": "https://github.com/koala73/worldmonitor/releases/tag/v2.11.3",
+   "page_url": "https://www.firmwarely.com/devices/worldmonitor/"
   }
  }
 }
