@@ -11259,6 +11259,24 @@
    "type": "github",
    "repo": "ipxe/ipxe",
    "product_url": "https://github.com/ipxe/ipxe"
+  },
+  {
+   "id": "mullvadvpn-app",
+   "brand": "Mullvadvpn App",
+   "model": "Mullvad VPN client app for desktop and mobile",
+   "category": "R",
+   "type": "github",
+   "repo": "mullvad/mullvadvpn-app",
+   "product_url": "https://github.com/mullvad/mullvadvpn-app"
+  },
+  {
+   "id": "dsvpn",
+   "brand": "Dsvpn",
+   "model": "Dead Simple VPN",
+   "category": "R",
+   "type": "github",
+   "repo": "jedisct1/dsvpn",
+   "product_url": "https://github.com/jedisct1/dsvpn"
   }
  ]
 }
