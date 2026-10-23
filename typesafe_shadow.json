@@ -25488,6 +25488,186 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "code-server",
+   "version": "4.143.1",
+   "name": "Coder code-server",
+   "judged_at": "2026-10-23T23:13:54+00:00",
+   "notes_chars": 45,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "eero-pro-6e",
+   "version": "7.17.3",
+   "name": "eero Pro 6E",
+   "judged_at": "2026-10-23T23:13:54+00:00",
+   "notes_chars": 113,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.56,
+    "security_fix_plain": 0.75,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "eero-max-7",
+   "version": "7.17.3",
+   "name": "eero Max 7",
+   "judged_at": "2026-10-23T23:13:54+00:00",
+   "notes_chars": 113,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.47,
+    "security_fix_plain": 0.65,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "eero-6-plus",
+   "version": "7.17.3",
+   "name": "eero 6+",
+   "judged_at": "2026-10-23T23:13:54+00:00",
+   "notes_chars": 113,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.51,
+    "security_fix_plain": 0.71,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "valve-steam-deck-oled",
+   "version": "3.9.5",
+   "name": "Valve Steam Deck OLED",
+   "judged_at": "2026-10-23T23:13:54+00:00",
+   "notes_chars": 47,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "eero-7",
+   "version": "7.17.3",
+   "name": "eero 7",
+   "judged_at": "2026-10-23T23:13:54+00:00",
+   "notes_chars": 113,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.51,
+    "security_fix_plain": 0.73,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "eero-pro-7",
+   "version": "7.17.3",
+   "name": "eero Pro 7",
+   "judged_at": "2026-10-23T23:13:54+00:00",
+   "notes_chars": 113,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.55,
+    "security_fix_plain": 0.71,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "voidauth",
+   "version": "1.17.0",
+   "name": "VoidAuth Single sign-on server",
+   "judged_at": "2026-10-23T23:13:54+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "pv-migrate",
+   "version": "3.7.0",
+   "name": "pv-migrate Kubernetes volume migration",
+   "judged_at": "2026-10-23T23:13:54+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "hyperdx",
+   "version": "0.8.0",
+   "name": "Hyperdx Resolve production issues, fast",
+   "judged_at": "2026-10-23T23:13:54+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
