@@ -24552,6 +24552,96 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "xplr",
+   "version": "1.2.1",
+   "name": "xplr Terminal file explorer",
+   "judged_at": "2026-10-23T13:36:18+00:00",
+   "notes_chars": 229,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "homeassistant-tapo-control",
+   "version": "7.2.12",
+   "name": "Tapo Control Home Assistant integration for Tapo cameras",
+   "judged_at": "2026-10-23T13:36:19+00:00",
+   "notes_chars": 142,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "netdata",
+   "version": "2.12.2",
+   "name": "Netdata System monitoring agent",
+   "judged_at": "2026-10-23T13:36:19+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.7,
+    "security_fix_plain": 0.71,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "fwupd",
+   "version": "2.1.9",
+   "name": "fwupd Linux firmware update daemon",
+   "judged_at": "2026-10-23T13:36:19+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "dashy",
+   "version": "4.9.0",
+   "name": "Dashy Dashboard",
+   "judged_at": "2026-10-23T13:36:19+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.96,
+    "security_fix_plain": 0.89,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

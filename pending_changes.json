@@ -158,13 +158,13 @@
    "model": "Terminal file explorer",
    "category": "P",
    "status": "update",
-   "version": "1.2.0",
+   "version": "1.2.1",
    "previous": "1.1.3",
    "released": "2026-10-23",
    "date_known": true,
    "eol": false,
-   "notes": "Highlight: Documentation is now AI readable. Just add .md at the end of the url. Example: https://xplr.dev/en/install.md Added native terminal graphics protocol support. Refer to the updated previews hack or just ask AI to write you one. Tested in Claude: Write a native image preview plugin. Refer …",
-   "source_url": "https://github.com/sayanarijit/xplr/releases/tag/v1.2.0",
+   "notes": "See full release notes here: https://github.com/sayanarijit/xplr/releases/tag/v1.2.0 Fixes ------- Fix the CustomOutput lazy loading introduced in 1.2.0. Full Changelog: https://github.com/sayanarijit/xplr/compare/v1.2.0...v1.2.1",
+   "source_url": "https://github.com/sayanarijit/xplr/releases/tag/v1.2.1",
    "page_url": "https://www.firmwarely.com/devices/xplr/"
   },
   "homeassistant-tapo-control": {
@@ -173,13 +173,13 @@
    "model": "Home Assistant integration for Tapo cameras",
    "category": "S",
    "status": "update",
-   "version": "7.2.11",
+   "version": "7.2.12",
    "previous": "7.2.10",
    "released": "2026-10-23",
    "date_known": true,
    "eol": false,
-   "notes": "Changes: Fix #​1443: C120 Spotlight Intensity advertises 1-50 but the camera only accepts 1-5 (setWhitelampConfig -40101) Fix #​1478: C420 via H200 hub: setting \"Automatic Alarm\" select fails with error 66507 (setAlarmConfig) for every option",
-   "source_url": "https://github.com/JurajNyiri/HomeAssistant-Tapo-Control/releases/tag/7.2.11",
+   "notes": "Changes: Update: Use getSnapshot for direct camera entities snapshots (currently only primary lens stream) Add #​1415: NightLight light entity",
+   "source_url": "https://github.com/JurajNyiri/HomeAssistant-Tapo-Control/releases/tag/7.2.12",
    "page_url": "https://www.firmwarely.com/devices/homeassistant-tapo-control/"
   },
   "pm2": {
@@ -196,6 +196,51 @@
    "notes": "7.1.1: Bug Fixes: Windows: memory is reported again when pm2 runs as a service (pidusage 4.1.0, wmic is used again when available) #​6173 Linux: overlapping monitoring calls no longer leak a /proc/ /stat fd per new pid in the daemon (grew with every restart) pm2.connect() right after pm2.disconnect…",
    "source_url": "https://github.com/Unitech/pm2/releases/tag/v7.1.1",
    "page_url": "https://www.firmwarely.com/devices/pm2/"
+  },
+  "netdata": {
+   "id": "netdata",
+   "brand": "Netdata",
+   "model": "System monitoring agent",
+   "category": "A",
+   "status": "update",
+   "version": "2.12.2",
+   "previous": "2.12.1",
+   "released": "2026-10-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Netdata v2.12.2 is a patch release to address issues discovered since v2.12.1. This release tightens SNMPv3 authentication in the SNMP traps receiver, stops alert evaluation from keeping obsolete charts alive indefinitely, makes Cloud reliably see disconnected children as offline and receive every …",
+   "source_url": "https://github.com/netdata/netdata/releases/tag/v2.12.2",
+   "page_url": "https://www.firmwarely.com/devices/netdata/"
+  },
+  "fwupd": {
+   "id": "fwupd",
+   "brand": "fwupd",
+   "model": "Linux firmware update daemon",
+   "category": "P",
+   "status": "update",
+   "version": "2.1.9",
+   "previous": "2.1.8",
+   "released": "2026-10-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release adds the following features: Add an instance ID for each Redfish HPE device class and target pair Include if the machine is a container or hypervisor in the report data Require libusb 1.0.27 when building the daemon This release fixes the following bugs: Add After=local-fs.target to fw…",
+   "source_url": "https://github.com/fwupd/fwupd/releases/tag/2.1.9",
+   "page_url": "https://www.firmwarely.com/devices/fwupd/"
+  },
+  "dashy": {
+   "id": "dashy",
+   "brand": "Dashy",
+   "model": "Dashboard",
+   "category": "A",
+   "status": "update",
+   "version": "4.9.0",
+   "previous": "4.8.0",
+   "released": "2026-10-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: ✨ New Features: Add option to open workspace sidebar items in new tab Shiny new workspace view 🦋 Bug Fixes: Fix config files being readable without login via encoded URLs Fix Firefix col counting, and rss in sample config 🎨 Themes and Styling: feat(theme): add liquid-glass built-in …",
+   "source_url": "https://github.com/lissy93/dashy/releases/tag/4.9.0",
+   "page_url": "https://www.firmwarely.com/devices/dashy/"
   }
  }
 }
