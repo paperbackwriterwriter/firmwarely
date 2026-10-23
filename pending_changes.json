@@ -796,6 +796,21 @@
    "notes": "1.847.0 (2026-10-22): Features: add job_id and flow_path to flow step error objects (#​11941) (eeb48f0) chat with a saved agent from a raw app through an agent runnable (#​11921) (c6a93a9) let native triggers act through per-user or shared connections (#​11352) (dc1fb50) slack agents through a work…",
    "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.847.0",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
+  },
+  "jellyfin-server": {
+   "id": "jellyfin-server",
+   "brand": "Jellyfin",
+   "model": "Media server",
+   "category": "A",
+   "status": "update",
+   "version": "12.3",
+   "previous": "12.2",
+   "released": "2026-10-23",
+   "date_known": true,
+   "eol": false,
+   "notes": ":rocket: Jellyfin Server 12.3: We are pleased to announce the latest stable release of Jellyfin, version 12.3! This minor release brings several bugfixes to improve your Jellyfin experience. As always, please ensure you take a full backup before upgrading! Discuss this release further on our forums…",
+   "source_url": "https://github.com/jellyfin/jellyfin/releases/tag/v12.3",
+   "page_url": "https://www.firmwarely.com/devices/jellyfin-server/"
   }
  }
 }
