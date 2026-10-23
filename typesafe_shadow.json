@@ -25218,6 +25218,78 @@
     "security_fix_plain": 0.38,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "home-assistant-core",
+   "version": "2026.10.3",
+   "name": "Home Assistant Core (monthly release)",
+   "judged_at": "2026-10-23T19:21:58+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "adminer",
+   "version": "6.2.0",
+   "name": "Adminer Database manager",
+   "judged_at": "2026-10-23T19:21:59+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "coder",
+   "version": "2.37.6",
+   "name": "Coder Remote dev environments",
+   "judged_at": "2026-10-23T19:21:59+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.79,
+    "security_fix_plain": 0.71,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ghostfolio",
+   "version": "3.91.0",
+   "name": "Ghostfolio Wealth tracker",
+   "judged_at": "2026-10-23T19:21:59+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

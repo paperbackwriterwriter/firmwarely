@@ -706,6 +706,66 @@
    "notes": "Version 27.0.1: [!WARNING] This release is a security release to patch a NodeJS upstream vulnerability. We advise updating to this version of Homebox as soon as possible. Security Issues Patched: This version patches NodeJS to remediate risks surrounding Node2Shell. Homebox does not leverage PHP an…",
    "source_url": "https://github.com/sysadminsmedia/homebox/releases/tag/v0.27.1",
    "page_url": "https://www.firmwarely.com/devices/homebox/"
+  },
+  "home-assistant-core": {
+   "id": "home-assistant-core",
+   "brand": "Home Assistant",
+   "model": "Core (monthly release)",
+   "category": "S",
+   "status": "update",
+   "version": "2026.10.3",
+   "previous": "2026.10.2",
+   "released": "2026-10-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Fix Proxmox VE update version detection ([] - [#​184823]) ([proxmoxve docs]) Fix duplicate access events in UniFi Access integration ([] - [#​185160]) ([unifi_access docs]) Handle missing Omada controller update fields ([] - [#​185164]) ([tplink_omada docs]) Bump wheels and base image to 2026.10.0 …",
+   "source_url": "https://github.com/home-assistant/core/releases/tag/2026.10.3",
+   "page_url": "https://www.firmwarely.com/devices/home-assistant-core/"
+  },
+  "adminer": {
+   "id": "adminer",
+   "brand": "Adminer",
+   "model": "Database manager",
+   "category": "A",
+   "status": "update",
+   "version": "6.2.0",
+   "previous": "6.1.2",
+   "released": "2026-10-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Use the page font instead of monospace in except SQL Keep the leading newline of values in Select: Don't link a URL followed by text Edit: Fix the SQL function with a syntax highlighted textarea, keep newlines Edit: Fix JavaScript error with a nullable boolean column Alter table: Label the auto-inc…",
+   "source_url": "https://github.com/vrana/adminer/releases/tag/v6.2.0",
+   "page_url": "https://www.firmwarely.com/devices/adminer/"
+  },
+  "coder": {
+   "id": "coder",
+   "brand": "Coder",
+   "model": "Remote dev environments",
+   "category": "A",
+   "status": "update",
+   "version": "2.37.6",
+   "previous": "2.37.5",
+   "released": "2026-10-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "## Stable (since October 23, 2026) Changelog: Bug fixes: Only inject session tokens into trusted app links (#​31208, c57613f858) () Compare: v2.37.5...v2.37.6 Container image: docker pull ghcr.io/coder/coder:2.37.6 Install/upgrade: Refer to our docs to install or upgrade Coder, or use a release ass…",
+   "source_url": "https://github.com/coder/coder/releases/tag/v2.37.6",
+   "page_url": "https://www.firmwarely.com/devices/coder/"
+  },
+  "ghostfolio": {
+   "id": "ghostfolio",
+   "brand": "Ghostfolio",
+   "model": "Wealth tracker",
+   "category": "A",
+   "status": "update",
+   "version": "3.91.0",
+   "previous": "3.90.0",
+   "released": "2026-10-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Added: Added a link to the holdings tab in the holdings table on the overview tab of the home page (experimental) Changed: Extended the account detail dialog to include the change and the performance (experimental) Improved the market price in the benchmark detail dialog by adding the currency and …",
+   "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.91.0",
+   "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
   }
  }
 }
