@@ -1,5 +1,36 @@
 {
- "since": null,
+ "since": "2026-10-24T09:30:47+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "adguardhome-sync": {
+   "id": "adguardhome-sync",
+   "brand": "AdGuard",
+   "model": "Home Sync",
+   "category": "R",
+   "status": "update",
+   "version": "0.9.5",
+   "previous": "0.9.4",
+   "released": "2026-10-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: 067b72ad93bf6b161bda051e67f002053c93d080: feat: add file watch sync trigger (SYNC_TRIGGER_FILE) (#​970) () 0a1c3db5050f005a656d2bc78e48192e2782d602: fix(deps): update module golang.org/x/mod to v0.42.0 (#​954) () 656faca4b7eadb99d34b6864fe4b47e34aeb423e: fix: preserve client schedule tim…",
+   "source_url": "https://github.com/bakito/adguardhome-sync/releases/tag/v0.9.5",
+   "page_url": "https://www.firmwarely.com/devices/adguardhome-sync/"
+  },
+  "databasus": {
+   "id": "databasus",
+   "brand": "Databasus",
+   "model": "PostgreSQL backup tool",
+   "category": "N",
+   "status": "update",
+   "version": "3.64.0",
+   "previous": "3.63.3",
+   "released": "2026-10-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: [3.64.0] - 2026-10-24: ✨ Features: agents: Pin gopls, typescript-language-server, ripgrep and shellcheck and enable Claude Code's LSP plugins, so agents navigate code by symbols and shell scripts are linted locally and in CI (4dba138) 🐛 Bug Fixes: dev: Tell shellcheck not to follow the u…",
+   "source_url": "https://github.com/databasus/databasus/releases/tag/v3.64.0",
+   "page_url": "https://www.firmwarely.com/devices/databasus/"
+  }
+ }
 }
