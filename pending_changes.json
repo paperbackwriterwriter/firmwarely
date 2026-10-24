@@ -466,6 +466,21 @@
    "notes": "You can upgrade an already running Cluster via the command octops upgrade as shown here. You can read the full changelog here. Improvements: Various fixes and improvements for AuthServer, DNSServer, Nocturne, GatewayAgent, APIServer, Ingress Controller, Octovigil and the ResourceServer. ComponentLo…",
    "source_url": "https://github.com/octelium/octelium/releases/tag/v0.47.0",
    "page_url": "https://www.firmwarely.com/devices/octelium/"
+  },
+  "b4": {
+   "id": "b4",
+   "brand": "B4",
+   "model": "Network packet processor",
+   "category": "R",
+   "status": "update",
+   "version": "1.88.0",
+   "previous": "1.87.0",
+   "released": "2026-10-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "[1.88.0] - 2026-10-21: ADDED: A set can handle only calls, such as Discord voice calls - the option is Handle only calls in the Calls field on a set's UDP tab, and Which calls can narrow it to the Discord app or to browsers. Such a set has no targets and acts only on the packet that opens each call…",
+   "source_url": "https://github.com/DanielLavrushin/b4/releases/tag/v1.88.0",
+   "page_url": "https://www.firmwarely.com/devices/b4/"
   }
  }
 }
