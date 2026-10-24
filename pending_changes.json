@@ -1186,6 +1186,21 @@
    "notes": "Features: access Access control state shown in a bar at the bottom config Optional general overrides; settings apply sooner dashboard IP quality cached for 3 days; simpler Android dashboard Update the core to mihomo v1.19.33 tray Colored tray status icons; monochrome option on macOS desktop Sidebar…",
    "source_url": "https://github.com/chen08209/FlClash/releases/tag/v0.9.2",
    "page_url": "https://www.firmwarely.com/devices/flclash/"
+  },
+  "databasus": {
+   "id": "databasus",
+   "brand": "Databasus",
+   "model": "PostgreSQL backup tool",
+   "category": "N",
+   "status": "update",
+   "version": "3.63.3",
+   "previous": "3.63.1",
+   "released": "2026-10-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: [3.63.3] - 2026-10-24: 🐛 Bug Fixes: ci: Hash the raw manifest to pin the verification base image, since buildx v0.32.1 on Namespace runners ignores --format and broke every verification image push (2255d0c) 🔨 Refactoring: ci: Shard the physical end-to-end tests and the WAL usecases packa…",
+   "source_url": "https://github.com/databasus/databasus/releases/tag/v3.63.3",
+   "page_url": "https://www.firmwarely.com/devices/databasus/"
   }
  }
 }
