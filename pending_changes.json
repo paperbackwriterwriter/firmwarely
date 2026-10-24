@@ -301,6 +301,21 @@
    "notes": "What's new in Kiosk Satellite 2026.10.39: This release adds sorting, genre browsing and display settings to the Music Library, a fine-tune slider for wake word sensitivity on every engine and a separate skin for each assistant. It also fixes microWakeWord models that never woke on Slightly sensitiv…",
    "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.10.39",
    "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
+  },
+  "etherpad": {
+   "id": "etherpad",
+   "brand": "Etherpad",
+   "model": "Collaborative editor",
+   "category": "A",
+   "status": "critical",
+   "version": "3.3.11",
+   "previous": "3.3.10",
+   "released": "2026-10-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "3.3.11 is a security release. It stops clients that connect without an author token from all sharing one author (GHSA-746x-9w89-7xv6). Security: Pads — clients without an author token no longer share one author (GHSA-746x-9w89-7xv6). Since the author token moved to an HttpOnly cookie, a pad connect…",
+   "source_url": "https://github.com/ether/etherpad/releases/tag/v3.3.11",
+   "page_url": "https://www.firmwarely.com/devices/etherpad/"
   }
  }
 }
