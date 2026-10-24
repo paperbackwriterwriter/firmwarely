@@ -331,6 +331,66 @@
    "notes": "Join our communities --- Changelog: To people who don't like change... attention this update brings a slightly new (imo improved) UI, be warned!!! All new home widgets can be disabled, so technically you can make Jotty look almost identical as it used to be (bar a few changes), I just wanted to add…",
    "source_url": "https://github.com/fccview/jotty/releases/tag/1.29.0",
    "page_url": "https://www.firmwarely.com/devices/jotty/"
+  },
+  "ntfy": {
+   "id": "ntfy",
+   "brand": "ntfy",
+   "model": "Push notification server",
+   "category": "A",
+   "status": "update",
+   "version": "2.34.0",
+   "previous": "2.33.1",
+   "released": "2026-10-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release prepares the experimental cluster to run behind load balancers: nodes drain on shutdown instead of dropping all of their clients at once, ntfy can listen on several addresses, and access changes reach every node. It also fixes a revoked or deleted user keeping some of their subscriptio…",
+   "source_url": "https://github.com/binwiederhier/ntfy/releases/tag/v2.34.0",
+   "page_url": "https://www.firmwarely.com/devices/ntfy/"
+  },
+  "apprise": {
+   "id": "apprise",
+   "brand": "Apprise",
+   "model": "Notification gateway",
+   "category": "A",
+   "status": "update",
+   "version": "2.1.0",
+   "previous": "2.0.1",
+   "released": "2026-10-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: First off, a huge kudos to the large increase in community support! A lot of bugfixes from a number of very active contributors that make a huge bulk of this release. 12 new services supported in this release bringing the total (Apprise) supported plugin count to170! :fire: :mega: N…",
+   "source_url": "https://github.com/caronc/apprise/releases/tag/v2.1.0",
+   "page_url": "https://www.firmwarely.com/devices/apprise/"
+  },
+  "homarr": {
+   "id": "homarr",
+   "brand": "Homarr",
+   "model": "Dashboard",
+   "category": "A",
+   "status": "update",
+   "version": "2.9.0",
+   "previous": "2.8.2",
+   "released": "2026-10-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: chore(lang): updated translations from crowdin by in https://github.com/homarr-labs/homarr/pull/7289 fix(board): preserve square tiles inside categories chore: update bug report template by in https://github.com/homarr-labs/homarr/pull/7277 feat(board): add apps by dropping a URL on…",
+   "source_url": "https://github.com/homarr-labs/homarr/releases/tag/v2.9.0",
+   "page_url": "https://www.firmwarely.com/devices/homarr/"
+  },
+  "worldmonitor": {
+   "id": "worldmonitor",
+   "brand": "Worldmonitor",
+   "model": "Real-time global intelligence dashboard",
+   "category": "A",
+   "status": "update",
+   "version": "2.11.4",
+   "previous": "2.11.3",
+   "released": "2026-10-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: chore: bump version 2.11.3 → 2.11.4 (#​9650) feat(tensions): pin Iran–GCC, score pairs live on the last 168 hours; drop the BestTime credit (#​9645) chore(aviation): activate seed-notam-nms on FAA production (#​9635) (#​9648) Full Changelog: https://github.com/koala73/worldmonitor/c…",
+   "source_url": "https://github.com/koala73/worldmonitor/releases/tag/v2.11.4",
+   "page_url": "https://www.firmwarely.com/devices/worldmonitor/"
   }
  }
 }

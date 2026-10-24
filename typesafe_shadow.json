@@ -26388,6 +26388,78 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "ntfy",
+   "version": "2.34.0",
+   "name": "ntfy Push notification server",
+   "judged_at": "2026-10-24T19:57:24+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.46,
+    "security_fix_plain": 0.16,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "apprise",
+   "version": "2.1.0",
+   "name": "Apprise Notification gateway",
+   "judged_at": "2026-10-24T19:57:24+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "homarr",
+   "version": "2.9.0",
+   "name": "Homarr Dashboard",
+   "judged_at": "2026-10-24T19:57:24+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "worldmonitor",
+   "version": "2.11.4",
+   "name": "Worldmonitor Real-time global intelligence dashboard",
+   "judged_at": "2026-10-24T19:57:24+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
