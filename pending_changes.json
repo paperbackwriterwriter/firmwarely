@@ -518,13 +518,13 @@
    "model": "Scripts and workflows",
    "category": "A",
    "status": "update",
-   "version": "1.848.1",
+   "version": "1.848.2",
    "previous": "1.847.0",
-   "released": "2026-10-23",
+   "released": "2026-10-24",
    "date_known": true,
    "eol": false,
-   "notes": "1.848.1 (2026-10-23): Bug Fixes: restore workspace pg_dump changes reverted by 812ff6ea5e (#​11988) (45d3c95) use linkedin openid connect default scopes (#​11953) (001313a)",
-   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.848.1",
+   "notes": "1.848.2 (2026-10-24): Bug Fixes: tighten file handling in deno/bun, stricter codebase tarball,executor isolation (#​11990) (ccf8892) --- This PR was generated with Release Please. See documentation.",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.848.2",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
   },
   "nocodb": {
@@ -1081,6 +1081,21 @@
    "notes": "Note: 今回のリリースではMisskeyの動作要件やSentryの設定方法などが変更されます。必ずアップグレード前にお使いの環境をご確認ください。 Sentry SDKをv11に更新したため、Sentryを利用しているサーバーでは設定の変更が必要になる場合があります。 Sentry v11でsendDefaultPiiが削除され、収集する項目を個別に指定するdataCollectionに置き換えられました。 sentryForBackend.options.sendDefaultPii / sentryForFrontend.options.sendDefaultPiiを設定しているサー…",
    "source_url": "https://github.com/misskey-dev/misskey/releases/tag/2026.10.1",
    "page_url": "https://www.firmwarely.com/devices/misskey/"
+  },
+  "transmission": {
+   "id": "transmission",
+   "brand": "Transmission",
+   "model": "BitTorrent client",
+   "category": "A",
+   "status": "critical",
+   "version": "4.1.4",
+   "previous": "4.1.3",
+   "released": "2026-10-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Transmission 4.1.4: This is Transmission 4.1.4, a bugfix release. It fixes a security vulnerability in the macOS client and has other small bugfixes. Users are encouraged to upgrade to this version. What's New in 4.1.4: All Platforms: Fixed a Transmission 4.1.0 regression that could cause torrents …",
+   "source_url": "https://github.com/transmission/transmission/releases/tag/4.1.4",
+   "page_url": "https://www.firmwarely.com/devices/transmission/"
   }
  }
 }
