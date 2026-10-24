@@ -26280,6 +26280,24 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "wanderer",
+   "version": "0.21.2",
+   "name": "Wanderer Trail database",
+   "judged_at": "2026-10-24T17:13:41+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.08,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
