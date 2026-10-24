@@ -26190,6 +26190,42 @@
     "security_fix_plain": 0.07,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "kener",
+   "version": "4.1.9",
+   "name": "Kener Status page",
+   "judged_at": "2026-10-24T13:50:02+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.99,
+    "security_fix_plain": 0.95,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "appwrite",
+   "version": "2.6.2",
+   "name": "Appwrite Backend platform",
+   "judged_at": "2026-10-24T13:50:02+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.63,
+    "security_fix_plain": 0.91,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

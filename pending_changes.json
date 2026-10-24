@@ -166,6 +166,36 @@
    "notes": "Changelog: 4fe227fff67f34d872d2dcf607c41d6dc04d9626 Merge pull request #​752 from rusq/chttp-update-202610 f0b0af9662e71755759a2d6e05854ffa38eb2975 Update chttp and other deps 5aae525b3101d4b253fe604b4ab6681683e4ca5d add security audit test 2884c512eaa8fb8a03fd6ed524990e89f49ab27c fix contrib gen c…",
    "source_url": "https://github.com/rusq/slackdump/releases/tag/v4.5.2",
    "page_url": "https://www.firmwarely.com/devices/slackdump/"
+  },
+  "kener": {
+   "id": "kener",
+   "brand": "Kener",
+   "model": "Status page",
+   "category": "A",
+   "status": "critical",
+   "version": "4.1.9",
+   "previous": "4.1.8",
+   "released": "2026-10-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "[!IMPORTANT] Security fix. In v4.0.0 to v4.1.8, a request with a percent-encoded path, for example /%61pi/v4/monitors, reached every /api/v4 route without an API key. Upgrade now, then follow the steps in the v4.1.9 changelog. What's Changed: docs(security): add security policy for private vulnerab…",
+   "source_url": "https://github.com/rajnandan1/kener/releases/tag/v4.1.9",
+   "page_url": "https://www.firmwarely.com/devices/kener/"
+  },
+  "appwrite": {
+   "id": "appwrite",
+   "brand": "Appwrite",
+   "model": "Backend platform",
+   "category": "A",
+   "status": "critical",
+   "version": "2.6.2",
+   "previous": "2.6.1",
+   "released": "2026-10-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Appwrite 2.6.2 is a security release for self-hosted deployments on the 2.6 line. It brings the hardening work merged since 2.6.1 across auth, API keys, databases, realtime, GraphQL, storage, VCS, functions, sites, migrations and messaging. It also moves the runtime to a patched Brotli and the Cons…",
+   "source_url": "https://github.com/appwrite/appwrite/releases/tag/2.6.2",
+   "page_url": "https://www.firmwarely.com/devices/appwrite/"
   }
  }
 }
