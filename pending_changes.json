@@ -1096,6 +1096,21 @@
    "notes": "Transmission 4.1.4: This is Transmission 4.1.4, a bugfix release. It fixes a security vulnerability in the macOS client and has other small bugfixes. Users are encouraged to upgrade to this version. What's New in 4.1.4: All Platforms: Fixed a Transmission 4.1.0 regression that could cause torrents …",
    "source_url": "https://github.com/transmission/transmission/releases/tag/4.1.4",
    "page_url": "https://www.firmwarely.com/devices/transmission/"
+  },
+  "sing-box": {
+   "id": "sing-box",
+   "brand": "SagerNet",
+   "model": "sing-box proxy platform",
+   "category": "R",
+   "status": "update",
+   "version": "1.14.4",
+   "previous": "1.14.3",
+   "released": "2026-10-24",
+   "date_known": true,
+   "eol": false,
+   "notes": ":memo: Release Notes: Fixes and improvements",
+   "source_url": "https://github.com/SagerNet/sing-box/releases/tag/v1.14.4",
+   "page_url": "https://www.firmwarely.com/devices/sing-box/"
   }
  }
 }

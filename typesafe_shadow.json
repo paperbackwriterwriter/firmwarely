@@ -25740,6 +25740,24 @@
     "security_fix_plain": 0.89,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "sing-box",
+   "version": "1.14.4",
+   "name": "SagerNet sing-box proxy platform",
+   "judged_at": "2026-10-24T01:44:23+00:00",
+   "notes_chars": 44,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
