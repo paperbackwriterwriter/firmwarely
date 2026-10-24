@@ -518,13 +518,13 @@
    "model": "Scripts and workflows",
    "category": "A",
    "status": "update",
-   "version": "1.848.0",
+   "version": "1.848.1",
    "previous": "1.847.0",
    "released": "2026-10-23",
    "date_known": true,
    "eol": false,
-   "notes": "1.848.0 (2026-10-23): Features: add a use/plan/build mode picker and read-only prod sessions (#​11940) (d6c2b2c) composer pills that teach Windmill from the workspace (#​11889) (ebeea51) fill docusign, salesforce and quickbooks fields on connect (#​11960) (11f2a4c) group home row menus and open the…",
-   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.848.0",
+   "notes": "1.848.1 (2026-10-23): Bug Fixes: restore workspace pg_dump changes reverted by 812ff6ea5e (#​11988) (45d3c95) use linkedin openid connect default scopes (#​11953) (001313a)",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.848.1",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
   },
   "nocodb": {
@@ -1066,6 +1066,21 @@
    "notes": "/cli v0.8.0: Minor Changes: 0b1e0784: Add dashboard and saved-search authoring commands to the CLI: hdx dashboards list (default subcommand) gains --query name filtering and --format table|json|csv hdx dashboards export --id prints a dashboard definition as JSON, round-trip compatible with import h…",
    "source_url": "https://github.com/hyperdxio/hyperdx/releases/tag/cli-v0.8.0",
    "page_url": "https://www.firmwarely.com/devices/hyperdx/"
+  },
+  "misskey": {
+   "id": "misskey",
+   "brand": "Misskey",
+   "model": "Social platform",
+   "category": "A",
+   "status": "update",
+   "version": "2026.10.1",
+   "previous": "2026.10.0",
+   "released": "2026-10-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Note: 今回のリリースではMisskeyの動作要件やSentryの設定方法などが変更されます。必ずアップグレード前にお使いの環境をご確認ください。 Sentry SDKをv11に更新したため、Sentryを利用しているサーバーでは設定の変更が必要になる場合があります。 Sentry v11でsendDefaultPiiが削除され、収集する項目を個別に指定するdataCollectionに置き換えられました。 sentryForBackend.options.sendDefaultPii / sentryForFrontend.options.sendDefaultPiiを設定しているサー…",
+   "source_url": "https://github.com/misskey-dev/misskey/releases/tag/2026.10.1",
+   "page_url": "https://www.firmwarely.com/devices/misskey/"
   }
  }
 }
