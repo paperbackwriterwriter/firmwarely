@@ -908,13 +908,13 @@
    "model": "Salt configuration management",
    "category": "A",
    "status": "update",
-   "version": "3008.3",
+   "version": "3008.4",
    "previous": "3008.3-1",
-   "released": "2026-09-30",
+   "released": "2026-10-24",
    "date_known": true,
    "eol": false,
-   "notes": "v3008.3 v3008.3",
-   "source_url": "https://github.com/saltstack/salt/releases/tag/v3008.3",
+   "notes": "v3008.4 v3008.4",
+   "source_url": "https://github.com/saltstack/salt/releases/tag/v3008.4",
    "page_url": "https://www.firmwarely.com/devices/salt/"
   },
   "obs-studio": {
@@ -1141,6 +1141,21 @@
    "notes": "Changelog: The Node.js vulnerabilities (notably CVE-2026-111497) did not affect Chatwoot’s production runtime. Node.js is used only to precompile JavaScript assets in the build step; the production application runs on Ruby and does not run Nodejs. We have nevertheless upgraded Node.js as a precauti…",
    "source_url": "https://github.com/chatwoot/chatwoot/releases/tag/v4.19.1",
    "page_url": "https://www.firmwarely.com/devices/chatwoot/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.2903",
+   "previous": "0.24.2900",
+   "released": "2026-10-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: 03ccdcf597f1d6cf7fe01baa52f5f6d8c0c2beef v3x: bump engine tag 50084fa88ac64666035b16ff212063eab4b43b5e build(deps): bump github/codeql-action from 4.38.3 to 4.39.0 (#​17220) 9ce4f3973e6232199465e0230b018103db4bca03 thebrothers: new cat plus update another This list of changes was auto gen…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2903",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }

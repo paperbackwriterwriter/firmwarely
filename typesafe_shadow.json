@@ -25812,6 +25812,42 @@
     "security_fix_plain": 0.12,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "salt",
+   "version": "3008.4",
+   "name": "Salt Project Salt configuration management",
+   "judged_at": "2026-10-24T05:57:32+00:00",
+   "notes_chars": 15,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "jackett",
+   "version": "0.24.2903",
+   "name": "Jackett Torrent indexer proxy",
+   "judged_at": "2026-10-24T05:57:32+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
