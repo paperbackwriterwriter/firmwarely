@@ -1156,6 +1156,36 @@
    "notes": "Changes:: 03ccdcf597f1d6cf7fe01baa52f5f6d8c0c2beef v3x: bump engine tag 50084fa88ac64666035b16ff212063eab4b43b5e build(deps): bump github/codeql-action from 4.38.3 to 4.39.0 (#​17220) 9ce4f3973e6232199465e0230b018103db4bca03 thebrothers: new cat plus update another This list of changes was auto gen…",
    "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2903",
    "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "onyx": {
+   "id": "onyx",
+   "brand": "Onyx",
+   "model": "AI platform",
+   "category": "A",
+   "status": "update",
+   "version": "5.0.0",
+   "previous": "4.9.4",
+   "released": "2026-10-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Docs: https://docs.onyx.app/changelog What's Changed: fix(salesforce): order child windows by sortable fields only chore(deps): update python base image digests by in https://github.com/onyx-dot-app/onyx/pull/14697 chore(deps): update node base image digests by in https://github.com/onyx-dot-app/on…",
+   "source_url": "https://github.com/onyx-dot-app/onyx/releases/tag/v5.0.0",
+   "page_url": "https://www.firmwarely.com/devices/onyx/"
+  },
+  "flclash": {
+   "id": "flclash",
+   "brand": "FlClash",
+   "model": "Multi-platform proxy client",
+   "category": "R",
+   "status": "update",
+   "version": "0.9.2",
+   "previous": "0.9.1",
+   "released": "2026-10-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Features: access Access control state shown in a bar at the bottom config Optional general overrides; settings apply sooner dashboard IP quality cached for 3 days; simpler Android dashboard Update the core to mihomo v1.19.33 tray Colored tray status icons; monochrome option on macOS desktop Sidebar…",
+   "source_url": "https://github.com/chen08209/FlClash/releases/tag/v0.9.2",
+   "page_url": "https://www.firmwarely.com/devices/flclash/"
   }
  }
 }
