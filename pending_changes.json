@@ -136,6 +136,36 @@
    "notes": "Bugfixes, more speed, less CPU/memory usage. ! Fix: dnspr relayed to the client whatever came first to the socket it asked the name server from, from any address and under any id, so a forged answer could be passed on; the query now goes out under a random id, and only an answer from the name serve…",
    "source_url": "https://github.com/3proxy/3proxy/releases/tag/1.0.2",
    "page_url": "https://www.firmwarely.com/devices/3proxy/"
+  },
+  "langfuse": {
+   "id": "langfuse",
+   "brand": "Langfuse",
+   "model": "LLM observability",
+   "category": "A",
+   "status": "update",
+   "version": "4.70.0",
+   "previous": "4.69.0",
+   "released": "2026-10-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Features: feat(public-api): add unstable read-only Topics endpoints feat(ai-gateway): update Claude Desktop setup steps and merge Claude tabs feat(web): warn ClickHouse staff viewing data feat(web): syntax-highlight shell, TOML and JSON setup snippets feat(ai-gateway): describe gate…",
+   "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.70.0",
+   "page_url": "https://www.firmwarely.com/devices/langfuse/"
+  },
+  "slackdump": {
+   "id": "slackdump",
+   "brand": "Slackdump",
+   "model": "Slack message exporter",
+   "category": "N",
+   "status": "critical",
+   "version": "4.5.2",
+   "previous": "4.5.1",
+   "released": "2026-10-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: 4fe227fff67f34d872d2dcf607c41d6dc04d9626 Merge pull request #​752 from rusq/chttp-update-202610 f0b0af9662e71755759a2d6e05854ffa38eb2975 Update chttp and other deps 5aae525b3101d4b253fe604b4ab6681683e4ca5d add security audit test 2884c512eaa8fb8a03fd6ed524990e89f49ab27c fix contrib gen c…",
+   "source_url": "https://github.com/rusq/slackdump/releases/tag/v4.5.2",
+   "page_url": "https://www.firmwarely.com/devices/slackdump/"
   }
  }
 }
