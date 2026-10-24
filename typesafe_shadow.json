@@ -25776,6 +25776,42 @@
     "security_fix_plain": 0.57,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.10.2.103-stable",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-10-24T05:07:00+00:00",
+   "notes_chars": 47,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "chatwoot",
+   "version": "4.19.1",
+   "name": "Chatwoot Customer messaging",
+   "judged_at": "2026-10-24T05:07:00+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.08,
+    "security_fix_plain": 0.12,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

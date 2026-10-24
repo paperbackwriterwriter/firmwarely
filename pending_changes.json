@@ -128,13 +128,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.3.60.2-lts",
+   "version": "26.10.2.103-stable",
    "previous": "26.9.25.15-stable",
-   "released": "2026-10-23",
+   "released": "2026-10-24",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.3.60.2-lts v26.3.60.2-lts",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.3.60.2-lts",
+   "notes": "Release v26.10.2.103-stable v26.10.2.103-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.10.2.103-stable",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "sherpa-onnx": {
@@ -1126,6 +1126,21 @@
    "notes": "v2026.10.24: Ruby 4.0.9 includes fixes for memory corruption when compiling attacker-controlled regular expressions. See the Ruby advisory for details. Changes: Upgrade Ruby to 4.0.9, including the official Docker images. #​3805 Upgrade the bundled MySQL server to 8.4.13. #​3809 Select the web inte…",
    "source_url": "https://github.com/huginn/huginn/releases/tag/v2026.10.24",
    "page_url": "https://www.firmwarely.com/devices/huginn/"
+  },
+  "chatwoot": {
+   "id": "chatwoot",
+   "brand": "Chatwoot",
+   "model": "Customer messaging",
+   "category": "A",
+   "status": "critical",
+   "version": "4.19.1",
+   "previous": "4.19.0",
+   "released": "2026-10-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: The Node.js vulnerabilities (notably CVE-2026-111497) did not affect Chatwoot’s production runtime. Node.js is used only to precompile JavaScript assets in the build step; the production application runs on Ruby and does not run Nodejs. We have nevertheless upgraded Node.js as a precauti…",
+   "source_url": "https://github.com/chatwoot/chatwoot/releases/tag/v4.19.1",
+   "page_url": "https://www.firmwarely.com/devices/chatwoot/"
   }
  }
 }
