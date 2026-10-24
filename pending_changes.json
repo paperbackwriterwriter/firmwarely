@@ -106,6 +106,36 @@
    "notes": "Changed: Extended the creation and the import of activities to support the asset profiles of a premium data provider which the user already has Improved the performance of the historical market data table of the admin control panel by counting the market data per asset profile Improved the performa…",
    "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.92.0",
    "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
+  },
+  "netbird": {
+   "id": "netbird",
+   "brand": "NetBird",
+   "model": "Mesh VPN",
+   "category": "R",
+   "status": "update",
+   "version": "0.81.4",
+   "previous": "0.81.3",
+   "released": "2026-10-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: [client] Drop SSH privileges through libc in PKCS#11 package builds (https://github.com/netbirdio/netbird/pull/8323) (https://github.com/netbirdio/netbird/pull/8331) [client,proxy,management,signal,relay] Distrust compromised eMudhra CA keys (#​8326) [client] Drop SSH privileges thr…",
+   "source_url": "https://github.com/netbirdio/netbird/releases/tag/v0.81.4",
+   "page_url": "https://www.firmwarely.com/devices/netbird/"
+  },
+  "3proxy": {
+   "id": "3proxy",
+   "brand": "3proxy",
+   "model": "Tiny proxy server",
+   "category": "R",
+   "status": "update",
+   "version": "1.0.2",
+   "previous": "1.0.1",
+   "released": "2026-10-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Bugfixes, more speed, less CPU/memory usage. ! Fix: dnspr relayed to the client whatever came first to the socket it asked the name server from, from any address and under any id, so a forged answer could be passed on; the query now goes out under a random id, and only an answer from the name serve…",
+   "source_url": "https://github.com/3proxy/3proxy/releases/tag/1.0.2",
+   "page_url": "https://www.firmwarely.com/devices/3proxy/"
   }
  }
 }

@@ -26118,6 +26118,42 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "netbird",
+   "version": "0.81.4",
+   "name": "NetBird Mesh VPN",
+   "judged_at": "2026-10-24T12:08:27+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.76,
+    "security_fix_plain": 0.84,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "3proxy",
+   "version": "1.0.2",
+   "name": "3proxy Tiny proxy server",
+   "judged_at": "2026-10-24T12:08:27+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.97,
+    "security_fix_plain": 0.93,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
