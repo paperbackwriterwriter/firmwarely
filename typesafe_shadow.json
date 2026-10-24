@@ -26568,6 +26568,42 @@
     "security_fix_plain": 0.07,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "tugtainer",
+   "version": "1.44.3",
+   "name": "Tugtainer Docker container updater",
+   "judged_at": "2026-10-24T22:41:03+00:00",
+   "notes_chars": 142,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "verdaccio",
+   "version": "6.11.1",
+   "name": "Verdaccio npm registry",
+   "judged_at": "2026-10-24T22:41:03+00:00",
+   "notes_chars": 151,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

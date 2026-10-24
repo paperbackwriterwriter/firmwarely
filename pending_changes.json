@@ -233,13 +233,13 @@
    "model": "Docker container updater",
    "category": "A",
    "status": "update",
-   "version": "1.44.2",
+   "version": "1.44.3",
    "previous": "1.44.1",
    "released": "2026-10-24",
    "date_known": true,
    "eol": false,
-   "notes": "v1.44.2 (2026-10-24): Bug Fixes: backend: Keep -v binds in HostConfig.Binds on container recreation (4fd3654) Documentation: backend: Drop the example from the binds docstring (c0d01dd) --- Detailed Changes: v1.44.1...v1.44.2",
-   "source_url": "https://github.com/Quenary/tugtainer/releases/tag/v1.44.2",
+   "notes": "v1.44.3 (2026-10-24): Bug Fixes: backend: Drop old image-defined envs/labels, keep overrides (833595c) --- Detailed Changes: v1.44.2...v1.44.3",
+   "source_url": "https://github.com/Quenary/tugtainer/releases/tag/v1.44.3",
    "page_url": "https://www.firmwarely.com/devices/tugtainer/"
   },
   "wanderer": {
@@ -413,13 +413,13 @@
    "model": "npm registry",
    "category": "A",
    "status": "update",
-   "version": "6.11.0",
+   "version": "6.11.1",
    "previous": "6.10.7",
    "released": "2026-10-24",
    "date_known": true,
    "eol": false,
-   "notes": "Minor Changes: 93010b3: web.showSearch: false now also disables the web search endpoint. Until now the option only hid the search box in the header, while /-/verdaccio/data/search kept answering. With showSearch: false the endpoint is no longer registered and answers 404, the same way web.login: fa…",
-   "source_url": "https://github.com/verdaccio/verdaccio/releases/tag/v6.11.0",
+   "notes": "Patch Changes: 62d8556: Update verdaccio dependencies to the latest npm dist-tag (/ui-theme tracks next-9):/ui-theme: 9.0.0-next-9.39 → 9.0.0-next-9.40",
+   "source_url": "https://github.com/verdaccio/verdaccio/releases/tag/v6.11.1",
    "page_url": "https://www.firmwarely.com/devices/verdaccio/"
   },
   "skipper": {
