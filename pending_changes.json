@@ -323,13 +323,13 @@
    "model": "But powerful alternative",
    "category": "A",
    "status": "update",
-   "version": "1.29.0",
+   "version": "1.29.1",
    "previous": "1.28.0",
    "released": "2026-10-24",
    "date_known": true,
    "eol": false,
-   "notes": "Join our communities --- Changelog: To people who don't like change... attention this update brings a slightly new (imo improved) UI, be warned!!! All new home widgets can be disabled, so technically you can make Jotty look almost identical as it used to be (bar a few changes), I just wanted to add…",
-   "source_url": "https://github.com/fccview/jotty/releases/tag/1.29.0",
+   "notes": "Join our communities --- Changelog (1.29.1): Sorry about the double release and quick hotfix, 1.29.0 had a minor but very annoying bug in the markdown editor where typing too fast with autosave enabled would send the cursor all the way to the bottom of the note. It was such an annoying thing I deci…",
+   "source_url": "https://github.com/fccview/jotty/releases/tag/1.29.1",
    "page_url": "https://www.firmwarely.com/devices/jotty/"
   },
   "ntfy": {
@@ -451,6 +451,21 @@
    "notes": "Fix: get_more_tools is only offered when no other tool fits a mobile device, testing or development task, instead of on any task that might benefit from it (#​519) Chore: Upgrade/server to 2.4.0 and/express to 2.0.2 (#​528)",
    "source_url": "https://github.com/mobile-next/mobile-mcp/releases/tag/1.0.13",
    "page_url": "https://www.firmwarely.com/devices/mobile-mcp/"
+  },
+  "octelium": {
+   "id": "octelium",
+   "brand": "Octelium",
+   "model": "Zero trust access platform",
+   "category": "R",
+   "status": "update",
+   "version": "0.47.0",
+   "previous": "0.46.0",
+   "released": "2026-10-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "You can upgrade an already running Cluster via the command octops upgrade as shown here. You can read the full changelog here. Improvements: Various fixes and improvements for AuthServer, DNSServer, Nocturne, GatewayAgent, APIServer, Ingress Controller, Octovigil and the ResourceServer. ComponentLo…",
+   "source_url": "https://github.com/octelium/octelium/releases/tag/v0.47.0",
+   "page_url": "https://www.firmwarely.com/devices/octelium/"
   }
  }
 }
