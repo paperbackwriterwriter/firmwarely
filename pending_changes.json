@@ -76,6 +76,36 @@
    "notes": "Changelog: Features: aa575380402e5941aca6ff76ffff899df5911505 feat(cli): add -syntaxcheck and -startuptrace 7db5a17f1bba7e8f1ab46f4c7bb26da831610411 feat(cli): add -syntaxcheck and -startuptrace (#​1126) Bug fixes: cc6a83bfbc56f8a66059aac5b3e651b667552bd1 fix: hold MapActionBindingsLock while build…",
    "source_url": "https://github.com/OliveTin/OliveTin/releases/tag/3000.21.0",
    "page_url": "https://www.firmwarely.com/devices/olivetin/"
+  },
+  "headscale": {
+   "id": "headscale",
+   "brand": "Headscale",
+   "model": "Tailscale control server",
+   "category": "R",
+   "status": "critical",
+   "version": "0.29.6",
+   "previous": "0.29.5",
+   "released": "2026-10-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Minimum supported Tailscale client version: v1.80.0 Security: Build with Go 1.27.3 to reject certificate chains containing the compromised eMudhra intermediate keys (CVE-2026-111943) Go #​82345 Update and pin the normal and debug container bases to images whose CA bundles no longer include emSign E…",
+   "source_url": "https://github.com/juanfont/headscale/releases/tag/v0.29.6",
+   "page_url": "https://www.firmwarely.com/devices/headscale/"
+  },
+  "ghostfolio": {
+   "id": "ghostfolio",
+   "brand": "Ghostfolio",
+   "model": "Wealth tracker",
+   "category": "A",
+   "status": "update",
+   "version": "3.92.0",
+   "previous": "3.91.0",
+   "released": "2026-10-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changed: Extended the creation and the import of activities to support the asset profiles of a premium data provider which the user already has Improved the performance of the historical market data table of the admin control panel by counting the market data per asset profile Improved the performa…",
+   "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.92.0",
+   "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
   }
  }
 }

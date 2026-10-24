@@ -26082,6 +26082,42 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "headscale",
+   "version": "0.29.6",
+   "name": "Headscale Tailscale control server",
+   "judged_at": "2026-10-24T11:12:35+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.91,
+    "security_fix_plain": 0.8,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ghostfolio",
+   "version": "3.92.0",
+   "name": "Ghostfolio Wealth tracker",
+   "judged_at": "2026-10-24T11:12:35+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
