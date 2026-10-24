@@ -256,6 +256,51 @@
    "notes": "0.21.2: Breaking Changes: The sample Compose configuration now binds PocketBase to 127.0.0.1:8090 and requires an explicit POCKETBASE_PROXY_SECRET shared by db and web. Update existing deployments to use the same local port binding. Replace a copied dev-proxy-secret-change-me value with your own ra…",
    "source_url": "https://github.com/open-wanderer/wanderer/releases/tag/v0.21.2",
    "page_url": "https://www.firmwarely.com/devices/wanderer/"
+  },
+  "wg-easy": {
+   "id": "wg-easy",
+   "brand": "wg-easy",
+   "model": "WireGuard server and UI",
+   "category": "R",
+   "status": "critical",
+   "version": "15.5.0",
+   "previous": "15.4.0",
+   "released": "2026-10-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Security fixes, support AmneziaWG 3.1, configurable interface name [!NOTE] This fixes some Node.js vulnerabilities. See release notes [!IMPORTANT] Help improve wg-easy by sharing your feedback in https://github.com/wg-easy/wg-easy/discussions/2737 What's Changed: Lock file maintenance by in https:/…",
+   "source_url": "https://github.com/wg-easy/wg-easy/releases/tag/v15.5.0",
+   "page_url": "https://www.firmwarely.com/devices/wg-easy/"
+  },
+  "ollama": {
+   "id": "ollama",
+   "brand": "Ollama",
+   "model": "Local LLM runner",
+   "category": "A",
+   "status": "update",
+   "version": "0.40.11",
+   "previous": "0.40.10",
+   "released": "2026-10-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Speech: Ollama can now generate speech on macOS. ollama run plays text or a chat model's reply aloud as the audio is generated, and apps can stream audio through the OpenAI-compatible /v1/audio/speech endpoint. sh ollama run phonon \"Hello from Ollama.\" d3 decision models: d3 brings vLLM Semantic Ro…",
+   "source_url": "https://github.com/ollama/ollama/releases/tag/v0.40.11",
+   "page_url": "https://www.firmwarely.com/devices/ollama/"
+  },
+  "kiosk-satellite": {
+   "id": "kiosk-satellite",
+   "brand": "Kiosk Satellite",
+   "model": "Turn any Android device",
+   "category": "S",
+   "status": "update",
+   "version": "2026.10.39",
+   "previous": "2026.10.38",
+   "released": "2026-10-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's new in Kiosk Satellite 2026.10.39: This release adds sorting, genre browsing and display settings to the Music Library, a fine-tune slider for wake word sensitivity on every engine and a separate skin for each assistant. It also fixes microWakeWord models that never woke on Slightly sensitiv…",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.10.39",
+   "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   }
  }
 }

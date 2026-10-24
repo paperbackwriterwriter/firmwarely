@@ -26298,6 +26298,60 @@
     "security_fix_plain": 0.08,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "wg-easy",
+   "version": "15.5.0",
+   "name": "wg-easy WireGuard server and UI",
+   "judged_at": "2026-10-24T18:04:19+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.74,
+    "security_fix_plain": 0.66,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ollama",
+   "version": "0.40.11",
+   "name": "Ollama Local LLM runner",
+   "judged_at": "2026-10-24T18:04:19+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "kiosk-satellite",
+   "version": "2026.10.39",
+   "name": "Kiosk Satellite Turn any Android device",
+   "judged_at": "2026-10-24T18:04:19+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
