@@ -391,6 +391,51 @@
    "notes": "What's Changed: chore: bump version 2.11.3 → 2.11.4 (#​9650) feat(tensions): pin Iran–GCC, score pairs live on the last 168 hours; drop the BestTime credit (#​9645) chore(aviation): activate seed-notam-nms on FAA production (#​9635) (#​9648) Full Changelog: https://github.com/koala73/worldmonitor/c…",
    "source_url": "https://github.com/koala73/worldmonitor/releases/tag/v2.11.4",
    "page_url": "https://www.firmwarely.com/devices/worldmonitor/"
+  },
+  "home-assistant-core": {
+   "id": "home-assistant-core",
+   "brand": "Home Assistant",
+   "model": "Core (monthly release)",
+   "category": "S",
+   "status": "update",
+   "version": "2026.10.4",
+   "previous": "2026.10.3",
+   "released": "2026-10-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Raise aiohttp client header limits to 64 KiB ([] - [#​188329]) Bump pylutron-caseta to 0.30.0 ([] - [#​188388]) ([lutron_caseta docs]) (dependency) [#​188329]: https://github.com/home-assistant/core/pull/188329 [#​188388]: https://github.com/home-assistant/core/pull/188388 []: https://github.com/Mi…",
+   "source_url": "https://github.com/home-assistant/core/releases/tag/2026.10.4",
+   "page_url": "https://www.firmwarely.com/devices/home-assistant-core/"
+  },
+  "verdaccio": {
+   "id": "verdaccio",
+   "brand": "Verdaccio",
+   "model": "npm registry",
+   "category": "A",
+   "status": "update",
+   "version": "6.11.0",
+   "previous": "6.10.7",
+   "released": "2026-10-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Minor Changes: 93010b3: web.showSearch: false now also disables the web search endpoint. Until now the option only hid the search box in the header, while /-/verdaccio/data/search kept answering. With showSearch: false the endpoint is no longer registered and answers 404, the same way web.login: fa…",
+   "source_url": "https://github.com/verdaccio/verdaccio/releases/tag/v6.11.0",
+   "page_url": "https://www.firmwarely.com/devices/verdaccio/"
+  },
+  "skipper": {
+   "id": "skipper",
+   "brand": "Skipper",
+   "model": "HTTP router and reverse proxy",
+   "category": "R",
+   "status": "update",
+   "version": "0.28.51",
+   "previous": "0.28.50",
+   "released": "2026-10-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes: test: stabilize Prometheus metrics duration assertions (#​4360) Why: CI runs sometimes fail while checking Prometheus latency metrics. The scrape is missing the expected duration sum of 0.015 seconds, for a host or for a backend zone. Those sums are measured with the process clock. Work be…",
+   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.51",
+   "page_url": "https://www.firmwarely.com/devices/skipper/"
   }
  }
 }
