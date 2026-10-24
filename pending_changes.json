@@ -316,6 +316,21 @@
    "notes": "3.3.11 is a security release. It stops clients that connect without an author token from all sharing one author (GHSA-746x-9w89-7xv6). Security: Pads — clients without an author token no longer share one author (GHSA-746x-9w89-7xv6). Since the author token moved to an HttpOnly cookie, a pad connect…",
    "source_url": "https://github.com/ether/etherpad/releases/tag/v3.3.11",
    "page_url": "https://www.firmwarely.com/devices/etherpad/"
+  },
+  "jotty": {
+   "id": "jotty",
+   "brand": "Jotty",
+   "model": "But powerful alternative",
+   "category": "A",
+   "status": "update",
+   "version": "1.29.0",
+   "previous": "1.28.0",
+   "released": "2026-10-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Join our communities --- Changelog: To people who don't like change... attention this update brings a slightly new (imo improved) UI, be warned!!! All new home widgets can be disabled, so technically you can make Jotty look almost identical as it used to be (bar a few changes), I just wanted to add…",
+   "source_url": "https://github.com/fccview/jotty/releases/tag/1.29.0",
+   "page_url": "https://www.firmwarely.com/devices/jotty/"
   }
  }
 }
