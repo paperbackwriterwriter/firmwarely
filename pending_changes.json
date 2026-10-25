@@ -226,6 +226,36 @@
    "notes": "Changed: Moved the support for filtering by activity type on the activities page from experimental to general availability Moved the allocation in the accounts tab of the holding detail dialog from experimental to general availability Moved the quantity in the accounts tab of the holding detail dia…",
    "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.93.0",
    "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
+  },
+  "puter": {
+   "id": "puter",
+   "brand": "Puter",
+   "model": "Web desktop OS",
+   "category": "A",
+   "status": "update",
+   "version": "26.10.1",
+   "previous": "26.10",
+   "released": "2026-10-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: fix(thumbnails): duplicate a copied thumbnail with GetObject + PutObject instead of CopyObject attach egress actor to /down PUT-2011 PUT-1995 Let the account's own API token reach the routes a privileged app needs feat(ddb): log the table and key of throttled DynamoDB requests docs:…",
+   "source_url": "https://github.com/HeyPuter/puter/releases/tag/26.10.1",
+   "page_url": "https://www.firmwarely.com/devices/puter/"
+  },
+  "amass": {
+   "id": "amass",
+   "brand": "OWASP",
+   "model": "Amass attack surface mapper",
+   "category": "A",
+   "status": "update",
+   "version": "5.1.3",
+   "previous": "5.1.2",
+   "released": "2026-10-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: a284d25a890cbb561a53410080a3fd96bbaa7312 updated version to close #​1157",
+   "source_url": "https://github.com/owasp-amass/amass/releases/tag/v5.1.3",
+   "page_url": "https://www.firmwarely.com/devices/amass/"
   }
  }
 }
