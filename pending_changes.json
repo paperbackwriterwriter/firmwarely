@@ -368,13 +368,13 @@
    "model": "Dashboard",
    "category": "A",
    "status": "update",
-   "version": "2.9.0",
+   "version": "2.9.1",
    "previous": "2.8.2",
-   "released": "2026-10-24",
+   "released": "2026-10-25",
    "date_known": true,
    "eol": false,
-   "notes": "What's Changed: chore(lang): updated translations from crowdin by in https://github.com/homarr-labs/homarr/pull/7289 fix(board): preserve square tiles inside categories chore: update bug report template by in https://github.com/homarr-labs/homarr/pull/7277 feat(board): add apps by dropping a URL on…",
-   "source_url": "https://github.com/homarr-labs/homarr/releases/tag/v2.9.0",
+   "notes": "What's Changed: chore(deps): update dependency/store to v0.3.22 by in https://github.com/homarr-labs/homarr/pull/7360 chore(deps): update dependency/core to v0.3.30 by in https://github.com/homarr-labs/homarr/pull/7359 chore(deps): update dependency/tap to v0.9.24 by in https://github.com/homarr-la…",
+   "source_url": "https://github.com/homarr-labs/homarr/releases/tag/v2.9.1",
    "page_url": "https://www.firmwarely.com/devices/homarr/"
   },
   "worldmonitor": {
