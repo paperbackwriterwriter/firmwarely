@@ -481,6 +481,21 @@
    "notes": "[1.88.0] - 2026-10-21: ADDED: A set can handle only calls, such as Discord voice calls - the option is Handle only calls in the Calls field on a set's UDP tab, and Which calls can narrow it to the Discord app or to browsers. Such a set has no targets and acts only on the packet that opens each call…",
    "source_url": "https://github.com/DanielLavrushin/b4/releases/tag/v1.88.0",
    "page_url": "https://www.firmwarely.com/devices/b4/"
+  },
+  "m5unified": {
+   "id": "m5unified",
+   "brand": "M5Stack",
+   "model": "M5Unified library",
+   "category": "M",
+   "status": "update",
+   "version": "0.2.28",
+   "previous": "0.2.27",
+   "released": "2026-10-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "Board fixes: CoreP4X: the IMU X axis was reversed; the accelerometer and gyroscope X axes are inverted in the board mapping. (, #​414) External displays (Module Display, Unit OLED / MiniOLED / GLASS / GLASS2 / LCD, Module RCA, Unit RCA): begin() reset and cleared them regardless of cfg.clear_displa…",
+   "source_url": "https://github.com/m5stack/M5Unified/releases/tag/0.2.28",
+   "page_url": "https://www.firmwarely.com/devices/m5unified/"
   }
  }
 }
