@@ -26640,6 +26640,24 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "windmill",
+   "version": "1.848.3",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-10-25T02:47:38+00:00",
+   "notes_chars": 112,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.79,
+    "security_fix_plain": 0.72,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

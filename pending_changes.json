@@ -496,6 +496,21 @@
    "notes": "Board fixes: CoreP4X: the IMU X axis was reversed; the accelerometer and gyroscope X axes are inverted in the board mapping. (, #​414) External displays (Module Display, Unit OLED / MiniOLED / GLASS / GLASS2 / LCD, Module RCA, Unit RCA): begin() reset and cleared them regardless of cfg.clear_displa…",
    "source_url": "https://github.com/m5stack/M5Unified/releases/tag/0.2.28",
    "page_url": "https://www.firmwarely.com/devices/m5unified/"
+  },
+  "windmill": {
+   "id": "windmill",
+   "brand": "Windmill",
+   "model": "Scripts and workflows",
+   "category": "A",
+   "status": "critical",
+   "version": "1.848.3",
+   "previous": "1.848.2",
+   "released": "2026-10-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.848.3 (2026-10-25): Bug Fixes: pin node to 24.22.1 in the worker image for CVE-2026-111497 (#​11995) (0e79e93)",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.848.3",
+   "page_url": "https://www.firmwarely.com/devices/windmill/"
   }
  }
 }
