@@ -31,6 +31,51 @@
    "notes": "OpenBK7231T/OpenBeken release 1.18.319: WARNING! If installing versions tagged -alpha, please be aware these are development builds and may not be stable! Please do not flash all your devices at once! Make sure you can recover them via UART in case of unexpected issue.: OpenBK7231T/OpenBeken is a T…",
    "source_url": "https://github.com/openshwprojects/OpenBK7231T_App/releases/tag/1.18.319",
    "page_url": "https://www.firmwarely.com/devices/openbk7231t/"
+  },
+  "metube": {
+   "id": "metube",
+   "brand": "MeTube",
+   "model": "yt-dlp web UI",
+   "category": "A",
+   "status": "update",
+   "version": "2026.10.25",
+   "previous": "2026.10.23",
+   "released": "2026-10-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "Docker images have been built and pushed: Docker Hub: alexta69/metube:latest alexta69/metube:2026.10.25 GitHub Container Registry: ghcr.io/alexta69/metube:latest ghcr.io/alexta69/metube:2026.10.25 Changes: fix: report yt-dlp extractor crashes as errors instead of a 500 (closes #​1108) (f85df38) bui…",
+   "source_url": "https://github.com/alexta69/metube/releases/tag/2026.10.25",
+   "page_url": "https://www.firmwarely.com/devices/metube/"
+  },
+  "mediamtx": {
+   "id": "mediamtx",
+   "brand": "MediaMTX",
+   "model": "Media server",
+   "category": "A",
+   "status": "update",
+   "version": "1.21.3",
+   "previous": "1.21.2",
+   "released": "2026-10-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "Fixes and improvements: General http: restore support for HTTP2 requests (https://github.com/bluenviron/mediamtx/issues/6320) The server was not advertising the HTTP2 protocol in TLS ALPN anymore. Fix this. forward: match destinations by configuration when reloading (https://github.com/bluenviron/m…",
+   "source_url": "https://github.com/bluenviron/mediamtx/releases/tag/v1.21.3",
+   "page_url": "https://www.firmwarely.com/devices/mediamtx/"
+  },
+  "pulse": {
+   "id": "pulse",
+   "brand": "Pulse",
+   "model": "Real-time monitoring dashboard",
+   "category": "A",
+   "status": "update",
+   "version": "6.6.0",
+   "previous": "6.5.0",
+   "released": "2026-10-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "✅ Release Asset Validation: PASSED: The required release asset checks passed. Status: Release asset checks passed ✅ Validated: 2026-10-25 09:46:24 UTC Workflow: Pulse Release Pipeline #​439 Validation Summary: All required assets present ✓ Checksums verified ✓ Version strings correct ✓ Binary archi…",
+   "source_url": "https://github.com/rcourtman/Pulse/releases/tag/v6.6.0",
+   "page_url": "https://www.firmwarely.com/devices/pulse/"
   }
  }
 }
