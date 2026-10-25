@@ -27414,6 +27414,60 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "cronicle",
+   "version": "0.9.139",
+   "name": "Cronicle Task scheduler",
+   "judged_at": "2026-10-25T21:50:47+00:00",
+   "notes_chars": 60,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.26,
+    "security_fix_plain": 0.23,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "dawarich",
+   "version": "1.18.0",
+   "name": "Dawarich Location history",
+   "judged_at": "2026-10-25T21:50:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "databasement",
+   "version": "1.10.7",
+   "name": "Databasement Database backup manager",
+   "judged_at": "2026-10-25T21:50:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.1,
+    "security_fix_plain": 0.17,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

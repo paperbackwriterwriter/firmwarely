@@ -361,6 +361,51 @@
    "notes": "Information: Release Notes Dependencies: Addons: 26.10.25 Modules: 26.10.19 Configs: 26.09.06 Patches: 26.05.30 Custom: 26.10.24 LKMs: 26.10.18 Apex: 2026.02.3-261019-2337-apex Build: 2026-10-25 21:00",
    "source_url": "https://github.com/AuxXxilium/arc/releases/tag/4.1.3",
    "page_url": "https://www.firmwarely.com/devices/arc/"
+  },
+  "cronicle": {
+   "id": "cronicle",
+   "brand": "Cronicle",
+   "model": "Task scheduler",
+   "category": "A",
+   "status": "update",
+   "version": "0.9.139",
+   "previous": "0.9.138",
+   "released": "2026-10-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "Dep: Bump pixl-mail to v1.1.12 for vuln fixes in nodemailer.",
+   "source_url": "https://github.com/jhuckaby/Cronicle/releases/tag/v0.9.139",
+   "page_url": "https://www.firmwarely.com/devices/cronicle/"
+  },
+  "dawarich": {
+   "id": "dawarich",
+   "brand": "Dawarich",
+   "model": "Location history",
+   "category": "A",
+   "status": "update",
+   "version": "1.18.0",
+   "previous": "1.17.0",
+   "released": "2026-10-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "⚠️ Upgrade notes: Back up your database before upgrading. After the upgrade, background jobs turn Areas into Places and tidy up visit names, repair tracks from the last 12 months, recalculate months with flights and update your existing digests, recheck the Italy achievement, and detect visits agai…",
+   "source_url": "https://github.com/Freika/dawarich/releases/tag/1.18.0",
+   "page_url": "https://www.firmwarely.com/devices/dawarich/"
+  },
+  "databasement": {
+   "id": "databasement",
+   "brand": "Databasement",
+   "model": "Database backup manager",
+   "category": "N",
+   "status": "critical",
+   "version": "1.10.7",
+   "previous": "1.10.6",
+   "released": "2026-10-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: ci: run the MongoDB service on mongo 7 docs: mark demo mode as out of scope in the security policy chore(deps): bump follow-redirects from 1.16.0 to 1.16.1 in /docs by in https://github.com/David-Crty/databasement/pull/718 chore(deps): bump follow-redirects from 1.16.0 to 1.16.1 by …",
+   "source_url": "https://github.com/David-Crty/databasement/releases/tag/v1.10.7",
+   "page_url": "https://www.firmwarely.com/devices/databasement/"
   }
  }
 }
