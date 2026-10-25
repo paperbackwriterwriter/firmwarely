@@ -511,6 +511,36 @@
    "notes": "1.848.3 (2026-10-25): Bug Fixes: pin node to 24.22.1 in the worker image for CVE-2026-111497 (#​11995) (0e79e93)",
    "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.848.3",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
+  },
+  "seaweedfs": {
+   "id": "seaweedfs",
+   "brand": "SeaweedFS",
+   "model": "Distributed file store",
+   "category": "N",
+   "status": "update",
+   "version": "4.50",
+   "previous": "4.49",
+   "released": "2026-10-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: filer: do not stall startup waiting out the leader-settle window volume: drop stale index entries that resolve to a different needle s3 lifecycle: route version-file writes to current-version expiration s3: end a catalog-vended session with the access key it was vended for fuse inte…",
+   "source_url": "https://github.com/seaweedfs/seaweedfs/releases/tag/4.50",
+   "page_url": "https://www.firmwarely.com/devices/seaweedfs/"
+  },
+  "dokku": {
+   "id": "dokku",
+   "brand": "Dokku",
+   "model": "Docker-powered PaaS",
+   "category": "A",
+   "status": "update",
+   "version": "0.38.32",
+   "previous": "0.38.31",
+   "released": "2026-10-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "Install/update via the bootstrap script: shell wget -NP . https://dokku.com/install/v0.38.32/bootstrap.sh sudo DOKKU_TAG=v0.38.32 bash bootstrap.sh Bug Fixes: #​9189: Release deploy locks on exit and honor apps:lock #​9128: Forward forced cleanup flag (#​9127) #​9182: Read alternate image tags from…",
+   "source_url": "https://github.com/dokku/dokku/releases/tag/v0.38.32",
+   "page_url": "https://www.firmwarely.com/devices/dokku/"
   }
  }
 }
