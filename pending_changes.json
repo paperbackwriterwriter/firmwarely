@@ -91,6 +91,36 @@
    "notes": "Major Changes: d33944c: Verdaccio 7.0.0 is the first stable release of the 7.x line. It is published to npm as latest and to Docker Hub as verdaccio/verdaccio:7, 7.0 and latest; the 6.x line continues under the latest-6 npm dist-tag and the 6 image tag. The release post is at https://verdaccio.org/…",
    "source_url": "https://github.com/verdaccio/verdaccio/releases/tag/v7.0.0",
    "page_url": "https://www.firmwarely.com/devices/verdaccio/"
+  },
+  "go2rtc": {
+   "id": "go2rtc",
+   "brand": "go2rtc",
+   "model": "Camera streaming server",
+   "category": "S",
+   "status": "update",
+   "version": "1.9.15",
+   "previous": "1.9.14",
+   "released": "2026-10-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "Main: Update go build version to 1.27 (1cff2562) Update dependencies (eb75edcb) Other: Add support xiaomi lumi.camera.gwagl01 (7793a558) Add support xiaomi isa.camera.isc5c1 (06cbbe55) Add support xiaomi chuangmi.camera.v2 on old firmwares (a37fdf38) Add support xiaomi chuangmi.camera.ipc019e (8f68…",
+   "source_url": "https://github.com/AlexxIT/go2rtc/releases/tag/v1.9.15",
+   "page_url": "https://www.firmwarely.com/devices/go2rtc/"
+  },
+  "evcc": {
+   "id": "evcc",
+   "brand": "evcc",
+   "model": "EV charge controller",
+   "category": "S",
+   "status": "update",
+   "version": "0.318.1",
+   "previous": "0.318.0",
+   "released": "2026-10-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: Other Changes ☀️: e967a35e789081adc7bbd1a730c355e8a870c3fb Sungrow-hybrid: correct grid voltages and currents (#​35289) f0a2d798754d76b1505dffd9d5186f59ad3c311f Tesla: fall back to vehicle_data without location when scope is missing (#​35229) d107abf08333882890c0ccf1314c90dc7758ab9f UI: …",
+   "source_url": "https://github.com/evcc-io/evcc/releases/tag/0.318.1",
+   "page_url": "https://www.firmwarely.com/devices/evcc/"
   }
  }
 }
