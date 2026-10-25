@@ -286,6 +286,21 @@
    "notes": "PCB exposure: (Fix) Gerber X2 attributes (%TO, %TA, %TD) and other unsupported extended commands were parsed as coordinates and D codes, a net or component name like TX0, Y1 or D12 drew phantom copper or changed the aperture, dropping the next pads and tracks (#​1159). (Fix) Gerber arcs exact to th…",
    "source_url": "https://github.com/sn4k3/UVtools/releases/tag/v7.1.1",
    "page_url": "https://www.firmwarely.com/devices/uvtools/"
+  },
+  "xplr": {
+   "id": "xplr",
+   "brand": "xplr",
+   "model": "Terminal file explorer",
+   "category": "P",
+   "status": "update",
+   "version": "1.2.2",
+   "previous": "1.2.1",
+   "released": "2026-10-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "Highlight: This release fixes tty crashes when using CustomGraphics/CustomOutput introduced in 1.2. Also done a major cleanup of the codebase to simplify many things. What's Changed: Cleanup Fix tty crash when rendering graphics Rendered image quality will not be rich due to some simplification, bu…",
+   "source_url": "https://github.com/sayanarijit/xplr/releases/tag/v1.2.2",
+   "page_url": "https://www.firmwarely.com/devices/xplr/"
   }
  }
 }
