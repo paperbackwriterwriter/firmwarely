@@ -196,6 +196,36 @@
    "notes": "What's Changed: chore(openapi): add non regression api test refactor(openapi): start move to openapi generated code fix(devices-auth): various fix on device auth grant fix(admin_settings_service): expose OIDC discovery connection failure causes refactor(api): continue migration to generated code do…",
    "source_url": "https://github.com/AtalayaLabs/OxiCloud/releases/tag/v0.10.0",
    "page_url": "https://www.firmwarely.com/devices/oxicloud/"
+  },
+  "windmill": {
+   "id": "windmill",
+   "brand": "Windmill",
+   "model": "Scripts and workflows",
+   "category": "A",
+   "status": "update",
+   "version": "1.849.0",
+   "previous": "1.848.3",
+   "released": "2026-10-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.849.0 (2026-10-25): Features: per-user Anthropic Workload Identity Federation for Windmill AI (#​11998) (6c8fd6c)",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.849.0",
+   "page_url": "https://www.firmwarely.com/devices/windmill/"
+  },
+  "ghostfolio": {
+   "id": "ghostfolio",
+   "brand": "Ghostfolio",
+   "model": "Wealth tracker",
+   "category": "A",
+   "status": "update",
+   "version": "3.93.0",
+   "previous": "3.92.0",
+   "released": "2026-10-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changed: Moved the support for filtering by activity type on the activities page from experimental to general availability Moved the allocation in the accounts tab of the holding detail dialog from experimental to general availability Moved the quantity in the accounts tab of the holding detail dia…",
+   "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.93.0",
+   "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
   }
  }
 }
