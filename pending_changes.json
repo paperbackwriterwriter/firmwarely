@@ -121,6 +121,51 @@
    "notes": "Changelog: Other Changes ☀️: e967a35e789081adc7bbd1a730c355e8a870c3fb Sungrow-hybrid: correct grid voltages and currents (#​35289) f0a2d798754d76b1505dffd9d5186f59ad3c311f Tesla: fall back to vehicle_data without location when scope is missing (#​35229) d107abf08333882890c0ccf1314c90dc7758ab9f UI: …",
    "source_url": "https://github.com/evcc-io/evcc/releases/tag/0.318.1",
    "page_url": "https://www.firmwarely.com/devices/evcc/"
+  },
+  "gladys": {
+   "id": "gladys",
+   "brand": "Gladys",
+   "model": "Home automation hub",
+   "category": "S",
+   "status": "update",
+   "version": "5.3.0",
+   "previous": "5.2.1",
+   "released": "2026-10-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: fix: Zigbee2MQTT serial port mismatch inside container (#​3204) fix: battery warning toggle and battery / backup failure messages fix: poll discovered external devices with a poll_frequency (#​3198) feat(tts): pluggable text-to-speech providers through external integrations, Gladys …",
+   "source_url": "https://github.com/GladysAssistant/Gladys/releases/tag/v5.3.0",
+   "page_url": "https://www.firmwarely.com/devices/gladys/"
+  },
+  "kiosk-satellite": {
+   "id": "kiosk-satellite",
+   "brand": "Kiosk Satellite",
+   "model": "Turn any Android device",
+   "category": "S",
+   "status": "update",
+   "version": "2026.10.40",
+   "previous": "2026.10.39",
+   "released": "2026-10-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's new in Kiosk Satellite 2026.10.40: This release moves the Echo Dot to its new LineageOS 18.1 image, adds a screen light to the barcode scanner and lets you pick which toasts show over the dashboard. It also fixes Sendspin stuttering on Bluetooth headphones and a wake word that stayed deaf wh…",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.10.40",
+   "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
+  },
+  "jotty": {
+   "id": "jotty",
+   "brand": "Jotty",
+   "model": "But powerful alternative",
+   "category": "A",
+   "status": "update",
+   "version": "1.29.2",
+   "previous": "1.29.1",
+   "released": "2026-10-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "Join our communities --- Changelog: Sorry, 3 releases in 24 hours... The internet is going to shit, so I will end up doing more releases back to back in order to keep up with all the terrifying CVEs being discovered at the moment. This small update patches Node2Shell and HTTP2Shell. I also took the…",
+   "source_url": "https://github.com/fccview/jotty/releases/tag/1.29.2",
+   "page_url": "https://www.firmwarely.com/devices/jotty/"
   }
  }
 }
