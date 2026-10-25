@@ -26748,6 +26748,222 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "qnap-ts-464",
+   "version": "5.2.11.3661",
+   "name": "QNAP TS-464",
+   "judged_at": "2026-10-25T08:26:38+00:00",
+   "notes_chars": 59,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.09,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "qnap-ts-262",
+   "version": "5.2.11.3661",
+   "name": "QNAP TS-262",
+   "judged_at": "2026-10-25T08:26:38+00:00",
+   "notes_chars": 59,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.08,
+    "security_fix_plain": 0.07,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "qnap-ts-673a",
+   "version": "5.2.11.3661",
+   "name": "QNAP TS-673A",
+   "judged_at": "2026-10-25T08:26:38+00:00",
+   "notes_chars": 59,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.08,
+    "security_fix_plain": 0.1,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "qnap-tvs-h874",
+   "version": "5.2.11.3661",
+   "name": "QNAP TVS-h874",
+   "judged_at": "2026-10-25T08:26:39+00:00",
+   "notes_chars": 59,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.08,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "btop",
+   "version": "1.4.8",
+   "name": "btop++ Resource monitor",
+   "judged_at": "2026-10-25T08:26:39+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.15,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "casdoor",
+   "version": "4.24.0",
+   "name": "Casdoor Identity and access",
+   "judged_at": "2026-10-25T08:26:39+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "open-webui",
+   "version": "0.12.4",
+   "name": "Open WebUI LLM web interface",
+   "judged_at": "2026-10-25T08:26:39+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "tube-archivist",
+   "version": "0.6.0",
+   "name": "Tube Archivist YouTube archive",
+   "judged_at": "2026-10-25T08:26:39+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.09,
+    "security_fix_plain": 0.41,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "qnap-ts-233",
+   "version": "5.2.11.3661",
+   "name": "QNAP TS-233",
+   "judged_at": "2026-10-25T08:26:39+00:00",
+   "notes_chars": 59,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.09,
+    "security_fix_plain": 0.07,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "qnap-ts-433",
+   "version": "5.2.11.3661",
+   "name": "QNAP TS-433",
+   "judged_at": "2026-10-25T08:26:39+00:00",
+   "notes_chars": 59,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.08,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "qnap-tbs-h574tx",
+   "version": "5.2.11.3661",
+   "name": "QNAP TBS-h574TX",
+   "judged_at": "2026-10-25T08:26:39+00:00",
+   "notes_chars": 59,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.07,
+    "security_fix_plain": 0.07,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "qnap-ts-1655",
+   "version": "5.2.11.3661",
+   "name": "QNAP TS-1655",
+   "judged_at": "2026-10-25T08:26:39+00:00",
+   "notes_chars": 59,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.08,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
