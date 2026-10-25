@@ -301,6 +301,36 @@
    "notes": "Highlight: This release fixes tty crashes when using CustomGraphics/CustomOutput introduced in 1.2. Also done a major cleanup of the codebase to simplify many things. What's Changed: Cleanup Fix tty crash when rendering graphics Rendered image quality will not be rich due to some simplification, bu…",
    "source_url": "https://github.com/sayanarijit/xplr/releases/tag/v1.2.2",
    "page_url": "https://www.firmwarely.com/devices/xplr/"
+  },
+  "kimai": {
+   "id": "kimai",
+   "brand": "Kimai",
+   "model": "Time tracking",
+   "category": "A",
+   "status": "update",
+   "version": "2.71.0",
+   "previous": "2.70.2",
+   "released": "2026-10-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "Compatible with PHP 8.2 to 8.5 Changes: Remove API password from user profile screen (#​6277) Deactivate API passwords (#​6267) - thanks Bugfixes: Check if API is allowed to set begin (#​6275) - thanks Use edit permission to check if times can be set via API (#​6276) - thanks Maintenance: Convert u…",
+   "source_url": "https://github.com/kimai/kimai/releases/tag/2.71.0",
+   "page_url": "https://www.firmwarely.com/devices/kimai/"
+  },
+  "worldmonitor": {
+   "id": "worldmonitor",
+   "brand": "Worldmonitor",
+   "model": "Real-time global intelligence dashboard",
+   "category": "A",
+   "status": "update",
+   "version": "2.11.6",
+   "previous": "2.11.4",
+   "released": "2026-10-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: chore(release): bump version to 2.11.6 (#​9683) fix(aviation): stop reading Riyadh's late-night page as most flights cancelled (#​9682) fix(desktop): bundle the Node runtime on Windows, where the v2.11.5 build failed (#​9681) test(seo): guard noindex on new data header sources (#​96…",
+   "source_url": "https://github.com/koala73/worldmonitor/releases/tag/v2.11.6",
+   "page_url": "https://www.firmwarely.com/devices/worldmonitor/"
   }
  }
 }

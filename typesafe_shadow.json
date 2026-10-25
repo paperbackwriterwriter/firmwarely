@@ -27342,6 +27342,42 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "kimai",
+   "version": "2.71.0",
+   "name": "Kimai Time tracking",
+   "judged_at": "2026-10-25T19:18:46+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.57,
+    "security_fix_plain": 0.47,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "worldmonitor",
+   "version": "2.11.6",
+   "name": "Worldmonitor Real-time global intelligence dashboard",
+   "judged_at": "2026-10-25T19:18:46+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
