@@ -556,6 +556,21 @@
    "notes": "Changelog: 04a516f6a65a46bea2dc4f662c4ebda7591d4883 updated for go version 1.27.3 30f5d5eb82ca61ab5475a7ff7c374a85e1b17648 updated dependencies 0584fd6ba1327134ccca77b544d944be5c968935 removed the crawl test 75a8b22f32b9695ad23701af33a47ef488749a1c had to remove the Geziyor crawler",
    "source_url": "https://github.com/owasp-amass/amass/releases/tag/v5.1.2",
    "page_url": "https://www.firmwarely.com/devices/amass/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.2910",
+   "previous": "0.24.2903",
+   "released": "2026-10-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: c1a8ab72c98c5e989b7b6bc725c1ba0c4abd9f6d bitporn: update MR/MST 35512088c47e1db35ae5f5dce45f17bdd1526963 dontorrent: new domain 5a776c62ba69945cde2bc5fe45a7080633e2389d peergarden: bump engine tag dc56d3efa2c814090d5810dea06aa2821fd143f3 nordicbytes: bump engine tag fad17c77ccbc1027a4a55a…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2910",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
