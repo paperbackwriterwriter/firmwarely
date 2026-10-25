@@ -16,6 +16,21 @@
    "notes": "Changed: prometheus: count keyframes received and forwarded (#​5060) config-sample: add rtc.rtx_budget (#​5059) sfu: cap retransmissions per down track (#​5054) sfu: read lock for BufferBase.GetPacket (#​5055) ci: list failed tests after the test step (#​5057) rtc: log the API key that issued the j…",
    "source_url": "https://github.com/livekit/livekit/releases/tag/v1.13.11",
    "page_url": "https://www.firmwarely.com/devices/livekit/"
+  },
+  "openbk7231t": {
+   "id": "openbk7231t",
+   "brand": "OpenBeken",
+   "model": "OpenBK7231T firmware",
+   "category": "S",
+   "status": "update",
+   "version": "1.18.319",
+   "previous": "1.18.318",
+   "released": "2026-10-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "OpenBK7231T/OpenBeken release 1.18.319: WARNING! If installing versions tagged -alpha, please be aware these are development builds and may not be stable! Please do not flash all your devices at once! Make sure you can recover them via UART in case of unexpected issue.: OpenBK7231T/OpenBeken is a T…",
+   "source_url": "https://github.com/openshwprojects/OpenBK7231T_App/releases/tag/1.18.319",
+   "page_url": "https://www.firmwarely.com/devices/openbk7231t/"
   }
  }
 }
