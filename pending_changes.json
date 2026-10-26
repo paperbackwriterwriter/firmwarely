@@ -286,6 +286,51 @@
    "notes": "Changelog: 10a78e5ef038f8b97d6966bc76f1cf21bb5616ac chore(deps): bump github.com/andybalholm/brotli from v1.1.1 to v1.2.7 (#​5933) As always, feedback is more than welcome, feel free to open issues/discussions. You can reach out to the team using: Slack Github Discussions Github Issues Mailing List…",
    "source_url": "https://github.com/grafana/pyroscope/releases/tag/v2.4.2",
    "page_url": "https://www.firmwarely.com/devices/pyroscope/"
+  },
+  "victoriametrics": {
+   "id": "victoriametrics",
+   "brand": "VictoriaMetrics",
+   "model": "Time series database",
+   "category": "A",
+   "status": "update",
+   "version": "1.155.0",
+   "previous": "1.154.1",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "v1.155.0: Released at 2026-10-23 Update Note 1: vmselect in VictoriaMetrics cluster: /admin/tenants requests without start and end query args now return tenants for the current day. This is a breaking change because previously it was expected to return all tenants. If you still need to retrieve all…",
+   "source_url": "https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.155.0",
+   "page_url": "https://www.firmwarely.com/devices/victoriametrics/"
+  },
+  "lemmy": {
+   "id": "lemmy",
+   "brand": "Lemmy",
+   "model": "Link aggregator",
+   "category": "A",
+   "status": "update",
+   "version": "0.19.21",
+   "previous": "0.19.20",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Release notes Full Changelog: https://github.com/LemmyNet/lemmy/compare/0.19.20...0.19.21",
+   "source_url": "https://github.com/LemmyNet/lemmy/releases/tag/0.19.21",
+   "page_url": "https://www.firmwarely.com/devices/lemmy/"
+  },
+  "avideo": {
+   "id": "avideo",
+   "brand": "AVideo",
+   "model": "Video streaming platform",
+   "category": "A",
+   "status": "update",
+   "version": "29.6.0",
+   "previous": "29.5.0",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "29.6.0 (2026-10-26): Features: channel: enhance channel layout and branding features, improve responsiveness and tab logic (bdb1857) Enhance PayPerView integration and payment processing (a08d758) gallery: add ellipsis menu action buttons and corresponding unit tests (a4f57ae) health_check: impleme…",
+   "source_url": "https://github.com/WWBN/AVideo/releases/tag/v29.6.0",
+   "page_url": "https://www.firmwarely.com/devices/avideo/"
   }
  }
 }

@@ -28116,6 +28116,60 @@
     "security_fix_plain": 0.12,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "victoriametrics",
+   "version": "1.155.0",
+   "name": "VictoriaMetrics Time series database",
+   "judged_at": "2026-10-26T14:13:23+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "lemmy",
+   "version": "0.19.21",
+   "name": "Lemmy Link aggregator",
+   "judged_at": "2026-10-26T14:13:23+00:00",
+   "notes_chars": 105,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "avideo",
+   "version": "29.6.0",
+   "name": "AVideo Video streaming platform",
+   "judged_at": "2026-10-26T14:13:23+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

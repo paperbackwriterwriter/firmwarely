@@ -260,7 +260,7 @@
   <url><loc>https://www.firmwarely.com/devices/grafana/</loc><lastmod>2026-10-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/prometheus/</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/loki/</loc><lastmod>2026-10-20</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/victoriametrics/</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/victoriametrics/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/influxdb/</loc><lastmod>2026-10-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/telegraf/</loc><lastmod>2026-10-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/gatus/</loc><lastmod>2026-09-24</lastmod></url>
@@ -413,7 +413,7 @@
   <url><loc>https://www.firmwarely.com/devices/ejabberd/</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/mastodon/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/misskey/</loc><lastmod>2026-10-23</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/lemmy/</loc><lastmod>2026-07-21</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/lemmy/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/pixelfed/</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/peertube/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ghost/</loc><lastmod>2026-10-20</lastmod></url>
@@ -630,7 +630,7 @@
   <url><loc>https://www.firmwarely.com/devices/uvtools/</loc><lastmod>2026-10-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/rackstack/</loc><lastmod>2024-10-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/lantern/</loc><lastmod>2026-09-18</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/avideo/</loc><lastmod>2026-10-19</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/avideo/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/databasus/</loc><lastmod>2026-10-24</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/elasticsearch-dump/</loc><lastmod>2026-05-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/android-databackup/</loc><lastmod>2025-09-20</lastmod></url>
