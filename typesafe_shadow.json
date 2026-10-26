@@ -28224,6 +28224,78 @@
     "security_fix_plain": 0.76,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "talos-linux",
+   "version": "1.14.5",
+   "name": "Sidero Labs Talos Linux",
+   "judged_at": "2026-10-26T16:07:36+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "infisical",
+   "version": "0.167.3",
+   "name": "Infisical Secrets manager",
+   "judged_at": "2026-10-26T16:07:36+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "dagster",
+   "version": "1.13.27",
+   "name": "Dagster Data orchestrator",
+   "judged_at": "2026-10-26T16:07:36+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "sherpa-onnx",
+   "version": "2.0.1",
+   "name": "sherpa-onnx Offline speech recognition and TTS",
+   "judged_at": "2026-10-26T16:07:37+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
