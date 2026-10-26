@@ -27522,6 +27522,42 @@
     "security_fix_plain": 0.04,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "onedev",
+   "version": "16.9.8",
+   "name": "OneDev Git server with CI",
+   "judged_at": "2026-10-26T00:26:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "httm",
+   "version": "0.51.1",
+   "name": "httm ZFS snapshot file browser",
+   "judged_at": "2026-10-26T00:26:48+00:00",
+   "notes_chars": 76,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
