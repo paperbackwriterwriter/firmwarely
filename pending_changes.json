@@ -691,6 +691,51 @@
    "notes": "Greetings DNS fans! Thanks to all contributors involved in this release! This is a community project and we couldn't do it without all of your contributions! Sincerely, --Tom Limoncelli Monthly video call!: Everyone is invited to the Monthly DNSControl Community Video Conference Call on the 2nd Tue…",
    "source_url": "https://github.com/DNSControl/dnscontrol/releases/tag/v5.7.1",
    "page_url": "https://www.firmwarely.com/devices/dnscontrol/"
+  },
+  "jellyfin-server": {
+   "id": "jellyfin-server",
+   "brand": "Jellyfin",
+   "model": "Media server",
+   "category": "A",
+   "status": "update",
+   "version": "12.4",
+   "previous": "12.3",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": ":rocket: Jellyfin Server 12.4: We are pleased to announce the latest stable release of Jellyfin, version 12.4! This minor release brings several bugfixes to improve your Jellyfin experience. As always, please ensure you take a full backup before upgrading! Discuss this release further on our forums…",
+   "source_url": "https://github.com/jellyfin/jellyfin/releases/tag/v12.4",
+   "page_url": "https://www.firmwarely.com/devices/jellyfin-server/"
+  },
+  "tp-link-tapo-c120": {
+   "id": "tp-link-tapo-c120",
+   "brand": "TP-Link",
+   "model": "Tapo C120",
+   "category": "S",
+   "status": "update",
+   "version": "1.9.4",
+   "previous": "1.9.3",
+   "released": "2026-10-26",
+   "date_known": false,
+   "eol": false,
+   "notes": "TP-Link firmware release. See the download page for the changelog.",
+   "source_url": "https://www.tp-link.com/us/support/download/tapo-c120/",
+   "page_url": "https://www.firmwarely.com/devices/tp-link-tapo-c120/"
+  },
+  "hometube": {
+   "id": "hometube",
+   "brand": "HomeTube",
+   "model": "Video downloader",
+   "category": "A",
+   "status": "critical",
+   "version": "2.13.2",
+   "previous": "2.13.0",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "There is no 2.13.1 release: that tag's release build failed, so 2.13.2 carries everything since 2.13.0. Security: Pillow 13.0.0 — 41 advisories closed, 5 of them critical. Pillow is not a HomeTube dependency; it comes with Streamlit, which capped it below 13 until 1.66.1. HomeTube now runs Streamli…",
+   "source_url": "https://github.com/EgalitarianMonkey/hometube/releases/tag/v2.13.2",
+   "page_url": "https://www.firmwarely.com/devices/hometube/"
   }
  }
 }

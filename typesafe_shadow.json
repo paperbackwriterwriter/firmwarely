@@ -28638,6 +28638,60 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "jellyfin-server",
+   "version": "12.4",
+   "name": "Jellyfin Media server",
+   "judged_at": "2026-10-26T22:19:51+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "tp-link-tapo-c120",
+   "version": "1.9.4",
+   "name": "TP-Link Tapo C120",
+   "judged_at": "2026-10-26T22:19:51+00:00",
+   "notes_chars": 66,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "hometube",
+   "version": "2.13.2",
+   "name": "HomeTube Video downloader",
+   "judged_at": "2026-10-26T22:19:52+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.22,
+    "security_fix_plain": 0.21,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
