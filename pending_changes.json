@@ -481,6 +481,51 @@
    "notes": "Built-in LLM for Docker: AnythingLLM Docker now has a default local LLM experience right out of the box. The same kind of built-in engine that ships with AnythingLLM Desktop can now run inside the container: Lemonade, the fully open-source local inference server from AMD, running your models with l…",
    "source_url": "https://github.com/Mintplex-Labs/anything-llm/releases/tag/v1.19.0",
    "page_url": "https://www.firmwarely.com/devices/anythingllm/"
+  },
+  "uptime-kuma": {
+   "id": "uptime-kuma",
+   "brand": "Uptime Kuma",
+   "model": "Uptime monitor",
+   "category": "R",
+   "status": "update",
+   "version": "2.5.8",
+   "previous": "2.5.7",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "🐞 Bug Fixes: #​8049 fix: Docker verification check sometimes not catching invalid responses (2.5.X backport) (Thanks) #​8038 fix: add next-slim-rootless docker tag #​8028 fix: drop TLS support from the TCP Port monitor (It never worked as expected and very buggy, all existing monitors will become n…",
+   "source_url": "https://github.com/louislam/uptime-kuma/releases/tag/2.5.8",
+   "page_url": "https://www.firmwarely.com/devices/uptime-kuma/"
+  },
+  "zeek": {
+   "id": "zeek",
+   "brand": "Zeek",
+   "model": "Network security monitor",
+   "category": "R",
+   "status": "critical",
+   "version": "9.0.1",
+   "previous": "9.0.0",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "Thank you to Sergey Fedorov (), Eneshan Karaca (), Dop (),,, Aashish Sharma (), James Gurung (), Pavan Nallamothu (), Peter Cullen (), Alexey Rubanik (), and Al Smith for their contributions to this release. Thank you also to the following organizations for their work performing security scans: Ada…",
+   "source_url": "https://github.com/zeek/zeek/releases/tag/v9.0.1",
+   "page_url": "https://www.firmwarely.com/devices/zeek/"
+  },
+  "mobile-mcp": {
+   "id": "mobile-mcp",
+   "brand": "Mobile Mcp",
+   "model": "Model Context Protocol Server",
+   "category": "C",
+   "status": "update",
+   "version": "1.0.14",
+   "previous": "1.0.13",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "Feat: npx/mobile-mcp install detects the MCP clients on the machine and adds mobile-mcp to the ones you pick, or to all of them with --yes (#​531)",
+   "source_url": "https://github.com/mobile-next/mobile-mcp/releases/tag/1.0.14",
+   "page_url": "https://www.firmwarely.com/devices/mobile-mcp/"
   }
  }
 }

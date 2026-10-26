@@ -34,7 +34,7 @@
   <url><loc>https://www.firmwarely.com/devices/frp-tunnel/</loc><lastmod>2026-10-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/librenms/</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/netbox/</loc><lastmod>2026-10-13</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/uptime-kuma/</loc><lastmod>2026-10-23</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/uptime-kuma/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ntopng/</loc><lastmod>2026-09-22</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/suricata-ids/</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/crowdsec/</loc><lastmod>2026-09-03</lastmod></url>
@@ -190,7 +190,7 @@
   <url><loc>https://www.firmwarely.com/devices/ddclient/</loc><lastmod>2025-01-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/inadyn/</loc><lastmod>2025-10-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/snort3/</loc><lastmod>2026-10-21</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/zeek/</loc><lastmod>2026-08-21</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/zeek/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/wazuh/</loc><lastmod>2026-10-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/3proxy/</loc><lastmod>2026-10-24</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/envoy-proxy/</loc><lastmod>2026-10-23</lastmod></url>
@@ -641,7 +641,7 @@
   <url><loc>https://www.firmwarely.com/devices/docker-volume-backup/</loc><lastmod>2026-10-22</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/docker-android/</loc><lastmod>2026-10-09</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/cemu/</loc><lastmod>2025-02-06</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/mobile-mcp/</loc><lastmod>2026-10-24</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/mobile-mcp/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/mgba/</loc><lastmod>2025-03-09</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/jsnes/</loc><lastmod>2026-04-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/provenance/</loc><lastmod>2026-03-14</lastmod></url>

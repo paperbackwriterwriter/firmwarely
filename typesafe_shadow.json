@@ -28350,6 +28350,60 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "uptime-kuma",
+   "version": "2.5.8",
+   "name": "Uptime Kuma Uptime monitor",
+   "judged_at": "2026-10-26T17:48:43+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "zeek",
+   "version": "9.0.1",
+   "name": "Zeek Network security monitor",
+   "judged_at": "2026-10-26T17:48:43+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "mobile-mcp",
+   "version": "1.0.14",
+   "name": "Mobile Mcp Model Context Protocol Server",
+   "judged_at": "2026-10-26T17:48:43+00:00",
+   "notes_chars": 146,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
