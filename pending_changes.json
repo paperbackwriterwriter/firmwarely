@@ -526,6 +526,51 @@
    "notes": "Release Note 🎉: 🤖 MQTTX Agent, Dashboard & GZIP Decompression MQTTX 1.13.2 introduces Dashboard for visualizing MQTT data, turns the desktop Copilot into MQTTX Agent, and adds optional GZIP decompression to Desktop and Web. It also improves performance with large Topic Trees, adds per-connection pu…",
    "source_url": "https://github.com/emqx/MQTTX/releases/tag/v1.13.2",
    "page_url": "https://www.firmwarely.com/devices/mqttx/"
+  },
+  "n8n": {
+   "id": "n8n",
+   "brand": "n8n",
+   "model": "Workflow automation",
+   "category": "A",
+   "status": "update",
+   "version": "2.44.7",
+   "previous": "2.44.6",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "2.44.7 (2026-10-26): Bug Fixes: core: Start sub-workflow error workflow when a pre-run check fails (#​41978) (67d0e65) Email Trigger (IMAP) Node: Back off reconnects when the server drops each new connection (#​41927) (10a9518) Microsoft SharePoint Node: Fix the column mapper 403 and empty items in…",
+   "source_url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.44.7",
+   "page_url": "https://www.firmwarely.com/devices/n8n/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.2918",
+   "previous": "0.24.2910",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: 07d9b67a6e3872571879503dac3b3c274c13f738 core: bump core packages (#​17226) ad2ab648f195e2ae0e85a3fd1b0bf4991e2b4e5a ptying: removed. resolves #​16597 f5b80c44c9c0680d871b74fbafa491cb3aa92bc7 bluebird: removed. resolves #​964 dc15dd75655dc4669518bea4cc62cf7c1d4f4c25 linuxtracker: new cats…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2918",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "tooljet": {
+   "id": "tooljet",
+   "brand": "ToolJet",
+   "model": "Low-code platform",
+   "category": "A",
+   "status": "critical",
+   "version": "3.20.250-lts",
+   "previous": "3.20.249-lts",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: docs: pin the docs site to Node 22.23.4 (Oct 2026 security release) feat: include Gemini 4 Argon in AI release 4 Fix/orphaned build terminal event AI Builder release 4: EE integration and cancellation coverage Full Changelog: https://github.com/ToolJet/ToolJet/compare/v3.20.249-lts.…",
+   "source_url": "https://github.com/ToolJet/ToolJet/releases/tag/v3.20.250-lts",
+   "page_url": "https://www.firmwarely.com/devices/tooljet/"
   }
  }
 }
