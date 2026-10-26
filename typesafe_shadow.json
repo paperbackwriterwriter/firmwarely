@@ -27774,6 +27774,78 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "healthchecks",
+   "version": "5.0.2",
+   "name": "Healthchecks Cron job monitor",
+   "judged_at": "2026-10-26T09:56:07+00:00",
+   "notes_chars": 282,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.1,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "meilisearch",
+   "version": "1.56.0",
+   "name": "Meilisearch Search engine",
+   "judged_at": "2026-10-26T09:56:07+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "penpot",
+   "version": "2.18.5",
+   "name": "Penpot Design tool",
+   "judged_at": "2026-10-26T09:56:07+00:00",
+   "notes_chars": 45,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "skipper",
+   "version": "0.28.52",
+   "name": "Skipper HTTP router and reverse proxy",
+   "judged_at": "2026-10-26T09:56:07+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

@@ -31,6 +31,66 @@
    "notes": "🐛 Poll times saved an hour off around daylight saving changes: The bug. When adding times to a poll, the time saved could be an hour later than the one you picked. It happened in two cases: The week contained a daylight saving change. For example, in a Chicago week starting on the Nov 1 2026 clock …",
    "source_url": "https://github.com/lukevella/rallly/releases/tag/v4.16.3",
    "page_url": "https://www.firmwarely.com/devices/rallly/"
+  },
+  "healthchecks": {
+   "id": "healthchecks",
+   "brand": "Healthchecks",
+   "model": "Cron job monitor",
+   "category": "A",
+   "status": "update",
+   "version": "5.0.2",
+   "previous": "5.0.1",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "Improvements: In the docker image, move gunicorn configuration to gunicorn.conf.py In the the docker image, tighten the secure_scheme_headers gunicorn setting Bug Fixes: Fix a race condition in Profile.for_user() Upgrade minismtpd to v0.5 to enable concurrent SMTP sessions (#​1359)",
+   "source_url": "https://github.com/healthchecks/healthchecks/releases/tag/v5.0.2",
+   "page_url": "https://www.firmwarely.com/devices/healthchecks/"
+  },
+  "meilisearch": {
+   "id": "meilisearch",
+   "brand": "Meilisearch",
+   "model": "Search engine",
+   "category": "A",
+   "status": "update",
+   "version": "1.56.0",
+   "previous": "1.55.0",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "✨ Enhancement: Introduce sampledCount to compute the facet distribution It is a new sorting option when retrieving the facet distribution. It is less precise than by count but provides a rough estimate of the facet distribution. Note that the count of documents for each facet is exhaustive but the …",
+   "source_url": "https://github.com/meilisearch/meilisearch/releases/tag/v1.56.0",
+   "page_url": "https://www.firmwarely.com/devices/meilisearch/"
+  },
+  "penpot": {
+   "id": "penpot",
+   "brand": "Penpot",
+   "model": "Design tool",
+   "category": "A",
+   "status": "update",
+   "version": "2.18.5",
+   "previous": "2.18.4",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "No changes for 2.18.5 according to CHANGES.md",
+   "source_url": "https://github.com/penpot/penpot/releases/tag/2.18.5",
+   "page_url": "https://www.firmwarely.com/devices/penpot/"
+  },
+  "skipper": {
+   "id": "skipper",
+   "brand": "Skipper",
+   "model": "HTTP router and reverse proxy",
+   "category": "R",
+   "status": "update",
+   "version": "0.28.52",
+   "previous": "0.28.51",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes: build(deps): bump actions/setup-python from 7.0.0 to 7.1.0 (#​4383) Bumps actions/setup-python from 7.0.0 to 7.1.0. Release notes Sourced from actions/setup-python's releases . v7.1.0 What's Changed Enhancements Add mirror and mirror-token inputs for custom Python distribution sources by @…",
+   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.52",
+   "page_url": "https://www.firmwarely.com/devices/skipper/"
   }
  }
 }
