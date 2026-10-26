@@ -436,6 +436,51 @@
    "notes": "What's Changed: Fix publishing flutter packages Fix decoder positions of generated tokens in Canary greedy search Add VoxLock target-speaker voice isolation to the speech denoisers Adds a CLAUDE.md with build, test, lint and high-level architecture guidance for Claude Code. Upload VoxLock models an…",
    "source_url": "https://github.com/k2-fsa/sherpa-onnx/releases/tag/v2.0.1",
    "page_url": "https://www.firmwarely.com/devices/sherpa-onnx/"
+  },
+  "zwave-js-ui": {
+   "id": "zwave-js-ui",
+   "brand": "Z-Wave JS",
+   "model": "Z-Wave control panel",
+   "category": "S",
+   "status": "update",
+   "version": "11.25.2",
+   "previous": "11.25.1",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "11.25.2 (2026-10-26): 🐛 Bug Fixes: https: regenerate self-signed certs rejected by Node 24 (#​4881) (474b72c), closes #​4757 #​4879 🔧 Chores: deps: update dependency multer to v2.5.0 (#​4884) (332f2c1)",
+   "source_url": "https://github.com/zwave-js/zwave-js-ui/releases/tag/v11.25.2",
+   "page_url": "https://www.firmwarely.com/devices/zwave-js-ui/"
+  },
+  "nats-server": {
+   "id": "nats-server",
+   "brand": "NATS",
+   "model": "Messaging server",
+   "category": "A",
+   "status": "critical",
+   "version": "2.15.2",
+   "previous": "2.15.1",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: Refer to the 2.15 Upgrade Guide for backwards compatibility notes with 2.14.x. Go Version: 1.27.3, which contains mitigations for CVE-2026-111943 by distrusting eMudhra intermediate certificates (#​8798) Dependencies: github.com/klauspost/compress v1.20.3 (#​8798) golang.org/x/crypto v0.…",
+   "source_url": "https://github.com/nats-io/nats-server/releases/tag/v2.15.2",
+   "page_url": "https://www.firmwarely.com/devices/nats-server/"
+  },
+  "anythingllm": {
+   "id": "anythingllm",
+   "brand": "AnythingLLM",
+   "model": "Document chat",
+   "category": "A",
+   "status": "update",
+   "version": "1.19.0",
+   "previous": "1.18.0",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "Built-in LLM for Docker: AnythingLLM Docker now has a default local LLM experience right out of the box. The same kind of built-in engine that ships with AnythingLLM Desktop can now run inside the container: Lemonade, the fully open-source local inference server from AMD, running your models with l…",
+   "source_url": "https://github.com/Mintplex-Labs/anything-llm/releases/tag/v1.19.0",
+   "page_url": "https://www.firmwarely.com/devices/anythingllm/"
   }
  }
 }

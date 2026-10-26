@@ -28296,6 +28296,60 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "zwave-js-ui",
+   "version": "11.25.2",
+   "name": "Z-Wave JS Z-Wave control panel",
+   "judged_at": "2026-10-26T16:58:10+00:00",
+   "notes_chars": 201,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.21,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "nats-server",
+   "version": "2.15.2",
+   "name": "NATS Messaging server",
+   "judged_at": "2026-10-26T16:58:10+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.26,
+    "security_fix_plain": 0.23,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "anythingllm",
+   "version": "1.19.0",
+   "name": "AnythingLLM Document chat",
+   "judged_at": "2026-10-26T16:58:10+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

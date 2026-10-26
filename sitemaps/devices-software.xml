@@ -118,7 +118,7 @@
   <url><loc>https://www.firmwarely.com/devices/umbrel/</loc><lastmod>2026-09-22</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/yunohost/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/home-assistant-supervisor/</loc><lastmod>2026-10-24</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/zwave-js-ui/</loc><lastmod>2026-10-23</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/zwave-js-ui/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/node-zwave-js/</loc><lastmod>2026-10-22</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/node-red/</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/openhab/</loc><lastmod>2026-10-11</lastmod></url>
@@ -333,7 +333,7 @@
   <url><loc>https://www.firmwarely.com/devices/weaviate/</loc><lastmod>2026-10-22</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/milvus/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/dragonfly/</loc><lastmod>2026-10-07</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/nats-server/</loc><lastmod>2026-10-09</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/nats-server/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/rabbitmq/</loc><lastmod>2026-10-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/redpanda/</loc><lastmod>2026-08-22</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/cloudbeaver/</loc><lastmod>2026-02-11</lastmod></url>
@@ -368,7 +368,7 @@
   <url><loc>https://www.firmwarely.com/devices/invokeai/</loc><lastmod>2026-09-27</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/jan-ai/</loc><lastmod>2026-10-20</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/gpt4all/</loc><lastmod>2025-02-25</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/anythingllm/</loc><lastmod>2026-10-13</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/anythingllm/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/librechat/</loc><lastmod>2026-10-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/lobe-chat/</loc><lastmod>2026-10-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/dify/</loc><lastmod>2026-10-23</lastmod></url>
