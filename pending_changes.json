@@ -481,6 +481,36 @@
    "notes": "🚀 v0.14.11: New Features: Relative-date comparisons — Added Today, Yesterday, and Tomorrow to date comparisons such as before, after, on or before, and on or after, so filters followed the calendar without selecting a new date each day. YouTube captions — Added direct import of available timestampe…",
    "source_url": "https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.14.11",
    "page_url": "https://www.firmwarely.com/devices/appflowy/"
+  },
+  "lidarr": {
+   "id": "lidarr",
+   "brand": "Lidarr",
+   "model": "Music manager",
+   "category": "A",
+   "status": "update",
+   "version": "3.1.6.5079",
+   "previous": "3.1.0.4875",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "To receive further updates for a non-docker installation, please change the branch to master. (Settings -› General (Show Advanced Settings) -› Updates -› Branch) If you are using docker you will need to update the container image. Do not attempt to update Lidarr within an existing docker container.…",
+   "source_url": "https://github.com/Lidarr/Lidarr/releases/tag/v3.1.6.5079",
+   "page_url": "https://www.firmwarely.com/devices/lidarr/"
+  },
+  "unpackerr": {
+   "id": "unpackerr",
+   "brand": "Unpackerr",
+   "model": "Archive extractor",
+   "category": "A",
+   "status": "update",
+   "version": "1.0.0",
+   "previous": "0.16.1",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "Unpackerr v1 is the release after 0.16.1. It adds a web UI and HTTP API on port 5656, and it changes how config, Whisparr, folder watching, metrics, and a few extract limits work. Read this before you pull latest. Upgrade guide: https://unpackerr.zip/docs/install/upgrading Web UI: https://unpackerr…",
+   "source_url": "https://github.com/Unpackerr/unpackerr/releases/tag/v1.0.0",
+   "page_url": "https://www.firmwarely.com/devices/unpackerr/"
   }
  }
 }
