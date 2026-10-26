@@ -181,6 +181,66 @@
    "notes": "What's Changed: chore(pricing): remove retired legacy OpenAI snapshots from the model picker chore(deps): bump node to 24.22.1 chore(design-sync): apply fixes from the daily design-system sync chore(design-sync): apply fixes from the daily design-system sync feat(topics): make it work well on mobil…",
    "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.70.1",
    "page_url": "https://www.firmwarely.com/devices/langfuse/"
+  },
+  "changedetection": {
+   "id": "changedetection",
+   "brand": "changedetection.io",
+   "model": "Website change monitor",
+   "category": "A",
+   "status": "update",
+   "version": "0.60.10",
+   "previous": "0.60.9",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Update orjson requirement from ~=3.12 to ~=3.13 by in https://github.com/dgtlmoon/changedetection.io/pull/4542 LLM restock: fix locale-formatted string prices (1.299,95 read as 1.29995) Puppeteer fetcher - PDF improvements, Handle PDF fetching by Puppeteer directly, cleanup supports…",
+   "source_url": "https://github.com/dgtlmoon/changedetection.io/releases/tag/0.60.10",
+   "page_url": "https://www.firmwarely.com/devices/changedetection/"
+  },
+  "redis": {
+   "id": "redis",
+   "brand": "Redis",
+   "model": "Redis",
+   "category": "A",
+   "status": "critical",
+   "version": "8.10.3",
+   "previous": "8.10.2",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "Update urgency: SECURITY: There is a security fix in the release. Security fixes: Heap buffer overflow when propagating a PUBLISH/SPUBLISH message larger than 4GB over the cluster bus in cluster mode",
+   "source_url": "https://github.com/redis/redis/releases/tag/8.10.3",
+   "page_url": "https://www.firmwarely.com/devices/redis/"
+  },
+  "voidauth": {
+   "id": "voidauth",
+   "brand": "VoidAuth",
+   "model": "Single sign-on server",
+   "category": "A",
+   "status": "update",
+   "version": "1.17.1",
+   "previous": "1.17.0",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Fixes 🔧: Fix TOTP Secrets Not Re-Encrypted During Storage Key Rotation Sponsors: Full Changelog: https://github.com/voidauth/voidauth/compare/v1.17.0...v1.17.1",
+   "source_url": "https://github.com/voidauth/voidauth/releases/tag/v1.17.1",
+   "page_url": "https://www.firmwarely.com/devices/voidauth/"
+  },
+  "browserbox": {
+   "id": "browserbox",
+   "brand": "BrowserBox",
+   "model": "Remote browser isolation",
+   "category": "R",
+   "status": "update",
+   "version": "20.5.5",
+   "previous": "20.5.4",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "Tested BrowserBox release. Install with: curl -fsSL browserbox.io/install.sh | bash",
+   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.5.5",
+   "page_url": "https://www.firmwarely.com/devices/browserbox/"
   }
  }
 }

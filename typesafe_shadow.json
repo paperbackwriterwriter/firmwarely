@@ -27990,6 +27990,78 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "changedetection",
+   "version": "0.60.10",
+   "name": "changedetection.io Website change monitor",
+   "judged_at": "2026-10-26T12:31:54+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "redis",
+   "version": "8.10.3",
+   "name": "Redis",
+   "judged_at": "2026-10-26T12:31:54+00:00",
+   "notes_chars": 199,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.99,
+    "security_fix_plain": 0.97,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "voidauth",
+   "version": "1.17.1",
+   "name": "VoidAuth Single sign-on server",
+   "judged_at": "2026-10-26T12:31:54+00:00",
+   "notes_chars": 175,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.68,
+    "security_fix_plain": 0.73,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "browserbox",
+   "version": "20.5.5",
+   "name": "BrowserBox Remote browser isolation",
+   "judged_at": "2026-10-26T12:31:54+00:00",
+   "notes_chars": 83,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
