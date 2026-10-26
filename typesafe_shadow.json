@@ -28548,6 +28548,60 @@
     "security_fix_plain": 0.58,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "rook",
+   "version": "1.21.1",
+   "name": "Rook Ceph storage orchestrator",
+   "judged_at": "2026-10-26T20:37:07+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.08,
+    "security_fix_plain": 0.55,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "openbao",
+   "version": "2.7.2",
+   "name": "OpenBao Secrets manager",
+   "judged_at": "2026-10-26T20:37:07+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.98,
+    "security_fix_plain": 0.95,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "dawarich",
+   "version": "1.18.1",
+   "name": "Dawarich Location history",
+   "judged_at": "2026-10-26T20:37:07+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

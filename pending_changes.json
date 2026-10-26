@@ -616,6 +616,51 @@
    "notes": "What's Changed: [client] Validate and bound SSH session requests and channels (#​8344) [client] Bound the SSH session request queue and keep resizes from blocking the session loop (#​8363) Full Changelog: https://github.com/netbirdio/netbird/compare/v0.81.4...v0.81.5",
    "source_url": "https://github.com/netbirdio/netbird/releases/tag/v0.81.5",
    "page_url": "https://www.firmwarely.com/devices/netbird/"
+  },
+  "rook": {
+   "id": "rook",
+   "brand": "Rook",
+   "model": "Ceph storage orchestrator",
+   "category": "N",
+   "status": "critical",
+   "version": "1.21.1",
+   "previous": "1.21.0",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "Improvements: Rook v1.21.1 is a patch release limited in scope and focusing on feature additions and bug fixes to the Ceph operator. security: Enforce secure msgr2 mode for mon connections (#​18324,) cluster: Allow configuring the Prometheus scrape timeout (#​18424,) clusterdisruption: Fix minimum …",
+   "source_url": "https://github.com/rook/rook/releases/tag/v1.21.1",
+   "page_url": "https://www.firmwarely.com/devices/rook/"
+  },
+  "openbao": {
+   "id": "openbao",
+   "brand": "OpenBao",
+   "model": "Secrets manager",
+   "category": "A",
+   "status": "critical",
+   "version": "2.7.2",
+   "previous": "2.7.1",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "SECURITY: auth/cert: Add resolve path canonicalization to CRL paths. GHSA-736f-82w7-hj22. [GH-4323] secrets/approle: Add resolve path canonicalization in Role ID paths. GHSA-736f-82w7-hj22. [GH-4323] secrets/identity: Ensure client_type=public is denied with client_credentials=true in the OIDC prov…",
+   "source_url": "https://github.com/openbao/openbao/releases/tag/v2.7.2",
+   "page_url": "https://www.firmwarely.com/devices/openbao/"
+  },
+  "dawarich": {
+   "id": "dawarich",
+   "brand": "Dawarich",
+   "model": "Location history",
+   "category": "A",
+   "status": "update",
+   "version": "1.18.1",
+   "previous": "1.18.0",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "Added: The Select data on map tool can now look across all your data. Turn on \"Select data from all time\" in the Tools panel before drawing the rectangle to get every point and visit in that area, whatever dates the map shows. When an area holds more than 10,000 points, only the most recent 10,000 …",
+   "source_url": "https://github.com/Freika/dawarich/releases/tag/1.18.1",
+   "page_url": "https://www.firmwarely.com/devices/dawarich/"
   }
  }
 }
