@@ -661,6 +661,36 @@
    "notes": "Added: The Select data on map tool can now look across all your data. Turn on \"Select data from all time\" in the Tools panel before drawing the rectangle to get every point and visit in that area, whatever dates the map shows. When an area holds more than 10,000 points, only the most recent 10,000 …",
    "source_url": "https://github.com/Freika/dawarich/releases/tag/1.18.1",
    "page_url": "https://www.firmwarely.com/devices/dawarich/"
+  },
+  "bazzite": {
+   "id": "bazzite",
+   "brand": "Universal Blue",
+   "model": "Bazzite gaming OS",
+   "category": "C",
+   "status": "update",
+   "version": "44.20261026",
+   "previous": "44.20261023",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "This is an automatically generated changelog for release 44.20261026. From previous stable version 44.20261023 there have been the following changes. One package per new version shown. Major packages: | Name | Version | | --- | --- | | Kernel | 7.2.9-ogc3.1 ➡️ 7.2.11-ogc4.1 | | Kernel (Nvidia LTS) …",
+   "source_url": "https://github.com/ublue-os/bazzite/releases/tag/44.20261026",
+   "page_url": "https://www.firmwarely.com/devices/bazzite/"
+  },
+  "dnscontrol": {
+   "id": "dnscontrol",
+   "brand": "DNSControl",
+   "model": "DNS as code",
+   "category": "R",
+   "status": "update",
+   "version": "5.7.1",
+   "previous": "5.7.0",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "Greetings DNS fans! Thanks to all contributors involved in this release! This is a community project and we couldn't do it without all of your contributions! Sincerely, --Tom Limoncelli Monthly video call!: Everyone is invited to the Monthly DNSControl Community Video Conference Call on the 2nd Tue…",
+   "source_url": "https://github.com/DNSControl/dnscontrol/releases/tag/v5.7.1",
+   "page_url": "https://www.firmwarely.com/devices/dnscontrol/"
   }
  }
 }
