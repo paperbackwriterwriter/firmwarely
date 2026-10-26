@@ -556,6 +556,51 @@
    "notes": "Welcome to Trickster 2.2.0! :tada: So. Many. Bleeping. Features! 🤯 Here are the biggest adds: Significant memory usage and performance improvements app-wide Acceleration for 4 more TSDB providers: TimescaleDB (PostgreSQL) GreptimeDB QuestDB VictoriaMetrics IPv4 and v6 Access Control Lists GeoACLs b…",
    "source_url": "https://github.com/trickstercache/trickster/releases/tag/v2.2.0",
    "page_url": "https://www.firmwarely.com/devices/trickster/"
+  },
+  "apple-tv-4k": {
+   "id": "apple-tv-4k",
+   "brand": "Apple",
+   "model": "TV 4K",
+   "category": "S",
+   "status": "update",
+   "version": "27.2",
+   "previous": "27.0",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "View downloadsView release notes",
+   "source_url": "https://developer.apple.com/news/releases/?id=10262026e",
+   "page_url": "https://www.firmwarely.com/devices/apple-tv-4k/"
+  },
+  "apple-vision-pro": {
+   "id": "apple-vision-pro",
+   "brand": "Apple",
+   "model": "Vision Pro",
+   "category": "C",
+   "status": "update",
+   "version": "27.2",
+   "previous": "27.0.1",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "View downloadsView release notes",
+   "source_url": "https://developer.apple.com/news/releases/?id=10262026f",
+   "page_url": "https://www.firmwarely.com/devices/apple-vision-pro/"
+  },
+  "apple-watch-ultra-2": {
+   "id": "apple-watch-ultra-2",
+   "brand": "Apple",
+   "model": "Watch Ultra 2 (watchOS)",
+   "category": "P",
+   "status": "update",
+   "version": "27.2",
+   "previous": "27.0.1",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "View downloadsView release notes",
+   "source_url": "https://developer.apple.com/news/releases/?id=10262026g",
+   "page_url": "https://www.firmwarely.com/devices/apple-watch-ultra-2/"
   }
  }
 }

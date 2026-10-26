@@ -28440,6 +28440,60 @@
     "security_fix_plain": 0.05,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "apple-tv-4k",
+   "version": "27.2",
+   "name": "Apple TV 4K",
+   "judged_at": "2026-10-26T19:30:04+00:00",
+   "notes_chars": 32,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "apple-vision-pro",
+   "version": "27.2",
+   "name": "Apple Vision Pro",
+   "judged_at": "2026-10-26T19:30:04+00:00",
+   "notes_chars": 32,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "apple-watch-ultra-2",
+   "version": "27.2",
+   "name": "Apple Watch Ultra 2 (watchOS)",
+   "judged_at": "2026-10-26T19:30:04+00:00",
+   "notes_chars": 32,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
