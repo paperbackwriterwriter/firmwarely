@@ -526,6 +526,36 @@
    "notes": "Feat: npx/mobile-mcp install detects the MCP clients on the machine and adds mobile-mcp to the ones you pick, or to all of them with --yes (#​531)",
    "source_url": "https://github.com/mobile-next/mobile-mcp/releases/tag/1.0.14",
    "page_url": "https://www.firmwarely.com/devices/mobile-mcp/"
+  },
+  "verdaccio": {
+   "id": "verdaccio",
+   "brand": "Verdaccio",
+   "model": "npm registry",
+   "category": "A",
+   "status": "update",
+   "version": "7.0.2",
+   "previous": "7.0.1",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "Patch Changes: c017767: Remove the HEALTHCHECK from the Docker image. The probe used localhost, which resolves to ::1 on Alpine, while the image listens on IPv4 only by default. The container was always reported as unhealthy even though it served requests normally. The image no longer declares a he…",
+   "source_url": "https://github.com/verdaccio/verdaccio/releases/tag/v7.0.2",
+   "page_url": "https://www.firmwarely.com/devices/verdaccio/"
+  },
+  "trickster": {
+   "id": "trickster",
+   "brand": "Trickster",
+   "model": "HTTP reverse proxy cache",
+   "category": "R",
+   "status": "update",
+   "version": "2.2.0",
+   "previous": "2.1.0",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "Welcome to Trickster 2.2.0! :tada: So. Many. Bleeping. Features! 🤯 Here are the biggest adds: Significant memory usage and performance improvements app-wide Acceleration for 4 more TSDB providers: TimescaleDB (PostgreSQL) GreptimeDB QuestDB VictoriaMetrics IPv4 and v6 Access Control Lists GeoACLs b…",
+   "source_url": "https://github.com/trickstercache/trickster/releases/tag/v2.2.0",
+   "page_url": "https://www.firmwarely.com/devices/trickster/"
   }
  }
 }
