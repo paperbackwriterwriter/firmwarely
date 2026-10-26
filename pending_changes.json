@@ -83,13 +83,13 @@
    "model": "HTTP router and reverse proxy",
    "category": "R",
    "status": "update",
-   "version": "0.28.54",
+   "version": "0.28.56",
    "previous": "0.28.51",
    "released": "2026-10-26",
    "date_known": true,
    "eol": false,
-   "notes": "Changes: build(deps): bump docker/login-action from 4.6.0 to 4.7.0 (#​4380) Bumps docker/login-action from 4.6.0 to 4.7.0. Release notes Sourced from docker/login-action's releases . v4.7.0 Preserve explicit ECR settings in registry-auth by @​crazy-max in docker/login-action#1089 Use registry hosts…",
-   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.54",
+   "notes": "Changes: perf(routesrv): only recompress zones whose routes actually changed (#​4378) formatAndSet rebuilt every zone's compressed routing table whenever the global table changed, even if most zones' content was identical to what was already stored. In the common steady-state case - one availabilit…",
+   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.56",
    "page_url": "https://www.firmwarely.com/devices/skipper/"
   },
   "unpoller": {
@@ -151,6 +151,36 @@
    "notes": "What's new in Kiosk Satellite 2026.10.41: This release brings Kiosk Satellite to the Echo Show 5 Gen 2 on its new LineageOS 18.1 image, with system updates, Amazon's wake word engine and settings that fit the device from the first start. Plugins can now list hidden entities and tell whether music i…",
    "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.10.41",
    "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
+  },
+  "cloudflared": {
+   "id": "cloudflared",
+   "brand": "Cloudflare",
+   "model": "Tunnel daemon",
+   "category": "R",
+   "status": "update",
+   "version": "2026.10.4",
+   "previous": "2026.10.3",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "SHA256 Checksums: cloudflared-amd64.pkg: 81859243be56a49e12ee38bc30c3a0f0ade24af54b59c3ef745fa4ef412e37aa cloudflared-arm64.pkg: 7b5e00c613ad743fead446368478b5f2676fea02965d9e867ac73f285a7a4b8b cloudflared-darwin-amd64.tgz: fdec0f9a1c726f4c10283fc0cd70e602d510c72887b737270433c81a08c883a9 cloudflare…",
+   "source_url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.10.4",
+   "page_url": "https://www.firmwarely.com/devices/cloudflared/"
+  },
+  "langfuse": {
+   "id": "langfuse",
+   "brand": "Langfuse",
+   "model": "LLM observability",
+   "category": "A",
+   "status": "update",
+   "version": "4.70.1",
+   "previous": "4.70.0",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: chore(pricing): remove retired legacy OpenAI snapshots from the model picker chore(deps): bump node to 24.22.1 chore(design-sync): apply fixes from the daily design-system sync chore(design-sync): apply fixes from the daily design-system sync feat(topics): make it work well on mobil…",
+   "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.70.1",
+   "page_url": "https://www.firmwarely.com/devices/langfuse/"
   }
  }
 }
