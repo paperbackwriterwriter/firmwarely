@@ -27738,6 +27738,42 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "kener",
+   "version": "4.1.10",
+   "name": "Kener Status page",
+   "judged_at": "2026-10-26T09:05:33+00:00",
+   "notes_chars": 166,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.85,
+    "security_fix_plain": 0.8,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "rallly",
+   "version": "4.16.3",
+   "name": "Rallly Meeting polls",
+   "judged_at": "2026-10-26T09:05:33+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

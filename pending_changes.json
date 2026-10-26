@@ -1,5 +1,36 @@
 {
- "since": null,
+ "since": "2026-10-26T09:05:07+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "kener": {
+   "id": "kener",
+   "brand": "Kener",
+   "model": "Status page",
+   "category": "A",
+   "status": "update",
+   "version": "4.1.10",
+   "previous": "4.1.9",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: fix(auth): drop the hardcoded fallback secret and warn on example secrets Full Changelog: https://github.com/rajnandan1/kener/compare/v4.1.9...v4.1.10",
+   "source_url": "https://github.com/rajnandan1/kener/releases/tag/v4.1.10",
+   "page_url": "https://www.firmwarely.com/devices/kener/"
+  },
+  "rallly": {
+   "id": "rallly",
+   "brand": "Rallly",
+   "model": "Meeting polls",
+   "category": "A",
+   "status": "update",
+   "version": "4.16.3",
+   "previous": "4.16.2",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "🐛 Poll times saved an hour off around daylight saving changes: The bug. When adding times to a poll, the time saved could be an hour later than the one you picked. It happened in two cases: The week contained a daylight saving change. For example, in a Chicago week starting on the Nov 1 2026 clock …",
+   "source_url": "https://github.com/lukevella/rallly/releases/tag/v4.16.3",
+   "page_url": "https://www.firmwarely.com/devices/rallly/"
+  }
+ }
 }
