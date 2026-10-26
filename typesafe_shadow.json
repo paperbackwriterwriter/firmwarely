@@ -27846,6 +27846,96 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "skipper",
+   "version": "0.28.54",
+   "name": "Skipper HTTP router and reverse proxy",
+   "judged_at": "2026-10-26T10:46:43+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "unpoller",
+   "version": "5.8.3",
+   "name": "UnPoller UniFi metrics exporter",
+   "judged_at": "2026-10-26T10:46:43+00:00",
+   "notes_chars": 201,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.299.37159",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-10-26T10:46:43+00:00",
+   "notes_chars": 23,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "masterdnsvpn",
+   "version": "2026.10.26.100415-5f83ee9",
+   "name": "MasterDnsVPN Advanced DNS tunneling VPN",
+   "judged_at": "2026-10-26T10:46:43+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "kiosk-satellite",
+   "version": "2026.10.41",
+   "name": "Kiosk Satellite Turn any Android device",
+   "judged_at": "2026-10-26T10:46:43+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
