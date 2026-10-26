@@ -28494,6 +28494,60 @@
     "security_fix_plain": 0.06,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.299.73183",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-10-26T20:20:40+00:00",
+   "notes_chars": 47,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "infisical",
+   "version": "0.167.4",
+   "name": "Infisical Secrets manager",
+   "judged_at": "2026-10-26T20:20:40+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "netbird",
+   "version": "0.81.5",
+   "name": "NetBird Mesh VPN",
+   "judged_at": "2026-10-26T20:20:40+00:00",
+   "notes_chars": 267,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.38,
+    "security_fix_plain": 0.58,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

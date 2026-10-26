@@ -113,13 +113,13 @@
    "model": "DNS blocklists",
    "category": "R",
    "status": "update",
-   "version": "37522026.299.37159",
+   "version": "37522026.299.73183",
    "previous": "37522026.298.83421",
    "released": "2026-10-26",
    "date_known": true,
    "eol": false,
-   "notes": "#​12060 #​12059 #​12058",
-   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.299.37159",
+   "notes": "#​12066 #​12065 #​12064 #​12063 #​12062 #​12061",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.299.73183",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   },
   "masterdnsvpn": {
@@ -398,13 +398,13 @@
    "model": "Secrets manager",
    "category": "A",
    "status": "update",
-   "version": "0.167.3",
+   "version": "0.167.4",
    "previous": "0.167.2",
    "released": "2026-10-26",
    "date_known": true,
    "eol": false,
-   "notes": "What's Changed: feat(api): add private v2 batch commit route for batched secret and folder changes (SECRETS-804) chore: rename CLAUDE.md files to AGENTS.md chore(ui): remove the legacy.css compatibility palette feat(agent-vault): member-provided credential fields with personal values and variables …",
-   "source_url": "https://github.com/Infisical/infisical/releases/tag/v0.167.3",
+   "notes": "What's Changed: fix(cros-project-import): return on overview page fix(secret-syncs): stop showing cloudflare workers options on other connection forms feat(ui): make batched secret changes always-on in Secrets Overview (SECRETS-804) improvement(ui): move the Overview quick-add row to the top of the…",
+   "source_url": "https://github.com/Infisical/infisical/releases/tag/v0.167.4",
    "page_url": "https://www.firmwarely.com/devices/infisical/"
   },
   "dagster": {
@@ -601,6 +601,21 @@
    "notes": "View downloadsView release notes",
    "source_url": "https://developer.apple.com/news/releases/?id=10262026g",
    "page_url": "https://www.firmwarely.com/devices/apple-watch-ultra-2/"
+  },
+  "netbird": {
+   "id": "netbird",
+   "brand": "NetBird",
+   "model": "Mesh VPN",
+   "category": "R",
+   "status": "update",
+   "version": "0.81.5",
+   "previous": "0.81.4",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: [client] Validate and bound SSH session requests and channels (#​8344) [client] Bound the SSH session request queue and keep resizes from blocking the session loop (#​8363) Full Changelog: https://github.com/netbirdio/netbird/compare/v0.81.4...v0.81.5",
+   "source_url": "https://github.com/netbirdio/netbird/releases/tag/v0.81.5",
+   "page_url": "https://www.firmwarely.com/devices/netbird/"
   }
  }
 }
