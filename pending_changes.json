@@ -571,6 +571,21 @@
    "notes": "What's Changed: docs: pin the docs site to Node 22.23.4 (Oct 2026 security release) feat: include Gemini 4 Argon in AI release 4 Fix/orphaned build terminal event AI Builder release 4: EE integration and cancellation coverage Full Changelog: https://github.com/ToolJet/ToolJet/compare/v3.20.249-lts.…",
    "source_url": "https://github.com/ToolJet/ToolJet/releases/tag/v3.20.250-lts",
    "page_url": "https://www.firmwarely.com/devices/tooljet/"
+  },
+  "milvus": {
+   "id": "milvus",
+   "brand": "Milvus",
+   "model": "Vector database",
+   "category": "A",
+   "status": "update",
+   "version": "3.0.4",
+   "previous": "3.0.3",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release note is coming soon...",
+   "source_url": "https://github.com/milvus-io/milvus/releases/tag/v3.0.4",
+   "page_url": "https://www.firmwarely.com/devices/milvus/"
   }
  }
 }
