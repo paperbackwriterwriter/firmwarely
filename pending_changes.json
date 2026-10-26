@@ -241,6 +241,51 @@
    "notes": "Tested BrowserBox release. Install with: curl -fsSL browserbox.io/install.sh | bash",
    "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.5.5",
    "page_url": "https://www.firmwarely.com/devices/browserbox/"
+  },
+  "peertube": {
+   "id": "peertube",
+   "brand": "PeerTube",
+   "model": "Video platform",
+   "category": "A",
+   "status": "critical",
+   "version": "8.3.2",
+   "previous": "8.3.1",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "SECURITY: critical Upgrade vulnerable sharp (image processing dependency) that can lead to a RCE with a special crafted SVG file GHSA-wq5f-xc86-pv6w high Fix federation vulnerability where a remote attacker could exploit the redirection of cached remote objects to impersonate actors of another inst…",
+   "source_url": "https://github.com/Chocobozzz/PeerTube/releases/tag/v8.3.2",
+   "page_url": "https://www.firmwarely.com/devices/peertube/"
+  },
+  "limesurvey": {
+   "id": "limesurvey",
+   "brand": "LimeSurvey",
+   "model": "Survey platform",
+   "category": "A",
+   "status": "update",
+   "version": "7.7.0",
+   "previous": "7.5.1",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "7.7.0+261020",
+   "source_url": "https://github.com/LimeSurvey/LimeSurvey/releases/tag/7.7.0%2B261020",
+   "page_url": "https://www.firmwarely.com/devices/limesurvey/"
+  },
+  "pyroscope": {
+   "id": "pyroscope",
+   "brand": "Pyroscope",
+   "model": "Continuous Profiling Platform",
+   "category": "A",
+   "status": "update",
+   "version": "2.4.2",
+   "previous": "2.4.1",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: 10a78e5ef038f8b97d6966bc76f1cf21bb5616ac chore(deps): bump github.com/andybalholm/brotli from v1.1.1 to v1.2.7 (#​5933) As always, feedback is more than welcome, feel free to open issues/discussions. You can reach out to the team using: Slack Github Discussions Github Issues Mailing List…",
+   "source_url": "https://github.com/grafana/pyroscope/releases/tag/v2.4.2",
+   "page_url": "https://www.firmwarely.com/devices/pyroscope/"
   }
  }
 }
