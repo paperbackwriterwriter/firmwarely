@@ -27612,6 +27612,42 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "unpoller",
+   "version": "5.8.2",
+   "name": "UnPoller UniFi metrics exporter",
+   "judged_at": "2026-10-26T03:01:43+00:00",
+   "notes_chars": 217,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "mqttx",
+   "version": "1.13.2",
+   "name": "EMQX MQTTX client",
+   "judged_at": "2026-10-26T03:01:43+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

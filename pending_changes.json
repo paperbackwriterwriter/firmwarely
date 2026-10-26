@@ -263,13 +263,13 @@
    "model": "UniFi metrics exporter",
    "category": "R",
    "status": "update",
-   "version": "5.8.1",
+   "version": "5.8.2",
    "previous": "5.7.0",
-   "released": "2026-10-25",
+   "released": "2026-10-26",
    "date_known": true,
    "eol": false,
-   "notes": "Changelog: ad21ac730b69928f803faf64617d46d26f8bb1dc fix(otelunifi): record switch port PoE current in amps b849720477c730edeb89b5e6593525b0c1a3eaf2 fix: skip null system temperature sensors",
-   "source_url": "https://github.com/unpoller/unpoller/releases/tag/v5.8.1",
+   "notes": "Changelog: 1da022d1908ec5fb096e89f2a617dec6de56a72e fix(otelunifi): record client radio rates in bits per second 031c22e7cc12bcbce611c792ff6622d47cc08e60 fix(otelunifi): record the operating radio channel and tx power",
+   "source_url": "https://github.com/unpoller/unpoller/releases/tag/v5.8.2",
    "page_url": "https://www.firmwarely.com/devices/unpoller/"
   },
   "uvtools": {
@@ -511,6 +511,21 @@
    "notes": "Unpackerr v1 is the release after 0.16.1. It adds a web UI and HTTP API on port 5656, and it changes how config, Whisparr, folder watching, metrics, and a few extract limits work. Read this before you pull latest. Upgrade guide: https://unpackerr.zip/docs/install/upgrading Web UI: https://unpackerr…",
    "source_url": "https://github.com/Unpackerr/unpackerr/releases/tag/v1.0.0",
    "page_url": "https://www.firmwarely.com/devices/unpackerr/"
+  },
+  "mqttx": {
+   "id": "mqttx",
+   "brand": "EMQX",
+   "model": "MQTTX client",
+   "category": "S",
+   "status": "update",
+   "version": "1.13.2",
+   "previous": "1.13.1",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release Note 🎉: 🤖 MQTTX Agent, Dashboard & GZIP Decompression MQTTX 1.13.2 introduces Dashboard for visualizing MQTT data, turns the desktop Copilot into MQTTX Agent, and adds optional GZIP decompression to Desktop and Web. It also improves performance with large Topic Trees, adds per-connection pu…",
+   "source_url": "https://github.com/emqx/MQTTX/releases/tag/v1.13.2",
+   "page_url": "https://www.firmwarely.com/devices/mqttx/"
   }
  }
 }
