@@ -346,6 +346,36 @@
    "notes": "v2026.10.26: This release updates certificate trust following the eMudhra intermediate CA incident. Docker builds now require Ubuntu's corrected CA package, and gRPC connections prefer the OS trust store over the gem's bundled certificates. Changes: Require ca-certificates version 20260816ubuntu0.2…",
    "source_url": "https://github.com/huginn/huginn/releases/tag/v2026.10.26",
    "page_url": "https://www.firmwarely.com/devices/huginn/"
+  },
+  "otel-collector": {
+   "id": "otel-collector",
+   "brand": "OpenTelemetry",
+   "model": "Collector",
+   "category": "A",
+   "status": "update",
+   "version": "1.70.0",
+   "previous": "1.69.0",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "Images and binaries here: https://github.com/open-telemetry/opentelemetry-collector-releases/releases/tag/v0.164.0: End User Changelog: 💡 Enhancements 💡: cmd/mdatagen: Add support for supported_platforms in component metadata, allowing generated component tests to target explicitly supported platfo…",
+   "source_url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.164.0",
+   "page_url": "https://www.firmwarely.com/devices/otel-collector/"
+  },
+  "btcpayserver": {
+   "id": "btcpayserver",
+   "brand": "BTCPay Server",
+   "model": "Bitcoin payment processor",
+   "category": "A",
+   "status": "critical",
+   "version": "2.4.6",
+   "previous": "2.4.5",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release includes broad security hardening for API permissions, untrusted input, generated links, and browser actions. Breaking changes: Invoice email notifications: Remove the legacy per-invoice notificationEmail option; use merchant-controlled email rules instead (#​7672) New features: Mainte…",
+   "source_url": "https://github.com/btcpayserver/btcpayserver/releases/tag/v2.4.6",
+   "page_url": "https://www.firmwarely.com/devices/btcpayserver/"
   }
  }
 }

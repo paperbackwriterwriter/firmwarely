@@ -28188,6 +28188,42 @@
     "security_fix_plain": 0.25,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "otel-collector",
+   "version": "1.70.0",
+   "name": "OpenTelemetry Collector",
+   "judged_at": "2026-10-26T15:15:43+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "btcpayserver",
+   "version": "2.4.6",
+   "name": "BTCPay Server Bitcoin payment processor",
+   "judged_at": "2026-10-26T15:15:43+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.44,
+    "security_fix_plain": 0.76,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
