@@ -28692,6 +28692,96 @@
     "security_fix_plain": 0.21,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "yt-dlp",
+   "version": "2026.10.26",
+   "name": "yt-dlp Media downloader",
+   "judged_at": "2026-10-26T23:10:38+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "onyx",
+   "version": "5.0.1",
+   "name": "Onyx AI platform",
+   "judged_at": "2026-10-26T23:10:39+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "salt",
+   "version": "3008.5",
+   "name": "Salt Project Salt configuration management",
+   "judged_at": "2026-10-26T23:10:39+00:00",
+   "notes_chars": 15,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "uvtools",
+   "version": "7.1.2",
+   "name": "UVtools Resin printer file toolkit",
+   "judged_at": "2026-10-26T23:10:39+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "proxmenux",
+   "version": "1.2.7",
+   "name": "ProxMenux Menu-driven Proxmox VE toolkit",
+   "judged_at": "2026-10-26T23:10:39+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
