@@ -811,6 +811,21 @@
    "notes": "ProxMenux v1.2.7: ProxMenux 1.2.7 brings two new tools. Audit & Report, a new page under Admin in ProxMenux Monitor, documents a Proxmox node, assesses it against forty-three checks and prints the result as a report you can hand to somebody else, next to a journal of everything ProxMenux itself has…",
    "source_url": "https://github.com/MacRimi/ProxMenux/releases/tag/v1.2.7",
    "page_url": "https://www.firmwarely.com/devices/proxmenux/"
+  },
+  "valkey": {
+   "id": "valkey",
+   "brand": "Valkey",
+   "model": "Key-value store",
+   "category": "A",
+   "status": "critical",
+   "version": "9.1.3",
+   "previous": "9.1.2",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "Valkey 9.1.3 - Released Mon 26 October 2026 --------------------------------------------- Upgrade urgency SECURITY: This release includes security fixes we recommend you apply as soon as possible. Security Fixes: GHSA-f4q9-j22m-xqq9: Fix a heap buffer overflow in cluster Pub/Sub message constructio…",
+   "source_url": "https://github.com/valkey-io/valkey/releases/tag/9.1.3",
+   "page_url": "https://www.firmwarely.com/devices/valkey/"
   }
  }
 }
