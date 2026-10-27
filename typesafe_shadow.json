@@ -29160,6 +29160,24 @@
     "security_fix_plain": 0.13,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "bfe",
+   "version": "1.8.9",
+   "name": "BFE Layer 7 load balancer",
+   "judged_at": "2026-10-27T12:28:15+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

@@ -91,6 +91,21 @@
    "notes": "v0.42.4 but with eMudhra CA fix.",
    "source_url": "https://github.com/thanos-io/thanos/releases/tag/v0.42.5",
    "page_url": "https://www.firmwarely.com/devices/thanos/"
+  },
+  "bfe": {
+   "id": "bfe",
+   "brand": "BFE",
+   "model": "Layer 7 load balancer",
+   "category": "R",
+   "status": "update",
+   "version": "1.8.9",
+   "previous": "1.8.8.6",
+   "released": "2026-10-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "Added: Add ai_zero_cost_reason access-log marker (requires bfe-access-pb ›= v0.3.16): why a 2xx request holding an RMB quota plan was charged 0, together with the BillingZeroCost and AbortBillingSkipped module counters (issue #​1414). Requests that never became a model call (batch/files management …",
+   "source_url": "https://github.com/bfenetworks/bfe/releases/tag/v1.8.9",
+   "page_url": "https://www.firmwarely.com/devices/bfe/"
   }
  }
 }
