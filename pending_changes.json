@@ -1,5 +1,51 @@
 {
- "since": null,
+ "since": "2026-10-27T09:05:06+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "n8n": {
+   "id": "n8n",
+   "brand": "n8n",
+   "model": "Workflow automation",
+   "category": "A",
+   "status": "update",
+   "version": "2.45.4",
+   "previous": "2.44.7",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "2.45.4 (2026-10-26): Bug Fixes: core: Recreate removed n8n-sandbox sandboxes and rerun workspace setup (#​41919) (11e279a) core: Start sub-workflow error workflow when a pre-run check fails (#​41977) (9595142) editor: Match navigation plus button hover styling (#​41910) (471c006) editor: Point migr…",
+   "source_url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.45.4",
+   "page_url": "https://www.firmwarely.com/devices/n8n/"
+  },
+  "activepieces": {
+   "id": "activepieces",
+   "brand": "Activepieces",
+   "model": "Workflow automation",
+   "category": "A",
+   "status": "critical",
+   "version": "0.92.3-hotfix",
+   "previous": "0.91.4-hotfix",
+   "released": "2026-10-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Hotfix on top of 0.92.3: chore(docker): upgrade Node.js to 24.22.1 Fixes the Node.js October 2026 security vulnerabilities.",
+   "source_url": "https://github.com/activepieces/activepieces/releases/tag/0.92.3-hotfix.1",
+   "page_url": "https://www.firmwarely.com/devices/activepieces/"
+  },
+  "godoxy": {
+   "id": "godoxy",
+   "brand": "GoDoxy",
+   "model": "Reverse proxy and container manager",
+   "category": "R",
+   "status": "update",
+   "version": "0.32.4",
+   "previous": "0.32.3",
+   "released": "2026-10-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "Bug Fixes: Core/Providers: Runtime statistics reflect provider recovery (10743c6, #​269) Provider names, route counts, errors, and overall health refresh after recovery. WebUI/Routes: Apps and Routes no longer crash on reserved route aliases (https://github.com/yusing/godoxy-webui/commit/b0f46f46c0…",
+   "source_url": "https://github.com/yusing/godoxy/releases/tag/v0.32.4",
+   "page_url": "https://www.firmwarely.com/devices/godoxy/"
+  }
+ }
 }
