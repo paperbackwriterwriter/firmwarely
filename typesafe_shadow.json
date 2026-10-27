@@ -28800,6 +28800,42 @@
     "security_fix_plain": 0.97,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "windmill",
+   "version": "1.850.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-10-27T00:35:34+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "metube",
+   "version": "2026.10.27",
+   "name": "MeTube yt-dlp web UI",
+   "judged_at": "2026-10-27T00:35:34+00:00",
+   "notes_chars": 260,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
