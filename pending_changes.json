@@ -931,6 +931,21 @@
    "notes": "What's Changed: model_prefetch: syncrhonize all graph cleanups Add rope scaling support to MOSS-image [Partner Nodes] Renew partner-node sign-in tokens in API nodes [Partner Nodes] feat(HeyGen): add HeyGen Voice instant clone and text-to-speech [Partner Nodes] feat(ClarityAI): add Crystal Video Ups…",
    "source_url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.43.0",
    "page_url": "https://www.firmwarely.com/devices/comfyui/"
+  },
+  "decky-loader": {
+   "id": "decky-loader",
+   "brand": "Decky",
+   "model": "Steam Deck plugin loader",
+   "category": "C",
+   "status": "update",
+   "version": "3.3.1",
+   "previous": "3.3.0",
+   "released": "2026-10-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Translations update from Weblate allow larger response headers when downloading Decky updates fix: handle plugin store load failures Translations update from Weblate New Contributors: made their first contribution in https://github.com/SteamDeckHomebrew/decky-loader/pull/1000 Full C…",
+   "source_url": "https://github.com/SteamDeckHomebrew/decky-loader/releases/tag/v3.3.1",
+   "page_url": "https://www.firmwarely.com/devices/decky-loader/"
   }
  }
 }
