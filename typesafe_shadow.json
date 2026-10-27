@@ -29286,6 +29286,60 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "discourse",
+   "version": "2026.11.0-latest",
+   "name": "Discourse Forum platform",
+   "judged_at": "2026-10-27T13:23:02+00:00",
+   "notes_chars": 17,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.07,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "arc",
+   "version": "4.1.4",
+   "name": "Arc Redpill loader for Synology DSM",
+   "judged_at": "2026-10-27T13:23:02+00:00",
+   "notes_chars": 241,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "docker-android",
+   "version": "3.9.0-p1",
+   "name": "docker-android Emulated phones in containers",
+   "judged_at": "2026-10-27T13:23:02+00:00",
+   "notes_chars": 172,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
