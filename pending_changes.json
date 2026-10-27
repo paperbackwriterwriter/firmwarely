@@ -143,13 +143,13 @@
    "model": "OpenVAS scanner",
    "category": "A",
    "status": "update",
-   "version": "23.52.4",
+   "version": "23.52.5",
    "previous": "23.52.3",
    "released": "2026-10-27",
    "date_known": true,
    "eol": false,
-   "notes": "[23.52.4] - 2026-10-27: Bug Fixes: port datatype in results 0767222d5 [23.52.4]: https://github.com/greenbone/openvas-scanner/compare/v23.52.3...v23.52.4",
-   "source_url": "https://github.com/greenbone/openvas-scanner/releases/tag/v23.52.4",
+   "notes": "[23.52.5] - 2026-10-27: Bug Fixes: SNMP credentials handling 147b76582 [23.52.5]: https://github.com/greenbone/openvas-scanner/compare/v23.52.4...v23.52.5",
+   "source_url": "https://github.com/greenbone/openvas-scanner/releases/tag/v23.52.5",
    "page_url": "https://www.firmwarely.com/devices/openvas-scanner/"
   },
   "formbricks": {
@@ -226,6 +226,51 @@
    "notes": "Changes: Using the latest base image v3.9.0-p1 Bump coverage to version 7.17.0 Bump fastmcp to version 4.1.3 Bump python to version 3.15.0 Bump setuptools to version 84.2.1",
    "source_url": "https://github.com/budtmo/docker-android/releases/tag/v3.9.0-p1",
    "page_url": "https://www.firmwarely.com/devices/docker-android/"
+  },
+  "cloudflared": {
+   "id": "cloudflared",
+   "brand": "Cloudflare",
+   "model": "Tunnel daemon",
+   "category": "R",
+   "status": "update",
+   "version": "2026.10.5",
+   "previous": "2026.10.4",
+   "released": "2026-10-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "SHA256 Checksums: cloudflared-amd64.pkg: 37ff61f3f85cae776a6036d5fe506d2457a17d824e66e215732466791778dfdc cloudflared-arm64.pkg: 5cf65ba3b1336a07deb9e2754081205b219bbb621e28020e0acf23b859f0fb5d cloudflared-darwin-amd64.tgz: cb09afb9b4d0a4730de477ac710aebb6107568930a8345775629bf264f70c284 cloudflare…",
+   "source_url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.10.5",
+   "page_url": "https://www.firmwarely.com/devices/cloudflared/"
+  },
+  "crowdsec": {
+   "id": "crowdsec",
+   "brand": "CrowdSec",
+   "model": "Intrusion prevention",
+   "category": "R",
+   "status": "critical",
+   "version": "1.8.2",
+   "previous": "1.8.1",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "Version 1.8.2: Brings custom JS fingerprinting capabilities to the bot detection feature, allowing both users and us to distribute detection rules directly via the hub. Brings rate limiting feature to the WAF. Brings performance improvements to the Security Engine, optimizing both memory copy behav…",
+   "source_url": "https://github.com/crowdsecurity/crowdsec/releases/tag/v1.8.2",
+   "page_url": "https://www.firmwarely.com/devices/crowdsec/"
+  },
+  "aily-blockly": {
+   "id": "aily-blockly",
+   "brand": "Aily",
+   "model": "Blockly AI IDE for Arduino",
+   "category": "M",
+   "status": "update",
+   "version": "0.9.108",
+   "previous": "0.9.107",
+   "released": "2026-10-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "v0.9.108: Changes: ✨ New Features Cloud builds now support recipe uploads and allow users to manually continue with a local build after a cloud compilation failure. 🐛 Bug Fixes Fixed dependency installation errors when cloud compilation is enabled. Improved ABS recovery by preserving drafts, protec…",
+   "source_url": "https://github.com/ailyProject/aily-blockly/releases/tag/v0.9.108",
+   "page_url": "https://www.firmwarely.com/devices/aily-blockly/"
   }
  }
 }

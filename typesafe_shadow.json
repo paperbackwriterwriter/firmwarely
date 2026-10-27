@@ -29340,6 +29340,78 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "openvas-scanner",
+   "version": "23.52.5",
+   "name": "Greenbone OpenVAS scanner",
+   "judged_at": "2026-10-27T14:15:09+00:00",
+   "notes_chars": 154,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.08,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "cloudflared",
+   "version": "2026.10.5",
+   "name": "Cloudflare Tunnel daemon",
+   "judged_at": "2026-10-27T14:15:09+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "crowdsec",
+   "version": "1.8.2",
+   "name": "CrowdSec Intrusion prevention",
+   "judged_at": "2026-10-27T14:15:09+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "aily-blockly",
+   "version": "0.9.108",
+   "name": "Aily Blockly AI IDE for Arduino",
+   "judged_at": "2026-10-27T14:15:09+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
