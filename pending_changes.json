@@ -916,6 +916,21 @@
    "notes": "Full Changelog: https://github.com/pomerium/pomerium/compare/v0.33.4...v0.33.5",
    "source_url": "https://github.com/pomerium/pomerium/releases/tag/v0.33.5",
    "page_url": "https://www.firmwarely.com/devices/pomerium/"
+  },
+  "comfyui": {
+   "id": "comfyui",
+   "brand": "ComfyUI",
+   "model": "Diffusion workflow UI",
+   "category": "A",
+   "status": "update",
+   "version": "0.43.0",
+   "previous": "0.42.1",
+   "released": "2026-10-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: model_prefetch: syncrhonize all graph cleanups Add rope scaling support to MOSS-image [Partner Nodes] Renew partner-node sign-in tokens in API nodes [Partner Nodes] feat(HeyGen): add HeyGen Voice instant clone and text-to-speech [Partner Nodes] feat(ClarityAI): add Crystal Video Ups…",
+   "source_url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.43.0",
+   "page_url": "https://www.firmwarely.com/devices/comfyui/"
   }
  }
 }
