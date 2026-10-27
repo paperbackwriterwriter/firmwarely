@@ -856,6 +856,36 @@
    "notes": "Docker images have been built and pushed: Docker Hub: alexta69/metube:latest alexta69/metube:2026.10.27 GitHub Container Registry: ghcr.io/alexta69/metube:latest ghcr.io/alexta69/metube:2026.10.27 Changes: upgrade yt-dlp from 2026.10.21 to 2026.10.26 (cf16674)",
    "source_url": "https://github.com/alexta69/metube/releases/tag/2026.10.27",
    "page_url": "https://www.firmwarely.com/devices/metube/"
+  },
+  "duplicacy": {
+   "id": "duplicacy",
+   "brand": "Duplicacy",
+   "model": "Cloud backup tool",
+   "category": "N",
+   "status": "update",
+   "version": "3.3.0",
+   "previous": "3.2.5",
+   "released": "2026-10-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "Verify the chunk id of every chunk before upload: https://github.com/gilbertchen/duplicacy/commit/54f97522bff9df8be6797873203310ccbf5a5b00 Added an option to store metadata chunks separately from file chunks: https://github.com/gilbertchen/duplicacy/commit/0c0392d1655e5e7807fb76169980e55c66cbaece B…",
+   "source_url": "https://github.com/gilbertchen/duplicacy/releases/tag/v3.3.0",
+   "page_url": "https://www.firmwarely.com/devices/duplicacy/"
+  },
+  "coder": {
+   "id": "coder",
+   "brand": "Coder",
+   "model": "Remote dev environments",
+   "category": "A",
+   "status": "update",
+   "version": "2.37.7",
+   "previous": "2.37.6",
+   "released": "2026-10-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "## Stable (since October 27, 2026) Changelog: Bug fixes: Bump Go to 1.26.10 and terraform to 1.16.7 (backport 2.37) (#​31303, b40ba6eef4) Tests: Server: Renew the expired TLS test certificate (#​30922, 9b3c46726e) Chores: Bump github.com/andybalholm/brotli to v1.2.7 (#​31231, c1d30367a8) () Compare…",
+   "source_url": "https://github.com/coder/coder/releases/tag/v2.37.7",
+   "page_url": "https://www.firmwarely.com/devices/coder/"
   }
  }
 }
