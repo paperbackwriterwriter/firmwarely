@@ -406,6 +406,51 @@
    "notes": "What's Changed: Features: feat(ai-gateway): record model, key owner, byte and upstream error facts on generations feat(ai-gateway): product analytics for setup, credentials, invites, keys and model access feat(ai-gateway): restore empty-state placeholders for providers, models and gateway API keys …",
    "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.71.0",
    "page_url": "https://www.firmwarely.com/devices/langfuse/"
+  },
+  "netbox": {
+   "id": "netbox",
+   "brand": "NetBox Labs",
+   "model": "NetBox",
+   "category": "R",
+   "status": "update",
+   "version": "4.7.4",
+   "previous": "4.7.3",
+   "released": "2026-10-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "[!WARNING] This release upgrades the sorl-thumbnail dependency to v13.4.0, which fixes how cached image thumbnails resolve their storage backend. If your STORAGES configuration defines OPTIONS for a BACKEND path which re-exports a class defined elsewhere (for example, storages.backends.s3boto3.S3Bo…",
+   "source_url": "https://github.com/netbox-community/netbox/releases/tag/v4.7.4",
+   "page_url": "https://www.firmwarely.com/devices/netbox/"
+  },
+  "konnected-esphome": {
+   "id": "konnected-esphome",
+   "brand": "Konnected",
+   "model": "ESPHome firmware",
+   "category": "S",
+   "status": "critical",
+   "version": "2026.10.1",
+   "previous": "2026.10.0",
+   "released": "2026-10-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release fixes GDO blaQ crashes on ESPHome 2026.10 and updates gdolib to v1.3.0. The gdolib update reports a disconnected Security+ 2.0 opener as unsynced, fixes the Security+ 1.0 wall button getting stuck at Pressed, and makes partial closes stop where they should on jackshaft openers. It is b…",
+   "source_url": "https://github.com/konnected-io/konnected-esphome/releases/tag/2026.10.1",
+   "page_url": "https://www.firmwarely.com/devices/konnected-esphome/"
+  },
+  "ghost": {
+   "id": "ghost",
+   "brand": "Ghost",
+   "model": "Publishing platform",
+   "category": "A",
+   "status": "update",
+   "version": "6.73.0",
+   "previous": "6.72.0",
+   "released": "2026-10-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "🐛 Fixed member imports slowing down on sites with many labels - Aileen Booker 🐛 Fixed reordering gallery images removing them from other galleries (#​31761) - Aubaid 🐛 Fixed bulk-added tags being treated as the primary tag in filters (#​32046) - Ujjawal Yadav 🐛 Fixed {{encode}} outputting \"[object …",
+   "source_url": "https://github.com/TryGhost/Ghost/releases/tag/v6.73.0",
+   "page_url": "https://www.firmwarely.com/devices/ghost/"
   }
  }
 }
