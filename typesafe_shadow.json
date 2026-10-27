@@ -29178,6 +29178,114 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "bfe",
+   "version": "1.8.9.1",
+   "name": "BFE Layer 7 load balancer",
+   "judged_at": "2026-10-27T13:19:04+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "home-assistant-os",
+   "version": "18.4",
+   "name": "Home Assistant Operating System (Green / Yellow)",
+   "judged_at": "2026-10-27T13:19:04+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.08,
+    "security_fix_plain": 0.51,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "healthchecks",
+   "version": "5.0.3",
+   "name": "Healthchecks Cron job monitor",
+   "judged_at": "2026-10-27T13:19:04+00:00",
+   "notes_chars": 68,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "openvas-scanner",
+   "version": "23.52.4",
+   "name": "Greenbone OpenVAS scanner",
+   "judged_at": "2026-10-27T13:19:04+00:00",
+   "notes_chars": 153,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "formbricks",
+   "version": "6.1.2",
+   "name": "Formbricks Surveys",
+   "judged_at": "2026-10-27T13:19:04+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.53,
+    "security_fix_plain": 0.3,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "kiosk-satellite",
+   "version": "2026.10.42",
+   "name": "Kiosk Satellite Turn any Android device",
+   "judged_at": "2026-10-27T13:19:04+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
