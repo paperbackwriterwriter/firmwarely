@@ -908,13 +908,13 @@
    "model": "Identity-aware access proxy",
    "category": "R",
    "status": "update",
-   "version": "0.33.5",
+   "version": "0.33.6",
    "previous": "0.33.4",
    "released": "2026-10-27",
    "date_known": true,
    "eol": false,
-   "notes": "Full Changelog: https://github.com/pomerium/pomerium/compare/v0.33.4...v0.33.5",
-   "source_url": "https://github.com/pomerium/pomerium/releases/tag/v0.33.5",
+   "notes": "What's Changed: Changed: fix: update distroless CA bundles (0.33) Full Changelog: https://github.com/pomerium/pomerium/compare/v0.33.5...v0.33.6",
+   "source_url": "https://github.com/pomerium/pomerium/releases/tag/v0.33.6",
    "page_url": "https://www.firmwarely.com/devices/pomerium/"
   },
   "comfyui": {
