@@ -961,6 +961,21 @@
    "notes": "Changes:: 881661d6ce92fae644443adc4a4f65ce247feabd torrenttip: bump domain 5b789e23f4484fcc8b548157501d87541e6a3bdb torrentsome: bump domain 71567ab94ad68d191c4d99b73939acf3173d00c3 add UATorrent a semi-pivate site. resolves #​17221 f1ba1c8522130ff2a43fe8ee7f438f03abb01d85 pornorip: switch to small…",
    "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2932",
    "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "tandoor-recipes": {
+   "id": "tandoor-recipes",
+   "brand": "Tandoor",
+   "model": "Recipes",
+   "category": "A",
+   "status": "critical",
+   "version": "2.7.2",
+   "previous": "2.7.1",
+   "released": "2026-10-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "improved hide \"accept privacy\" checkbox when no privacy url is given improved AI recipe import reliability #​4829 fixed unauthorized error message on login page and recipe share page #​4889 fixed missing LDAP dependency #​4887 fixed missing CSRF token on SignUp page failing signup from invite link …",
+   "source_url": "https://github.com/TandoorRecipes/recipes/releases/tag/2.7.2",
+   "page_url": "https://www.firmwarely.com/devices/tandoor-recipes/"
   }
  }
 }
