@@ -257,7 +257,7 @@
   <url><loc>https://www.firmwarely.com/devices/handbrake/</loc><lastmod>2026-06-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/dietpi/</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/armbian/</loc><lastmod>2026-10-26</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/grafana/</loc><lastmod>2026-10-13</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/grafana/</loc><lastmod>2026-10-27</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/prometheus/</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/loki/</loc><lastmod>2026-10-20</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/victoriametrics/</loc><lastmod>2026-10-26</lastmod></url>
@@ -721,7 +721,7 @@
   <url><loc>https://www.firmwarely.com/devices/osquery/</loc><lastmod>2026-10-09</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/openobserve/</loc><lastmod>2026-10-20</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/bettercap/</loc><lastmod>2026-05-11</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/thanos/</loc><lastmod>2026-07-30</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/thanos/</loc><lastmod>2026-10-27</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/bottom/</loc><lastmod>2026-08-27</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/amlogic-s9xxx-openwrt/</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/yaof/</loc><lastmod>2026-10-18</lastmod></url>

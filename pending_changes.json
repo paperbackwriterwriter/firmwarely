@@ -61,6 +61,36 @@
    "notes": "#​12075 #​12073 #​12072 #​12071 #​12070 #​12069 #​12068",
    "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.300.38516",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "grafana": {
+   "id": "grafana",
+   "brand": "Grafana",
+   "model": "Dashboards",
+   "category": "A",
+   "status": "critical",
+   "version": "13.3.0",
+   "previous": "13.2.4",
+   "released": "2026-10-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "Download page What's new highlights Security: Fix CVE-2026-100105 Security: Fix CVE-2026-13719 Security: Fix CVE-2026-13720 Security: Fix CVE-2026-15577 Security: Fix CVE-2026-33374 Security: Fix CVE-2026-81841 Security: Fix CVE-2026-88858 Security: Fix CVE-2026-88967 Security: Fix CVE-2026-93294 S…",
+   "source_url": "https://github.com/grafana/grafana/releases/tag/v13.3.0",
+   "page_url": "https://www.firmwarely.com/devices/grafana/"
+  },
+  "thanos": {
+   "id": "thanos",
+   "brand": "Thanos",
+   "model": "Highly available Prometheus setup",
+   "category": "N",
+   "status": "update",
+   "version": "0.42.5",
+   "previous": "0.42.4",
+   "released": "2026-10-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "v0.42.4 but with eMudhra CA fix.",
+   "source_url": "https://github.com/thanos-io/thanos/releases/tag/v0.42.5",
+   "page_url": "https://www.firmwarely.com/devices/thanos/"
   }
  }
 }

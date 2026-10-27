@@ -29124,6 +29124,42 @@
     "security_fix_plain": 0.04,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "grafana",
+   "version": "13.3.0",
+   "name": "Grafana Dashboards",
+   "judged_at": "2026-10-27T11:37:39+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.99,
+    "security_fix_plain": 0.96,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "thanos",
+   "version": "0.42.5",
+   "name": "Thanos Highly available Prometheus setup",
+   "judged_at": "2026-10-27T11:37:39+00:00",
+   "notes_chars": 32,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.13,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
