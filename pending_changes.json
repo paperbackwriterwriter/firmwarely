@@ -46,6 +46,21 @@
    "notes": "Bug Fixes: Core/Providers: Runtime statistics reflect provider recovery (10743c6, #​269) Provider names, route counts, errors, and overall health refresh after recovery. WebUI/Routes: Apps and Routes no longer crash on reserved route aliases (https://github.com/yusing/godoxy-webui/commit/b0f46f46c0…",
    "source_url": "https://github.com/yusing/godoxy/releases/tag/v0.32.4",
    "page_url": "https://www.firmwarely.com/devices/godoxy/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.300.38516",
+   "previous": "37522026.299.73183",
+   "released": "2026-10-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​12075 #​12073 #​12072 #​12071 #​12070 #​12069 #​12068",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.300.38516",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   }
  }
 }
