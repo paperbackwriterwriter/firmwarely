@@ -29718,6 +29718,78 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "aily-blockly",
+   "version": "0.9.109",
+   "name": "Aily Blockly AI IDE for Arduino",
+   "judged_at": "2026-10-27T17:38:12+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "directus",
+   "version": "12.6.0",
+   "name": "Directus Headless CMS",
+   "judged_at": "2026-10-27T17:38:12+00:00",
+   "notes_chars": 16,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "agentgateway",
+   "version": "1.7.0",
+   "name": "agentgateway AI agent and MCP proxy",
+   "judged_at": "2026-10-27T17:38:12+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "tianji",
+   "version": "1.33.13",
+   "name": "Tianji Website analytics and uptime monitor",
+   "judged_at": "2026-10-27T17:38:12+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

@@ -263,13 +263,13 @@
    "model": "Blockly AI IDE for Arduino",
    "category": "M",
    "status": "update",
-   "version": "0.9.108",
+   "version": "0.9.109",
    "previous": "0.9.107",
    "released": "2026-10-27",
    "date_known": true,
    "eol": false,
-   "notes": "v0.9.108: Changes: ✨ New Features Cloud builds now support recipe uploads and allow users to manually continue with a local build after a cloud compilation failure. 🐛 Bug Fixes Fixed dependency installation errors when cloud compilation is enabled. Improved ABS recovery by preserving drafts, protec…",
-   "source_url": "https://github.com/ailyProject/aily-blockly/releases/tag/v0.9.108",
+   "notes": "v0.9.109: Changes: ✨ New Features Cloud builds now support recipe uploads and allow users to manually continue with a local build after a cloud compilation failure. 🐛 Bug Fixes Fixed dependency installation errors when cloud compilation is enabled. Improved ABS recovery by preserving drafts, protec…",
+   "source_url": "https://github.com/ailyProject/aily-blockly/releases/tag/v0.9.109",
    "page_url": "https://www.firmwarely.com/devices/aily-blockly/"
   },
   "ubiquiti-unifi-dream-machine-se": {
@@ -511,6 +511,51 @@
    "notes": "Lantern v10.0.4 Release Notes: New Features: iOS Widgets: Added support for iOS widgets to provide quick access to VPN controls from the home screen Android TV Support: Added home-screen launcher, landscape layout, and D-pad VPN toggle for Android TV devices Per-Server Latency Display: Server list …",
    "source_url": "https://github.com/getlantern/lantern/releases/tag/v10.0.4",
    "page_url": "https://www.firmwarely.com/devices/lantern/"
+  },
+  "directus": {
+   "id": "directus",
+   "brand": "Directus",
+   "model": "Headless CMS",
+   "category": "A",
+   "status": "update",
+   "version": "12.6.0",
+   "previous": "12.5.1",
+   "released": "2026-10-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "Directus v12.6.0",
+   "source_url": "https://github.com/directus/directus/releases/tag/v12.6.0",
+   "page_url": "https://www.firmwarely.com/devices/directus/"
+  },
+  "agentgateway": {
+   "id": "agentgateway",
+   "brand": "agentgateway",
+   "model": "AI agent and MCP proxy",
+   "category": "R",
+   "status": "update",
+   "version": "1.7.0",
+   "previous": "1.6.0",
+   "released": "2026-10-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "🎉 Welcome to the 1.7.0 release of the agentgateway project! Agentgateway 1.7 knows more about your models and your traffic than ever. The model catalog now knows each model's context window, modalities, and capabilities, and shares them through /v1/models and CEL. Costs reflect the service tier tha…",
+   "source_url": "https://github.com/agentgateway/agentgateway/releases/tag/v1.7.0",
+   "page_url": "https://www.firmwarely.com/devices/agentgateway/"
+  },
+  "tianji": {
+   "id": "tianji",
+   "brand": "Tianji",
+   "model": "Website analytics and uptime monitor",
+   "category": "A",
+   "status": "update",
+   "version": "1.33.13",
+   "previous": "1.33.12",
+   "released": "2026-10-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.33.13 (2026-10-27): Features: ai-gateway: add direct image request routes (d73a7ee) auth: add Redis-backed authentication rate limits (df412a0) Bug Fixes: ai-gateway: support unparsed streaming passthrough (fe6e8fe) auth: clarify rate limit and availability errors (f5cad48) metrics: expose bounde…",
+   "source_url": "https://github.com/msgbyte/tianji/releases/tag/v1.33.13",
+   "page_url": "https://www.firmwarely.com/devices/tianji/"
   }
  }
 }
