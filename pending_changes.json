@@ -451,6 +451,66 @@
    "notes": "🐛 Fixed member imports slowing down on sites with many labels - Aileen Booker 🐛 Fixed reordering gallery images removing them from other galleries (#​31761) - Aubaid 🐛 Fixed bulk-added tags being treated as the primary tag in filters (#​32046) - Ujjawal Yadav 🐛 Fixed {{encode}} outputting \"[object …",
    "source_url": "https://github.com/TryGhost/Ghost/releases/tag/v6.73.0",
    "page_url": "https://www.firmwarely.com/devices/ghost/"
+  },
+  "synapse": {
+   "id": "synapse",
+   "brand": "Element",
+   "model": "Synapse Matrix server",
+   "category": "A",
+   "status": "update",
+   "version": "1.164.0",
+   "previous": "1.163.2",
+   "released": "2026-10-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: https://github.com/element-hq/synapse/blob/release-v1.164/CHANGES.md",
+   "source_url": "https://github.com/element-hq/synapse/releases/tag/v1.164.0",
+   "page_url": "https://www.firmwarely.com/devices/synapse/"
+  },
+  "hugo": {
+   "id": "hugo",
+   "brand": "Hugo",
+   "model": "Static site generator",
+   "category": "A",
+   "status": "critical",
+   "version": "0.169.0",
+   "previous": "0.168.0",
+   "released": "2026-10-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "The main motivation behind this release is to get out a build with Go 1.27.3, which blocks trust in a small set of intermediate certificates due to specific security concerns around their operation. See the eMudhra incident for more information. This affects Hugo features that fetch remote resource…",
+   "source_url": "https://github.com/gohugoio/hugo/releases/tag/v0.169.0",
+   "page_url": "https://www.firmwarely.com/devices/hugo/"
+  },
+  "akaunting": {
+   "id": "akaunting",
+   "brand": "Akaunting",
+   "model": "Accounting",
+   "category": "A",
+   "status": "update",
+   "version": "3.3.0",
+   "previous": "3.2.4",
+   "released": "2026-10-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "Added: Add square crop flow for company logo uploads (#​3409) Changed: Improving report filters.. Improving account management (#​3408) Add validate relation ids (#​3400) Complete missing Turkish translations (#​3406) Fixed: Invoice PDF layout broken in 3.2.4 (LTR) — alignment/float rules gated beh…",
+   "source_url": "https://github.com/akaunting/akaunting/releases/tag/3.3.0",
+   "page_url": "https://www.firmwarely.com/devices/akaunting/"
+  },
+  "lantern": {
+   "id": "lantern",
+   "brand": "Lantern",
+   "model": "Censorship circumvention VPN",
+   "category": "R",
+   "status": "update",
+   "version": "10.0.4",
+   "previous": "10.0.0",
+   "released": "2026-10-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "Lantern v10.0.4 Release Notes: New Features: iOS Widgets: Added support for iOS widgets to provide quick access to VPN controls from the home screen Android TV Support: Added home-screen launcher, landscape layout, and D-pad VPN toggle for Android TV devices Per-Server Latency Display: Server list …",
+   "source_url": "https://github.com/getlantern/lantern/releases/tag/v10.0.4",
+   "page_url": "https://www.firmwarely.com/devices/lantern/"
   }
  }
 }
