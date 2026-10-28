@@ -30636,6 +30636,60 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "coolify",
+   "version": "4.5.3",
+   "name": "Coolify Self-hosting platform",
+   "judged_at": "2026-10-28T14:56:55+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "home-assistant-supervisor",
+   "version": "2026.10.5",
+   "name": "Home Assistant Supervisor",
+   "judged_at": "2026-10-28T14:56:55+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.85,
+    "security_fix_plain": 0.71,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "cryptomator",
+   "version": "1.19.5",
+   "name": "Cryptomator Cloud encryption",
+   "judged_at": "2026-10-28T14:56:55+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.98,
+    "security_fix_plain": 0.93,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

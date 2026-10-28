@@ -188,13 +188,13 @@
    "model": "Self-hosting platform",
    "category": "A",
    "status": "update",
-   "version": "4.5.2",
+   "version": "4.5.3",
    "previous": "4.5.1",
    "released": "2026-10-28",
    "date_known": true,
    "eol": false,
-   "notes": "Fixes: Fixed pull request previews that existed before the upgrade breaking on redeploy. They keep the production values they were first deployed with. New previews use only their own variables. Fixed 503 errors from Traefik during the first rolling update after you saved application settings. The …",
-   "source_url": "https://github.com/coollabsio/coolify/releases/tag/v4.5.2",
+   "notes": "Fixes: Kept the Dockerfile HEALTHCHECK of existing applications. Since v4.5.1, the Coolify healthcheck replaced it. Fixed Docker Compose builds that failed with \"required variable is missing a value\" when a required variable was set only for runtime. (#​12363) Fixed Railpack builds that failed when…",
+   "source_url": "https://github.com/coollabsio/coolify/releases/tag/v4.5.3",
    "page_url": "https://www.firmwarely.com/devices/coolify/"
   },
   "openvas-scanner": {
@@ -331,6 +331,36 @@
    "notes": "Fixed: Sync: Every Radarr sync failed when Radarr 7 uses OIDC login. Sync also no longer fails when Sonarr or Radarr reports a setting value that Recyclarr does not know yet Sync: When Sonarr or Radarr sends a reply Recyclarr cannot read, the error now says what failed instead of showing only HTTP …",
    "source_url": "https://github.com/recyclarr/recyclarr/releases/tag/v8.8.1",
    "page_url": "https://www.firmwarely.com/devices/recyclarr/"
+  },
+  "home-assistant-supervisor": {
+   "id": "home-assistant-supervisor",
+   "brand": "Home Assistant",
+   "model": "Supervisor",
+   "category": "S",
+   "status": "update",
+   "version": "2026.10.5",
+   "previous": "2026.10.4",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": ":sparkles: New Features: #​7403 Use the new URL of the official apps repository #​7420 Listen for Core on a Unix socket #​7399 Add check to clear reboot required issues after a host reboot :bug: Bug Fixes: Do not follow symlinks leaving the store repository when serving app assets (GHSA-74w8-9vgx-w…",
+   "source_url": "https://github.com/home-assistant/supervisor/releases/tag/2026.10.5",
+   "page_url": "https://www.firmwarely.com/devices/home-assistant-supervisor/"
+  },
+  "cryptomator": {
+   "id": "cryptomator",
+   "brand": "Cryptomator",
+   "model": "Cloud encryption",
+   "category": "A",
+   "status": "critical",
+   "version": "1.19.5",
+   "previous": "1.19.4",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "For a comprehensive view of changes, read the CHANGELOG. Security Fixes 🚨: Windows: Fixed a standard user being able to plant the admin config C:\\ProgramData\\Cryptomator\\config.properties before installation and thereby make other users load arbitrary plugins. The installer now secures the director…",
+   "source_url": "https://github.com/cryptomator/cryptomator/releases/tag/1.19.5",
+   "page_url": "https://www.firmwarely.com/devices/cryptomator/"
   }
  }
 }
