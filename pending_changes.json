@@ -391,6 +391,21 @@
    "notes": "2.588",
    "source_url": "https://github.com/jenkinsci/jenkins/releases/tag/jenkins-2.588",
    "page_url": "https://www.firmwarely.com/devices/jenkins/"
+  },
+  "songloft": {
+   "id": "songloft",
+   "brand": "Songloft",
+   "model": "Music server",
+   "category": "A",
+   "status": "update",
+   "version": "2.13.7",
+   "previous": "2.13.5",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "Songloft v2.13.7 安装说明（中文）: 在本页 Assets 中按用途、操作系统和 CPU 架构选择文件：amd64 / x64 为 Intel/AMD 64 位，arm64 为 ARM 64 位，armv7 / arm-v7 为 ARM 32 位。 | 用途 | 文件 | 使用方式 | | --- | --- | --- | | 服务器 Full | songloft- - （Windows 带 .exe） | 包含 Flutter Web 界面。下载后启动，浏览器访问服务器的 58091 端口。 | | 服务器 Lite | songloft- - -lite（Window…",
+   "source_url": "https://github.com/songloft-org/songloft/releases/tag/v2.13.7",
+   "page_url": "https://www.firmwarely.com/devices/songloft/"
   }
  }
 }
