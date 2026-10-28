@@ -30960,6 +30960,60 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "gatus",
+   "version": "5.38.0",
+   "name": "Gatus Health dashboard",
+   "judged_at": "2026-10-28T20:57:44+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.17,
+    "security_fix_plain": 0.23,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "erpnext",
+   "version": "16.53.0",
+   "name": "Frappe ERPNext",
+   "judged_at": "2026-10-28T20:57:45+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "sentry",
+   "version": "26.10.1",
+   "name": "Sentry Error tracking and performance monitoring",
+   "judged_at": "2026-10-28T20:57:45+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

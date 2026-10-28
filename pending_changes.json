@@ -571,6 +571,51 @@
    "notes": "Information: Release Notes Dependencies: Addons: 26.10.28 Modules: 26.10.19 Configs: 26.09.06 Patches: 26.05.30 Custom: 26.10.28 LKMs: 26.10.27 Apex: 2026.02.3 Build: 2026-10-28 19:05",
    "source_url": "https://github.com/AuxXxilium/arc/releases/tag/4.2.2",
    "page_url": "https://www.firmwarely.com/devices/arc/"
+  },
+  "gatus": {
+   "id": "gatus",
+   "brand": "Gatus",
+   "model": "Health dashboard",
+   "category": "A",
+   "status": "update",
+   "version": "5.38.0",
+   "previous": "5.37.0",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: feat(alerting): add Resend alerting provider fix(maintenance): validate maintenance windows for external, DNS and SSH endpoints fix(alerting): Redact telegram token from errors on send failure fix(websocket): apply the client timeout to reads and writes fix(ssh): support keyboard-in…",
+   "source_url": "https://github.com/TwiN/gatus/releases/tag/v5.38.0",
+   "page_url": "https://www.firmwarely.com/devices/gatus/"
+  },
+  "erpnext": {
+   "id": "erpnext",
+   "brand": "Frappe",
+   "model": "ERPNext",
+   "category": "A",
+   "status": "update",
+   "version": "16.53.0",
+   "previous": "16.52.1",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "Features: Rebuilds BOM Creator as a design workspace for importing STEP or CSV files, organizing parts and quantities, and creating bills of materials with optional production operations; STEP designs can also be viewed in 3D. Adds tools to create and compare design revisions. (https://github.com/f…",
+   "source_url": "https://github.com/frappe/erpnext/releases/tag/v16.53.0",
+   "page_url": "https://www.firmwarely.com/devices/erpnext/"
+  },
+  "sentry": {
+   "id": "sentry",
+   "brand": "Sentry",
+   "model": "Error tracking and performance monitoring",
+   "category": "A",
+   "status": "update",
+   "version": "26.10.1",
+   "previous": "26.10.0",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "New Features ✨: Components: Add split panel Add menu Add spinner Conversations: Show extraction spans like decision spans and Merge decision span tabs into one Dashboards: Resolve prebuilt dashboard configs through a flag-aware helper Persist widget query transformations Add flag for web vitals das…",
+   "source_url": "https://github.com/getsentry/sentry/releases/tag/26.10.1",
+   "page_url": "https://www.firmwarely.com/devices/sentry/"
   }
  }
 }
