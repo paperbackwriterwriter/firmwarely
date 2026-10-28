@@ -30276,6 +30276,78 @@
     "security_fix_plain": 0.09,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "wallabag",
+   "version": "2.6.15",
+   "name": "wallabag Read-it-later",
+   "judged_at": "2026-10-28T10:43:17+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "strapi",
+   "version": "5.60.0",
+   "name": "Strapi Headless CMS",
+   "judged_at": "2026-10-28T10:43:17+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "etherpad",
+   "version": "3.3.12",
+   "name": "Etherpad Collaborative editor",
+   "judged_at": "2026-10-28T10:43:17+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.99,
+    "security_fix_plain": 0.98,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.301.37732",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-10-28T10:43:17+00:00",
+   "notes_chars": 103,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

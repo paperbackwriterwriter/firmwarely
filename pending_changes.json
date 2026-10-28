@@ -31,6 +31,66 @@
    "notes": "What's Changed: fix: (Linux) High memory usage and verdict timeouts during bursts of new connections and https://github.com/safing/portmaster/pull/2293 fix: (Linux) Crash in iptables maintenance when another tool flushed the chains fix: (Linux) UDP split tunnel proxy bound to the wrong loopback add…",
    "source_url": "https://github.com/safing/portmaster/releases/tag/v2.2.8",
    "page_url": "https://www.firmwarely.com/devices/portmaster/"
+  },
+  "wallabag": {
+   "id": "wallabag",
+   "brand": "wallabag",
+   "model": "Read-it-later",
+   "category": "A",
+   "status": "update",
+   "version": "2.6.15",
+   "previous": "2.6.14",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "Support PHP 8.4 while retaining compatibility with PHP 7.4 and the locked legacy dependencies. Deprecation notices may still be emitted. Read the blog post about that release. What's Changed: Backport documentation monorepo merge to 2.6 Introduce a REDIS_URL (backport) (read the doc about that) Hid…",
+   "source_url": "https://github.com/wallabag/wallabag/releases/tag/2.6.15",
+   "page_url": "https://www.firmwarely.com/devices/wallabag/"
+  },
+  "strapi": {
+   "id": "strapi",
+   "brand": "Strapi",
+   "model": "Headless CMS",
+   "category": "A",
+   "status": "update",
+   "version": "5.60.0",
+   "previous": "5.59.0",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "5.60.0 (2026-10-28): 🚀 New feature: admin: record SSO settings updates in audit logs (#​28135) webhooks: select entry events per content type (#​27931) 🔥 Bug fix: admin: i18n tokens that were translated in 7 locales (#​27767) admin: admin user updates and deletes crash when the super admin role doe…",
+   "source_url": "https://github.com/strapi/strapi/releases/tag/v5.60.0",
+   "page_url": "https://www.firmwarely.com/devices/strapi/"
+  },
+  "etherpad": {
+   "id": "etherpad",
+   "brand": "Etherpad",
+   "model": "Collaborative editor",
+   "category": "A",
+   "status": "critical",
+   "version": "3.3.12",
+   "previous": "3.3.11",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "3.3.12 is a security release. It closes an open redirect in the timeslider's \"Return to pad\" button (GHSA-35rj-7vrx-29wq) and stops revision-bound .etherpad exports from leaking later chat. Security: Timeslider — \"Return to pad\" no longer follows a cross-origin referrer (GHSA-35rj-7vrx-29wq). The b…",
+   "source_url": "https://github.com/ether/etherpad/releases/tag/v3.3.12",
+   "page_url": "https://www.firmwarely.com/devices/etherpad/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.301.37732",
+   "previous": "37522026.300.38516",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​12091 #​12090 #​12089 #​12088 #​12087 #​12084 #​12083 #​12082 #​12081 #​12080 #​12079 #​12078 #​12077",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.301.37732",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   }
  }
 }
