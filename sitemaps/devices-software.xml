@@ -267,7 +267,7 @@
   <url><loc>https://www.firmwarely.com/devices/dozzle/</loc><lastmod>2026-10-24</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/btop/</loc><lastmod>2026-10-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/nagios-core/</loc><lastmod>2026-08-05</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/icinga2/</loc><lastmod>2026-08-18</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/icinga2/</loc><lastmod>2026-10-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/kener/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/statping-ng/</loc><lastmod>2025-06-04</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/cronicle/</loc><lastmod>2026-10-25</lastmod></url>
@@ -285,7 +285,7 @@
   <url><loc>https://www.firmwarely.com/devices/matomo/</loc><lastmod>2026-10-22</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/goatcounter/</loc><lastmod>2025-12-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/komodo/</loc><lastmod>2026-10-22</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/coolify/</loc><lastmod>2026-10-27</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/coolify/</loc><lastmod>2026-10-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/dokploy/</loc><lastmod>2026-10-22</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/caprover/</loc><lastmod>2026-10-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/harbor/</loc><lastmod>2026-10-09</lastmod></url>
@@ -307,7 +307,7 @@
   <url><loc>https://www.firmwarely.com/devices/terraform/</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/opentofu/</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/semaphore-ui/</loc><lastmod>2026-10-20</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/openvas-scanner/</loc><lastmod>2026-10-27</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/openvas-scanner/</loc><lastmod>2026-10-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/trivy/</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/nuclei/</loc><lastmod>2026-08-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/passbolt/</loc><lastmod>2026-10-20</lastmod></url>
@@ -330,7 +330,7 @@
   <url><loc>https://www.firmwarely.com/devices/meilisearch/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/typesense/</loc><lastmod>2026-04-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/qdrant/</loc><lastmod>2026-10-22</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/weaviate/</loc><lastmod>2026-10-22</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/weaviate/</loc><lastmod>2026-10-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/milvus/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/dragonfly/</loc><lastmod>2026-10-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/nats-server/</loc><lastmod>2026-10-26</lastmod></url>

@@ -30402,6 +30402,150 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "ubiquiti-unifi-access-points",
+   "version": "8.8.13",
+   "name": "Ubiquiti UniFi Access Points & Switches (device firmware)",
+   "judged_at": "2026-10-28T12:24:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ubiquiti-unifi-u6-plus",
+   "version": "8.8.13",
+   "name": "Ubiquiti UniFi U6+ Access Point",
+   "judged_at": "2026-10-28T12:24:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "icinga2",
+   "version": "2.16.6",
+   "name": "Icinga 2 monitoring",
+   "judged_at": "2026-10-28T12:24:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.96,
+    "security_fix_plain": 0.87,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "coolify",
+   "version": "4.5.2",
+   "name": "Coolify Self-hosting platform",
+   "judged_at": "2026-10-28T12:24:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "openvas-scanner",
+   "version": "23.52.7",
+   "name": "Greenbone OpenVAS scanner",
+   "judged_at": "2026-10-28T12:24:48+00:00",
+   "notes_chars": 173,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.95,
+    "security_fix_plain": 0.9,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "weaviate",
+   "version": "1.40.3",
+   "name": "Weaviate Vector database",
+   "judged_at": "2026-10-28T12:24:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.37,
+    "security_fix_plain": 0.17,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ubiquiti-unifi-u7-pro",
+   "version": "8.8.13",
+   "name": "Ubiquiti UniFi U7 Pro access point",
+   "judged_at": "2026-10-28T12:24:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ubiquiti-switch-flex-2-5g",
+   "version": "8.8.13",
+   "name": "Ubiquiti UniFi Switch Flex 2.5G",
+   "judged_at": "2026-10-28T12:24:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
