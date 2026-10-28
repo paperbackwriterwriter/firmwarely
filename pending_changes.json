@@ -83,13 +83,13 @@
    "model": "DNS blocklists",
    "category": "R",
    "status": "update",
-   "version": "37522026.301.37732",
+   "version": "37522026.301.72327",
    "previous": "37522026.300.38516",
    "released": "2026-10-28",
    "date_known": true,
    "eol": false,
-   "notes": "#​12091 #​12090 #​12089 #​12088 #​12087 #​12084 #​12083 #​12082 #​12081 #​12080 #​12079 #​12078 #​12077",
-   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.301.37732",
+   "notes": "#​12100 #​12099 #​12098 #​12097 #​12095 #​12094 #​12093 #​12092",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.301.72327",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   },
   "glpi": {
@@ -541,6 +541,36 @@
    "notes": "Changed: Improved the data source filter in the historical market data table of the admin control panel to only list the data providers in use Restricted the health check endpoint of the AI service (GET api/v1/health/ai) to administrators Increased the timeout in the health check endpoint of the AI…",
    "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.94.0",
    "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
+  },
+  "windmill": {
+   "id": "windmill",
+   "brand": "Windmill",
+   "model": "Scripts and workflows",
+   "category": "A",
+   "status": "update",
+   "version": "1.852.0",
+   "previous": "1.851.0",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.852.0 (2026-10-28): Features: accept the google_service_account resource type alongside gcp_service_account (#​12070) (e480501) add ai review to drafts, draft diffs and session review (#​12063) (77c0a26) gate guest apps by their mode and the protection rule alone (#​12061) (d3869fc) Bug Fixes: ch…",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.852.0",
+   "page_url": "https://www.firmwarely.com/devices/windmill/"
+  },
+  "arc": {
+   "id": "arc",
+   "brand": "Arc",
+   "model": "Redpill loader for Synology DSM",
+   "category": "N",
+   "status": "update",
+   "version": "4.2.2",
+   "previous": "4.2.1",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "Information: Release Notes Dependencies: Addons: 26.10.28 Modules: 26.10.19 Configs: 26.09.06 Patches: 26.05.30 Custom: 26.10.28 LKMs: 26.10.27 Apex: 2026.02.3 Build: 2026-10-28 19:05",
+   "source_url": "https://github.com/AuxXxilium/arc/releases/tag/4.2.2",
+   "page_url": "https://www.firmwarely.com/devices/arc/"
   }
  }
 }
