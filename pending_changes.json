@@ -721,6 +721,21 @@
    "notes": "What's Changed: :shipit: Feature Development: [PM-40418] feat: add organization plan-change preview endpoint [PAM-190] PAM access audit: API [PM-44226] feat: add PamSeatMinimum column to Organization [PM-43246] feat: accept Privileged Controls in the trial verification email [PM-35942] Add pm-39196…",
    "source_url": "https://github.com/bitwarden/server/releases/tag/v2026.10.1",
    "page_url": "https://www.firmwarely.com/devices/bitwarden-server/"
+  },
+  "komga": {
+   "id": "komga",
+   "brand": "Komga",
+   "model": "Comic and manga server",
+   "category": "A",
+   "status": "update",
+   "version": "1.29.2",
+   "previous": "1.29.1",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: 🐛 Fixes: komga uncorrect page count returned in some cases (2487e05), closes #​2525 incorrect koreader hash in some cases (a5462b0), closes #​2484 🔄️ Changes: opds replace deprecated method call (dee9f19) 🛠 Build: deps bump qs from 6.16.0 to 6.16.1 in /next-ui (7dec576) bump/server in /n…",
+   "source_url": "https://github.com/gotson/komga/releases/tag/1.29.2",
+   "page_url": "https://www.firmwarely.com/devices/komga/"
   }
  }
 }
