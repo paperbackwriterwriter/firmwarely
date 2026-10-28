@@ -30744,6 +30744,96 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "ceph-storage",
+   "version": "22.0.0",
+   "name": "Ceph Distributed storage",
+   "judged_at": "2026-10-28T18:25:31+00:00",
+   "notes_chars": 7,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.14,
+    "security_fix_plain": 0.16,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "esp32-marauder",
+   "version": "1.20.0",
+   "name": "ESP32 Marauder Wi-Fi and Bluetooth pentest firmware",
+   "judged_at": "2026-10-28T18:25:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "nomad",
+   "version": "2.1.0",
+   "name": "HashiCorp Nomad",
+   "judged_at": "2026-10-28T18:25:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "terraform",
+   "version": "1.17.1",
+   "name": "HashiCorp Terraform",
+   "judged_at": "2026-10-28T18:25:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "appsmith",
+   "version": "2.6.0",
+   "name": "Appsmith Internal tools builder",
+   "judged_at": "2026-10-28T18:25:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.96,
+    "security_fix_plain": 0.85,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
