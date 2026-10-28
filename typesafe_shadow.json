@@ -30240,6 +30240,42 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "nzbhydra2",
+   "version": "9.2.0",
+   "name": "NZBHydra2 Usenet meta search",
+   "judged_at": "2026-10-28T09:18:12+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.26,
+    "security_fix_plain": 0.41,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "portmaster",
+   "version": "2.2.8",
+   "name": "Safing Portmaster application firewall",
+   "judged_at": "2026-10-28T09:18:12+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
