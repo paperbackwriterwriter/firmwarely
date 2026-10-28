@@ -811,6 +811,21 @@
    "notes": "fix: 修复 macOS 27 持续等待问题 refactor: 优化 MCP 调用 Close #​744",
    "source_url": "https://github.com/wushuo894/ani-rss/releases/tag/v3.2.54",
    "page_url": "https://www.firmwarely.com/devices/ani-rss/"
+  },
+  "windmill": {
+   "id": "windmill",
+   "brand": "Windmill",
+   "model": "Scripts and workflows",
+   "category": "A",
+   "status": "update",
+   "version": "1.851.0",
+   "previous": "1.850.0",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.851.0 (2026-10-28): Features: app conversations through the memory_id query parameter (#​12025) (07d4f7f) build, test and run standalone ai agents from ai sessions (#​11954) (8dd46a4) confirm run-as on flow and script deploy, mute from editor menu (#​12015) (75e3e7e) folder-scoped review instruct…",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.851.0",
+   "page_url": "https://www.firmwarely.com/devices/windmill/"
   }
  }
 }
