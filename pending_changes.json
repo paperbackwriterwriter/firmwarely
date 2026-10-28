@@ -826,6 +826,21 @@
    "notes": "1.851.0 (2026-10-28): Features: app conversations through the memory_id query parameter (#​12025) (07d4f7f) build, test and run standalone ai agents from ai sessions (#​11954) (8dd46a4) confirm run-as on flow and script deploy, mute from editor menu (#​12015) (75e3e7e) folder-scoped review instruct…",
    "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.851.0",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.2949",
+   "previous": "0.24.2934",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: 5b98cd28053d6d8560ef8f8cf717d52729a3ae81 v3x: bump engine tag 344369f0c2e58447c6126d744a8daa425f81140e magnetcat: new alt domains fda3f0bf607db9394be012ed7fb1e6fa508acdf6 52bt: new domains 49dbe45194c528da9ad818daf933b071083db622 turktorrent: use wildcards in search keywords (#​17230) f4c…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2949",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
