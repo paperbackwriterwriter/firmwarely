@@ -616,6 +616,36 @@
    "notes": "New Features ✨: Components: Add split panel Add menu Add spinner Conversations: Show extraction spans like decision spans and Merge decision span tabs into one Dashboards: Resolve prebuilt dashboard configs through a flag-aware helper Persist widget query transformations Add flag for web vitals das…",
    "source_url": "https://github.com/getsentry/sentry/releases/tag/26.10.1",
    "page_url": "https://www.firmwarely.com/devices/sentry/"
+  },
+  "cronicle": {
+   "id": "cronicle",
+   "brand": "Cronicle",
+   "model": "Task scheduler",
+   "category": "A",
+   "status": "update",
+   "version": "0.9.140",
+   "previous": "0.9.139",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "Dep: Bump pixl-tools to v2.0.6 for removal of picomatch module.",
+   "source_url": "https://github.com/jhuckaby/Cronicle/releases/tag/v0.9.140",
+   "page_url": "https://www.firmwarely.com/devices/cronicle/"
+  },
+  "coder": {
+   "id": "coder",
+   "brand": "Coder",
+   "model": "Remote dev environments",
+   "category": "A",
+   "status": "update",
+   "version": "2.37.8",
+   "previous": "2.37.7",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "## Stable (since October 28, 2026) Changelog: Bug fixes: fix(scripts/release): promote stable on immutable releases (#​30745, 932eaffeda) Server: Bound push response body read and add client timeout (#​31129, 1bce18e7b1) fix(scripts/releaser): use the v-prefixed image tag in release notes (#​31032,…",
+   "source_url": "https://github.com/coder/coder/releases/tag/v2.37.8",
+   "page_url": "https://www.firmwarely.com/devices/coder/"
   }
  }
 }
