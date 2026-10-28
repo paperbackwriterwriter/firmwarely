@@ -256,6 +256,36 @@
    "notes": "Overview U6 is joining the same software feature track as U7. Going forward, U6 devices will receive the same applicable software features, improvements, and fixes, while hardware-specific capabilities remain dependent on the AP model. New Features: U7 access points now support mesh links using 5 G…",
    "source_url": "https://community.ui.com/releases/UniFi-Access-Point-and-Wireless-Bridge-8-8-13/35a517b8-0a2d-4c7f-8e60-cdf5936b9f2d",
    "page_url": "https://www.firmwarely.com/devices/ubiquiti-switch-flex-2-5g/"
+  },
+  "lxd": {
+   "id": "lxd",
+   "brand": "Canonical",
+   "model": "LXD",
+   "category": "A",
+   "status": "update",
+   "version": "6.10.1",
+   "previous": "6.10.0",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "Announcement: https://discourse.ubuntu.com/t/lxd-6-10-1-lts-has-been-released/90024 Release notes: https://canonical.com/lxd/docs/latest/reference/release-notes/6/release-notes-6.10.1/ What's Changed: Full Changelog: https://github.com/canonical/lxd/compare/lxd-6.10.0...lxd-6.10.1",
+   "source_url": "https://github.com/canonical/lxd/releases/tag/lxd-6.10.1",
+   "page_url": "https://www.firmwarely.com/devices/lxd/"
+  },
+  "llama-cpp": {
+   "id": "llama-cpp",
+   "brand": "ggml",
+   "model": "llama.cpp",
+   "category": "A",
+   "status": "update",
+   "version": "0.8.0",
+   "previous": "0.7.0",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "Overview: This release adds the LiquidAI LFM3 family (text, vision, audio and omni) together with a new experimental streaming-audio API in mtmd, and wires realtime audio in and out of the server through the new /v1/realtime and /tts endpoints. A batch of new architectures landed: DeepSeek V4.1 Fla…",
+   "source_url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.8.0",
+   "page_url": "https://www.firmwarely.com/devices/llama-cpp/"
   }
  }
 }
