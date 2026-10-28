@@ -30690,6 +30690,42 @@
     "security_fix_plain": 0.93,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "wordpress",
+   "version": "7.1.4",
+   "name": "WordPress CMS",
+   "judged_at": "2026-10-28T16:38:52+00:00",
+   "notes_chars": 155,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "jenkins",
+   "version": "2.588",
+   "name": "Jenkins Automation server",
+   "judged_at": "2026-10-28T16:38:52+00:00",
+   "notes_chars": 5,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.12,
+    "security_fix_plain": 0.13,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

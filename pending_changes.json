@@ -361,6 +361,36 @@
    "notes": "For a comprehensive view of changes, read the CHANGELOG. Security Fixes 🚨: Windows: Fixed a standard user being able to plant the admin config C:\\ProgramData\\Cryptomator\\config.properties before installation and thereby make other users load arbitrary plugins. The installer now secures the director…",
    "source_url": "https://github.com/cryptomator/cryptomator/releases/tag/1.19.5",
    "page_url": "https://www.firmwarely.com/devices/cryptomator/"
+  },
+  "wordpress": {
+   "id": "wordpress",
+   "brand": "WordPress",
+   "model": "CMS",
+   "category": "A",
+   "status": "update",
+   "version": "7.1.4",
+   "previous": "7.1.3",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "Tag 7.1.4 Built from https://develop.svn.wordpress.org/tags/7.1.4 git-svn-id: http://core.svn.wordpress.org/tags/7.1.4 1a063a9b-81f0-0310-95a4-ce76da25c4cd",
+   "source_url": "https://github.com/WordPress/WordPress/releases/tag/7.1.4",
+   "page_url": "https://www.firmwarely.com/devices/wordpress/"
+  },
+  "jenkins": {
+   "id": "jenkins",
+   "brand": "Jenkins",
+   "model": "Automation server",
+   "category": "A",
+   "status": "update",
+   "version": "2.588",
+   "previous": "2.587",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "2.588",
+   "source_url": "https://github.com/jenkinsci/jenkins/releases/tag/jenkins-2.588",
+   "page_url": "https://www.firmwarely.com/devices/jenkins/"
   }
  }
 }
