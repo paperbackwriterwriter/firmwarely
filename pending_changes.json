@@ -481,6 +481,66 @@
    "notes": "🔐 Brotli security fix (CVE-2026-111497): Appsmith v2.6.0 includes the fix for a vulnerability in the Node.js Brotli decoder. Processing maliciously crafted Brotli-compressed data can corrupt memory and potentially cause a service crash, expose process memory, or allow remote code execution. Self-ho…",
    "source_url": "https://github.com/appsmithorg/appsmith/releases/tag/v2.6.0",
    "page_url": "https://www.firmwarely.com/devices/appsmith/"
+  },
+  "woodpecker-ci": {
+   "id": "woodpecker-ci",
+   "brand": "Woodpecker",
+   "model": "CI engine",
+   "category": "A",
+   "status": "critical",
+   "version": "3.20.0",
+   "previous": "3.19.0",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "3.20.0 - 2026-10-28: ❤️ Thanks to all contributors! ❤️:,,,,,,,,,,,,,,,,,,,,,,,,,,,,, 🔒 Security: Remove agent token from process os environments [#​7412] Make sure CLI self-update can target cli install dir only [#​7400] Document security boundaries [#​7281] Keep revoked env admins revoked until th…",
+   "source_url": "https://github.com/woodpecker-ci/woodpecker/releases/tag/v3.20.0",
+   "page_url": "https://www.firmwarely.com/devices/woodpecker-ci/"
+  },
+  "librephotos": {
+   "id": "librephotos",
+   "brand": "LibrePhotos",
+   "model": "Photo management",
+   "category": "A",
+   "status": "update",
+   "version": "1.5.0",
+   "previous": "1.4.0",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release lets you share your whole library, one person or an album others can add to, makes labelling faces much faster, shows every photo on the map where it was taken, and opens photo spheres in a 360° view. The Windows app can now update itself, the Docker image uses any GPU, and it fixes se…",
+   "source_url": "https://github.com/LibrePhotos/librephotos/releases/tag/1.5.0",
+   "page_url": "https://www.firmwarely.com/devices/librephotos/"
+  },
+  "synapse": {
+   "id": "synapse",
+   "brand": "Element",
+   "model": "Synapse Matrix server",
+   "category": "A",
+   "status": "update",
+   "version": "1.164.1",
+   "previous": "1.164.0",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: https://github.com/element-hq/synapse/blob/release-v1.164/CHANGES.md",
+   "source_url": "https://github.com/element-hq/synapse/releases/tag/v1.164.1",
+   "page_url": "https://www.firmwarely.com/devices/synapse/"
+  },
+  "ghostfolio": {
+   "id": "ghostfolio",
+   "brand": "Ghostfolio",
+   "model": "Wealth tracker",
+   "category": "A",
+   "status": "update",
+   "version": "3.94.0",
+   "previous": "3.93.0",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changed: Improved the data source filter in the historical market data table of the admin control panel to only list the data providers in use Restricted the health check endpoint of the AI service (GET api/v1/health/ai) to administrators Increased the timeout in the health check endpoint of the AI…",
+   "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.94.0",
+   "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
   }
  }
 }
