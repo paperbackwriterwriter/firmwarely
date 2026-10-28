@@ -736,6 +736,36 @@
    "notes": "Changelog: 🐛 Fixes: komga uncorrect page count returned in some cases (2487e05), closes #​2525 incorrect koreader hash in some cases (a5462b0), closes #​2484 🔄️ Changes: opds replace deprecated method call (dee9f19) 🛠 Build: deps bump qs from 6.16.0 to 6.16.1 in /next-ui (7dec576) bump/server in /n…",
    "source_url": "https://github.com/gotson/komga/releases/tag/1.29.2",
    "page_url": "https://www.firmwarely.com/devices/komga/"
+  },
+  "zigpy": {
+   "id": "zigpy",
+   "brand": "zigpy",
+   "model": "Zigbee stack",
+   "category": "S",
+   "status": "update",
+   "version": "2.4.1",
+   "previous": "2.4.0",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Make test_database persist last_seen it checks Fix ZCL command payloads that are parsed incorrectly Reject serializing a struct with a gap in its optional fields Make IAS command fields added in HA 1.2 and 1.2.1 optional Fix character string length prefixes Don't retry or warn on fa…",
+   "source_url": "https://github.com/zigpy/zigpy/releases/tag/2.4.1",
+   "page_url": "https://www.firmwarely.com/devices/zigpy/"
+  },
+  "jan-ai": {
+   "id": "jan-ai",
+   "brand": "Jan",
+   "model": "Local AI assistant",
+   "category": "A",
+   "status": "critical",
+   "version": "0.8.8",
+   "previous": "0.8.7",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "Jan v0.8.8: security fixes, llama.cpp 0.7.0, and Trusted Hosts for the local API: A security update to v0.8.7. We recommend updating. Your data and settings carry over; a few behaviours change, listed under What you might notice. Security: Links in chat open in your browser. Links in model replies,…",
+   "source_url": "https://github.com/janhq/jan/releases/tag/v0.8.8",
+   "page_url": "https://www.firmwarely.com/devices/jan-ai/"
   }
  }
 }

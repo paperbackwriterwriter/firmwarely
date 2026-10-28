@@ -30060,6 +30060,42 @@
     "security_fix_plain": 0.12,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "zigpy",
+   "version": "2.4.1",
+   "name": "zigpy Zigbee stack",
+   "judged_at": "2026-10-28T04:06:52+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "jan-ai",
+   "version": "0.8.8",
+   "name": "Jan Local AI assistant",
+   "judged_at": "2026-10-28T04:06:52+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.48,
+    "security_fix_plain": 0.87,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
