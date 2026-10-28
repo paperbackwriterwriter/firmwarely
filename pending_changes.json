@@ -548,13 +548,13 @@
    "model": "Scripts and workflows",
    "category": "A",
    "status": "update",
-   "version": "1.852.0",
+   "version": "1.853.0",
    "previous": "1.851.0",
    "released": "2026-10-28",
    "date_known": true,
    "eol": false,
-   "notes": "1.852.0 (2026-10-28): Features: accept the google_service_account resource type alongside gcp_service_account (#​12070) (e480501) add ai review to drafts, draft diffs and session review (#​12063) (77c0a26) gate guest apps by their mode and the protection rule alone (#​12061) (d3869fc) Bug Fixes: ch…",
-   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.852.0",
+   "notes": "1.853.0 (2026-10-28): Features: agent to flow, tabbed agent page, one webhook panel with an AI prompt (#​11903) (2e4c078) Performance Improvements: borrow cached script modules instead of cloning per job (#​12087) (d03142b) build log-mask automaton as a contiguous nfa (#​12088) (97de072)",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.853.0",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
   },
   "arc": {
@@ -646,6 +646,36 @@
    "notes": "## Stable (since October 28, 2026) Changelog: Bug fixes: fix(scripts/release): promote stable on immutable releases (#​30745, 932eaffeda) Server: Bound push response body read and add client timeout (#​31129, 1bce18e7b1) fix(scripts/releaser): use the v-prefixed image tag in release notes (#​31032,…",
    "source_url": "https://github.com/coder/coder/releases/tag/v2.37.8",
    "page_url": "https://www.firmwarely.com/devices/coder/"
+  },
+  "zephyr-rtos": {
+   "id": "zephyr-rtos",
+   "brand": "Zephyr",
+   "model": "Embedded RTOS",
+   "category": "M",
+   "status": "update",
+   "version": "4.5.0",
+   "previous": "4.4.2",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "We are pleased to announce the release of Zephyr version 4.5.0. For a closer look at some of the key additions in this release, check out the announcement article on the Zephyr blog, along with its companion video. Major enhancements with this release include: New architectures: Infineon TriCore an…",
+   "source_url": "https://github.com/zephyrproject-rtos/zephyr/releases/tag/v4.5.0",
+   "page_url": "https://www.firmwarely.com/devices/zephyr-rtos/"
+  },
+  "joplin": {
+   "id": "joplin",
+   "brand": "Joplin",
+   "model": "Note taking",
+   "category": "A",
+   "status": "update",
+   "version": "3.7.22",
+   "previous": "3.7.21",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "Improved: Add read_notes MCP tool (#​16845) (#​16782) Improved: Reduce read_note token consumption with outline and section navigation (#​16838) (#​16777) Improved: Return the enclosing section with each search_notes result (#​16842) (#​16778) Improved: Treat private network AI providers as local (…",
+   "source_url": "https://github.com/laurent22/joplin/releases/tag/v3.7.22",
+   "page_url": "https://www.firmwarely.com/devices/joplin/"
   }
  }
 }
