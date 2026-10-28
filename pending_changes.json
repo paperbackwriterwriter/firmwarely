@@ -8,13 +8,13 @@
    "model": "Workflow automation",
    "category": "A",
    "status": "update",
-   "version": "2.45.4",
+   "version": "2.45.5",
    "previous": "2.44.7",
-   "released": "2026-10-26",
+   "released": "2026-10-28",
    "date_known": true,
    "eol": false,
-   "notes": "2.45.4 (2026-10-26): Bug Fixes: core: Recreate removed n8n-sandbox sandboxes and rerun workspace setup (#​41919) (11e279a) core: Start sub-workflow error workflow when a pre-run check fails (#​41977) (9595142) editor: Match navigation plus button hover styling (#​41910) (471c006) editor: Point migr…",
-   "source_url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.45.4",
+   "notes": "2.45.5 (2026-10-28): Bug Fixes: core: Keep the ExpressionError name in minified builds (#​42309) (b3192c6) core: Keep undefined values in QuickJS expression results (#​42264) (532f645) editor: Align carets within split buttons (#​42203) (61cbfea) editor: Improve first load speed (#​41987) (8b6bdbb)…",
+   "source_url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.45.5",
    "page_url": "https://www.firmwarely.com/devices/n8n/"
   },
   "activepieces": {
@@ -841,6 +841,21 @@
    "notes": "Changes:: 5b98cd28053d6d8560ef8f8cf717d52729a3ae81 v3x: bump engine tag 344369f0c2e58447c6126d744a8daa425f81140e magnetcat: new alt domains fda3f0bf607db9394be012ed7fb1e6fa508acdf6 52bt: new domains 49dbe45194c528da9ad818daf933b071083db622 turktorrent: use wildcards in search keywords (#​17230) f4c…",
    "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2949",
    "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "signoz": {
+   "id": "signoz",
+   "brand": "SigNoz",
+   "model": "Observability platform",
+   "category": "A",
+   "status": "update",
+   "version": "0.148.0",
+   "previous": "0.147.0",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "🚀 Features: feat(alerts): move anomaly alerts to the new alert experience (#​13130) test(dashboards): e2e for panel and editor flows (#​12410) feat(saved-views): saved views and quick filters VQA fixes (#​13232) feat: llm o11y improvements (#​13229) feat(saved-views): analytics for saved views and …",
+   "source_url": "https://github.com/SigNoz/signoz/releases/tag/v0.148.0",
+   "page_url": "https://www.firmwarely.com/devices/signoz/"
   }
  }
 }
