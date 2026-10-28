@@ -286,6 +286,51 @@
    "notes": "Overview: This release adds the LiquidAI LFM3 family (text, vision, audio and omni) together with a new experimental streaming-audio API in mtmd, and wires realtime audio in and out of the server through the new /v1/realtime and /tts endpoints. A batch of new architectures landed: DeepSeek V4.1 Fla…",
    "source_url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.8.0",
    "page_url": "https://www.firmwarely.com/devices/llama-cpp/"
+  },
+  "kea-dhcp": {
+   "id": "kea-dhcp",
+   "brand": "ISC",
+   "model": "Kea DHCP",
+   "category": "R",
+   "status": "update",
+   "version": "3.3.3",
+   "previous": "3.3.2",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "Kea-3.3.3",
+   "source_url": "https://github.com/isc-projects/kea/releases/tag/Kea-3.3.3",
+   "page_url": "https://www.firmwarely.com/devices/kea-dhcp/"
+  },
+  "netalertx": {
+   "id": "netalertx",
+   "brand": "NetAlertX",
+   "model": "Network intruder detector",
+   "category": "R",
+   "status": "update",
+   "version": "26.10.28",
+   "previous": "26.10.24",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "Hi all 👋 I've put together a quick hotfix release to address a few lingering bugs, bump the Alpine base image, and catch some forgotten changes from a branch. This release hardens background operations. Internet IP checks now explicitly request IPv4 over HTTPS with strict time limits so slow lookup…",
+   "source_url": "https://github.com/netalertx/NetAlertX/releases/tag/v26.10.28",
+   "page_url": "https://www.firmwarely.com/devices/netalertx/"
+  },
+  "recyclarr": {
+   "id": "recyclarr",
+   "brand": "Recyclarr",
+   "model": "Arr config sync",
+   "category": "A",
+   "status": "update",
+   "version": "8.8.1",
+   "previous": "8.8.0",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "Fixed: Sync: Every Radarr sync failed when Radarr 7 uses OIDC login. Sync also no longer fails when Sonarr or Radarr reports a setting value that Recyclarr does not know yet Sync: When Sonarr or Radarr sends a reply Recyclarr cannot read, the error now says what failed instead of showing only HTTP …",
+   "source_url": "https://github.com/recyclarr/recyclarr/releases/tag/v8.8.1",
+   "page_url": "https://www.firmwarely.com/devices/recyclarr/"
   }
  }
 }
