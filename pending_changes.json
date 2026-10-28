@@ -676,6 +676,21 @@
    "notes": "Improved: Add read_notes MCP tool (#​16845) (#​16782) Improved: Reduce read_note token consumption with outline and section navigation (#​16838) (#​16777) Improved: Return the enclosing section with each search_notes result (#​16842) (#​16778) Improved: Treat private network AI providers as local (…",
    "source_url": "https://github.com/laurent22/joplin/releases/tag/v3.7.22",
    "page_url": "https://www.firmwarely.com/devices/joplin/"
+  },
+  "openbk7231t": {
+   "id": "openbk7231t",
+   "brand": "OpenBeken",
+   "model": "OpenBK7231T firmware",
+   "category": "S",
+   "status": "update",
+   "version": "1.18.320",
+   "previous": "1.18.319",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "OpenBK7231T/OpenBeken release 1.18.320: WARNING! If installing versions tagged -alpha, please be aware these are development builds and may not be stable! Please do not flash all your devices at once! Make sure you can recover them via UART in case of unexpected issue.: OpenBK7231T/OpenBeken is a T…",
+   "source_url": "https://github.com/openshwprojects/OpenBK7231T_App/releases/tag/1.18.320",
+   "page_url": "https://www.firmwarely.com/devices/openbk7231t/"
   }
  }
 }
