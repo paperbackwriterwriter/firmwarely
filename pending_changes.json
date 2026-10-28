@@ -91,6 +91,51 @@
    "notes": "#​12091 #​12090 #​12089 #​12088 #​12087 #​12084 #​12083 #​12082 #​12081 #​12080 #​12079 #​12078 #​12077",
    "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.301.37732",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "glpi": {
+   "id": "glpi",
+   "brand": "GLPI",
+   "model": "IT asset management",
+   "category": "A",
+   "status": "critical",
+   "version": "12.0.1",
+   "previous": "12.0.0",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "This is a security release, upgrading is recommended: You will find below the list of security issues fixed in this bugfixes version: [SECURITY - Critical] External authentication bypass [SECURITY - High] Ticket category reflected XSS [SECURITY - High] Reflected XSS in users authorization list [SEC…",
+   "source_url": "https://github.com/glpi-project/glpi/releases/tag/12.0.1",
+   "page_url": "https://www.firmwarely.com/devices/glpi/"
+  },
+  "serial-studio": {
+   "id": "serial-studio",
+   "brand": "Serial Studio",
+   "model": "Telemetry dashboard",
+   "category": "M",
+   "status": "update",
+   "version": "4.2.1",
+   "previous": "4.2.0",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "⚠️ Important Notices: Intel Macs: Every 4.x release before this one aborted at launch on Intel Macs (#​392). The Intel half of the universal binary shipped still pointing at the build machine's Qt, while the Apple Silicon half, the signature and the notarization were all fine. 4.2.1 is the first 4.…",
+   "source_url": "https://github.com/Serial-Studio/Serial-Studio/releases/tag/v4.2.1",
+   "page_url": "https://www.firmwarely.com/devices/serial-studio/"
+  },
+  "titanium-web-proxy": {
+   "id": "titanium-web-proxy",
+   "brand": "Titanium Web Proxy",
+   "model": "HTTP(S) proxy server",
+   "category": "R",
+   "status": "update",
+   "version": "7.0.27",
+   "previous": "7.0.26",
+   "released": "2026-10-28",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Reverse-proxy parity (phases 0–11) and the follow-ups on top of it. Documented limits that stay: a decrypting MASQUE hairpin is not implemented, and QUIC origins are not retried on the path that was called out in the HTTP/3 notes. MASQUE is opt-in. The listener can relay CONNECT-UDP…",
+   "source_url": "https://github.com/justcoding121/titanium-web-proxy/releases/tag/v7.0.27",
+   "page_url": "https://www.firmwarely.com/devices/titanium-web-proxy/"
   }
  }
 }
