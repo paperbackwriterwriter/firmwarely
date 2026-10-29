@@ -691,6 +691,21 @@
    "notes": "OpenBK7231T/OpenBeken release 1.18.320: WARNING! If installing versions tagged -alpha, please be aware these are development builds and may not be stable! Please do not flash all your devices at once! Make sure you can recover them via UART in case of unexpected issue.: OpenBK7231T/OpenBeken is a T…",
    "source_url": "https://github.com/openshwprojects/OpenBK7231T_App/releases/tag/1.18.320",
    "page_url": "https://www.firmwarely.com/devices/openbk7231t/"
+  },
+  "sentry-self-hosted": {
+   "id": "sentry-self-hosted",
+   "brand": "Sentry",
+   "model": "Self-hosted error tracking",
+   "category": "A",
+   "status": "critical",
+   "version": "26.10.1",
+   "previous": "26.10.0",
+   "released": "2026-10-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "This is a security-focused patch. It addresses the eMudhra Intermediate CA compromise, and it also includes two configuration fixes and one change to vroom that you'll want to know about. The ClickHouse image is the one remaining unpatched image. It depends on upstream Altinity publishing a patched…",
+   "source_url": "https://github.com/getsentry/self-hosted/releases/tag/26.10.1",
+   "page_url": "https://www.firmwarely.com/devices/sentry-self-hosted/"
   }
  }
 }
