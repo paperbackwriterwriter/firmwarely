@@ -46,6 +46,36 @@
    "notes": "What's Changed: fix: 修复插件生命周期、MQTT TUI 死锁和安装入口，补充 CI (#​328) fix(tls): 恢复 WebSocket/OTA/激活/MQTT 的证书验证 (#​326) feat: add streamed notification playback and lifecycle fixes (#​327) Full Changelog: https://github.com/huangjunsen0406/py-xiaozhi/compare/v2.1.2...v2.1.3 Documentation: 在线文档",
    "source_url": "https://github.com/huangjunsen0406/py-xiaozhi/releases/tag/v2.1.3",
    "page_url": "https://www.firmwarely.com/devices/py-xiaozhi/"
+  },
+  "code-server": {
+   "id": "code-server",
+   "brand": "Coder",
+   "model": "code-server",
+   "category": "A",
+   "status": "update",
+   "version": "4.144.0",
+   "previous": "4.143.1",
+   "released": "2026-10-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "Code v1.144.0 Changed: Update to Code 1.144.0 Fixed: --socket-fd now works: the inherited socket is passed on to the process that listens, and the address is logged as fd: . Previously code-server failed with listen EEXIST or Server has no address. The cookie domain was not being set against the sh…",
+   "source_url": "https://github.com/coder/code-server/releases/tag/v4.144.0",
+   "page_url": "https://www.firmwarely.com/devices/code-server/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.302.38099",
+   "previous": "37522026.301.72327",
+   "released": "2026-10-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​12106 #​12105 #​12104 #​12103 #​12102 #​12101",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.302.38099",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   }
  }
 }
