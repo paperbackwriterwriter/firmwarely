@@ -31446,6 +31446,60 @@
     "security_fix_plain": 0.04,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "nocodb",
+   "version": "2026.10.1",
+   "name": "NocoDB Spreadsheet database",
+   "judged_at": "2026-10-29T11:26:19+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ios",
+   "version": "2026.10.3",
+   "name": "Home Assistant iOS companion app",
+   "judged_at": "2026-10-29T11:26:19+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "b4",
+   "version": "1.88.2",
+   "name": "B4 Network packet processor",
+   "judged_at": "2026-10-29T11:26:19+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

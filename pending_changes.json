@@ -76,6 +76,51 @@
    "notes": "#​12106 #​12105 #​12104 #​12103 #​12102 #​12101",
    "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.302.38099",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "nocodb": {
+   "id": "nocodb",
+   "brand": "NocoDB",
+   "model": "Spreadsheet database",
+   "category": "A",
+   "status": "update",
+   "version": "2026.10.1",
+   "previous": "2026.10.0",
+   "released": "2026-10-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "⚠️ Timestamps include milliseconds. On PostgreSQL and SQLite, date and time values in API responses, webhook payloads and CSV exports now include milliseconds (12:34:56.000+00:00). Check integrations that read dates in a fixed format. MCP lists every tool. The MCP server at /mcp now lists every too…",
+   "source_url": "https://github.com/nocodb/nocodb/releases/tag/2026.10.1",
+   "page_url": "https://www.firmwarely.com/devices/nocodb/"
+  },
+  "ios": {
+   "id": "ios",
+   "brand": "Home Assistant",
+   "model": "iOS companion app",
+   "category": "S",
+   "status": "update",
+   "version": "2026.10.3",
+   "previous": "2026.10.1",
+   "released": "2026-10-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Performance and battery usage improvements 2-way audio foundation New Contributors: made their first contribution in https://github.com/home-assistant/iOS/pull/6067 made their first contribution in https://github.com/home-assistant/iOS/pull/6080 made their first contribution in http…",
+   "source_url": "https://github.com/home-assistant/iOS/releases/tag/release/2026.10.3/2026.3322",
+   "page_url": "https://www.firmwarely.com/devices/ios/"
+  },
+  "b4": {
+   "id": "b4",
+   "brand": "B4",
+   "model": "Network packet processor",
+   "category": "R",
+   "status": "update",
+   "version": "1.88.2",
+   "previous": "1.88.1",
+   "released": "2026-10-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "[1.88.2] - 2026-10-29: FIXED: On Keenetic, devices handled by Device Filtering could not open any site, even one in no set - Keenetic lets a connection out under the router's address only after its own firewall rules have marked it. b4 took the first packets of these connections before those rules …",
+   "source_url": "https://github.com/DanielLavrushin/b4/releases/tag/v1.88.2",
+   "page_url": "https://www.firmwarely.com/devices/b4/"
   }
  }
 }
