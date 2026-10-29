@@ -31572,6 +31572,60 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "py-xiaozhi",
+   "version": "2.1.4",
+   "name": "Xiaozhi Python voice assistant client",
+   "judged_at": "2026-10-29T13:58:35+00:00",
+   "notes_chars": 157,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "limesurvey",
+   "version": "7.8.0",
+   "name": "LimeSurvey Survey platform",
+   "judged_at": "2026-10-29T13:58:35+00:00",
+   "notes_chars": 12,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.09,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "btcpayserver",
+   "version": "2.4.7",
+   "name": "BTCPay Server Bitcoin payment processor",
+   "judged_at": "2026-10-29T13:58:35+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.74,
+    "security_fix_plain": 0.89,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
