@@ -451,6 +451,21 @@
    "notes": "v0.30.0 (2026-10-29): _This release is published under the MIT License._ Bug Fixes: Add a public address for the BirdNET-Go links (#​317, d3611d4) Chores: (ee02) improve refresh reliability (#​325, f032654) Move config variables for ee02 display out of main.py (#​315, 44a7d11) Sort ee02 imports (d6…",
    "source_url": "https://github.com/arnegiacomo/fugleramme/releases/tag/v0.30.0",
    "page_url": "https://www.firmwarely.com/devices/fugleramme/"
+  },
+  "woodpecker-ci": {
+   "id": "woodpecker-ci",
+   "brand": "Woodpecker",
+   "model": "CI engine",
+   "category": "A",
+   "status": "update",
+   "version": "3.20.1",
+   "previous": "3.20.0",
+   "released": "2026-10-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "3.20.1 - 2026-10-29: ❤️ Thanks to all contributors! ❤️:, 🐛 Bug Fixes: Restore drone envsubst [#​7433] Fix step lop group UX [#​7431] 📦️ Dependency: Update golang-packages [#​7426]",
+   "source_url": "https://github.com/woodpecker-ci/woodpecker/releases/tag/v3.20.1",
+   "page_url": "https://www.firmwarely.com/devices/woodpecker-ci/"
   }
  }
 }
