@@ -31289,7 +31289,7 @@
    "id": "microsoft-xbox-series-x",
    "version": "10.0.26100.9647",
    "name": "Microsoft Xbox Series X|S",
-   "judged_at": "2026-10-29T08:45:59+00:00",
+   "judged_at": "2026-10-29T08:53:27+00:00",
    "notes_chars": 54,
    "model": "jev-1.14.0",
    "regex": {
@@ -31298,8 +31298,8 @@
     "end_of_life": false
    },
    "jev": {
-    "security_fix": 0.02,
-    "security_fix_plain": 0.03,
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
   },
@@ -31307,7 +31307,7 @@
    "id": "xray-core",
    "version": "26.10.29",
    "name": "Project X Xray-core proxy",
-   "judged_at": "2026-10-29T08:45:59+00:00",
+   "judged_at": "2026-10-29T08:53:28+00:00",
    "notes_chars": 300,
    "model": "jev-1.14.0",
    "regex": {
@@ -31318,14 +31318,14 @@
    "jev": {
     "security_fix": 0.01,
     "security_fix_plain": 0.01,
-    "end_of_life": 0.02
+    "end_of_life": 0.01
    }
   },
   {
    "id": "n8n",
    "version": "2.45.6",
    "name": "n8n Workflow automation",
-   "judged_at": "2026-10-29T08:46:00+00:00",
+   "judged_at": "2026-10-29T08:53:28+00:00",
    "notes_chars": 173,
    "model": "jev-1.14.0",
    "regex": {
@@ -31343,7 +31343,7 @@
    "id": "lobe-chat",
    "version": "2.2.21",
    "name": "LobeHub Lobe Chat",
-   "judged_at": "2026-10-29T08:46:00+00:00",
+   "judged_at": "2026-10-29T08:53:28+00:00",
    "notes_chars": 300,
    "model": "jev-1.14.0",
    "regex": {
