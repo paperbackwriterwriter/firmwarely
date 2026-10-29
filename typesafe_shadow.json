@@ -31824,6 +31824,42 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "heimdall-dashboard",
+   "version": "2.8.4",
+   "name": "Heimdall Application dashboard",
+   "judged_at": "2026-10-29T17:07:33+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.58,
+    "security_fix_plain": 0.48,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "vector",
+   "version": "0.61.0",
+   "name": "Vector Observability pipeline",
+   "judged_at": "2026-10-29T17:07:33+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.13,
+    "security_fix_plain": 0.6,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

@@ -376,6 +376,36 @@
    "notes": "What's Changed: Features: feat(ingestion): attribute AI gateway spans to their gateway API key and service feat(telemetry): report AI gateway request counts from self-hosted instances feat(pagerduty): send alerts, project notifications and prompt changes to PagerDuty, with the routing key on the au…",
    "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.72.0",
    "page_url": "https://www.firmwarely.com/devices/langfuse/"
+  },
+  "heimdall-dashboard": {
+   "id": "heimdall-dashboard",
+   "brand": "Heimdall",
+   "model": "Application dashboard",
+   "category": "A",
+   "status": "update",
+   "version": "2.8.4",
+   "previous": "2.8.3",
+   "released": "2026-10-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: fix(roles): degrade instead of 500 when the roles header is absent fix(roles): gate the sidenav pin list and #add-item on the admin role fix: register the register:app artisan command reliably Accept SVG item icon uploads again Update dependencies to fix composer audit advisories Bu…",
+   "source_url": "https://github.com/linuxserver/Heimdall/releases/tag/v2.8.4",
+   "page_url": "https://www.firmwarely.com/devices/heimdall-dashboard/"
+  },
+  "vector": {
+   "id": "vector",
+   "brand": "Vector",
+   "model": "Observability pipeline",
+   "category": "A",
+   "status": "critical",
+   "version": "0.61.0",
+   "previous": "0.60.0",
+   "released": "2026-10-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "The COSE team is happy to announce Vector 0.61.0! 🚀 Vector is a lightweight, ultra-fast tool for building observability pipelines that puts you in control of your data. Thanks to the 10 contributors who made the 24 changes in this release: 1 breaking change 3 security changes 3 new features 6 enhan…",
+   "source_url": "https://github.com/vectordotdev/vector/releases/tag/v0.61.0",
+   "page_url": "https://www.firmwarely.com/devices/vector/"
   }
  }
 }
