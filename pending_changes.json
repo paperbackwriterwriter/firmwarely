@@ -466,6 +466,21 @@
    "notes": "3.20.1 - 2026-10-29: ❤️ Thanks to all contributors! ❤️:, 🐛 Bug Fixes: Restore drone envsubst [#​7433] Fix step lop group UX [#​7431] 📦️ Dependency: Update golang-packages [#​7426]",
    "source_url": "https://github.com/woodpecker-ci/woodpecker/releases/tag/v3.20.1",
    "page_url": "https://www.firmwarely.com/devices/woodpecker-ci/"
+  },
+  "unpackerr": {
+   "id": "unpackerr",
+   "brand": "Unpackerr",
+   "model": "Archive extractor",
+   "category": "A",
+   "status": "update",
+   "version": "1.0.1",
+   "previous": "1.0.0",
+   "released": "2026-10-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "Just bug fixes found after 1.0.0 released. Better now. Please upgrade. What's Changed: fix(webui): generate row ids without crypto.randomUUID in insecure contexts Leave the login username blank and default queue logs to 1m Show Starr download paths as a list and read PATHS_0 Allow file fields on en…",
+   "source_url": "https://github.com/Unpackerr/unpackerr/releases/tag/v1.0.1",
+   "page_url": "https://www.firmwarely.com/devices/unpackerr/"
   }
  }
 }
