@@ -31500,6 +31500,42 @@
     "security_fix_plain": 0.09,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "windmill",
+   "version": "1.853.1",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-10-29T12:17:01+00:00",
+   "notes_chars": 180,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "browserbox",
+   "version": "20.6.0",
+   "name": "BrowserBox Remote browser isolation",
+   "judged_at": "2026-10-29T12:17:01+00:00",
+   "notes_chars": 83,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

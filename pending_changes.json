@@ -121,6 +121,36 @@
    "notes": "[1.88.2] - 2026-10-29: FIXED: On Keenetic, devices handled by Device Filtering could not open any site, even one in no set - Keenetic lets a connection out under the router's address only after its own firewall rules have marked it. b4 took the first packets of these connections before those rules …",
    "source_url": "https://github.com/DanielLavrushin/b4/releases/tag/v1.88.2",
    "page_url": "https://www.firmwarely.com/devices/b4/"
+  },
+  "windmill": {
+   "id": "windmill",
+   "brand": "Windmill",
+   "model": "Scripts and workflows",
+   "category": "A",
+   "status": "update",
+   "version": "1.853.1",
+   "previous": "1.853.0",
+   "released": "2026-10-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.853.1 (2026-10-29): Bug Fixes: mcp one-workspace runnables, run card links, directory review (#​12072) (32da930) --- This PR was generated with Release Please. See documentation.",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.853.1",
+   "page_url": "https://www.firmwarely.com/devices/windmill/"
+  },
+  "browserbox": {
+   "id": "browserbox",
+   "brand": "BrowserBox",
+   "model": "Remote browser isolation",
+   "category": "R",
+   "status": "update",
+   "version": "20.6.0",
+   "previous": "20.5.5",
+   "released": "2026-10-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "Tested BrowserBox release. Install with: curl -fsSL browserbox.io/install.sh | bash",
+   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.6.0",
+   "page_url": "https://www.firmwarely.com/devices/browserbox/"
   }
  }
 }
