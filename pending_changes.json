@@ -406,6 +406,21 @@
    "notes": "The COSE team is happy to announce Vector 0.61.0! 🚀 Vector is a lightweight, ultra-fast tool for building observability pipelines that puts you in control of your data. Thanks to the 10 contributors who made the 24 changes in this release: 1 breaking change 3 security changes 3 new features 6 enhan…",
    "source_url": "https://github.com/vectordotdev/vector/releases/tag/v0.61.0",
    "page_url": "https://www.firmwarely.com/devices/vector/"
+  },
+  "signoz": {
+   "id": "signoz",
+   "brand": "SigNoz",
+   "model": "Observability platform",
+   "category": "A",
+   "status": "update",
+   "version": "0.148.1",
+   "previous": "0.148.0",
+   "released": "2026-10-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: docs(e2e): point playwright agents and contributing guide at drivers (#​13309) test(integrations): stop GCP account settings drawer tests timing out under load (#​13310) 🚀 Features: feat(alerts): show routing policies and planned downtime as tables (#​13259) feat(alerts): add config…",
+   "source_url": "https://github.com/SigNoz/signoz/releases/tag/v0.148.1",
+   "page_url": "https://www.firmwarely.com/devices/signoz/"
   }
  }
 }
