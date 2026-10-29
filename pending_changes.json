@@ -421,6 +421,36 @@
    "notes": "What's Changed: docs(e2e): point playwright agents and contributing guide at drivers (#​13309) test(integrations): stop GCP account settings drawer tests timing out under load (#​13310) 🚀 Features: feat(alerts): show routing policies and planned downtime as tables (#​13259) feat(alerts): add config…",
    "source_url": "https://github.com/SigNoz/signoz/releases/tag/v0.148.1",
    "page_url": "https://www.firmwarely.com/devices/signoz/"
+  },
+  "dokku": {
+   "id": "dokku",
+   "brand": "Dokku",
+   "model": "Docker-powered PaaS",
+   "category": "A",
+   "status": "update",
+   "version": "0.38.33",
+   "previous": "0.38.32",
+   "released": "2026-10-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "Install/update via the bootstrap script: shell wget -NP . https://dokku.com/install/v0.38.33/bootstrap.sh sudo DOKKU_TAG=v0.38.33 bash bootstrap.sh Bug Fixes: #​9221: Add missing wget dependency to Makefile for source installs Documentation: #​9212: Delimit passed flags in dockerfile-start-cmd exam…",
+   "source_url": "https://github.com/dokku/dokku/releases/tag/v0.38.33",
+   "page_url": "https://www.firmwarely.com/devices/dokku/"
+  },
+  "fugleramme": {
+   "id": "fugleramme",
+   "brand": "Fugleramme",
+   "model": "Raspberry Pi bird camera",
+   "category": "M",
+   "status": "update",
+   "version": "0.30.0",
+   "previous": "0.29.0",
+   "released": "2026-10-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "v0.30.0 (2026-10-29): _This release is published under the MIT License._ Bug Fixes: Add a public address for the BirdNET-Go links (#​317, d3611d4) Chores: (ee02) improve refresh reliability (#​325, f032654) Move config variables for ee02 display out of main.py (#​315, 44a7d11) Sort ee02 imports (d6…",
+   "source_url": "https://github.com/arnegiacomo/fugleramme/releases/tag/v0.30.0",
+   "page_url": "https://www.firmwarely.com/devices/fugleramme/"
   }
  }
 }
