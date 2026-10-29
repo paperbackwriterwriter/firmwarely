@@ -151,6 +151,36 @@
    "notes": "Tested BrowserBox release. Install with: curl -fsSL browserbox.io/install.sh | bash",
    "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.6.0",
    "page_url": "https://www.firmwarely.com/devices/browserbox/"
+  },
+  "cloudflared": {
+   "id": "cloudflared",
+   "brand": "Cloudflare",
+   "model": "Tunnel daemon",
+   "category": "R",
+   "status": "update",
+   "version": "2026.10.6",
+   "previous": "2026.10.5",
+   "released": "2026-10-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "SHA256 Checksums: cloudflared-amd64.pkg: dd58d7ab72eb821ba54282fcabf659edbf197a9f10e1f8a9ceb00a48aeb1fc31 cloudflared-arm64.pkg: 591501ceb3ae7db9277b9a6dd5709984ea55823c7e305fac6fae703b85bb0f24 cloudflared-darwin-amd64.tgz: 2b74a9a6b9e5161dbf79a77c2fcc6337cd7e9d2b23eee9d1b6635ecb17608589 cloudflare…",
+   "source_url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.10.6",
+   "page_url": "https://www.firmwarely.com/devices/cloudflared/"
+  },
+  "kiosk-satellite": {
+   "id": "kiosk-satellite",
+   "brand": "Kiosk Satellite",
+   "model": "Turn any Android device",
+   "category": "S",
+   "status": "update",
+   "version": "2026.10.43",
+   "previous": "2026.10.42",
+   "released": "2026-10-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's new in Kiosk Satellite 2026.10.43: Kiosk Satellite now has its own custom echo canceller. The stop word now gets through a long answer and you can talk over a realtime answer, which the old canceller rarely managed. This release also lets you pick and order the drawer menu's entries, shows a…",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.10.43",
+   "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   }
  }
 }
