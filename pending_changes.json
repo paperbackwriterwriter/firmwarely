@@ -541,6 +541,21 @@
    "notes": "This release upgrades PhotoPrism's database layer and introduces experimental 🐘 PostgreSQL support, thanks to's hard work and numerous contributions. AI assistants and other applications can now connect via 🔐 OAuth and use new 🤖 MCP tools to search and browse your library. Other improvements includ…",
    "source_url": "https://github.com/photoprism/photoprism/releases/tag/261029-963b58c50",
    "page_url": "https://www.firmwarely.com/devices/photoprism/"
+  },
+  "nextdns-cli": {
+   "id": "nextdns-cli",
+   "brand": "NextDNS",
+   "model": "NextDNS CLI client",
+   "category": "R",
+   "status": "update",
+   "version": "1.49.0",
+   "previous": "1.47.3",
+   "released": "2026-10-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: 🛠️ Maintenance Changes: a499fd6b680fb45cbf63b946b521c9b108aba4bb chore: revert unintended OpenWrt timeout push 9b004cccbccf01b0a3a4f502cd2b4298e88870c3 chore: use Digest.WriteString when hashing cache keys (#​1140) bea67d34bebe2cdb6b1439c8aa8463504d18d421 chore(deps): bump golang.org/x/n…",
+   "source_url": "https://github.com/nextdns/nextdns/releases/tag/v1.49.0",
+   "page_url": "https://www.firmwarely.com/devices/nextdns-cli/"
   }
  }
 }
