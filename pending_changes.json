@@ -173,13 +173,13 @@
    "model": "Turn any Android device",
    "category": "S",
    "status": "update",
-   "version": "2026.10.43",
+   "version": "2026.10.44",
    "previous": "2026.10.42",
    "released": "2026-10-29",
    "date_known": true,
    "eol": false,
-   "notes": "What's new in Kiosk Satellite 2026.10.43: Kiosk Satellite now has its own custom echo canceller. The stop word now gets through a long answer and you can talk over a realtime answer, which the old canceller rarely managed. This release also lets you pick and order the drawer menu's entries, shows a…",
-   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.10.43",
+   "notes": "What's new in Kiosk Satellite 2026.10.44: This release adds a slider to fine-tune the stop word's sensitivity, keeps the Echo images on the microphone settings they need and stops the dashboard carousel from showing views that are hidden from the logged-in user. Improvements: Fine-tune the stop wor…",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.10.44",
    "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   },
   "limesurvey": {
@@ -496,6 +496,21 @@
    "notes": "Release Notes: https://forum.suricata.io/t/suricata-8-0-8-released/ Redmine Tracker: https://redmine.openinfosecfoundation.org/versions/238 Download: https://www.openinfosecfoundation.org/download/suricata-8.0.8.tar.gz https://www.openinfosecfoundation.org/download/suricata-8.0.8.tar.gz.sig Documen…",
    "source_url": "https://github.com/OISF/suricata/releases/tag/suricata-8.0.8",
    "page_url": "https://www.firmwarely.com/devices/suricata-ids/"
+  },
+  "obs-studio": {
+   "id": "obs-studio",
+   "brand": "OBS",
+   "model": "OBS Studio",
+   "category": "P",
+   "status": "update",
+   "version": "33.0.1",
+   "previous": "33.0.0",
+   "released": "2026-10-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "33.0.1 Hotfix Changes --------------------- Fixed a crash on startup when logged into a service integration [WizardCM] (#​554) Fixed a crash when logging into the Twitch integration [WizardCM] (#​14072) Fixed a deadlock when logging into the YouTube integration [WizardCM] (#​556) Fixed a race condi…",
+   "source_url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.1",
+   "page_url": "https://www.firmwarely.com/devices/obs-studio/"
   }
  }
 }

@@ -31968,6 +31968,42 @@
     "security_fix_plain": 0.09,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "kiosk-satellite",
+   "version": "2026.10.44",
+   "name": "Kiosk Satellite Turn any Android device",
+   "judged_at": "2026-10-29T22:06:46+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.16,
+    "security_fix_plain": 0.11,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "obs-studio",
+   "version": "33.0.1",
+   "name": "OBS Studio",
+   "judged_at": "2026-10-29T22:06:46+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
