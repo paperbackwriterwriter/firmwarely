@@ -31644,6 +31644,96 @@
     "security_fix_plain": 0.86,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "netbird",
+   "version": "0.82.0",
+   "name": "NetBird Mesh VPN",
+   "judged_at": "2026-10-29T15:40:03+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "nebula-mesh",
+   "version": "1.12.0",
+   "name": "Slack Nebula overlay network",
+   "judged_at": "2026-10-29T15:40:03+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "duplicati",
+   "version": "2.4.1.0",
+   "name": "Duplicati Encrypted backup client",
+   "judged_at": "2026-10-29T15:40:03+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "jupyterlab",
+   "version": "4.6.5",
+   "name": "Jupyter JupyterLab",
+   "judged_at": "2026-10-29T15:40:03+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "kicad",
+   "version": "10.0.8",
+   "name": "KiCad EDA suite",
+   "judged_at": "2026-10-29T15:40:03+00:00",
+   "notes_chars": 6,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
