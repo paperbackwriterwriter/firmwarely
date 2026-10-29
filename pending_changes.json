@@ -758,13 +758,13 @@
    "model": "iMessage export tool",
    "category": "N",
    "status": "update",
-   "version": "5.0.0",
+   "version": "5.0.1",
    "previous": "4.3.0",
    "released": "2026-10-29",
    "date_known": true,
    "eol": false,
-   "notes": "iMessage Exporter 5.0.0: Speckled Clarkia) contains the following fixes and improvements: New Features Contacts-based conversation merging - Combine phone numbers and email addresses belonging to one person, including linked Contacts cards on macOS and iOS - Merge conversations split across those a…",
-   "source_url": "https://github.com/ReagentX/imessage-exporter/releases/tag/5.0.0",
+   "notes": "iMessage Exporter 5.0.1: Speckled Clarkia) contains the following fixes and improvements: New Features Contacts-based conversation merging - Combine phone numbers and email addresses belonging to one person, including linked Contacts cards on macOS and iOS - Merge conversations split across those a…",
+   "source_url": "https://github.com/ReagentX/imessage-exporter/releases/tag/5.0.1",
    "page_url": "https://www.firmwarely.com/devices/imessage-exporter/"
   },
   "onedev": {
