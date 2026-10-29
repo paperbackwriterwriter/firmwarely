@@ -211,6 +211,21 @@
    "notes": "This bug-fix release addresses security, reliability, and payment-accounting issues. Updating is highly recommended, especially for servers shared by multiple merchants. Thank you to Anthropic and its OSS Scanner program for reporting these findings and providing reproducers and proposed fixes. Thi…",
    "source_url": "https://github.com/btcpayserver/btcpayserver/releases/tag/v2.4.7",
    "page_url": "https://www.firmwarely.com/devices/btcpayserver/"
+  },
+  "mastodon": {
+   "id": "mastodon",
+   "brand": "Mastodon",
+   "model": "Social network server",
+   "category": "A",
+   "status": "critical",
+   "version": "4.7.4",
+   "previous": "4.7.3",
+   "released": "2026-10-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "Upgrade overview: This release contains upgrade notes that deviate from the norm: ℹ️ Default Ruby version has been updated ℹ️ Requires assets recompilation For more information, view the complete release notes and scroll down to the upgrade instructions section. Changelog: Security: Fix insufficien…",
+   "source_url": "https://github.com/mastodon/mastodon/releases/tag/v4.7.4",
+   "page_url": "https://www.firmwarely.com/devices/mastodon/"
   }
  }
 }
