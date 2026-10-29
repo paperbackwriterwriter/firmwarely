@@ -706,6 +706,21 @@
    "notes": "This is a security-focused patch. It addresses the eMudhra Intermediate CA compromise, and it also includes two configuration fixes and one change to vroom that you'll want to know about. The ClickHouse image is the one remaining unpatched image. It depends on upstream Altinity publishing a patched…",
    "source_url": "https://github.com/getsentry/self-hosted/releases/tag/26.10.1",
    "page_url": "https://www.firmwarely.com/devices/sentry-self-hosted/"
+  },
+  "sparkyfitness": {
+   "id": "sparkyfitness",
+   "brand": "SparkyFitness",
+   "model": "Family fitness tracker",
+   "category": "A",
+   "status": "update",
+   "version": "1.10.0",
+   "previous": "1.9.0",
+   "released": "2026-10-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "💙 Support SparkyFitness: If SparkyFitness has been useful to you & your family, please consider sponsoring on GitHub or supporting via Ko-fi. Your support helps cover recurring costs such as AI coding tools, development infrastructure, and Apple & Google Developer memberships to keep the project ac…",
+   "source_url": "https://github.com/CodeWithCJ/SparkyFitness/releases/tag/v1.10.0",
+   "page_url": "https://www.firmwarely.com/devices/sparkyfitness/"
   }
  }
 }
