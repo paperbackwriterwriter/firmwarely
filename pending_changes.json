@@ -481,6 +481,21 @@
    "notes": "Just bug fixes found after 1.0.0 released. Better now. Please upgrade. What's Changed: fix(webui): generate row ids without crypto.randomUUID in insecure contexts Leave the login username blank and default queue logs to 1m Show Starr download paths as a list and read PATHS_0 Allow file fields on en…",
    "source_url": "https://github.com/Unpackerr/unpackerr/releases/tag/v1.0.1",
    "page_url": "https://www.firmwarely.com/devices/unpackerr/"
+  },
+  "suricata-ids": {
+   "id": "suricata-ids",
+   "brand": "OISF",
+   "model": "Suricata IDS",
+   "category": "R",
+   "status": "update",
+   "version": "8.0.8",
+   "previous": "8.0.7",
+   "released": "2026-10-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release Notes: https://forum.suricata.io/t/suricata-8-0-8-released/ Redmine Tracker: https://redmine.openinfosecfoundation.org/versions/238 Download: https://www.openinfosecfoundation.org/download/suricata-8.0.8.tar.gz https://www.openinfosecfoundation.org/download/suricata-8.0.8.tar.gz.sig Documen…",
+   "source_url": "https://github.com/OISF/suricata/releases/tag/suricata-8.0.8",
+   "page_url": "https://www.firmwarely.com/devices/suricata-ids/"
   }
  }
 }
