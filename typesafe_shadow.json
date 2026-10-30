@@ -32688,6 +32688,60 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "homarr",
+   "version": "2.10.0",
+   "name": "Homarr Dashboard",
+   "judged_at": "2026-10-30T16:54:14+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "docker-volume-backup",
+   "version": "2.50.1",
+   "name": "docker-volume-backup Docker volume backups",
+   "judged_at": "2026-10-30T16:54:14+00:00",
+   "notes_chars": 87,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.23,
+    "security_fix_plain": 0.39,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "mobile-mcp",
+   "version": "1.0.15",
+   "name": "Mobile Mcp Model Context Protocol Server",
+   "judged_at": "2026-10-30T16:54:14+00:00",
+   "notes_chars": 281,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

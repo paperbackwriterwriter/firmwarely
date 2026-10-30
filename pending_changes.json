@@ -301,6 +301,51 @@
    "notes": "What's new in Kiosk Satellite 2026.10.45: This release lets a dashboard button or a gesture open the next alarm, lets plugins open any kiosk link and fixes Immich albums from Home Assistant in the screensaver. It also fixes an update helper that would not start after a reboot and cuts down on main …",
    "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.10.45",
    "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
+  },
+  "homarr": {
+   "id": "homarr",
+   "brand": "Homarr",
+   "model": "Dashboard",
+   "category": "A",
+   "status": "update",
+   "version": "2.10.0",
+   "previous": "2.9.1",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: chore(deps): update crowdin/github-action action to v3.5.0 by in https://github.com/homarr-labs/homarr/pull/7373 fix(widgets): repair download resizing and table column options docs(triage): require value and compatibility decisions chore: update bug report template by in https://gi…",
+   "source_url": "https://github.com/homarr-labs/homarr/releases/tag/v2.10.0",
+   "page_url": "https://www.firmwarely.com/devices/homarr/"
+  },
+  "docker-volume-backup": {
+   "id": "docker-volume-backup",
+   "brand": "docker-volume-backup",
+   "model": "Docker volume backups",
+   "category": "N",
+   "status": "update",
+   "version": "2.50.1",
+   "previous": "2.50.0",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "Fixes: Restrict SSH host key algorithms to the configured host key types #​893 (thanks)",
+   "source_url": "https://github.com/offen/docker-volume-backup/releases/tag/v2.50.1",
+   "page_url": "https://www.firmwarely.com/devices/docker-volume-backup/"
+  },
+  "mobile-mcp": {
+   "id": "mobile-mcp",
+   "brand": "Mobile Mcp",
+   "model": "Model Context Protocol Server",
+   "category": "C",
+   "status": "update",
+   "version": "1.0.15",
+   "previous": "1.0.14",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "Feat: mobile_clear_app_data clears an app's data on Android and iOS Simulator (#​524) Fix: mobile_save_screenshot and mobile_get_device_logs replace the output file by rename, so a hard link at saveTo is never written through (#​533), thanks to Chore: Upgrade/node to 2.1.2 (#​539)",
+   "source_url": "https://github.com/mobile-next/mobile-mcp/releases/tag/1.0.15",
+   "page_url": "https://www.firmwarely.com/devices/mobile-mcp/"
   }
  }
 }
