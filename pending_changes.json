@@ -406,6 +406,51 @@
    "notes": "💙 Support SparkyFitness: If SparkyFitness has been useful to you & your family, please consider sponsoring on GitHub or supporting via Ko-fi. Your support helps cover recurring costs such as AI coding tools, development infrastructure, and Apple & Google Developer memberships to keep the project ac…",
    "source_url": "https://github.com/CodeWithCJ/SparkyFitness/releases/tag/v1.11.0",
    "page_url": "https://www.firmwarely.com/devices/sparkyfitness/"
+  },
+  "invoice-ninja": {
+   "id": "invoice-ninja",
+   "brand": "Invoice Ninja",
+   "model": "Invoicing",
+   "category": "A",
+   "status": "update",
+   "version": "5.13.52",
+   "previous": "5.13.51",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Version bump Fixes for EPC QR Codes v5.13.52 Full Changelog: https://github.com/invoiceninja/invoiceninja/compare/v5.13.51...v5.13.52",
+   "source_url": "https://github.com/invoiceninja/invoiceninja/releases/tag/v5.13.52",
+   "page_url": "https://www.firmwarely.com/devices/invoice-ninja/"
+  },
+  "dawarich": {
+   "id": "dawarich",
+   "brand": "Dawarich",
+   "model": "Location history",
+   "category": "A",
+   "status": "update",
+   "version": "1.20.0",
+   "previous": "1.19.0",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "⚠️ Upgrade notes: Migrations that install database triggers on points wait at most 5 seconds for a table lock. If one stops with a lock timeout, stop the workers or wait for running imports to finish, then restart the application; the migrations are safe to re-run. The initial geographic calculatio…",
+   "source_url": "https://github.com/Freika/dawarich/releases/tag/1.20.0",
+   "page_url": "https://www.firmwarely.com/devices/dawarich/"
+  },
+  "onyx": {
+   "id": "onyx",
+   "brand": "Onyx",
+   "model": "AI platform",
+   "category": "A",
+   "status": "update",
+   "version": "5.0.3",
+   "previous": "5.0.1",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "See the assets to download this version and install. What's Changed: fix(web): Document Access keeps a picked option when the field remounts (release v5.0) fix(web): lock the connector create form only without an account (release v5.0) chore(deps): bump msgpack, authlib, dnspython and tornado for D…",
+   "source_url": "https://github.com/onyx-dot-app/onyx/releases/tag/v5.0.3",
+   "page_url": "https://www.firmwarely.com/devices/onyx/"
   }
  }
 }
