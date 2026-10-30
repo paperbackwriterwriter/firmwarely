@@ -32940,6 +32940,24 @@
     "security_fix_plain": 0.47,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "tugtainer",
+   "version": "1.45.1",
+   "name": "Tugtainer Docker container updater",
+   "judged_at": "2026-10-30T23:44:30+00:00",
+   "notes_chars": 251,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.31,
+    "security_fix_plain": 0.73,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

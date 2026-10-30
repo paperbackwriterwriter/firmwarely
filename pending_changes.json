@@ -481,6 +481,21 @@
    "notes": "## Stable (since October 30, 2026) Changelog: Bug fixes: Confine read_skill_file reads to the skill directory (#​31462, f120507920) Compare: v2.37.8...v2.37.9 Container image: docker pull ghcr.io/coder/coder:v2.37.9 Install/upgrade: Refer to our docs to install or upgrade Coder, or use a release as…",
    "source_url": "https://github.com/coder/coder/releases/tag/v2.37.9",
    "page_url": "https://www.firmwarely.com/devices/coder/"
+  },
+  "tugtainer": {
+   "id": "tugtainer",
+   "brand": "Tugtainer",
+   "model": "Docker container updater",
+   "category": "A",
+   "status": "critical",
+   "version": "1.45.1",
+   "previous": "1.45.0",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "v1.45.1 (2026-10-30): Bug Fixes: security: Backend/agent dependencies audit, replace python-jose to PyJWT (f0414de) Documentation: Align guidelines and feature docs with the code, consistant doc styles (f84fafa) --- Detailed Changes: v1.45.0...v1.45.1",
+   "source_url": "https://github.com/Quenary/tugtainer/releases/tag/v1.45.1",
+   "page_url": "https://www.firmwarely.com/devices/tugtainer/"
   }
  }
 }
