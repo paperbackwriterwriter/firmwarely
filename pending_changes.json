@@ -121,6 +121,51 @@
    "notes": "v0.9.110: Changes: ✨ New Features Unified access to subapps from both the Dock and standalone windows. MQTT debugging sessions now follow the currently active chat. Added an option to enable or disable operation sound effects in Blockly. 🐛 Bug Fixes Improved subapp reliability during reinstalls, co…",
    "source_url": "https://github.com/ailyProject/aily-blockly/releases/tag/v0.9.110",
    "page_url": "https://www.firmwarely.com/devices/aily-blockly/"
+  },
+  "ubiquiti-unifi-network-application": {
+   "id": "ubiquiti-unifi-network-application",
+   "brand": "Ubiquiti",
+   "model": "UniFi Network Application",
+   "category": "R",
+   "status": "update",
+   "version": "11.0.99",
+   "previous": "11.0.97",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "Overview UniFi Network Application 11.0.99 includes the improvements and bugfixes below. Improvements Improved PostgreSQL migration reliability. Improved application resiliency. Bugfixes Fixed an issue where the Site filter in Site Manager System Logs did not work. Additional information Self-Hoste…",
+   "source_url": "https://community.ui.com/releases/UniFi-Network-Application-11-0-99/e166b2d2-e321-4e74-8efb-bfce33d6653c",
+   "page_url": "https://www.firmwarely.com/devices/ubiquiti-unifi-network-application/"
+  },
+  "music-assistant": {
+   "id": "music-assistant",
+   "brand": "Music Assistant",
+   "model": "Media library server",
+   "category": "S",
+   "status": "update",
+   "version": "2.10.9",
+   "previous": "2.10.8",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "📦 Stable Release: _Changes since 2.10.8_ 🚀 Features and enhancements: Auto pair Sendspin clients through Home Assistant () 🐛 Bugfixes: Don't fail HEOS setup when one device's inputs can't be browsed () Keep a track's length after its queue moves to another player () Keep a Universal Player's id whe…",
+   "source_url": "https://github.com/music-assistant/server/releases/tag/2.10.9",
+   "page_url": "https://www.firmwarely.com/devices/music-assistant/"
+  },
+  "1panel": {
+   "id": "1panel",
+   "brand": "1Panel",
+   "model": "Linux server panel",
+   "category": "A",
+   "status": "critical",
+   "version": "2.4.2",
+   "previous": "2.4.1",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "English | 中文 Bug Fixes System: Disabled MPTCP by default to mitigate a Linux kernel remote code execution vulnerability (CVE-2026-98432) 问题修复 【系统】默认禁用 MPTCP，缓解 Linux 内核远程代码执行漏洞（CVE-2026-98432）",
+   "source_url": "https://github.com/1Panel-dev/1Panel/releases/tag/v2.4.2",
+   "page_url": "https://www.firmwarely.com/devices/1panel/"
   }
  }
 }

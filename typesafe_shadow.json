@@ -32472,6 +32472,60 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "ubiquiti-unifi-network-application",
+   "version": "11.0.99",
+   "name": "Ubiquiti UniFi Network Application",
+   "judged_at": "2026-10-30T13:20:36+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "music-assistant",
+   "version": "2.10.9",
+   "name": "Music Assistant Media library server",
+   "judged_at": "2026-10-30T13:20:36+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "1panel",
+   "version": "2.4.2",
+   "name": "1Panel Linux server panel",
+   "judged_at": "2026-10-30T13:20:36+00:00",
+   "notes_chars": 192,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.24,
+    "security_fix_plain": 0.16,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
