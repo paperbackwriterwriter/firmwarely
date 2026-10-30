@@ -346,6 +346,51 @@
    "notes": "Feat: mobile_clear_app_data clears an app's data on Android and iOS Simulator (#​524) Fix: mobile_save_screenshot and mobile_get_device_logs replace the output file by rename, so a hard link at saveTo is never written through (#​533), thanks to Chore: Upgrade/node to 2.1.2 (#​539)",
    "source_url": "https://github.com/mobile-next/mobile-mcp/releases/tag/1.0.15",
    "page_url": "https://www.firmwarely.com/devices/mobile-mcp/"
+  },
+  "cloudflared": {
+   "id": "cloudflared",
+   "brand": "Cloudflare",
+   "model": "Tunnel daemon",
+   "category": "R",
+   "status": "update",
+   "version": "2026.10.7",
+   "previous": "2026.10.6",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "SHA256 Checksums: cloudflared-amd64.pkg: 917e804561007221f83d9ba2ebd3dc9f7f2f328653d52af33e91e4a7a942d1fb cloudflared-arm64.pkg: 1ec2fdf94235f0b1422296383cb3eb028b75f4d9c2f2d51255651a3da2e357e6 cloudflared-darwin-amd64.tgz: 5c55e77da7012cebca19170357e196176c48c9647cc2ead404702fa125ddbd86 cloudflare…",
+   "source_url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.10.7",
+   "page_url": "https://www.firmwarely.com/devices/cloudflared/"
+  },
+  "windmill": {
+   "id": "windmill",
+   "brand": "Windmill",
+   "model": "Scripts and workflows",
+   "category": "A",
+   "status": "update",
+   "version": "1.855.0",
+   "previous": "1.854.2",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.855.0 (2026-10-30): Features: link to the groups page wherever a group can be picked (#​12125) (efcffb5) one home and ai sessions in the sidebar (#​12126) (af836f1) Bug Fixes: debugger: require coding capability to sign debug sessions (#​12119) (384295b) hide empty folder chevrons and size tree s…",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.855.0",
+   "page_url": "https://www.firmwarely.com/devices/windmill/"
+  },
+  "metabase": {
+   "id": "metabase",
+   "brand": "Metabase",
+   "model": "Business intelligence",
+   "category": "A",
+   "status": "update",
+   "version": "65.2",
+   "previous": "64.3",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "Upgrading: Before you upgrade, back up your Metabase application database! Check out our upgrading instructions. Get the most out of Metabase. Learn more about advanced features, managed cloud, and first-class support. Metabase Open Source: Docker image: metabase/metabase:v0.65.2.x JAR download: ht…",
+   "source_url": "https://github.com/metabase/metabase/releases/tag/v0.65.2",
+   "page_url": "https://www.firmwarely.com/devices/metabase/"
   }
  }
 }

@@ -32742,6 +32742,60 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "cloudflared",
+   "version": "2026.10.7",
+   "name": "Cloudflare Tunnel daemon",
+   "judged_at": "2026-10-30T17:45:25+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "windmill",
+   "version": "1.855.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-10-30T17:45:25+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.2,
+    "security_fix_plain": 0.15,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "metabase",
+   "version": "65.2",
+   "name": "Metabase Business intelligence",
+   "judged_at": "2026-10-30T17:45:25+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
