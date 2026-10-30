@@ -32598,6 +32598,24 @@
     "security_fix_plain": 0.8,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "alexandrie",
+   "version": "8.14.3",
+   "name": "Alexandrie Offline-first note-taking app",
+   "judged_at": "2026-10-30T15:12:39+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.07,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
