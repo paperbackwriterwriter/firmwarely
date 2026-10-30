@@ -32166,6 +32166,42 @@
     "security_fix_plain": 0.1,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "dokku",
+   "version": "0.38.34",
+   "name": "Dokku Docker-powered PaaS",
+   "judged_at": "2026-10-30T02:51:19+00:00",
+   "notes_chars": 265,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "casdoor",
+   "version": "4.25.0",
+   "name": "Casdoor Identity and access",
+   "judged_at": "2026-10-30T02:51:19+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
