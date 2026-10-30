@@ -593,13 +593,13 @@
    "model": "Task and chore manager",
    "category": "A",
    "status": "update",
-   "version": "0.1.84",
+   "version": "0.1.85",
    "previous": "0.1.83",
    "released": "2026-10-30",
    "date_known": true,
    "eol": false,
-   "notes": "Changelog: f1b89fb066e02c3f1296981980db033e5db30327: Fix: don't send notification to self on assgiment () 69a1b4789cbf15eb3272c2a3fe89893a64d4407c: Merge pull request #​943 from donetick/1028-fixes ()",
-   "source_url": "https://github.com/donetick/donetick/releases/tag/v0.1.84",
+   "notes": "Changelog: 0bda3b38cf3f75bb152e00f00d9bbec3de3b1f88: feat: add circle ID, privacy flag, and assignment strategy to chore details () 9706cbd2e329b2f788074f61446ff67676654040: Merge pull request #​944 from donetick/fix-permission-chore-details ()",
+   "source_url": "https://github.com/donetick/donetick/releases/tag/v0.1.85",
    "page_url": "https://www.firmwarely.com/devices/donetick/"
   },
   "dozzle": {
@@ -646,6 +646,21 @@
    "notes": "Changelog: Features: 317188bcedf34ae70ec5d2261fa9073030febc17 feat(auth): redesign the sign-in, sign-up and forget pages and fix dark mode f231a93ab3cffd1641f680659b447c7ffe5a0afb feat(dcr): inherit EnableSigninSession and EnableWebAuthn from default application 20564f455bd2c9fb0434af5b0e476422dcec…",
    "source_url": "https://github.com/casdoor/casdoor/releases/tag/v4.25.0",
    "page_url": "https://www.firmwarely.com/devices/casdoor/"
+  },
+  "tooljet": {
+   "id": "tooljet",
+   "brand": "ToolJet",
+   "model": "Low-code platform",
+   "category": "A",
+   "status": "update",
+   "version": "3.20.252-lts",
+   "previous": "3.20.251-lts",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: feat: Tooljet CLI for custom component Fix/ai error logging AI Builder release 5: attachment failure diagnostics and EE integration Full Changelog: https://github.com/ToolJet/ToolJet/compare/v3.20.251-lts...v3.20.252-lts",
+   "source_url": "https://github.com/ToolJet/ToolJet/releases/tag/v3.20.252-lts",
+   "page_url": "https://www.firmwarely.com/devices/tooljet/"
   }
  }
 }

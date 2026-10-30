@@ -32238,6 +32238,42 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "donetick",
+   "version": "0.1.85",
+   "name": "Donetick Task and chore manager",
+   "judged_at": "2026-10-30T05:23:23+00:00",
+   "notes_chars": 244,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.35,
+    "security_fix_plain": 0.1,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "tooljet",
+   "version": "3.20.252-lts",
+   "name": "ToolJet Low-code platform",
+   "judged_at": "2026-10-30T05:23:23+00:00",
+   "notes_chars": 236,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
