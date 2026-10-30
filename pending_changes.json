@@ -1,5 +1,36 @@
 {
- "since": null,
+ "since": "2026-10-30T09:06:26+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "traefik": {
+   "id": "traefik",
+   "brand": "Traefik Labs",
+   "model": "Traefik Proxy",
+   "category": "R",
+   "status": "update",
+   "version": "3.7.17",
+   "previous": "3.7.16",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "Important: Please read the migration guide. Bug fixes: [acme] Bump github.com/go-acme/lego/v5 to v5.6.0 (#​14166) [acme] Bump github.com/go-jose/go-jose/v4 to v4.1.6 (#​14165) [http3] Bump github.com/quic-go/quic-go to v0.64.1 (#​14132) [k8s/gatewayapi] Preserve Gateway status conditions owned by o…",
+   "source_url": "https://github.com/traefik/traefik/releases/tag/v3.7.17",
+   "page_url": "https://www.firmwarely.com/devices/traefik/"
+  },
+  "n8n": {
+   "id": "n8n",
+   "brand": "n8n",
+   "model": "Workflow automation",
+   "category": "A",
+   "status": "update",
+   "version": "2.45.7",
+   "previous": "2.45.6",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "2.45.7 (2026-10-30): Bug Fixes: core: Require execution:read when workflow-scoped routes read execution data (#​42446) (93638f4) core: Resolve IMAP trigger expressions after activation (#​42611) (50ef902) core: Return user data with an isError key as data in expressions (#​42491) (c422a6c)",
+   "source_url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.45.7",
+   "page_url": "https://www.firmwarely.com/devices/n8n/"
+  }
+ }
 }
