@@ -128,13 +128,13 @@
    "model": "Scripts and workflows",
    "category": "A",
    "status": "update",
-   "version": "1.854.1",
+   "version": "1.854.2",
    "previous": "1.853.0",
    "released": "2026-10-30",
    "date_known": true,
    "eol": false,
-   "notes": "1.854.1 (2026-10-30): Bug Fixes: share and first deploy in ai sessions, app access in settings (#​12112) (981baed) --- This PR was generated with Release Please. See documentation.",
-   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.854.1",
+   "notes": "1.854.2 (2026-10-30): Bug Fixes: read a new app's links before its session draft is discarded (#​12114) (48493f8) --- This PR was generated with Release Please. See documentation.",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.854.2",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
   },
   "browserbox": {
