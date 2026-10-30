@@ -106,6 +106,21 @@
    "notes": "#​12113 #​12111 #​12110 #​12109 #​12108 #​12107 #​11695",
    "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.303.37987",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "aily-blockly": {
+   "id": "aily-blockly",
+   "brand": "Aily",
+   "model": "Blockly AI IDE for Arduino",
+   "category": "M",
+   "status": "update",
+   "version": "0.9.110",
+   "previous": "0.9.109",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "v0.9.110: Changes: ✨ New Features Unified access to subapps from both the Dock and standalone windows. MQTT debugging sessions now follow the currently active chat. Added an option to enable or disable operation sound effects in Blockly. 🐛 Bug Fixes Improved subapp reliability during reinstalls, co…",
+   "source_url": "https://github.com/ailyProject/aily-blockly/releases/tag/v0.9.110",
+   "page_url": "https://www.firmwarely.com/devices/aily-blockly/"
   }
  }
 }

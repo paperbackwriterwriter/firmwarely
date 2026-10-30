@@ -32454,6 +32454,24 @@
     "security_fix_plain": 0.04,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "aily-blockly",
+   "version": "0.9.110",
+   "name": "Aily Blockly AI IDE for Arduino",
+   "judged_at": "2026-10-30T12:29:50+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
