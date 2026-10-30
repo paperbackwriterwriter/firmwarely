@@ -571,6 +571,36 @@
    "notes": "Please see our changelog for more details.",
    "source_url": "https://github.com/firezone/firezone/releases/tag/gateway-1.6.4",
    "page_url": "https://www.firmwarely.com/devices/firezone/"
+  },
+  "invoice-ninja": {
+   "id": "invoice-ninja",
+   "brand": "Invoice Ninja",
+   "model": "Invoicing",
+   "category": "A",
+   "status": "update",
+   "version": "5.13.51",
+   "previous": "5.13.50",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Fix Apple sign-in failing with a 500 on iOS/macOS Add payment due date to CII payment terms in ZUGFeRD e-invoices Translation strings for OIDC Send self-hosted app-link fallbacks to APP_URL, not REACT_URL feat(oidc): auto login & labelling chore(oidc): improved doc for client_secret…",
+   "source_url": "https://github.com/invoiceninja/invoiceninja/releases/tag/v5.13.51",
+   "page_url": "https://www.firmwarely.com/devices/invoice-ninja/"
+  },
+  "donetick": {
+   "id": "donetick",
+   "brand": "Donetick",
+   "model": "Task and chore manager",
+   "category": "A",
+   "status": "update",
+   "version": "0.1.84",
+   "previous": "0.1.83",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: f1b89fb066e02c3f1296981980db033e5db30327: Fix: don't send notification to self on assgiment () 69a1b4789cbf15eb3272c2a3fe89893a64d4407c: Merge pull request #​943 from donetick/1028-fixes ()",
+   "source_url": "https://github.com/donetick/donetick/releases/tag/v0.1.84",
+   "page_url": "https://www.firmwarely.com/devices/donetick/"
   }
  }
 }

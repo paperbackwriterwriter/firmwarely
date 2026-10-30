@@ -32094,6 +32094,42 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "invoice-ninja",
+   "version": "5.13.51",
+   "name": "Invoice Ninja Invoicing",
+   "judged_at": "2026-10-30T01:09:35+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "donetick",
+   "version": "0.1.84",
+   "name": "Donetick Task and chore manager",
+   "judged_at": "2026-10-30T01:09:35+00:00",
+   "notes_chars": 200,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
