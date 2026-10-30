@@ -241,6 +241,66 @@
    "notes": "Full Changelog: https://github.com/Smaug6739/Alexandrie/compare/v8.14.2...v8.14.3 What's Changed: fix(s3): do not abort startup when PutBucketPolicy is unsupported fix: handle unavailable Kanban views without losing the saved preference fix: align default CDN_URL with RustFS port 9000 fix(oidc): wi…",
    "source_url": "https://github.com/Smaug6739/Alexandrie/releases/tag/v8.14.3",
    "page_url": "https://www.firmwarely.com/devices/alexandrie/"
+  },
+  "prefect": {
+   "id": "prefect",
+   "brand": "Prefect",
+   "model": "Workflow orchestration",
+   "category": "A",
+   "status": "update",
+   "version": "3.9.1",
+   "previous": "3.9.0",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "3.9.1 - This hour is a rerun: Released on October 30, 2026 Enhancements ➕➕ Add custom state discovery and filters Add Run action to the React flows list menu and flow page by in #​23354 Allow sorting task runs by duration Allow dismissing the V1 UI sidebar shortcut Enforce duration input minimum Ca…",
+   "source_url": "https://github.com/PrefectHQ/prefect/releases/tag/3.9.1",
+   "page_url": "https://www.firmwarely.com/devices/prefect/"
+  },
+  "dagster": {
+   "id": "dagster",
+   "brand": "Dagster",
+   "model": "Data orchestrator",
+   "category": "A",
+   "status": "update",
+   "version": "1.13.28",
+   "previous": "1.13.27",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "New: Dagster now supports protobuf 7. [ui] Selection input suggestions now update when their values finish loading. [ui] Selection inputs now suggest a tag key's values right after = or an opening quote, and while typing a tag value. [ui] When no suggestion matches, selection inputs now offer the t…",
+   "source_url": "https://github.com/dagster-io/dagster/releases/tag/1.13.28",
+   "page_url": "https://www.firmwarely.com/devices/dagster/"
+  },
+  "browserbox": {
+   "id": "browserbox",
+   "brand": "BrowserBox",
+   "model": "Remote browser isolation",
+   "category": "R",
+   "status": "update",
+   "version": "20.6.1",
+   "previous": "20.6.0",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "Tested BrowserBox release. Install: macOS and Linux bash curl -fsSL https://browserbox.io/install.sh | bash Windows (PowerShell as Administrator) powershell irm https://browserbox.io/install.ps1 | iex Update an existing installation: macOS and Linux bash bbx update v20.6.1 Windows (updates to the l…",
+   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.6.1",
+   "page_url": "https://www.firmwarely.com/devices/browserbox/"
+  },
+  "kiosk-satellite": {
+   "id": "kiosk-satellite",
+   "brand": "Kiosk Satellite",
+   "model": "Turn any Android device",
+   "category": "S",
+   "status": "update",
+   "version": "2026.10.45",
+   "previous": "2026.10.44",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's new in Kiosk Satellite 2026.10.45: This release lets a dashboard button or a gesture open the next alarm, lets plugins open any kiosk link and fixes Immich albums from Home Assistant in the screensaver. It also fixes an update helper that would not start after a reboot and cuts down on main …",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.10.45",
+   "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   }
  }
 }
