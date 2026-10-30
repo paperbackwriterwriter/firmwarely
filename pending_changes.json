@@ -128,13 +128,13 @@
    "model": "Scripts and workflows",
    "category": "A",
    "status": "update",
-   "version": "1.853.1",
+   "version": "1.854.0",
    "previous": "1.853.0",
-   "released": "2026-10-29",
+   "released": "2026-10-30",
    "date_known": true,
    "eol": false,
-   "notes": "1.853.1 (2026-10-29): Bug Fixes: mcp one-workspace runnables, run card links, directory review (#​12072) (32da930) --- This PR was generated with Release Please. See documentation.",
-   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.853.1",
+   "notes": "1.854.0 (2026-10-30): Features: add a share dialog and a first-deploy dialog (#​11950) (ef5fa21) add read-only generic HTTP secret store backend (#​12098) (a2b3e98) deploy apps with a Settings drawer instead of the deploy drawer (#​11944) (792dd27) Bug Fixes: bump uv to 0.13.6 so preinstalled pytho…",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.854.0",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
   },
   "browserbox": {
@@ -556,6 +556,21 @@
    "notes": "Changelog: 🛠️ Maintenance Changes: a499fd6b680fb45cbf63b946b521c9b108aba4bb chore: revert unintended OpenWrt timeout push 9b004cccbccf01b0a3a4f502cd2b4298e88870c3 chore: use Digest.WriteString when hashing cache keys (#​1140) bea67d34bebe2cdb6b1439c8aa8463504d18d421 chore(deps): bump golang.org/x/n…",
    "source_url": "https://github.com/nextdns/nextdns/releases/tag/v1.49.0",
    "page_url": "https://www.firmwarely.com/devices/nextdns-cli/"
+  },
+  "firezone": {
+   "id": "firezone",
+   "brand": "Firezone",
+   "model": "Zero-trust access gateway",
+   "category": "R",
+   "status": "update",
+   "version": "1.6.4",
+   "previous": "1.5.23",
+   "released": "2026-10-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "Please see our changelog for more details.",
+   "source_url": "https://github.com/firezone/firezone/releases/tag/gateway-1.6.4",
+   "page_url": "https://www.firmwarely.com/devices/firezone/"
   }
  }
 }
