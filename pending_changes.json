@@ -211,6 +211,21 @@
    "notes": "Minor Changes: 0212c7bd3: feat: Expose alert tags to Generic and incident.io webhook bodies as {{tags}} (comma-separated, or iterate with {{#each tags}}), and include them in the default incident.io body's metadata.tags, so one shared webhook can route alerts by owning team Patch Changes: 4ea523a1b…",
    "source_url": "https://github.com/hyperdxio/hyperdx/releases/tag/%40hyperdx/app%402.43.0",
    "page_url": "https://www.firmwarely.com/devices/hyperdx/"
+  },
+  "thingsboard": {
+   "id": "thingsboard",
+   "brand": "ThingsBoard",
+   "model": "IoT platform",
+   "category": "S",
+   "status": "critical",
+   "version": "4.4.0.2",
+   "previous": "4.4.0.1",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Security patches and Full Changelog: https://github.com/thingsboard/thingsboard/compare/v4.4.0.1...v4.4.0.2",
+   "source_url": "https://github.com/thingsboard/thingsboard/releases/tag/v4.4.0.2",
+   "page_url": "https://www.firmwarely.com/devices/thingsboard/"
   }
  }
 }
