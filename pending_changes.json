@@ -166,6 +166,51 @@
    "notes": "English | 中文 Bug Fixes System: Disabled MPTCP by default to mitigate a Linux kernel remote code execution vulnerability (CVE-2026-98432) 问题修复 【系统】默认禁用 MPTCP，缓解 Linux 内核远程代码执行漏洞（CVE-2026-98432）",
    "source_url": "https://github.com/1Panel-dev/1Panel/releases/tag/v2.4.2",
    "page_url": "https://www.firmwarely.com/devices/1panel/"
+  },
+  "ntfy": {
+   "id": "ntfy",
+   "brand": "ntfy",
+   "model": "Push notification server",
+   "category": "A",
+   "status": "update",
+   "version": "2.35.0",
+   "previous": "2.34.0",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: 5c2a1ddeefdaa77dd6e4b1b5dad551b197c3bab0 Release notes and install docs, prep v2.35.0",
+   "source_url": "https://github.com/binwiederhier/ntfy/releases/tag/v2.35.0",
+   "page_url": "https://www.firmwarely.com/devices/ntfy/"
+  },
+  "shadps4": {
+   "id": "shadps4",
+   "brand": "shadPS4",
+   "model": "PlayStation 4 emulator",
+   "category": "C",
+   "status": "update",
+   "version": "0.21.0",
+   "previous": "0.20.0",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "Another week another release . There are ton of changes , so why not ? Core: Properly check where an input came from for digital-›analog input smoothing cpu_patches: Work around Rosetta 2 mistranslating negated scalar compares file_sys: Report stable file identities in stat and fstat Allow file typ…",
+   "source_url": "https://github.com/shadps4-emu/shadPS4/releases/tag/v.0.21.0",
+   "page_url": "https://www.firmwarely.com/devices/shadps4/"
+  },
+  "hyperdx": {
+   "id": "hyperdx",
+   "brand": "Hyperdx",
+   "model": "Resolve production issues, fast",
+   "category": "A",
+   "status": "update",
+   "version": "2.43.0",
+   "previous": "0.8.0",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "Minor Changes: 0212c7bd3: feat: Expose alert tags to Generic and incident.io webhook bodies as {{tags}} (comma-separated, or iterate with {{#each tags}}), and include them in the default incident.io body's metadata.tags, so one shared webhook can route alerts by owning team Patch Changes: 4ea523a1b…",
+   "source_url": "https://github.com/hyperdxio/hyperdx/releases/tag/%40hyperdx/app%402.43.0",
+   "page_url": "https://www.firmwarely.com/devices/hyperdx/"
   }
  }
 }
