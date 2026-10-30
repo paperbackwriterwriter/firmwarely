@@ -31,6 +31,36 @@
    "notes": "2.45.7 (2026-10-30): Bug Fixes: core: Require execution:read when workflow-scoped routes read execution data (#​42446) (93638f4) core: Resolve IMAP trigger expressions after activation (#​42611) (50ef902) core: Return user data with an isError key as data in expressions (#​42491) (c422a6c)",
    "source_url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.45.7",
    "page_url": "https://www.firmwarely.com/devices/n8n/"
+  },
+  "opnsense-firewall": {
+   "id": "opnsense-firewall",
+   "brand": "OPNsense",
+   "model": "Firewall (community edition)",
+   "category": "R",
+   "status": "update",
+   "version": "26.7.8",
+   "previous": "26.7.7",
+   "released": "2026-10-29",
+   "date_known": true,
+   "eol": false,
+   "notes": "26.7.8",
+   "source_url": "https://github.com/opnsense/core/releases/tag/26.7.8",
+   "page_url": "https://www.firmwarely.com/devices/opnsense-firewall/"
+  },
+  "headscale": {
+   "id": "headscale",
+   "brand": "Headscale",
+   "model": "Tailscale control server",
+   "category": "R",
+   "status": "critical",
+   "version": "0.29.7",
+   "previous": "0.29.6",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "Minimum supported Tailscale client version: v1.80.0 Security: This is a security release. It fixes findings from Anthropic's oss-scanner project and the Tailworm report. None are critical, but some can cause denial of service in Headscale. We recommend that all users upgrade to Headscale 0.29.7 and…",
+   "source_url": "https://github.com/juanfont/headscale/releases/tag/v0.29.7",
+   "page_url": "https://www.firmwarely.com/devices/headscale/"
   }
  }
 }
