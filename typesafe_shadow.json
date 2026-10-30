@@ -32904,6 +32904,42 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "homarr",
+   "version": "2.10.1",
+   "name": "Homarr Dashboard",
+   "judged_at": "2026-10-30T22:53:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "coder",
+   "version": "2.37.9",
+   "name": "Coder Remote dev environments",
+   "judged_at": "2026-10-30T22:53:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.62,
+    "security_fix_plain": 0.47,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
