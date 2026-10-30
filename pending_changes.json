@@ -368,13 +368,13 @@
    "model": "Scripts and workflows",
    "category": "A",
    "status": "update",
-   "version": "1.855.0",
+   "version": "1.855.1",
    "previous": "1.854.2",
    "released": "2026-10-30",
    "date_known": true,
    "eol": false,
-   "notes": "1.855.0 (2026-10-30): Features: link to the groups page wherever a group can be picked (#​12125) (efcffb5) one home and ai sessions in the sidebar (#​12126) (af836f1) Bug Fixes: debugger: require coding capability to sign debug sessions (#​12119) (384295b) hide empty folder chevrons and size tree s…",
-   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.855.0",
+   "notes": "1.855.1 (2026-10-30): Bug Fixes: list only the reader's own ai chats in the sidebar (#​12134) (a8b84fc) --- This PR was generated with Release Please. See documentation.",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.855.1",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
   },
   "metabase": {
@@ -391,6 +391,21 @@
    "notes": "Upgrading: Before you upgrade, back up your Metabase application database! Check out our upgrading instructions. Get the most out of Metabase. Learn more about advanced features, managed cloud, and first-class support. Metabase Open Source: Docker image: metabase/metabase:v0.65.2.x JAR download: ht…",
    "source_url": "https://github.com/metabase/metabase/releases/tag/v0.65.2",
    "page_url": "https://www.firmwarely.com/devices/metabase/"
+  },
+  "sparkyfitness": {
+   "id": "sparkyfitness",
+   "brand": "SparkyFitness",
+   "model": "Family fitness tracker",
+   "category": "A",
+   "status": "update",
+   "version": "1.11.0",
+   "previous": "1.10.0",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "💙 Support SparkyFitness: If SparkyFitness has been useful to you & your family, please consider sponsoring on GitHub or supporting via Ko-fi. Your support helps cover recurring costs such as AI coding tools, development infrastructure, and Apple & Google Developer memberships to keep the project ac…",
+   "source_url": "https://github.com/CodeWithCJ/SparkyFitness/releases/tag/v1.11.0",
+   "page_url": "https://www.firmwarely.com/devices/sparkyfitness/"
   }
  }
 }
