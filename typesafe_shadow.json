@@ -32400,6 +32400,60 @@
     "security_fix_plain": 0.94,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "cryptomator",
+   "version": "1.19.6",
+   "name": "Cryptomator Cloud encryption",
+   "judged_at": "2026-10-30T10:48:16+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.21,
+    "security_fix_plain": 0.21,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "milvus",
+   "version": "3.0.5",
+   "name": "Milvus Vector database",
+   "judged_at": "2026-10-30T10:48:16+00:00",
+   "notes_chars": 30,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.303.37987",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-10-30T10:48:16+00:00",
+   "notes_chars": 55,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

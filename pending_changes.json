@@ -61,6 +61,51 @@
    "notes": "Minimum supported Tailscale client version: v1.80.0 Security: This is a security release. It fixes findings from Anthropic's oss-scanner project and the Tailworm report. None are critical, but some can cause denial of service in Headscale. We recommend that all users upgrade to Headscale 0.29.7 and…",
    "source_url": "https://github.com/juanfont/headscale/releases/tag/v0.29.7",
    "page_url": "https://www.firmwarely.com/devices/headscale/"
+  },
+  "cryptomator": {
+   "id": "cryptomator",
+   "brand": "Cryptomator",
+   "model": "Cloud encryption",
+   "category": "A",
+   "status": "update",
+   "version": "1.19.6",
+   "previous": "1.19.5",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "For a comprehensive view of changes, read the CHANGELOG. Bugfixes 🐛: Fixed supporter certificates being rejected once the certificate that signed them was rotated out: the certificate chain is now required to be valid at the certificate's issue date instead of at verification time --- Full Changelo…",
+   "source_url": "https://github.com/cryptomator/cryptomator/releases/tag/1.19.6",
+   "page_url": "https://www.firmwarely.com/devices/cryptomator/"
+  },
+  "milvus": {
+   "id": "milvus",
+   "brand": "Milvus",
+   "model": "Vector database",
+   "category": "A",
+   "status": "update",
+   "version": "3.0.5",
+   "previous": "3.0.4",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release note is coming soon...",
+   "source_url": "https://github.com/milvus-io/milvus/releases/tag/v3.0.5",
+   "page_url": "https://www.firmwarely.com/devices/milvus/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.303.37987",
+   "previous": "37522026.302.38099",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​12113 #​12111 #​12110 #​12109 #​12108 #​12107 #​11695",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.303.37987",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   }
  }
 }
