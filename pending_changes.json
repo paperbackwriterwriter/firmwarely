@@ -1,5 +1,36 @@
 {
- "since": null,
+ "since": "2026-10-31T10:16:24+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "ghostfolio": {
+   "id": "ghostfolio",
+   "brand": "Ghostfolio",
+   "model": "Wealth tracker",
+   "category": "A",
+   "status": "update",
+   "version": "3.95.0",
+   "previous": "3.94.0",
+   "released": "2026-10-31",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changed: Localized the number formatting in the tooltip of the line chart, the investment chart and the benchmark comparator Deprecated the api/v1/symbol endpoints in favor of the api/v1/symbols endpoints Removed the redundant currency from the activities in the currency of the asset profile Change…",
+   "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.95.0",
+   "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.304.36860",
+   "previous": "37522026.303.37987",
+   "released": "2026-10-31",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​12123 #​12122 #​12121 #​12120 #​12119 #​12118 #​12117 #​12116 #​12115 #​12114",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.304.36860",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  }
+ }
 }
