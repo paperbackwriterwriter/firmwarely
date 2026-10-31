@@ -211,6 +211,36 @@
    "notes": "Changelog: 9c8c3b81f8b0a8b58effcfff5c2d3842886eb5cf build: use released UniFi library v6.6.0 6f3c360dfb76da92a5fb38bf4219272f61d57a06 test: cover partial console system responses ecf1011ba759093402d7187711029aa74d44a31f fix(inputunifi): keep configured scrapes independent of optional metrics 27dfb7…",
    "source_url": "https://github.com/unpoller/unpoller/releases/tag/v5.9.0",
    "page_url": "https://www.firmwarely.com/devices/unpoller/"
+  },
+  "floci": {
+   "id": "floci",
+   "brand": "Floci",
+   "model": "Local cloud emulator",
+   "category": "A",
+   "status": "update",
+   "version": "2.4.0",
+   "previous": "2.3.0",
+   "released": "2026-10-31",
+   "date_known": true,
+   "eol": false,
+   "notes": "2.4.0 (2026-10-31): Features: apigatewayv2: route VPC link integrations to Cloud Map service instances (#​6753) (4fffb5a) autoscaling: describe suspended process reasons (#​5941) (7ce4b6b) autoscaling: implement DescribeTags (#​5750) (05153b3) autoscaling: support EnterStandby and ExitStandby (#​69…",
+   "source_url": "https://github.com/floci-io/floci/releases/tag/2.4.0",
+   "page_url": "https://www.firmwarely.com/devices/floci/"
+  },
+  "arduino-pico": {
+   "id": "arduino-pico",
+   "brand": "Arduino-Pico",
+   "model": "Arduino core for Raspberry Pi Pico",
+   "category": "M",
+   "status": "update",
+   "version": "6.3.2",
+   "previous": "6.3.1",
+   "released": "2026-10-31",
+   "date_known": true,
+   "eol": false,
+   "notes": "Overview: Another bugfix only release with important updates for AudioBufferManager (I2S, PWMAudio, ADCInput) when doing flash operations and playback/recording. Minor additional cleanups throughout. AudioBufferManager DMA avoid crash on missed IRQ (#​3600) Avoid out of bounds dmaChannel checking (…",
+   "source_url": "https://github.com/earlephilhower/arduino-pico/releases/tag/6.3.2",
+   "page_url": "https://www.firmwarely.com/devices/arduino-pico/"
   }
  }
 }
