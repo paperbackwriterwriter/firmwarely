@@ -53,13 +53,13 @@
    "model": "Vault and password manager",
    "category": "A",
    "status": "update",
-   "version": "4.5.7",
+   "version": "4.5.8",
    "previous": "4.5.6",
    "released": "2026-10-31",
    "date_known": true,
    "eol": false,
-   "notes": "Fix KeePro for Play Store #​2769 Fix Play Store obfuscation #​2770 Fix Autofill menu presentation #​2772 #​2767 () Fix extension when saving new file #​1889 Build Free MD5 : fe2e80160633acc061fd00f9f53e533c SHA1 : e2f660868e1d0cb8ad382e88250477c6bb95bae2 SHA256 : 3283dbed04acace095e717f37e4e2522783…",
-   "source_url": "https://github.com/Kunzisoft/KeePassDX/releases/tag/4.5.7",
+   "notes": "Fix KeePro for Play Store #​2769 Revert Play Store obfuscation #​2770 #​2776 Fix Autofill menu presentation #​2772 #​2767 () Fix extension when saving new file #​1889 Build Free MD5 : 10f7ddd8e2620618ca336a7fdb721d65 SHA1 : 502dfe47e1c95bc3c1082847641937f5a5bd80bc SHA256 : 621718e55af8fd2aad6884df1…",
+   "source_url": "https://github.com/Kunzisoft/KeePassDX/releases/tag/4.5.8",
    "page_url": "https://www.firmwarely.com/devices/keepassdx/"
   },
   "ipsw": {
@@ -196,6 +196,21 @@
    "notes": "This release keeps the daily limits across restarts and, with PostgreSQL, shares them between servers, so a visitor gets one daily allowance in total. Each visitor's day now starts at its own time instead of midnight UTC. It also adds an experimental local admin socket. Features: Daily limits (mess…",
    "source_url": "https://github.com/binwiederhier/ntfy/releases/tag/v2.36.0",
    "page_url": "https://www.firmwarely.com/devices/ntfy/"
+  },
+  "unpoller": {
+   "id": "unpoller",
+   "brand": "UnPoller",
+   "model": "UniFi metrics exporter",
+   "category": "R",
+   "status": "update",
+   "version": "5.9.0",
+   "previous": "5.8.3",
+   "released": "2026-10-31",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: 9c8c3b81f8b0a8b58effcfff5c2d3842886eb5cf build: use released UniFi library v6.6.0 6f3c360dfb76da92a5fb38bf4219272f61d57a06 test: cover partial console system responses ecf1011ba759093402d7187711029aa74d44a31f fix(inputunifi): keep configured scrapes independent of optional metrics 27dfb7…",
+   "source_url": "https://github.com/unpoller/unpoller/releases/tag/v5.9.0",
+   "page_url": "https://www.firmwarely.com/devices/unpoller/"
   }
  }
 }
