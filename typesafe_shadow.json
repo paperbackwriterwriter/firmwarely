@@ -33048,6 +33048,24 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "paperless-ngx",
+   "version": "3.4.1",
+   "name": "Paperless-ngx Document scanner and archive",
+   "judged_at": "2026-10-31T05:50:59+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.1,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
