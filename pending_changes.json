@@ -121,6 +121,21 @@
    "notes": "Release notes: Improvements CLI backups and app updates now display job progress and wait for completion before reporting success. CLI authentication now uses a dedicated, privately stored key that persists across upgrades and restarts. Core database and queue services now use a separate internal D…",
    "source_url": "https://github.com/runtipi/runtipi/releases/tag/v4.12.0",
    "page_url": "https://www.firmwarely.com/devices/runtipi/"
+  },
+  "kometa": {
+   "id": "kometa",
+   "brand": "Kometa",
+   "model": "Plex metadata manager",
+   "category": "A",
+   "status": "eol",
+   "version": "2.5.4",
+   "previous": "2.5.3",
+   "released": "2026-10-31",
+   "date_known": true,
+   "eol": true,
+   "notes": "Docs: Replace the MkDocs wiki with Zensical, keeping Read the Docs hosting, branch versions, and existing documentation URLs. Add Release Notes to Kometa website, available under Useful Links section of navigation Removed: Drop support for python 3.10 due to it going end of life. Python 3.11 or abo…",
+   "source_url": "https://github.com/Kometa-Team/Kometa/releases/tag/v2.5.4",
+   "page_url": "https://www.firmwarely.com/devices/kometa/"
   }
  }
 }
