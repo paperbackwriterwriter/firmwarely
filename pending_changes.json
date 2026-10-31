@@ -556,6 +556,21 @@
    "notes": "FIX: Agent-managed public shares are now deleted on shutdown, including named shares. Reserved names and saved restart requests survive, but restarting creates a new share with a new token. Failed cleanup keeps tokens visible, retries before recreation, and reports unresolved tokens at shutdown. FI…",
    "source_url": "https://github.com/openziti/zrok/releases/tag/v2.0.9",
    "page_url": "https://www.firmwarely.com/devices/zrok/"
+  },
+  "ipsw": {
+   "id": "ipsw",
+   "brand": "Ipsw",
+   "model": "IOS/macOS Research Swiss Army Knife",
+   "category": "M",
+   "status": "update",
+   "version": "3.1.740",
+   "previous": "3.1.739",
+   "released": "2026-10-31",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: New Features: ff9eacbb1e5cab039b91a85f22c33f29ce5acc08: feat(atomicfile): add atomic file replacement helpers () Performance improvements: 615ee1933d190044f19125fbb7fad10819d65327: perf(pbzx): stream decompressed output to disk () Bug fixes: a9eae76e8b1e901e4a03dd530defac8a1b33f91a: fix(…",
+   "source_url": "https://github.com/blacktop/ipsw/releases/tag/v3.1.740",
+   "page_url": "https://www.firmwarely.com/devices/ipsw/"
   }
  }
 }
