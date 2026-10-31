@@ -8,13 +8,13 @@
    "model": "Wealth tracker",
    "category": "A",
    "status": "update",
-   "version": "3.95.0",
+   "version": "3.96.0",
    "previous": "3.94.0",
    "released": "2026-10-31",
    "date_known": true,
    "eol": false,
-   "notes": "Changed: Localized the number formatting in the tooltip of the line chart, the investment chart and the benchmark comparator Deprecated the api/v1/symbol endpoints in favor of the api/v1/symbols endpoints Removed the redundant currency from the activities in the currency of the asset profile Change…",
-   "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.95.0",
+   "notes": "Changed: Extended the sectors mapping in the data enhancer for asset profile data via _Trackinsight_ Improved the logging of the web_fetch tool in the FetchService Improved the validation of the WEB_FETCH_ROUTES setting in the FetchService Improved the validation of the response of the web_fetch to…",
+   "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.96.0",
    "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
   },
   "dns-blocklists": {
@@ -181,6 +181,21 @@
    "notes": "This point release finishes a step of the 1.4.0 upgrade that kept failing on SQLite, puts faces from turned photos on the face, and stops LibrePhotos from asking about the same faces again on every run. Who should update: Everyone. Update first if you use SQLite (the single container image or the W…",
    "source_url": "https://github.com/LibrePhotos/librephotos/releases/tag/1.5.1",
    "page_url": "https://www.firmwarely.com/devices/librephotos/"
+  },
+  "ntfy": {
+   "id": "ntfy",
+   "brand": "ntfy",
+   "model": "Push notification server",
+   "category": "A",
+   "status": "update",
+   "version": "2.36.0",
+   "previous": "2.35.0",
+   "released": "2026-10-31",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release keeps the daily limits across restarts and, with PostgreSQL, shares them between servers, so a visitor gets one daily allowance in total. Each visitor's day now starts at its own time instead of midnight UTC. It also adds an experimental local admin socket. Features: Daily limits (mess…",
+   "source_url": "https://github.com/binwiederhier/ntfy/releases/tag/v2.36.0",
+   "page_url": "https://www.firmwarely.com/devices/ntfy/"
   }
  }
 }
