@@ -241,6 +241,21 @@
    "notes": "Overview: Another bugfix only release with important updates for AudioBufferManager (I2S, PWMAudio, ADCInput) when doing flash operations and playback/recording. Minor additional cleanups throughout. AudioBufferManager DMA avoid crash on missed IRQ (#​3600) Avoid out of bounds dmaChannel checking (…",
    "source_url": "https://github.com/earlephilhower/arduino-pico/releases/tag/6.3.2",
    "page_url": "https://www.firmwarely.com/devices/arduino-pico/"
+  },
+  "b4": {
+   "id": "b4",
+   "brand": "B4",
+   "model": "Network packet processor",
+   "category": "R",
+   "status": "update",
+   "version": "1.89.1",
+   "previous": "1.89.0",
+   "released": "2026-10-31",
+   "date_known": true,
+   "eol": false,
+   "notes": "[1.89.1] - 2026-10-31: FIXED: Videos and sites still froze on servers the provider blocks for every site - IP Block Detection banned such an address only when a device repeated its first request to the site. Some providers let that request through and then drop every reply, so nothing is repeated. …",
+   "source_url": "https://github.com/DanielLavrushin/b4/releases/tag/v1.89.1",
+   "page_url": "https://www.firmwarely.com/devices/b4/"
   }
  }
 }
