@@ -33192,6 +33192,24 @@
     "security_fix_plain": 0.09,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "xray-core",
+   "version": "26.10.31",
+   "name": "Project X Xray-core proxy",
+   "judged_at": "2026-10-31T13:38:41+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.45,
+    "security_fix_plain": 0.55,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

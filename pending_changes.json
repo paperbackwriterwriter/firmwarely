@@ -76,6 +76,21 @@
    "notes": "Changelog: Bug fixes: 57d94d5cecc33760c5584030e157d79e3704e601: fix(dyld): bound legacy cache header reads () 8038b0557f63e53cae2bd8454a61d6cba4ad3f03: fix(dyld): honor legacy signature and image extents () da32e8fdff072f0be9bf5219f04e5752e1727d92: fix(extract): pass legacy keys and preserve input …",
    "source_url": "https://github.com/blacktop/ipsw/releases/tag/v3.1.741",
    "page_url": "https://www.firmwarely.com/devices/ipsw/"
+  },
+  "xray-core": {
+   "id": "xray-core",
+   "brand": "Project X",
+   "model": "Xray-core proxy",
+   "category": "R",
+   "status": "update",
+   "version": "26.10.31",
+   "previous": "26.10.29",
+   "released": "2026-10-31",
+   "date_known": true,
+   "eol": false,
+   "notes": "紧急安全更新：由于 Linux 内核刚被爆出监听 IPv4 MPTCP 极易被远程拿 root 且 Go 1.24+ 默认开了 MPTCP，本版本默认关闭了 MPTCP 以显著减小攻击面（v26.10.29 让位，已被撤版），用户应尽快升级到该版本（安卓客户端的 Socks/HTTP 入站也有点危险），并尽快更新 Linux 内核以从根源上解决问题 Sponsors: Sponsor Xray-core Donation & NFTs: Collect a Project X NFT to support the development of Project X!: TRX(Tron)/US…",
+   "source_url": "https://github.com/XTLS/Xray-core/releases/tag/v26.10.31",
+   "page_url": "https://www.firmwarely.com/devices/xray-core/"
   }
  }
 }
