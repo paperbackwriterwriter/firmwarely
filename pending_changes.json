@@ -496,6 +496,36 @@
    "notes": "v1.45.1 (2026-10-30): Bug Fixes: security: Backend/agent dependencies audit, replace python-jose to PyJWT (f0414de) Documentation: Align guidelines and feature docs with the code, consistant doc styles (f84fafa) --- Detailed Changes: v1.45.0...v1.45.1",
    "source_url": "https://github.com/Quenary/tugtainer/releases/tag/v1.45.1",
    "page_url": "https://www.firmwarely.com/devices/tugtainer/"
+  },
+  "docker-pi-hole": {
+   "id": "docker-pi-hole",
+   "brand": "Pi-hole",
+   "model": "Docker image",
+   "category": "R",
+   "status": "update",
+   "version": "2026.10.1",
+   "previous": "2026.10.0",
+   "released": "2026-10-31",
+   "date_known": true,
+   "eol": false,
+   "notes": "Tag to update to the latest Alpine image with fixes for high profile CVEs (shouldn't affect Pi-hole, but always pays to be safe) What's Changed: Update Alpine base image to version 3.24.3 ci: skip layer cache for scheduled nightly builds Development -› master Full Changelog: https://github.com/pi-h…",
+   "source_url": "https://github.com/pi-hole/docker-pi-hole/releases/tag/2026.10.1",
+   "page_url": "https://www.firmwarely.com/devices/docker-pi-hole/"
+  },
+  "zerobyte": {
+   "id": "zerobyte",
+   "brand": "Zerobyte",
+   "model": "Backup automation",
+   "category": "N",
+   "status": "update",
+   "version": "0.44.0",
+   "previous": "0.43.2",
+   "released": "2026-10-31",
+   "date_known": true,
+   "eol": false,
+   "notes": "New features Edit existing OIDC SSO providers without recreating them or removing linked accounts. Improvements Volumes are now called Sources, with machine information and clearer availability indicators for local and remote sources. Stored encrypted credentials are now hidden in API responses, wi…",
+   "source_url": "https://github.com/nicotsx/zerobyte/releases/tag/v0.44.0",
+   "page_url": "https://www.firmwarely.com/devices/zerobyte/"
   }
  }
 }

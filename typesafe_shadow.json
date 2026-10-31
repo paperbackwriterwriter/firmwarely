@@ -32958,6 +32958,42 @@
     "security_fix_plain": 0.73,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "docker-pi-hole",
+   "version": "2026.10.1",
+   "name": "Pi-hole Docker image",
+   "judged_at": "2026-10-31T00:46:40+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "zerobyte",
+   "version": "0.44.0",
+   "name": "Zerobyte Backup automation",
+   "judged_at": "2026-10-31T00:46:40+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.14,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
