@@ -91,6 +91,36 @@
    "notes": "紧急安全更新：由于 Linux 内核刚被爆出监听 IPv4 MPTCP 极易被远程拿 root 且 Go 1.24+ 默认开了 MPTCP，本版本默认关闭了 MPTCP 以显著减小攻击面（v26.10.29 让位，已被撤版），用户应尽快升级到该版本（安卓客户端的 Socks/HTTP 入站也有点危险），并尽快更新 Linux 内核以从根源上解决问题 Sponsors: Sponsor Xray-core Donation & NFTs: Collect a Project X NFT to support the development of Project X!: TRX(Tron)/US…",
    "source_url": "https://github.com/XTLS/Xray-core/releases/tag/v26.10.31",
    "page_url": "https://www.firmwarely.com/devices/xray-core/"
+  },
+  "spoolman": {
+   "id": "spoolman",
+   "brand": "Spoolman",
+   "model": "Filament inventory",
+   "category": "M",
+   "status": "update",
+   "version": "0.27.1",
+   "previous": "0.27.0",
+   "released": "2026-10-31",
+   "date_known": true,
+   "eol": false,
+   "notes": "Many fixes and some new features! If your standalone install refused to start after updating to v0.27.0, this fixes it. It was being installed on Python 3.15, which one of our dependencies doesn't support yet, and updating moves it back to Python 3.14. A spool tare of 0 is now kept as 0 instead of …",
+   "source_url": "https://github.com/Donkie/Spoolman/releases/tag/v0.27.1",
+   "page_url": "https://www.firmwarely.com/devices/spoolman/"
+  },
+  "runtipi": {
+   "id": "runtipi",
+   "brand": "Runtipi",
+   "model": "Home server manager",
+   "category": "A",
+   "status": "update",
+   "version": "4.12.0",
+   "previous": "4.11.0",
+   "released": "2026-10-31",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release notes: Improvements CLI backups and app updates now display job progress and wait for completion before reporting success. CLI authentication now uses a dedicated, privately stored key that persists across upgrades and restarts. Core database and queue services now use a separate internal D…",
+   "source_url": "https://github.com/runtipi/runtipi/releases/tag/v4.12.0",
+   "page_url": "https://www.firmwarely.com/devices/runtipi/"
   }
  }
 }
