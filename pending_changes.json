@@ -31,6 +31,21 @@
    "notes": "#​12123 #​12122 #​12121 #​12120 #​12119 #​12118 #​12117 #​12116 #​12115 #​12114",
    "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.304.36860",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "freescout": {
+   "id": "freescout",
+   "brand": "FreeScout",
+   "model": "Help desk",
+   "category": "A",
+   "status": "update",
+   "version": "1.8.249",
+   "previous": "1.8.248",
+   "released": "2026-10-31",
+   "date_known": true,
+   "eol": false,
+   "notes": "Added Merge conversations from the conversations list (#​5741) Option to skip attachments already received in the conversation (#​5742) Modernize Timezone dropdown list (#​5744) Add APP_OPEN_LINKS_IN_NEW_TAB .env parameter (#​5722) Fixed Improved user email notification Message-ID generation and va…",
+   "source_url": "https://github.com/freescout-help-desk/freescout/releases/tag/1.8.249",
+   "page_url": "https://www.firmwarely.com/devices/freescout/"
   }
  }
 }
