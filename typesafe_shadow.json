@@ -33156,6 +33156,42 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "keepassdx",
+   "version": "4.5.7",
+   "name": "KeePassDX Vault and password manager",
+   "judged_at": "2026-10-31T11:58:07+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.14,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ipsw",
+   "version": "3.1.741",
+   "name": "Ipsw IOS/macOS Research Swiss Army Knife",
+   "judged_at": "2026-10-31T11:58:07+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

@@ -46,6 +46,36 @@
    "notes": "Added Merge conversations from the conversations list (#​5741) Option to skip attachments already received in the conversation (#​5742) Modernize Timezone dropdown list (#​5744) Add APP_OPEN_LINKS_IN_NEW_TAB .env parameter (#​5722) Fixed Improved user email notification Message-ID generation and va…",
    "source_url": "https://github.com/freescout-help-desk/freescout/releases/tag/1.8.249",
    "page_url": "https://www.firmwarely.com/devices/freescout/"
+  },
+  "keepassdx": {
+   "id": "keepassdx",
+   "brand": "KeePassDX",
+   "model": "Vault and password manager",
+   "category": "A",
+   "status": "update",
+   "version": "4.5.7",
+   "previous": "4.5.6",
+   "released": "2026-10-31",
+   "date_known": true,
+   "eol": false,
+   "notes": "Fix KeePro for Play Store #​2769 Fix Play Store obfuscation #​2770 Fix Autofill menu presentation #​2772 #​2767 () Fix extension when saving new file #​1889 Build Free MD5 : fe2e80160633acc061fd00f9f53e533c SHA1 : e2f660868e1d0cb8ad382e88250477c6bb95bae2 SHA256 : 3283dbed04acace095e717f37e4e2522783…",
+   "source_url": "https://github.com/Kunzisoft/KeePassDX/releases/tag/4.5.7",
+   "page_url": "https://www.firmwarely.com/devices/keepassdx/"
+  },
+  "ipsw": {
+   "id": "ipsw",
+   "brand": "Ipsw",
+   "model": "IOS/macOS Research Swiss Army Knife",
+   "category": "M",
+   "status": "update",
+   "version": "3.1.741",
+   "previous": "3.1.740",
+   "released": "2026-10-31",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: Bug fixes: 57d94d5cecc33760c5584030e157d79e3704e601: fix(dyld): bound legacy cache header reads () 8038b0557f63e53cae2bd8454a61d6cba4ad3f03: fix(dyld): honor legacy signature and image extents () da32e8fdff072f0be9bf5219f04e5752e1727d92: fix(extract): pass legacy keys and preserve input …",
+   "source_url": "https://github.com/blacktop/ipsw/releases/tag/v3.1.741",
+   "page_url": "https://www.firmwarely.com/devices/ipsw/"
   }
  }
 }
