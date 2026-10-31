@@ -526,6 +526,36 @@
    "notes": "New features Edit existing OIDC SSO providers without recreating them or removing linked accounts. Improvements Volumes are now called Sources, with machine information and clearer availability indicators for local and remote sources. Stored encrypted credentials are now hidden in API responses, wi…",
    "source_url": "https://github.com/nicotsx/zerobyte/releases/tag/v0.44.0",
    "page_url": "https://www.firmwarely.com/devices/zerobyte/"
+  },
+  "srs": {
+   "id": "srs",
+   "brand": "SRS",
+   "model": "Live streaming server",
+   "category": "A",
+   "status": "update",
+   "version": "6.0-r3",
+   "previous": "6.0-r2",
+   "released": "2026-10-31",
+   "date_known": true,
+   "eol": false,
+   "notes": "If you would like to support SRS, please consider contributing to our OpenCollective. 9f6d88164c8608d80ac41264998e80b8076d5e43 Release v6.0-r3, 6.0 release3, v6.0.195, 172562 lines. Co-Authored-By: Claude Opus 5.5 Resource: Source: 5494b95ec3e883668652638bc09e1cca srs-server-6.0-r3.tar.gz Binary: b…",
+   "source_url": "https://github.com/ossrs/srs/releases/tag/v6.0-r3",
+   "page_url": "https://www.firmwarely.com/devices/srs/"
+  },
+  "zrok": {
+   "id": "zrok",
+   "brand": "zrok",
+   "model": "Secure sharing tunnel",
+   "category": "R",
+   "status": "update",
+   "version": "2.0.9",
+   "previous": "2.0.8",
+   "released": "2026-10-31",
+   "date_known": true,
+   "eol": false,
+   "notes": "FIX: Agent-managed public shares are now deleted on shutdown, including named shares. Reserved names and saved restart requests survive, but restarting creates a new share with a new token. Failed cleanup keeps tokens visible, retries before recreation, and reports unresolved tokens at shutdown. FI…",
+   "source_url": "https://github.com/openziti/zrok/releases/tag/v2.0.9",
+   "page_url": "https://www.firmwarely.com/devices/zrok/"
   }
  }
 }
