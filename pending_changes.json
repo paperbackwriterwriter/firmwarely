@@ -136,6 +136,36 @@
    "notes": "Docs: Replace the MkDocs wiki with Zensical, keeping Read the Docs hosting, branch versions, and existing documentation URLs. Add Release Notes to Kometa website, available under Useful Links section of navigation Removed: Drop support for python 3.10 due to it going end of life. Python 3.11 or abo…",
    "source_url": "https://github.com/Kometa-Team/Kometa/releases/tag/v2.5.4",
    "page_url": "https://www.firmwarely.com/devices/kometa/"
+  },
+  "uptime-kuma": {
+   "id": "uptime-kuma",
+   "brand": "Uptime Kuma",
+   "model": "Uptime monitor",
+   "category": "R",
+   "status": "update",
+   "version": "2.5.9",
+   "previous": "2.5.8",
+   "released": "2026-10-31",
+   "date_known": true,
+   "eol": false,
+   "notes": "🐞 Bug Fixes: #​8082 fix: runtime timeout fallback used milliseconds for a seconds field #​8081 fix: reset push monitor retries from the last stored heartbeat #​8079 fix: remove duplicated refresh timer on status page #​8064 fix: display recurring maintenance in its configured timezone (Thanks) ⬆️ S…",
+   "source_url": "https://github.com/louislam/uptime-kuma/releases/tag/2.5.9",
+   "page_url": "https://www.firmwarely.com/devices/uptime-kuma/"
+  },
+  "memos": {
+   "id": "memos",
+   "brand": "Memos",
+   "model": "Note taking",
+   "category": "A",
+   "status": "critical",
+   "version": "26.10.0",
+   "previous": "0.31.0",
+   "released": "2026-10-31",
+   "date_known": true,
+   "eol": false,
+   "notes": "Memos 26.10.0 adds a rich editor that shows a memo as it will look while you write, per-user usage limits, and declarative configuration for operators. Browsing, Markdown rendering, sign-in, security, and the server improve throughout, and releases now use calendar versions. Highlights: Editor: Mem…",
+   "source_url": "https://github.com/usememos/memos/releases/tag/26.10.0",
+   "page_url": "https://www.firmwarely.com/devices/memos/"
   }
  }
 }
