@@ -46,6 +46,21 @@
    "notes": "umbrelOS 2.0.1 is an important security update that fixes a recently disclosed vulnerability (CVE-2026-98432) in how the Linux kernel handles incoming network connections. On Umbrel Home, Umbrel Pro, and other x86 devices, this update brings a Linux kernel with the fix. On Raspberry Pi, where a fix…",
    "source_url": "https://github.com/getumbrel/umbrel/releases/tag/2.0.1",
    "page_url": "https://www.firmwarely.com/devices/umbrel/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.305.38528",
+   "previous": "37522026.304.62859",
+   "released": "2026-11-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​12143 #​12142 #​12140 #​12139 #​12138 #​12137 #​12136 #​12135 #​12134 #​12133",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.305.38528",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   }
  }
 }
