@@ -61,6 +61,36 @@
    "notes": "#​12143 #​12142 #​12140 #​12139 #​12138 #​12137 #​12136 #​12135 #​12134 #​12133",
    "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.305.38528",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "memos": {
+   "id": "memos",
+   "brand": "Memos",
+   "model": "Note taking",
+   "category": "A",
+   "status": "update",
+   "version": "26.11.0",
+   "previous": "26.10.0",
+   "released": "2026-11-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "Memos 26.11.0 fixes typing Japanese and Korean in Safari and makes attachment failures visible instead of opaque. The server cache and upgrades from v0.31 deployment files are also more reliable. Fixes and polish: Editor: Typing Japanese or Korean in Safari no longer selects the first word of a new…",
+   "source_url": "https://github.com/usememos/memos/releases/tag/26.11.0",
+   "page_url": "https://www.firmwarely.com/devices/memos/"
+  },
+  "crosspoint-reader": {
+   "id": "crosspoint-reader",
+   "brand": "CrossPoint",
+   "model": "E-reader firmware",
+   "category": "M",
+   "status": "update",
+   "version": "2.0.0",
+   "previous": "1.6.5",
+   "released": "2026-11-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "Summary: What a busy month. A lot of new features landed in CrossPoint, and we're eager to hear what you think. New devices: This release adds support for four ESP32-S3-based devices: the Metalio E-Ink 4, the EEGO A4 (standard and Lite versions), and the BOOX Picco. If you're thinking of buying one…",
+   "source_url": "https://github.com/crosspoint-reader/crosspoint-reader/releases/tag/2.0.0",
+   "page_url": "https://www.firmwarely.com/devices/crosspoint-reader/"
   }
  }
 }
