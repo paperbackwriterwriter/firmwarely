@@ -33696,6 +33696,42 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.19
    }
+  },
+  {
+   "id": "evcc",
+   "version": "0.318.2",
+   "name": "evcc EV charge controller",
+   "judged_at": "2026-11-01T08:36:50+00:00",
+   "notes_chars": 7,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "lobe-chat",
+   "version": "2.3.0",
+   "name": "LobeHub Lobe Chat",
+   "judged_at": "2026-11-01T08:36:50+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
