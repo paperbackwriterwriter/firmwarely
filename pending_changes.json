@@ -346,6 +346,21 @@
    "notes": "Changelog: 4593753e08deb07dc105365cf9991825398eae87 Merge pull request #​753 from rusq/codex/mcp-source-locking a5d59565ebe6eb916ab5d4551eead27e7668365f Merge pull request #​758 from beeckrumi0000/fix/resume-refresh-member-only 610c4f9862a73701ec113481c41cd32151b14625 Merge pull request #​759 from …",
    "source_url": "https://github.com/rusq/slackdump/releases/tag/v4.5.3",
    "page_url": "https://www.firmwarely.com/devices/slackdump/"
+  },
+  "voidauth": {
+   "id": "voidauth",
+   "brand": "VoidAuth",
+   "model": "Single sign-on server",
+   "category": "A",
+   "status": "update",
+   "version": "1.18.0",
+   "previous": "1.17.1",
+   "released": "2026-11-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: This release adds support for user profile avatars! It also includes other features like allowing WebP background images and the new 'Back' buttons on admin pages (and other styling improvements). It also contains several fixes, as well as dependency updates. Features 🚀: Add User Av…",
+   "source_url": "https://github.com/voidauth/voidauth/releases/tag/v1.18.0",
+   "page_url": "https://www.firmwarely.com/devices/voidauth/"
   }
  }
 }
