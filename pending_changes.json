@@ -331,6 +331,21 @@
    "notes": "Greetings DNS fans! Thanks to all contributors involved in this release! This is a community project and we couldn't do it without all of your contributions! Sincerely, --Tom Limoncelli Monthly video call!: Everyone is invited to the Monthly DNSControl Community Video Conference Call on the 2nd Tue…",
    "source_url": "https://github.com/DNSControl/dnscontrol/releases/tag/v5.7.2",
    "page_url": "https://www.firmwarely.com/devices/dnscontrol/"
+  },
+  "dawarich": {
+   "id": "dawarich",
+   "brand": "Dawarich",
+   "model": "Location history",
+   "category": "A",
+   "status": "update",
+   "version": "1.20.1",
+   "previous": "1.20.0",
+   "released": "2026-11-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "Fixed: Anomaly recalculation no longer fails for users who have a point without coordinates (#​3936). Transportation-mode detection and track recalculation work on instances without the altitude_decimal column (#​3951). Numbers in visit, place and family labels on the map render in the text font in…",
+   "source_url": "https://github.com/Freika/dawarich/releases/tag/1.20.1",
+   "page_url": "https://www.firmwarely.com/devices/dawarich/"
   }
  }
 }
