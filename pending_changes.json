@@ -436,6 +436,21 @@
    "notes": "🔒 ALLOWED_EMAILS not enforced when signing in with Google, Microsoft or OIDC: Who is affected. Self-hosted instances that set ALLOWED_EMAILS and also offer Google, Microsoft or OIDC login. Instances that only use email login, or that don't set ALLOWED_EMAILS, are not affected. The bug. ALLOWED_EMAI…",
    "source_url": "https://github.com/lukevella/rallly/releases/tag/untagged-6490d7892bf741592dba",
    "page_url": "https://www.firmwarely.com/devices/rallly/"
+  },
+  "zigbee2mqtt": {
+   "id": "zigbee2mqtt",
+   "brand": "Zigbee2MQTT",
+   "model": "Zigbee bridge software",
+   "category": "S",
+   "status": "eol",
+   "version": "2.14.3",
+   "previous": "2.14.2",
+   "released": "2026-11-01",
+   "date_known": true,
+   "eol": true,
+   "notes": "Notes: Deprecation of 32-bit platforms: Running Zigbee2MQTT on 32-bit platforms is deprecated, and support ends when Node.js 22 reaches end-of-life (April 2027). At that point the minimum supported Node.js version becomes v24, and Node.js v24 no longer ships official builds for any 32-bit platform.…",
+   "source_url": "https://github.com/Koenkk/zigbee2mqtt/releases/tag/2.14.3",
+   "page_url": "https://www.firmwarely.com/devices/zigbee2mqtt/"
   }
  }
 }
