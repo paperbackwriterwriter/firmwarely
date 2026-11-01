@@ -331,6 +331,21 @@
    "notes": "Happy Halloween! 🎃 Should be nothing spooky about this release though (hopefully). Mainly releasing this to get some bug fixes out, particularly to address problems running on older versions of Windows. There's still also a bunch of new features though, from solid bar support in styling, initial In…",
    "source_url": "https://github.com/ClementTsang/bottom/releases/tag/0.15.0",
    "page_url": "https://www.firmwarely.com/devices/bottom/"
+  },
+  "slackdump": {
+   "id": "slackdump",
+   "brand": "Slackdump",
+   "model": "Slack message exporter",
+   "category": "N",
+   "status": "update",
+   "version": "4.5.3",
+   "previous": "4.5.2",
+   "released": "2026-11-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: 4593753e08deb07dc105365cf9991825398eae87 Merge pull request #​753 from rusq/codex/mcp-source-locking a5d59565ebe6eb916ab5d4551eead27e7668365f Merge pull request #​758 from beeckrumi0000/fix/resume-refresh-member-only 610c4f9862a73701ec113481c41cd32151b14625 Merge pull request #​759 from …",
+   "source_url": "https://github.com/rusq/slackdump/releases/tag/v4.5.3",
+   "page_url": "https://www.firmwarely.com/devices/slackdump/"
   }
  }
 }
