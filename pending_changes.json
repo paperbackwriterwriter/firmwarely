@@ -361,6 +361,21 @@
    "notes": "What's Changed: This release adds support for user profile avatars! It also includes other features like allowing WebP background images and the new 'Back' buttons on admin pages (and other styling improvements). It also contains several fixes, as well as dependency updates. Features 🚀: Add User Av…",
    "source_url": "https://github.com/voidauth/voidauth/releases/tag/v1.18.0",
    "page_url": "https://www.firmwarely.com/devices/voidauth/"
+  },
+  "wiki-js": {
+   "id": "wiki-js",
+   "brand": "Wiki.js",
+   "model": "Wiki",
+   "category": "A",
+   "status": "update",
+   "version": "3.0.1",
+   "previous": "3.0.0-beta",
+   "released": "2026-11-01",
+   "date_known": true,
+   "eol": false,
+   "notes": ":sparkles: New Features: 4229781 - drag and drop move in File Manager (commit) b75386e - saml: add Require Signed Response option + better auth debugging (commit) f393e9c - various UI improvements + add SUBTREE pattern to approval rules (commit) fce20b3 - highlight ToC headings when there's no scro…",
+   "source_url": "https://github.com/requarks/wiki/releases/tag/3.0.1",
+   "page_url": "https://www.firmwarely.com/devices/wiki-js/"
   }
  }
 }
