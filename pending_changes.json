@@ -286,6 +286,21 @@
    "notes": "Automated SharpEmu v0.0.7-pulse build for commit 791a053. Changes since v0.0.6-mono: [scripts/release.py] fix utf-8 (0896ef68) [readme] update screenshots (c6d304cc) [GPU] Let a fill pattern without a length word span the whole pattern (4ec21480) [GPU] Recognize indexed four-word pattern fills (a95…",
    "source_url": "https://github.com/sharpemu/sharpemu/releases/tag/v0.0.7-pulse",
    "page_url": "https://www.firmwarely.com/devices/sharpemu/"
+  },
+  "openthread": {
+   "id": "openthread",
+   "brand": "OpenThread",
+   "model": "Thread networking stack",
+   "category": "S",
+   "status": "update",
+   "version": "2026.11.0",
+   "previous": "2026.10.0",
+   "released": "2026-11-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: 🚀 Features: [netdata-publisher] coalesce scheduled entry update times [bit-utils] add RotateBitmask() utility function [build] verify TLS certificates when downloading Arm toolchains [bit-utils] replace BytesForBitSize() macro with constexpr template [addr-resolver] ignore Addr Erro…",
+   "source_url": "https://github.com/openthread/openthread/releases/tag/v2026.11.0",
+   "page_url": "https://www.firmwarely.com/devices/openthread/"
   }
  }
 }
