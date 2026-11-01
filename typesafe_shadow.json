@@ -33966,6 +33966,24 @@
     "security_fix_plain": 0.09,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "cronicle",
+   "version": "0.9.141",
+   "name": "Cronicle Task scheduler",
+   "judged_at": "2026-11-01T19:32:50+00:00",
+   "notes_chars": 64,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.73,
+    "security_fix_plain": 0.53,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
