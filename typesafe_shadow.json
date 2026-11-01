@@ -33624,6 +33624,60 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "scrutiny-disk",
+   "version": "0.10.0",
+   "name": "Scrutiny Disk health monitor",
+   "judged_at": "2026-11-01T06:21:50+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "jackett",
+   "version": "0.24.2985",
+   "name": "Jackett Torrent indexer proxy",
+   "judged_at": "2026-11-01T06:21:50+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "rallly",
+   "version": "4.16.4",
+   "name": "Rallly Meeting polls",
+   "judged_at": "2026-11-01T06:21:51+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.77,
+    "security_fix_plain": 0.55,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
