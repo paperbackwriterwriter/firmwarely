@@ -286,6 +286,51 @@
    "notes": "Patch Changes:/api.43.1",
    "source_url": "https://github.com/hyperdxio/hyperdx/releases/tag/%40hyperdx/app%402.43.1",
    "page_url": "https://www.firmwarely.com/devices/hyperdx/"
+  },
+  "vaultwarden": {
+   "id": "vaultwarden",
+   "brand": "Vaultwarden",
+   "model": "Password manager server",
+   "category": "A",
+   "status": "critical",
+   "version": "1.37.5",
+   "previous": "1.37.4",
+   "released": "2026-11-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "Security Fixes: This release contains security fixes for the following advisories. We strongly advise updating as soon as possible. Website icons [GHSA-x9cq-f669-vrr4] (Medium, 5.3) Emergency access [GHSA-9pjj-f9g5-3x4c] (Medium, 4.3) These are private for now, pending CVE assignment and publishing…",
+   "source_url": "https://github.com/dani-garcia/vaultwarden/releases/tag/1.37.5",
+   "page_url": "https://www.firmwarely.com/devices/vaultwarden/"
+  },
+  "autobrr": {
+   "id": "autobrr",
+   "brand": "autobrr",
+   "model": "Download automation",
+   "category": "A",
+   "status": "update",
+   "version": "1.90.0",
+   "previous": "1.89.0",
+   "released": "2026-11-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: New Features: 75b438cb3d4db293ab98bdd568a018f8b32ea61c: feat(feeds): add pagination support for Torznab and Newznab feeds (#​2751) () 61ac7374e62b80858c461c73545787fece4ab988: feat(feeds): add processing order option (#​2802) () 8e0f8704d0b49dfba7a53624ed1c6826db0284fd: feat(indexers): B…",
+   "source_url": "https://github.com/autobrr/autobrr/releases/tag/v1.90.0",
+   "page_url": "https://www.firmwarely.com/devices/autobrr/"
+  },
+  "dnscontrol": {
+   "id": "dnscontrol",
+   "brand": "DNSControl",
+   "model": "DNS as code",
+   "category": "R",
+   "status": "update",
+   "version": "5.7.2",
+   "previous": "5.7.1",
+   "released": "2026-11-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "Greetings DNS fans! Thanks to all contributors involved in this release! This is a community project and we couldn't do it without all of your contributions! Sincerely, --Tom Limoncelli Monthly video call!: Everyone is invited to the Monthly DNSControl Community Video Conference Call on the 2nd Tue…",
+   "source_url": "https://github.com/DNSControl/dnscontrol/releases/tag/v5.7.2",
+   "page_url": "https://www.firmwarely.com/devices/dnscontrol/"
   }
  }
 }
