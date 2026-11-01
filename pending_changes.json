@@ -376,6 +376,21 @@
    "notes": ":sparkles: New Features: 4229781 - drag and drop move in File Manager (commit) b75386e - saml: add Require Signed Response option + better auth debugging (commit) f393e9c - various UI improvements + add SUBTREE pattern to approval rules (commit) fce20b3 - highlight ToC headings when there's no scro…",
    "source_url": "https://github.com/requarks/wiki/releases/tag/3.0.1",
    "page_url": "https://www.firmwarely.com/devices/wiki-js/"
+  },
+  "amlogic-s9xxx-openwrt": {
+   "id": "amlogic-s9xxx-openwrt",
+   "brand": "Amlogic S9xxx Openwrt",
+   "model": "Supports running OpenWrt",
+   "category": "R",
+   "status": "update",
+   "version": "2026.11",
+   "previous": "2026.10",
+   "released": "2026-11-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "OpenWrt Image Information: Default IP: 192.168.1.1 Default username: root Default password: password Default WIFI name: OpenWrt Default WIFI password: none Install to EMMC: Login to OpenWrt → System → Amlogic Service → Install OpenWrt OpenWrt source code: immortalwrt Applicable Platform: 🐧 arm64 🐋 …",
+   "source_url": "https://github.com/ophub/amlogic-s9xxx-openwrt/releases/tag/OpenWrt_immortalwrt_master_save_2026.11",
+   "page_url": "https://www.firmwarely.com/devices/amlogic-s9xxx-openwrt/"
   }
  }
 }

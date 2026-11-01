@@ -33606,6 +33606,24 @@
     "security_fix_plain": 0.06,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "amlogic-s9xxx-openwrt",
+   "version": "2026.11",
+   "name": "Amlogic S9xxx Openwrt Supports running OpenWrt",
+   "judged_at": "2026-11-01T05:31:17+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
