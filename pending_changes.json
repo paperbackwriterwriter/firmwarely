@@ -121,6 +121,51 @@
    "notes": "v6.17.0 v6.17.0",
    "source_url": "https://github.com/traccar/traccar/releases/tag/v6.17.0",
    "page_url": "https://www.firmwarely.com/devices/traccar/"
+  },
+  "raspap": {
+   "id": "raspap",
+   "brand": "RaspAP",
+   "model": "Wi-Fi router for Raspberry Pi",
+   "category": "R",
+   "status": "update",
+   "version": "3.5.9",
+   "previous": "3.5.8",
+   "released": "2026-11-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Bump moment from 2.29.4 to 2.31.0 by in https://github.com/RaspAP/raspap-webgui/pull/2166 Bump brace-expansion from 1.1.18 to 1.1.21 by in https://github.com/RaspAP/raspap-webgui/pull/2167 Fix: Update process hanging in the web UI Add OpenVPN private key password (askpass) support F…",
+   "source_url": "https://github.com/RaspAP/raspap-webgui/releases/tag/3.5.9",
+   "page_url": "https://www.firmwarely.com/devices/raspap/"
+  },
+  "picard": {
+   "id": "picard",
+   "brand": "MusicBrainz",
+   "model": "Picard tagger",
+   "category": "A",
+   "status": "update",
+   "version": "3.0.4",
+   "previous": "3.0.3",
+   "released": "2026-11-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "Please refer to the download page for official download locations. Bugfixes: PICARD-3479 - Crash on macOS every time you switch app focus PICARD-3533 - Crash when closing options during plugin refresh PICARD-3534 - Picard mistakenly treats .webp files as WAV PICARD-3537 - Track match indicator show…",
+   "source_url": "https://github.com/metabrainz/picard/releases/tag/release-3.0.4",
+   "page_url": "https://www.firmwarely.com/devices/picard/"
+  },
+  "octelium": {
+   "id": "octelium",
+   "brand": "Octelium",
+   "model": "Zero trust access platform",
+   "category": "R",
+   "status": "update",
+   "version": "0.49.0",
+   "previous": "0.47.0",
+   "released": "2026-11-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "You can upgrade an already running Cluster via the command octops upgrade as shown here. You can read the full changelog here. Features: Introducing network-level visibility for AccessLogs. Vigil now records the downstream address and port, the local and remote upstream addresses and ports and the …",
+   "source_url": "https://github.com/octelium/octelium/releases/tag/v0.49.0",
+   "page_url": "https://www.firmwarely.com/devices/octelium/"
   }
  }
 }
