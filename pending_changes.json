@@ -301,6 +301,36 @@
    "notes": "What's Changed: 🚀 Features: [netdata-publisher] coalesce scheduled entry update times [bit-utils] add RotateBitmask() utility function [build] verify TLS certificates when downloading Arm toolchains [bit-utils] replace BytesForBitSize() macro with constexpr template [addr-resolver] ignore Addr Erro…",
    "source_url": "https://github.com/openthread/openthread/releases/tag/v2026.11.0",
    "page_url": "https://www.firmwarely.com/devices/openthread/"
+  },
+  "movie-data-capture": {
+   "id": "movie-data-capture",
+   "brand": "Movie Data Capture",
+   "model": "Local movie organizer",
+   "category": "A",
+   "status": "update",
+   "version": "8.2.1",
+   "previous": "8.1.5",
+   "released": "2026-11-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "View release notes 查看发布日志",
+   "source_url": "https://github.com/mvdctop/Movie_Data_Capture/releases/tag/8.2.1",
+   "page_url": "https://www.firmwarely.com/devices/movie-data-capture/"
+  },
+  "bottom": {
+   "id": "bottom",
+   "brand": "bottom",
+   "model": "Terminal system monitor",
+   "category": "A",
+   "status": "update",
+   "version": "0.15.0",
+   "previous": "0.14.9",
+   "released": "2026-11-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "Happy Halloween! 🎃 Should be nothing spooky about this release though (hopefully). Mainly releasing this to get some bug fixes out, particularly to address problems running on older versions of Windows. There's still also a bunch of new features though, from solid bar support in styling, initial In…",
+   "source_url": "https://github.com/ClementTsang/bottom/releases/tag/0.15.0",
+   "page_url": "https://www.firmwarely.com/devices/bottom/"
   }
  }
 }

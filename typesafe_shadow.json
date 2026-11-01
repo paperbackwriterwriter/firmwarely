@@ -33516,6 +33516,42 @@
     "security_fix_plain": 0.07,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "movie-data-capture",
+   "version": "8.2.1",
+   "name": "Movie Data Capture Local movie organizer",
+   "judged_at": "2026-11-01T02:08:35+00:00",
+   "notes_chars": 25,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "bottom",
+   "version": "0.15.0",
+   "name": "bottom Terminal system monitor",
+   "judged_at": "2026-11-01T02:08:35+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
