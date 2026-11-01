@@ -34020,6 +34020,60 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "adguardhome-sync",
+   "version": "0.9.6",
+   "name": "AdGuard Home Sync",
+   "judged_at": "2026-11-01T21:28:46+00:00",
+   "notes_chars": 213,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "dbeaver",
+   "version": "26.2.4",
+   "name": "DBeaver Database tool",
+   "judged_at": "2026-11-01T21:28:46+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "hyperdx",
+   "version": "2.43.1",
+   "name": "Hyperdx Resolve production issues, fast",
+   "judged_at": "2026-11-01T21:28:46+00:00",
+   "notes_chars": 23,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

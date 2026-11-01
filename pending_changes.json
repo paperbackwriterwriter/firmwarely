@@ -241,6 +241,51 @@
    "notes": "What's Changed: chore(release): bump desktop to 2.11.7 and CLI to 0.2.2 (#​10005) docs(mcp): document per-outlet provenance on get_news_clusters (#​9722) (#​10004) fix(portwatch): start no ArcGIS query after the fetch deadline (#​10003) fix(portwatch): read chokepoints from the Hub CSV export (#​10…",
    "source_url": "https://github.com/koala73/worldmonitor/releases/tag/v2.11.7",
    "page_url": "https://www.firmwarely.com/devices/worldmonitor/"
+  },
+  "adguardhome-sync": {
+   "id": "adguardhome-sync",
+   "brand": "AdGuard",
+   "model": "Home Sync",
+   "category": "R",
+   "status": "update",
+   "version": "0.9.6",
+   "previous": "0.9.5",
+   "released": "2026-11-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: eb74300c54963c14a5b2862cda44ff4e2376ece2: fix: set default docker base image to scratch (#​979) () e59d0b395995292c8d1f76f00794f7bc4999c47f: fix: simplify base image handling in docker builds (#​981) ()",
+   "source_url": "https://github.com/bakito/adguardhome-sync/releases/tag/v0.9.6",
+   "page_url": "https://www.firmwarely.com/devices/adguardhome-sync/"
+  },
+  "dbeaver": {
+   "id": "dbeaver",
+   "brand": "DBeaver",
+   "model": "Database tool",
+   "category": "A",
+   "status": "update",
+   "version": "26.2.4",
+   "previous": "26.2.3",
+   "released": "2026-11-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "- AI Assistant: - Added support for configuring AI providers, including OpenAI and GitHub Copilot, through environment variables - Fixed AI scope selection for nested tables, views, and other object folders - Improved AI Chat image previews with aspect-ratio thumbnails, popup viewing, zoom, and scr…",
+   "source_url": "https://github.com/dbeaver/dbeaver/releases/tag/26.2.4",
+   "page_url": "https://www.firmwarely.com/devices/dbeaver/"
+  },
+  "hyperdx": {
+   "id": "hyperdx",
+   "brand": "Hyperdx",
+   "model": "Resolve production issues, fast",
+   "category": "A",
+   "status": "update",
+   "version": "2.43.1",
+   "previous": "2.43.0",
+   "released": "2026-11-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "Patch Changes:/api.43.1",
+   "source_url": "https://github.com/hyperdxio/hyperdx/releases/tag/%40hyperdx/app%402.43.1",
+   "page_url": "https://www.firmwarely.com/devices/hyperdx/"
   }
  }
 }
