@@ -173,13 +173,13 @@
    "model": "Push notification server",
    "category": "A",
    "status": "update",
-   "version": "2.37.0",
+   "version": "2.37.1",
    "previous": "2.36.0",
    "released": "2026-11-02",
    "date_known": true,
    "eol": false,
-   "notes": "This release makes UnifiedPush work across several servers: the subscriber who pays for a topic's pushes is shared through the database, and app servers are told with 410 Gone when a subscription has been abandoned for 4 days. It also adds Retry-After and the draft RateLimit headers to rate limit r…",
-   "source_url": "https://github.com/binwiederhier/ntfy/releases/tag/v2.37.0",
+   "notes": "This release fixes a database slowdown in v2.37.0 when using visitor-subscriber-rate-limiting with a user database: the subscriber activity of UnifiedPush topics was written far too often. Bug fixes + maintenance: With visitor-subscriber-rate-limiting and a user database, write a UnifiedPush topic'…",
+   "source_url": "https://github.com/binwiederhier/ntfy/releases/tag/v2.37.1",
    "page_url": "https://www.firmwarely.com/devices/ntfy/"
   },
   "elasticsearch": {
@@ -391,6 +391,21 @@
    "notes": "Changes in this release: 7843798 telegrambot: cap TLS at 1.2 79cfae5 curl: cap outbound HTTPS at TLS 1.2 Add --tls-max 1.2 to every curl invocation that ships in the image: package updates (thingino-pkg), provisioning, push/notification senders, prusa-connect, raptor, rt-tests, termbin upload, gest…",
    "source_url": "https://github.com/themactep/thingino-firmware/releases/tag/firmware-2026-11-02",
    "page_url": "https://www.firmwarely.com/devices/thingino/"
+  },
+  "temporal": {
+   "id": "temporal",
+   "brand": "Temporal",
+   "model": "Workflow engine",
+   "category": "A",
+   "status": "critical",
+   "version": "1.32.2",
+   "previous": "1.32.1",
+   "released": "2026-11-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Fix security vulnerabilities for 1.32 minor release [release/v1.32.x] Bump auto-scaled-workers to v0.2.1-1.32.0.158.0 Fix sticky queue stats zeroed out Fix a race condition that can leave a poll to not get cancelled during shutdown Fix priority backlog acknowledgement after expired …",
+   "source_url": "https://github.com/temporalio/temporal/releases/tag/v1.32.2",
+   "page_url": "https://www.firmwarely.com/devices/temporal/"
   }
  }
 }
