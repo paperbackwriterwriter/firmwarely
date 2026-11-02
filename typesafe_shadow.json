@@ -34506,6 +34506,42 @@
     "security_fix_plain": 0.89,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "vllm",
+   "version": "0.33.0",
+   "name": "vLLM LLM inference server",
+   "judged_at": "2026-11-02T10:48:18+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "skipper",
+   "version": "0.28.57",
+   "name": "Skipper HTTP router and reverse proxy",
+   "judged_at": "2026-11-02T10:48:18+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

@@ -46,6 +46,36 @@
    "notes": "Meilisearch v1.56.1 introduces important security fixes. Updating from v1.56.0 is recommended for all users. 🦋 Fixes: Fix issue with ranking scores greater than 1 Make sure that all nested fields are inserted in field id map Fixes a panic when modifying the list of searchable attributes after an ex…",
    "source_url": "https://github.com/meilisearch/meilisearch/releases/tag/v1.56.1",
    "page_url": "https://www.firmwarely.com/devices/meilisearch/"
+  },
+  "vllm": {
+   "id": "vllm",
+   "brand": "vLLM",
+   "model": "LLM inference server",
+   "category": "A",
+   "status": "update",
+   "version": "0.33.0",
+   "previous": "0.32.0",
+   "released": "2026-11-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "v0.33.0: Highlights: This release features 927 commits from 389 contributors (122 new)! New models: Reflection Beam-1.0 (501B MoE, 23B active) with its DFlash2 drafter (#​62074), Yandex AliceAI-Foundation-80B-A3B (#​57963), Recursive Flint (40B MoE, 2.5B active) (#​62938), Muse Spark Open (#​61879)…",
+   "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.33.0rc3",
+   "page_url": "https://www.firmwarely.com/devices/vllm/"
+  },
+  "skipper": {
+   "id": "skipper",
+   "brand": "Skipper",
+   "model": "HTTP router and reverse proxy",
+   "category": "R",
+   "status": "update",
+   "version": "0.28.57",
+   "previous": "0.28.56",
+   "released": "2026-11-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes: build(deps): bump the all-go-mod-patch-and-minor group with 2 updates (#​4398) Bumps the all-go-mod-patch-and-minor group with 2 updates: github.com/molecule-man/go-brrr and golang.org/x/net. Updates github.com/molecule-man/go-brrr from 1.3.0 to 1.3.1 Release notes Sourced from github.com/…",
+   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.57",
+   "page_url": "https://www.firmwarely.com/devices/skipper/"
   }
  }
 }
