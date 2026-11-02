@@ -68,13 +68,13 @@
    "model": "HTTP router and reverse proxy",
    "category": "R",
    "status": "update",
-   "version": "0.28.60",
+   "version": "0.28.61",
    "previous": "0.28.56",
    "released": "2026-11-02",
    "date_known": true,
    "eol": false,
-   "notes": "Changes: feat(kubernetes): gate zone-aware routing on ingress-controller zone balance (#​4377) Serve zone-filtered routes only when skipper-ingress itself is balanced across zones; otherwise fall back to the global table. Adds configurable namespace/name/max-skew, closes a data race and a silent-mi…",
-   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.60",
+   "notes": "Changes: fix: apply allowed external names to skipper-routes annotation backends (#​4361) -kubernetes-only-allowed-external-names is not enforced for routes from the Ingress zalando.org/skipper-routes annotation: Repro: allow list ^external1[.]example[.]org$, Ingress annotation network: Header(\"X-R…",
+   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.61",
    "page_url": "https://www.firmwarely.com/devices/skipper/"
   },
   "seaweedfs": {
@@ -406,6 +406,51 @@
    "notes": "What's Changed: Fix security vulnerabilities for 1.32 minor release [release/v1.32.x] Bump auto-scaled-workers to v0.2.1-1.32.0.158.0 Fix sticky queue stats zeroed out Fix a race condition that can leave a poll to not get cancelled during shutdown Fix priority backlog acknowledgement after expired …",
    "source_url": "https://github.com/temporalio/temporal/releases/tag/v1.32.2",
    "page_url": "https://www.firmwarely.com/devices/temporal/"
+  },
+  "unpoller": {
+   "id": "unpoller",
+   "brand": "UnPoller",
+   "model": "UniFi metrics exporter",
+   "category": "R",
+   "status": "update",
+   "version": "5.9.3",
+   "previous": "5.9.2",
+   "released": "2026-11-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: 09abe182e615d93915e7796ce5136241a23d4b14 build(deps): bump github.com/prometheus/common c0c715fb1e346803caa3ad9c5e833e96273c88b5 feat(inputunifi): add skip_device_tags controller option",
+   "source_url": "https://github.com/unpoller/unpoller/releases/tag/v5.9.3",
+   "page_url": "https://www.firmwarely.com/devices/unpoller/"
+  },
+  "telegraf": {
+   "id": "telegraf",
+   "brand": "InfluxData",
+   "model": "Telegraf agent",
+   "category": "A",
+   "status": "update",
+   "version": "1.40.3",
+   "previous": "1.40.2",
+   "released": "2026-11-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "v1.40.3 [2026-11-02]: Bugfixes: #​19958 agent Name v1.41.0 in skip_processors_after_aggregators warning #​20026 disk-buffer Shift mask by number of truncated entries #​20012 internal Read all process output before closing the pipes #​20003 metric Skip adding nonconvertible field values #​19920 comm…",
+   "source_url": "https://github.com/influxdata/telegraf/releases/tag/v1.40.3",
+   "page_url": "https://www.firmwarely.com/devices/telegraf/"
+  },
+  "ghostfolio": {
+   "id": "ghostfolio",
+   "brand": "Ghostfolio",
+   "model": "Wealth tracker",
+   "category": "A",
+   "status": "update",
+   "version": "3.97.0",
+   "previous": "3.96.0",
+   "released": "2026-11-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changed: Improved the content of the pricing page Improved the language localization for German (de) Upgraded stripe from version 23.0.0 to 23.0.1 Fixed: Fixed the value of zero in the portfolio performance for date ranges starting after the end of an expired portfolio snapshot Special Thanks:",
+   "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.97.0",
+   "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
   }
  }
 }

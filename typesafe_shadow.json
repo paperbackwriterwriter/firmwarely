@@ -34974,6 +34974,78 @@
     "security_fix_plain": 0.9,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "skipper",
+   "version": "0.28.61",
+   "name": "Skipper HTTP router and reverse proxy",
+   "judged_at": "2026-11-02T19:48:04+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.59,
+    "security_fix_plain": 0.41,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "unpoller",
+   "version": "5.9.3",
+   "name": "UnPoller UniFi metrics exporter",
+   "judged_at": "2026-11-02T19:48:04+00:00",
+   "notes_chars": 196,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "telegraf",
+   "version": "1.40.3",
+   "name": "InfluxData Telegraf agent",
+   "judged_at": "2026-11-02T19:48:04+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ghostfolio",
+   "version": "3.97.0",
+   "name": "Ghostfolio Wealth tracker",
+   "judged_at": "2026-11-02T19:48:04+00:00",
+   "notes_chars": 294,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
