@@ -34632,6 +34632,42 @@
     "security_fix_plain": 0.07,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "formbricks",
+   "version": "6.1.3",
+   "name": "Formbricks Surveys",
+   "judged_at": "2026-11-02T12:29:35+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.07,
+    "security_fix_plain": 0.23,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "avideo",
+   "version": "29.7.0",
+   "name": "AVideo Video streaming platform",
+   "judged_at": "2026-11-02T12:29:35+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.11,
+    "security_fix_plain": 0.15,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

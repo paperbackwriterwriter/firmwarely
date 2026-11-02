@@ -136,6 +136,36 @@
    "notes": "Changelog: 8e53a5e628dfa0de815c938bef9ec95e513d29a7 Merge branch 'master' into fix/redownload-trusted-file-urls 33c70a18c1f2a1531f6864d6a8ffd2cffcd91aee Merge pull request #​760 from rusq/fix/redownload-trusted-file-urls 55cd3ee6b68be17f8c5908d1bded0f9700beabb0 Merge pull request #​761 from rusq/fi…",
    "source_url": "https://github.com/rusq/slackdump/releases/tag/v4.5.4",
    "page_url": "https://www.firmwarely.com/devices/slackdump/"
+  },
+  "formbricks": {
+   "id": "formbricks",
+   "brand": "Formbricks",
+   "model": "Surveys",
+   "category": "A",
+   "status": "update",
+   "version": "6.1.3",
+   "previous": "6.1.2",
+   "released": "2026-11-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: fix(deps): bump undici and ip-address (backport #​9865 to release/6.1) [ENG-6717][ENG-6679] fix(deps): bump zod to 4.6.6 (backport #​9848 to release/6.1) [ENG-6727] fix(docker): run the app image on Node 24.22.2 (backport #​9868 to release/6.1) [ENG-6597] fix(deps): upgrade Better A…",
+   "source_url": "https://github.com/formbricks/formbricks/releases/tag/6.1.3",
+   "page_url": "https://www.firmwarely.com/devices/formbricks/"
+  },
+  "avideo": {
+   "id": "avideo",
+   "brand": "AVideo",
+   "model": "Video streaming platform",
+   "category": "A",
+   "status": "update",
+   "version": "29.7.0",
+   "previous": "29.6.0",
+   "released": "2026-11-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "29.7.0 (2026-11-02): Features: add good_until_utc and good_until_unix to PayPerView rows in signIn (d344218) Fixes: clarify session handling and CSRF guard behavior in copilot instructions (e3125c0) update playlist total calculation and pagination logic in channel views (69b126d) Dependencies: bump…",
+   "source_url": "https://github.com/WWBN/AVideo/releases/tag/v29.7.0",
+   "page_url": "https://www.firmwarely.com/devices/avideo/"
   }
  }
 }
