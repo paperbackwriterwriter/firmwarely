@@ -34326,6 +34326,42 @@
     "security_fix_plain": 0.91,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "miniflux",
+   "version": "2.3.5",
+   "name": "Miniflux RSS reader",
+   "judged_at": "2026-11-02T04:46:40+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "rustdesk",
+   "version": "1.5.1",
+   "name": "RustDesk Remote desktop",
+   "judged_at": "2026-11-02T04:46:40+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
