@@ -376,6 +376,21 @@
    "notes": "What's Changed: Explain clearly why a Gladys Plus user is not accepted by the instance Mark native Nextcloud Talk deprecated fix(caldav): refresh recurring events monthly so their occurrences ke… Do not keep the new profile password in the stored user fix(thermostat): move a hold onto the new next …",
    "source_url": "https://github.com/GladysAssistant/Gladys/releases/tag/v5.3.1",
    "page_url": "https://www.firmwarely.com/devices/gladys/"
+  },
+  "thingino": {
+   "id": "thingino",
+   "brand": "thingino",
+   "model": "Camera firmware",
+   "category": "M",
+   "status": "update",
+   "version": "2026-11-02",
+   "previous": "2026-10-04",
+   "released": "2026-11-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes in this release: 7843798 telegrambot: cap TLS at 1.2 79cfae5 curl: cap outbound HTTPS at TLS 1.2 Add --tls-max 1.2 to every curl invocation that ships in the image: package updates (thingino-pkg), provisioning, push/notification senders, prusa-connect, raptor, rt-tests, termbin upload, gest…",
+   "source_url": "https://github.com/themactep/thingino-firmware/releases/tag/firmware-2026-11-02",
+   "page_url": "https://www.firmwarely.com/devices/thingino/"
   }
  }
 }
