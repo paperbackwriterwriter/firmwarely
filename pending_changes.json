@@ -436,6 +436,36 @@
    "notes": ":link: View release notes Desktop releases: Please note: Microsoft store updates can sometimes lag behind the main release by a couple of days while they verify the new version.",
    "source_url": "https://github.com/actualbudget/actual/releases/tag/v26.11.0",
    "page_url": "https://www.firmwarely.com/devices/actual-budget/"
+  },
+  "invoice-ninja": {
+   "id": "invoice-ninja",
+   "brand": "Invoice Ninja",
+   "model": "Invoicing",
+   "category": "A",
+   "status": "update",
+   "version": "5.13.53",
+   "previous": "5.13.52",
+   "released": "2026-11-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: v5.13.53 Full Changelog: https://github.com/invoiceninja/invoiceninja/compare/v5.13.52...v5.13.53",
+   "source_url": "https://github.com/invoiceninja/invoiceninja/releases/tag/v5.13.53",
+   "page_url": "https://www.firmwarely.com/devices/invoice-ninja/"
+  },
+  "pulse": {
+   "id": "pulse",
+   "brand": "Pulse",
+   "model": "Real-time monitoring dashboard",
+   "category": "A",
+   "status": "update",
+   "version": "6.7.0",
+   "previous": "6.6.0",
+   "released": "2026-11-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "✅ Release Asset Validation: PASSED: The required release asset checks passed. Status: Release asset checks passed ✅ Validated: 2026-11-02 01:54:11 UTC Workflow: Pulse Release Pipeline #​446 Validation Summary: All required assets present ✓ Checksums verified ✓ Version strings correct ✓ Binary archi…",
+   "source_url": "https://github.com/rcourtman/Pulse/releases/tag/v6.7.0",
+   "page_url": "https://www.firmwarely.com/devices/pulse/"
   }
  }
 }

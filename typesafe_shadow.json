@@ -34272,6 +34272,42 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "invoice-ninja",
+   "version": "5.13.53",
+   "name": "Invoice Ninja Invoicing",
+   "judged_at": "2026-11-02T03:05:16+00:00",
+   "notes_chars": 113,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "pulse",
+   "version": "6.7.0",
+   "name": "Pulse Real-time monitoring dashboard",
+   "judged_at": "2026-11-02T03:05:16+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
