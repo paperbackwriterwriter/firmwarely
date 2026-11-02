@@ -466,6 +466,21 @@
    "notes": "✅ Release Asset Validation: PASSED: The required release asset checks passed. Status: Release asset checks passed ✅ Validated: 2026-11-02 01:54:11 UTC Workflow: Pulse Release Pipeline #​446 Validation Summary: All required assets present ✓ Checksums verified ✓ Version strings correct ✓ Binary archi…",
    "source_url": "https://github.com/rcourtman/Pulse/releases/tag/v6.7.0",
    "page_url": "https://www.firmwarely.com/devices/pulse/"
+  },
+  "wiki-js": {
+   "id": "wiki-js",
+   "brand": "Wiki.js",
+   "model": "Wiki",
+   "category": "A",
+   "status": "update",
+   "version": "3.0.2",
+   "previous": "3.0.1",
+   "released": "2026-11-02",
+   "date_known": true,
+   "eol": false,
+   "notes": ":bug: Bug Fixes: bb45d60 - mcp calls to /_api now holds the key of the original request (commit) :arrow_lower_right: fixes issue #​8175 opened dff35ee - revoke user sessions on deactivation + group changes (commit) ↘️ fixes GHSA-f865-6hp9-6w47 reported f626501 - asset upload incorrectly refused for…",
+   "source_url": "https://github.com/requarks/wiki/releases/tag/3.0.2",
+   "page_url": "https://www.firmwarely.com/devices/wiki-js/"
   }
  }
 }
