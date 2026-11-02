@@ -106,7 +106,7 @@
   <url><loc>https://www.firmwarely.com/devices/changedetection/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/healthchecks/</loc><lastmod>2026-10-27</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/gotify/</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/ntfy/</loc><lastmod>2026-10-31</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/ntfy/</loc><lastmod>2026-11-02</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/apprise/</loc><lastmod>2026-10-24</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/scrutiny-disk/</loc><lastmod>2026-11-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/glances/</loc><lastmod>2026-10-11</lastmod></url>
@@ -273,7 +273,7 @@
   <url><loc>https://www.firmwarely.com/devices/cronicle/</loc><lastmod>2026-11-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/graylog/</loc><lastmod>2026-10-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/opensearch/</loc><lastmod>2026-09-29</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/elasticsearch/</loc><lastmod>2026-10-06</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/elasticsearch/</loc><lastmod>2026-11-02</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/vector/</loc><lastmod>2026-10-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/fluent-bit/</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/signoz/</loc><lastmod>2026-10-29</lastmod></url>

@@ -166,6 +166,36 @@
    "notes": "29.7.0 (2026-11-02): Features: add good_until_utc and good_until_unix to PayPerView rows in signIn (d344218) Fixes: clarify session handling and CSRF guard behavior in copilot instructions (e3125c0) update playlist total calculation and pagination logic in channel views (69b126d) Dependencies: bump…",
    "source_url": "https://github.com/WWBN/AVideo/releases/tag/v29.7.0",
    "page_url": "https://www.firmwarely.com/devices/avideo/"
+  },
+  "ntfy": {
+   "id": "ntfy",
+   "brand": "ntfy",
+   "model": "Push notification server",
+   "category": "A",
+   "status": "update",
+   "version": "2.37.0",
+   "previous": "2.36.0",
+   "released": "2026-11-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release makes UnifiedPush work across several servers: the subscriber who pays for a topic's pushes is shared through the database, and app servers are told with 410 Gone when a subscription has been abandoned for 4 days. It also adds Retry-After and the draft RateLimit headers to rate limit r…",
+   "source_url": "https://github.com/binwiederhier/ntfy/releases/tag/v2.37.0",
+   "page_url": "https://www.firmwarely.com/devices/ntfy/"
+  },
+  "elasticsearch": {
+   "id": "elasticsearch",
+   "brand": "Elastic",
+   "model": "Elasticsearch",
+   "category": "A",
+   "status": "update",
+   "version": "9.5.6",
+   "previous": "9.5.5",
+   "released": "2026-11-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "Downloads: https://elastic.co/downloads/elasticsearch Release notes: https://www.elastic.co/docs/release-notes/elasticsearch#elasticsearch-9.5.6-release-notes",
+   "source_url": "https://github.com/elastic/elasticsearch/releases/tag/v9.5.6",
+   "page_url": "https://www.firmwarely.com/devices/elasticsearch/"
   }
  }
 }

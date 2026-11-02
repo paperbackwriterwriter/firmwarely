@@ -34668,6 +34668,42 @@
     "security_fix_plain": 0.15,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "ntfy",
+   "version": "2.37.0",
+   "name": "ntfy Push notification server",
+   "judged_at": "2026-11-02T14:10:50+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "elasticsearch",
+   "version": "9.5.6",
+   "name": "Elastic Elasticsearch",
+   "judged_at": "2026-11-02T14:10:50+00:00",
+   "notes_chars": 158,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.41,
+    "security_fix_plain": 0.43,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
