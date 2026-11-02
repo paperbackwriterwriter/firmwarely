@@ -571,6 +571,36 @@
    "notes": "What's Changed: fix: send warnings and errors to stderr so container logs carry their level fix: \"Create new\" SSH config on server edit no longer overwrites the existing one chore(deps): bump laravel/mcp from 0.7.2 to 1.1.2 by in https://github.com/David-Crty/databasement/pull/740 chore(deps): bump…",
    "source_url": "https://github.com/David-Crty/databasement/releases/tag/v1.10.8",
    "page_url": "https://www.firmwarely.com/devices/databasement/"
+  },
+  "cronicle": {
+   "id": "cronicle",
+   "brand": "Cronicle",
+   "model": "Task scheduler",
+   "category": "A",
+   "status": "update",
+   "version": "0.9.142",
+   "previous": "0.9.141",
+   "released": "2026-11-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "Fix: Prevent restricted accounts from using chain reactions Fix: Prevent API key disclosure in objects and audit metadata",
+   "source_url": "https://github.com/jhuckaby/Cronicle/releases/tag/v0.9.142",
+   "page_url": "https://www.firmwarely.com/devices/cronicle/"
+  },
+  "etherpad": {
+   "id": "etherpad",
+   "brand": "Etherpad",
+   "model": "Collaborative editor",
+   "category": "A",
+   "status": "critical",
+   "version": "3.3.13",
+   "previous": "3.3.12",
+   "released": "2026-11-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "3.3.13 is a security release. It stops .etherpad imports from setting a pad's ownership, privacy or deletion token (GHSA-qq7c-m9pc-7q7v). Security: Import — .etherpad files can no longer change who owns a pad, make it public or plant a deletion token (GHSA-qq7c-m9pc-7q7v). Importing a .etherpad fil…",
+   "source_url": "https://github.com/ether/etherpad/releases/tag/v3.3.13",
+   "page_url": "https://www.firmwarely.com/devices/etherpad/"
   }
  }
 }
