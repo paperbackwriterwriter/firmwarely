@@ -31,6 +31,21 @@
    "notes": "[!WARNING] This version is going to be the last one to support Android 6 (API 23). Highlights of this release: Added sharing Matter devices with other apps such as Google Home (Home Assistant 2026.11+) Health Connect sleep duration now ignores awake and out-of-bed time What's Changed: Listen on doc…",
    "source_url": "https://github.com/home-assistant/android/releases/tag/2026.11.1",
    "page_url": "https://www.firmwarely.com/devices/android/"
+  },
+  "meilisearch": {
+   "id": "meilisearch",
+   "brand": "Meilisearch",
+   "model": "Search engine",
+   "category": "A",
+   "status": "critical",
+   "version": "1.56.1",
+   "previous": "1.56.0",
+   "released": "2026-11-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "Meilisearch v1.56.1 introduces important security fixes. Updating from v1.56.0 is recommended for all users. 🦋 Fixes: Fix issue with ranking scores greater than 1 Make sure that all nested fields are inserted in field id map Fixes a panic when modifying the list of searchable attributes after an ex…",
+   "source_url": "https://github.com/meilisearch/meilisearch/releases/tag/v1.56.1",
+   "page_url": "https://www.firmwarely.com/devices/meilisearch/"
   }
  }
 }
