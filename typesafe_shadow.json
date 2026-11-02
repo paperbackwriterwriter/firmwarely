@@ -35046,6 +35046,150 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "prusa-mk4-core-one",
+   "version": "8.0.0",
+   "name": "Prusa MK4 / MK4S / Core One (Buddy firmware)",
+   "judged_at": "2026-11-02T20:38:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "prusa-mk4s",
+   "version": "8.0.0",
+   "name": "Prusa MK4S",
+   "judged_at": "2026-11-02T20:38:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "prusa-xl",
+   "version": "8.0.0",
+   "name": "Prusa XL",
+   "judged_at": "2026-11-02T20:38:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "influxdb",
+   "version": "3.12.2",
+   "name": "InfluxData InfluxDB",
+   "judged_at": "2026-11-02T20:38:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "semaphore-ui",
+   "version": "2.19.18",
+   "name": "Semaphore Ansible and Terraform UI",
+   "judged_at": "2026-11-02T20:38:48+00:00",
+   "notes_chars": 134,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "phpipam",
+   "version": "1.9.0",
+   "name": "phpIPAM IP address management",
+   "judged_at": "2026-11-02T20:38:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "lantern",
+   "version": "10.0.5",
+   "name": "Lantern Censorship circumvention VPN",
+   "judged_at": "2026-11-02T20:38:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.84,
+    "security_fix_plain": 0.87,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "databasement",
+   "version": "1.10.8",
+   "name": "Databasement Database backup manager",
+   "judged_at": "2026-11-02T20:38:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
