@@ -511,6 +511,21 @@
    "notes": "| Architecture | Windows | Ubuntu | Mac | Android | Flatpak | iOS | Web | |--------------|---------|--------|-----|----------|---------|---------|---------| | x86-64 (64-bit) | EXE MSI | Download | Download | Universal | Download | | Go | | AArch64 (ARM64) | EXE MSI | Download | Download | Download…",
    "source_url": "https://github.com/rustdesk/rustdesk/releases/tag/1.5.1",
    "page_url": "https://www.firmwarely.com/devices/rustdesk/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.2994",
+   "previous": "0.24.2985",
+   "released": "2026-11-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: 092f908426beae06a487deaa9a8a1e62ee003ffe xtorrenty: removed. resolves #​13864 7350569a34f55dfa8f79a619178ac1eac57a1b65 aither: drop book mode b38b97c258606ac1a9bf8509de0246b754760b64 add shadow, a Romanian private site. resolves #​17248 dc9cbb56e41304eca82567d44670e98282d02657 zootoons: a…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2994",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
