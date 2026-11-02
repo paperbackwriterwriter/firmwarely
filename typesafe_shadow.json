@@ -34794,6 +34794,132 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "prusaslicer",
+   "version": "2.9.7",
+   "name": "Prusa Slicer software",
+   "judged_at": "2026-11-02T16:43:12+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.99,
+    "security_fix_plain": 0.98,
+    "end_of_life": 0.16
+   }
+  },
+  {
+   "id": "riot-os",
+   "version": "2026.10",
+   "name": "RIOT IoT operating system",
+   "judged_at": "2026-11-02T16:43:12+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "coolify",
+   "version": "4.6.0",
+   "name": "Coolify Self-hosting platform",
+   "judged_at": "2026-11-02T16:43:12+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.36,
+    "security_fix_plain": 0.27,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "infisical",
+   "version": "0.167.5",
+   "name": "Infisical Secrets manager",
+   "judged_at": "2026-11-02T16:43:12+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "synapse",
+   "version": "1.164.2",
+   "name": "Element Synapse Matrix server",
+   "judged_at": "2026-11-02T16:43:12+00:00",
+   "notes_chars": 79,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.46,
+    "security_fix_plain": 0.35,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "mobile-mcp",
+   "version": "1.0.16",
+   "name": "Mobile Mcp Model Context Protocol Server",
+   "judged_at": "2026-11-02T16:43:12+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "gladys",
+   "version": "5.3.1",
+   "name": "Gladys Home automation hub",
+   "judged_at": "2026-11-02T16:43:12+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.39,
+    "security_fix_plain": 0.43,
+    "end_of_life": 0.03
+   }
   }
  ]
 }
