@@ -196,6 +196,36 @@
    "notes": "Downloads: https://elastic.co/downloads/elasticsearch Release notes: https://www.elastic.co/docs/release-notes/elasticsearch#elasticsearch-9.5.6-release-notes",
    "source_url": "https://github.com/elastic/elasticsearch/releases/tag/v9.5.6",
    "page_url": "https://www.firmwarely.com/devices/elasticsearch/"
+  },
+  "limesurvey": {
+   "id": "limesurvey",
+   "brand": "LimeSurvey",
+   "model": "Survey platform",
+   "category": "A",
+   "status": "update",
+   "version": "7.9.0",
+   "previous": "7.8.0",
+   "released": "2026-11-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "7.9.0+261029",
+   "source_url": "https://github.com/LimeSurvey/LimeSurvey/releases/tag/7.9.0%2B261029",
+   "page_url": "https://www.firmwarely.com/devices/limesurvey/"
+  },
+  "krakend-ce": {
+   "id": "krakend-ce",
+   "brand": "KrakenD",
+   "model": "API gateway (Community Edition)",
+   "category": "R",
+   "status": "update",
+   "version": "3.0.3",
+   "previous": "3.0.2",
+   "released": "2026-11-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: go-jose/v3 removed Bump krakend-jose and krakend-otel Bump more deps for 3.0.3 CE patch release 3.0.3 Full Changelog: https://github.com/krakend/krakend-ce/compare/v3.0.2...v3.0.3",
+   "source_url": "https://github.com/krakend/krakend-ce/releases/tag/v3.0.3",
+   "page_url": "https://www.firmwarely.com/devices/krakend-ce/"
   }
  }
 }
