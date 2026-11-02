@@ -268,7 +268,7 @@
   <url><loc>https://www.firmwarely.com/devices/btop/</loc><lastmod>2026-10-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/nagios-core/</loc><lastmod>2026-08-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/icinga2/</loc><lastmod>2026-10-28</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/kener/</loc><lastmod>2026-10-26</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/kener/</loc><lastmod>2026-11-02</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/statping-ng/</loc><lastmod>2025-06-04</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/cronicle/</loc><lastmod>2026-11-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/graylog/</loc><lastmod>2026-10-19</lastmod></url>
@@ -350,7 +350,7 @@
   <url><loc>https://www.firmwarely.com/devices/jupyterlab/</loc><lastmod>2026-10-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/n8n/</loc><lastmod>2026-10-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/activepieces/</loc><lastmod>2026-10-28</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/windmill/</loc><lastmod>2026-10-30</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/windmill/</loc><lastmod>2026-11-02</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/temporal/</loc><lastmod>2026-10-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/airflow/</loc><lastmod>2026-09-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/prefect/</loc><lastmod>2026-10-30</lastmod></url>
@@ -675,7 +675,7 @@
   <url><loc>https://www.firmwarely.com/devices/oxidized/</loc><lastmod>2026-05-20</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/rustic/</loc><lastmod>2026-08-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/barman/</loc><lastmod>2026-09-29</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/proxmenux/</loc><lastmod>2026-10-26</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/proxmenux/</loc><lastmod>2026-11-02</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/gobackup/</loc><lastmod>2026-07-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/dbatools/</loc><lastmod>2026-10-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/slackdump/</loc><lastmod>2026-11-01</lastmod></url>
@@ -763,4 +763,5 @@
   <url><loc>https://www.firmwarely.com/devices/numa/</loc><lastmod>2026-10-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/mullvadvpn-app/</loc><lastmod>2026-09-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/dsvpn/</loc><lastmod>2025-12-19</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/new-api/</loc><lastmod>2026-10-25</lastmod></url>
 </urlset>

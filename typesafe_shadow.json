@@ -34398,6 +34398,60 @@
     "security_fix_plain": 0.16,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "kener",
+   "version": "4.1.11",
+   "name": "Kener Status page",
+   "judged_at": "2026-11-02T08:15:22+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.84,
+    "security_fix_plain": 0.81,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "windmill",
+   "version": "1.856.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-11-02T08:15:22+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "proxmenux",
+   "version": "1.2.8",
+   "name": "ProxMenux Menu-driven Proxmox VE toolkit",
+   "judged_at": "2026-11-02T08:15:22+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

@@ -11277,6 +11277,15 @@
    "type": "github",
    "repo": "jedisct1/dsvpn",
    "product_url": "https://github.com/jedisct1/dsvpn"
+  },
+  {
+   "id": "new-api",
+   "brand": "New API",
+   "model": "AI gateway",
+   "category": "A",
+   "type": "github",
+   "repo": "QuantumNous/new-api",
+   "product_url": "https://github.com/QuantumNous/new-api"
   }
  ]
 }
