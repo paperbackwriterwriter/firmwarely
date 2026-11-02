@@ -1,5 +1,36 @@
 {
- "since": null,
+ "since": "2026-11-02T09:06:10+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "raspberry-pi-500": {
+   "id": "raspberry-pi-500",
+   "brand": "Raspberry Pi",
+   "model": "Raspberry Pi 500",
+   "category": "P",
+   "status": "update",
+   "version": "28.35-1",
+   "previous": "28.34-1",
+   "released": "2026-10-30",
+   "date_known": true,
+   "eol": false,
+   "notes": "The previous release (today) always failed because it was too strict and could only pass on BCM2712.",
+   "source_url": "https://github.com/raspberrypi/rpi-eeprom/releases/tag/apt%2F28.35-1",
+   "page_url": "https://www.firmwarely.com/devices/raspberry-pi-500/"
+  },
+  "android": {
+   "id": "android",
+   "brand": "Home Assistant",
+   "model": "Android companion app",
+   "category": "S",
+   "status": "update",
+   "version": "2026.11.1",
+   "previous": "2026.10.1",
+   "released": "2026-11-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "[!WARNING] This version is going to be the last one to support Android 6 (API 23). Highlights of this release: Added sharing Matter devices with other apps such as Google Home (Home Assistant 2026.11+) Health Connect sleep duration now ignores awake and out-of-bed time What's Changed: Listen on doc…",
+   "source_url": "https://github.com/home-assistant/android/releases/tag/2026.11.1",
+   "page_url": "https://www.firmwarely.com/devices/android/"
+  }
+ }
 }
