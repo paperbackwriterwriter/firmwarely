@@ -526,6 +526,21 @@
    "notes": "Changes:: 092f908426beae06a487deaa9a8a1e62ee003ffe xtorrenty: removed. resolves #​13864 7350569a34f55dfa8f79a619178ac1eac57a1b65 aither: drop book mode b38b97c258606ac1a9bf8509de0246b754760b64 add shadow, a Romanian private site. resolves #​17248 dc9cbb56e41304eca82567d44670e98282d02657 zootoons: a…",
    "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.2994",
    "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "puter": {
+   "id": "puter",
+   "brand": "Puter",
+   "model": "Web desktop OS",
+   "category": "A",
+   "status": "update",
+   "version": "26.11",
+   "previous": "26.10.1",
+   "released": "2026-11-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: fix: add beta flag to kv share docs to match kvhandle beta status fix: app token fix(dashboard): eighth adversarial review of Files — bugs, UX, a11y, perf feat(dashboard): publish websites and workers from Files in dashboard dialogs fix(hosting): disconnect the directory when update…",
+   "source_url": "https://github.com/HeyPuter/puter/releases/tag/26.11",
+   "page_url": "https://www.firmwarely.com/devices/puter/"
   }
  }
 }
