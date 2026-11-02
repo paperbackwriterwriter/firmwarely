@@ -346,6 +346,51 @@
    "notes": "Fixed: Anomaly recalculation no longer fails for users who have a point without coordinates (#​3936). Transportation-mode detection and track recalculation work on instances without the altitude_decimal column (#​3951). Numbers in visit, place and family labels on the map render in the text font in…",
    "source_url": "https://github.com/Freika/dawarich/releases/tag/1.20.1",
    "page_url": "https://www.firmwarely.com/devices/dawarich/"
+  },
+  "unpoller": {
+   "id": "unpoller",
+   "brand": "UnPoller",
+   "model": "UniFi metrics exporter",
+   "category": "R",
+   "status": "update",
+   "version": "5.9.1",
+   "previous": "5.9.0",
+   "released": "2026-11-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: 7ef29ad4cb94a92ba2bf11d40716c0fc45752e0e fix: do not apply slot-specific data plans to other SIMs df8731dd286695b23a3c0bf931183c50a9989c7f feat: export U5G APN, cellular addressing and data-plan metrics 4b0fa1e7ab67808b32b1be238568f2264c06159d build: use released UniFi library v6.6.1 b84…",
+   "source_url": "https://github.com/unpoller/unpoller/releases/tag/v5.9.1",
+   "page_url": "https://www.firmwarely.com/devices/unpoller/"
+  },
+  "invokeai": {
+   "id": "invokeai",
+   "brand": "InvokeAI",
+   "model": "Image generation studio",
+   "category": "A",
+   "status": "update",
+   "version": "6.14.3",
+   "previous": "6.14.2",
+   "released": "2026-11-01",
+   "date_known": true,
+   "eol": false,
+   "notes": "InvokeAI v6.14.3 is a patch release that enhances the Canvas with a vector graphics layer and corrects a download bug in the Model Manager. New Feature: Editable vector layers: contributed an enhancement to the Canvas that allows you to create a vector layer with editable shapes and splines. When y…",
+   "source_url": "https://github.com/invoke-ai/InvokeAI/releases/tag/v6.14.3",
+   "page_url": "https://www.firmwarely.com/devices/invokeai/"
+  },
+  "huginn": {
+   "id": "huginn",
+   "brand": "Huginn",
+   "model": "Automation agents",
+   "category": "A",
+   "status": "update",
+   "version": "2026.11.01",
+   "previous": "2026.10.26",
+   "released": "2026-11-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "v2026.11.01: This maintenance release updates bundled gems and adds a three-day cooldown before newly published gems are selected during dependency resolution. Changes: Update Feedjira to 4.0.3, Kaminari to 1.3.1, Faraday to 2.15.1, Bootsnap to 1.26.1, AWS SDK for S3 to 1.236.0, and AWS SDK Core to…",
+   "source_url": "https://github.com/huginn/huginn/releases/tag/v2026.11.01",
+   "page_url": "https://www.firmwarely.com/devices/huginn/"
   }
  }
 }
