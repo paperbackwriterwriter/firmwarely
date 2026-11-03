@@ -811,6 +811,21 @@
    "notes": "jenkins-2.589",
    "source_url": "https://github.com/jenkinsci/jenkins/releases/tag/jenkins-2.589",
    "page_url": "https://www.firmwarely.com/devices/jenkins/"
+  },
+  "ollama": {
+   "id": "ollama",
+   "brand": "Ollama",
+   "model": "Local LLM runner",
+   "category": "A",
+   "status": "update",
+   "version": "0.40.14",
+   "previous": "0.40.13",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: ollama launch claude now applies the model's output token limit for Claude Code, so cloud models no longer run into the 128k default cap Cloud web search responses on /api/chat are now decoded correctly, including compressed responses OpenAI-compatible endpoints no longer override a…",
+   "source_url": "https://github.com/ollama/ollama/releases/tag/v0.40.14",
+   "page_url": "https://www.firmwarely.com/devices/ollama/"
   }
  }
 }
