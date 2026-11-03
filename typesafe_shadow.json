@@ -35586,6 +35586,60 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "owncloud-server",
+   "version": "10.16.7",
+   "name": "ownCloud File sync server",
+   "judged_at": "2026-11-03T08:48:29+00:00",
+   "notes_chars": 17,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "zitadel",
+   "version": "4.20.1",
+   "name": "ZITADEL Identity platform",
+   "judged_at": "2026-11-03T08:48:29+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.1,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "n8n",
+   "version": "2.46.4",
+   "name": "n8n Workflow automation",
+   "judged_at": "2026-11-03T08:48:29+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
