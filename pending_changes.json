@@ -631,6 +631,36 @@
    "notes": "What's new in Kiosk Satellite 2026.11.4: This release lets you add, change and delete calendar events right on the kiosk. Up next now shows who each event is for. A restored fleet leader keeps its followers, and two realtime conversation bugs are fixed. Important: Update your Echo Show / Dot image:…",
    "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.4",
    "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
+  },
+  "truenas-scale": {
+   "id": "truenas-scale",
+   "brand": "TrueNAS",
+   "model": "SCALE middleware",
+   "category": "N",
+   "status": "update",
+   "version": "25.10.8",
+   "previous": "25.10.7",
+   "released": "2026-10-26",
+   "date_known": true,
+   "eol": false,
+   "notes": "NAS-144913 / 25.10.8 / Make SYSTEM_PRODUCT_WRITE include SYSTEM_PRODU… …CT_READ instead of itself (by yocalebo) ( #​20063 ) The SYSTEM_PRODUCT_WRITE role listed itself in its includes, so composing any privilege that granted it recursed until RecursionError and members of that group could not log i…",
+   "source_url": "https://github.com/truenas/middleware/releases/tag/TS-25.10.8",
+   "page_url": "https://www.firmwarely.com/devices/truenas-scale/"
+  },
+  "aily-blockly": {
+   "id": "aily-blockly",
+   "brand": "Aily",
+   "model": "Blockly AI IDE for Arduino",
+   "category": "M",
+   "status": "update",
+   "version": "0.9.111",
+   "previous": "0.9.110",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "v0.9.111: Changes: ✨ New Features Enhanced onboarding for AI and the app store, including improved workspace location. Added background reporting of the current AI conversation when submitting feedback. Added integration with the device manager sub-app. 🐛 Bug Fixes Improved library workflows to pre…",
+   "source_url": "https://github.com/ailyProject/aily-blockly/releases/tag/v0.9.111",
+   "page_url": "https://www.firmwarely.com/devices/aily-blockly/"
   }
  }
 }
