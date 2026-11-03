@@ -631,6 +631,21 @@
    "notes": "🚀 v0.15.0: New Features: Dashboards — Added dashboards combining views from multiple databases, with movable and resizable widgets, shared filters, and personal filter changes. Local dashboards could reuse existing views; creating new widget views required a server connection. Charts and drill-down…",
    "source_url": "https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.15.0",
    "page_url": "https://www.firmwarely.com/devices/appflowy/"
+  },
+  "tailscale": {
+   "id": "tailscale",
+   "brand": "Tailscale",
+   "model": "Tailscale client",
+   "category": "R",
+   "status": "update",
+   "version": "1.104.5",
+   "previous": "1.104.4",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "Please refer to the changelog available at https://tailscale.com/changelog",
+   "source_url": "https://github.com/tailscale/tailscale/releases/tag/v1.104.5",
+   "page_url": "https://www.firmwarely.com/devices/tailscale/"
   }
  }
 }
