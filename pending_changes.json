@@ -676,6 +676,51 @@
    "notes": "This is a maintenance release of InvokeAI. It fixes a startup crash that occurred when upgrading from 6.14.2 to 6.14.3 caused by a bug in the Starlette library. What's Changed: chore(version): bump to 6.14.3 fix(deps): cap Starlette below 1.8 to keep the web UI loading Full Changelog: https://githu…",
    "source_url": "https://github.com/invoke-ai/InvokeAI/releases/tag/v6.14.4",
    "page_url": "https://www.firmwarely.com/devices/invokeai/"
+  },
+  "tdengine": {
+   "id": "tdengine",
+   "brand": "TDengine",
+   "model": "Time-series database",
+   "category": "A",
+   "status": "update",
+   "version": "3.4.3.9",
+   "previous": "3.4.3.3",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release date: 2026-11-03 | Release type | Recommended for | | --- | --- | | Monthly release | Users of federated query, stream processing, virtual tables, taosX OPC DA, or Kepware ingestion | Highlights: Federated query: Linux can query SQL Server and Oracle. Windows can query SQL Server, MySQL, Po…",
+   "source_url": "https://github.com/taosdata/TDengine/releases/tag/ver-3.4.3.9",
+   "page_url": "https://www.firmwarely.com/devices/tdengine/"
+  },
+  "ani-rss": {
+   "id": "ani-rss",
+   "brand": "ANi-RSS",
+   "model": "Anime RSS downloader",
+   "category": "A",
+   "status": "update",
+   "version": "3.2.55",
+   "previous": "3.2.54",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "fix: 修复 Bangumi 日期解析错误 refactor: 优化重命名",
+   "source_url": "https://github.com/wushuo894/ani-rss/releases/tag/v3.2.55",
+   "page_url": "https://www.firmwarely.com/devices/ani-rss/"
+  },
+  "universalmediaserver": {
+   "id": "universalmediaserver",
+   "brand": "Universal Media Server",
+   "model": "DLNA media server",
+   "category": "A",
+   "status": "update",
+   "version": "15.9.0",
+   "previous": "15.8.2",
+   "released": "2026-10-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "We have improved support for Sony and Philips TVs, improved how subtitles display, fixed resume video bugs, and more! This has been the result of a lot of collaboration, and I'd like to thank first-time contributors,, and for code fixes, and Yaroslav Maikovych for taking our Ukrainian translation f…",
+   "source_url": "https://github.com/UniversalMediaServer/UniversalMediaServer/releases/tag/15.9.0",
+   "page_url": "https://www.firmwarely.com/devices/universalmediaserver/"
   }
  }
 }
