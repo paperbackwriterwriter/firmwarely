@@ -728,13 +728,13 @@
    "model": "Scripts and workflows",
    "category": "A",
    "status": "update",
-   "version": "1.857.0",
+   "version": "1.858.0",
    "previous": "1.856.0",
    "released": "2026-11-03",
    "date_known": true,
    "eol": false,
-   "notes": "1.857.0 (2026-11-03): Features: add a recently run panel to the workspace home (#​12105) (d1a2c13) add home's folders, users and cards to the ai session context (#​12104) (263088a) name a materialized table after its script when the target names none (#​12157) (116c902) publish a folder sub-path to…",
-   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.857.0",
+   "notes": "1.858.0 (2026-11-03): Features: resolved runs on home, an easier resolve action, and load fades (#​12167) (1a6e544) --- This PR was generated with Release Please. See documentation.",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.858.0",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
   },
   "donetick": {
@@ -766,6 +766,36 @@
    "notes": "What's new in Kiosk Satellite 2026.11.1: This release brings a new echo canceller, a small neural network that hears the wake word and the stop word twice as often while the kiosk plays audio. It also adds a Weather forecast screensaver widget and colored condition icons for the Weather widget, whi…",
    "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.1",
    "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.3003",
+   "previous": "0.24.2994",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: 6316685796de345db1abcc9f2bb9fa706b51af63 torrenttip: bump domain da5741e40cd0474b59e8db3b110c2bf6e2aa4b1d torrentsome: bump domain 91b4703a102ef4544d68c97715a3818b5813af98 magnetcat: new alt domains 0f6a3ae41c34cea29838fe465c0240f2453d166a 52bt: new domains ca75839186d167fe6be312893699c75…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.3003",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "hometube": {
+   "id": "hometube",
+   "brand": "HomeTube",
+   "model": "Video downloader",
+   "category": "A",
+   "status": "update",
+   "version": "2.13.3",
+   "previous": "2.13.2",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: 🐛 Fixes: fix(download): profile analysis builds invalid JSON when yt-dlp reports no filesize fix(integrations): Jellyfin 12.4 rejects X-Emby-Token, so the library refresh silently did nothing 🧹 Maintenance: chore(release): 2.13.3 — Loom/HLS profile analysis and Jellyfin 12.4 refresh…",
+   "source_url": "https://github.com/EgalitarianMonkey/hometube/releases/tag/v2.13.3",
+   "page_url": "https://www.firmwarely.com/devices/hometube/"
   }
  }
 }
