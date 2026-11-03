@@ -376,6 +376,21 @@
    "notes": "Changes: cache: improve metrics accuracy and storage observability (#​4369) Multiarch Docker image is available in GitHub's docker registry: docker run -it ghcr.io/zalando/skipper:v0.28.63 skipper --help",
    "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.63",
    "page_url": "https://www.firmwarely.com/devices/skipper/"
+  },
+  "dreame-vacuum": {
+   "id": "dreame-vacuum",
+   "brand": "Dreame Vacuum",
+   "model": "Home Assistant integration",
+   "category": "S",
+   "status": "update",
+   "version": "2.0.3",
+   "previous": "2.0.2",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "Hot Fixes 3: Redact Matter pairing code from diagnostics Share map fonts between renderers to cap font memory Verify the server in DreameTLSSocket Allow base station cleaning without mop pads on Mijia robots Follow the optional phone confirmation step in Mi Home 2FA Update translation for 'quick' t…",
+   "source_url": "https://github.com/Tasshack/dreame-vacuum/releases/tag/v2.0.3",
+   "page_url": "https://www.firmwarely.com/devices/dreame-vacuum/"
   }
  }
 }

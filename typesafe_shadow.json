@@ -36108,6 +36108,24 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "dreame-vacuum",
+   "version": "2.0.3",
+   "name": "Dreame Vacuum Home Assistant integration",
+   "judged_at": "2026-11-03T15:20:43+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.27,
+    "security_fix_plain": 0.55,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
