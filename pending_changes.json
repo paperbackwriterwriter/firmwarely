@@ -661,6 +661,36 @@
    "notes": "v0.9.111: Changes: ✨ New Features Enhanced onboarding for AI and the app store, including improved workspace location. Added background reporting of the current AI conversation when submitting feedback. Added integration with the device manager sub-app. 🐛 Bug Fixes Improved library workflows to pre…",
    "source_url": "https://github.com/ailyProject/aily-blockly/releases/tag/v0.9.111",
    "page_url": "https://www.firmwarely.com/devices/aily-blockly/"
+  },
+  "browserbox": {
+   "id": "browserbox",
+   "brand": "BrowserBox",
+   "model": "Remote browser isolation",
+   "category": "R",
+   "status": "update",
+   "version": "20.7.0",
+   "previous": "20.6.2",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "Tested BrowserBox release. Install: macOS and Linux bash curl -fsSL https://browserbox.io/install.sh | bash Windows (PowerShell as Administrator) powershell irm https://browserbox.io/install.ps1 | iex Update an existing installation: macOS and Linux bash bbx update v20.7.0 Windows (updates to the l…",
+   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.7.0",
+   "page_url": "https://www.firmwarely.com/devices/browserbox/"
+  },
+  "fugleramme": {
+   "id": "fugleramme",
+   "brand": "Fugleramme",
+   "model": "Raspberry Pi bird camera",
+   "category": "M",
+   "status": "update",
+   "version": "0.31.0",
+   "previous": "0.30.0",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "v0.31.0 (2026-11-03): _This release is published under the MIT License._ New: Show the margins in black on the panel and web view while they change (09f0436) #​308 set up Wi-Fi through hotspot on frames without an Inky (d1c5800) #​308 set up Wi-Fi through hotspot on the Inky frame (2e1cdb6) Fixed: …",
+   "source_url": "https://github.com/arnegiacomo/fugleramme/releases/tag/v0.31.0",
+   "page_url": "https://www.firmwarely.com/devices/fugleramme/"
   }
  }
 }
