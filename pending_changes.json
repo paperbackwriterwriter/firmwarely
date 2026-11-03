@@ -61,6 +61,21 @@
    "notes": "ESP32 Agent 1.0: app, harness, CLI over BLE. No computer needed: the ESP32-S3 is the AirPlay receiver with its own hotspot and talks to the iPhone app over BLE. The app is the agent. Code: release-1.0 branch. To try it, check out v1.0.0, flash the board with hardware/flash.sh, and build the app in …",
    "source_url": "https://github.com/onehumanbeing/esp32-iphone-agent/releases/tag/v1.0.0",
    "page_url": "https://www.firmwarely.com/devices/esp32-iphone-agent/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.307.39336",
+   "previous": "37522026.306.39613",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​12162 #​12161 #​12160 #​12159 #​12158 #​12157 #​12156 #​12155 #​12154 #​12153",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.307.39336",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   }
  }
 }
