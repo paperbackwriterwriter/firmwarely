@@ -691,6 +691,51 @@
    "notes": "v0.31.0 (2026-11-03): _This release is published under the MIT License._ New: Show the margins in black on the panel and web view while they change (09f0436) #​308 set up Wi-Fi through hotspot on frames without an Inky (d1c5800) #​308 set up Wi-Fi through hotspot on the Inky frame (2e1cdb6) Fixed: …",
    "source_url": "https://github.com/arnegiacomo/fugleramme/releases/tag/v0.31.0",
    "page_url": "https://www.firmwarely.com/devices/fugleramme/"
+  },
+  "paperless-ngx": {
+   "id": "paperless-ngx",
+   "brand": "Paperless-ngx",
+   "model": "Document scanner and archive",
+   "category": "A",
+   "status": "update",
+   "version": "3.4.2",
+   "previous": "3.4.1",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "paperless-ngx 3.4.2: Features / Enhancements: docker-compose(deps): bump gotenberg/gotenberg from 8.37 to 8.38 in /docker/compose (#​14634) docker-compose(deps): bump greenmail/standalone from 2.1.14 to 2.1.15 in /docker/compose (#​14631) docker-compose(deps): Bump nginx from 1.31.6-alpine to 1.31.…",
+   "source_url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.4.2",
+   "page_url": "https://www.firmwarely.com/devices/paperless-ngx/"
+  },
+  "caprover": {
+   "id": "caprover",
+   "brand": "CapRover",
+   "model": "PaaS",
+   "category": "A",
+   "status": "update",
+   "version": "1.16.0",
+   "previous": "1.15.5",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "[1.16.0] - 2026-11-03: New: Redesigned dashboard with Overview, guided Setup, and reorganized Settings PR-250 PR-247 PR-255 PR-256 New: Safer server installer with preflight diagnostics and clearer interactive prompts 9c10774 New: App runtime health and diagnostics, including instance counts and ta…",
+   "source_url": "https://github.com/caprover/caprover/releases/tag/v1.16.0",
+   "page_url": "https://www.firmwarely.com/devices/caprover/"
+  },
+  "pyroscope": {
+   "id": "pyroscope",
+   "brand": "Pyroscope",
+   "model": "Continuous Profiling Platform",
+   "category": "A",
+   "status": "critical",
+   "version": "2.4.3",
+   "previous": "2.4.2",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: 054e1462455e11657c2315c25872479de237c69b docs: backport v2.4.2 release notes (#​5935) (#​5937) 860ef8d7093f9b6c824a7528010b15d782645e4f docs: prepare v2.4.3 security release notes (#​6039) 450765820c3cec9c66821d0446667b355783c899 fix(deps): update undici to 8.12.3 (#​6035) (#​6037) ab80c…",
+   "source_url": "https://github.com/grafana/pyroscope/releases/tag/v2.4.3",
+   "page_url": "https://www.firmwarely.com/devices/pyroscope/"
   }
  }
 }

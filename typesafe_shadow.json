@@ -36486,6 +36486,60 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "paperless-ngx",
+   "version": "3.4.2",
+   "name": "Paperless-ngx Document scanner and archive",
+   "judged_at": "2026-11-03T22:00:18+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "caprover",
+   "version": "1.16.0",
+   "name": "CapRover PaaS",
+   "judged_at": "2026-11-03T22:00:18+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "pyroscope",
+   "version": "2.4.3",
+   "name": "Pyroscope Continuous Profiling Platform",
+   "judged_at": "2026-11-03T22:00:18+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.12,
+    "security_fix_plain": 0.37,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
