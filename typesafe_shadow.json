@@ -36036,6 +36036,78 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "adminer",
+   "version": "6.3.0",
+   "name": "Adminer Database manager",
+   "judged_at": "2026-11-03T14:44:24+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.79,
+    "security_fix_plain": 0.7,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "lobe-chat",
+   "version": "2.3.1",
+   "name": "LobeHub Lobe Chat",
+   "judged_at": "2026-11-03T14:44:24+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "raspberry-pi-500",
+   "version": "28.36-1",
+   "name": "Raspberry Pi 500",
+   "judged_at": "2026-11-03T14:44:24+00:00",
+   "notes_chars": 57,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "skipper",
+   "version": "0.28.63",
+   "name": "Skipper HTTP router and reverse proxy",
+   "judged_at": "2026-11-03T14:44:24+00:00",
+   "notes_chars": 203,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
