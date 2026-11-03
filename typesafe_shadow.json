@@ -36126,6 +36126,42 @@
     "security_fix_plain": 0.55,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "mastodon",
+   "version": "4.7.5",
+   "name": "Mastodon Social network server",
+   "judged_at": "2026-11-03T16:11:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.99,
+    "security_fix_plain": 0.97,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ghost",
+   "version": "6.74.0",
+   "name": "Ghost Publishing platform",
+   "judged_at": "2026-11-03T16:11:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

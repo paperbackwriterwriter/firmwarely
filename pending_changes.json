@@ -391,6 +391,36 @@
    "notes": "Hot Fixes 3: Redact Matter pairing code from diagnostics Share map fonts between renderers to cap font memory Verify the server in DreameTLSSocket Allow base station cleaning without mop pads on Mijia robots Follow the optional phone confirmation step in Mi Home 2FA Update translation for 'quick' t…",
    "source_url": "https://github.com/Tasshack/dreame-vacuum/releases/tag/v2.0.3",
    "page_url": "https://www.firmwarely.com/devices/dreame-vacuum/"
+  },
+  "mastodon": {
+   "id": "mastodon",
+   "brand": "Mastodon",
+   "model": "Social network server",
+   "category": "A",
+   "status": "critical",
+   "version": "4.7.5",
+   "previous": "4.7.4",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: Security: Fix password authentication bypass for inactive accounts (GHSA-3xjw-gv43-3w62) Fix DoS through JSON-LD compaction (#​41482, GHSA-cf49-73r7-rxj6) Fix Forwarded header taking precedence over X-Forwarded-For (#​41481, GHSA-qp4r-p842-mw5c) If your reverse-proxy setup uses Forwarded…",
+   "source_url": "https://github.com/mastodon/mastodon/releases/tag/v4.7.5",
+   "page_url": "https://www.firmwarely.com/devices/mastodon/"
+  },
+  "ghost": {
+   "id": "ghost",
+   "brand": "Ghost",
+   "model": "Publishing platform",
+   "category": "A",
+   "status": "update",
+   "version": "6.74.0",
+   "previous": "6.73.0",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "✨ Added \"is all of\" to the members label filter - Rob Lester ✨ Added \"Copy link\" to the comment menu (#​32125) - Matthew Matsuzaki 🎨 Added a selected word count to the post editor (#​29431) - Kevin Feng 🎨 Added user-editable alt text for the Product card. (#​30526) - Cathy Sarisky 🎨 Changed the cal…",
+   "source_url": "https://github.com/TryGhost/Ghost/releases/tag/v6.74.0",
+   "page_url": "https://www.firmwarely.com/devices/ghost/"
   }
  }
 }
