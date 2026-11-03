@@ -601,6 +601,36 @@
    "notes": "Overview UniFi OS 5.1.35 includes the improvements and bugfixes below. Bundled UniFi Network 10.5.67 Identity Sync Service 1.8.8 Bugfixes Fixed the security vulnerability tracked as CVE-2026-98432.",
    "source_url": "https://community.ui.com/releases/UniFi-OS-Dream-Machines-5-1-35/89d2ba2f-3db1-481f-82bd-3b13f90af57e",
    "page_url": "https://www.firmwarely.com/devices/ubiquiti-unifi-ai-key/"
+  },
+  "infisical": {
+   "id": "infisical",
+   "brand": "Infisical",
+   "model": "Secrets manager",
+   "category": "A",
+   "status": "update",
+   "version": "0.167.6",
+   "previous": "0.167.5",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: docs(agent-vault): positioning overhaul fix(frontend): keep secret share revoked badge clear of row actions feat(agent-vault): add descriptions to proxies by in https://github.com/Infisical/infisical/pull/8963 feat(pam): supporting changes for tf 388 fix(pam): reject direct pam proj…",
+   "source_url": "https://github.com/Infisical/infisical/releases/tag/v0.167.6",
+   "page_url": "https://www.firmwarely.com/devices/infisical/"
+  },
+  "kiosk-satellite": {
+   "id": "kiosk-satellite",
+   "brand": "Kiosk Satellite",
+   "model": "Turn any Android device",
+   "category": "S",
+   "status": "update",
+   "version": "2026.11.4",
+   "previous": "2026.11.3",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's new in Kiosk Satellite 2026.11.4: This release lets you add, change and delete calendar events right on the kiosk. Up next now shows who each event is for. A restored fleet leader keeps its followers, and two realtime conversation bugs are fixed. Important: Update your Echo Show / Dot image:…",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.4",
+   "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   }
  }
 }
