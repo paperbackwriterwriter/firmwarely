@@ -35964,6 +35964,78 @@
     "security_fix_plain": 0.17,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "langfuse",
+   "version": "4.74.0",
+   "name": "Langfuse LLM observability",
+   "judged_at": "2026-11-03T13:53:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "adguard-home",
+   "version": "0.107.80",
+   "name": "AdGuard Home",
+   "judged_at": "2026-11-03T13:53:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.1,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "node-zwave-js",
+   "version": "15.32.0",
+   "name": "Z-Wave JS Z-Wave driver",
+   "judged_at": "2026-11-03T13:53:32+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.11,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "tubesync",
+   "version": "0.19.0",
+   "name": "TubeSync YouTube channel sync",
+   "judged_at": "2026-11-03T13:53:32+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

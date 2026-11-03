@@ -113,13 +113,13 @@
    "model": "LLM observability",
    "category": "A",
    "status": "update",
-   "version": "4.73.0",
+   "version": "4.74.0",
    "previous": "4.72.0",
    "released": "2026-11-03",
    "date_known": true,
    "eol": false,
-   "notes": "What's Changed: Features: feat(ai-gateway): filter gateway analytics by user and API key feat(skills): support version automations feat(rbac): add AI_GATEWAY organization membership role feat(monitors): add new monitor automation dialog feat(ai-gateway): add GitHub Copilot CLI and app setup instruc…",
-   "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.73.0",
+   "notes": "What's Changed: Features: feat(ai-gateway): per-organization request and byte rate limits at /resolve feat(audit-logs): always record support access reads and mark them in ClickHouse feat(admin-api): transfer projects between organizations feat(topics): combine pending Topics schema migrations Fixe…",
+   "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.74.0",
    "page_url": "https://www.firmwarely.com/devices/langfuse/"
   },
   "lychee-photos": {
@@ -271,6 +271,51 @@
    "notes": "What's Changed: fix(auth): normalize AUTH_TYPE to uppercase to prevent silent redirect loop fix(cilium): pre-import protobuf dependencies before observer_pb2 fix(sentry): handle empty/non-JSON error responses in validate_scopes fix(graylog): fix 'Go the the' in the webhook setup instructions fix: p…",
    "source_url": "https://github.com/keephq/keep/releases/tag/v0.55.0",
    "page_url": "https://www.firmwarely.com/devices/keep/"
+  },
+  "adguard-home": {
+   "id": "adguard-home",
+   "brand": "AdGuard",
+   "model": "AdGuard Home",
+   "category": "R",
+   "status": "critical",
+   "version": "0.107.80",
+   "previous": "0.107.79",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "Being vulnerable is fine, but not when it comes to dependencies. That's why we're making this release with updated dependencies to keep AdGuard Home running smoothly and securely 💪 Full changelog: See also the [v0.107.80 GitHub milestone][ms-v0.107.80]. Security: Go version has been updated to prev…",
+   "source_url": "https://github.com/AdguardTeam/AdGuardHome/releases/tag/v0.107.80",
+   "page_url": "https://www.firmwarely.com/devices/adguard-home/"
+  },
+  "node-zwave-js": {
+   "id": "node-zwave-js",
+   "brand": "Z-Wave JS",
+   "model": "Z-Wave driver",
+   "category": "S",
+   "status": "critical",
+   "version": "15.32.0",
+   "previous": "15.31.2",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release is the result of two security and correctness reviews of the entire codebase. No major issues have been found, but the reviews uncovered a number of edge cases that could negatively influence stability and lead to unexpected behavior. Features: ESPHome encryption keys no longer have to…",
+   "source_url": "https://github.com/zwave-js/zwave-js/releases/tag/v15.32.0",
+   "page_url": "https://www.firmwarely.com/devices/node-zwave-js/"
+  },
+  "tubesync": {
+   "id": "tubesync",
+   "brand": "TubeSync",
+   "model": "YouTube channel sync",
+   "category": "A",
+   "status": "update",
+   "version": "0.19.0",
+   "previous": "0.18.5",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: feat: integrate django-tasks-db Retain complete index keys feat: track published and processed media keys - https://github.com/meeb/tubesync/wiki/Settings#indexing_cleanup_unavailable_policy chore(huey): remove CancelExecution patch feat: use a separate cookies file only for age res…",
+   "source_url": "https://github.com/meeb/tubesync/releases/tag/v0.19.0",
+   "page_url": "https://www.firmwarely.com/devices/tubesync/"
   }
  }
 }
