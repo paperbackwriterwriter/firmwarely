@@ -76,6 +76,51 @@
    "notes": "#​12162 #​12161 #​12160 #​12159 #​12158 #​12157 #​12156 #​12155 #​12154 #​12153",
    "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.307.39336",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "kestra": {
+   "id": "kestra",
+   "brand": "Kestra",
+   "model": "Orchestration platform",
+   "category": "A",
+   "status": "update",
+   "version": "2.0.8",
+   "previous": "2.0.7",
+   "released": "2026-10-27",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: 🚀 Features: core 59de69f add dataURL Pebble function to resolve files into data: URLs (#​20778) (#​21900), closes #​20778 #​21900 system e3b300d add task runs and task runners cards to the system overview 📘 Subtasks: deps 5c210e0 Micronaut 4.10.22 version cfd8842 update to version '2.0.8…",
+   "source_url": "https://github.com/kestra-io/kestra/releases/tag/v2.0.8",
+   "page_url": "https://www.firmwarely.com/devices/kestra/"
+  },
+  "tooljet": {
+   "id": "tooljet",
+   "brand": "ToolJet",
+   "model": "Low-code platform",
+   "category": "A",
+   "status": "critical",
+   "version": "3.20.253-lts",
+   "previous": "3.20.252-lts",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Canvas margin adjustment issue due to hidden scrollbar fixed Rest body panel click issue fixed CI: Pass GitHub token to LTS Docker builds as a BuildKit secret Updated vulnerability-ci CI: Shard label-triggered EE platform Cypress runs Added security fix for workflows Feat : Supabase…",
+   "source_url": "https://github.com/ToolJet/ToolJet/releases/tag/v3.20.253-lts",
+   "page_url": "https://www.firmwarely.com/devices/tooljet/"
+  },
+  "langfuse": {
+   "id": "langfuse",
+   "brand": "Langfuse",
+   "model": "LLM observability",
+   "category": "A",
+   "status": "update",
+   "version": "4.73.0",
+   "previous": "4.72.0",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Features: feat(ai-gateway): filter gateway analytics by user and API key feat(skills): support version automations feat(rbac): add AI_GATEWAY organization membership role feat(monitors): add new monitor automation dialog feat(ai-gateway): add GitHub Copilot CLI and app setup instruc…",
+   "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.73.0",
+   "page_url": "https://www.firmwarely.com/devices/langfuse/"
   }
  }
 }

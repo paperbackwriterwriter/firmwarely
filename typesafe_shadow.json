@@ -35730,6 +35730,60 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "kestra",
+   "version": "2.0.8",
+   "name": "Kestra Orchestration platform",
+   "judged_at": "2026-11-03T12:12:10+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "tooljet",
+   "version": "3.20.253-lts",
+   "name": "ToolJet Low-code platform",
+   "judged_at": "2026-11-03T12:12:11+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.57,
+    "security_fix_plain": 0.66,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "langfuse",
+   "version": "4.73.0",
+   "name": "Langfuse LLM observability",
+   "judged_at": "2026-11-03T12:12:11+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
