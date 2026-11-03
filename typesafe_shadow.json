@@ -36162,6 +36162,78 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "ubiquiti-unifi-access-points",
+   "version": "8.8.14",
+   "name": "Ubiquiti UniFi Access Points & Switches (device firmware)",
+   "judged_at": "2026-11-03T17:02:45+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ubiquiti-unifi-u6-plus",
+   "version": "8.8.14",
+   "name": "Ubiquiti UniFi U6+ Access Point",
+   "judged_at": "2026-11-03T17:02:45+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ubiquiti-unifi-u7-pro",
+   "version": "8.8.14",
+   "name": "Ubiquiti UniFi U7 Pro access point",
+   "judged_at": "2026-11-03T17:02:45+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ubiquiti-switch-flex-2-5g",
+   "version": "8.8.14",
+   "name": "Ubiquiti UniFi Switch Flex 2.5G",
+   "judged_at": "2026-11-03T17:02:45+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
