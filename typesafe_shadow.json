@@ -36234,6 +36234,150 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "ubiquiti-unifi-dream-machine-se",
+   "version": "5.1.35",
+   "name": "Ubiquiti UniFi Dream Machine (UDM / SE / Pro)",
+   "judged_at": "2026-11-03T17:54:23+00:00",
+   "notes_chars": 197,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.97,
+    "security_fix_plain": 0.84,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ubiquiti-unifi-express",
+   "version": "5.1.35",
+   "name": "Ubiquiti UniFi Express",
+   "judged_at": "2026-11-03T17:54:23+00:00",
+   "notes_chars": 197,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.96,
+    "security_fix_plain": 0.82,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ubiquiti-unas-pro",
+   "version": "5.1.35",
+   "name": "Ubiquiti UNAS Pro",
+   "judged_at": "2026-11-03T17:54:23+00:00",
+   "notes_chars": 197,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.95,
+    "security_fix_plain": 0.81,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "coder",
+   "version": "2.38.6",
+   "name": "Coder Remote dev environments",
+   "judged_at": "2026-11-03T17:54:23+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.77,
+    "security_fix_plain": 0.71,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "windmill",
+   "version": "1.859.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-11-03T17:54:23+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ubiquiti-cloud-gateway-ultra",
+   "version": "5.1.35",
+   "name": "Ubiquiti UniFi Cloud Gateway Ultra",
+   "judged_at": "2026-11-03T17:54:23+00:00",
+   "notes_chars": 197,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.96,
+    "security_fix_plain": 0.82,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ubiquiti-dream-router-7",
+   "version": "5.1.35",
+   "name": "Ubiquiti UniFi Dream Router 7",
+   "judged_at": "2026-11-03T17:54:23+00:00",
+   "notes_chars": 197,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.96,
+    "security_fix_plain": 0.78,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ubiquiti-unifi-ai-key",
+   "version": "5.1.35",
+   "name": "Ubiquiti UniFi AI Key",
+   "judged_at": "2026-11-03T17:54:24+00:00",
+   "notes_chars": 197,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.93,
+    "security_fix_plain": 0.75,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
