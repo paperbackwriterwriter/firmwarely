@@ -35784,6 +35784,186 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "lychee-photos",
+   "version": "7.12.1",
+   "name": "Lychee Photo gallery",
+   "judged_at": "2026-11-03T13:02:52+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.07,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "bambu-studio",
+   "version": "2.9.1",
+   "name": "Bambu Lab Bambu Studio",
+   "judged_at": "2026-11-03T13:02:52+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.54,
+    "security_fix_plain": 0.81,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "rpi-eeprom",
+   "version": "2026.10.30-2712",
+   "name": "Raspberry Pi Bootloader EEPROM",
+   "judged_at": "2026-11-03T13:02:52+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.1,
+    "security_fix_plain": 0.23,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "raspberry-pi-5",
+   "version": "2026.10.30",
+   "name": "Raspberry Pi 5",
+   "judged_at": "2026-11-03T13:02:52+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.25,
+    "security_fix_plain": 0.35,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "cloudbeaver",
+   "version": "26.2.0",
+   "name": "DBeaver CloudBeaver",
+   "judged_at": "2026-11-03T13:02:52+00:00",
+   "notes_chars": 6,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.1,
+    "security_fix_plain": 0.11,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "open-webui",
+   "version": "0.13.0",
+   "name": "Open WebUI LLM web interface",
+   "judged_at": "2026-11-03T13:02:52+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "appwrite",
+   "version": "2.7.0",
+   "name": "Appwrite Backend platform",
+   "judged_at": "2026-11-03T13:02:53+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.1,
+    "security_fix_plain": 0.31,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "snapotter",
+   "version": "2.3.0",
+   "name": "SnapOtter File processing tool",
+   "judged_at": "2026-11-03T13:02:53+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.92,
+    "security_fix_plain": 0.91,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "pm2",
+   "version": "7.1.2",
+   "name": "PM2 Node.js process manager",
+   "judged_at": "2026-11-03T13:02:53+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "keep",
+   "version": "0.55.0",
+   "name": "Keep AIOps and alert management platform",
+   "judged_at": "2026-11-03T13:02:53+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.22,
+    "security_fix_plain": 0.17,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
