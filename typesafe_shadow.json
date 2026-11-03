@@ -36540,6 +36540,78 @@
     "security_fix_plain": 0.37,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "windmill",
+   "version": "1.860.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-11-03T22:51:05+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "vorta",
+   "version": "0.12.0",
+   "name": "Vorta Borg backup desktop client",
+   "judged_at": "2026-11-03T22:51:05+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "docker-engine",
+   "version": "29.9.3",
+   "name": "Docker Engine (moby)",
+   "judged_at": "2026-11-03T22:51:05+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.97,
+    "security_fix_plain": 0.92,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "trickster",
+   "version": "2.2.1",
+   "name": "Trickster HTTP reverse proxy cache",
+   "judged_at": "2026-11-03T22:51:05+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

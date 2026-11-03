@@ -548,13 +548,13 @@
    "model": "Scripts and workflows",
    "category": "A",
    "status": "update",
-   "version": "1.859.0",
+   "version": "1.860.0",
    "previous": "1.858.0",
    "released": "2026-11-03",
    "date_known": true,
    "eol": false,
-   "notes": "1.859.0 (2026-11-03): Features: clear the chat composer on a double Escape (#​12151) (6133c70) download session artifacts as pdf (#​12182) (b532c81) expose the page's query parameters to full-code apps as ctx.query (#​12179) (ab15324) let the ai session test-run hub scripts (#​12170) (3125e6d) show…",
-   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.859.0",
+   "notes": "1.860.0 (2026-11-03): Features: add DISABLE_RT_SYNC to stop resource type syncs and seeds (#​12188) (7ca618f) let developers and operators pick the sidebar mode from one menu (#​12124) (0119bd9) Bug Fixes: keep hub resource types over the image cache, never wait on hub picks (#​12093) (e433b38) mak…",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.860.0",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
   },
   "ubiquiti-cloud-gateway-ultra": {
@@ -736,6 +736,51 @@
    "notes": "Changelog: 054e1462455e11657c2315c25872479de237c69b docs: backport v2.4.2 release notes (#​5935) (#​5937) 860ef8d7093f9b6c824a7528010b15d782645e4f docs: prepare v2.4.3 security release notes (#​6039) 450765820c3cec9c66821d0446667b355783c899 fix(deps): update undici to 8.12.3 (#​6035) (#​6037) ab80c…",
    "source_url": "https://github.com/grafana/pyroscope/releases/tag/v2.4.3",
    "page_url": "https://www.firmwarely.com/devices/pyroscope/"
+  },
+  "vorta": {
+   "id": "vorta",
+   "brand": "Vorta",
+   "model": "Borg backup desktop client",
+   "category": "N",
+   "status": "update",
+   "version": "0.12.0",
+   "previous": "0.11.6",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "New: Jobs page: pending runs and recorded jobs in one table, filterable by profile, repository and status (#​2538, #​2565) Block system sleep while a backup is running (#​2410) Retry failed checks and compactions after the next backup (#​2586) Setting to disable file logging (#​2570) Fixes: Fix a c…",
+   "source_url": "https://github.com/borgbase/vorta/releases/tag/v0.12.0",
+   "page_url": "https://www.firmwarely.com/devices/vorta/"
+  },
+  "docker-engine": {
+   "id": "docker-engine",
+   "brand": "Docker",
+   "model": "Engine (moby)",
+   "category": "A",
+   "status": "critical",
+   "version": "29.9.3",
+   "previous": "29.9.2",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "29.9.3: For a full list of pull requests and changes in this release, refer to the relevant GitHub milestones: docker/cli, 29.9.3 milestone moby/moby, 29.9.3 milestone Security: This release includes fixes for multiple security vulnerabilities affecting Docker Engine and related components. CVE-202…",
+   "source_url": "https://github.com/moby/moby/releases/tag/docker-v29.9.3",
+   "page_url": "https://www.firmwarely.com/devices/docker-engine/"
+  },
+  "trickster": {
+   "id": "trickster",
+   "brand": "Trickster",
+   "model": "HTTP reverse proxy cache",
+   "category": "R",
+   "status": "update",
+   "version": "2.2.1",
+   "previous": "2.2.0",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "Welcome to Trickster 2.2.1! :tada: Highlights for this Release: Fixed a defect in Time Series Merge where the Prometheus /api/v1/query_examplars endpoint returns a 502 status code. Added support for draft-23 of the Media over QUIC (MoQ) specification in the Caching Relay. Support remains for draft-…",
+   "source_url": "https://github.com/trickstercache/trickster/releases/tag/v2.2.1",
+   "page_url": "https://www.firmwarely.com/devices/trickster/"
   }
  }
 }
