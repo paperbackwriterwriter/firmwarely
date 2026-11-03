@@ -758,13 +758,13 @@
    "model": "Turn any Android device",
    "category": "S",
    "status": "update",
-   "version": "2026.11.2",
+   "version": "2026.11.3",
    "previous": "2026.10.45",
    "released": "2026-11-03",
    "date_known": true,
    "eol": false,
-   "notes": "What's new in Kiosk Satellite 2026.11.2: This is a follow up to the big 2026.11.1 release. It fixes the new echo canceller giving up on devices it works well on, and adds a setting to pick the echo canceller or let the kiosk test the device for it. Important: Update your Echo Show / Dot image: If y…",
-   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.2",
+   "notes": "What's new in Kiosk Satellite 2026.11.3: Another small follow up to the big 2026.11.1 release. It fixes Home Assistant failing to reconnect after the kiosk's ESPHome encryption key changes. Important: Update your Echo Show / Dot image: If you use a Kiosk Satellite Edition image on an Echo Show 5, E…",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.3",
    "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   },
   "jackett": {
@@ -826,6 +826,21 @@
    "notes": "What's Changed: ollama launch claude now applies the model's output token limit for Claude Code, so cloud models no longer run into the 128k default cap Cloud web search responses on /api/chat are now decoded correctly, including compressed responses OpenAI-compatible endpoints no longer override a…",
    "source_url": "https://github.com/ollama/ollama/releases/tag/v0.40.14",
    "page_url": "https://www.firmwarely.com/devices/ollama/"
+  },
+  "proton-ge": {
+   "id": "proton-ge",
+   "brand": "GloriousEggroll",
+   "model": "Proton-GE compatibility layer",
+   "category": "C",
+   "status": "update",
+   "version": "GE-Proton11-12",
+   "previous": "GE-Proton11-11",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "GE-Proton11-12: Changes since GE-Proton11-11. Component Updates: Wine: Valve bleeding-edge 2026-10-31, plus newer bleeding-edge commits: XInput now rescans controllers only when a device could have changed. This replaces the Far Cry 4 and Witcher 3 rescan hacks. The thread pool worker timeout is no…",
+   "source_url": "https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton11-12",
+   "page_url": "https://www.firmwarely.com/devices/proton-ge/"
   }
  }
 }
