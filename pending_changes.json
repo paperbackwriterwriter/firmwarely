@@ -721,6 +721,51 @@
    "notes": "We have improved support for Sony and Philips TVs, improved how subtitles display, fixed resume video bugs, and more! This has been the result of a lot of collaboration, and I'd like to thank first-time contributors,, and for code fixes, and Yaroslav Maikovych for taking our Ukrainian translation f…",
    "source_url": "https://github.com/UniversalMediaServer/UniversalMediaServer/releases/tag/15.9.0",
    "page_url": "https://www.firmwarely.com/devices/universalmediaserver/"
+  },
+  "windmill": {
+   "id": "windmill",
+   "brand": "Windmill",
+   "model": "Scripts and workflows",
+   "category": "A",
+   "status": "update",
+   "version": "1.857.0",
+   "previous": "1.856.0",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.857.0 (2026-11-03): Features: add a recently run panel to the workspace home (#​12105) (d1a2c13) add home's folders, users and cards to the ai session context (#​12104) (263088a) name a materialized table after its script when the target names none (#​12157) (116c902) publish a folder sub-path to…",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.857.0",
+   "page_url": "https://www.firmwarely.com/devices/windmill/"
+  },
+  "donetick": {
+   "id": "donetick",
+   "brand": "Donetick",
+   "model": "Task and chore manager",
+   "category": "A",
+   "status": "critical",
+   "version": "0.1.86",
+   "previous": "0.1.85",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: 489161f33866d0434866d05ce5e2c6c672644b54: implement bulk creation of chores with validation and response handling () 12d8159783b1cc937ac50e00d5c4b6273b51dc9a: feat: enhance security for asset and user image handling to prevent path traversal () ebfb340d7bd4e2e009d6f2f9ad073868acaf6412: M…",
+   "source_url": "https://github.com/donetick/donetick/releases/tag/v0.1.86",
+   "page_url": "https://www.firmwarely.com/devices/donetick/"
+  },
+  "kiosk-satellite": {
+   "id": "kiosk-satellite",
+   "brand": "Kiosk Satellite",
+   "model": "Turn any Android device",
+   "category": "S",
+   "status": "update",
+   "version": "2026.11.1",
+   "previous": "2026.10.45",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's new in Kiosk Satellite 2026.11.1: This release brings a new echo canceller, a small neural network that hears the wake word and the stop word twice as often while the kiosk plays audio. It also adds a Weather forecast screensaver widget and colored condition icons for the Weather widget, whi…",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.1",
+   "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   }
  }
 }
