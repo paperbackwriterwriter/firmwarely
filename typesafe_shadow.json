@@ -35676,6 +35676,42 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "owncloud-server",
+   "version": "11.1.0",
+   "name": "ownCloud File sync server",
+   "judged_at": "2026-11-03T10:30:39+00:00",
+   "notes_chars": 15,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "esp32-iphone-agent",
+   "version": "1.0.0",
+   "name": "ESP32 iPhone Agent AI iPhone control over ESP32",
+   "judged_at": "2026-11-03T10:30:39+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
