@@ -68,13 +68,13 @@
    "model": "HTTP router and reverse proxy",
    "category": "R",
    "status": "update",
-   "version": "0.28.61",
+   "version": "0.28.62",
    "previous": "0.28.56",
-   "released": "2026-11-02",
+   "released": "2026-11-03",
    "date_known": true,
    "eol": false,
-   "notes": "Changes: fix: apply allowed external names to skipper-routes annotation backends (#​4361) -kubernetes-only-allowed-external-names is not enforced for routes from the Ingress zalando.org/skipper-routes annotation: Repro: allow list ^external1[.]example[.]org$, Ingress annotation network: Header(\"X-R…",
-   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.61",
+   "notes": "Changes: cache: avoid copying serialized entries on L1 reads (#​4396) Warm L1 HTTP cache reads no longer clone the serialized response before decoding it. The decoder reads privately owned bytes after releasing the shard lock. 4 KiB body: B/op 30.5 kB → 24.34 kB (−20.2%), ns/op 39.7 µs → 36.59 µs; …",
+   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.62",
    "page_url": "https://www.firmwarely.com/devices/skipper/"
   },
   "seaweedfs": {
@@ -758,13 +758,13 @@
    "model": "Turn any Android device",
    "category": "S",
    "status": "update",
-   "version": "2026.11.1",
+   "version": "2026.11.2",
    "previous": "2026.10.45",
    "released": "2026-11-03",
    "date_known": true,
    "eol": false,
-   "notes": "What's new in Kiosk Satellite 2026.11.1: This release brings a new echo canceller, a small neural network that hears the wake word and the stop word twice as often while the kiosk plays audio. It also adds a Weather forecast screensaver widget and colored condition icons for the Weather widget, whi…",
-   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.1",
+   "notes": "What's new in Kiosk Satellite 2026.11.2: This is a follow up to the big 2026.11.1 release. It fixes the new echo canceller giving up on devices it works well on, and adds a setting to pick the echo canceller or let the kiosk test the device for it. Important: Update your Echo Show / Dot image: If y…",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.2",
    "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   },
   "jackett": {
@@ -796,6 +796,21 @@
    "notes": "What's Changed: 🐛 Fixes: fix(download): profile analysis builds invalid JSON when yt-dlp reports no filesize fix(integrations): Jellyfin 12.4 rejects X-Emby-Token, so the library refresh silently did nothing 🧹 Maintenance: chore(release): 2.13.3 — Loom/HLS profile analysis and Jellyfin 12.4 refresh…",
    "source_url": "https://github.com/EgalitarianMonkey/hometube/releases/tag/v2.13.3",
    "page_url": "https://www.firmwarely.com/devices/hometube/"
+  },
+  "jenkins": {
+   "id": "jenkins",
+   "brand": "Jenkins",
+   "model": "Automation server",
+   "category": "A",
+   "status": "update",
+   "version": "2.589",
+   "previous": "2.588",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "jenkins-2.589",
+   "source_url": "https://github.com/jenkinsci/jenkins/releases/tag/jenkins-2.589",
+   "page_url": "https://www.firmwarely.com/devices/jenkins/"
   }
  }
 }
