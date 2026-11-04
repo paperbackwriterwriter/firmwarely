@@ -36828,6 +36828,42 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "langflow",
+   "version": "1.13.1",
+   "name": "Langflow Agent builder",
+   "judged_at": "2026-11-04T04:02:17+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.95,
+    "security_fix_plain": 0.9,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "amnezia-client",
+   "version": "5.1.0.6",
+   "name": "Amnezia Client Amnezia VPN Client (Desktop+Mobile)",
+   "judged_at": "2026-11-04T04:02:17+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

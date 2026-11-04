@@ -946,6 +946,36 @@
    "notes": "Changelog: 05109571fd0931affb6f92b17bbfd62c4d2ea68a Merge pull request #​2169 from binwiederhier/release-2380",
    "source_url": "https://github.com/binwiederhier/ntfy/releases/tag/v2.37.2",
    "page_url": "https://www.firmwarely.com/devices/ntfy/"
+  },
+  "langflow": {
+   "id": "langflow",
+   "brand": "Langflow",
+   "model": "Agent builder",
+   "category": "A",
+   "status": "critical",
+   "version": "1.13.1",
+   "previous": "1.13.0",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: 🐛 Bug Fixes: fix(deps): backport filelock 4 upgrade to 1.13.1 fix: confine Git loader files to repository fix(oracle): confine loader local file access fix(security): protect MCP component reserved fields fix(security): isolate MCP batch login and request state fix: secure quickstar…",
+   "source_url": "https://github.com/langflow-ai/langflow/releases/tag/v1.13.1",
+   "page_url": "https://www.firmwarely.com/devices/langflow/"
+  },
+  "amnezia-client": {
+   "id": "amnezia-client",
+   "brand": "Amnezia Client",
+   "model": "Amnezia VPN Client (Desktop+Mobile)",
+   "category": "R",
+   "status": "update",
+   "version": "5.1.0.6",
+   "previous": "5.0.3.0",
+   "released": "2026-11-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "Version differences: Android: For Android version 11 and higher, you need to use .apk that start with - AmneziaVPN_5.1.0.6_android11+ For Android version 9-10, you need to use .apk that start with - AmneziaVPN_5.1.0.6_android9-10 The app version for Android 7 and 8 is temporarily unavailable macOS:…",
+   "source_url": "https://github.com/amnezia-vpn/amnezia-client/releases/tag/5.1.0.6",
+   "page_url": "https://www.firmwarely.com/devices/amnezia-client/"
   }
  }
 }
