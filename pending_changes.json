@@ -833,13 +833,13 @@
    "model": "Bazzite gaming OS",
    "category": "C",
    "status": "update",
-   "version": "45.20261103",
+   "version": "45.20261104",
    "previous": "44.20261026",
-   "released": "2026-11-03",
+   "released": "2026-11-04",
    "date_known": true,
    "eol": false,
-   "notes": "This is an automatically generated changelog for release 45.20261103. From previous stable version 44.20261026 there have been the following changes. One package per new version shown. Major packages: | Name | Version | | --- | --- | | Kernel | 7.2.11-ogc4.1 ➡️ 7.2.15-ogc1.1 | | Kernel (Nvidia LTS)…",
-   "source_url": "https://github.com/ublue-os/bazzite/releases/tag/45.20261103",
+   "notes": "This is an automatically generated changelog for release 45.20261104. From previous stable version 45.20261103 there have been the following changes. One package per new version shown. Major packages: | Name | Version | | --- | --- | | Kernel | 7.2.15-ogc1.1 | | Kernel (Nvidia LTS) | 6.18.60-ogc1.1…",
+   "source_url": "https://github.com/ublue-os/bazzite/releases/tag/45.20261104",
    "page_url": "https://www.firmwarely.com/devices/bazzite/"
   },
   "eero-7": {
@@ -886,6 +886,51 @@
    "notes": "What's Changed: chore: fix Makefile colours and make sure release skills are installed feat: support a custom CA bundle for OAuth and agent connections fix: switch Adminer to the official 6.2.0 release and make its customization testable fix(security): stop notification channels from following redi…",
    "source_url": "https://github.com/David-Crty/databasement/releases/tag/v1.10.9",
    "page_url": "https://www.firmwarely.com/devices/databasement/"
+  },
+  "caddy-server": {
+   "id": "caddy-server",
+   "brand": "Caddy",
+   "model": "Web server and reverse proxy",
+   "category": "R",
+   "status": "critical",
+   "version": "2.11.8",
+   "previous": "2.11.7",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "This patch release is a big batch of bug fixes and security hardening, plus a handful of small additions. This release is cut from our 2.11 maintenance branch: fixes are backported from master. We recommend upgrading, especially if you serve PHP or use {host} in file paths. Huge thank you to our sp…",
+   "source_url": "https://github.com/caddyserver/caddy/releases/tag/v2.11.8",
+   "page_url": "https://www.firmwarely.com/devices/caddy-server/"
+  },
+  "comfyui": {
+   "id": "comfyui",
+   "brand": "ComfyUI",
+   "model": "Diffusion workflow UI",
+   "category": "A",
+   "status": "update",
+   "version": "0.44.0",
+   "previous": "0.43.0",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: [Partner Nodes] feat(Patina): add Patina texture nodes [Partner Nodes] feat(VEED): add VEED Dubbing node Update workflow templates to v0.11.98 Switch pylint py version to 3.12 anonymous_file: bypass python for memfd_create Bump comfyui-frontend-package to 1.58.1 Use the cached front…",
+   "source_url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.44.0",
+   "page_url": "https://www.firmwarely.com/devices/comfyui/"
+  },
+  "movie-data-capture": {
+   "id": "movie-data-capture",
+   "brand": "Movie Data Capture",
+   "model": "Local movie organizer",
+   "category": "A",
+   "status": "update",
+   "version": "8.2.2",
+   "previous": "8.2.1",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "View release notes 查看发布日志",
+   "source_url": "https://github.com/mvdctop/Movie_Data_Capture/releases/tag/8.2.2",
+   "page_url": "https://www.firmwarely.com/devices/movie-data-capture/"
   }
  }
 }
