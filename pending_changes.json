@@ -53,13 +53,13 @@
    "model": "Workflow automation",
    "category": "A",
    "status": "update",
-   "version": "2.46.5",
+   "version": "2.46.6",
    "previous": "2.46.4",
    "released": "2026-11-04",
    "date_known": true,
    "eol": false,
-   "notes": "2.46.5 (2026-11-04): Bug Fixes: AI Agent Node: Point the deprecated agent type callout to an action that works (#​42908) (6fa6e60) core: Improve credential resolution for node parameter loading (#​42755) (e4e033e) core: Read named array keys in expressions (#​42970) (00a1fbc) Features: core: Hide a…",
-   "source_url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.46.5",
+   "notes": "2.46.6 (2026-11-04): Bug Fixes: Make npm install of n8n work on all platforms again (#​43035) (6abcfc7)",
+   "source_url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.46.6",
    "page_url": "https://www.firmwarely.com/devices/n8n/"
   },
   "tooljet": {
@@ -68,13 +68,13 @@
    "model": "Low-code platform",
    "category": "A",
    "status": "update",
-   "version": "3.20.254-lts",
+   "version": "3.20.255-lts",
    "previous": "3.20.253-lts",
    "released": "2026-11-04",
    "date_known": true,
    "eol": false,
-   "notes": "🚀 Features: Shared MCP connections can now be authorized with a single workspace-level consent AI Builder release 6: added workspace selection and authentication for MCP Full Changelog: https://github.com/ToolJet/ToolJet/compare/v3.20.253-lts...v3.20.254-lts",
-   "source_url": "https://github.com/ToolJet/ToolJet/releases/tag/v3.20.254-lts",
+   "notes": "What's Changed: Feature: OIDC group sync with nested claims and a delimiter (lts-3.16) Full Changelog: https://github.com/ToolJet/ToolJet/compare/v3.20.254-lts...v3.20.255-lts",
+   "source_url": "https://github.com/ToolJet/ToolJet/releases/tag/v3.20.255-lts",
    "page_url": "https://www.firmwarely.com/devices/tooljet/"
   },
   "skipper": {
@@ -196,6 +196,51 @@
    "notes": "📦 Download Binaries from https://openobserve.ai/downloads What's Changed: chore(deps): bump shell-quote from 1.10.0 to 1.12.0 in /web by in https://github.com/openobserve/openobserve/pull/15182 fix(migration): conflict on the target's key when copying to postgres feat(metrics): metrics v2 — alerts …",
    "source_url": "https://github.com/openobserve/openobserve/releases/tag/v1.2.0-rc1",
    "page_url": "https://www.firmwarely.com/devices/openobserve/"
+  },
+  "rpicam-apps": {
+   "id": "rpicam-apps",
+   "brand": "Raspberry Pi",
+   "model": "rpicam-apps",
+   "category": "M",
+   "status": "update",
+   "version": "1.15.0",
+   "previous": "1.14.0",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "v1.15.0 v1.15.0",
+   "source_url": "https://github.com/raspberrypi/rpicam-apps/releases/tag/v1.15.0",
+   "page_url": "https://www.firmwarely.com/devices/rpicam-apps/"
+  },
+  "llama-cpp": {
+   "id": "llama-cpp",
+   "brand": "ggml",
+   "model": "llama.cpp",
+   "category": "A",
+   "status": "update",
+   "version": "0.9.0",
+   "previous": "0.8.0",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "Overview: This release adds OCP FP8 E4M3 quantization support, a new flash_attn_ext_rows op that makes the unified KV cache efficient for multi-sequence inference, and a generic batched tensor copy API. Four new architectures are supported (Clover, Limite, Metis-1.6 and Mistral Large 4), audio gene…",
+   "source_url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.9.0",
+   "page_url": "https://www.firmwarely.com/devices/llama-cpp/"
+  },
+  "strapi": {
+   "id": "strapi",
+   "brand": "Strapi",
+   "model": "Headless CMS",
+   "category": "A",
+   "status": "update",
+   "version": "5.61.0",
+   "previous": "5.60.0",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "5.61.0 (2026-11-04): 🚀 New feature: audit-logs: record history restores, discarded drafts, settings updates and media events (#​28178) 🔥 Bug fix: admin: add missing english keys and french translations (#​28354) admin: package exports point to source files that do not exist (#​28326) admin: make ac…",
+   "source_url": "https://github.com/strapi/strapi/releases/tag/v5.61.0",
+   "page_url": "https://www.firmwarely.com/devices/strapi/"
   }
  }
 }
