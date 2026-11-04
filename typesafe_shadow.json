@@ -37242,6 +37242,96 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "skipper",
+   "version": "0.28.68",
+   "name": "Skipper HTTP router and reverse proxy",
+   "judged_at": "2026-11-04T12:54:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.68,
+    "security_fix_plain": 0.58,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "node-zwave-js",
+   "version": "15.32.1",
+   "name": "Z-Wave JS Z-Wave driver",
+   "judged_at": "2026-11-04T12:54:31+00:00",
+   "notes_chars": 287,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "nrf-connect-sdk",
+   "version": "3.4.2",
+   "name": "Nordic nRF Connect SDK",
+   "judged_at": "2026-11-04T12:54:31+00:00",
+   "notes_chars": 14,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "songloft",
+   "version": "2.13.8",
+   "name": "Songloft Music server",
+   "judged_at": "2026-11-04T12:54:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "openobserve",
+   "version": "1.2.0-rc1",
+   "name": "Openobserve Observability platform",
+   "judged_at": "2026-11-04T12:54:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.1,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

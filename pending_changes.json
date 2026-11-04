@@ -83,13 +83,13 @@
    "model": "HTTP router and reverse proxy",
    "category": "R",
    "status": "update",
-   "version": "0.28.66",
+   "version": "0.28.68",
    "previous": "0.28.63",
    "released": "2026-11-04",
    "date_known": true,
    "eol": false,
-   "notes": "Changes: filters/auth: reload secretRef client secret on token exchange (#​4374) MR proposal to https://github.com/zalando/skipper/issues/4373 Multiarch Docker image is available in GitHub's docker registry: docker run -it ghcr.io/zalando/skipper:v0.28.66 skipper --help",
-   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.66",
+   "notes": "Changes: fastcgi: do not pass client Proxy header as HTTP_PROXY (#​4367) Regression test against master, go test ./proxy/fastcgi -run TestFastCgiDropsProxyHeader: fastcgi_test.go:107: Proxy header passed to FastCGI application as HTTP_PROXY: \"http://attacker.example:3128\" --- FAIL: TestFastCgiDrops…",
+   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.68",
    "page_url": "https://www.firmwarely.com/devices/skipper/"
   },
   "browserbox": {
@@ -136,6 +136,66 @@
    "notes": "Release Note 🎉: CLI Update Command · Last-Will Payload Formats MQTTX 1.13.3 adds an update command for MQTTX CLI and more payload formats for Desktop Last-Will messages. It also improves benchmark accuracy, connection recovery, and everyday Agent interactions. Features 🚀: Update MQTTX CLI from the …",
    "source_url": "https://github.com/emqx/MQTTX/releases/tag/v1.13.3",
    "page_url": "https://www.firmwarely.com/devices/mqttx/"
+  },
+  "node-zwave-js": {
+   "id": "node-zwave-js",
+   "brand": "Z-Wave JS",
+   "model": "Z-Wave driver",
+   "category": "S",
+   "status": "update",
+   "version": "15.32.1",
+   "previous": "15.32.0",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "Bugfixes: ZWaveNode.isFirmwareUpdateInProgress() no longer returns true if any other node is undergoing an OTA firmware update (#​9450) Controller.firmwareUpdateOTA now allows queueing OTA updates for multiple nodes, like it was already possible through ZWaveNode.updateFirmware (#​9452)",
+   "source_url": "https://github.com/zwave-js/zwave-js/releases/tag/v15.32.1",
+   "page_url": "https://www.firmwarely.com/devices/node-zwave-js/"
+  },
+  "nrf-connect-sdk": {
+   "id": "nrf-connect-sdk",
+   "brand": "Nordic",
+   "model": "nRF Connect SDK",
+   "category": "M",
+   "status": "update",
+   "version": "3.4.2",
+   "previous": "3.4.1",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "sdk-nrf v3.4.2",
+   "source_url": "https://github.com/nrfconnect/sdk-nrf/releases/tag/v3.4.2",
+   "page_url": "https://www.firmwarely.com/devices/nrf-connect-sdk/"
+  },
+  "songloft": {
+   "id": "songloft",
+   "brand": "Songloft",
+   "model": "Music server",
+   "category": "A",
+   "status": "update",
+   "version": "2.13.8",
+   "previous": "2.13.7",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "Songloft v2.13.8 安装说明（中文）: 在本页 Assets 中按用途、操作系统和 CPU 架构选择文件：amd64 / x64 为 Intel/AMD 64 位，arm64 为 ARM 64 位，armv7 / arm-v7 为 ARM 32 位。 | 用途 | 文件 | 使用方式 | | --- | --- | --- | | 服务器 Full | songloft- - （Windows 带 .exe） | 包含 Flutter Web 界面。下载后启动，浏览器访问服务器的 58091 端口。 | | 服务器 Lite | songloft- - -lite（Window…",
+   "source_url": "https://github.com/songloft-org/songloft/releases/tag/v2.13.8",
+   "page_url": "https://www.firmwarely.com/devices/songloft/"
+  },
+  "openobserve": {
+   "id": "openobserve",
+   "brand": "Openobserve",
+   "model": "Observability platform",
+   "category": "A",
+   "status": "update",
+   "version": "1.2.0-rc1",
+   "previous": "1.1.2",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "📦 Download Binaries from https://openobserve.ai/downloads What's Changed: chore(deps): bump shell-quote from 1.10.0 to 1.12.0 in /web by in https://github.com/openobserve/openobserve/pull/15182 fix(migration): conflict on the target's key when copying to postgres feat(metrics): metrics v2 — alerts …",
+   "source_url": "https://github.com/openobserve/openobserve/releases/tag/v1.2.0-rc1",
+   "page_url": "https://www.firmwarely.com/devices/openobserve/"
   }
  }
 }
