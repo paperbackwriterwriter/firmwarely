@@ -301,6 +301,51 @@
    "notes": "What's Changed: docs: bring the native Ubuntu guide up to date fix(security): harden supervisord in the Docker image Full Changelog: https://github.com/David-Crty/databasement/compare/v1.10.9...v1.10.10",
    "source_url": "https://github.com/David-Crty/databasement/releases/tag/v1.10.10",
    "page_url": "https://www.firmwarely.com/devices/databasement/"
+  },
+  "dragonfly": {
+   "id": "dragonfly",
+   "brand": "Dragonfly",
+   "model": "In-memory datastore",
+   "category": "A",
+   "status": "update",
+   "version": "2.1",
+   "previous": "2.0.2",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "Dragonfly v2.1: This release is important because starting from this version, it changes how teams can use our software in production. Starting from v2.1.0 the project moves from BUSL-1.1 to the Dragonfly Source-Available License (DSAL). For more details, please read https://www.dragonflydb.io/blog…",
+   "source_url": "https://github.com/dragonflydb/dragonfly/releases/tag/v2.1",
+   "page_url": "https://www.firmwarely.com/devices/dragonfly/"
+  },
+  "etherpad": {
+   "id": "etherpad",
+   "brand": "Etherpad",
+   "model": "Collaborative editor",
+   "category": "A",
+   "status": "update",
+   "version": "3.3.14",
+   "previous": "3.3.13",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "3.3.14 is a bug-fix release. It fixes a SIGTERM that could be lost during startup, two updater bugs, a join race that disconnected editors under load, and the overlapping controls in history mode. Notable fixes: Server — a SIGTERM sent during startup is no longer lost (#​8421, #​8423). Startup remo…",
+   "source_url": "https://github.com/ether/etherpad/releases/tag/v3.3.14",
+   "page_url": "https://www.firmwarely.com/devices/etherpad/"
+  },
+  "tianji": {
+   "id": "tianji",
+   "brand": "Tianji",
+   "model": "Website analytics and uptime monitor",
+   "category": "A",
+   "status": "update",
+   "version": "1.33.14",
+   "previous": "1.33.13",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.33.14 (2026-11-04): Features: application: add tracking usage dialog (60d78ac) date-filter: add last 14 hours preset (2feecfc) Bug Fixes: build: clear stale client assets before bundling (edb21df) client: support code copying on insecure origins (ea3f8c6) sdk: preserve batch defaults for undefine…",
+   "source_url": "https://github.com/msgbyte/tianji/releases/tag/v1.33.14",
+   "page_url": "https://www.firmwarely.com/devices/tianji/"
   }
  }
 }
