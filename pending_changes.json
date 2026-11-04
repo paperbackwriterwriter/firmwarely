@@ -323,13 +323,13 @@
    "model": "Collaborative editor",
    "category": "A",
    "status": "update",
-   "version": "3.3.14",
+   "version": "3.3.15",
    "previous": "3.3.13",
    "released": "2026-11-04",
    "date_known": true,
    "eol": false,
-   "notes": "3.3.14 is a bug-fix release. It fixes a SIGTERM that could be lost during startup, two updater bugs, a join race that disconnected editors under load, and the overlapping controls in history mode. Notable fixes: Server — a SIGTERM sent during startup is no longer lost (#​8421, #​8423). Startup remo…",
-   "source_url": "https://github.com/ether/etherpad/releases/tag/v3.3.14",
+   "notes": "3.3.15 is a packaging release. It shrinks the Debian package so it can be published to the apt repository again. Notable fixes: Debian package — the .deb is back under GitHub's 100 MB file limit (#​8442). The 3.3.14 apt publish failed because etherpad_3.3.14-1_amd64.deb was 101 MiB. The package bui…",
+   "source_url": "https://github.com/ether/etherpad/releases/tag/v3.3.15",
    "page_url": "https://www.firmwarely.com/devices/etherpad/"
   },
   "tianji": {
@@ -586,6 +586,21 @@
    "notes": "5.24.1: Security: Update the Mozilla CA certificate bundle (removes eMudhra certificates) (#​9206) Add _FORTIFY_SOURCE, CET/BTI on Linux, and explicit Windows mitigations (#​9167) Disable TLS 1.0 and 1.1 in curl_certificate and the OpenSSL build (#​9192, #​9202) Limit decompressed JetBrains plugin …",
    "source_url": "https://github.com/osquery/osquery/releases/tag/5.24.1",
    "page_url": "https://www.firmwarely.com/devices/osquery/"
+  },
+  "worldmonitor": {
+   "id": "worldmonitor",
+   "brand": "Worldmonitor",
+   "model": "Real-time global intelligence dashboard",
+   "category": "A",
+   "status": "update",
+   "version": "2.11.8",
+   "previous": "2.11.7",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: chore(release): bump desktop to 2.11.8 (#​10150) perf(blog): self-host subset web fonts with a preloaded core and on-demand extended files (#​10145) fix(panels): make table status and severity badges readable in both themes (#​10144) fix(panels): make price and stock table state col…",
+   "source_url": "https://github.com/koala73/worldmonitor/releases/tag/v2.11.8",
+   "page_url": "https://www.firmwarely.com/devices/worldmonitor/"
   }
  }
 }
