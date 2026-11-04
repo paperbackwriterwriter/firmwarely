@@ -37548,6 +37548,96 @@
     "security_fix_plain": 0.07,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "netdata",
+   "version": "2.12.3",
+   "name": "Netdata System monitoring agent",
+   "judged_at": "2026-11-04T17:08:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.25,
+    "security_fix_plain": 0.22,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "k3s",
+   "version": "1.37.2",
+   "name": "K3s Lightweight Kubernetes",
+   "judged_at": "2026-11-04T17:08:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "cloudbeaver",
+   "version": "26.2.0.1",
+   "name": "DBeaver CloudBeaver",
+   "judged_at": "2026-11-04T17:08:31+00:00",
+   "notes_chars": 8,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ghost",
+   "version": "6.75.0",
+   "name": "Ghost Publishing platform",
+   "judged_at": "2026-11-04T17:08:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "appwrite",
+   "version": "2.7.1",
+   "name": "Appwrite Backend platform",
+   "judged_at": "2026-11-04T17:08:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.36,
+    "security_fix_plain": 0.71,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
