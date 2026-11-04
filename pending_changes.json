@@ -931,6 +931,21 @@
    "notes": "View release notes 查看发布日志",
    "source_url": "https://github.com/mvdctop/Movie_Data_Capture/releases/tag/8.2.2",
    "page_url": "https://www.firmwarely.com/devices/movie-data-capture/"
+  },
+  "ntfy": {
+   "id": "ntfy",
+   "brand": "ntfy",
+   "model": "Push notification server",
+   "category": "A",
+   "status": "update",
+   "version": "2.37.2",
+   "previous": "2.37.1",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: 05109571fd0931affb6f92b17bbfd62c4d2ea68a Merge pull request #​2169 from binwiederhier/release-2380",
+   "source_url": "https://github.com/binwiederhier/ntfy/releases/tag/v2.37.2",
+   "page_url": "https://www.firmwarely.com/devices/ntfy/"
   }
  }
 }
