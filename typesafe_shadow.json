@@ -37746,6 +37746,96 @@
     "security_fix_plain": 0.04,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "pomerium",
+   "version": "0.34.0",
+   "name": "Pomerium Identity-aware access proxy",
+   "judged_at": "2026-11-04T18:56:46+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "planka",
+   "version": "2.3.0",
+   "name": "Planka Kanban board",
+   "judged_at": "2026-11-04T18:56:46+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.44,
+    "security_fix_plain": 0.74,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "drawio",
+   "version": "32.6.10",
+   "name": "draw.io Diagrams",
+   "judged_at": "2026-11-04T18:56:46+00:00",
+   "notes_chars": 17,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "huginn",
+   "version": "2026.11.05",
+   "name": "Huginn Automation agents",
+   "judged_at": "2026-11-04T18:56:46+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.99,
+    "security_fix_plain": 0.98,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "osquery",
+   "version": "5.24.1",
+   "name": "osquery SQL-based system monitoring",
+   "judged_at": "2026-11-04T18:56:46+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.23,
+    "security_fix_plain": 0.72,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
