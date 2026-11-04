@@ -37440,6 +37440,60 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "kener",
+   "version": "4.2.0",
+   "name": "Kener Status page",
+   "judged_at": "2026-11-04T15:27:01+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.21,
+    "security_fix_plain": 0.44,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "pangolin",
+   "version": "1.26.0",
+   "name": "Pangolin Tunneled reverse proxy",
+   "judged_at": "2026-11-04T15:27:01+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "databasement",
+   "version": "1.10.10",
+   "name": "Databasement Database backup manager",
+   "judged_at": "2026-11-04T15:27:01+00:00",
+   "notes_chars": 202,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.29,
+    "security_fix_plain": 0.52,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

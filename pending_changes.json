@@ -256,6 +256,51 @@
    "notes": "Changelog: 🚀 Features: core 23a7a2f generate a CycloneDX SBOM of the backend and UI dependencies executions 5ba89da add a clear error message when a required execution output is null system 1785250 add a usage period selector to the system overview (#​21916), closes #​21916 tests 30c5e4a add valida…",
    "source_url": "https://github.com/kestra-io/kestra/releases/tag/v2.0.9",
    "page_url": "https://www.firmwarely.com/devices/kestra/"
+  },
+  "kener": {
+   "id": "kener",
+   "brand": "Kener",
+   "model": "Status page",
+   "category": "A",
+   "status": "update",
+   "version": "4.2.0",
+   "previous": "4.1.11",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: fix: French translation Add ZopDay deploy button fix(deps): move nodemailer, sharp and glob past their advisories fix: restore native agent proxy routing with Axios 1.21 docs: remove the EGM.md contract files feat(monitors): run custom eval code in a QuickJS sandbox New Contributors…",
+   "source_url": "https://github.com/rajnandan1/kener/releases/tag/v4.2.0",
+   "page_url": "https://www.firmwarely.com/devices/kener/"
+  },
+  "pangolin": {
+   "id": "pangolin",
+   "brand": "Pangolin",
+   "model": "Tunneled reverse proxy",
+   "category": "R",
+   "status": "update",
+   "version": "1.26.0",
+   "previous": "1.25.3",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "Read the Announcement: Read the full announcement with discussion of new features: Pangolin 1.26: Session Management, SSH Logs, and Auto Windows Updates What’s Changed: Add option to add additional DNS records on delegated domains with Pangolin DNS (EE) Add optional match on base wildcard domains A…",
+   "source_url": "https://github.com/fosrl/pangolin/releases/tag/1.26.0",
+   "page_url": "https://www.firmwarely.com/devices/pangolin/"
+  },
+  "databasement": {
+   "id": "databasement",
+   "brand": "Databasement",
+   "model": "Database backup manager",
+   "category": "N",
+   "status": "critical",
+   "version": "1.10.10",
+   "previous": "1.10.9",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: docs: bring the native Ubuntu guide up to date fix(security): harden supervisord in the Docker image Full Changelog: https://github.com/David-Crty/databasement/compare/v1.10.9...v1.10.10",
+   "source_url": "https://github.com/David-Crty/databasement/releases/tag/v1.10.10",
+   "page_url": "https://www.firmwarely.com/devices/databasement/"
   }
  }
 }
