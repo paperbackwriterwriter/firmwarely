@@ -31,6 +31,66 @@
    "notes": "What's Changed: Features: feat(ai-gateway): raise Pro/Team/Enterprise gateway limits to 10k req/min and 5 GiB/min feat: improve internal error messages feat(skills): trace Codex skill resource loads feat(web): friendly AI Gateway tile for gateway-only members on the organizations overview feat(ai-g…",
    "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.75.0",
    "page_url": "https://www.firmwarely.com/devices/langfuse/"
+  },
+  "cockpit": {
+   "id": "cockpit",
+   "brand": "Cockpit",
+   "model": "Server web console",
+   "category": "A",
+   "status": "update",
+   "version": "371",
+   "previous": "370",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "Allow updating individual packages during OS updates Updated to PatternFly 6.7.0",
+   "source_url": "https://github.com/cockpit-project/cockpit/releases/tag/371",
+   "page_url": "https://www.firmwarely.com/devices/cockpit/"
+  },
+  "n8n": {
+   "id": "n8n",
+   "brand": "n8n",
+   "model": "Workflow automation",
+   "category": "A",
+   "status": "update",
+   "version": "2.46.5",
+   "previous": "2.46.4",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "2.46.5 (2026-11-04): Bug Fixes: AI Agent Node: Point the deprecated agent type callout to an action that works (#​42908) (6fa6e60) core: Improve credential resolution for node parameter loading (#​42755) (e4e033e) core: Read named array keys in expressions (#​42970) (00a1fbc) Features: core: Hide a…",
+   "source_url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.46.5",
+   "page_url": "https://www.firmwarely.com/devices/n8n/"
+  },
+  "tooljet": {
+   "id": "tooljet",
+   "brand": "ToolJet",
+   "model": "Low-code platform",
+   "category": "A",
+   "status": "update",
+   "version": "3.20.254-lts",
+   "previous": "3.20.253-lts",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "🚀 Features: Shared MCP connections can now be authorized with a single workspace-level consent AI Builder release 6: added workspace selection and authentication for MCP Full Changelog: https://github.com/ToolJet/ToolJet/compare/v3.20.253-lts...v3.20.254-lts",
+   "source_url": "https://github.com/ToolJet/ToolJet/releases/tag/v3.20.254-lts",
+   "page_url": "https://www.firmwarely.com/devices/tooljet/"
+  },
+  "skipper": {
+   "id": "skipper",
+   "brand": "Skipper",
+   "model": "HTTP router and reverse proxy",
+   "category": "R",
+   "status": "update",
+   "version": "0.28.64",
+   "previous": "0.28.63",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes: cache: preserve independently fetched follower bodies (#​4403) Summary: Fixes a bug where a request could receive a response whose body had already been closed. When several requests arrive for the same uncached content, Skipper tries to share one backend fetch. The first request is the le…",
+   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.64",
+   "page_url": "https://www.firmwarely.com/devices/skipper/"
   }
  }
 }
