@@ -623,13 +623,13 @@
    "model": "Turn any Android device",
    "category": "S",
    "status": "update",
-   "version": "2026.11.4",
+   "version": "2026.11.5",
    "previous": "2026.11.3",
-   "released": "2026-11-03",
+   "released": "2026-11-04",
    "date_known": true,
    "eol": false,
-   "notes": "What's new in Kiosk Satellite 2026.11.4: This release lets you add, change and delete calendar events right on the kiosk. Up next now shows who each event is for. A restored fleet leader keeps its followers, and two realtime conversation bugs are fixed. Important: Update your Echo Show / Dot image:…",
-   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.4",
+   "notes": "What's new in Kiosk Satellite 2026.11.5: This release lets an alarm wake you up to music from Music Assistant, Home Assistant or Sonos. A device owner kiosk can now install Android system updates by itself, and the Immich Media screensaver can show photo descriptions. Now Playing, the Music Library…",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.5",
    "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   },
   "truenas-scale": {
@@ -1021,6 +1021,21 @@
    "notes": "Add support ZBM5-3C-80/86 (UIID 7030) #​1915 (1dc0d24c) Add effect speed configuration to L3 effects #​1904 (064340f1) Fix HA 2026.11.0b0: 'NoneType' object is not iterable #​1916 (1271a147) Fix local updates without host (A record) #​1871 (e253cdc7) Fix migrate climate entities to native temperatu…",
    "source_url": "https://github.com/AlexxIT/SonoffLAN/releases/tag/v3.13.3",
    "page_url": "https://www.firmwarely.com/devices/sonofflan/"
+  },
+  "signoz": {
+   "id": "signoz",
+   "brand": "SigNoz",
+   "model": "Observability platform",
+   "category": "A",
+   "status": "update",
+   "version": "0.149.0",
+   "previous": "0.148.1",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "🚀 Features: feat(stats): report AI observability usage from the stats endpoint (#​13359) feat: add events for span detail open and trace view (#​13358) feat(authz): rule view FGA (#​13251) feat(dashboards): add plugin schema for scatter plot panel (#​13030) feat(roles): pick the grant key in the te…",
+   "source_url": "https://github.com/SigNoz/signoz/releases/tag/v0.149.0",
+   "page_url": "https://www.firmwarely.com/devices/signoz/"
   }
  }
 }
