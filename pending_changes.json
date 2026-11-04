@@ -91,6 +91,21 @@
    "notes": "Changes: cache: preserve independently fetched follower bodies (#​4403) Summary: Fixes a bug where a request could receive a response whose body had already been closed. When several requests arrive for the same uncached content, Skipper tries to share one backend fetch. The first request is the le…",
    "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.64",
    "page_url": "https://www.firmwarely.com/devices/skipper/"
+  },
+  "browserbox": {
+   "id": "browserbox",
+   "brand": "BrowserBox",
+   "model": "Remote browser isolation",
+   "category": "R",
+   "status": "update",
+   "version": "20.7.1",
+   "previous": "20.7.0",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "Tested BrowserBox release. Install: macOS and Linux bash curl -fsSL https://browserbox.io/install.sh | bash Windows (PowerShell as Administrator) powershell irm https://browserbox.io/install.ps1 | iex Update an existing installation: macOS and Linux bash bbx update v20.7.1 Windows (updates to the l…",
+   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.7.1",
+   "page_url": "https://www.firmwarely.com/devices/browserbox/"
   }
  }
 }
