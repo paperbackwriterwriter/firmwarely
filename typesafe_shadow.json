@@ -37638,6 +37638,114 @@
     "security_fix_plain": 0.71,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "home-assistant-core",
+   "version": "2026.11.0",
+   "name": "Home Assistant Core (monthly release)",
+   "judged_at": "2026-11-04T17:59:26+00:00",
+   "notes_chars": 161,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "immich-server",
+   "version": "3.3.6",
+   "name": "Immich Photo backup server",
+   "judged_at": "2026-11-04T17:59:26+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.09,
+    "security_fix_plain": 0.27,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "frp-tunnel",
+   "version": "0.72.0",
+   "name": "frp Fast reverse proxy",
+   "judged_at": "2026-11-04T17:59:26+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "homarr",
+   "version": "2.11.0",
+   "name": "Homarr Dashboard",
+   "judged_at": "2026-11-04T17:59:27+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "penpot",
+   "version": "2.18.6",
+   "name": "Penpot Design tool",
+   "judged_at": "2026-11-04T17:59:27+00:00",
+   "notes_chars": 123,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.79,
+    "security_fix_plain": 0.76,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.308.62110",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-11-04T17:59:27+00:00",
+   "notes_chars": 127,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
