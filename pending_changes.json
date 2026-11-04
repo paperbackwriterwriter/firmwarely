@@ -608,13 +608,13 @@
    "model": "Scripts and workflows",
    "category": "A",
    "status": "update",
-   "version": "1.861.0",
+   "version": "1.862.0",
    "previous": "1.860.0",
    "released": "2026-11-04",
    "date_known": true,
    "eol": false,
-   "notes": "1.861.0 (2026-11-04): Features: add unit, scale and height controls to the runs chart (#​12191) (77fb2ed) filter the audit log by run (#​12190) (f9448bf) flow-level wall-clock timeout (#​12205) (6a1a0a3) instance groups driven by the IdP groups claim without SCIM (#​12186) (f2facc7) list recently e…",
-   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.861.0",
+   "notes": "1.862.0 (2026-11-04): Features: keep the insert row panel open when the insert fails (#​12221) (37db9ac) Bug Fixes: keep folders left open on home from flickering on reload (#​12222) (f6c4b26) make in-app navigation targets real links for new-tab clicks (#​12202) (070dc48) parse trigger targets onc…",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.862.0",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
   },
   "ghostfolio": {
@@ -661,6 +661,51 @@
    "notes": "What's new in Kiosk Satellite 2026.11.6: This release fixes crashes on Echo Shows when showing album art or photos and keeps a camera working when its driver never answers a JPEG capture. Home Assistant connecting no longer takes a camera snapshot. Screensaver videos can now follow Fill the screen …",
    "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.6",
    "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
+  },
+  "unpoller": {
+   "id": "unpoller",
+   "brand": "UnPoller",
+   "model": "UniFi metrics exporter",
+   "category": "R",
+   "status": "update",
+   "version": "5.9.4",
+   "previous": "5.9.3",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: e1afd6ced16c98747022a0f209be36400fc04f27 feat(promunifi): export when each neighbor AP was last seen",
+   "source_url": "https://github.com/unpoller/unpoller/releases/tag/v5.9.4",
+   "page_url": "https://www.firmwarely.com/devices/unpoller/"
+  },
+  "opentofu": {
+   "id": "opentofu",
+   "brand": "OpenTofu",
+   "model": "Infrastructure as code",
+   "category": "A",
+   "status": "update",
+   "version": "1.13.8",
+   "previous": "1.13.2",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "BUG FIXES:: The -v short option now again works as an alias for the version command and --version option, fixing an unintended regression in v1.13.0. (#​4769) Fixed panic when provided invalid state encryption configuration. (#​4783) Full Changelog: https://github.com/opentofu/opentofu/compare/v1.1…",
+   "source_url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.8",
+   "page_url": "https://www.firmwarely.com/devices/opentofu/"
+  },
+  "hedgedoc": {
+   "id": "hedgedoc",
+   "brand": "HedgeDoc",
+   "model": "Markdown collaboration",
+   "category": "A",
+   "status": "critical",
+   "version": "1.12.1",
+   "previous": "1.12.0",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "Security fixes: GHSA-2c27-4x43-jrm6 reports a possible impersonation attack when two auth providers provide the same profile id GHSA-g5g7-gfr5-f89m reports a possible crash of the realtime code via an invalid selection. GHSA-7p6g-mhrh-286p reports the ability to include unescaped iframes in slides …",
+   "source_url": "https://github.com/hedgedoc/hedgedoc/releases/tag/1.12.1",
+   "page_url": "https://www.firmwarely.com/devices/hedgedoc/"
   }
  }
 }

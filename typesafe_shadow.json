@@ -37944,6 +37944,78 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "windmill",
+   "version": "1.862.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-11-04T22:20:01+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "unpoller",
+   "version": "5.9.4",
+   "name": "UnPoller UniFi metrics exporter",
+   "judged_at": "2026-11-04T22:20:01+00:00",
+   "notes_chars": 111,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "opentofu",
+   "version": "1.13.8",
+   "name": "OpenTofu Infrastructure as code",
+   "judged_at": "2026-11-04T22:20:01+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.1,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "hedgedoc",
+   "version": "1.12.1",
+   "name": "HedgeDoc Markdown collaboration",
+   "judged_at": "2026-11-04T22:20:01+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.99,
+    "security_fix_plain": 0.96,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
