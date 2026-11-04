@@ -646,6 +646,21 @@
    "notes": "✨ New Features & Improvements:/app Added an \"Allowed Link Protocols\" option to the WYSIWYG interface so text and image links with custom URL schemes (e.g. myapp://) are kept, and made the link drawer show an error for a scheme that is not allowed instead of saving an empty link (#​28447)/utils Fixe…",
    "source_url": "https://github.com/directus/directus/releases/tag/v12.6.1",
    "page_url": "https://www.firmwarely.com/devices/directus/"
+  },
+  "kiosk-satellite": {
+   "id": "kiosk-satellite",
+   "brand": "Kiosk Satellite",
+   "model": "Turn any Android device",
+   "category": "S",
+   "status": "update",
+   "version": "2026.11.6",
+   "previous": "2026.11.5",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's new in Kiosk Satellite 2026.11.6: This release fixes crashes on Echo Shows when showing album art or photos and keeps a camera working when its driver never answers a JPEG capture. Home Assistant connecting no longer takes a camera snapshot. Screensaver videos can now follow Fill the screen …",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.6",
+   "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   }
  }
 }
