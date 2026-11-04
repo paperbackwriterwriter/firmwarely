@@ -706,6 +706,36 @@
    "notes": "Security fixes: GHSA-2c27-4x43-jrm6 reports a possible impersonation attack when two auth providers provide the same profile id GHSA-g5g7-gfr5-f89m reports a possible crash of the realtime code via an invalid selection. GHSA-7p6g-mhrh-286p reports the ability to include unescaped iframes in slides …",
    "source_url": "https://github.com/hedgedoc/hedgedoc/releases/tag/1.12.1",
    "page_url": "https://www.firmwarely.com/devices/hedgedoc/"
+  },
+  "zoraxy": {
+   "id": "zoraxy",
+   "brand": "Zoraxy",
+   "model": "Reverse proxy",
+   "category": "R",
+   "status": "update",
+   "version": "3.3.5-rc5",
+   "previous": "3.3.5-rc4",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "v3.3.5-rc5: This should be the last rc of v3.3.5, tested one week in my homelab to be quite stable and efficient in high concurrent load. If nothing went wrong in the coming week, the official v3.3.5 release will be made in the next weekend. What's Changed: Feat: TLS cipher profile setting (Mozilla…",
+   "source_url": "https://github.com/tobychui/zoraxy/releases/tag/v3.3.5-rc5",
+   "page_url": "https://www.firmwarely.com/devices/zoraxy/"
+  },
+  "code-server": {
+   "id": "code-server",
+   "brand": "Coder",
+   "model": "code-server",
+   "category": "A",
+   "status": "critical",
+   "version": "4.145.0",
+   "previous": "4.144.0",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "Code v1.145.0 Security: Strip code-server's cookie from web socket requests going over the built-in proxy. We were already doing this for regular proxied HTTP requests, but not for proxied web sockets. Add HttpOnly to cookies to prevent them from being accessed by JavaScript proxied over the built-…",
+   "source_url": "https://github.com/coder/code-server/releases/tag/v4.145.0",
+   "page_url": "https://www.firmwarely.com/devices/code-server/"
   }
  }
 }
