@@ -36954,6 +36954,114 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "fugleramme",
+   "version": "0.31.1",
+   "name": "Fugleramme Raspberry Pi bird camera",
+   "judged_at": "2026-11-04T08:23:06+00:00",
+   "notes_chars": 193,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "mikrotik-routeros",
+   "version": "7.25.1",
+   "name": "MikroTik RouterOS 7 (stable)",
+   "judged_at": "2026-11-04T08:23:06+00:00",
+   "notes_chars": 118,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "mikrotik-hap-ax3",
+   "version": "7.25.1",
+   "name": "MikroTik hAP ax³",
+   "judged_at": "2026-11-04T08:23:06+00:00",
+   "notes_chars": 118,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "dify",
+   "version": "1.19.0",
+   "name": "Dify LLM app platform",
+   "judged_at": "2026-11-04T08:23:07+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "dawarich",
+   "version": "1.21.0",
+   "name": "Dawarich Location history",
+   "judged_at": "2026-11-04T08:23:07+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "flclash",
+   "version": "0.9.3",
+   "name": "FlClash Multi-platform proxy client",
+   "judged_at": "2026-11-04T08:23:07+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
