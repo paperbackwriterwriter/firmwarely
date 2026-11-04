@@ -601,6 +601,51 @@
    "notes": "What's Changed: chore(release): bump desktop to 2.11.8 (#​10150) perf(blog): self-host subset web fonts with a preloaded core and on-demand extended files (#​10145) fix(panels): make table status and severity badges readable in both themes (#​10144) fix(panels): make price and stock table state col…",
    "source_url": "https://github.com/koala73/worldmonitor/releases/tag/v2.11.8",
    "page_url": "https://www.firmwarely.com/devices/worldmonitor/"
+  },
+  "windmill": {
+   "id": "windmill",
+   "brand": "Windmill",
+   "model": "Scripts and workflows",
+   "category": "A",
+   "status": "update",
+   "version": "1.861.0",
+   "previous": "1.860.0",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.861.0 (2026-11-04): Features: add unit, scale and height controls to the runs chart (#​12191) (77fb2ed) filter the audit log by run (#​12190) (f9448bf) flow-level wall-clock timeout (#​12205) (6a1a0a3) instance groups driven by the IdP groups claim without SCIM (#​12186) (f2facc7) list recently e…",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.861.0",
+   "page_url": "https://www.firmwarely.com/devices/windmill/"
+  },
+  "ghostfolio": {
+   "id": "ghostfolio",
+   "brand": "Ghostfolio",
+   "model": "Wealth tracker",
+   "category": "A",
+   "status": "update",
+   "version": "3.98.0",
+   "previous": "3.97.0",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changed: Improved the content of the pricing page Changed the viewport to resize the content when the on-screen keyboard opens on _Android_ (interactive-widget=resizes-content) Improved the meta descriptions of the public pages and the blog posts Disabled the biometric authentication on all devices…",
+   "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.98.0",
+   "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
+  },
+  "directus": {
+   "id": "directus",
+   "brand": "Directus",
+   "model": "Headless CMS",
+   "category": "A",
+   "status": "update",
+   "version": "12.6.1",
+   "previous": "12.6.0",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "✨ New Features & Improvements:/app Added an \"Allowed Link Protocols\" option to the WYSIWYG interface so text and image links with custom URL schemes (e.g. myapp://) are kept, and made the link drawer show an error for a scheme that is not allowed instead of saving an empty link (#​28447)/utils Fixe…",
+   "source_url": "https://github.com/directus/directus/releases/tag/v12.6.1",
+   "page_url": "https://www.firmwarely.com/devices/directus/"
   }
  }
 }
