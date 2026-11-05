@@ -203,13 +203,13 @@
    "model": "3D model library",
    "category": "M",
    "status": "update",
-   "version": "0.154.0",
+   "version": "0.154.1",
    "previous": "0.153.0",
    "released": "2026-11-05",
    "date_known": true,
    "eol": false,
-   "notes": "This release adds a huge new feature: built-in slicing for STL files using Kiri:Moto! It can slice for a huge range of FDM and SLA/resin printers, as well as CAM machines, laser cutters, and more. We've also got interactive FreeCAD rendering now, thanks to the latest release of F3D. To slice, just …",
-   "source_url": "https://github.com/manyfold3d/manyfold/releases/tag/v0.154.0",
+   "notes": "Hotfix for a bug that prevented logging in. What's Changed: 🐛 Bug Fixes 🐛: Revert \"Fix CSRF protection and add tests\" Full Changelog: https://github.com/manyfold3d/manyfold/compare/v0.154.0...v0.154.1",
+   "source_url": "https://github.com/manyfold3d/manyfold/releases/tag/v0.154.1",
    "page_url": "https://www.firmwarely.com/devices/manyfold/"
   },
   "formbricks": {
@@ -316,6 +316,51 @@
    "notes": "Changelog: [3.65.0] - 2026-11-05: ✨ Features: testing: Run browser end-to-end tests against the application image (c5d1bf0) review: Check blank lines between logical steps (c96cebb) review: Support Codex review pipelines (824ad2e) agents: Support Codex implementation with Claude reviews (6eb6966) b…",
    "source_url": "https://github.com/databasus/databasus/releases/tag/v3.65.0",
    "page_url": "https://www.firmwarely.com/devices/databasus/"
+  },
+  "openvpn": {
+   "id": "openvpn",
+   "brand": "OpenVPN",
+   "model": "VPN server and client",
+   "category": "R",
+   "status": "critical",
+   "version": "2.7.9",
+   "previous": "2.7.8",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "Security fixes: win32: restrict loading plugin dependencies (DLLs) to plugin, app and system directories. win32: run openvpn.exe from the interactive service at \"high integrity level\", that is, process memory of openvpn.exe and all its threads are protected from tampering. Signals/Events are still …",
+   "source_url": "https://github.com/OpenVPN/openvpn/releases/tag/v2.7.9",
+   "page_url": "https://www.firmwarely.com/devices/openvpn/"
+  },
+  "oauth2-proxy": {
+   "id": "oauth2-proxy",
+   "brand": "OAuth2 Proxy",
+   "model": "Reverse proxy with OAuth",
+   "category": "R",
+   "status": "critical",
+   "version": "7.15.6",
+   "previous": "7.15.5",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release Highlights: Entra ID: Fixed tenant ID extraction for national / private cloud support Fixed multiple return code and redirect issues 🔵 Golang version upgrade to v1.26.10 - Upgrade of all dependencies to their latest versions 🕵️‍♀️ Vulnerabilities have been addressed - CVE-2026-111943 - CVE-…",
+   "source_url": "https://github.com/oauth2-proxy/oauth2-proxy/releases/tag/v7.15.6",
+   "page_url": "https://www.firmwarely.com/devices/oauth2-proxy/"
+  },
+  "weaviate": {
+   "id": "weaviate",
+   "brand": "Weaviate",
+   "model": "Vector database",
+   "category": "A",
+   "status": "update",
+   "version": "1.40.4",
+   "previous": "1.40.3",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "Breaking Changes: none New Features: none Fixes: Make reads wait while this node is still creating a collection fix(shutdown): re-order grpc shutdown to be before memberlist leave Fixes missing propery length for empty arrays fix(add-class): read the collection cap's fail-fast count from the local …",
+   "source_url": "https://github.com/weaviate/weaviate/releases/tag/v1.40.4",
+   "page_url": "https://www.firmwarely.com/devices/weaviate/"
   }
  }
 }

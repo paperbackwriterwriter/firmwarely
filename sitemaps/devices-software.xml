@@ -39,7 +39,7 @@
   <url><loc>https://www.firmwarely.com/devices/suricata-ids/</loc><lastmod>2026-10-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/crowdsec/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/fail2ban/</loc><lastmod>2026-08-15</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/openvpn/</loc><lastmod>2026-10-07</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/openvpn/</loc><lastmod>2026-11-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/softether-vpn/</loc><lastmod>2026-11-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/gluetun/</loc><lastmod>2026-07-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/raspap/</loc><lastmod>2026-11-01</lastmod></url>
@@ -195,7 +195,7 @@
   <url><loc>https://www.firmwarely.com/devices/3proxy/</loc><lastmod>2026-10-24</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/envoy-proxy/</loc><lastmod>2026-10-27</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/pomerium/</loc><lastmod>2026-11-04</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/oauth2-proxy/</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/oauth2-proxy/</loc><lastmod>2026-11-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/teleport/</loc><lastmod>2026-07-09</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/meshcentral/</loc><lastmod>2026-10-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/rustdesk/</loc><lastmod>2026-11-01</lastmod></url>
@@ -330,7 +330,7 @@
   <url><loc>https://www.firmwarely.com/devices/meilisearch/</loc><lastmod>2026-11-02</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/typesense/</loc><lastmod>2026-04-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/qdrant/</loc><lastmod>2026-10-22</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/weaviate/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/weaviate/</loc><lastmod>2026-11-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/milvus/</loc><lastmod>2026-10-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/dragonfly/</loc><lastmod>2026-11-04</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/nats-server/</loc><lastmod>2026-10-26</lastmod></url>

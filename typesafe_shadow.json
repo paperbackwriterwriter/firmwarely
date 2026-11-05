@@ -38700,6 +38700,78 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "manyfold",
+   "version": "0.154.1",
+   "name": "Manyfold 3D model library",
+   "judged_at": "2026-11-05T15:36:38+00:00",
+   "notes_chars": 200,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "openvpn",
+   "version": "2.7.9",
+   "name": "OpenVPN VPN server and client",
+   "judged_at": "2026-11-05T15:36:38+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.92,
+    "security_fix_plain": 0.92,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "oauth2-proxy",
+   "version": "7.15.6",
+   "name": "OAuth2 Proxy Reverse proxy with OAuth",
+   "judged_at": "2026-11-05T15:36:39+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.98,
+    "security_fix_plain": 0.88,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "weaviate",
+   "version": "1.40.4",
+   "name": "Weaviate Vector database",
+   "judged_at": "2026-11-05T15:36:39+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
