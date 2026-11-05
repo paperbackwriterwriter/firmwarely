@@ -982,12 +982,12 @@
       "permanent": false
     },
     {
-      "source": "/brands/:b(ravensystem|reolink|resideo|rhasspy|roborock|schlage|scrypted|shelly|sonofflan|sonos|spook|switchbot|tado|tapo-control|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|tuya-local|valetudo|wallbox|webrtc|wled|wyze|xiaomi-home|xiaomi-miot-auto|xiaomi-vacuum-map-card|xiaomigateway3|yale|zigbee2mqtt|zigpy|zoneminder)",
+      "source": "/brands/:b(ravensystem|reolink|resideo|rhasspy|roborock|schlage|scrypted|shelly|sonofflan|sonos|spook|switchbot|tado|tapo-control|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|tuya-local|valetudo|wallbox|webrtc|wled|wyze|xiaomi-home|xiaomi-miot-auto|xiaomi-vacuum-map-card|xiaomigateway3|yale|yuvomi|zigbee2mqtt|zigpy|zoneminder)",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(ravensystem|reolink|resideo|rhasspy|roborock|schlage|scrypted|shelly|sonofflan|sonos|spook|switchbot|tado|tapo-control|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|tuya-local|valetudo|wallbox|webrtc|wled|wyze|xiaomi-home|xiaomi-miot-auto|xiaomi-vacuum-map-card|xiaomigateway3|yale|zigbee2mqtt|zigpy|zoneminder)/",
+      "source": "/brands/:b(ravensystem|reolink|resideo|rhasspy|roborock|schlage|scrypted|shelly|sonofflan|sonos|spook|switchbot|tado|tapo-control|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|tuya-local|valetudo|wallbox|webrtc|wled|wyze|xiaomi-home|xiaomi-miot-auto|xiaomi-vacuum-map-card|xiaomigateway3|yale|yuvomi|zigbee2mqtt|zigpy|zoneminder)/",
       "destination": "/category/smart-home/",
       "permanent": false
     },

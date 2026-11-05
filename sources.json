@@ -11286,6 +11286,15 @@
    "type": "github",
    "repo": "QuantumNous/new-api",
    "product_url": "https://github.com/QuantumNous/new-api"
+  },
+  {
+   "id": "yuvomi",
+   "brand": "Yuvomi",
+   "model": "One home instead of many subscriptions",
+   "category": "S",
+   "type": "github",
+   "repo": "ulsklyc/yuvomi",
+   "product_url": "https://github.com/ulsklyc/yuvomi"
   }
  ]
 }
