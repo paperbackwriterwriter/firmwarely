@@ -421,6 +421,21 @@
    "notes": "What's Changed: Features: feat(sessions): Add chronological session list view feat(telemetry): report AI gateway key count from self-hosted instances feat(topics): add Topics summaries, assignments and rules to the public API, MCP and in-app agent feat(audit-logs): record read-access events for tRP…",
    "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.76.0",
    "page_url": "https://www.firmwarely.com/devices/langfuse/"
+  },
+  "dagster": {
+   "id": "dagster",
+   "brand": "Dagster",
+   "model": "Data orchestrator",
+   "category": "A",
+   "status": "update",
+   "version": "1.13.29",
+   "previous": "1.13.28",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "New: [ui] Run pages now start loading logs sooner. [ui] The code location overview, deployment code locations list, and sensor and schedule detail pages now have mobile layouts. [ui] Improved global search performance on the home page and catalog. [ui] Improved global search responsiveness for depl…",
+   "source_url": "https://github.com/dagster-io/dagster/releases/tag/1.13.29",
+   "page_url": "https://www.firmwarely.com/devices/dagster/"
   }
  }
 }
