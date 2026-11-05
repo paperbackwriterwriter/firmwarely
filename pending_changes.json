@@ -151,6 +151,36 @@
    "notes": "What's new in Kiosk Satellite 2026.11.7: This release adds video to intercom calls, so people on a call can see each other. Screensaver widgets can now be turned off one at a time or all at once, including from Home Assistant, and Sendspin playback no longer skips on a device with a drifting clock.…",
    "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.7",
    "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
+  },
+  "dokploy": {
+   "id": "dokploy",
+   "brand": "Dokploy",
+   "model": "Deployment platform",
+   "category": "A",
+   "status": "update",
+   "version": "0.31.0",
+   "previous": "0.30.10",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: fix: resolve 6 critical Dependabot alerts fix(ui): standardize settings layout widths to full width fix(auth): prefetch SSO state in SSR to prevent layout flash feat: transfer services between servers feat(compose): pull latest images on deploy toggle fix(compose): move Fresh Volume…",
+   "source_url": "https://github.com/Dokploy/dokploy/releases/tag/v0.31.0",
+   "page_url": "https://www.firmwarely.com/devices/dokploy/"
+  },
+  "onedev": {
+   "id": "onedev",
+   "brand": "OneDev",
+   "model": "Git server with CI",
+   "category": "A",
+   "status": "update",
+   "version": "17.1.1",
+   "previous": "17.1.0",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "Installation Guide: https://docs.onedev.io/category/installation-guide Change Log: https://code.onedev.io/onedev/server/~builds/8841/fixed-issues?query=%22State%22+is+%22Released%22+order+by+%22Type%22+asc+%2C+%22Priority%22+desc Incompatibilities: https://code.onedev.io/onedev/server/~builds/8841/…",
+   "source_url": "https://github.com/theonedev/onedev/releases/tag/v17.1.1",
+   "page_url": "https://www.firmwarely.com/devices/onedev/"
   }
  }
 }
