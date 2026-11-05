@@ -196,6 +196,51 @@
    "notes": "Mattermost Platform Release 12.0.2 contains Medium to High severity level security fixes.",
    "source_url": "https://github.com/mattermost/mattermost/releases/tag/v12.0.2",
    "page_url": "https://www.firmwarely.com/devices/mattermost/"
+  },
+  "manyfold": {
+   "id": "manyfold",
+   "brand": "Manyfold",
+   "model": "3D model library",
+   "category": "M",
+   "status": "update",
+   "version": "0.154.0",
+   "previous": "0.153.0",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release adds a huge new feature: built-in slicing for STL files using Kiri:Moto! It can slice for a huge range of FDM and SLA/resin printers, as well as CAM machines, laser cutters, and more. We've also got interactive FreeCAD rendering now, thanks to the latest release of F3D. To slice, just …",
+   "source_url": "https://github.com/manyfold3d/manyfold/releases/tag/v0.154.0",
+   "page_url": "https://www.firmwarely.com/devices/manyfold/"
+  },
+  "formbricks": {
+   "id": "formbricks",
+   "brand": "Formbricks",
+   "model": "Surveys",
+   "category": "A",
+   "status": "update",
+   "version": "6.1.4",
+   "previous": "6.1.3",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "Formbricks 6.1.4: Patch release for the 6.1 line, compared with 6.1.3: Fix CSP violations in choice and matrix survey questions with styled headlines by removing inline styles before parsing survey HTML. #​9931 Add an optional SMTP_REQUIRE_TLS=1 setting to require STARTTLS for explicit-TLS SMTP (ty…",
+   "source_url": "https://github.com/formbricks/formbricks/releases/tag/6.1.4",
+   "page_url": "https://www.firmwarely.com/devices/formbricks/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.309.42880",
+   "previous": "37522026.308.62110",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​12192 #​12191 #​12189 #​12188 #​12187 #​12184",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.309.42880",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   }
  }
 }
