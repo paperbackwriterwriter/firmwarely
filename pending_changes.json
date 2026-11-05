@@ -856,6 +856,36 @@
    "notes": "Changes:: 56f8bbcc675e68e47109d8104e8b03ace8422cfc world-torrent: new alt domain fed7a1dfece1cb6cd27409bb5409890fb1967441 assorted unit3d: bump engine tag 903db754e32719603e39a5bde8fae004f8378f54 world-torrent: new domain 40773107754e58a3ab1ce6060fb7c3b6ab6131d7 torrentdownloads: disable unsupporte…",
    "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.3014",
    "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "zabbix": {
+   "id": "zabbix",
+   "brand": "Zabbix",
+   "model": "Monitoring platform",
+   "category": "A",
+   "status": "update",
+   "version": "8.0.0",
+   "previous": "7.4.16",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "8.0.0",
+   "source_url": "https://github.com/zabbix/zabbix/releases/tag/8.0.0",
+   "page_url": "https://www.firmwarely.com/devices/zabbix/"
+  },
+  "titanium-web-proxy": {
+   "id": "titanium-web-proxy",
+   "brand": "Titanium Web Proxy",
+   "model": "HTTP(S) proxy server",
+   "category": "R",
+   "status": "update",
+   "version": "8.0.0",
+   "previous": "7.0.27",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Edition and licensing. Plus ships as a bundle (Plus, plus the Xds and GeoIp satellites) under the PolyForm Noncommercial license. Response cache, active health, xDS, and GeoIP are Plus-gated. The MIT CLI zip does not include those satellites. Kubernetes and containers. Three contain…",
+   "source_url": "https://github.com/justcoding121/titanium-web-proxy/releases/tag/v8.0.0",
+   "page_url": "https://www.firmwarely.com/devices/titanium-web-proxy/"
   }
  }
 }
