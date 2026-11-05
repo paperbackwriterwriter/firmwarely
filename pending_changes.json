@@ -286,6 +286,36 @@
    "notes": "PLANKA Community 2.3.1: Fixes a crash introduced in 2.3.0. We recommend updating if any of your users has no username. Fixed: Description editor: opening a card's description for editing crashed to a blank page on boards with a member who has no username (#​1813). Full Changelog: https://github.com…",
    "source_url": "https://github.com/plankanban/planka/releases/tag/v2.3.1",
    "page_url": "https://www.firmwarely.com/devices/planka/"
+  },
+  "ultimaker-cura": {
+   "id": "ultimaker-cura",
+   "brand": "UltiMaker",
+   "model": "Cura",
+   "category": "M",
+   "status": "update",
+   "version": "5.14.0",
+   "previous": "5.13.0",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "New features and improvements: Paint-on-Support You can now define custom support areas by manually by painting regions to enforce, avoid, or auto-generate supports using an interactive overhang angle slider. You can also Paint Surface a surface by selecting an entire contiguous faces or curved fea…",
+   "source_url": "https://github.com/Ultimaker/Cura/releases/tag/5.14.0",
+   "page_url": "https://www.firmwarely.com/devices/ultimaker-cura/"
+  },
+  "databasus": {
+   "id": "databasus",
+   "brand": "Databasus",
+   "model": "PostgreSQL backup tool",
+   "category": "N",
+   "status": "update",
+   "version": "3.65.0",
+   "previous": "3.64.0",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: [3.65.0] - 2026-11-05: ✨ Features: testing: Run browser end-to-end tests against the application image (c5d1bf0) review: Check blank lines between logical steps (c96cebb) review: Support Codex review pipelines (824ad2e) agents: Support Codex implementation with Claude reviews (6eb6966) b…",
+   "source_url": "https://github.com/databasus/databasus/releases/tag/v3.65.0",
+   "page_url": "https://www.firmwarely.com/devices/databasus/"
   }
  }
 }
