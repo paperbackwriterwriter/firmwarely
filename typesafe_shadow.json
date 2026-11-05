@@ -38124,6 +38124,42 @@
     "security_fix_plain": 0.83,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "huginn",
+   "version": "2026.11.05.2",
+   "name": "Huginn Automation agents",
+   "judged_at": "2026-11-05T04:52:04+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.73,
+    "security_fix_plain": 0.52,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "wiki-js",
+   "version": "3.1.0",
+   "name": "Wiki.js Wiki",
+   "judged_at": "2026-11-05T04:52:04+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

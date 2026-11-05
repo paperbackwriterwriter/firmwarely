@@ -563,13 +563,13 @@
    "model": "Automation agents",
    "category": "A",
    "status": "critical",
-   "version": "2026.11.05",
+   "version": "2026.11.05.2",
    "previous": "2026.11.01",
-   "released": "2026-11-04",
+   "released": "2026-11-05",
    "date_known": true,
    "eol": false,
-   "notes": "v2026.11.05: This security release fixes stored cross-site scripting (XSS) in shared OAuth service names and Agent descriptions. It also adds CSRF protection to administrator user switching. Upgrade all installations, especially those with multiple users or imported scenarios. Security fixes: Escap…",
-   "source_url": "https://github.com/huginn/huginn/releases/tag/v2026.11.05",
+   "notes": "This security release upgrades Rails from 8.1.4 to 8.1.4.1 and updates its HTML sanitization dependencies. We recommend upgrading all installations. Security fixes: Rails 8.1.4.1 addresses 21 security issues, including XSS, IP spoofing, denial of service, session handling, and Active Storage file p…",
+   "source_url": "https://github.com/huginn/huginn/releases/tag/v2026.11.05.2",
    "page_url": "https://www.firmwarely.com/devices/huginn/"
   },
   "osquery": {
@@ -766,6 +766,21 @@
    "notes": "This is a quick follow-up on top of 2.11.8, to fix a regression it introduced and a few more security issues, mostly in FastCGI. It contains only fixes backported from master, plus a couple of small additions. If you're on 2.11.8 and serve PHP, we recommend upgrading. Huge thank you to our sponsors…",
    "source_url": "https://github.com/caddyserver/caddy/releases/tag/v2.11.9",
    "page_url": "https://www.firmwarely.com/devices/caddy-server/"
+  },
+  "wiki-js": {
+   "id": "wiki-js",
+   "brand": "Wiki.js",
+   "model": "Wiki",
+   "category": "A",
+   "status": "update",
+   "version": "3.1.0",
+   "previous": "3.0.2",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": ":sparkles: New Features: e0ed43d - import from hedgedoc utility (commit) 09aaa74 - allow OIDC provider endpoints over plain http, off by default (PR #​8189) :bug: Bug Fixes: e4d85e9 - admin users pagination + filter result in blank page on return (commit) 4ad07c0 - ldap: allow anonymous bind (commi…",
+   "source_url": "https://github.com/requarks/wiki/releases/tag/3.1.0",
+   "page_url": "https://www.firmwarely.com/devices/wiki-js/"
   }
  }
 }
