@@ -39024,6 +39024,42 @@
     "security_fix_plain": 0.06,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "openbk7231t",
+   "version": "1.18.321",
+   "name": "OpenBeken OpenBK7231T firmware",
+   "judged_at": "2026-11-05T23:49:40+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "rook",
+   "version": "1.21.2",
+   "name": "Rook Ceph storage orchestrator",
+   "judged_at": "2026-11-05T23:49:40+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.07,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

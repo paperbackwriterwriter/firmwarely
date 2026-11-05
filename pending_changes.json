@@ -541,6 +541,36 @@
    "notes": "What's Changed: MCP - \"MCP Note\" sub-tab, set what assistants are told when they connect MCP - More monitor settings, test notifications, word diffs, and permission rows for notifications and browser steps MCP OAuth - Claude Code can sign in: loopback redirect URIs match on any port (RFC 8252 7.3) …",
    "source_url": "https://github.com/dgtlmoon/changedetection.io/releases/tag/0.70.2",
    "page_url": "https://www.firmwarely.com/devices/changedetection/"
+  },
+  "openbk7231t": {
+   "id": "openbk7231t",
+   "brand": "OpenBeken",
+   "model": "OpenBK7231T firmware",
+   "category": "S",
+   "status": "update",
+   "version": "1.18.321",
+   "previous": "1.18.320",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "OpenBK7231T/OpenBeken release 1.18.321: WARNING! If installing versions tagged -alpha, please be aware these are development builds and may not be stable! Please do not flash all your devices at once! Make sure you can recover them via UART in case of unexpected issue.: OpenBK7231T/OpenBeken is a T…",
+   "source_url": "https://github.com/openshwprojects/OpenBK7231T_App/releases/tag/1.18.321",
+   "page_url": "https://www.firmwarely.com/devices/openbk7231t/"
+  },
+  "rook": {
+   "id": "rook",
+   "brand": "Rook",
+   "model": "Ceph storage orchestrator",
+   "category": "N",
+   "status": "update",
+   "version": "1.21.2",
+   "previous": "1.21.1",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "Improvements: Rook v1.21.2 is a patch release limited in scope and focusing on feature additions and bug fixes to the Ceph operator. operator: Disable msgr1 on osd, mgr, and mds when msgr2 is required (#​18557,) osd: Filter RBD devices from LVM scans on host-based OSDs (#​18413,) osd: Don't wipe me…",
+   "source_url": "https://github.com/rook/rook/releases/tag/v1.21.2",
+   "page_url": "https://www.firmwarely.com/devices/rook/"
   }
  }
 }
