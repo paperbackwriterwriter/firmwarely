@@ -143,13 +143,13 @@
    "model": "Turn any Android device",
    "category": "S",
    "status": "update",
-   "version": "2026.11.7",
+   "version": "2026.11.8",
    "previous": "2026.11.6",
    "released": "2026-11-05",
    "date_known": true,
    "eol": false,
-   "notes": "What's new in Kiosk Satellite 2026.11.7: This release adds video to intercom calls, so people on a call can see each other. Screensaver widgets can now be turned off one at a time or all at once, including from Home Assistant, and Sendspin playback no longer skips on a device with a drifting clock.…",
-   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.7",
+   "notes": "What's new in Kiosk Satellite 2026.11.8: This release adds two controls for video calls: automatic answering with the camera on and a Switch camera button. It also adds more options for alarm phrases and the Up next widget, narrows dashboard filtering for auto-entities and fixes dashboard recovery,…",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.8",
    "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   },
   "dokploy": {
@@ -481,6 +481,21 @@
    "notes": "Tested BrowserBox release. Install: macOS and Linux bash curl -fsSL https://browserbox.io/install.sh | bash Windows (PowerShell as Administrator) powershell irm https://browserbox.io/install.ps1 | iex Update an existing installation: macOS and Linux bash bbx update v20.8.0 Windows (updates to the l…",
    "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.8.0",
    "page_url": "https://www.firmwarely.com/devices/browserbox/"
+  },
+  "snort3": {
+   "id": "snort3",
+   "brand": "Snort",
+   "model": "Snort 3 intrusion detection",
+   "category": "R",
+   "status": "update",
+   "version": "3.13.2.0",
+   "previous": "3.12.4.0",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "Dependencies: Libdaq v3.0.29 LibML v2.0.0 If you are using rules from snort.org, please use latest Talos_lightSPD package from version 2026-09-14-001 onward (due to API bump in 3.13.0.0) Changes in this release since 3.13.1.0: appid: add nullptr string validation appid: add sip port validation appi…",
+   "source_url": "https://github.com/snort3/snort3/releases/tag/3.13.2.0",
+   "page_url": "https://www.firmwarely.com/devices/snort3/"
   }
  }
 }

@@ -38934,6 +38934,42 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "kiosk-satellite",
+   "version": "2026.11.8",
+   "name": "Kiosk Satellite Turn any Android device",
+   "judged_at": "2026-11-05T20:42:33+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "snort3",
+   "version": "3.13.2.0",
+   "name": "Snort 3 intrusion detection",
+   "judged_at": "2026-11-05T20:42:33+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.08,
+    "security_fix_plain": 0.17,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
