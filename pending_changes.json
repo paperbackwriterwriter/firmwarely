@@ -796,6 +796,66 @@
    "notes": "What's Changed: Update ruff requirement from ›=0.17.1 to ›=0.17.2 by in https://github.com/dgtlmoon/changedetection.io/pull/4604 Update jsonpath-ng requirement from ~=1.12.0 to ~=1.13.0 by in https://github.com/dgtlmoon/changedetection.io/pull/4603 Update wtforms requirement from ~=3.2 to ~=3.3 by …",
    "source_url": "https://github.com/dgtlmoon/changedetection.io/releases/tag/0.70.1",
    "page_url": "https://www.firmwarely.com/devices/changedetection/"
+  },
+  "thingino": {
+   "id": "thingino",
+   "brand": "thingino",
+   "model": "Camera firmware",
+   "category": "M",
+   "status": "update",
+   "version": "2026-11-05",
+   "previous": "2026-11-02",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes in this release: 5a2631c dfu: bump to 2.0.1 7d4a2a1 cameras: move cinnado d1 t32lq to experimental 90e7f1a linux: build only uImage.lzma for T32 4.4.94 kernels Backport 727f16228. uImage is a symlink to its first prerequisite, so uImage.lzma is the only image ever shipped. Building the lzo,…",
+   "source_url": "https://github.com/themactep/thingino-firmware/releases/tag/firmware-2026-11-05",
+   "page_url": "https://www.firmwarely.com/devices/thingino/"
+  },
+  "jaeger": {
+   "id": "jaeger",
+   "brand": "Jaeger",
+   "model": "Distributed tracing",
+   "category": "A",
+   "status": "update",
+   "version": "2.23.0",
+   "previous": "2.22.0",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "Backend Changes: ⛔ Breaking Changes: Fix(storage): remove unused clickhouse feature gates () Fix(storage): resolve auth extension references deterministically () Chore(ai-sidecar): remove the gemini reference sidecar () Feat(clickhouse): require an explicit table engine when creating the schema () …",
+   "source_url": "https://github.com/jaegertracing/jaeger/releases/tag/v2.23.0",
+   "page_url": "https://www.firmwarely.com/devices/jaeger/"
+  },
+  "logto": {
+   "id": "logto",
+   "brand": "Logto",
+   "model": "Auth platform",
+   "category": "A",
+   "status": "update",
+   "version": "1.46.0",
+   "previous": "1.45.0",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "Highlights: OIDC step-up authentication: Apps can request acr_values and max_age and read acr, amr, and auth_time from tokens. Account Center uses it to require a recent sign-in before sensitive changes. Sign-In with Ethereum: A new Ethereum Wallet social connector lets users sign in with an EVM wa…",
+   "source_url": "https://github.com/logto-io/logto/releases/tag/v1.46.0",
+   "page_url": "https://www.firmwarely.com/devices/logto/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.3014",
+   "previous": "0.24.3009",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: 56f8bbcc675e68e47109d8104e8b03ace8422cfc world-torrent: new alt domain fed7a1dfece1cb6cd27409bb5409890fb1967441 assorted unit3d: bump engine tag 903db754e32719603e39a5bde8fae004f8378f54 world-torrent: new domain 40773107754e58a3ab1ce6060fb7c3b6ab6131d7 torrentdownloads: disable unsupporte…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.3014",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
