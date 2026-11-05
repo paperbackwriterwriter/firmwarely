@@ -473,13 +473,13 @@
    "model": "Dashboard",
    "category": "A",
    "status": "update",
-   "version": "2.11.0",
+   "version": "2.11.1",
    "previous": "2.10.1",
-   "released": "2026-11-04",
+   "released": "2026-11-05",
    "date_known": true,
    "eol": false,
-   "notes": "What's Changed: chore(deps): update dependency/core to v0.3.32 by in https://github.com/homarr-labs/homarr/pull/7423 chore(deps): update dependency assistant-cloud to v0.2.9 by in https://github.com/homarr-labs/homarr/pull/7424 chore(lang): updated translations from crowdin by in https://github.com…",
-   "source_url": "https://github.com/homarr-labs/homarr/releases/tag/v2.11.0",
+   "notes": "What's Changed: fix(startup): create nginx runtime directory for native installs Full Changelog: https://github.com/homarr-labs/homarr/compare/v2.11.0...v2.11.1",
+   "source_url": "https://github.com/homarr-labs/homarr/releases/tag/v2.11.1",
    "page_url": "https://www.firmwarely.com/devices/homarr/"
   },
   "penpot": {
