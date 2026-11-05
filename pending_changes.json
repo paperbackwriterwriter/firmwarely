@@ -233,13 +233,13 @@
    "model": "DNS blocklists",
    "category": "R",
    "status": "update",
-   "version": "37522026.309.42880",
+   "version": "37522026.309.62190",
    "previous": "37522026.308.62110",
    "released": "2026-11-05",
    "date_known": true,
    "eol": false,
-   "notes": "#​12192 #​12191 #​12189 #​12188 #​12187 #​12184",
-   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.309.42880",
+   "notes": "#​12199 #​12198 #​12194 #​12193",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.309.62190",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   },
   "openvas-scanner": {
