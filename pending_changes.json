@@ -781,6 +781,21 @@
    "notes": ":sparkles: New Features: e0ed43d - import from hedgedoc utility (commit) 09aaa74 - allow OIDC provider endpoints over plain http, off by default (PR #​8189) :bug: Bug Fixes: e4d85e9 - admin users pagination + filter result in blank page on return (commit) 4ad07c0 - ldap: allow anonymous bind (commi…",
    "source_url": "https://github.com/requarks/wiki/releases/tag/3.1.0",
    "page_url": "https://www.firmwarely.com/devices/wiki-js/"
+  },
+  "changedetection": {
+   "id": "changedetection",
+   "brand": "changedetection.io",
+   "model": "Website change monitor",
+   "category": "A",
+   "status": "update",
+   "version": "0.70.1",
+   "previous": "0.60.10",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Update ruff requirement from ›=0.17.1 to ›=0.17.2 by in https://github.com/dgtlmoon/changedetection.io/pull/4604 Update jsonpath-ng requirement from ~=1.12.0 to ~=1.13.0 by in https://github.com/dgtlmoon/changedetection.io/pull/4603 Update wtforms requirement from ~=3.2 to ~=3.3 by …",
+   "source_url": "https://github.com/dgtlmoon/changedetection.io/releases/tag/0.70.1",
+   "page_url": "https://www.firmwarely.com/devices/changedetection/"
   }
  }
 }
