@@ -496,6 +496,21 @@
    "notes": "Dependencies: Libdaq v3.0.29 LibML v2.0.0 If you are using rules from snort.org, please use latest Talos_lightSPD package from version 2026-09-14-001 onward (due to API bump in 3.13.0.0) Changes in this release since 3.13.1.0: appid: add nullptr string validation appid: add sip port validation appi…",
    "source_url": "https://github.com/snort3/snort3/releases/tag/3.13.2.0",
    "page_url": "https://www.firmwarely.com/devices/snort3/"
+  },
+  "vikunja": {
+   "id": "vikunja",
+   "brand": "Vikunja",
+   "model": "Task manager",
+   "category": "A",
+   "status": "critical",
+   "version": "2.8.0",
+   "previous": "2.7.1",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "🦙 Vikunja 2.8.0 is out! It fixes 19 security issues, so please update soon 🔒 Also new: a trash bin with undo for tasks and projects 🗑️ and a way to link your SSO account to your local one 🔗 https://vikunja.io/changelog/vikunja-2.8.0-was-released/",
+   "source_url": "https://github.com/go-vikunja/vikunja/releases/tag/v2.8.0",
+   "page_url": "https://www.firmwarely.com/devices/vikunja/"
   }
  }
 }
