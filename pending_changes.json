@@ -751,6 +751,21 @@
    "notes": "🚀 Features: cloud: Push container config so Cloud can show what changed - and Claude Opus 5.5 in https://github.com/amir20/dozzle/issues/5555 (5231a) Return recent healthcheck runs from inspect_container - and Claude Opus 5.5 in https://github.com/amir20/dozzle/issues/5568 (8d802) hosts: Keep conta…",
    "source_url": "https://github.com/amir20/dozzle/releases/tag/v11.4.1",
    "page_url": "https://www.firmwarely.com/devices/dozzle/"
+  },
+  "caddy-server": {
+   "id": "caddy-server",
+   "brand": "Caddy",
+   "model": "Web server and reverse proxy",
+   "category": "R",
+   "status": "critical",
+   "version": "2.11.9",
+   "previous": "2.11.8",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "This is a quick follow-up on top of 2.11.8, to fix a regression it introduced and a few more security issues, mostly in FastCGI. It contains only fixes backported from master, plus a couple of small additions. If you're on 2.11.8 and serve PHP, we recommend upgrading. Huge thank you to our sponsors…",
+   "source_url": "https://github.com/caddyserver/caddy/releases/tag/v2.11.9",
+   "page_url": "https://www.firmwarely.com/devices/caddy-server/"
   }
  }
 }
