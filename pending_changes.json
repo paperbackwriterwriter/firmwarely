@@ -391,6 +391,36 @@
    "notes": "26.8.2 26.8.2",
    "source_url": "https://github.com/keycloak/keycloak/releases/tag/26.8.2",
    "page_url": "https://www.firmwarely.com/devices/keycloak/"
+  },
+  "casdoor": {
+   "id": "casdoor",
+   "brand": "Casdoor",
+   "model": "Identity and access",
+   "category": "A",
+   "status": "update",
+   "version": "4.26.0",
+   "previous": "4.25.0",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: Features: d61ee823196151e9c282d497a78ec66a800ea91f feat: add Casdoor Cloud links to the console and a global setting to hide them 04a36b79e3d8f19cc70b68d617edabccd9a9cc83 feat: add initAdminPassword to Helm and docker-compose f3f904852c62de0d523efe25b1eab8c6207438a7 feat: ask again on th…",
+   "source_url": "https://github.com/casdoor/casdoor/releases/tag/v4.26.0",
+   "page_url": "https://www.firmwarely.com/devices/casdoor/"
+  },
+  "langfuse": {
+   "id": "langfuse",
+   "brand": "Langfuse",
+   "model": "LLM observability",
+   "category": "A",
+   "status": "update",
+   "version": "4.76.0",
+   "previous": "4.75.0",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Features: feat(sessions): Add chronological session list view feat(telemetry): report AI gateway key count from self-hosted instances feat(topics): add Topics summaries, assignments and rules to the public API, MCP and in-app agent feat(audit-logs): record read-access events for tRP…",
+   "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.76.0",
+   "page_url": "https://www.firmwarely.com/devices/langfuse/"
   }
  }
 }
