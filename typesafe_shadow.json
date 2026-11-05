@@ -38520,6 +38520,24 @@
     "security_fix_plain": 0.06,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "mattermost",
+   "version": "12.0.2",
+   "name": "Mattermost Team messaging",
+   "judged_at": "2026-11-05T11:22:07+00:00",
+   "notes_chars": 89,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.72,
+    "security_fix_plain": 0.89,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

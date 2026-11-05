@@ -181,6 +181,21 @@
    "notes": "Installation Guide: https://docs.onedev.io/category/installation-guide Change Log: https://code.onedev.io/onedev/server/~builds/8841/fixed-issues?query=%22State%22+is+%22Released%22+order+by+%22Type%22+asc+%2C+%22Priority%22+desc Incompatibilities: https://code.onedev.io/onedev/server/~builds/8841/…",
    "source_url": "https://github.com/theonedev/onedev/releases/tag/v17.1.1",
    "page_url": "https://www.firmwarely.com/devices/onedev/"
+  },
+  "mattermost": {
+   "id": "mattermost",
+   "brand": "Mattermost",
+   "model": "Team messaging",
+   "category": "A",
+   "status": "critical",
+   "version": "12.0.2",
+   "previous": "12.0.1",
+   "released": "2026-11-04",
+   "date_known": true,
+   "eol": false,
+   "notes": "Mattermost Platform Release 12.0.2 contains Medium to High severity level security fixes.",
+   "source_url": "https://github.com/mattermost/mattermost/releases/tag/v12.0.2",
+   "page_url": "https://www.firmwarely.com/devices/mattermost/"
   }
  }
 }
