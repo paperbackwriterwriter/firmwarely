@@ -436,6 +436,51 @@
    "notes": "New: [ui] Run pages now start loading logs sooner. [ui] The code location overview, deployment code locations list, and sensor and schedule detail pages now have mobile layouts. [ui] Improved global search performance on the home page and catalog. [ui] Improved global search responsiveness for depl…",
    "source_url": "https://github.com/dagster-io/dagster/releases/tag/1.13.29",
    "page_url": "https://www.firmwarely.com/devices/dagster/"
+  },
+  "opentofu": {
+   "id": "opentofu",
+   "brand": "OpenTofu",
+   "model": "Infrastructure as code",
+   "category": "A",
+   "status": "update",
+   "version": "1.13.9",
+   "previous": "1.13.8",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "BUG FIXES: Fix local backend state persistence bug when the first apply crashes. (#​4811) Full Changelog: https://github.com/opentofu/opentofu/compare/v1.13.8...v1.13.9",
+   "source_url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.9",
+   "page_url": "https://www.firmwarely.com/devices/opentofu/"
+  },
+  "jupyterhub": {
+   "id": "jupyterhub",
+   "brand": "Jupyter",
+   "model": "JupyterHub",
+   "category": "A",
+   "status": "update",
+   "version": "6.2.0",
+   "previous": "6.1.1",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "6.2.0",
+   "source_url": "https://github.com/jupyterhub/jupyterhub/releases/tag/6.2.0",
+   "page_url": "https://www.firmwarely.com/devices/jupyterhub/"
+  },
+  "browserbox": {
+   "id": "browserbox",
+   "brand": "BrowserBox",
+   "model": "Remote browser isolation",
+   "category": "R",
+   "status": "update",
+   "version": "20.8.0",
+   "previous": "20.7.1",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "Tested BrowserBox release. Install: macOS and Linux bash curl -fsSL https://browserbox.io/install.sh | bash Windows (PowerShell as Administrator) powershell irm https://browserbox.io/install.ps1 | iex Update an existing installation: macOS and Linux bash bbx update v20.8.0 Windows (updates to the l…",
+   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.8.0",
+   "page_url": "https://www.firmwarely.com/devices/browserbox/"
   }
  }
 }

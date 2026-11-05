@@ -38880,6 +38880,60 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "opentofu",
+   "version": "1.13.9",
+   "name": "OpenTofu Infrastructure as code",
+   "judged_at": "2026-11-05T19:51:50+00:00",
+   "notes_chars": 168,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "jupyterhub",
+   "version": "6.2.0",
+   "name": "Jupyter JupyterHub",
+   "judged_at": "2026-11-05T19:51:50+00:00",
+   "notes_chars": 5,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.08,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "browserbox",
+   "version": "20.8.0",
+   "name": "BrowserBox Remote browser isolation",
+   "judged_at": "2026-11-05T19:51:50+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
