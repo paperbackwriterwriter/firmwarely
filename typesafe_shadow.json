@@ -38592,6 +38592,78 @@
     "security_fix_plain": 0.04,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "onedev",
+   "version": "17.1.2",
+   "name": "OneDev Git server with CI",
+   "judged_at": "2026-11-05T13:03:44+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "openvas-scanner",
+   "version": "23.52.9",
+   "name": "Greenbone OpenVAS scanner",
+   "judged_at": "2026-11-05T13:03:44+00:00",
+   "notes_chars": 178,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.12,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "trivy",
+   "version": "0.76.2",
+   "name": "Aqua Trivy vulnerability scanner",
+   "judged_at": "2026-11-05T13:03:44+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.75,
+    "security_fix_plain": 0.64,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "planka",
+   "version": "2.3.1",
+   "name": "Planka Kanban board",
+   "judged_at": "2026-11-05T13:03:44+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
