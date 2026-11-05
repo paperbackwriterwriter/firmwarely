@@ -697,14 +697,14 @@
    "brand": "HedgeDoc",
    "model": "Markdown collaboration",
    "category": "A",
-   "status": "critical",
-   "version": "1.12.1",
+   "status": "update",
+   "version": "1.12.2",
    "previous": "1.12.0",
    "released": "2026-11-04",
    "date_known": true,
    "eol": false,
-   "notes": "Security fixes: GHSA-2c27-4x43-jrm6 reports a possible impersonation attack when two auth providers provide the same profile id GHSA-g5g7-gfr5-f89m reports a possible crash of the realtime code via an invalid selection. GHSA-7p6g-mhrh-286p reports the ability to include unescaped iframes in slides …",
-   "source_url": "https://github.com/hedgedoc/hedgedoc/releases/tag/1.12.1",
+   "notes": "Bugfixes: Fixed the profile provider migration failing on PostgreSQL",
+   "source_url": "https://github.com/hedgedoc/hedgedoc/releases/tag/1.12.2",
    "page_url": "https://www.firmwarely.com/devices/hedgedoc/"
   },
   "zoraxy": {
@@ -736,6 +736,21 @@
    "notes": "Code v1.145.0 Security: Strip code-server's cookie from web socket requests going over the built-in proxy. We were already doing this for regular proxied HTTP requests, but not for proxied web sockets. Add HttpOnly to cookies to prevent them from being accessed by JavaScript proxied over the built-…",
    "source_url": "https://github.com/coder/code-server/releases/tag/v4.145.0",
    "page_url": "https://www.firmwarely.com/devices/code-server/"
+  },
+  "dozzle": {
+   "id": "dozzle",
+   "brand": "Dozzle",
+   "model": "Container log viewer",
+   "category": "A",
+   "status": "update",
+   "version": "11.4.1",
+   "previous": "11.4.0",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "🚀 Features: cloud: Push container config so Cloud can show what changed - and Claude Opus 5.5 in https://github.com/amir20/dozzle/issues/5555 (5231a) Return recent healthcheck runs from inspect_container - and Claude Opus 5.5 in https://github.com/amir20/dozzle/issues/5568 (8d802) hosts: Keep conta…",
+   "source_url": "https://github.com/amir20/dozzle/releases/tag/v11.4.1",
+   "page_url": "https://www.firmwarely.com/devices/dozzle/"
   }
  }
 }
