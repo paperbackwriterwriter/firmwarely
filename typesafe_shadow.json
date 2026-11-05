@@ -38304,6 +38304,186 @@
     "security_fix_plain": 0.06,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "ubiquiti-unifi-dream-machine-se",
+   "version": "6.0.17",
+   "name": "Ubiquiti UniFi Dream Machine (UDM / SE / Pro)",
+   "judged_at": "2026-11-05T09:40:27+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "softether-vpn",
+   "version": "5.2.5189",
+   "name": "SoftEther Multi-protocol VPN server",
+   "judged_at": "2026-11-05T09:40:27+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.16,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ubiquiti-unifi-express",
+   "version": "6.0.17",
+   "name": "Ubiquiti UniFi Express",
+   "judged_at": "2026-11-05T09:40:27+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ubiquiti-unas-pro",
+   "version": "6.0.17",
+   "name": "Ubiquiti UNAS Pro",
+   "judged_at": "2026-11-05T09:40:28+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "stirling-pdf",
+   "version": "3.3.0",
+   "name": "Stirling PDF toolkit",
+   "judged_at": "2026-11-05T09:40:28+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ubiquiti-cloud-gateway-ultra",
+   "version": "6.0.17",
+   "name": "Ubiquiti UniFi Cloud Gateway Ultra",
+   "judged_at": "2026-11-05T09:40:28+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ubiquiti-dream-router-7",
+   "version": "6.0.17",
+   "name": "Ubiquiti UniFi Dream Router 7",
+   "judged_at": "2026-11-05T09:40:28+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ubiquiti-unifi-ai-key",
+   "version": "6.0.17",
+   "name": "Ubiquiti UniFi AI Key",
+   "judged_at": "2026-11-05T09:40:28+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "skipper",
+   "version": "0.28.69",
+   "name": "Skipper HTTP router and reverse proxy",
+   "judged_at": "2026-11-05T09:40:28+00:00",
+   "notes_chars": 201,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "kiosk-satellite",
+   "version": "2026.11.7",
+   "name": "Kiosk Satellite Turn any Android device",
+   "judged_at": "2026-11-05T09:40:28+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
