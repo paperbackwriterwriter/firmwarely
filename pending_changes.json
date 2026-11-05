@@ -361,6 +361,36 @@
    "notes": "Breaking Changes: none New Features: none Fixes: Make reads wait while this node is still creating a collection fix(shutdown): re-order grpc shutdown to be before memberlist leave Fixes missing propery length for empty arrays fix(add-class): read the collection cap's fail-fast count from the local …",
    "source_url": "https://github.com/weaviate/weaviate/releases/tag/v1.40.4",
    "page_url": "https://www.firmwarely.com/devices/weaviate/"
+  },
+  "prometheus": {
+   "id": "prometheus",
+   "brand": "Prometheus",
+   "model": "Metrics database",
+   "category": "A",
+   "status": "update",
+   "version": "3.16.0",
+   "previous": "3.15.1",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "[CHANGE] API: The experimental search endpoints now clamp batch_size to 1000. #​19731 [CHANGE] Configuration: Default --web.external-url to https when --web.config.file enables TLS. #​19241 [CHANGE] PromQL: Subquery samples are now included in the query TotalSamples and TotalSamplesPerStep statisti…",
+   "source_url": "https://github.com/prometheus/prometheus/releases/tag/v3.16.0",
+   "page_url": "https://www.firmwarely.com/devices/prometheus/"
+  },
+  "keycloak": {
+   "id": "keycloak",
+   "brand": "Keycloak",
+   "model": "Identity provider",
+   "category": "A",
+   "status": "update",
+   "version": "26.8.2",
+   "previous": "26.8.1",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "26.8.2 26.8.2",
+   "source_url": "https://github.com/keycloak/keycloak/releases/tag/26.8.2",
+   "page_url": "https://www.firmwarely.com/devices/keycloak/"
   }
  }
 }

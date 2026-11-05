@@ -38772,6 +38772,42 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "prometheus",
+   "version": "3.16.0",
+   "name": "Prometheus Metrics database",
+   "judged_at": "2026-11-05T16:29:00+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "keycloak",
+   "version": "26.8.2",
+   "name": "Keycloak Identity provider",
+   "judged_at": "2026-11-05T16:29:00+00:00",
+   "notes_chars": 13,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
