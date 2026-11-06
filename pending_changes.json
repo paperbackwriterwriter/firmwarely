@@ -661,6 +661,21 @@
    "notes": "Engine versions: Node: ›=22.22.3 =24.15.0 Updated dependencies [cdb0bc05288986f8682d5eb11ac7d9fcf19684b5, 968b1ee6c3779961d49c9a0a440262ab3966029f, 9d1afa454d964374e9cd6e10433b83ae16dc90ef, ec037bac9859dfb30bd2c5822b31c326269c6348, f871858c7dd52cd6849032425dce3a4670e14285]:.chat/models.6.1.chat/mod…",
    "source_url": "https://github.com/RocketChat/Rocket.Chat/releases/tag/8.9.1",
    "page_url": "https://www.firmwarely.com/devices/rocket-chat/"
+  },
+  "calibre": {
+   "id": "calibre",
+   "brand": "Calibre",
+   "model": "Ebook manager",
+   "category": "A",
+   "status": "update",
+   "version": "9.18.0",
+   "previous": "9.17.0",
+   "released": "2026-11-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release version 9.18.0",
+   "source_url": "https://github.com/kovidgoyal/calibre/releases/tag/v9.18.0",
+   "page_url": "https://www.firmwarely.com/devices/calibre/"
   }
  }
 }

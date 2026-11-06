@@ -39186,6 +39186,24 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "calibre",
+   "version": "9.18.0",
+   "name": "Calibre Ebook manager",
+   "judged_at": "2026-11-06T03:26:55+00:00",
+   "notes_chars": 22,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
