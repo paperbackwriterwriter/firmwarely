@@ -39240,6 +39240,42 @@
     "security_fix_plain": 0.12,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "jackett",
+   "version": "0.24.3021",
+   "name": "Jackett Torrent indexer proxy",
+   "judged_at": "2026-11-06T05:58:54+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "wiki-js",
+   "version": "3.1.1",
+   "name": "Wiki.js Wiki",
+   "judged_at": "2026-11-06T05:58:54+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
