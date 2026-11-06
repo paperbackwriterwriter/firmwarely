@@ -1,5 +1,66 @@
 {
- "since": null,
+ "since": "2026-11-06T12:00:38+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.310.40839",
+   "previous": "37522026.310.4070",
+   "released": "2026-11-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​12206 #​12204",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.310.40839",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "bambuddy": {
+   "id": "bambuddy",
+   "brand": "Bambuddy",
+   "model": "Bambu Lab printer manager",
+   "category": "M",
+   "status": "update",
+   "version": "1.3.0",
+   "previous": "1.2.5.7",
+   "released": "2026-11-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "Bambuddy 1.3.0 What this is The largest Bambuddy release so far, on top of 1.2.5.7: 40 new features, 11 changes, 320 fixes and three dependency advisories closed. 24 community PRs went in, and 83 people are credited. The headline is archives that hold every print of a file. An archive used to show …",
+   "source_url": "https://github.com/maziggy/bambuddy/releases/tag/v1.3.0",
+   "page_url": "https://www.firmwarely.com/devices/bambuddy/"
+  },
+  "browserbox": {
+   "id": "browserbox",
+   "brand": "BrowserBox",
+   "model": "Remote browser isolation",
+   "category": "R",
+   "status": "update",
+   "version": "20.8.1",
+   "previous": "20.8.0",
+   "released": "2026-11-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "Tested BrowserBox release. Install: macOS and Linux bash curl -fsSL https://browserbox.io/install.sh | bash Windows (PowerShell as Administrator) powershell irm https://browserbox.io/install.ps1 | iex Update an existing installation: macOS and Linux bash bbx update v20.8.1 Windows (updates to the l…",
+   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.8.1",
+   "page_url": "https://www.firmwarely.com/devices/browserbox/"
+  },
+  "skipper": {
+   "id": "skipper",
+   "brand": "Skipper",
+   "model": "HTTP router and reverse proxy",
+   "category": "R",
+   "status": "update",
+   "version": "0.28.70",
+   "previous": "0.28.69",
+   "released": "2026-11-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes: Add shared OpenID discovery cache for JWT and introspection (#​4400) Introduce an opt-in, process-wide OpenID discovery cache shared by jwtValidation and all eight oauthTokenintrospection filters. Disabled callers continue to fetch discovery on every filter creation, bypassing the cache an…",
+   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.70",
+   "page_url": "https://www.firmwarely.com/devices/skipper/"
+  }
+ }
 }
