@@ -39402,6 +39402,78 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "pritunl",
+   "version": "1.34.4803.56",
+   "name": "Pritunl VPN server",
+   "judged_at": "2026-11-06T13:42:31+00:00",
+   "notes_chars": 30,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "airflow",
+   "version": "3.4.0",
+   "name": "Apache Airflow",
+   "judged_at": "2026-11-06T13:42:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.07,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "neo4j",
+   "version": "2026.10.2",
+   "name": "Neo4j Graph database",
+   "judged_at": "2026-11-06T13:42:31+00:00",
+   "notes_chars": 9,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.07,
+    "security_fix_plain": 0.1,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "homeassistant-powercalc",
+   "version": "1.27.0",
+   "name": "Homeassistant Powercalc Home Assistant Custom component",
+   "judged_at": "2026-11-06T13:42:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

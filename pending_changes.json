@@ -76,6 +76,66 @@
    "notes": "1.863.0 (2026-11-06): Features: add a run capability to workspace roles (#​12225) (497245b) add DeepSeek as a web search backend for AI chat (#​12242) (afc6e9d) add max iterations and max duration bounds to while loops (#​12245) (71beff7) admit concurrency-limited jobs in order by default, per tag …",
    "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.863.0",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
+  },
+  "pritunl": {
+   "id": "pritunl",
+   "brand": "Pritunl",
+   "model": "VPN server",
+   "category": "R",
+   "status": "update",
+   "version": "1.34.4803.56",
+   "previous": "1.34.4763.45",
+   "released": "2026-11-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "Fix host settings modification",
+   "source_url": "https://github.com/pritunl/pritunl/releases/tag/1.34.4803.56",
+   "page_url": "https://www.firmwarely.com/devices/pritunl/"
+  },
+  "airflow": {
+   "id": "airflow",
+   "brand": "Apache",
+   "model": "Airflow",
+   "category": "A",
+   "status": "update",
+   "version": "3.4.0",
+   "previous": "3.3.2",
+   "released": "2026-11-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "📦 PyPI: https://pypi.org/project/apache-airflow/3.4.0/ 📚 Docs: https://airflow.apache.org/docs/apache-airflow/3.4.0/ 🛠 Release Notes: https://airflow.apache.org/docs/apache-airflow/3.4.0/release_notes.html 🐳 Docker Image: \"docker pull apache/airflow:3.4.0\" 🚏 Constraints: https://github.com/apache/a…",
+   "source_url": "https://github.com/apache/airflow/releases/tag/3.4.0",
+   "page_url": "https://www.firmwarely.com/devices/airflow/"
+  },
+  "neo4j": {
+   "id": "neo4j",
+   "brand": "Neo4j",
+   "model": "Graph database",
+   "category": "A",
+   "status": "update",
+   "version": "2026.10.2",
+   "previous": "2026.10.1",
+   "released": "2026-11-02",
+   "date_known": true,
+   "eol": false,
+   "notes": "2026.10.2",
+   "source_url": "https://github.com/neo4j/neo4j/releases/tag/2026.10.2",
+   "page_url": "https://www.firmwarely.com/devices/neo4j/"
+  },
+  "homeassistant-powercalc": {
+   "id": "homeassistant-powercalc",
+   "brand": "Homeassistant Powercalc",
+   "model": "Home Assistant Custom component",
+   "category": "S",
+   "status": "update",
+   "version": "1.27.0",
+   "previous": "1.26.1",
+   "released": "2026-11-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes: #​5100 Add integration discovery categories #​5102 Use DeviceInfo in the mock light platform 💡 Power profiles: 13 new power profiles,,,,,, and — See what's new #​5019 Read Dreame X40 settings from vacuum attributes #​5079 Add Zigbee2MQTT alias 9290012574 to Hue LCT010 #​5081 Add dreame dre…",
+   "source_url": "https://github.com/bramstroker/homeassistant-powercalc/releases/tag/v1.27.0",
+   "page_url": "https://www.firmwarely.com/devices/homeassistant-powercalc/"
   }
  }
 }
