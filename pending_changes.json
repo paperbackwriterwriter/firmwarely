@@ -616,6 +616,36 @@
    "notes": "Features: Adds Proforma Invoice creation from Sales Order, with quantity- or amount-based options, editable line descriptions, and email templates. The PDF reflects the proforma’s amounts and its share of order discounts and charges. (https://github.com/frappe/erpnext/pull/62152) Adds a _Group By I…",
    "source_url": "https://github.com/frappe/erpnext/releases/tag/v16.54.0",
    "page_url": "https://www.firmwarely.com/devices/erpnext/"
+  },
+  "ollama": {
+   "id": "ollama",
+   "brand": "Ollama",
+   "model": "Local LLM runner",
+   "category": "A",
+   "status": "update",
+   "version": "0.40.15",
+   "previous": "0.40.14",
+   "released": "2026-11-03",
+   "date_known": true,
+   "eol": false,
+   "notes": "MiMo V2.6: Xiaomi MiMo's mimo-v2.6, a 9B model built for code and agent workflows, is now supported in Ollama. sh ollama run mimo-v2.6 AutoTrust decision models: AutoTrust decision models read text and return choices, yes or no probabilities, and ratings for the questions you supply. The family inc…",
+   "source_url": "https://github.com/ollama/ollama/releases/tag/v0.40.15",
+   "page_url": "https://www.firmwarely.com/devices/ollama/"
+  },
+  "ipsw": {
+   "id": "ipsw",
+   "brand": "Ipsw",
+   "model": "IOS/macOS Research Swiss Army Knife",
+   "category": "M",
+   "status": "update",
+   "version": "3.1.743",
+   "previous": "3.1.742",
+   "released": "2026-11-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: Bug fixes: 9f467b82deaf2ad04b0754bffff6c843b59c7490: fix(dyld): normalize mixed cached section offsets before export (#​1393) () Dependency updates: 42d3de3646c981f6f86cb5f4dbe72ac4e0ad7f5e: chore(deps): bump deps () Documentation updates: 4b6fbd28e815e8ec3f5cbcd838c1ba436de5cf63: docs: …",
+   "source_url": "https://github.com/blacktop/ipsw/releases/tag/v3.1.743",
+   "page_url": "https://www.firmwarely.com/devices/ipsw/"
   }
  }
 }
