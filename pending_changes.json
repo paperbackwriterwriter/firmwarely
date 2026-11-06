@@ -736,6 +736,36 @@
    "notes": ":bug: Bug Fixes: 6a07ec2 - handle 2.x import edge cases that could stall the main process (commit) a13a208 - handle invalid punctuation in paths during 2.x import (commit) :arrow_lower_right: fixes issue #​8192 opened e213715 - treeFolderDuplicate fails during asset adoption (commit) 4c8f28d - file…",
    "source_url": "https://github.com/requarks/wiki/releases/tag/3.1.1",
    "page_url": "https://www.firmwarely.com/devices/wiki-js/"
+  },
+  "metube": {
+   "id": "metube",
+   "brand": "MeTube",
+   "model": "yt-dlp web UI",
+   "category": "A",
+   "status": "update",
+   "version": "2026.11.06",
+   "previous": "2026.11.01",
+   "released": "2026-11-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "Docker images have been built and pushed: Docker Hub: alexta69/metube:latest alexta69/metube:2026.11.06 GitHub Container Registry: ghcr.io/alexta69/metube:latest ghcr.io/alexta69/metube:2026.11.06 Changes: fix: keep the custom name prefix on playlist and channel downloads (closes #​1118) (4816469) …",
+   "source_url": "https://github.com/alexta69/metube/releases/tag/2026.11.06",
+   "page_url": "https://www.firmwarely.com/devices/metube/"
+  },
+  "onyx": {
+   "id": "onyx",
+   "brand": "Onyx",
+   "model": "AI platform",
+   "category": "A",
+   "status": "update",
+   "version": "5.1.0",
+   "previous": "5.0.3",
+   "released": "2026-11-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "See the assets to download this version and install.",
+   "source_url": "https://github.com/onyx-dot-app/onyx/releases/tag/v5.1.0",
+   "page_url": "https://www.firmwarely.com/devices/onyx/"
   }
  }
 }
