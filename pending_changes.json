@@ -676,6 +676,36 @@
    "notes": "Release version 9.18.0",
    "source_url": "https://github.com/kovidgoyal/calibre/releases/tag/v9.18.0",
    "page_url": "https://www.firmwarely.com/devices/calibre/"
+  },
+  "godoxy": {
+   "id": "godoxy",
+   "brand": "GoDoxy",
+   "model": "Reverse proxy and container manager",
+   "category": "R",
+   "status": "update",
+   "version": "0.33.0",
+   "previous": "0.32.4",
+   "released": "2026-11-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "Bug Fixes: Core/Build: Restore agent release binaries and container images for Linux amd64 and arm64. (73453ba8) Agent CI verifies its own dependency metadata before building. Core/Provider: Docker label routes inherit configured health-check and idlewatcher defaults. (20da17b) Explicit per-route h…",
+   "source_url": "https://github.com/yusing/godoxy/releases/tag/v0.33.0",
+   "page_url": "https://www.firmwarely.com/devices/godoxy/"
+  },
+  "voidauth": {
+   "id": "voidauth",
+   "brand": "VoidAuth",
+   "model": "Single sign-on server",
+   "category": "A",
+   "status": "update",
+   "version": "1.18.1",
+   "previous": "1.18.0",
+   "released": "2026-11-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Features 🚀: Add jpegPhoto Support to LDAP Fixes 🔧: Fix Possible Race Condition in Basic Auth Rate Limiting Fix potential docker client updates failure on container errors/missing Fix Issue with ProxyAuth Not Working for Some Schemas Fix ProxyAuth Max Session Always Blocking Auth Hea…",
+   "source_url": "https://github.com/voidauth/voidauth/releases/tag/v1.18.1",
+   "page_url": "https://www.firmwarely.com/devices/voidauth/"
   }
  }
 }
