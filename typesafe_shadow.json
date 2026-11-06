@@ -39582,6 +39582,42 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "zulip",
+   "version": "12.4",
+   "name": "Zulip Team chat",
+   "judged_at": "2026-11-06T15:24:05+00:00",
+   "notes_chars": 22,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.19,
+    "security_fix_plain": 0.21,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "tooljet",
+   "version": "3.20.256-lts",
+   "name": "ToolJet Low-code platform",
+   "judged_at": "2026-11-06T15:24:05+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.41,
+    "security_fix_plain": 0.21,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

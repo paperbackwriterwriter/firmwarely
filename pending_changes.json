@@ -211,6 +211,36 @@
    "notes": "4.6.6: (Full Changelog) Bugs fixed: Do not scroll back to a newly inserted cell after the user scrolls away in full windowing mode #​20387 () Keep an equals sign inside a query string value #​19621 () Do not write metadata from a form built for another cell #​20002 () Fix pasting cut files over fil…",
    "source_url": "https://github.com/jupyterlab/jupyterlab/releases/tag/v4.6.6",
    "page_url": "https://www.firmwarely.com/devices/jupyterlab/"
+  },
+  "zulip": {
+   "id": "zulip",
+   "brand": "Zulip",
+   "model": "Team chat",
+   "category": "A",
+   "status": "update",
+   "version": "12.4",
+   "previous": "12.3",
+   "released": "2026-11-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "Complete release notes",
+   "source_url": "https://github.com/zulip/zulip/releases/tag/12.4",
+   "page_url": "https://www.firmwarely.com/devices/zulip/"
+  },
+  "tooljet": {
+   "id": "tooljet",
+   "brand": "ToolJet",
+   "model": "Low-code platform",
+   "category": "A",
+   "status": "update",
+   "version": "3.20.256-lts",
+   "previous": "3.20.255-lts",
+   "released": "2026-11-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Fix: block edits to released app version from non-UI clients (LTS) Fix: stop entrypoint overriding user-set NODE_EXTRA_CA_CERTS (lts-3.16) Fix : MySQL idle connection resets Fix : Gemini plugin test connection issue Full Changelog: https://github.com/ToolJet/ToolJet/compare/v3.20.25…",
+   "source_url": "https://github.com/ToolJet/ToolJet/releases/tag/v3.20.256-lts",
+   "page_url": "https://www.firmwarely.com/devices/tooljet/"
   }
  }
 }
