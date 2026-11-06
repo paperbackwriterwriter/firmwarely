@@ -241,6 +241,51 @@
    "notes": "What's Changed: Fix: block edits to released app version from non-UI clients (LTS) Fix: stop entrypoint overriding user-set NODE_EXTRA_CA_CERTS (lts-3.16) Fix : MySQL idle connection resets Fix : Gemini plugin test connection issue Full Changelog: https://github.com/ToolJet/ToolJet/compare/v3.20.25…",
    "source_url": "https://github.com/ToolJet/ToolJet/releases/tag/v3.20.256-lts",
    "page_url": "https://www.firmwarely.com/devices/tooljet/"
+  },
+  "lobe-chat": {
+   "id": "lobe-chat",
+   "brand": "LobeHub",
+   "model": "Lobe Chat",
+   "category": "A",
+   "status": "update",
+   "version": "2.3.2",
+   "previous": "2.3.1",
+   "released": "2026-11-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release v2.3.2: From PR #​22430: https://github.com/lobehub/lobehub/pull/22430 Summary: Contribution source: AI-assisted 🚀 LobeHub Release (20261106): Release Date: November 6, 2026 Since v2.3.1: 127 merged PRs · 11 contributors Everyday work gets easier to organize and easier to undo: tasks gain l…",
+   "source_url": "https://github.com/lobehub/lobehub/releases/tag/v2.3.2",
+   "page_url": "https://www.firmwarely.com/devices/lobe-chat/"
+  },
+  "metabase": {
+   "id": "metabase",
+   "brand": "Metabase",
+   "model": "Business intelligence",
+   "category": "A",
+   "status": "update",
+   "version": "65.3",
+   "previous": "65.2",
+   "released": "2026-11-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "Upgrading: Before you upgrade, back up your Metabase application database! Check out our upgrading instructions. Get the most out of Metabase. Learn more about advanced features, managed cloud, and first-class support. Metabase Open Source: Docker image: metabase/metabase:v0.65.3.x JAR download: ht…",
+   "source_url": "https://github.com/metabase/metabase/releases/tag/v0.65.3",
+   "page_url": "https://www.firmwarely.com/devices/metabase/"
+  },
+  "kiosk-satellite": {
+   "id": "kiosk-satellite",
+   "brand": "Kiosk Satellite",
+   "model": "Turn any Android device",
+   "category": "S",
+   "status": "update",
+   "version": "2026.11.9",
+   "previous": "2026.11.8",
+   "released": "2026-11-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's new in Kiosk Satellite 2026.11.9: This release shows when a plugin has a newer release and gives video calls more room for the picture. It also fixes plugin overlays that disappeared after a restart, streamed answers that started over, popups in the start URL and several crashes. New Feature…",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.9",
+   "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   }
  }
 }
