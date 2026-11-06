@@ -571,6 +571,36 @@
    "notes": "Improvements: Rook v1.21.2 is a patch release limited in scope and focusing on feature additions and bug fixes to the Ceph operator. operator: Disable msgr1 on osd, mgr, and mds when msgr2 is required (#​18557,) osd: Filter RBD devices from LVM scans on host-based OSDs (#​18413,) osd: Don't wipe me…",
    "source_url": "https://github.com/rook/rook/releases/tag/v1.21.2",
    "page_url": "https://www.firmwarely.com/devices/rook/"
+  },
+  "bazzite": {
+   "id": "bazzite",
+   "brand": "Universal Blue",
+   "model": "Bazzite gaming OS",
+   "category": "C",
+   "status": "update",
+   "version": "45.20261105",
+   "previous": "45.20261104",
+   "released": "2026-11-05",
+   "date_known": true,
+   "eol": false,
+   "notes": "This is an automatically generated changelog for release 45.20261105. From previous stable version 45.20261104 there have been the following changes. One package per new version shown. Major packages: | Name | Version | | --- | --- | | Kernel | 7.2.15-ogc1.1 | | Kernel (Nvidia LTS) | 6.18.60-ogc1.1…",
+   "source_url": "https://github.com/ublue-os/bazzite/releases/tag/45.20261105",
+   "page_url": "https://www.firmwarely.com/devices/bazzite/"
+  },
+  "m5unified": {
+   "id": "m5unified",
+   "brand": "M5Stack",
+   "model": "M5Unified library",
+   "category": "M",
+   "status": "update",
+   "version": "0.3.0",
+   "previous": "0.2.29",
+   "released": "2026-11-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "Before you update: Update M5GFX to 0.3.0 together with M5Unified 0.3.0, and rebuild everything (several functions changed from void to bool). Absolute setRotation(n) calls move by one step on many boards (see the first Breaking change). BOARD_ID, cfg.fallback_board and boards that are not M5Stack p…",
+   "source_url": "https://github.com/m5stack/M5Unified/releases/tag/0.3.0",
+   "page_url": "https://www.firmwarely.com/devices/m5unified/"
   }
  }
 }
