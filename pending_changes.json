@@ -38,13 +38,13 @@
    "model": "Remote browser isolation",
    "category": "R",
    "status": "update",
-   "version": "20.8.1",
+   "version": "20.8.2",
    "previous": "20.8.0",
    "released": "2026-11-06",
    "date_known": true,
    "eol": false,
-   "notes": "Tested BrowserBox release. Install: macOS and Linux bash curl -fsSL https://browserbox.io/install.sh | bash Windows (PowerShell as Administrator) powershell irm https://browserbox.io/install.ps1 | iex Update an existing installation: macOS and Linux bash bbx update v20.8.1 Windows (updates to the l…",
-   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.8.1",
+   "notes": "Tested BrowserBox release. Install: macOS and Linux bash curl -fsSL https://browserbox.io/install.sh | bash Windows (PowerShell as Administrator) powershell irm https://browserbox.io/install.ps1 | iex Update an existing installation: macOS and Linux bash bbx update v20.8.2 Windows (updates to the l…",
+   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.8.2",
    "page_url": "https://www.firmwarely.com/devices/browserbox/"
   },
   "skipper": {
@@ -361,6 +361,21 @@
    "notes": "3.9.2 - It’s okay to let go of a lock that already let go of you: Released on November 06, 2026 Enhancements ➕➕ Reduce deployment writes from queue polling Bug Fixes 🐞 Render list-of-lists table artifacts in ArtifactDataView by in #​23359 Preserve datetime instants when changing timezone Show an in…",
    "source_url": "https://github.com/PrefectHQ/prefect/releases/tag/3.9.2",
    "page_url": "https://www.firmwarely.com/devices/prefect/"
+  },
+  "databasus": {
+   "id": "databasus",
+   "brand": "Databasus",
+   "model": "PostgreSQL backup tool",
+   "category": "N",
+   "status": "update",
+   "version": "3.66.0",
+   "previous": "3.65.0",
+   "released": "2026-11-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: [3.66.0] - 2026-11-06: ✨ Features: docs: Update docs (322a20d) verification: Expose failure diagnostics (4833284) ci: Verify releases natively on amd64 and arm64 (f74fde4) quality: Enforce Python linting, formatting and types (2e96524) e2e: Verify physical restore commands through the br…",
+   "source_url": "https://github.com/databasus/databasus/releases/tag/v3.66.0",
+   "page_url": "https://www.firmwarely.com/devices/databasus/"
   }
  }
 }
