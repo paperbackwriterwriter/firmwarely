@@ -8,13 +8,13 @@
    "model": "DNS blocklists",
    "category": "R",
    "status": "update",
-   "version": "37522026.310.40839",
+   "version": "37522026.310.61937",
    "previous": "37522026.310.4070",
    "released": "2026-11-06",
    "date_known": true,
    "eol": false,
-   "notes": "#​12206 #​12204",
-   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.310.40839",
+   "notes": "#​12215 #​12214 #​12212 #​12211 #​12210 #​12209 #​12208 #​12207",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.310.61937",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   },
   "bambuddy": {
@@ -68,13 +68,13 @@
    "model": "Scripts and workflows",
    "category": "A",
    "status": "update",
-   "version": "1.864.0",
+   "version": "1.864.1",
    "previous": "1.862.0",
    "released": "2026-11-06",
    "date_known": true,
    "eol": false,
-   "notes": "1.864.0 (2026-11-06): Features: let admins discard another user's draft from the draft badge (#​12274) (35cad95) track failed job rates per worker (24h, last 100, lifetime) (#​12275) (caf0d67) Bug Fixes: apply preserve_step_tags to steps of untagged subflows (#​12278) (2516d3f) undo SMTP dot-stuffi…",
-   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.864.0",
+   "notes": "1.864.1 (2026-11-06): Bug Fixes: install ansible python deps for the python ansible-playbook runs on (#​12283) (728b3dd) --- This PR was generated with Release Please. See documentation.",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.864.1",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
   },
   "pritunl": {
@@ -316,6 +316,21 @@
    "notes": "What's Changed: fix(mqtt): ignore empty or null payloads on custom topics instead of storing 0 feat(device): flow-sensor category with the m³/h and m³/s units Restart external integrations after a backup restored on a new machine fix(zigbee2mqtt): show Zigbee2mqtt running only once it answers, and …",
    "source_url": "https://github.com/GladysAssistant/Gladys/releases/tag/v5.3.2",
    "page_url": "https://www.firmwarely.com/devices/gladys/"
+  },
+  "ani-rss": {
+   "id": "ani-rss",
+   "brand": "ANi-RSS",
+   "model": "Anime RSS downloader",
+   "category": "A",
+   "status": "update",
+   "version": "3.2.56",
+   "previous": "3.2.55",
+   "released": "2026-11-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "feat: 新增自动偏移类型, 可跟随 Bangumi 自动偏移",
+   "source_url": "https://github.com/wushuo894/ani-rss/releases/tag/v3.2.56",
+   "page_url": "https://www.firmwarely.com/devices/ani-rss/"
   }
  }
 }
