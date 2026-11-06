@@ -233,13 +233,13 @@
    "model": "DNS blocklists",
    "category": "R",
    "status": "update",
-   "version": "37522026.309.62190",
+   "version": "37522026.310.4070",
    "previous": "37522026.308.62110",
-   "released": "2026-11-05",
+   "released": "2026-11-06",
    "date_known": true,
    "eol": false,
-   "notes": "#​12199 #​12198 #​12194 #​12193",
-   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.309.62190",
+   "notes": "#​12202 #​12201 #​12200 #​12196",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.310.4070",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   },
   "openvas-scanner": {
@@ -601,6 +601,21 @@
    "notes": "Before you update: Update M5GFX to 0.3.0 together with M5Unified 0.3.0, and rebuild everything (several functions changed from void to bool). Absolute setRotation(n) calls move by one step on many boards (see the first Breaking change). BOARD_ID, cfg.fallback_board and boards that are not M5Stack p…",
    "source_url": "https://github.com/m5stack/M5Unified/releases/tag/0.3.0",
    "page_url": "https://www.firmwarely.com/devices/m5unified/"
+  },
+  "erpnext": {
+   "id": "erpnext",
+   "brand": "Frappe",
+   "model": "ERPNext",
+   "category": "A",
+   "status": "update",
+   "version": "16.54.0",
+   "previous": "16.53.0",
+   "released": "2026-11-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "Features: Adds Proforma Invoice creation from Sales Order, with quantity- or amount-based options, editable line descriptions, and email templates. The PDF reflects the proforma’s amounts and its share of order discounts and charges. (https://github.com/frappe/erpnext/pull/62152) Adds a _Group By I…",
+   "source_url": "https://github.com/frappe/erpnext/releases/tag/v16.54.0",
+   "page_url": "https://www.firmwarely.com/devices/erpnext/"
   }
  }
 }
