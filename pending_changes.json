@@ -61,6 +61,21 @@
    "notes": "Changes: Add shared OpenID discovery cache for JWT and introspection (#​4400) Introduce an opt-in, process-wide OpenID discovery cache shared by jwtValidation and all eight oauthTokenintrospection filters. Disabled callers continue to fetch discovery on every filter creation, bypassing the cache an…",
    "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.70",
    "page_url": "https://www.firmwarely.com/devices/skipper/"
+  },
+  "windmill": {
+   "id": "windmill",
+   "brand": "Windmill",
+   "model": "Scripts and workflows",
+   "category": "A",
+   "status": "update",
+   "version": "1.863.0",
+   "previous": "1.862.0",
+   "released": "2026-11-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.863.0 (2026-11-06): Features: add a run capability to workspace roles (#​12225) (497245b) add DeepSeek as a web search backend for AI chat (#​12242) (afc6e9d) add max iterations and max duration bounds to while loops (#​12245) (71beff7) admit concurrency-limited jobs in order by default, per tag …",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.863.0",
+   "page_url": "https://www.firmwarely.com/devices/windmill/"
   }
  }
 }
