@@ -346,6 +346,21 @@
    "notes": "Firmware 2.2.1(7) supports OpenSprinkler v3 (v3.0-3.4), v4, and OSPi/Linux. IMPORTANT: Export your configuration before updating. On OpenSprinkler v3/v4 already running 2.2.1(6), use One-Click Firmware Update. For older firmware, use Manual Firmware Upload. See the firmware update instructions for …",
    "source_url": "https://github.com/OpenSprinkler/OpenSprinkler-Firmware/releases/tag/221(7)",
    "page_url": "https://www.firmwarely.com/devices/opensprinkler-firmware/"
+  },
+  "prefect": {
+   "id": "prefect",
+   "brand": "Prefect",
+   "model": "Workflow orchestration",
+   "category": "A",
+   "status": "update",
+   "version": "3.9.2",
+   "previous": "3.9.1",
+   "released": "2026-11-06",
+   "date_known": true,
+   "eol": false,
+   "notes": "3.9.2 - It’s okay to let go of a lock that already let go of you: Released on November 06, 2026 Enhancements ➕➕ Reduce deployment writes from queue polling Bug Fixes 🐞 Render list-of-lists table artifacts in ArtifactDataView by in #​23359 Preserve datetime instants when changing timezone Show an in…",
+   "source_url": "https://github.com/PrefectHQ/prefect/releases/tag/3.9.2",
+   "page_url": "https://www.firmwarely.com/devices/prefect/"
   }
  }
 }
