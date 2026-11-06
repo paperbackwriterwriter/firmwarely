@@ -39474,6 +39474,114 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "skipper",
+   "version": "0.28.71",
+   "name": "Skipper HTTP router and reverse proxy",
+   "judged_at": "2026-11-06T14:33:23+00:00",
+   "notes_chars": 203,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "home-assistant-os",
+   "version": "18.5",
+   "name": "Home Assistant Operating System (Green / Yellow)",
+   "judged_at": "2026-11-06T14:33:23+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.9,
+    "security_fix_plain": 0.7,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "home-assistant-supervisor",
+   "version": "2026.11.0",
+   "name": "Home Assistant Supervisor",
+   "judged_at": "2026-11-06T14:33:24+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.11,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "owncloud-ocis",
+   "version": "8.2.3",
+   "name": "ownCloud Infinite Scale",
+   "judged_at": "2026-11-06T14:33:24+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.44,
+    "security_fix_plain": 0.59,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "bcnc",
+   "version": "1.0.0",
+   "name": "bCNC GRBL CNC sender",
+   "judged_at": "2026-11-06T14:33:24+00:00",
+   "notes_chars": 5,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "jupyterlab",
+   "version": "4.6.6",
+   "name": "Jupyter JupyterLab",
+   "judged_at": "2026-11-06T14:33:24+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

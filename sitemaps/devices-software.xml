@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.firmwarely.com/devices/ubiquiti-unifi-protect-application/</loc><lastmod>2026-11-02</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ubiquiti-unifi-network-application/</loc><lastmod>2026-10-30</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/home-assistant-os/</loc><lastmod>2026-10-27</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/home-assistant-os/</loc><lastmod>2026-11-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/pi-hole/</loc><lastmod>2026-10-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/adguard-home/</loc><lastmod>2026-11-03</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/tailscale/</loc><lastmod>2026-11-03</lastmod></url>
@@ -117,7 +117,7 @@
   <url><loc>https://www.firmwarely.com/devices/casaos/</loc><lastmod>2024-12-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/umbrel/</loc><lastmod>2026-11-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/yunohost/</loc><lastmod>2026-09-17</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/home-assistant-supervisor/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/home-assistant-supervisor/</loc><lastmod>2026-11-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/zwave-js-ui/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/node-zwave-js/</loc><lastmod>2026-11-04</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/node-red/</loc><lastmod>2026-10-21</lastmod></url>
@@ -210,7 +210,7 @@
   <url><loc>https://www.firmwarely.com/devices/juicefs/</loc><lastmod>2026-10-22</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/rook/</loc><lastmod>2026-11-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/pgbackrest/</loc><lastmod>2026-10-18</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/owncloud-ocis/</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/owncloud-ocis/</loc><lastmod>2026-11-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/garage-s3/</loc><lastmod>2026-10-24</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/deconz-rest/</loc><lastmod>2026-07-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/thingsboard/</loc><lastmod>2026-10-30</lastmod></url>
@@ -347,7 +347,7 @@
   <url><loc>https://www.firmwarely.com/devices/code-server/</loc><lastmod>2026-11-04</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/coder/</loc><lastmod>2026-11-03</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/jupyterhub/</loc><lastmod>2026-11-05</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/jupyterlab/</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/jupyterlab/</loc><lastmod>2026-11-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/n8n/</loc><lastmod>2026-11-04</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/activepieces/</loc><lastmod>2026-10-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/windmill/</loc><lastmod>2026-11-06</lastmod></url>
