@@ -16,6 +16,66 @@
    "notes": "Security fixes (RADIUS, reverse DNS authentication), stability and performance fixes, -s renamed to -B for SNI break ! Fix: RADIUS authentication: the reply digest copied the shared secret right after the received bytes, so a reply of 4100 bytes with a secret of 17 or more characters wrote up to 47…",
    "source_url": "https://github.com/3proxy/3proxy/releases/tag/1.0.3",
    "page_url": "https://www.firmwarely.com/devices/3proxy/"
+  },
+  "etherpad": {
+   "id": "etherpad",
+   "brand": "Etherpad",
+   "model": "Collaborative editor",
+   "category": "A",
+   "status": "critical",
+   "version": "3.3.16",
+   "previous": "3.3.15",
+   "released": "2026-11-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "3.3.16 is a security release. It fixes a race in the collaboration socket that could expose and write to pads the user was not allowed to open, and picks up the ueberDB MSSQL fix. Upgrade as soon as you can. Security: Collaboration — every socket message now stays bound to the pad it was authorized…",
+   "source_url": "https://github.com/ether/etherpad/releases/tag/v3.3.16",
+   "page_url": "https://www.firmwarely.com/devices/etherpad/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.311.35976",
+   "previous": "37522026.311.21054",
+   "released": "2026-11-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "37522026.311.35976 37522026.311.35976",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.311.35976",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "movie-data-capture": {
+   "id": "movie-data-capture",
+   "brand": "Movie Data Capture",
+   "model": "Local movie organizer",
+   "category": "A",
+   "status": "update",
+   "version": "8.2.3",
+   "previous": "8.2.2",
+   "released": "2026-11-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "View release notes 查看发布日志",
+   "source_url": "https://github.com/mvdctop/Movie_Data_Capture/releases/tag/8.2.3",
+   "page_url": "https://www.firmwarely.com/devices/movie-data-capture/"
+  },
+  "browserbox": {
+   "id": "browserbox",
+   "brand": "BrowserBox",
+   "model": "Remote browser isolation",
+   "category": "R",
+   "status": "update",
+   "version": "20.8.4",
+   "previous": "20.8.3",
+   "released": "2026-11-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "Tested BrowserBox release. Install: macOS and Linux bash curl -fsSL https://browserbox.io/install.sh | bash Windows (PowerShell as Administrator) powershell irm https://browserbox.io/install.ps1 | iex Update an existing installation: macOS and Linux bash bbx update v20.8.4 Windows (updates to the l…",
+   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.8.4",
+   "page_url": "https://www.firmwarely.com/devices/browserbox/"
   }
  }
 }

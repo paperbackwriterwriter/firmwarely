@@ -40158,6 +40158,78 @@
     "security_fix_plain": 0.9,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "etherpad",
+   "version": "3.3.16",
+   "name": "Etherpad Collaborative editor",
+   "judged_at": "2026-11-07T10:27:49+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.99,
+    "security_fix_plain": 0.98,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.311.35976",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-11-07T10:27:50+00:00",
+   "notes_chars": 37,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "movie-data-capture",
+   "version": "8.2.3",
+   "name": "Movie Data Capture Local movie organizer",
+   "judged_at": "2026-11-07T10:27:50+00:00",
+   "notes_chars": 25,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "browserbox",
+   "version": "20.8.4",
+   "name": "BrowserBox Remote browser isolation",
+   "judged_at": "2026-11-07T10:27:50+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
