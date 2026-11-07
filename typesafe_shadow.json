@@ -40248,6 +40248,42 @@
     "security_fix_plain": 0.69,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "evcc",
+   "version": "0.318.3",
+   "name": "evcc EV charge controller",
+   "judged_at": "2026-11-07T13:50:30+00:00",
+   "notes_chars": 7,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "homelable",
+   "version": "3.7.0",
+   "name": "Homelable Homelab infrastructure visualizer",
+   "judged_at": "2026-11-07T13:50:30+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

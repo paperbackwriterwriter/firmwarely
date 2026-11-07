@@ -91,6 +91,36 @@
    "notes": "Improvements Added CSRF protection for session-authenticated API requests. Passkey authentication now uses explicit trusted origins. Updated authentication dependencies and bundled Shoutrrr to 0.23.0. Fixes Task progress and completion updates now stay synchronized across views without exhausting b…",
    "source_url": "https://github.com/nicotsx/zerobyte/releases/tag/v0.44.1",
    "page_url": "https://www.firmwarely.com/devices/zerobyte/"
+  },
+  "evcc": {
+   "id": "evcc",
+   "brand": "evcc",
+   "model": "EV charge controller",
+   "category": "S",
+   "status": "update",
+   "version": "0.318.3",
+   "previous": "0.318.2",
+   "released": "2026-11-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "0.318.3",
+   "source_url": "https://github.com/evcc-io/evcc/releases/tag/0.318.3",
+   "page_url": "https://www.firmwarely.com/devices/evcc/"
+  },
+  "homelable": {
+   "id": "homelable",
+   "brand": "Homelable",
+   "model": "Homelab infrastructure visualizer",
+   "category": "S",
+   "status": "update",
+   "version": "3.7.0",
+   "previous": "3.6.0",
+   "released": "2026-11-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "Homelable 3.7.0: Hello Homelablers !! First of all, Thank you to all users who share their needs, concerns or ideas, it’s a real driving force behind Homelable’s growth and improvement! As you may have noticed, the pace of releases has slowed down, and that’s because of some good news: I’m a dad ag…",
+   "source_url": "https://github.com/Pouzor/homelable/releases/tag/v3.7.0",
+   "page_url": "https://www.firmwarely.com/devices/homelable/"
   }
  }
 }
