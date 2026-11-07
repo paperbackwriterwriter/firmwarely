@@ -40356,6 +40356,42 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "glances",
+   "version": "4.5.9",
+   "name": "Glances System monitor",
+   "judged_at": "2026-11-07T17:45:51+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.84,
+    "security_fix_plain": 0.79,
+    "end_of_life": 0.57
+   }
+  },
+  {
+   "id": "esp32-iphone-agent",
+   "version": "1.0.2",
+   "name": "ESP32 iPhone Agent AI iPhone control over ESP32",
+   "judged_at": "2026-11-07T17:45:51+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

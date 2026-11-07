@@ -166,6 +166,36 @@
    "notes": "This major release of Reticulum brings significant improvements to resource consumption, performance, stability and resilience, especially for constrained devices and nodes. Memory & Performance Improvements A new, SQLite based storage backend has been implemented, and is now the default. All legac…",
    "source_url": "https://github.com/markqvist/Reticulum/releases/tag/1.6.0",
    "page_url": "https://www.firmwarely.com/devices/reticulum/"
+  },
+  "glances": {
+   "id": "glances",
+   "brand": "Glances",
+   "model": "System monitor",
+   "category": "A",
+   "status": "update",
+   "version": "4.5.9",
+   "previous": "4.5.8",
+   "released": "2026-11-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "Cyber: Replace python-jose (with CVE) by PyJWT Update all dependencies This version will be the last one for Glances 4.x. You can test Glances 5.0.0 beta with: python3 -m venv ~/.venv-glances5 source ~/.venv-glances5/bin/activate pip install --pre --index-url https://test.pypi.org/simple/ \\ --extra…",
+   "source_url": "https://github.com/nicolargo/glances/releases/tag/v4.5.9",
+   "page_url": "https://www.firmwarely.com/devices/glances/"
+  },
+  "esp32-iphone-agent": {
+   "id": "esp32-iphone-agent",
+   "brand": "ESP32 iPhone Agent",
+   "model": "AI iPhone control over ESP32",
+   "category": "M",
+   "status": "update",
+   "version": "1.0.2",
+   "previous": "1.0.0",
+   "released": "2026-11-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "App 1.0.2 (TestFlight build 10) and board firmware v0.2.4 (TestFlight channel). Tested end to end on Duolingo lessons on a real iPhone. Get the app: TestFlight Flash or update the board: handsy.tech/install?build=testflight, or over Wi-Fi from the app Full changelog: handsy.tech/docs/changelog What…",
+   "source_url": "https://github.com/onehumanbeing/esp32-iphone-agent/releases/tag/v0.2.4",
+   "page_url": "https://www.firmwarely.com/devices/esp32-iphone-agent/"
   }
  }
 }
