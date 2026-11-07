@@ -38,13 +38,13 @@
    "model": "DNS blocklists",
    "category": "R",
    "status": "update",
-   "version": "37522026.311.59757",
+   "version": "37522026.311.76312",
    "previous": "37522026.311.21054",
    "released": "2026-11-07",
    "date_known": true,
    "eol": false,
-   "notes": "#​12231 #​12230 #​12228 #​12223",
-   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.311.59757",
+   "notes": "#​12232 #​12225 #​12224 #​12222 #​12197",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.311.76312",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   },
   "movie-data-capture": {
@@ -256,6 +256,21 @@
    "notes": "Added: Added comment to the AccountBalance database schema as a preparation for notes in the account balances Added the discovery endpoints of OAuth 2.1 to the server of the Model Context Protocol (MCP) (experimental) Changed: Improved the _Storybook_ stories of the accounts table component Improve…",
    "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.99.0",
    "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
+  },
+  "octelium": {
+   "id": "octelium",
+   "brand": "Octelium",
+   "model": "Zero trust access platform",
+   "category": "R",
+   "status": "update",
+   "version": "0.50.0",
+   "previous": "0.49.0",
+   "released": "2026-11-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "You can upgrade an already running Cluster via the command octops upgrade as shown here. You can read the full changelog here. Features: An improved design for the web Portal. Introducing the --type flag for the octelium get service command which filters Services by type (e.g. octelium get svc --ty…",
+   "source_url": "https://github.com/octelium/octelium/releases/tag/v0.50.0",
+   "page_url": "https://www.firmwarely.com/devices/octelium/"
   }
  }
 }
