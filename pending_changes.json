@@ -38,13 +38,13 @@
    "model": "DNS blocklists",
    "category": "R",
    "status": "update",
-   "version": "37522026.311.35976",
+   "version": "37522026.311.59757",
    "previous": "37522026.311.21054",
    "released": "2026-11-07",
    "date_known": true,
    "eol": false,
-   "notes": "37522026.311.35976 37522026.311.35976",
-   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.311.35976",
+   "notes": "#​12231 #​12230 #​12228 #​12223",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.311.59757",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   },
   "movie-data-capture": {
@@ -151,6 +151,21 @@
    "notes": "Fixes: Fixed issue with release widget when specifying repositories with include-prereleases (thanks) Fixed the search widget preventing shortcuts including the S key from working (thanks) Fixed markets chart rendering when all history values are 0 (thanks) Fixed the \"SHOW MORE\" arrow icon when usi…",
    "source_url": "https://github.com/glanceapp/glance/releases/tag/v0.8.8",
    "page_url": "https://www.firmwarely.com/devices/glance/"
+  },
+  "reticulum": {
+   "id": "reticulum",
+   "brand": "Reticulum",
+   "model": "Cryptographic network stack",
+   "category": "M",
+   "status": "update",
+   "version": "1.6.0",
+   "previous": "1.5.5",
+   "released": "2026-11-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "This major release of Reticulum brings significant improvements to resource consumption, performance, stability and resilience, especially for constrained devices and nodes. Memory & Performance Improvements A new, SQLite based storage backend has been implemented, and is now the default. All legac…",
+   "source_url": "https://github.com/markqvist/Reticulum/releases/tag/1.6.0",
+   "page_url": "https://www.firmwarely.com/devices/reticulum/"
   }
  }
 }
