@@ -226,6 +226,21 @@
    "notes": "1.34.0 (2026-11-07): Features: application: add rolling 24-hour session counts (1b74fd3) application: show 24-hour session counts in sidebar (42010a0) artifacts: add sandboxed HTML preview (135bdd9) artifacts: add workspace artifact API with audit logging (2f01c48) artifacts: add workspace artifact…",
    "source_url": "https://github.com/msgbyte/tianji/releases/tag/v1.34.0",
    "page_url": "https://www.firmwarely.com/devices/tianji/"
+  },
+  "local-deep-research": {
+   "id": "local-deep-research",
+   "brand": "Local Deep Research",
+   "model": "AI research assistant",
+   "category": "A",
+   "status": "update",
+   "version": "2.0.0",
+   "previous": "1.10.7",
+   "released": "2026-11-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "Complete release notes: Download the full text. Back up before upgrading. Verify an offline backup of the complete data directory and any separately configured document or vector storage. If the upgrade fails, stop the application and preserve the data directory and your original backup. Do not del…",
+   "source_url": "https://github.com/LearningCircuit/local-deep-research/releases/tag/v2.0.0",
+   "page_url": "https://www.firmwarely.com/devices/local-deep-research/"
   }
  }
 }
