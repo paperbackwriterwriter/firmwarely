@@ -121,6 +121,36 @@
    "notes": "Homelable 3.7.0: Hello Homelablers !! First of all, Thank you to all users who share their needs, concerns or ideas, it’s a real driving force behind Homelable’s growth and improvement! As you may have noticed, the pace of releases has slowed down, and that’s because of some good news: I’m a dad ag…",
    "source_url": "https://github.com/Pouzor/homelable/releases/tag/v3.7.0",
    "page_url": "https://www.firmwarely.com/devices/homelable/"
+  },
+  "openmqttgateway": {
+   "id": "openmqttgateway",
+   "brand": "OpenMQTTGateway",
+   "model": "MQTT sensor gateway firmware",
+   "category": "S",
+   "status": "critical",
+   "version": "1.9.0",
+   "previous": "1.8.1",
+   "released": "2026-11-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: OpenMQTTGateway v1.9.0 moves to the Arduino ESP32 core 3.x, ships Theengs Decoder 2.5.0, and adds a large set of security hardening fixes. Updating is recommended for all users. Security: Theengs Decoder 2.5.0 fixes a security issue in BLE advertisement parsing, reported by Tom Wats…",
+   "source_url": "https://github.com/1technophile/OpenMQTTGateway/releases/tag/v1.9.0",
+   "page_url": "https://www.firmwarely.com/devices/openmqttgateway/"
+  },
+  "glance": {
+   "id": "glance",
+   "brand": "Glance",
+   "model": "Feed dashboard",
+   "category": "A",
+   "status": "update",
+   "version": "0.8.8",
+   "previous": "0.8.7",
+   "released": "2026-11-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "Fixes: Fixed issue with release widget when specifying repositories with include-prereleases (thanks) Fixed the search widget preventing shortcuts including the S key from working (thanks) Fixed markets chart rendering when all history values are 0 (thanks) Fixed the \"SHOW MORE\" arrow icon when usi…",
+   "source_url": "https://github.com/glanceapp/glance/releases/tag/v0.8.8",
+   "page_url": "https://www.firmwarely.com/devices/glance/"
   }
  }
 }
