@@ -211,6 +211,21 @@
    "notes": "Fix: Restrict status API to default ACL and remove echo endpoint Fix: Keep job log watch tokens from authorizing cluster broadcasts Dep: Bump pixl-server-user to v2.0.4 for improved username and email sanitization.",
    "source_url": "https://github.com/jhuckaby/Cronicle/releases/tag/v0.9.145",
    "page_url": "https://www.firmwarely.com/devices/cronicle/"
+  },
+  "tianji": {
+   "id": "tianji",
+   "brand": "Tianji",
+   "model": "Website analytics and uptime monitor",
+   "category": "A",
+   "status": "update",
+   "version": "1.34.0",
+   "previous": "1.33.14",
+   "released": "2026-11-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.34.0 (2026-11-07): Features: application: add rolling 24-hour session counts (1b74fd3) application: show 24-hour session counts in sidebar (42010a0) artifacts: add sandboxed HTML preview (135bdd9) artifacts: add workspace artifact API with audit logging (2f01c48) artifacts: add workspace artifact…",
+   "source_url": "https://github.com/msgbyte/tianji/releases/tag/v1.34.0",
+   "page_url": "https://www.firmwarely.com/devices/tianji/"
   }
  }
 }
