@@ -40014,6 +40014,60 @@
     "security_fix_plain": 0.94,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.311.21054",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-11-07T06:18:33+00:00",
+   "notes_chars": 37,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "cronicle",
+   "version": "0.9.144",
+   "name": "Cronicle Task scheduler",
+   "judged_at": "2026-11-07T06:18:33+00:00",
+   "notes_chars": 114,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.96,
+    "security_fix_plain": 0.94,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "jackett",
+   "version": "0.24.3025",
+   "name": "Jackett Torrent indexer proxy",
+   "judged_at": "2026-11-07T06:18:33+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

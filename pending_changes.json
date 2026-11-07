@@ -8,13 +8,13 @@
    "model": "DNS blocklists",
    "category": "R",
    "status": "update",
-   "version": "37522026.311.12179",
+   "version": "37522026.311.21054",
    "previous": "37522026.310.4070",
    "released": "2026-11-07",
    "date_known": true,
    "eol": false,
-   "notes": "#​12220 #​12218 #​12217",
-   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.311.12179",
+   "notes": "37522026.311.21054 37522026.311.21054",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.311.21054",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   },
   "bambuddy": {
@@ -473,14 +473,29 @@
    "model": "Task scheduler",
    "category": "A",
    "status": "update",
-   "version": "0.9.143",
+   "version": "0.9.144",
    "previous": "0.9.142",
    "released": "2026-11-07",
    "date_known": true,
    "eol": false,
-   "notes": "Fix: Restrict job update APIs to a strict property allowlist Fix: Honor existing HTTPS settings for cluster sockets Fix: Reject reused cluster authentication tokens Fix: Restrict queue directory access to the daemon account Fix: fetch_delete_job_log: Disallow path traversal.",
-   "source_url": "https://github.com/jhuckaby/Cronicle/releases/tag/v0.9.143",
+   "notes": "Fix: Fix cross-category information disclosure in get_history Fix: Prevent script parameter overrides in run_event",
+   "source_url": "https://github.com/jhuckaby/Cronicle/releases/tag/v0.9.144",
    "page_url": "https://www.firmwarely.com/devices/cronicle/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.3025",
+   "previous": "0.24.3021",
+   "released": "2026-11-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: 25d96f3ab2b8be78bc977848ee781322de3927d5 tamilmv: new TLD 663a93a41adc78b3934b7de2de4aa513a7314518 build(deps): bump github/codeql-action from 4.39.1 to 4.39.3 (#​17256) c24f14d7b79022312ca957151981341aac3474ae redangel: update login form detection. resolves #​17250 63dcb65a9e0fe82464f179…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.3025",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
