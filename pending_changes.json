@@ -38,13 +38,13 @@
    "model": "Remote browser isolation",
    "category": "R",
    "status": "update",
-   "version": "20.8.2",
+   "version": "20.8.3",
    "previous": "20.8.0",
-   "released": "2026-11-06",
+   "released": "2026-11-07",
    "date_known": true,
    "eol": false,
-   "notes": "Tested BrowserBox release. Install: macOS and Linux bash curl -fsSL https://browserbox.io/install.sh | bash Windows (PowerShell as Administrator) powershell irm https://browserbox.io/install.ps1 | iex Update an existing installation: macOS and Linux bash bbx update v20.8.2 Windows (updates to the l…",
-   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.8.2",
+   "notes": "Tested BrowserBox release. Install: macOS and Linux bash curl -fsSL https://browserbox.io/install.sh | bash Windows (PowerShell as Administrator) powershell irm https://browserbox.io/install.ps1 | iex Update an existing installation: macOS and Linux bash bbx update v20.8.3 Windows (updates to the l…",
+   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.8.3",
    "page_url": "https://www.firmwarely.com/devices/browserbox/"
   },
   "skipper": {
