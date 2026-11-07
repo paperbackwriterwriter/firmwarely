@@ -451,6 +451,21 @@
    "notes": "Just a small update to bump a bunch of underlying packages for security reasons. Officially contains _zero_ features! 👍 A bunch of PRs have been cooking so a real update should come eventually. What's Changed: Replace Sys::CpuAffinity with MCE::Util, use the MSYS2 package for Net::SSLeay () Update …",
    "source_url": "https://github.com/Difegue/LANraragi/releases/tag/v.0.9.82",
    "page_url": "https://www.firmwarely.com/devices/lanraragi/"
+  },
+  "lychee-photos": {
+   "id": "lychee-photos",
+   "brand": "Lychee",
+   "model": "Photo gallery",
+   "category": "A",
+   "status": "update",
+   "version": "7.12.2",
+   "previous": "7.12.1",
+   "released": "2026-11-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: 🏕 Features: fix(v8): cancel touchmove in the lightbox so Android flings fix(v8): size UMain with dvh so mobile toolbars do not hide content feat(webauthn): replace abandoned webauthn with web-webauthn-lib perf(insights): make every Insights query linear on large libraries feat(v8): …",
+   "source_url": "https://github.com/LycheeOrg/Lychee/releases/tag/v7.12.2",
+   "page_url": "https://www.firmwarely.com/devices/lychee-photos/"
   }
  }
 }
