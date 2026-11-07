@@ -40230,6 +40230,24 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "zerobyte",
+   "version": "0.44.1",
+   "name": "Zerobyte Backup automation",
+   "judged_at": "2026-11-07T12:09:22+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.4,
+    "security_fix_plain": 0.69,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

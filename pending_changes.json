@@ -76,6 +76,21 @@
    "notes": "Tested BrowserBox release. Install: macOS and Linux bash curl -fsSL https://browserbox.io/install.sh | bash Windows (PowerShell as Administrator) powershell irm https://browserbox.io/install.ps1 | iex Update an existing installation: macOS and Linux bash bbx update v20.8.4 Windows (updates to the l…",
    "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v20.8.4",
    "page_url": "https://www.firmwarely.com/devices/browserbox/"
+  },
+  "zerobyte": {
+   "id": "zerobyte",
+   "brand": "Zerobyte",
+   "model": "Backup automation",
+   "category": "N",
+   "status": "update",
+   "version": "0.44.1",
+   "previous": "0.44.0",
+   "released": "2026-11-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "Improvements Added CSRF protection for session-authenticated API requests. Passkey authentication now uses explicit trusted origins. Updated authentication dependencies and bundled Shoutrrr to 0.23.0. Fixes Task progress and completion updates now stay synchronized across views without exhausting b…",
+   "source_url": "https://github.com/nicotsx/zerobyte/releases/tag/v0.44.1",
+   "page_url": "https://www.firmwarely.com/devices/zerobyte/"
   }
  }
 }
