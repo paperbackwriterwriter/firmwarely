@@ -1,5 +1,21 @@
 {
- "since": null,
+ "since": "2026-11-07T09:47:12+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "3proxy": {
+   "id": "3proxy",
+   "brand": "3proxy",
+   "model": "Tiny proxy server",
+   "category": "R",
+   "status": "critical",
+   "version": "1.0.3",
+   "previous": "1.0.2",
+   "released": "2026-11-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "Security fixes (RADIUS, reverse DNS authentication), stability and performance fixes, -s renamed to -B for SNI break ! Fix: RADIUS authentication: the reply digest copied the shared secret right after the received bytes, so a reply of 4100 bytes with a secret of 17 or more characters wrote up to 47…",
+   "source_url": "https://github.com/3proxy/3proxy/releases/tag/1.0.3",
+   "page_url": "https://www.firmwarely.com/devices/3proxy/"
+  }
+ }
 }
