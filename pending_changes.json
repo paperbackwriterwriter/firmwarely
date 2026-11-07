@@ -241,6 +241,21 @@
    "notes": "Complete release notes: Download the full text. Back up before upgrading. Verify an offline backup of the complete data directory and any separately configured document or vector storage. If the upgrade fails, stop the application and preserve the data directory and your original backup. Do not del…",
    "source_url": "https://github.com/LearningCircuit/local-deep-research/releases/tag/v2.0.0",
    "page_url": "https://www.firmwarely.com/devices/local-deep-research/"
+  },
+  "ghostfolio": {
+   "id": "ghostfolio",
+   "brand": "Ghostfolio",
+   "model": "Wealth tracker",
+   "category": "A",
+   "status": "update",
+   "version": "3.99.0",
+   "previous": "3.98.0",
+   "released": "2026-11-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "Added: Added comment to the AccountBalance database schema as a preparation for notes in the account balances Added the discovery endpoints of OAuth 2.1 to the server of the Model Context Protocol (MCP) (experimental) Changed: Improved the _Storybook_ stories of the accounts table component Improve…",
+   "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.99.0",
+   "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
   }
  }
 }
