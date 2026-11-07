@@ -39942,6 +39942,42 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.311.12179",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-11-07T03:46:36+00:00",
+   "notes_chars": 23,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "lanraragi",
+   "version": "0.9.82",
+   "name": "LANraragi Manga archive reader",
+   "judged_at": "2026-11-07T03:46:36+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.3,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

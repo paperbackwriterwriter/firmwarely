@@ -8,13 +8,13 @@
    "model": "DNS blocklists",
    "category": "R",
    "status": "update",
-   "version": "37522026.310.61937",
+   "version": "37522026.311.12179",
    "previous": "37522026.310.4070",
-   "released": "2026-11-06",
+   "released": "2026-11-07",
    "date_known": true,
    "eol": false,
-   "notes": "#​12215 #​12214 #​12212 #​12211 #​12210 #​12209 #​12208 #​12207",
-   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.310.61937",
+   "notes": "#​12220 #​12218 #​12217",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.311.12179",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   },
   "bambuddy": {
@@ -436,6 +436,21 @@
    "notes": "Code v1.145.2 Changed: Update to Code 1.145.2",
    "source_url": "https://github.com/coder/code-server/releases/tag/v4.145.2",
    "page_url": "https://www.firmwarely.com/devices/code-server/"
+  },
+  "lanraragi": {
+   "id": "lanraragi",
+   "brand": "LANraragi",
+   "model": "Manga archive reader",
+   "category": "A",
+   "status": "critical",
+   "version": "0.9.82",
+   "previous": "0.9.81",
+   "released": "2026-11-07",
+   "date_known": true,
+   "eol": false,
+   "notes": "Just a small update to bump a bunch of underlying packages for security reasons. Officially contains _zero_ features! 👍 A bunch of PRs have been cooking so a real update should come eventually. What's Changed: Replace Sys::CpuAffinity with MCE::Util, use the MSYS2 package for Net::SSLeay () Update …",
+   "source_url": "https://github.com/Difegue/LANraragi/releases/tag/v.0.9.82",
+   "page_url": "https://www.firmwarely.com/devices/lanraragi/"
   }
  }
 }
