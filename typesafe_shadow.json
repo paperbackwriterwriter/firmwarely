@@ -40068,6 +40068,60 @@
     "security_fix_plain": 0.06,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "kiosk-satellite",
+   "version": "2026.11.11",
+   "name": "Kiosk Satellite Turn any Android device",
+   "judged_at": "2026-11-07T07:09:14+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "orcaslicer",
+   "version": "2.5.0",
+   "name": "OrcaSlicer Slicer software",
+   "judged_at": "2026-11-07T07:09:14+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "freescout",
+   "version": "1.8.250",
+   "name": "FreeScout Help desk",
+   "judged_at": "2026-11-07T07:09:14+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.92,
+    "security_fix_plain": 0.91,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
