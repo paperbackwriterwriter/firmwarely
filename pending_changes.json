@@ -31,6 +31,21 @@
    "notes": "What's Changed: Extended CONNECT. Per-connection classification; opt-in connect-tcp; opt-in connect-udp, including HTTP/3 request streams; WebTransport capsules on HTTP/1.1 and HTTP/2; terminate WebTransport on a pinned HTTP origin. UDP. SOCKS5 UDP ASSOCIATE until the control connection closes; ser…",
    "source_url": "https://github.com/justcoding121/titanium-web-proxy/releases/tag/v8.0.1",
    "page_url": "https://www.firmwarely.com/devices/titanium-web-proxy/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.312.35756",
+   "previous": "37522026.312.14230",
+   "released": "2026-11-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​12239",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.312.35756",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   }
  }
 }
