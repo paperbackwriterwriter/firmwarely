@@ -41022,6 +41022,24 @@
     "security_fix_plain": 0.04,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "seaweedfs",
+   "version": "4.53",
+   "name": "SeaweedFS Distributed file store",
+   "judged_at": "2026-11-08T18:45:53+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.42,
+    "security_fix_plain": 0.33,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

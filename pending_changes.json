@@ -256,6 +256,21 @@
    "notes": "Full Changelog: https://github.com/Smaug6739/Alexandrie/compare/v8.14.3...v8.14.4 What's Changed: fix: remove debug log from setAppColor function a4dc87a7888f70de6b267887092a468284082c7f fix(errors): new errors handling with correct 404 page 429e2b9b92163d1a60497c9ece1e81aa0c5dc623 fix: escape html…",
    "source_url": "https://github.com/Smaug6739/Alexandrie/releases/tag/v8.14.4",
    "page_url": "https://www.firmwarely.com/devices/alexandrie/"
+  },
+  "seaweedfs": {
+   "id": "seaweedfs",
+   "brand": "SeaweedFS",
+   "model": "Distributed file store",
+   "category": "N",
+   "status": "update",
+   "version": "4.53",
+   "previous": "4.52",
+   "released": "2026-11-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: fix(s3tables,s3vectors): bind DeleteNamespace and the vector bucket cleanup to the authorized records filer: allow renaming into a sibling that shares the name prefix compression: compress JSON uploads, and match file types by extension filer: reuse IsEqualOrUnder for the rename sub…",
+   "source_url": "https://github.com/seaweedfs/seaweedfs/releases/tag/4.53",
+   "page_url": "https://www.firmwarely.com/devices/seaweedfs/"
   }
  }
 }
