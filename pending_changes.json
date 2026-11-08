@@ -83,13 +83,13 @@
    "model": "LLM web interface",
    "category": "A",
    "status": "update",
-   "version": "0.13.1",
+   "version": "0.13.2",
    "previous": "0.13.0",
    "released": "2026-11-08",
    "date_known": true,
    "eol": false,
-   "notes": "Added: 🦾 Coding agents as models. On an Open Terminal that offers agents, coding agents such as Claude Code, Codex and Pi now appear in the model picker. You can chat with them or call them by voice, choose their reasoning effort and service tier, and approve their tool requests in the chat. Each c…",
-   "source_url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.1",
+   "notes": "Fixed: 🔓 Chat over plain HTTP. Opening Open WebUI over plain HTTP at a LAN or Docker address now loads new and existing chats instead of staying on a spinner with \"crypto.randomUUID is not a function\". #​33919 📝 Comments and Markdown editing over plain HTTP. Creating, replying to and editing commen…",
+   "source_url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.2",
    "page_url": "https://www.firmwarely.com/devices/open-webui/"
   },
   "tianji": {
