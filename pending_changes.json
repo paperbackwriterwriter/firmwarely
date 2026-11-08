@@ -301,6 +301,21 @@
    "notes": "Highlights: New dedicated and super pretty graphical AMS card thanks to. This does not replace the original so you'll need to switch over to it manually: New makerworld device tracking your makerworld activity if you setup by bambu cloud thanks to X2D filament switch device thanks to Many other com…",
    "source_url": "https://github.com/greghesp/ha-bambulab/releases/tag/v2.3.0",
    "page_url": "https://www.firmwarely.com/devices/ha-bambulab/"
+  },
+  "trilium": {
+   "id": "trilium",
+   "brand": "Trilium",
+   "model": "Personal knowledge base",
+   "category": "A",
+   "status": "update",
+   "version": "0.107.0",
+   "previous": "0.106.1",
+   "released": "2026-11-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "v0.107.0: [!NOTE] If you enjoyed this release, consider showing a token of appreciation by: Pressing the “Star” button on GitHub (top-right). Considering a one-time or recurrent donation to the lead developer via GitHub Sponsors or PayPal. [!TIP] For Linux users: Trilium is now available on Flathub…",
+   "source_url": "https://github.com/TriliumNext/Trilium/releases/tag/v0.107.0",
+   "page_url": "https://www.firmwarely.com/devices/trilium/"
   }
  }
 }
