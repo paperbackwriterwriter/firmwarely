@@ -40842,6 +40842,42 @@
     "security_fix_plain": 0.05,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "mailu",
+   "version": "2024.06.68",
+   "name": "Mailu Mail server",
+   "judged_at": "2026-11-08T13:34:15+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.94,
+    "security_fix_plain": 0.75,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "esp-homekit-devices",
+   "version": "12.19.1",
+   "name": "RavenSystem HomeKit firmware for ESP devices",
+   "judged_at": "2026-11-08T13:34:15+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
