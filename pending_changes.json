@@ -151,6 +151,36 @@
    "notes": "What's Changed: Features 🚀: Add an Apps section to the user home page OIDC App Logos are now Guessed Add Ability to Hide OIDC App From Home Page Fixes 🔧: Fix Light Theme Issue Fix Sharp Import Failure Sometimes Crashing App on Start Chores 🧹: Bump docker/login-action from 4.6.0 to 4.7.0 by in https…",
    "source_url": "https://github.com/voidauth/voidauth/releases/tag/v1.19.0",
    "page_url": "https://www.firmwarely.com/devices/voidauth/"
+  },
+  "verdaccio": {
+   "id": "verdaccio",
+   "brand": "Verdaccio",
+   "model": "npm registry",
+   "category": "A",
+   "status": "update",
+   "version": "7.1.0",
+   "previous": "7.0.2",
+   "released": "2026-11-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "Minor Changes: 62163c2: Update the/ modules to the next-9 npm dist-tag. Minor changes/config,/store,/tarball,/web: Add the experimental flags.tarballMetadata option, which lets the web UI show the README of the exact version being viewed and fills missing dist.fileCount/dist.unpackedSize from the t…",
+   "source_url": "https://github.com/verdaccio/verdaccio/releases/tag/v7.1.0",
+   "page_url": "https://www.firmwarely.com/devices/verdaccio/"
+  },
+  "activepieces": {
+   "id": "activepieces",
+   "brand": "Activepieces",
+   "model": "Workflow automation",
+   "category": "A",
+   "status": "update",
+   "version": "0.93.0",
+   "previous": "0.92.3-hotfix",
+   "released": "2026-11-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "fix(dev): dev-piece rebuild clears the cache without scanning every piece folder (#​17221) fix(engine): raise the disk-pressure threshold to 90% and the idle wi… (#​17232) fix(webhook): stop a failing Return Response from crashing the API process (#​17063), fix(web): locked add-project button in th…",
+   "source_url": "https://github.com/activepieces/activepieces/releases/tag/0.93.0",
+   "page_url": "https://www.firmwarely.com/devices/activepieces/"
   }
  }
 }
