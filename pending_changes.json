@@ -286,6 +286,21 @@
    "notes": "What's Changed: feat: fallback to worker version API in worker sync docs(backend): stop recommending .uuid() for projectId in CODE_QUALITY.md feat(agent-vault): inline access management in the Manage Access sheet fix(secrets): keep Overview folder row link inside its row in Safari fix(pki): disable…",
    "source_url": "https://github.com/Infisical/infisical/releases/tag/v0.167.7",
    "page_url": "https://www.firmwarely.com/devices/infisical/"
+  },
+  "ha-bambulab": {
+   "id": "ha-bambulab",
+   "brand": "ha-bambulab",
+   "model": "Bambu Lab Home Assistant integration",
+   "category": "S",
+   "status": "update",
+   "version": "2.3.0",
+   "previous": "2.2.26",
+   "released": "2026-11-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "Highlights: New dedicated and super pretty graphical AMS card thanks to. This does not replace the original so you'll need to switch over to it manually: New makerworld device tracking your makerworld activity if you setup by bambu cloud thanks to X2D filament switch device thanks to Many other com…",
+   "source_url": "https://github.com/greghesp/ha-bambulab/releases/tag/v2.3.0",
+   "page_url": "https://www.firmwarely.com/devices/ha-bambulab/"
   }
  }
 }
