@@ -271,6 +271,21 @@
    "notes": "What's Changed: fix(s3tables,s3vectors): bind DeleteNamespace and the vector bucket cleanup to the authorized records filer: allow renaming into a sibling that shares the name prefix compression: compress JSON uploads, and match file types by extension filer: reuse IsEqualOrUnder for the rename sub…",
    "source_url": "https://github.com/seaweedfs/seaweedfs/releases/tag/4.53",
    "page_url": "https://www.firmwarely.com/devices/seaweedfs/"
+  },
+  "infisical": {
+   "id": "infisical",
+   "brand": "Infisical",
+   "model": "Secrets manager",
+   "category": "A",
+   "status": "update",
+   "version": "0.167.7",
+   "previous": "0.167.6",
+   "released": "2026-11-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: feat: fallback to worker version API in worker sync docs(backend): stop recommending .uuid() for projectId in CODE_QUALITY.md feat(agent-vault): inline access management in the Manage Access sheet fix(secrets): keep Overview folder row link inside its row in Safari fix(pki): disable…",
+   "source_url": "https://github.com/Infisical/infisical/releases/tag/v0.167.7",
+   "page_url": "https://www.firmwarely.com/devices/infisical/"
   }
  }
 }
