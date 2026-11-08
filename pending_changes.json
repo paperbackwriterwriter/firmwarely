@@ -308,13 +308,13 @@
    "model": "Turn any Android device",
    "category": "S",
    "status": "update",
-   "version": "2026.11.12",
+   "version": "2026.11.13",
    "previous": "2026.11.11",
-   "released": "2026-11-07",
+   "released": "2026-11-08",
    "date_known": true,
    "eol": false,
-   "notes": "What's new in Kiosk Satellite 2026.11.12: This release makes taps on overlays drawn over the screensaver leave it up and adds a setting that brightens the screensaver after those taps. It also adds a ring volume for the intercom, moves Amazon's wake word engine users to vsWakeWord and fixes wake wo…",
-   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.12",
+   "notes": "What's new in Kiosk Satellite 2026.11.13: This release adds a Close overlays button to the ESPHome entities and restores dates in the Android language for languages Kiosk Satellite does not offer yet. Improvements: Close overlays ESPHome button. A new Close overlays button closes everything shown o…",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.13",
    "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   },
   "dolphin-emu": {
@@ -376,6 +376,21 @@
    "notes": ":sparkles: New Features: 7a1d2db - add showLastUpdated option to block-index (commit) 59afc48 - allow shared passkey domain for passkeys (commit) 79e9748 - code folding for content blocks + draw.io auto-fold and auto-open on create (commit) 6057474 - list active dictionary mappings in admin search …",
    "source_url": "https://github.com/requarks/wiki/releases/tag/3.2.0",
    "page_url": "https://www.firmwarely.com/devices/wiki-js/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.3030",
+   "previous": "0.24.3025",
+   "released": "2026-11-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: d3ff52379eb44ebd17a9f29188fed43690bac096 magnetz: switch to Torznab API with API key (#​17258) resolves #​16277 ef4272968bcae60cf0a1d23de63332ca6127df27 racing4us: new cat a608e61a71334e0355893761c97e0b2a000ea8e4 bestcore: switch to cookie method b2d8d13e9346dbb2c90f5b1c1d362666dbc5bd9d 5…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.3030",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
