@@ -316,6 +316,36 @@
    "notes": "What's new in Kiosk Satellite 2026.11.12: This release makes taps on overlays drawn over the screensaver leave it up and adds a setting that brightens the screensaver after those taps. It also adds a ring volume for the intercom, moves Amazon's wake word engine users to vsWakeWord and fixes wake wo…",
    "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.12",
    "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
+  },
+  "dolphin-emu": {
+   "id": "dolphin-emu",
+   "brand": "Dolphin",
+   "model": "GameCube and Wii emulator",
+   "category": "C",
+   "status": "update",
+   "version": "2609b",
+   "previous": "2609a",
+   "released": "2026-11-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "2609b",
+   "source_url": "https://github.com/dolphin-emu/dolphin/releases/tag/2609b",
+   "page_url": "https://www.firmwarely.com/devices/dolphin-emu/"
+  },
+  "tugtainer": {
+   "id": "tugtainer",
+   "brand": "Tugtainer",
+   "model": "Docker container updater",
+   "category": "A",
+   "status": "update",
+   "version": "1.45.2",
+   "previous": "1.45.1",
+   "released": "2026-11-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "v1.45.2 (2026-11-08): Bug Fixes: frontend: Reload services after a job only on swarm hosts (38a30a2) --- Detailed Changes: v1.45.1...v1.45.2",
+   "source_url": "https://github.com/Quenary/tugtainer/releases/tag/v1.45.2",
+   "page_url": "https://www.firmwarely.com/devices/tugtainer/"
   }
  }
 }
