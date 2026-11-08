@@ -41094,6 +41094,24 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "movie-data-capture",
+   "version": "8.2.4",
+   "name": "Movie Data Capture Local movie organizer",
+   "judged_at": "2026-11-08T23:13:35+00:00",
+   "notes_chars": 25,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
