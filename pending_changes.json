@@ -38,13 +38,13 @@
    "model": "DNS blocklists",
    "category": "R",
    "status": "update",
-   "version": "37522026.312.2287",
+   "version": "37522026.312.14230",
    "previous": "37522026.311.21054",
    "released": "2026-11-08",
    "date_known": true,
    "eol": false,
-   "notes": "#​12235 #​12234 #​12233",
-   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.312.2287",
+   "notes": "#​12238 #​12237 #​12236",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.312.14230",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   },
   "movie-data-capture": {
@@ -346,6 +346,21 @@
    "notes": "v1.45.2 (2026-11-08): Bug Fixes: frontend: Reload services after a job only on swarm hosts (38a30a2) --- Detailed Changes: v1.45.1...v1.45.2",
    "source_url": "https://github.com/Quenary/tugtainer/releases/tag/v1.45.2",
    "page_url": "https://www.firmwarely.com/devices/tugtainer/"
+  },
+  "apprise": {
+   "id": "apprise",
+   "brand": "Apprise",
+   "model": "Notification gateway",
+   "category": "A",
+   "status": "update",
+   "version": "2.2.0",
+   "previous": "2.1.0",
+   "released": "2026-11-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: This release has a few bugfixes, but introuces a slew of (12) new services bringing the total supported services up to 183. The foundation of the Apprise library has now made it very easy to just scan missing service's upstream APIs and add them to our catalog. There are so many exa…",
+   "source_url": "https://github.com/caronc/apprise/releases/tag/v2.2.0",
+   "page_url": "https://www.firmwarely.com/devices/apprise/"
   }
  }
 }
