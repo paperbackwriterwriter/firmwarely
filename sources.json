@@ -11295,6 +11295,33 @@
    "type": "github",
    "repo": "ulsklyc/yuvomi",
    "product_url": "https://github.com/ulsklyc/yuvomi"
+  },
+  {
+   "id": "serviette",
+   "brand": "Serviette",
+   "model": "No-code RAG server",
+   "category": "A",
+   "type": "github",
+   "repo": "pathwaycom/serviette",
+   "product_url": "https://github.com/pathwaycom/serviette"
+  },
+  {
+   "id": "ha-mcp",
+   "brand": "HA Mcp",
+   "model": "Configure and automate Home Assistant",
+   "category": "S",
+   "type": "github",
+   "repo": "homeassistant-ai/ha-mcp",
+   "product_url": "https://github.com/homeassistant-ai/ha-mcp"
+  },
+  {
+   "id": "self-host",
+   "brand": "Self Host",
+   "model": "Replace the SaaS you pay",
+   "category": "S",
+   "type": "github",
+   "repo": "ajnart/self-host",
+   "product_url": "https://github.com/ajnart/self-host"
   }
  ]
 }

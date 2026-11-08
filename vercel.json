@@ -932,62 +932,62 @@
       "permanent": false
     },
     {
-      "source": "/brands/:b(qbittorrent|qdrant|questdb|qwenpaw|rabbitmq|radarr|rallly|rancher|rclone|readarr|reconftw|recyclarr|redash|redis|redpanda|restic|rocket-chat|roundcube|runtipi|sabnzbd|salt-project|screego|scrutiny|seafile|semaphore|shiori|shlink|sidero-labs|signoz|siyuan|snapotter|snapraid|snipe-it|sonarr|songloft|sparkyfitness|srs|statping-ng|stirling-pdf|strapi)",
+      "source": "/brands/:b(qbittorrent|qdrant|questdb|qwenpaw|rabbitmq|radarr|rallly|rancher|rclone|readarr|reconftw|recyclarr|redash|redis|redpanda|restic|rocket-chat|roundcube|runtipi|sabnzbd|salt-project|screego|scrutiny|seafile|semaphore|serviette|shiori|shlink|sidero-labs|signoz|siyuan|snapotter|snapraid|snipe-it|sonarr|songloft|sparkyfitness|srs|statping-ng|stirling-pdf)",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(qbittorrent|qdrant|questdb|qwenpaw|rabbitmq|radarr|rallly|rancher|rclone|readarr|reconftw|recyclarr|redash|redis|redpanda|restic|rocket-chat|roundcube|runtipi|sabnzbd|salt-project|screego|scrutiny|seafile|semaphore|shiori|shlink|sidero-labs|signoz|siyuan|snapotter|snapraid|snipe-it|sonarr|songloft|sparkyfitness|srs|statping-ng|stirling-pdf|strapi)/",
+      "source": "/brands/:b(qbittorrent|qdrant|questdb|qwenpaw|rabbitmq|radarr|rallly|rancher|rclone|readarr|reconftw|recyclarr|redash|redis|redpanda|restic|rocket-chat|roundcube|runtipi|sabnzbd|salt-project|screego|scrutiny|seafile|semaphore|serviette|shiori|shlink|sidero-labs|signoz|siyuan|snapotter|snapraid|snipe-it|sonarr|songloft|sparkyfitness|srs|statping-ng|stirling-pdf)/",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(sun-panel|syncthing|tandoor|tautulli|tdarr|tdengine|temporal|tianji|timescale|tinyauth|tooljet|traccar|transmission|trilium|trystero|tube-archivist|tubesync|tugtainer|typebot|typesense|umami|umbrel|universal-media-server|unpackerr|valkey|vaultwarden|vector|verdaccio|victoriametrics|vikunja|vllm|voidauth|wallabag|wanderer|watchtower|weaviate|webmin|wger|whoogle|wiki-js)",
+      "source": "/brands/:b(strapi|sun-panel|syncthing|tandoor|tautulli|tdarr|tdengine|temporal|tianji|timescale|tinyauth|tooljet|traccar|transmission|trilium|trystero|tube-archivist|tubesync|tugtainer|typebot|typesense|umami|umbrel|universal-media-server|unpackerr|valkey|vaultwarden|vector|verdaccio|victoriametrics|vikunja|vllm|voidauth|wallabag|wanderer|watchtower|weaviate|webmin|wger|whoogle)",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(sun-panel|syncthing|tandoor|tautulli|tdarr|tdengine|temporal|tianji|timescale|tinyauth|tooljet|traccar|transmission|trilium|trystero|tube-archivist|tubesync|tugtainer|typebot|typesense|umami|umbrel|universal-media-server|unpackerr|valkey|vaultwarden|vector|verdaccio|victoriametrics|vikunja|vllm|voidauth|wallabag|wanderer|watchtower|weaviate|webmin|wger|whoogle|wiki-js)/",
+      "source": "/brands/:b(strapi|sun-panel|syncthing|tandoor|tautulli|tdarr|tdengine|temporal|tianji|timescale|tinyauth|tooljet|traccar|transmission|trilium|trystero|tube-archivist|tubesync|tugtainer|typebot|typesense|umami|umbrel|universal-media-server|unpackerr|valkey|vaultwarden|vector|verdaccio|victoriametrics|vikunja|vllm|voidauth|wallabag|wanderer|watchtower|weaviate|webmin|wger|whoogle)/",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(windmill|wizarr|woodpecker|wordops|wordpress|worldmonitor|yourls|yt-dlp|yunohost|zabbix|zammad|zitadel|zulip)",
+      "source": "/brands/:b(wiki-js|windmill|wizarr|woodpecker|wordops|wordpress|worldmonitor|yourls|yt-dlp|yunohost|zabbix|zammad|zitadel|zulip)",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(windmill|wizarr|woodpecker|wordops|wordpress|worldmonitor|yourls|yt-dlp|yunohost|zabbix|zammad|zitadel|zulip)/",
+      "source": "/brands/:b(wiki-js|windmill|wizarr|woodpecker|wordops|wordpress|worldmonitor|yourls|yt-dlp|yunohost|zabbix|zammad|zitadel|zulip)/",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(abode|adaptive-lighting|anker|aqara|arlo|august|brilliant|bruce|button-card|chamberlain|chargepoint|dgiot|domoticz|dreame|dreame-vacuum|dresden-elektronik|eclipse|ecobee|ecovacs|emba|emporia|enphase|espeasy|espresense|evcc|eve|flume|frigate|fuxa|gladys|go2rtc|google|govee|ha-bambulab|ha-llmvision|homeassistant-powercalc|homebridge|homelable|http-shortcuts|hyperion)",
+      "source": "/brands/:b(abode|adaptive-lighting|anker|aqara|arlo|august|brilliant|bruce|button-card|chamberlain|chargepoint|dgiot|domoticz|dreame|dreame-vacuum|dresden-elektronik|eclipse|ecobee|ecovacs|emba|emporia|enphase|espeasy|espresense|evcc|eve|flume|frigate|fuxa|gladys|go2rtc|google|govee|ha-bambulab|ha-llmvision|ha-mcp|homeassistant-powercalc|homebridge|homelable|http-shortcuts)",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(abode|adaptive-lighting|anker|aqara|arlo|august|brilliant|bruce|button-card|chamberlain|chargepoint|dgiot|domoticz|dreame|dreame-vacuum|dresden-elektronik|eclipse|ecobee|ecovacs|emba|emporia|enphase|espeasy|espresense|evcc|eve|flume|frigate|fuxa|gladys|go2rtc|google|govee|ha-bambulab|ha-llmvision|homeassistant-powercalc|homebridge|homelable|http-shortcuts|hyperion)/",
+      "source": "/brands/:b(abode|adaptive-lighting|anker|aqara|arlo|august|brilliant|bruce|button-card|chamberlain|chargepoint|dgiot|domoticz|dreame|dreame-vacuum|dresden-elektronik|eclipse|ecobee|ecovacs|emba|emporia|enphase|espeasy|espresense|evcc|eve|flume|frigate|fuxa|gladys|go2rtc|google|govee|ha-bambulab|ha-llmvision|ha-mcp|homeassistant-powercalc|homebridge|homelable|http-shortcuts)/",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(integration|iobroker|irobot|jetlinks|kiosk-satellite|konnected|kwikset|level|leviton|libretiny|lifx|lutron|matter|meross|mini-graph-card|moen|motioneye|mushroom|music-assistant|nanoleaf|nanomq|netatmo|node-red|nodemcu|openbeken|openccu|opendtu|openenergymonitor|openevse|openhab|openhasp|openmqttgateway|opensprinkler|openthread|openwakeword|openwb|philips|piper|rachio|ratgdo)",
+      "source": "/brands/:b(hyperion|integration|iobroker|irobot|jetlinks|kiosk-satellite|konnected|kwikset|level|leviton|libretiny|lifx|lutron|matter|meross|mini-graph-card|moen|motioneye|mushroom|music-assistant|nanoleaf|nanomq|netatmo|node-red|nodemcu|openbeken|openccu|opendtu|openenergymonitor|openevse|openhab|openhasp|openmqttgateway|opensprinkler|openthread|openwakeword|openwb|philips|piper|rachio)",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(integration|iobroker|irobot|jetlinks|kiosk-satellite|konnected|kwikset|level|leviton|libretiny|lifx|lutron|matter|meross|mini-graph-card|moen|motioneye|mushroom|music-assistant|nanoleaf|nanomq|netatmo|node-red|nodemcu|openbeken|openccu|opendtu|openenergymonitor|openevse|openhab|openhasp|openmqttgateway|opensprinkler|openthread|openwakeword|openwb|philips|piper|rachio|ratgdo)/",
+      "source": "/brands/:b(hyperion|integration|iobroker|irobot|jetlinks|kiosk-satellite|konnected|kwikset|level|leviton|libretiny|lifx|lutron|matter|meross|mini-graph-card|moen|motioneye|mushroom|music-assistant|nanoleaf|nanomq|netatmo|node-red|nodemcu|openbeken|openccu|opendtu|openenergymonitor|openevse|openhab|openhasp|openmqttgateway|opensprinkler|openthread|openwakeword|openwb|philips|piper|rachio)/",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(ravensystem|reolink|resideo|rhasspy|roborock|schlage|scrypted|shelly|sonofflan|sonos|spook|switchbot|tado|tapo-control|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|tuya-local|valetudo|wallbox|webrtc|wled|wyze|xiaomi-home|xiaomi-miot-auto|xiaomi-vacuum-map-card|xiaomigateway3|yale|yuvomi|zigbee2mqtt|zigpy|zoneminder)",
+      "source": "/brands/:b(ratgdo|ravensystem|reolink|resideo|rhasspy|roborock|schlage|scrypted|self-host|shelly|sonofflan|sonos|spook|switchbot|tado|tapo-control|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|tuya-local|valetudo|wallbox|webrtc|wled|wyze|xiaomi-home|xiaomi-miot-auto|xiaomi-vacuum-map-card|xiaomigateway3|yale|yuvomi|zigbee2mqtt|zigpy|zoneminder)",
       "destination": "/category/smart-home/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(ravensystem|reolink|resideo|rhasspy|roborock|schlage|scrypted|shelly|sonofflan|sonos|spook|switchbot|tado|tapo-control|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|tuya-local|valetudo|wallbox|webrtc|wled|wyze|xiaomi-home|xiaomi-miot-auto|xiaomi-vacuum-map-card|xiaomigateway3|yale|yuvomi|zigbee2mqtt|zigpy|zoneminder)/",
+      "source": "/brands/:b(ratgdo|ravensystem|reolink|resideo|rhasspy|roborock|schlage|scrypted|self-host|shelly|sonofflan|sonos|spook|switchbot|tado|tapo-control|tasmota|tesla|teslamate|theengs|thingsboard|tuya-cloudcutter|tuya-local|valetudo|wallbox|webrtc|wled|wyze|xiaomi-home|xiaomi-miot-auto|xiaomi-vacuum-map-card|xiaomigateway3|yale|yuvomi|zigbee2mqtt|zigpy|zoneminder)/",
       "destination": "/category/smart-home/",
       "permanent": false
     },
