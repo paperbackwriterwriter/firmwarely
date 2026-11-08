@@ -361,6 +361,21 @@
    "notes": "What's Changed: This release has a few bugfixes, but introuces a slew of (12) new services bringing the total supported services up to 183. The foundation of the Apprise library has now made it very easy to just scan missing service's upstream APIs and add them to our catalog. There are so many exa…",
    "source_url": "https://github.com/caronc/apprise/releases/tag/v2.2.0",
    "page_url": "https://www.firmwarely.com/devices/apprise/"
+  },
+  "wiki-js": {
+   "id": "wiki-js",
+   "brand": "Wiki.js",
+   "model": "Wiki",
+   "category": "A",
+   "status": "update",
+   "version": "3.2.0",
+   "previous": "3.1.1",
+   "released": "2026-11-08",
+   "date_known": true,
+   "eol": false,
+   "notes": ":sparkles: New Features: 7a1d2db - add showLastUpdated option to block-index (commit) 59afc48 - allow shared passkey domain for passkeys (commit) 79e9748 - code folding for content blocks + draw.io auto-fold and auto-open on create (commit) 6057474 - list active dictionary mappings in admin search …",
+   "source_url": "https://github.com/requarks/wiki/releases/tag/3.2.0",
+   "page_url": "https://www.firmwarely.com/devices/wiki-js/"
   }
  }
 }
