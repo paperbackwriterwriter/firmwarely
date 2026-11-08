@@ -136,6 +136,21 @@
    "notes": "Changelog 12.19.1: ESP32, ESP32-C and ESP32-S: Updated SDK version to ESP-IDF 5.5.6. Changelog 12.19.0: HomeKit: Added a keep-alive mechanism when device doesn't receive a poll from HomeHUB for 1 minute. Network actions: Improved memory management when same content is used in different actions. ESP…",
    "source_url": "https://github.com/RavenSystem/esp-homekit-devices/releases/tag/HAA_12.19.1",
    "page_url": "https://www.firmwarely.com/devices/esp-homekit-devices/"
+  },
+  "voidauth": {
+   "id": "voidauth",
+   "brand": "VoidAuth",
+   "model": "Single sign-on server",
+   "category": "A",
+   "status": "update",
+   "version": "1.19.0",
+   "previous": "1.18.1",
+   "released": "2026-11-08",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Features 🚀: Add an Apps section to the user home page OIDC App Logos are now Guessed Add Ability to Hide OIDC App From Home Page Fixes 🔧: Fix Light Theme Issue Fix Sharp Import Failure Sometimes Crashing App on Start Chores 🧹: Bump docker/login-action from 4.6.0 to 4.7.0 by in https…",
+   "source_url": "https://github.com/voidauth/voidauth/releases/tag/v1.19.0",
+   "page_url": "https://www.firmwarely.com/devices/voidauth/"
   }
  }
 }
