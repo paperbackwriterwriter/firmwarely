@@ -41580,6 +41580,96 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "penpot",
+   "version": "2.19.0",
+   "name": "Penpot Design tool",
+   "judged_at": "2026-11-09T14:36:45+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "coolify",
+   "version": "4.7.1",
+   "name": "Coolify Self-hosting platform",
+   "judged_at": "2026-11-09T14:36:46+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.07,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "zwave-js-ui",
+   "version": "11.26.0",
+   "name": "Z-Wave JS Z-Wave control panel",
+   "judged_at": "2026-11-09T14:36:46+00:00",
+   "notes_chars": 182,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "playnite",
+   "version": "10.64",
+   "name": "Playnite Game library manager",
+   "judged_at": "2026-11-09T14:36:46+00:00",
+   "notes_chars": 233,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "dnscontrol",
+   "version": "5.8.0",
+   "name": "DNSControl DNS as code",
+   "judged_at": "2026-11-09T14:36:46+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

@@ -38,13 +38,13 @@
    "model": "Design tool",
    "category": "A",
    "status": "update",
-   "version": "2.18.7",
+   "version": "2.19.0",
    "previous": "2.18.6",
    "released": "2026-11-09",
    "date_known": true,
    "eol": false,
-   "notes": ":bug: Bugs fixed: Fix binfile import accepting library relations outside the package and self-relations #​12895 (PR: #​12862)",
-   "source_url": "https://github.com/penpot/penpot/releases/tag/2.18.7",
+   "notes": ":boom: Breaking changes & Deprecations: Migrate legacy file payloads to file_data and delete orphan revisions: File payloads now live in one place: every file state and snapshot is kept in file_data, and the orphan file_change rows that kept old payloads alive forever are removed. No read path reac…",
+   "source_url": "https://github.com/penpot/penpot/releases/tag/2.19.0",
    "page_url": "https://www.firmwarely.com/devices/penpot/"
   },
   "wazuh": {
@@ -97,14 +97,14 @@
    "brand": "Coolify",
    "model": "Self-hosting platform",
    "category": "A",
-   "status": "update",
-   "version": "4.7.0",
+   "status": "critical",
+   "version": "4.7.1",
    "previous": "4.6.0",
    "released": "2026-11-09",
    "date_known": true,
    "eol": false,
-   "notes": "Breaking Changes: Cancelled the older queued webhook deployments of an application by default when a newer push arrives, so only the latest commit is built (#​10921, #​7678) It works per application, pull request and server Advanced › Deployment and is_auto_cancel_queued_deployments_enabled in the …",
-   "source_url": "https://github.com/coollabsio/coolify/releases/tag/v4.7.0",
+   "notes": "Added: The reason of a failed image scan in a Show error log section on the Security page and in the Laravel log The error log shows the failed step, its exit code, and the end of the command output. Only users who can change the resource or server see it Fixed: Failed image scans on self-hosted in…",
+   "source_url": "https://github.com/coollabsio/coolify/releases/tag/v4.7.1",
    "page_url": "https://www.firmwarely.com/devices/coolify/"
   },
   "roundcube": {
@@ -226,6 +226,51 @@
    "notes": "Changelog: [3.67.1] - 2026-11-09: 🔨 Refactoring: storages: Remove built-in Google Drive support (58396bc) 🐳 Docker: Image: databasus/databasus:v3.67.1 Mirror: ghcr.io/databasus/databasus:v3.67.1 Platforms: linux/amd64, linux/arm64",
    "source_url": "https://github.com/databasus/databasus/releases/tag/v3.67.1",
    "page_url": "https://www.firmwarely.com/devices/databasus/"
+  },
+  "zwave-js-ui": {
+   "id": "zwave-js-ui",
+   "brand": "Z-Wave JS",
+   "model": "Z-Wave control panel",
+   "category": "S",
+   "status": "update",
+   "version": "11.26.0",
+   "previous": "11.25.2",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "11.26.0 (2026-11-09): ✨ Features: bump zwave-js.32.0 (#​4889) (8b463ad) bump zwave-js.32.1 (#​4890) (806a1ff) 🔧 Chores: deps: replace dependency/node22 with/node24 (#​4886) (c38e0d2)",
+   "source_url": "https://github.com/zwave-js/zwave-js-ui/releases/tag/v11.26.0",
+   "page_url": "https://www.firmwarely.com/devices/zwave-js-ui/"
+  },
+  "playnite": {
+   "id": "playnite",
+   "brand": "Playnite",
+   "model": "Game library manager",
+   "category": "A",
+   "status": "update",
+   "version": "10.64",
+   "previous": "10.63",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "Fixed: Improvements to program update process Emulator profiles updates () Fullscreen views are misaligned when Windows taskbar is set to the left or right Missing scrollbars on some settings views Updated core framework dependencies",
+   "source_url": "https://github.com/JosefNemec/Playnite/releases/tag/10.64",
+   "page_url": "https://www.firmwarely.com/devices/playnite/"
+  },
+  "dnscontrol": {
+   "id": "dnscontrol",
+   "brand": "DNSControl",
+   "model": "DNS as code",
+   "category": "R",
+   "status": "update",
+   "version": "5.8.0",
+   "previous": "5.7.2",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "Greetings DNS fans! Release Highlight!: The big change in this release is all the documentation and examples have been changed to use the new REGISTRAR() and SERVICE() functions. These replace NewDnsProvider(), DnsProvider(), and NewRegistrar() (which still work). The conversion guide is here: http…",
+   "source_url": "https://github.com/DNSControl/dnscontrol/releases/tag/v5.8.0",
+   "page_url": "https://www.firmwarely.com/devices/dnscontrol/"
   }
  }
 }
