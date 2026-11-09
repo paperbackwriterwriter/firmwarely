@@ -346,6 +346,36 @@
    "notes": "Changelog: [3.67.0] - 2026-11-08: ✨ Features: frontend: Add URL navigation for workspaces and database tabs (da917f2) docs: Update docs (30b15a6) backups: Show compact backup usage totals (1baa792) archlint: Enforce module contract usage (47cc93a) 🐛 Bug Fixes: e2e: Check first administrator access …",
    "source_url": "https://github.com/databasus/databasus/releases/tag/v3.67.0",
    "page_url": "https://www.firmwarely.com/devices/databasus/"
+  },
+  "lychee-photos": {
+   "id": "lychee-photos",
+   "brand": "Lychee",
+   "model": "Photo gallery",
+   "category": "A",
+   "status": "update",
+   "version": "7.13.0",
+   "previous": "7.12.2",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: 🏕 Features: feat(v8): Use Struct-of-Arrays approach by default. feat(v8): configurable album tile size and gap with live size preview fix(auth): show inline feedback for throttled password logins fix(ssrf): avoid obscure IP scenarios bump to version 7.13.0 New Contributors: made the…",
+   "source_url": "https://github.com/LycheeOrg/Lychee/releases/tag/v7.13.0",
+   "page_url": "https://www.firmwarely.com/devices/lychee-photos/"
+  },
+  "yuvomi": {
+   "id": "yuvomi",
+   "brand": "Yuvomi",
+   "model": "One home instead of many subscriptions",
+   "category": "S",
+   "status": "update",
+   "version": "2.87.0",
+   "previous": "2.86.0",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "Added: Every release carries a signed tarball of the app. Next to the container image, each GitHub release now has yuvomi- -dist.tar.gz, a SHA256SUMS file and a build provenance attestation that proves GitHub built both from the release tag of this repository (gh attestation verify yuvomi- -dist.ta…",
+   "source_url": "https://github.com/ulsklyc/yuvomi/releases/tag/v2.87.0",
+   "page_url": "https://www.firmwarely.com/devices/yuvomi/"
   }
  }
 }
