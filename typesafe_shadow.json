@@ -41364,6 +41364,60 @@
     "security_fix_plain": 0.31,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "wazuh",
+   "version": "4.14.10",
+   "name": "Wazuh Security platform",
+   "judged_at": "2026-11-09T11:13:58+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "kener",
+   "version": "4.2.1",
+   "name": "Kener Status page",
+   "judged_at": "2026-11-09T11:13:58+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "wiki-js",
+   "version": "3.3.0",
+   "name": "Wiki.js Wiki",
+   "judged_at": "2026-11-09T11:13:58+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

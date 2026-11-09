@@ -46,6 +46,51 @@
    "notes": ":bug: Bugs fixed: Fix binfile import accepting library relations outside the package and self-relations #​12895 (PR: #​12862)",
    "source_url": "https://github.com/penpot/penpot/releases/tag/2.18.7",
    "page_url": "https://www.firmwarely.com/devices/penpot/"
+  },
+  "wazuh": {
+   "id": "wazuh",
+   "brand": "Wazuh",
+   "model": "Security platform",
+   "category": "R",
+   "status": "critical",
+   "version": "4.14.10",
+   "previous": "4.14.9",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "Manager: Added: Added a warning to the log when a queue of the indexer connector or of the vulnerability scanner holds 100000 elements or more, and each time its size doubles. (#​39607) Added the tcp_sessions_unassociated counter to the wazuh-remoted statistics, reporting TCP connections not yet as…",
+   "source_url": "https://github.com/wazuh/wazuh/releases/tag/v4.14.10",
+   "page_url": "https://www.firmwarely.com/devices/wazuh/"
+  },
+  "kener": {
+   "id": "kener",
+   "brand": "Kener",
+   "model": "Status page",
+   "category": "A",
+   "status": "update",
+   "version": "4.2.1",
+   "previous": "4.2.0",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: feat(monitors): add an inline member display for group monitors fix(maintenances): keep the local time of a recurring maintenance across clock changes fix(monitors): run each custom eval in its own process so evals stop hanging Full Changelog: https://github.com/rajnandan1/kener/com…",
+   "source_url": "https://github.com/rajnandan1/kener/releases/tag/v4.2.1",
+   "page_url": "https://www.firmwarely.com/devices/kener/"
+  },
+  "wiki-js": {
+   "id": "wiki-js",
+   "brand": "Wiki.js",
+   "model": "Wiki",
+   "category": "A",
+   "status": "update",
+   "version": "3.3.0",
+   "previous": "3.2.0",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": ":sparkles: New Features: 0bbb76d - add wikilink and Ctrl+Space triggers in Visual Editor (commit) f9d5b3f - allow duplicate page if user can read source + has write anywhere on site (commit) 0c6e412 - add 2FA enforcement at the group level (commit) 2916fe8 - add page lock control (commit) ad41ff0 -…",
+   "source_url": "https://github.com/requarks/wiki/releases/tag/3.3.0",
+   "page_url": "https://www.firmwarely.com/devices/wiki-js/"
   }
  }
 }
