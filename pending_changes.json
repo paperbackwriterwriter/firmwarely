@@ -391,6 +391,21 @@
    "notes": "💙 Support SparkyFitness: Planning to buy an Android phone for app development and testing 📱 Your sponsorship helps cover the cost. Thank you for your support! 🙏 If SparkyFitness has been useful to you & your family, please consider sponsoring on GitHub or supporting via Ko-fi. Your support helps co…",
    "source_url": "https://github.com/CodeWithCJ/SparkyFitness/releases/tag/v1.12.0",
    "page_url": "https://www.firmwarely.com/devices/sparkyfitness/"
+  },
+  "zerobyte": {
+   "id": "zerobyte",
+   "brand": "Zerobyte",
+   "model": "Backup automation",
+   "category": "N",
+   "status": "update",
+   "version": "0.44.2",
+   "previous": "0.44.1",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "Bug fixes Fixed agent heartbeat timeouts during long-running backups when the controller is delayed or under heavy load. Added connection diagnostics to help investigate agent disconnects.",
+   "source_url": "https://github.com/nicotsx/zerobyte/releases/tag/v0.44.2",
+   "page_url": "https://www.firmwarely.com/devices/zerobyte/"
   }
  }
 }
