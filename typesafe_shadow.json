@@ -41202,6 +41202,24 @@
     "security_fix_plain": 0.97,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "fluent-bit",
+   "version": "5.2.0",
+   "name": "Fluent Bit Log processor",
+   "judged_at": "2026-11-09T04:53:32+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

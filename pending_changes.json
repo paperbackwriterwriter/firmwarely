@@ -391,6 +391,21 @@
    "notes": "This security release fixes server environment disclosure through JqAgent and bypasses of the enforced outbound proxy. Upgrade installations that enable JqAgent or rely on OUTBOUND_PROXY to restrict users' outbound requests. Security fixes: JqAgent now starts jq with an empty environment. User filt…",
    "source_url": "https://github.com/huginn/huginn/releases/tag/v2026.11.09",
    "page_url": "https://www.firmwarely.com/devices/huginn/"
+  },
+  "fluent-bit": {
+   "id": "fluent-bit",
+   "brand": "Fluent Bit",
+   "model": "Log processor",
+   "category": "A",
+   "status": "update",
+   "version": "5.2.0",
+   "previous": "5.1.5",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "https://fluentbit.io/announcements/v5.2.0/ What's Changed: workflows: bump github/codeql-action/upload-sarif from 4.38.3 to 4.39.0 by in https://github.com/fluent/fluent-bit/pull/12607 workflows: bump reviewdog/action-actionlint from 1.80.1 to 1.80.4 by in https://github.com/fluent/fluent-bit/pull/…",
+   "source_url": "https://github.com/fluent/fluent-bit/releases/tag/v5.2.0",
+   "page_url": "https://www.firmwarely.com/devices/fluent-bit/"
   }
  }
 }
