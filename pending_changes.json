@@ -271,6 +271,36 @@
    "notes": "Greetings DNS fans! Release Highlight!: The big change in this release is all the documentation and examples have been changed to use the new REGISTRAR() and SERVICE() functions. These replace NewDnsProvider(), DnsProvider(), and NewRegistrar() (which still work). The conversion guide is here: http…",
    "source_url": "https://github.com/DNSControl/dnscontrol/releases/tag/v5.8.0",
    "page_url": "https://www.firmwarely.com/devices/dnscontrol/"
+  },
+  "changedetection": {
+   "id": "changedetection",
+   "brand": "changedetection.io",
+   "model": "Website change monitor",
+   "category": "A",
+   "status": "update",
+   "version": "0.70.3",
+   "previous": "0.70.2",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Update pytest requirement from ~=9.1 to ~=9.2 by in https://github.com/dgtlmoon/changedetection.io/pull/4692 Update python-engineio requirement from =4.14.0 to ›=4.15.1, =5.7.0 to ›=5.7.2, =2.14.1 to ›=2.14.2, =0.17.2 to ›=0.17.3 by in https://github.com/dgtlmoon/changedetection.io/…",
+   "source_url": "https://github.com/dgtlmoon/changedetection.io/releases/tag/0.70.3",
+   "page_url": "https://www.firmwarely.com/devices/changedetection/"
+  },
+  "skipper": {
+   "id": "skipper",
+   "brand": "Skipper",
+   "model": "HTTP router and reverse proxy",
+   "category": "R",
+   "status": "update",
+   "version": "0.28.72",
+   "previous": "0.28.71",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes: auth: evaluate oidcClaimsQuery on the cleaned request path (#​4409) Repro: on a route with oauthOidcAnyClaims(...) -› oidcClaimsQuery(\"/login:groups.#[==\\\"appX-Tester\\\"]\", \"/::email%\\\".org\\\"\") (the example from the filter docs), log in as an example.org user who is not in appX-Tester. GET …",
+   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.72",
+   "page_url": "https://www.firmwarely.com/devices/skipper/"
   }
  }
 }
