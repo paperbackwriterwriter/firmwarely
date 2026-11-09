@@ -98,13 +98,13 @@
    "model": "Self-hosting platform",
    "category": "A",
    "status": "critical",
-   "version": "4.7.1",
+   "version": "4.7.2",
    "previous": "4.6.0",
    "released": "2026-11-09",
    "date_known": true,
    "eol": false,
-   "notes": "Added: The reason of a failed image scan in a Show error log section on the Security page and in the Laravel log The error log shows the failed step, its exit code, and the end of the command output. Only users who can change the resource or server see it Fixed: Failed image scans on self-hosted in…",
-   "source_url": "https://github.com/coollabsio/coolify/releases/tag/v4.7.1",
+   "notes": "Security: Restricted the Redeploy and Stop actions of an application destination to the servers that the application runs on Changed: Names in the top breadcrumb, which now link to their page The section name, such as Servers, opens the list page of the section The project, environment, resource, s…",
+   "source_url": "https://github.com/coollabsio/coolify/releases/tag/v4.7.2",
    "page_url": "https://www.firmwarely.com/devices/coolify/"
   },
   "roundcube": {
@@ -316,6 +316,21 @@
    "notes": "Download Piwigo 16.5.0 (built with plugins and required directories) Release note",
    "source_url": "https://github.com/Piwigo/Piwigo/releases/tag/16.5.0",
    "page_url": "https://www.firmwarely.com/devices/piwigo/"
+  },
+  "windmill": {
+   "id": "windmill",
+   "brand": "Windmill",
+   "model": "Scripts and workflows",
+   "category": "A",
+   "status": "update",
+   "version": "1.865.0",
+   "previous": "1.864.1",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.865.0 (2026-11-09): Features: explain row filter update rewrites in the postgres trigger editor (#​12033) (570ead4) let dedicated_workers take folder patterns like ws:f/dw/ (#​12268) (1f92c4f) let integration triggers use any connection of their type (#​11968) (6f04292) optional Vault AppRole sec…",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.865.0",
+   "page_url": "https://www.firmwarely.com/devices/windmill/"
   }
  }
 }
