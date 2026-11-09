@@ -376,6 +376,21 @@
    "notes": "Added: Every release carries a signed tarball of the app. Next to the container image, each GitHub release now has yuvomi- -dist.tar.gz, a SHA256SUMS file and a build provenance attestation that proves GitHub built both from the release tag of this repository (gh attestation verify yuvomi- -dist.ta…",
    "source_url": "https://github.com/ulsklyc/yuvomi/releases/tag/v2.87.0",
    "page_url": "https://www.firmwarely.com/devices/yuvomi/"
+  },
+  "huginn": {
+   "id": "huginn",
+   "brand": "Huginn",
+   "model": "Automation agents",
+   "category": "A",
+   "status": "critical",
+   "version": "2026.11.09",
+   "previous": "2026.11.05.2",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "This security release fixes server environment disclosure through JqAgent and bypasses of the enforced outbound proxy. Upgrade installations that enable JqAgent or rely on OUTBOUND_PROXY to restrict users' outbound requests. Security fixes: JqAgent now starts jq with an empty environment. User filt…",
+   "source_url": "https://github.com/huginn/huginn/releases/tag/v2026.11.09",
+   "page_url": "https://www.firmwarely.com/devices/huginn/"
   }
  }
 }
