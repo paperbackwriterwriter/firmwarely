@@ -293,13 +293,13 @@
    "model": "HTTP router and reverse proxy",
    "category": "R",
    "status": "update",
-   "version": "0.28.72",
+   "version": "0.28.73",
    "previous": "0.28.71",
    "released": "2026-11-09",
    "date_known": true,
    "eol": false,
-   "notes": "Changes: auth: evaluate oidcClaimsQuery on the cleaned request path (#​4409) Repro: on a route with oauthOidcAnyClaims(...) -› oidcClaimsQuery(\"/login:groups.#[==\\\"appX-Tester\\\"]\", \"/::email%\\\".org\\\"\") (the example from the filter docs), log in as an example.org user who is not in appX-Tester. GET …",
-   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.72",
+   "notes": "Changes: build: auto label cwfreeze PRs (#​4415) build: auto label cwfreeze PRs Multiarch Docker image is available in GitHub's docker registry: docker run -it ghcr.io/zalando/skipper:v0.28.73 skipper --help",
+   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.73",
    "page_url": "https://www.firmwarely.com/devices/skipper/"
   },
   "piwigo": {
