@@ -406,6 +406,21 @@
    "notes": "https://fluentbit.io/announcements/v5.2.0/ What's Changed: workflows: bump github/codeql-action/upload-sarif from 4.38.3 to 4.39.0 by in https://github.com/fluent/fluent-bit/pull/12607 workflows: bump reviewdog/action-actionlint from 1.80.1 to 1.80.4 by in https://github.com/fluent/fluent-bit/pull/…",
    "source_url": "https://github.com/fluent/fluent-bit/releases/tag/v5.2.0",
    "page_url": "https://www.firmwarely.com/devices/fluent-bit/"
+  },
+  "xray-core": {
+   "id": "xray-core",
+   "brand": "Project X",
+   "model": "Xray-core proxy",
+   "category": "R",
+   "status": "update",
+   "version": "26.11.9",
+   "previous": "26.10.31",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "XDRIVE transport: Release notes & more optimizations for the Google Drive backend: Sponsors: Sponsor Xray-core Donation & NFTs: Collect a Project X NFT to support the development of Project X!: TRX(Tron)/USDT/USDC: TNrDh5VSfwd4RPrwsohr6poyNTfFefNYan TON: UQApeV-u2gm43aC1uP76xAC1m6vCylstaN1gpfBmre_5…",
+   "source_url": "https://github.com/XTLS/Xray-core/releases/tag/v26.11.9",
+   "page_url": "https://www.firmwarely.com/devices/xray-core/"
   }
  }
 }
