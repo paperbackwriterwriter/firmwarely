@@ -41418,6 +41418,60 @@
     "security_fix_plain": 0.06,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "coolify",
+   "version": "4.7.0",
+   "name": "Coolify Self-hosting platform",
+   "judged_at": "2026-11-09T12:04:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "roundcube",
+   "version": "1.7.6",
+   "name": "Roundcube Webmail",
+   "judged_at": "2026-11-09T12:04:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.99,
+    "security_fix_plain": 0.98,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "limesurvey",
+   "version": "7.9.1",
+   "name": "LimeSurvey Survey platform",
+   "judged_at": "2026-11-09T12:04:47+00:00",
+   "notes_chars": 12,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.09,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

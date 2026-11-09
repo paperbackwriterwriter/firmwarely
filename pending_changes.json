@@ -91,6 +91,51 @@
    "notes": ":sparkles: New Features: 0bbb76d - add wikilink and Ctrl+Space triggers in Visual Editor (commit) f9d5b3f - allow duplicate page if user can read source + has write anywhere on site (commit) 0c6e412 - add 2FA enforcement at the group level (commit) 2916fe8 - add page lock control (commit) ad41ff0 -…",
    "source_url": "https://github.com/requarks/wiki/releases/tag/3.3.0",
    "page_url": "https://www.firmwarely.com/devices/wiki-js/"
+  },
+  "coolify": {
+   "id": "coolify",
+   "brand": "Coolify",
+   "model": "Self-hosting platform",
+   "category": "A",
+   "status": "update",
+   "version": "4.7.0",
+   "previous": "4.6.0",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "Breaking Changes: Cancelled the older queued webhook deployments of an application by default when a newer push arrives, so only the latest commit is built (#​10921, #​7678) It works per application, pull request and server Advanced › Deployment and is_auto_cancel_queued_deployments_enabled in the …",
+   "source_url": "https://github.com/coollabsio/coolify/releases/tag/v4.7.0",
+   "page_url": "https://www.firmwarely.com/devices/coolify/"
+  },
+  "roundcube": {
+   "id": "roundcube",
+   "brand": "Roundcube",
+   "model": "Webmail",
+   "category": "A",
+   "status": "critical",
+   "version": "1.7.6",
+   "previous": "1.7.5",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "This is a security update to the version 1.7 of Roundcube Webmail. It provides fixes to recently reported security vulnerabilities: Fix open redirect via IMAP error recovery on attachment get, reported by Santhoshkumar S. Fix so Received: header includes only trusted hostname and forwarded IP from …",
+   "source_url": "https://github.com/roundcube/roundcubemail/releases/tag/1.7.6",
+   "page_url": "https://www.firmwarely.com/devices/roundcube/"
+  },
+  "limesurvey": {
+   "id": "limesurvey",
+   "brand": "LimeSurvey",
+   "model": "Survey platform",
+   "category": "A",
+   "status": "update",
+   "version": "7.9.1",
+   "previous": "7.9.0",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "7.9.1+261102",
+   "source_url": "https://github.com/LimeSurvey/LimeSurvey/releases/tag/7.9.1%2B261102",
+   "page_url": "https://www.firmwarely.com/devices/limesurvey/"
   }
  }
 }
