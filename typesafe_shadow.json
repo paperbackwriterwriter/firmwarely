@@ -41958,6 +41958,24 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "semaphore-ui",
+   "version": "2.19.21",
+   "name": "Semaphore Ansible and Terraform UI",
+   "judged_at": "2026-11-09T22:45:29+00:00",
+   "notes_chars": 124,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.93,
+    "security_fix_plain": 0.85,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
