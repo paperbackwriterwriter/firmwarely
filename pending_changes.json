@@ -421,6 +421,21 @@
    "notes": "XDRIVE transport: Release notes & more optimizations for the Google Drive backend: Sponsors: Sponsor Xray-core Donation & NFTs: Collect a Project X NFT to support the development of Project X!: TRX(Tron)/USDT/USDC: TNrDh5VSfwd4RPrwsohr6poyNTfFefNYan TON: UQApeV-u2gm43aC1uP76xAC1m6vCylstaN1gpfBmre_5…",
    "source_url": "https://github.com/XTLS/Xray-core/releases/tag/v26.11.9",
    "page_url": "https://www.firmwarely.com/devices/xray-core/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.3036",
+   "previous": "0.24.3030",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: 372d4fd6c54699b139503154ea6be8236718a265 magnetcat: new alt domains e1149d7f5cf0242b60dc9a9d0d3b69389dd0661c 52bt: new domains aae3bad607b1ca90a54bbd2af484ed98f1dd8818 hxpt: removed. resolves #​16462 984141bfcc1313a3d73c0797aafa57365da99a50 karagarga: new login resolves #​17259 1383b41378…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.3036",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
