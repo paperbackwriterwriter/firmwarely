@@ -41472,6 +41472,78 @@
     "security_fix_plain": 0.08,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "meilisearch",
+   "version": "1.56.2",
+   "name": "Meilisearch Search engine",
+   "judged_at": "2026-11-09T12:55:22+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "langfuse",
+   "version": "4.77.0",
+   "name": "Langfuse LLM observability",
+   "judged_at": "2026-11-09T12:55:22+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "smartdns",
+   "version": "48.5",
+   "name": "SmartDNS Local DNS server",
+   "judged_at": "2026-11-09T12:55:22+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "avideo",
+   "version": "29.7.1",
+   "name": "AVideo Video streaming platform",
+   "judged_at": "2026-11-09T12:55:23+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

@@ -136,6 +136,66 @@
    "notes": "7.9.1+261102",
    "source_url": "https://github.com/LimeSurvey/LimeSurvey/releases/tag/7.9.1%2B261102",
    "page_url": "https://www.firmwarely.com/devices/limesurvey/"
+  },
+  "meilisearch": {
+   "id": "meilisearch",
+   "brand": "Meilisearch",
+   "model": "Search engine",
+   "category": "A",
+   "status": "update",
+   "version": "1.56.2",
+   "previous": "1.56.1",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "Meilisearch v1.56.2 removes a leftover debug statement that could impede performance and was a regression from v1.56.1. Upgrading from previous versions of Meilisearch is strongly recommended. It also updates several dependencies. 🦋 Fixes: remove unwanted log & warn about future unwanted dbg 🔩 Misc…",
+   "source_url": "https://github.com/meilisearch/meilisearch/releases/tag/v1.56.2",
+   "page_url": "https://www.firmwarely.com/devices/meilisearch/"
+  },
+  "langfuse": {
+   "id": "langfuse",
+   "brand": "Langfuse",
+   "model": "LLM observability",
+   "category": "A",
+   "status": "update",
+   "version": "4.77.0",
+   "previous": "4.76.0",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Features: feat(topics): proper cost tracking for executions feat(external-media-storage): make external media storage an enterprise feature feat(web): use Langfuse by ClickHouse logo in the app shell and auth screens feat(ai-gateway): add Amazon Bedrock upstream with API key auth fe…",
+   "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.77.0",
+   "page_url": "https://www.firmwarely.com/devices/langfuse/"
+  },
+  "smartdns": {
+   "id": "smartdns",
+   "brand": "SmartDNS",
+   "model": "Local DNS server",
+   "category": "R",
+   "status": "update",
+   "version": "48.5",
+   "previous": "48.4",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "更新内容: 修复HTTP2，HTTP3协议相关的BUG 修改一些crash问题。 What's Changed: fix(conf): keep HTTP/3 for server-http3 with an https:// URL New Contributors: made their first contribution in https://github.com/pymumu/smartdns/pull/2497 欢迎参与贡献：https://github.com/pymumu/smartdns/issues/1918 贡献请加QQ群：1033365479 smartdns帮助文档…",
+   "source_url": "https://github.com/pymumu/smartdns/releases/tag/Release48.5-RC1",
+   "page_url": "https://www.firmwarely.com/devices/smartdns/"
+  },
+  "avideo": {
+   "id": "avideo",
+   "brand": "AVideo",
+   "model": "Video streaming platform",
+   "category": "A",
+   "status": "update",
+   "version": "29.7.1",
+   "previous": "29.7.0",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "29.7.1 (2026-11-09): Dependencies: bump aws/aws-sdk-php from 3.402.4 to 3.403.0 (ad2296a) bump google/apiclient-services from 0.465.0 to 0.465.1 (2d3b02c) bump james-heinrich/getid3 from 1.9.27 to 1.9.28 (28c2ca4) bump zircote/swagger-php from 7.0.0 to 7.3.0 (09584a3) Other changes: Add email messa…",
+   "source_url": "https://github.com/WWBN/AVideo/releases/tag/v29.7.1",
+   "page_url": "https://www.firmwarely.com/devices/avideo/"
   }
  }
 }
