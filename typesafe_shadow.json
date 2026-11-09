@@ -41328,6 +41328,42 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "victoriametrics",
+   "version": "1.156.0",
+   "name": "VictoriaMetrics Time series database",
+   "judged_at": "2026-11-09T10:23:21+00:00",
+   "notes_chars": 32,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "penpot",
+   "version": "2.18.7",
+   "name": "Penpot Design tool",
+   "judged_at": "2026-11-09T10:23:21+00:00",
+   "notes_chars": 125,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.21,
+    "security_fix_plain": 0.31,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

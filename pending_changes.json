@@ -16,6 +16,36 @@
    "notes": "#​12251 #​12250 #​12249 #​12247 #​12246 #​12244 #​12243 #​12242 #​12241 #​12240",
    "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.313.33634",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "victoriametrics": {
+   "id": "victoriametrics",
+   "brand": "VictoriaMetrics",
+   "model": "Time series database",
+   "category": "A",
+   "status": "update",
+   "version": "1.156.0",
+   "previous": "1.155.0",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "v1.156.0: Released at 2026-11-06",
+   "source_url": "https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.156.0",
+   "page_url": "https://www.firmwarely.com/devices/victoriametrics/"
+  },
+  "penpot": {
+   "id": "penpot",
+   "brand": "Penpot",
+   "model": "Design tool",
+   "category": "A",
+   "status": "update",
+   "version": "2.18.7",
+   "previous": "2.18.6",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": ":bug: Bugs fixed: Fix binfile import accepting library relations outside the package and self-relations #​12895 (PR: #​12862)",
+   "source_url": "https://github.com/penpot/penpot/releases/tag/2.18.7",
+   "page_url": "https://www.firmwarely.com/devices/penpot/"
   }
  }
 }
