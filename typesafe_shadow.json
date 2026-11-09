@@ -41274,6 +41274,42 @@
     "security_fix_plain": 0.11,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "harbor",
+   "version": "2.16.0",
+   "name": "Harbor Container registry",
+   "judged_at": "2026-11-09T08:41:39+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "n8n",
+   "version": "2.46.7",
+   "name": "n8n Workflow automation",
+   "judged_at": "2026-11-09T08:41:39+00:00",
+   "notes_chars": 113,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

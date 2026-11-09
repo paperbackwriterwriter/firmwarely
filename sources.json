@@ -11322,6 +11322,15 @@
    "type": "github",
    "repo": "ajnart/self-host",
    "product_url": "https://github.com/ajnart/self-host"
+  },
+  {
+   "id": "hyper-express",
+   "brand": "Hyper Express",
+   "model": "High performance Node.js webserver",
+   "category": "R",
+   "type": "github",
+   "repo": "kartikk221/hyper-express",
+   "product_url": "https://github.com/kartikk221/hyper-express"
   }
  ]
 }
