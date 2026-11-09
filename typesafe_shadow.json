@@ -41256,6 +41256,24 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "zitadel",
+   "version": "4.20.2",
+   "name": "ZITADEL Identity platform",
+   "judged_at": "2026-11-09T07:44:46+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.14,
+    "security_fix_plain": 0.11,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

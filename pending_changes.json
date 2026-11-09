@@ -436,6 +436,21 @@
    "notes": "Changes:: 372d4fd6c54699b139503154ea6be8236718a265 magnetcat: new alt domains e1149d7f5cf0242b60dc9a9d0d3b69389dd0661c 52bt: new domains aae3bad607b1ca90a54bbd2af484ed98f1dd8818 hxpt: removed. resolves #​16462 984141bfcc1313a3d73c0797aafa57365da99a50 karagarga: new login resolves #​17259 1383b41378…",
    "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.3036",
    "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "zitadel": {
+   "id": "zitadel",
+   "brand": "ZITADEL",
+   "model": "Identity platform",
+   "category": "A",
+   "status": "update",
+   "version": "4.20.2",
+   "previous": "4.20.1",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "4.20.2 (2026-11-09): Bug Fixes: build: retry proto plugin download on transient GitHub errors (#​13060) (16add2c), closes #​13057 cache: expire redis index keys and invalidate past missing keys (#​13021) (d23ae5c) login: treat a rejected session cookie token as no session (#​13037) (dce17d5), close…",
+   "source_url": "https://github.com/zitadel/zitadel/releases/tag/v4.20.2",
+   "page_url": "https://www.firmwarely.com/devices/zitadel/"
   }
  }
 }
