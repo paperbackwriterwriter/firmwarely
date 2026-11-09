@@ -98,13 +98,13 @@
    "model": "Self-hosting platform",
    "category": "A",
    "status": "critical",
-   "version": "4.7.2",
+   "version": "4.7.3",
    "previous": "4.6.0",
    "released": "2026-11-09",
    "date_known": true,
    "eol": false,
-   "notes": "Security: Restricted the Redeploy and Stop actions of an application destination to the servers that the application runs on Changed: Names in the top breadcrumb, which now link to their page The section name, such as Servers, opens the list page of the section The project, environment, resource, s…",
-   "source_url": "https://github.com/coollabsio/coolify/releases/tag/v4.7.2",
+   "notes": "Added: An Export menu on the vulnerability lists of a resource, of a server (Security › Vulnerabilities), and of the team Security page, to copy the list as a Markdown table or download it as CSV or JSON The export contains the rows that the list shows, with its tab, search, and filters, from all p…",
+   "source_url": "https://github.com/coollabsio/coolify/releases/tag/v4.7.3",
    "page_url": "https://www.firmwarely.com/devices/coolify/"
   },
   "roundcube": {
@@ -292,14 +292,14 @@
    "brand": "Skipper",
    "model": "HTTP router and reverse proxy",
    "category": "R",
-   "status": "critical",
-   "version": "0.28.74",
+   "status": "update",
+   "version": "0.28.75",
    "previous": "0.28.71",
    "released": "2026-11-09",
    "date_known": true,
    "eol": false,
-   "notes": "Changes: security fix: ghsa-q9xq-w3q4-p9jc (#​4416) TL;DR: OPA filters could be tricked by path, because Path(), PathSubtree() and PathRegexp() get normalized paths and before the fix OPA got the raw path. ref: https://github.com/zalando/skipper/security/advisories/GHSA-q9xq-w3q4-p9jc Thanks to rep…",
-   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.74",
+   "notes": "Changes: labeler: use pull_request trigger (#​4418) Multiarch Docker image is available in GitHub's docker registry: docker run -it ghcr.io/zalando/skipper:v0.28.75 skipper --help",
+   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.75",
    "page_url": "https://www.firmwarely.com/devices/skipper/"
   },
   "piwigo": {
@@ -361,6 +361,36 @@
    "notes": "Bump aiounifi to v98 ([] - [#​190145]) ([unifi docs]) (dependency) Fix HomeKit camera motion events never reaching HomeKit ([] - [#​190440]) ([homekit docs]) Add new entities to restored sleeping Shelly RPC devices on wake ([] - [#​190447]) ([shelly docs]) Bump broadlink-async to 1.2.1 ([] - [#​190…",
    "source_url": "https://github.com/home-assistant/core/releases/tag/2026.11.1",
    "page_url": "https://www.firmwarely.com/devices/home-assistant-core/"
+  },
+  "blocky-dns": {
+   "id": "blocky-dns",
+   "brand": "Blocky",
+   "model": "DNS proxy and ad blocker",
+   "category": "R",
+   "status": "update",
+   "version": "0.36.0",
+   "previous": "0.35.0",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: Features: 78def9fc46a14aba37c8e43742c1618c57ea7a09: feat(lists): parse bracketed IPv6 literals and map IDNs like DNS clients (#​2261) () 3bba1209043b7c2596e5eb5bb36db49a45fe75bc: feat(redis): recover optional connections after startup failure (#​2260) () b20f4bc7e38625be94ee43e7de7b30f67…",
+   "source_url": "https://github.com/0xERR0R/blocky/releases/tag/v0.36.0",
+   "page_url": "https://www.firmwarely.com/devices/blocky-dns/"
+  },
+  "sparkyfitness": {
+   "id": "sparkyfitness",
+   "brand": "SparkyFitness",
+   "model": "Family fitness tracker",
+   "category": "A",
+   "status": "update",
+   "version": "1.12.0",
+   "previous": "1.11.0",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "💙 Support SparkyFitness: Planning to buy an Android phone for app development and testing 📱 Your sponsorship helps cover the cost. Thank you for your support! 🙏 If SparkyFitness has been useful to you & your family, please consider sponsoring on GitHub or supporting via Ko-fi. Your support helps co…",
+   "source_url": "https://github.com/CodeWithCJ/SparkyFitness/releases/tag/v1.12.0",
+   "page_url": "https://www.firmwarely.com/devices/sparkyfitness/"
   }
  }
 }

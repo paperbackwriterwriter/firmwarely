@@ -41868,6 +41868,78 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "coolify",
+   "version": "4.7.3",
+   "name": "Coolify Self-hosting platform",
+   "judged_at": "2026-11-09T21:03:57+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "skipper",
+   "version": "0.28.75",
+   "name": "Skipper HTTP router and reverse proxy",
+   "judged_at": "2026-11-09T21:03:57+00:00",
+   "notes_chars": 179,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "blocky-dns",
+   "version": "0.36.0",
+   "name": "Blocky DNS proxy and ad blocker",
+   "judged_at": "2026-11-09T21:03:57+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "sparkyfitness",
+   "version": "1.12.0",
+   "name": "SparkyFitness Family fitness tracker",
+   "judged_at": "2026-11-09T21:03:57+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
