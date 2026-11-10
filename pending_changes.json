@@ -511,6 +511,36 @@
    "notes": "Changes:: dac7534c46c7c28097fb3e473eccccbe9e669109 torrenttip: bump domain dd402db224924b30e329171ef7a067f983e25321 torrentsome: bump domain af58460a13c8816ccc76575d3c6227d29f160bfe therarbg: drop imdbid support resolves #​17263 a65f453e24aa57c0571911f1208f7b662149afa7 w-o-t: update cats 57a9160519…",
    "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.3042",
    "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "komga": {
+   "id": "komga",
+   "brand": "Komga",
+   "model": "Comic and manga server",
+   "category": "A",
+   "status": "update",
+   "version": "1.30.1",
+   "previous": "1.30.0",
+   "released": "2026-11-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: 🐛 Fixes: api add CSP headers (100795f) komga temp table concurrency (865dae1), closes #​2553 nextui add padding after user menu avatar (37491c2) 🔄️ Changes: komga clarify logs when no thumbnail is found when analyzing book (609e98a), closes #​2540 🌐 Translation: komga-tray translated usi…",
+   "source_url": "https://github.com/gotson/komga/releases/tag/1.30.1",
+   "page_url": "https://www.firmwarely.com/devices/komga/"
+  },
+  "jenkins": {
+   "id": "jenkins",
+   "brand": "Jenkins",
+   "model": "Automation server",
+   "category": "A",
+   "status": "update",
+   "version": "2.590",
+   "previous": "2.589",
+   "released": "2026-11-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "jenkins-2.590",
+   "source_url": "https://github.com/jenkinsci/jenkins/releases/tag/jenkins-2.590",
+   "page_url": "https://www.firmwarely.com/devices/jenkins/"
   }
  }
 }

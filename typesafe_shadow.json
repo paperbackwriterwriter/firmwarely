@@ -42120,6 +42120,42 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "komga",
+   "version": "1.30.1",
+   "name": "Komga Comic and manga server",
+   "judged_at": "2026-11-10T06:43:15+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.23,
+    "security_fix_plain": 0.39,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "jenkins",
+   "version": "2.590",
+   "name": "Jenkins Automation server",
+   "judged_at": "2026-11-10T06:43:15+00:00",
+   "notes_chars": 13,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.33,
+    "security_fix_plain": 0.27,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
