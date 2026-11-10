@@ -872,92 +872,92 @@
       "permanent": false
     },
     {
-      "source": "/brands/:b(casaos|casdoor|ceph|changedetection-io|chatwoot|checkmk|clickhouse|cockpit|colima|comfyui|coolify|cosmos|cronicle|cryptomator|cryptpad|dagster|dashy|datarhei|dawarich|dbatools|deluge|dify|directus|discourse|dive|dockcheck|dockge|dockur|docmost|dokku|dokploy|donetick|dozzle|dragonfly|draw-io|duckdb|duplicati|elastic|emby|etherpad)",
+      "source": "/brands/:b(casaos|casdoor|ceph|changedetection-io|chatwoot|checkmk|clickhouse|clickstack|cockpit|colima|comfyui|coolify|cosmos|cronicle|cryptomator|cryptpad|dagster|dashy|datarhei|dawarich|dbatools|deluge|dify|directus|discourse|dive|dockcheck|dockge|dockur|docmost|dokku|dokploy|donetick|dozzle|dragonfly|draw-io|duckdb|duplicati|elastic|emby)",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(casaos|casdoor|ceph|changedetection-io|chatwoot|checkmk|clickhouse|cockpit|colima|comfyui|coolify|cosmos|cronicle|cryptomator|cryptpad|dagster|dashy|datarhei|dawarich|dbatools|deluge|dify|directus|discourse|dive|dockcheck|dockge|dockur|docmost|dokku|dokploy|donetick|dozzle|dragonfly|draw-io|duckdb|duplicati|elastic|emby|etherpad)/",
+      "source": "/brands/:b(casaos|casdoor|ceph|changedetection-io|chatwoot|checkmk|clickhouse|clickstack|cockpit|colima|comfyui|coolify|cosmos|cronicle|cryptomator|cryptpad|dagster|dashy|datarhei|dawarich|dbatools|deluge|dify|directus|discourse|dive|dockcheck|dockge|dockur|docmost|dokku|dokploy|donetick|dozzle|dragonfly|draw-io|duckdb|duplicati|elastic|emby)/",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(excalidraw|expenseowl|ezbookkeeping|file-browser|findomain|firefly-iii|flaresolverr|flarum|floci|flowise|fluent-bit|fooocus|formbricks|frappe|freescout|freeswitch|freshrss|gatus|ghost|ghostfolio|gitea|glance|glances|glpi|goatcounter|gobuster|gogs|gokapi|gokey|gonic|gotify|graylog|greenbone|grocy|harbor|harness|harvester|healthchecks|hedgedoc|heimdall)",
+      "source": "/brands/:b(etherpad|excalidraw|expenseowl|ezbookkeeping|file-browser|findomain|firefly-iii|flaresolverr|flarum|floci|flowise|fluent-bit|fooocus|formbricks|frappe|freescout|freeswitch|freshrss|gatus|ghost|ghostfolio|gitea|glance|glances|glpi|goatcounter|gobuster|gogs|gokapi|gokey|gonic|gotify|graylog|greenbone|grocy|harbor|harness|harvester|healthchecks|hedgedoc)",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(excalidraw|expenseowl|ezbookkeeping|file-browser|findomain|firefly-iii|flaresolverr|flarum|floci|flowise|fluent-bit|fooocus|formbricks|frappe|freescout|freeswitch|freshrss|gatus|ghost|ghostfolio|gitea|glance|glances|glpi|goatcounter|gobuster|gogs|gokapi|gokey|gonic|gotify|graylog|greenbone|grocy|harbor|harness|harvester|healthchecks|hedgedoc|heimdall)/",
+      "source": "/brands/:b(etherpad|excalidraw|expenseowl|ezbookkeeping|file-browser|findomain|firefly-iii|flaresolverr|flarum|floci|flowise|fluent-bit|fooocus|formbricks|frappe|freescout|freeswitch|freshrss|gatus|ghost|ghostfolio|gitea|glance|glances|glpi|goatcounter|gobuster|gogs|gokapi|gokey|gonic|gotify|graylog|greenbone|grocy|harbor|harness|harvester|healthchecks|hedgedoc)/",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(homarr|homebox|homepage|homer|hometube|huginn|hugo|hyperdx|icinga|immich|incus|infisical|invoice-ninja|invokeai|jackett|jaeger|jan|jellyseerr|jenkins|jitsi|joplin|jotty|k3s|karakeep|kavita|keep|keepass2android|keepassdx|keepassxc|kener|kestra|keycloak|kimai|koel|kometa|komga|komodo|kopia|kubernetes|kutt)",
+      "source": "/brands/:b(heimdall|homarr|homebox|homepage|homer|hometube|huginn|hugo|hyperdx|icinga|immich|incus|infisical|invoice-ninja|invokeai|jackett|jaeger|jan|jellyseerr|jenkins|jitsi|joplin|jotty|k3s|karakeep|kavita|keep|keepass2android|keepassdx|keepassxc|kener|kestra|keycloak|kimai|koel|kometa|komga|komodo|kopia|kubernetes)",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(homarr|homebox|homepage|homer|hometube|huginn|hugo|hyperdx|icinga|immich|incus|infisical|invoice-ninja|invokeai|jackett|jaeger|jan|jellyseerr|jenkins|jitsi|joplin|jotty|k3s|karakeep|kavita|keep|keepass2android|keepassdx|keepassxc|kener|kestra|keycloak|kimai|koel|kometa|komga|komodo|kopia|kubernetes|kutt)/",
+      "source": "/brands/:b(heimdall|homarr|homebox|homepage|homer|hometube|huginn|hugo|hyperdx|icinga|immich|incus|infisical|invoice-ninja|invokeai|jackett|jaeger|jan|jellyseerr|jenkins|jitsi|joplin|jotty|k3s|karakeep|kavita|keep|keepass2android|keepassdx|keepassxc|kener|kestra|keycloak|kimai|koel|kometa|komga|komodo|kopia|kubernetes)/",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(langflow|langfuse|lanraragi|lemmy|librechat|librephotos|libretranslate|lidarr|limesurvey|linkace|linkding|listmonk|livekit|lldap|lobehub|local-deep-research|localai|logseq|logto|lychee|macpass|mailcow|mailu|mariadb|mastodon|matomo|matrix|mealie|mediamtx|meetily|meilisearch|memos|mergerfs|metabase|metube|milvus|miniflux|minio|misskey|modlishka)",
+      "source": "/brands/:b(kutt|langflow|langfuse|lanraragi|lemmy|librechat|librephotos|libretranslate|lidarr|limesurvey|linkace|linkding|listmonk|livekit|lldap|lobehub|local-deep-research|localai|logseq|logto|lychee|macpass|mailcow|mailu|mariadb|mastodon|matomo|matrix|mealie|mediamtx|meetily|meilisearch|memos|mergerfs|metabase|metube|milvus|miniflux|minio|misskey)",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(langflow|langfuse|lanraragi|lemmy|librechat|librephotos|libretranslate|lidarr|limesurvey|linkace|linkding|listmonk|livekit|lldap|lobehub|local-deep-research|localai|logseq|logto|lychee|macpass|mailcow|mailu|mariadb|mastodon|matomo|matrix|mealie|mediamtx|meetily|meilisearch|memos|mergerfs|metabase|metube|milvus|miniflux|minio|misskey|modlishka)/",
+      "source": "/brands/:b(kutt|langflow|langfuse|lanraragi|lemmy|librechat|librephotos|libretranslate|lidarr|limesurvey|linkace|linkding|listmonk|livekit|lldap|lobehub|local-deep-research|localai|logseq|logto|lychee|macpass|mailcow|mailu|mariadb|mastodon|matomo|matrix|mealie|mediamtx|meetily|meilisearch|memos|mergerfs|metabase|metube|milvus|miniflux|minio|misskey)/",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(mongodb|monica|movie-data-capture|mumble|musicbrainz|mysql|n8n|nagios|nats|navidrome|neo4j|netdata|new-api|nextcloud|nginx-http-flv-module|nightingale|nocodb|nodewarden|nomic|nsmusics|ntfy|nvtop|nzbhydra2|olares|olivetin|ollama|ombi|onedev|onlyoffice|onyx|oobabooga|open-webui|openbao|openclaw-android|openfaas|openobserve|opensearch|opentelemetry|opentofu|openzfs)",
+      "source": "/brands/:b(modlishka|mongodb|monica|movie-data-capture|mumble|musicbrainz|mysql|n8n|nagios|nats|navidrome|neo4j|netdata|new-api|nextcloud|nginx-http-flv-module|nightingale|nocodb|nodewarden|nomic|nsmusics|ntfy|nvtop|nzbhydra2|olares|olivetin|ollama|ombi|onedev|onlyoffice|onyx|oobabooga|open-webui|openbao|openclaw-android|openfaas|openobserve|opensearch|opentelemetry|opentofu)",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(mongodb|monica|movie-data-capture|mumble|musicbrainz|mysql|n8n|nagios|nats|navidrome|neo4j|netdata|new-api|nextcloud|nginx-http-flv-module|nightingale|nocodb|nodewarden|nomic|nsmusics|ntfy|nvtop|nzbhydra2|olares|olivetin|ollama|ombi|onedev|onlyoffice|onyx|oobabooga|open-webui|openbao|openclaw-android|openfaas|openobserve|opensearch|opentelemetry|opentofu|openzfs)/",
+      "source": "/brands/:b(modlishka|mongodb|monica|movie-data-capture|mumble|musicbrainz|mysql|n8n|nagios|nats|navidrome|neo4j|netdata|new-api|nextcloud|nginx-http-flv-module|nightingale|nocodb|nodewarden|nomic|nsmusics|ntfy|nvtop|nzbhydra2|olares|olivetin|ollama|ombi|onedev|onlyoffice|onyx|oobabooga|open-webui|openbao|openclaw-android|openfaas|openobserve|opensearch|opentelemetry|opentofu)/",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(ory|osquery|osticket|outline|overseerr|owasp|owntracks|pairdrop|paperless-ngx|pass-for-ios|passbolt|peertube|pelican-panel|penpot|pentagi|photoprism|phpipam|phpmyadmin|pinchflat|pingvin-share|piwigo|pixelfed|planka|plausible|playnite|pm2|pocketbase|portainer|postal|prefect|processone|profilarr|projectdiscovery|prometheus|prowlarr|proxmox|pulse|puter|pydio|pyroscope)",
+      "source": "/brands/:b(openzfs|ory|osquery|osticket|outline|overseerr|owasp|owntracks|pairdrop|paperless-ngx|pass-for-ios|passbolt|peertube|pelican-panel|penpot|pentagi|photoprism|phpipam|phpmyadmin|pinchflat|pingvin-share|piwigo|pixelfed|planka|plausible|playnite|pm2|pocketbase|portainer|postal|prefect|processone|profilarr|projectdiscovery|prometheus|prowlarr|proxmox|pulse|puter|pydio)",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(ory|osquery|osticket|outline|overseerr|owasp|owntracks|pairdrop|paperless-ngx|pass-for-ios|passbolt|peertube|pelican-panel|penpot|pentagi|photoprism|phpipam|phpmyadmin|pinchflat|pingvin-share|piwigo|pixelfed|planka|plausible|playnite|pm2|pocketbase|portainer|postal|prefect|processone|profilarr|projectdiscovery|prometheus|prowlarr|proxmox|pulse|puter|pydio|pyroscope)/",
+      "source": "/brands/:b(openzfs|ory|osquery|osticket|outline|overseerr|owasp|owntracks|pairdrop|paperless-ngx|pass-for-ios|passbolt|peertube|pelican-panel|penpot|pentagi|photoprism|phpipam|phpmyadmin|pinchflat|pingvin-share|piwigo|pixelfed|planka|plausible|playnite|pm2|pocketbase|portainer|postal|prefect|processone|profilarr|projectdiscovery|prometheus|prowlarr|proxmox|pulse|puter|pydio)/",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(qbittorrent|qdrant|questdb|qwenpaw|rabbitmq|radarr|rallly|rancher|rclone|readarr|reconftw|recyclarr|redash|redis|redpanda|restic|rocket-chat|roundcube|runtipi|sabnzbd|salt-project|screego|scrutiny|seafile|semaphore|serviette|shiori|shlink|sidero-labs|signoz|siyuan|snapotter|snapraid|snipe-it|sonarr|songloft|sparkyfitness|srs|statping-ng|stirling-pdf)",
+      "source": "/brands/:b(pyroscope|qbittorrent|qdrant|questdb|qwenpaw|rabbitmq|radarr|rallly|rancher|rclone|readarr|reconftw|recyclarr|redash|redis|redpanda|restic|rocket-chat|roundcube|runtipi|sabnzbd|salt-project|screego|scrutiny|seafile|semaphore|serviette|shiori|shlink|sidero-labs|signoz|siyuan|snapotter|snapraid|snipe-it|sonarr|songloft|sparkyfitness|srs|statping-ng)",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(qbittorrent|qdrant|questdb|qwenpaw|rabbitmq|radarr|rallly|rancher|rclone|readarr|reconftw|recyclarr|redash|redis|redpanda|restic|rocket-chat|roundcube|runtipi|sabnzbd|salt-project|screego|scrutiny|seafile|semaphore|serviette|shiori|shlink|sidero-labs|signoz|siyuan|snapotter|snapraid|snipe-it|sonarr|songloft|sparkyfitness|srs|statping-ng|stirling-pdf)/",
+      "source": "/brands/:b(pyroscope|qbittorrent|qdrant|questdb|qwenpaw|rabbitmq|radarr|rallly|rancher|rclone|readarr|reconftw|recyclarr|redash|redis|redpanda|restic|rocket-chat|roundcube|runtipi|sabnzbd|salt-project|screego|scrutiny|seafile|semaphore|serviette|shiori|shlink|sidero-labs|signoz|siyuan|snapotter|snapraid|snipe-it|sonarr|songloft|sparkyfitness|srs|statping-ng)/",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(strapi|sun-panel|syncthing|tandoor|tautulli|tdarr|tdengine|temporal|tianji|timescale|tinyauth|tooljet|traccar|transmission|trilium|trystero|tube-archivist|tubesync|tugtainer|typebot|typesense|umami|umbrel|universal-media-server|unpackerr|valkey|vaultwarden|vector|verdaccio|victoriametrics|vikunja|vllm|voidauth|wallabag|wanderer|watchtower|weaviate|webmin|wger|whoogle)",
+      "source": "/brands/:b(stirling-pdf|strapi|sun-panel|syncthing|tandoor|tautulli|tdarr|tdengine|temporal|tianji|timescale|tinyauth|tooljet|traccar|transmission|trilium|trystero|tube-archivist|tubesync|tugtainer|typebot|typesense|umami|umbrel|universal-media-server|unpackerr|valkey|vaultwarden|vector|verdaccio|victoriametrics|vikunja|vllm|voidauth|wallabag|wanderer|watchtower|weaviate|webmin|wger)",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(strapi|sun-panel|syncthing|tandoor|tautulli|tdarr|tdengine|temporal|tianji|timescale|tinyauth|tooljet|traccar|transmission|trilium|trystero|tube-archivist|tubesync|tugtainer|typebot|typesense|umami|umbrel|universal-media-server|unpackerr|valkey|vaultwarden|vector|verdaccio|victoriametrics|vikunja|vllm|voidauth|wallabag|wanderer|watchtower|weaviate|webmin|wger|whoogle)/",
+      "source": "/brands/:b(stirling-pdf|strapi|sun-panel|syncthing|tandoor|tautulli|tdarr|tdengine|temporal|tianji|timescale|tinyauth|tooljet|traccar|transmission|trilium|trystero|tube-archivist|tubesync|tugtainer|typebot|typesense|umami|umbrel|universal-media-server|unpackerr|valkey|vaultwarden|vector|verdaccio|victoriametrics|vikunja|vllm|voidauth|wallabag|wanderer|watchtower|weaviate|webmin|wger)/",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(wiki-js|windmill|wizarr|woodpecker|wordops|wordpress|worldmonitor|yourls|yt-dlp|yunohost|zabbix|zammad|zitadel|zulip)",
+      "source": "/brands/:b(whoogle|wiki-js|windmill|wizarr|woodpecker|wordops|wordpress|worldmonitor|yourls|yt-dlp|yunohost|zabbix|zammad|zitadel|zulip)",
       "destination": "/category/self-hosted/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(wiki-js|windmill|wizarr|woodpecker|wordops|wordpress|worldmonitor|yourls|yt-dlp|yunohost|zabbix|zammad|zitadel|zulip)/",
+      "source": "/brands/:b(whoogle|wiki-js|windmill|wizarr|woodpecker|wordops|wordpress|worldmonitor|yourls|yt-dlp|yunohost|zabbix|zammad|zitadel|zulip)/",
       "destination": "/category/self-hosted/",
       "permanent": false
     },

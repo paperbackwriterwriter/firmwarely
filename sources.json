@@ -11331,6 +11331,15 @@
    "type": "github",
    "repo": "kartikk221/hyper-express",
    "product_url": "https://github.com/kartikk221/hyper-express"
+  },
+  {
+   "id": "clickstack",
+   "brand": "ClickStack",
+   "model": "Resolve production issues, fast",
+   "category": "A",
+   "type": "github",
+   "repo": "ClickHouse/ClickStack",
+   "product_url": "https://github.com/ClickHouse/ClickStack"
   }
  ]
 }
