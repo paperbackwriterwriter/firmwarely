@@ -8,13 +8,13 @@
    "model": "DNS blocklists",
    "category": "R",
    "status": "update",
-   "version": "37522026.313.57470",
+   "version": "37522026.313.85979",
    "previous": "37522026.312.35756",
    "released": "2026-11-09",
    "date_known": true,
    "eol": false,
-   "notes": "#​12260 #​12259 #​12257 #​12256 #​12255 #​12254 #​12253 #​12252",
-   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.313.57470",
+   "notes": "#​12267 #​12265 #​12264 #​12263 #​12262 #​12261",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.313.85979",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   },
   "victoriametrics": {
@@ -421,6 +421,51 @@
    "notes": "Bugfixes: A user can change their own password through PUT /api/users/{user_id} without proving knowledge of the current one",
    "source_url": "https://github.com/semaphoreui/semaphore/releases/tag/v2.19.21",
    "page_url": "https://www.firmwarely.com/devices/semaphore-ui/"
+  },
+  "apple-vision-pro": {
+   "id": "apple-vision-pro",
+   "brand": "Apple",
+   "model": "Vision Pro",
+   "category": "C",
+   "status": "update",
+   "version": "27.2.1",
+   "previous": "27.2",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "View downloads",
+   "source_url": "https://developer.apple.com/news/releases/?id=11092026e",
+   "page_url": "https://www.firmwarely.com/devices/apple-vision-pro/"
+  },
+  "ollama": {
+   "id": "ollama",
+   "brand": "Ollama",
+   "model": "Local LLM runner",
+   "category": "A",
+   "status": "update",
+   "version": "0.40.16",
+   "previous": "0.40.15",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "Ripple Preview: Ripple Preview from Ricursive Intelligence is a 65B dense model built for agentic coding. sh ollama run ripple-preview What's Changed: Qwen3.8 Flash Next uses about 27 GiB less memory on Apple silicon ollama launch claude always routes Claude Code to the selected model ollama launch…",
+   "source_url": "https://github.com/ollama/ollama/releases/tag/v0.40.16",
+   "page_url": "https://www.firmwarely.com/devices/ollama/"
+  },
+  "apple-watch-ultra-2": {
+   "id": "apple-watch-ultra-2",
+   "brand": "Apple",
+   "model": "Watch Ultra 2 (watchOS)",
+   "category": "P",
+   "status": "update",
+   "version": "27.2.1",
+   "previous": "27.2",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "View downloads",
+   "source_url": "https://developer.apple.com/news/releases/?id=11092026f",
+   "page_url": "https://www.firmwarely.com/devices/apple-watch-ultra-2/"
   }
  }
 }

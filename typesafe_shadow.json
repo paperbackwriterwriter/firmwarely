@@ -41976,6 +41976,78 @@
     "security_fix_plain": 0.85,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.313.85979",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-11-10T00:26:58+00:00",
+   "notes_chars": 47,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "apple-vision-pro",
+   "version": "27.2.1",
+   "name": "Apple Vision Pro",
+   "judged_at": "2026-11-10T00:26:58+00:00",
+   "notes_chars": 14,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ollama",
+   "version": "0.40.16",
+   "name": "Ollama Local LLM runner",
+   "judged_at": "2026-11-10T00:26:58+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "apple-watch-ultra-2",
+   "version": "27.2.1",
+   "name": "Apple Watch Ultra 2 (watchOS)",
+   "judged_at": "2026-11-10T00:26:58+00:00",
+   "notes_chars": 14,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
