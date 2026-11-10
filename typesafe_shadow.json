@@ -43146,6 +43146,42 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "tautulli",
+   "version": "2.19.1",
+   "name": "Tautulli Plex monitoring",
+   "judged_at": "2026-11-10T23:03:23+00:00",
+   "notes_chars": 208,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "langflow",
+   "version": "1.13.2",
+   "name": "Langflow Agent builder",
+   "judged_at": "2026-11-10T23:03:23+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.63,
+    "security_fix_plain": 0.53,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

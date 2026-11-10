@@ -578,13 +578,13 @@
    "model": "Plex monitoring",
    "category": "A",
    "status": "update",
-   "version": "2.19.0",
+   "version": "2.19.1",
    "previous": "2.18.2",
    "released": "2026-11-10",
    "date_known": true,
    "eol": false,
-   "notes": "Changelog: v2.19.0 (2026-11-10): Notes: Support for Python 3.10 has been dropped. The minimum Python version is now 3.11. Installs without a password set will generate a temporary random password on upgrade. The temporary login info can be found in the Tautulli log file. Please change the password …",
-   "source_url": "https://github.com/Tautulli/Tautulli/releases/tag/v2.19.0",
+   "notes": "Changelog: v2.19.1 (2026-11-10): Other: Fix: Snap package not starting. 🛡 VirusTotal GitHub Action analysis: Tautulli-macos-v2.19.1-arm64.pkg Tautulli-macos-v2.19.1-x86_64.pkg Tautulli-windows-v2.19.1-x64.exe",
+   "source_url": "https://github.com/Tautulli/Tautulli/releases/tag/v2.19.1",
    "page_url": "https://www.firmwarely.com/devices/tautulli/"
   },
   "grafana": {
@@ -616,6 +616,21 @@
    "notes": "What's Changed: Bump comfyui-frontend-package to 1.58.5 Add better error for when pixel_space VAE wrongly selected. Make SeedVR2 VAE slice length adaptive to free memory [Partner Nodes] feat(Pika): add Pika H3 Flex nodes [Partner Nodes] feat(Pika): add Pika Soundtrack, SFX and Music nodes [Partner …",
    "source_url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.45.0",
    "page_url": "https://www.firmwarely.com/devices/comfyui/"
+  },
+  "langflow": {
+   "id": "langflow",
+   "brand": "Langflow",
+   "model": "Agent builder",
+   "category": "A",
+   "status": "critical",
+   "version": "1.13.2",
+   "previous": "1.13.1",
+   "released": "2026-11-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: 🐛 Bug Fixes: fix: backport 1.13.1 fixes and image security updates to 1.12.9 fix: absorb lxml and Mako image workarounds for 1.12.9 fix: authenticate starter project MCP clients in auto-login mode fix: preserve document identities during knowledge base ingestion fix: preserve loop i…",
+   "source_url": "https://github.com/langflow-ai/langflow/releases/tag/v1.13.2",
+   "page_url": "https://www.firmwarely.com/devices/langflow/"
   }
  }
 }
