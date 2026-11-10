@@ -68,13 +68,13 @@
    "model": "3D creation suite",
    "category": "M",
    "status": "update",
-   "version": "5.2.4",
+   "version": "5.3.0",
    "previous": "5.2.3",
    "released": "2026-11-09",
    "date_known": true,
    "eol": false,
-   "notes": "v5.2.4",
-   "source_url": "https://github.com/blender/blender/releases/tag/v5.2.4",
+   "notes": "v5.3.0",
+   "source_url": "https://github.com/blender/blender/releases/tag/v5.3.0",
    "page_url": "https://www.firmwarely.com/devices/blender/"
   },
   "dns-blocklists": {
@@ -128,13 +128,13 @@
    "model": "OpenVAS scanner",
    "category": "A",
    "status": "update",
-   "version": "23.52.10",
+   "version": "23.52.11",
    "previous": "23.52.9",
    "released": "2026-11-10",
    "date_known": true,
    "eol": false,
-   "notes": "[23.52.10] - 2026-11-10: Bug Fixes: Check for subrepositories even if 401 / 403 are returned f79bae6d3 [23.52.10]: https://github.com/greenbone/openvas-scanner/compare/v23.52.9...v23.52.10",
-   "source_url": "https://github.com/greenbone/openvas-scanner/releases/tag/v23.52.10",
+   "notes": "[23.52.11] - 2026-11-10: Bug Fixes: script_tag now accepts a single-quoted name b5f50ac22 [23.52.11]: https://github.com/greenbone/openvas-scanner/compare/v23.52.10...v23.52.11",
+   "source_url": "https://github.com/greenbone/openvas-scanner/releases/tag/v23.52.11",
    "page_url": "https://www.firmwarely.com/devices/openvas-scanner/"
   },
   "windmill": {
@@ -151,6 +151,51 @@
    "notes": "1.866.0 (2026-11-10): Features: configurable columns and csv/json/xlsx export on the runs page (#​12302) (47005d5) show when each job started in the ai session jobs popover (#​12301) (8b40416) Bug Fixes: keep flow nodes on rename and stop masking flow load errors (#​12303) (3bf4864) never break run…",
    "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.866.0",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
+  },
+  "homer-dashboard": {
+   "id": "homer-dashboard",
+   "brand": "Homer",
+   "model": "Service dashboard",
+   "category": "A",
+   "status": "update",
+   "version": "26.11.1",
+   "previous": "26.08.3",
+   "released": "2026-11-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Main changes: feat(cards): one shared layout for every service card feat(cards): move every card onto the shared API chore: Update dependencies chore: release version bump Full Changelog: https://github.com/bastienwirtz/homer/compare/v26.08.3...v26.11.1",
+   "source_url": "https://github.com/bastienwirtz/homer/releases/tag/v26.11.1",
+   "page_url": "https://www.firmwarely.com/devices/homer-dashboard/"
+  },
+  "questdb": {
+   "id": "questdb",
+   "brand": "QuestDB",
+   "model": "Time series database",
+   "category": "A",
+   "status": "update",
+   "version": "10.2.0",
+   "previous": "10.1.0",
+   "released": "2026-11-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "QuestDB 10.2.0: QuestDB 10.2.0 adds GROUPING SETS, ROLLUP and CUBE, row-level retention for materialized views, a DEDUP SKIP mode that keeps the first-written row, and opt-in power-loss durability for WAL tables, enabled with cairo.commit.mode=adaptive. QWP ingestion of small messages is much faste…",
+   "source_url": "https://github.com/questdb/questdb/releases/tag/10.2.0",
+   "page_url": "https://www.firmwarely.com/devices/questdb/"
+  },
+  "ghost": {
+   "id": "ghost",
+   "brand": "Ghost",
+   "model": "Publishing platform",
+   "category": "A",
+   "status": "update",
+   "version": "6.76.0",
+   "previous": "6.75.0",
+   "released": "2026-11-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "✨ Added custom fields for keeping your own details about members - Rob Lester 🎨 Allowed Google to show large images for posts in Discover (#​32627) - louisghost 🎨 Fixed font setting dropdowns being clipped in Safari (#​32591) - Weyland Swart 🎨 Added typing over selected text to format it as inline …",
+   "source_url": "https://github.com/TryGhost/Ghost/releases/tag/v6.76.0",
+   "page_url": "https://www.firmwarely.com/devices/ghost/"
   }
  }
 }
