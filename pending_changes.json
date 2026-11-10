@@ -271,6 +271,36 @@
    "notes": "What's Changed: Features: feat(web): EmptyState with illustrated drawings feat(web): LangfuseIllustration with lazy product scenes feat(topics): filter traces in the Topics setup flow feat(rbac): mirror memberships into role assignments feat(rbac): add USER api key scope evaluated against user and …",
    "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.78.0",
    "page_url": "https://www.firmwarely.com/devices/langfuse/"
+  },
+  "weaviate": {
+   "id": "weaviate",
+   "brand": "Weaviate",
+   "model": "Vector database",
+   "category": "A",
+   "status": "update",
+   "version": "1.40.5",
+   "previous": "1.40.4",
+   "released": "2026-11-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "Breaking Changes: none New Features: none Fixes: Require every verb of a manage permission before assigning its role perf(lsmkv): stripe the segment read-bytes metric across cache lines test(reindex): make the merged-barrier restart test deterministic chore(tools): enforce golangci-lint version in …",
+   "source_url": "https://github.com/weaviate/weaviate/releases/tag/v1.40.5",
+   "page_url": "https://www.firmwarely.com/devices/weaviate/"
+  },
+  "budibase": {
+   "id": "budibase",
+   "brand": "Budibase",
+   "model": "Low-code platform",
+   "category": "A",
+   "status": "critical",
+   "version": "3.51.0",
+   "previous": "3.50.0",
+   "released": "2026-11-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Fix: automation log graph stack overflow (#​19729) Update axios resolution to 1.20.0 [#​19805] Paginate assign users popover on scroll for groups Bump/sdk from 1.27.1 to 1.32.1 in the all-non-major-security group across 1 directory by in https://github.com/Budibase/budibase/pull/198…",
+   "source_url": "https://github.com/Budibase/budibase/releases/tag/v3.51.0",
+   "page_url": "https://www.firmwarely.com/devices/budibase/"
   }
  }
 }
