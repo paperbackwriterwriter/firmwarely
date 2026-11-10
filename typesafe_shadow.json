@@ -42318,6 +42318,60 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "netbird",
+   "version": "0.82.1",
+   "name": "NetBird Mesh VPN",
+   "judged_at": "2026-11-10T10:02:51+00:00",
+   "notes_chars": 15,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "openvas-scanner",
+   "version": "23.52.10",
+   "name": "Greenbone OpenVAS scanner",
+   "judged_at": "2026-11-10T10:02:51+00:00",
+   "notes_chars": 188,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.11,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "windmill",
+   "version": "1.866.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-11-10T10:02:51+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
