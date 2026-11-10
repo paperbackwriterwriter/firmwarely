@@ -23,13 +23,13 @@
    "model": "Z-Wave control panel",
    "category": "S",
    "status": "update",
-   "version": "11.26.1",
+   "version": "11.26.2",
    "previous": "11.26.0",
    "released": "2026-11-10",
    "date_known": true,
    "eol": false,
-   "notes": "11.26.1 (2026-11-10): ✨ Features: bump zwave-js.32.2 (#​4895) (43c2a0a)",
-   "source_url": "https://github.com/zwave-js/zwave-js-ui/releases/tag/v11.26.1",
+   "notes": "11.26.2 (2026-11-10): ✨ Features: bump/server.12.0 (#​4897) (180bb73) bump zwave-js.32.3 (#​4896) (c21ca8d)",
+   "source_url": "https://github.com/zwave-js/zwave-js-ui/releases/tag/v11.26.2",
    "page_url": "https://www.firmwarely.com/devices/zwave-js-ui/"
   },
   "node-zwave-js": {
@@ -256,6 +256,21 @@
    "notes": "Fixed: Kept the records of failed database backups forever The daily database cleanup deletes failed database backups that are older than 60 days Missing production runtime variables in preview deployments when the variable has no preview variable A preview gets these production runtime variables a…",
    "source_url": "https://github.com/coollabsio/coolify/releases/tag/v4.7.4",
    "page_url": "https://www.firmwarely.com/devices/coolify/"
+  },
+  "langfuse": {
+   "id": "langfuse",
+   "brand": "Langfuse",
+   "model": "LLM observability",
+   "category": "A",
+   "status": "update",
+   "version": "4.78.0",
+   "previous": "4.77.0",
+   "released": "2026-11-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Features: feat(web): EmptyState with illustrated drawings feat(web): LangfuseIllustration with lazy product scenes feat(topics): filter traces in the Topics setup flow feat(rbac): mirror memberships into role assignments feat(rbac): add USER api key scope evaluated against user and …",
+   "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.78.0",
+   "page_url": "https://www.firmwarely.com/devices/langfuse/"
   }
  }
 }
