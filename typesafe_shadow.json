@@ -42894,6 +42894,24 @@
     "security_fix_plain": 0.64,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "casdoor",
+   "version": "4.27.1",
+   "name": "Casdoor Identity and access",
+   "judged_at": "2026-11-10T17:58:48+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.08,
+    "security_fix_plain": 0.14,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

@@ -428,13 +428,13 @@
    "model": "Identity and access",
    "category": "A",
    "status": "update",
-   "version": "4.27.0",
+   "version": "4.27.1",
    "previous": "4.26.0",
    "released": "2026-11-10",
    "date_known": true,
    "eol": false,
-   "notes": "Changelog: Features: 19d942c13ef06f7e84ce97bef0ebb04590bb3d3e feat: accept the redirect URL of the Casdoor browser extension in every application e3f65c668f4bb98e8776f79d9e0e3eab4832cc03 feat: add ALTCHA captcha provider 3d940179595f7a34b958529a9c76fc33a8a21bf1 feat: add Chinese SM algorithms, thre…",
-   "source_url": "https://github.com/casdoor/casdoor/releases/tag/v4.27.0",
+   "notes": "Changelog: Bug fixes: 5a714d180e9076a3f5f761c1fc9ad04e887ce1fa fix: improve IP address parsing 31a10f155760d3ff8b0442d3a587c164e9af0bc5 fix: improve RADIUS accounting handling 70b103a26f1d523d81470f26ead9a4eff3393c36 fix: improve SAML message decoding ca2e7a52cc6d93bbbdea35d8001591a3189a9c5c fix: i…",
+   "source_url": "https://github.com/casdoor/casdoor/releases/tag/v4.27.1",
    "page_url": "https://www.firmwarely.com/devices/casdoor/"
   },
   "rocket-chat": {
