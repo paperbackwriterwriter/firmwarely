@@ -241,6 +241,21 @@
    "notes": "v1.45.3 (2026-11-10): Bug Fixes: security: Require verified email for OIDC email allowlist (f190b67) [!IMPORTANT] If you use OIDC_ALLOWED_EMAILS, an email match now requires email_verified=true from your IdP. If OIDC login stops working after the upgrade, enable email verification in the provider o…",
    "source_url": "https://github.com/Quenary/tugtainer/releases/tag/v1.45.3",
    "page_url": "https://www.firmwarely.com/devices/tugtainer/"
+  },
+  "coolify": {
+   "id": "coolify",
+   "brand": "Coolify",
+   "model": "Self-hosting platform",
+   "category": "A",
+   "status": "update",
+   "version": "4.7.4",
+   "previous": "4.7.3",
+   "released": "2026-11-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "Fixed: Kept the records of failed database backups forever The daily database cleanup deletes failed database backups that are older than 60 days Missing production runtime variables in preview deployments when the variable has no preview variable A preview gets these production runtime variables a…",
+   "source_url": "https://github.com/coollabsio/coolify/releases/tag/v4.7.4",
+   "page_url": "https://www.firmwarely.com/devices/coolify/"
   }
  }
 }
