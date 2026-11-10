@@ -466,6 +466,21 @@
    "notes": "View downloads",
    "source_url": "https://developer.apple.com/news/releases/?id=11092026f",
    "page_url": "https://www.firmwarely.com/devices/apple-watch-ultra-2/"
+  },
+  "nintendo-switch": {
+   "id": "nintendo-switch",
+   "brand": "Nintendo",
+   "model": "Switch",
+   "category": "C",
+   "status": "update",
+   "version": "23.5.0",
+   "previous": "23.0.1",
+   "released": "2026-11-09",
+   "date_known": false,
+   "eol": false,
+   "notes": "Nintendo Switch system update. Nintendo usually lists these as stability improvements.",
+   "source_url": "https://en-americas-support.nintendo.com/app/answers/detail/a_id/22525",
+   "page_url": "https://www.firmwarely.com/devices/nintendo-switch/"
   }
  }
 }
