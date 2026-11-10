@@ -383,13 +383,13 @@
    "model": "Family fitness tracker",
    "category": "A",
    "status": "update",
-   "version": "1.12.0",
+   "version": "1.12.1",
    "previous": "1.11.0",
-   "released": "2026-11-09",
+   "released": "2026-11-10",
    "date_known": true,
    "eol": false,
-   "notes": "💙 Support SparkyFitness: Planning to buy an Android phone for app development and testing 📱 Your sponsorship helps cover the cost. Thank you for your support! 🙏 If SparkyFitness has been useful to you & your family, please consider sponsoring on GitHub or supporting via Ko-fi. Your support helps co…",
-   "source_url": "https://github.com/CodeWithCJ/SparkyFitness/releases/tag/v1.12.0",
+   "notes": "💙 Support SparkyFitness Planning to buy an Android phone for app development and testing 📱 Your sponsorship helps cover the cost. Thank you for your support! 🙏 If SparkyFitness has been useful to you & your family, please consider sponsoring on GitHub or supporting via Ko-fi. Your support helps cov…",
+   "source_url": "https://github.com/CodeWithCJ/SparkyFitness/releases/tag/v1.12.1",
    "page_url": "https://www.firmwarely.com/devices/sparkyfitness/"
   },
   "zerobyte": {
@@ -481,6 +481,21 @@
    "notes": "Nintendo Switch system update. Nintendo usually lists these as stability improvements.",
    "source_url": "https://en-americas-support.nintendo.com/app/answers/detail/a_id/22525",
    "page_url": "https://www.firmwarely.com/devices/nintendo-switch/"
+  },
+  "siyuan": {
+   "id": "siyuan",
+   "brand": "SiYuan",
+   "model": "Knowledge base",
+   "category": "A",
+   "status": "update",
+   "version": "3.8.10",
+   "previous": "3.8.9",
+   "released": "2026-11-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "Overview: This release adds rich document titles, database sub-items and related views, workspace-level AI long-term memory, and a built-in lightweight Markdown editor. Document trees handle large directories more efficiently, while unified document and block breadcrumbs make navigation more consis…",
+   "source_url": "https://github.com/siyuan-note/siyuan/releases/tag/v3.8.10",
+   "page_url": "https://www.firmwarely.com/devices/siyuan/"
   }
  }
 }
