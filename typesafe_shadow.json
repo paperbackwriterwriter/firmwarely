@@ -42768,6 +42768,78 @@
     "security_fix_plain": 0.04,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "budibase",
+   "version": "4.0.0",
+   "name": "Budibase Low-code platform",
+   "judged_at": "2026-11-10T16:49:08+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ipsw",
+   "version": "3.1.745",
+   "name": "Ipsw IOS/macOS Research Swiss Army Knife",
+   "judged_at": "2026-11-10T16:49:08+00:00",
+   "notes_chars": 201,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "netbox",
+   "version": "4.7.5",
+   "name": "NetBox Labs NetBox",
+   "judged_at": "2026-11-10T16:49:08+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "docker-android",
+   "version": "3.9.0-p2",
+   "name": "docker-android Emulated phones in containers",
+   "judged_at": "2026-11-10T16:49:09+00:00",
+   "notes_chars": 254,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
