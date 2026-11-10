@@ -511,6 +511,51 @@
    "notes": "1.34.2 (2026-11-10): Features: analytics: persist operating system versions (4de7b14) application: report native operating system versions (f520b42) application: show operating system version statistics (7707ec6) insights: add application chart sources (ec38e91) insights: add application event sour…",
    "source_url": "https://github.com/msgbyte/tianji/releases/tag/v1.34.2",
    "page_url": "https://www.firmwarely.com/devices/tianji/"
+  },
+  "podman": {
+   "id": "podman",
+   "brand": "Podman",
+   "model": "Container engine",
+   "category": "A",
+   "status": "critical",
+   "version": "6.2.0",
+   "previous": "6.1.4",
+   "released": "2026-11-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "Security: Addresses CVE-2026-121885, untrusted image labels could be used to trick podman auto-update into restarting incorrect systemd units GHSA-55rm-rwr7-q2wr. Addresses CVE-2026-111361, malicious containers images could be able to bypass Digest and Signature validation GHSA-pggw-qqjf-6cxw. Addr…",
+   "source_url": "https://github.com/podman-container-tools/podman/releases/tag/v6.2.0",
+   "page_url": "https://www.firmwarely.com/devices/podman/"
+  },
+  "synapse": {
+   "id": "synapse",
+   "brand": "Element",
+   "model": "Synapse Matrix server",
+   "category": "A",
+   "status": "update",
+   "version": "1.165.0",
+   "previous": "1.164.2",
+   "released": "2026-11-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: https://github.com/element-hq/synapse/blob/release-v1.165/CHANGES.md",
+   "source_url": "https://github.com/element-hq/synapse/releases/tag/v1.165.0",
+   "page_url": "https://www.firmwarely.com/devices/synapse/"
+  },
+  "dockcheck": {
+   "id": "dockcheck",
+   "brand": "dockcheck",
+   "model": "Docker image update checker",
+   "category": "A",
+   "status": "update",
+   "version": "0.8.4",
+   "previous": "0.8.3",
+   "released": "2026-11-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "NEW:: Extended valid paths for dockcheck.config, respecting $XDG_CONFIG_HOME and ~/.config/dockcheck/ subdir. Add additional URLs to urls.list FIX:: Fixed unbound variable Added FromHost in dockcheck-update-notification Mitigated false positive updates by comparing specific layers upstream, not onl…",
+   "source_url": "https://github.com/mag37/dockcheck/releases/tag/v0.8.4",
+   "page_url": "https://www.firmwarely.com/devices/dockcheck/"
   }
  }
 }

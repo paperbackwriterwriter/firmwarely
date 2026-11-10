@@ -42984,6 +42984,60 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "podman",
+   "version": "6.2.0",
+   "name": "Podman Container engine",
+   "judged_at": "2026-11-10T20:31:17+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.99,
+    "security_fix_plain": 0.94,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "synapse",
+   "version": "1.165.0",
+   "name": "Element Synapse Matrix server",
+   "judged_at": "2026-11-10T20:31:17+00:00",
+   "notes_chars": 79,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.48,
+    "security_fix_plain": 0.38,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "dockcheck",
+   "version": "0.8.4",
+   "name": "dockcheck Docker image update checker",
+   "judged_at": "2026-11-10T20:31:17+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
