@@ -232,14 +232,14 @@
    "brand": "Tugtainer",
    "model": "Docker container updater",
    "category": "A",
-   "status": "critical",
-   "version": "1.45.3",
+   "status": "update",
+   "version": "2.0.0",
    "previous": "1.45.2",
    "released": "2026-11-10",
    "date_known": true,
    "eol": false,
-   "notes": "v1.45.3 (2026-11-10): Bug Fixes: security: Require verified email for OIDC email allowlist (f190b67) [!IMPORTANT] If you use OIDC_ALLOWED_EMAILS, an email match now requires email_verified=true from your IdP. If OIDC login stops working after the upgrade, enable email verification in the provider o…",
-   "source_url": "https://github.com/Quenary/tugtainer/releases/tag/v1.45.3",
+   "notes": "v2.0.0 (2026-11-10): Build System: Build multi-arch images natively and drop linux/arm/v7 (f5999aa) Breaking Changes: Published images no longer include linux/arm/v7. 2.x images are linux/amd64 and linux/arm64 only. --- Detailed Changes: v1.45.3...v2.0.0",
+   "source_url": "https://github.com/Quenary/tugtainer/releases/tag/v2.0.0",
    "page_url": "https://www.firmwarely.com/devices/tugtainer/"
   },
   "coolify": {
@@ -248,13 +248,13 @@
    "model": "Self-hosting platform",
    "category": "A",
    "status": "update",
-   "version": "4.7.4",
+   "version": "4.7.5",
    "previous": "4.7.3",
    "released": "2026-11-10",
    "date_known": true,
    "eol": false,
-   "notes": "Fixed: Kept the records of failed database backups forever The daily database cleanup deletes failed database backups that are older than 60 days Missing production runtime variables in preview deployments when the variable has no preview variable A preview gets these production runtime variables a…",
-   "source_url": "https://github.com/coollabsio/coolify/releases/tag/v4.7.4",
+   "notes": "Fixed: Crashed the Keys & Tokens › API Tokens page with a 500 error for a token with scopes stored in an unexpected format Failed connection to SFTP backup storages on an IPv6 address, and a connection error without the network reason The error now shows the network reason, for example Connection r…",
+   "source_url": "https://github.com/coollabsio/coolify/releases/tag/v4.7.5",
    "page_url": "https://www.firmwarely.com/devices/coolify/"
   },
   "langfuse": {
@@ -301,6 +301,51 @@
    "notes": "What's Changed: Fix: automation log graph stack overflow (#​19729) Update axios resolution to 1.20.0 [#​19805] Paginate assign users popover on scroll for groups Bump/sdk from 1.27.1 to 1.32.1 in the all-non-major-security group across 1 directory by in https://github.com/Budibase/budibase/pull/198…",
    "source_url": "https://github.com/Budibase/budibase/releases/tag/v3.51.0",
    "page_url": "https://www.firmwarely.com/devices/budibase/"
+  },
+  "cockpit": {
+   "id": "cockpit",
+   "brand": "Cockpit",
+   "model": "Server web console",
+   "category": "A",
+   "status": "critical",
+   "version": "372",
+   "previous": "371",
+   "released": "2026-11-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "CVE-2026-91151 CVE-2026-91150 Link Red Hat issue references in changelogs Support version-specific branding directories",
+   "source_url": "https://github.com/cockpit-project/cockpit/releases/tag/372",
+   "page_url": "https://www.firmwarely.com/devices/cockpit/"
+  },
+  "databasus": {
+   "id": "databasus",
+   "brand": "Databasus",
+   "model": "PostgreSQL backup tool",
+   "category": "N",
+   "status": "update",
+   "version": "3.68.0",
+   "previous": "3.67.2",
+   "released": "2026-11-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: [3.68.0] - 2026-11-10: ✨ Features: physical-backups: Verify schema and sequence recovery (60a9481) development: Document AI reviews and streamline local setup (9251cf8) deps: Upgrade compatible major dependency versions (ab729bc) deps: Add dependency upgrade verification (ef5e365) 🐛 Bug …",
+   "source_url": "https://github.com/databasus/databasus/releases/tag/v3.68.0",
+   "page_url": "https://www.firmwarely.com/devices/databasus/"
+  },
+  "yuvomi": {
+   "id": "yuvomi",
+   "brand": "Yuvomi",
+   "model": "One home instead of many subscriptions",
+   "category": "S",
+   "status": "update",
+   "version": "2.88.0",
+   "previous": "2.87.0",
+   "released": "2026-11-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "Foundation: The web app now ships built, bundled and minified by Vite 8 with source maps, and the service worker takes its offline list from the build instead of a hand-kept one; pages, offline reach and the module API for third-party modules (/api.js, /i18n.js, /utils/html.js) stay the same, so no…",
+   "source_url": "https://github.com/ulsklyc/yuvomi/releases/tag/v2.88.0",
+   "page_url": "https://www.firmwarely.com/devices/yuvomi/"
   }
  }
 }

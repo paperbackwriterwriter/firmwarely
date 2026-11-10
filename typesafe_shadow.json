@@ -42624,6 +42624,96 @@
     "security_fix_plain": 0.19,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "tugtainer",
+   "version": "2.0.0",
+   "name": "Tugtainer Docker container updater",
+   "judged_at": "2026-11-10T15:07:22+00:00",
+   "notes_chars": 254,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "coolify",
+   "version": "4.7.5",
+   "name": "Coolify Self-hosting platform",
+   "judged_at": "2026-11-10T15:07:22+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "cockpit",
+   "version": "372",
+   "name": "Cockpit Server web console",
+   "judged_at": "2026-11-10T15:07:22+00:00",
+   "notes_chars": 119,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.75,
+    "security_fix_plain": 0.79,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "databasus",
+   "version": "3.68.0",
+   "name": "Databasus PostgreSQL backup tool",
+   "judged_at": "2026-11-10T15:07:22+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "yuvomi",
+   "version": "2.88.0",
+   "name": "Yuvomi One home instead of many subscriptions",
+   "judged_at": "2026-11-10T15:07:22+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
