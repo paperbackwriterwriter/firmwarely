@@ -37,14 +37,14 @@
    "brand": "Z-Wave JS",
    "model": "Z-Wave driver",
    "category": "S",
-   "status": "critical",
-   "version": "15.32.2",
+   "status": "update",
+   "version": "15.32.3",
    "previous": "15.32.1",
    "released": "2026-11-10",
    "date_known": true,
    "eol": false,
-   "notes": "Release 15.32.0 prevented driver startup for some users who reused their mesh security keys for Long Range as well. While this should never be done, Z-Wave JS now simply warns instead of throwing an error. Affected users should look into changing their duplicate keys. If they are in use by devices,…",
-   "source_url": "https://github.com/zwave-js/zwave-js/releases/tag/v15.32.2",
+   "notes": "Bugfixes: Limit active OTA firmware update transfers to one node at a time",
+   "source_url": "https://github.com/zwave-js/zwave-js/releases/tag/v15.32.3",
    "page_url": "https://www.firmwarely.com/devices/node-zwave-js/"
   },
   "n8n": {
@@ -196,6 +196,51 @@
    "notes": "✨ Added custom fields for keeping your own details about members - Rob Lester 🎨 Allowed Google to show large images for posts in Discover (#​32627) - louisghost 🎨 Fixed font setting dropdowns being clipped in Safari (#​32591) - Weyland Swart 🎨 Added typing over selected text to format it as inline …",
    "source_url": "https://github.com/TryGhost/Ghost/releases/tag/v6.76.0",
    "page_url": "https://www.firmwarely.com/devices/ghost/"
+  },
+  "openmqttgateway": {
+   "id": "openmqttgateway",
+   "brand": "OpenMQTTGateway",
+   "model": "MQTT sensor gateway firmware",
+   "category": "S",
+   "status": "update",
+   "version": "1.9.1",
+   "previous": "1.9.0",
+   "released": "2026-11-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: [RF] Disable DEMOD_DEBUG on esp32dev-rtl_433(-fsk) to stop abort reboot loop Full Changelog: https://github.com/1technophile/OpenMQTTGateway/compare/v1.9.0...v1.9.1",
+   "source_url": "https://github.com/1technophile/OpenMQTTGateway/releases/tag/v1.9.1",
+   "page_url": "https://www.firmwarely.com/devices/openmqttgateway/"
+  },
+  "cryptpad": {
+   "id": "cryptpad",
+   "brand": "CryptPad",
+   "model": "Encrypted collaboration",
+   "category": "A",
+   "status": "update",
+   "version": "2026.10.1",
+   "previous": "2026.10.0",
+   "released": "2026-11-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release contains the following fixes: Fix team and account deletion infinite spinner #​2436 Fix team mailbox not archived when the team is deleted Fix static files can't be shared with teams #​2434 Fix invalid CSP errors in Firefox browser console Fix possible parse error on the server Fix fil…",
+   "source_url": "https://github.com/cryptpad/cryptpad/releases/tag/2026.10.1",
+   "page_url": "https://www.firmwarely.com/devices/cryptpad/"
+  },
+  "tugtainer": {
+   "id": "tugtainer",
+   "brand": "Tugtainer",
+   "model": "Docker container updater",
+   "category": "A",
+   "status": "critical",
+   "version": "1.45.3",
+   "previous": "1.45.2",
+   "released": "2026-11-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "v1.45.3 (2026-11-10): Bug Fixes: security: Require verified email for OIDC email allowlist (f190b67) [!IMPORTANT] If you use OIDC_ALLOWED_EMAILS, an email match now requires email_verified=true from your IdP. If OIDC login stops working after the upgrade, enable email verification in the provider o…",
+   "source_url": "https://github.com/Quenary/tugtainer/releases/tag/v1.45.3",
+   "page_url": "https://www.firmwarely.com/devices/tugtainer/"
   }
  }
 }

@@ -42462,6 +42462,78 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "node-zwave-js",
+   "version": "15.32.3",
+   "name": "Z-Wave JS Z-Wave driver",
+   "judged_at": "2026-11-10T11:44:23+00:00",
+   "notes_chars": 74,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "openmqttgateway",
+   "version": "1.9.1",
+   "name": "OpenMQTTGateway MQTT sensor gateway firmware",
+   "judged_at": "2026-11-10T11:44:23+00:00",
+   "notes_chars": 180,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "cryptpad",
+   "version": "2026.10.1",
+   "name": "CryptPad Encrypted collaboration",
+   "judged_at": "2026-11-10T11:44:24+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.13,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "tugtainer",
+   "version": "1.45.3",
+   "name": "Tugtainer Docker container updater",
+   "judged_at": "2026-11-10T11:44:24+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.83,
+    "security_fix_plain": 0.84,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
