@@ -158,13 +158,13 @@
    "model": "Service dashboard",
    "category": "A",
    "status": "update",
-   "version": "26.11.1",
+   "version": "26.11.2",
    "previous": "26.08.3",
    "released": "2026-11-10",
    "date_known": true,
    "eol": false,
-   "notes": "What's Changed: Main changes: feat(cards): one shared layout for every service card feat(cards): move every card onto the shared API chore: Update dependencies chore: release version bump Full Changelog: https://github.com/bastienwirtz/homer/compare/v26.08.3...v26.11.1",
-   "source_url": "https://github.com/bastienwirtz/homer/releases/tag/v26.11.1",
+   "notes": "What's Changed: Main changes: fix: restore wrapping for columns: auto fix(header): align the header and navbar with the content grid refactor(Seerr): fetch through the service mixin's load() chore: release version bump New Contributors: made their first contribution in https://github.com/bastienwir…",
+   "source_url": "https://github.com/bastienwirtz/homer/releases/tag/v26.11.2",
    "page_url": "https://www.firmwarely.com/devices/homer-dashboard/"
   },
   "questdb": {
@@ -556,6 +556,21 @@
    "notes": "NEW:: Extended valid paths for dockcheck.config, respecting $XDG_CONFIG_HOME and ~/.config/dockcheck/ subdir. Add additional URLs to urls.list FIX:: Fixed unbound variable Added FromHost in dockcheck-update-notification Mitigated false positive updates by comparing specific layers upstream, not onl…",
    "source_url": "https://github.com/mag37/dockcheck/releases/tag/v0.8.4",
    "page_url": "https://www.firmwarely.com/devices/dockcheck/"
+  },
+  "b4": {
+   "id": "b4",
+   "brand": "B4",
+   "model": "Network packet processor",
+   "category": "R",
+   "status": "update",
+   "version": "1.90.1",
+   "previous": "1.90.0",
+   "released": "2026-11-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "[1.90.1] - 2026-11-10: Added: The log names the set and the device when a TCP Timestamp fake goes out without its timestamp, as from a Windows PC by default or toward a server that refuses timestamps. #​554 With Skip IPTables/NFTables Setup on, the log warns when the router's connection tracking wo…",
+   "source_url": "https://github.com/DanielLavrushin/b4/releases/tag/v1.90.1",
+   "page_url": "https://www.firmwarely.com/devices/b4/"
   }
  }
 }
