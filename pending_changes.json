@@ -451,6 +451,66 @@
    "notes": "Engine versions: Node: ›=22.22.3 =24.15.0 Settings › Omnichannel. Existing workspaces keep their current value on upgrade, whether Omnichannel was enabled or disabled. (#​42201) Fixes a security vulnerability in the Livechat trigger external service (#​41898) Removes unsafe selector parameter from …",
    "source_url": "https://github.com/RocketChat/Rocket.Chat/releases/tag/9.0.0",
    "page_url": "https://www.firmwarely.com/devices/rocket-chat/"
+  },
+  "immich-server": {
+   "id": "immich-server",
+   "brand": "Immich",
+   "model": "Photo backup server",
+   "category": "A",
+   "status": "critical",
+   "version": "3.4.0",
+   "previous": "3.3.6",
+   "released": "2026-11-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "v3.4.0: Welcome to Immich v3.4.0! This release adds workflow improvements, JPEG XL support, tags on mobile (finally?!), a plethora of security fixes and other improvements and bug fixes. Highlights: Make/model display changes Workflow improvements Security fixes Performance improvements Make/model …",
+   "source_url": "https://github.com/immich-app/immich/releases/tag/v3.4.0",
+   "page_url": "https://www.firmwarely.com/devices/immich-server/"
+  },
+  "infisical": {
+   "id": "infisical",
+   "brand": "Infisical",
+   "model": "Secrets manager",
+   "category": "A",
+   "status": "update",
+   "version": "0.167.8",
+   "previous": "0.167.7",
+   "released": "2026-11-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: improvement(blackbox): cut shared suite runtime by a quarter feat(billing): subscriptions list, product details sheet, and in-sheet plan management fix(ui): keep secret import path default after reopening dialog improvement(secrets-overview): expand all resource types with Open All …",
+   "source_url": "https://github.com/Infisical/infisical/releases/tag/v0.167.8",
+   "page_url": "https://www.firmwarely.com/devices/infisical/"
+  },
+  "metube": {
+   "id": "metube",
+   "brand": "MeTube",
+   "model": "yt-dlp web UI",
+   "category": "A",
+   "status": "update",
+   "version": "2026.11.10",
+   "previous": "2026.11.06",
+   "released": "2026-11-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "Docker images have been built and pushed: Docker Hub: alexta69/metube:latest alexta69/metube:2026.11.10 GitHub Container Registry: ghcr.io/alexta69/metube:latest ghcr.io/alexta69/metube:2026.11.10 Changes: fix(deps): upgrade all dependencies, including curl_cffi 0.17.0 for its bundled brotli fix (c…",
+   "source_url": "https://github.com/alexta69/metube/releases/tag/2026.11.10",
+   "page_url": "https://www.firmwarely.com/devices/metube/"
+  },
+  "tianji": {
+   "id": "tianji",
+   "brand": "Tianji",
+   "model": "Website analytics and uptime monitor",
+   "category": "A",
+   "status": "update",
+   "version": "1.34.2",
+   "previous": "1.34.1",
+   "released": "2026-11-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.34.2 (2026-11-10): Features: analytics: persist operating system versions (4de7b14) application: report native operating system versions (f520b42) application: show operating system version statistics (7707ec6) insights: add application chart sources (ec38e91) insights: add application event sour…",
+   "source_url": "https://github.com/msgbyte/tianji/releases/tag/v1.34.2",
+   "page_url": "https://www.firmwarely.com/devices/tianji/"
   }
  }
 }

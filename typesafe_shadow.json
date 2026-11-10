@@ -42912,6 +42912,78 @@
     "security_fix_plain": 0.14,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "immich-server",
+   "version": "3.4.0",
+   "name": "Immich Photo backup server",
+   "judged_at": "2026-11-10T18:49:49+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.49,
+    "security_fix_plain": 0.84,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "infisical",
+   "version": "0.167.8",
+   "name": "Infisical Secrets manager",
+   "judged_at": "2026-11-10T18:49:50+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "metube",
+   "version": "2026.11.10",
+   "name": "MeTube yt-dlp web UI",
+   "judged_at": "2026-11-10T18:49:50+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "tianji",
+   "version": "1.34.2",
+   "name": "Tianji Website analytics and uptime monitor",
+   "judged_at": "2026-11-10T18:49:50+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
