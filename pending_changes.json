@@ -143,13 +143,13 @@
    "model": "Scripts and workflows",
    "category": "A",
    "status": "update",
-   "version": "1.866.0",
+   "version": "1.867.0",
    "previous": "1.865.0",
    "released": "2026-11-10",
    "date_known": true,
    "eol": false,
-   "notes": "1.866.0 (2026-11-10): Features: configurable columns and csv/json/xlsx export on the runs page (#​12302) (47005d5) show when each job started in the ai session jobs popover (#​12301) (8b40416) Bug Fixes: keep flow nodes on rename and stop masking flow load errors (#​12303) (3bf4864) never break run…",
-   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.866.0",
+   "notes": "1.867.0 (2026-11-10): Features: fold sidebar AI chats and sessions inactive for over a week (#​12314) (466885f) gate public apps on cloud plans and unpublish them on archive (#​12321) (a9f5a9c) reveal the failed call from a tool group's failed badge (#​12320) (0e1464e) Bug Fixes: build Azure block …",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.867.0",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
   },
   "homer-dashboard": {
@@ -571,6 +571,51 @@
    "notes": "[1.90.1] - 2026-11-10: Added: The log names the set and the device when a TCP Timestamp fake goes out without its timestamp, as from a Windows PC by default or toward a server that refuses timestamps. #​554 With Skip IPTables/NFTables Setup on, the log warns when the router's connection tracking wo…",
    "source_url": "https://github.com/DanielLavrushin/b4/releases/tag/v1.90.1",
    "page_url": "https://www.firmwarely.com/devices/b4/"
+  },
+  "tautulli": {
+   "id": "tautulli",
+   "brand": "Tautulli",
+   "model": "Plex monitoring",
+   "category": "A",
+   "status": "update",
+   "version": "2.19.0",
+   "previous": "2.18.2",
+   "released": "2026-11-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: v2.19.0 (2026-11-10): Notes: Support for Python 3.10 has been dropped. The minimum Python version is now 3.11. Installs without a password set will generate a temporary random password on upgrade. The temporary login info can be found in the Tautulli log file. Please change the password …",
+   "source_url": "https://github.com/Tautulli/Tautulli/releases/tag/v2.19.0",
+   "page_url": "https://www.firmwarely.com/devices/tautulli/"
+  },
+  "grafana": {
+   "id": "grafana",
+   "brand": "Grafana",
+   "model": "Dashboards",
+   "category": "A",
+   "status": "critical",
+   "version": "13.3.1",
+   "previous": "13.3.0",
+   "released": "2026-11-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "Download page What's new highlights Security: Fix CVE-2026-102589 Security: Fix CVE-2026-107509 Security: Fix CVE-2026-110992 Security: Fix CVE-2026-111024 Security: Fix CVE-2026-13721 Security: Fix CVE-2026-14242 Features and enhancements: DateTime: Update moment-timezone and easy-tz for 2026 time…",
+   "source_url": "https://github.com/grafana/grafana/releases/tag/v13.3.1",
+   "page_url": "https://www.firmwarely.com/devices/grafana/"
+  },
+  "comfyui": {
+   "id": "comfyui",
+   "brand": "ComfyUI",
+   "model": "Diffusion workflow UI",
+   "category": "A",
+   "status": "update",
+   "version": "0.45.0",
+   "previous": "0.44.0",
+   "released": "2026-11-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Bump comfyui-frontend-package to 1.58.5 Add better error for when pixel_space VAE wrongly selected. Make SeedVR2 VAE slice length adaptive to free memory [Partner Nodes] feat(Pika): add Pika H3 Flex nodes [Partner Nodes] feat(Pika): add Pika Soundtrack, SFX and Music nodes [Partner …",
+   "source_url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.45.0",
+   "page_url": "https://www.firmwarely.com/devices/comfyui/"
   }
  }
 }

@@ -93,7 +93,7 @@
   <url><loc>https://www.firmwarely.com/devices/transmission/</loc><lastmod>2026-10-24</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/deluge/</loc><lastmod>2025-08-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/sabnzbd/</loc><lastmod>2026-09-08</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/tautulli/</loc><lastmod>2026-09-28</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/tautulli/</loc><lastmod>2026-11-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/mealie/</loc><lastmod>2026-10-31</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/tandoor-recipes/</loc><lastmod>2026-10-27</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/firefly-iii/</loc><lastmod>2026-10-11</lastmod></url>
@@ -257,7 +257,7 @@
   <url><loc>https://www.firmwarely.com/devices/handbrake/</loc><lastmod>2026-06-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/dietpi/</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/armbian/</loc><lastmod>2026-11-09</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/grafana/</loc><lastmod>2026-10-27</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/grafana/</loc><lastmod>2026-11-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/prometheus/</loc><lastmod>2026-11-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/loki/</loc><lastmod>2026-10-20</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/victoriametrics/</loc><lastmod>2026-11-09</lastmod></url>
@@ -362,7 +362,7 @@
   <url><loc>https://www.firmwarely.com/devices/llama-cpp/</loc><lastmod>2026-11-04</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/vllm/</loc><lastmod>2026-11-02</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/text-generation-webui/</loc><lastmod>2026-05-20</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/comfyui/</loc><lastmod>2026-11-04</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/comfyui/</loc><lastmod>2026-11-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/sd-webui/</loc><lastmod>2025-02-09</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/fooocus/</loc><lastmod>2024-08-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/invokeai/</loc><lastmod>2026-11-03</lastmod></url>

@@ -43074,6 +43074,78 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "windmill",
+   "version": "1.867.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-11-10T22:12:44+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.07,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "tautulli",
+   "version": "2.19.0",
+   "name": "Tautulli Plex monitoring",
+   "judged_at": "2026-11-10T22:12:44+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "grafana",
+   "version": "13.3.1",
+   "name": "Grafana Dashboards",
+   "judged_at": "2026-11-10T22:12:44+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.99,
+    "security_fix_plain": 0.96,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "comfyui",
+   "version": "0.45.0",
+   "name": "ComfyUI Diffusion workflow UI",
+   "judged_at": "2026-11-10T22:12:44+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
