@@ -301,6 +301,21 @@
    "notes": "refactor: 优化 AnimeGarden 图片接口",
    "source_url": "https://github.com/wushuo894/ani-rss/releases/tag/v3.2.58",
    "page_url": "https://www.firmwarely.com/devices/ani-rss/"
+  },
+  "mobile-mcp": {
+   "id": "mobile-mcp",
+   "brand": "Mobile Mcp",
+   "model": "Model Context Protocol Server",
+   "category": "C",
+   "status": "update",
+   "version": "1.0.17",
+   "previous": "1.0.16",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.0.17 (2026-11-11): Fix: The tap coordinate hint now matches the screenshot's orientation, so taps land correctly on landscape apps (#​454), thanks to Chore: Upgrade mobilewright to 0.0.69, which brings mobilecli 1.0.23 (#​556) Feat: iOS real devices inject the agent over the debug proxy instead o…",
+   "source_url": "https://github.com/mobile-next/mobile-mcp/releases/tag/1.0.17",
+   "page_url": "https://www.firmwarely.com/devices/mobile-mcp/"
   }
  }
 }
