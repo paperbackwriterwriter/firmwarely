@@ -98,13 +98,13 @@
    "model": "Turn any Android device",
    "category": "S",
    "status": "update",
-   "version": "2026.11.15",
+   "version": "2026.11.16",
    "previous": "2026.11.13",
-   "released": "2026-11-10",
+   "released": "2026-11-11",
    "date_known": true,
    "eol": false,
-   "notes": "What's new in Kiosk Satellite 2026.11.15: This release fixes a crash on every start on Android 10 after updating to 2026.11.14. If your kiosk is affected, the app cannot update from inside the app, so install this version over adb as described below. Fixes: Crash on every start on Android 10 after …",
-   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.15",
+   "notes": "What's new in Kiosk Satellite 2026.11.16: This release adds an equalizer for the device's speaker, adds support for the Echo Show 8 (2nd gen) Kiosk Satellite Edition image, gives the Echo Dot a fuller sound out of the box and adds dashboard links for plugin actions. It also fixes Now Playing losing…",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.16",
    "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   },
   "netbird": {
@@ -691,6 +691,51 @@
    "notes": "r9.0.8",
    "source_url": "https://github.com/mongodb/mongo/releases/tag/r9.0.8",
    "page_url": "https://www.firmwarely.com/devices/mongodb/"
+  },
+  "unpoller": {
+   "id": "unpoller",
+   "brand": "UnPoller",
+   "model": "UniFi metrics exporter",
+   "category": "R",
+   "status": "update",
+   "version": "5.9.5",
+   "previous": "5.9.4",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: 27f37138504d51b92a6582a8bdeb811faff05874 fix(promunifi): export PDU outlet relay_state and cycle_enabled 3d340d88a960f83bbf5c1424ab086882a22eaab5 build(deps): bump the all group with 3 updates e18dfb6424c45b1dd217098c8fce078a6ede52f3 build(deps): bump docker/login-action",
+   "source_url": "https://github.com/unpoller/unpoller/releases/tag/v5.9.5",
+   "page_url": "https://www.firmwarely.com/devices/unpoller/"
+  },
+  "bazzite": {
+   "id": "bazzite",
+   "brand": "Universal Blue",
+   "model": "Bazzite gaming OS",
+   "category": "C",
+   "status": "update",
+   "version": "45.20261111",
+   "previous": "45.20261105",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "This is an automatically generated changelog for release 45.20261111. From previous stable version 45.20261105 there have been the following changes. One package per new version shown. Major packages: | Name | Version | | --- | --- | | Kernel | 7.2.15-ogc1.1 ➡️ 7.3.3-ogc1.1 | | Kernel (Nvidia LTS) …",
+   "source_url": "https://github.com/ublue-os/bazzite/releases/tag/45.20261111",
+   "page_url": "https://www.firmwarely.com/devices/bazzite/"
+  },
+  "onedev": {
+   "id": "onedev",
+   "brand": "OneDev",
+   "model": "Git server with CI",
+   "category": "A",
+   "status": "update",
+   "version": "17.2.0",
+   "previous": "17.1.2",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "Installation Guide: https://docs.onedev.io/category/installation-guide Change Log: https://code.onedev.io/onedev/server/~builds/8860/fixed-issues?query=%22State%22+is+%22Released%22+order+by+%22Type%22+asc+%2C+%22Priority%22+desc Incompatibilities: https://code.onedev.io/onedev/server/~builds/8860/…",
+   "source_url": "https://github.com/theonedev/onedev/releases/tag/v17.2.0",
+   "page_url": "https://www.firmwarely.com/devices/onedev/"
   }
  }
 }
