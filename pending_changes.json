@@ -391,6 +391,51 @@
    "notes": "Bambuddy 1.3.1 What this is A feature and fix release on top of 1.3.0: five new features, four changes and 22 fixes. Four community PRs went in, and 17 people are credited. The headline is Bambu Lab H3C support: its nine-slot AMS 3H with the dryer zone, the nine-PrintTool SwapTek rack and the per-P…",
    "source_url": "https://github.com/maziggy/bambuddy/releases/tag/v1.3.1",
    "page_url": "https://www.firmwarely.com/devices/bambuddy/"
+  },
+  "etherpad": {
+   "id": "etherpad",
+   "brand": "Etherpad",
+   "model": "Collaborative editor",
+   "category": "A",
+   "status": "critical",
+   "version": "3.3.17",
+   "previous": "3.3.16",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "3.3.17 is a security release. It caps the length of author display names, which any visitor could set to almost 1 MB, and fixes .etherpad imports into pads created through the HTTP API. Upgrade as soon as you can. Security: Pads — author display names are now type-checked and capped at 128 characte…",
+   "source_url": "https://github.com/ether/etherpad/releases/tag/v3.3.17",
+   "page_url": "https://www.firmwarely.com/devices/etherpad/"
+  },
+  "ha-bambulab": {
+   "id": "ha-bambulab",
+   "brand": "ha-bambulab",
+   "model": "Bambu Lab Home Assistant integration",
+   "category": "S",
+   "status": "update",
+   "version": "2.4.0",
+   "previous": "2.3.0",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "Critical: Fix bug in v2.30.0 causing repetitive spam to Bambu services causing them to block the integration with CloudFlare. Updated the user agent string to allow connection again now the bug is fixed and to allow them to more readily identify us if we ever have another bug like this. Highlights:…",
+   "source_url": "https://github.com/greghesp/ha-bambulab/releases/tag/v2.4.0",
+   "page_url": "https://www.firmwarely.com/devices/ha-bambulab/"
+  },
+  "ha-mcp": {
+   "id": "ha-mcp",
+   "brand": "HA Mcp",
+   "model": "Configure and automate Home Assistant",
+   "category": "S",
+   "status": "update",
+   "version": "9.2.0",
+   "previous": "9.1.2",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "Added: helpers: Answer helper flows on Core's own flow and send storage fields to Core as written (#​3050) Build on Python 3.14 and run the unit tests on real Home Assistant Core (#​3009) services: Take ha_list_services from Core's own descriptions (#​2632) (#​2988) files: Edit stored text files wi…",
+   "source_url": "https://github.com/homeassistant-ai/ha-mcp/releases/tag/v9.2.0",
+   "page_url": "https://www.firmwarely.com/devices/ha-mcp/"
   }
  }
 }
