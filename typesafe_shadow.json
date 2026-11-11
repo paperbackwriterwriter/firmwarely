@@ -43344,6 +43344,42 @@
     "security_fix_plain": 0.05,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "movie-data-capture",
+   "version": "8.2.5",
+   "name": "Movie Data Capture Local movie organizer",
+   "judged_at": "2026-11-11T03:46:42+00:00",
+   "notes_chars": 25,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "voidauth",
+   "version": "1.19.1",
+   "name": "VoidAuth Single sign-on server",
+   "judged_at": "2026-11-11T03:46:42+00:00",
+   "notes_chars": 193,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

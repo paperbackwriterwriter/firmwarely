@@ -736,6 +736,36 @@
    "notes": "Installation Guide: https://docs.onedev.io/category/installation-guide Change Log: https://code.onedev.io/onedev/server/~builds/8860/fixed-issues?query=%22State%22+is+%22Released%22+order+by+%22Type%22+asc+%2C+%22Priority%22+desc Incompatibilities: https://code.onedev.io/onedev/server/~builds/8860/…",
    "source_url": "https://github.com/theonedev/onedev/releases/tag/v17.2.0",
    "page_url": "https://www.firmwarely.com/devices/onedev/"
+  },
+  "movie-data-capture": {
+   "id": "movie-data-capture",
+   "brand": "Movie Data Capture",
+   "model": "Local movie organizer",
+   "category": "A",
+   "status": "update",
+   "version": "8.2.5",
+   "previous": "8.2.4",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "View release notes 查看发布日志",
+   "source_url": "https://github.com/mvdctop/Movie_Data_Capture/releases/tag/8.2.5",
+   "page_url": "https://www.firmwarely.com/devices/movie-data-capture/"
+  },
+  "voidauth": {
+   "id": "voidauth",
+   "brand": "VoidAuth",
+   "model": "Single sign-on server",
+   "category": "A",
+   "status": "update",
+   "version": "1.19.1",
+   "previous": "1.19.0",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Fixes 🔧: CORS Fix for Uploaded Files, Better Error and Notification Messages, Misc Fixes Sponsors: Full Changelog: https://github.com/voidauth/voidauth/compare/v1.19.0...v1.19.1",
+   "source_url": "https://github.com/voidauth/voidauth/releases/tag/v1.19.1",
+   "page_url": "https://www.firmwarely.com/devices/voidauth/"
   }
  }
 }
