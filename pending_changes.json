@@ -511,6 +511,66 @@
    "notes": "Security: Medication reminders to a person's own notification channel now go through the same SSRF guard as every other channel delivery. Until now they were sent with an unguarded request. The deployment switch NOTIFICATION_ALLOW_PRIVATE_NETWORK=true applies to them as it does to the other channel…",
    "source_url": "https://github.com/ulsklyc/yuvomi/releases/tag/v2.88.1",
    "page_url": "https://www.firmwarely.com/devices/yuvomi/"
+  },
+  "pi-hole": {
+   "id": "pi-hole",
+   "brand": "Pi-hole",
+   "model": "Pi-hole (network ad blocker)",
+   "category": "R",
+   "status": "critical",
+   "version": "6.6",
+   "previous": "6.5",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "Security: This release fixes the following security advisories (credit to the reporters named): High GHSA-wp3p-45h3-2v82 (CVSS 7.3): pihole -r and pihole -up still followed symlinks in /etc/pihole when writing install.log, migration_backup_v6 and hosts/custom.list, so a pihole user could get root t…",
+   "source_url": "https://github.com/pi-hole/pi-hole/releases/tag/v6.6",
+   "page_url": "https://www.firmwarely.com/devices/pi-hole/"
+  },
+  "pihole-ftl": {
+   "id": "pihole-ftl",
+   "brand": "Pi-hole",
+   "model": "FTL DNS engine",
+   "category": "R",
+   "status": "critical",
+   "version": "6.9",
+   "previous": "6.8",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "Security: This release fixes the following security advisories (credit to the reporters named): High GHSA-pj9m-9623-2g75 (CVSS 7.2): a quote in files.gravity or files.database ended the SQL string in the Teleporter ATTACH statements, and together with Core's gravity.sh led to command execution by a…",
+   "source_url": "https://github.com/pi-hole/FTL/releases/tag/v6.9",
+   "page_url": "https://www.firmwarely.com/devices/pihole-ftl/"
+  },
+  "circuitpython": {
+   "id": "circuitpython",
+   "brand": "Adafruit",
+   "model": "CircuitPython",
+   "category": "M",
+   "status": "update",
+   "version": "10.3.2",
+   "previous": "10.3.1",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "This is CircuitPython 10.3.2, a bugfix revision of CircuitPython, and is a new stable release. Highlights of changes since 10.3.1: Remove compromised certificates from root certificates bundle. Download from circuitpython.org: Firmware downloads are available from the downloads page on circuitpytho…",
+   "source_url": "https://github.com/adafruit/circuitpython/releases/tag/10.3.2",
+   "page_url": "https://www.firmwarely.com/devices/circuitpython/"
+  },
+  "docker-pi-hole": {
+   "id": "docker-pi-hole",
+   "brand": "Pi-hole",
+   "model": "Docker image",
+   "category": "R",
+   "status": "update",
+   "version": "2026.11.0",
+   "previous": "2026.10.1",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed (Docker Specific): Schedule logrotate directly in the container crontab Drop the no-op config read at the start of ftl_config ci: remove layer cache from image builds Depend on setpriv instead of sudo Build the scheduled nightly image from development Development -› master Full Chang…",
+   "source_url": "https://github.com/pi-hole/docker-pi-hole/releases/tag/2026.11.0",
+   "page_url": "https://www.firmwarely.com/devices/docker-pi-hole/"
   }
  }
 }

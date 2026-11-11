@@ -3,7 +3,7 @@
   <url><loc>https://www.firmwarely.com/devices/ubiquiti-unifi-protect-application/</loc><lastmod>2026-11-02</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ubiquiti-unifi-network-application/</loc><lastmod>2026-10-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/home-assistant-os/</loc><lastmod>2026-11-06</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/pi-hole/</loc><lastmod>2026-10-17</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/pi-hole/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/adguard-home/</loc><lastmod>2026-11-03</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/tailscale/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/home-assistant-core/</loc><lastmod>2026-11-09</lastmod></url>
@@ -15,7 +15,7 @@
   <url><loc>https://www.firmwarely.com/devices/jellyfin-server/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/immich-server/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/nextcloud-server/</loc><lastmod>2026-10-15</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/pihole-ftl/</loc><lastmod>2026-10-17</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/pihole-ftl/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/netbird/</loc><lastmod>2026-11-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/headscale/</loc><lastmod>2026-10-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/zerotier/</loc><lastmod>2026-05-28</lastmod></url>
@@ -153,7 +153,7 @@
   <url><loc>https://www.firmwarely.com/devices/arduino-esp32/</loc><lastmod>2026-09-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/stm32duino/</loc><lastmod>2026-07-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/openpilot/</loc><lastmod>2026-10-23</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/circuitpython/</loc><lastmod>2026-09-14</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/circuitpython/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/micropython/</loc><lastmod>2026-08-24</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/rpi-imager/</loc><lastmod>2026-10-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/pico-sdk/</loc><lastmod>2026-09-04</lastmod></url>
@@ -534,7 +534,7 @@
   <url><loc>https://www.firmwarely.com/devices/amass/</loc><lastmod>2026-10-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/gobuster/</loc><lastmod>2025-09-04</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/portmaster/</loc><lastmod>2026-10-21</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/docker-pi-hole/</loc><lastmod>2026-10-31</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/docker-pi-hole/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/smartdns/</loc><lastmod>2026-11-09</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/networkmanager/</loc><lastmod>2026-07-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/reconftw/</loc><lastmod>2026-03-07</lastmod></url>
