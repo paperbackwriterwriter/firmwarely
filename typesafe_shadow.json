@@ -43686,6 +43686,60 @@
     "security_fix_plain": 0.06,
     "end_of_life": 0.04
    }
+  },
+  {
+   "id": "nats-server",
+   "version": "2.15.3",
+   "name": "NATS Messaging server",
+   "judged_at": "2026-11-11T12:48:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "akaunting",
+   "version": "3.3.1",
+   "name": "Akaunting Accounting",
+   "judged_at": "2026-11-11T12:48:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.16,
+    "security_fix_plain": 0.21,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "qwenpaw",
+   "version": "2.3.0",
+   "name": "QwenPaw Personal AI assistant",
+   "judged_at": "2026-11-11T12:48:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
