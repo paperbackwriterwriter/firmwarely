@@ -121,6 +121,66 @@
    "notes": "Security: Includes a fix for GHSA-jx97-gwvc-pfxx Includes a fix for GHSA-pqp6-f7wc-6498 ✨ Features: Add ability to disable public rooms entirely via modules (#​35641). Contributed. Harden banner module (#​35646). Contributed. Use the (now available) npm package for the element-call component (#​356…",
    "source_url": "https://github.com/element-hq/element-web/releases/tag/v1.12.34",
    "page_url": "https://www.firmwarely.com/devices/element-web/"
+  },
+  "bookstack": {
+   "id": "bookstack",
+   "brand": "BookStack",
+   "model": "Wiki and documentation",
+   "category": "A",
+   "status": "critical",
+   "version": "26.09.3",
+   "previous": "26.09.2",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "Security Release: Update Instructions Update details on blog This is a security release to address a range of vulnerabilities: Images & drawings could be unexpectedly accessed and modified when attached to inaccessible draft/trashed pages. Page editor personal draft content could be made visible to…",
+   "source_url": "https://github.com/BookStackApp/BookStack/releases/tag/v26.09.3",
+   "page_url": "https://www.firmwarely.com/devices/bookstack/"
+  },
+  "terraform": {
+   "id": "terraform",
+   "brand": "HashiCorp",
+   "model": "Terraform",
+   "category": "A",
+   "status": "update",
+   "version": "1.17.2",
+   "previous": "1.17.1",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.17.2 (November 11, 2026): ENHANCEMENTS: query: Improve performance and reduce allocations when generating configuration from large HCP Terraform queries. (#​39470) BUG FIXES: Providers referencing a managed resource with detroy=false can cause a cycle (#​39507) init: Fix repeated unavailable-prov…",
+   "source_url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.2",
+   "page_url": "https://www.firmwarely.com/devices/terraform/"
+  },
+  "windmill": {
+   "id": "windmill",
+   "brand": "Windmill",
+   "model": "Scripts and workflows",
+   "category": "A",
+   "status": "update",
+   "version": "1.868.0",
+   "previous": "1.867.0",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.868.0 (2026-11-11): Features: compile tailwind css v4 in raw app bundles (#​12346) (18556fd) Bug Fixes: back off job polling to 2s after 100 polls (#​12344) (abede3a) bump cli bundled minimatch, yaml and fast-uri past advisories (#​12337) (f7f2eee) carry every compared field through fork deploy a…",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.868.0",
+   "page_url": "https://www.firmwarely.com/devices/windmill/"
+  },
+  "kometa": {
+   "id": "kometa",
+   "brand": "Kometa",
+   "model": "Plex metadata manager",
+   "category": "A",
+   "status": "update",
+   "version": "2.5.5",
+   "previous": "2.5.4",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "Removed: linux/arm/v7 (32-bit ARM) Docker images are no longer published. v2.5.4 is the final release with armv7 images; 32-bit ARM users should pin kometateam/kometa:v2.5.4. Fixed: Suppress unverified HTTPS warnings for the configured Plex host when its SSL verification is disabled, while preservi…",
+   "source_url": "https://github.com/Kometa-Team/Kometa/releases/tag/v2.5.5",
+   "page_url": "https://www.firmwarely.com/devices/kometa/"
   }
  }
 }

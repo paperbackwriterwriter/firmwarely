@@ -43614,6 +43614,78 @@
     "security_fix_plain": 0.89,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "bookstack",
+   "version": "26.09.3",
+   "name": "BookStack Wiki and documentation",
+   "judged_at": "2026-11-11T11:57:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.99,
+    "security_fix_plain": 0.97,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "terraform",
+   "version": "1.17.2",
+   "name": "HashiCorp Terraform",
+   "judged_at": "2026-11-11T11:57:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "windmill",
+   "version": "1.868.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-11-11T11:57:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.19,
+    "security_fix_plain": 0.57,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "kometa",
+   "version": "2.5.5",
+   "name": "Kometa Plex metadata manager",
+   "judged_at": "2026-11-11T11:57:47+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.04
+   }
   }
  ]
 }
