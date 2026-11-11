@@ -502,14 +502,14 @@
    "brand": "Yuvomi",
    "model": "One home instead of many subscriptions",
    "category": "S",
-   "status": "critical",
-   "version": "2.88.1",
+   "status": "update",
+   "version": "2.89.0",
    "previous": "2.88.0",
    "released": "2026-11-11",
    "date_known": true,
    "eol": false,
-   "notes": "Security: Medication reminders to a person's own notification channel now go through the same SSRF guard as every other channel delivery. Until now they were sent with an unguarded request. The deployment switch NOTIFICATION_ALLOW_PRIVATE_NETWORK=true applies to them as it does to the other channel…",
-   "source_url": "https://github.com/ulsklyc/yuvomi/releases/tag/v2.88.1",
+   "notes": "Foundation: A readiness endpoint /readyz next to /health. /health only says that the process answers, and it stays 200 during a restore so that Docker does not restart the container in the middle of one. /readyz says whether the instance can serve right now: 200 with {\"status\":\"ready\"}, or 503 with…",
+   "source_url": "https://github.com/ulsklyc/yuvomi/releases/tag/v2.89.0",
    "page_url": "https://www.firmwarely.com/devices/yuvomi/"
   },
   "pi-hole": {
