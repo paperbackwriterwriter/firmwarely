@@ -43740,6 +43740,96 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "opnsense-firewall",
+   "version": "26.7.9",
+   "name": "OPNsense Firewall (community edition)",
+   "judged_at": "2026-11-11T13:39:08+00:00",
+   "notes_chars": 6,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.25,
+    "security_fix_plain": 0.31,
+    "end_of_life": 0.03
+   }
+  },
+  {
+   "id": "bambu-lab-a1",
+   "version": "01.09.00.00",
+   "name": "Bambu Lab A1",
+   "judged_at": "2026-11-11T13:39:08+00:00",
+   "notes_chars": 64,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "emqx",
+   "version": "6.3.3",
+   "name": "EMQX MQTT broker",
+   "judged_at": "2026-11-11T13:39:08+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "bambu-lab-a1-mini",
+   "version": "01.09.00.00",
+   "name": "Bambu Lab A1 mini",
+   "judged_at": "2026-11-11T13:39:08+00:00",
+   "notes_chars": 64,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ani-rss",
+   "version": "3.2.58",
+   "name": "ANi-RSS Anime RSS downloader",
+   "judged_at": "2026-11-11T13:39:08+00:00",
+   "notes_chars": 29,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
