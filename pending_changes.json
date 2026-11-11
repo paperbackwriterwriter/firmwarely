@@ -436,6 +436,51 @@
    "notes": "Added: helpers: Answer helper flows on Core's own flow and send storage fields to Core as written (#​3050) Build on Python 3.14 and run the unit tests on real Home Assistant Core (#​3009) services: Take ha_list_services from Core's own descriptions (#​2632) (#​2988) files: Edit stored text files wi…",
    "source_url": "https://github.com/homeassistant-ai/ha-mcp/releases/tag/v9.2.0",
    "page_url": "https://www.firmwarely.com/devices/ha-mcp/"
+  },
+  "pomerium": {
+   "id": "pomerium",
+   "brand": "Pomerium",
+   "model": "Identity-aware access proxy",
+   "category": "R",
+   "status": "update",
+   "version": "0.34.1",
+   "previous": "0.34.0",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Changed: netutil: restrict ListenerMux to unix, cross-compile for windows in CI fix(zero): stop marking 400 errors as terminal ssh: fix empty ssh route configuration Upgrade Go to 1.27.4 Full Changelog: https://github.com/pomerium/pomerium/compare/v0.34.0...v0.34.1",
+   "source_url": "https://github.com/pomerium/pomerium/releases/tag/v0.34.1",
+   "page_url": "https://www.firmwarely.com/devices/pomerium/"
+  },
+  "trystero": {
+   "id": "trystero",
+   "brand": "Trystero",
+   "model": "Peer-to-peer web app toolkit",
+   "category": "A",
+   "status": "update",
+   "version": "0.27.0",
+   "previous": "0.26.0",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "Improvements: 🪪 Persistent user identities & multi-tab presence (userId) - every participant gets an unforgeable userId alongside each tab's peerId (await room.getSelf()), persisted across browser reloads and open tabs by default (identity: 'local'). Pass identity: 'none' for throwaway IDs, reset s…",
+   "source_url": "https://github.com/dmotz/trystero/releases/tag/0.27.0",
+   "page_url": "https://www.firmwarely.com/devices/trystero/"
+  },
+  "databasement": {
+   "id": "databasement",
+   "brand": "Databasement",
+   "model": "Database backup manager",
+   "category": "N",
+   "status": "update",
+   "version": "1.10.11",
+   "previous": "1.10.10",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: ci: let issue authors reopen their issue with /reopen docs: bring the notification channel playbook up to date docs: explain how to decrypt an encrypted backup manually feat: add PushPlus notification channel feat: add database type filter on the servers index New Contributors: made…",
+   "source_url": "https://github.com/David-Crty/databasement/releases/tag/v1.10.11",
+   "page_url": "https://www.firmwarely.com/devices/databasement/"
   }
  }
 }
