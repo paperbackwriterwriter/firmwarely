@@ -796,6 +796,21 @@
    "notes": "7.2.3",
    "source_url": "https://github.com/zammad/zammad/releases/tag/7.2.3",
    "page_url": "https://www.firmwarely.com/devices/zammad/"
+  },
+  "safeline": {
+   "id": "safeline",
+   "brand": "Chaitin",
+   "model": "SafeLine web application firewall",
+   "category": "R",
+   "status": "update",
+   "version": "9.4.4",
+   "previous": "9.4.3",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "Improved: Added a Beta upgrade channel: you can opt in from the console to try new features early, and upgrade smoothly to the stable release once it’s published [Lite/Pro] Custom rules now support “Belongs to ASN / Does Not Belong to ASN” match operators. You can block attack sources by the ASN of…",
+   "source_url": "https://github.com/chaitin/SafeLine/releases/tag/v9.4.4",
+   "page_url": "https://www.firmwarely.com/devices/safeline/"
   }
  }
 }
