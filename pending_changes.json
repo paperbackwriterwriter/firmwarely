@@ -106,6 +106,21 @@
    "notes": "3.20.0 3.20.0",
    "source_url": "https://github.com/apache/apisix/releases/tag/3.20.0",
    "page_url": "https://www.firmwarely.com/devices/apisix/"
+  },
+  "element-web": {
+   "id": "element-web",
+   "brand": "Element",
+   "model": "Element Web client",
+   "category": "A",
+   "status": "critical",
+   "version": "1.12.34",
+   "previous": "1.12.33",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "Security: Includes a fix for GHSA-jx97-gwvc-pfxx Includes a fix for GHSA-pqp6-f7wc-6498 ✨ Features: Add ability to disable public rooms entirely via modules (#​35641). Contributed. Harden banner module (#​35646). Contributed. Use the (now available) npm package for the element-call component (#​356…",
+   "source_url": "https://github.com/element-hq/element-web/releases/tag/v1.12.34",
+   "page_url": "https://www.firmwarely.com/devices/element-web/"
   }
  }
 }
