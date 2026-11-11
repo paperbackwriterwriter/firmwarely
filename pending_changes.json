@@ -481,6 +481,36 @@
    "notes": "What's Changed: ci: let issue authors reopen their issue with /reopen docs: bring the notification channel playbook up to date docs: explain how to decrypt an encrypted backup manually feat: add PushPlus notification channel feat: add database type filter on the servers index New Contributors: made…",
    "source_url": "https://github.com/David-Crty/databasement/releases/tag/v1.10.11",
    "page_url": "https://www.firmwarely.com/devices/databasement/"
+  },
+  "immich-server": {
+   "id": "immich-server",
+   "brand": "Immich",
+   "model": "Photo backup server",
+   "category": "A",
+   "status": "update",
+   "version": "3.4.1",
+   "previous": "3.4.0",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "This patch release fixes various bugs. Notably, it also fixes the performance issues with shared links. What's Changed: 🌟 Enhancements: feat: futo backups 1.16.0 🐛 Bug fixes: fix(server): map .hif to image/heif fix(server): queue job status query perf(server): shared links cover query fix(web): inf…",
+   "source_url": "https://github.com/immich-app/immich/releases/tag/v3.4.1",
+   "page_url": "https://www.firmwarely.com/devices/immich-server/"
+  },
+  "yuvomi": {
+   "id": "yuvomi",
+   "brand": "Yuvomi",
+   "model": "One home instead of many subscriptions",
+   "category": "S",
+   "status": "critical",
+   "version": "2.88.1",
+   "previous": "2.88.0",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "Security: Medication reminders to a person's own notification channel now go through the same SSRF guard as every other channel delivery. Until now they were sent with an unguarded request. The deployment switch NOTIFICATION_ALLOW_PRIVATE_NETWORK=true applies to them as it does to the other channel…",
+   "source_url": "https://github.com/ulsklyc/yuvomi/releases/tag/v2.88.1",
+   "page_url": "https://www.firmwarely.com/devices/yuvomi/"
   }
  }
 }
