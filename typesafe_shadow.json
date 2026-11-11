@@ -43434,6 +43434,42 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "docker-compose",
+   "version": "5.7.1",
+   "name": "Docker Compose",
+   "judged_at": "2026-11-11T08:34:34+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.25,
+    "security_fix_plain": 0.33,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "milvus",
+   "version": "3.0.6",
+   "name": "Milvus Vector database",
+   "judged_at": "2026-11-11T08:34:34+00:00",
+   "notes_chars": 30,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

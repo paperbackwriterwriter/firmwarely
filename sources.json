@@ -11340,6 +11340,15 @@
    "type": "github",
    "repo": "ClickHouse/ClickStack",
    "product_url": "https://github.com/ClickHouse/ClickStack"
+  },
+  {
+   "id": "simplify",
+   "brand": "Simplify",
+   "model": "Android virtual machine and deobfuscator",
+   "category": "C",
+   "type": "github",
+   "repo": "CalebFenton/simplify",
+   "product_url": "https://github.com/CalebFenton/simplify"
   }
  ]
 }

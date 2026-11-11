@@ -300,7 +300,7 @@
   <url><loc>https://www.firmwarely.com/devices/rancher/</loc><lastmod>2026-10-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/podman/</loc><lastmod>2026-11-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/docker-engine/</loc><lastmod>2026-11-03</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/docker-compose/</loc><lastmod>2026-11-02</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/docker-compose/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/nomad/</loc><lastmod>2026-10-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/vault/</loc><lastmod>2026-10-22</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/consul/</loc><lastmod>2026-10-22</lastmod></url>
@@ -331,7 +331,7 @@
   <url><loc>https://www.firmwarely.com/devices/typesense/</loc><lastmod>2026-04-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/qdrant/</loc><lastmod>2026-10-22</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/weaviate/</loc><lastmod>2026-11-10</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/milvus/</loc><lastmod>2026-10-30</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/milvus/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/dragonfly/</loc><lastmod>2026-11-04</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/nats-server/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/rabbitmq/</loc><lastmod>2026-10-19</lastmod></url>
@@ -770,4 +770,5 @@
   <url><loc>https://www.firmwarely.com/devices/self-host/</loc><lastmod>2026-11-04</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/hyper-express/</loc><lastmod>2026-07-27</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/clickstack/</loc><lastmod>2026-11-01</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/simplify/</loc><lastmod>2026-11-08</lastmod></url>
 </urlset>

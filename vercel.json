@@ -742,12 +742,12 @@
       "permanent": false
     },
     {
-      "source": "/brands/:b(microsoft|miyoo|mobile-mcp|msi|nethersx2|nintendo|niu|onion|openrgb|panic|pcsx2|potensic|ppsspp|provenance|rad-power|retrobios|retrodeck|retroid|rotorflight|rpcs3|ruffle|segway|shadps4|sharpemu|shimano|skydio|specialized|super73|trek|universal-blue|valve|vanmoof|vectras-vm|wahoo|winlator|xemu|zero-zero-robotics|zwift)",
+      "source": "/brands/:b(microsoft|miyoo|mobile-mcp|msi|nethersx2|nintendo|niu|onion|openrgb|panic|pcsx2|potensic|ppsspp|provenance|rad-power|retrobios|retrodeck|retroid|rotorflight|rpcs3|ruffle|segway|shadps4|sharpemu|shimano|simplify|skydio|specialized|super73|trek|universal-blue|valve|vanmoof|vectras-vm|wahoo|winlator|xemu|zero-zero-robotics|zwift)",
       "destination": "/category/consoles-drones-ebikes/",
       "permanent": false
     },
     {
-      "source": "/brands/:b(microsoft|miyoo|mobile-mcp|msi|nethersx2|nintendo|niu|onion|openrgb|panic|pcsx2|potensic|ppsspp|provenance|rad-power|retrobios|retrodeck|retroid|rotorflight|rpcs3|ruffle|segway|shadps4|sharpemu|shimano|skydio|specialized|super73|trek|universal-blue|valve|vanmoof|vectras-vm|wahoo|winlator|xemu|zero-zero-robotics|zwift)/",
+      "source": "/brands/:b(microsoft|miyoo|mobile-mcp|msi|nethersx2|nintendo|niu|onion|openrgb|panic|pcsx2|potensic|ppsspp|provenance|rad-power|retrobios|retrodeck|retroid|rotorflight|rpcs3|ruffle|segway|shadps4|sharpemu|shimano|simplify|skydio|specialized|super73|trek|universal-blue|valve|vanmoof|vectras-vm|wahoo|winlator|xemu|zero-zero-robotics|zwift)/",
       "destination": "/category/consoles-drones-ebikes/",
       "permanent": false
     },
