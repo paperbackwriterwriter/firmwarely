@@ -44172,6 +44172,114 @@
     "security_fix_plain": 0.05,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "homepage-dashboard",
+   "version": "2.8.0",
+   "name": "Homepage Service dashboard",
+   "judged_at": "2026-11-11T22:49:14+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "talos-linux",
+   "version": "1.14.6",
+   "name": "Sidero Labs Talos Linux",
+   "judged_at": "2026-11-11T22:49:14+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "nzbhydra2",
+   "version": "9.3.1",
+   "name": "NZBHydra2 Usenet meta search",
+   "judged_at": "2026-11-11T22:49:14+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ghost",
+   "version": "6.77.0",
+   "name": "Ghost Publishing platform",
+   "judged_at": "2026-11-11T22:49:14+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "dnscontrol",
+   "version": "5.8.1",
+   "name": "DNSControl DNS as code",
+   "judged_at": "2026-11-11T22:49:14+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "fugleramme",
+   "version": "0.32.0",
+   "name": "Fugleramme Raspberry Pi bird camera",
+   "judged_at": "2026-11-11T22:49:14+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

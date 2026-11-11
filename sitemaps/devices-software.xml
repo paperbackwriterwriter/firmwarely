@@ -78,7 +78,7 @@
   <url><loc>https://www.firmwarely.com/devices/authentik/</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/vaultwarden/</loc><lastmod>2026-11-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/bitwarden-server/</loc><lastmod>2026-10-28</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/homepage-dashboard/</loc><lastmod>2026-10-23</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/homepage-dashboard/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/heimdall-dashboard/</loc><lastmod>2026-10-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/homer-dashboard/</loc><lastmod>2026-11-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/sonarr/</loc><lastmod>2026-09-16</lastmod></url>
@@ -296,7 +296,7 @@
   <url><loc>https://www.firmwarely.com/devices/harvester/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/kubernetes/</loc><lastmod>2026-10-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/k3s/</loc><lastmod>2026-11-03</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/talos-linux/</loc><lastmod>2026-10-26</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/talos-linux/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/rancher/</loc><lastmod>2026-10-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/podman/</loc><lastmod>2026-11-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/docker-engine/</loc><lastmod>2026-11-03</lastmod></url>
@@ -379,7 +379,7 @@
   <url><loc>https://www.firmwarely.com/devices/whoogle/</loc><lastmod>2026-04-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/emby-server/</loc><lastmod>2026-10-20</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/jackett/</loc><lastmod>2026-11-11</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/nzbhydra2/</loc><lastmod>2026-11-08</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/nzbhydra2/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/flaresolverr/</loc><lastmod>2026-09-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/autobrr/</loc><lastmod>2026-11-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/recyclarr/</loc><lastmod>2026-10-28</lastmod></url>
@@ -416,7 +416,7 @@
   <url><loc>https://www.firmwarely.com/devices/lemmy/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/pixelfed/</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/peertube/</loc><lastmod>2026-10-26</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/ghost/</loc><lastmod>2026-11-10</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/ghost/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/hugo/</loc><lastmod>2026-10-27</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/flarum/</loc><lastmod>2026-10-09</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/listmonk/</loc><lastmod>2026-11-10</lastmod></url>
@@ -588,7 +588,7 @@
   <url><loc>https://www.firmwarely.com/devices/rethink-app/</loc><lastmod>2026-10-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/hickory-dns/</loc><lastmod>2026-09-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/doggo/</loc><lastmod>2026-10-22</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/dnscontrol/</loc><lastmod>2026-11-09</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/dnscontrol/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/findomain/</loc><lastmod>2025-07-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/shadps4/</loc><lastmod>2026-10-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/rpcs3/</loc><lastmod>2026-09-30</lastmod></url>
@@ -707,7 +707,7 @@
   <url><loc>https://www.firmwarely.com/devices/olares/</loc><lastmod>2026-09-24</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/octelium/</loc><lastmod>2026-11-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/homelable/</loc><lastmod>2026-11-07</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/fugleramme/</loc><lastmod>2026-11-04</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/fugleramme/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/snapotter/</loc><lastmod>2026-11-03</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/profilarr/</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/dockcheck/</loc><lastmod>2026-11-10</lastmod></url>
