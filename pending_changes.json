@@ -766,6 +766,36 @@
    "notes": "What's Changed: Fixes 🔧: CORS Fix for Uploaded Files, Better Error and Notification Messages, Misc Fixes Sponsors: Full Changelog: https://github.com/voidauth/voidauth/compare/v1.19.0...v1.19.1",
    "source_url": "https://github.com/voidauth/voidauth/releases/tag/v1.19.1",
    "page_url": "https://www.firmwarely.com/devices/voidauth/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.3047",
+   "previous": "0.24.3042",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: 2a1b3920459ec1352400ac9149adaf69e4c7d23a core: bump packages (#​17265) 8167f39d7a0f429991f465a595b8cf91660eae59 nobs: new cats 2a75caaba072e132629b35323257d3ea4ff08903 brdirectory: new date parse 3f1c87e43c215a6f90a9100c1c9a3837dded9918 amigosshare: correct date utc dfc68715a077c047c4a8fb…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.3047",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "zammad": {
+   "id": "zammad",
+   "brand": "Zammad",
+   "model": "Help desk",
+   "category": "A",
+   "status": "update",
+   "version": "7.2.3",
+   "previous": "6.5.5",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "7.2.3",
+   "source_url": "https://github.com/zammad/zammad/releases/tag/7.2.3",
+   "page_url": "https://www.firmwarely.com/devices/zammad/"
   }
  }
 }
