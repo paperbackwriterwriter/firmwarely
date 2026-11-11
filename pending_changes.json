@@ -61,6 +61,51 @@
    "notes": "English | 中文 New Features Overview: Added GPU status views and vLLM token throughput monitoring Overview: Added support for multiple directory shortcuts Models: Completely rebuilt GPU management、 Models: Completely rebuilt vLLM management、 Models: Completely rebuilt model services Agents: Added sup…",
    "source_url": "https://github.com/1Panel-dev/1Panel/releases/tag/v2.5.0",
    "page_url": "https://www.firmwarely.com/devices/1panel/"
+  },
+  "wiki-js": {
+   "id": "wiki-js",
+   "brand": "Wiki.js",
+   "model": "Wiki",
+   "category": "A",
+   "status": "update",
+   "version": "3.3.1",
+   "previous": "3.3.0",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": ":bug: Bug Fixes: 40c6918 - content delivery config expects true by default (commit, based on PR #​8229) 750f664 - google workspaces auth group mapping (commit) :arrow_lower_right: fixes issue #​8230 opened a2466c2 - inbox page mobile optimization (commit) :arrow_lower_right: fixes issue #​8238 open…",
+   "source_url": "https://github.com/requarks/wiki/releases/tag/3.3.1",
+   "page_url": "https://www.firmwarely.com/devices/wiki-js/"
+  },
+  "penpot": {
+   "id": "penpot",
+   "brand": "Penpot",
+   "model": "Design tool",
+   "category": "A",
+   "status": "critical",
+   "version": "2.19.1",
+   "previous": "2.19.0",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": ":lock: Security fixes: Fix editor-role team members retrieving the signed invitation token of any pending invitation (https://github.com/penpot/penpot/security/advisories/GHSA-4mmc-j8rh-74pf) (PR: #​12892) Fix share-link page-scope escape in get-profiles-for-file-comments leaking the identity of co…",
+   "source_url": "https://github.com/penpot/penpot/releases/tag/2.19.1",
+   "page_url": "https://www.firmwarely.com/devices/penpot/"
+  },
+  "apisix": {
+   "id": "apisix",
+   "brand": "Apache",
+   "model": "APISIX API gateway",
+   "category": "R",
+   "status": "update",
+   "version": "3.20.0",
+   "previous": "3.19.0",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "3.20.0 3.20.0",
+   "source_url": "https://github.com/apache/apisix/releases/tag/3.20.0",
+   "page_url": "https://www.firmwarely.com/devices/apisix/"
   }
  }
 }
