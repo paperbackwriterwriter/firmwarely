@@ -1,5 +1,66 @@
 {
- "since": null,
+ "since": "2026-11-11T09:25:18+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "rustdesk": {
+   "id": "rustdesk",
+   "brand": "RustDesk",
+   "model": "Remote desktop",
+   "category": "R",
+   "status": "update",
+   "version": "1.5.3",
+   "previous": "1.5.1",
+   "released": "2026-11-09",
+   "date_known": true,
+   "eol": false,
+   "notes": "| Architecture | Windows | Ubuntu | Mac | Android | Flatpak | iOS | Web | |--------------|---------|--------|-----|----------|---------|---------|---------| | x86-64 (64-bit) | EXE MSI | Download | Download | Universal | Download | | Go | | AArch64 (ARM64) | EXE MSI | Download | Download | Download…",
+   "source_url": "https://github.com/rustdesk/rustdesk/releases/tag/1.5.3",
+   "page_url": "https://www.firmwarely.com/devices/rustdesk/"
+  },
+  "n8n": {
+   "id": "n8n",
+   "brand": "n8n",
+   "model": "Workflow automation",
+   "category": "A",
+   "status": "update",
+   "version": "2.47.4",
+   "previous": "2.47.3",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "2.47.4 (2026-11-11): Bug Fixes: core: Keep expression transfers working after built-in replacements (#​43360) (b110abb) core: Keep observational memory running after a user stops a HITL card (#​43225) (353a342) core: Match bare node references across expression engines (#​43358) (989975c) Edit Imag…",
+   "source_url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.47.4",
+   "page_url": "https://www.firmwarely.com/devices/n8n/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.315.32602",
+   "previous": "37522026.315.456",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​12291 #​12290 #​12289 #​12288",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.315.32602",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "1panel": {
+   "id": "1panel",
+   "brand": "1Panel",
+   "model": "Linux server panel",
+   "category": "A",
+   "status": "update",
+   "version": "2.5.0",
+   "previous": "2.4.2",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "English | 中文 New Features Overview: Added GPU status views and vLLM token throughput monitoring Overview: Added support for multiple directory shortcuts Models: Completely rebuilt GPU management、 Models: Completely rebuilt vLLM management、 Models: Completely rebuilt model services Agents: Added sup…",
+   "source_url": "https://github.com/1Panel-dev/1Panel/releases/tag/v2.5.0",
+   "page_url": "https://www.firmwarely.com/devices/1panel/"
+  }
+ }
 }
