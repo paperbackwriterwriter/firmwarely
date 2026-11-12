@@ -44730,6 +44730,60 @@
     "security_fix_plain": 0.04,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "esp-web-tools",
+   "version": "10.5.0",
+   "name": "ESPHome ESP Web Tools installer",
+   "judged_at": "2026-11-12T10:47:29+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "kestra",
+   "version": "2.0.10",
+   "name": "Kestra Orchestration platform",
+   "judged_at": "2026-11-12T10:47:29+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.31,
+    "security_fix_plain": 0.41,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "openobserve",
+   "version": "1.2.0-rc2",
+   "name": "Openobserve Observability platform",
+   "judged_at": "2026-11-12T10:47:29+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.74,
+    "security_fix_plain": 0.57,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

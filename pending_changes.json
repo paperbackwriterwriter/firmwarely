@@ -106,6 +106,51 @@
    "notes": "#​12313 #​12310 #​12306 #​12305 #​12303 #​12302 #​12300 #​12299 #​12298",
    "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.316.32772",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "esp-web-tools": {
+   "id": "esp-web-tools",
+   "brand": "ESPHome",
+   "model": "ESP Web Tools installer",
+   "category": "M",
+   "status": "update",
+   "version": "10.5.0",
+   "previous": "10.4.0",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Strip all carriage returns from console lines (#​764) Build releases once and publish the attached tarball (#​761) Migrate to/serial-sdk 3.0.0 (#​760) Show online dashboard options for devices on non-Wi-Fi interfaces (#​723), Lazy-load the WebUSB serial code (#​756) Commit the draft…",
+   "source_url": "https://github.com/esphome/esp-web-tools/releases/tag/10.5.0",
+   "page_url": "https://www.firmwarely.com/devices/esp-web-tools/"
+  },
+  "kestra": {
+   "id": "kestra",
+   "brand": "Kestra",
+   "model": "Orchestration platform",
+   "category": "A",
+   "status": "update",
+   "version": "2.0.10",
+   "previous": "2.0.9",
+   "released": "2026-11-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: 🚀 Features: core 9bbc3a2 add an overridable scope around copilot tool calls (#​22107) (#​22467), closes #​22107 #​22467 triggers dd22869 webhook hmac signature validation (#​19659), closes #​19659 📘 Subtasks: ci 8d6d74d remove global- workflows from releases/v2.0.x version 1de24df update…",
+   "source_url": "https://github.com/kestra-io/kestra/releases/tag/v2.0.10",
+   "page_url": "https://www.firmwarely.com/devices/kestra/"
+  },
+  "openobserve": {
+   "id": "openobserve",
+   "brand": "Openobserve",
+   "model": "Observability platform",
+   "category": "A",
+   "status": "update",
+   "version": "1.2.0-rc2",
+   "previous": "1.2.0-rc1",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "📦 Download Binaries from https://openobserve.ai/downloads What's Changed: fix: refuse cross-tenant writes through function update and remote destination nodes [v1.2] fix(fleet): fleet delete counts, console and pipeline map fixes, CPU profile labels [v1.2] fix(oncall): link the coverage-gap email t…",
+   "source_url": "https://github.com/openobserve/openobserve/releases/tag/v1.2.0-rc2",
+   "page_url": "https://www.firmwarely.com/devices/openobserve/"
   }
  }
 }

@@ -243,7 +243,7 @@
   <url><loc>https://www.firmwarely.com/devices/reticulum/</loc><lastmod>2026-11-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/m5unified/</loc><lastmod>2026-11-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/openocd/</loc><lastmod>2023-01-14</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/esp-web-tools/</loc><lastmod>2026-07-15</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/esp-web-tools/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/meshtastic-web/</loc><lastmod>2026-08-09</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ventoy/</loc><lastmod>2026-10-09</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/rufus/</loc><lastmod>2026-06-30</lastmod></url>
@@ -355,7 +355,7 @@
   <url><loc>https://www.firmwarely.com/devices/airflow/</loc><lastmod>2026-11-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/prefect/</loc><lastmod>2026-11-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/dagster/</loc><lastmod>2026-11-05</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/kestra/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/kestra/</loc><lastmod>2026-11-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ollama/</loc><lastmod>2026-11-09</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/open-webui/</loc><lastmod>2026-11-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/localai/</loc><lastmod>2026-10-23</lastmod></url>
@@ -719,7 +719,7 @@
   <url><loc>https://www.firmwarely.com/devices/sentry/</loc><lastmod>2026-10-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/pm2/</loc><lastmod>2026-11-03</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/osquery/</loc><lastmod>2026-10-29</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/openobserve/</loc><lastmod>2026-11-04</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/openobserve/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/bettercap/</loc><lastmod>2026-05-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/thanos/</loc><lastmod>2026-10-27</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/bottom/</loc><lastmod>2026-11-01</lastmod></url>
