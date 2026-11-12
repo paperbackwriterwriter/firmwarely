@@ -196,6 +196,21 @@
    "notes": "This release includes security fixes, performance improvements, and bug fixes since 2.31.0. As part of our ongoing proactive security reviews, this release includes a larger set of security fixes than usual. We recommend that you upgrade as soon as possible. Loader Changes For the loader changes ta…",
    "source_url": "https://github.com/timescale/timescaledb/releases/tag/2.32.0",
    "page_url": "https://www.firmwarely.com/devices/timescaledb/"
+  },
+  "cloudflared": {
+   "id": "cloudflared",
+   "brand": "Cloudflare",
+   "model": "Tunnel daemon",
+   "category": "R",
+   "status": "update",
+   "version": "2026.11.0",
+   "previous": "2026.10.7",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "SHA256 Checksums: cloudflared-amd64.pkg: 9ebb44efa5f2a2d42541eeec113ca708ee8aa1f693e3b9743cffa6c84541eb65 cloudflared-arm64.pkg: 89cf5f39b64ccecc6f2a53b2cf8ae7b7635a0c5763c53159973caf5add4d6ce0 cloudflared-darwin-amd64.tgz: be6be8d4aa0c3ff66917e265002fc9f702d42eae877edf495143f5b874c424af cloudflare…",
+   "source_url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.11.0",
+   "page_url": "https://www.firmwarely.com/devices/cloudflared/"
   }
  }
 }
