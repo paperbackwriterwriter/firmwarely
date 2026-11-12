@@ -571,6 +571,66 @@
    "notes": "What's new in Kiosk Satellite 2026.11.17: This release adds support for the Echo Dot 3rd gen (donut) Kiosk Satellite Edition image, lets you reorder the dashboard view rotation by drag and fixes the update check when GitHub's API refuses the request. It also fixes the microphone gain slider on the …",
    "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.17",
    "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
+  },
+  "dagster": {
+   "id": "dagster",
+   "brand": "Dagster",
+   "model": "Data orchestrator",
+   "category": "A",
+   "status": "update",
+   "version": "1.13.30",
+   "previous": "1.13.29",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "New: Dropped support for Python 3.10. Dagster now requires Python 3.11 or later. [ui] The asset catalog and asset graph no longer poll asset health data for assets whose health isn't shown, which reduces load when browsing large workspaces. [dagster-cloud-cli] Added a dagster-cloud deployment copy-…",
+   "source_url": "https://github.com/dagster-io/dagster/releases/tag/1.13.30",
+   "page_url": "https://www.firmwarely.com/devices/dagster/"
+  },
+  "zulip": {
+   "id": "zulip",
+   "brand": "Zulip",
+   "model": "Team chat",
+   "category": "A",
+   "status": "update",
+   "version": "13.0",
+   "previous": "12.4",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "Complete release notes",
+   "source_url": "https://github.com/zulip/zulip/releases/tag/13.0",
+   "page_url": "https://www.firmwarely.com/devices/zulip/"
+  },
+  "onyx": {
+   "id": "onyx",
+   "brand": "Onyx",
+   "model": "AI platform",
+   "category": "A",
+   "status": "update",
+   "version": "5.1.2",
+   "previous": "5.1.1",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "See the assets to download this version and install. What's Changed: fix(web): accept Azure OpenAI v1 target URIs (#​17578) to release v5.1 chore(hotfix): cherry-pick 4 commits to release v5.1 fix(permissions): keep tenant schema in SharePoint upsert's OneDrive check (#​17650) to release v5.1 chore…",
+   "source_url": "https://github.com/onyx-dot-app/onyx/releases/tag/v5.1.2",
+   "page_url": "https://www.firmwarely.com/devices/onyx/"
+  },
+  "databasus": {
+   "id": "databasus",
+   "brand": "Databasus",
+   "model": "PostgreSQL backup tool",
+   "category": "N",
+   "status": "update",
+   "version": "3.69.0",
+   "previous": "3.68.0",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: [3.69.0] - 2026-11-12: ✨ Features: openspec: Define file-based Databasus recovery (5bce273) openspec: Plan Databasus backups and recovery (a84ac96) 🐛 Bug Fixes: tests: Finish the WAL segment before waiting for replayable WAL after promotion (138f730) tests: Build the Patroni test image o…",
+   "source_url": "https://github.com/databasus/databasus/releases/tag/v3.69.0",
+   "page_url": "https://www.firmwarely.com/devices/databasus/"
   }
  }
 }
