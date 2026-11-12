@@ -143,13 +143,13 @@
    "model": "Observability platform",
    "category": "A",
    "status": "update",
-   "version": "1.2.0-rc1",
+   "version": "1.2.0-rc2",
    "previous": "1.2.0-rc1",
-   "released": "2026-11-04",
+   "released": "2026-11-12",
    "date_known": true,
    "eol": false,
-   "notes": "📦 Download Binaries from https://openobserve.ai/downloads What's Changed: chore(deps): bump shell-quote from 1.10.0 to 1.12.0 in /web by in https://github.com/openobserve/openobserve/pull/15182 fix(migration): conflict on the target's key when copying to postgres feat(metrics): metrics v2 — alerts …",
-   "source_url": "https://github.com/openobserve/openobserve/releases/tag/v1.2.0-rc1",
+   "notes": "📦 Download Binaries from https://openobserve.ai/downloads What's Changed: fix: refuse cross-tenant writes through function update and remote destination nodes [v1.2] fix(fleet): fleet delete counts, console and pipeline map fixes, CPU profile labels [v1.2] fix(oncall): link the coverage-gap email t…",
+   "source_url": "https://github.com/openobserve/openobserve/releases/tag/v1.2.0-rc2",
    "page_url": "https://www.firmwarely.com/devices/openobserve/"
   },
   "jellyseerr": {
@@ -211,6 +211,21 @@
    "notes": "SHA256 Checksums: cloudflared-amd64.pkg: 9ebb44efa5f2a2d42541eeec113ca708ee8aa1f693e3b9743cffa6c84541eb65 cloudflared-arm64.pkg: 89cf5f39b64ccecc6f2a53b2cf8ae7b7635a0c5763c53159973caf5add4d6ce0 cloudflared-darwin-amd64.tgz: be6be8d4aa0c3ff66917e265002fc9f702d42eae877edf495143f5b874c424af cloudflare…",
    "source_url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.11.0",
    "page_url": "https://www.firmwarely.com/devices/cloudflared/"
+  },
+  "windmill": {
+   "id": "windmill",
+   "brand": "Windmill",
+   "model": "Scripts and workflows",
+   "category": "A",
+   "status": "update",
+   "version": "1.870.0",
+   "previous": "1.869.0",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.870.0 (2026-11-12): Features: charts and tables in AI chat replies and artifacts (#​12374) (6ba4002) run the git sync pull request diff check from auto-pull polling (#​12360) (6e6789a) Bug Fixes: apply the url/embed toggle to every app link, jwt ones included (#​12378) (f634330) cli: pull datatab…",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.870.0",
+   "page_url": "https://www.firmwarely.com/devices/windmill/"
   }
  }
 }
