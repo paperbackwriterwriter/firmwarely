@@ -113,13 +113,13 @@
    "model": "ESP Web Tools installer",
    "category": "M",
    "status": "update",
-   "version": "10.5.1",
+   "version": "10.5.2",
    "previous": "10.4.0",
    "released": "2026-11-12",
    "date_known": true,
    "eol": false,
-   "notes": "What's Changed: Add a test suite covering lazy chunks and the port picker (#​767) Fix missing retry dialog after dismissing the port picker (#​766)",
-   "source_url": "https://github.com/esphome/esp-web-tools/releases/tag/10.5.1",
+   "notes": "What's Changed: Keep the install button entry chunk free of imports (#​769) Update the ESPHome logo (#​768)",
+   "source_url": "https://github.com/esphome/esp-web-tools/releases/tag/10.5.2",
    "page_url": "https://www.firmwarely.com/devices/esp-web-tools/"
   },
   "kestra": {
@@ -218,13 +218,13 @@
    "model": "Scripts and workflows",
    "category": "A",
    "status": "update",
-   "version": "1.870.0",
+   "version": "1.871.0",
    "previous": "1.869.0",
    "released": "2026-11-12",
    "date_known": true,
    "eol": false,
-   "notes": "1.870.0 (2026-11-12): Features: charts and tables in AI chat replies and artifacts (#​12374) (6ba4002) run the git sync pull request diff check from auto-pull polling (#​12360) (6e6789a) Bug Fixes: apply the url/embed toggle to every app link, jwt ones included (#​12378) (f634330) cli: pull datatab…",
-   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.870.0",
+   "notes": "1.871.0 (2026-11-12): Features: bring ai agents in line with scripts and flows (#​12311) (162c6e4) move the home tree's owner menu to the row's right side (#​12359) (67cfa46) open the AI chat run card full screen (#​12392) (38000fa) show a loading skeleton for the sidebar session list (#​12383) (f0…",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.871.0",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
   },
   "nextcloud-server": {
@@ -511,6 +511,51 @@
    "notes": "⚠️ Important Upgrade Notes: Helm chart: if you set some probes keys, the keys you did not set now take the new defaults (10 s period, 5 s timeout). If you tuned failureThreshold for the old 60 s period, also set periodSeconds: 60. Probe values that are not positive integers now fail helm install an…",
    "source_url": "https://github.com/appsmithorg/appsmith/releases/tag/v2.7.0",
    "page_url": "https://www.firmwarely.com/devices/appsmith/"
+  },
+  "beszel": {
+   "id": "beszel",
+   "brand": "Beszel",
+   "model": "Server monitoring hub",
+   "category": "A",
+   "status": "update",
+   "version": "0.21.2",
+   "previous": "0.21.1",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Add an actions menu with alert settings to the system detail page (#​2803) Add FAN_SENSORS to include or exclude fan sensors (#​2713) Add styled HTML alert emails (#​2697) Add no_self_update build tag to disable hub and agent self-updates (#​2724) Add warnings for missing automatic …",
+   "source_url": "https://github.com/henrygd/beszel/releases/tag/v0.21.2",
+   "page_url": "https://www.firmwarely.com/devices/beszel/"
+  },
+  "aily-blockly": {
+   "id": "aily-blockly",
+   "brand": "Aily",
+   "model": "Blockly AI IDE for Arduino",
+   "category": "M",
+   "status": "update",
+   "version": "0.9.112",
+   "previous": "0.9.111",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "v0.9.112: Changes: ✨ New Features Added an installation guidance window on macOS when the app has not been moved to the Applications folder. The AI assistant now opens automatically after signing in. Build requests now retain their associated compiler logs for easier troubleshooting. 🐛 Bug Fixes Im…",
+   "source_url": "https://github.com/ailyProject/aily-blockly/releases/tag/v0.9.112",
+   "page_url": "https://www.firmwarely.com/devices/aily-blockly/"
+  },
+  "skipper": {
+   "id": "skipper",
+   "brand": "Skipper",
+   "model": "HTTP router and reverse proxy",
+   "category": "R",
+   "status": "update",
+   "version": "0.28.76",
+   "previous": "0.28.75",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes: Interrupted download can remove active routes after a 304 response (#​4423) An interrupted route download can overwrite the local cache with an incomplete route list and store the new ETag. If the recovery request receives 304 Not Modified, Skipper loads the incomplete cache and removes ro…",
+   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.76",
+   "page_url": "https://www.firmwarely.com/devices/skipper/"
   }
  }
 }
