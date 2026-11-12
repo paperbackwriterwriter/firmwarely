@@ -781,6 +781,51 @@
    "notes": "Get the BIOS files: Paste this in a terminal. It finds the setup and installs the missing BIOS files. Linux, macOS, Steam Deck sh curl -fsSL https://abdess.github.io/retrobios/i | sh Windows powershell irm https://abdess.github.io/retrobios/i.ps1 | iex On a handheld: get the app for the system. Ful…",
    "source_url": "https://github.com/Abdess/retrobios/releases/tag/v2026.11.11",
    "page_url": "https://www.firmwarely.com/devices/retrobios/"
+  },
+  "nginx-proxy-manager": {
+   "id": "nginx-proxy-manager",
+   "brand": "Nginx Proxy Manager",
+   "model": "Reverse proxy manager",
+   "category": "R",
+   "status": "update",
+   "version": "2.17.0",
+   "previous": "2.16.0",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "The dark mode interface has changed colour due to the Tabler theme updates [!WARNING] Certbot has been updated. Exercise caution with this upgrade as your DNS plugins may not work as expected and require tweaks to dependencies. See the Certbot Doc for more info. EdgeDNS, Beget and Infomaniak DNS pl…",
+   "source_url": "https://github.com/NginxProxyManager/nginx-proxy-manager/releases/tag/v2.17.0",
+   "page_url": "https://www.firmwarely.com/devices/nginx-proxy-manager/"
+  },
+  "misskey": {
+   "id": "misskey",
+   "brand": "Misskey",
+   "model": "Social platform",
+   "category": "A",
+   "status": "update",
+   "version": "2026.11.0",
+   "previous": "2026.10.1",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "Note: 今回のリリースではMisskeyの動作要件が変更されます。必ずアップグレード前にお使いの環境をご確認ください。 本番環境においてMisskeyを正しく起動するためのスクリプトを新設しました。こちらを利用して起動することで、余計なプロセスが常駐することを防ぎ、メモリ使用量を数十MB程度（公式Docker Imageの場合で約50MB）削減することが可能です。 node ./scripts/start.mjs でMisskeyを起動できます。 pnpm start と同等の動作をします。 node ./scripts/start.mjs --migrate でマイグレーションを実行し…",
+   "source_url": "https://github.com/misskey-dev/misskey/releases/tag/2026.11.0",
+   "page_url": "https://www.firmwarely.com/devices/misskey/"
+  },
+  "titanium-web-proxy": {
+   "id": "titanium-web-proxy",
+   "brand": "Titanium Web Proxy",
+   "model": "HTTP(S) proxy server",
+   "category": "R",
+   "status": "update",
+   "version": "8.0.2",
+   "previous": "8.0.1",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Certificates. Tolerate dead SSL handles on invalidate; cancel mint waits before dispose; survive ClearRoot during parallel leaf mint; invalidate SSL context cache when IntermediateCertificates changes; do not cancel SaveFakeCertificates on the idle-clear token; drop implicit root tr…",
+   "source_url": "https://github.com/justcoding121/titanium-web-proxy/releases/tag/v8.0.2",
+   "page_url": "https://www.firmwarely.com/devices/titanium-web-proxy/"
   }
  }
 }

@@ -44460,6 +44460,60 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "nginx-proxy-manager",
+   "version": "2.17.0",
+   "name": "Nginx Proxy Manager Reverse proxy manager",
+   "judged_at": "2026-11-12T03:53:06+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "misskey",
+   "version": "2026.11.0",
+   "name": "Misskey Social platform",
+   "judged_at": "2026-11-12T03:53:06+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "titanium-web-proxy",
+   "version": "8.0.2",
+   "name": "Titanium Web Proxy HTTP(S) proxy server",
+   "judged_at": "2026-11-12T03:53:06+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.11,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
