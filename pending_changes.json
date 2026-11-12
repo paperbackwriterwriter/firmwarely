@@ -556,6 +556,21 @@
    "notes": "Changes: Interrupted download can remove active routes after a 304 response (#​4423) An interrupted route download can overwrite the local cache with an incomplete route list and store the new ETag. If the recovery request receives 304 Not Modified, Skipper loads the incomplete cache and removes ro…",
    "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.76",
    "page_url": "https://www.firmwarely.com/devices/skipper/"
+  },
+  "kiosk-satellite": {
+   "id": "kiosk-satellite",
+   "brand": "Kiosk Satellite",
+   "model": "Turn any Android device",
+   "category": "S",
+   "status": "update",
+   "version": "2026.11.17",
+   "previous": "2026.11.16",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's new in Kiosk Satellite 2026.11.17: This release adds support for the Echo Dot 3rd gen (donut) Kiosk Satellite Edition image, lets you reorder the dashboard view rotation by drag and fixes the update check when GitHub's API refuses the request. It also fixes the microphone gain slider on the …",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.17",
+   "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   }
  }
 }
