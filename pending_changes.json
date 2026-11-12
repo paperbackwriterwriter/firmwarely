@@ -826,6 +826,21 @@
    "notes": "What's Changed: Certificates. Tolerate dead SSL handles on invalidate; cancel mint waits before dispose; survive ClearRoot during parallel leaf mint; invalidate SSL context cache when IntermediateCertificates changes; do not cancel SaveFakeCertificates on the idle-clear token; drop implicit root tr…",
    "source_url": "https://github.com/justcoding121/titanium-web-proxy/releases/tag/v8.0.2",
    "page_url": "https://www.firmwarely.com/devices/titanium-web-proxy/"
+  },
+  "uptime-kuma": {
+   "id": "uptime-kuma",
+   "brand": "Uptime Kuma",
+   "model": "Uptime monitor",
+   "category": "R",
+   "status": "update",
+   "version": "2.5.10",
+   "previous": "2.5.9",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "🐞 Bug Fixes: #​8138 fix: reset password for embedded MariaDB",
+   "source_url": "https://github.com/louislam/uptime-kuma/releases/tag/2.5.10",
+   "page_url": "https://www.firmwarely.com/devices/uptime-kuma/"
   }
  }
 }
