@@ -841,6 +841,21 @@
    "notes": "🐞 Bug Fixes: #​8138 fix: reset password for embedded MariaDB",
    "source_url": "https://github.com/louislam/uptime-kuma/releases/tag/2.5.10",
    "page_url": "https://www.firmwarely.com/devices/uptime-kuma/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.3053",
+   "previous": "0.24.3047",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: 33600d30017058863ce15745873cf3866eb428e9 magnetcat: new alt domains c6e52442cc95e2b6b3f34fda487c01ccab577c0e 52bt: new domains 779a478622529dc8e8eb41ae6f790d7184cf04a2 add bytepeer a private site. resolves #​17266 07c2cb618b19e036ce287630d9bec13da6077dc6 snowpt: dl no longer in torrents p…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.3053",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
