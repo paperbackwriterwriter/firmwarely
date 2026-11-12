@@ -44370,6 +44370,96 @@
     "security_fix_plain": 0.08,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "bazzite",
+   "version": "45.20261112",
+   "name": "Universal Blue Bazzite gaming OS",
+   "judged_at": "2026-11-12T03:02:30+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "umami",
+   "version": "3.5.0",
+   "name": "Umami Web analytics",
+   "judged_at": "2026-11-12T03:02:30+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "gogs",
+   "version": "0.14.4",
+   "name": "Gogs Git service",
+   "judged_at": "2026-11-12T03:02:30+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.91,
+    "security_fix_plain": 0.92,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "tooljet",
+   "version": "3.20.257-lts",
+   "name": "ToolJet Low-code platform",
+   "judged_at": "2026-11-12T03:02:30+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "retrobios",
+   "version": "2026.11.11",
+   "name": "RetroBIOS Emulator BIOS packs",
+   "judged_at": "2026-11-12T03:02:30+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
