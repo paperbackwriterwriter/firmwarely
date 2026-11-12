@@ -44568,6 +44568,42 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "microsoft-xbox-series-x",
+   "version": "10.0.26100.9662",
+   "name": "Microsoft Xbox Series X|S",
+   "judged_at": "2026-11-12T08:15:17+00:00",
+   "notes_chars": 54,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "dokploy",
+   "version": "0.31.1",
+   "name": "Dokploy Deployment platform",
+   "judged_at": "2026-11-12T08:15:17+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.94,
+    "security_fix_plain": 0.87,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

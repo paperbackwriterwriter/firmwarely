@@ -11349,6 +11349,15 @@
    "type": "github",
    "repo": "CalebFenton/simplify",
    "product_url": "https://github.com/CalebFenton/simplify"
+  },
+  {
+   "id": "netwatch",
+   "brand": "Netwatch",
+   "model": "Network diagnostics in your terminal",
+   "category": "R",
+   "type": "github",
+   "repo": "matthart1983/netwatch",
+   "product_url": "https://github.com/matthart1983/netwatch"
   }
  ]
 }
