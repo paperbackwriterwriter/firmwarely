@@ -149,7 +149,7 @@
   <url><loc>https://www.firmwarely.com/devices/duet-web-control/</loc><lastmod>2026-10-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/linuxcnc/</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/lasergrbl/</loc><lastmod>2025-03-01</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/arduino-ide/</loc><lastmod>2026-06-09</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/arduino-ide/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/arduino-esp32/</loc><lastmod>2026-09-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/stm32duino/</loc><lastmod>2026-07-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/openpilot/</loc><lastmod>2026-10-23</lastmod></url>
@@ -307,7 +307,7 @@
   <url><loc>https://www.firmwarely.com/devices/terraform/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/opentofu/</loc><lastmod>2026-11-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/semaphore-ui/</loc><lastmod>2026-11-10</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/openvas-scanner/</loc><lastmod>2026-11-10</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/openvas-scanner/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/trivy/</loc><lastmod>2026-11-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/nuclei/</loc><lastmod>2026-08-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/passbolt/</loc><lastmod>2026-11-12</lastmod></url>
@@ -588,7 +588,7 @@
   <url><loc>https://www.firmwarely.com/devices/rethink-app/</loc><lastmod>2026-10-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/hickory-dns/</loc><lastmod>2026-09-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/doggo/</loc><lastmod>2026-10-22</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/dnscontrol/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/dnscontrol/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/findomain/</loc><lastmod>2025-07-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/shadps4/</loc><lastmod>2026-10-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/rpcs3/</loc><lastmod>2026-09-30</lastmod></url>
@@ -648,9 +648,9 @@
   <url><loc>https://www.firmwarely.com/devices/box64/</loc><lastmod>2026-08-02</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/sharpemu/</loc><lastmod>2026-11-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/melonds/</loc><lastmod>2025-11-18</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/browserbox/</loc><lastmod>2026-11-07</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/browserbox/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/vulcain/</loc><lastmod>2026-10-03</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/krakend-ce/</loc><lastmod>2026-11-02</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/krakend-ce/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/angie/</loc><lastmod>2026-10-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/piko/</loc><lastmod>2026-10-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/trickster/</loc><lastmod>2026-11-03</lastmod></url>
@@ -700,7 +700,7 @@
   <url><loc>https://www.firmwarely.com/devices/sniffnet/</loc><lastmod>2026-07-22</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/gping/</loc><lastmod>2026-08-31</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/maltrail/</loc><lastmod>2026-10-14</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/arkime/</loc><lastmod>2026-10-22</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/arkime/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/rustnet/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/panel/</loc><lastmod>2026-10-22</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/kiosk-satellite/</loc><lastmod>2026-11-11</lastmod></url>

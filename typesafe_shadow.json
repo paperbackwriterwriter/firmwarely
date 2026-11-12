@@ -45018,6 +45018,114 @@
     "security_fix_plain": 0.92,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "arduino-ide",
+   "version": "2.3.11",
+   "name": "Arduino Development environment",
+   "judged_at": "2026-11-12T15:29:14+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.88,
+    "security_fix_plain": 0.8,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "openvas-scanner",
+   "version": "23.52.12",
+   "name": "Greenbone OpenVAS scanner",
+   "judged_at": "2026-11-12T15:29:14+00:00",
+   "notes_chars": 185,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "dnscontrol",
+   "version": "5.8.2",
+   "name": "DNSControl DNS as code",
+   "judged_at": "2026-11-12T15:29:14+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "browserbox",
+   "version": "20.8.5",
+   "name": "BrowserBox Remote browser isolation",
+   "judged_at": "2026-11-12T15:29:15+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "krakend-ce",
+   "version": "3.0.4",
+   "name": "KrakenD API gateway (Community Edition)",
+   "judged_at": "2026-11-12T15:29:15+00:00",
+   "notes_chars": 133,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "arkime",
+   "version": "6.9.2",
+   "name": "Arkime Packet capture and search",
+   "judged_at": "2026-11-12T15:29:15+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
