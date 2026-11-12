@@ -45198,6 +45198,42 @@
     "security_fix_plain": 0.95,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "element-web",
+   "version": "1.12.35",
+   "name": "Element Web client",
+   "judged_at": "2026-11-12T18:01:19+00:00",
+   "notes_chars": 92,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.07,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "appsmith",
+   "version": "2.7.0",
+   "name": "Appsmith Internal tools builder",
+   "judged_at": "2026-11-12T18:01:19+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
