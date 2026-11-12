@@ -44298,6 +44298,42 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "raspap",
+   "version": "3.5.10",
+   "name": "RaspAP Wi-Fi router for Raspberry Pi",
+   "judged_at": "2026-11-12T00:30:39+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.89,
+    "security_fix_plain": 0.82,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "vault",
+   "version": "2.2.2",
+   "name": "HashiCorp Vault",
+   "judged_at": "2026-11-12T00:30:39+00:00",
+   "notes_chars": 13,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
