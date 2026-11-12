@@ -44658,6 +44658,78 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "uptime-kuma",
+   "version": "2.5.11",
+   "name": "Uptime Kuma Uptime monitor",
+   "judged_at": "2026-11-12T09:56:52+00:00",
+   "notes_chars": 167,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.94,
+    "security_fix_plain": 0.6,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "picard",
+   "version": "3.0.5",
+   "name": "MusicBrainz Picard tagger",
+   "judged_at": "2026-11-12T09:56:53+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "langfuse",
+   "version": "4.79.0",
+   "name": "Langfuse LLM observability",
+   "judged_at": "2026-11-12T09:56:53+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.316.32772",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-11-12T09:56:53+00:00",
+   "notes_chars": 71,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

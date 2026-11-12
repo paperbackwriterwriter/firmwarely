@@ -46,6 +46,66 @@
    "notes": "English | 中文 New Features Models: Added support for connecting external vLLM instances and monitoring them in Overview Enhancements: Models: Improved GPU group card layouts and topology-based ordering Models: Improved the vLLM deployment list and made image pulling opt-in Bug Fixes: Models: Fixed i…",
    "source_url": "https://github.com/1Panel-dev/1Panel/releases/tag/v2.5.1",
    "page_url": "https://www.firmwarely.com/devices/1panel/"
+  },
+  "uptime-kuma": {
+   "id": "uptime-kuma",
+   "brand": "Uptime Kuma",
+   "model": "Uptime monitor",
+   "category": "R",
+   "status": "critical",
+   "version": "2.5.11",
+   "previous": "2.5.10",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "⬆️ Security Fixes: #​8094 chore: Update dependencies GHSA-437w-j82f-9vjh fix: [Admin Only] RCE via an upstream package (Details will be revealed after 7 days) (Thanks)",
+   "source_url": "https://github.com/louislam/uptime-kuma/releases/tag/2.5.11",
+   "page_url": "https://www.firmwarely.com/devices/uptime-kuma/"
+  },
+  "picard": {
+   "id": "picard",
+   "brand": "MusicBrainz",
+   "model": "Picard tagger",
+   "category": "A",
+   "status": "update",
+   "version": "3.0.5",
+   "previous": "3.0.4",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "Please refer to the download page for official download locations. Bugfixes: PICARD-3511 - Saving embedded artwork fails when setting the artwork for multiple selected files PICARD-3525 - Restore Defaults uses wrong values for plugins PICARD-3538 - Unable to change cover art provider order PICARD-3…",
+   "source_url": "https://github.com/metabrainz/picard/releases/tag/release-3.0.5",
+   "page_url": "https://www.firmwarely.com/devices/picard/"
+  },
+  "langfuse": {
+   "id": "langfuse",
+   "brand": "Langfuse",
+   "model": "LLM observability",
+   "category": "A",
+   "status": "update",
+   "version": "4.79.0",
+   "previous": "4.78.0",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Features: feat(ai-gateway): add OpenRouter as a pre-release gateway provider feat: add SUBSTITUTE_OK no-data mode for monitors feat(ai-gateway): add xAI as a pre-release gateway provider feat(audit-logs): record read-access events for MCP tools feat: Delete isAdmin flag feat(audit-l…",
+   "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.79.0",
+   "page_url": "https://www.firmwarely.com/devices/langfuse/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.316.32772",
+   "previous": "37522026.315.57477",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​12313 #​12310 #​12306 #​12305 #​12303 #​12302 #​12300 #​12299 #​12298",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.316.32772",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   }
  }
 }
