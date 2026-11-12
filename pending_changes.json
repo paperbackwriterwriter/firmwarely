@@ -421,6 +421,66 @@
    "notes": "Installation Instructions | 5.x -› 6.x Upgrade Instructions | FAQ | CHANGELOG | JA4+ Install | Docker Install: A db.pl upgrade is required when upgrading from Arkime 5 or earlier Support Arkime's ongoing development! Become a Sponsor! :sparkles: What's new :sparkles:: Breaking: #​4415 uploadCommand…",
    "source_url": "https://github.com/arkime/arkime/releases/tag/v6.9.2",
    "page_url": "https://www.firmwarely.com/devices/arkime/"
+  },
+  "netbird": {
+   "id": "netbird",
+   "brand": "NetBird",
+   "model": "Mesh VPN",
+   "category": "R",
+   "status": "update",
+   "version": "0.83.0",
+   "previous": "0.82.1",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release Notes for v0.83.0: ⚠️ Breaking changes: profile ownership and daemon access control: Each profile now has an owner, and local users can control only their own profiles as the daemon has a new IPC authorization layer. Single-user desktops and headless peers registered with a setup key and au…",
+   "source_url": "https://github.com/netbirdio/netbird/releases/tag/v0.83.0",
+   "page_url": "https://www.firmwarely.com/devices/netbird/"
+  },
+  "stm32duino": {
+   "id": "stm32duino",
+   "brand": "STMicroelectronics",
+   "model": "STM32 Arduino core",
+   "category": "M",
+   "status": "update",
+   "version": "3.1.0",
+   "previous": "3.0.0",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: add support for WeAct \"F411 8M HSE\" variant and rename existing menu … fix: add missing include path fix(i2c): correct check condition fix(pio): include paths fix(spi): init never called at begin ci(astyle): enable workflow using version 3.1 Add Phoque1 and Phoque2 brushless driver …",
+   "source_url": "https://github.com/stm32duino/Arduino_Core_STM32/releases/tag/3.1.0",
+   "page_url": "https://www.firmwarely.com/devices/stm32duino/"
+  },
+  "vorta": {
+   "id": "vorta",
+   "brand": "Vorta",
+   "model": "Borg backup desktop client",
+   "category": "N",
+   "status": "update",
+   "version": "0.12.1",
+   "previous": "0.12.0",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "Clarify repository menu labels for initializing vs. adding existing repos (#​2509) Turn off Sparkle's automatic update checks when updates are disabled (#​2583) Don't count a check that found inconsistencies as a validation (#​2591) Fix extract dialog crash on Borg 2.0 archives and sort type errors…",
+   "source_url": "https://github.com/borgbase/vorta/releases/tag/v0.12.1",
+   "page_url": "https://www.firmwarely.com/devices/vorta/"
+  },
+  "strapi": {
+   "id": "strapi",
+   "brand": "Strapi",
+   "model": "Headless CMS",
+   "category": "A",
+   "status": "critical",
+   "version": "5.62.0",
+   "previous": "5.61.0",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "5.62.0 (2026-11-12): :warning: Security Warning and Notice :warning: Strapi was made aware of a vulnerability that was patched in this release, for now we are going to delay the detailed disclosure of the exact details on how to exploit it and how it was patched to give time for users to upgrade be…",
+   "source_url": "https://github.com/strapi/strapi/releases/tag/v5.62.0",
+   "page_url": "https://www.firmwarely.com/devices/strapi/"
   }
  }
 }
