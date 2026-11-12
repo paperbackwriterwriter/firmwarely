@@ -88,7 +88,7 @@
   <url><loc>https://www.firmwarely.com/devices/bazarr/</loc><lastmod>2026-09-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/readarr/</loc><lastmod>2025-06-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/overseerr/</loc><lastmod>2026-02-15</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/jellyseerr/</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/jellyseerr/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/qbittorrent/</loc><lastmod>2026-10-20</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/transmission/</loc><lastmod>2026-10-24</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/deluge/</loc><lastmod>2025-08-17</lastmod></url>
@@ -140,7 +140,7 @@
   <url><loc>https://www.firmwarely.com/devices/openwakeword/</loc><lastmod>2024-02-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/hyperion-ng/</loc><lastmod>2026-04-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/mainsail/</loc><lastmod>2026-08-27</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/fluidd/</loc><lastmod>2026-10-16</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/fluidd/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/moonraker/</loc><lastmod>2026-08-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/prusaslicer/</loc><lastmod>2026-11-02</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/orcaslicer/</loc><lastmod>2026-11-07</lastmod></url>
@@ -324,7 +324,7 @@
   <url><loc>https://www.firmwarely.com/devices/redis/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/valkey/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/clickhouse/</loc><lastmod>2026-10-24</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/timescaledb/</loc><lastmod>2026-10-20</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/timescaledb/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/questdb/</loc><lastmod>2026-11-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/duckdb/</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/meilisearch/</loc><lastmod>2026-11-09</lastmod></url>
