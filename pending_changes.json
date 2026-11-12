@@ -1,5 +1,51 @@
 {
- "since": null,
+ "since": "2026-11-12T09:05:55+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "n8n": {
+   "id": "n8n",
+   "brand": "n8n",
+   "model": "Workflow automation",
+   "category": "A",
+   "status": "update",
+   "version": "2.47.5",
+   "previous": "2.47.4",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "2.47.5 (2026-11-12): Bug Fixes: API: Reject edits to read-only credential nodes in the Public API (#​43555) (404b3df) editor: Align animated node border corners (#​43549) (1fd6894)",
+   "source_url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.47.5",
+   "page_url": "https://www.firmwarely.com/devices/n8n/"
+  },
+  "glpi": {
+   "id": "glpi",
+   "brand": "GLPI",
+   "model": "IT asset management",
+   "category": "A",
+   "status": "critical",
+   "version": "12.0.2",
+   "previous": "12.0.1",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "This is a security release, upgrading is recommended: You will find below the list of security issues fixed in this bugfixes version: [SECURITY - High] Privilege Escalation via the legacy API [SECURITY - High] OAuth server consent bypass [SECURITY - High] Account takeover via an embed dashboard [SE…",
+   "source_url": "https://github.com/glpi-project/glpi/releases/tag/12.0.2",
+   "page_url": "https://www.firmwarely.com/devices/glpi/"
+  },
+  "1panel": {
+   "id": "1panel",
+   "brand": "1Panel",
+   "model": "Linux server panel",
+   "category": "A",
+   "status": "update",
+   "version": "2.5.1",
+   "previous": "2.5.0",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "English | 中文 New Features Models: Added support for connecting external vLLM instances and monitoring them in Overview Enhancements: Models: Improved GPU group card layouts and topology-based ordering Models: Improved the vLLM deployment list and made image pulling opt-in Bug Fixes: Models: Fixed i…",
+   "source_url": "https://github.com/1Panel-dev/1Panel/releases/tag/v2.5.1",
+   "page_url": "https://www.firmwarely.com/devices/1panel/"
+  }
+ }
 }

@@ -44604,6 +44604,60 @@
     "security_fix_plain": 0.87,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "n8n",
+   "version": "2.47.5",
+   "name": "n8n Workflow automation",
+   "judged_at": "2026-11-12T09:06:11+00:00",
+   "notes_chars": 180,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.38,
+    "security_fix_plain": 0.16,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "glpi",
+   "version": "12.0.2",
+   "name": "GLPI IT asset management",
+   "judged_at": "2026-11-12T09:06:11+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.99,
+    "security_fix_plain": 0.97,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "1panel",
+   "version": "2.5.1",
+   "name": "1Panel Linux server panel",
+   "judged_at": "2026-11-12T09:06:11+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
