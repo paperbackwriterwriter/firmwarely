@@ -44964,6 +44964,60 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "cosmos-server",
+   "version": "0.24.0",
+   "name": "Cosmos Home server platform",
+   "judged_at": "2026-11-12T14:38:39+00:00",
+   "notes_chars": 57,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "erpnext",
+   "version": "16.55.0",
+   "name": "Frappe ERPNext",
+   "judged_at": "2026-11-12T14:38:39+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.69,
+    "security_fix_plain": 0.69,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "appwrite",
+   "version": "2.7.2",
+   "name": "Appwrite Backend platform",
+   "judged_at": "2026-11-12T14:38:40+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.93,
+    "security_fix_plain": 0.92,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

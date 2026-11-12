@@ -286,6 +286,51 @@
    "notes": "What's Changed: Fixes 🐛: Fix visual editor for more-info action with entity Ignore fan controls the entity does not support Ignore cover controls the entity does not support Respect zero bounds in number button controls Preserve configured step precision in number buttons Fix quickbar chip not open…",
    "source_url": "https://github.com/piitaya/lovelace-mushroom/releases/tag/v5.3.0",
    "page_url": "https://www.firmwarely.com/devices/lovelace-mushroom/"
+  },
+  "cosmos-server": {
+   "id": "cosmos-server",
+   "brand": "Cosmos",
+   "model": "Home server platform",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.0",
+   "previous": "0.23.4",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release version 0.24.0 for x86_64 and ARM64 architectures",
+   "source_url": "https://github.com/azukaar/Cosmos-Server/releases/tag/v0.24.0",
+   "page_url": "https://www.firmwarely.com/devices/cosmos-server/"
+  },
+  "erpnext": {
+   "id": "erpnext",
+   "brand": "Frappe",
+   "model": "ERPNext",
+   "category": "A",
+   "status": "update",
+   "version": "16.55.0",
+   "previous": "16.54.0",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "General: Bug Fixes (12) Email, import, account-merging, and other processing actions can no longer be triggered by opening a link, and queued work starts only after the related document is saved. Cancelling a Quotation now clears its _Lost Reasons_. (https://github.com/frappe/erpnext/pull/64151) Wh…",
+   "source_url": "https://github.com/frappe/erpnext/releases/tag/v16.55.0",
+   "page_url": "https://www.firmwarely.com/devices/erpnext/"
+  },
+  "appwrite": {
+   "id": "appwrite",
+   "brand": "Appwrite",
+   "model": "Backend platform",
+   "category": "A",
+   "status": "critical",
+   "version": "2.7.2",
+   "previous": "2.7.1",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "Appwrite 2.7.2 is a security patch for the 2.7 line. It backports the security fixes released on main since 2.7.1, rebuilds on appwrite/base 2.2.11 to clear the image's open vulnerability findings, and ships with the 1.2.181 self-hosted Console (was 1.2.138). Upgrading from 2.7.1 needs no schema ch…",
+   "source_url": "https://github.com/appwrite/appwrite/releases/tag/2.7.2",
+   "page_url": "https://www.firmwarely.com/devices/appwrite/"
   }
  }
 }

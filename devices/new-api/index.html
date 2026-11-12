@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>New API AI gateway — latest version 1.0.0-rc (Nov 2026) | Firmwarely</title>
-<meta name="description" content="Latest New API AI gateway version is 1.0.0-rc, released Nov 8, 2026. Release notes, version history and update alerts.">
+<meta name="description" content="Latest New API AI gateway version is 1.0.0-rc, released Nov 12, 2026. Release notes, version history and update alerts.">
 <link rel="canonical" href="https://www.firmwarely.com/devices/new-api/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
 <meta property="og:site_name" content="Firmwarely">
 <meta property="og:title" content="New API AI gateway — latest version 1.0.0-rc (Nov 2026) | Firmwarely">
-<meta property="og:description" content="Latest New API AI gateway version is 1.0.0-rc, released Nov 8, 2026. Release notes, version history and update alerts.">
+<meta property="og:description" content="Latest New API AI gateway version is 1.0.0-rc, released Nov 12, 2026. Release notes, version history and update alerts.">
 <meta property="og:url" content="https://www.firmwarely.com/devices/new-api/">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://www.firmwarely.com/og.png">
@@ -259,7 +259,7 @@ footer a:hover{color:var(--text)}
 <script defer src="/_vercel/insights/script.js"></script>
 <script defer src="/formguard.js"></script>
 <script defer src="/captcha.js"></script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Self-hosted apps & servers", "item": "https://www.firmwarely.com/category/self-hosted/"}, {"@type": "ListItem", "position": 3, "name": "New API AI gateway", "item": "https://www.firmwarely.com/devices/new-api/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/new-api/", "url": "https://www.firmwarely.com/devices/new-api/", "name": "New API AI gateway — latest version 1.0.0-rc (Nov 2026) | Firmwarely", "description": "Latest New API AI gateway version is 1.0.0-rc, released Nov 8, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-11-12"}, {"@type": "SoftwareApplication", "name": "New API AI gateway", "applicationCategory": "UtilitiesApplication", "softwareVersion": "1.0.0-rc", "author": {"@type": "Organization", "name": "New API"}, "datePublished": "2026-11-08", "releaseNotes": "[!IMPORTANT] 增加了 gpt-image-2.6 的支持。它的新参数 complexity、svg、frame_count、frame_duration_ms 和 markup 会转发给上游，可以生成 SVG 和 GIF，编辑图片时可以带 markup 标注图层。 修复了 Redis 集群和分片 Redis 上修改用户或令牌时报 keys must in same slot 的问题。多节点部署请把所有节点一起升级，新旧版本混跑时，一个节点上的用户和令牌变更不一定能及时同步到另一个版本的节点。 SQLITE_PATH 只写文件路径时，现在和默认配置一样开启 WAL 和写入等待。数据…", "url": "https://github.com/QuantumNous/new-api/releases/tag/v1.0.0-rc.49"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Devices", "item": "https://www.firmwarely.com/devices/"}, {"@type": "ListItem", "position": 2, "name": "Self-hosted apps & servers", "item": "https://www.firmwarely.com/category/self-hosted/"}, {"@type": "ListItem", "position": 3, "name": "New API AI gateway", "item": "https://www.firmwarely.com/devices/new-api/"}]}, {"@type": "WebPage", "@id": "https://www.firmwarely.com/devices/new-api/", "url": "https://www.firmwarely.com/devices/new-api/", "name": "New API AI gateway — latest version 1.0.0-rc (Nov 2026) | Firmwarely", "description": "Latest New API AI gateway version is 1.0.0-rc, released Nov 12, 2026. Release notes, version history and update alerts.", "isPartOf": {"@type": "WebSite", "name": "Firmwarely", "url": "https://www.firmwarely.com/"}, "dateModified": "2026-11-12"}, {"@type": "SoftwareApplication", "name": "New API AI gateway", "applicationCategory": "UtilitiesApplication", "softwareVersion": "1.0.0-rc", "author": {"@type": "Organization", "name": "New API"}, "datePublished": "2026-11-12", "releaseNotes": "[!IMPORTANT] 新增提供商插件、请求处理插件和社区插件市场。提供商插件把一个上游厂商接成一种渠道；请求处理插件在请求和回复上运行，可以按全局、分组、渠道和模型生效。 原敏感词设置在首次启动时迁成一个「请求过滤」实例，旧设置项会被删除。命中时返回 400 request_rejected，原来是 500 sensitive_words_detected。回滚到旧版本后敏感词检查是关闭的，需要重新填写。 多节点部署：设置、权限、插件、渠道等手动改动几秒内同步到所有节点。CHANNEL_UPDATE_FREQUENCY 的定时余额更新改为只在主节点运行。超过 30 天的已结束系统任务会被…", "url": "https://github.com/QuantumNous/new-api/releases/tag/v1.0.0-rc.50"}]}</script>
 </head>
 <body>
 <header>
@@ -285,11 +285,11 @@ footer a:hover{color:var(--text)}
     <div>
       <h1 class="dev-h">New API AI gateway releases</h1>
       <span class="status update">new version</span>
-      <p style="color:var(--muted);margin:1rem 0 0">New API AI gateway is tracked under self-hosted apps &amp; servers. Its latest version, 1.0.0-rc, shipped on Nov 8, 2026.</p>
+      <p style="color:var(--muted);margin:1rem 0 0">New API AI gateway is tracked under self-hosted apps &amp; servers. Its latest version, 1.0.0-rc, shipped on Nov 12, 2026.</p>
       <div class="card" style="margin-top:1.25rem">
         <dl class="kv">
           <dt>Latest version</dt><dd>1.0.0-rc</dd>
-          <dt>Released</dt><dd><time datetime="2026-11-08">Nov 8, 2026</time></dd>
+          <dt>Released</dt><dd><time datetime="2026-11-12">Nov 12, 2026</time></dd>
           <dt>Category</dt><dd><a href="/category/self-hosted/">Self-hosted apps &amp; servers</a></dd>
           <dt>Last checked</dt><dd><time datetime="2026-11-12">Nov 12, 2026</time></dd>
           
@@ -305,13 +305,13 @@ footer a:hover{color:var(--text)}
         Firmwarely links out; it never hosts downloads.</p>
       </div>
       <h2 style="margin-top:2rem">What changed</h2>
-      <p style="color:var(--muted)">[!IMPORTANT] 增加了 gpt-image-2.6 的支持。它的新参数 complexity、svg、frame_count、frame_duration_ms 和 markup 会转发给上游，可以生成 SVG 和 GIF，编辑图片时可以带 markup 标注图层。 修复了 Redis 集群和分片 Redis 上修改用户或令牌时报 keys must in same slot 的问题。多节点部署请把所有节点一起升级，新旧版本混跑时，一个节点上的用户和令牌变更不一定能及时同步到另一个版本的节点。 SQLITE_PATH 只写文件路径时，现在和默认配置一样开启 WAL 和写入等待。数据…</p>
-      <p><a href="https://github.com/QuantumNous/new-api/releases/tag/v1.0.0-rc.49" target="_blank" rel="noopener">Release notes ↗</a></p>
-      <h2 style="margin-top:2rem">Version history</h2><table class="hist"><tr><td>1.0.0-rc</td><td><time datetime="2026-11-08">Nov 8, 2026</time></td></tr></table>
+      <p style="color:var(--muted)">[!IMPORTANT] 新增提供商插件、请求处理插件和社区插件市场。提供商插件把一个上游厂商接成一种渠道；请求处理插件在请求和回复上运行，可以按全局、分组、渠道和模型生效。 原敏感词设置在首次启动时迁成一个「请求过滤」实例，旧设置项会被删除。命中时返回 400 request_rejected，原来是 500 sensitive_words_detected。回滚到旧版本后敏感词检查是关闭的，需要重新填写。 多节点部署：设置、权限、插件、渠道等手动改动几秒内同步到所有节点。CHANNEL_UPDATE_FREQUENCY 的定时余额更新改为只在主节点运行。超过 30 天的已结束系统任务会被…</p>
+      <p><a href="https://github.com/QuantumNous/new-api/releases/tag/v1.0.0-rc.50" target="_blank" rel="noopener">Release notes ↗</a></p>
+      <h2 style="margin-top:2rem">Version history</h2><table class="hist"><tr><td>1.0.0-rc</td><td><time datetime="2026-11-12">Nov 12, 2026</time></td></tr></table>
       <div class="faq">
         <h2 style="margin-top:2rem">FAQ</h2>
         <h3>What is the latest version of New API AI gateway?</h3>
-        <p>Version 1.0.0-rc, released Nov 8, 2026. This page is refreshed every hour from the project's release page.</p>
+        <p>Version 1.0.0-rc, released Nov 12, 2026. This page is refreshed every hour from the project's release page.</p>
         <h3>How do I update New API AI gateway?</h3>
         <p><a href="#update">See the step-by-step above.</a> Pull the new image or package and restart the service. Read the release notes and back up the data directory first; most projects can&#x27;t downgrade once the database has migrated.</p>
         <h3>How does Firmwarely know when there's a new version?</h3>
@@ -319,7 +319,7 @@ footer a:hover{color:var(--text)}
         <h3>Is this an official New API page?</h3>
         <p>No. Firmwarely is independent. Project and product names belong to their owners; always install releases from the project's own source.</p>
       </div>
-      <div class="related brandlist"><h2>Recently updated in Self-hosted apps &amp; servers</h2><ul><li><a href="/devices/nextcloud-server/"><svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="12" width="48" height="40" rx="4"/><path d="M8 22h48"/><circle class="f" cx="14" cy="17" r="1.6"/><circle cx="20" cy="17" r="1.6"/><path d="M16 32h14M16 40h22M36 32h12"/></svg>Nextcloud server</a><span>35.0.3 · Nov 12, 2026</span></li><li><a href="/devices/jellyseerr/"><svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="12" width="48" height="40" rx="4"/><path d="M8 22h48"/><circle class="f" cx="14" cy="17" r="1.6"/><circle cx="20" cy="17" r="1.6"/><path d="M16 32h14M16 40h22M36 32h12"/></svg>Jellyseerr Media request manager</a><span>3.5.2 · Nov 12, 2026</span></li><li><a href="/devices/umami/"><svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="12" width="48" height="40" rx="4"/><path d="M8 22h48"/><circle class="f" cx="14" cy="17" r="1.6"/><circle cx="20" cy="17" r="1.6"/><path d="M16 32h14M16 40h22M36 32h12"/></svg>Umami Web analytics</a><span>3.5.0 · Nov 12, 2026</span></li><li><a href="/devices/dokploy/"><svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="12" width="48" height="40" rx="4"/><path d="M8 22h48"/><circle class="f" cx="14" cy="17" r="1.6"/><circle cx="20" cy="17" r="1.6"/><path d="M16 32h14M16 40h22M36 32h12"/></svg>Dokploy Deployment platform</a><span>0.31.1 · Nov 12, 2026</span></li><li><a href="/devices/vault/"><svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="12" width="48" height="40" rx="4"/><path d="M8 22h48"/><circle class="f" cx="14" cy="17" r="1.6"/><circle cx="20" cy="17" r="1.6"/><path d="M16 32h14M16 40h22M36 32h12"/></svg>HashiCorp Vault</a><span>2.2.2 · Nov 12, 2026</span></li><li><a href="/devices/passbolt/"><svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="12" width="48" height="40" rx="4"/><path d="M8 22h48"/><circle class="f" cx="14" cy="17" r="1.6"/><circle cx="20" cy="17" r="1.6"/><path d="M16 32h14M16 40h22M36 32h12"/></svg>Passbolt Team password manager</a><span>5.18.0 · Nov 12, 2026</span></li></ul><p class="fine"><a href="/category/self-hosted/">All self-hosted apps &amp; servers →</a></p></div>
+      <div class="related brandlist"><h2>Recently updated in Self-hosted apps &amp; servers</h2><ul><li><a href="/devices/nextcloud-server/"><svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="12" width="48" height="40" rx="4"/><path d="M8 22h48"/><circle class="f" cx="14" cy="17" r="1.6"/><circle cx="20" cy="17" r="1.6"/><path d="M16 32h14M16 40h22M36 32h12"/></svg>Nextcloud server</a><span>35.0.3 · Nov 12, 2026</span></li><li><a href="/devices/jellyseerr/"><svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="12" width="48" height="40" rx="4"/><path d="M8 22h48"/><circle class="f" cx="14" cy="17" r="1.6"/><circle cx="20" cy="17" r="1.6"/><path d="M16 32h14M16 40h22M36 32h12"/></svg>Jellyseerr Media request manager</a><span>3.5.2 · Nov 12, 2026</span></li><li><a href="/devices/umami/"><svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="12" width="48" height="40" rx="4"/><path d="M8 22h48"/><circle class="f" cx="14" cy="17" r="1.6"/><circle cx="20" cy="17" r="1.6"/><path d="M16 32h14M16 40h22M36 32h12"/></svg>Umami Web analytics</a><span>3.5.0 · Nov 12, 2026</span></li><li><a href="/devices/dokploy/"><svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="12" width="48" height="40" rx="4"/><path d="M8 22h48"/><circle class="f" cx="14" cy="17" r="1.6"/><circle cx="20" cy="17" r="1.6"/><path d="M16 32h14M16 40h22M36 32h12"/></svg>Dokploy Deployment platform</a><span>0.31.1 · Nov 12, 2026</span></li><li><a href="/devices/cosmos-server/"><svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="12" width="48" height="40" rx="4"/><path d="M8 22h48"/><circle class="f" cx="14" cy="17" r="1.6"/><circle cx="20" cy="17" r="1.6"/><path d="M16 32h14M16 40h22M36 32h12"/></svg>Cosmos Home server platform</a><span>0.24.0 · Nov 12, 2026</span></li><li><a href="/devices/vault/"><svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="12" width="48" height="40" rx="4"/><path d="M8 22h48"/><circle class="f" cx="14" cy="17" r="1.6"/><circle cx="20" cy="17" r="1.6"/><path d="M16 32h14M16 40h22M36 32h12"/></svg>HashiCorp Vault</a><span>2.2.2 · Nov 12, 2026</span></li></ul><p class="fine"><a href="/category/self-hosted/">All self-hosted apps &amp; servers →</a></p></div>
     </div>
     <aside>
       <div class="card">
