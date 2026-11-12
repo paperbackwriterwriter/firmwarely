@@ -45432,6 +45432,24 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "bruce-firmware",
+   "version": "1.17",
+   "name": "Bruce ESP32 pentest firmware",
+   "judged_at": "2026-11-12T22:38:06+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.17,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

@@ -631,6 +631,21 @@
    "notes": "Changelog: [3.69.0] - 2026-11-12: ✨ Features: openspec: Define file-based Databasus recovery (5bce273) openspec: Plan Databasus backups and recovery (a84ac96) 🐛 Bug Fixes: tests: Finish the WAL segment before waiting for replayable WAL after promotion (138f730) tests: Build the Patroni test image o…",
    "source_url": "https://github.com/databasus/databasus/releases/tag/v3.69.0",
    "page_url": "https://www.firmwarely.com/devices/databasus/"
+  },
+  "bruce-firmware": {
+   "id": "bruce-firmware",
+   "brand": "Bruce",
+   "model": "ESP32 pentest firmware",
+   "category": "S",
+   "status": "update",
+   "version": "1.17",
+   "previous": "1.16.1",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "WiFi: Native WiFite (WPS) app added to the Wi-Fi menu #​2980 WiFite made available to more devices 6d181b9e SDR: raw I/Q takeover of the ESP32-S3 WiFi radio 4519a79e SDR display fixes and menu labels shortened to fit small screens 94556202 36945253 Fix WiFi auto-connect skipping open networks #​282…",
+   "source_url": "https://github.com/BruceDevices/firmware/releases/tag/1.17",
+   "page_url": "https://www.firmwarely.com/devices/bruce-firmware/"
   }
  }
 }
