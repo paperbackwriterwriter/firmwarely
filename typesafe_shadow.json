@@ -45612,6 +45612,60 @@
     "security_fix_plain": 0.92,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "mealie",
+   "version": "3.31.0",
+   "name": "Mealie Recipe manager",
+   "judged_at": "2026-11-13T02:48:15+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.98,
+    "security_fix_plain": 0.94,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "valve-steam-deck-oled",
+   "version": "3.9.6",
+   "name": "Valve Steam Deck OLED",
+   "judged_at": "2026-11-13T02:48:15+00:00",
+   "notes_chars": 47,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "metabase",
+   "version": "65.4",
+   "name": "Metabase Business intelligence",
+   "judged_at": "2026-11-13T02:48:15+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
