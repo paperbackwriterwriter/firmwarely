@@ -46404,6 +46404,78 @@
     "security_fix_plain": 0.45,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "ratgdo",
+   "version": "1660",
+   "name": "ratgdo Garage door firmware",
+   "judged_at": "2026-11-13T19:35:04+00:00",
+   "notes_chars": 79,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "prefect",
+   "version": "3.9.3",
+   "name": "Prefect Workflow orchestration",
+   "judged_at": "2026-11-13T19:35:04+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "xiaozhi-esp32",
+   "version": "2.6.0",
+   "name": "Xiaozhi ESP32 AI voice assistant firmware",
+   "judged_at": "2026-11-13T19:35:04+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "tianji",
+   "version": "1.34.3",
+   "name": "Tianji Website analytics and uptime monitor",
+   "judged_at": "2026-11-13T19:35:04+00:00",
+   "notes_chars": 202,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

@@ -406,6 +406,66 @@
    "notes": "Complete release notes",
    "source_url": "https://github.com/zulip/zulip/releases/tag/13.2",
    "page_url": "https://www.firmwarely.com/devices/zulip/"
+  },
+  "ratgdo": {
+   "id": "ratgdo",
+   "brand": "ratgdo",
+   "model": "Garage door firmware",
+   "category": "S",
+   "status": "update",
+   "version": "1660",
+   "previous": "1635",
+   "released": "2026-11-13",
+   "date_known": true,
+   "eol": false,
+   "notes": "Automated firmware release from commit 8b5e2120f34fc513509d8132fe6d3b552bbaf128",
+   "source_url": "https://github.com/ratgdo/esphome-ratgdo/releases/tag/v1660",
+   "page_url": "https://www.firmwarely.com/devices/ratgdo/"
+  },
+  "prefect": {
+   "id": "prefect",
+   "brand": "Prefect",
+   "model": "Workflow orchestration",
+   "category": "A",
+   "status": "update",
+   "version": "3.9.3",
+   "previous": "3.9.2",
+   "released": "2026-11-13",
+   "date_known": true,
+   "eol": false,
+   "notes": "Enhancements ➕➕ Add search and ordering to the automations page Align flow runs timeline ticks to local time boundaries Bug Fixes 🐞 Fix early closure of async generator flows Fix retry restart of async generator tasks closed during finalizer failure Fix parallel tasks failing when using kwargs Fix …",
+   "source_url": "https://github.com/PrefectHQ/prefect/releases/tag/3.9.3",
+   "page_url": "https://www.firmwarely.com/devices/prefect/"
+  },
+  "xiaozhi-esp32": {
+   "id": "xiaozhi-esp32",
+   "brand": "Xiaozhi",
+   "model": "ESP32 AI voice assistant firmware",
+   "category": "M",
+   "status": "update",
+   "version": "2.6.0",
+   "previous": "2.5.2",
+   "released": "2026-11-13",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: fix(ci): find draft releases and verify assets by release ID Enable multiline chat messages for FoloToy AI Passport fix(mcp): escape JSON-RPC error messages Fix: улучшение русского перевода (ru-RU) feat: show startup wake words in a five-second chat hint fix(audio): refresh Slovak v…",
+   "source_url": "https://github.com/78/xiaozhi-esp32/releases/tag/v2.6.0",
+   "page_url": "https://www.firmwarely.com/devices/xiaozhi-esp32/"
+  },
+  "tianji": {
+   "id": "tianji",
+   "brand": "Tianji",
+   "model": "Website analytics and uptime monitor",
+   "category": "A",
+   "status": "update",
+   "version": "1.34.3",
+   "previous": "1.34.2",
+   "released": "2026-11-13",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.34.3 (2026-11-13): Features: application: add alpha user property counts (f002067) application: persist and query identify user profiles (ee7c67a) Document: require prisma-managed migrations (6ce35dc)",
+   "source_url": "https://github.com/msgbyte/tianji/releases/tag/v1.34.3",
+   "page_url": "https://www.firmwarely.com/devices/tianji/"
   }
  }
 }
