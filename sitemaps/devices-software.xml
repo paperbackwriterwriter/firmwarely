@@ -359,7 +359,7 @@
   <url><loc>https://www.firmwarely.com/devices/ollama/</loc><lastmod>2026-11-09</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/open-webui/</loc><lastmod>2026-11-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/localai/</loc><lastmod>2026-10-23</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/llama-cpp/</loc><lastmod>2026-11-04</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/llama-cpp/</loc><lastmod>2026-11-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/vllm/</loc><lastmod>2026-11-02</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/text-generation-webui/</loc><lastmod>2026-05-20</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/comfyui/</loc><lastmod>2026-11-10</lastmod></url>
@@ -508,7 +508,7 @@
   <url><loc>https://www.firmwarely.com/devices/trilium/</loc><lastmod>2026-11-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/glance/</loc><lastmod>2026-11-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/qwenpaw/</loc><lastmod>2026-11-11</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/langfuse/</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/langfuse/</loc><lastmod>2026-11-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/dokku/</loc><lastmod>2026-10-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/onyx/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/meetily/</loc><lastmod>2026-09-12</lastmod></url>
@@ -556,7 +556,7 @@
   <url><loc>https://www.firmwarely.com/devices/dgiot/</loc><lastmod>2026-08-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/tiez-clipboard/</loc><lastmod>2026-04-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/trystero/</loc><lastmod>2026-11-11</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/aily-blockly/</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/aily-blockly/</loc><lastmod>2026-11-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/safeline/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/server/</loc><lastmod>2026-09-27</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/tinyauth/</loc><lastmod>2026-09-07</lastmod></url>
@@ -661,7 +661,7 @@
   <url><loc>https://www.firmwarely.com/devices/gladys/</loc><lastmod>2026-11-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/button-card/</loc><lastmod>2025-11-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ios/</loc><lastmod>2026-10-29</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/homeassistant-tapo-control/</loc><lastmod>2026-10-23</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/homeassistant-tapo-control/</loc><lastmod>2026-11-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/lovelace-xiaomi-vacuum-map-card/</loc><lastmod>2026-06-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/openccu/</loc><lastmod>2026-09-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/http-shortcuts/</loc><lastmod>2026-10-17</lastmod></url>

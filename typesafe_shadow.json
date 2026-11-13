@@ -45936,6 +45936,96 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "n8n",
+   "version": "2.47.7",
+   "name": "n8n Workflow automation",
+   "judged_at": "2026-11-13T10:35:08+00:00",
+   "notes_chars": 111,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.16,
+    "security_fix_plain": 0.13,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "llama-cpp",
+   "version": "1.0.0",
+   "name": "ggml llama.cpp",
+   "judged_at": "2026-11-13T10:35:08+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "langfuse",
+   "version": "4.80.0",
+   "name": "Langfuse LLM observability",
+   "judged_at": "2026-11-13T10:35:08+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "aily-blockly",
+   "version": "0.9.113",
+   "name": "Aily Blockly AI IDE for Arduino",
+   "judged_at": "2026-11-13T10:35:09+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "homeassistant-tapo-control",
+   "version": "7.2.14",
+   "name": "Tapo Control Home Assistant integration for Tapo cameras",
+   "judged_at": "2026-11-13T10:35:09+00:00",
+   "notes_chars": 153,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
