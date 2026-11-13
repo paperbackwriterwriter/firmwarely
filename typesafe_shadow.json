@@ -46188,6 +46188,114 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "windmill",
+   "version": "1.873.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-11-13T14:49:00+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "zoraxy",
+   "version": "3.3.5",
+   "name": "Zoraxy Reverse proxy",
+   "judged_at": "2026-11-13T14:49:01+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.73,
+    "security_fix_plain": 0.81,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "dozzle",
+   "version": "11.4.3",
+   "name": "Dozzle Container log viewer",
+   "judged_at": "2026-11-13T14:49:01+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "zitadel",
+   "version": "4.20.3",
+   "name": "ZITADEL Identity platform",
+   "judged_at": "2026-11-13T14:49:01+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.41,
+    "security_fix_plain": 0.21,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "kimai",
+   "version": "2.72.0",
+   "name": "Kimai Time tracking",
+   "judged_at": "2026-11-13T14:49:01+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "wallabag",
+   "version": "2.6.16",
+   "name": "wallabag Read-it-later",
+   "judged_at": "2026-11-13T14:49:01+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.99,
+    "security_fix_plain": 0.97,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
