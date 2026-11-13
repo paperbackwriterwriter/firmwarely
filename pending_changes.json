@@ -1,5 +1,51 @@
 {
- "since": null,
+ "since": "2026-11-13T09:40:12+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "traefik": {
+   "id": "traefik",
+   "brand": "Traefik Labs",
+   "model": "Traefik Proxy",
+   "category": "R",
+   "status": "update",
+   "version": "3.7.19",
+   "previous": "3.7.18",
+   "released": "2026-11-13",
+   "date_known": true,
+   "eol": false,
+   "notes": "Bug fixes: [http3] Bump github.com/quic-go/quic-go to v0.65.0 (#​14258) [middleware] Bump github.com/klauspost/compress to v1.20.4 (#​14254) [server] Bump golang.org/x/crypto to v0.59.0 (#​14271) Documentation: [accesslogs] Remove nonexistent access log fields (#​14255) [metrics] Fix TOML examples …",
+   "source_url": "https://github.com/traefik/traefik/releases/tag/v3.7.19",
+   "page_url": "https://www.firmwarely.com/devices/traefik/"
+  },
+  "tooljet": {
+   "id": "tooljet",
+   "brand": "ToolJet",
+   "model": "Low-code platform",
+   "category": "A",
+   "status": "update",
+   "version": "3.20.257-lts",
+   "previous": "3.21.96-lts",
+   "released": "2026-11-12",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Auto-start trial for new users Fix: Keep manually enabled Public Apps after plan renewal Feature: Land new users on the home page prompt after onboarding Auto trial bug fixes Update first-user onboarding Cypress spec for home-page landing Release v3.20.256 lts Full Changelog: https:…",
+   "source_url": "https://github.com/ToolJet/ToolJet/releases/tag/v3.20.257-lts",
+   "page_url": "https://www.firmwarely.com/devices/tooljet/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.317.32831",
+   "previous": "37522026.316.32772",
+   "released": "2026-11-13",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​12330 #​12328 #​12327 #​12326 #​12325 #​12323 #​12322 #​12321 #​12320 #​12319 #​12318 #​12315 #​12314",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.317.32831",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  }
+ }
 }
