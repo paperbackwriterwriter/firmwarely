@@ -511,6 +511,36 @@
    "notes": "What's Changed Update ESPHome to 2026.9.0 by ESPHome () in #​603 Set a preference order for Sendspin codecs by Kevin Ahrendt () in #​642 Support wake word audio by Michael Hansen () in #​653 Full Changelog : 26.9.0...26.11.0",
    "source_url": "https://github.com/esphome/home-assistant-voice-pe/releases/tag/26.11.0",
    "page_url": "https://www.firmwarely.com/devices/home-assistant-voice-pe/"
+  },
+  "cronicle": {
+   "id": "cronicle",
+   "brand": "Cronicle",
+   "model": "Task scheduler",
+   "category": "A",
+   "status": "critical",
+   "version": "0.9.146",
+   "previous": "0.9.145",
+   "released": "2026-11-13",
+   "date_known": true,
+   "eol": false,
+   "notes": "Dep: Bump basic-ftp override to v6.2.6 for vuln fixes. Dep: Bump pixl-server-user to v2.0.5 for improved email and full name field hardening.",
+   "source_url": "https://github.com/jhuckaby/Cronicle/releases/tag/v0.9.146",
+   "page_url": "https://www.firmwarely.com/devices/cronicle/"
+  },
+  "clickhouse": {
+   "id": "clickhouse",
+   "brand": "ClickHouse",
+   "model": "Analytics database",
+   "category": "A",
+   "status": "update",
+   "version": "26.10.4.207-stable",
+   "previous": "26.10.2.103-stable",
+   "released": "2026-11-13",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release v26.10.4.207-stable v26.10.4.207-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.10.4.207-stable",
+   "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   }
  }
 }
