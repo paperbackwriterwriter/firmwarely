@@ -45702,6 +45702,60 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "kiosk-satellite",
+   "version": "2026.11.18",
+   "name": "Kiosk Satellite Turn any Android device",
+   "judged_at": "2026-11-13T05:20:27+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "harvester",
+   "version": "1.9.1",
+   "name": "Harvester Hyperconverged infrastructure",
+   "judged_at": "2026-11-13T05:20:27+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ani-rss",
+   "version": "3.2.59",
+   "name": "ANi-RSS Anime RSS downloader",
+   "judged_at": "2026-11-13T05:20:27+00:00",
+   "notes_chars": 19,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

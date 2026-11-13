@@ -293,7 +293,7 @@
   <url><loc>https://www.firmwarely.com/devices/runtipi/</loc><lastmod>2026-10-31</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/incus/</loc><lastmod>2026-10-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/lxd/</loc><lastmod>2026-10-28</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/harvester/</loc><lastmod>2026-09-16</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/harvester/</loc><lastmod>2026-11-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/kubernetes/</loc><lastmod>2026-10-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/k3s/</loc><lastmod>2026-11-03</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/talos-linux/</loc><lastmod>2026-11-11</lastmod></url>
@@ -569,7 +569,7 @@
   <url><loc>https://www.firmwarely.com/devices/movie-data-capture/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/sun-panel/</loc><lastmod>2025-12-31</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/oxicloud/</loc><lastmod>2026-10-25</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/ani-rss/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/ani-rss/</loc><lastmod>2026-11-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/arc/</loc><lastmod>2026-11-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/lanraragi/</loc><lastmod>2026-11-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/arozos/</loc><lastmod>2025-12-11</lastmod></url>
@@ -703,7 +703,7 @@
   <url><loc>https://www.firmwarely.com/devices/arkime/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/rustnet/</loc><lastmod>2026-10-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/panel/</loc><lastmod>2026-10-22</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/kiosk-satellite/</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/kiosk-satellite/</loc><lastmod>2026-11-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/olares/</loc><lastmod>2026-09-24</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/octelium/</loc><lastmod>2026-11-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/homelable/</loc><lastmod>2026-11-07</lastmod></url>
