@@ -811,6 +811,36 @@
    "notes": "Upgrading: Before you upgrade, back up your Metabase application database! Check out our upgrading instructions. Get the most out of Metabase. Learn more about advanced features, managed cloud, and first-class support. Metabase Open Source: Docker image: metabase/metabase:v0.65.4.x JAR download: ht…",
    "source_url": "https://github.com/metabase/metabase/releases/tag/v0.65.4",
    "page_url": "https://www.firmwarely.com/devices/metabase/"
+  },
+  "trickster": {
+   "id": "trickster",
+   "brand": "Trickster",
+   "model": "HTTP reverse proxy cache",
+   "category": "R",
+   "status": "update",
+   "version": "2.2.2",
+   "previous": "2.2.1",
+   "released": "2026-11-13",
+   "date_known": true,
+   "eol": false,
+   "notes": "Welcome to Trickster 2.2.2! :tada: In this release, we: Updated to Go 1.27.4 and updated dependent packages Published all new collection of 13 Grafana Dashboards for various Trickster features + an Overview dashboard. Ported parts of the external cockroachdb-parser module used by Trickster to pkg/p…",
+   "source_url": "https://github.com/trickstercache/trickster/releases/tag/v2.2.2",
+   "page_url": "https://www.firmwarely.com/devices/trickster/"
+  },
+  "pulse": {
+   "id": "pulse",
+   "brand": "Pulse",
+   "model": "Real-time monitoring dashboard",
+   "category": "A",
+   "status": "update",
+   "version": "6.8.0",
+   "previous": "6.7.0",
+   "released": "2026-11-13",
+   "date_known": true,
+   "eol": false,
+   "notes": "✅ Release Asset Validation: PASSED: The required release asset checks passed. Status: Release asset checks passed ✅ Validated: 2026-11-13 01:29:27 UTC Workflow: Pulse Release Pipeline #​454 Validation Summary: All required assets present ✓ Checksums verified ✓ Version strings correct ✓ Binary archi…",
+   "source_url": "https://github.com/rcourtman/Pulse/releases/tag/v6.8.0",
+   "page_url": "https://www.firmwarely.com/devices/pulse/"
   }
  }
 }
