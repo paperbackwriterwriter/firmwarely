@@ -46044,6 +46044,60 @@
     "security_fix_plain": 0.1,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "qdrant",
+   "version": "1.20.1",
+   "name": "Qdrant Vector database",
+   "judged_at": "2026-11-13T13:07:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "windmill",
+   "version": "1.872.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-11-13T13:07:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "http-shortcuts",
+   "version": "4.10.0",
+   "name": "HTTP Shortcuts Android automation app",
+   "judged_at": "2026-11-13T13:07:31+00:00",
+   "notes_chars": 25,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
