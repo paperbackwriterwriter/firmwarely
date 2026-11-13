@@ -45882,6 +45882,24 @@
     "security_fix_plain": 0.7,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "n8n",
+   "version": "2.47.6",
+   "name": "n8n Workflow automation",
+   "judged_at": "2026-11-13T08:49:32+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
