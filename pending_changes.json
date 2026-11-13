@@ -593,13 +593,13 @@
    "model": "Team chat",
    "category": "A",
    "status": "update",
-   "version": "13.0",
+   "version": "13.1",
    "previous": "12.4",
-   "released": "2026-11-12",
+   "released": "2026-11-13",
    "date_known": true,
    "eol": false,
    "notes": "Complete release notes",
-   "source_url": "https://github.com/zulip/zulip/releases/tag/13.0",
+   "source_url": "https://github.com/zulip/zulip/releases/tag/13.1",
    "page_url": "https://www.firmwarely.com/devices/zulip/"
   },
   "onyx": {
