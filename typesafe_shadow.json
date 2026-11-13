@@ -46584,6 +46584,42 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.317.84805",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-11-13T23:41:52+00:00",
+   "notes_chars": 159,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ha-bambulab",
+   "version": "2.4.1-beta2",
+   "name": "ha-bambulab Bambu Lab Home Assistant integration",
+   "judged_at": "2026-11-13T23:41:52+00:00",
+   "notes_chars": 136,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

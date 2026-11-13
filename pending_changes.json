@@ -38,13 +38,13 @@
    "model": "DNS blocklists",
    "category": "R",
    "status": "update",
-   "version": "37522026.317.32831",
+   "version": "37522026.317.84805",
    "previous": "37522026.316.32772",
    "released": "2026-11-13",
    "date_known": true,
    "eol": false,
-   "notes": "#​12330 #​12328 #​12327 #​12326 #​12325 #​12323 #​12322 #​12321 #​12320 #​12319 #​12318 #​12315 #​12314",
-   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.317.32831",
+   "notes": "#​12352 #​12351 #​12349 #​12348 #​12347 #​12346 #​12345 #​12344 #​12343 #​12342 #​12341 #​12340 #​12339 #​12338 #​12337 #​12335 #​12334 #​12333 #​12332 #​12331",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.317.84805",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   },
   "n8n": {
@@ -541,6 +541,21 @@
    "notes": "Release v26.10.4.207-stable v26.10.4.207-stable",
    "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.10.4.207-stable",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
+  },
+  "ha-bambulab": {
+   "id": "ha-bambulab",
+   "brand": "ha-bambulab",
+   "model": "Bambu Lab Home Assistant integration",
+   "category": "S",
+   "status": "update",
+   "version": "2.4.1-beta2",
+   "previous": "2.4.0",
+   "released": "2026-11-13",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Further H3C entity additions Full Changelog: https://github.com/greghesp/ha-bambulab/compare/v2.4.1-beta1...v2.4.1-beta2",
+   "source_url": "https://github.com/greghesp/ha-bambulab/releases/tag/v2.4.1-beta2",
+   "page_url": "https://www.firmwarely.com/devices/ha-bambulab/"
   }
  }
 }
