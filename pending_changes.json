@@ -121,6 +121,21 @@
    "notes": "Changes: Add #​1485, https://github.com/JurajNyiri/HomeAssistant-Tapo-Control/pull/1494: Music player media_player entity on supported cameras, thank you",
    "source_url": "https://github.com/JurajNyiri/HomeAssistant-Tapo-Control/releases/tag/7.2.14",
    "page_url": "https://www.firmwarely.com/devices/homeassistant-tapo-control/"
+  },
+  "maltrail": {
+   "id": "maltrail",
+   "brand": "Maltrail",
+   "model": "Malicious traffic detection system",
+   "category": "R",
+   "status": "update",
+   "version": "3.6",
+   "previous": "3.5",
+   "released": "2026-11-13",
+   "date_known": true,
+   "eol": false,
+   "notes": "Added: A sensor without LOG_SERVER (sensor and server on one host) sent no heartbeats, so a dead local sensor looked exactly like a quiet network. It now writes the heartbeat to LOG_DIR/ .heartbeat, which the server reads with the file's mtime as last seen, so the silence and capture-drop alerts co…",
+   "source_url": "https://github.com/stamparm/maltrail/releases/tag/3.6",
+   "page_url": "https://www.firmwarely.com/devices/maltrail/"
   }
  }
 }
