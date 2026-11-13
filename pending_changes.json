@@ -563,13 +563,13 @@
    "model": "Turn any Android device",
    "category": "S",
    "status": "update",
-   "version": "2026.11.18",
+   "version": "2026.11.19",
    "previous": "2026.11.16",
    "released": "2026-11-13",
    "date_known": true,
    "eol": false,
-   "notes": "What's new in Kiosk Satellite 2026.11.18: This release lets a Compass layout hold several Home Assistant dashboard views and adds an optional fade in and out for the screensaver. It also fixes a screensaver that could stay on screen after it was dismissed, an out of memory crash while Home Assistan…",
-   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.18",
+   "notes": "What's new in Kiosk Satellite 2026.11.19: This release cuts down how much the app writes to the device's storage. It fixes a settings file that was rewritten about once a minute with the Bluetooth manufacturer lookup turned on, and one that was rewritten on every change of the light level. Fixes: S…",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.19",
    "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   },
   "dagster": {
@@ -901,6 +901,66 @@
    "notes": "Upgrade impact: Action required for every self-hosted deployment: upgrade in a maintenance window with permission preparation, and check the Valkey, Cube, Helm, storage, audit-log and API items below. Upgrade steps Overview: Formbricks 6.2 adds the Survey Flow Editor, with show-if conditions, calcu…",
    "source_url": "https://github.com/formbricks/formbricks/releases/tag/6.2.0",
    "page_url": "https://www.firmwarely.com/devices/formbricks/"
+  },
+  "loki": {
+   "id": "loki",
+   "brand": "Grafana",
+   "model": "Loki log store",
+   "category": "A",
+   "status": "update",
+   "version": "3.7.10",
+   "previous": "3.7.9",
+   "released": "2026-11-13",
+   "date_known": true,
+   "eol": false,
+   "notes": "3.7.10 (2026-11-13): Features: server: Enable configurable TLS curve preferences [release-3.7.x] (#​25796) (a297d55) Bug Fixes: deps: Update github.com/grafana/gomemcache digest to 9448343 (release-3.7.x) (#​25608) (a815365) deps: Update github.com/grafana/jsonparser digest to 5f43846 (release-3.7.…",
+   "source_url": "https://github.com/grafana/loki/releases/tag/v3.7.10",
+   "page_url": "https://www.firmwarely.com/devices/loki/"
+  },
+  "infisical": {
+   "id": "infisical",
+   "brand": "Infisical",
+   "model": "Secrets manager",
+   "category": "A",
+   "status": "update",
+   "version": "0.167.9",
+   "previous": "0.167.8",
+   "released": "2026-11-13",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: feat(agent-vault): service discovery, service descriptions, and a built-in skill improvement(agent-vault): count session log requests by decision in PostHog fix(identity-auth): pin JWKS fetches fix(billing): hide usage meter for unlimited entitlements in plan sheet chore(secret-chan…",
+   "source_url": "https://github.com/Infisical/infisical/releases/tag/v0.167.9",
+   "page_url": "https://www.firmwarely.com/devices/infisical/"
+  },
+  "tooljet": {
+   "id": "tooljet",
+   "brand": "ToolJet",
+   "model": "Low-code platform",
+   "category": "A",
+   "status": "update",
+   "version": "3.21.96-lts",
+   "previous": "3.20.257-lts",
+   "released": "2026-11-13",
+   "date_known": true,
+   "eol": false,
+   "notes": "🚀 Features: Added pagination events for next and previous page actions Allowed admins to revoke any personal access token in the workspace 🌟 Enhancements: Enhanced progress widgets with dynamic label binding and improved value handling Delivered widget stability drop 4 Showed nested workflow pin bl…",
+   "source_url": "https://github.com/ToolJet/ToolJet/releases/tag/v3.21.96-lts",
+   "page_url": "https://www.firmwarely.com/devices/tooljet/"
+  },
+  "hass-xiaomi-miot": {
+   "id": "hass-xiaomi-miot",
+   "brand": "Xiaomi Miot Auto",
+   "model": "Home Assistant integration",
+   "category": "S",
+   "status": "critical",
+   "version": "1.1.6",
+   "previous": "1.1.5",
+   "released": "2026-11-13",
+   "date_known": true,
+   "eol": false,
+   "notes": "更新内容: 🔐 加固账号登录链路：验证码会话、CAPTCHA 上下文、重新认证及短信/邮箱验证后的 ssecurity (#​2948 #​2950 #​2995 #​3016 #​3031) ☁️ 区分云端设备被过滤与云端返回为空，云端不可用时只记录一次日志 (#​2996 #​3003) 🔋 修复云端电量精度与不完整记录处理 (#​3022) 🔧 修复云端功率统计瞬时清零 (#​2900) ☁️ 自动模式下本地读取失败时回退云端 (#​3045) 🔗 云端请求与 MIoT spec 下载的取消操作可正确传递 (#​3039 #​2984) ⚙️ 云端过滤表单空提交时保存当前选择 (#​3…",
+   "source_url": "https://github.com/al-one/hass-xiaomi-miot/releases/tag/v1.1.6",
+   "page_url": "https://www.firmwarely.com/devices/hass-xiaomi-miot/"
   }
  }
 }
