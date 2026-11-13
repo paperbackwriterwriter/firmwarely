@@ -46530,6 +46530,24 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "home-assistant-voice-pe",
+   "version": "26.11.0",
+   "name": "Home Assistant Voice Preview Edition",
+   "judged_at": "2026-11-13T22:06:57+00:00",
+   "notes_chars": 224,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
