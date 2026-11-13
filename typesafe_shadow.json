@@ -46296,6 +46296,24 @@
     "security_fix_plain": 0.97,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "netbird",
+   "version": "0.83.1",
+   "name": "NetBird Mesh VPN",
+   "judged_at": "2026-11-13T15:39:44+00:00",
+   "notes_chars": 109,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
