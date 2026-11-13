@@ -346,6 +346,51 @@
    "notes": "Changelog: 499a86f4bc4795310ead5f06ecd5907e585acef4 [client] Fall back during user lookup on windows (#​8591)",
    "source_url": "https://github.com/netbirdio/netbird/releases/tag/v0.83.1",
    "page_url": "https://www.firmwarely.com/devices/netbird/"
+  },
+  "hugo": {
+   "id": "hugo",
+   "brand": "Hugo",
+   "model": "Static site generator",
+   "category": "A",
+   "status": "update",
+   "version": "0.170.0",
+   "previous": "0.169.0",
+   "released": "2026-11-13",
+   "date_known": true,
+   "eol": false,
+   "notes": "The big change in this release is that the _extended_ edition of Hugo is gone. LibSass has been deprecated for a long time, and it was the main reason we needed a CGO-enabled extended build. There is now only one Hugo binary, and apart from LibSass it has all the features the extended build had. No…",
+   "source_url": "https://github.com/gohugoio/hugo/releases/tag/v0.170.0",
+   "page_url": "https://www.firmwarely.com/devices/hugo/"
+  },
+  "databasus": {
+   "id": "databasus",
+   "brand": "Databasus",
+   "model": "PostgreSQL backup tool",
+   "category": "N",
+   "status": "update",
+   "version": "3.70.0",
+   "previous": "3.69.0",
+   "released": "2026-11-13",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: [3.70.0] - 2026-11-13: ✨ Features: postgresql: Verify physical backups with CloudNativePG (0489156) 🐛 Bug Fixes: tests: Make WAL boundary decoding fixtures deterministic (6f9da40) tests: Keep outage backup transfers active during switchover (bd5f8d5) ci: Apply Python step selection to th…",
+   "source_url": "https://github.com/databasus/databasus/releases/tag/v3.70.0",
+   "page_url": "https://www.firmwarely.com/devices/databasus/"
+  },
+  "gladys": {
+   "id": "gladys",
+   "brand": "Gladys",
+   "model": "Home automation hub",
+   "category": "S",
+   "status": "update",
+   "version": "5.3.3",
+   "previous": "5.3.2",
+   "released": "2026-11-13",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: feat(zigbee2mqtt): tell why Zigbee2mqtt does not start, and what to do feat(zigbee2mqtt): fall back on the ezsp driver when the dongle firmware is too old for ember fix(matter): fall back on the default brightness bounds when a light does not expose MinLevel / MaxLevel feat(dashboar…",
+   "source_url": "https://github.com/GladysAssistant/Gladys/releases/tag/v5.3.3",
+   "page_url": "https://www.firmwarely.com/devices/gladys/"
   }
  }
 }
