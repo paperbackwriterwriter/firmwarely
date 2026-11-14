@@ -46620,6 +46620,24 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "valve-steam-deck-oled",
+   "version": "3.10.0",
+   "name": "Valve Steam Deck OLED",
+   "judged_at": "2026-11-14T02:14:18+00:00",
+   "notes_chars": 47,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

@@ -556,6 +556,21 @@
    "notes": "What's Changed: Further H3C entity additions Full Changelog: https://github.com/greghesp/ha-bambulab/compare/v2.4.1-beta1...v2.4.1-beta2",
    "source_url": "https://github.com/greghesp/ha-bambulab/releases/tag/v2.4.1-beta2",
    "page_url": "https://www.firmwarely.com/devices/ha-bambulab/"
+  },
+  "valve-steam-deck-oled": {
+   "id": "valve-steam-deck-oled",
+   "brand": "Valve",
+   "model": "Steam Deck OLED",
+   "category": "C",
+   "status": "update",
+   "version": "3.10.0",
+   "previous": "3.9.6",
+   "released": "2026-11-13",
+   "date_known": false,
+   "eol": false,
+   "notes": "SteamOS release. See the news feed for details.",
+   "source_url": "https://store.steampowered.com/news/app/1675200",
+   "page_url": "https://www.firmwarely.com/devices/valve-steam-deck-oled/"
   }
  }
 }
