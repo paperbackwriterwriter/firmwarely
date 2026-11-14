@@ -211,6 +211,36 @@
    "notes": "[1.91.0] - 2026-11-14: Added: A set can advertise a small TCP window in a connection's first packets, so the server sends the start of its reply in small pieces: Real TCP window (wssize) under TCP, General in the set editor, based on wssize from zapret2. (#​561, thanks) A set can ask more than one …",
    "source_url": "https://github.com/DanielLavrushin/b4/releases/tag/v1.91.0",
    "page_url": "https://www.firmwarely.com/devices/b4/"
+  },
+  "kiosk-satellite": {
+   "id": "kiosk-satellite",
+   "brand": "Kiosk Satellite",
+   "model": "Turn any Android device",
+   "category": "S",
+   "status": "update",
+   "version": "2026.11.21",
+   "previous": "2026.11.20",
+   "released": "2026-11-14",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's new in Kiosk Satellite 2026.11.21: This release shows a plugin's release notes when you update it and adds a Bluetooth proxy switch that lets Bermuda link the proxy to its device. It also fixes screensavers that closed on the first tap beside Now Playing, announcements that dismissed the scr…",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.21",
+   "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
+  },
+  "netwatch": {
+   "id": "netwatch",
+   "brand": "Netwatch",
+   "model": "Network diagnostics in your terminal",
+   "category": "R",
+   "status": "update",
+   "version": "0.40.1",
+   "previous": "0.40.0",
+   "released": "2026-11-14",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: feat(daemon): flow log of which process connected where (experimental) feat(macos): build an unsigned .dmg installer for Apple Silicon ci(release): make release candidates, and check installs from every channel README: trim header badges, fix Related feat(uptime): --md report for an…",
+   "source_url": "https://github.com/matthart1983/netwatch/releases/tag/v0.40.1",
+   "page_url": "https://www.firmwarely.com/devices/netwatch/"
   }
  }
 }
