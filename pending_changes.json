@@ -571,6 +571,36 @@
    "notes": "SteamOS release. See the news feed for details.",
    "source_url": "https://store.steampowered.com/news/app/1675200",
    "page_url": "https://www.firmwarely.com/devices/valve-steam-deck-oled/"
+  },
+  "hyperdx": {
+   "id": "hyperdx",
+   "brand": "Hyperdx",
+   "model": "Resolve production issues, fast",
+   "category": "A",
+   "status": "update",
+   "version": "2.45.0",
+   "previous": "2.43.1",
+   "released": "2026-11-14",
+   "date_known": true,
+   "eol": false,
+   "notes": "Minor Changes: 2d17de5d7: feat: serve PromQL label lookups from ClickHouse's Prometheus HTTP API On ClickHouse 26.9+ with the prometheus_api_v1 handler, /labels and /label/:name/values for a ClickHouse-backed PromQL source now proxy to the handler instead of querying the TimeSeries tags table with …",
+   "source_url": "https://github.com/ClickHouse/ClickStack/releases/tag/%40hyperdx/api%402.45.0",
+   "page_url": "https://www.firmwarely.com/devices/hyperdx/"
+  },
+  "clickstack": {
+   "id": "clickstack",
+   "brand": "ClickStack",
+   "model": "Resolve production issues, fast",
+   "category": "A",
+   "status": "update",
+   "version": "2.45.0",
+   "previous": "2.43.1",
+   "released": "2026-11-14",
+   "date_known": true,
+   "eol": false,
+   "notes": "Minor Changes: 2d17de5d7: feat: serve PromQL label lookups from ClickHouse's Prometheus HTTP API On ClickHouse 26.9+ with the prometheus_api_v1 handler, /labels and /label/:name/values for a ClickHouse-backed PromQL source now proxy to the handler instead of querying the TimeSeries tags table with …",
+   "source_url": "https://github.com/ClickHouse/ClickStack/releases/tag/%40hyperdx/api%402.45.0",
+   "page_url": "https://www.firmwarely.com/devices/clickstack/"
   }
  }
 }
