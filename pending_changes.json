@@ -158,13 +158,13 @@
    "model": "Scripts and workflows",
    "category": "A",
    "status": "update",
-   "version": "1.873.1",
+   "version": "1.874.0",
    "previous": "1.871.1",
-   "released": "2026-11-13",
+   "released": "2026-11-14",
    "date_known": true,
    "eol": false,
-   "notes": "1.873.1 (2026-11-13): Bug Fixes: keep static input references in raw-app source deploy policies (#​12428) (a64dc9a) keep step_id, job_id, flow_path and extra on dedicated worker errors (#​12417) (3b860d5) revoke api tokens and mcp oauth grants on leave_instance (#​12430) (2c39bf0) run dedicated flo…",
-   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.873.1",
+   "notes": "1.874.0 (2026-11-14): Features: fairness reserve workers that only serve non-overloaded workspaces (#​12431) (df56c11) fairness-aware queue alerts and a capped-workspace alert (#​12432) (9724f3b) Bug Fixes: keep group run-as principals when renaming a group- member (#​12409) (fffef91) move handler …",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.874.0",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
   },
   "http-shortcuts": {
@@ -616,6 +616,51 @@
    "notes": "Changes:: 95d94bdefc0fa2e149bdda9ef6ce73bbd52aa2c9 add nightbloom a private site. resolves #​17269 688cf7ba25e960cea19dc0fe60ef7f1e4dfc1749 c411: only use season when ep is present. resolves #​17270 55f4ed5db7199d7852ca86322774cd86b4742bb0 hdtorrents: grab csrftoken at login. resolves #​17268 18c31…",
    "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.3065",
    "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "freescout": {
+   "id": "freescout",
+   "brand": "FreeScout",
+   "model": "Help desk",
+   "category": "A",
+   "status": "update",
+   "version": "1.8.251",
+   "previous": "1.8.250",
+   "released": "2026-11-14",
+   "date_known": true,
+   "eol": false,
+   "notes": "Added Allow to reply to Chat conversations by email (#​5799) Allow to disable polycast via .env parameters (#​5803) Added support for resizing WebP and AVIF images in Helper::resizeImage() (#​5809) Fixed Check if email address is participant of conversation when finding previous email by Message-ID…",
+   "source_url": "https://github.com/freescout-help-desk/freescout/releases/tag/1.8.251",
+   "page_url": "https://www.firmwarely.com/devices/freescout/"
+  },
+  "bfe": {
+   "id": "bfe",
+   "brand": "BFE",
+   "model": "Layer 7 load balancer",
+   "category": "R",
+   "status": "update",
+   "version": "1.9.0",
+   "previous": "1.8.9.1",
+   "released": "2026-11-14",
+   "date_known": true,
+   "eol": false,
+   "notes": "[v1.9.0] - 2026-11-12: Added: Add Server.ConditionEngineMode (LegacyFirst default / ExprCompatible / ExprOnly): the expr condition engine with three modes — LegacyFirst keeps the generated parser as baseline with expr fallback, ExprCompatible allows mixing legacy primitives with expr syntax, ExprOn…",
+   "source_url": "https://github.com/bfenetworks/bfe/releases/tag/v1.9.0",
+   "page_url": "https://www.firmwarely.com/devices/bfe/"
+  },
+  "kiosk-satellite": {
+   "id": "kiosk-satellite",
+   "brand": "Kiosk Satellite",
+   "model": "Turn any Android device",
+   "category": "S",
+   "status": "update",
+   "version": "2026.11.20",
+   "previous": "2026.11.19",
+   "released": "2026-11-14",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's new in Kiosk Satellite 2026.11.20: This release completely overhauls Timers. They open in a full screen view, can be set and changed by hand and have their own settings page. With the new Shared timers, a timer can show and ring on several kiosks at once. The release also adds a Genres list …",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.20",
+   "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   }
  }
 }
