@@ -181,6 +181,36 @@
    "notes": "Foundation: Every access rule is answered in one place. Who may see a row, who may use an area and who cares for whom was decided in many files: as SQL in the routes, as comparisons on loaded rows, in the scheduler, the feeds, the push sender and the MCP tools. All of it now lives in server/authori…",
    "source_url": "https://github.com/ulsklyc/yuvomi/releases/tag/v2.90.0",
    "page_url": "https://www.firmwarely.com/devices/yuvomi/"
+  },
+  "metube": {
+   "id": "metube",
+   "brand": "MeTube",
+   "model": "yt-dlp web UI",
+   "category": "A",
+   "status": "critical",
+   "version": "2026.11.14",
+   "previous": "2026.11.10",
+   "released": "2026-11-14",
+   "date_known": true,
+   "eol": false,
+   "notes": "Docker images have been built and pushed: Docker Hub: alexta69/metube:latest alexta69/metube:2026.11.14 GitHub Container Registry: ghcr.io/alexta69/metube:latest ghcr.io/alexta69/metube:2026.11.14 Changes: fix(security): keep downloads out of the state directory and apply the overrides gate to rest…",
+   "source_url": "https://github.com/alexta69/metube/releases/tag/2026.11.14",
+   "page_url": "https://www.firmwarely.com/devices/metube/"
+  },
+  "b4": {
+   "id": "b4",
+   "brand": "B4",
+   "model": "Network packet processor",
+   "category": "R",
+   "status": "update",
+   "version": "1.91.0",
+   "previous": "1.90.1",
+   "released": "2026-11-14",
+   "date_known": true,
+   "eol": false,
+   "notes": "[1.91.0] - 2026-11-14: Added: A set can advertise a small TCP window in a connection's first packets, so the server sends the start of its reply in small pieces: Real TCP window (wssize) under TCP, General in the set editor, based on wssize from zapret2. (#​561, thanks) A set can ask more than one …",
+   "source_url": "https://github.com/DanielLavrushin/b4/releases/tag/v1.91.0",
+   "page_url": "https://www.firmwarely.com/devices/b4/"
   }
  }
 }
