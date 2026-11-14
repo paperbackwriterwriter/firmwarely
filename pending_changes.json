@@ -166,6 +166,21 @@
    "notes": "build: 更新依赖 refactor: 优化通知管理页面 fix: 修复安装脚本错误 Close #​748",
    "source_url": "https://github.com/wushuo894/ani-rss/releases/tag/v3.2.60",
    "page_url": "https://www.firmwarely.com/devices/ani-rss/"
+  },
+  "yuvomi": {
+   "id": "yuvomi",
+   "brand": "Yuvomi",
+   "model": "One home instead of many subscriptions",
+   "category": "S",
+   "status": "update",
+   "version": "2.90.0",
+   "previous": "2.89.1",
+   "released": "2026-11-14",
+   "date_known": true,
+   "eol": false,
+   "notes": "Foundation: Every access rule is answered in one place. Who may see a row, who may use an area and who cares for whom was decided in many files: as SQL in the routes, as comparisons on loaded rows, in the scheduler, the feeds, the push sender and the MCP tools. All of it now lives in server/authori…",
+   "source_url": "https://github.com/ulsklyc/yuvomi/releases/tag/v2.90.0",
+   "page_url": "https://www.firmwarely.com/devices/yuvomi/"
   }
  }
 }
