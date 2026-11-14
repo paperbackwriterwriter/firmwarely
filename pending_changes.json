@@ -601,6 +601,21 @@
    "notes": "Minor Changes: 2d17de5d7: feat: serve PromQL label lookups from ClickHouse's Prometheus HTTP API On ClickHouse 26.9+ with the prometheus_api_v1 handler, /labels and /label/:name/values for a ClickHouse-backed PromQL source now proxy to the handler instead of querying the TimeSeries tags table with …",
    "source_url": "https://github.com/ClickHouse/ClickStack/releases/tag/%40hyperdx/api%402.45.0",
    "page_url": "https://www.firmwarely.com/devices/clickstack/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.3065",
+   "previous": "0.24.3055",
+   "released": "2026-11-14",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: 95d94bdefc0fa2e149bdda9ef6ce73bbd52aa2c9 add nightbloom a private site. resolves #​17269 688cf7ba25e960cea19dc0fe60ef7f1e4dfc1749 c411: only use season when ep is present. resolves #​17270 55f4ed5db7199d7852ca86322774cd86b4742bb0 hdtorrents: grab csrftoken at login. resolves #​17268 18c31…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.3065",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
