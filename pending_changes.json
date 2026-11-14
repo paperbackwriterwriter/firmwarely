@@ -91,6 +91,51 @@
    "notes": "You can upgrade an already running Cluster via the command octops upgrade as shown here. You can read the full changelog here. Improvements: Introducing support for reading authentication and access tokens from files. The octelium login, octeliumctl login and octelium connect commands now support t…",
    "source_url": "https://github.com/octelium/octelium/releases/tag/v0.51.0",
    "page_url": "https://www.firmwarely.com/devices/octelium/"
+  },
+  "homer-dashboard": {
+   "id": "homer-dashboard",
+   "brand": "Homer",
+   "model": "Service dashboard",
+   "category": "A",
+   "status": "update",
+   "version": "26.11.3",
+   "previous": "26.11.2",
+   "released": "2026-11-14",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Main changes: feat(services): add Beszel smart card integration feat(services): add Memos smart card integration fix(Linkding): respect the configured link target fix: actually remove the search keydown listener on unmount feat: move Homer to it's own organization New Contributors: …",
+   "source_url": "https://github.com/homer-dashboard/homer/releases/tag/v26.11.3",
+   "page_url": "https://www.firmwarely.com/devices/homer-dashboard/"
+  },
+  "windmill": {
+   "id": "windmill",
+   "brand": "Windmill",
+   "model": "Scripts and workflows",
+   "category": "A",
+   "status": "update",
+   "version": "1.875.0",
+   "previous": "1.874.0",
+   "released": "2026-11-14",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.875.0 (2026-11-14): Features: exact start and end of a fairness cap in its alerts (#​12438) (df0e5cf) fairness reserve as a worker group setting, shown on the workers page (#​12435) (5f8e002) show long step durations in hours and minutes on run timelines (#​12437) (c6955ed) Bug Fixes: keep shortc…",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.875.0",
+   "page_url": "https://www.firmwarely.com/devices/windmill/"
+  },
+  "databasus": {
+   "id": "databasus",
+   "brand": "Databasus",
+   "model": "PostgreSQL backup tool",
+   "category": "N",
+   "status": "update",
+   "version": "3.70.1",
+   "previous": "3.70.0",
+   "released": "2026-11-14",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: [3.70.1] - 2026-11-14: 🐛 Bug Fixes: tests: Spread CNPG fixture cleanup k3s across shards (fc07bd3) tests: Accept both kubectl timeout reports for the stalled k3s API (ef6c253) docs: Clarify Patroni and CNPG timeline support (e07ae64) hooks: Enforce documentation scope and clarity (e28d3e…",
+   "source_url": "https://github.com/databasus/databasus/releases/tag/v3.70.1",
+   "page_url": "https://www.firmwarely.com/devices/databasus/"
   }
  }
 }
