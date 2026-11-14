@@ -61,6 +61,21 @@
    "notes": "What's Changed: This is the OrcaSlicer V2.5.1 release, a maintenance update on top of 2.5.0. Thank you to everyone who reported problems with 2.5.0! It fixes problems connecting and uploading to printers, crashes, slicing bugs and security issues. Toolchangers can now copy per-nozzle settings to ev…",
    "source_url": "https://github.com/OrcaSlicer/OrcaSlicer/releases/tag/v2.5.1",
    "page_url": "https://www.firmwarely.com/devices/orcaslicer/"
+  },
+  "meetily": {
+   "id": "meetily",
+   "brand": "Meetily",
+   "model": "AI meeting assistant",
+   "category": "A",
+   "status": "update",
+   "version": "0.5.0",
+   "previous": "0.4.1",
+   "released": "2026-11-14",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: fix(parakeet): download v3 from istupakov HF repo with Meetily user agent feat(logging): persist bounded local diagnostics [skip ci] fix(bundle): ship standard icon sizes in the Linux bundles fix(linux): native PipeWire/PulseAudio capture and ALSA concurrency fixes fix(linux): ident…",
+   "source_url": "https://github.com/Zackriya-Solutions/meetily/releases/tag/v0.5.0",
+   "page_url": "https://www.firmwarely.com/devices/meetily/"
   }
  }
 }
