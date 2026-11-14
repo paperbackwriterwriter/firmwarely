@@ -548,13 +548,13 @@
    "model": "Bambu Lab Home Assistant integration",
    "category": "S",
    "status": "update",
-   "version": "2.4.1-beta2",
+   "version": "2.4.0",
    "previous": "2.4.0",
-   "released": "2026-11-13",
+   "released": "2026-11-11",
    "date_known": true,
    "eol": false,
-   "notes": "What's Changed: Further H3C entity additions Full Changelog: https://github.com/greghesp/ha-bambulab/compare/v2.4.1-beta1...v2.4.1-beta2",
-   "source_url": "https://github.com/greghesp/ha-bambulab/releases/tag/v2.4.1-beta2",
+   "notes": "Critical: Fix bug in v2.30.0 causing repetitive spam to Bambu services causing them to block the integration with CloudFlare. Updated the user agent string to allow connection again now the bug is fixed and to allow them to more readily identify us if we ever have another bug like this. Highlights:…",
+   "source_url": "https://github.com/greghesp/ha-bambulab/releases/tag/v2.4.0",
    "page_url": "https://www.firmwarely.com/devices/ha-bambulab/"
   },
   "valve-steam-deck-oled": {
