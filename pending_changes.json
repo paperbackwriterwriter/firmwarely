@@ -136,6 +136,21 @@
    "notes": "Changelog: [3.70.1] - 2026-11-14: 🐛 Bug Fixes: tests: Spread CNPG fixture cleanup k3s across shards (fc07bd3) tests: Accept both kubectl timeout reports for the stalled k3s API (ef6c253) docs: Clarify Patroni and CNPG timeline support (e07ae64) hooks: Enforce documentation scope and clarity (e28d3e…",
    "source_url": "https://github.com/databasus/databasus/releases/tag/v3.70.1",
    "page_url": "https://www.firmwarely.com/devices/databasus/"
+  },
+  "music-assistant": {
+   "id": "music-assistant",
+   "brand": "Music Assistant",
+   "model": "Media library server",
+   "category": "S",
+   "status": "update",
+   "version": "2.10.12",
+   "previous": "2.10.11",
+   "released": "2026-11-14",
+   "date_known": true,
+   "eol": false,
+   "notes": "📦 Stable Release: _Changes since 2.10.11_ 🐛 Bugfixes: Reject control characters in concat file lists () Strip control characters from AirPlay now-playing metadata () Fix AirPlay group members drifting apart after a corrected cold start () Bound ffprobe/ffmpeg tag probes with a timeout () Keep playb…",
+   "source_url": "https://github.com/music-assistant/server/releases/tag/2.10.12",
+   "page_url": "https://www.firmwarely.com/devices/music-assistant/"
   }
  }
 }
