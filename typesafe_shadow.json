@@ -46764,6 +46764,42 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.3.63.123-lts",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-11-14T08:32:03+00:00",
+   "notes_chars": 41,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ntfy",
+   "version": "2.38.0",
+   "name": "ntfy Push notification server",
+   "judged_at": "2026-11-14T08:32:03+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.55,
+    "security_fix_plain": 0.4,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
