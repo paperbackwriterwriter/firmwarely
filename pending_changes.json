@@ -46,6 +46,21 @@
    "notes": "What's Changed: Fixed: fix: restore production WebSocket connections Other changes: chore(build): retain Linux bcrypt prebuilds fix(beszel): keep chart tooltips visible outside widgets fix: preserve board tab names and themed renaming fix(smart-home): keep thermostat controls inside narrow tiles fi…",
    "source_url": "https://github.com/homarr-labs/homarr/releases/tag/v2.13.1",
    "page_url": "https://www.firmwarely.com/devices/homarr/"
+  },
+  "orcaslicer": {
+   "id": "orcaslicer",
+   "brand": "OrcaSlicer",
+   "model": "Slicer software",
+   "category": "M",
+   "status": "critical",
+   "version": "2.5.1",
+   "previous": "2.5.0",
+   "released": "2026-11-14",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: This is the OrcaSlicer V2.5.1 release, a maintenance update on top of 2.5.0. Thank you to everyone who reported problems with 2.5.0! It fixes problems connecting and uploading to printers, crashes, slicing bugs and security issues. Toolchangers can now copy per-nozzle settings to ev…",
+   "source_url": "https://github.com/OrcaSlicer/OrcaSlicer/releases/tag/v2.5.1",
+   "page_url": "https://www.firmwarely.com/devices/orcaslicer/"
   }
  }
 }
