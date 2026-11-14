@@ -46998,6 +46998,24 @@
     "security_fix_plain": 0.15,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "ani-rss",
+   "version": "3.2.60",
+   "name": "ANi-RSS Anime RSS downloader",
+   "judged_at": "2026-11-14T17:42:09+00:00",
+   "notes_chars": 56,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
