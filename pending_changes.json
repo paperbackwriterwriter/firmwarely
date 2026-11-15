@@ -8,13 +8,13 @@
    "model": "DNS blocklists",
    "category": "R",
    "status": "update",
-   "version": "37522026.319.32806",
+   "version": "37522026.319.57828",
    "previous": "37522026.318.86337",
    "released": "2026-11-15",
    "date_known": true,
    "eol": false,
-   "notes": "#​12383 #​12382 #​12380",
-   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.319.32806",
+   "notes": "#​12387 #​12386 #​12385 #​12384",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.319.57828",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   },
   "casdoor": {
@@ -196,6 +196,36 @@
    "notes": "Run existing test commands against configured Apps with self-host-testkit-run and the Action's runner inputs. Keep directory and existing-administrator recovery as retryable Manual steps, preserving App-specific hints. Attribute batch pull failures only with proven image ownership and distinguish b…",
    "source_url": "https://github.com/ajnart/self-host/releases/tag/v1.4.0",
    "page_url": "https://www.firmwarely.com/devices/self-host/"
+  },
+  "karakeep": {
+   "id": "karakeep",
+   "brand": "Karakeep",
+   "model": "Bookmark everything",
+   "category": "A",
+   "status": "update",
+   "version": "0.35.0",
+   "previous": "0.34.1",
+   "released": "2026-11-15",
+   "date_known": true,
+   "eol": false,
+   "notes": "0.35.0: Welcome to the 0.35.0 release of Karakeep! Two important milestones happened since the last release: Karakeep crossed 30k stars on GitHub 🎉, and we now own karakeep.com! Thanks to everyone who's been using, sharing and supporting Karakeep to get us here ❤️. As such, I've come bearing gifts.…",
+   "source_url": "https://github.com/karakeep-app/karakeep/releases/tag/v0.35.0",
+   "page_url": "https://www.firmwarely.com/devices/karakeep/"
+  },
+  "outline": {
+   "id": "outline",
+   "brand": "Outline",
+   "model": "Team knowledge base",
+   "category": "A",
+   "status": "eol",
+   "version": "1.13.0",
+   "previous": "1.12.0",
+   "released": "2026-11-15",
+   "date_known": true,
+   "eol": true,
+   "notes": "[!IMPORTANT] This release drops support for Node 20, which is end-of-life. Self-hosters building from source now need Node 22.23.5, 24.22.3 or 26.13.1 and above for the latest security patches. The Docker image is updated to Node 26.13.1. What's Changed: This release upgrades the power of Search, a…",
+   "source_url": "https://github.com/outline/outline/releases/tag/v1.13.0",
+   "page_url": "https://www.firmwarely.com/devices/outline/"
   }
  }
 }

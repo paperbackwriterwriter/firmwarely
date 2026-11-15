@@ -47556,6 +47556,60 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.319.57828",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-11-15T16:18:42+00:00",
+   "notes_chars": 31,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "karakeep",
+   "version": "0.35.0",
+   "name": "Karakeep Bookmark everything",
+   "judged_at": "2026-11-15T16:18:42+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "outline",
+   "version": "1.13.0",
+   "name": "Outline Team knowledge base",
+   "judged_at": "2026-11-15T16:18:42+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": true
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.03
+   }
   }
  ]
 }
