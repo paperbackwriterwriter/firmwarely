@@ -106,6 +106,51 @@
    "notes": "Release v26.3.64.3-lts v26.3.64.3-lts",
    "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.3.64.3-lts",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
+  },
+  "mediamtx": {
+   "id": "mediamtx",
+   "brand": "MediaMTX",
+   "model": "Media server",
+   "category": "A",
+   "status": "critical",
+   "version": "1.21.4",
+   "previous": "1.21.3",
+   "released": "2026-11-15",
+   "date_known": true,
+   "eol": false,
+   "notes": "New major features: TODO Fixes and improvements: TODO Security: Binaries are compiled from source code by the Release workflow, which is a fully-visible process that prevents any change or external interference in produced artifacts. Checksums of binaries are also published in a public blockchain b…",
+   "source_url": "https://github.com/bluenviron/mediamtx/releases/tag/v1.21.4",
+   "page_url": "https://www.firmwarely.com/devices/mediamtx/"
+  },
+  "networkmanager": {
+   "id": "networkmanager",
+   "brand": "NETworkManager",
+   "model": "Network troubleshooting tool",
+   "category": "R",
+   "status": "update",
+   "version": "2026.11.15.0",
+   "previous": "2026.7.7.0",
+   "released": "2026-11-15",
+   "date_known": true,
+   "eol": false,
+   "notes": "🚀 New Features: New design - Calm, modern look with new themes and accent colors Run command - Open and run any tool from the keyboard with Ctrl+Shift+P (e.g. ping 10.0.0.1, rdp) IP Scanner - New detection methods (Windows host info, SNMP, etc.) to find and identify more devices IP & Port Scanner -…",
+   "source_url": "https://github.com/BornToBeRoot/NETworkManager/releases/tag/2026.11.15.0",
+   "page_url": "https://www.firmwarely.com/devices/networkmanager/"
+  },
+  "arc": {
+   "id": "arc",
+   "brand": "Arc",
+   "model": "Redpill loader for Synology DSM",
+   "category": "N",
+   "status": "update",
+   "version": "4.2.5",
+   "previous": "4.2.3",
+   "released": "2026-11-15",
+   "date_known": true,
+   "eol": false,
+   "notes": "Information: Release Notes Dependencies: Addons: 26.11.14 Modules: 26.10.19 Configs: 26.09.06 Patches: 26.05.30 Custom: 26.11.15 LKMs: 26.11.09 Apex: 2026.02.3 Build: 2026-11-15 12:16",
+   "source_url": "https://github.com/AuxXxilium/arc/releases/tag/4.2.5",
+   "page_url": "https://www.firmwarely.com/devices/arc/"
   }
  }
 }

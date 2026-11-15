@@ -47430,6 +47430,60 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "mediamtx",
+   "version": "1.21.4",
+   "name": "MediaMTX Media server",
+   "judged_at": "2026-11-15T13:46:38+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "networkmanager",
+   "version": "2026.11.15.0",
+   "name": "NETworkManager Network troubleshooting tool",
+   "judged_at": "2026-11-15T13:46:38+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "arc",
+   "version": "4.2.5",
+   "name": "Arc Redpill loader for Synology DSM",
+   "judged_at": "2026-11-15T13:46:38+00:00",
+   "notes_chars": 183,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
