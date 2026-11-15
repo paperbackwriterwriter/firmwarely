@@ -46,6 +46,36 @@
    "notes": "This release keeps forward mode answering when an upstream refuses or goes quiet, ahead of Quad9 leaving France on 24 November. It also tightens DNSSEC denial checks in recursive mode, halves DoT upstream latency, and fixes .local names on Linux and the query log on narrow screens. ⚠️ Check before …",
    "source_url": "https://github.com/razvandimescu/numa/releases/tag/v0.25.1",
    "page_url": "https://www.firmwarely.com/devices/numa/"
+  },
+  "appflowy": {
+   "id": "appflowy",
+   "brand": "AppFlowy",
+   "model": "Workspace",
+   "category": "A",
+   "status": "update",
+   "version": "0.15.1",
+   "previous": "0.15.0",
+   "released": "2026-11-15",
+   "date_known": true,
+   "eol": false,
+   "notes": "🚀 v0.15.1: Improvements: Feed discussions — Opened comment threads in a popover on the card, with replies and drafts retained when the popover was dismissed. Database row actions — Enabled row creation from List and Gallery group headers, added Copy link to Gallery cards in cloud and self-hosted wo…",
+   "source_url": "https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.15.1",
+   "page_url": "https://www.firmwarely.com/devices/appflowy/"
+  },
+  "dawarich": {
+   "id": "dawarich",
+   "brand": "Dawarich",
+   "model": "Location history",
+   "category": "A",
+   "status": "update",
+   "version": "1.23.0",
+   "previous": "1.22.0",
+   "released": "2026-11-15",
+   "date_known": true,
+   "eol": false,
+   "notes": "⚠️ Upgrade notes: Immich, Photoprism, AirTrail, TeslaMate and TREK no longer follow redirects. If an integration URL redirects, for example from http:// to https://, save the final URL in Settings → Integrations. The connection test and a notification from the background import say where the redire…",
+   "source_url": "https://github.com/Freika/dawarich/releases/tag/1.23.0",
+   "page_url": "https://www.firmwarely.com/devices/dawarich/"
   }
  }
 }
