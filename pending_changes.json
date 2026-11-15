@@ -413,13 +413,13 @@
    "model": "NextDNS CLI client",
    "category": "R",
    "status": "update",
-   "version": "1.50.1",
+   "version": "1.50.2",
    "previous": "1.49.0",
    "released": "2026-11-15",
    "date_known": true,
    "eol": false,
-   "notes": "Changelog: ✨ New Features: 1f5577f8a84c2b8200745c27479f7555aee8f2c3 feat: add client discovery support for UniFi Network 11 (#​1148) 🛠️ Maintenance Changes: a7e835115da831b0267c98dfd0be4de0175d9ad9 chore: direct filtering reports to the Help Center 0e08c0a99f6a869a676909df72e98713450f7841 chore(dep…",
-   "source_url": "https://github.com/nextdns/nextdns/releases/tag/v1.50.1",
+   "notes": "Changelog: 🤖 Continuous Integration Changes: 78a5253036629431e4f3f5330b704f835d7c5530 ci: verify RPM signatures with a job-local database (#​1180)",
+   "source_url": "https://github.com/nextdns/nextdns/releases/tag/v1.50.2",
    "page_url": "https://www.firmwarely.com/devices/nextdns-cli/"
   }
  }
