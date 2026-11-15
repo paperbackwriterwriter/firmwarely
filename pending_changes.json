@@ -218,13 +218,13 @@
    "model": "Turn any Android device",
    "category": "S",
    "status": "update",
-   "version": "2026.11.21",
+   "version": "2026.11.22",
    "previous": "2026.11.20",
-   "released": "2026-11-14",
+   "released": "2026-11-15",
    "date_known": true,
    "eol": false,
-   "notes": "What's new in Kiosk Satellite 2026.11.21: This release shows a plugin's release notes when you update it and adds a Bluetooth proxy switch that lets Bermuda link the proxy to its device. It also fixes screensavers that closed on the first tap beside Now Playing, announcements that dismissed the scr…",
-   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.21",
+   "notes": "What's new in Kiosk Satellite 2026.11.22: This release adds Adaptive volume, which lowers the volume as the room gets quieter, the way Adaptive brightness follows the room's light. Compass navigation no longer loads the dashboard page when the layout has no dashboard view, and Compass views close m…",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.22",
    "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   },
   "netwatch": {
@@ -286,6 +286,21 @@
    "notes": "Changed: Upgraded the Node.js engine from version ›=22.23.4 to ›=22.23.5 (package.json) Upgraded/core and/server from version 2.3.1 to 2.4.0 Upgraded/node from version 2.1.1 to 2.1.2 Upgraded/mcp-nest from version 2.0.8 to 2.0.9 Upgraded dotenv from version 18.0.3 to 18.0.9 Upgraded stripe from ver…",
    "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.100.0",
    "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
+  },
+  "ipsw": {
+   "id": "ipsw",
+   "brand": "Ipsw",
+   "model": "IOS/macOS Research Swiss Army Knife",
+   "category": "M",
+   "status": "update",
+   "version": "3.1.746",
+   "previous": "3.1.745",
+   "released": "2026-11-15",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: New Features: 0983ab4cbf237e45de30c930897d9e0d5c8812c7: feat(diff): accept --device for OTA inputs () Performance improvements: ea8a4cb0e95199e55845ae094f2c10324ab07be7: perf(diff): spawn helper tools without fork on macOS () Bug fixes: fd7e0f7145deecfd3d7268a1a877f3e193d819c4: fix(diff)…",
+   "source_url": "https://github.com/blacktop/ipsw/releases/tag/v3.1.746",
+   "page_url": "https://www.firmwarely.com/devices/ipsw/"
   }
  }
 }
