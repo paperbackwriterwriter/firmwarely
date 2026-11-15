@@ -47700,6 +47700,42 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "dbeaver",
+   "version": "26.2.5",
+   "name": "DBeaver Database tool",
+   "judged_at": "2026-11-15T18:42:14+00:00",
+   "notes_chars": 13,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "yuvomi",
+   "version": "2.91.0",
+   "name": "Yuvomi One home instead of many subscriptions",
+   "judged_at": "2026-11-15T18:42:14+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.12,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
