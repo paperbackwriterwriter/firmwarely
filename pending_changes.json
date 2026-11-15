@@ -301,6 +301,21 @@
    "notes": "Changelog: New Features: 0983ab4cbf237e45de30c930897d9e0d5c8812c7: feat(diff): accept --device for OTA inputs () Performance improvements: ea8a4cb0e95199e55845ae094f2c10324ab07be7: perf(diff): spawn helper tools without fork on macOS () Bug fixes: fd7e0f7145deecfd3d7268a1a877f3e193d819c4: fix(diff)…",
    "source_url": "https://github.com/blacktop/ipsw/releases/tag/v3.1.746",
    "page_url": "https://www.firmwarely.com/devices/ipsw/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.3067",
+   "previous": "0.24.3065",
+   "released": "2026-11-15",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: 1dcaecd45170ff28769a2bd0f1af4979f1328abb magnetcat: new alt domains b750948a567f67d8743fbe091f4f3bfcd0d3eeec 52bt: new domains e2ae8a35549a2e184fa0d6b1361bb0dbec95f296 redangel: update cats 014636da7fce4fe343184064c9d7bbd595a424f7 linuxtracker: new cats feddd4134cf95ed3ee2d45b34510febee4e…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.3067",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
