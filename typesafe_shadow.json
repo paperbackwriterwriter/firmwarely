@@ -47736,6 +47736,60 @@
     "security_fix_plain": 0.08,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "gitea",
+   "version": "28.4.0",
+   "name": "Gitea Self-hosted Git service",
+   "judged_at": "2026-11-15T20:23:54+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "bazzite",
+   "version": "45.20261115",
+   "name": "Universal Blue Bazzite gaming OS",
+   "judged_at": "2026-11-15T20:23:54+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "local-deep-research",
+   "version": "2.0.1",
+   "name": "Local Deep Research AI research assistant",
+   "judged_at": "2026-11-15T20:23:54+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.3,
+    "security_fix_plain": 0.75,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
