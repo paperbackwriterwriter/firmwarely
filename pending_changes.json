@@ -391,6 +391,21 @@
    "notes": "Changelog: New Features: 7ba089ec1d0dd2b202952ba183d0c4a2198c4323 feat: preserve POSIX metadata in bucket backup and restore Bug Fixes: e41ef24acfdc67a9f137a52384681b576f4fc77e fix(bucketstorage): clean up release when install or detach wait fails fa9e20f00d6de10fca08d6f712646b32b650844b fix(cmd): …",
    "source_url": "https://github.com/utkuozdemir/pv-migrate/releases/tag/v3.8.0",
    "page_url": "https://www.firmwarely.com/devices/pv-migrate/"
+  },
+  "titanium-web-proxy": {
+   "id": "titanium-web-proxy",
+   "brand": "Titanium Web Proxy",
+   "model": "HTTP(S) proxy server",
+   "category": "R",
+   "status": "update",
+   "version": "8.0.3",
+   "previous": "8.0.2",
+   "released": "2026-11-15",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Gateway / ingress: Honor trusted proxies for ssl-redirect Hostless redirect uses the request host Honor the remaining ingress annotations Support RequestRedirect ReplacePrefixMatch and 303/307/308 Validate redirect prefix fields Support RegularExpression header matches in HTTPRoute …",
+   "source_url": "https://github.com/justcoding121/titanium-web-proxy/releases/tag/v8.0.3",
+   "page_url": "https://www.firmwarely.com/devices/titanium-web-proxy/"
   }
  }
 }
