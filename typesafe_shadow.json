@@ -47664,6 +47664,42 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "cloudbeaver",
+   "version": "26.2.5",
+   "name": "DBeaver CloudBeaver",
+   "judged_at": "2026-11-15T17:51:22+00:00",
+   "notes_chars": 6,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.08,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "sentry",
+   "version": "26.11.0",
+   "name": "Sentry Error tracking and performance monitoring",
+   "judged_at": "2026-11-15T17:51:23+00:00",
+   "notes_chars": 75,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.02
+   }
   }
  ]
 }
