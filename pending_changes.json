@@ -256,6 +256,21 @@
    "notes": "Homelable 3.7.1: Rack cable labels can now be moved off the cable, hidden all at once with a header toggle, and the port editor zooms. Fixes double-counted devices in the stats summary and truncated canvas names in the canvas switcher. Also fix the Tag mismatch as the branch version was not merged …",
    "source_url": "https://github.com/Pouzor/homelable/releases/tag/v3.7.1",
    "page_url": "https://www.firmwarely.com/devices/homelable/"
+  },
+  "songloft": {
+   "id": "songloft",
+   "brand": "Songloft",
+   "model": "Music server",
+   "category": "A",
+   "status": "update",
+   "version": "2.13.10",
+   "previous": "2.13.9",
+   "released": "2026-11-15",
+   "date_known": true,
+   "eol": false,
+   "notes": "Songloft v2.13.10 安装与选包 / Installation: 中文 · English 更新记录 / Changelog: :sparkles: New Features: f1c4936 - navidrome: 接入独立同步插件并规范自动发布 (commit) c686994 - playlist: 共享标签并优化歌单封面与布局 (commit) cda7928 - jsplugin: 广播歌单成员变更并同步客户端收藏 (commit) 4c7550c - miot: 同步全部歌曲虚拟歌单插件 (commit) e879a53 - playback: 增加歌单续播状态与…",
+   "source_url": "https://github.com/songloft-org/songloft/releases/tag/v2.13.10",
+   "page_url": "https://www.firmwarely.com/devices/songloft/"
   }
  }
 }
