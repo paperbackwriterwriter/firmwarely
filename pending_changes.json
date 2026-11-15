@@ -376,6 +376,21 @@
    "notes": "Safer credentials and upgrades, background Library downloads, and configurable sampling: 2.0.1 is a maintenance release with many security and reliability fixes. A few of them change behavior that existing deployments may depend on, so check the upgrade notes below before upgrading. ⚠️ Before you u…",
    "source_url": "https://github.com/LearningCircuit/local-deep-research/releases/tag/v2.0.1",
    "page_url": "https://www.firmwarely.com/devices/local-deep-research/"
+  },
+  "pv-migrate": {
+   "id": "pv-migrate",
+   "brand": "pv-migrate",
+   "model": "Kubernetes volume migration",
+   "category": "N",
+   "status": "update",
+   "version": "3.8.0",
+   "previous": "3.7.0",
+   "released": "2026-11-15",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: New Features: 7ba089ec1d0dd2b202952ba183d0c4a2198c4323 feat: preserve POSIX metadata in bucket backup and restore Bug Fixes: e41ef24acfdc67a9f137a52384681b576f4fc77e fix(bucketstorage): clean up release when install or detach wait fails fa9e20f00d6de10fca08d6f712646b32b650844b fix(cmd): …",
+   "source_url": "https://github.com/utkuozdemir/pv-migrate/releases/tag/v3.8.0",
+   "page_url": "https://www.firmwarely.com/devices/pv-migrate/"
   }
  }
 }
