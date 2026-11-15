@@ -293,13 +293,13 @@
    "model": "IOS/macOS Research Swiss Army Knife",
    "category": "M",
    "status": "update",
-   "version": "3.1.746",
+   "version": "3.1.747",
    "previous": "3.1.745",
    "released": "2026-11-15",
    "date_known": true,
    "eol": false,
-   "notes": "Changelog: New Features: 0983ab4cbf237e45de30c930897d9e0d5c8812c7: feat(diff): accept --device for OTA inputs () Performance improvements: ea8a4cb0e95199e55845ae094f2c10324ab07be7: perf(diff): spawn helper tools without fork on macOS () Bug fixes: fd7e0f7145deecfd3d7268a1a877f3e193d819c4: fix(diff)…",
-   "source_url": "https://github.com/blacktop/ipsw/releases/tag/v3.1.746",
+   "notes": "Changelog: Bug fixes: a078487c161e030630af345d5e91fd8b3288b559: fix(download): classify release-delivered OTAs with RC doc IDs as release () Summary: Full Changelog: https://github.com/blacktop/ipsw/compare/v3.1.746...v3.1.747 What to do next?: Read the documentation Follow us on Twitter Follow us …",
+   "source_url": "https://github.com/blacktop/ipsw/releases/tag/v3.1.747",
    "page_url": "https://www.firmwarely.com/devices/ipsw/"
   },
   "jackett": {
