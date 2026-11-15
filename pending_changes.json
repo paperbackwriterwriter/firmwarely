@@ -8,13 +8,13 @@
    "model": "DNS blocklists",
    "category": "R",
    "status": "update",
-   "version": "37522026.318.32722",
+   "version": "37522026.318.86337",
    "previous": "37522026.317.84805",
    "released": "2026-11-14",
    "date_known": true,
    "eol": false,
-   "notes": "#​12355 #​12354",
-   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.318.32722",
+   "notes": "#​12379 #​12378 #​12377 #​12376 #​12375 #​12374 #​12373 #​12372 #​12371 #​12370 #​12369 #​12368 #​12367 #​12366 #​12365 #​12364 #​12363 #​12362 #​12361 #​12360 #​12359 #​12358 #​12356",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.318.86337",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   },
   "clickhouse": {
@@ -241,6 +241,21 @@
    "notes": "What's Changed: feat(daemon): flow log of which process connected where (experimental) feat(macos): build an unsigned .dmg installer for Apple Silicon ci(release): make release candidates, and check installs from every channel README: trim header badges, fix Related feat(uptime): --md report for an…",
    "source_url": "https://github.com/matthart1983/netwatch/releases/tag/v0.40.1",
    "page_url": "https://www.firmwarely.com/devices/netwatch/"
+  },
+  "homelable": {
+   "id": "homelable",
+   "brand": "Homelable",
+   "model": "Homelab infrastructure visualizer",
+   "category": "S",
+   "status": "update",
+   "version": "3.7.1",
+   "previous": "3.7.0",
+   "released": "2026-11-15",
+   "date_known": true,
+   "eol": false,
+   "notes": "Homelable 3.7.1: Rack cable labels can now be moved off the cable, hidden all at once with a header toggle, and the port editor zooms. Fixes double-counted devices in the stats summary and truncated canvas names in the canvas switcher. Also fix the Tag mismatch as the branch version was not merged …",
+   "source_url": "https://github.com/Pouzor/homelable/releases/tag/v3.7.1",
+   "page_url": "https://www.firmwarely.com/devices/homelable/"
   }
  }
 }
