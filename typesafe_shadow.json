@@ -47322,6 +47322,42 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "casdoor",
+   "version": "4.29.0",
+   "name": "Casdoor Identity and access",
+   "judged_at": "2026-11-15T10:32:55+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "numa",
+   "version": "0.25.1",
+   "name": "Numa Portable DNS resolver in Rust",
+   "judged_at": "2026-11-15T10:32:56+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.09,
+    "security_fix_plain": 0.18,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

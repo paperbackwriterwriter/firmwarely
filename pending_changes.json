@@ -16,6 +16,36 @@
    "notes": "#​12383 #​12382 #​12380",
    "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.319.32806",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "casdoor": {
+   "id": "casdoor",
+   "brand": "Casdoor",
+   "model": "Identity and access",
+   "category": "A",
+   "status": "update",
+   "version": "4.29.0",
+   "previous": "4.28.0",
+   "released": "2026-11-15",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: Features: 91ba94f10e41229c3f3755fb383a90155b23af19 feat: hide the Casdoor Cloud links and upgrade offers by default in self-hosted community editions 72eb9795e01123531348474f42cac50bafe19468 feat: improve plugin logic 3d81f45bc98be0fe379b3a21973c783060066af5 feat: improve plugin uninstal…",
+   "source_url": "https://github.com/casdoor/casdoor/releases/tag/v4.29.0",
+   "page_url": "https://www.firmwarely.com/devices/casdoor/"
+  },
+  "numa": {
+   "id": "numa",
+   "brand": "Numa",
+   "model": "Portable DNS resolver in Rust",
+   "category": "R",
+   "status": "update",
+   "version": "0.25.1",
+   "previous": "0.25.0",
+   "released": "2026-11-15",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release keeps forward mode answering when an upstream refuses or goes quiet, ahead of Quad9 leaving France on 24 November. It also tightens DNSSEC denial checks in recursive mode, halves DoT upstream latency, and fixes .local names on Linux and the query log on narrow screens. ⚠️ Check before …",
+   "source_url": "https://github.com/razvandimescu/numa/releases/tag/v0.25.1",
+   "page_url": "https://www.firmwarely.com/devices/numa/"
   }
  }
 }
