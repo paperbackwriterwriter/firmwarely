@@ -76,6 +76,21 @@
    "notes": "⚠️ Upgrade notes: Immich, Photoprism, AirTrail, TeslaMate and TREK no longer follow redirects. If an integration URL redirects, for example from http:// to https://, save the final URL in Settings → Integrations. The connection test and a notification from the background import say where the redire…",
    "source_url": "https://github.com/Freika/dawarich/releases/tag/1.23.0",
    "page_url": "https://www.firmwarely.com/devices/dawarich/"
+  },
+  "ipsw": {
+   "id": "ipsw",
+   "brand": "Ipsw",
+   "model": "IOS/macOS Research Swiss Army Knife",
+   "category": "M",
+   "status": "update",
+   "version": "3.1.748",
+   "previous": "3.1.747",
+   "released": "2026-11-15",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: Bug fixes: a078487c161e030630af345d5e91fd8b3288b559: fix(download): classify release-delivered OTAs with RC doc IDs as release () Summary: Full Changelog: https://github.com/blacktop/ipsw/compare/v3.1.746...v3.1.748 What to do next?: Read the documentation Follow us on Twitter Follow us …",
+   "source_url": "https://github.com/blacktop/ipsw/releases/tag/v3.1.748",
+   "page_url": "https://www.firmwarely.com/devices/ipsw/"
   }
  }
 }
