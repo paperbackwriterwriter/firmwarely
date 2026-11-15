@@ -271,6 +271,21 @@
    "notes": "Songloft v2.13.10 安装与选包 / Installation: 中文 · English 更新记录 / Changelog: :sparkles: New Features: f1c4936 - navidrome: 接入独立同步插件并规范自动发布 (commit) c686994 - playlist: 共享标签并优化歌单封面与布局 (commit) cda7928 - jsplugin: 广播歌单成员变更并同步客户端收藏 (commit) 4c7550c - miot: 同步全部歌曲虚拟歌单插件 (commit) e879a53 - playback: 增加歌单续播状态与…",
    "source_url": "https://github.com/songloft-org/songloft/releases/tag/v2.13.10",
    "page_url": "https://www.firmwarely.com/devices/songloft/"
+  },
+  "ghostfolio": {
+   "id": "ghostfolio",
+   "brand": "Ghostfolio",
+   "model": "Wealth tracker",
+   "category": "A",
+   "status": "update",
+   "version": "3.100.0",
+   "previous": "3.99.0",
+   "released": "2026-11-15",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changed: Upgraded the Node.js engine from version ›=22.23.4 to ›=22.23.5 (package.json) Upgraded/core and/server from version 2.3.1 to 2.4.0 Upgraded/node from version 2.1.1 to 2.1.2 Upgraded/mcp-nest from version 2.0.8 to 2.0.9 Upgraded dotenv from version 18.0.3 to 18.0.9 Upgraded stripe from ver…",
+   "source_url": "https://github.com/ghostfolio/ghostfolio/releases/tag/3.100.0",
+   "page_url": "https://www.firmwarely.com/devices/ghostfolio/"
   }
  }
 }
