@@ -226,6 +226,51 @@
    "notes": "[!IMPORTANT] This release drops support for Node 20, which is end-of-life. Self-hosters building from source now need Node 22.23.5, 24.22.3 or 26.13.1 and above for the latest security patches. The Docker image is updated to Node 26.13.1. What's Changed: This release upgrades the power of Search, a…",
    "source_url": "https://github.com/outline/outline/releases/tag/v1.13.0",
    "page_url": "https://www.firmwarely.com/devices/outline/"
+  },
+  "tandoor-recipes": {
+   "id": "tandoor-recipes",
+   "brand": "Tandoor",
+   "model": "Recipes",
+   "category": "A",
+   "status": "update",
+   "version": "2.7.3",
+   "previous": "2.7.2",
+   "released": "2026-11-15",
+   "date_known": true,
+   "eol": false,
+   "notes": "changed telegram API endpoints to require admin privileges (feature might be removed in the future) fixed it was not possible to clear select fields in some cases fixed space members with a valid share link for a private recipe in their own space could change/delete that recipe https://github.com/T…",
+   "source_url": "https://github.com/TandoorRecipes/recipes/releases/tag/2.7.3",
+   "page_url": "https://www.firmwarely.com/devices/tandoor-recipes/"
+  },
+  "vorta": {
+   "id": "vorta",
+   "brand": "Vorta",
+   "model": "Borg backup desktop client",
+   "category": "N",
+   "status": "update",
+   "version": "0.12.2",
+   "previous": "0.12.1",
+   "released": "2026-11-15",
+   "date_known": true,
+   "eol": false,
+   "notes": "Bugfix release focused on scheduler stability, Borg 2 compatibility, profile import and job handling. Scheduler: Fix scheduler timer segfault from cross-thread garbage collection Post jobs_changed to the scheduler instead of a dangling singleShot (#​2629) Re-arm scheduler after results and reposito…",
+   "source_url": "https://github.com/borgbase/vorta/releases/tag/v0.12.2",
+   "page_url": "https://www.firmwarely.com/devices/vorta/"
+  },
+  "b4": {
+   "id": "b4",
+   "brand": "B4",
+   "model": "Network packet processor",
+   "category": "R",
+   "status": "update",
+   "version": "1.91.1",
+   "previous": "1.91.0",
+   "released": "2026-11-15",
+   "date_known": true,
+   "eol": false,
+   "notes": "[1.91.1] - 2026-11-15: Added: Real TCP window (wssize) can remove the Window Scale option instead of lowering it: downloads on the connection then run at up to 64 KB per round trip instead of staying slow. Window Scale option, Remove the option under TCP, General in the set editor. Changed: An impo…",
+   "source_url": "https://github.com/DanielLavrushin/b4/releases/tag/v1.91.1",
+   "page_url": "https://www.firmwarely.com/devices/b4/"
   }
  }
 }
