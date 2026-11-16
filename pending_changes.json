@@ -91,6 +91,21 @@
    "notes": "New features: IPFIX collector capabilities: receive and analyze network traffic from remote devices (#​1270 — fixes #​303) Show current data rates (#​1324 — fixes #​1077, #​1135) Service taxonomy: classify upper layer services into 20 different categories (#​1312 — fixes #​1102) Added support for I…",
    "source_url": "https://github.com/GyulyVGC/sniffnet/releases/tag/v1.6.0",
    "page_url": "https://www.firmwarely.com/devices/sniffnet/"
+  },
+  "fwupd": {
+   "id": "fwupd",
+   "brand": "fwupd",
+   "model": "Linux firmware update daemon",
+   "category": "P",
+   "status": "update",
+   "version": "2.1.10",
+   "previous": "2.1.9",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release fixes the following bugs: Bound netlink string reads by the attribute length Check the INFO_UF2.TXT contents were read correctly Do not allow modified XML files to spoof metadata trust Do not auto-start Bluez when setting up the backend Do not fall back to the BIOS setting when the plu…",
+   "source_url": "https://github.com/fwupd/fwupd/releases/tag/2.1.10",
+   "page_url": "https://www.firmwarely.com/devices/fwupd/"
   }
  }
 }
