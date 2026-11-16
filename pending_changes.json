@@ -451,6 +451,36 @@
    "notes": "Songloft v2.13.11 安装与选包 / Installation: 中文 · English 更新记录 / Changelog: :sparkles: New Features: b98eb00 - jsplugin: 完善 Lynx 插件回退资源及客户端接入 (commit) :bug: Bug Fixes: 81849b2 - cache: 统一校验远程音频缓存并淘汰无效文件 (PR #​570) e2bfea9 - library: 按碟号和音轨号排序专辑歌曲 (commit) 8917470 - jsplugin: 更新 Lynx 宿主并支持直接加载歌曲封面 (commi…",
    "source_url": "https://github.com/songloft-org/songloft/releases/tag/v2.13.11",
    "page_url": "https://www.firmwarely.com/devices/songloft/"
+  },
+  "teleport": {
+   "id": "teleport",
+   "brand": "Teleport",
+   "model": "Infrastructure access platform",
+   "category": "R",
+   "status": "update",
+   "version": "18.11.10",
+   "previous": "18.10.0",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "Description: Ensure multi-line phase.yaml shell commands fail on first error. Added support for replaying Beam related audit events, including traffic captures and session end events. Fixed MCP tool-list responses dropping fields. Download the current and previous releases of Teleport at https://go…",
+   "source_url": "https://github.com/gravitational/teleport/releases/tag/v18.11.10",
+   "page_url": "https://www.firmwarely.com/devices/teleport/"
+  },
+  "langfuse": {
+   "id": "langfuse",
+   "brand": "Langfuse",
+   "model": "LLM observability",
+   "category": "A",
+   "status": "update",
+   "version": "4.81.0",
+   "previous": "4.80.0",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Features: feat(datasets): filter dataset items by status feat(ai-gateway): add Google Vertex AI as a gateway provider feat(trace): show topics transcript on trace via three dots (internal) feat(native): apply model pricing and enrichment to owned OTEL events feat(evals): support Gem…",
+   "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.81.0",
+   "page_url": "https://www.firmwarely.com/devices/langfuse/"
   }
  }
 }
