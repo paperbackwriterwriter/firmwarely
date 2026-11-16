@@ -8,13 +8,13 @@
    "model": "DNS blocklists",
    "category": "R",
    "status": "update",
-   "version": "37522026.319.57828",
+   "version": "37522026.319.86269",
    "previous": "37522026.318.86337",
    "released": "2026-11-15",
    "date_known": true,
    "eol": false,
-   "notes": "#​12387 #​12386 #​12385 #​12384",
-   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.319.57828",
+   "notes": "#​12392 #​12391 #​12390 #​12389 #​12388",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.319.86269",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   },
   "casdoor": {
@@ -421,6 +421,21 @@
    "notes": "Changelog: 🤖 Continuous Integration Changes: 78a5253036629431e4f3f5330b704f835d7c5530 ci: verify RPM signatures with a job-local database (#​1180)",
    "source_url": "https://github.com/nextdns/nextdns/releases/tag/v1.50.2",
    "page_url": "https://www.firmwarely.com/devices/nextdns-cli/"
+  },
+  "memos": {
+   "id": "memos",
+   "brand": "Memos",
+   "model": "Note taking",
+   "category": "A",
+   "status": "update",
+   "version": "26.11.1",
+   "previous": "26.11.0",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: chore(i18n): improve Czech translations feat(web): adopt/ui as the design system chore(i18n): translate usage limits strings to Turkish feat: add drawings with/canvas fix(markdown): keep a space at hard line breaks in snippets and count characters when stopping early chore(i18n): tr…",
+   "source_url": "https://github.com/usememos/memos/releases/tag/26.11.1",
+   "page_url": "https://www.firmwarely.com/devices/memos/"
   }
  }
 }
