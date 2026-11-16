@@ -83,13 +83,13 @@
    "model": "IOS/macOS Research Swiss Army Knife",
    "category": "M",
    "status": "update",
-   "version": "3.1.748",
+   "version": "3.1.749",
    "previous": "3.1.747",
-   "released": "2026-11-15",
+   "released": "2026-11-16",
    "date_known": true,
    "eol": false,
-   "notes": "Changelog: Bug fixes: a078487c161e030630af345d5e91fd8b3288b559: fix(download): classify release-delivered OTAs with RC doc IDs as release () Summary: Full Changelog: https://github.com/blacktop/ipsw/compare/v3.1.746...v3.1.748 What to do next?: Read the documentation Follow us on Twitter Follow us …",
-   "source_url": "https://github.com/blacktop/ipsw/releases/tag/v3.1.748",
+   "notes": "Changelog: New Features: 86dc9997f207324f24037a2d4b94673d71496bbf: feat(diff): read ExclaveOS and staged apps from OTAs () ee104c1c12ee40977ddecf50de007940242f6435: feat(macho): allow decrypt-ipa output reuse () e9e26a1eddf2a28a886819d0eafdd7154c833d17: feat(ota): extract staged system apps () Bug …",
+   "source_url": "https://github.com/blacktop/ipsw/releases/tag/v3.1.749",
    "page_url": "https://www.firmwarely.com/devices/ipsw/"
   },
   "clickhouse": {
@@ -466,6 +466,21 @@
    "notes": "To receive further Pre-Release or final updates for a non-docker installation, please change the branch to master. (Settings -› General (Show Advanced Settings) -› Updates -› Branch) If you are using docker you will need to update the container image. Do not attempt to update Radarr within an exist…",
    "source_url": "https://github.com/Radarr/Radarr/releases/tag/v7.0.3.10918",
    "page_url": "https://www.firmwarely.com/devices/radarr/"
+  },
+  "coder": {
+   "id": "coder",
+   "brand": "Coder",
+   "model": "Remote dev environments",
+   "category": "A",
+   "status": "update",
+   "version": "2.38.8",
+   "previous": "2.38.7",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "## Stable (since November 16, 2026) Changelog: Bug fixes: Bump bundled terraform to 1.17.2 for 2.38 (#​32110, e1d5f36dcc) () Continuous integration: Create release tags and branches with the release App after approval (#​32212, 239bbb3e54) () Backport release signing changes to release/2.38 (#​3220…",
+   "source_url": "https://github.com/coder/coder/releases/tag/v2.38.8",
+   "page_url": "https://www.firmwarely.com/devices/coder/"
   }
  }
 }
