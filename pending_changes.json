@@ -586,6 +586,21 @@
    "notes": "What's Changed: fix: display \"Never\" for inactive source schedules chore: additional test for \"Never\" displayed by inactive sources feat(huey): efficient pruning of results fix: add a decorator for hooks to close the DB connection New Contributors: made their first contribution in https://github.co…",
    "source_url": "https://github.com/meeb/tubesync/releases/tag/v0.19.1",
    "page_url": "https://www.firmwarely.com/devices/tubesync/"
+  },
+  "dnscontrol": {
+   "id": "dnscontrol",
+   "brand": "DNSControl",
+   "model": "DNS as code",
+   "category": "R",
+   "status": "update",
+   "version": "5.9.0",
+   "previous": "5.8.2",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "Greetings DNS fans! Release highlights: NEW PROVIDER: DNSControl now supports IONOS! Thanks and welcome to who joins the project as its maintainer. We look forward to great things! (#​5064) print-ir and preview --ir finally round-trip again. This was broken in v5 and has finally been fixed. It coul…",
+   "source_url": "https://github.com/DNSControl/dnscontrol/releases/tag/v5.9.0",
+   "page_url": "https://www.firmwarely.com/devices/dnscontrol/"
   }
  }
 }
