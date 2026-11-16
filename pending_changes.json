@@ -646,6 +646,21 @@
    "notes": "CHANGE: The agent registry (agent-registry.json) is now version 3, which agents from v2.0.9 and earlier cannot read. The agent reads an existing version 2 registry as it is and saves it as version 3 at the end of its first startup, so upgrading needs no manual step. A v2.0.9 agent will not start on…",
    "source_url": "https://github.com/openziti/zrok/releases/tag/v2.0.10",
    "page_url": "https://www.firmwarely.com/devices/zrok/"
+  },
+  "cronicle": {
+   "id": "cronicle",
+   "brand": "Cronicle",
+   "model": "Task scheduler",
+   "category": "A",
+   "status": "update",
+   "version": "0.9.147",
+   "previous": "0.9.146",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "Fix: Encode perf key labels to prevent rendering them raw in HTML",
+   "source_url": "https://github.com/jhuckaby/Cronicle/releases/tag/v0.9.147",
+   "page_url": "https://www.firmwarely.com/devices/cronicle/"
   }
  }
 }
