@@ -293,13 +293,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.8.38.9-lts",
+   "version": "26.9.30.7-stable",
    "previous": "26.9.29.5-stable",
    "released": "2026-11-16",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.8.38.9-lts v26.8.38.9-lts",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.38.9-lts",
+   "notes": "Release v26.9.30.7-stable v26.9.30.7-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.9.30.7-stable",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "qdrant": {
@@ -391,6 +391,66 @@
    "notes": "2.0.11509 stable/jitsi-meet_11509",
    "source_url": "https://github.com/jitsi/jitsi-meet/releases/tag/stable/jitsi-meet_11509",
    "page_url": "https://www.firmwarely.com/devices/jitsi-meet/"
+  },
+  "zwave-js-ui": {
+   "id": "zwave-js-ui",
+   "brand": "Z-Wave JS",
+   "model": "Z-Wave control panel",
+   "category": "S",
+   "status": "update",
+   "version": "11.27.0",
+   "previous": "11.26.2",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "11.27.0 (2026-11-16): 🎄 Hello Z-Wave JS UI friends, Another year is almost over, and like every December I want to stop for a moment and say thank you to all of you. 🙏 This year was a special one. Z-Wave JS moved to the Open Home Foundation, and thanks to that I finally had the chance to meet AlCal…",
+   "source_url": "https://github.com/zwave-js/zwave-js-ui/releases/tag/v11.27.0",
+   "page_url": "https://www.firmwarely.com/devices/zwave-js-ui/"
+  },
+  "postal": {
+   "id": "postal",
+   "brand": "Postal",
+   "model": "Mail delivery platform",
+   "category": "A",
+   "status": "update",
+   "version": "3.4.0",
+   "previous": "3.3.7",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "3.4.0 (2026-11-16): Features: add configurable Postal logger level defaulting to INFO (#​3626) (ced77a3) dkim: make key size configurable and allow keys to be rotated (d96eddb) Bug Fixes: give each worker process a unique locker identity (#​3628) (3be663d) Miscellaneous Chores: upgrade to rails 8.1…",
+   "source_url": "https://github.com/postalserver/postal/releases/tag/3.4.0",
+   "page_url": "https://www.firmwarely.com/devices/postal/"
+  },
+  "limesurvey": {
+   "id": "limesurvey",
+   "brand": "LimeSurvey",
+   "model": "Survey platform",
+   "category": "A",
+   "status": "update",
+   "version": "7.10.0",
+   "previous": "7.9.1",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "7.10.0+261109",
+   "source_url": "https://github.com/LimeSurvey/LimeSurvey/releases/tag/7.10.0%2B261109",
+   "page_url": "https://www.firmwarely.com/devices/limesurvey/"
+  },
+  "songloft": {
+   "id": "songloft",
+   "brand": "Songloft",
+   "model": "Music server",
+   "category": "A",
+   "status": "update",
+   "version": "2.13.11",
+   "previous": "2.13.10",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "Songloft v2.13.11 安装与选包 / Installation: 中文 · English 更新记录 / Changelog: :sparkles: New Features: b98eb00 - jsplugin: 完善 Lynx 插件回退资源及客户端接入 (commit) :bug: Bug Fixes: 81849b2 - cache: 统一校验远程音频缓存并淘汰无效文件 (PR #​570) e2bfea9 - library: 按碟号和音轨号排序专辑歌曲 (commit) 8917470 - jsplugin: 更新 Lynx 宿主并支持直接加载歌曲封面 (commi…",
+   "source_url": "https://github.com/songloft-org/songloft/releases/tag/v2.13.11",
+   "page_url": "https://www.firmwarely.com/devices/songloft/"
   }
  }
 }

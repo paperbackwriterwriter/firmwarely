@@ -48564,6 +48564,96 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.9.30.7-stable",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-11-16T16:00:18+00:00",
+   "notes_chars": 43,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "zwave-js-ui",
+   "version": "11.27.0",
+   "name": "Z-Wave JS Z-Wave control panel",
+   "judged_at": "2026-11-16T16:00:18+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "postal",
+   "version": "3.4.0",
+   "name": "Postal Mail delivery platform",
+   "judged_at": "2026-11-16T16:00:19+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "limesurvey",
+   "version": "7.10.0",
+   "name": "LimeSurvey Survey platform",
+   "judged_at": "2026-11-16T16:00:19+00:00",
+   "notes_chars": 13,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.08,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "songloft",
+   "version": "2.13.11",
+   "name": "Songloft Music server",
+   "judged_at": "2026-11-16T16:00:19+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
