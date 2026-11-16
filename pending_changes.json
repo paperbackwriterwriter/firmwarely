@@ -1,5 +1,96 @@
 {
- "since": null,
+ "since": "2026-11-16T09:44:35+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "esp-idf": {
+   "id": "esp-idf",
+   "brand": "Espressif",
+   "model": "ESP-IDF",
+   "category": "M",
+   "status": "update",
+   "version": "6.1.1",
+   "previous": "6.1",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "Documentation for IDF v6.1.1 is available at https://docs.espressif.com/projects/esp-idf/en/v6.1.1/ ESP-IDF v6.1.1 is a bugfix release for ESP-IDF v6.1. Obtaining v6.1.1: For full installation instructions, see the ESP-IDF Programming Guide. Using EIM: The recommended way to obtain and install ESP-…",
+   "source_url": "https://github.com/espressif/esp-idf/releases/tag/v6.1.1",
+   "page_url": "https://www.firmwarely.com/devices/esp-idf/"
+  },
+  "meilisearch": {
+   "id": "meilisearch",
+   "brand": "Meilisearch",
+   "model": "Search engine",
+   "category": "A",
+   "status": "update",
+   "version": "1.57.0",
+   "previous": "1.56.2",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "🌈 Improvements: View the target state of dynamic search rules: [!NOTE] Using this feature requires the Enterprise Edition. Enterprise Edition features are also available on Meilisearch Cloud. Allows seeing the state of dynamic search rules (DSR) as if all pending DSR update tasks had been processed…",
+   "source_url": "https://github.com/meilisearch/meilisearch/releases/tag/v1.57.0",
+   "page_url": "https://www.firmwarely.com/devices/meilisearch/"
+  },
+  "budibase": {
+   "id": "budibase",
+   "brand": "Budibase",
+   "model": "Low-code platform",
+   "category": "A",
+   "status": "update",
+   "version": "4.0.1",
+   "previous": "4.0.0",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Add a CI check to ensure asdf and node-env and pyenv are on sync Bump dd-trace from 5.109.0 to 5.131.1 in /packages/backend-core by in https://github.com/Budibase/budibase/pull/19926 fix: pin Svelte version to 5.40.2 in plugin templates Maintain CouchDB Helm chart locally [#​19945] …",
+   "source_url": "https://github.com/Budibase/budibase/releases/tag/v4.0.1",
+   "page_url": "https://www.firmwarely.com/devices/budibase/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.320.33042",
+   "previous": "37522026.319.86269",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​12401 #​12400 #​12399 #​12398 #​12397 #​12396 #​12395 #​12394 #​12393",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.320.33042",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "portmaster": {
+   "id": "portmaster",
+   "brand": "Safing",
+   "model": "Portmaster application firewall",
+   "category": "R",
+   "status": "critical",
+   "version": "2.2.9",
+   "previous": "2.2.8",
+   "released": "2026-11-11",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: security: Intel updates now require a signed index fix: (UI) \"Recent Top Consumers\" chart went empty fix: (UI) App charts showed the previous app improvement: (UI) Click a top consumer to open its app Full Changelog: https://github.com/safing/portmaster/compare/v2.2.8...v2.2.9",
+   "source_url": "https://github.com/safing/portmaster/releases/tag/v2.2.9",
+   "page_url": "https://www.firmwarely.com/devices/portmaster/"
+  },
+  "sniffnet": {
+   "id": "sniffnet",
+   "brand": "Sniffnet",
+   "model": "Network traffic monitor",
+   "category": "R",
+   "status": "update",
+   "version": "1.6.0",
+   "previous": "1.5.1",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "New features: IPFIX collector capabilities: receive and analyze network traffic from remote devices (#​1270 — fixes #​303) Show current data rates (#​1324 — fixes #​1077, #​1135) Service taxonomy: classify upper layer services into 20 different categories (#​1312 — fixes #​1102) Added support for I…",
+   "source_url": "https://github.com/GyulyVGC/sniffnet/releases/tag/v1.6.0",
+   "page_url": "https://www.firmwarely.com/devices/sniffnet/"
+  }
+ }
 }
