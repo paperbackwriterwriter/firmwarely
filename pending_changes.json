@@ -106,6 +106,21 @@
    "notes": "This release fixes the following bugs: Bound netlink string reads by the attribute length Check the INFO_UF2.TXT contents were read correctly Do not allow modified XML files to spoof metadata trust Do not auto-start Bluez when setting up the backend Do not fall back to the BIOS setting when the plu…",
    "source_url": "https://github.com/fwupd/fwupd/releases/tag/2.1.10",
    "page_url": "https://www.firmwarely.com/devices/fwupd/"
+  },
+  "ntfy": {
+   "id": "ntfy",
+   "brand": "ntfy",
+   "model": "Push notification server",
+   "category": "A",
+   "status": "update",
+   "version": "2.38.1",
+   "previous": "2.38.0",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: 7d7dc4f2da111464a04feeee113005078d04fe4a Move the Stripe fix release note into v2.38.1",
+   "source_url": "https://github.com/binwiederhier/ntfy/releases/tag/v2.38.1",
+   "page_url": "https://www.firmwarely.com/devices/ntfy/"
   }
  }
 }

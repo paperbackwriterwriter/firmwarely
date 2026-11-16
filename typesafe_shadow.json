@@ -48204,6 +48204,24 @@
     "security_fix_plain": 0.73,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "ntfy",
+   "version": "2.38.1",
+   "name": "ntfy Push notification server",
+   "judged_at": "2026-11-16T11:26:33+00:00",
+   "notes_chars": 97,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
