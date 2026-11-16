@@ -293,13 +293,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.3.65.10-lts",
+   "version": "26.8.38.9-lts",
    "previous": "26.9.29.5-stable",
    "released": "2026-11-16",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.3.65.10-lts v26.3.65.10-lts",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.3.65.10-lts",
+   "notes": "Release v26.8.38.9-lts v26.8.38.9-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.38.9-lts",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "qdrant": {
@@ -316,6 +316,21 @@
    "notes": "Change log: Improvements: https://github.com/qdrant/qdrant/pull/11533 - Make batch searches with the same filter on the same vector significantly faster https://github.com/qdrant/qdrant/pull/11553 - Build HNSW graphs with the classic algorithm again by default, so ef_construct tunes graph quality o…",
    "source_url": "https://github.com/qdrant/qdrant/releases/tag/v1.20.2",
    "page_url": "https://www.firmwarely.com/devices/qdrant/"
+  },
+  "octoprint": {
+   "id": "octoprint",
+   "brand": "OctoPrint",
+   "model": "3D printer controller",
+   "category": "M",
+   "status": "eol",
+   "version": "2.0.0",
+   "previous": "1.11.8",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": true,
+   "notes": "✋ Heads-ups: ☝️ OctoPrint 2.0.0 requires Python 3.9+: This release of OctoPrint requires Python 3.9+. Python 3.7 & 3.8, still supported by OctoPrint 1.11.x, are no longer supported. Please also see this FAQ entry on OctoPrint's Python version requirements. 🔐 A new setting is available to configure …",
+   "source_url": "https://github.com/OctoPrint/OctoPrint/releases/tag/2.0.0",
+   "page_url": "https://www.firmwarely.com/devices/octoprint/"
   }
  }
 }
