@@ -331,6 +331,66 @@
    "notes": "✋ Heads-ups: ☝️ OctoPrint 2.0.0 requires Python 3.9+: This release of OctoPrint requires Python 3.9+. Python 3.7 & 3.8, still supported by OctoPrint 1.11.x, are no longer supported. Please also see this FAQ entry on OctoPrint's Python version requirements. 🔐 A new setting is available to configure …",
    "source_url": "https://github.com/OctoPrint/OctoPrint/releases/tag/2.0.0",
    "page_url": "https://www.firmwarely.com/devices/octoprint/"
+  },
+  "manyfold": {
+   "id": "manyfold",
+   "brand": "Manyfold",
+   "model": "3D model library",
+   "category": "M",
+   "status": "critical",
+   "version": "0.154.2",
+   "previous": "0.154.1",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release is all bugfixes, including a few for security issues. What's Changed: 🔒 Security 🔒: Fix CSRF protection Use public IDs instead of database IDs in all forms Fix incorrect print permission check Exclude fetching content from private URLs, mitigating potential SSRF exploits 🐛 Bug Fixes 🐛:…",
+   "source_url": "https://github.com/manyfold3d/manyfold/releases/tag/v0.154.2",
+   "page_url": "https://www.firmwarely.com/devices/manyfold/"
+  },
+  "infisical": {
+   "id": "infisical",
+   "brand": "Infisical",
+   "model": "Secrets manager",
+   "category": "A",
+   "status": "update",
+   "version": "0.167.11",
+   "previous": "0.167.10",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: improvement(license): move licensing into the License domain chore: replace the Python BDD suite with Go blackbox PKI tests docs(pki): document scheduling values for the PKI issuer Helm chart feat(dynamic-secrets): add OpenRouter API key dynamic secret feat(pam): output masking fix(…",
+   "source_url": "https://github.com/Infisical/infisical/releases/tag/v0.167.11",
+   "page_url": "https://www.firmwarely.com/devices/infisical/"
+  },
+  "onedev": {
+   "id": "onedev",
+   "brand": "OneDev",
+   "model": "Git server with CI",
+   "category": "A",
+   "status": "update",
+   "version": "17.2.1",
+   "previous": "17.2.0",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "Installation Guide: https://docs.onedev.io/category/installation-guide Change Log: https://code.onedev.io/onedev/server/~builds/8870/fixed-issues?query=%22State%22+is+%22Released%22+order+by+%22Type%22+asc+%2C+%22Priority%22+desc Incompatibilities: https://code.onedev.io/onedev/server/~builds/8870/…",
+   "source_url": "https://github.com/theonedev/onedev/releases/tag/v17.2.1",
+   "page_url": "https://www.firmwarely.com/devices/onedev/"
+  },
+  "jitsi-meet": {
+   "id": "jitsi-meet",
+   "brand": "Jitsi",
+   "model": "Video conferencing",
+   "category": "A",
+   "status": "update",
+   "version": "2.0.11509",
+   "previous": "2.0.11248",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "2.0.11509 stable/jitsi-meet_11509",
+   "source_url": "https://github.com/jitsi/jitsi-meet/releases/tag/stable/jitsi-meet_11509",
+   "page_url": "https://www.firmwarely.com/devices/jitsi-meet/"
   }
  }
 }

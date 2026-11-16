@@ -48492,6 +48492,78 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "manyfold",
+   "version": "0.154.2",
+   "name": "Manyfold 3D model library",
+   "judged_at": "2026-11-16T15:09:21+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.99,
+    "security_fix_plain": 0.95,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "infisical",
+   "version": "0.167.11",
+   "name": "Infisical Secrets manager",
+   "judged_at": "2026-11-16T15:09:21+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "onedev",
+   "version": "17.2.1",
+   "name": "OneDev Git server with CI",
+   "judged_at": "2026-11-16T15:09:21+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "jitsi-meet",
+   "version": "2.0.11509",
+   "name": "Jitsi Video conferencing",
+   "judged_at": "2026-11-16T15:09:21+00:00",
+   "notes_chars": 33,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

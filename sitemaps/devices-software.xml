@@ -234,7 +234,7 @@
   <url><loc>https://www.firmwarely.com/devices/openpnp/</loc><lastmod>2026-03-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/snapmaker-luban/</loc><lastmod>2025-01-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/spoolman/</loc><lastmod>2026-10-31</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/manyfold/</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/manyfold/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/freecad/</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/openscad/</loc><lastmod>2021-02-07</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/arduino-cli/</loc><lastmod>2026-11-10</lastmod></url>
@@ -311,7 +311,7 @@
   <url><loc>https://www.firmwarely.com/devices/trivy/</loc><lastmod>2026-11-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/nuclei/</loc><lastmod>2026-08-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/passbolt/</loc><lastmod>2026-11-12</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/infisical/</loc><lastmod>2026-11-13</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/infisical/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/openbao/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/keycloak/</loc><lastmod>2026-11-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/zitadel/</loc><lastmod>2026-11-13</lastmod></url>
@@ -341,7 +341,7 @@
   <url><loc>https://www.firmwarely.com/devices/adminer/</loc><lastmod>2026-11-03</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/phpmyadmin/</loc><lastmod>2025-10-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/gogs/</loc><lastmod>2026-11-12</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/onedev/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/onedev/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/woodpecker-ci/</loc><lastmod>2026-10-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/verdaccio/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/code-server/</loc><lastmod>2026-11-07</lastmod></url>
@@ -407,7 +407,7 @@
   <url><loc>https://www.firmwarely.com/devices/synapse/</loc><lastmod>2026-11-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/element-web/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/dendrite/</loc><lastmod>2024-09-13</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/jitsi-meet/</loc><lastmod>2026-09-14</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/jitsi-meet/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/zulip/</loc><lastmod>2026-11-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/mumble/</loc><lastmod>2026-10-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ejabberd/</loc><lastmod>2026-09-30</lastmod></url>
