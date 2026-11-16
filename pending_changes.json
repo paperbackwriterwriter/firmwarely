@@ -526,6 +526,66 @@
    "notes": "To receive further updates for a non-docker installation, please change the branch to master. (Settings -› General (Show Advanced Settings) -› Updates -› Branch) If you are using docker you will need to update the container image. Do not attempt to update Prowlarr within an existing docker containe…",
    "source_url": "https://github.com/Prowlarr/Prowlarr/releases/tag/v3.0.2.5780",
    "page_url": "https://www.firmwarely.com/devices/prowlarr/"
+  },
+  "home-assistant-core": {
+   "id": "home-assistant-core",
+   "brand": "Home Assistant",
+   "model": "Core (monthly release)",
+   "category": "S",
+   "status": "update",
+   "version": "2026.11.2",
+   "previous": "2026.11.1",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "Bump midea-local to v15.1.0 ([] - [#​191702]) ([midea docs]) (dependency) Fix UniFi options flow for unloaded entries ([] - [#​191684]) ([unifi docs]) indi_allsky: Bump aioindiallsky to 0.1.8 ([] - [#​191797]) ([indi_allsky docs]) (dependency) Bump iometer to 1.0.3 ([] - [#​191801]) ([iometer docs]…",
+   "source_url": "https://github.com/home-assistant/core/releases/tag/2026.11.2",
+   "page_url": "https://www.firmwarely.com/devices/home-assistant-core/"
+  },
+  "matomo": {
+   "id": "matomo",
+   "brand": "Matomo",
+   "model": "Web analytics",
+   "category": "A",
+   "status": "update",
+   "version": "5.14.3",
+   "previous": "5.14.2",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "Matomo 5.14.3 Changelog: Please use the attached archives for installing or updating Matomo. The source code download is only meant for developers and will require extra work to install it. Latest stable production release can be found at https://matomo.org/download/ (learn more) (recommended) Beta…",
+   "source_url": "https://github.com/matomo-org/matomo/releases/tag/5.14.3",
+   "page_url": "https://www.firmwarely.com/devices/matomo/"
+  },
+  "rabbitmq": {
+   "id": "rabbitmq",
+   "brand": "RabbitMQ",
+   "model": "Message broker",
+   "category": "A",
+   "status": "update",
+   "version": "4.4.1",
+   "previous": "4.4.0",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "RabbitMQ 4.4.1",
+   "source_url": "https://github.com/rabbitmq/rabbitmq-server/releases/tag/v4.4.1",
+   "page_url": "https://www.firmwarely.com/devices/rabbitmq/"
+  },
+  "tubesync": {
+   "id": "tubesync",
+   "brand": "TubeSync",
+   "model": "YouTube channel sync",
+   "category": "A",
+   "status": "update",
+   "version": "0.19.1",
+   "previous": "0.19.0",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: fix: display \"Never\" for inactive source schedules chore: additional test for \"Never\" displayed by inactive sources feat(huey): efficient pruning of results fix: add a decorator for hooks to close the DB connection New Contributors: made their first contribution in https://github.co…",
+   "source_url": "https://github.com/meeb/tubesync/releases/tag/v0.19.1",
+   "page_url": "https://www.firmwarely.com/devices/tubesync/"
   }
  }
 }

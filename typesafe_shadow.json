@@ -48744,6 +48744,78 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "home-assistant-core",
+   "version": "2026.11.2",
+   "name": "Home Assistant Core (monthly release)",
+   "judged_at": "2026-11-16T20:14:52+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "matomo",
+   "version": "5.14.3",
+   "name": "Matomo Web analytics",
+   "judged_at": "2026-11-16T20:14:52+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "rabbitmq",
+   "version": "4.4.1",
+   "name": "RabbitMQ Message broker",
+   "judged_at": "2026-11-16T20:14:52+00:00",
+   "notes_chars": 14,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "tubesync",
+   "version": "0.19.1",
+   "name": "TubeSync YouTube channel sync",
+   "judged_at": "2026-11-16T20:14:52+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
