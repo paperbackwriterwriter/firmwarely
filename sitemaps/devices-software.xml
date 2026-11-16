@@ -299,7 +299,7 @@
   <url><loc>https://www.firmwarely.com/devices/talos-linux/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/rancher/</loc><lastmod>2026-10-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/podman/</loc><lastmod>2026-11-10</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/docker-engine/</loc><lastmod>2026-11-03</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/docker-engine/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/docker-compose/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/nomad/</loc><lastmod>2026-10-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/vault/</loc><lastmod>2026-11-12</lastmod></url>
@@ -470,7 +470,7 @@
   <url><loc>https://www.firmwarely.com/devices/cal-com/</loc><lastmod>2026-03-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/rallly/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/limesurvey/</loc><lastmod>2026-11-09</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/penpot/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/penpot/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/excalidraw/</loc><lastmod>2026-04-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/drawio/</loc><lastmod>2026-11-04</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/onlyoffice-docs/</loc><lastmod>2026-10-12</lastmod></url>
@@ -528,7 +528,7 @@
   <url><loc>https://www.firmwarely.com/devices/microk8s/</loc><lastmod>2026-05-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/wasm3/</loc><lastmod>2026-09-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/jerryscript/</loc><lastmod>2024-12-18</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/serial-studio/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/serial-studio/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/dns-blocklists/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/gost/</loc><lastmod>2024-10-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/amass/</loc><lastmod>2026-10-25</lastmod></url>
@@ -630,7 +630,7 @@
   <url><loc>https://www.firmwarely.com/devices/uvtools/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/rackstack/</loc><lastmod>2024-10-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/lantern/</loc><lastmod>2026-11-02</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/avideo/</loc><lastmod>2026-11-09</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/avideo/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/databasus/</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/elasticsearch-dump/</loc><lastmod>2026-05-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/android-databackup/</loc><lastmod>2025-09-20</lastmod></url>
@@ -672,7 +672,7 @@
   <url><loc>https://www.firmwarely.com/devices/freerouting/</loc><lastmod>2026-10-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/linux-router/</loc><lastmod>2026-07-08</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ha-xiaomi-home/</loc><lastmod>2026-09-28</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/oxidized/</loc><lastmod>2026-05-20</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/oxidized/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/rustic/</loc><lastmod>2026-08-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/barman/</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/proxmenux/</loc><lastmod>2026-11-02</lastmod></url>
