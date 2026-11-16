@@ -436,6 +436,21 @@
    "notes": "What's Changed: chore(i18n): improve Czech translations feat(web): adopt/ui as the design system chore(i18n): translate usage limits strings to Turkish feat: add drawings with/canvas fix(markdown): keep a space at hard line breaks in snippets and count characters when stopping early chore(i18n): tr…",
    "source_url": "https://github.com/usememos/memos/releases/tag/26.11.1",
    "page_url": "https://www.firmwarely.com/devices/memos/"
+  },
+  "jsnes": {
+   "id": "jsnes",
+   "brand": "Jsnes",
+   "model": "JavaScript NES emulator",
+   "category": "C",
+   "status": "update",
+   "version": "3.0.0",
+   "previous": "2.1.0",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "Highlights: JSNES 3.0 replaces the emulation core with a cycle-accurate one. The CPU, PPU and APU now run in lockstep the way the real hardware does, and JSNES passes all 134 tests in the AccuracyCoin accuracy test ROM (up from 107 in 2.1.0). It's also slightly faster than 2.1.0. The public API has…",
+   "source_url": "https://github.com/bfirsh/jsnes/releases/tag/v3.0.0",
+   "page_url": "https://www.firmwarely.com/devices/jsnes/"
   }
  }
 }
