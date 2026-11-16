@@ -451,6 +451,21 @@
    "notes": "Highlights: JSNES 3.0 replaces the emulation core with a cycle-accurate one. The CPU, PPU and APU now run in lockstep the way the real hardware does, and JSNES passes all 134 tests in the AccuracyCoin accuracy test ROM (up from 107 in 2.1.0). It's also slightly faster than 2.1.0. The public API has…",
    "source_url": "https://github.com/bfirsh/jsnes/releases/tag/v3.0.0",
    "page_url": "https://www.firmwarely.com/devices/jsnes/"
+  },
+  "radarr": {
+   "id": "radarr",
+   "brand": "Radarr",
+   "model": "Movie manager",
+   "category": "A",
+   "status": "update",
+   "version": "7.0.3.10918",
+   "previous": "6.4.4.10685",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "To receive further Pre-Release or final updates for a non-docker installation, please change the branch to master. (Settings -› General (Show Advanced Settings) -› Updates -› Branch) If you are using docker you will need to update the container image. Do not attempt to update Radarr within an exist…",
+   "source_url": "https://github.com/Radarr/Radarr/releases/tag/v7.0.3.10918",
+   "page_url": "https://www.firmwarely.com/devices/radarr/"
   }
  }
 }
