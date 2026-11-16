@@ -481,6 +481,36 @@
    "notes": "What's Changed: Features: feat(datasets): filter dataset items by status feat(ai-gateway): add Google Vertex AI as a gateway provider feat(trace): show topics transcript on trace via three dots (internal) feat(native): apply model pricing and enrichment to owned OTEL events feat(evals): support Gem…",
    "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.81.0",
    "page_url": "https://www.firmwarely.com/devices/langfuse/"
+  },
+  "vector": {
+   "id": "vector",
+   "brand": "Vector",
+   "model": "Observability pipeline",
+   "category": "A",
+   "status": "update",
+   "version": "0.62.0",
+   "previous": "0.61.0",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "The COSE team is happy to announce Vector 0.62.0! 🚀 Vector is a lightweight, ultra-fast tool for building observability pipelines that puts you in control of your data. Thanks to the 18 contributors who made the 40 changes in this release: 6 breaking changes 3 new features 8 enhancements 23 bug fix…",
+   "source_url": "https://github.com/vectordotdev/vector/releases/tag/v0.62.0",
+   "page_url": "https://www.firmwarely.com/devices/vector/"
+  },
+  "arc": {
+   "id": "arc",
+   "brand": "Arc",
+   "model": "Redpill loader for Synology DSM",
+   "category": "N",
+   "status": "update",
+   "version": "4.2.7",
+   "previous": "4.2.5",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "Information: Release Notes Dependencies: Addons: 26.11.16 Modules: 26.10.19 Configs: 26.09.06 Patches: 26.05.30 Custom: 26.11.15 LKMs: 26.11.09 Apex: 2026.02.3 Build: 2026-11-16 17:28",
+   "source_url": "https://github.com/AuxXxilium/arc/releases/tag/4.2.7",
+   "page_url": "https://www.firmwarely.com/devices/arc/"
   }
  }
 }
