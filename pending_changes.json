@@ -53,13 +53,13 @@
    "model": "DNS blocklists",
    "category": "R",
    "status": "update",
-   "version": "37522026.320.33042",
+   "version": "37522026.321.353",
    "previous": "37522026.319.86269",
-   "released": "2026-11-16",
+   "released": "2026-11-17",
    "date_known": true,
    "eol": false,
-   "notes": "#​12401 #​12400 #​12399 #​12398 #​12397 #​12396 #​12395 #​12394 #​12393",
-   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.320.33042",
+   "notes": "#​12411 #​12410 #​12408 #​12407 #​12406 #​12404 #​12403 #​12402",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.321.353",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   },
   "portmaster": {
@@ -691,6 +691,21 @@
    "notes": "v0.34.0: 1,061 commits from 412 contributors (120 new). Thank you! TL;DR: 10 new models (Mistral Large 4, MiniMax-M3.1-Flash, Nemotron-3.5-Transcribe, and more!) Extensible KV cache is on by default: vLLM sizes the KV cache from memory actually free after warmup, so most models get a bigger cache a…",
    "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0",
    "page_url": "https://www.firmwarely.com/devices/vllm/"
+  },
+  "valve-steam-deck-oled": {
+   "id": "valve-steam-deck-oled",
+   "brand": "Valve",
+   "model": "Steam Deck OLED",
+   "category": "C",
+   "status": "update",
+   "version": "3.10.1",
+   "previous": "3.10.0",
+   "released": "2026-11-16",
+   "date_known": false,
+   "eol": false,
+   "notes": "SteamOS release. See the news feed for details.",
+   "source_url": "https://store.steampowered.com/news/app/1675200",
+   "page_url": "https://www.firmwarely.com/devices/valve-steam-deck-oled/"
   }
  }
 }
