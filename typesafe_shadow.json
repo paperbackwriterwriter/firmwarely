@@ -49842,6 +49842,150 @@
     "security_fix_plain": 0.04,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "windmill",
+   "version": "1.876.1",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-11-17T18:04:19+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.9.31.21-stable",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-11-17T18:04:19+00:00",
+   "notes_chars": 45,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "duplicacy",
+   "version": "3.3.1",
+   "name": "Duplicacy Cloud backup tool",
+   "judged_at": "2026-11-17T18:04:19+00:00",
+   "notes_chars": 130,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.23,
+    "security_fix_plain": 0.45,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "kestra",
+   "version": "2.0.11",
+   "name": "Kestra Orchestration platform",
+   "judged_at": "2026-11-17T18:04:20+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "nzbhydra2",
+   "version": "9.3.2",
+   "name": "NZBHydra2 Usenet meta search",
+   "judged_at": "2026-11-17T18:04:20+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "netgate-2100",
+   "version": "26.07.1",
+   "name": "Netgate 2100 (pfSense Plus)",
+   "judged_at": "2026-11-17T18:04:20+00:00",
+   "notes_chars": 56,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "arduino-pico",
+   "version": "6.4.0",
+   "name": "Arduino-Pico Arduino core for Raspberry Pi Pico",
+   "judged_at": "2026-11-17T18:04:20+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "databasement",
+   "version": "1.10.12",
+   "name": "Databasement Database backup manager",
+   "judged_at": "2026-11-17T18:04:20+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
