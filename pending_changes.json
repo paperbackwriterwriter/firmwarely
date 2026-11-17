@@ -736,6 +736,36 @@
    "notes": "This is an automatically generated changelog for release 45.20261117. From previous stable version 45.20261115 there have been the following changes. One package per new version shown. Major packages: | Name | Version | | --- | --- | | Kernel | 7.3.4-ogc6.1 ➡️ 7.3.4-ogc8.1 | | Kernel (Nvidia LTS) |…",
    "source_url": "https://github.com/ublue-os/bazzite/releases/tag/45.20261117",
    "page_url": "https://www.firmwarely.com/devices/bazzite/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.3078",
+   "previous": "0.24.3073",
+   "released": "2026-11-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: a4ab0fccf65d00f5b7de84a734d9274669b063c1 explosiv-world: CA not using sitelink as CN 233a15af32372e2aecd7c25835e8331b0d231266 pterclub: new cat 546f0e5fad8b10b33d7501eb34f270942c4aecc8 linuxtracker: new cats 5953e7fedafbe8c1466735f8884ee535e5348a85 extremebits: CA expired This list of cha…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.3078",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "jenkins": {
+   "id": "jenkins",
+   "brand": "Jenkins",
+   "model": "Automation server",
+   "category": "A",
+   "status": "update",
+   "version": "2.591",
+   "previous": "2.590",
+   "released": "2026-11-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "jenkins-2.591",
+   "source_url": "https://github.com/jenkinsci/jenkins/releases/tag/jenkins-2.591",
+   "page_url": "https://www.firmwarely.com/devices/jenkins/"
   }
  }
 }
