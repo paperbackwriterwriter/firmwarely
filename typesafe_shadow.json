@@ -49500,6 +49500,114 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "mosquitto-broker",
+   "version": "2.1.4",
+   "name": "Eclipse Mosquitto MQTT broker",
+   "judged_at": "2026-11-17T15:31:30+00:00",
+   "notes_chars": 6,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.19,
+    "security_fix_plain": 0.21,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "cloudflared",
+   "version": "2026.11.1",
+   "name": "Cloudflare Tunnel daemon",
+   "judged_at": "2026-11-17T15:31:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "uptime-kuma",
+   "version": "2.5.12",
+   "name": "Uptime Kuma Uptime monitor",
+   "judged_at": "2026-11-17T15:31:31+00:00",
+   "notes_chars": 92,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.75,
+    "security_fix_plain": 0.81,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "fluidd",
+   "version": "1.38.1",
+   "name": "Fluidd Klipper web interface",
+   "judged_at": "2026-11-17T15:31:31+00:00",
+   "notes_chars": 182,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.38,
+    "security_fix_plain": 0.36,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "open-webui",
+   "version": "0.13.4",
+   "name": "Open WebUI LLM web interface",
+   "judged_at": "2026-11-17T15:31:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "erpnext",
+   "version": "16.60.0",
+   "name": "Frappe ERPNext",
+   "judged_at": "2026-11-17T15:31:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
