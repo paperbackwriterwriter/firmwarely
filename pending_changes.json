@@ -766,6 +766,36 @@
    "notes": "jenkins-2.591",
    "source_url": "https://github.com/jenkinsci/jenkins/releases/tag/jenkins-2.591",
    "page_url": "https://www.firmwarely.com/devices/jenkins/"
+  },
+  "sony-playstation-5": {
+   "id": "sony-playstation-5",
+   "brand": "Sony",
+   "model": "PlayStation 5",
+   "category": "C",
+   "status": "update",
+   "version": "26.07-14.23.00",
+   "previous": "26.07-14.22.00",
+   "released": "2026-11-17",
+   "date_known": false,
+   "eol": false,
+   "notes": "PS5 system software. Sony usually describes these as performance and stability improvements; see the release notes for details.",
+   "source_url": "https://www.playstation.com/en-us/support/hardware/ps5/system-software-info/",
+   "page_url": "https://www.firmwarely.com/devices/sony-playstation-5/"
+  },
+  "sony-playstation-5-pro": {
+   "id": "sony-playstation-5-pro",
+   "brand": "Sony",
+   "model": "PlayStation 5 Pro",
+   "category": "C",
+   "status": "update",
+   "version": "26.07-14.23.00",
+   "previous": "26.07-14.22.00",
+   "released": "2026-11-17",
+   "date_known": false,
+   "eol": false,
+   "notes": "PS5 system software. Sony usually describes these as performance and stability improvements; see the release notes for details.",
+   "source_url": "https://www.playstation.com/en-us/support/hardware/ps5/system-software-info/",
+   "page_url": "https://www.firmwarely.com/devices/sony-playstation-5-pro/"
   }
  }
 }
