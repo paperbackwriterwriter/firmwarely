@@ -76,6 +76,51 @@
    "notes": "Join our communities --- Changelog: bugfixes Fix Marmaid architecture #​655 Newest note/checklist missing from Home when \"Pick up where you left off\" is turned off #​654 New item insertion = Bottom of list does not work for bulk add #​652 Sidebar footer cut off at the bottom of the screen on iPad -…",
    "source_url": "https://github.com/fccview/jotty/releases/tag/1.30.0",
    "page_url": "https://www.firmwarely.com/devices/jotty/"
+  },
+  "node-red": {
+   "id": "node-red",
+   "brand": "Node-RED",
+   "model": "Automation flow editor",
+   "category": "S",
+   "status": "update",
+   "version": "5.0.10",
+   "previous": "5.0.9",
+   "released": "2026-11-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Fixed a bug where runtime-event banners could be garbled in some situations Replace lodash.clonedeep with lodash Validate lang parameter on locales requests Validate comms packets are valid objects Prevent prototype write access Fix path validation in synchronous FS context store Va…",
+   "source_url": "https://github.com/node-red/node-red/releases/tag/5.0.10",
+   "page_url": "https://www.firmwarely.com/devices/node-red/"
+  },
+  "ghost": {
+   "id": "ghost",
+   "brand": "Ghost",
+   "model": "Publishing platform",
+   "category": "A",
+   "status": "update",
+   "version": "6.78.0",
+   "previous": "6.77.0",
+   "released": "2026-11-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "✨ Added shipping address and phone collection to Stripe Checkout - Rob Lester 🐛 Fixed gift redemption for new members on paid-only sites (#​32352) - Luis Azevedo 🐛 Fixed feature image captions losing their formatting on the site (#​32943) - Jonatan Svennberg 🐛 Fixed card links being corrupted by le…",
+   "source_url": "https://github.com/TryGhost/Ghost/releases/tag/v6.78.0",
+   "page_url": "https://www.firmwarely.com/devices/ghost/"
+  },
+  "rallly": {
+   "id": "rallly",
+   "brand": "Rallly",
+   "model": "Meeting polls",
+   "category": "A",
+   "status": "critical",
+   "version": "4.17.1",
+   "previous": "4.17.0",
+   "released": "2026-11-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "🔒 Security update: Next.js and Hono: This patch upgrades two dependencies that published security advisories. We have not found a way to exploit them in Rallly, but we recommend upgrading. Next.js 16.4.2 → 16.4.6. Next.js 16.4.5 fixed seven moderate advisories. Most affect features Rallly does not …",
+   "source_url": "https://github.com/lukevella/rallly/releases/tag/v4.17.1",
+   "page_url": "https://www.firmwarely.com/devices/rallly/"
   }
  }
 }

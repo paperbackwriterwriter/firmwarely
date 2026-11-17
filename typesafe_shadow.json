@@ -49248,6 +49248,60 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "node-red",
+   "version": "5.0.10",
+   "name": "Node-RED Automation flow editor",
+   "judged_at": "2026-11-17T11:32:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.84,
+    "security_fix_plain": 0.75,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ghost",
+   "version": "6.78.0",
+   "name": "Ghost Publishing platform",
+   "judged_at": "2026-11-17T11:32:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "rallly",
+   "version": "4.17.1",
+   "name": "Rallly Meeting polls",
+   "judged_at": "2026-11-17T11:32:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.08,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
