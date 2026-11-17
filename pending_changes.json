@@ -586,6 +586,36 @@
    "notes": "What's Changed: fix(backup): allow empty WAL files in remote SQLite backup feat: include snapshot comments in search feat: add Google Drive as a backup storage provider chore(deps): bump katex from 0.16.47 to 0.18.10 in /docs in the npm_and_yarn group across 1 directory by in https://github.com/Dav…",
    "source_url": "https://github.com/David-Crty/databasement/releases/tag/v1.10.12",
    "page_url": "https://www.firmwarely.com/devices/databasement/"
+  },
+  "infisical": {
+   "id": "infisical",
+   "brand": "Infisical",
+   "model": "Secrets manager",
+   "category": "A",
+   "status": "update",
+   "version": "0.167.12",
+   "previous": "0.167.11",
+   "released": "2026-11-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: chore: add upgrade impact for v0.167.11 by in https://github.com/Infisical/infisical/pull/9538 feat(approvals): incident.io on-call auto-approvals check improvement(billing): drop the x suffix from billed identity counts improvement(audit-log-streams): add a dedicated permission ins…",
+   "source_url": "https://github.com/Infisical/infisical/releases/tag/v0.167.12",
+   "page_url": "https://www.firmwarely.com/devices/infisical/"
+  },
+  "phpipam": {
+   "id": "phpipam",
+   "brand": "phpIPAM",
+   "model": "IP address management",
+   "category": "A",
+   "status": "critical",
+   "version": "1.9.1",
+   "previous": "1.9.0",
+   "released": "2026-11-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "Updated upgrade process. \\ Read UPDATE.md if upgrading from v1.8.3 or below. --- == 1.9.1 Bugfixes: ---------------------------- + PHP8 compatibility fixes; + BASE not read from config.php; + logo.php upload fixes; Security Fixes: ---------------------------- + Prevent re-use of CAPTCHA codes; + HT…",
+   "source_url": "https://github.com/phpipam/phpipam/releases/tag/v1.9.1",
+   "page_url": "https://www.firmwarely.com/devices/phpipam/"
   }
  }
 }
