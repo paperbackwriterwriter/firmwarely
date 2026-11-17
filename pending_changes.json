@@ -23,13 +23,13 @@
    "model": "Compose",
    "category": "A",
    "status": "update",
-   "version": "5.7.2",
+   "version": "5.8.0",
    "previous": "5.7.1",
    "released": "2026-11-17",
    "date_known": true,
    "eol": false,
-   "notes": "What's Changed: ✨ Improvements: Feat(up): stream the logs while --wait waits for the services 🐛 Fixes: Fix(oci): tell a null \"manifests\" from a list, and report a host failure as such Fix(config): skip pure resource provider services in config --images Fix(down): keep volumes other services use on …",
-   "source_url": "https://github.com/docker/compose/releases/tag/v5.7.2",
+   "notes": "What's Changed: ℹ️ Scheduled jobs are now supported. A job is a one-shot unit of work declared in the top-level jobs: element of your Compose file, run on demand or on a schedule. Scheduling needs Docker Engine 29.10 or later with the jobs extension enabled (it is off by default: dockerd --extensio…",
+   "source_url": "https://github.com/docker/compose/releases/tag/v5.8.0",
    "page_url": "https://www.firmwarely.com/devices/docker-compose/"
   },
   "n8n": {
