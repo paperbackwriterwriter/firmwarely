@@ -188,13 +188,13 @@
    "model": "Collaborative editor",
    "category": "A",
    "status": "update",
-   "version": "3.3.18",
+   "version": "3.3.19",
    "previous": "3.3.17",
    "released": "2026-11-17",
    "date_known": true,
    "eol": false,
-   "notes": "3.3.18 is a bug-fix release. Text typed from clients that send multi-line keep or delete ops, such as the pad terminal client, no longer appears scrambled in watching browsers. A socket that sends overlapping joins can no longer end up in two pad rooms. The Colibris home page also follows dark mode…",
-   "source_url": "https://github.com/ether/etherpad/releases/tag/v3.3.18",
+   "notes": "3.3.19 is a bug-fix release. Users who share an IP, for example several tabs or people behind one proxy or the Home Assistant add-on, are no longer disconnected by the message rate limiter. Plugin icon fonts load again in production mode. Notable fixes: Collaboration — the pad message rate limit no…",
+   "source_url": "https://github.com/ether/etherpad/releases/tag/v3.3.19",
    "page_url": "https://www.firmwarely.com/devices/etherpad/"
   },
   "appwrite": {
@@ -451,6 +451,51 @@
    "notes": "25.0.3 {1} -› 25.0.2 Tag to substitute: 25.0.3 https://www.nuget.org/packages/Ocelot/25.0.3 --› :warning: End of .NET 8 and .NET 9 support (version 25.0.3): Milestone: .NET 10 :point_left: Codenamed: .NET 10 Read the Docs: Ocelot 25.0 with PDF The .NET 8 and .NET 9 support lifecycles have ended on …",
    "source_url": "https://github.com/ThreeMammals/Ocelot/releases/tag/25.0.3",
    "page_url": "https://www.firmwarely.com/devices/ocelot/"
+  },
+  "arduino-esp32": {
+   "id": "arduino-esp32",
+   "brand": "Espressif",
+   "model": "Arduino core for ESP32",
+   "category": "M",
+   "status": "update",
+   "version": "3.3.13",
+   "previous": "3.3.12",
+   "released": "2026-11-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: fix(usb): Use correct parameter for fat register for idf6+ feat(board): add support for Soldered NULA CAN ESP32S3. Fix pioarduino-build.py for SCons 4.11.1 used in newer pioarduino framework espressif32 builds docs: fix malformed board toctree indentation for LaTeX (and PDF) builds …",
+   "source_url": "https://github.com/espressif/arduino-esp32/releases/tag/3.3.13",
+   "page_url": "https://www.firmwarely.com/devices/arduino-esp32/"
+  },
+  "hugo": {
+   "id": "hugo",
+   "brand": "Hugo",
+   "model": "Static site generator",
+   "category": "A",
+   "status": "update",
+   "version": "0.170.1",
+   "previous": "0.170.0",
+   "released": "2026-11-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: deps: Upgrade github.com/bep/imagemeta v1.1.1 =› v1.1.2 e6d7bcba tpl/tplimpl: Don't add file context to partial return sentinel errors 5f34065b #​15604 images: Add fgColor and bgColor options to images.QR and the qr shortcode 93be9f1f #​15600 tpl/tplimpl: Cleanup vimeo shortcode com…",
+   "source_url": "https://github.com/gohugoio/hugo/releases/tag/v0.170.1",
+   "page_url": "https://www.firmwarely.com/devices/hugo/"
+  },
+  "ha-bambulab": {
+   "id": "ha-bambulab",
+   "brand": "ha-bambulab",
+   "model": "Bambu Lab Home Assistant integration",
+   "category": "S",
+   "status": "update",
+   "version": "2.4.1",
+   "previous": "2.4.0",
+   "released": "2026-11-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "Important: Please upgrade as this fixes another couple of bugs that caused excessive network connections to Bambu in cloud mode that they alerted us to. Breaking Change: Makerworld profile is no longer setup on a specific printer device but instead you can optionally add it as a standalone device a…",
+   "source_url": "https://github.com/greghesp/ha-bambulab/releases/tag/v2.4.1",
+   "page_url": "https://www.firmwarely.com/devices/ha-bambulab/"
   }
  }
 }

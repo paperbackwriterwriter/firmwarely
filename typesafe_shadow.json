@@ -49770,6 +49770,78 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.5
    }
+  },
+  {
+   "id": "etherpad",
+   "version": "3.3.19",
+   "name": "Etherpad Collaborative editor",
+   "judged_at": "2026-11-17T17:13:33+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "arduino-esp32",
+   "version": "3.3.13",
+   "name": "Espressif Arduino core for ESP32",
+   "judged_at": "2026-11-17T17:13:33+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "hugo",
+   "version": "0.170.1",
+   "name": "Hugo Static site generator",
+   "judged_at": "2026-11-17T17:13:33+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ha-bambulab",
+   "version": "2.4.1",
+   "name": "ha-bambulab Bambu Lab Home Assistant integration",
+   "judged_at": "2026-11-17T17:13:33+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

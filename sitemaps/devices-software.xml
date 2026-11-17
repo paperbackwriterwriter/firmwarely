@@ -150,7 +150,7 @@
   <url><loc>https://www.firmwarely.com/devices/linuxcnc/</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/lasergrbl/</loc><lastmod>2025-03-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/arduino-ide/</loc><lastmod>2026-11-12</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/arduino-esp32/</loc><lastmod>2026-09-18</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/arduino-esp32/</loc><lastmod>2026-11-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/stm32duino/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/openpilot/</loc><lastmod>2026-10-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/circuitpython/</loc><lastmod>2026-11-11</lastmod></url>
@@ -417,7 +417,7 @@
   <url><loc>https://www.firmwarely.com/devices/pixelfed/</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/peertube/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ghost/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/hugo/</loc><lastmod>2026-11-13</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/hugo/</loc><lastmod>2026-11-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/flarum/</loc><lastmod>2026-10-09</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/listmonk/</loc><lastmod>2026-11-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/mailcow/</loc><lastmod>2026-10-21</lastmod></url>
@@ -625,7 +625,7 @@
   <url><loc>https://www.firmwarely.com/devices/android/</loc><lastmod>2026-11-02</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/meshlab/</loc><lastmod>2025-07-22</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/dust3d/</loc><lastmod>2026-06-08</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/ha-bambulab/</loc><lastmod>2026-11-13</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/ha-bambulab/</loc><lastmod>2026-11-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/dune3d/</loc><lastmod>2026-01-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/uvtools/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/rackstack/</loc><lastmod>2024-10-19</lastmod></url>
