@@ -49320,6 +49320,132 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "mosquitto-broker",
+   "version": "2.1.3",
+   "name": "Eclipse Mosquitto MQTT broker",
+   "judged_at": "2026-11-17T13:14:12+00:00",
+   "notes_chars": 6,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.2,
+    "security_fix_plain": 0.17,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "rufus",
+   "version": "4.16",
+   "name": "Rufus USB boot media creator",
+   "judged_at": "2026-11-17T13:14:13+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.12,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.10.5.57-stable",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-11-17T13:14:13+00:00",
+   "notes_chars": 45,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "etherpad",
+   "version": "3.3.18",
+   "name": "Etherpad Collaborative editor",
+   "judged_at": "2026-11-17T13:14:13+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "appwrite",
+   "version": "2.7.3",
+   "name": "Appwrite Backend platform",
+   "judged_at": "2026-11-17T13:14:13+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.52,
+    "security_fix_plain": 0.56,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "wasm-micro-runtime",
+   "version": "2.4.6",
+   "name": "WAMR WebAssembly micro runtime",
+   "judged_at": "2026-11-17T13:14:13+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.75,
+    "security_fix_plain": 0.7,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "b4",
+   "version": "1.92.0",
+   "name": "B4 Network packet processor",
+   "judged_at": "2026-11-17T13:14:13+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
