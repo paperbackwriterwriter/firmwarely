@@ -50094,6 +50094,78 @@
     "security_fix_plain": 0.04,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "tandoor-recipes",
+   "version": "2.7.4",
+   "name": "Tandoor Recipes",
+   "judged_at": "2026-11-17T21:27:49+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.99,
+    "security_fix_plain": 0.96,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "anythingllm",
+   "version": "1.20.0",
+   "name": "AnythingLLM Document chat",
+   "judged_at": "2026-11-17T21:27:49+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "langflow",
+   "version": "1.13.3",
+   "name": "Langflow Agent builder",
+   "judged_at": "2026-11-17T21:27:49+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.33,
+    "security_fix_plain": 0.31,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "wal-g",
+   "version": "3.0.10",
+   "name": "WAL-G Database backup and restore",
+   "judged_at": "2026-11-17T21:27:49+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

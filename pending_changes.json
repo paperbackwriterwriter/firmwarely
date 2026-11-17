@@ -676,6 +676,66 @@
    "notes": "This release fixes the x86_64 Linux binary of 0.25.1, which crashed with \"Illegal instruction\" on CPUs without AVX2. Forward mode also stops waiting on a slow upstream and learns which primary answers first, blocklists are fetched through the configured upstream, and the dashboard shows each upstre…",
    "source_url": "https://github.com/razvandimescu/numa/releases/tag/v0.25.2",
    "page_url": "https://www.firmwarely.com/devices/numa/"
+  },
+  "tandoor-recipes": {
+   "id": "tandoor-recipes",
+   "brand": "Tandoor",
+   "model": "Recipes",
+   "category": "A",
+   "status": "critical",
+   "version": "2.7.4",
+   "previous": "2.7.3",
+   "released": "2026-11-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "fixed nextcloud provider path traversal issue https://github.com/TandoorRecipes/recipes/security/advisories/GHSA-q8xp-3229-5p37 changed recipe api to only return the display name of the recipe creator when share links are used https://github.com/TandoorRecipes/recipes/security/advisories/GHSA-384v-…",
+   "source_url": "https://github.com/TandoorRecipes/recipes/releases/tag/2.7.4",
+   "page_url": "https://www.firmwarely.com/devices/tandoor-recipes/"
+  },
+  "anythingllm": {
+   "id": "anythingllm",
+   "brand": "AnythingLLM",
+   "model": "Document chat",
+   "category": "A",
+   "status": "update",
+   "version": "1.20.0",
+   "previous": "1.19.0",
+   "released": "2026-11-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "Updated browser extension: The browser extension has been improved beyond its original function of just collecting documents to now a full fledged UI chat bar with the ability to right click -› Add context (text and image) and chat directly in Chrome. This sidebar should have mostly full parity for…",
+   "source_url": "https://github.com/Mintplex-Labs/anything-llm/releases/tag/v1.20.0",
+   "page_url": "https://www.firmwarely.com/devices/anythingllm/"
+  },
+  "langflow": {
+   "id": "langflow",
+   "brand": "Langflow",
+   "model": "Agent builder",
+   "category": "A",
+   "status": "update",
+   "version": "1.13.3",
+   "previous": "1.13.2",
+   "released": "2026-11-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: 🐛 Bug Fixes: fix(nextplaid): restore 1.13 component template loading fix: enforce custom component policy in background workflows fix(auth): invalidate native sessions after password changes fix(deps): easy dependency upgrades for 1.13.3 fix(playground): accept flow uploads in the s…",
+   "source_url": "https://github.com/langflow-ai/langflow/releases/tag/v1.13.3",
+   "page_url": "https://www.firmwarely.com/devices/langflow/"
+  },
+  "wal-g": {
+   "id": "wal-g",
+   "brand": "WAL-G",
+   "model": "Database backup and restore",
+   "category": "N",
+   "status": "update",
+   "version": "3.0.10",
+   "previous": "3.0.9",
+   "released": "2026-11-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "🚀 Highlights: WAL-G 3.0.10 is a feature-rich release focused on reliability, scalability, and recovery improvements across PostgreSQL, Greenplum, MySQL, MongoDB, Redis, and S3-compatible storage. This version introduces new backup and WAL handling capabilities, significant MongoDB and MySQL enhance…",
+   "source_url": "https://github.com/wal-g/wal-g/releases/tag/v3.0.10",
+   "page_url": "https://www.firmwarely.com/devices/wal-g/"
   }
  }
 }
