@@ -676,6 +676,21 @@
    "notes": "What's Changed: Revise security vulnerability reporting instructions fix(deps): bump hono to 4.13.18 and/node-server to 2.1.8 fix(enterprise): restore forgot password settings and add missing whitelabeling migration chore(traefik): bump Traefik to v3.7.19 fix(traefik): start Traefik when Docker fai…",
    "source_url": "https://github.com/Dokploy/dokploy/releases/tag/v0.31.3",
    "page_url": "https://www.firmwarely.com/devices/dokploy/"
+  },
+  "vllm": {
+   "id": "vllm",
+   "brand": "vLLM",
+   "model": "LLM inference server",
+   "category": "A",
+   "status": "update",
+   "version": "0.34.0",
+   "previous": "0.33.0",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "v0.34.0: 1,061 commits from 412 contributors (120 new). Thank you! TL;DR: 10 new models (Mistral Large 4, MiniMax-M3.1-Flash, Nemotron-3.5-Transcribe, and more!) Extensible KV cache is on by default: vLLM sizes the KV cache from memory actually free after warmup, so most models get a bigger cache a…",
+   "source_url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0",
+   "page_url": "https://www.firmwarely.com/devices/vllm/"
   }
  }
 }
