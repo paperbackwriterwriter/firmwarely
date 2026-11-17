@@ -121,6 +121,21 @@
    "notes": "🔒 Security update: Next.js and Hono: This patch upgrades two dependencies that published security advisories. We have not found a way to exploit them in Rallly, but we recommend upgrading. Next.js 16.4.2 → 16.4.6. Next.js 16.4.5 fixed seven moderate advisories. Most affect features Rallly does not …",
    "source_url": "https://github.com/lukevella/rallly/releases/tag/v4.17.1",
    "page_url": "https://www.firmwarely.com/devices/rallly/"
+  },
+  "windmill": {
+   "id": "windmill",
+   "brand": "Windmill",
+   "model": "Scripts and workflows",
+   "category": "A",
+   "status": "update",
+   "version": "1.876.0",
+   "previous": "1.875.0",
+   "released": "2026-11-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.876.0 (2026-11-17): Features: let AI harnesses solve tasks with code, then save and reuse it (#​12472) (caddc3f) pin the current turn's user message at the top of session chat (#​12468) (c204232) Bug Fixes: check new hub paths when a trigger or schedule is saved (#​12465) (88ef4e9) default the pa…",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.876.0",
+   "page_url": "https://www.firmwarely.com/devices/windmill/"
   }
  }
 }
