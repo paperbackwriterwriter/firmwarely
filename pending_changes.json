@@ -721,6 +721,21 @@
    "notes": "paperless-ngx 3.5.0: Features / Enhancements: Chorehancement: move all bulk operations to async hand-off (#​14773) Enhancement: render document notes as markdown (#​14626) Feature: manual workflow trigger (#​14704) Enhancement: make bulk metadata operations run async (#​14711) Fixhancement: add aut…",
    "source_url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.5.0",
    "page_url": "https://www.firmwarely.com/devices/paperless-ngx/"
+  },
+  "bazzite": {
+   "id": "bazzite",
+   "brand": "Universal Blue",
+   "model": "Bazzite gaming OS",
+   "category": "C",
+   "status": "update",
+   "version": "45.20261117",
+   "previous": "45.20261115",
+   "released": "2026-11-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "This is an automatically generated changelog for release 45.20261117. From previous stable version 45.20261115 there have been the following changes. One package per new version shown. Major packages: | Name | Version | | --- | --- | | Kernel | 7.3.4-ogc6.1 ➡️ 7.3.4-ogc8.1 | | Kernel (Nvidia LTS) |…",
+   "source_url": "https://github.com/ublue-os/bazzite/releases/tag/45.20261117",
+   "page_url": "https://www.firmwarely.com/devices/bazzite/"
   }
  }
 }
