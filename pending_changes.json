@@ -16,6 +16,66 @@
    "notes": "What's Changed: Certificate expiry: Long-lived inspection roots, and forged leaves clamped to the root Renew leaves before NotAfter; Inspector and the CLI warn as expiry approaches Prefer a still-valid SNI binding and show days-to-expiry Skip ACME re-issue when more than 30 days remain; renew in th…",
    "source_url": "https://github.com/justcoding121/titanium-web-proxy/releases/tag/v8.0.4",
    "page_url": "https://www.firmwarely.com/devices/titanium-web-proxy/"
+  },
+  "docker-compose": {
+   "id": "docker-compose",
+   "brand": "Docker",
+   "model": "Compose",
+   "category": "A",
+   "status": "update",
+   "version": "5.7.2",
+   "previous": "5.7.1",
+   "released": "2026-11-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: ✨ Improvements: Feat(up): stream the logs while --wait waits for the services 🐛 Fixes: Fix(oci): tell a null \"manifests\" from a list, and report a host failure as such Fix(config): skip pure resource provider services in config --images Fix(down): keep volumes other services use on …",
+   "source_url": "https://github.com/docker/compose/releases/tag/v5.7.2",
+   "page_url": "https://www.firmwarely.com/devices/docker-compose/"
+  },
+  "n8n": {
+   "id": "n8n",
+   "brand": "n8n",
+   "model": "Workflow automation",
+   "category": "A",
+   "status": "update",
+   "version": "2.48.4",
+   "previous": "2.47.7",
+   "released": "2026-11-13",
+   "date_known": true,
+   "eol": false,
+   "notes": "2.48.4 (2026-11-13): Bug Fixes: core: Stop redacting executions that use global credentials (#​43775) (4f6927f)",
+   "source_url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.48.4",
+   "page_url": "https://www.firmwarely.com/devices/n8n/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.321.32716",
+   "previous": "37522026.321.353",
+   "released": "2026-11-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​12413 #​12412",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.321.32716",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "jotty": {
+   "id": "jotty",
+   "brand": "Jotty",
+   "model": "But powerful alternative",
+   "category": "A",
+   "status": "update",
+   "version": "1.30.0",
+   "previous": "1.29.2",
+   "released": "2026-11-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "Join our communities --- Changelog: bugfixes Fix Marmaid architecture #​655 Newest note/checklist missing from Home when \"Pick up where you left off\" is turned off #​654 New item insertion = Bottom of list does not work for bulk add #​652 Sidebar footer cut off at the bottom of the screen on iPad -…",
+   "source_url": "https://github.com/fccview/jotty/releases/tag/1.30.0",
+   "page_url": "https://www.firmwarely.com/devices/jotty/"
   }
  }
 }

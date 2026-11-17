@@ -300,7 +300,7 @@
   <url><loc>https://www.firmwarely.com/devices/rancher/</loc><lastmod>2026-10-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/podman/</loc><lastmod>2026-11-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/docker-engine/</loc><lastmod>2026-11-16</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/docker-compose/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/docker-compose/</loc><lastmod>2026-11-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/nomad/</loc><lastmod>2026-10-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/vault/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/consul/</loc><lastmod>2026-10-22</lastmod></url>
@@ -711,7 +711,7 @@
   <url><loc>https://www.firmwarely.com/devices/snapotter/</loc><lastmod>2026-11-03</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/profilarr/</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/dockcheck/</loc><lastmod>2026-11-10</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/jotty/</loc><lastmod>2026-10-25</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/jotty/</loc><lastmod>2026-11-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/homeassistant-powercalc/</loc><lastmod>2026-11-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/espconnect/</loc><lastmod>2026-09-20</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/worldmonitor/</loc><lastmod>2026-11-04</lastmod></url>

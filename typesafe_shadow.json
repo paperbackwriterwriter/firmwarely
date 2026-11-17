@@ -49176,6 +49176,78 @@
     "security_fix_plain": 0.26,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "docker-compose",
+   "version": "5.7.2",
+   "name": "Docker Compose",
+   "judged_at": "2026-11-17T09:50:45+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "n8n",
+   "version": "2.48.4",
+   "name": "n8n Workflow automation",
+   "judged_at": "2026-11-17T09:50:45+00:00",
+   "notes_chars": 111,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.12,
+    "security_fix_plain": 0.15,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.321.32716",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-11-17T09:50:45+00:00",
+   "notes_chars": 15,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "jotty",
+   "version": "1.30.0",
+   "name": "Jotty But powerful alternative",
+   "judged_at": "2026-11-17T09:50:45+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
