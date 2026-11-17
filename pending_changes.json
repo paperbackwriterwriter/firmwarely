@@ -616,6 +616,66 @@
    "notes": "Updated upgrade process. \\ Read UPDATE.md if upgrading from v1.8.3 or below. --- == 1.9.1 Bugfixes: ---------------------------- + PHP8 compatibility fixes; + BASE not read from config.php; + logo.php upload fixes; Security Fixes: ---------------------------- + Prevent re-use of CAPTCHA codes; + HT…",
    "source_url": "https://github.com/phpipam/phpipam/releases/tag/v1.9.1",
    "page_url": "https://www.firmwarely.com/devices/phpipam/"
+  },
+  "netmaker": {
+   "id": "netmaker",
+   "brand": "Netmaker",
+   "model": "WireGuard mesh manager",
+   "category": "R",
+   "status": "update",
+   "version": "1.8.0",
+   "previous": "1.7.0",
+   "released": "2026-11-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "Netmaker v1.8.0 Release Notes 🚀: 🚀 What’s New: 💻 All-New Desktop Apps: Completely redesigned Netmaker Desktop Apps for a faster, stable connection experience. Now available to CE users as well (previously limited to Pro/EE). Peer-to-peer by default — desktop devices join the mesh with direct peerin…",
+   "source_url": "https://github.com/gravitl/netmaker/releases/tag/v1.8.0",
+   "page_url": "https://www.firmwarely.com/devices/netmaker/"
+  },
+  "raspberry-pi-500": {
+   "id": "raspberry-pi-500",
+   "brand": "Raspberry Pi",
+   "model": "Raspberry Pi 500",
+   "category": "P",
+   "status": "update",
+   "version": "28.37-1",
+   "previous": "28.36-1",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "pieeprom-2026-11-16: gencmd: Disable get_config set if secure-boot is…",
+   "source_url": "https://github.com/raspberrypi/rpi-eeprom/releases/tag/apt%2F28.37-1",
+   "page_url": "https://www.firmwarely.com/devices/raspberry-pi-500/"
+  },
+  "movie-data-capture": {
+   "id": "movie-data-capture",
+   "brand": "Movie Data Capture",
+   "model": "Local movie organizer",
+   "category": "A",
+   "status": "update",
+   "version": "8.2.6",
+   "previous": "8.2.5",
+   "released": "2026-11-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "View release notes 查看发布日志",
+   "source_url": "https://github.com/mvdctop/Movie_Data_Capture/releases/tag/8.2.6",
+   "page_url": "https://www.firmwarely.com/devices/movie-data-capture/"
+  },
+  "numa": {
+   "id": "numa",
+   "brand": "Numa",
+   "model": "Portable DNS resolver in Rust",
+   "category": "R",
+   "status": "update",
+   "version": "0.25.2",
+   "previous": "0.25.1",
+   "released": "2026-11-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release fixes the x86_64 Linux binary of 0.25.1, which crashed with \"Illegal instruction\" on CPUs without AVX2. Forward mode also stops waiting on a slow upstream and learns which primary answers first, blocklists are fetched through the configured upstream, and the dashboard shows each upstre…",
+   "source_url": "https://github.com/razvandimescu/numa/releases/tag/v0.25.2",
+   "page_url": "https://www.firmwarely.com/devices/numa/"
   }
  }
 }

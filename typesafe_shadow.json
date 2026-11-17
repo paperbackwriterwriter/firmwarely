@@ -50022,6 +50022,78 @@
     "security_fix_plain": 0.95,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "netmaker",
+   "version": "1.8.0",
+   "name": "Netmaker WireGuard mesh manager",
+   "judged_at": "2026-11-17T20:37:01+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "raspberry-pi-500",
+   "version": "28.37-1",
+   "name": "Raspberry Pi 500",
+   "judged_at": "2026-11-17T20:37:01+00:00",
+   "notes_chars": 70,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.23,
+    "security_fix_plain": 0.23,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "movie-data-capture",
+   "version": "8.2.6",
+   "name": "Movie Data Capture Local movie organizer",
+   "judged_at": "2026-11-17T20:37:01+00:00",
+   "notes_chars": 25,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "numa",
+   "version": "0.25.2",
+   "name": "Numa Portable DNS resolver in Rust",
+   "judged_at": "2026-11-17T20:37:01+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
