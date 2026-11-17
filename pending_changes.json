@@ -736,6 +736,36 @@
    "notes": "🚀 Highlights: WAL-G 3.0.10 is a feature-rich release focused on reliability, scalability, and recovery improvements across PostgreSQL, Greenplum, MySQL, MongoDB, Redis, and S3-compatible storage. This version introduces new backup and WAL handling capabilities, significant MongoDB and MySQL enhance…",
    "source_url": "https://github.com/wal-g/wal-g/releases/tag/v3.0.10",
    "page_url": "https://www.firmwarely.com/devices/wal-g/"
+  },
+  "audiobookshelf": {
+   "id": "audiobookshelf",
+   "brand": "Audiobookshelf",
+   "model": "Audiobook and podcast server",
+   "category": "A",
+   "status": "update",
+   "version": "2.38.0",
+   "previous": "2.37.2",
+   "released": "2026-11-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "Testers needed: Help us test Audiobookshelf version 3 using the v3 docker image tag. See new client repo: Important: New authentication system was added in v2.26.0. See https://github.com/advplyr/audiobookshelf/discussions/4460 for details.: Fixed: Server crash when scanning a book that lists the s…",
+   "source_url": "https://github.com/advplyr/audiobookshelf/releases/tag/v2.38.0",
+   "page_url": "https://www.firmwarely.com/devices/audiobookshelf/"
+  },
+  "rustic": {
+   "id": "rustic",
+   "brand": "rustic",
+   "model": "Encrypted deduplicated backups",
+   "category": "N",
+   "status": "update",
+   "version": "0.12.0",
+   "previous": "0.11.4",
+   "released": "2026-11-17",
+   "date_known": true,
+   "eol": false,
+   "notes": "Hello rusticeans, we are happy to release rustic 0.12.0! This is mainly a bugfix release which fixes a bug in prune which can lead to potential data loss when multiple parallel prune and backup runs are in the game. Thanks a lot to for finding and reporting! Moreover, in some rare cases the rustic …",
+   "source_url": "https://github.com/rustic-rs/rustic/releases/tag/v0.12.0",
+   "page_url": "https://www.firmwarely.com/devices/rustic/"
   }
  }
 }
