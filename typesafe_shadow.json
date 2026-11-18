@@ -51192,6 +51192,78 @@
     "security_fix_plain": 0.96,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "invoice-ninja",
+   "version": "5.13.54",
+   "name": "Invoice Ninja Invoicing",
+   "judged_at": "2026-11-18T21:56:19+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "oxicloud",
+   "version": "0.10.1",
+   "name": "OxiCloud Cloud storage server",
+   "judged_at": "2026-11-18T21:56:19+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.7,
+    "security_fix_plain": 0.57,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "masterdnsvpn",
+   "version": "2026.11.18.210322-7198b45",
+   "name": "MasterDnsVPN Advanced DNS tunneling VPN",
+   "judged_at": "2026-11-18T21:56:19+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "voidauth",
+   "version": "1.19.2",
+   "name": "VoidAuth Single sign-on server",
+   "judged_at": "2026-11-18T21:56:19+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

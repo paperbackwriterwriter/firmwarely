@@ -481,6 +481,66 @@
    "notes": "Valkey 9.1.4 - Released Wed 18 November 2026 ---------------------------------------------- Upgrade urgency SECURITY: This release includes security fixes we recommend you apply as soon as possible. Security Fixes: CVE-2026-130822: Fix a use-after-free crash in client eviction when maxmemory-client…",
    "source_url": "https://github.com/valkey-io/valkey/releases/tag/9.1.4",
    "page_url": "https://www.firmwarely.com/devices/valkey/"
+  },
+  "invoice-ninja": {
+   "id": "invoice-ninja",
+   "brand": "Invoice Ninja",
+   "model": "Invoicing",
+   "category": "A",
+   "status": "update",
+   "version": "5.13.54",
+   "previous": "5.13.53",
+   "released": "2026-11-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "fixes + qol improvements:: Fixes for payment intent failed webhook Improvements for task filters Add getter to CompanyGateway request Improve validation layer Improve validation layer for EntityEmailRequest class Static analysis Fixes for query filters Move headers out of mailable Merge pull reques…",
+   "source_url": "https://github.com/invoiceninja/invoiceninja/releases/tag/v5.13.54",
+   "page_url": "https://www.firmwarely.com/devices/invoice-ninja/"
+  },
+  "oxicloud": {
+   "id": "oxicloud",
+   "brand": "OxiCloud",
+   "model": "Cloud storage server",
+   "category": "N",
+   "status": "critical",
+   "version": "0.10.1",
+   "previous": "0.10.0",
+   "released": "2026-11-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: fix(ext-mount): fix anscestors and UI browsing feat(quota): handle restore/undelete when overquota feat(registration): normalize /api/{config,status} and fix auth method chore: wire ApiErrorBody responses security(deps): close zstd family RUSTSEC advisories on the tantivy path Conta…",
+   "source_url": "https://github.com/AtalayaLabs/OxiCloud/releases/tag/v0.10.1",
+   "page_url": "https://www.firmwarely.com/devices/oxicloud/"
+  },
+  "masterdnsvpn": {
+   "id": "masterdnsvpn",
+   "brand": "MasterDnsVPN",
+   "model": "Advanced DNS tunneling VPN",
+   "category": "R",
+   "status": "update",
+   "version": "2026.11.18.210322-7198b45",
+   "previous": "2026.10.26.100415-5f83ee9",
+   "released": "2026-11-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes since v2026.10.26.100415-5f83ee9: Automated release created by workflow run 44397432714 for commit 7198b45b86c7def2e226e41bcca3eca8ca2ea502 Commits: fix(client): eliminate resolver probation starvation in LossThenLatency balancing strategy (#​206) (4144e54) fix(client): data races in sessio…",
+   "source_url": "https://github.com/masterking32/MasterDnsVPN/releases/tag/v2026.11.18.210322-7198b45",
+   "page_url": "https://www.firmwarely.com/devices/masterdnsvpn/"
+  },
+  "voidauth": {
+   "id": "voidauth",
+   "brand": "VoidAuth",
+   "model": "Single sign-on server",
+   "category": "A",
+   "status": "update",
+   "version": "1.19.2",
+   "previous": "1.19.1",
+   "released": "2026-11-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Features 🚀: Add Search Bar to ProxyAuth Domains Admin Page Rearrange Admin Sidebar Items Fixes 🔧: Misc Fixes Translations 📝: fix(i18n): complete Russian translations for 1.19.0 feat(i18n): add Italian (it-IT) translation Chores 🧹: Bump github/codeql-action/analyze from 4.38.2 to 4.3…",
+   "source_url": "https://github.com/voidauth/voidauth/releases/tag/v1.19.2",
+   "page_url": "https://www.firmwarely.com/devices/voidauth/"
   }
  }
 }
