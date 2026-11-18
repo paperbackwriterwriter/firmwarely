@@ -781,6 +781,21 @@
    "notes": "Bug Fixes 🐛: Install: Run SeaweedFS KEK recovery container as root and Create the PostgreSQL volume without --name and Other: (external-kafka) Decouple patch from compose config Internal Changes 🔧: (deps) Bump ClickHouse to 25.8.33.10002.altinitystable with (release) Update .craft.yml for craft 3.9…",
    "source_url": "https://github.com/getsentry/self-hosted/releases/tag/26.11.0",
    "page_url": "https://www.firmwarely.com/devices/sentry-self-hosted/"
+  },
+  "barman": {
+   "id": "barman",
+   "brand": "Barman",
+   "model": "PostgreSQL backup and recovery",
+   "category": "N",
+   "status": "update",
+   "version": "3.21.0",
+   "previous": "3.20.1",
+   "released": "2026-11-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Notable changes: Support for WarehousePG Barman now supports backing up and restoring WarehousePG instances, including backups to cloud object storage. Barman detects WarehousePG instances automatically and saves their gp_dbid and gp_server_version_num in the backup metadata, which barman show-back…",
+   "source_url": "https://github.com/EnterpriseDB/barman/releases/tag/release/3.21.0",
+   "page_url": "https://www.firmwarely.com/devices/barman/"
   }
  }
 }
