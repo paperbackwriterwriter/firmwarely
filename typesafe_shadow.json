@@ -50634,6 +50634,42 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "dify",
+   "version": "1.20.0",
+   "name": "Dify LLM app platform",
+   "judged_at": "2026-11-18T10:41:53+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.33,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "huginn",
+   "version": "2026.11.18",
+   "name": "Huginn Automation agents",
+   "judged_at": "2026-11-18T10:41:53+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.96,
+    "security_fix_plain": 0.95,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

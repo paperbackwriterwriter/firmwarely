@@ -61,6 +61,36 @@
    "notes": "#​12430 #​12429 #​12428 #​12427 #​12426 #​12425 #​12424 #​12423",
    "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.322.33637",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "dify": {
+   "id": "dify",
+   "brand": "Dify",
+   "model": "LLM app platform",
+   "category": "A",
+   "status": "update",
+   "version": "1.20.0",
+   "previous": "1.19.0",
+   "released": "2026-11-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Dify 1.20.0 keeps your traces flowing and your knowledge bases safer. Export traces to any OpenTelemetry collector, keep Langfuse working after its legacy ingestion endpoint retirement, and scan uploaded knowledge files for malware before they are indexed. Chatflows can show Agent tool activity as …",
+   "source_url": "https://github.com/langgenius/dify/releases/tag/1.20.0",
+   "page_url": "https://www.firmwarely.com/devices/dify/"
+  },
+  "huginn": {
+   "id": "huginn",
+   "brand": "Huginn",
+   "model": "Automation agents",
+   "category": "A",
+   "status": "critical",
+   "version": "2026.11.18",
+   "previous": "2026.11.09",
+   "released": "2026-11-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "This security release restricts how Agents use instance credentials and what non-admin Agents can serve from the Huginn domain. Security fixes: Send the instance-wide OPENAI_API_KEY only to the origin configured by OPENAI_BASE_URL, which defaults to the OpenAI API. Use an Agent-specific key for ano…",
+   "source_url": "https://github.com/huginn/huginn/releases/tag/v2026.11.18",
+   "page_url": "https://www.firmwarely.com/devices/huginn/"
   }
  }
 }
