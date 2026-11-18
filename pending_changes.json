@@ -856,6 +856,21 @@
    "notes": "paperless-ngx 3.5.1: Features / Enhancements: Tweak: adjust chat timing for streaming (#​14805) Bug Fixes: Fix: dont use set\\_actor if audit log disabled in tasks (#​14808) Fix: stream AI chat answers under ASGI (#​14803) Tweak/fix: retain bulk edit selection after queuing operation (#​14797) All A…",
    "source_url": "https://github.com/paperless-ngx/paperless-ngx/releases/tag/v3.5.1",
    "page_url": "https://www.firmwarely.com/devices/paperless-ngx/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.3081",
+   "previous": "0.24.3078",
+   "released": "2026-11-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: ffe6cd64391787612967a2cd28850970720d9fe3 52bt: new domains 53da1194b98efbbcfa98f72b048855273fc9bb69 dontorrent: det3ect of DL needs sitelink prepended. resolves #​17276 d5e3e98dd9856f018916b78864744eee4773fb58 LDU: update cats 1ab34e4ecf0c8fe7324e33d8c4c0aea6a983837a goldengate: update ca…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.3081",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
