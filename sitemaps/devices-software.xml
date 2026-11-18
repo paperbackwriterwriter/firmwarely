@@ -323,7 +323,7 @@
   <url><loc>https://www.firmwarely.com/devices/cryptomator/</loc><lastmod>2026-10-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/redis/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/valkey/</loc><lastmod>2026-10-26</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/clickhouse/</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/clickhouse/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/timescaledb/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/questdb/</loc><lastmod>2026-11-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/duckdb/</loc><lastmod>2026-10-21</lastmod></url>
@@ -470,7 +470,7 @@
   <url><loc>https://www.firmwarely.com/devices/cal-com/</loc><lastmod>2026-03-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/rallly/</loc><lastmod>2026-11-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/limesurvey/</loc><lastmod>2026-11-16</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/penpot/</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/penpot/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/excalidraw/</loc><lastmod>2026-04-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/drawio/</loc><lastmod>2026-11-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/onlyoffice-docs/</loc><lastmod>2026-10-12</lastmod></url>
@@ -523,7 +523,7 @@
   <url><loc>https://www.firmwarely.com/devices/tdengine/</loc><lastmod>2026-11-03</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/apisix/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/salt/</loc><lastmod>2026-10-26</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/mongoose/</loc><lastmod>2026-08-12</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/mongoose/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/rt-thread/</loc><lastmod>2026-09-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/microk8s/</loc><lastmod>2026-05-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/wasm3/</loc><lastmod>2026-09-10</lastmod></url>

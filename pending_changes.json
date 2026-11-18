@@ -121,6 +121,51 @@
    "notes": "🎉 Olares 1.12.8 is now officially available! This release brings Olares app management to your phone with LarePass, welcomes Wise back to Market for collecting and organizing your reading, and lets administrators manage member access to external storage in Files, such as SMB and NFS shares. [!IMPOR…",
    "source_url": "https://github.com/beclab/Olares/releases/tag/1.12.8",
    "page_url": "https://www.firmwarely.com/devices/olares/"
+  },
+  "clickhouse": {
+   "id": "clickhouse",
+   "brand": "ClickHouse",
+   "model": "Analytics database",
+   "category": "A",
+   "status": "update",
+   "version": "26.10.6.18-stable",
+   "previous": "26.9.31.21-stable",
+   "released": "2026-11-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release v26.10.6.18-stable v26.10.6.18-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.10.6.18-stable",
+   "page_url": "https://www.firmwarely.com/devices/clickhouse/"
+  },
+  "penpot": {
+   "id": "penpot",
+   "brand": "Penpot",
+   "model": "Design tool",
+   "category": "A",
+   "status": "update",
+   "version": "2.19.3",
+   "previous": "2.19.2",
+   "released": "2026-11-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "No changes for 2.19.3 according to CHANGES.md",
+   "source_url": "https://github.com/penpot/penpot/releases/tag/2.19.3",
+   "page_url": "https://www.firmwarely.com/devices/penpot/"
+  },
+  "mongoose": {
+   "id": "mongoose",
+   "brand": "Cesanta",
+   "model": "Mongoose embedded web server",
+   "category": "M",
+   "status": "critical",
+   "version": "7.24",
+   "previous": "7.23",
+   "released": "2026-11-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Overview: This release adds fixes and improvements, and more examples. Security fixes: [CVE-2026-106024] WebSocket continuation-frame sequencing validation Built-in TCP/IP packet-family validation during connection lookup Built-in TCP/IP IPv6 extension-header checksum validation Built-in TCP/IP FIN…",
+   "source_url": "https://github.com/cesanta/mongoose/releases/tag/7.24",
+   "page_url": "https://www.firmwarely.com/devices/mongoose/"
   }
  }
 }
