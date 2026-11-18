@@ -50202,6 +50202,42 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.322.384",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-11-18T00:41:16+00:00",
+   "notes_chars": 55,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "sentry-self-hosted",
+   "version": "26.11.0",
+   "name": "Sentry Self-hosted error tracking",
+   "judged_at": "2026-11-18T00:41:16+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
