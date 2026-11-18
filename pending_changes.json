@@ -316,6 +316,66 @@
    "notes": "Run open models for chat, images, speech and video on your own machines. The API speaks the OpenAI and Anthropic formats. Your team gets chats, files and documents on top, and the assistant can write and run code. 5.0 adds a desktop app, Projects, a Files page, Office documents, a Python sandbox, t…",
    "source_url": "https://github.com/mudler/LocalAI/releases/tag/v5.0.0",
    "page_url": "https://www.firmwarely.com/devices/localai/"
+  },
+  "tandoor-recipes": {
+   "id": "tandoor-recipes",
+   "brand": "Tandoor",
+   "model": "Recipes",
+   "category": "A",
+   "status": "critical",
+   "version": "2.7.6",
+   "previous": "2.7.4",
+   "released": "2026-11-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "includes updated nginx that fixes two RCE issues https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
+   "source_url": "https://github.com/TandoorRecipes/recipes/releases/tag/2.7.6",
+   "page_url": "https://www.firmwarely.com/devices/tandoor-recipes/"
+  },
+  "reticulum": {
+   "id": "reticulum",
+   "brand": "Reticulum",
+   "model": "Cryptographic network stack",
+   "category": "M",
+   "status": "update",
+   "version": "1.6.1",
+   "previous": "1.6.0",
+   "released": "2026-11-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release brings yet another round of major efficiency, performance and filtering improvements to RNS, and continues the transition towards full network stamp functionality. All network stamp types will now be generated and emitted by default. Expect some CPU load once your applications start up…",
+   "source_url": "https://github.com/markqvist/Reticulum/releases/tag/1.6.1",
+   "page_url": "https://www.firmwarely.com/devices/reticulum/"
+  },
+  "arc": {
+   "id": "arc",
+   "brand": "Arc",
+   "model": "Redpill loader for Synology DSM",
+   "category": "N",
+   "status": "update",
+   "version": "4.2.9",
+   "previous": "4.2.7",
+   "released": "2026-11-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Information: Release Notes Dependencies: Addons: 26.11.16 Modules: 26.10.19 Configs: 26.09.06 Patches: 26.05.30 Custom: 26.11.15 LKMs: 26.11.09 Apex: 2026.02.3 Build: 2026-11-18 18:16",
+   "source_url": "https://github.com/AuxXxilium/arc/releases/tag/4.2.9",
+   "page_url": "https://www.firmwarely.com/devices/arc/"
+  },
+  "dnscontrol": {
+   "id": "dnscontrol",
+   "brand": "DNSControl",
+   "model": "DNS as code",
+   "category": "R",
+   "status": "update",
+   "version": "5.10.0",
+   "previous": "5.9.0",
+   "released": "2026-11-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Greetings DNS fans! This is mostly (another) refactoring release. A lot of redundant code was removed. Please test before rolling out into production. Verify that dnscontrol preview output is the same as the previous release. Other changes: Cloudflare now supports OPENPGPKEY (#​5096), SPF handling …",
+   "source_url": "https://github.com/DNSControl/dnscontrol/releases/tag/v5.10.0",
+   "page_url": "https://www.firmwarely.com/devices/dnscontrol/"
   }
  }
 }
