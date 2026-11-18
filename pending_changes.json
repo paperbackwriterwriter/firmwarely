@@ -301,6 +301,21 @@
    "notes": "v0.9.114: Changes: ✨ New Features New projects now start from a clean workspace, with verified migration and recovery of author information when upgrading existing workspaces. Project mode now keeps editable author drafts separate from the accepted program, making collaboration and review safer. 🐛 …",
    "source_url": "https://github.com/ailyProject/aily-blockly/releases/tag/v0.9.114",
    "page_url": "https://www.firmwarely.com/devices/aily-blockly/"
+  },
+  "localai": {
+   "id": "localai",
+   "brand": "LocalAI",
+   "model": "OpenAI-compatible local API",
+   "category": "A",
+   "status": "update",
+   "version": "5.0.0",
+   "previous": "4.12.1",
+   "released": "2026-11-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Run open models for chat, images, speech and video on your own machines. The API speaks the OpenAI and Anthropic formats. Your team gets chats, files and documents on top, and the assistant can write and run code. 5.0 adds a desktop app, Projects, a Files page, Office documents, a Python sandbox, t…",
+   "source_url": "https://github.com/mudler/LocalAI/releases/tag/v5.0.0",
+   "page_url": "https://www.firmwarely.com/devices/localai/"
   }
  }
 }
