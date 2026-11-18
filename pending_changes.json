@@ -91,6 +91,36 @@
    "notes": "This security release restricts how Agents use instance credentials and what non-admin Agents can serve from the Huginn domain. Security fixes: Send the instance-wide OPENAI_API_KEY only to the origin configured by OPENAI_BASE_URL, which defaults to the OpenAI API. Use an Agent-specific key for ano…",
    "source_url": "https://github.com/huginn/huginn/releases/tag/v2026.11.18",
    "page_url": "https://www.firmwarely.com/devices/huginn/"
+  },
+  "mobile-mcp": {
+   "id": "mobile-mcp",
+   "brand": "Mobile Mcp",
+   "model": "Model Context Protocol Server",
+   "category": "C",
+   "status": "update",
+   "version": "1.0.18",
+   "previous": "1.0.17",
+   "released": "2026-11-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.0.18 (2026-11-18): Feat: New mobile_drag_on_screen tool drags one finger between two points, each given as coordinates or an element ref (#​560, #​527), thanks to Feat: mobile_take_screenshot accepts a clip region to capture only part of the screen (#​561) Feat: mobile_take_screenshot can run as …",
+   "source_url": "https://github.com/mobile-next/mobile-mcp/releases/tag/1.0.18",
+   "page_url": "https://www.firmwarely.com/devices/mobile-mcp/"
+  },
+  "olares": {
+   "id": "olares",
+   "brand": "Olares",
+   "model": "Personal Cloud OS for Always-On Agents",
+   "category": "A",
+   "status": "update",
+   "version": "1.12.8",
+   "previous": "1.12.7",
+   "released": "2026-11-16",
+   "date_known": true,
+   "eol": false,
+   "notes": "🎉 Olares 1.12.8 is now officially available! This release brings Olares app management to your phone with LarePass, welcomes Wise back to Market for collecting and organizing your reading, and lets administrators manage member access to external storage in Files, such as SMB and NFS shares. [!IMPOR…",
+   "source_url": "https://github.com/beclab/Olares/releases/tag/1.12.8",
+   "page_url": "https://www.firmwarely.com/devices/olares/"
   }
  }
 }

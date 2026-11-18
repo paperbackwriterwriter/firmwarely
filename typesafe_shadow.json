@@ -50670,6 +50670,42 @@
     "security_fix_plain": 0.95,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "mobile-mcp",
+   "version": "1.0.18",
+   "name": "Mobile Mcp Model Context Protocol Server",
+   "judged_at": "2026-11-18T11:32:32+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "olares",
+   "version": "1.12.8",
+   "name": "Olares Personal Cloud OS for Always-On Agents",
+   "judged_at": "2026-11-18T11:32:33+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
