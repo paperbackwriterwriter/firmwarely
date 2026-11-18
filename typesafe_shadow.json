@@ -51102,6 +51102,42 @@
     "security_fix_plain": 0.59,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "softether-vpn",
+   "version": "5.2.5190",
+   "name": "SoftEther Multi-protocol VPN server",
+   "judged_at": "2026-11-18T20:14:40+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "metabase",
+   "version": "65.6",
+   "name": "Metabase Business intelligence",
+   "judged_at": "2026-11-18T20:14:40+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
