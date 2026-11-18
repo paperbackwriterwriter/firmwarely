@@ -51354,6 +51354,42 @@
     "security_fix_plain": 0.85,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "windmill",
+   "version": "1.877.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-11-18T23:50:07+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "homeassistant-tapo-control",
+   "version": "7.2.15",
+   "name": "Tapo Control Home Assistant integration for Tapo cameras",
+   "judged_at": "2026-11-18T23:50:07+00:00",
+   "notes_chars": 88,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

@@ -601,6 +601,36 @@
    "notes": "This is an important release containing critical security fixes and stability improvements across the core and various modules, along with a broad refresh of Windows dependencies. We strongly encourage all users to upgrade to v1.11.4 as soon as possible.: Release Notes - FreeSWITCH - Version 1.11.4…",
    "source_url": "https://github.com/signalwire/freeswitch/releases/tag/v1.11.4",
    "page_url": "https://www.firmwarely.com/devices/freeswitch/"
+  },
+  "windmill": {
+   "id": "windmill",
+   "brand": "Windmill",
+   "model": "Scripts and workflows",
+   "category": "A",
+   "status": "update",
+   "version": "1.877.0",
+   "previous": "1.876.1",
+   "released": "2026-11-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.877.0 (2026-11-18): Features: adapt workspace settings to narrow layouts (#​12492) (0c18bdc) get an approval step's detail by flow run id and step id (#​12521) (39cb251) label for-loop iterations with a per-iteration expression (#​12526) (91de725) offer the hub to compose roles that have code (#​…",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.877.0",
+   "page_url": "https://www.firmwarely.com/devices/windmill/"
+  },
+  "homeassistant-tapo-control": {
+   "id": "homeassistant-tapo-control",
+   "brand": "Tapo Control",
+   "model": "Home Assistant integration for Tapo cameras",
+   "category": "S",
+   "status": "update",
+   "version": "7.2.15",
+   "previous": "7.2.14",
+   "released": "2026-11-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes: Fix: Improve media storage and thumbnail handling Update: Bump pytapo to 3.4.32",
+   "source_url": "https://github.com/JurajNyiri/HomeAssistant-Tapo-Control/releases/tag/7.2.15",
+   "page_url": "https://www.firmwarely.com/devices/homeassistant-tapo-control/"
   }
  }
 }
