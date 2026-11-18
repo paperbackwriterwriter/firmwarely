@@ -50382,6 +50382,186 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "n8n",
+   "version": "2.48.5",
+   "name": "n8n Workflow automation",
+   "judged_at": "2026-11-18T08:59:50+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "qnap-ts-464",
+   "version": "5.2.11.3683",
+   "name": "QNAP TS-464",
+   "judged_at": "2026-11-18T08:59:50+00:00",
+   "notes_chars": 59,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.08,
+    "security_fix_plain": 0.1,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "qnap-ts-262",
+   "version": "5.2.11.3683",
+   "name": "QNAP TS-262",
+   "judged_at": "2026-11-18T08:59:50+00:00",
+   "notes_chars": 59,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "qnap-ts-673a",
+   "version": "5.2.11.3683",
+   "name": "QNAP TS-673A",
+   "judged_at": "2026-11-18T08:59:50+00:00",
+   "notes_chars": 59,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.07,
+    "security_fix_plain": 0.07,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "qnap-tvs-h874",
+   "version": "5.2.11.3683",
+   "name": "QNAP TVS-h874",
+   "judged_at": "2026-11-18T08:59:50+00:00",
+   "notes_chars": 59,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.08,
+    "security_fix_plain": 0.1,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "qnap-ts-233",
+   "version": "5.2.11.3683",
+   "name": "QNAP TS-233",
+   "judged_at": "2026-11-18T08:59:50+00:00",
+   "notes_chars": 59,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.07,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "qnap-ts-433",
+   "version": "5.2.11.3683",
+   "name": "QNAP TS-433",
+   "judged_at": "2026-11-18T08:59:50+00:00",
+   "notes_chars": 59,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.09,
+    "security_fix_plain": 0.12,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "qnap-tbs-h574tx",
+   "version": "5.2.11.3683",
+   "name": "QNAP TBS-h574TX",
+   "judged_at": "2026-11-18T08:59:50+00:00",
+   "notes_chars": 59,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.08,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "qnap-ts-1655",
+   "version": "5.2.11.3683",
+   "name": "QNAP TS-1655",
+   "judged_at": "2026-11-18T08:59:50+00:00",
+   "notes_chars": 59,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.08,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "qidi-plus-4",
+   "version": "2.1.1",
+   "name": "QIDI Plus 4",
+   "judged_at": "2026-11-18T08:59:51+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
