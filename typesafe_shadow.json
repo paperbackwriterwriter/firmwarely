@@ -51066,6 +51066,42 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "esphome",
+   "version": "2026.11.0",
+   "name": "ESPHome ESP32 / ESP8266 device firmware",
+   "judged_at": "2026-11-18T19:23:10+00:00",
+   "notes_chars": 43,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.37,
+    "security_fix_plain": 0.39,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "caprover",
+   "version": "1.16.1",
+   "name": "CapRover PaaS",
+   "judged_at": "2026-11-18T19:23:10+00:00",
+   "notes_chars": 103,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.76,
+    "security_fix_plain": 0.59,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
