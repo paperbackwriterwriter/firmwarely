@@ -541,6 +541,21 @@
    "notes": "What's Changed: Features 🚀: Add Search Bar to ProxyAuth Domains Admin Page Rearrange Admin Sidebar Items Fixes 🔧: Misc Fixes Translations 📝: fix(i18n): complete Russian translations for 1.19.0 feat(i18n): add Italian (it-IT) translation Chores 🧹: Bump github/codeql-action/analyze from 4.38.2 to 4.3…",
    "source_url": "https://github.com/voidauth/voidauth/releases/tag/v1.19.2",
    "page_url": "https://www.firmwarely.com/devices/voidauth/"
+  },
+  "mailu": {
+   "id": "mailu",
+   "brand": "Mailu",
+   "model": "Mail server",
+   "category": "A",
+   "status": "critical",
+   "version": "2024.06.69",
+   "previous": "2024.06.68",
+   "released": "2026-11-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog :mailbox: --------- Mitigate known PHP2Shell attack paths (CVE-2026-109618 and CVE-2026-109619) in webmail pending a patched PHP runtime. This release was triggered by PR/Issue 4143. The release notes of the original main release can be accessed via menu item 'Release notes' on mailu.io. …",
+   "source_url": "https://github.com/Mailu/Mailu/releases/tag/2024.06.69",
+   "page_url": "https://www.firmwarely.com/devices/mailu/"
   }
  }
 }
