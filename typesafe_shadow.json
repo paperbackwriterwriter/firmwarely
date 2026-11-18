@@ -50562,6 +50562,78 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "chatwoot",
+   "version": "4.20.0",
+   "name": "Chatwoot Customer messaging",
+   "judged_at": "2026-11-18T09:50:57+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.58,
+    "security_fix_plain": 0.85,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "strapi",
+   "version": "5.63.0",
+   "name": "Strapi Headless CMS",
+   "judged_at": "2026-11-18T09:50:57+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.07,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "owntracks-recorder",
+   "version": "1.0.6",
+   "name": "OwnTracks Location recorder",
+   "judged_at": "2026-11-18T09:50:57+00:00",
+   "notes_chars": 78,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.322.33637",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-11-18T09:50:57+00:00",
+   "notes_chars": 63,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

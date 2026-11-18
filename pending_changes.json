@@ -1,5 +1,66 @@
 {
- "since": null,
+ "since": "2026-11-18T09:50:30+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "chatwoot": {
+   "id": "chatwoot",
+   "brand": "Chatwoot",
+   "model": "Customer messaging",
+   "category": "A",
+   "status": "critical",
+   "version": "4.20.0",
+   "previous": "4.19.1",
+   "released": "2026-11-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: We recommend upgrading to v4.20.0 for 30+ security fixes and hardening improvements across authentication, webhooks, APIs, data access, and dependencies. Self-hosted installations with Messenger inboxes must set the Facebook app secret (Super Admin › Settings › Messenger, or FB_APP_SECRE…",
+   "source_url": "https://github.com/chatwoot/chatwoot/releases/tag/v4.20.0",
+   "page_url": "https://www.firmwarely.com/devices/chatwoot/"
+  },
+  "strapi": {
+   "id": "strapi",
+   "brand": "Strapi",
+   "model": "Headless CMS",
+   "category": "A",
+   "status": "update",
+   "version": "5.63.0",
+   "previous": "5.62.0",
+   "released": "2026-11-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "5.63.0 (2026-11-18): ⚠️ Changes to be aware of: Some filters that used to return every entry now return 400: A plain object as an operator's operand on a scalar or JSON field, id or documentId (for example filters[meta][$eq][a]=1) used to drop the condition and return every entry. It now returns a …",
+   "source_url": "https://github.com/strapi/strapi/releases/tag/v5.63.0",
+   "page_url": "https://www.firmwarely.com/devices/strapi/"
+  },
+  "owntracks-recorder": {
+   "id": "owntracks-recorder",
+   "brand": "OwnTracks",
+   "model": "Location recorder",
+   "category": "A",
+   "status": "update",
+   "version": "1.0.6",
+   "previous": "1.0.5",
+   "released": "2026-11-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "2026-11-18 version 1.0.6 UPD: Remove support for Traccar (osmand) GET requests",
+   "source_url": "https://github.com/owntracks/recorder/releases/tag/1.0.6",
+   "page_url": "https://www.firmwarely.com/devices/owntracks-recorder/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.322.33637",
+   "previous": "37522026.322.384",
+   "released": "2026-11-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​12430 #​12429 #​12428 #​12427 #​12426 #​12425 #​12424 #​12423",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.322.33637",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  }
+ }
 }
