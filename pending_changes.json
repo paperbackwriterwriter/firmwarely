@@ -886,6 +886,21 @@
    "notes": "🚀 Features: feat(tokenizer): raise default max tokens per user to 20 (#​13632) feat(dashboards): add plugin schema for top list panel (#​13084) feat(serviceaccount): add resource def to update my service account r… (#​13623) feat(authz): enable FGA for org preference routes (#​13590) feat(router): …",
    "source_url": "https://github.com/SigNoz/signoz/releases/tag/v0.151.0",
    "page_url": "https://www.firmwarely.com/devices/signoz/"
+  },
+  "openbot": {
+   "id": "openbot",
+   "brand": "OpenBot",
+   "model": "Smartphone-powered robot platform",
+   "category": "M",
+   "status": "update",
+   "version": "0.10.0",
+   "previous": "0.9.0",
+   "released": "2026-11-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "The following summarizes the changes compared to the previous release v0.9.0. Full Changelog: https://github.com/ob-f/OpenBot/compare/v0.9.0...v0.10.0 New Features: Firmware setup page: Choose your robot body, board and parts at tools.openbot.org/firmware, then flash the firmware straight from the …",
+   "source_url": "https://github.com/ob-f/OpenBot/releases/tag/v0.10.0",
+   "page_url": "https://www.firmwarely.com/devices/openbot/"
   }
  }
 }
