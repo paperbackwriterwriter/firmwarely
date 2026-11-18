@@ -53,13 +53,13 @@
    "model": "DNS blocklists",
    "category": "R",
    "status": "update",
-   "version": "37522026.322.33637",
+   "version": "37522026.322.60039",
    "previous": "37522026.322.384",
    "released": "2026-11-18",
    "date_known": true,
    "eol": false,
-   "notes": "#​12430 #​12429 #​12428 #​12427 #​12426 #​12425 #​12424 #​12423",
-   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.322.33637",
+   "notes": "#​12433 #​12432 #​12431",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.322.60039",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   },
   "dify": {
@@ -241,6 +241,66 @@
    "notes": "Changed: Notes, birthdays and quick links check every request against the published API description. This is about your own API clients; the app sends nothing that changes. Under /api/v1/notes, /api/v1/birthdays and /api/v1/quick-links, input that used to be quietly accepted or reinterpreted is now…",
    "source_url": "https://github.com/ulsklyc/yuvomi/releases/tag/v2.92.0",
    "page_url": "https://www.firmwarely.com/devices/yuvomi/"
+  },
+  "cryptomator": {
+   "id": "cryptomator",
+   "brand": "Cryptomator",
+   "model": "Cloud encryption",
+   "category": "A",
+   "status": "critical",
+   "version": "1.19.7",
+   "previous": "1.19.6",
+   "released": "2026-11-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Security Fixes 🚨: Disabled the JVM's Base64 intrinsics (-XX:-UseBASE64Intrinsics), removing the attack surface for CVE-2026-114938 (Java4Shell) --- For a comprehensive view of changes, read the CHANGELOG. Full Changelog: https://github.com/cryptomator/cryptomator/compare/1.19.6...1.19.7 --- 💾 SHA-2…",
+   "source_url": "https://github.com/cryptomator/cryptomator/releases/tag/1.19.7",
+   "page_url": "https://www.firmwarely.com/devices/cryptomator/"
+  },
+  "directus": {
+   "id": "directus",
+   "brand": "Directus",
+   "model": "Headless CMS",
+   "category": "A",
+   "status": "update",
+   "version": "12.7.0",
+   "previous": "12.6.1",
+   "released": "2026-11-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Directus v12.7.0",
+   "source_url": "https://github.com/directus/directus/releases/tag/v12.7.0",
+   "page_url": "https://www.firmwarely.com/devices/directus/"
+  },
+  "wordpress": {
+   "id": "wordpress",
+   "brand": "WordPress",
+   "model": "CMS",
+   "category": "A",
+   "status": "update",
+   "version": "7.1.5",
+   "previous": "7.1.4",
+   "released": "2026-11-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Tag 7.1.5 Built from https://develop.svn.wordpress.org/tags/7.1.5 git-svn-id: http://core.svn.wordpress.org/tags/7.1.5 1a063a9b-81f0-0310-95a4-ce76da25c4cd",
+   "source_url": "https://github.com/WordPress/WordPress/releases/tag/7.1.5",
+   "page_url": "https://www.firmwarely.com/devices/wordpress/"
+  },
+  "aily-blockly": {
+   "id": "aily-blockly",
+   "brand": "Aily",
+   "model": "Blockly AI IDE for Arduino",
+   "category": "M",
+   "status": "update",
+   "version": "0.9.114",
+   "previous": "0.9.113",
+   "released": "2026-11-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "v0.9.114: Changes: ✨ New Features New projects now start from a clean workspace, with verified migration and recovery of author information when upgrading existing workspaces. Project mode now keeps editable author drafts separate from the accepted program, making collaboration and review safer. 🐛 …",
+   "source_url": "https://github.com/ailyProject/aily-blockly/releases/tag/v0.9.114",
+   "page_url": "https://www.firmwarely.com/devices/aily-blockly/"
   }
  }
 }
