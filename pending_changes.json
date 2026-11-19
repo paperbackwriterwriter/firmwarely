@@ -421,6 +421,51 @@
    "notes": "🔐 Security: The bundled Java runtime is now Eclipse Temurin 25.0.5.1. This fixes CVE-2026-114938 (\"Java4Shell\") in the Java runtime. All earlier Appsmith images include an affected Java version. Self-hosted instances should upgrade.",
    "source_url": "https://github.com/appsmithorg/appsmith/releases/tag/v2.7.2",
    "page_url": "https://www.firmwarely.com/devices/appsmith/"
+  },
+  "dozzle": {
+   "id": "dozzle",
+   "brand": "Dozzle",
+   "model": "Container log viewer",
+   "category": "A",
+   "status": "update",
+   "version": "11.5.0",
+   "previous": "11.4.3",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "🚀 Features: cloud: Draw the assistant's pictures in the chat pane - and Claude Opus 5.5 in https://github.com/amir20/dozzle/issues/5656 (570c4) Resume log streaming where Cloud's stored lines end after a reconnect - and Claude Opus 5.5 in https://github.com/amir20/dozzle/issues/5659 (a80b1) Show ev…",
+   "source_url": "https://github.com/amir20/dozzle/releases/tag/v11.5.0",
+   "page_url": "https://www.firmwarely.com/devices/dozzle/"
+  },
+  "joplin": {
+   "id": "joplin",
+   "brand": "Joplin",
+   "model": "Note taking",
+   "category": "A",
+   "status": "update",
+   "version": "3.7.24",
+   "previous": "3.7.22",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Improved: Add a first-class OpenAI provider using the Responses API (#​16864) (#​16450) Improved: Create the application authorisation ID in one place (79d954a) Improved: Prioritize local changes to sync info over values with unchanged far-future remote timestamps (2624b35 by Henry Heino) Improved:…",
+   "source_url": "https://github.com/laurent22/joplin/releases/tag/v3.7.24",
+   "page_url": "https://www.firmwarely.com/devices/joplin/"
+  },
+  "pangolin": {
+   "id": "pangolin",
+   "brand": "Pangolin",
+   "model": "Tunneled reverse proxy",
+   "category": "R",
+   "status": "update",
+   "version": "1.27.0",
+   "previous": "1.26.0",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Read the Announcement: Read the full announcement with discussion of new features: Pangolin 1.27: Managed Client Settings, Per-Org Client Settings What’s Changed: Add ability to enforce client (user device) settings on a per-role basis (EE) Add support for selecting labels for alert rules Add custo…",
+   "source_url": "https://github.com/fosrl/pangolin/releases/tag/1.27.0",
+   "page_url": "https://www.firmwarely.com/devices/pangolin/"
   }
  }
 }
