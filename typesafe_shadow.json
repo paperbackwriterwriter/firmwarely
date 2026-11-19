@@ -51534,6 +51534,60 @@
     "security_fix_plain": 0.04,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "acme-sh",
+   "version": "3.1.7",
+   "name": "acme.sh ACME shell client",
+   "judged_at": "2026-11-19T04:32:27+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.99,
+    "security_fix_plain": 0.97,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "onedev",
+   "version": "17.2.2",
+   "name": "OneDev Git server with CI",
+   "judged_at": "2026-11-19T04:32:27+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ani-rss",
+   "version": "3.2.62",
+   "name": "ANi-RSS Anime RSS downloader",
+   "judged_at": "2026-11-19T04:32:27+00:00",
+   "notes_chars": 18,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
