@@ -211,6 +211,36 @@
    "notes": "Release v26.10.7.24-stable v26.10.7.24-stable",
    "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.10.7.24-stable",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
+  },
+  "espeasy": {
+   "id": "espeasy",
+   "brand": "ESPEasy",
+   "model": "ESP8266 / ESP32 device firmware",
+   "category": "S",
+   "status": "update",
+   "version": "mega-20261119",
+   "previous": "mega-20260720",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release mega-20261119 Changes in mega-20261119 (since mega-20260720): Adam Matthews (2): [HttpClientLight] Time out reading a body when the server goes silent [HttpClientLight] Widen the TCP timeout to 32 bits Aleksandr Zharov (8): [P056] Fix ReadAverage() output params passed by value, always retu…",
+   "source_url": "https://github.com/letscontrolit/ESPEasy/releases/tag/mega-20261119",
+   "page_url": "https://www.firmwarely.com/devices/espeasy/"
+  },
+  "krakend-ce": {
+   "id": "krakend-ce",
+   "brand": "KrakenD",
+   "model": "API gateway (Community Edition)",
+   "category": "R",
+   "status": "update",
+   "version": "3.0.5",
+   "previous": "3.0.4",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Bump go.opentelemetry.io/otel/sdk from 1.45.0 to 1.47.0 by in https://github.com/krakend/krakend-ce/pull/1138 CE patch release 3.0.5 Full Changelog: https://github.com/krakend/krakend-ce/compare/v3.0.4...v3.0.5",
+   "source_url": "https://github.com/krakend/krakend-ce/releases/tag/v3.0.5",
+   "page_url": "https://www.firmwarely.com/devices/krakend-ce/"
   }
  }
 }
