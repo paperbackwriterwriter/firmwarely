@@ -196,6 +196,21 @@
    "notes": "Changelog for restic 0.20.0 (2026-11-19) ======================================= The following sections list the changes in restic 0.20.0 relevant to restic users. The changes are ordered by importance. Summary ------- Sec #​22178: Fix ownership when restore --ownership-by-name cannot resolve names…",
    "source_url": "https://github.com/restic/restic/releases/tag/v0.20.0",
    "page_url": "https://www.firmwarely.com/devices/restic/"
+  },
+  "clickhouse": {
+   "id": "clickhouse",
+   "brand": "ClickHouse",
+   "model": "Analytics database",
+   "category": "A",
+   "status": "update",
+   "version": "26.10.7.24-stable",
+   "previous": "26.9.32.8-stable",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release v26.10.7.24-stable v26.10.7.24-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.10.7.24-stable",
+   "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   }
  }
 }
