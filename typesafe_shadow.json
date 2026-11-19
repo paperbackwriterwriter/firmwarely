@@ -51912,6 +51912,60 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "changedetection",
+   "version": "0.70.4",
+   "name": "changedetection.io Website change monitor",
+   "judged_at": "2026-11-19T11:35:20+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "safeline",
+   "version": "9.4.5",
+   "name": "Chaitin SafeLine web application firewall",
+   "judged_at": "2026-11-19T11:35:20+00:00",
+   "notes_chars": 62,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.86,
+    "security_fix_plain": 0.6,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "netwatch",
+   "version": "1.0.0",
+   "name": "Netwatch Network diagnostics in your terminal",
+   "judged_at": "2026-11-19T11:35:20+00:00",
+   "notes_chars": 244,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.04,
+    "security_fix_plain": 0.1,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

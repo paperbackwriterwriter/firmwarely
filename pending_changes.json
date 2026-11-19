@@ -136,6 +136,51 @@
    "notes": "Download Kong 3.9.5 and run it now: https://konghq.com/install/ Docker Image Links: 3.9.5 Changelog",
    "source_url": "https://github.com/Kong/kong/releases/tag/3.9.5",
    "page_url": "https://www.firmwarely.com/devices/kong/"
+  },
+  "changedetection": {
+   "id": "changedetection",
+   "brand": "changedetection.io",
+   "model": "Website change monitor",
+   "category": "A",
+   "status": "update",
+   "version": "0.70.4",
+   "previous": "0.70.3",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Third-party licences - update docs/THIRD-PARTY-LICENSES.md by in https://github.com/dgtlmoon/changedetection.io/pull/4714 fix: keep jinja2 blocks intact when splitting tags from imported URLs (#​1516) Update regex requirement from ›=2026.9.29 to ›=2026.11.9 by in https://github.com/…",
+   "source_url": "https://github.com/dgtlmoon/changedetection.io/releases/tag/0.70.4",
+   "page_url": "https://www.firmwarely.com/devices/changedetection/"
+  },
+  "safeline": {
+   "id": "safeline",
+   "brand": "Chaitin",
+   "model": "SafeLine web application firewall",
+   "category": "R",
+   "status": "critical",
+   "version": "9.4.5",
+   "previous": "9.4.4",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Fixed security issues caused by the NGINX2Root vulnerabilities",
+   "source_url": "https://github.com/chaitin/SafeLine/releases/tag/v9.4.5",
+   "page_url": "https://www.firmwarely.com/devices/safeline/"
+  },
+  "netwatch": {
+   "id": "netwatch",
+   "brand": "Netwatch",
+   "model": "Network diagnostics in your terminal",
+   "category": "R",
+   "status": "update",
+   "version": "1.0.0",
+   "previous": "0.40.1",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: release workflow: install apt-utils when the runner lacks apt-ftparchive deny: ignore RUSTSEC-2026-0543 (chrono unmaintained) until it is replaced Full Changelog: https://github.com/matthart1983/netwatch/compare/v0.40.1...v1.0.0",
+   "source_url": "https://github.com/matthart1983/netwatch/releases/tag/v1.0.0",
+   "page_url": "https://www.firmwarely.com/devices/netwatch/"
   }
  }
 }
