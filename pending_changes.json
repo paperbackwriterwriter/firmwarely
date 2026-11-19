@@ -53,13 +53,13 @@
    "model": "DNS blocklists",
    "category": "R",
    "status": "update",
-   "version": "37522026.322.60039",
+   "version": "37522026.323.1296",
    "previous": "37522026.322.384",
-   "released": "2026-11-18",
+   "released": "2026-11-19",
    "date_known": true,
    "eol": false,
-   "notes": "#​12433 #​12432 #​12431",
-   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.322.60039",
+   "notes": "#​12441 #​12440 #​12439 #​12438 #​12437 #​12436 #​12435",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.323.1296",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   },
   "dify": {
@@ -631,6 +631,21 @@
    "notes": "Changes: Fix: Improve media storage and thumbnail handling Update: Bump pytapo to 3.4.32",
    "source_url": "https://github.com/JurajNyiri/HomeAssistant-Tapo-Control/releases/tag/7.2.15",
    "page_url": "https://www.firmwarely.com/devices/homeassistant-tapo-control/"
+  },
+  "yunohost": {
+   "id": "yunohost",
+   "brand": "YunoHost",
+   "model": "Self-hosting server OS",
+   "category": "A",
+   "status": "update",
+   "version": "13.0.11",
+   "previous": "13.0.10",
+   "released": "2026-11-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Refer to the debian changelog for details.",
+   "source_url": "https://github.com/YunoHost/yunohost/releases/tag/debian/13.0.11",
+   "page_url": "https://www.firmwarely.com/devices/yunohost/"
   }
  }
 }
