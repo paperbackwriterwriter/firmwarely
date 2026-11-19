@@ -51750,6 +51750,60 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "homer-dashboard",
+   "version": "26.11.4",
+   "name": "Homer Service dashboard",
+   "judged_at": "2026-11-19T09:53:41+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "mailu",
+   "version": "2024.06.71",
+   "name": "Mailu Mail server",
+   "judged_at": "2026-11-19T09:53:41+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.323.34018",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-11-19T09:53:41+00:00",
+   "notes_chars": 31,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

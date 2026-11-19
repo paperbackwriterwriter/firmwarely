@@ -1,5 +1,51 @@
 {
- "since": null,
+ "since": "2026-11-19T09:53:04+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "homer-dashboard": {
+   "id": "homer-dashboard",
+   "brand": "Homer",
+   "model": "Service dashboard",
+   "category": "A",
+   "status": "update",
+   "version": "26.11.4",
+   "previous": "26.11.3",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Main changes: Add Authelia custom service feat(Traefik): show /api/overview stats as colored badges fix: prevent browsers from serving a stale configuration fix(message): refetch remote content when the config is rebuilt feat: Add api key auth for qBittorrent fix: avoid the white fl…",
+   "source_url": "https://github.com/homer-dashboard/homer/releases/tag/v26.11.4",
+   "page_url": "https://www.firmwarely.com/devices/homer-dashboard/"
+  },
+  "mailu": {
+   "id": "mailu",
+   "brand": "Mailu",
+   "model": "Mail server",
+   "category": "A",
+   "status": "update",
+   "version": "2024.06.71",
+   "previous": "2024.06.70",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog :mailbox: --------- Roundcube 1.6.21 This release was triggered by PR/Issue 4212. The release notes of the original main release can be accessed via menu item 'Release notes' on mailu.io. Update ------ The main version X.Y (e.g. 1.9) will always reflect the latest version of the branch. T…",
+   "source_url": "https://github.com/Mailu/Mailu/releases/tag/2024.06.71",
+   "page_url": "https://www.firmwarely.com/devices/mailu/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.323.34018",
+   "previous": "37522026.323.17969",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​12445 #​12444 #​12443 #​12442",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.323.34018",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  }
+ }
 }
