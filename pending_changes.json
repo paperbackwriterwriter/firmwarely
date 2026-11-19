@@ -53,13 +53,13 @@
    "model": "Scripts and workflows",
    "category": "A",
    "status": "update",
-   "version": "1.879.0",
+   "version": "1.880.0",
    "previous": "1.877.0",
    "released": "2026-11-19",
    "date_known": true,
    "eol": false,
-   "notes": "1.879.0 (2026-11-19): Features: home: link each primitive's explainer video in the New picker (#​12536) (3591598) test flows from the SDKs with mocked or replaced steps, subflows included (#​12538) (98439f8) Bug Fixes: explain a fractional retry multiplier, check schedule retries on save (#​12539) …",
-   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.879.0",
+   "notes": "1.880.0 (2026-11-19): Features: record and download a worker group's autoscaling decisions (#​12542) (5583c68) Bug Fixes: api: noindex public app pages on cloud (#​12547) (cbf44b3) hold the configured AI key to its output token limits (#​12543) (6c2c5cf) keep the AI sessions view mounted across nav…",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.880.0",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
   },
   "mastodon": {
@@ -466,6 +466,36 @@
    "notes": "Read the Announcement: Read the full announcement with discussion of new features: Pangolin 1.27: Managed Client Settings, Per-Org Client Settings What’s Changed: Add ability to enforce client (user device) settings on a per-role basis (EE) Add support for selecting labels for alert rules Add custo…",
    "source_url": "https://github.com/fosrl/pangolin/releases/tag/1.27.0",
    "page_url": "https://www.firmwarely.com/devices/pangolin/"
+  },
+  "wallabag": {
+   "id": "wallabag",
+   "brand": "wallabag",
+   "model": "Read-it-later",
+   "category": "A",
+   "status": "critical",
+   "version": "2.6.18",
+   "previous": "2.6.17",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "⚠️ This is a security release. After upgrading, clear the cache (var/cache) and review the tagging rules of your users. Read the blog post about that release. What's Changed: Security fixes: Validate the imported tagging rules, and ignore the invalid rules already stored, see GHSA-2cfc-5mg3-74jc] O…",
+   "source_url": "https://github.com/wallabag/wallabag/releases/tag/2.6.18",
+   "page_url": "https://www.firmwarely.com/devices/wallabag/"
+  },
+  "zrok": {
+   "id": "zrok",
+   "brand": "zrok",
+   "model": "Secure sharing tunnel",
+   "category": "R",
+   "status": "update",
+   "version": "2.0.11",
+   "previous": "2.0.10",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "FIX: The metrics bridge with a file source could skip usage events, or pass on a partial event that was then discarded, when it read the file while OpenZiti was writing to it. Some usage consequently went unrecorded. The file source now delivers each event once, when its line is complete. FIX: Usag…",
+   "source_url": "https://github.com/openziti/zrok/releases/tag/v2.0.11",
+   "page_url": "https://www.firmwarely.com/devices/zrok/"
   }
  }
 }
