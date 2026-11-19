@@ -53,13 +53,13 @@
    "model": "Scripts and workflows",
    "category": "A",
    "status": "update",
-   "version": "1.878.0",
+   "version": "1.879.0",
    "previous": "1.877.0",
    "released": "2026-11-19",
    "date_known": true,
    "eol": false,
-   "notes": "1.878.0 (2026-11-19): Features: python-client: retry a GET on 429 and 502-504 with exponential backoff (#​12513) (1c78f8d) show how many resources use each resource type (#​12512) (1fa8fd0) Bug Fixes: api: encode non-ASCII filenames in S3 Content-Disposition (#​9634) (52b7625) api: type /scripts/li…",
-   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.878.0",
+   "notes": "1.879.0 (2026-11-19): Features: home: link each primitive's explainer video in the New picker (#​12536) (3591598) test flows from the SDKs with mocked or replaced steps, subflows included (#​12538) (98439f8) Bug Fixes: explain a fractional retry multiplier, check schedule retries on save (#​12539) …",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.879.0",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
   },
   "mastodon": {
@@ -256,6 +256,36 @@
    "notes": "This release comes with improvements to OTW firmware upgrades, including better handling of timeouts and retries. This should make it much less likely to end up \"stuck in bootloader\". Bugfixes: Fixed an issue on some systems where the bootloader was not correctly detected if the line break arrived …",
    "source_url": "https://github.com/zwave-js/zwave-js/releases/tag/v15.32.4",
    "page_url": "https://www.firmwarely.com/devices/node-zwave-js/"
+  },
+  "siyuan": {
+   "id": "siyuan",
+   "brand": "SiYuan",
+   "model": "Knowledge base",
+   "category": "A",
+   "status": "update",
+   "version": "3.8.11",
+   "previous": "3.8.10",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Upgrade notice: Database formats: Primary-key rich text (formats 15 and 16). Inline rich text saved in format 15 by earlier preview builds remains readable. Saving new block rich text in a primary key, including text with images, upgrades the database to at least format 16. Primary-key compatibilit…",
+   "source_url": "https://github.com/siyuan-note/siyuan/releases/tag/v3.8.11",
+   "page_url": "https://www.firmwarely.com/devices/siyuan/"
+  },
+  "apisix": {
+   "id": "apisix",
+   "brand": "Apache",
+   "model": "APISIX API gateway",
+   "category": "R",
+   "status": "critical",
+   "version": "3.21.0",
+   "previous": "3.20.0",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Apache APISIX 3.21.0 upgrades APISIX Runtime to 1.4.3, protects credentials in forwarded requests and logs, and improves upstream recovery and log delivery. Runtime and security fixes: APISIX Runtime 1.4.3 uses the NGINX 1.31.9 core in its OpenResty 1.31.8.1 build. It incorporates ten upstream secu…",
+   "source_url": "https://github.com/apache/apisix/releases/tag/3.21.0",
+   "page_url": "https://www.firmwarely.com/devices/apisix/"
   }
  }
 }
