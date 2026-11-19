@@ -83,13 +83,13 @@
    "model": "Automation agents",
    "category": "A",
    "status": "critical",
-   "version": "2026.11.18",
+   "version": "2026.11.19",
    "previous": "2026.11.09",
-   "released": "2026-11-18",
+   "released": "2026-11-19",
    "date_known": true,
    "eol": false,
-   "notes": "This security release restricts how Agents use instance credentials and what non-admin Agents can serve from the Huginn domain. Security fixes: Send the instance-wide OPENAI_API_KEY only to the origin configured by OPENAI_BASE_URL, which defaults to the OpenAI API. Use an Agent-specific key for ano…",
-   "source_url": "https://github.com/huginn/huginn/releases/tag/v2026.11.18",
+   "notes": "This security release upgrades Huginn's Docker images to Ruby 4.0.10. Ruby 4.0.10 fixes vulnerabilities in Regexp and String case conversion. Ruby 4.0.10 release announcement · #​3847 Upgrade to this release to pick up the fixes in Docker. For source installations, upgrade the Ruby runtime to 4.0.1…",
+   "source_url": "https://github.com/huginn/huginn/releases/tag/v2026.11.19",
    "page_url": "https://www.firmwarely.com/devices/huginn/"
   },
   "mobile-mcp": {
@@ -646,6 +646,51 @@
    "notes": "Refer to the debian changelog for details.",
    "source_url": "https://github.com/YunoHost/yunohost/releases/tag/debian/13.0.11",
    "page_url": "https://www.firmwarely.com/devices/yunohost/"
+  },
+  "portainer": {
+   "id": "portainer",
+   "brand": "Portainer",
+   "model": "Container management",
+   "category": "A",
+   "status": "update",
+   "version": "2.45.4",
+   "previous": "2.45.3",
+   "released": "2026-11-18",
+   "date_known": true,
+   "eol": false,
+   "notes": "Known issues: On Async Edge environments, an invalid update schedule date can be displayed when browsing a snapshot Known issues with Podman support: Podman environments aren't supported by auto-onboarding script It's not possible to add Podman environments via socket, when running a Portainer serv…",
+   "source_url": "https://github.com/portainer/portainer/releases/tag/2.45.4",
+   "page_url": "https://www.firmwarely.com/devices/portainer/"
+  },
+  "arduino-esp32": {
+   "id": "arduino-esp32",
+   "brand": "Espressif",
+   "model": "Arduino core for ESP32",
+   "category": "M",
+   "status": "update",
+   "version": "4.0.0",
+   "previous": "3.3.13",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release 4.0.0 4.0.0",
+   "source_url": "https://github.com/espressif/arduino-esp32/releases/tag/4.0.0",
+   "page_url": "https://www.firmwarely.com/devices/arduino-esp32/"
+  },
+  "stirling-pdf": {
+   "id": "stirling-pdf",
+   "brand": "Stirling PDF",
+   "model": "PDF toolkit",
+   "category": "A",
+   "status": "update",
+   "version": "3.4.0",
+   "previous": "3.3.0",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "A big release! Lots of changes in this release around the PDF Text Editor, such as it now works directly inside the viewer by clicking the edit text button in the top bar. Other changes for it include: It can use fonts from the server including any custom provided fonts that are placed in customFil…",
+   "source_url": "https://github.com/Stirling-Tools/Stirling-PDF/releases/tag/v3.4.0",
+   "page_url": "https://www.firmwarely.com/devices/stirling-pdf/"
   }
  }
 }

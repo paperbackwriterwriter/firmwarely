@@ -71,7 +71,7 @@
   <url><loc>https://www.firmwarely.com/devices/lychee-photos/</loc><lastmod>2026-11-09</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/cockpit/</loc><lastmod>2026-11-10</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/webmin/</loc><lastmod>2026-09-21</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/portainer/</loc><lastmod>2026-10-21</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/portainer/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/dockge/</loc><lastmod>2025-03-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/watchtower/</loc><lastmod>2023-11-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/authelia/</loc><lastmod>2026-09-17</lastmod></url>
@@ -150,7 +150,7 @@
   <url><loc>https://www.firmwarely.com/devices/linuxcnc/</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/lasergrbl/</loc><lastmod>2025-03-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/arduino-ide/</loc><lastmod>2026-11-12</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/arduino-esp32/</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/arduino-esp32/</loc><lastmod>2026-11-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/stm32duino/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/openpilot/</loc><lastmod>2026-10-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/circuitpython/</loc><lastmod>2026-11-11</lastmod></url>
@@ -399,7 +399,7 @@
   <url><loc>https://www.firmwarely.com/devices/koel/</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/gonic/</loc><lastmod>2026-10-22</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/calibre/</loc><lastmod>2026-11-06</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/stirling-pdf/</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/stirling-pdf/</loc><lastmod>2026-11-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/piwigo/</loc><lastmod>2026-11-09</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/librephotos/</loc><lastmod>2026-11-09</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/mattermost/</loc><lastmod>2026-11-05</lastmod></url>
@@ -715,7 +715,7 @@
   <url><loc>https://www.firmwarely.com/devices/homeassistant-powercalc/</loc><lastmod>2026-11-06</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/espconnect/</loc><lastmod>2026-09-20</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/worldmonitor/</loc><lastmod>2026-11-04</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/huginn/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/huginn/</loc><lastmod>2026-11-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/sentry/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/pm2/</loc><lastmod>2026-11-03</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/osquery/</loc><lastmod>2026-10-29</lastmod></url>
