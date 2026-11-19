@@ -51498,6 +51498,42 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "frigate-nvr",
+   "version": "0.18.3",
+   "name": "Frigate NVR (camera AI detection)",
+   "judged_at": "2026-11-19T03:13:19+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.98,
+    "security_fix_plain": 0.87,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "nginx-proxy-manager",
+   "version": "2.17.1",
+   "name": "Nginx Proxy Manager Reverse proxy manager",
+   "judged_at": "2026-11-19T03:13:19+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

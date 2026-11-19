@@ -691,6 +691,36 @@
    "notes": "A big release! Lots of changes in this release around the PDF Text Editor, such as it now works directly inside the viewer by clicking the edit text button in the top bar. Other changes for it include: It can use fonts from the server including any custom provided fonts that are placed in customFil…",
    "source_url": "https://github.com/Stirling-Tools/Stirling-PDF/releases/tag/v3.4.0",
    "page_url": "https://www.firmwarely.com/devices/stirling-pdf/"
+  },
+  "frigate-nvr": {
+   "id": "frigate-nvr",
+   "brand": "Frigate",
+   "model": "NVR (camera AI detection)",
+   "category": "S",
+   "status": "critical",
+   "version": "0.18.3",
+   "previous": "0.18.2",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Security fixes: NGINX2Root (CVE-2026-123007): bundled nginx 1.27.4 with HTTP/2 enabled allows unauthenticated RCE as root What's Changed: bump version in docs Fix nginx uninitialized variable warning Restrict go2rtc ffmpeg and ngrok options without arbitrary exec plus docs update Restrict go2rtc va…",
+   "source_url": "https://github.com/blakeblackshear/frigate/releases/tag/v0.18.3",
+   "page_url": "https://www.firmwarely.com/devices/frigate-nvr/"
+  },
+  "nginx-proxy-manager": {
+   "id": "nginx-proxy-manager",
+   "brand": "Nginx Proxy Manager",
+   "model": "Reverse proxy manager",
+   "category": "R",
+   "status": "update",
+   "version": "2.17.1",
+   "previous": "2.17.0",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "[!WARNING] Certbot has been updated. Exercise caution with this upgrade as your DNS plugins may not work as expected and require tweaks to dependencies. See the Certbot Doc for more info. Changes: Uses updated base OpenResty image with nginx2root backported fixes (thanks) Fix: SSL toggles reset to …",
+   "source_url": "https://github.com/NginxProxyManager/nginx-proxy-manager/releases/tag/v2.17.1",
+   "page_url": "https://www.firmwarely.com/devices/nginx-proxy-manager/"
   }
  }
 }
