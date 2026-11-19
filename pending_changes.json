@@ -496,6 +496,66 @@
    "notes": "FIX: The metrics bridge with a file source could skip usage events, or pass on a partial event that was then discarded, when it read the file while OpenZiti was writing to it. Some usage consequently went unrecorded. The file source now delivers each event once, when its line is complete. FIX: Usag…",
    "source_url": "https://github.com/openziti/zrok/releases/tag/v2.0.11",
    "page_url": "https://www.firmwarely.com/devices/zrok/"
+  },
+  "openbao": {
+   "id": "openbao",
+   "brand": "OpenBao",
+   "model": "Secrets manager",
+   "category": "A",
+   "status": "critical",
+   "version": "2.7.3",
+   "previous": "2.7.2",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "SECURITY: core/auth: Entity and group aliases of newly created auth mounts are now case-sensitive by default. GHSA-fgmw-h9wp-wc7g. [GH-4550] core/auth: Alias case-sensitivity can now be configured per auth mount via case_sensitive_alias. [GH-4550] core/listeners: Correctly handle forwarded client c…",
+   "source_url": "https://github.com/openbao/openbao/releases/tag/v2.7.3",
+   "page_url": "https://www.firmwarely.com/devices/openbao/"
+  },
+  "timescaledb": {
+   "id": "timescaledb",
+   "brand": "Timescale",
+   "model": "TimescaleDB",
+   "category": "A",
+   "status": "critical",
+   "version": "2.32.1",
+   "previous": "2.32.0",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release contains performance improvements, bug and security fixes since the 2.32.0 release. We recommend that you upgrade at the next available opportunity. This release is compatible with the latest PostgreSQL minor releases, 18.7, 17.12 and 16.16 (announcement) and above, and is fully backwa…",
+   "source_url": "https://github.com/timescale/timescaledb/releases/tag/2.32.1",
+   "page_url": "https://www.firmwarely.com/devices/timescaledb/"
+  },
+  "prefect": {
+   "id": "prefect",
+   "brand": "Prefect",
+   "model": "Workflow orchestration",
+   "category": "A",
+   "status": "update",
+   "version": "3.9.4",
+   "previous": "3.9.3",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Enhancements ➕➕ Accept only same-origin paths in the UI v2 login redirect Start the flow run suspension observer before the engine loads the flow Bug Fixes 🐞 Write Dockerfiles and build context files as UTF-8 Allow nested tmpchdir contexts on the same thread Exclude inactive limits from leases crea…",
+   "source_url": "https://github.com/PrefectHQ/prefect/releases/tag/3.9.4",
+   "page_url": "https://www.firmwarely.com/devices/prefect/"
+  },
+  "appwrite": {
+   "id": "appwrite",
+   "brand": "Appwrite",
+   "model": "Backend platform",
+   "category": "A",
+   "status": "update",
+   "version": "2.7.4",
+   "previous": "2.7.3",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Appwrite 2.7.4 is a maintenance patch for the 2.7 line. It rebuilds on PHP 8.5.13, which fixes an OPcache bug that could make a worker reject every DateTime value until it restarted, and moves to openruntimes/executor 1.3.7. The Console stays at 1.2.181. Upgrading from 2.7.3 needs no schema changes…",
+   "source_url": "https://github.com/appwrite/appwrite/releases/tag/2.7.4",
+   "page_url": "https://www.firmwarely.com/devices/appwrite/"
   }
  }
 }

@@ -52434,6 +52434,78 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "openbao",
+   "version": "2.7.3",
+   "name": "OpenBao Secrets manager",
+   "judged_at": "2026-11-19T19:27:41+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.97,
+    "security_fix_plain": 0.95,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "timescaledb",
+   "version": "2.32.1",
+   "name": "Timescale TimescaleDB",
+   "judged_at": "2026-11-19T19:27:41+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.4,
+    "security_fix_plain": 0.79,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "prefect",
+   "version": "3.9.4",
+   "name": "Prefect Workflow orchestration",
+   "judged_at": "2026-11-19T19:27:41+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.4,
+    "security_fix_plain": 0.32,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "appwrite",
+   "version": "2.7.4",
+   "name": "Appwrite Backend platform",
+   "judged_at": "2026-11-19T19:27:41+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
