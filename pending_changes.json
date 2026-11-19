@@ -203,13 +203,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.8.41.14-lts",
+   "version": "26.9.33.10-stable",
    "previous": "26.9.32.8-stable",
    "released": "2026-11-19",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.8.41.14-lts v26.8.41.14-lts",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.41.14-lts",
+   "notes": "Release v26.9.33.10-stable v26.9.33.10-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.9.33.10-stable",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "espeasy": {
@@ -286,6 +286,51 @@
    "notes": "Apache APISIX 3.21.0 upgrades APISIX Runtime to 1.4.3, protects credentials in forwarded requests and logs, and improves upstream recovery and log delivery. Runtime and security fixes: APISIX Runtime 1.4.3 uses the NGINX 1.31.9 core in its OpenResty 1.31.8.1 build. It incorporates ten upstream secu…",
    "source_url": "https://github.com/apache/apisix/releases/tag/3.21.0",
    "page_url": "https://www.firmwarely.com/devices/apisix/"
+  },
+  "adguard-home": {
+   "id": "adguard-home",
+   "brand": "AdGuard",
+   "model": "AdGuard Home",
+   "category": "R",
+   "status": "update",
+   "version": "1.0.0",
+   "previous": "0.107.80",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Since the beta of AdGuard Home v1.0 was released in late September, we collected feedback and acted accordingly. The product has gone through major overhaul both under the hood and appearance-wise in the beta versions. The stable release adds the fine-tuning that users asked for. Today, we are rele…",
+   "source_url": "https://github.com/AdguardTeam/AdGuardHome/releases/tag/v1.0.0",
+   "page_url": "https://www.firmwarely.com/devices/adguard-home/"
+  },
+  "coolify": {
+   "id": "coolify",
+   "brand": "Coolify",
+   "model": "Self-hosting platform",
+   "category": "A",
+   "status": "critical",
+   "version": "4.7.6",
+   "previous": "4.7.5",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "[!IMPORTANT] This release fixes multiple critical CVEs in dependencies that Coolify uses. Update immediately. [!NOTE] These vulnerabilities are in PHP, nginx and Node.js upstream, not in Coolify itself. Security: Bound PHP-FPM in the coolify container to the loopback interface Updated the dependenc…",
+   "source_url": "https://github.com/coollabsio/coolify/releases/tag/v4.7.6",
+   "page_url": "https://www.firmwarely.com/devices/coolify/"
+  },
+  "weaviate": {
+   "id": "weaviate",
+   "brand": "Weaviate",
+   "model": "Vector database",
+   "category": "A",
+   "status": "update",
+   "version": "1.40.6",
+   "previous": "1.40.5",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Breaking Changes: none New Features: none Fixes: reindex: report migration record faults truthfully and keep the folders they may need Rotate user match fix: searches fail during a dynamic index upgrade with different quantizers Start a node with 100k tenants in 6 s instead of 16 min when runtime r…",
+   "source_url": "https://github.com/weaviate/weaviate/releases/tag/v1.40.6",
+   "page_url": "https://www.firmwarely.com/devices/weaviate/"
   }
  }
 }
