@@ -51804,6 +51804,114 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "windmill",
+   "version": "1.878.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-11-19T10:44:41+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "mastodon",
+   "version": "4.7.6",
+   "name": "Mastodon Social network server",
+   "judged_at": "2026-11-19T10:44:41+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.4,
+    "security_fix_plain": 0.46,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "nocodb",
+   "version": "2026.10.2",
+   "name": "NocoDB Spreadsheet database",
+   "judged_at": "2026-11-19T10:44:41+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "owntracks-recorder",
+   "version": "1.0.7",
+   "name": "OwnTracks Location recorder",
+   "judged_at": "2026-11-19T10:44:41+00:00",
+   "notes_chars": 243,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.98,
+    "security_fix_plain": 0.94,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "langfuse",
+   "version": "4.83.0",
+   "name": "Langfuse LLM observability",
+   "judged_at": "2026-11-19T10:44:41+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "kong",
+   "version": "3.9.5",
+   "name": "Kong API gateway",
+   "judged_at": "2026-11-19T10:44:41+00:00",
+   "notes_chars": 99,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
