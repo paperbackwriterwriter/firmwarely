@@ -676,6 +676,66 @@
    "notes": "What's Changed: web/extension: Don't check last version status when submitting to AMO frontend-utils: Don't include a crypto provider for the rustls backend of reqwest core/common: Work toward moving SwfMovie behind a Gc instead of an Arc (1/2) web: Migrate selfhosted package from Webpack to esbuil…",
    "source_url": "https://github.com/ruffle-rs/ruffle/releases/tag/v0.8.0",
    "page_url": "https://www.firmwarely.com/devices/ruffle/"
+  },
+  "ardupilot": {
+   "id": "ardupilot",
+   "brand": "ArduPilot",
+   "model": "Autopilot firmware",
+   "category": "M",
+   "status": "update",
+   "version": "4.7.3",
+   "previous": "4.7.2",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Plane-4.7.3 was released as the stable version for fixed wing and VTOLs on 19-Nov-2026 Release announcement: https://discuss.ardupilot.org/t/plane-4-7-3-released/146260",
+   "source_url": "https://github.com/ArduPilot/ardupilot/releases/tag/Plane-4.7.3",
+   "page_url": "https://www.firmwarely.com/devices/ardupilot/"
+  },
+  "dagster": {
+   "id": "dagster",
+   "brand": "Dagster",
+   "model": "Data orchestrator",
+   "category": "A",
+   "status": "update",
+   "version": "1.13.31",
+   "previous": "1.13.30",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Breaking Changes: The dagster Claude Code plugin no longer reads the DAGSTER_CLOUD_MCP_URL environment variable, so setting it no longer points the Dagster+ MCP server at the EU region. Organizations in the EU region must add the EU server directly, or the plugin connects to the US server and authe…",
+   "source_url": "https://github.com/dagster-io/dagster/releases/tag/1.13.31",
+   "page_url": "https://www.firmwarely.com/devices/dagster/"
+  },
+  "invoice-ninja": {
+   "id": "invoice-ninja",
+   "brand": "Invoice Ninja",
+   "model": "Invoicing",
+   "category": "A",
+   "status": "update",
+   "version": "5.13.55",
+   "previous": "5.13.54",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Allow a Redis username and key prefix from .env Fix 14 small bugs: activities, numbering, charts, exports, document filters, Google re-auth v5.13.55 New Contributors: made their first contribution in https://github.com/invoiceninja/invoiceninja/pull/13470 Full Changelog: https://git…",
+   "source_url": "https://github.com/invoiceninja/invoiceninja/releases/tag/v5.13.55",
+   "page_url": "https://www.firmwarely.com/devices/invoice-ninja/"
+  },
+  "playnite": {
+   "id": "playnite",
+   "brand": "Playnite",
+   "model": "Game library manager",
+   "category": "A",
+   "status": "update",
+   "version": "10.65",
+   "previous": "10.64",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Fixed: Updated web view dependency Import exclusion item removal not working when removing using Del key Scrolling not working properly in tray menu Scrolling not working well on some settings views Updated emulator profiles SDK: Added StartGameAction method to run specific game actions",
+   "source_url": "https://github.com/JosefNemec/Playnite/releases/tag/10.65",
+   "page_url": "https://www.firmwarely.com/devices/playnite/"
   }
  }
 }
