@@ -646,6 +646,36 @@
    "notes": "Improved wifi steering for stationary devices Added WPA3 support for eero Built-in Performance and stability improvements",
    "source_url": "https://eero.com/support/articles/eero-software-release-notes",
    "page_url": "https://www.firmwarely.com/devices/eero-pro-7/"
+  },
+  "netgate-2100": {
+   "id": "netgate-2100",
+   "brand": "Netgate",
+   "model": "2100 (pfSense Plus)",
+   "category": "R",
+   "status": "update",
+   "version": "26.07.2",
+   "previous": "26.07.1",
+   "released": "2026-11-19",
+   "date_known": false,
+   "eol": false,
+   "notes": "pfSense Plus release. See the release notes for details.",
+   "source_url": "https://docs.netgate.com/pfsense/en/latest/releases/index.html",
+   "page_url": "https://www.firmwarely.com/devices/netgate-2100/"
+  },
+  "ruffle": {
+   "id": "ruffle",
+   "brand": "Ruffle",
+   "model": "Flash Player emulator",
+   "category": "C",
+   "status": "update",
+   "version": "0.8.0",
+   "previous": "0.7.1",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: web/extension: Don't check last version status when submitting to AMO frontend-utils: Don't include a crypto provider for the rustls backend of reqwest core/common: Work toward moving SwfMovie behind a Gc instead of an Arc (1/2) web: Migrate selfhosted package from Webpack to esbuil…",
+   "source_url": "https://github.com/ruffle-rs/ruffle/releases/tag/v0.8.0",
+   "page_url": "https://www.firmwarely.com/devices/ruffle/"
   }
  }
 }

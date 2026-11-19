@@ -52614,6 +52614,42 @@
     "security_fix_plain": 0.12,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "netgate-2100",
+   "version": "26.07.2",
+   "name": "Netgate 2100 (pfSense Plus)",
+   "judged_at": "2026-11-19T22:00:06+00:00",
+   "notes_chars": 56,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ruffle",
+   "version": "0.8.0",
+   "name": "Ruffle Flash Player emulator",
+   "judged_at": "2026-11-19T22:00:06+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
