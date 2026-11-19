@@ -203,13 +203,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.10.7.24-stable",
+   "version": "26.8.41.14-lts",
    "previous": "26.9.32.8-stable",
    "released": "2026-11-19",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.10.7.24-stable v26.10.7.24-stable",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.10.7.24-stable",
+   "notes": "Release v26.8.41.14-lts v26.8.41.14-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.41.14-lts",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "espeasy": {
@@ -241,6 +241,21 @@
    "notes": "What's Changed: Bump go.opentelemetry.io/otel/sdk from 1.45.0 to 1.47.0 by in https://github.com/krakend/krakend-ce/pull/1138 CE patch release 3.0.5 Full Changelog: https://github.com/krakend/krakend-ce/compare/v3.0.4...v3.0.5",
    "source_url": "https://github.com/krakend/krakend-ce/releases/tag/v3.0.5",
    "page_url": "https://www.firmwarely.com/devices/krakend-ce/"
+  },
+  "node-zwave-js": {
+   "id": "node-zwave-js",
+   "brand": "Z-Wave JS",
+   "model": "Z-Wave driver",
+   "category": "S",
+   "status": "update",
+   "version": "15.32.4",
+   "previous": "15.32.3",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "This release comes with improvements to OTW firmware upgrades, including better handling of timeouts and retries. This should make it much less likely to end up \"stuck in bootloader\". Bugfixes: Fixed an issue on some systems where the bootloader was not correctly detected if the line break arrived …",
+   "source_url": "https://github.com/zwave-js/zwave-js/releases/tag/v15.32.4",
+   "page_url": "https://www.firmwarely.com/devices/node-zwave-js/"
   }
  }
 }
