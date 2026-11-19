@@ -11358,6 +11358,15 @@
    "type": "github",
    "repo": "matthart1983/netwatch",
    "product_url": "https://github.com/matthart1983/netwatch"
+  },
+  {
+   "id": "pishrink",
+   "brand": "PiShrink",
+   "model": "Pi images smaller",
+   "category": "M",
+   "type": "github",
+   "repo": "Drewsif/PiShrink",
+   "product_url": "https://github.com/Drewsif/PiShrink"
   }
  ]
 }
