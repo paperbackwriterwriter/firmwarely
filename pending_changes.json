@@ -766,6 +766,21 @@
    "notes": "feat: 增加修改默认登录信息提示",
    "source_url": "https://github.com/wushuo894/ani-rss/releases/tag/v3.2.62",
    "page_url": "https://www.firmwarely.com/devices/ani-rss/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.3082",
+   "previous": "0.24.3081",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: 7cbf56fff4e39307d60d818e0a37023db98e57af racingforme: -› torznab resolves #​1351 f6a34658c4cb6ec0f6e447480dea0ead788ece24 redangel: new selectors 002e93f95993be0e82faa02431cad8ca4f71385b linuxtracker: new cats This list of changes was auto generated.",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.3082",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
