@@ -52200,6 +52200,132 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.323.57886",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-11-19T16:54:58+00:00",
+   "notes_chars": 23,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "netdata",
+   "version": "2.13.0",
+   "name": "Netdata System monitoring agent",
+   "judged_at": "2026-11-19T16:54:58+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "manyfold",
+   "version": "0.154.3",
+   "name": "Manyfold 3D model library",
+   "judged_at": "2026-11-19T16:54:58+00:00",
+   "notes_chars": 222,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.07,
+    "security_fix_plain": 0.39,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "cloudbeaver",
+   "version": "26.2.5.1",
+   "name": "DBeaver CloudBeaver",
+   "judged_at": "2026-11-19T16:54:58+00:00",
+   "notes_chars": 8,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "nzbhydra2",
+   "version": "9.3.3",
+   "name": "NZBHydra2 Usenet meta search",
+   "judged_at": "2026-11-19T16:54:58+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "zulip",
+   "version": "13.3",
+   "name": "Zulip Team chat",
+   "judged_at": "2026-11-19T16:54:58+00:00",
+   "notes_chars": 22,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.18,
+    "security_fix_plain": 0.22,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "appsmith",
+   "version": "2.7.2",
+   "name": "Appsmith Internal tools builder",
+   "judged_at": "2026-11-19T16:54:58+00:00",
+   "notes_chars": 232,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.92,
+    "security_fix_plain": 0.71,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
