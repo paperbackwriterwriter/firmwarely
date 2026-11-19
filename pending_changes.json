@@ -548,13 +548,13 @@
    "model": "Mail server",
    "category": "A",
    "status": "critical",
-   "version": "2024.06.69",
+   "version": "2024.06.70",
    "previous": "2024.06.68",
-   "released": "2026-11-18",
+   "released": "2026-11-19",
    "date_known": true,
    "eol": false,
-   "notes": "Changelog :mailbox: --------- Mitigate known PHP2Shell attack paths (CVE-2026-109618 and CVE-2026-109619) in webmail pending a patched PHP runtime. This release was triggered by PR/Issue 4143. The release notes of the original main release can be accessed via menu item 'Release notes' on mailu.io. …",
-   "source_url": "https://github.com/Mailu/Mailu/releases/tag/2024.06.69",
+   "notes": "Changelog :mailbox: --------- Disable http2 to mitigate CVE-2026-123633 & others This release was triggered by PR/Issue 4210. The release notes of the original main release can be accessed via menu item 'Release notes' on mailu.io. Update ------ The main version X.Y (e.g. 1.9) will always reflect t…",
+   "source_url": "https://github.com/Mailu/Mailu/releases/tag/2024.06.70",
    "page_url": "https://www.firmwarely.com/devices/mailu/"
   },
   "verdaccio": {
@@ -781,6 +781,36 @@
    "notes": "Changes:: 7cbf56fff4e39307d60d818e0a37023db98e57af racingforme: -› torznab resolves #​1351 f6a34658c4cb6ec0f6e447480dea0ead788ece24 redangel: new selectors 002e93f95993be0e82faa02431cad8ca4f71385b linuxtracker: new cats This list of changes was auto generated.",
    "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.3082",
    "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "infisical": {
+   "id": "infisical",
+   "brand": "Infisical",
+   "model": "Secrets manager",
+   "category": "A",
+   "status": "update",
+   "version": "0.167.13",
+   "previous": "0.167.12",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: fix(secret-sync): validate the Azure App Configuration store URL fix: use Python 3.12 in changelog workflow chore(release): upgrade impact and Helm chart for v0.167.12 by in https://github.com/Infisical/infisical/pull/9628 fix(kmip): add page header to KMIP servers page feat(honey-t…",
+   "source_url": "https://github.com/Infisical/infisical/releases/tag/v0.167.13",
+   "page_url": "https://www.firmwarely.com/devices/infisical/"
+  },
+  "flclash": {
+   "id": "flclash",
+   "brand": "FlClash",
+   "model": "Multi-platform proxy client",
+   "category": "R",
+   "status": "update",
+   "version": "0.9.4",
+   "previous": "0.9.3",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "Features: dashboard One status button gathers core, update and resource states, with counts, download progress and new card icons rules Added rules can go to named custom exits; a profile's script and added rules run together and open from the extend page proxy PAC mode for the desktop system proxy…",
+   "source_url": "https://github.com/chen08209/FlClash/releases/tag/v0.9.4",
+   "page_url": "https://www.firmwarely.com/devices/flclash/"
   }
  }
 }
