@@ -53370,6 +53370,114 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.324.60754",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-11-20T17:26:58+00:00",
+   "notes_chars": 39,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "adminer",
+   "version": "6.3.1",
+   "name": "Adminer Database manager",
+   "judged_at": "2026-11-20T17:26:58+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.69,
+    "security_fix_plain": 0.68,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "windmill",
+   "version": "1.881.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-11-20T17:26:58+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "localai",
+   "version": "5.0.1",
+   "name": "LocalAI OpenAI-compatible local API",
+   "judged_at": "2026-11-20T17:26:58+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "kimai",
+   "version": "2.72.1",
+   "name": "Kimai Time tracking",
+   "judged_at": "2026-11-20T17:26:58+00:00",
+   "notes_chars": 107,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.62,
+    "security_fix_plain": 0.38,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "gladys",
+   "version": "5.3.4",
+   "name": "Gladys Home automation hub",
+   "judged_at": "2026-11-20T17:26:58+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
