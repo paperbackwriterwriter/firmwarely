@@ -106,6 +106,51 @@
    "notes": "v2.1.0 (2026-11-20): Bug Fixes: Add job id and stop tracking jobs by history index (05030b3) backend: Cap per-host completed job history (3f73786) backend: Keep stdin_open when recreating a container (4a0590d) Features: Docker 24 (api 1.43) support (be5480f) --- Detailed Changes: v2.0.0...v2.1.0",
    "source_url": "https://github.com/Quenary/tugtainer/releases/tag/v2.1.0",
    "page_url": "https://www.firmwarely.com/devices/tugtainer/"
+  },
+  "clickhouse": {
+   "id": "clickhouse",
+   "brand": "ClickHouse",
+   "model": "Analytics database",
+   "category": "A",
+   "status": "update",
+   "version": "26.10.8.34-stable",
+   "previous": "26.9.33.10-stable",
+   "released": "2026-11-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release v26.10.8.34-stable v26.10.8.34-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.10.8.34-stable",
+   "page_url": "https://www.firmwarely.com/devices/clickhouse/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.25.8",
+   "previous": "0.24.3085",
+   "released": "2026-11-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: 915deb09c8678e9c28a4c927c033861122beee10 anthelion-api: improve category filtering (#​17267) c3f9bad8c0b3a9ac5f01c34a125718b21b22cf3a cardigann: multiple categories support 8f3f8854e4719700056b099efaaae52069b5ccbe core: bump to .NET 10 (#​17281) 5905c7100bf2f43418f38e9618fca828fea62f18 ad…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.25.8",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "angie": {
+   "id": "angie",
+   "brand": "Angie",
+   "model": "Drop-in replacement for nginx",
+   "category": "R",
+   "status": "critical",
+   "version": "1.12.5",
+   "previous": "1.12.4",
+   "released": "2026-11-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Security: When the try_files directive with values containing variables was used in a location with the alias directive, a buffer overflow might occur in certain configurations, allowing an attacker to corrupt the worker process memory or cause its crash (CVE-2026-125283); the fix was ported from n…",
+   "source_url": "https://github.com/webserver-llc/angie/releases/tag/Angie-1.12.5",
+   "page_url": "https://www.firmwarely.com/devices/angie/"
   }
  }
 }

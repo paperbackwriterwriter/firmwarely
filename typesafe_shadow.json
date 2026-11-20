@@ -53082,6 +53082,60 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.10.8.34-stable",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-11-20T12:58:26+00:00",
+   "notes_chars": 45,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "jackett",
+   "version": "0.25.8",
+   "name": "Jackett Torrent indexer proxy",
+   "judged_at": "2026-11-20T12:58:26+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "angie",
+   "version": "1.12.5",
+   "name": "Angie Drop-in replacement for nginx",
+   "judged_at": "2026-11-20T12:58:26+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.98,
+    "security_fix_plain": 0.91,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
