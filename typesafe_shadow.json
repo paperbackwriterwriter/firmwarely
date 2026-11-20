@@ -53694,6 +53694,60 @@
     "security_fix_plain": 0.93,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "docmost",
+   "version": "0.98.0",
+   "name": "Docmost Wiki and docs",
+   "judged_at": "2026-11-20T22:08:42+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.13,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "pangolin",
+   "version": "1.27.1",
+   "name": "Pangolin Tunneled reverse proxy",
+   "judged_at": "2026-11-20T22:08:42+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.26,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "pyroscope",
+   "version": "2.4.4",
+   "name": "Pyroscope Continuous Profiling Platform",
+   "judged_at": "2026-11-20T22:08:42+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

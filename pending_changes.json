@@ -526,6 +526,51 @@
    "notes": "Documentation : https://docs.bunkerweb.io/1.6.18/ Docker tags : All-in-one : bunkerity/bunkerweb-all-in-one:1.6.18 or ghcr.io/bunkerity/bunkerweb-all-in-one:1.6.18 BunkerWeb : bunkerity/bunkerweb:1.6.18 or ghcr.io/bunkerity/bunkerweb:1.6.18 Scheduler : bunkerity/bunkerweb-scheduler:1.6.18 or ghcr.i…",
    "source_url": "https://github.com/bunkerity/bunkerweb/releases/tag/v1.6.18",
    "page_url": "https://www.firmwarely.com/devices/bunkerweb/"
+  },
+  "docmost": {
+   "id": "docmost",
+   "brand": "Docmost",
+   "model": "Wiki and docs",
+   "category": "A",
+   "status": "update",
+   "version": "0.98.0",
+   "previous": "0.97.0",
+   "released": "2026-11-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Keeping your team’s knowledge secure is a priority for us. In Docmost v0.98.0, we rebuilt our official Docker image on a hardened base maintained by Docker (DHI) and removed packages Docmost doesn’t need to run. That reduces the image’s attack surface and leaves fewer components to patch. Read the …",
+   "source_url": "https://github.com/docmost/docmost/releases/tag/v0.98.0",
+   "page_url": "https://www.firmwarely.com/devices/docmost/"
+  },
+  "pangolin": {
+   "id": "pangolin",
+   "brand": "Pangolin",
+   "model": "Tunneled reverse proxy",
+   "category": "R",
+   "status": "update",
+   "version": "1.27.1",
+   "previous": "1.27.0",
+   "released": "2026-11-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Read the Announcement: Read the full announcement with discussion of new features: Pangolin 1.27: Managed Client Settings, Per-Org Client Settings What' Changed: Fix change CSS input not appearing in UI Fix IDP across multiple orgs breaking wildcard resources with custom auth pages Full Changelog: …",
+   "source_url": "https://github.com/fosrl/pangolin/releases/tag/1.27.1",
+   "page_url": "https://www.firmwarely.com/devices/pangolin/"
+  },
+  "pyroscope": {
+   "id": "pyroscope",
+   "brand": "Pyroscope",
+   "model": "Continuous Profiling Platform",
+   "category": "A",
+   "status": "update",
+   "version": "2.4.4",
+   "previous": "2.4.3",
+   "released": "2026-11-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: 4896fecbd05d21892fcbac13e4cb76d970cd394d chore(deps): lock file maintenance (#​6108) 13ad1de0422b6eb86ef0c9da7ba599273d00ef67 chore(release): prepare v2.4.4 (#​6116) 8438da5fb70e394ad24a2309e65839d358c2af29 fix(deps): update OpenTelemetry to v1.47.0 (release/v2.4) (#​6102) 421384f0809096…",
+   "source_url": "https://github.com/grafana/pyroscope/releases/tag/v2.4.4",
+   "page_url": "https://www.firmwarely.com/devices/pyroscope/"
   }
  }
 }
