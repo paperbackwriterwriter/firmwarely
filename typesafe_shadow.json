@@ -53298,6 +53298,78 @@
     "security_fix_plain": 0.94,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.8.42.13-lts",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-11-20T16:36:16+00:00",
+   "notes_chars": 39,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "klipper",
+   "version": "0.14.0",
+   "name": "Klipper 3D printer firmware",
+   "judged_at": "2026-11-20T16:36:16+00:00",
+   "notes_chars": 63,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "analogue-3d",
+   "version": "1.6.1",
+   "name": "Analogue 3D",
+   "judged_at": "2026-11-20T16:36:16+00:00",
+   "notes_chars": 60,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "aily-blockly",
+   "version": "0.9.115",
+   "name": "Aily Blockly AI IDE for Arduino",
+   "judged_at": "2026-11-20T16:36:16+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

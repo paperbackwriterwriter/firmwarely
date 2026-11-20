@@ -113,13 +113,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.3.67.30-lts",
+   "version": "26.8.42.13-lts",
    "previous": "26.9.33.10-stable",
    "released": "2026-11-20",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.3.67.30-lts v26.3.67.30-lts",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.3.67.30-lts",
+   "notes": "Release v26.8.42.13-lts v26.8.42.13-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.42.13-lts",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "jackett": {
@@ -256,6 +256,51 @@
    "notes": "Security fixes: Bound authentication requests and rate-limit storage to prevent Valkey exhaustion (ENG-6885, ENG-7396, ENG-7399). Require the emailed-link proof and explicit confirmation before SSO recovery links an identity (ENG-7310, ENG-7395). Enforce database certificate verification for migrat…",
    "source_url": "https://github.com/formbricks/formbricks/releases/tag/6.2.2",
    "page_url": "https://www.firmwarely.com/devices/formbricks/"
+  },
+  "klipper": {
+   "id": "klipper",
+   "brand": "Klipper",
+   "model": "3D printer firmware",
+   "category": "M",
+   "status": "update",
+   "version": "0.14.0",
+   "previous": "0.13.0",
+   "released": "2026-11-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "docs: Note the release of v0.14.0 Signed-off-by: Kevin O'Connor",
+   "source_url": "https://github.com/Klipper3d/klipper/releases/tag/v0.14.0",
+   "page_url": "https://www.firmwarely.com/devices/klipper/"
+  },
+  "analogue-3d": {
+   "id": "analogue-3d",
+   "brand": "Analogue",
+   "model": "3D",
+   "category": "C",
+   "status": "update",
+   "version": "1.6.1",
+   "previous": "1.6.0",
+   "released": "2026-11-20",
+   "date_known": false,
+   "eol": false,
+   "notes": "Analogue firmware release. See the support page for details.",
+   "source_url": "https://www.analogue.co/support/3d/firmware",
+   "page_url": "https://www.firmwarely.com/devices/analogue-3d/"
+  },
+  "aily-blockly": {
+   "id": "aily-blockly",
+   "brand": "Aily",
+   "model": "Blockly AI IDE for Arduino",
+   "category": "M",
+   "status": "update",
+   "version": "0.9.115",
+   "previous": "0.9.114",
+   "released": "2026-11-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "v0.9.115: Changes: ✨ New Features Added support for migrating projects to history mode. 🐛 Bug Fixes Improved ESP32 incremental flashing reliability by falling back to a full flash when reference files are unavailable. Fixed Blockly development-mode Chat startup and loading of block-based projects. …",
+   "source_url": "https://github.com/ailyProject/aily-blockly/releases/tag/v0.9.115",
+   "page_url": "https://www.firmwarely.com/devices/aily-blockly/"
   }
  }
 }
