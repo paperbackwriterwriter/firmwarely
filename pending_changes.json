@@ -811,6 +811,21 @@
    "notes": "See https://docs.goauthentik.io/releases/2026.8#fixed-in-202686 What's Changed: website/docs: add release notes for 2026.8.5 (cherry-pick #​27084 to version-2026.8) by in https://github.com/goauthentik/authentik/pull/27088 website/docs: add release notes for 2026.5.8 (cherry-pick #​27083 to version…",
    "source_url": "https://github.com/goauthentik/authentik/releases/tag/version/2026.8.6",
    "page_url": "https://www.firmwarely.com/devices/authentik/"
+  },
+  "wiki-js": {
+   "id": "wiki-js",
+   "brand": "Wiki.js",
+   "model": "Wiki",
+   "category": "A",
+   "status": "update",
+   "version": "3.5.0",
+   "previous": "3.4.0",
+   "released": "2026-11-20",
+   "date_known": true,
+   "eol": false,
+   "notes": ":sparkles: New Features: cb90f89 - default and lock content block values (commit) de65cd7 - add Confluence import utility (commit) 9435ff2 - add DokuWiki import utility (commit) 03d3406 - add import from XWiki utility (commit) 1b27a76 - add smart sort, export + import to navigation menu options (co…",
+   "source_url": "https://github.com/requarks/wiki/releases/tag/3.5.0",
+   "page_url": "https://www.firmwarely.com/devices/wiki-js/"
   }
  }
 }
