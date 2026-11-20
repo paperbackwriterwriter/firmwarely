@@ -113,13 +113,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.8.42.13-lts",
+   "version": "26.9.34.16-stable",
    "previous": "26.9.33.10-stable",
    "released": "2026-11-20",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.8.42.13-lts v26.8.42.13-lts",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.42.13-lts",
+   "notes": "Release v26.9.34.16-stable v26.9.34.16-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.9.34.16-stable",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "jackett": {
@@ -376,6 +376,36 @@
    "notes": "What's Changed: feat(dashboard): allow forcing tablet mode via ?tablet_mode_house= URL param feat(zigbee2mqtt): let Zigbee2mqtt generate the network settings of new installations fix: show feature names for selected features in energy consumption widget editor (#​3376) fix(thermostat): keep preset …",
    "source_url": "https://github.com/GladysAssistant/Gladys/releases/tag/v5.3.4",
    "page_url": "https://www.firmwarely.com/devices/gladys/"
+  },
+  "esp32-marauder": {
+   "id": "esp32-marauder",
+   "brand": "ESP32 Marauder",
+   "model": "Wi-Fi and Bluetooth pentest firmware",
+   "category": "M",
+   "status": "update",
+   "version": "1.21.0",
+   "previous": "1.20.0",
+   "released": "2026-11-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Fix beacon spam compatibility and prepare v1.20.1 Start the Waveshare C5 3.5 display dark, no static at boot Fix Evil Portal cleanup on headless targets fix: preserve targeted EAPOL captures Add framed SD file streaming over serial Promote validated v1.20.1 fixes to master Bump firm…",
+   "source_url": "https://github.com/justcallmekoko/ESP32Marauder/releases/tag/v1.21.0",
+   "page_url": "https://www.firmwarely.com/devices/esp32-marauder/"
+  },
+  "homarr": {
+   "id": "homarr",
+   "brand": "Homarr",
+   "model": "Dashboard",
+   "category": "A",
+   "status": "update",
+   "version": "2.14.0",
+   "previous": "2.13.1",
+   "released": "2026-11-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Homarr v2.14.0: Header widgets and shareable themes: Put widgets and notifications in your header, share complete themes through Workshop, and connect a Homey Pro or Yuvomi instance. Boards finish loading while slow integrations fetch their data. [!IMPORTANT] If you self-host Workshop, back up its …",
+   "source_url": "https://github.com/homarr-labs/homarr/releases/tag/v2.14.0",
+   "page_url": "https://www.firmwarely.com/devices/homarr/"
   }
  }
 }
