@@ -1,0 +1,8 @@
+# Cloudflare Pages project config. Read by the Pages build (git integration) and by
+# `npx wrangler pages dev`. Secrets and API keys go in the dashboard (Settings > Variables
+# and Secrets), never here: anything under [vars] in this file would override them.
+name = "firmwarely"
+pages_build_output_dir = "dist"          # written by: python3 scripts/cf_pages.py dist
+compatibility_date = "2025-09-01"
+# node:crypto, Buffer, node:stream and AsyncLocalStorage, used by api/*.js and lib/*.js
+compatibility_flags = ["nodejs_compat"]

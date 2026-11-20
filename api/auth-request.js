@@ -2,6 +2,7 @@
 const fw = require("../lib/fw");
 const rl = require("../lib/ratelimit");
 const captcha = require("../lib/captcha");
+const { env } = require("../lib/env");
 
 module.exports = async function (req, res) {
   if (req.method !== "POST") return fw.json(res, 405, { error: "POST only" });
@@ -37,7 +38,7 @@ module.exports = async function (req, res) {
     console.error("auth-request:", e.message);
     return fw.json(res, 500, { error: "Sign-in isn't configured yet." });
   }
-  const link = (process.env.SITE_URL || "") + "/api/auth-verify?t=" + encodeURIComponent(token);
+  const link = (env().SITE_URL || "") + "/api/auth-verify?t=" + encodeURIComponent(token);
   const html =
     '<div style="font-family:-apple-system,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;color:#111">' +
     "<p>Here is your Firmwarely sign-in link. It works for 15 minutes.</p>" +

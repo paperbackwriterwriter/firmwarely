@@ -1,4 +1,5 @@
-// Vercel serverless function: POST /api/stripe-webhook
+// Vercel serverless function: POST /api/stripe-webhook (and, through handleEvent below, the
+// Cloudflare Pages Function at the same URL)
 // Stripe calls this when someone buys or cancels Pro. We then set the subscriber's
 // "plan" custom field in Beehiiv to "pro" or "free" so you can segment sends.
 //
@@ -53,8 +54,8 @@ async function stripeGet(path, key) {
   return r.ok ? r.json() : null;
 }
 
-async function setPlan(email, plan) {
-  const key = process.env.BEEHIIV_API_KEY, pub = process.env.BEEHIIV_PUB_ID;
+async function setPlan(email, plan, env) {
+  const key = env.BEEHIIV_API_KEY, pub = env.BEEHIIV_PUB_ID;
   const base = `https://api.beehiiv.com/v2/publications/${pub}/subscriptions`;
   const headers = { Authorization: `Bearer ${key}`, "Content-Type": "application/json", Accept: "application/json" };
   const fields = [{ name: "plan", value: plan }];
@@ -93,15 +94,22 @@ export function planFor(type, obj) {
 export default async function handler(req, res) {
   if (req.method !== "POST") { res.setHeader("Allow", "POST"); return res.status(405).end(); }
   const raw = await readRaw(req);
-  const sig = req.headers["stripe-signature"] || "";
-  if (!process.env.STRIPE_WEBHOOK_SECRET || !verify(raw, sig, process.env.STRIPE_WEBHOOK_SECRET)) {
-    return res.status(400).json({ error: "bad signature" });
+  const out = await handleEvent(raw, req.headers["stripe-signature"] || "", process.env);
+  return res.status(out.status).json(out.body);
+}
+
+// Everything after the body is read, shared with the Cloudflare Pages Function
+// (functions/api/stripe-webhook.js), which passes context.env as `env` and the request's
+// exact bytes as `raw`. Returns {status, body} for the caller to send as JSON.
+export async function handleEvent(raw, sig, env) {
+  if (!env.STRIPE_WEBHOOK_SECRET || !verify(raw, sig, env.STRIPE_WEBHOOK_SECRET)) {
+    return { status: 400, body: { error: "bad signature" } };
   }
   const event = JSON.parse(raw);
   const obj = event.data?.object || {};
   let email = obj.customer_details?.email || obj.customer_email || null;
-  if (!email && obj.customer && process.env.STRIPE_SECRET_KEY) {
-    const c = await stripeGet(`/customers/${obj.customer}`, process.env.STRIPE_SECRET_KEY);
+  if (!email && obj.customer && env.STRIPE_SECRET_KEY) {
+    const c = await stripeGet(`/customers/${obj.customer}`, env.STRIPE_SECRET_KEY);
     email = c?.email || null;
   }
 
@@ -112,20 +120,20 @@ export default async function handler(req, res) {
   // And the mirror case: a retried or late "updated → active" for a subscription that has
   // since been cancelled must not hand Pro back. Ask Stripe what is true now.
   const checkLive = (plan === "free" || (plan === "pro" && event.type === "customer.subscription.updated"))
-    && obj.customer && process.env.STRIPE_SECRET_KEY;
+    && obj.customer && env.STRIPE_SECRET_KEY;
   if (checkLive) {
     const live = await stripeGet(`/subscriptions?customer=${encodeURIComponent(obj.customer)}&status=active&limit=1`,
-      process.env.STRIPE_SECRET_KEY);
+      env.STRIPE_SECRET_KEY);
     if (live && Array.isArray(live.data)) plan = live.data.length ? "pro" : "free";
   }
 
   if (!(plan && email)) {
     console.log(`stripe ${event.type} → ${email ? "has email" : "no email"} → ${plan || "-"} → ignored`);
-    return res.status(200).json({ received: true, plan, result: "ignored" });
+    return { status: 200, body: { received: true, plan, result: "ignored" } };
   }
-  const result = await setPlan(email.toLowerCase(), plan);
+  const result = await setPlan(email.toLowerCase(), plan, env);
   console.log(`stripe ${event.type} → ${plan} → ${result.detail}`);
   // A failed write answers 500 so Stripe retries it (for up to three days) instead of
   // a paying customer silently staying on free.
-  return res.status(result.ok ? 200 : 500).json({ received: true, plan, result: result.detail });
+  return { status: result.ok ? 200 : 500, body: { received: true, plan, result: result.detail } };
 }

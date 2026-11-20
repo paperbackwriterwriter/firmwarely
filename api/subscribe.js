@@ -5,6 +5,7 @@
 const rl = require("../lib/ratelimit");
 const captcha = require("../lib/captcha");
 const fw = require("../lib/fw");
+const { env } = require("../lib/env");
 
 
 module.exports = async (req, res) => {
@@ -13,8 +14,8 @@ module.exports = async (req, res) => {
     return res.status(405).json({ ok: false, error: "Method not allowed" });
   }
 
-  const key = process.env.BEEHIIV_API_KEY;
-  const pub = process.env.BEEHIIV_PUB_ID;
+  const key = env().BEEHIIV_API_KEY;
+  const pub = env().BEEHIIV_PUB_ID;
   if (!key || !pub) {
     return res.status(500).json({ ok: false, error: "Signup isn't configured yet." });
   }
