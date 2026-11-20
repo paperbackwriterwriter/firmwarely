@@ -53154,6 +53154,60 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "ubiquiti-unifi-network-application",
+   "version": "11.0.104",
+   "name": "Ubiquiti UniFi Network Application",
+   "judged_at": "2026-11-20T14:03:34+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "duckdb",
+   "version": "2.0.1",
+   "name": "DuckDB Analytical database",
+   "judged_at": "2026-11-20T14:03:34+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "snipe-it",
+   "version": "8.8.4",
+   "name": "Snipe-IT Asset management",
+   "judged_at": "2026-11-20T14:03:34+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.1
+   }
   }
  ]
 }
