@@ -841,6 +841,21 @@
    "notes": "Version differences: Android: For Android version 11 and higher, you need to use .apk that start with - AmneziaVPN_5.1.1.10_android11+ For Android version 9-10, you need to use .apk that start with - AmneziaVPN_5.1.1.10_android9-10 The app version for Android 7 and 8 is temporarily unavailable macO…",
    "source_url": "https://github.com/amnezia-vpn/amnezia-client/releases/tag/5.1.1.10",
    "page_url": "https://www.firmwarely.com/devices/amnezia-client/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.24.3085",
+   "previous": "0.24.3082",
+   "released": "2026-11-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: 83efaac8e9c360994cc7597d6702b21f09b1d2cd bigbbs: search torrents with pid 32 c9ccd5c64777fd6c68c511df3a4f8f5adec8a320 tamilmv: new TLD 6fdd623e2032240af894d854fc8598ca6293b40f tornado: CA CN=games-torrent.si f55a015eba50c40dac0ced419d7ad62d019867e3 linuxtracker: new cats c3303bd0dab1dc69d…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.24.3085",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
