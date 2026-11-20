@@ -76,6 +76,36 @@
    "notes": "Changes: build(deps): bump github.com/containerd/containerd/v2 from 2.4.1 to 2.4.2 (#​4445) Bumps github.com/containerd/containerd/v2 from 2.4.1 to 2.4.2. Release notes Sourced from github.com/containerd/containerd/v2's releases . containerd 2.4.2 Welcome to the v2.4.2 release of containerd! The se…",
    "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.77",
    "page_url": "https://www.firmwarely.com/devices/skipper/"
+  },
+  "dnscontrol": {
+   "id": "dnscontrol",
+   "brand": "DNSControl",
+   "model": "DNS as code",
+   "category": "R",
+   "status": "update",
+   "version": "5.10.1",
+   "previous": "5.10.0",
+   "released": "2026-11-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Greetings DNS fans! Release highlights: Just one quick bugfix related to \"preview --ir\" plus some non-code (docs and CI) fixes. Enjoy! Thanks!: Thanks to all contributors involved in this release! This is a community project done entirely by volunteers. We we couldn't do it without all of your cont…",
+   "source_url": "https://github.com/DNSControl/dnscontrol/releases/tag/v5.10.1",
+   "page_url": "https://www.firmwarely.com/devices/dnscontrol/"
+  },
+  "tugtainer": {
+   "id": "tugtainer",
+   "brand": "Tugtainer",
+   "model": "Docker container updater",
+   "category": "A",
+   "status": "update",
+   "version": "2.1.0",
+   "previous": "2.0.0",
+   "released": "2026-11-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "v2.1.0 (2026-11-20): Bug Fixes: Add job id and stop tracking jobs by history index (05030b3) backend: Cap per-host completed job history (3f73786) backend: Keep stdin_open when recreating a container (4a0590d) Features: Docker 24 (api 1.43) support (be5480f) --- Detailed Changes: v2.0.0...v2.1.0",
+   "source_url": "https://github.com/Quenary/tugtainer/releases/tag/v2.1.0",
+   "page_url": "https://www.firmwarely.com/devices/tugtainer/"
   }
  }
 }

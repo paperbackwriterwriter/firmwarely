@@ -53046,6 +53046,42 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "dnscontrol",
+   "version": "5.10.1",
+   "name": "DNSControl DNS as code",
+   "judged_at": "2026-11-20T12:07:32+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "tugtainer",
+   "version": "2.1.0",
+   "name": "Tugtainer Docker container updater",
+   "judged_at": "2026-11-20T12:07:32+00:00",
+   "notes_chars": 296,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
