@@ -38,13 +38,13 @@
    "model": "DNS blocklists",
    "category": "R",
    "status": "update",
-   "version": "37522026.323.57886",
+   "version": "37522026.324.409",
    "previous": "37522026.323.17969",
-   "released": "2026-11-19",
+   "released": "2026-11-20",
    "date_known": true,
    "eol": false,
-   "notes": "#​12448 #​12447 #​12446",
-   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.323.57886",
+   "notes": "#​12456 #​12455 #​12453 #​12452 #​12451 #​12449",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.324.409",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   },
   "windmill": {
@@ -736,6 +736,51 @@
    "notes": "Fixed: Updated web view dependency Import exclusion item removal not working when removing using Del key Scrolling not working properly in tray menu Scrolling not working well on some settings views Updated emulator profiles SDK: Added StartGameAction method to run specific game actions",
    "source_url": "https://github.com/JosefNemec/Playnite/releases/tag/10.65",
    "page_url": "https://www.firmwarely.com/devices/playnite/"
+  },
+  "lychee-photos": {
+   "id": "lychee-photos",
+   "brand": "Lychee",
+   "model": "Photo gallery",
+   "category": "A",
+   "status": "update",
+   "version": "7.13.1",
+   "previous": "7.13.0",
+   "released": "2026-11-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: 🏕 Features: Fixes search header disappearing on mobile after hard-refreshing a search results URL Fix vp Fix s3 loading on Version 8 Fix view clear at version update deps updates fix(jobs): treat duplicate skips as handled outcome instead of failure feat(upload): query the outcome o…",
+   "source_url": "https://github.com/LycheeOrg/Lychee/releases/tag/v7.13.1",
+   "page_url": "https://www.firmwarely.com/devices/lychee-photos/"
+  },
+  "unpoller": {
+   "id": "unpoller",
+   "brand": "UnPoller",
+   "model": "UniFi metrics exporter",
+   "category": "R",
+   "status": "update",
+   "version": "5.9.6",
+   "previous": "5.9.5",
+   "released": "2026-11-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: efb5e52aefb26f913cfc17f96d5d9c7ba4772ac2 build(deps): bump the all group with 5 updates",
+   "source_url": "https://github.com/unpoller/unpoller/releases/tag/v5.9.6",
+   "page_url": "https://www.firmwarely.com/devices/unpoller/"
+  },
+  "wiredoor": {
+   "id": "wiredoor",
+   "brand": "Wiredoor",
+   "model": "Ingress-as-a-service platform",
+   "category": "R",
+   "status": "critical",
+   "version": "1.8.1",
+   "previous": "1.8.0",
+   "released": "2026-11-19",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Security and Maintenance: Updated NGINX to address recently disclosed vulnerabilities. Updated the Alpine base image and the Python runtime. Upgraded the Node.js runtime from Node.js 24 to 26 LTS. Updated dependencies to address security advisories. Full Changelog: https://github.co…",
+   "source_url": "https://github.com/wiredoor/wiredoor/releases/tag/v1.8.1",
+   "page_url": "https://www.firmwarely.com/devices/wiredoor/"
   }
  }
 }
