@@ -53532,6 +53532,96 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "netbird",
+   "version": "0.83.2",
+   "name": "NetBird Mesh VPN",
+   "judged_at": "2026-11-20T19:08:46+00:00",
+   "notes_chars": 241,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "apprise",
+   "version": "2.3.0",
+   "name": "Apprise Notification gateway",
+   "judged_at": "2026-11-20T19:08:46+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "code-server",
+   "version": "4.146.0",
+   "name": "Coder code-server",
+   "judged_at": "2026-11-20T19:08:46+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": true
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "fuxa",
+   "version": "1.3.6",
+   "name": "FUXA SCADA and HMI dashboard",
+   "judged_at": "2026-11-20T19:08:46+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "nanoclaw",
+   "version": "2026.11.0",
+   "name": "Nanoclaw Own always-on AI assistant",
+   "judged_at": "2026-11-20T19:08:46+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.15,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
