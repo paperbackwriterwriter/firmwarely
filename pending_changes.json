@@ -781,6 +781,21 @@
    "notes": "What's Changed: Security and Maintenance: Updated NGINX to address recently disclosed vulnerabilities. Updated the Alpine base image and the Python runtime. Upgraded the Node.js runtime from Node.js 24 to 26 LTS. Updated dependencies to address security advisories. Full Changelog: https://github.co…",
    "source_url": "https://github.com/wiredoor/wiredoor/releases/tag/v1.8.1",
    "page_url": "https://www.firmwarely.com/devices/wiredoor/"
+  },
+  "espresense": {
+   "id": "espresense",
+   "brand": "ESPresense",
+   "model": "BLE room presence firmware",
+   "category": "S",
+   "status": "update",
+   "version": "5.0.0",
+   "previous": "4.0.8",
+   "released": "2026-11-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "v5 is a rewrite on ESP-IDF with a new hardware config model. Read \"What may break\" before you update. WiFi and MQTT settings survive an OTA from v4. Hardware settings are converted on first boot where possible, but some are not, and Home Assistant entities will change. See Upgrading from v4 to v5. …",
+   "source_url": "https://github.com/ESPresense/ESPresense/releases/tag/v5.0.0",
+   "page_url": "https://www.firmwarely.com/devices/espresense/"
   }
  }
 }

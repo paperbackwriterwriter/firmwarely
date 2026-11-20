@@ -52812,6 +52812,24 @@
     "security_fix_plain": 0.38,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "espresense",
+   "version": "5.0.0",
+   "name": "ESPresense BLE room presence firmware",
+   "judged_at": "2026-11-20T01:41:02+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
