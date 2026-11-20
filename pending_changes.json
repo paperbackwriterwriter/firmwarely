@@ -713,13 +713,13 @@
    "model": "Invoicing",
    "category": "A",
    "status": "update",
-   "version": "5.13.55",
+   "version": "5.13.56",
    "previous": "5.13.54",
-   "released": "2026-11-19",
+   "released": "2026-11-20",
    "date_known": true,
    "eol": false,
-   "notes": "What's Changed: Allow a Redis username and key prefix from .env Fix 14 small bugs: activities, numbering, charts, exports, document filters, Google re-auth v5.13.55 New Contributors: made their first contribution in https://github.com/invoiceninja/invoiceninja/pull/13470 Full Changelog: https://git…",
-   "source_url": "https://github.com/invoiceninja/invoiceninja/releases/tag/v5.13.55",
+   "notes": "What's Changed: Fix the fatal on GET /documents: match filter_deleted_clients to its parent v5.13.56 Full Changelog: https://github.com/invoiceninja/invoiceninja/compare/v5.13.55...v5.13.56",
+   "source_url": "https://github.com/invoiceninja/invoiceninja/releases/tag/v5.13.56",
    "page_url": "https://www.firmwarely.com/devices/invoice-ninja/"
   },
   "playnite": {
@@ -796,6 +796,21 @@
    "notes": "v5 is a rewrite on ESP-IDF with a new hardware config model. Read \"What may break\" before you update. WiFi and MQTT settings survive an OTA from v4. Hardware settings are converted on first boot where possible, but some are not, and Home Assistant entities will change. See Upgrading from v4 to v5. …",
    "source_url": "https://github.com/ESPresense/ESPresense/releases/tag/v5.0.0",
    "page_url": "https://www.firmwarely.com/devices/espresense/"
+  },
+  "authentik": {
+   "id": "authentik",
+   "brand": "authentik",
+   "model": "Identity provider",
+   "category": "A",
+   "status": "update",
+   "version": "2026.8.6",
+   "previous": "2026.8.5",
+   "released": "2026-11-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "See https://docs.goauthentik.io/releases/2026.8#fixed-in-202686 What's Changed: website/docs: add release notes for 2026.8.5 (cherry-pick #​27084 to version-2026.8) by in https://github.com/goauthentik/authentik/pull/27088 website/docs: add release notes for 2026.5.8 (cherry-pick #​27083 to version…",
+   "source_url": "https://github.com/goauthentik/authentik/releases/tag/version/2026.8.6",
+   "page_url": "https://www.firmwarely.com/devices/authentik/"
   }
  }
 }
