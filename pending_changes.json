@@ -481,6 +481,21 @@
    "notes": "NanoClaw 2026.11.0 is the new stable release, so /update-nanoclaw on the default stable channel now offers it. 🦐 It covers everything since 2026.10.0 and was tested on the beta channel through nine pre-releases. Five changes you'll notice first: Each agent gets only the keys you give it. OneCLI mov…",
    "source_url": "https://github.com/nanocoai/nanoclaw/releases/tag/v2026.11.0",
    "page_url": "https://www.firmwarely.com/devices/nanoclaw/"
+  },
+  "akaunting": {
+   "id": "akaunting",
+   "brand": "Akaunting",
+   "model": "Accounting",
+   "category": "A",
+   "status": "update",
+   "version": "3.3.2",
+   "previous": "3.3.1",
+   "released": "2026-11-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Added: Added the default item category, which the items created from invoice and bill lines get instead of the category of the line (#​3442) Added the option to show the discount on the document total on a separate row in the income and expense reports (6c1fc9fc3) Let a document type send its own p…",
+   "source_url": "https://github.com/akaunting/akaunting/releases/tag/3.3.2",
+   "page_url": "https://www.firmwarely.com/devices/akaunting/"
   }
  }
 }
