@@ -11367,6 +11367,24 @@
    "type": "github",
    "repo": "Drewsif/PiShrink",
    "product_url": "https://github.com/Drewsif/PiShrink"
+  },
+  {
+   "id": "nanoclaw",
+   "brand": "Nanoclaw",
+   "model": "Own always-on AI assistant",
+   "category": "A",
+   "type": "github",
+   "repo": "nanocoai/nanoclaw",
+   "product_url": "https://github.com/nanocoai/nanoclaw"
+  },
+  {
+   "id": "openmausbot",
+   "brand": "OpenMausBot",
+   "model": "Grok Bot alternative",
+   "category": "A",
+   "type": "github",
+   "repo": "milind-soni/OpenMausBot",
+   "product_url": "https://github.com/milind-soni/OpenMausBot"
   }
  ]
 }
