@@ -31,6 +31,51 @@
    "notes": "#​12460 #​12458 #​12457 #​12454",
    "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.324.33789",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "safeline": {
+   "id": "safeline",
+   "brand": "Chaitin",
+   "model": "SafeLine web application firewall",
+   "category": "R",
+   "status": "update",
+   "version": "9.4.6",
+   "previous": "9.4.5",
+   "released": "2026-11-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Improved compatibility with legacy kernel environments such as CentOS 7 and fixed service startup failures on some hosts.",
+   "source_url": "https://github.com/chaitin/SafeLine/releases/tag/v9.4.6",
+   "page_url": "https://www.firmwarely.com/devices/safeline/"
+  },
+  "bambuddy": {
+   "id": "bambuddy",
+   "brand": "Bambuddy",
+   "model": "Bambu Lab printer manager",
+   "category": "M",
+   "status": "update",
+   "version": "1.3.2",
+   "previous": "1.3.1",
+   "released": "2026-11-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Bambuddy 1.3.2 What this is A fix release on top of 1.3.1: four new features, three changes and 29 fixes. Eight community PRs went in, and 26 people are credited. The headline is a fix for everyone signed in to Bambu Cloud on the Profiles page: the Profiles page's cloud list failed to load, and the…",
+   "source_url": "https://github.com/maziggy/bambuddy/releases/tag/v.1.3.2",
+   "page_url": "https://www.firmwarely.com/devices/bambuddy/"
+  },
+  "skipper": {
+   "id": "skipper",
+   "brand": "Skipper",
+   "model": "HTTP router and reverse proxy",
+   "category": "R",
+   "status": "update",
+   "version": "0.28.77",
+   "previous": "0.28.76",
+   "released": "2026-11-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes: build(deps): bump github.com/containerd/containerd/v2 from 2.4.1 to 2.4.2 (#​4445) Bumps github.com/containerd/containerd/v2 from 2.4.1 to 2.4.2. Release notes Sourced from github.com/containerd/containerd/v2's releases . containerd 2.4.2 Welcome to the v2.4.2 release of containerd! The se…",
+   "source_url": "https://github.com/zalando/skipper/releases/tag/v0.28.77",
+   "page_url": "https://www.firmwarely.com/devices/skipper/"
   }
  }
 }
