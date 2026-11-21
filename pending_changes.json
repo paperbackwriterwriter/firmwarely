@@ -128,13 +128,13 @@
    "model": "Torrent indexer proxy",
    "category": "A",
    "status": "update",
-   "version": "0.25.8",
+   "version": "0.25.20",
    "previous": "0.24.3085",
-   "released": "2026-11-20",
+   "released": "2026-11-21",
    "date_known": true,
    "eol": false,
-   "notes": "Changes:: 915deb09c8678e9c28a4c927c033861122beee10 anthelion-api: improve category filtering (#​17267) c3f9bad8c0b3a9ac5f01c34a125718b21b22cf3a cardigann: multiple categories support 8f3f8854e4719700056b099efaaae52069b5ccbe core: bump to .NET 10 (#​17281) 5905c7100bf2f43418f38e9618fca828fea62f18 ad…",
-   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.25.8",
+   "notes": "Changes:: 4fb4a8ea9e71bb4b8d1bc37a505d94f279631d8f stellarwinds: update leechers selector 0ded64cd634fd13f536925da48711642c4ce8b5c 52bt: new domains 70bbf744d30d560d8aa22c3fb4bb0a1d2c4131f7 stellarwinds: drop cat 2c52654668f1b528a0fe38da2f7e34a37eec5039 scenetime-api: update apikey check e3a000fd64…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.25.20",
    "page_url": "https://www.firmwarely.com/devices/jackett/"
   },
   "angie": {
@@ -676,6 +676,21 @@
    "notes": "What's new in 0.1.175: A calmer look: A new conversation starts when you send. New conversation, a bot's + and Cmd/Ctrl+Shift+N open a blank chat, and nothing is saved until you send the first message. Leave it without sending and nothing is left behind. Advanced mode's composer is calmer. The mess…",
    "source_url": "https://github.com/milind-soni/OpenMausBot/releases/tag/v0.1.175",
    "page_url": "https://www.firmwarely.com/devices/openmausbot/"
+  },
+  "calibre": {
+   "id": "calibre",
+   "brand": "Calibre",
+   "model": "Ebook manager",
+   "category": "A",
+   "status": "update",
+   "version": "9.19.0",
+   "previous": "9.18.0",
+   "released": "2026-11-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release version 9.19.0",
+   "source_url": "https://github.com/kovidgoyal/calibre/releases/tag/v9.19.0",
+   "page_url": "https://www.firmwarely.com/devices/calibre/"
   }
  }
 }
