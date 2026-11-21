@@ -23,13 +23,13 @@
    "model": "DNS blocklists",
    "category": "R",
    "status": "update",
-   "version": "37522026.324.60754",
+   "version": "37522026.324.85870",
    "previous": "37522026.324.409",
    "released": "2026-11-20",
    "date_known": true,
    "eol": false,
-   "notes": "#​12467 #​12466 #​12465 #​12464 #​12461",
-   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.324.60754",
+   "notes": "37522026.324.85870 37522026.324.85870",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.324.85870",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   },
   "safeline": {
@@ -601,6 +601,36 @@
    "notes": "7.3.0 🎙️ 🔊: Sound and two-way audio: Live views now use WebRTC for both RTSP and Direct streams, bringing video, sound, and two-way talk to Home Assistant’s built-in player. Direct streams now have sound too! No custom card or go2rtc setup is needed. You can use the microphone button to talk throug…",
    "source_url": "https://github.com/JurajNyiri/HomeAssistant-Tapo-Control/releases/tag/7.3.0",
    "page_url": "https://www.firmwarely.com/devices/homeassistant-tapo-control/"
+  },
+  "music-assistant": {
+   "id": "music-assistant",
+   "brand": "Music Assistant",
+   "model": "Media library server",
+   "category": "S",
+   "status": "update",
+   "version": "2.10.13",
+   "previous": "2.10.12",
+   "released": "2026-11-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "📦 Stable Release: _Changes since 2.10.12_ 🚀 Features and enhancements: Explain in the log why the Sendspin Cast bridge is skipped for unsupported devices () 🐛 Bugfixes: Fix AirPlay 1 speakers staying silent after a live input restarts () Keep album artwork on AirPlay when the next track shares the …",
+   "source_url": "https://github.com/music-assistant/server/releases/tag/2.10.13",
+   "page_url": "https://www.firmwarely.com/devices/music-assistant/"
+  },
+  "databasus": {
+   "id": "databasus",
+   "brand": "Databasus",
+   "model": "PostgreSQL backup tool",
+   "category": "N",
+   "status": "update",
+   "version": "3.71.0",
+   "previous": "3.70.1",
+   "released": "2026-11-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: [3.71.0] - 2026-11-21: ✨ Features: tests: Copy the output of test runs to a file in temp (b02b88b) instancebackups: Compact the Databasus backups section and run recovered installations at once (dd6ca50) instancebackups: Simplify master-key onboarding and backup reminders (ed92bd9) backu…",
+   "source_url": "https://github.com/databasus/databasus/releases/tag/v3.71.0",
+   "page_url": "https://www.firmwarely.com/devices/databasus/"
   }
  }
 }
