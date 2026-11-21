@@ -53946,6 +53946,24 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "freescout",
+   "version": "1.8.252",
+   "name": "FreeScout Help desk",
+   "judged_at": "2026-11-21T07:36:25+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.98,
+    "security_fix_plain": 0.94,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
