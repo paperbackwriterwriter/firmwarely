@@ -8,3 +8,9 @@ digest.md
 changed.json
 rendered/
 changed_weekly.json
+# Cloudflare Pages: build output (scripts/cf_pages.py) and local wrangler state
+dist/
+.wrangler/
+/_redirects
+/_headers
+.dev.vars

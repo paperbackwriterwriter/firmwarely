@@ -4,8 +4,9 @@
 const fw = require("../lib/fw");
 const rl = require("../lib/ratelimit");
 const captcha = require("../lib/captcha");
+const { env } = require("../lib/env");
 
-const TO = process.env.SUPPORT_TO || "hello@firmwarely.com";
+const supportTo = () => env().SUPPORT_TO || "hello@firmwarely.com";
 const MAX = { name: 120, subject: 160, message: 5000 };
 
 function esc(s) {
@@ -55,7 +56,7 @@ module.exports = async function (req, res) {
     "<p style=\"white-space:pre-wrap\">" + esc(message) + "</p><hr>" +
     '<p style="color:#666;font-size:13px">Sent from the form on firmwarely.com/support/. Reply to this email to answer them.</p></div>';
 
-  const sent = await fw.sendEmail(TO, "[Firmwarely] " + subject, html, { replyTo: email });
+  const sent = await fw.sendEmail(supportTo(), "[Firmwarely] " + subject, html, { replyTo: email });
   if (!sent.ok) {
     console.error("contact: send failed", sent.data && sent.data.message);
     return fw.json(res, 502, { error: "Couldn't send that just now. Please email hello@firmwarely.com directly." });

@@ -1180,6 +1180,14 @@ def write_redirects(published, brand_pages, families=()):
     cfg = json.loads((ROOT / "vercel.json").read_text())
     cfg["redirects"] = rules
     (ROOT / "vercel.json").write_text(json.dumps(cfg, indent=2) + "\n")
+    # The same rules as Cloudflare Pages' _redirects/_headers, at the root for a local look.
+    # The Cloudflare build regenerates them from vercel.json itself (scripts/cf_pages.py), so
+    # these copies are gitignored, and a problem here must not stop the hourly Vercel build.
+    try:
+        import cf_pages
+        cf_pages.write_config(ROOT, cfg)
+    except (Exception, SystemExit) as e:
+        print(f"warning: Cloudflare _redirects not written: {e}")
     return len(rules), sum(len(v) for v in groups.values())
 
 
