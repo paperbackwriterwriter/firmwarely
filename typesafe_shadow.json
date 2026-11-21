@@ -53964,6 +53964,60 @@
     "security_fix_plain": 0.94,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "windmill",
+   "version": "1.881.1",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-11-21T08:33:29+00:00",
+   "notes_chars": 165,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "adguardhome-sync",
+   "version": "0.10.0",
+   "name": "AdGuard Home Sync",
+   "judged_at": "2026-11-21T08:33:29+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "shlink",
+   "version": "5.1.9",
+   "name": "Shlink URL shortener",
+   "judged_at": "2026-11-21T08:33:30+00:00",
+   "notes_chars": 153,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.11,
+    "security_fix_plain": 0.26,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
