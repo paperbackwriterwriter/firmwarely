@@ -54054,6 +54054,78 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "homeassistant-tapo-control",
+   "version": "7.3.3",
+   "name": "Tapo Control Home Assistant integration for Tapo cameras",
+   "judged_at": "2026-11-21T11:06:08+00:00",
+   "notes_chars": 111,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "nodewarden",
+   "version": "1.8.2",
+   "name": "Nodewarden Bitwarden server for Cloudflare Workers",
+   "judged_at": "2026-11-21T11:06:08+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "kiosk-satellite",
+   "version": "2026.11.24",
+   "name": "Kiosk Satellite Turn any Android device",
+   "judged_at": "2026-11-21T11:06:08+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "titanium-web-proxy",
+   "version": "8.0.5",
+   "name": "Titanium Web Proxy HTTP(S) proxy server",
+   "judged_at": "2026-11-21T11:06:08+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.1,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

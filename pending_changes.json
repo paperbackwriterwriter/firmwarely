@@ -31,6 +31,66 @@
    "notes": "#​12478 #​12477 #​12476 #​12474 #​12473 #​12472 #​12470",
    "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.325.33594",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "homeassistant-tapo-control": {
+   "id": "homeassistant-tapo-control",
+   "brand": "Tapo Control",
+   "model": "Home Assistant integration for Tapo cameras",
+   "category": "S",
+   "status": "update",
+   "version": "7.3.3",
+   "previous": "7.3.1",
+   "released": "2026-11-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes: Fix #​1513: TypeError: 'bool' object is not subscriptable in select.py (v7.3.1, regression from 7.2.1)",
+   "source_url": "https://github.com/JurajNyiri/HomeAssistant-Tapo-Control/releases/tag/7.3.3",
+   "page_url": "https://www.firmwarely.com/devices/homeassistant-tapo-control/"
+  },
+  "nodewarden": {
+   "id": "nodewarden",
+   "brand": "Nodewarden",
+   "model": "Bitwarden server for Cloudflare Workers",
+   "category": "A",
+   "status": "update",
+   "version": "1.8.2",
+   "previous": "1.8.1",
+   "released": "2026-11-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "v1.8.2 - Nested Folders and Bitwarden 2026.11 Compatibility Fixes: Added: Nested folders in the Web Vault. Create a top-level folder or add a subfolder directly from the sidebar. The expandable tree uses Bitwarden's slash-separated folder names, so existing nested folders appear in the hierarchy au…",
+   "source_url": "https://github.com/shuaiplus/nodewarden/releases/tag/v1.8.2",
+   "page_url": "https://www.firmwarely.com/devices/nodewarden/"
+  },
+  "kiosk-satellite": {
+   "id": "kiosk-satellite",
+   "brand": "Kiosk Satellite",
+   "model": "Turn any Android device",
+   "category": "S",
+   "status": "update",
+   "version": "2026.11.24",
+   "previous": "2026.11.23",
+   "released": "2026-11-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's new in Kiosk Satellite 2026.11.24: This is one of the biggest releases of Kiosk Satellite. It launches together with Kiosk Satellite Ground Control, a new companion service, and its first component, Voice Match. Voice Match cuts a TV or other people out of your voice commands and adds speake…",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.24",
+   "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
+  },
+  "titanium-web-proxy": {
+   "id": "titanium-web-proxy",
+   "brand": "Titanium Web Proxy",
+   "model": "HTTP(S) proxy server",
+   "category": "R",
+   "status": "update",
+   "version": "8.0.5",
+   "previous": "8.0.4",
+   "released": "2026-11-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: HTTP/2 flow control: Parked DATA withholds stream WINDOW_UPDATE until those bytes are forwarded Credit returns on the origin leg that is reading A peer window below 4 KiB still gets a partial frame A 1-byte leftover window is not spent macOS Decrypt HTTPS and install: One login-keyc…",
+   "source_url": "https://github.com/justcoding121/titanium-web-proxy/releases/tag/v8.0.5",
+   "page_url": "https://www.firmwarely.com/devices/titanium-web-proxy/"
   }
  }
 }
