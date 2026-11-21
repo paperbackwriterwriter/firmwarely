@@ -316,6 +316,21 @@
    "notes": "What's new in 0.1.176: Updates and announcements: A blue update button. In Simple mode, a round blue button appears right after Connect apps while an update downloads or is ready. Click it to restart into the new version. It disappears once you're updated. What each update brought. Announcements no…",
    "source_url": "https://github.com/milind-soni/OpenMausBot/releases/tag/v0.1.176",
    "page_url": "https://www.firmwarely.com/devices/openmausbot/"
+  },
+  "dietpi": {
+   "id": "dietpi",
+   "brand": "DietPi",
+   "model": "Lightweight SBC OS",
+   "category": "P",
+   "status": "update",
+   "version": "10.9",
+   "previous": "10.8",
+   "released": "2026-11-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "New images: Odroid C5 | Support and images for this new Hardkernel SBC with Amlogic S905X5M SoC have been added. Orange Pi 6/6 Plus | Support and images for these new Orange Pi 6 family SBCs with CIX P1 dodeca-core (12) SoC have been added. The image uses a generic ACPI kernel, and bootloader + dev…",
+   "source_url": "https://github.com/MichaIng/DietPi/releases/tag/v10.9",
+   "page_url": "https://www.firmwarely.com/devices/dietpi/"
   }
  }
 }
