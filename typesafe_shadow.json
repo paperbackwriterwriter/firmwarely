@@ -54306,6 +54306,60 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "homeassistant-tapo-control",
+   "version": "7.3.5",
+   "name": "Tapo Control Home Assistant integration for Tapo cameras",
+   "judged_at": "2026-11-21T18:12:17+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.07,
+    "security_fix_plain": 0.14,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "orcaslicer",
+   "version": "2.5.2",
+   "name": "OrcaSlicer Slicer software",
+   "judged_at": "2026-11-21T18:12:17+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ani-rss",
+   "version": "3.2.63",
+   "name": "ANi-RSS Anime RSS downloader",
+   "judged_at": "2026-11-21T18:12:17+00:00",
+   "notes_chars": 52,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.57,
+    "security_fix_plain": 0.33,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

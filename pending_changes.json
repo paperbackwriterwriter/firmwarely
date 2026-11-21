@@ -38,13 +38,13 @@
    "model": "Home Assistant integration for Tapo cameras",
    "category": "S",
    "status": "update",
-   "version": "7.3.4",
+   "version": "7.3.5",
    "previous": "7.3.1",
    "released": "2026-11-21",
    "date_known": true,
    "eol": false,
-   "notes": "Breaking changes: _Breaking changes only if upgrading from 7.3.x released on 2026-11-21._ The integration's native WebRTC player and two-way audio are now disabled by default. Live views use Home Assistant's normal playback again. To use the experimental player and talk, enable Native WebRTC and tw…",
-   "source_url": "https://github.com/JurajNyiri/HomeAssistant-Tapo-Control/releases/tag/7.3.4",
+   "notes": "Changes: Add: Shared native WebRTC streams. Opening the same stream on multiple devices now uses one camera connection, reducing camera load and repeated processing in Home Assistant Update: Bump pytapo to 3.4.37 Update #​1504: no file system access on the event loop, thank you This works automatic…",
+   "source_url": "https://github.com/JurajNyiri/HomeAssistant-Tapo-Control/releases/tag/7.3.5",
    "page_url": "https://www.firmwarely.com/devices/homeassistant-tapo-control/"
   },
   "nodewarden": {
@@ -181,6 +181,36 @@
    "notes": "MariaDB Community Server 13.2.1",
    "source_url": "https://github.com/MariaDB/server/releases/tag/mariadb-13.2.1",
    "page_url": "https://www.firmwarely.com/devices/mariadb/"
+  },
+  "orcaslicer": {
+   "id": "orcaslicer",
+   "brand": "OrcaSlicer",
+   "model": "Slicer software",
+   "category": "M",
+   "status": "update",
+   "version": "2.5.2",
+   "previous": "2.5.1",
+   "released": "2026-11-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: This is the OrcaSlicer V2.5.2 release, a maintenance update on top of 2.5.1. Thank you to everyone who reported problems with 2.5.1! It fixes crashes while slicing, STEP files that imported with faces missing, the Linux AppImage freezing on Wayland, and parts close to the size of th…",
+   "source_url": "https://github.com/OrcaSlicer/OrcaSlicer/releases/tag/v2.5.2",
+   "page_url": "https://www.firmwarely.com/devices/orcaslicer/"
+  },
+  "ani-rss": {
+   "id": "ani-rss",
+   "brand": "ANi-RSS",
+   "model": "Anime RSS downloader",
+   "category": "A",
+   "status": "critical",
+   "version": "3.2.63",
+   "previous": "3.2.62",
+   "released": "2026-11-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "build: 更新依赖 build: 更新 docker 基础镜像以处理 CVE-2026-114938",
+   "source_url": "https://github.com/wushuo894/ani-rss/releases/tag/v3.2.63",
+   "page_url": "https://www.firmwarely.com/devices/ani-rss/"
   }
  }
 }
