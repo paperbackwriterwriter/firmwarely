@@ -15,7 +15,11 @@ function page(res, status, title, inner) {
   res.statusCode = status;
   res.setHeader("Content-Type", "text/html; charset=utf-8");
   res.setHeader("Cache-Control", "no-store");
-  res.setHeader("Referrer-Policy", "no-referrer");   // the token is in this page's URL
+  // The token is in this page's URL: it must not leak to other sites. "same-origin", not
+  // "no-referrer": with no-referrer the browser sends "Origin: null" on this page's own
+  // form POST, sameOrigin() refuses it and every sign-in ends as "expired" (21 Nov, on
+  // Cloudflare, where this header wins over the site-wide one; on Vercel it never applied).
+  res.setHeader("Referrer-Policy", "same-origin");
   res.end(`<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex">
 <title>${esc(title)} | Firmwarely</title>
