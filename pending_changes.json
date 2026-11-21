@@ -1,5 +1,36 @@
 {
- "since": null,
+ "since": "2026-11-21T09:24:17+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "3proxy": {
+   "id": "3proxy",
+   "brand": "3proxy",
+   "model": "Tiny proxy server",
+   "category": "R",
+   "status": "critical",
+   "version": "1.0.4",
+   "previous": "1.0.3",
+   "released": "2026-11-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "Security and authorization fixes (SOCKS4a, SOCKS5 UDP ASSOCIATE, kept-alive connections of the proxy and the built-in http server), a path traversal fix in the built-in http server, crash fixes (tlspr, pcre) ! Fix: socks: a SOCKS4a request was refused as a connect to the null address, although in S…",
+   "source_url": "https://github.com/3proxy/3proxy/releases/tag/1.0.4",
+   "page_url": "https://www.firmwarely.com/devices/3proxy/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.325.33594",
+   "previous": "37522026.324.85870",
+   "released": "2026-11-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​12478 #​12477 #​12476 #​12474 #​12473 #​12472 #​12470",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.325.33594",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  }
+ }
 }
