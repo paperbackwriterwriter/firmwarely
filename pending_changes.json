@@ -38,13 +38,13 @@
    "model": "Home Assistant integration for Tapo cameras",
    "category": "S",
    "status": "update",
-   "version": "7.3.3",
+   "version": "7.3.4",
    "previous": "7.3.1",
    "released": "2026-11-21",
    "date_known": true,
    "eol": false,
-   "notes": "Changes: Fix #​1513: TypeError: 'bool' object is not subscriptable in select.py (v7.3.1, regression from 7.2.1)",
-   "source_url": "https://github.com/JurajNyiri/HomeAssistant-Tapo-Control/releases/tag/7.3.3",
+   "notes": "Breaking changes: _Breaking changes only if upgrading from 7.3.x released on 2026-11-21._ The integration's native WebRTC player and two-way audio are now disabled by default. Live views use Home Assistant's normal playback again. To use the experimental player and talk, enable Native WebRTC and tw…",
+   "source_url": "https://github.com/JurajNyiri/HomeAssistant-Tapo-Control/releases/tag/7.3.4",
    "page_url": "https://www.firmwarely.com/devices/homeassistant-tapo-control/"
   },
   "nodewarden": {
@@ -113,13 +113,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.8.43.13-lts",
+   "version": "26.9.35.9-stable",
    "previous": "26.9.34.16-stable",
    "released": "2026-11-21",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.8.43.13-lts v26.8.43.13-lts",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.43.13-lts",
+   "notes": "Release v26.9.35.9-stable v26.9.35.9-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.9.35.9-stable",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "ezbookkeeping": {
@@ -166,6 +166,21 @@
    "notes": "This is release 3.89.14.20261121 of OpenCCU which is a MAJOR release with the following comprehensive bugfixes and feature changes: [!NOTE] IMPORTANT: 🇺🇸 This is a very extensive update. Since the last release, all CCU components (ReGaHss, rfd, hs485d, HMIPServer, WebUI, …) and the operating system…",
    "source_url": "https://github.com/OpenCCU/OpenCCU/releases/tag/3.89.14.20261121",
    "page_url": "https://www.firmwarely.com/devices/openccu/"
+  },
+  "mariadb": {
+   "id": "mariadb",
+   "brand": "MariaDB",
+   "model": "Database server",
+   "category": "A",
+   "status": "update",
+   "version": "13.2.1",
+   "previous": "13.0.2",
+   "released": "2026-11-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "MariaDB Community Server 13.2.1",
+   "source_url": "https://github.com/MariaDB/server/releases/tag/mariadb-13.2.1",
+   "page_url": "https://www.firmwarely.com/devices/mariadb/"
   }
  }
 }
