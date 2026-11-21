@@ -256,6 +256,66 @@
    "notes": "[1.93.0] - 2026-11-21: Added: IP Block Detection can Collect detected IPs: when two connections in a row to an address stall, the address joins a pool for sets with Use collected IPs, listed in Collected IPs on the Dashboard. Before installing an earlier version, turn off IP Block Detection in the …",
    "source_url": "https://github.com/DanielLavrushin/b4/releases/tag/v1.93.0",
    "page_url": "https://www.firmwarely.com/devices/b4/"
+  },
+  "blocky-dns": {
+   "id": "blocky-dns",
+   "brand": "Blocky",
+   "model": "DNS proxy and ad blocker",
+   "category": "R",
+   "status": "critical",
+   "version": "0.37.0",
+   "previous": "0.36.0",
+   "released": "2026-11-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "DNSSEC security fixes: Thanks to for reporting these seven findings, fixing them, and contributing regression tests. If you use Blocky’s built-in validator (dnssec.validate: true), upgrade to v0.37.0. Six fixes affect earlier releases; the seventh hardens code introduced during development of v0.37…",
+   "source_url": "https://github.com/0xERR0R/blocky/releases/tag/v0.37.0",
+   "page_url": "https://www.firmwarely.com/devices/blocky-dns/"
+  },
+  "raspap": {
+   "id": "raspap",
+   "brand": "RaspAP",
+   "model": "Wi-Fi router for Raspberry Pi",
+   "category": "R",
+   "status": "update",
+   "version": "3.6.0",
+   "previous": "3.5.10",
+   "released": "2026-11-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: UI: use memory and microchip icons for sidebar status Tailscale plugin: fix false needs_login detection and exec() exit code capture Feature: set the hostapd country code from the system WiFi country Feature: restrict the web interface to allowed networks Feature: uninstall plugins …",
+   "source_url": "https://github.com/RaspAP/raspap-webgui/releases/tag/3.6.0",
+   "page_url": "https://www.firmwarely.com/devices/raspap/"
+  },
+  "bettercap": {
+   "id": "bettercap",
+   "brand": "Bettercap",
+   "model": "Swiss Army knife",
+   "category": "R",
+   "status": "update",
+   "version": "2.42.0",
+   "previous": "2.41.7",
+   "released": "2026-11-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "v2.42.0 v2.42.0",
+   "source_url": "https://github.com/bettercap/bettercap/releases/tag/v2.42.0",
+   "page_url": "https://www.firmwarely.com/devices/bettercap/"
+  },
+  "openmausbot": {
+   "id": "openmausbot",
+   "brand": "OpenMausBot",
+   "model": "Grok Bot alternative",
+   "category": "A",
+   "status": "update",
+   "version": "0.1.176",
+   "previous": "0.1.175",
+   "released": "2026-11-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's new in 0.1.176: Updates and announcements: A blue update button. In Simple mode, a round blue button appears right after Connect apps while an update downloads or is ready. Click it to restart into the new version. It disappears once you're updated. What each update brought. Announcements no…",
+   "source_url": "https://github.com/milind-soni/OpenMausBot/releases/tag/v0.1.176",
+   "page_url": "https://www.firmwarely.com/devices/openmausbot/"
   }
  }
 }

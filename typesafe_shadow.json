@@ -54414,6 +54414,78 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "blocky-dns",
+   "version": "0.37.0",
+   "name": "Blocky DNS proxy and ad blocker",
+   "judged_at": "2026-11-21T22:02:26+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.94,
+    "security_fix_plain": 0.94,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "raspap",
+   "version": "3.6.0",
+   "name": "RaspAP Wi-Fi router for Raspberry Pi",
+   "judged_at": "2026-11-21T22:02:26+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.07,
+    "security_fix_plain": 0.15,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "bettercap",
+   "version": "2.42.0",
+   "name": "Bettercap Swiss Army knife",
+   "judged_at": "2026-11-21T22:02:26+00:00",
+   "notes_chars": 15,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "openmausbot",
+   "version": "0.1.176",
+   "name": "OpenMausBot Grok Bot alternative",
+   "judged_at": "2026-11-21T22:02:26+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

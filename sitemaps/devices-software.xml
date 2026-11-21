@@ -23,7 +23,7 @@
   <url><loc>https://www.firmwarely.com/devices/wg-easy/</loc><lastmod>2026-10-24</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/unbound-dns/</loc><lastmod>2026-10-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/coredns/</loc><lastmod>2026-10-21</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/blocky-dns/</loc><lastmod>2026-11-09</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/blocky-dns/</loc><lastmod>2026-11-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/technitium-dns/</loc><lastmod>2026-10-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/dnscrypt-proxy/</loc><lastmod>2026-10-22</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/nginx-proxy-manager/</loc><lastmod>2026-11-19</lastmod></url>
@@ -42,7 +42,7 @@
   <url><loc>https://www.firmwarely.com/devices/openvpn/</loc><lastmod>2026-11-05</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/softether-vpn/</loc><lastmod>2026-11-18</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/gluetun/</loc><lastmod>2026-07-30</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/raspap/</loc><lastmod>2026-11-11</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/raspap/</loc><lastmod>2026-11-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/frrouting/</loc><lastmod>2026-08-31</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/smokeping/</loc><lastmod>2025-02-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/speedtest-tracker/</loc><lastmod>2026-10-22</lastmod></url>
@@ -720,7 +720,7 @@
   <url><loc>https://www.firmwarely.com/devices/pm2/</loc><lastmod>2026-11-03</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/osquery/</loc><lastmod>2026-10-29</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/openobserve/</loc><lastmod>2026-11-12</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/bettercap/</loc><lastmod>2026-05-11</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/bettercap/</loc><lastmod>2026-11-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/thanos/</loc><lastmod>2026-10-27</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/bottom/</loc><lastmod>2026-11-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/amlogic-s9xxx-openwrt/</loc><lastmod>2026-11-01</lastmod></url>
