@@ -226,6 +226,36 @@
    "notes": "LE13 Beta1 12.95.1",
    "source_url": "https://github.com/LibreELEC/LibreELEC.tv/releases/tag/12.95.1",
    "page_url": "https://www.firmwarely.com/devices/libreelec/"
+  },
+  "local-deep-research": {
+   "id": "local-deep-research",
+   "brand": "Local Deep Research",
+   "model": "AI research assistant",
+   "category": "A",
+   "status": "critical",
+   "version": "2.0.2",
+   "previous": "2.0.1",
+   "released": "2026-11-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "Compact research notices, Subscribe on any research, and session and credential hardening: This patch release reworks how the Start New Research page shows warnings, lets you subscribe to any completed research, and shows your pre-upgrade backup in Settings. It also tightens several security bounda…",
+   "source_url": "https://github.com/LearningCircuit/local-deep-research/releases/tag/v2.0.2",
+   "page_url": "https://www.firmwarely.com/devices/local-deep-research/"
+  },
+  "b4": {
+   "id": "b4",
+   "brand": "B4",
+   "model": "Network packet processor",
+   "category": "R",
+   "status": "update",
+   "version": "1.93.0",
+   "previous": "1.92.0",
+   "released": "2026-11-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "[1.93.0] - 2026-11-21: Added: IP Block Detection can Collect detected IPs: when two connections in a row to an address stall, the address joins a pool for sets with Use collected IPs, listed in Collected IPs on the Dashboard. Before installing an earlier version, turn off IP Block Detection in the …",
+   "source_url": "https://github.com/DanielLavrushin/b4/releases/tag/v1.93.0",
+   "page_url": "https://www.firmwarely.com/devices/b4/"
   }
  }
 }
