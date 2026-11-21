@@ -151,6 +151,21 @@
    "notes": "v0.33.0 (2026-11-21): _This release is published under the MIT License._ New: Serve the frame under a base path (#​403, f0bc396) web: Add a script-free /plain page for old browsers (#​390, 233c9fc) #​355 wrap a frame as a gift (#​369, 883431a) Pack /frame.e6 for the 7.3\" panel (#​346, 82b91c5) Fixe…",
    "source_url": "https://github.com/arnegiacomo/fugleramme/releases/tag/v0.33.0",
    "page_url": "https://www.firmwarely.com/devices/fugleramme/"
+  },
+  "openccu": {
+   "id": "openccu",
+   "brand": "OpenCCU",
+   "model": "HomeMatic smart home OS",
+   "category": "S",
+   "status": "update",
+   "version": "3.89.14.20261121",
+   "previous": "3.89.11.20260919",
+   "released": "2026-11-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "This is release 3.89.14.20261121 of OpenCCU which is a MAJOR release with the following comprehensive bugfixes and feature changes: [!NOTE] IMPORTANT: 🇺🇸 This is a very extensive update. Since the last release, all CCU components (ReGaHss, rfd, hs485d, HMIPServer, WebUI, …) and the operating system…",
+   "source_url": "https://github.com/OpenCCU/OpenCCU/releases/tag/3.89.14.20261121",
+   "page_url": "https://www.firmwarely.com/devices/openccu/"
   }
  }
 }
