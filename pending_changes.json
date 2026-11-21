@@ -646,6 +646,21 @@
    "notes": "Songloft v2.13.13 安装与选包 / Installation: 中文 · English 包名清单 / Package names: 中文 · English 更新记录 / Changelog: :sparkles: New Features: c3bd9be - 歌曲评级（rating 0-100），支持单首/批量设置、过滤、排序与分面聚合 (PR #​574) b348661 - radio: 支持无后缀 HLS 电台和纯音频播放 (commit) dcd40b2 - radio: 支持 HTTP-FLV 直播和按需 HLS 回退 (commit) 5629c25 - p…",
    "source_url": "https://github.com/songloft-org/songloft/releases/tag/v2.13.13",
    "page_url": "https://www.firmwarely.com/devices/songloft/"
+  },
+  "ollama": {
+   "id": "ollama",
+   "brand": "Ollama",
+   "model": "Local LLM runner",
+   "category": "A",
+   "status": "update",
+   "version": "0.40.17",
+   "previous": "0.40.16",
+   "released": "2026-11-10",
+   "date_known": true,
+   "eol": false,
+   "notes": "Inkling 2 Mini from Thinking Machines is a 26B parameter model with 5.4B active. Its looped layers give it more computation per token than its size suggests, and it still fits on a Mac at about 20GB. It handles text and images, tool calls, and thinking, and scores 79.2% on SWE-Bench Verified). olla…",
+   "source_url": "https://github.com/ollama/ollama/releases/tag/v0.40.17",
+   "page_url": "https://www.firmwarely.com/devices/ollama/"
   }
  }
 }
