@@ -136,6 +136,21 @@
    "notes": "\\[Breaking\\] - Use the new token format (support for the legacy token format will be removed in v2.3.0) - Clear all session tokens by default when disabling a user - Clear all session tokens when deleting a user - Disable automatic login after email verification - Delete temporary tokens before per…",
    "source_url": "https://github.com/mayswind/ezbookkeeping/releases/tag/v2.2.0",
    "page_url": "https://www.firmwarely.com/devices/ezbookkeeping/"
+  },
+  "fugleramme": {
+   "id": "fugleramme",
+   "brand": "Fugleramme",
+   "model": "Raspberry Pi bird camera",
+   "category": "M",
+   "status": "update",
+   "version": "0.33.0",
+   "previous": "0.32.0",
+   "released": "2026-11-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "v0.33.0 (2026-11-21): _This release is published under the MIT License._ New: Serve the frame under a base path (#​403, f0bc396) web: Add a script-free /plain page for old browsers (#​390, 233c9fc) #​355 wrap a frame as a gift (#​369, 883431a) Pack /frame.e6 for the 7.3\" panel (#​346, 82b91c5) Fixe…",
+   "source_url": "https://github.com/arnegiacomo/fugleramme/releases/tag/v0.33.0",
+   "page_url": "https://www.firmwarely.com/devices/fugleramme/"
   }
  }
 }
