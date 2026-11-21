@@ -54360,6 +54360,24 @@
     "security_fix_plain": 0.33,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "libreelec",
+   "version": "12.95.1",
+   "name": "LibreELEC Media player OS (Raspberry Pi)",
+   "judged_at": "2026-11-21T20:21:03+00:00",
+   "notes_chars": 18,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

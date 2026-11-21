@@ -211,6 +211,21 @@
    "notes": "build: 更新依赖 build: 更新 docker 基础镜像以处理 CVE-2026-114938",
    "source_url": "https://github.com/wushuo894/ani-rss/releases/tag/v3.2.63",
    "page_url": "https://www.firmwarely.com/devices/ani-rss/"
+  },
+  "libreelec": {
+   "id": "libreelec",
+   "brand": "LibreELEC",
+   "model": "Media player OS (Raspberry Pi)",
+   "category": "M",
+   "status": "update",
+   "version": "12.95.1",
+   "previous": "12.2.1",
+   "released": "2026-11-14",
+   "date_known": true,
+   "eol": false,
+   "notes": "LE13 Beta1 12.95.1",
+   "source_url": "https://github.com/LibreELEC/LibreELEC.tv/releases/tag/12.95.1",
+   "page_url": "https://www.firmwarely.com/devices/libreelec/"
   }
  }
 }
