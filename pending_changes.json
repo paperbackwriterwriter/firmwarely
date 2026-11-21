@@ -631,6 +631,21 @@
    "notes": "Changelog: [3.71.0] - 2026-11-21: ✨ Features: tests: Copy the output of test runs to a file in temp (b02b88b) instancebackups: Compact the Databasus backups section and run recovered installations at once (dd6ca50) instancebackups: Simplify master-key onboarding and backup reminders (ed92bd9) backu…",
    "source_url": "https://github.com/databasus/databasus/releases/tag/v3.71.0",
    "page_url": "https://www.firmwarely.com/devices/databasus/"
+  },
+  "songloft": {
+   "id": "songloft",
+   "brand": "Songloft",
+   "model": "Music server",
+   "category": "A",
+   "status": "update",
+   "version": "2.13.13",
+   "previous": "2.13.12",
+   "released": "2026-11-21",
+   "date_known": true,
+   "eol": false,
+   "notes": "Songloft v2.13.13 安装与选包 / Installation: 中文 · English 包名清单 / Package names: 中文 · English 更新记录 / Changelog: :sparkles: New Features: c3bd9be - 歌曲评级（rating 0-100），支持单首/批量设置、过滤、排序与分面聚合 (PR #​574) b348661 - radio: 支持无后缀 HLS 电台和纯音频播放 (commit) dcd40b2 - radio: 支持 HTTP-FLV 直播和按需 HLS 回退 (commit) 5629c25 - p…",
+   "source_url": "https://github.com/songloft-org/songloft/releases/tag/v2.13.13",
+   "page_url": "https://www.firmwarely.com/devices/songloft/"
   }
  }
 }
