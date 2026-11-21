@@ -593,13 +593,13 @@
    "model": "Home Assistant integration for Tapo cameras",
    "category": "S",
    "status": "update",
-   "version": "7.3.0",
+   "version": "7.3.1",
    "previous": "7.2.15",
-   "released": "2026-11-20",
+   "released": "2026-11-21",
    "date_known": true,
    "eol": false,
-   "notes": "7.3.0 🎙️ 🔊: Sound and two-way audio: Live views now use WebRTC for both RTSP and Direct streams, bringing video, sound, and two-way talk to Home Assistant’s built-in player. Direct streams now have sound too! No custom card or go2rtc setup is needed. You can use the microphone button to talk throug…",
-   "source_url": "https://github.com/JurajNyiri/HomeAssistant-Tapo-Control/releases/tag/7.3.0",
+   "notes": "Changes: Fix #​1486: artifacts in recordings with ffmpeg-option \"use_wallclock_as_timestamps\", thank you Fix: camera.record now works on direct entities, with sound",
+   "source_url": "https://github.com/JurajNyiri/HomeAssistant-Tapo-Control/releases/tag/7.3.1",
    "page_url": "https://www.firmwarely.com/devices/homeassistant-tapo-control/"
   },
   "music-assistant": {
