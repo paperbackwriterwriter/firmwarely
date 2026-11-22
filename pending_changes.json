@@ -218,13 +218,13 @@
    "model": "Turn any Android device",
    "category": "S",
    "status": "update",
-   "version": "2026.11.26",
+   "version": "2026.11.27",
    "previous": "2026.11.25",
    "released": "2026-11-22",
    "date_known": true,
    "eol": false,
-   "notes": "What's new in Kiosk Satellite 2026.11.26: This is a small maintenance release. It fixes static during AirPlay playback, Ground Control showing Not reachable on a kiosk with no name and Return to center closing Now Playing over and over with Compass navigation. It also shows photos edited in Immich …",
-   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.26",
+   "notes": "What's new in Kiosk Satellite 2026.11.27: This is a small maintenance release. It fixes answers ending about a second after they started with nobody saying \"stop\" and the assistant's voice coming back through the microphone at the start of some answers. The Ground Control page also shows the Ground…",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.27",
    "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   },
   "openmausbot": {
