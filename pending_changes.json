@@ -68,13 +68,13 @@
    "model": "Turn any Android device",
    "category": "S",
    "status": "update",
-   "version": "2026.11.24",
+   "version": "2026.11.25",
    "previous": "2026.11.23",
-   "released": "2026-11-21",
+   "released": "2026-11-22",
    "date_known": true,
    "eol": false,
-   "notes": "What's new in Kiosk Satellite 2026.11.24: This is one of the biggest releases of Kiosk Satellite. It launches together with Kiosk Satellite Ground Control, a new companion service, and its first component, Voice Match. Voice Match cuts a TV or other people out of your voice commands and adds speake…",
-   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.24",
+   "notes": "What's new in Kiosk Satellite 2026.11.25: This is a follow-up to the big Ground Control release. Ground Control now syncs through Fleet Management, Home Assistant Cloud speech-to-text works with Trimming, and Voice Match can be opened on an Echo Dot. This release also crops Immich photos around the…",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.25",
    "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   },
   "titanium-web-proxy": {
