@@ -346,6 +346,21 @@
    "notes": "Changed: The budget and the subscriptions check every request against the published API description. This is about your own API clients; the app sends nothing that is refused now. Under /api/v1/budget (accounts, categories, entries, series, loans, plans, statistics, transfers) and /api/v1/budget/su…",
    "source_url": "https://github.com/ulsklyc/yuvomi/releases/tag/v2.94.0",
    "page_url": "https://www.firmwarely.com/devices/yuvomi/"
+  },
+  "dashy": {
+   "id": "dashy",
+   "brand": "Dashy",
+   "model": "Dashboard",
+   "category": "A",
+   "status": "critical",
+   "version": "4.10.0",
+   "previous": "4.9.0",
+   "released": "2026-11-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: ✨ New Features: Set color for item icons, without applying it to icon text 🦋 Bug Fixes: Fixes NextCloud widget crash on tralsation fix: accept IPv6 connections by default Fix workspace header and search Security fix for when using auth headers with lookalike origins Fix theme flash …",
+   "source_url": "https://github.com/lissy93/dashy/releases/tag/4.10.0",
+   "page_url": "https://www.firmwarely.com/devices/dashy/"
   }
  }
 }

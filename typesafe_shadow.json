@@ -55170,6 +55170,24 @@
     "security_fix_plain": 0.11,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "dashy",
+   "version": "4.10.0",
+   "name": "Dashy Dashboard",
+   "judged_at": "2026-11-22T22:34:34+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.94,
+    "security_fix_plain": 0.87,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
