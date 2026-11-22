@@ -331,6 +331,36 @@
    "notes": "New images: Odroid C5 | Support and images for this new Hardkernel SBC with Amlogic S905X5M SoC have been added. Orange Pi 6/6 Plus | Support and images for these new Orange Pi 6 family SBCs with CIX P1 dodeca-core (12) SoC have been added. The image uses a generic ACPI kernel, and bootloader + dev…",
    "source_url": "https://github.com/MichaIng/DietPi/releases/tag/v10.9",
    "page_url": "https://www.firmwarely.com/devices/dietpi/"
+  },
+  "obs-studio": {
+   "id": "obs-studio",
+   "brand": "OBS",
+   "model": "OBS Studio",
+   "category": "P",
+   "status": "update",
+   "version": "33.0.3",
+   "previous": "33.0.2",
+   "released": "2026-11-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "33.0.3 Hotfix Changes --------------------- Fixed a crash on Windows in 33.0.2 with certain older CPUs [R1CH/Warchamp7] 33.0.2 Hotfix Changes --------------------- Fixed macOS Screen Capture not working on Intel-based systems [jcm93] Fixed Hybrid MP4 not splitting by time [Johnsoac671] Fixed freque…",
+   "source_url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.3",
+   "page_url": "https://www.firmwarely.com/devices/obs-studio/"
+  },
+  "dbatools": {
+   "id": "dbatools",
+   "brand": "dbatools",
+   "model": "SQL Server automation",
+   "category": "A",
+   "status": "update",
+   "version": "2.9.2",
+   "previous": "2.9.1",
+   "released": "2026-11-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Sync-DbaLoginPassword - Output the Failed row of a login that could not be synced Bump anthropics/claude-code-action from 1.0.248 to 1.0.252 in the github-actions group by in https://github.com/dataplat/dbatools/pull/10805 Tests - Restore max server memory, count only the sessions a…",
+   "source_url": "https://github.com/dataplat/dbatools/releases/tag/v2.9.2",
+   "page_url": "https://www.firmwarely.com/devices/dbatools/"
   }
  }
 }
