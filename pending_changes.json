@@ -143,13 +143,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.10.10.3-stable",
+   "version": "26.3.69.4-lts",
    "previous": "26.9.35.9-stable",
    "released": "2026-11-22",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.10.10.3-stable v26.10.10.3-stable",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.10.10.3-stable",
+   "notes": "Release v26.3.69.4-lts v26.3.69.4-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.3.69.4-lts",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "weaviate": {
@@ -166,6 +166,21 @@
    "notes": "Breaking Changes: none New Features: none Fixes: Fix sort and aggregate results while a reindex enables a filter index Let a replica movement replay writes stored without a class name Fail over off a recovering replica on replicated reads and vector search reindex: fix tenant and schema changes sta…",
    "source_url": "https://github.com/weaviate/weaviate/releases/tag/v1.40.7",
    "page_url": "https://www.firmwarely.com/devices/weaviate/"
+  },
+  "ipsw": {
+   "id": "ipsw",
+   "brand": "Ipsw",
+   "model": "IOS/macOS Research Swiss Army Knife",
+   "category": "M",
+   "status": "update",
+   "version": "3.1.750",
+   "previous": "3.1.749",
+   "released": "2026-11-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: New Features: b6b732e5ef6c2f2d0407b40fbf020dab23d3482b: feat(aea,download): add random-access AEA and HTTP range readers (#​1408) () be95f292f2806066d7f1be209327a08124d0e21f: feat(download): add optional extension registration () 5d96e8d73a66d4aba22f19df9b3aa5db087f28ed: feat(extract): r…",
+   "source_url": "https://github.com/blacktop/ipsw/releases/tag/v3.1.750",
+   "page_url": "https://www.firmwarely.com/devices/ipsw/"
   }
  }
 }
