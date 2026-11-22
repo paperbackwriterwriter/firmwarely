@@ -38,13 +38,13 @@
    "model": "DNS blocklists",
    "category": "R",
    "status": "update",
-   "version": "37522026.326.44271",
+   "version": "37522026.326.58261",
    "previous": "37522026.326.564",
    "released": "2026-11-22",
    "date_known": true,
    "eol": false,
-   "notes": "#​12523 #​12522 #​12521 #​12519 #​12518 #​12517 #​12516 #​12515",
-   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.326.44271",
+   "notes": "#​12533 #​12532 #​12531 #​12530 #​12529 #​12528 #​12527 #​12526 #​12525 #​12524 #​2264",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.326.58261",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   },
   "mailu": {
@@ -226,6 +226,21 @@
    "notes": "What's new in Kiosk Satellite 2026.11.26: This is a small maintenance release. It fixes static during AirPlay playback, Ground Control showing Not reachable on a kiosk with no name and Return to center closing Now Playing over and over with Compass navigation. It also shows photos edited in Immich …",
    "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.26",
    "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
+  },
+  "openmausbot": {
+   "id": "openmausbot",
+   "brand": "OpenMausBot",
+   "model": "Grok Bot alternative",
+   "category": "A",
+   "status": "update",
+   "version": "0.1.177",
+   "previous": "0.1.176",
+   "released": "2026-11-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's new in 0.1.177: Bots and work: See what your bots said to each other. When a bot hands work to a teammate, the hand-off shows as a small chip with the teammate's face and name. Click it to read their conversation right in the chat, live, with \"Back\" to return to where you were. Handed-off co…",
+   "source_url": "https://github.com/milind-soni/OpenMausBot/releases/tag/v0.1.177",
+   "page_url": "https://www.firmwarely.com/devices/openmausbot/"
   }
  }
 }
