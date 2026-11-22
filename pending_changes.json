@@ -38,13 +38,13 @@
    "model": "DNS blocklists",
    "category": "R",
    "status": "update",
-   "version": "37522026.326.33509",
+   "version": "37522026.326.44271",
    "previous": "37522026.326.564",
    "released": "2026-11-22",
    "date_known": true,
    "eol": false,
-   "notes": "#​12514 #​12513 #​12512 #​12511 #​12510 #​12509 #​12508 #​12507 #​12506 #​12505 #​12504 #​12503 #​12502 #​12501 #​12500 #​12499 #​12498 #​12497 #​12496 #​12495 #​12494 #​12493 #​12492 #​12491 #​12490 #​12489 #​12488 #​12485",
-   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.326.33509",
+   "notes": "#​12523 #​12522 #​12521 #​12519 #​12518 #​12517 #​12516 #​12515",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.326.44271",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   },
   "mailu": {
@@ -106,6 +106,21 @@
    "notes": "What's Changed: Security fixes: System API tokens now always respect their granted abilities, including for entities owned by the system user, the trash endpoints, and creating lists, tags and notes. Changing or resetting your password now ends all other sessions. Private lists and tags of other us…",
    "source_url": "https://github.com/Kovah/LinkAce/releases/tag/v2.6.4",
    "page_url": "https://www.firmwarely.com/devices/linkace/"
+  },
+  "unpoller": {
+   "id": "unpoller",
+   "brand": "UnPoller",
+   "model": "UniFi metrics exporter",
+   "category": "R",
+   "status": "update",
+   "version": "5.10.0",
+   "previous": "5.9.6",
+   "released": "2026-11-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: 7550a6f18d33eb088bc4971e4e94d8b809e34a06 feat(promunifi): TLS, client certificates and basic auth via exporter-toolkit web config",
+   "source_url": "https://github.com/unpoller/unpoller/releases/tag/v5.10.0",
+   "page_url": "https://www.firmwarely.com/devices/unpoller/"
   }
  }
 }

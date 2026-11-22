@@ -54774,6 +54774,42 @@
     "security_fix_plain": 0.96,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.326.44271",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-11-22T12:25:59+00:00",
+   "notes_chars": 63,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "unpoller",
+   "version": "5.10.0",
+   "name": "UnPoller UniFi metrics exporter",
+   "judged_at": "2026-11-22T12:25:59+00:00",
+   "notes_chars": 140,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
