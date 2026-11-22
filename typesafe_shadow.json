@@ -55188,6 +55188,60 @@
     "security_fix_plain": 0.87,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "arc",
+   "version": "4.2.11",
+   "name": "Arc Redpill loader for Synology DSM",
+   "judged_at": "2026-11-22T23:25:39+00:00",
+   "notes_chars": 183,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "copyparty",
+   "version": "1.20.27",
+   "name": "copyparty Portable file server",
+   "judged_at": "2026-11-22T23:25:39+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.98,
+    "security_fix_plain": 0.95,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "databasus",
+   "version": "3.72.0",
+   "name": "Databasus PostgreSQL backup tool",
+   "judged_at": "2026-11-22T23:25:39+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
