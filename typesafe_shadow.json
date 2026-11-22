@@ -55044,6 +55044,60 @@
     "security_fix_plain": 0.76,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.326.68372",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-11-22T19:50:08+00:00",
+   "notes_chars": 37,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "softether-vpn",
+   "version": "5.2.5191",
+   "name": "SoftEther Multi-protocol VPN server",
+   "judged_at": "2026-11-22T19:50:08+00:00",
+   "notes_chars": 117,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "metube",
+   "version": "2026.11.22",
+   "name": "MeTube yt-dlp web UI",
+   "judged_at": "2026-11-22T19:50:08+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

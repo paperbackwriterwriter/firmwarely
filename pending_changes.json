@@ -38,13 +38,13 @@
    "model": "DNS blocklists",
    "category": "R",
    "status": "update",
-   "version": "37522026.326.58261",
+   "version": "37522026.326.68372",
    "previous": "37522026.326.564",
    "released": "2026-11-22",
    "date_known": true,
    "eol": false,
-   "notes": "#​12533 #​12532 #​12531 #​12530 #​12529 #​12528 #​12527 #​12526 #​12525 #​12524 #​2264",
-   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.326.58261",
+   "notes": "37522026.326.68372 37522026.326.68372",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.326.68372",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   },
   "mailu": {
@@ -271,6 +271,36 @@
    "notes": "3.3.22 is a security hardening release. It tightens several admin, OIDC, updater and static-file code paths, and fixes the OIDC login page hanging, plugin uninstall breaking core, and an almost empty admin plugin catalog. Upgrading is recommended. Security: Diagnostics — the client error-reporting …",
    "source_url": "https://github.com/ether/etherpad/releases/tag/v3.3.22",
    "page_url": "https://www.firmwarely.com/devices/etherpad/"
+  },
+  "softether-vpn": {
+   "id": "softether-vpn",
+   "brand": "SoftEther",
+   "model": "Multi-protocol VPN server",
+   "category": "R",
+   "status": "update",
+   "version": "5.2.5191",
+   "previous": "5.2.5190",
+   "released": "2026-11-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: bump version Full Changelog: https://github.com/SoftEtherVPN/SoftEtherVPN/compare/5.2.5190...5.2.5191",
+   "source_url": "https://github.com/SoftEtherVPN/SoftEtherVPN/releases/tag/5.2.5191",
+   "page_url": "https://www.firmwarely.com/devices/softether-vpn/"
+  },
+  "metube": {
+   "id": "metube",
+   "brand": "MeTube",
+   "model": "yt-dlp web UI",
+   "category": "A",
+   "status": "update",
+   "version": "2026.11.22",
+   "previous": "2026.11.14",
+   "released": "2026-11-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Docker images have been built and pushed: Docker Hub: alexta69/metube:latest alexta69/metube:2026.11.22 GitHub Container Registry: ghcr.io/alexta69/metube:latest ghcr.io/alexta69/metube:2026.11.22 Changes: fix: wrap the footer on narrow screens instead of overflowing (closes #​1129) (54a72d6) fix: …",
+   "source_url": "https://github.com/alexta69/metube/releases/tag/2026.11.22",
+   "page_url": "https://www.firmwarely.com/devices/metube/"
   }
  }
 }
