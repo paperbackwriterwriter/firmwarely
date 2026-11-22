@@ -143,13 +143,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.3.69.4-lts",
+   "version": "26.8.44.3-lts",
    "previous": "26.9.35.9-stable",
    "released": "2026-11-22",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.3.69.4-lts v26.3.69.4-lts",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.3.69.4-lts",
+   "notes": "Release v26.8.44.3-lts v26.8.44.3-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.44.3-lts",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "weaviate": {
@@ -196,6 +196,36 @@
    "notes": "ESPConnect v1.1.25: Browser-based control center for ESP32 and ESP8266 boards - now as a standalone desktop application. Improvement: Added ESPImageServer to Maker Tools with a preview, a link to its repository, and a video tutorial. Fixed: Extended ESP synchronization errors now show manual boot-m…",
    "source_url": "https://github.com/thelastoutpostworkshop/ESPConnect/releases/tag/v1.1.25",
    "page_url": "https://www.firmwarely.com/devices/espconnect/"
+  },
+  "windmill": {
+   "id": "windmill",
+   "brand": "Windmill",
+   "model": "Scripts and workflows",
+   "category": "A",
+   "status": "update",
+   "version": "1.882.0",
+   "previous": "1.881.1",
+   "released": "2026-11-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.882.0 (2026-11-22): Features: add an instance setting for raw app versions to keep (#​12577) (4e5fc30)",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.882.0",
+   "page_url": "https://www.firmwarely.com/devices/windmill/"
+  },
+  "kiosk-satellite": {
+   "id": "kiosk-satellite",
+   "brand": "Kiosk Satellite",
+   "model": "Turn any Android device",
+   "category": "S",
+   "status": "update",
+   "version": "2026.11.26",
+   "previous": "2026.11.25",
+   "released": "2026-11-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's new in Kiosk Satellite 2026.11.26: This is a small maintenance release. It fixes static during AirPlay playback, Ground Control showing Not reachable on a kiosk with no name and Return to center closing Now Playing over and over with Compass navigation. It also shows photos edited in Immich …",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.26",
+   "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   }
  }
 }

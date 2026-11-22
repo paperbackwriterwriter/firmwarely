@@ -54900,6 +54900,60 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.8.44.3-lts",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-11-22T15:49:16+00:00",
+   "notes_chars": 37,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "windmill",
+   "version": "1.882.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-11-22T15:49:16+00:00",
+   "notes_chars": 104,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "kiosk-satellite",
+   "version": "2026.11.26",
+   "name": "Kiosk Satellite Turn any Android device",
+   "judged_at": "2026-11-22T15:49:16+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
