@@ -256,6 +256,21 @@
    "notes": ":sparkles: New Features: f7c8591 - add versioning to content blocks (commit) 4fc43e7 - add site delete force option for root admins (commit) a3ada30 - create page from template via URL (commit) 0361ab8 - mark page as template + create from template dialog (commit) 2b1f72c - shrink header on scroll …",
    "source_url": "https://github.com/requarks/wiki/releases/tag/3.6.0",
    "page_url": "https://www.firmwarely.com/devices/wiki-js/"
+  },
+  "etherpad": {
+   "id": "etherpad",
+   "brand": "Etherpad",
+   "model": "Collaborative editor",
+   "category": "A",
+   "status": "critical",
+   "version": "3.3.22",
+   "previous": "3.3.21",
+   "released": "2026-11-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "3.3.22 is a security hardening release. It tightens several admin, OIDC, updater and static-file code paths, and fixes the OIDC login page hanging, plugin uninstall breaking core, and an almost empty admin plugin catalog. Upgrading is recommended. Security: Diagnostics — the client error-reporting …",
+   "source_url": "https://github.com/ether/etherpad/releases/tag/v3.3.22",
+   "page_url": "https://www.firmwarely.com/devices/etherpad/"
   }
  }
 }
