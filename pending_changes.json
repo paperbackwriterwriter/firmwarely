@@ -1,5 +1,51 @@
 {
- "since": null,
+ "since": "2026-11-22T09:53:41+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "lobe-chat": {
+   "id": "lobe-chat",
+   "brand": "LobeHub",
+   "model": "Lobe Chat",
+   "category": "A",
+   "status": "update",
+   "version": "2.3.5",
+   "previous": "2.3.4",
+   "released": "2026-11-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release v2.3.5: From PR #​23632: https://github.com/lobehub/lobehub/pull/23632 Summary: Contribution source: AI-assisted Backport the cyan, green and red agent cover colors from #​23624 to the community release branch. A fresh install of main can resolve/ui.19.0 within the declared dependency range…",
+   "source_url": "https://github.com/lobehub/lobehub/releases/tag/v2.3.5",
+   "page_url": "https://www.firmwarely.com/devices/lobe-chat/"
+  },
+  "memos": {
+   "id": "memos",
+   "brand": "Memos",
+   "model": "Note taking",
+   "category": "A",
+   "status": "update",
+   "version": "26.11.2",
+   "previous": "26.11.1",
+   "released": "2026-11-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Memos 26.11.2 shows comments alongside memos in lists, lets you reorder saved Views, and adds a full-width timeline. Calendar navigation, MariaDB compatibility, and editor reliability also improve. Highlights: Comments in lists: Turn on Include comments in Settings › Preferences › This device to sh…",
+   "source_url": "https://github.com/usememos/memos/releases/tag/26.11.2",
+   "page_url": "https://www.firmwarely.com/devices/memos/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.326.33509",
+   "previous": "37522026.326.564",
+   "released": "2026-11-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​12514 #​12513 #​12512 #​12511 #​12510 #​12509 #​12508 #​12507 #​12506 #​12505 #​12504 #​12503 #​12502 #​12501 #​12500 #​12499 #​12498 #​12497 #​12496 #​12495 #​12494 #​12493 #​12492 #​12491 #​12490 #​12489 #​12488 #​12485",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.326.33509",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  }
+ }
 }
