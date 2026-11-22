@@ -61,6 +61,51 @@
    "notes": "Changelog :mailbox: --------- Exclude List- and Autocrypt headers from full-text search indexing. Overlong tokens (e.g. tracking URLs in List-Unsubscribe) made fts-flatcurve drop whole batches of messages from the index (\"Term too long\"). This release was triggered by PR/Issue 4219. The release not…",
    "source_url": "https://github.com/Mailu/Mailu/releases/tag/2024.06.72",
    "page_url": "https://www.firmwarely.com/devices/mailu/"
+  },
+  "dnscrypt-proxy": {
+   "id": "dnscrypt-proxy",
+   "brand": "DNSCrypt",
+   "model": "Encrypted DNS proxy",
+   "category": "R",
+   "status": "update",
+   "version": "2.2.21",
+   "previous": "2.1.20",
+   "released": "2026-11-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release refs/tags/2.2.21 2.2.21",
+   "source_url": "https://github.com/DNSCrypt/dnscrypt-proxy/releases/tag/2.2.21",
+   "page_url": "https://www.firmwarely.com/devices/dnscrypt-proxy/"
+  },
+  "sherpa-onnx": {
+   "id": "sherpa-onnx",
+   "brand": "sherpa-onnx",
+   "model": "Offline speech recognition and TTS",
+   "category": "M",
+   "status": "update",
+   "version": "2.0.3",
+   "previous": "2.0.2",
+   "released": "2026-11-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: wespeaker: remove the no-op Pad before AveragePool in CAM++ models (#​4201) Cluster only embeddings with enough clean speech in speaker diarization Fix publishing nuget packages TTS engine: make the Pali engine work as the system TTS Add CreateStream() and Process(stream) to Offline…",
+   "source_url": "https://github.com/k2-fsa/sherpa-onnx/releases/tag/v2.0.3",
+   "page_url": "https://www.firmwarely.com/devices/sherpa-onnx/"
+  },
+  "linkace": {
+   "id": "linkace",
+   "brand": "LinkAce",
+   "model": "Bookmark archive",
+   "category": "A",
+   "status": "critical",
+   "version": "2.6.4",
+   "previous": "2.6.3",
+   "released": "2026-11-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Security fixes: System API tokens now always respect their granted abilities, including for entities owned by the system user, the trash endpoints, and creating lists, tags and notes. Changing or resetting your password now ends all other sessions. Private lists and tags of other us…",
+   "source_url": "https://github.com/Kovah/LinkAce/releases/tag/v2.6.4",
+   "page_url": "https://www.firmwarely.com/devices/linkace/"
   }
  }
 }

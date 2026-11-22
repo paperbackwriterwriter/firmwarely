@@ -54720,6 +54720,60 @@
     "security_fix_plain": 0.05,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "dnscrypt-proxy",
+   "version": "2.2.21",
+   "name": "DNSCrypt Encrypted DNS proxy",
+   "judged_at": "2026-11-22T11:35:22+00:00",
+   "notes_chars": 31,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "sherpa-onnx",
+   "version": "2.0.3",
+   "name": "sherpa-onnx Offline speech recognition and TTS",
+   "judged_at": "2026-11-22T11:35:22+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "linkace",
+   "version": "2.6.4",
+   "name": "LinkAce Bookmark archive",
+   "judged_at": "2026-11-22T11:35:22+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.98,
+    "security_fix_plain": 0.96,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
