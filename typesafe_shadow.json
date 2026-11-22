@@ -54594,6 +54594,42 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "adguardhome-sync",
+   "version": "0.10.1",
+   "name": "AdGuard Home Sync",
+   "judged_at": "2026-11-22T06:23:42+00:00",
+   "notes_chars": 190,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.35,
+    "security_fix_plain": 0.39,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "jackett",
+   "version": "0.25.24",
+   "name": "Jackett Torrent indexer proxy",
+   "judged_at": "2026-11-22T06:23:42+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

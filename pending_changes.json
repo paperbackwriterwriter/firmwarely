@@ -361,6 +361,36 @@
    "notes": "What's Changed: Sync-DbaLoginPassword - Output the Failed row of a login that could not be synced Bump anthropics/claude-code-action from 1.0.248 to 1.0.252 in the github-actions group by in https://github.com/dataplat/dbatools/pull/10805 Tests - Restore max server memory, count only the sessions a…",
    "source_url": "https://github.com/dataplat/dbatools/releases/tag/v2.9.2",
    "page_url": "https://www.firmwarely.com/devices/dbatools/"
+  },
+  "adguardhome-sync": {
+   "id": "adguardhome-sync",
+   "brand": "AdGuard",
+   "model": "Home Sync",
+   "category": "R",
+   "status": "update",
+   "version": "0.10.1",
+   "previous": "0.10.0",
+   "released": "2026-11-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: 1e930069b4ee92da763a965baa0138080598b3b0: fix: correct dns config sanitize (#​1010) () c31592bd7b37e1ea3d3e2a8926253aebe9ee6726: fix: mask cookies in the logged config (#​1009) ()",
+   "source_url": "https://github.com/bakito/adguardhome-sync/releases/tag/v0.10.1",
+   "page_url": "https://www.firmwarely.com/devices/adguardhome-sync/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.25.24",
+   "previous": "0.25.20",
+   "released": "2026-11-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: 9a143bd2902b7095814c3e639870ba7fe8682a5c momentpt: removed. resolves #​16567 7e095a9e57a2803235f14308b0d9b9ca7f1a251e sosulki: new domain resolves #​7559 2b194f4e72dcf4e74644163708f8433a1b68642a 52bt: new domains 6aa9ada40be1e73a3514b17c4f05207c3622bd19 tr4ker: switch to header x-api-key …",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.25.24",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
