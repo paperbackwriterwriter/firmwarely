@@ -46,6 +46,21 @@
    "notes": "#​12514 #​12513 #​12512 #​12511 #​12510 #​12509 #​12508 #​12507 #​12506 #​12505 #​12504 #​12503 #​12502 #​12501 #​12500 #​12499 #​12498 #​12497 #​12496 #​12495 #​12494 #​12493 #​12492 #​12491 #​12490 #​12489 #​12488 #​12485",
    "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.326.33509",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "mailu": {
+   "id": "mailu",
+   "brand": "Mailu",
+   "model": "Mail server",
+   "category": "A",
+   "status": "update",
+   "version": "2024.06.72",
+   "previous": "2024.06.71",
+   "released": "2026-11-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog :mailbox: --------- Exclude List- and Autocrypt headers from full-text search indexing. Overlong tokens (e.g. tracking URLs in List-Unsubscribe) made fts-flatcurve drop whole batches of messages from the index (\"Term too long\"). This release was triggered by PR/Issue 4219. The release not…",
+   "source_url": "https://github.com/Mailu/Mailu/releases/tag/2024.06.72",
+   "page_url": "https://www.firmwarely.com/devices/mailu/"
   }
  }
 }
