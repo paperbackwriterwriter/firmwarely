@@ -121,6 +121,51 @@
    "notes": "Changelog: 7550a6f18d33eb088bc4971e4e94d8b809e34a06 feat(promunifi): TLS, client certificates and basic auth via exporter-toolkit web config",
    "source_url": "https://github.com/unpoller/unpoller/releases/tag/v5.10.0",
    "page_url": "https://www.firmwarely.com/devices/unpoller/"
+  },
+  "redis": {
+   "id": "redis",
+   "brand": "Redis",
+   "model": "Redis",
+   "category": "A",
+   "status": "update",
+   "version": "8.12.0",
+   "previous": "8.10.3",
+   "released": "2026-11-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "This is the General Availability release of Redis 8.12 in Redis Open Source. Major changes compared to 8.10: Compressed bitmaps — Integrated redis-roaring into Redis core for lower memory usage and faster bitmap operations. Special thanks to Antonio Viggiano, the original creator of redis-roaring, …",
+   "source_url": "https://github.com/redis/redis/releases/tag/8.12.0",
+   "page_url": "https://www.firmwarely.com/devices/redis/"
+  },
+  "clickhouse": {
+   "id": "clickhouse",
+   "brand": "ClickHouse",
+   "model": "Analytics database",
+   "category": "A",
+   "status": "update",
+   "version": "26.10.10.3-stable",
+   "previous": "26.9.35.9-stable",
+   "released": "2026-11-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release v26.10.10.3-stable v26.10.10.3-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.10.10.3-stable",
+   "page_url": "https://www.firmwarely.com/devices/clickhouse/"
+  },
+  "weaviate": {
+   "id": "weaviate",
+   "brand": "Weaviate",
+   "model": "Vector database",
+   "category": "A",
+   "status": "update",
+   "version": "1.40.7",
+   "previous": "1.41.0-rc",
+   "released": "2026-11-20",
+   "date_known": true,
+   "eol": false,
+   "notes": "Breaking Changes: none New Features: none Fixes: Fix sort and aggregate results while a reindex enables a filter index Let a replica movement replay writes stored without a class name Fail over off a recovering replica on replicated reads and vector search reindex: fix tenant and schema changes sta…",
+   "source_url": "https://github.com/weaviate/weaviate/releases/tag/v1.40.7",
+   "page_url": "https://www.firmwarely.com/devices/weaviate/"
   }
  }
 }
