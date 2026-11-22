@@ -181,6 +181,21 @@
    "notes": "Changelog: New Features: b6b732e5ef6c2f2d0407b40fbf020dab23d3482b: feat(aea,download): add random-access AEA and HTTP range readers (#​1408) () be95f292f2806066d7f1be209327a08124d0e21f: feat(download): add optional extension registration () 5d96e8d73a66d4aba22f19df9b3aa5db087f28ed: feat(extract): r…",
    "source_url": "https://github.com/blacktop/ipsw/releases/tag/v3.1.750",
    "page_url": "https://www.firmwarely.com/devices/ipsw/"
+  },
+  "espconnect": {
+   "id": "espconnect",
+   "brand": "ESPConnect",
+   "model": "Zero-installation web application",
+   "category": "N",
+   "status": "update",
+   "version": "1.1.25",
+   "previous": "1.1.23",
+   "released": "2026-11-22",
+   "date_known": true,
+   "eol": false,
+   "notes": "ESPConnect v1.1.25: Browser-based control center for ESP32 and ESP8266 boards - now as a standalone desktop application. Improvement: Added ESPImageServer to Maker Tools with a preview, a link to its repository, and a video tutorial. Fixed: Extended ESP synchronization errors now show manual boot-m…",
+   "source_url": "https://github.com/thelastoutpostworkshop/ESPConnect/releases/tag/v1.1.25",
+   "page_url": "https://www.firmwarely.com/devices/espconnect/"
   }
  }
 }
