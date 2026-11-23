@@ -481,6 +481,21 @@
    "notes": "Changes:: bd5e25fa591821d320f61eb09e301c2af1404c8b byrutor: new engine. resolves #​9867 2e5dd860f272724546241027ed58d008cabd612c bytepeer: removed. resolves #​17266 281eff8992ad9d59bfca2e947d8514fe8cd81ba8 add zxxclub a French private site. resolves #​17287 350a5035900bc574cca28e7939d614f7d472e3df …",
    "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.25.28",
    "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "velero": {
+   "id": "velero",
+   "brand": "Velero",
+   "model": "Kubernetes backup",
+   "category": "N",
+   "status": "update",
+   "version": "1.19.0",
+   "previous": "1.18.4",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "v1.19: Download: https://github.com/velero-io/velero/releases/tag/v1.19.0 Container Image: velero/velero:v1.19.0 Documentation: https://velero.io/docs/v1.19/ Upgrading: https://velero.io/docs/v1.19/upgrade-to-1.19/ Highlights: Block data mover: Velero 1.19 introduces a block data mover (velero-bloc…",
+   "source_url": "https://github.com/velero-io/velero/releases/tag/v1.19.0",
+   "page_url": "https://www.firmwarely.com/devices/velero/"
   }
  }
 }
