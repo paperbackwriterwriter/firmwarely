@@ -361,6 +361,21 @@
    "notes": "Installation Guide: https://docs.onedev.io/category/installation-guide Change Log: https://code.onedev.io/onedev/server/~builds/8892/fixed-issues?query=%22State%22+is+%22Released%22+order+by+%22Type%22+asc+%2C+%22Priority%22+desc Incompatibilities: https://code.onedev.io/onedev/server/~builds/8892/…",
    "source_url": "https://github.com/theonedev/onedev/releases/tag/v17.2.3",
    "page_url": "https://www.firmwarely.com/devices/onedev/"
+  },
+  "traefik": {
+   "id": "traefik",
+   "brand": "Traefik Labs",
+   "model": "Traefik Proxy",
+   "category": "R",
+   "status": "update",
+   "version": "3.8.0",
+   "previous": "3.7.19",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Important: Please read the migration guide. Enhancement: [acme] Add reusePrivateKey option (#​13004) [docker, k8s/ingress, middleware, k8s/crd, k8s/gatewayapi] Add per router responding timeouts (#​13537) [k8s] Strip managedFields in informers (#​13396) [k8s, k8s/gatewayapi] Support BackendTLSPolic…",
+   "source_url": "https://github.com/traefik/traefik/releases/tag/v3.8.0",
+   "page_url": "https://www.firmwarely.com/devices/traefik/"
   }
  }
 }
