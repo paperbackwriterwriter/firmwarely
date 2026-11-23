@@ -511,6 +511,21 @@
    "notes": "Changes: #​5159 Add Traditional Chinese (zh-Hant) translation #​5172 Update translations #​5192 Add Serbian translations (sr and sr-Latn) #​5202 Require Home Assistant 2026.6 and adopt the official pytest plugin 💡 Power profiles: 14 new power profiles,,,,,,,,,,, and — See what's new #​5121 Add batt…",
    "source_url": "https://github.com/bramstroker/homeassistant-powercalc/releases/tag/v1.27.1",
    "page_url": "https://www.firmwarely.com/devices/homeassistant-powercalc/"
+  },
+  "opentofu": {
+   "id": "opentofu",
+   "brand": "OpenTofu",
+   "model": "Infrastructure as code",
+   "category": "A",
+   "status": "critical",
+   "version": "1.13.10",
+   "previous": "1.13.9",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.13.10: SECURITY ADVISORIES: Upgrade Go toolchain to 1.27.4 to address GO-2026-6859, an HTTP/1 server crash due to a MaxBytesReader header race. (#​4831) BUG FIXES: Overriding resources for indexed modules now works correctly during tofu test. (#​4859) Fix symbol libraries preventing plan when use…",
+   "source_url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.10",
+   "page_url": "https://www.firmwarely.com/devices/opentofu/"
   }
  }
 }
