@@ -6,7 +6,7 @@
   <url><loc>https://www.firmwarely.com/devices/pi-hole/</loc><lastmod>2026-11-11</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/adguard-home/</loc><lastmod>2026-11-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/tailscale/</loc><lastmod>2026-11-12</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/home-assistant-core/</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/home-assistant-core/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/zigbee2mqtt/</loc><lastmod>2026-11-01</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/frigate-nvr/</loc><lastmod>2026-11-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/octoprint/</loc><lastmod>2026-11-18</lastmod></url>
@@ -40,7 +40,7 @@
   <url><loc>https://www.firmwarely.com/devices/crowdsec/</loc><lastmod>2026-10-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/fail2ban/</loc><lastmod>2026-08-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/openvpn/</loc><lastmod>2026-11-05</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/softether-vpn/</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/softether-vpn/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/gluetun/</loc><lastmod>2026-07-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/raspap/</loc><lastmod>2026-11-21</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/frrouting/</loc><lastmod>2026-08-31</lastmod></url>
@@ -84,7 +84,7 @@
   <url><loc>https://www.firmwarely.com/devices/sonarr/</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/radarr/</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/lidarr/</loc><lastmod>2026-10-26</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/prowlarr/</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/prowlarr/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/bazarr/</loc><lastmod>2026-09-26</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/readarr/</loc><lastmod>2025-06-15</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/overseerr/</loc><lastmod>2026-02-15</lastmod></url>

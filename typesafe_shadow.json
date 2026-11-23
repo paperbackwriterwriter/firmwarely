@@ -56160,6 +56160,60 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "home-assistant-core",
+   "version": "2026.11.3",
+   "name": "Home Assistant Core (monthly release)",
+   "judged_at": "2026-11-23T20:53:21+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "softether-vpn",
+   "version": "5.2.5192",
+   "name": "SoftEther Multi-protocol VPN server",
+   "judged_at": "2026-11-23T20:53:21+00:00",
+   "notes_chars": 24,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "prowlarr",
+   "version": "3.1.0.5799",
+   "name": "Prowlarr Indexer manager",
+   "judged_at": "2026-11-23T20:53:21+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

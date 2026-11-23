@@ -541,6 +541,51 @@
    "notes": "The following are some highlighted updates with the newest release for InfluxDB 3. Learn more via our full Release Notes. Updates: Core: Features: influxdb3 update trigger re-fetches gh: plugins: To load new code for a trigger whose plugin uses a gh: path, pass that path to influxdb3 update trigger…",
    "source_url": "https://github.com/influxdata/influxdb/releases/tag/v3.12.3",
    "page_url": "https://www.firmwarely.com/devices/influxdb/"
+  },
+  "home-assistant-core": {
+   "id": "home-assistant-core",
+   "brand": "Home Assistant",
+   "model": "Core (monthly release)",
+   "category": "S",
+   "status": "update",
+   "version": "2026.11.3",
+   "previous": "2026.11.2",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Fix add_bonus_time selector range in Nintendo Parental Controls ([] - [#​192891]) ([nintendo_parental_controls docs]) Re-login Vodafone Station on session expired by the router ([] - [#​193102]) ([vodafone_station docs]) Bump aioamazondevices to 17.3.2 ([] - [#​193129]) ([alexa_devices docs]) (depe…",
+   "source_url": "https://github.com/home-assistant/core/releases/tag/2026.11.3",
+   "page_url": "https://www.firmwarely.com/devices/home-assistant-core/"
+  },
+  "softether-vpn": {
+   "id": "softether-vpn",
+   "brand": "SoftEther",
+   "model": "Multi-protocol VPN server",
+   "category": "R",
+   "status": "update",
+   "version": "5.2.5192",
+   "previous": "5.2.5191",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "fix windows build number",
+   "source_url": "https://github.com/SoftEtherVPN/SoftEtherVPN/releases/tag/5.2.5192",
+   "page_url": "https://www.firmwarely.com/devices/softether-vpn/"
+  },
+  "prowlarr": {
+   "id": "prowlarr",
+   "brand": "Prowlarr",
+   "model": "Indexer manager",
+   "category": "A",
+   "status": "update",
+   "version": "3.1.0.5799",
+   "previous": "3.0.2.5780",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "To receive further updates for a non-docker installation, please change the branch to master. (Settings -› General (Show Advanced Settings) -› Updates -› Branch) If you are using docker you will need to update the container image. Do not attempt to update Prowlarr within an existing docker containe…",
+   "source_url": "https://github.com/Prowlarr/Prowlarr/releases/tag/v3.1.0.5799",
+   "page_url": "https://www.firmwarely.com/devices/prowlarr/"
   }
  }
 }
