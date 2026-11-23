@@ -1,5 +1,51 @@
 {
- "since": null,
+ "since": "2026-11-23T08:59:35+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "freshrss": {
+   "id": "freshrss",
+   "brand": "FreshRSS",
+   "model": "RSS reader",
+   "category": "A",
+   "status": "critical",
+   "version": "1.31.0",
+   "previous": "1.30.4",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Milestone This is a security-oriented major release with several critical security patches. Our rolling-release channel (edge) is still recommended for faster security patches. Breaking change 💥: Require PHP 8.2+ (drop PHP 8.1) Replace bcrypt challenge auth with direct password comparison. We are d…",
+   "source_url": "https://github.com/FreshRSS/FreshRSS/releases/tag/1.31.0",
+   "page_url": "https://www.firmwarely.com/devices/freshrss/"
+  },
+  "n8n": {
+   "id": "n8n",
+   "brand": "n8n",
+   "model": "Workflow automation",
+   "category": "A",
+   "status": "update",
+   "version": "2.48.8",
+   "previous": "2.48.7",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "2.48.8 (2026-11-23): Bug Fixes: Broken e2e test in source-control-helper (#​44756) (0a1c9f0) core: Give custom instance roles access to the Migration Report (#​44667) (b7378d4) core: Throw when an expression reaches the memory limit on the quickjs engine (#​44687) (ef0df0c) editor: Keep Migration R…",
+   "source_url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.48.8",
+   "page_url": "https://www.firmwarely.com/devices/n8n/"
+  },
+  "budibase": {
+   "id": "budibase",
+   "brand": "Budibase",
+   "model": "Low-code platform",
+   "category": "A",
+   "status": "update",
+   "version": "4.1.0",
+   "previous": "4.0.1",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: [#​19942] Remove resources from projects without deleting them Preserve last visited workspace on the builder [#​19946] Include custom OpenAPI specs in project exports [20084] hide project assignment when no projects exist Clear operation knowledge when duplicating an agent Merge Cl…",
+   "source_url": "https://github.com/Budibase/budibase/releases/tag/v4.1.0",
+   "page_url": "https://www.firmwarely.com/devices/budibase/"
+  }
+ }
 }
