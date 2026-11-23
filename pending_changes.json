@@ -241,6 +241,51 @@
    "notes": "This is a security update to the version 1.7 of Roundcube Webmail. It provides fixes to recently reported security vulnerabilities: Fix (again) HTTP request injection via the spellcheck ATD backend, reported by Ankesh Singh. Fix CSS-scoping bypass via html comments in inline style. Fix remote conte…",
    "source_url": "https://github.com/roundcube/roundcubemail/releases/tag/1.7.7",
    "page_url": "https://www.firmwarely.com/devices/roundcube/"
+  },
+  "langfuse": {
+   "id": "langfuse",
+   "brand": "Langfuse",
+   "model": "LLM observability",
+   "category": "A",
+   "status": "update",
+   "version": "4.84.0",
+   "previous": "4.83.0",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Features: feat(mcp): add batchCreateAnnotationQueueItems tool feat(web): show Intent topic shares in the tracing pulse chart header feat(billing): ship the billable_events ledger as a ClickHouse migration feat(annotation-queue): Embed updated session view feat(topics): describe how …",
+   "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.84.0",
+   "page_url": "https://www.firmwarely.com/devices/langfuse/"
+  },
+  "avideo": {
+   "id": "avideo",
+   "brand": "AVideo",
+   "model": "Video streaming platform",
+   "category": "A",
+   "status": "update",
+   "version": "29.9.0",
+   "previous": "29.8.0",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "29.9.0 (2026-11-23): Features: add checks for parent comment video access in comments.json.php (f37a6a9) add cleanup script and regression tests for clone SQL dumps (6150df2) add diagnostic logging for PayPal delivery process (21ec873) add SSL/TLS support for MySQL connections and corresponding val…",
+   "source_url": "https://github.com/WWBN/AVideo/releases/tag/v29.9.0",
+   "page_url": "https://www.firmwarely.com/devices/avideo/"
+  },
+  "browserbox": {
+   "id": "browserbox",
+   "brand": "BrowserBox",
+   "model": "Remote browser isolation",
+   "category": "R",
+   "status": "update",
+   "version": "21.0.1",
+   "previous": "21.0.0",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Tested BrowserBox release. Install: macOS and Linux bash curl -fsSL https://browserbox.io/install.sh | bash Windows (PowerShell as Administrator) powershell irm https://browserbox.io/install.ps1 | iex Activate a new installation: BrowserBox requires a license key. Choose an evaluation or buy a comm…",
+   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v21.0.1",
+   "page_url": "https://www.firmwarely.com/devices/browserbox/"
   }
  }
 }
