@@ -466,6 +466,21 @@
    "notes": "Donetick v0.1.89: Big one again! This release is headlined by the built-in MCP server, plus the app got bulk import, board drag-and-drop, themes, and a lot more. Built-in MCP server: Donetick now serves a Model Context Protocol endpoint at /mcp, so AI assistants can work with chores and things usin…",
    "source_url": "https://github.com/donetick/donetick/releases/tag/v0.1.89",
    "page_url": "https://www.firmwarely.com/devices/donetick/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.25.28",
+   "previous": "0.25.24",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: bd5e25fa591821d320f61eb09e301c2af1404c8b byrutor: new engine. resolves #​9867 2e5dd860f272724546241027ed58d008cabd612c bytepeer: removed. resolves #​17266 281eff8992ad9d59bfca2e947d8514fe8cd81ba8 add zxxclub a French private site. resolves #​17287 350a5035900bc574cca28e7939d614f7d472e3df …",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.25.28",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
   }
  }
 }
