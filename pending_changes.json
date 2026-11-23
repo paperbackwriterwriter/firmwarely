@@ -151,6 +151,66 @@
    "notes": "A connection reset no longer kills dsvpn with SIGPIPE on macOS and the BSDs; it reconnects instead Fixed a busy loop on Linux and the BSDs when stdin is a closed pipe or a hung-up terminal (cron, echo pw | sudo -S dsvpn ...) Firewall rules are now removed when the server cannot bind its port A full…",
    "source_url": "https://github.com/jedisct1/dsvpn/releases/tag/1.0.0",
    "page_url": "https://www.firmwarely.com/devices/dsvpn/"
+  },
+  "proton-ge": {
+   "id": "proton-ge",
+   "brand": "GloriousEggroll",
+   "model": "Proton-GE compatibility layer",
+   "category": "C",
+   "status": "update",
+   "version": "GE-Proton11-14",
+   "previous": "GE-Proton11-13",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "HOTFIX RELEASE: Changes since GE-Proton11-13.: Component Updates: D7VK updated to v2.5. D3D8 games now use DXVK's d8vk by default instead of wined3d. Use PROTON_NO_D8VK=1 to switch back to wined3d (PROTON_USE_WINED3D=1 also does). PROTON_DXVK_D3D8 is no longer needed. D3D9 and newer games are not a…",
+   "source_url": "https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton11-14",
+   "page_url": "https://www.firmwarely.com/devices/proton-ge/"
+  },
+  "meilisearch": {
+   "id": "meilisearch",
+   "brand": "Meilisearch",
+   "model": "Search engine",
+   "category": "A",
+   "status": "update",
+   "version": "1.58.0",
+   "previous": "1.57.0",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "✨ Enhancement: Introduce a new wordPosition.enabled parameter to control whether word positions are computed when indexing documents, Computing them often takes a lot of time, and skipping them can speed up the indexing time a lot. However, disabling the word position feature: - Skip the wordPositi…",
+   "source_url": "https://github.com/meilisearch/meilisearch/releases/tag/v1.58.0",
+   "page_url": "https://www.firmwarely.com/devices/meilisearch/"
+  },
+  "wiki-js": {
+   "id": "wiki-js",
+   "brand": "Wiki.js",
+   "model": "Wiki",
+   "category": "A",
+   "status": "update",
+   "version": "3.6.1",
+   "previous": "3.6.0",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": ":bug: Bug Fixes: c0c77a5 - validate websocket origin for collab and terminal logs (commit) ↘️ fixes GHSA-rm94-wmwj-4qpq reported 502abd9 - prevent TOTP reuse within validity window (commit) ↘️ fixes GHSA-r968-659v-pqjf reported d05ff15 - prevent href in block-mathjax mmlToken (commit) ↘️ fixes GHSA…",
+   "source_url": "https://github.com/requarks/wiki/releases/tag/3.6.1",
+   "page_url": "https://www.firmwarely.com/devices/wiki-js/"
+  },
+  "kiosk-satellite": {
+   "id": "kiosk-satellite",
+   "brand": "Kiosk Satellite",
+   "model": "Turn any Android device",
+   "category": "S",
+   "status": "update",
+   "version": "2026.11.29",
+   "previous": "2026.11.28",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's new in Kiosk Satellite 2026.11.29: This release adds flashlight control on devices with a camera flash. It also fixes theme changes in Kiosk Satellite switching Home Assistant to light or dark in every browser, alarms that rang their tone instead of music on the kiosk's own Sendspin player a…",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.29",
+   "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   }
  }
 }
