@@ -11385,6 +11385,15 @@
    "type": "github",
    "repo": "milind-soni/OpenMausBot",
    "product_url": "https://github.com/milind-soni/OpenMausBot"
+  },
+  {
+   "id": "eglantine",
+   "brand": "Eglantine",
+   "model": "Experimental Switch 2 Emulator",
+   "category": "C",
+   "type": "github",
+   "repo": "Eglantine-Community/Eglantine",
+   "product_url": "https://github.com/Eglantine-Community/Eglantine"
   }
  ]
 }
