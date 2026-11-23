@@ -436,6 +436,36 @@
    "notes": "Changes since GE-Proton11-12:: Component Updates: Wine updated to Proton Experimental bleeding edge experimental-wine-bleeding-edge-11.0-478690-20261121. DXVK updated to v3.1.1-235-gf90f1bf1. vkd3d-proton updated to v3.1-83-gcae8353e. DXVK-NVAPI updated to v0.9.3-10-g51a0f79. vkd3d updated to vkd3d…",
    "source_url": "https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton11-13",
    "page_url": "https://www.firmwarely.com/devices/proton-ge/"
+  },
+  "bazzite": {
+   "id": "bazzite",
+   "brand": "Universal Blue",
+   "model": "Bazzite gaming OS",
+   "category": "C",
+   "status": "update",
+   "version": "45.20261123",
+   "previous": "45.20261117.1",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "This is an automatically generated changelog for release 45.20261123. From previous stable version 45.20261117.1 there have been the following changes. One package per new version shown. Images without a previous version (excluded from comparisons): bazzite-dx, bazzite-dx-gnome, bazzite-dx-nvidia, …",
+   "source_url": "https://github.com/ublue-os/bazzite/releases/tag/45.20261123",
+   "page_url": "https://www.firmwarely.com/devices/bazzite/"
+  },
+  "donetick": {
+   "id": "donetick",
+   "brand": "Donetick",
+   "model": "Task and chore manager",
+   "category": "A",
+   "status": "update",
+   "version": "0.1.89",
+   "previous": "0.1.86",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Donetick v0.1.89: Big one again! This release is headlined by the built-in MCP server, plus the app got bulk import, board drag-and-drop, themes, and a lot more. Built-in MCP server: Donetick now serves a Model Context Protocol endpoint at /mcp, so AI assistants can work with chores and things usin…",
+   "source_url": "https://github.com/donetick/donetick/releases/tag/v0.1.89",
+   "page_url": "https://www.firmwarely.com/devices/donetick/"
   }
  }
 }
