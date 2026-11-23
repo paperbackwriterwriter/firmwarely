@@ -203,13 +203,13 @@
    "model": "Turn any Android device",
    "category": "S",
    "status": "update",
-   "version": "2026.11.29",
+   "version": "2026.11.30",
    "previous": "2026.11.28",
    "released": "2026-11-23",
    "date_known": true,
    "eol": false,
-   "notes": "What's new in Kiosk Satellite 2026.11.29: This release adds flashlight control on devices with a camera flash. It also fixes theme changes in Kiosk Satellite switching Home Assistant to light or dark in every browser, alarms that rang their tone instead of music on the kiosk's own Sendspin player a…",
-   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.29",
+   "notes": "What's new in Kiosk Satellite 2026.11.30: This release adds support for Ground Control's new Wake Word Aligner, which leaves the end of the wake word out of the command. It also adds a Skip next alarm button in ESPHome, a Crop videos switch for the Immich Media screensaver and alarm controls for pl…",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.30",
    "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   },
   "zimaos": {
@@ -586,6 +586,36 @@
    "notes": "To receive further updates for a non-docker installation, please change the branch to master. (Settings -› General (Show Advanced Settings) -› Updates -› Branch) If you are using docker you will need to update the container image. Do not attempt to update Prowlarr within an existing docker containe…",
    "source_url": "https://github.com/Prowlarr/Prowlarr/releases/tag/v3.1.0.5799",
    "page_url": "https://www.firmwarely.com/devices/prowlarr/"
+  },
+  "telegraf": {
+   "id": "telegraf",
+   "brand": "InfluxData",
+   "model": "Telegraf agent",
+   "category": "A",
+   "status": "update",
+   "version": "1.40.4",
+   "previous": "1.40.3",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "v1.40.4 [2026-11-23]: Bugfixes: #​20074 disk-buffer Delete directory for empty buffers on close #​20208 internal Use UTC as default for timestamp_tz #​20202 common.http Apply timeout to OAuth2 token requests #​20088 common.opcua Handle LocalizedText node values #​20130 common.socket Receive only th…",
+   "source_url": "https://github.com/influxdata/telegraf/releases/tag/v1.40.4",
+   "page_url": "https://www.firmwarely.com/devices/telegraf/"
+  },
+  "weaviate": {
+   "id": "weaviate",
+   "brand": "Weaviate",
+   "model": "Vector database",
+   "category": "A",
+   "status": "update",
+   "version": "1.41.0",
+   "previous": "1.40.7",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Breaking Changes: none Namespaces RF=3 & suspend: Namespaces add control-plane and data isolation between users on a shared cluster. Namespaces: Add DB.UnloadShard and report which outcome each unload reached Namespaces: Refuse unknown namespace states and add DB.DesiredOpenLocalShardNames Refuse p…",
+   "source_url": "https://github.com/weaviate/weaviate/releases/tag/v1.41.0",
+   "page_url": "https://www.firmwarely.com/devices/weaviate/"
   }
  }
 }
