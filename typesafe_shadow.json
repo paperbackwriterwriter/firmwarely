@@ -55890,6 +55890,60 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.3.70.5-lts",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-11-23T15:48:08+00:00",
+   "notes_chars": 37,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "nginx",
+   "version": "1.31.10",
+   "name": "NGINX Web server",
+   "judged_at": "2026-11-23T15:48:08+00:00",
+   "notes_chars": 260,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.99,
+    "security_fix_plain": 0.95,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "lantern",
+   "version": "11.0.0",
+   "name": "Lantern Censorship circumvention VPN",
+   "judged_at": "2026-11-23T15:48:08+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

@@ -323,13 +323,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.10.11.12-stable",
+   "version": "26.3.70.5-lts",
    "previous": "26.9.36.3-stable",
    "released": "2026-11-23",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.10.11.12-stable v26.10.11.12-stable",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.10.11.12-stable",
+   "notes": "Release v26.3.70.5-lts v26.3.70.5-lts",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.3.70.5-lts",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "elasticsearch": {
@@ -376,6 +376,36 @@
    "notes": "Important: Please read the migration guide. Enhancement: [acme] Add reusePrivateKey option (#​13004) [docker, k8s/ingress, middleware, k8s/crd, k8s/gatewayapi] Add per router responding timeouts (#​13537) [k8s] Strip managedFields in informers (#​13396) [k8s, k8s/gatewayapi] Support BackendTLSPolic…",
    "source_url": "https://github.com/traefik/traefik/releases/tag/v3.8.0",
    "page_url": "https://www.firmwarely.com/devices/traefik/"
+  },
+  "nginx": {
+   "id": "nginx",
+   "brand": "NGINX",
+   "model": "Web server",
+   "category": "R",
+   "status": "critical",
+   "version": "1.31.10",
+   "previous": "1.31.9",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "nginx-1.31.10 mainline version has been released, with a fix for excessive CPU usage vulnerability when using ssl_early_data (CVE-2026-132779). What's Changed: Version bump Full Changelog: https://github.com/nginx/nginx/compare/release-1.31.9...release-1.31.10",
+   "source_url": "https://github.com/nginx/nginx/releases/tag/release-1.31.10",
+   "page_url": "https://www.firmwarely.com/devices/nginx/"
+  },
+  "lantern": {
+   "id": "lantern",
+   "brand": "Lantern",
+   "model": "Censorship circumvention VPN",
+   "category": "R",
+   "status": "update",
+   "version": "11.0.0",
+   "previous": "10.0.5",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Lantern v11.0.0 Release Notes: New Features: Personal Proxies: Share your connection with friends through secure invite links. Accept or decline friend requests, manage active proxies, and see real-time connection status. Action Mode: New dedicated mode for helpers sharing their connection. Auto-en…",
+   "source_url": "https://github.com/getlantern/lantern/releases/tag/v11.0.0",
+   "page_url": "https://www.firmwarely.com/devices/lantern/"
   }
  }
 }
