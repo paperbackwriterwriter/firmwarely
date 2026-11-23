@@ -38,13 +38,13 @@
    "model": "DNS blocklists",
    "category": "R",
    "status": "update",
-   "version": "37522026.326.68372",
+   "version": "37522026.327.157",
    "previous": "37522026.326.564",
-   "released": "2026-11-22",
+   "released": "2026-11-23",
    "date_known": true,
    "eol": false,
-   "notes": "37522026.326.68372 37522026.326.68372",
-   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.326.68372",
+   "notes": "#​12535",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.327.157",
    "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
   },
   "mailu": {
