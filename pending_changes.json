@@ -211,6 +211,36 @@
    "notes": "What's new in Kiosk Satellite 2026.11.29: This release adds flashlight control on devices with a camera flash. It also fixes theme changes in Kiosk Satellite switching Home Assistant to light or dark in every browser, alarms that rang their tone instead of music on the kiosk's own Sendspin player a…",
    "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.29",
    "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
+  },
+  "zimaos": {
+   "id": "zimaos",
+   "brand": "IceWhale",
+   "model": "ZimaOS",
+   "category": "N",
+   "status": "update",
+   "version": "1.8.1-beta1",
+   "previous": "1.8.0",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "New: Added external file sharing, making it easier to share files stored on the device with external users Added multilingual support for Photos, with language resources for intelligent search prepared on demand Added language detection for photo search queries and multilingual keyword search for c…",
+   "source_url": "https://github.com/IceWhaleTech/ZimaOS/releases/tag/1.8.1-beta1",
+   "page_url": "https://www.firmwarely.com/devices/zimaos/"
+  },
+  "roundcube": {
+   "id": "roundcube",
+   "brand": "Roundcube",
+   "model": "Webmail",
+   "category": "A",
+   "status": "critical",
+   "version": "1.7.7",
+   "previous": "1.7.6",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "This is a security update to the version 1.7 of Roundcube Webmail. It provides fixes to recently reported security vulnerabilities: Fix (again) HTTP request injection via the spellcheck ATD backend, reported by Ankesh Singh. Fix CSS-scoping bypass via html comments in inline style. Fix remote conte…",
+   "source_url": "https://github.com/roundcube/roundcubemail/releases/tag/1.7.7",
+   "page_url": "https://www.firmwarely.com/devices/roundcube/"
   }
  }
 }
