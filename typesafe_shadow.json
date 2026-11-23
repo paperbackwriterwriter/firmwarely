@@ -55962,6 +55962,114 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "browserbox",
+   "version": "21.0.2",
+   "name": "BrowserBox Remote browser isolation",
+   "judged_at": "2026-11-23T17:29:44+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "plausible",
+   "version": "3.2.2",
+   "name": "Plausible Web analytics",
+   "judged_at": "2026-11-23T17:29:44+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.98,
+    "security_fix_plain": 0.91,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "rallly",
+   "version": "4.17.2",
+   "name": "Rallly Meeting polls",
+   "judged_at": "2026-11-23T17:29:44+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.99,
+    "security_fix_plain": 0.89,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "docker-volume-backup",
+   "version": "2.50.2",
+   "name": "docker-volume-backup Docker volume backups",
+   "judged_at": "2026-11-23T17:29:44+00:00",
+   "notes_chars": 242,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "gladys",
+   "version": "5.3.5",
+   "name": "Gladys Home automation hub",
+   "judged_at": "2026-11-23T17:29:44+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "openobserve",
+   "version": "1.2.0-rc3",
+   "name": "Openobserve Observability platform",
+   "judged_at": "2026-11-23T17:29:44+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
