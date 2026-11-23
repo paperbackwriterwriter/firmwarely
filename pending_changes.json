@@ -286,6 +286,51 @@
    "notes": "Tested BrowserBox release. Install: macOS and Linux bash curl -fsSL https://browserbox.io/install.sh | bash Windows (PowerShell as Administrator) powershell irm https://browserbox.io/install.ps1 | iex Activate a new installation: BrowserBox requires a license key. Choose an evaluation or buy a comm…",
    "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v21.0.1",
    "page_url": "https://www.firmwarely.com/devices/browserbox/"
+  },
+  "cloudflared": {
+   "id": "cloudflared",
+   "brand": "Cloudflare",
+   "model": "Tunnel daemon",
+   "category": "R",
+   "status": "update",
+   "version": "2026.11.2",
+   "previous": "2026.11.1",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "SHA256 Checksums: cloudflared-amd64.pkg: ff0b005a556b5d3f8c247677bb5486bb5689888a2dd8da71815654462716df4a cloudflared-arm64.pkg: 111085fc547a158401376582c342da9f1abd80e7e9eebe76770e1b9ed1f69a03 cloudflared-darwin-amd64.tgz: 870dc2094f98befdd993c455234562be4eee51f8fca6e2e356df4579fa7e6766 cloudflare…",
+   "source_url": "https://github.com/cloudflare/cloudflared/releases/tag/2026.11.2",
+   "page_url": "https://www.firmwarely.com/devices/cloudflared/"
+  },
+  "victoriametrics": {
+   "id": "victoriametrics",
+   "brand": "VictoriaMetrics",
+   "model": "Time series database",
+   "category": "A",
+   "status": "update",
+   "version": "1.157.0",
+   "previous": "1.156.0",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "v1.157.0: Released at 2026-11-20 Update Note 1: vmctl in vm-native mode: --vm-native-filter-time-end is now a required parameter. See #​11830 for details. Update Note 2: vmagent change for Vultr service discovery: Vultr service discovery params now should be provided via vultr_sd_configs field. Pre…",
+   "source_url": "https://github.com/VictoriaMetrics/VictoriaMetrics/releases/tag/v1.157.0",
+   "page_url": "https://www.firmwarely.com/devices/victoriametrics/"
+  },
+  "clickhouse": {
+   "id": "clickhouse",
+   "brand": "ClickHouse",
+   "model": "Analytics database",
+   "category": "A",
+   "status": "update",
+   "version": "26.10.11.12-stable",
+   "previous": "26.9.36.3-stable",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release v26.10.11.12-stable v26.10.11.12-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.10.11.12-stable",
+   "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   }
  }
 }
