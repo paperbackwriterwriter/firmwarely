@@ -55494,6 +55494,132 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "matomo",
+   "version": "6.0.0",
+   "name": "Matomo Web analytics",
+   "judged_at": "2026-11-23T09:50:40+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "tooljet",
+   "version": "3.21.98-lts",
+   "name": "ToolJet Low-code platform",
+   "judged_at": "2026-11-23T09:50:40+00:00",
+   "notes_chars": 215,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "penpot",
+   "version": "2.19.4",
+   "name": "Penpot Design tool",
+   "judged_at": "2026-11-23T09:50:40+00:00",
+   "notes_chars": 83,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "raspberry-pi-500",
+   "version": "28.38-1",
+   "name": "Raspberry Pi 500",
+   "judged_at": "2026-11-23T09:50:40+00:00",
+   "notes_chars": 70,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.327.32496",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-11-23T09:50:40+00:00",
+   "notes_chars": 103,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "tuya-local",
+   "version": "2026.11.0",
+   "name": "Tuya Local Home Assistant integration for Tuya devices",
+   "judged_at": "2026-11-23T09:50:40+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "dsvpn",
+   "version": "1.0.0",
+   "name": "Dsvpn Dead Simple VPN",
+   "judged_at": "2026-11-23T09:50:40+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.07,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
