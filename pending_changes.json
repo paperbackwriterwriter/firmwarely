@@ -391,6 +391,21 @@
    "notes": "Changelog: [3.72.0] - 2026-11-22: ✨ Features: website: Add a step-by-step guide to back up to Neon Object Storage (40ce042) storages: Support Neon Object Storage and check it against a real bucket (86571ba) website: Add a step-by-step guide to back up Neon (451be0b) databases: Add Neon and Supabase…",
    "source_url": "https://github.com/databasus/databasus/releases/tag/v3.72.0",
    "page_url": "https://www.firmwarely.com/devices/databasus/"
+  },
+  "safeline": {
+   "id": "safeline",
+   "brand": "Chaitin",
+   "model": "SafeLine web application firewall",
+   "category": "R",
+   "status": "update",
+   "version": "9.4.7",
+   "previous": "9.4.6",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Fixed: Fixed an issue where the management interface certificate would revert to the default certificate following an update to Nginx dependencies in version 9.4.6.",
+   "source_url": "https://github.com/chaitin/SafeLine/releases/tag/v9.4.7",
+   "page_url": "https://www.firmwarely.com/devices/safeline/"
   }
  }
 }

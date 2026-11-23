@@ -55278,6 +55278,24 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "safeline",
+   "version": "9.4.7",
+   "name": "Chaitin SafeLine web application firewall",
+   "judged_at": "2026-11-23T02:49:01+00:00",
+   "notes_chars": 164,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.15,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
