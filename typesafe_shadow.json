@@ -56268,6 +56268,96 @@
     "security_fix_plain": 0.06,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "unpoller",
+   "version": "5.10.1",
+   "name": "UnPoller UniFi metrics exporter",
+   "judged_at": "2026-11-23T22:35:07+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "otel-collector",
+   "version": "1.72.0",
+   "name": "OpenTelemetry Collector",
+   "judged_at": "2026-11-23T22:35:08+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "kimai",
+   "version": "2.73.0",
+   "name": "Kimai Time tracking",
+   "judged_at": "2026-11-23T22:35:08+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "sharpemu",
+   "version": "0.0.8-ember",
+   "name": "SharpEmu PlayStation 5 emulator",
+   "judged_at": "2026-11-23T22:35:08+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "keepassdx",
+   "version": "4.5.9",
+   "name": "KeePassDX Vault and password manager",
+   "judged_at": "2026-11-23T22:35:08+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.22,
+    "security_fix_plain": 0.42,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
