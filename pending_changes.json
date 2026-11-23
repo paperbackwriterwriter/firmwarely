@@ -406,6 +406,36 @@
    "notes": "Fixed: Fixed an issue where the management interface certificate would revert to the default certificate following an update to Nginx dependencies in version 9.4.6.",
    "source_url": "https://github.com/chaitin/SafeLine/releases/tag/v9.4.7",
    "page_url": "https://www.firmwarely.com/devices/safeline/"
+  },
+  "seaweedfs": {
+   "id": "seaweedfs",
+   "brand": "SeaweedFS",
+   "model": "Distributed file store",
+   "category": "N",
+   "status": "update",
+   "version": "4.55",
+   "previous": "4.54",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: S3 Vectors and the vector engine: s3vectors: enforce AWS metadata, key and filter limits lance: per-table cleanup retention and on-demand purge of deleted rows vector: answer a short filtered ANN query by an exact scan vector: indexed metadata keys, engine side (derive, rewrite, exa…",
+   "source_url": "https://github.com/seaweedfs/seaweedfs/releases/tag/4.55",
+   "page_url": "https://www.firmwarely.com/devices/seaweedfs/"
+  },
+  "proton-ge": {
+   "id": "proton-ge",
+   "brand": "GloriousEggroll",
+   "model": "Proton-GE compatibility layer",
+   "category": "C",
+   "status": "update",
+   "version": "GE-Proton11-13",
+   "previous": "GE-Proton11-12",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes since GE-Proton11-12:: Component Updates: Wine updated to Proton Experimental bleeding edge experimental-wine-bleeding-edge-11.0-478690-20261121. DXVK updated to v3.1.1-235-gf90f1bf1. vkd3d-proton updated to v3.1-83-gcae8353e. DXVK-NVAPI updated to v0.9.3-10-g51a0f79. vkd3d updated to vkd3d…",
+   "source_url": "https://github.com/GloriousEggroll/proton-ge-custom/releases/tag/GE-Proton11-13",
+   "page_url": "https://www.firmwarely.com/devices/proton-ge/"
   }
  }
 }
