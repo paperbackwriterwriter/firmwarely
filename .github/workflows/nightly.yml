@@ -4,10 +4,7 @@ name: Firmware check
 # run after 08:00 UTC): render the browser-only vendor pages, discover and vet new projects,
 # then send the digest and the per-user emails for everything that moved since yesterday.
 on:
-  schedule:
-    # Not minute 0: GitHub drops scheduled runs when its scheduler is busy, and the top of the
-    # hour is the busiest. From Oct 12, 2026 only one run in four or five started at "0 * * * *".
-    - cron: "23 * * * *"
+  # Schedule removed 24 Nov 2026: the site is shut down (owner). Run by hand only.
   workflow_dispatch:
     inputs:
       daily:
