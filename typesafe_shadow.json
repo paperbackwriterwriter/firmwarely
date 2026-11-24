@@ -57636,6 +57636,114 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.328.56949",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-11-24T16:07:41+00:00",
+   "notes_chars": 37,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.8.46.6-lts",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-11-24T16:07:41+00:00",
+   "notes_chars": 37,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "tandoor-recipes",
+   "version": "2.7.8",
+   "name": "Tandoor Recipes",
+   "judged_at": "2026-11-24T16:07:41+00:00",
+   "notes_chars": 41,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "dbeaver",
+   "version": "26.2.5.2",
+   "name": "DBeaver Database tool",
+   "judged_at": "2026-11-24T16:07:41+00:00",
+   "notes_chars": 90,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.73,
+    "security_fix_plain": 0.68,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "ghost",
+   "version": "6.79.0",
+   "name": "Ghost Publishing platform",
+   "judged_at": "2026-11-24T16:07:41+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "hickory-dns",
+   "version": "0.26.4",
+   "name": "Hickory DNS server and resolver",
+   "judged_at": "2026-11-24T16:07:41+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.98,
+    "security_fix_plain": 0.96,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
