@@ -931,6 +931,51 @@
    "notes": "What's Changed: Add --trust-forwarded-for Set Persian translation to reviewed fix: make Gunicorn worker timeout configurable via LT_TIMEOUT ci: pin jlumbroso/free-disk-space to a full commit SHA Translated using Weblate (Slovak) Keep translated text out of the URL query string feat: improve Swap La…",
    "source_url": "https://github.com/LibreTranslate/LibreTranslate/releases/tag/v1.10.0",
    "page_url": "https://www.firmwarely.com/devices/libretranslate/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.25.34",
+   "previous": "0.25.28",
+   "released": "2026-11-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: 762f4cf1b517e03116dce6d110515e60f7406505 torrenttip: bump domain ed64dee51d5fe635dd6976e1d359800f3f9e8b59 torrentsome: bump domain ab666bbc1aeb12c1eaeea41cd848f7934c4c74d3 Restore HunTorrent indexer support (#​17291) resolves #​10771 556cffe568b9049f2cdb7be21fe097b6d2891b0b yts: update li…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.25.34",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "jenkins": {
+   "id": "jenkins",
+   "brand": "Jenkins",
+   "model": "Automation server",
+   "category": "A",
+   "status": "update",
+   "version": "2.592",
+   "previous": "2.591",
+   "released": "2026-11-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "jenkins-2.592",
+   "source_url": "https://github.com/jenkinsci/jenkins/releases/tag/jenkins-2.592",
+   "page_url": "https://www.firmwarely.com/devices/jenkins/"
+  },
+  "titanium-web-proxy": {
+   "id": "titanium-web-proxy",
+   "brand": "Titanium Web Proxy",
+   "model": "HTTP(S) proxy server",
+   "category": "R",
+   "status": "update",
+   "version": "8.0.8",
+   "previous": "8.0.5",
+   "released": "2026-11-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Highlights: Linux OpenSSL: CLI and Inspector use the host OpenSSL. Leftover bundled libssl.so / libcrypto.so next to the app are removed on first start when writable; when they cannot be deleted (often root-owned), the CLI exits with the exact sudo rm -f command and Inspector shows the same text be…",
+   "source_url": "https://github.com/justcoding121/titanium-web-proxy/releases/tag/v8.0.8",
+   "page_url": "https://www.firmwarely.com/devices/titanium-web-proxy/"
   }
  }
 }
