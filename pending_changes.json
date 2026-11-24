@@ -278,13 +278,13 @@
    "model": "Remote browser isolation",
    "category": "R",
    "status": "update",
-   "version": "21.0.2",
+   "version": "21.0.3",
    "previous": "21.0.0",
-   "released": "2026-11-23",
+   "released": "2026-11-24",
    "date_known": true,
    "eol": false,
    "notes": "Tested BrowserBox release. Install: macOS and Linux bash curl -fsSL https://browserbox.io/install.sh | bash Windows (PowerShell as Administrator) powershell irm https://browserbox.io/install.ps1 | iex Activate a new installation: BrowserBox requires a license key. Choose an evaluation or buy a comm…",
-   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v21.0.2",
+   "source_url": "https://github.com/BrowserBox/BrowserBox/releases/tag/v21.0.3",
    "page_url": "https://www.firmwarely.com/devices/browserbox/"
   },
   "cloudflared": {
@@ -886,6 +886,36 @@
    "notes": "Security: Auth/Logout: Browser logout follows the OIDC provider’s sign-out redirect instead of leaving the provider session active. (f1956ce, https://github.com/yusing/godoxy-webui/commit/13e3fa09b9884c8133730f4051a686e8eeae30dd, 2266b7e) Logout refreshes missing or stale CSRF cookies before submit…",
    "source_url": "https://github.com/yusing/godoxy/releases/tag/v0.34.1",
    "page_url": "https://www.firmwarely.com/devices/godoxy/"
+  },
+  "komga": {
+   "id": "komga",
+   "brand": "Komga",
+   "model": "Comic and manga server",
+   "category": "A",
+   "status": "update",
+   "version": "1.30.2",
+   "previous": "1.30.1",
+   "released": "2026-11-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: 🐛 Fixes: api honor properties in server.servlet.session.cookie (db2ad64), closes #​1501 komga bind spring session transaction manager to the correct datasource (8867b38), closes #​2556 make ICU collators thread safe (79c1c84), closes #​2555 🛠 Build: release fix syntax (6e161b6) cleanup o…",
+   "source_url": "https://github.com/gotson/komga/releases/tag/1.30.2",
+   "page_url": "https://www.firmwarely.com/devices/komga/"
+  },
+  "tubesync": {
+   "id": "tubesync",
+   "brand": "TubeSync",
+   "model": "YouTube channel sync",
+   "category": "A",
+   "status": "update",
+   "version": "0.19.2",
+   "previous": "0.19.1",
+   "released": "2026-11-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: feat: enable Huey stats fix: allow ports up to 65535 in database connection strings Updated openresty / nginx Updated yt-dlp New Contributors: made their first contribution in https://github.com/meeb/tubesync/pull/1658 Full Changelog: https://github.com/meeb/tubesync/compare/v0.19.1…",
+   "source_url": "https://github.com/meeb/tubesync/releases/tag/v0.19.2",
+   "page_url": "https://www.firmwarely.com/devices/tubesync/"
   }
  }
 }
