@@ -646,6 +646,21 @@
    "notes": "This release fixes the vulnerabilities listed below, and fixes regressions in DNSSEC verification, QUIC servers, and HTTP/3 servers. Improvements have been made to system DNS configuration support on macOS. Optional support has been added for systemd journal logging. GHSA-w7cq-9r7j-xc7m: DNSSEC val…",
    "source_url": "https://github.com/hickory-dns/hickory-dns/releases/tag/v0.26.4",
    "page_url": "https://www.firmwarely.com/devices/hickory-dns/"
+  },
+  "garage-s3": {
+   "id": "garage-s3",
+   "brand": "Deuxfleurs",
+   "model": "Garage S3 storage",
+   "category": "N",
+   "status": "eol",
+   "version": "2.6.0",
+   "previous": "2.5.0",
+   "released": "2026-11-24",
+   "date_known": true,
+   "eol": true,
+   "notes": "Garage v2.6.0 This is a stable release. Here are the major user-facing changes: New web interface for cluster administration (#​1562) Helm chart published as an OCI artifact (#​1618) Garage v1.x is EoL and will not receive any further updates A blog post will be published soon with necessary detail…",
+   "source_url": "https://github.com/deuxfleurs-org/garage/releases/tag/v2.6.0",
+   "page_url": "https://www.firmwarely.com/devices/garage-s3/"
   }
  }
 }
