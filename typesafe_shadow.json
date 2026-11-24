@@ -57294,6 +57294,114 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.03
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.3.71.3-lts",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-11-24T14:25:44+00:00",
+   "notes_chars": 37,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "bambu-studio",
+   "version": "2.9.2",
+   "name": "Bambu Lab Bambu Studio",
+   "judged_at": "2026-11-24T14:25:44+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "element-web",
+   "version": "1.12.36",
+   "name": "Element Web client",
+   "judged_at": "2026-11-24T14:25:44+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "langfuse",
+   "version": "4.85.0",
+   "name": "Langfuse LLM observability",
+   "judged_at": "2026-11-24T14:25:44+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "tubesync",
+   "version": "0.19.3",
+   "name": "TubeSync YouTube channel sync",
+   "judged_at": "2026-11-24T14:25:44+00:00",
+   "notes_chars": 102,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "tianji",
+   "version": "1.34.4",
+   "name": "Tianji Website analytics and uptime monitor",
+   "judged_at": "2026-11-24T14:25:44+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
