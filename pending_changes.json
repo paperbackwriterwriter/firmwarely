@@ -128,13 +128,13 @@
    "model": "Scripts and workflows",
    "category": "A",
    "status": "update",
-   "version": "1.883.0",
+   "version": "1.884.0",
    "previous": "1.882.0",
    "released": "2026-11-24",
    "date_known": true,
    "eol": false,
-   "notes": "1.883.0 (2026-11-24): Features: alert on same-tag wait deadlocks and fail the waiting parent (#​12613) (304f912) cli: 30-day CLI login tokens with expiry picker and token roll (#​12621) (e810cbb) fold consecutive test runs of one item in the ai chat (#​12599) (924d9b7) keep mcp consent page open wi…",
-   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.883.0",
+   "notes": "1.884.0 (2026-11-24): Features: add SAP icon for the sap_hana resource type (#​12633) (a888954) ask for secrets and connect services in the AI chat through a secure card (#​12575) (9536cfd) full-screen image viewer with zoom, pan, copy and download (#​12634) (3908150) give each AI session its own m…",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.884.0",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
   },
   "nzbhydra2": {
@@ -841,6 +841,51 @@
    "notes": "29.10.1: For a full list of pull requests and changes in this release, refer to the relevant GitHub milestones: docker/cli, 29.10.1 milestone moby/moby, 29.10.1 milestone Security: This release includes fixes for multiple security vulnerabilities affecting Docker Engine and related components. CVE-…",
    "source_url": "https://github.com/moby/moby/releases/tag/docker-v29.10.1",
    "page_url": "https://www.firmwarely.com/devices/docker-engine/"
+  },
+  "opensearch": {
+   "id": "opensearch",
+   "brand": "OpenSearch",
+   "model": "Search and analytics",
+   "category": "A",
+   "status": "update",
+   "version": "3.10.1",
+   "previous": "3.10.0",
+   "released": "2026-11-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Version 3.10.1 Release Notes: Compatible with OpenSearch and OpenSearch Dashboards version 3.10.1 Bug Fixes: Fix scripted source reads failing on compound segments due to Java agent denying file open (#​23692) Maintenance: Update Reactor Netty to 1.3.9 and Project Reactor to 3.8.9 (#​23689) Update …",
+   "source_url": "https://github.com/opensearch-project/OpenSearch/releases/tag/3.10.1",
+   "page_url": "https://www.firmwarely.com/devices/opensearch/"
+  },
+  "mailu": {
+   "id": "mailu",
+   "brand": "Mailu",
+   "model": "Mail server",
+   "category": "A",
+   "status": "critical",
+   "version": "2024.06.73",
+   "previous": "2024.06.72",
+   "released": "2026-11-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog :mailbox: --------- Upgrade to nginx ›= 1.28.3-r8 (to fix CVE-2026-113425, CVE-2026-123633, CVE-2026-123007, ...) and re-enable HTTP2. ARMv7 is still vulnerable as the alpine packages are not available yet. This release was triggered by PR/Issue 4214. The release notes of the original mai…",
+   "source_url": "https://github.com/Mailu/Mailu/releases/tag/2024.06.73",
+   "page_url": "https://www.firmwarely.com/devices/mailu/"
+  },
+  "invoice-ninja": {
+   "id": "invoice-ninja",
+   "brand": "Invoice Ninja",
+   "model": "Invoicing",
+   "category": "A",
+   "status": "update",
+   "version": "5.14.0",
+   "previous": "5.13.56",
+   "released": "2026-11-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: & Add optional quote items during quote approval process. Fixes for zugferd tax calculations Name the recipient in the purchase order shipping address Per-currency totals for each entity list: POST /charts/entity_totals Payment drivers: queue Helcim failure mail and CHIP log after c…",
+   "source_url": "https://github.com/invoiceninja/invoiceninja/releases/tag/v5.14.0",
+   "page_url": "https://www.firmwarely.com/devices/invoice-ninja/"
   }
  }
 }

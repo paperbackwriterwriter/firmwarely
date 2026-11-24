@@ -58032,6 +58032,78 @@
     "security_fix_plain": 0.91,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "windmill",
+   "version": "1.884.0",
+   "name": "Windmill Scripts and workflows",
+   "judged_at": "2026-11-24T22:54:41+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "opensearch",
+   "version": "3.10.1",
+   "name": "OpenSearch Search and analytics",
+   "judged_at": "2026-11-24T22:54:41+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "mailu",
+   "version": "2024.06.73",
+   "name": "Mailu Mail server",
+   "judged_at": "2026-11-24T22:54:41+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.75,
+    "security_fix_plain": 0.48,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "invoice-ninja",
+   "version": "5.14.0",
+   "name": "Invoice Ninja Invoicing",
+   "judged_at": "2026-11-24T22:54:41+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
