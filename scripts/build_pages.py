@@ -248,11 +248,6 @@ def styles():
 """
 
 
-# Vercel Web Analytics. Served from our own origin, so the CSP's script-src 'self' and
-# connect-src 'self' already cover it and no third party sees the request. The file 404s
-# until Analytics is switched on for the project, which costs a failed request and nothing else.
-ANALYTICS = '<script defer src="/_vercel/insights/script.js"></script>'
-
 # Shared by every form on the site: three submissions in thirty seconds, then a countdown.
 FORMGUARD = '<script defer src="/formguard.js"></script>'
 
@@ -300,7 +295,6 @@ def head(title, desc, path, extra="", noindex=False):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>{STYLES}</style>
-{ANALYTICS}
 {FORMGUARD}
 {CAPTCHA}
 {extra}
@@ -913,14 +907,14 @@ def product_link(d):
 def legal_page():
     return simple_page("Privacy & terms — Firmwarely", "Firmwarely privacy policy and terms of service: what we collect, how alerts and payments work, and how to delete your data.", "/legal/", """
 <h1 class="dev-h">Privacy &amp; terms</h1>
-<p style="color:var(--muted)">Last updated September 23, 2026. Firmwarely is an independent service operated by an individual in Iowa, USA. Questions: <a href="mailto:hello@firmwarely.com">hello@firmwarely.com</a>.</p>
+<p style="color:var(--muted)">Last updated November 24, 2026. Firmwarely is an independent service operated by an individual in Iowa, USA. Questions: <a href="mailto:hello@firmwarely.com">hello@firmwarely.com</a>.</p>
 <div class="faq">
 <h2 style="margin-top:2rem">Privacy policy</h2>
 <h3>What we collect</h3><p>Your email address when you subscribe, the device names you choose to tell us about, anything you send us through the support form, standard web server logs, and an anonymous count of which pages are read. If you buy Pro, Stripe collects your payment details; we never see your card number. We store the email you paid with and whether your subscription is active.</p>
 <h3>How we use it</h3><p>To send you the firmware update emails you asked for, to answer you when you write to us, to manage your subscription, and to understand which devices people want tracked. We don't sell or rent your data.</p>
-<h3>Who we share it with</h3><p>Beehiiv (subscriber list and newsletter delivery), Resend (sign-in links, device alerts and support messages), Stripe (payments), Vercel (hosting, sign-in API and page analytics), Cloudflare (the anti-spam check on our forms), and GitHub (where our data pipeline runs). Each is bound by its own privacy policy. We share only what's needed for them to do their job.</p>
+<h3>Who we share it with</h3><p>Beehiiv (subscriber list and newsletter delivery), Resend (sign-in links, device alerts and support messages), Stripe (payments), Cloudflare (hosting, sign-in API and the anti-spam check on our forms), and GitHub (where our data pipeline runs). Each is bound by its own privacy policy. We share only what's needed for them to do their job.</p>
 <h3>Affiliate links</h3><p>Some product links may earn us a commission at no extra cost to you. They don't affect which updates we report.</p>
-<h3>Your choices</h3><p>Every email has an unsubscribe link. To delete your data entirely, email us and we'll remove it within 30 days. We set one cookie, only when you sign in, so you stay signed in for 30 days. Your device list is kept in your browser's local storage and, once you sign in, in your account.</p><h3>How we count visits</h3><p>We use Vercel Web Analytics to see which pages people actually read, because we'd rather write about the devices you're looking for than guess. It sets no cookies and does not follow you to other sites. To avoid counting the same person twice in a day it derives a temporary identifier from your IP address and browser, which rotates daily and which we never see; what reaches us is the page, the referring site, the rough country, and the kind of device — never a name, an address, or a profile. There are no advertising trackers, and we sell nothing to anyone.</p>
+<h3>Your choices</h3><p>Every email has an unsubscribe link. To delete your data entirely, email us and we'll remove it within 30 days. We set one cookie, only when you sign in, so you stay signed in for 30 days. Your device list is kept in your browser's local storage and, once you sign in, in your account.</p><h3>Counting visits</h3><p>We don't use analytics or advertising trackers, and we sell nothing to anyone.</p>
 <h3>The check on our forms</h3><p>Every form here runs Cloudflare Turnstile, which tells us whether a submission came from a person or a script. It is there because the alternative is a contact inbox and a mailing list full of bot signups. Cloudflare sees your IP address and some signals about your browser to make that call, and we receive only its yes or no — never a profile of you. Turnstile is designed not to track you across sites and, unlike the usual image puzzles, usually asks you to do nothing at all.</p>
 
 <h2 style="margin-top:2.5rem">Terms of service</h2>
