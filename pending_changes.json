@@ -916,6 +916,21 @@
    "notes": "What's Changed: feat: enable Huey stats fix: allow ports up to 65535 in database connection strings Updated openresty / nginx Updated yt-dlp New Contributors: made their first contribution in https://github.com/meeb/tubesync/pull/1658 Full Changelog: https://github.com/meeb/tubesync/compare/v0.19.1…",
    "source_url": "https://github.com/meeb/tubesync/releases/tag/v0.19.2",
    "page_url": "https://www.firmwarely.com/devices/tubesync/"
+  },
+  "libretranslate": {
+   "id": "libretranslate",
+   "brand": "LibreTranslate",
+   "model": "Translation API",
+   "category": "A",
+   "status": "update",
+   "version": "1.10.0",
+   "previous": "1.9.6",
+   "released": "2026-11-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Add --trust-forwarded-for Set Persian translation to reviewed fix: make Gunicorn worker timeout configurable via LT_TIMEOUT ci: pin jlumbroso/free-disk-space to a full commit SHA Translated using Weblate (Slovak) Keep translated text out of the URL query string feat: improve Swap La…",
+   "source_url": "https://github.com/LibreTranslate/LibreTranslate/releases/tag/v1.10.0",
+   "page_url": "https://www.firmwarely.com/devices/libretranslate/"
   }
  }
 }
