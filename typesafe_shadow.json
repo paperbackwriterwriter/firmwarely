@@ -57186,6 +57186,114 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "ntfy",
+   "version": "2.38.2",
+   "name": "ntfy Push notification server",
+   "judged_at": "2026-11-24T13:34:37+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.99,
+    "security_fix_plain": 0.97,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "manyfold",
+   "version": "0.154.4",
+   "name": "Manyfold 3D model library",
+   "judged_at": "2026-11-24T13:34:37+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.10.12.13-stable",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-11-24T13:34:37+00:00",
+   "notes_chars": 47,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "cloudbeaver",
+   "version": "26.2.5.2",
+   "name": "DBeaver CloudBeaver",
+   "judged_at": "2026-11-24T13:34:37+00:00",
+   "notes_chars": 8,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.06,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "lobe-chat",
+   "version": "2.3.6",
+   "name": "LobeHub Lobe Chat",
+   "judged_at": "2026-11-24T13:34:37+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "docker-android",
+   "version": "3.9.1-p1",
+   "name": "docker-android Emulated phones in containers",
+   "judged_at": "2026-11-24T13:34:37+00:00",
+   "notes_chars": 272,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.03
+   }
   }
  ]
 }
