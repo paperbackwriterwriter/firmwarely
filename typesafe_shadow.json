@@ -57006,6 +57006,42 @@
     "security_fix_plain": 0.05,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "opnsense-firewall",
+   "version": "26.7.10",
+   "name": "OPNsense Firewall (community edition)",
+   "judged_at": "2026-11-24T11:06:53+00:00",
+   "notes_chars": 7,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.28,
+    "security_fix_plain": 0.3,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "ipsw",
+   "version": "3.1.751",
+   "name": "Ipsw IOS/macOS Research Swiss Army Knife",
+   "judged_at": "2026-11-24T11:06:53+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

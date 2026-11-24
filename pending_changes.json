@@ -91,6 +91,36 @@
    "notes": "2.49.5 (2026-11-23): Bug Fixes: core: Refresh the cached token of an expirable credential during its test (#​44832) (5041b0d) core: Return an item that holds a value the vm expression engine cannot copy (#​44879) (36ef1a5)",
    "source_url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.49.5",
    "page_url": "https://www.firmwarely.com/devices/n8n/"
+  },
+  "opnsense-firewall": {
+   "id": "opnsense-firewall",
+   "brand": "OPNsense",
+   "model": "Firewall (community edition)",
+   "category": "R",
+   "status": "update",
+   "version": "26.7.10",
+   "previous": "26.7.9",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "26.7.10",
+   "source_url": "https://github.com/opnsense/core/releases/tag/26.7.10",
+   "page_url": "https://www.firmwarely.com/devices/opnsense-firewall/"
+  },
+  "ipsw": {
+   "id": "ipsw",
+   "brand": "Ipsw",
+   "model": "IOS/macOS Research Swiss Army Knife",
+   "category": "M",
+   "status": "update",
+   "version": "3.1.751",
+   "previous": "3.1.750",
+   "released": "2026-11-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: Bug fixes: 79148c50f083752a0f6c859cb92b0e6c8450a68f: fix(fairplay): report rejected IPA and output paths () Dependency updates: 9bbd238f0fed7829c4506fe31b693651aa1594e0: chore(deps): bump actions/setup-go from 7.0.0 to 7.1.0 (#​1412) () 2da869f2e1c7441e1a56c696eac0bc77257be304: chore(dep…",
+   "source_url": "https://github.com/blacktop/ipsw/releases/tag/v3.1.751",
+   "page_url": "https://www.firmwarely.com/devices/ipsw/"
   }
  }
 }
