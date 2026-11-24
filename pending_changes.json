@@ -368,13 +368,13 @@
    "model": "LLM observability",
    "category": "A",
    "status": "update",
-   "version": "4.85.0",
+   "version": "4.86.0",
    "previous": "4.84.0",
    "released": "2026-11-24",
    "date_known": true,
    "eol": false,
-   "notes": "What's Changed: Features: feat(billing): meter Stripe from the billable units ledger feat(web): Use unified session & trace view for session table feat(skills): remove beta badge from skill management feat(topics): allow Topics and events dispatch on self-hosted instances feat(topics): estimate top…",
-   "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.85.0",
+   "notes": "What's Changed: chore(deps): bump msgpackr to 2.1.4 for BullMQ feat(mcp): render charts inline as an MCP App, served by Next.js fix(ingestion): match TypeScript tool-column normalization fix(web): Add no-capture to session entity header refactor(web): Remove code only used by stories ci(ai-gateway)…",
+   "source_url": "https://github.com/langfuse/langfuse/releases/tag/v4.86.0",
    "page_url": "https://www.firmwarely.com/devices/langfuse/"
   },
   "tubesync": {
@@ -781,6 +781,21 @@
    "notes": "What's Changed: 🐛 Bug Fixes: fix: enforce component logging policy fix(mcp): require credentials for project file resources fix(mcp): require an active project owner fix(mcp): scope tool caches to Langflow sessions fix(mcp): keep component header overrides out of the saved server config fix: tighte…",
    "source_url": "https://github.com/langflow-ai/langflow/releases/tag/v1.13.4",
    "page_url": "https://www.firmwarely.com/devices/langflow/"
+  },
+  "netbox": {
+   "id": "netbox",
+   "brand": "NetBox Labs",
+   "model": "NetBox",
+   "category": "R",
+   "status": "update",
+   "version": "4.7.6",
+   "previous": "4.7.5",
+   "released": "2026-11-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "[!NOTE] The fixes for #​21960 and #​23490 don't update cable paths which have already been recorded: these remain marked as split until one of their cables is saved again. To retrace them, run manage.py trace_paths --force after upgrading. On large installations, you can instead delete only the spl…",
+   "source_url": "https://github.com/netbox-community/netbox/releases/tag/v4.7.6",
+   "page_url": "https://www.firmwarely.com/devices/netbox/"
   }
  }
 }
