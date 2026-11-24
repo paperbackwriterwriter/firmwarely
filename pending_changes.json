@@ -278,13 +278,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.8.46.6-lts",
+   "version": "26.9.38.8-stable",
    "previous": "26.9.37.5-stable",
    "released": "2026-11-24",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.8.46.6-lts v26.8.46.6-lts",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.8.46.6-lts",
+   "notes": "Release v26.9.38.8-stable v26.9.38.8-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.9.38.8-stable",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "cloudbeaver": {
@@ -661,6 +661,66 @@
    "notes": "Garage v2.6.0 This is a stable release. Here are the major user-facing changes: New web interface for cluster administration (#​1562) Helm chart published as an OCI artifact (#​1618) Garage v1.x is EoL and will not receive any further updates A blog post will be published soon with necessary detail…",
    "source_url": "https://github.com/deuxfleurs-org/garage/releases/tag/v2.6.0",
    "page_url": "https://www.firmwarely.com/devices/garage-s3/"
+  },
+  "openrazer": {
+   "id": "openrazer",
+   "brand": "OpenRazer",
+   "model": "Razer driver for Linux",
+   "category": "P",
+   "status": "update",
+   "version": "3.12.5",
+   "previous": "3.12.4",
+   "released": "2026-11-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: Fix the DKMS build of the OpenRazer driver on Ubuntu. We now dynamically detect whether to use the new function signature for hid_report_raw_event() to account for all the possible backports. Bug fixes, improvements, cleanup, etc: razerkbd: Dynamic hid_report_raw_event() signature change…",
+   "source_url": "https://github.com/openrazer/openrazer/releases/tag/v3.12.5",
+   "page_url": "https://www.firmwarely.com/devices/openrazer/"
+  },
+  "podman": {
+   "id": "podman",
+   "brand": "Podman",
+   "model": "Container engine",
+   "category": "A",
+   "status": "update",
+   "version": "6.2.1",
+   "previous": "6.2.0",
+   "released": "2026-11-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Bugfixes: Fixed a bug where ConfigMaps and Secrets mounted as executable were not being able to be executed immediately on pod launch when using podman kube play. Fixed a bug where the Docker compatible image inspect responses returning an empty author for images with an author set. Fixed a bug whe…",
+   "source_url": "https://github.com/podman-container-tools/podman/releases/tag/v6.2.1",
+   "page_url": "https://www.firmwarely.com/devices/podman/"
+  },
+  "synapse": {
+   "id": "synapse",
+   "brand": "Element",
+   "model": "Synapse Matrix server",
+   "category": "A",
+   "status": "update",
+   "version": "1.166.0",
+   "previous": "1.165.0",
+   "released": "2026-11-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: https://github.com/element-hq/synapse/blob/release-v1.166/CHANGES.md",
+   "source_url": "https://github.com/element-hq/synapse/releases/tag/v1.166.0",
+   "page_url": "https://www.firmwarely.com/devices/synapse/"
+  },
+  "yuvomi": {
+   "id": "yuvomi",
+   "brand": "Yuvomi",
+   "model": "One home instead of many subscriptions",
+   "category": "S",
+   "status": "update",
+   "version": "2.95.0",
+   "previous": "2.94.0",
+   "released": "2026-11-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changed: Every list in a request body has a maximum number of entries. This is about your own API clients; the app stays below every limit, and the shopping list now clears more than 1000 checked items in several requests. A list longer than its limit (for example more than 1000 ids in DELETE /shop…",
+   "source_url": "https://github.com/ulsklyc/yuvomi/releases/tag/v2.95.0",
+   "page_url": "https://www.firmwarely.com/devices/yuvomi/"
   }
  }
 }

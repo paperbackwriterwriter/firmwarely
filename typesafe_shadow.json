@@ -57762,6 +57762,96 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.25
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.9.38.8-stable",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-11-24T17:49:29+00:00",
+   "notes_chars": 43,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "openrazer",
+   "version": "3.12.5",
+   "name": "OpenRazer Razer driver for Linux",
+   "judged_at": "2026-11-24T17:49:29+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "podman",
+   "version": "6.2.1",
+   "name": "Podman Container engine",
+   "judged_at": "2026-11-24T17:49:29+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.04,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "synapse",
+   "version": "1.166.0",
+   "name": "Element Synapse Matrix server",
+   "judged_at": "2026-11-24T17:49:29+00:00",
+   "notes_chars": 79,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.53,
+    "security_fix_plain": 0.41,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "yuvomi",
+   "version": "2.95.0",
+   "name": "Yuvomi One home instead of many subscriptions",
+   "judged_at": "2026-11-24T17:49:29+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
