@@ -57096,6 +57096,96 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "talos-linux",
+   "version": "1.14.7",
+   "name": "Sidero Labs Talos Linux",
+   "judged_at": "2026-11-24T12:43:35+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "limesurvey",
+   "version": "7.12.0",
+   "name": "LimeSurvey Survey platform",
+   "judged_at": "2026-11-24T12:43:35+00:00",
+   "notes_chars": 13,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.1,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "mysql-server",
+   "version": "26.10.0.1",
+   "name": "MySQL Database server",
+   "judged_at": "2026-11-24T12:43:35+00:00",
+   "notes_chars": 23,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.07,
+    "security_fix_plain": 0.08,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "openobserve",
+   "version": "1.2.0",
+   "name": "Openobserve Observability platform",
+   "judged_at": "2026-11-24T12:43:35+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.21,
+    "security_fix_plain": 0.18,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "openmausbot",
+   "version": "0.1.180",
+   "name": "OpenMausBot Grok Bot alternative",
+   "judged_at": "2026-11-24T12:43:36+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
