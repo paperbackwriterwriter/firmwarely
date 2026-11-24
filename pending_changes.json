@@ -76,6 +76,21 @@
    "notes": "2026.11.1 My tea's gone cold General improvements: fan: fix handling of discrete fan settings #​5423 media_player: fix handling of media metadata #​6129 Improvements to device matching: novadigital_midpanel8_controller: made Alexa login mode optional #​6129",
    "source_url": "https://github.com/make-all/tuya-local/releases/tag/2026.11.0",
    "page_url": "https://www.firmwarely.com/devices/tuya-local/"
+  },
+  "n8n": {
+   "id": "n8n",
+   "brand": "n8n",
+   "model": "Workflow automation",
+   "category": "A",
+   "status": "update",
+   "version": "2.49.5",
+   "previous": "2.48.8",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "2.49.5 (2026-11-23): Bug Fixes: core: Refresh the cached token of an expirable credential during its test (#​44832) (5041b0d) core: Return an item that holds a value the vm expression engine cannot copy (#​44879) (36ef1a5)",
+   "source_url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.49.5",
+   "page_url": "https://www.firmwarely.com/devices/n8n/"
   }
  }
 }
