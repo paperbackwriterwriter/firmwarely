@@ -57852,6 +57852,78 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "rook",
+   "version": "1.21.3",
+   "name": "Rook Ceph storage orchestrator",
+   "judged_at": "2026-11-24T18:40:27+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "thingsboard",
+   "version": "4.4.1",
+   "name": "ThingsBoard IoT platform",
+   "judged_at": "2026-11-24T18:40:27+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.99,
+    "security_fix_plain": 0.94,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "grafana",
+   "version": "13.3.2",
+   "name": "Grafana Dashboards",
+   "judged_at": "2026-11-24T18:40:27+00:00",
+   "notes_chars": 204,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.99,
+    "security_fix_plain": 0.96,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "langflow",
+   "version": "1.13.4",
+   "name": "Langflow Agent builder",
+   "judged_at": "2026-11-24T18:40:27+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.4,
+    "security_fix_plain": 0.27,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

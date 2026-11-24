@@ -721,6 +721,66 @@
    "notes": "Changed: Every list in a request body has a maximum number of entries. This is about your own API clients; the app stays below every limit, and the shopping list now clears more than 1000 checked items in several requests. A list longer than its limit (for example more than 1000 ids in DELETE /shop…",
    "source_url": "https://github.com/ulsklyc/yuvomi/releases/tag/v2.95.0",
    "page_url": "https://www.firmwarely.com/devices/yuvomi/"
+  },
+  "rook": {
+   "id": "rook",
+   "brand": "Rook",
+   "model": "Ceph storage orchestrator",
+   "category": "N",
+   "status": "update",
+   "version": "1.21.3",
+   "previous": "1.21.2",
+   "released": "2026-11-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Improvements: Rook v1.21.3 is a patch release limited in scope and focusing on feature additions and bug fixes to the Ceph operator. helm: Pass mapOptions and unmapOptions to EC pool storage classes (#​18854,) osd: Optionally restrict parallel OSD updates to one failure domain (#​18822,) core: Keep…",
+   "source_url": "https://github.com/rook/rook/releases/tag/v1.21.3",
+   "page_url": "https://www.firmwarely.com/devices/rook/"
+  },
+  "thingsboard": {
+   "id": "thingsboard",
+   "brand": "ThingsBoard",
+   "model": "IoT platform",
+   "category": "S",
+   "status": "critical",
+   "version": "4.4.1",
+   "previous": "4.4.0.2",
+   "released": "2026-11-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Security: Fixed CVE-2026-18036, CVE-2026-59949, CVE-2026-71888, CVE-2026-71889, CVE-2026-71891, CVE-2026-76183, CVE-2026-90559, CVE-2026-93452, CVE-2026-102554, CVE-2026-106450, CVE-2026-106451, CVE-2026-107314, CVE-2026-108106 Protected OAuth2 authorization request cookie from tamp…",
+   "source_url": "https://github.com/thingsboard/thingsboard/releases/tag/v4.4.1",
+   "page_url": "https://www.firmwarely.com/devices/thingsboard/"
+  },
+  "grafana": {
+   "id": "grafana",
+   "brand": "Grafana",
+   "model": "Dashboards",
+   "category": "A",
+   "status": "critical",
+   "version": "13.3.2",
+   "previous": "13.3.1",
+   "released": "2026-11-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Download page What's new highlights Security: Fix CVE-2026-107561 Security: Fix CVE-2026-88960 Features and enhancements: Provisioning: Preserve existing folder identities when creating children #​137552,",
+   "source_url": "https://github.com/grafana/grafana/releases/tag/v13.3.2",
+   "page_url": "https://www.firmwarely.com/devices/grafana/"
+  },
+  "langflow": {
+   "id": "langflow",
+   "brand": "Langflow",
+   "model": "Agent builder",
+   "category": "A",
+   "status": "update",
+   "version": "1.13.4",
+   "previous": "1.13.3",
+   "released": "2026-11-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: 🐛 Bug Fixes: fix: enforce component logging policy fix(mcp): require credentials for project file resources fix(mcp): require an active project owner fix(mcp): scope tool caches to Langflow sessions fix(mcp): keep component header overrides out of the saved server config fix: tighte…",
+   "source_url": "https://github.com/langflow-ai/langflow/releases/tag/v1.13.4",
+   "page_url": "https://www.firmwarely.com/devices/langflow/"
   }
  }
 }
