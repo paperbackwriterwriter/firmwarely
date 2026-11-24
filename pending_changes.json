@@ -203,13 +203,13 @@
    "model": "Turn any Android device",
    "category": "S",
    "status": "update",
-   "version": "2026.11.30",
+   "version": "2026.11.31",
    "previous": "2026.11.28",
-   "released": "2026-11-23",
+   "released": "2026-11-24",
    "date_known": true,
    "eol": false,
-   "notes": "What's new in Kiosk Satellite 2026.11.30: This release adds support for Ground Control's new Wake Word Aligner, which leaves the end of the wake word out of the command. It also adds a Skip next alarm button in ESPHome, a Crop videos switch for the Immich Media screensaver and alarm controls for pl…",
-   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.30",
+   "notes": "What's new in Kiosk Satellite 2026.11.31: This release tells Ground Control how each turn started, so Ground Control takes short replies like \"yes\" when Home Assistant asks a question. It also makes the Snooze length a slider from 1 to 60 minutes and lets plugins say a text quieter than the alarm. …",
+   "source_url": "https://github.com/jxlarrea/kiosk-satellite/releases/tag/2026.11.31",
    "page_url": "https://www.firmwarely.com/devices/kiosk-satellite/"
   },
   "zimaos": {
@@ -758,13 +758,13 @@
    "model": "Home Assistant integration for Tapo cameras",
    "category": "S",
    "status": "update",
-   "version": "7.3.8",
+   "version": "7.3.9",
    "previous": "7.3.6",
-   "released": "2026-11-23",
+   "released": "2026-11-24",
    "date_known": true,
    "eol": false,
-   "notes": "Changes: Add audio-only and video-only sessions to Native WebRTC. Audio-only sessions enable two-way talk from dashboards once implemented in Home Assistant, or for custom cards that are available today.",
-   "source_url": "https://github.com/JurajNyiri/HomeAssistant-Tapo-Control/releases/tag/7.3.8",
+   "notes": "Changes: Fix: Reload integration when changing rtsp transport mode",
+   "source_url": "https://github.com/JurajNyiri/HomeAssistant-Tapo-Control/releases/tag/7.3.9",
    "page_url": "https://www.firmwarely.com/devices/homeassistant-tapo-control/"
   },
   "metube": {
@@ -826,6 +826,21 @@
    "notes": "What's new in 0.1.178: Bots and work: Skill Burger. While a bot works, a small card in the chat's corner stacks one layer for each real step it takes: an app action, a command that changed something, a file it wrote, a page it opened. Save a run as a workflow skill the bot can repeat. Memory per co…",
    "source_url": "https://github.com/milind-soni/OpenMausBot/releases/tag/v0.1.178",
    "page_url": "https://www.firmwarely.com/devices/openmausbot/"
+  },
+  "local-deep-research": {
+   "id": "local-deep-research",
+   "brand": "Local Deep Research",
+   "model": "AI research assistant",
+   "category": "A",
+   "status": "critical",
+   "version": "2.0.4",
+   "previous": "2.0.3",
+   "released": "2026-11-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Security hardening for egress locks, credentials, uploads, and WebSockets: This release focuses on security hardening across egress policy enforcement, credential handling, file uploads, and real-time subscriptions. Most standalone deployments can upgrade without changes, but operators who configur…",
+   "source_url": "https://github.com/LearningCircuit/local-deep-research/releases/tag/v2.0.4",
+   "page_url": "https://www.firmwarely.com/devices/local-deep-research/"
   }
  }
 }
