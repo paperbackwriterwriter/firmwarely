@@ -56628,6 +56628,42 @@
     "security_fix_plain": 0.73,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "px4-autopilot",
+   "version": "1.18.0",
+   "name": "PX4 Autopilot firmware",
+   "judged_at": "2026-11-24T02:21:59+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.16,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "godoxy",
+   "version": "0.34.1",
+   "name": "GoDoxy Reverse proxy and container manager",
+   "judged_at": "2026-11-24T02:21:59+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.83,
+    "security_fix_plain": 0.79,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
