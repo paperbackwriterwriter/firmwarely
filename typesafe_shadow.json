@@ -56898,6 +56898,96 @@
     "security_fix_plain": 0.05,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "qbittorrent",
+   "version": "5.3.1",
+   "name": "qBittorrent BitTorrent client",
+   "judged_at": "2026-11-24T09:25:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.06,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "wallabag",
+   "version": "2.6.19",
+   "name": "wallabag Read-it-later",
+   "judged_at": "2026-11-24T09:25:31+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "penpot",
+   "version": "2.19.5",
+   "name": "Penpot Design tool",
+   "judged_at": "2026-11-24T09:25:31+00:00",
+   "notes_chars": 128,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.328.33333",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-11-24T09:25:31+00:00",
+   "notes_chars": 55,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "tuya-local",
+   "version": "2026.11.1",
+   "name": "Tuya Local Home Assistant integration for Tuya devices",
+   "judged_at": "2026-11-24T09:25:31+00:00",
+   "notes_chars": 257,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

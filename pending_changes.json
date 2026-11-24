@@ -1,5 +1,81 @@
 {
- "since": null,
+ "since": "2026-11-24T09:24:54+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "qbittorrent": {
+   "id": "qbittorrent",
+   "brand": "qBittorrent",
+   "model": "BitTorrent client",
+   "category": "A",
+   "status": "update",
+   "version": "5.3.1",
+   "previous": "5.3.0",
+   "released": "2026-11-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "BUGFIX: Don't try to obtain pieces info when no metadata is available (glassez) #​25070 BUGFIX: Add mnemonic for Plugins menu item (vafada) #​25111 BUGFIX: Preserve encoded plus signs in HTTP queries (zepx) #​25114 BUGFIX: Treat a lockfile that names our own PID as stale (ghz-max) #​25128 BUGFIX: C…",
+   "source_url": "https://github.com/qbittorrent/qBittorrent/releases/tag/release-5.3.1",
+   "page_url": "https://www.firmwarely.com/devices/qbittorrent/"
+  },
+  "wallabag": {
+   "id": "wallabag",
+   "brand": "wallabag",
+   "model": "Read-it-later",
+   "category": "A",
+   "status": "update",
+   "version": "2.6.19",
+   "previous": "2.6.18",
+   "released": "2026-11-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Fix Pocket HTML import crash when an entry has no date Fix EPUB export crash on an element too big to be split Download the cover of the EPUB export when it is not stored by wallabag Fix N+1 queries and slow pagination in API entries list Replace the Guardian article used in the tes…",
+   "source_url": "https://github.com/wallabag/wallabag/releases/tag/2.6.19",
+   "page_url": "https://www.firmwarely.com/devices/wallabag/"
+  },
+  "penpot": {
+   "id": "penpot",
+   "brand": "Penpot",
+   "model": "Design tool",
+   "category": "A",
+   "status": "update",
+   "version": "2.19.5",
+   "previous": "2.19.4",
+   "released": "2026-11-24",
+   "date_known": true,
+   "eol": false,
+   "notes": ":bug: Bugs fixed: Revert #​13165, because it causes more regression, the issue is already correctly fixed on the upcoming 2.20.0",
+   "source_url": "https://github.com/penpot/penpot/releases/tag/2.19.5",
+   "page_url": "https://www.firmwarely.com/devices/penpot/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.328.33333",
+   "previous": "37522026.328.377",
+   "released": "2026-11-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​12571 #​12570 #​12569 #​12568 #​12567 #​12565 #​12564",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.328.33333",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "tuya-local": {
+   "id": "tuya-local",
+   "brand": "Tuya Local",
+   "model": "Home Assistant integration for Tuya devices",
+   "category": "S",
+   "status": "update",
+   "version": "2026.11.1",
+   "previous": "2026.11.0",
+   "released": "2026-11-23",
+   "date_known": true,
+   "eol": false,
+   "notes": "2026.11.1 My tea's gone cold General improvements: fan: fix handling of discrete fan settings #​5423 media_player: fix handling of media metadata #​6129 Improvements to device matching: novadigital_midpanel8_controller: made Alexa login mode optional #​6129",
+   "source_url": "https://github.com/make-all/tuya-local/releases/tag/2026.11.0",
+   "page_url": "https://www.firmwarely.com/devices/tuya-local/"
+  }
+ }
 }
