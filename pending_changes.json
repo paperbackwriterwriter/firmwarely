@@ -121,6 +121,51 @@
    "notes": "Changelog: Bug fixes: 79148c50f083752a0f6c859cb92b0e6c8450a68f: fix(fairplay): report rejected IPA and output paths () Dependency updates: 9bbd238f0fed7829c4506fe31b693651aa1594e0: chore(deps): bump actions/setup-go from 7.0.0 to 7.1.0 (#​1412) () 2da869f2e1c7441e1a56c696eac0bc77257be304: chore(dep…",
    "source_url": "https://github.com/blacktop/ipsw/releases/tag/v3.1.751",
    "page_url": "https://www.firmwarely.com/devices/ipsw/"
+  },
+  "windmill": {
+   "id": "windmill",
+   "brand": "Windmill",
+   "model": "Scripts and workflows",
+   "category": "A",
+   "status": "update",
+   "version": "1.883.0",
+   "previous": "1.882.0",
+   "released": "2026-11-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "1.883.0 (2026-11-24): Features: alert on same-tag wait deadlocks and fail the waiting parent (#​12613) (304f912) cli: 30-day CLI login tokens with expiry picker and token roll (#​12621) (e810cbb) fold consecutive test runs of one item in the ai chat (#​12599) (924d9b7) keep mcp consent page open wi…",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.883.0",
+   "page_url": "https://www.firmwarely.com/devices/windmill/"
+  },
+  "nzbhydra2": {
+   "id": "nzbhydra2",
+   "brand": "NZBHydra2",
+   "model": "Usenet meta search",
+   "category": "A",
+   "status": "update",
+   "version": "9.3.4",
+   "previous": "9.3.3",
+   "released": "2026-11-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "v9.3.4 (2026-11-24): Fix The first category (Anime by default) was missing from an indexer's category selection. Fix Caps check no longer reports \"incomplete\" when an indexer replies \"Unknown function\" for a search type it doesn't support (like aninzb.moe). Fix Leaving a list field (like indexer gr…",
+   "source_url": "https://github.com/theotherp/nzbhydra2/releases/tag/v9.3.4",
+   "page_url": "https://www.firmwarely.com/devices/nzbhydra2/"
+  },
+  "homeassistant-tapo-control": {
+   "id": "homeassistant-tapo-control",
+   "brand": "Tapo Control",
+   "model": "Home Assistant integration for Tapo cameras",
+   "category": "S",
+   "status": "update",
+   "version": "7.3.10",
+   "previous": "7.3.9",
+   "released": "2026-11-24",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes: Add: Native WebRTC can reuse an existing go2rtc stream. Tapo: Cameras Control skips re-encoding the video, reducing CPU load on Home Assistant. Talk still uses the Tapo integration. Fix: Custom stream links now create the matching camera entity even without camera RTSP credentials. Clearin…",
+   "source_url": "https://github.com/JurajNyiri/HomeAssistant-Tapo-Control/releases/tag/7.3.10",
+   "page_url": "https://www.firmwarely.com/devices/homeassistant-tapo-control/"
   }
  }
 }
