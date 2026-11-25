@@ -961,6 +961,21 @@
    "notes": "✅ Release Asset Validation: PASSED: The required release asset checks passed. Status: Release asset checks passed ✅ Validated: 2026-11-25 02:06:00 UTC Workflow: Pulse Release Pipeline #​465 Validation Summary: All required assets present ✓ Checksums verified ✓ Version strings correct ✓ Binary archi…",
    "source_url": "https://github.com/rcourtman/Pulse/releases/tag/v6.9.0",
    "page_url": "https://www.firmwarely.com/devices/pulse/"
+  },
+  "tooljet": {
+   "id": "tooljet",
+   "brand": "ToolJet",
+   "model": "Low-code platform",
+   "category": "A",
+   "status": "update",
+   "version": "3.21.99-lts",
+   "previous": "3.21.98-lts",
+   "released": "2026-11-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: 📝 Other Changes: Converted multi secret to Json added release file for 3.21 Feature: Show where workspace git pull spends its time Chore: point server/ee at the lts-3.21 branch commit Fix: Backport ToolJet DB proxy compatibility to lts-3.21 Full Changelog: https://github.com/ToolJet…",
+   "source_url": "https://github.com/ToolJet/ToolJet/releases/tag/v3.21.99-lts",
+   "page_url": "https://www.firmwarely.com/devices/tooljet/"
   }
  }
 }
