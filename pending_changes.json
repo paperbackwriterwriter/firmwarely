@@ -188,13 +188,13 @@
    "model": "Analytics database",
    "category": "A",
    "status": "update",
-   "version": "26.10.13.11-stable",
+   "version": "26.11.2.4-stable",
    "previous": "26.11.1.2942-stable",
    "released": "2026-11-25",
    "date_known": true,
    "eol": false,
-   "notes": "Release v26.10.13.11-stable v26.10.13.11-stable",
-   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.10.13.11-stable",
+   "notes": "Release v26.11.2.4-stable v26.11.2.4-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.11.2.4-stable",
    "page_url": "https://www.firmwarely.com/devices/clickhouse/"
   },
   "woodpecker-ci": {
@@ -271,6 +271,36 @@
    "notes": "What's Changed: Fix survey submissions on 6.2 so rapid Next clicks or delayed submissions cannot skip required questions or submit from a previous card visit. Backport of #​10039 via #​10185. Upgrade impact: No database migration, new environment variable, or public SDK change. Survey navigation an…",
    "source_url": "https://github.com/formbricks/formbricks/releases/tag/6.2.3",
    "page_url": "https://www.firmwarely.com/devices/formbricks/"
+  },
+  "proxmox-ve": {
+   "id": "proxmox-ve",
+   "brand": "Proxmox",
+   "model": "Virtual Environment",
+   "category": "A",
+   "status": "update",
+   "version": "9.3",
+   "previous": "9.2",
+   "released": "2026-11-25",
+   "date_known": false,
+   "eol": false,
+   "notes": "Proxmox VE release. See the roadmap for what changed.",
+   "source_url": "https://pve.proxmox.com/wiki/Roadmap",
+   "page_url": "https://www.firmwarely.com/devices/proxmox-ve/"
+  },
+  "kubernetes": {
+   "id": "kubernetes",
+   "brand": "Kubernetes",
+   "model": "Kubernetes",
+   "category": "A",
+   "status": "update",
+   "version": "1.37.3",
+   "previous": "1.37.2",
+   "released": "2026-11-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "See kubernetes-announce@. Additional binary downloads are linked in the CHANGELOG. See the CHANGELOG for more details.",
+   "source_url": "https://github.com/kubernetes/kubernetes/releases/tag/v1.37.3",
+   "page_url": "https://www.firmwarely.com/devices/kubernetes/"
   }
  }
 }
