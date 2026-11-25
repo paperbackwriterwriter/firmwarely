@@ -58248,6 +58248,42 @@
     "security_fix_plain": 0.03,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "jackett",
+   "version": "0.25.39",
+   "name": "Jackett Torrent indexer proxy",
+   "judged_at": "2026-11-25T06:32:04+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "zammad",
+   "version": "7.3.0",
+   "name": "Zammad Help desk",
+   "judged_at": "2026-11-25T06:32:04+00:00",
+   "notes_chars": 5,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.09,
+    "security_fix_plain": 0.12,
+    "end_of_life": 0.02
+   }
   }
  ]
 }

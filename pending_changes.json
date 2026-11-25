@@ -976,6 +976,36 @@
    "notes": "What's Changed: 📝 Other Changes: Converted multi secret to Json added release file for 3.21 Feature: Show where workspace git pull spends its time Chore: point server/ee at the lts-3.21 branch commit Fix: Backport ToolJet DB proxy compatibility to lts-3.21 Full Changelog: https://github.com/ToolJet…",
    "source_url": "https://github.com/ToolJet/ToolJet/releases/tag/v3.21.99-lts",
    "page_url": "https://www.firmwarely.com/devices/tooljet/"
+  },
+  "jackett": {
+   "id": "jackett",
+   "brand": "Jackett",
+   "model": "Torrent indexer proxy",
+   "category": "A",
+   "status": "update",
+   "version": "0.25.39",
+   "previous": "0.25.34",
+   "released": "2026-11-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes:: 272019ebe9b0287fc1adaa868015831b57902e91 mejortorrent: bump domain 31cdfc4c7f3156f95dafa79abe0c0e26a38454d5 torrentbd: update login test cfc7c1788ee7867fb0a08ddaaf8b6a42611ebe80 linuxtracker: new cat b27b71a56b213d25d8d1286974dbb7c2220ac4c8 52bt: new domains 6be9ef124f5f92574fd7e1fe4355a3…",
+   "source_url": "https://github.com/Jackett/Jackett/releases/tag/v0.25.39",
+   "page_url": "https://www.firmwarely.com/devices/jackett/"
+  },
+  "zammad": {
+   "id": "zammad",
+   "brand": "Zammad",
+   "model": "Help desk",
+   "category": "A",
+   "status": "update",
+   "version": "7.3.0",
+   "previous": "7.2.3",
+   "released": "2026-11-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "7.3.0",
+   "source_url": "https://github.com/zammad/zammad/releases/tag/7.3.0",
+   "page_url": "https://www.firmwarely.com/devices/zammad/"
   }
  }
 }
