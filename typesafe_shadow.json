@@ -58608,6 +58608,78 @@
     "security_fix_plain": 0.09,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "coolify",
+   "version": "4.7.8",
+   "name": "Coolify Self-hosting platform",
+   "judged_at": "2026-11-25T14:16:02+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "home-assistant-supervisor",
+   "version": "2026.11.1",
+   "name": "Home Assistant Supervisor",
+   "judged_at": "2026-11-25T14:16:02+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "pritunl",
+   "version": "1.34.4822.59",
+   "name": "Pritunl VPN server",
+   "judged_at": "2026-11-25T14:16:02+00:00",
+   "notes_chars": 67,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.23,
+    "security_fix_plain": 0.19,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "formbricks",
+   "version": "6.2.3",
+   "name": "Formbricks Surveys",
+   "judged_at": "2026-11-25T14:16:02+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.03,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

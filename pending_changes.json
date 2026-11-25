@@ -142,14 +142,14 @@
    "brand": "Coolify",
    "model": "Self-hosting platform",
    "category": "A",
-   "status": "critical",
-   "version": "4.7.7",
+   "status": "update",
+   "version": "4.7.8",
    "previous": "4.7.6",
    "released": "2026-11-25",
    "date_known": true,
    "eol": false,
-   "notes": "Security: Bound PHP-FPM in the coolify container to the loopback interface Hardened the first SSO sign-in of accounts that a team invitation created An instance admin can run php artisan user:allow-sso-link when email is not set up Kept preview variables out of public previews also when their value…",
-   "source_url": "https://github.com/coollabsio/coolify/releases/tag/v4.7.7",
+   "notes": "Fixed: Mounted an empty host folder instead of the existing Docker volume after the upgrade to v4.7.7, when the variable of a short-syntax Compose volume such as ${DATA}/config:/config has a host path value A volume that the resource had before stays in use while its entry exists in Persistent Stor…",
+   "source_url": "https://github.com/coollabsio/coolify/releases/tag/v4.7.8",
    "page_url": "https://www.firmwarely.com/devices/coolify/"
   },
   "octoprint": {
@@ -226,6 +226,51 @@
    "notes": "Changes: Fix #​1527: Prevent hub and child devices from repeatedly invalidating each other's authentication sessions, improving availability and reducing unnecessary logins, thank you Update: Bump pytapo to 3.4.42",
    "source_url": "https://github.com/JurajNyiri/HomeAssistant-Tapo-Control/releases/tag/7.3.12",
    "page_url": "https://www.firmwarely.com/devices/homeassistant-tapo-control/"
+  },
+  "home-assistant-supervisor": {
+   "id": "home-assistant-supervisor",
+   "brand": "Home Assistant",
+   "model": "Supervisor",
+   "category": "S",
+   "status": "update",
+   "version": "2026.11.1",
+   "previous": "2026.11.0",
+   "released": "2026-11-25",
+   "date_known": true,
+   "eol": false,
+   "notes": ":sparkles: New Features: #​7463 Listen for apps on per-app Supervisor Unix sockets #​7477 Unify common plugin API endpoints #​7518 Add stopping state for apps #​7476 Report apps calling the Supervisor API over TCP #​7523 Add operation status to app websocket events :bug: Bug Fixes: #​7337 Prune bac…",
+   "source_url": "https://github.com/home-assistant/supervisor/releases/tag/2026.11.1",
+   "page_url": "https://www.firmwarely.com/devices/home-assistant-supervisor/"
+  },
+  "pritunl": {
+   "id": "pritunl",
+   "brand": "Pritunl",
+   "model": "VPN server",
+   "category": "R",
+   "status": "update",
+   "version": "1.34.4822.59",
+   "previous": "1.34.4803.56",
+   "released": "2026-11-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "Restrict Google Workspace to admin groups for organization matching",
+   "source_url": "https://github.com/pritunl/pritunl/releases/tag/1.34.4822.59",
+   "page_url": "https://www.firmwarely.com/devices/pritunl/"
+  },
+  "formbricks": {
+   "id": "formbricks",
+   "brand": "Formbricks",
+   "model": "Surveys",
+   "category": "A",
+   "status": "update",
+   "version": "6.2.3",
+   "previous": "6.2.2",
+   "released": "2026-11-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Fix survey submissions on 6.2 so rapid Next clicks or delayed submissions cannot skip required questions or submit from a previous card visit. Backport of #​10039 via #​10185. Upgrade impact: No database migration, new environment variable, or public SDK change. Survey navigation an…",
+   "source_url": "https://github.com/formbricks/formbricks/releases/tag/6.2.3",
+   "page_url": "https://www.firmwarely.com/devices/formbricks/"
   }
  }
 }
