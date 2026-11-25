@@ -136,6 +136,21 @@
    "notes": "OpenBK7231T/OpenBeken release 1.18.322: WARNING! If installing versions tagged -alpha, please be aware these are development builds and may not be stable! Please do not flash all your devices at once! Make sure you can recover them via UART in case of unexpected issue.: OpenBK7231T/OpenBeken is a T…",
    "source_url": "https://github.com/openshwprojects/OpenBK7231T_App/releases/tag/1.18.322",
    "page_url": "https://www.firmwarely.com/devices/openbk7231t/"
+  },
+  "coolify": {
+   "id": "coolify",
+   "brand": "Coolify",
+   "model": "Self-hosting platform",
+   "category": "A",
+   "status": "critical",
+   "version": "4.7.7",
+   "previous": "4.7.6",
+   "released": "2026-11-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "Security: Bound PHP-FPM in the coolify container to the loopback interface Hardened the first SSO sign-in of accounts that a team invitation created An instance admin can run php artisan user:allow-sso-link when email is not set up Kept preview variables out of public previews also when their value…",
+   "source_url": "https://github.com/coollabsio/coolify/releases/tag/v4.7.7",
+   "page_url": "https://www.firmwarely.com/devices/coolify/"
   }
  }
 }
