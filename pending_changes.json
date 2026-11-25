@@ -181,6 +181,51 @@
    "notes": "Highlights: Process in Batches – a new step that splits a long list into batches, runs each batch as its own run in parallel, and continues when every batch has finished. Docs Faster code steps – Deno code steps are much quicker. In our test, a loop of 300 small code steps went from about 118 ms to…",
    "source_url": "https://github.com/activepieces/activepieces/releases/tag/0.94.0",
    "page_url": "https://www.firmwarely.com/devices/activepieces/"
+  },
+  "clickhouse": {
+   "id": "clickhouse",
+   "brand": "ClickHouse",
+   "model": "Analytics database",
+   "category": "A",
+   "status": "update",
+   "version": "26.10.13.11-stable",
+   "previous": "26.11.1.2942-stable",
+   "released": "2026-11-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "Release v26.10.13.11-stable v26.10.13.11-stable",
+   "source_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v26.10.13.11-stable",
+   "page_url": "https://www.firmwarely.com/devices/clickhouse/"
+  },
+  "woodpecker-ci": {
+   "id": "woodpecker-ci",
+   "brand": "Woodpecker",
+   "model": "CI engine",
+   "category": "A",
+   "status": "critical",
+   "version": "3.21.0",
+   "previous": "3.20.1",
+   "released": "2026-11-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "3.21.0 - 2026-11-25: ❤️ Thanks to all contributors! ❤️:,,,,,,,,,,,,,,,,,,,,,,,,,, 🔒 Security: Use constant time to compare agent tokens [#​7638] Use repo read-only deploy-token to clone Gitea repos [#​7625] Check allowed deployments also on deployment restarts [#​7621] Sync repo visibility with for…",
+   "source_url": "https://github.com/woodpecker-ci/woodpecker/releases/tag/v3.21.0",
+   "page_url": "https://www.firmwarely.com/devices/woodpecker-ci/"
+  },
+  "homeassistant-tapo-control": {
+   "id": "homeassistant-tapo-control",
+   "brand": "Tapo Control",
+   "model": "Home Assistant integration for Tapo cameras",
+   "category": "S",
+   "status": "update",
+   "version": "7.3.12",
+   "previous": "7.3.11",
+   "released": "2026-11-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changes: Fix #​1527: Prevent hub and child devices from repeatedly invalidating each other's authentication sessions, improving availability and reducing unnecessary logins, thank you Update: Bump pytapo to 3.4.42",
+   "source_url": "https://github.com/JurajNyiri/HomeAssistant-Tapo-Control/releases/tag/7.3.12",
+   "page_url": "https://www.firmwarely.com/devices/homeassistant-tapo-control/"
   }
  }
 }

@@ -58554,6 +58554,60 @@
     "security_fix_plain": 0.01,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "clickhouse",
+   "version": "26.10.13.11-stable",
+   "name": "ClickHouse Analytics database",
+   "judged_at": "2026-11-25T13:25:21+00:00",
+   "notes_chars": 47,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "woodpecker-ci",
+   "version": "3.21.0",
+   "name": "Woodpecker CI engine",
+   "judged_at": "2026-11-25T13:25:21+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": true,
+    "security_fix_plain": true,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.76,
+    "security_fix_plain": 0.79,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "homeassistant-tapo-control",
+   "version": "7.3.12",
+   "name": "Tapo Control Home Assistant integration for Tapo cameras",
+   "judged_at": "2026-11-25T13:25:21+00:00",
+   "notes_chars": 213,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.09,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
