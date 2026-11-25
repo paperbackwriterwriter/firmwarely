@@ -58284,6 +58284,24 @@
     "security_fix_plain": 0.12,
     "end_of_life": 0.02
    }
+  },
+  {
+   "id": "esphome",
+   "version": "2026.11.1",
+   "name": "ESPHome ESP32 / ESP8266 device firmware",
+   "judged_at": "2026-11-25T07:22:50+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.05,
+    "security_fix_plain": 0.19,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
