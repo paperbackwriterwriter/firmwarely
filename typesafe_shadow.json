@@ -58302,6 +58302,42 @@
     "security_fix_plain": 0.19,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "kea-dhcp",
+   "version": "3.3.4",
+   "name": "ISC Kea DHCP",
+   "judged_at": "2026-11-25T08:19:58+00:00",
+   "notes_chars": 9,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.26,
+    "security_fix_plain": 0.22,
+    "end_of_life": 0.02
+   }
+  },
+  {
+   "id": "plotjuggler",
+   "version": "4.2.0",
+   "name": "PlotJuggler Time-series plotting tool",
+   "judged_at": "2026-11-25T08:19:58+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.02,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
