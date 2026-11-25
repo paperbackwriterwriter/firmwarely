@@ -1,5 +1,66 @@
 {
- "since": null,
+ "since": "2026-11-25T09:10:52+00:00",
  "forced": false,
- "devices": {}
+ "devices": {
+  "n8n": {
+   "id": "n8n",
+   "brand": "n8n",
+   "model": "Workflow automation",
+   "category": "A",
+   "status": "update",
+   "version": "2.49.6",
+   "previous": "2.49.5",
+   "released": "2026-11-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "2.49.6 (2026-11-25): Bug Fixes: core: Align base64, urlEncode and format results of isolate expression engines with legacy (#​44969) (7fb24bd) Features: core: Evaluate urlEncode, base64Decode and format natively (#​44995) (e79571f)",
+   "source_url": "https://github.com/n8n-io/n8n/releases/tag/n8n%402.49.6",
+   "page_url": "https://www.firmwarely.com/devices/n8n/"
+  },
+  "strapi": {
+   "id": "strapi",
+   "brand": "Strapi",
+   "model": "Headless CMS",
+   "category": "A",
+   "status": "update",
+   "version": "5.64.0",
+   "previous": "5.63.0",
+   "released": "2026-11-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "5.64.0 (2026-11-25): 🚀 New feature: moving piwi test suite health pr to a new branch (bec1edbe3b) content-manager: show the source and author of history versions (#​28554) database: add unstable query scopes (#​28724) tests: database lifecycle and reset scopes for /tests-next (#​28582) tests: share…",
+   "source_url": "https://github.com/strapi/strapi/releases/tag/v5.64.0",
+   "page_url": "https://www.firmwarely.com/devices/strapi/"
+  },
+  "dns-blocklists": {
+   "id": "dns-blocklists",
+   "brand": "HaGeZi",
+   "model": "DNS blocklists",
+   "category": "R",
+   "status": "update",
+   "version": "37522026.329.32405",
+   "previous": "37522026.328.86016",
+   "released": "2026-11-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "#​12593 #​12592 #​12591 #​12589",
+   "source_url": "https://github.com/hagezi/dns-blocklists/releases/tag/37522026.329.32405",
+   "page_url": "https://www.firmwarely.com/devices/dns-blocklists/"
+  },
+  "ipsw": {
+   "id": "ipsw",
+   "brand": "Ipsw",
+   "model": "IOS/macOS Research Swiss Army Knife",
+   "category": "M",
+   "status": "critical",
+   "version": "3.1.752",
+   "previous": "3.1.751",
+   "released": "2026-11-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: New Features: 1a8c424a1b7b1df248450ef95705b6e65b1f246b: feat(download): make FairPlay the default IPA downloader () dfd6f033ead0a8bf64b161b3011429c524ee5910: feat(watch): add Apple security advisory watcher () Bug fixes: 570f46f6faaaa4d21cb9d77993f4bb4053725aa5: fix(download): build wait…",
+   "source_url": "https://github.com/blacktop/ipsw/releases/tag/v3.1.752",
+   "page_url": "https://www.firmwarely.com/devices/ipsw/"
+  }
+ }
 }
