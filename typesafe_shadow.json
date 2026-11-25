@@ -58518,6 +58518,42 @@
     "security_fix_plain": 0.9,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "octoprint",
+   "version": "2.0.2",
+   "name": "OctoPrint 3D printer controller",
+   "judged_at": "2026-11-25T12:34:27+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "activepieces",
+   "version": "0.94.0",
+   "name": "Activepieces Workflow automation",
+   "judged_at": "2026-11-25T12:34:27+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.01,
+    "security_fix_plain": 0.01,
+    "end_of_life": 0.01
+   }
   }
  ]
 }

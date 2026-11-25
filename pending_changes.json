@@ -151,6 +151,36 @@
    "notes": "Security: Bound PHP-FPM in the coolify container to the loopback interface Hardened the first SSO sign-in of accounts that a team invitation created An instance admin can run php artisan user:allow-sso-link when email is not set up Kept preview variables out of public previews also when their value…",
    "source_url": "https://github.com/coollabsio/coolify/releases/tag/v4.7.7",
    "page_url": "https://www.firmwarely.com/devices/coolify/"
+  },
+  "octoprint": {
+   "id": "octoprint",
+   "brand": "OctoPrint",
+   "model": "3D printer controller",
+   "category": "M",
+   "status": "update",
+   "version": "2.0.2",
+   "previous": "2.0.1",
+   "released": "2026-11-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "✋ Heads-ups: The heads-ups from the previous 2.0.0 release still apply, please read their release notes as well for a full picture of what you should be aware of and what changed! ⛈ Issues while updating?: On every new OctoPrint release we see some people run into the same issues with outdated or b…",
+   "source_url": "https://github.com/OctoPrint/OctoPrint/releases/tag/2.0.2",
+   "page_url": "https://www.firmwarely.com/devices/octoprint/"
+  },
+  "activepieces": {
+   "id": "activepieces",
+   "brand": "Activepieces",
+   "model": "Workflow automation",
+   "category": "A",
+   "status": "update",
+   "version": "0.94.0",
+   "previous": "0.93.0",
+   "released": "2026-11-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "Highlights: Process in Batches – a new step that splits a long list into batches, runs each batch as its own run in parallel, and continues when every batch has finished. Docs Faster code steps – Deno code steps are much quicker. In our test, a loop of 300 small code steps went from about 118 ms to…",
+   "source_url": "https://github.com/activepieces/activepieces/releases/tag/0.94.0",
+   "page_url": "https://www.firmwarely.com/devices/activepieces/"
   }
  }
 }
