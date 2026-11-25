@@ -121,6 +121,21 @@
    "notes": "Changelog: [3.72.1] - 2026-11-25: 🐛 Bug Fixes: ci: Unblock the release after the authenticator app merge (#​932) (a400d1d) website: Drop the beta claim from the Neon Object Storage guide (#​931) (9e75db2) website: Drop the beta claim from the Neon Object Storage guide (#​928) (543545d) 🐳 Docker: Im…",
    "source_url": "https://github.com/databasus/databasus/releases/tag/v3.72.1",
    "page_url": "https://www.firmwarely.com/devices/databasus/"
+  },
+  "openbk7231t": {
+   "id": "openbk7231t",
+   "brand": "OpenBeken",
+   "model": "OpenBK7231T firmware",
+   "category": "S",
+   "status": "update",
+   "version": "1.18.322",
+   "previous": "1.18.321",
+   "released": "2026-11-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "OpenBK7231T/OpenBeken release 1.18.322: WARNING! If installing versions tagged -alpha, please be aware these are development builds and may not be stable! Please do not flash all your devices at once! Make sure you can recover them via UART in case of unexpected issue.: OpenBK7231T/OpenBeken is a T…",
+   "source_url": "https://github.com/openshwprojects/OpenBK7231T_App/releases/tag/1.18.322",
+   "page_url": "https://www.firmwarely.com/devices/openbk7231t/"
   }
  }
 }
