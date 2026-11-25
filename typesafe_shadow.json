@@ -58104,6 +58104,60 @@
     "security_fix_plain": 0.02,
     "end_of_life": 0.01
    }
+  },
+  {
+   "id": "dns-blocklists",
+   "version": "37522026.328.86016",
+   "name": "HaGeZi DNS blocklists",
+   "judged_at": "2026-11-25T00:36:23+00:00",
+   "notes_chars": 103,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.03,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "onedev",
+   "version": "17.2.4",
+   "name": "OneDev Git server with CI",
+   "judged_at": "2026-11-25T00:36:23+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.02,
+    "security_fix_plain": 0.05,
+    "end_of_life": 0.01
+   }
+  },
+  {
+   "id": "coder",
+   "version": "2.38.11",
+   "name": "Coder Remote dev environments",
+   "judged_at": "2026-11-25T00:36:23+00:00",
+   "notes_chars": 300,
+   "model": "jev-1.14.0",
+   "regex": {
+    "security_fix": false,
+    "security_fix_plain": false,
+    "end_of_life": false
+   },
+   "jev": {
+    "security_fix": 0.4,
+    "security_fix_plain": 0.45,
+    "end_of_life": 0.01
+   }
   }
  ]
 }
