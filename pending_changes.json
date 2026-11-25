@@ -128,13 +128,13 @@
    "model": "Scripts and workflows",
    "category": "A",
    "status": "update",
-   "version": "1.884.0",
+   "version": "1.884.1",
    "previous": "1.882.0",
-   "released": "2026-11-24",
+   "released": "2026-11-25",
    "date_known": true,
    "eol": false,
-   "notes": "1.884.0 (2026-11-24): Features: add SAP icon for the sap_hana resource type (#​12633) (a888954) ask for secrets and connect services in the AI chat through a secure card (#​12575) (9536cfd) full-screen image viewer with zoom, pan, copy and download (#​12634) (3908150) give each AI session its own m…",
-   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.884.0",
+   "notes": "1.884.1 (2026-11-25): Bug Fixes: unblock backend CI and deno jobs with a script path (#​12648) (783d89a) --- This PR was generated with Release Please. See documentation.",
+   "source_url": "https://github.com/windmill-labs/windmill/releases/tag/v1.884.1",
    "page_url": "https://www.firmwarely.com/devices/windmill/"
   },
   "nzbhydra2": {
@@ -916,6 +916,21 @@
    "notes": "## Stable (since November 24, 2026) Changelog: Features: Require a setup token to create the first user on a tunnel (#​32324, e0bab67947) () Server: Protect pending jobs only while the provisioner queue is moving (#​32099, dec6e4b327) Bug fixes: Server: Let only one request create the first user (#…",
    "source_url": "https://github.com/coder/coder/releases/tag/v2.38.11",
    "page_url": "https://www.firmwarely.com/devices/coder/"
+  },
+  "zigpy": {
+   "id": "zigpy",
+   "brand": "zigpy",
+   "model": "Zigbee stack",
+   "category": "S",
+   "status": "update",
+   "version": "2.5.0",
+   "previous": "2.4.1",
+   "released": "2026-11-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "What's Changed: Exclude the tools directory from the wheel Remove manual source routing Elect the Green Power TempMaster per spec and ignore stale Commissioning GPDFs Fix GPD ID addressing in Green Power cluster commands Update README with ZGP and Zigbee 3.0 support clarifications Use the temperatu…",
+   "source_url": "https://github.com/zigpy/zigpy/releases/tag/2.5.0",
+   "page_url": "https://www.firmwarely.com/devices/zigpy/"
   }
  }
 }
