@@ -314,7 +314,7 @@
   <url><loc>https://www.firmwarely.com/devices/infisical/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/openbao/</loc><lastmod>2026-11-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/keycloak/</loc><lastmod>2026-11-05</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/zitadel/</loc><lastmod>2026-11-18</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/zitadel/</loc><lastmod>2026-11-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/lldap/</loc><lastmod>2026-04-30</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ory-kratos/</loc><lastmod>2026-03-20</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/casdoor/</loc><lastmod>2026-11-21</lastmod></url>
@@ -357,7 +357,7 @@
   <url><loc>https://www.firmwarely.com/devices/dagster/</loc><lastmod>2026-11-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/kestra/</loc><lastmod>2026-11-17</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/ollama/</loc><lastmod>2026-11-24</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/open-webui/</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/open-webui/</loc><lastmod>2026-11-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/localai/</loc><lastmod>2026-11-20</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/llama-cpp/</loc><lastmod>2026-11-13</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/vllm/</loc><lastmod>2026-11-16</lastmod></url>
@@ -431,7 +431,7 @@
   <url><loc>https://www.firmwarely.com/devices/glpi/</loc><lastmod>2026-11-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/snipe-it/</loc><lastmod>2026-11-20</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/phpipam/</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/erpnext/</loc><lastmod>2026-11-17</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/erpnext/</loc><lastmod>2026-11-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/invoice-ninja/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/akaunting/</loc><lastmod>2026-11-20</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/kimai/</loc><lastmod>2026-11-23</lastmod></url>
@@ -631,7 +631,7 @@
   <url><loc>https://www.firmwarely.com/devices/rackstack/</loc><lastmod>2024-10-19</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/lantern/</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/avideo/</loc><lastmod>2026-11-23</lastmod></url>
-  <url><loc>https://www.firmwarely.com/devices/databasus/</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://www.firmwarely.com/devices/databasus/</loc><lastmod>2026-11-25</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/elasticsearch-dump/</loc><lastmod>2026-05-12</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/android-databackup/</loc><lastmod>2025-09-20</lastmod></url>
   <url><loc>https://www.firmwarely.com/devices/zerobyte/</loc><lastmod>2026-11-09</lastmod></url>

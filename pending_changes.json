@@ -61,6 +61,66 @@
    "notes": "Changelog: New Features: 1a8c424a1b7b1df248450ef95705b6e65b1f246b: feat(download): make FairPlay the default IPA downloader () dfd6f033ead0a8bf64b161b3011429c524ee5910: feat(watch): add Apple security advisory watcher () Bug fixes: 570f46f6faaaa4d21cb9d77993f4bb4053725aa5: fix(download): build wait…",
    "source_url": "https://github.com/blacktop/ipsw/releases/tag/v3.1.752",
    "page_url": "https://www.firmwarely.com/devices/ipsw/"
+  },
+  "zitadel": {
+   "id": "zitadel",
+   "brand": "ZITADEL",
+   "model": "Identity platform",
+   "category": "A",
+   "status": "update",
+   "version": "4.20.6",
+   "previous": "4.20.5",
+   "released": "2026-11-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "4.20.6 (2026-11-25): Bug Fixes: eventstore: recover from panics in projection handlers (#​13079) (d645bd1), closes #​13057 #​11713 #​13066 #​13057 login: save registration language in new user profiles (#​13113) (556c24d), closes #​12950 #​12657 #​12950 telemetry: record tarpit delays as span and l…",
+   "source_url": "https://github.com/zitadel/zitadel/releases/tag/v4.20.6",
+   "page_url": "https://www.firmwarely.com/devices/zitadel/"
+  },
+  "open-webui": {
+   "id": "open-webui",
+   "brand": "Open WebUI",
+   "model": "LLM web interface",
+   "category": "A",
+   "status": "update",
+   "version": "0.13.5",
+   "previous": "0.13.4",
+   "released": "2026-11-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "Added: Folder workspaces. Run your project’s tests in a terminal and try the app in a browser while your chat stays open beside them. Choose the computer and project directory once for the folder. Even in a shared folder, everyone can return to their own tabs and layout. If you used the standalone …",
+   "source_url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.5",
+   "page_url": "https://www.firmwarely.com/devices/open-webui/"
+  },
+  "erpnext": {
+   "id": "erpnext",
+   "brand": "Frappe",
+   "model": "ERPNext",
+   "category": "A",
+   "status": "update",
+   "version": "16.61.0",
+   "previous": "16.60.0",
+   "released": "2026-11-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "General: Bug Fixes (15) Updates Sales Invoice and POS Invoice forms to determine whether cash change is due by comparing the paid amount with the rounded total, so payments at or below that total aren’t shown as change. (https://github.com/frappe/erpnext/pull/68141) Rounds payment totals before com…",
+   "source_url": "https://github.com/frappe/erpnext/releases/tag/v16.61.0",
+   "page_url": "https://www.firmwarely.com/devices/erpnext/"
+  },
+  "databasus": {
+   "id": "databasus",
+   "brand": "Databasus",
+   "model": "PostgreSQL backup tool",
+   "category": "N",
+   "status": "update",
+   "version": "3.72.1",
+   "previous": "3.72.0",
+   "released": "2026-11-25",
+   "date_known": true,
+   "eol": false,
+   "notes": "Changelog: [3.72.1] - 2026-11-25: 🐛 Bug Fixes: ci: Unblock the release after the authenticator app merge (#​932) (a400d1d) website: Drop the beta claim from the Neon Object Storage guide (#​931) (9e75db2) website: Drop the beta claim from the Neon Object Storage guide (#​928) (543545d) 🐳 Docker: Im…",
+   "source_url": "https://github.com/databasus/databasus/releases/tag/v3.72.1",
+   "page_url": "https://www.firmwarely.com/devices/databasus/"
   }
  }
 }
